@@ -1,0 +1,442 @@
+ - ---< azure-bot-service-4.0 (中文).pdf >---
+  - Bot Framework SDK 檔
+    [1] Bot Framework SDK 檔
+  - 總覽
+    - 什麼是 Bot Framework SDK？
+      [4] 什麼是 Bot Framework SDK？
+    - 選擇正確的聊天機器人解決方案
+      [8] 為您的使用案例選擇正確的聊天機器人解決方案
+    - 新功能
+      [11] Bot Framework SDK 的新功能
+  - 快速入門
+    - 建立基本 Bot
+      [12] 使用 Bot Framework SDK 建立 Bot
+    - 建立 Azure Bot 資源
+      [16] 使用 Azure 入口網站 建立 Azure Bot 資源
+  - 範例
+    - GitHub 上的 Bot Framework 範例存放庫
+  - 安全性
+    - 安全性基準
+      [23] Azure Bot Service的 Azure 安全性基準
+    - Bot 服務加密
+      [35] 待用資料的 Azure AI Bot Service 加密
+    - 驗證基本概念
+      [41] Bot Framework 驗證基本概念
+    - 驗證類型
+      [44] 驗證類型
+    - 使用者驗證
+      - 用戶驗證基本概念
+        [49] 使用者驗證
+      - 身分識別提供者
+        [54] 身分識別提供者
+      - 識別提供者 Proxy
+        [59] 識別提供者 Proxy
+      - 單一登入
+        [64] 關於單一登入
+      - 將驗證新增至 Bot
+        [67] 將驗證新增至 Bot
+      - 將單一登錄新增至 Bot
+        [86] 將單一登入新增至 Bot
+    - 增強式驗證
+      [96] Direct Line 增強驗證
+    - 安全性指導方針
+      [100] Bot Framework 安全性指導方針
+  - 概念
+    - 機器人
+      - Bot 的運作方式
+        [104] Microsoft Bot Framework 的基本概念
+      - 管理狀態
+        [114] 
+      - 事件驅動對話
+        [119] 使用活動處理程式的事件驅動交談
+      - 對話框連結庫
+        [123] 對話方塊程式庫
+      - 瀑布式對話
+        [128] 關於元件和瀑布式對話
+      - 中介軟體
+        [135] 中介軟體
+      - 自然語言理解
+        [140] 自然語言理解
+      - 瞭解回應 Bot 的結構
+        [147] 瞭解回應 Bot 的結構
+    - 適用於 Microsoft Teams 的 Bot 如何運作
+      [153] Microsoft Teams Bot 的運作方式
+    - Azure AI Bot Service 中的區域化
+      [158] Azure AI Bot Service 中的區域化
+    - 監視器
+      [160] 監視 Azure AI Bot 服務
+    - 技能
+      - 關於技能
+        [169] 技能概觀
+      - 關於技能取用者
+        [174] 關於技能取用者
+    - 自適性表達式
+      [177] 自適性表達式
+    - 語言產生
+      [181] 語言產生
+  - 作法
+    - 設計
+      - Bot 設計的準則
+        [183] 對話式使用者體驗
+      - 第一個互動
+        [185] 設計 Bot 的第一個使用者互動
+      - 設計 Bot 元素
+        - 設計和控制對話流程
+          [188] 設計和控制對話流程
+        - 設計 Bot 導覽
+          [191] 設計 Bot 導覽
+        - 設計使用者體驗
+          [196] 設計使用者體驗
+      - 模式
+        - 知識庫
+          [201] 設計知識 Bot
+        - 交接給人類
+          [205] 將交談從 Bot 轉換至人類
+        - 應用程式中的 Bot
+          [210] 在應用程式中內嵌 Bot
+        - 網站中的 Bot
+          [212] 在網站中內嵌 Bot
+    - 開發
+      - 傳送和接收簡訊
+        [214] 傳送及接收文字訊息
+      - 將媒體新增至訊息
+        [217] 使用 Bot Framework SDK 傳送媒體附件
+      - 新增按鈕以引導用戶動作
+        [228] 輸入的 [使用] 按鈕
+      - 儲存使用者和對話資料
+        [230] 儲存使用者和對話資料
+      - 提示用戶輸入
+        [237] 建立您自己的提示以收集使用者輸入
+      - 傳送歡迎訊息給使用者
+        [246] 傳送歡迎訊息給使用者
+      - 傳送主動式通知給使用者
+        [255] 傳送主動式通知給使用者
+      - 管理長時間執行的作業
+        [261] 管理長時間執行作業
+      - 實作循序對話流程
+        [275] 實作循序對話流程
+      - 管理對話框複雜度
+        [286] 管理對話框複雜度
+      - 使用分支和迴圈建立進階交談流程
+        [292] 使用分支和迴圈建立進階交談流程
+      - 處理用戶中斷
+        [304] 處理用戶中斷
+      - 讓交談過期
+        [312] 讓交談過期
+      - 語言理解
+        - 將自然語言理解新增至您的 Bot
+          [318] 將自然語言理解新增至您的 Bot
+        - 使用自定義問題回答問題
+          [326] 使用問答來回答問題
+        - 使用 QnA Maker 回答用戶的問題
+          [329] 使用 QnA Maker 回答問題
+        - 使用 Orchestrator 進行意圖解析
+          [335] 搭配 Orchestrator 使用多個 LUIS 和 QnA模型
+      - 直接寫入記憶體
+        [344] 直接寫入記憶體
+      - 為您的 Bot 實作自訂儲存空間
+        [368] 為您的 Bot 實作自訂儲存空間
+      - 技能
+        - 實作技能
+          [382] 實作技能
+        - 撰寫技能指令清單
+          [393] 撰寫技能資訊清單
+        - 使用技能內的對話框
+          [407] 使用技能內的對話框
+        - 實作技能取用者
+          [420] 實作技能取用者
+        - 使用對話框來取用技能
+          [436] 使用對話框來取用技能
+      - 將遙測資料新增至 Bot
+        [448] 將遙測新增至 Bot
+      - 將遙測新增至 QnA Bot
+        [458] 將遙測新增至 QnA Maker Bot
+      - 分析 Bot 的遙測數據
+        [469] 分析 Bot 的遙測數據
+      - 在 Bot 中使用 Direct Line Speech
+        [488] 在 Bot 中使用 Direct Line Speech
+    - Test
+      - 單元測試 Bot
+        [492] 如何單元測試 Bot
+      - 將追蹤活動新增至 Bot
+        [508] 將追蹤活動新增至 Bot
+    - 偵錯
+      - 偵錯指導方針
+        [512] 偵錯指導方針
+      - 使用 IDE 對 Bot 進行偵錯
+        [516] 對 SDK 優先 Bot 進行偵錯
+      - 使用 Bot Framework 模擬器進行偵錯
+        [520] 使用模擬器測試及偵錯
+      - 使用 ngrok 從任何通道對 Bot 進行偵錯
+        [529] 使用 ngrok 從任何通道對 Bot 進行偵錯
+      - 偵錯技能或技能取用者
+        [532] 偵錯技能或技能取用者
+      - 使用檢查中間件對 Bot 進行偵錯
+        [534] 使用檢查中間件對 Bot 進行偵錯
+      - 使用文字記錄檔對 Bot 進行偵錯
+        [542] 使用文字記錄檔進行 Bot 偵錯
+    - 部署
+      - 將 Bot 部署至 Azure
+        [547] 布建和發佈 Bot
+      - 布建 App Service 資源
+        [558] 使用 Azure CLI 建立 App Service 資源
+      - 布建 Azure Bot 資源
+        [563] 使用 Azure CLI 建立或更新 Azure Bot 資源
+      - 設定 Azure Government Bot
+        [567] 設定美國政府客戶的 Bot Framework Bot
+      - 設定持續部署
+        [571] 設定持續部署
+    - 管理
+      - 管理 Bot
+        [574] 管理 Bot
+      - 向 Azure 註冊 Bot
+        [578] 向 Azure 註冊 Bot
+      - 可靠性指引
+        [585] Azure AI Bot Service 的可靠性指引
+      - 設定 Bot 設定
+        [586] 設定 Bot 註冊設定
+      - 通道
+        - 將 Bot 連接至管道
+          [590] 設定 Bot 以在一或多個通道上執行
+        - 通道參考
+          [593] 通道參考
+        - 實作通道特有功能
+          [600] 實作通道特定的功能
+        - Direct Line
+          - 關於 Direct Line
+            [612] 關於 Direct Line
+          - 連線 至 Direct Line
+            [614] 將機器人連接到 Direct Line
+          - 連線 至 Direct Line Speech
+            [619] 將 Bot 連線至 Direct Line Speech
+          - Direct Line App Service 擴充功能
+            - Direct Line App Service 擴充功能
+              [621] Direct Line App Service 擴充功能
+            - 關於網路隔離
+              [623] Azure AI Bot Service 中的網路隔離
+            - 設定 .NET Bot 以進行擴充功能
+              [625] 設定 .NET Bot 以進行擴充功能
+            - 為擴充功能設定 Node.js Bot
+              [630] 設定 Node.js Bot 以進行擴充功能
+            - 建立擴展名為的 .NET 用戶端
+              [634] 建立 .NET 用戶端以連線至 Direct LineApp Service 擴充功能
+            - 搭配 網路聊天 使用擴充功能
+              [637] 搭配 Direct Line App Service 擴充功能使用網路聊天
+            - 設定虛擬網路
+              [640] 在虛擬網路中使用 Direct Line AppService 擴充功能
+            - 設定網路隔離
+              [642] 設定網路隔離
+        - Alexa
+          [647] 將 Bot 連線至 Alexa
+        - Azure Communication Services Chat
+          [652] 連線 Bot Azure 通訊服務聊天
+        - 電子郵件
+          [654] 連線 Bot 傳送電子郵件
+        - Facebook
+          [658] 將 Bot 連線至 Facebook
+        - GroupMe
+          [663] 將 Bot 連線 至 GroupMe
+        - LINE
+          [665] 將 Bot 連線至 LINE
+        - Microsoft Teams
+          [669] 將 Bot 連線至 Microsoft Teams
+        - M365 （預覽）
+          [672] 將 Bot 連線至 Microsoft 365
+        - 全通路
+          [674] 將 Bot 連線至 Omnichannel 通道
+        - Outlook （預覽）
+          [676] 將 Bot 連線至 Outlook 通道以進行可採取動作的郵件 （預覽）
+        - 搜尋 （預覽）
+          [679] 連線 Bot 進行搜尋 （預覽）
+        - Skype
+          [689] 將 Bot 連線至 Skype
+        - Slack
+          [691] 將 Bot 連線 至 Slack
+        - Telegram
+          [696] 將 Bot 連線至 Telegram
+        - Twilio (SMS)
+          [699] 將 Bot 連線 至 Twilio （SMS）
+        - WeChat
+          [702] 將 Bot 連線至 WeChat
+        - 網路聊天
+          [703] 連線 Bot 網路聊天
+        - 其他通道
+          [709] 其他通道
+        - 使用 Azure CLI 連線 至通道
+          [711] 使用 Azure CLI 將 Bot 連線至通道
+  - 參考
+    - v4 SDK 參考
+      - .NET SDK v4
+      - JavaScript SDK v4
+      - Java SDK v4
+      - Python SDK v4
+    - 監視數據參考
+      [716] Azure AI Bot Service 監視數據參考
+    - REST API 參考資料
+      - Bot Framework REST API
+        - 概觀
+          [726] Bot Framework REST API
+        - 重要概念
+          [727] Bot 連線 or API 中的重要概念
+        - 使用 REST 建立 Bot
+          [730] 使用 Bot 連接器 API 建立 Bot 連接器服務
+        - API 參考
+          [735] Bot Framework 連線or 服務的 API 參考
+      - 連線 or API
+        - 驗證
+          [765] 使用 Bot 連線 or API 進行驗證
+        - 活動概觀
+        - 建立訊息
+          [778] 使用 Bot 連接器 API 建立訊息
+        - 傳送和接收訊息
+          [780] 使用 Bot 連接器 API 傳送和接收訊息
+        - 將媒體附件新增至訊息
+          [784] 使用 Bot 連接器 API 將媒體附件新增至訊息
+        - 將豐富卡片新增至訊息
+          [788] 使用 Bot 連接器 API 將豐富卡片附件新增至訊息
+        - 將語音新增至訊息
+          [796] 使用 Bot 連接器 API 將語音新增至訊息
+        - 將輸入提示新增至訊息
+          [798] 使用 Bot 連接器 API 將輸入提示新增至訊息
+        - 將建議的動作新增至訊息
+          [801] 使用 Bot 連接器 API 將建議的動作新增至訊息
+        - 實作通道特有功能
+          [803] 使用 Bot 連接器 API 實作通道特定功能
+        - 管理狀態數據
+          [809] 使用 REST API 管理狀態資料
+      - Direct Line API 3.0
+        - 重要概念
+          [810] Direct Line API 3.0 中的重要概念
+        - 驗證
+          [812] Direct Line API 3.0 中的驗證
+        - 開始交談
+          [820] 在 Direct Line API 3.0 中啟動交談
+        - 重新連線至交談
+          [822] 重新連線至 Direct Line API 3.0 中的交談
+        - 將活動傳送至 Bot
+          [824] 將活動傳送至 Direct Line API 3.0 中的Bot
+        - 從 Bot 接收活動
+          [830] 從 Direct Line API 3.0 中的 Bot 接收活動
+        - 結束交談
+          [835] 結束 Direct Line API 3.0 中的交談
+        - API 參考
+          [837] API 參考 - Direct Line API 3.0
+        - Swagger 檔案
+      - Direct Line API 1.1
+        - 重要概念
+          [846] 直接線路 API 1.1 中的重要概念
+        - 驗證
+          [848] Direct Line API 1.1 中的驗證
+        - 開始交談
+          [852] 在 Direct Line API 1.1 中啟動交談
+        - 將訊息傳送至 Bot
+          [854] 在 Direct Line API 1.1 中將訊息傳送至 Bot
+        - 從 Bot 接收訊息
+          [859] 從 Direct Line API 1.1 中的 Bot 接收訊息
+        - API 參考
+          [861] 
+        - Swagger 檔案
+    - Bot Framework CLI 工具
+      [866] Bot Framework CLI 工具
+    - 調適型對話方塊
+      - 事件和觸發程式
+        [867] 調適型對話方塊中的事件和觸發程式
+      - 動作
+        [871] 調適型對話中的動作 - 參考指南
+      - 輸入
+        [875] 調適型對話中的輸入 - 參考指南
+      - 辨識器
+        [882] 調適型對話方塊中的辨識器
+      - 記憶體範圍
+        [886] 在調適型對話方塊中管理狀態 - 參考指南
+    - 自適性表達式
+      - 預先建置的函式
+        [890] 自適性表達式預先建置的函式
+      - API 參考
+        [1039] 調適型運算式的 API 參考
+    - LG
+      - API 參考
+        [1040] 產生語言的 API 參考
+      - 結構化回應範本
+        [1041] 結構化回應範本
+      - 從 LG 插入的函式
+        [1049] 從語言產生程式庫插入的函式
+    - 檔案格式
+      - .lg 檔案格式
+        [1055] .lg 檔案格式
+      - .lu 檔案格式
+        [1069] .lu 檔案格式
+      - .qna 檔案格式
+        [1089] .qna 檔案格式
+    - 實體和活動類型
+      [1096] 實體和活動類型
+    - OAuth URL 支援
+      [1100] 
+    - Azure 原則內建
+      [1102] 適用于 Azure AI Bot Service的內建定義Azure 原則
+  - 資源
+    - 取得支援
+      [1103] Bot Framework 其他資源
+    - App Insights 金鑰
+      [1105] Application Insights 金鑰
+    - Bot 服務合規性
+      [1109] Azure AI Bot Service 中的合規性
+    - Bot 檢閱指導方針
+      [1111] Bot 檢閱指導方針
+    - 標識元指南
+      [1114] Bot Framework 中的識別碼欄位
+    - 實作 Power Virtual Agent 的技能
+      [1118] 實作技能以用於 Power Virtual Agents
+    - 使用者代理程式要求
+      [1121] Bot Framework 使用者代理程式要求
+    - 常見問題集
+      - 索引
+        [1122] 背景和可用性
+          Bot Framework 一般
+          生態
+      - 可用性
+        [1124] 為什麼 Microsoft 會開發 BotFramework？
+          如何將 Azure AI Bot 服務從一個區域移轉至另一個區域？
+          如何離線執行 Bot？
+      - 一般
+        [1127] 輸入活動為何不會執行任何動作？
+          連線or 程式庫與 SDK 中的建立器程式庫有何差異？
+          使用者訊息與 HTTPS 方法呼叫如何相關？
+          「主動」和「反應」之間的差異為何？
+          如何傳送主動式訊息給使用者？
+      - 生態系統
+        [1130] 如何?讓 Bot Framework 模擬器在公司Proxy 後方連線到 localhost？
+          何時會將更多交談體驗新增至 BotFramework？
+          我有想要使用 Bot Framework 設定的通道。 我可以與 Microsoft 合作嗎？
+          如果我想要建立適用于 Microsoft Teams的 Bot，我應該使用哪些工具和服務？
+      - 安全性
+        [1135] 向 Bot Framework 註冊的 Bot 會收集個人資訊嗎？ 如果是，如何確定資料是安全的？ 隱私權呢？
+          我可以在自己的伺服器上裝載 Bot 嗎？
+          如何禁止或移除服務的 Bot？
+          我需要在公司防火牆中允許列出哪些特定URL，才能存取 Bot Framework 服務？
+      - Azure
+        [1140] 
+    - 疑難排解
+      - 索引
+        [1148] 針對索引進行疑難排解
+      - 一般
+        [1150] Azure AI Bot Service Bot 的一般疑難排解
+      - 組態
+        [1160] 針對 Bot 組態問題進行疑難排解
+      - HTTP 500 錯誤
+        [1163] 針對 HTTP 500 內部服務錯誤進行疑難排解
+      - 驗證
+        [1168] 對 Bot Framework 驗證進行疑難排解
+    - Bot Framework 架構
+      - 活動架構
+      - 卡片架構
+      - 文字記錄架構
+    - 虛擬小幫手
+      [1175] 虛擬助理概觀
+    - 網路聊天
+      - 概觀
+        [1176] 網路聊天 概觀
+      - 自訂
+        [1182] 網路聊天自訂
+      - 將單一登錄新增至 網路聊天
+        [1192] 具有網路聊天的單一登入

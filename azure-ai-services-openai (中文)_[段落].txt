@@ -1,0 +1,257 @@
+- ---< azure-ai-services-openai (中文).pdf >---
+  - Azure OpenAI 服務文件
+    [1] Azure OpenAI 服務文件
+  - 概觀
+    - 什麼是 Azure OpenAI?
+      [4] 什麼是 Azure OpenAI 服務？
+    - 配額和限制
+      [8] 
+    - 模型
+      [10] 
+    - 模型淘汰
+      [21] Azure OpenAI 服務模型淘汰和淘汰
+    - 定價
+    - 最新功能
+      [26] Azure OpenAI 服務的新功能
+    - 程式設計語言/SDK
+      [41] Azure OpenAI 支援的程式設計語言
+    - Azure OpenAI 常見問題集
+      [42] 資料及隱私權
+一般
+  - 快速入門
+    - 助理 （預覽）
+      [53] 快速入門：開始使用 Azure OpenAIAssistants （預覽版）
+    - 自動完成
+      [61] 快速入門：開始使用 Azure OpenAI 服務來產生文字
+    - 聊天
+      [65] 快速入門：開始使用 GPT-35-Turbo 和GPT-4 搭配 Azure OpenAI 服務
+    - GPT-4 Turbo with Vision
+      [71] 快速入門：在您的 AI 聊天中使用影像
+    - DALL-E
+      [75] 快速入門：使用 Azure OpenAI 服務產生影像
+    - 使用您的數據
+      [79] 快速入門：使用您自己的數據與 AzureOpenAI 模型聊天
+    - 耳語
+      [85] 快速入門：使用 Azure OpenAI Whisper模型語音轉換文字
+    - 文字到語音轉換 （預覽）
+      [89] 快速入門：使用 Azure OpenAI 服務進行文字到語音轉換
+  - 概念
+    - 助理
+      [92] Azure OpenAI Assistants API （預覽版）
+    - 濫用監視
+      [94] 濫用監視
+    - 內容篩選
+      [95] 內容篩選
+    - 自訂大型語言模型 （LLM）
+      [117] 開始使用自訂大型語言模型 （LLM）
+    - Embeddings
+      [120] 瞭解 Azure OpenAI 服務中的內嵌
+    - 微調
+      [122] 何時使用 Azure OpenAI 微調
+    - GPT-4 Turbo with Vision
+      [126] 具有視覺概念的 GPT-4 Turbo
+    - Red Teaming 大型語言模型 (LLM)
+      [133] 規劃大型語言模型及其應用程式的紅色小組
+    - 內容認證
+      [137] 內容認證
+    - 提示工程簡介
+      [139] 提示工程簡介
+    - 提示工程技術
+      [146] 提示工程技術
+    - GPT-4 Turbo with Vision 的提示工程
+      [157] 使用 GPT-4 Turbo 搭配視覺進行提示工程簡介
+    - 模型版本
+      [166] Azure OpenAI 服務模型版本
+    - 佈建的輸送量單位 （PTU）
+      [168] 什麼是布建輸送量？
+    - 系統訊息範本
+      [174] 大型語言模型 (LLM) 的系統訊息架構和範本建議
+    - 舊版模型
+      [179] Azure OpenAI 服務舊模型
+  - 操作方式
+    - API 版本生命週期
+      [184] Azure OpenAI API 預覽生命週期
+    - 助理 （預覽）
+      - 開始使用小幫手
+        [186] 開始使用 Azure OpenAI Assistants （預覽版）
+      - 工具
+        - 程式代碼解釋器
+          [209] Azure OpenAI Assistants Code 解釋器（預覽）
+        - 函式呼叫
+          [214] Azure OpenAI Assistants 函式呼叫
+    - 完成與聊天完成
+      - GPT-35-Turbo 與 GPT-4
+        [218] 使用 GPT-3.5-Turbo 和 GPT-4 模型
+      - GPT-4 Turbo with Vision
+        [229] 搭配視覺使用 GPT-4 Turbo
+      - DALL-E
+        [246] 瞭解如何使用 DALL-E 模型
+      - 函式呼叫
+        [251] 如何搭配 Azure OpenAI 服務使用函式呼叫 (預覽)
+      - 完成
+        [262] 瞭解如何產生或操作文字
+      - JSON 模式
+        [273] 瞭解如何使用 JSON 模式
+      - 可重現的輸出
+        [276] 瞭解如何使用可重現的輸出 （預覽）
+      - 使用程式碼
+        [282] Codex 模型和 Azure OpenAI 服務
+      - 搭配大型數據集使用
+        [291] 搭配大型數據集使用 Azure OpenAI
+      - 部署和使用 Web 應用程式
+        [300] 使用 Azure OpenAI Web 應用程式
+      - 舊版
+        - 聊天標記語言 （ChatML）
+          [305] 聊天標記語言 ChatML （預覽）
+    - 內容篩選
+      [313] 如何使用 Azure OpenAI 服務設定內容篩選
+    - 使用封鎖清單
+      [321] 在 Azure OpenAI 中使用封鎖清單
+    - 風險與 保管庫監視
+      [330] 在 Azure OpenAI Studio 中使用風險和 保管庫 監視 （預覽）
+    - Embeddings
+      - 內嵌基本知識
+        [333] 了解如何使用 Azure OpenAI 產生內嵌
+      - 開始使用內嵌
+        [335] 教學課程: 探索 Azure OpenAI 服務內嵌和文件搜尋
+    - 微調
+      - 微調您的模型
+        [346] 使用微調自定義模型
+      - 函式呼叫
+        [366] 微調和函式呼叫
+    - 使用您的數據
+      - 文字資料
+        [369] 數據上的 Azure OpenAI
+      - 影像資料（預覽）
+        [387] 在 Azure OpenAI Studio 中使用 GPT-4Turbo 搭配視覺的影像來使用 AzureOpenAI 資料上的 Azure OpenAI
+      - 安全地在您的數據上使用 Azure OpenAI
+        [398] 安全地在您的數據上使用 Azure OpenAI
+      - 部署和使用 Web 應用程式
+        [414] 使用 Azure OpenAI Web 應用程式
+      - 使用 Azure Developer CLI
+        [419] 使用 Azure 開發人員 CLI 在您的數據上部署 Azure OpenAI 的資源
+    - 遷移至 OpenAI Python v1.x
+      [422] 移轉至 OpenAI Python API 連結庫 1.x
+    - 模型
+      - 管理模型
+        [432] 使用 Azure OpenAI 模型
+    - 網路和安全性
+      - 使用虛擬網路
+        [440] 設定 Azure AI 服務虛擬網路
+      - 待用資料加密
+        [455] Azure OpenAI 服務對待用資料的加密
+      - 受控識別
+        [461] 如何使用受控識別設定 Azure OpenAI 服務
+      - 安全地在您的數據上使用 Azure OpenAI
+        [464] 安全地在您的數據上使用 Azure OpenAI
+    - 服務管理
+      - 資源建立與模型部署
+        [480] 建立和部署 Azure OpenAI 服務資源
+      - OpenAI 與 Azure OpenAI (Python)
+      - 管理配額
+        [487] 管理 Azure OpenAI 服務配額
+      - 動態配額
+        [495] Azure OpenAI 動態配額 （預覽）
+      - 監視 Azure OpenAI
+        [499] 監視 Azure OpenAI 服務
+      - 上線至布建的輸送量單位 （PTU）
+        [509] 布建的輸送量單位上線
+      - 開始使用已布建的部署
+        [522] 開始在 Azure OpenAI 服務上使用布建的部署
+      - 規劃和管理成本
+        [529] 規劃管理 Azure OpenAI 服務的成本
+      - 效能和延遲
+        [535] 效能和延遲
+      - 角色型存取控制 (Azure RBAC)
+        [540] Azure OpenAI 服務的角色型存取控制
+      - 商務持續性和災害復原 （BCDR）
+        [547] Azure OpenAI 服務的商務持續性和災害復原 （BCDR） 考慮
+  - 教學課程
+    - Embeddings
+      [549] 教學課程: 探索 Azure OpenAI 服務內嵌和文件搜尋
+    - 微調 GPT-3.5-Turbo
+      [560] Azure OpenAI GPT-3.5 Turbo 微調教學課程
+    - 語音轉換語音聊天
+      [576] Azure OpenAI 語音轉換語音聊天
+  - 負責 AI
+    - 概觀
+      [584] Overview of Responsible AI practices forAzure OpenAI models
+    - 透明度注意事項
+      [593] Transparency Note for Azure OpenAIService
+    - 存取受限制
+      [608] Limited access to Azure OpenAI Service
+    - 管理辦法
+      [610] Code of conduct for Azure OpenAIService
+    - 資料、隱私權和安全性
+      [617] Data, privacy, and security for AzureOpenAI Service
+    - 客戶版權承諾
+      [624] Customer Copyright CommitmentRequired Mitigations
+  - 參考
+    - 小幫手 API 參考
+      - Python/REST
+        - 助理
+          [628] 小幫手 API （預覽） 參考
+        - 執行緒
+          [641] 小幫手 API （預覽） 線程參考
+        - 訊息
+          [646] 小幫手 API （預覽） 訊息參考
+        - 執行
+          [655] 小幫手 API （預覽） 執行參考
+      - SDK
+        - C#
+          [670] Azure OpenAI: OpenAI Assistants clientlibrary for .NET - version 1.0.0-beta.4
+        - Go
+        - Java
+          [680] Azure OpenAI: OpenAI Assistants clientlibrary for Java - version 1.0.0-beta.2
+        - JavaScript
+          [689] 適用於 JavaScript 的 Azure OpenAIAssistants 用戶端連結庫 - 1.0.0-beta.5 版
+    - 數據 API 參考上的 Azure OpenAI
+      - 數據上的 Azure OpenAI
+        [698] 數據 API 參考上的 Azure OpenAI
+      - 數據源 - Azure AI 搜尋
+        [703] 
+      - 數據源 - 適用於 MongoDB 的 Azure Cosmos DB 虛擬核心
+        [707] 
+      - 資料來源 - Azure 機器學習 索引 （預覽）
+        [711] 資料來源 - Azure 機器學習 索引 （預覽）
+      - 資料來源 - Elasticsearch （預覽）
+        [717] 
+      - 資料來源 - Pinecone （預覽）
+        [721] 資料來源 - Pinecone （預覽）
+      - 擷取 API （預覽）
+        [725] Ingestion Jobs
+    - Azure Resource Manager/Bicep/Terraform
+      [726] 
+    - Azure CLI
+      [731] az cognitiveservices
+    - Go
+    - Java
+      [736] com.azure.ai.openai
+    - JavaScript
+      [737] @azure/openai package
+    - .NET
+      [746] Azure.AI.OpenAI 命名空間
+    - REST API (完成與內嵌)
+      [748] Azure OpenAI Service REST API 參考
+    - REST API (微調)
+      [778] Fine Tuning
+    - REST API (資源建立與部署)
+      [779] 
+    - 範本
+      - 擷取增強世代 （RAG） 企業聊天
+        - C#
+          [786] 開始使用運用 RAG 的 .NET 企業聊天範例
+        - Java
+          [799] 使用RAG開始使用Java企業聊天範例
+        - JavaScript
+          [810] 使用RAG開始使用JavaScript企業聊天範例
+        - Python
+          [821] 使用RAG開始使用 Python 企業聊天範例
+  - 資源
+    - 支援和協助選項
+      [833] Azure AI 服務支援和協助選項
+    - Azure OpenAI 定型簡介
+    - Azure OpenAI 範例
+    - 區域支援
+    - 使用條款
+    - Azure 合規性供應項目

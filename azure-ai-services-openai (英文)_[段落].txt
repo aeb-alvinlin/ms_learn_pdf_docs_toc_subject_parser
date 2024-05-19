@@ -1,0 +1,258 @@
+- ---< azure-ai-services-openai (英文).pdf >---
+  - Azure OpenAI Service Documentation
+    [1] Azure OpenAI Service documentation
+  - Overview
+    - What is Azure OpenAI?
+      [4] What is Azure OpenAI Service?
+    - Quotas and limits
+      [9] 
+    - Models
+      [11] 
+    - Model retirements
+      [21] Azure OpenAI Service modeldeprecations and retirements
+    - Pricing
+    - What's new
+      [26] What's new in Azure OpenAI Service
+    - Programming languages/SDKs
+      [43] Azure OpenAI supported programminglanguages
+    - Azure OpenAI FAQ
+      [44] Data and Privacy
+General
+  - Quickstarts
+    - Assistants (preview)
+      [58] Quickstart: Get started using AzureOpenAI Assistants (Preview)
+    - Completions
+      [66] Quickstart: Get started generating textusing Azure OpenAI Service
+    - Chat
+      [71] Quickstart: Get started using GPT-35-Turbo and GPT-4 with Azure OpenAIService
+    - GPT-4 Turbo with Vision
+      [78] Quickstart: Use images in your AI chats
+    - DALL-E
+      [82] Quickstart: Generate images with AzureOpenAI Service
+    - Use your data
+      [86] Quickstart: Chat with Azure OpenAImodels using your own data
+    - Whisper
+      [91] Quickstart: Speech to text with theAzure OpenAI Whisper model
+    - Text to speech (preview)
+      [95] Quickstart: Text to speech with theAzure OpenAI Service
+  - Concepts
+    - Assistants
+      [99] Azure OpenAI Assistants API (Preview)
+    - Abuse monitoring
+      [102] Abuse Monitoring
+    - Content filtering
+      [104] Content filtering
+    - Customizing Large Language Models (LLMs)
+      [126] Getting started with customizing a largelanguage model (LLM)
+    - Embeddings
+      [130] Understand embeddings in AzureOpenAI Service
+    - Fine-tuning
+      [132] When to use Azure OpenAI fine-tuning
+    - GPT-4 Turbo with Vision
+      [136] GPT-4 Turbo with Vision concepts
+    - Red teaming large language models (LLMs)
+      [144] Planning red teaming for largelanguage models (LLMs) and theirapplications
+    - Content credentials
+      [149] Content Credentials
+    - Intro to prompt engineering
+      [151] Introduction to prompt engineering
+    - Prompt engineering techniques
+      [160] Prompt engineering techniques
+    - Prompt engineering for GPT-4 Turbo with Vision
+      [174] Introduction to prompt engineeringwith GPT-4 Turbo with Vision
+    - Model versions
+      [185] Azure OpenAI Service model versions
+    - Provisioned throughput units (PTU)
+      [187] What is provisioned throughput?
+    - System message templates
+      [194] System message framework andtemplate recommendations for LargeLanguage Models (LLMs)
+    - Legacy models
+      [200] Azure OpenAI Service deprecatedmodels
+  - How-to
+    - API version lifecycle
+      [205] Azure OpenAI API preview lifecycle
+    - Assistants (preview)
+      - Getting started with Assistants
+        [208] Getting started with Azure OpenAIAssistants (Preview)
+      - Tools
+        - Code Interpreter
+          [231] Azure OpenAI Assistants CodeInterpreter (Preview)
+        - Function calling
+          [236] Azure OpenAI Assistants function calling
+    - Completions & chat completions
+      - GPT-35-Turbo & GPT-4
+        [240] Work with the GPT-3.5-Turbo and GPT-4models
+      - GPT-4 Turbo with Vision
+        [252] Use GPT-4 Turbo with Vision
+      - DALL-E
+        [270] Learn how to work with the DALL-Emodels
+      - Function calling
+        [276] How to use function calling with AzureOpenAI Service (Preview)
+      - Completions
+        [288] Learn how to generate or manipulatetext
+      - JSON mode
+        [301] Learn how to use JSON mode
+      - Reproducible output
+        [304] Learn how to use reproducible output(preview)
+      - Work with code
+        [310] Codex models and Azure OpenAIService
+      - Use with large datasets
+        [320] Use Azure OpenAI with large datasets
+      - Deploy and use web apps
+        [330] Use the Azure OpenAI web app
+      - Legacy
+        - Chat Markup Language (ChatML)
+          [335] Chat Markup Language ChatML(Preview)
+    - Content filtering
+      [344] How to configure content filters withAzure OpenAI Service
+    - Use blocklists
+      [353] Use a blocklist in Azure OpenAI
+    - Risks & Safety Monitoring
+      [363] Use Risks & Safety monitoring in AzureOpenAI Studio (preview)
+    - Embeddings
+      - Embeddings basics
+        [366] Learn how to generate embeddings withAzure OpenAI
+      - Getting started with embeddings
+        [368] Tutorial: Explore Azure OpenAI Serviceembeddings and document search
+    - Fine-tuning
+      - Fine-tuning your model
+        [381] Customize a model with fine-tuning
+      - Function calling
+        [402] Fine-tuning and function calling
+    - Use your data
+      - Text data
+        [405] Azure OpenAI On Your Data
+      - Image data (preview)
+        [425] Azure OpenAI on your data with imagesusing GPT-4 Turbo with Vision (preview)in Azure OpenAI studio
+      - Use Azure OpenAI On Your Data securely
+        [437] Securely use Azure OpenAI On YourData
+      - Deploy and use web apps
+        [454] Use the Azure OpenAI web app
+      - Use the Azure Developer CLI
+        [459] Use the Azure Developer CLI to deployresources for Azure OpenAI On YourData
+    - Migrate to OpenAI Python v1.x
+      [462] Migrating to the OpenAI Python APIlibrary 1.x
+    - Models
+      - Manage models
+        [472] Working with Azure OpenAI models
+    - Networking and security
+      - Use virtual networks
+        [480] Configure Azure AI services virtualnetworks
+      - Encryption of data at rest
+        [497] Azure OpenAI Service encryption ofdata at rest
+      - Managed identity
+        [506] How to configure Azure OpenAI Servicewith managed identities
+      - Use Azure OpenAI on your data securely
+        [509] Securely use Azure OpenAI On YourData
+    - Service management
+      - Resource creation & model deployment
+        [526] Create and deploy an Azure OpenAIService resource
+      - OpenAI vs Azure OpenAI (Python)
+        [534] How to switch between OpenAI andAzure OpenAI endpoints with Python
+      - Manage quota
+        [538] Manage Azure OpenAI Service quota
+      - Dynamic quota
+        [547] Azure OpenAI Dynamic quota (Preview)
+      - Monitor Azure OpenAI
+        [551] Monitoring Azure OpenAI Service
+      - Onboarding to Provisioned Throughput Units (PTU)
+        [562] Provisioned throughput unitsonboarding
+      - Get started with Provisioned Deployments
+        [578] Get started using ProvisionedDeployments on the Azure OpenAIService
+      - Plan and manage costs
+        [586] Plan to manage costs for Azure OpenAIService
+      - Performance & latency
+        [593] Performance and latency
+      - Role-based access control (Azure RBAC)
+        [599] Role-based access control for AzureOpenAI Service
+      - Business continuity & disaster recovery (BCDR)
+        [607] Business Continuity and DisasterRecovery (BCDR) considerations withAzure OpenAI Service
+  - Tutorials
+    - Embeddings
+      [609] Tutorial: Explore Azure OpenAI Serviceembeddings and document search
+    - Fine-tuning GPT-3.5-Turbo
+      [622] Azure OpenAI GPT-3.5 Turbo fine-tuning tutorial
+    - Speech to speech chat
+      [638] Azure OpenAI speech to speech chat
+  - Responsible AI
+    - Overview
+      [646] Overview of Responsible AI practices forAzure OpenAI models
+    - Transparency note
+      [655] Transparency Note for Azure OpenAIService
+    - Limited access
+      [670] Limited access to Azure OpenAI Service
+    - Code of conduct
+      [672] Code of conduct for Azure OpenAIService
+    - Data, privacy, and security
+      [679] Data, privacy, and security for AzureOpenAI Service
+    - Customer Copyright Commitment
+      [686] Customer Copyright CommitmentRequired Mitigations
+  - Reference
+    - Assistants API Reference
+      - Python/REST
+        - Assistants
+          [690] Assistants API (Preview) reference
+        - Threads
+          [703] Assistants API (Preview) threadsreference
+        - Messages
+          [708] Assistants API (Preview) messagesreference
+        - Runs
+          [718] Assistants API (Preview) runs reference
+      - SDK
+        - C#
+          [736] Azure OpenAI: OpenAI Assistants clientlibrary for .NET - version 1.0.0-beta.4
+        - Go
+        - Java
+          [746] Azure OpenAI: OpenAI Assistants clientlibrary for Java - version 1.0.0-beta.2
+        - JavaScript
+          [755] Azure OpenAI Assistants client libraryfor JavaScript - version 1.0.0-beta.5
+    - Azure OpenAI On Your Data API Reference
+      - Azure OpenAI On Your Data
+        [764] Azure OpenAI On Your Data APIReference
+      - Data source - Azure AI Search
+        [769] 
+      - Data source - Azure Cosmos DB for MongoDB vCore
+        [773] 
+      - Data source - Azure Machine Learning index (preview)
+        [777] 
+      - Data source - Elasticsearch (preview)
+        [782] 
+      - Data source - Pinecone (preview)
+        [786] Data source - Pinecone (preview)
+      - Ingestion API (preview)
+        [791] Ingestion Jobs
+    - Azure Resource Manager/Bicep/Terraform
+      [792] 
+    - Azure CLI
+      [797] az cognitiveservices
+    - Go
+    - Java
+      [802] com.azure.ai.openai
+    - JavaScript
+      [803] @azure/openai package
+    - .NET
+      [813] Azure.AI.OpenAI Namespace
+    - REST API (completions & embeddings)
+      [823] Azure OpenAI Service REST APIreference
+    - REST API (fine-tuning)
+      [856] Fine Tuning
+    - REST API (resource creation & deployment)
+      [857] 
+    - Templates
+      - Retrieval Augmented Generation (RAG) enterprise chat
+        - C#
+          [864] Get started with the .NET enterprisechat sample using RAG
+        - Java
+          [877] Get started with the Java enterprise chatsample using RAG
+        - JavaScript
+          [889] Get started with the JavaScriptenterprise chat sample using RAG
+        - Python
+          [900] Get started with the Python enterprisechat sample using RAG
+  - Resources
+    - Support and help options
+      [912] Azure AI services support and helpoptions
+    - Intro to Azure OpenAI training
+    - Azure OpenAI Samples
+    - Region support
+    - Terms of use
+    - Azure compliance offerings
