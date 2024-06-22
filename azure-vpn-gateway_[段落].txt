@@ -1,0 +1,329 @@
+- ---< azure-vpn-gateway.pdf >---
+  - VPN 閘道文件
+    [1] VPN 閘道文件
+  - 概觀
+    - 什麼是 VPN 閘道？
+      [4] 什麼是 Azure VPN 閘道？
+  - 教學課程
+    - 建立和管理 VPN 閘道
+      [10] 教學課程：使用 Azure 入口網站建立和管理 VPN 閘道
+    - 設定站對站連線
+      [18] 教學課程：在 Azure 入口網站中建立站對站 VPN 連線
+  - 概念
+    - 新功能
+      [35] Azure VPN 閘道的新增功能
+    - 遠端工作
+      - 遠端工作的支援
+        [36] 使用 Azure 網路服務啟用遠端工作
+      - 利用 Azure VPN
+        [40] 使用 Azure VPN 閘道 點對站遠端工作
+      - NVA 組態和遠端工作
+        [54] 遠端工作：遠端工作的網路虛擬裝置(NVA) 考量
+    - VPN 閘道常見問題集
+      [56] VPN 閘道常見問題集
+    - 關於 VPN 閘道設計
+      [96] VPN 閘道設計
+    - 關於 VPN 閘道設定
+      [101] 關於 VPN 閘道組態設定
+    - 關於閘道 SKU
+      [106] 關於閘道 SKU
+    - 關於 VPN 裝置
+      [113] 關於 VPN 裝置和站對站 VPN 閘道連線的IPsec/IKE 參數
+    - 關於密碼編譯需求
+      [122] 關於密碼編譯需求和 Azure VPN 閘道
+    - 關於 BGP 和 VPN 閘道
+      [129] 關於 BGP 和 VPN 閘道
+    - 關於高可用性連線
+      [131] 高可用性跨單位和 VNet 對 VNet 連線
+    - 關於點對站 VPN
+      [135] 關於點對站 VPN
+    - 關於點對站 VPN 路由
+      [143] 關於點對站 VPN 路由
+    - 關於 NAT 和 VPN 閘道
+      [152] 關於 Azure VPN 閘道上的 NAT
+    - 關於站對站強制通道
+      [160] 關於站對站組態的強制通道
+    - 關於可用性區域的區域備援閘道
+      [162] 關於在 Azure 可用性區域中的區域備援虛擬網路閘道
+    - 安全性
+      - 安全性基準
+        [166] 適用于 VPN 閘道 的 Azure 安全性基準
+    - 後端連線能力互通性
+      - 引用和測試設定
+        [175] Azure 中的互通性 - 測試設定
+      - 測試設定組態
+        [178] Azure 後端連線功能的互通性 - 測試組態詳細資料
+      - 控制項平面分析
+        [186] Azure 中的互通性 - 控制平面分析
+      - 資料平面分析
+        [191] Azure 中的互通性 - 資料平面分析
+  - 操作指南
+    - 建立和管理 VPN 閘道
+      - 建立 VPN 閘道
+        - Azure 入口網站
+          [206] 教學課程：使用 Azure 入口網站建立和管理 VPN 閘道
+        - Azure PowerShell
+          [214] 使用 PowerShell 來建立路由型 VPN 閘道
+        - Azure CLI
+          [219] 使用 CLI 建立路由式 VPN 閘道
+      - 驗證閘道連線
+        [225] 確認 VPN 閘道的連線
+      - 重設連線或閘道
+        [228] 重設 VPN 閘道或連線
+      - 刪除 VPN 閘道
+        - Azure 入口網站
+          [232] 使用入口網站刪除虛擬網路閘道
+        - Azure PowerShell
+          [235] 使用 PowerShell 刪除虛擬網路閘道
+    - 站對站
+      - 設定站對站連線
+        - Azure 入口網站
+          [243] 教學課程：在 Azure 入口網站中建立站對站 VPN 連線
+        - Azure PowerShell
+          [260] 使用 PowerShell 建立具有站對站 VPN 連線的 VNet
+        - Azure CLI
+          [271] 使用 CLI 建立具有站對站 VPN 連線的虛擬網路
+      - 新增或移除站對站連線
+        [282] 新增或移除 VPN 閘道站對站連線
+      - 連線到多個原則型 VPN 裝置
+        [289] 將 VPN 閘道連線至多個內部部署原則式VPN 裝置
+    - 使用 ExpressRoute 連線的站對站
+      - 並存連線
+        - Azure 入口網站
+          [297] 使用 Azure 入口網站設定 ExpressRoute和站對站並存連線
+        - Azure PowerShell
+          [304] 使用 PowerShell 設定 ExpressRoute 和站對站並存連線
+      - 透過私人對等互連的 VPN
+        [313] 透過 ExpressRoute 私人對等互連設定站對站 VPN 連線
+    - VNet 對 VNet
+      - 設定 VNet 對 VNet 連線
+        - Azure 入口網站
+          [318] 設定 VNet 對 VNet 的 VPN 閘道連線 -Azure 入口網站
+        - Azure PowerShell
+          [330] 使用 PowerShell 設定 VNet 對 VNet 的VPN 閘道連線
+        - Azure CLI
+          [344] 使用 Azure CLI 設定 VNet 對 VNet 的VPN 閘道連線
+      - 在部署模型間設定 VNet 對 VNet 連線
+        - Azure 入口網站
+          [359] 使用入口網站從不同的部署模型連接虛擬網路
+        - Azure PowerShell
+          [369] 使用 PowerShell 從不同的部署模型連接虛擬網路
+    - 點對站
+      - 伺服器組態
+        - Azure 憑證驗證
+          - 設定點對站 VPN
+            - Azure 入口網站
+              [380] 設定 P2S VPN 閘道連線的伺服器設定 -憑證驗證 - Azure 入口網站
+            - Azure PowerShell
+              [397] 設定 P2S VPN 憑證驗證的伺服器設定 -PowerShell
+          - 建立自我簽署憑證
+            - Azure PowerShell
+              [411] 使用 PowerShell 來產生並匯出點對站的憑證
+            - Makecert
+              [422] 使用 MakeCert 來產生並匯出點對站連線的憑證
+            - Linux - OpenSSL
+              [432] 產生和導出憑證 - Linux - OpenSSL
+            - Linux - strongSwan
+              [434] 產生並匯出憑證 - Linux (strongSwan)
+        - RADIUS 驗證
+          - 設定點對站 VPN
+            [437] 使用 RADIUS 驗證設定 VNet 的點對站連線：PowerShell
+          - 將點對站 VPN RADIUS 驗證與 NPS 伺服器整合
+            [447] 整合 Azure VPN 閘道 RADIUS 驗證與NPS 伺服器以進行多重要素驗證
+        - Microsoft Entra ID 驗證
+          - 設定點對站 VPN 和租用戶
+            [452] 設定 P2S VPN 閘道以進行 MicrosoftEntra ID 驗證
+          - 根據使用者和群組設定存取
+            [457] 設定 P2S 以根據使用者和群組進行存取 -Microsoft Entra 驗證
+          - 設定 Multi-Factor Authentication (MFA)
+            [465] 對 VPN 使用者啟用 Microsoft Entra 多重要素驗證 (MFA)
+        - 指定 P2S 連線的多個驗證類型
+          - 設定憑證和 Microsoft Entra 識別符驗證
+            [471] 使用多個驗證類型設定 VNet 的點對站VPN 連線：Azure 入口網站
+        - OpenVPN 通道類型
+          - 設定 OpenVPN 通道類型
+            [482] 針對點對站 VPN 閘道設定 OpenVPN
+          - 從 SSTP 移至 OpenVPN 通訊協定或 IKEv2
+            [484] 從 SSTP 轉換至 OpenVPN 通訊協定或IKEv2
+        - 設定 Always On 通道
+          - 裝置通道
+            [492] 設定 Always On VPN 裝置通道
+          - 使用者通道
+            [498] 設定 Always On VPN 使用者通道
+        - 點對站工作階段管理
+          [503] 點對站 VPN 工作階段管理
+        - 將自訂路由公告至點對站用戶端
+          [505] 公告 P2S VPN 用戶端的自訂路由
+        - 建立點對站的自訂 IPsec 原則
+          [509] 建立及設定點對站連線的自定義 IPsec 原則
+      - 用戶端組態
+        - 憑證驗證
+          - 用戶端工作流程和組態檔
+            - Windows 電腦
+              [511] 點對站 VPN 用戶端設定工作流程：憑證驗證 - Windows
+            - macOS-iOS
+              [515] 設定點對站 VPN 用戶端 - 憑證驗證 -macOS 和 iOS
+            - Linux
+              [537] 設定點對站 VPN 用戶端：憑證驗證 -Linux
+          - 設定 VPN 用戶端
+            - 安裝用戶端憑證
+              [548] 安裝用於 P2S 憑證驗證連線的用戶端憑證
+            - Windows 用戶端
+              - 原生 VPN 用戶端 - Windows
+                [550] 設定 P2S 憑證驗證連線的 Windows 原生VPN 用戶端
+              - Azure VPN 用戶端 - Windows
+                [553] 設定適用於 P2S 憑證驗證連線的 AzureVPN 用戶端 - Windows
+            - Linux 用戶端
+              - OpenVPN 用戶端
+                [566] 
+              - IKEv2 -strongSwan
+                [571] 
+            - macOS 和 iOS 用戶端
+              - 原生 VPN 用戶端 - macOS
+                [580] 設定點對站 VPN 用戶端 - 憑證驗證 -macOS 和 iOS
+              - OpenVPN 用戶端 - macOS
+                [602] 設定點對站 VPN 用戶端 - 憑證驗證 -macOS 和 iOS
+              - OpenVPN 用戶端 - iOS
+                [624] 設定點對站 VPN 用戶端 - 憑證驗證 -macOS 和 iOS
+        - RADIUS 驗證
+          - 憑證驗證用戶端
+            [646] 設定點對站 VPN 用戶端：RADIUS - 憑證驗證
+          - 密碼驗證用戶端
+            [654] 設定點對站 VPN 用戶端：RADIUS - 密碼驗證
+          - 其他驗證通訊協定
+            [664] 設定點對站 VPN 用戶端：RADIUS - 其他方法和通訊協定
+        - Microsoft Entra ID 驗證
+          - Windows
+            [667] 設定 Azure VPN Client - Microsoft Entra驗證 - Windows
+          - macOS
+            [679] 設定 Azure VPN Client - Microsoft Entra驗證 - macOS
+          - 產生設定檔
+            [690] 產生 P2S Azure VPN Client 設定檔的組態檔 - Microsoft Entra 驗證
+        - Azure VPN Client - 選用設定
+          [693] Azure VPN 用戶端 - 設定選擇性 DNS 和路由設定
+        - Azure VPN Client 版本
+          [698] Azure VPN Client 版本
+      - Intune - 部署 VPN 用戶端設定檔
+        [699] 建立自訂 Intune 設定檔以部署 VPN 用戶端設定檔
+    - 管理閘道 SKU
+      - 調整閘道 SKU 的大小
+        [703] 調整閘道 SKU 的大小
+      - 變更閘道 SKU
+        [706] 變更閘道 SKU
+      - 管理舊版的閘道 SKU
+        [709] 使用 VPN 閘道 舊版 SKU
+    - 路由、BGP 及 VNet 對等互連
+      - 設定適用於 VPN 閘道的 BGP
+        - Azure 入口網站
+          [716] 了解如何設定 Azure VPN 閘道的 BGP
+        - Azure PowerShell
+          [723] 如何為 VPN 閘道設定 BGP: PowerShell
+        - Azure CLI
+          [735] 如何設定 Azure VPN 閘道的 BGP：CLI
+      - BGP 診斷
+        [746] 檢視 BGP 計量和狀態
+      - 設定站對站強制通道
+        [755] 使用預設網站進行站對站連線的強制通道
+      - 設定 VNet 對等互連的閘道傳輸
+        [762] 為虛擬網路對等互連設定 VPN 閘道傳輸
+      - 使用啟用 BGP 的 VPN 閘道連接 AWS 和 Azure
+        [770] 如何使用啟用 BGP 的 VPN 閘道連接AWS 和 Azure
+    - 設定 VPN 閘道的 NAT
+      [782] 如何設定 Azure VPN 閘道的 NAT
+    - 修改區域網路閘道
+      - Azure 入口網站
+        [788] 使用 Azure 入口網站修改區域網路閘道設定
+      - Azure PowerShell
+        [791] 使用 PowerShell 修改區域網路閘道設定
+      - Azure CLI
+        [793] 使用 Azure CLI 修改區域網路閘道設定
+    - 設定 VPN 裝置
+      - 概觀和 Azure 組態
+        [796] 合作夥伴 VPN 裝置設定的概觀
+      - 下載 VPN 裝置組態指令碼
+        [801] 下載可供進行 S2S VPN 連線的 VPN 裝置設定指令碼
+      - 範例：Cisco ASA 裝置 (IKEv2/no BGP)
+        [805] 範例組態：Cisco ASA 裝置 (IKEv2/無BGP)
+    - 設定自訂的 IPsec/IKE 連線原則
+      - 點對站連線
+        [813] 建立及設定點對站連線的自定義 IPsec 原則
+      - 站對站和 VNet 對 VNet 連線
+        - Azure 入口網站
+          [815] 為 S2S VPN 和 VNet 對 VNet 設定自訂IPsec/IKE 連線原則：Azure 入口網站
+        - PowerShell
+          [825] 為 S2S VPN 和 VNet 對 VNet 設定自訂IPsec/IKE 連線原則：PowerShell
+    - 設定主動-主動閘道
+      - Azure 入口網站
+        [839] 使用入口網站設定主動-主動 VPN 閘道
+      - PowerShell
+        [847] 設定 Azure VPN 閘道的主動-主動 S2SVPN 連線
+    - 設定區域備援閘道
+      [862] 在可用性區域中建立區域備援虛擬網路閘道
+    - 監視
+      - 監視 VPN 閘道
+        [867] 監視 VPN 閘道
+      - 依計量設定警示
+        [869] 設定 VPN 閘道計量的警示
+      - 依資源記錄設定警示
+        [871] 從 VPN 閘道設定資源記錄事件的警示
+      - 監視 - 資料參考
+        [872] 監視 VPN 閘道 - 資料參考
+      - 設定封包擷取
+        [875] 設定 VPN 閘道的封包擷取
+    - 設定客戶控制的閘道維護作業
+      [886] 設定 VPN 閘道的客戶控制閘道維護 (預覽)
+    - 疑難排解
+      - 針對 VPN 閘道進行疑難排解
+        [891] 針對 VPN 閘道進行疑難排解
+      - 使用診斷記錄針對 Azure VPN 閘道進行疑難排解
+        [892] 使用診斷記錄針對 Azure VPN 閘道進行疑難排解
+      - 社群建議的 VPN 或防火牆裝置設定
+        [900] 適用於 Azure VPN 閘道的社群建議協力廠商 VPN 或防火牆裝置設定
+      - 設定和驗證 VNet 或 VPN 連線
+      - 驗證 VNet 的 VPN 輸送量
+        [902] 如何驗證傳輸到虛擬網路的 VPN 輸送量
+      - 點對站連線
+        - 點對站連線問題
+          [911] 疑難排解：Azure 點對站連線問題
+        - 點對站連線問題 - macOS X VPN 用戶端
+          [924] 針對來自 Mac OS X VPN 用戶端的點對站VPN 連線問題進行疑難排解
+        - 點對站 - Microsoft Entra ID 驗證
+          [928] 對 Microsoft Entra 驗證 VPN 用戶端進行疑難排解
+      - 站對站連線問題
+        - 站對站連線
+          [932] 疑難排解：Azure 站對站 VPN 連線無法連線並停止運作
+        - 站對站連線會間歇性中斷
+          [936] 疑難排解：Azure 站對站 VPN 間歇性中斷
+    - 傳統部署模型文章
+      - 設定站對站連線
+        [939] 使用 Azure 入口網站建立站對站連線 (傳統)
+      - 設定點對站連線
+        [947] 使用憑證驗證設定點對站連線 (傳統)
+      - 設定 VNet 對 VNet 連線
+        [960] 設定 VNet 對 VNet 連線 (傳統)
+      - 刪除 VPN 閘道
+        [970] 使用 PowerShell (傳統) 刪除虛擬網路閘道
+      - 新增或移除站對站連線
+        [975] 將站對站連線新增至具有現有 VPN 閘道連線的 VNet (傳統)
+      - 設定 VPN 閘道
+        [982] 使用 Azure 入口網站建立站對站連線 (傳統)
+      - 從傳統移轉到資源管理員
+        [990] 從傳統 VPN 閘道到 Resource Manager移轉
+  - 參考
+    - Azure PowerShell
+      [1021] 
+    - REST
+      [1025] Virtual Network Gateways
+    - REST (傳統)
+    - Azure CLI
+      [1027] az network vnet-gateway
+  - 資源
+    - Azure 藍圖
+    - 部落格
+    - Microsoft 問與答頁面
+    - 訂用帳戶與服務限制
+      [1064] 
+    - 定價
+    - 定價計算機
+    - SLA
+    - 影片

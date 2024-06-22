@@ -1,0 +1,937 @@
+- ---< azure-service-fabric.pdf >---
+  - Service Fabric 文件
+    [1] Azure Service Fabric 文件
+  - 概觀
+    - Service Fabric 受控叢集
+      [4] Service Fabric 受控叢集
+    - 什麼是 Service Fabric？
+      [7] Azure Service Fabric 概觀
+    - Service Fabric 的新功能？
+      [9] Service Fabric 的新功能
+  - 快速入門
+    - 使用 Azure 入口網站的受控叢集
+      [10] 快速入門：使用 Azure 入口網部署Service Fabric 受控叢集
+    - 使用 ARM 範本的受控叢集
+      [18] 快速入門：使用 Azure ResourceManager 範本部署 Service Fabric 受控叢集
+    - 使用 Azure 入口網站的 Service Fabric 叢集
+      [21] 快速入門：使用 Azure 入口網站建立Service Fabric 叢集
+    - 使用 Bicep 的 Service Fabric 叢集
+      [29] 快速入門：使用 Bicep 建立 ServiceFabric 叢集
+    - 使用 ARM 範本的 Service Fabric 叢集
+      [46] 快速入門：使用ARM樣本建立 ServiceFabric 叢集
+    - 建立 .NET 應用程式
+      [52] 快速入門：將 .NET 可靠服務應用程式部署至 Service Fabric
+    - 部署 Linux 容器應用程式
+      [61] 快速入門：將 Linux 容器部署至 ServiceFabric
+    - 部署 Windows 容器應用程式
+      [69] 快速入門：將 Windows 容器部署至Service Fabric
+    - Java 快速入門
+      - 部署 Spring Boot 應用程式
+        [77] 快速入門：在 Azure Service Fabric 上部署 Java Spring Boot 應用程式
+      - 部署 Reliable Services 應用程式
+        [86] 快速入門：將 Java 應用程式部署至 Linux上的 Azure Service Fabric
+  - 教學課程
+    - 建立 Service Fabric 受控叢集
+      - 1- 部署 Service Fabric 受控叢集
+        [92] 教學課程：部署 Service Fabric 受控叢集
+      - 2- 擴增受控叢集節點類型
+        [95] 教學課程：擴增 Service Fabric 受控叢集
+      - 3- 新增並移除受控叢集節點類型
+        [97] 教學課程：新增及移除 Service Fabric 受控叢集的節點類型
+      - 4- 連接到受控叢集並部署應用程式
+        [99] 
+    - 部署 .NET 應用程式
+      - 1- 建置 .NET 應用程式
+        [106] 教學課程：建立和部署含有 ASP.NET
+Core Web API 前端服務和具狀態後端服務的應用程式
+      - 2- 部署應用程式
+        [126] 教學課程：將 Service Fabric 應用程式部署到 Azure 中的叢集
+      - 3 - 啟用 HTTPS
+        [132] 教學課程：使用 Kestrel 將 HTTPS 端點新增至 ASP.NET Core Web API 前端服務
+      - 4 - 設定 CI/CD
+        [145] 教學課程：將搭配 CI/CD 的應用程式部署到 Service Fabric 叢集
+      - 5 - 監視與診斷
+        [157] 教學課程：使用 Application Insights 監視和診斷 Service Fabric 上的 ASP.NET
+Core 應用程式
+    - 部署 Java 應用程式
+      - 1 - 建置 Java 應用程式
+        [172] 教學課程：在 Azure Service Fabric 上使用 Java API 前端服務和具狀態後端服務建立應用程式
+      - 2 - 偵錯應用程式
+        [197] 教學課程：偵錯在本機 Service Fabric 叢集上部署的 Java 應用程式
+      - 3 - 部署應用程式
+        [201] 教學課程：將 Java 應用程式部署到 Azure中的 Service Fabric 叢集
+      - 4 - 監視與診斷
+        [209] 教學課程：使用 ELK 監視 Service Fabric應用程式
+      - 5 - 設定 CI/CD
+        [214] 教學課程：設定 Jenkins 環境以便在Service Fabric 上啟用 Java 應用程式的CI/CD
+    - 將現有的 .NET 應用程式容器化
+      - 1- 使用 Docker Compose 部署 .NET 應用程式
+        [221] 教學課程：將 Windows 容器中的 .NET 應用程式部署到 Azure Service Fabric
+      - 2 - 使用 CI/CD 部署容器應用程式
+        [232] 教學課程：將具有 CI/CD 的容器應用程式部署到 Service Fabric 叢集
+      - 3 - 監視您的容器
+        [244] 教學課程：使用 Azure 監視器記錄監視Service Fabric 上的 Windows 容器
+    - 建立 Linux 容器應用程式
+      - 1 - 建立容器映像
+        [252] 教學課程：在 Linux Service Fabric 叢集上建立容器映像
+      - 2 - 封裝和部署容器
+        [258] 教學課程：使用 Yeoman 封裝和部署容器作為 Service Fabric 應用程式
+      - 3 - 容錯移轉和調整
+        [270] 教學課程：示範透過 Service Fabric 容錯移轉與調整容器服務
+    - 在 Azure 上建立叢集
+      - 1 - 在 Azure 上建立叢集
+        [274] 
+      - 2 - 監視叢集
+        [287] 教學課程：在 Azure 中監視 ServiceFabric 叢集
+      - 3 - 調整叢集
+        [302] 教學課程：在 Azure 中調整 ServiceFabric 叢集
+      - 4 - 升級叢集執行階段
+        [323] 教學課程：在 Azure 中升級 ServiceFabric 叢集的執行階段
+      - 5- 刪除叢集
+        [328] 教學課程：刪除在 Azure 中執行的Service Fabric 叢集
+    - 建立獨立叢集
+      - 1 - 建立基礎結構
+        - 使用 AWS
+          [331] 教學課程：建立用來裝載 Service Fabric叢集的 AWS 基礎結構
+        - 使用 Azure
+          [337] 教學課程：建立用來裝載 Service Fabric叢集的 Azure VM 基礎結構
+      - 2- 設定 Service Fabric
+        [343] 教學課程：安裝和建立 Service Fabric 叢集
+      - 3- 將應用程式部署到叢集
+        [347] 教學課程：將應用程式部署在 ServiceFabric 獨立叢集上
+      - 4- 清除叢集並刪除基礎結構
+        [349] 本教學課程：清除獨立叢集
+  - 最佳作法
+    - 安全性
+      [351] Azure Service Fabric 安全性
+    - 網路
+      [361] 網路
+    - 計算規劃和調整
+      [367] Azure Service Fabric 的容量規劃和調整
+    - 基礎結構即程式碼
+      [374] 基礎結構即程式碼
+    - 監視和診斷
+      [378] Azure Service Fabric 的監視和診斷最佳做法
+    - 應用程式設計
+      [380] Azure Service Fabric 應用程式設計最佳做法
+    - 複本集大小設定
+      [383] 具狀態服務複本集大小設定
+    - 生產整備度檢查清單
+      [386] 生產整備度檢查清單
+  - 範例
+    - 程式碼範例
+    - Azure PowerShell
+      [388] Azure Service Fabric PowerShell 範例
+    - Service Fabric CLI
+      [389] Azure CLI (az) 和 Azure Service FabricCLI (sfctl) 範例
+  - 概念
+    - 了解微服務
+      [390] 為何要用微服務方式建置應用程式？
+    - 概觀
+      [398] 您想要了解 Service Fabric 嗎？
+    - 應用程式案例
+      [408] Service Fabric 應用程式案例
+    - 架構
+      [412] Service Fabric 架構
+    - 安全性
+      - Service Fabric 安全性
+        [415] Azure Service Fabric 安全性
+      - Service Fabric 應用程式安全性
+        [425] Service Fabric 應用程式和服務安全性
+      - Service Fabric 叢集安全性
+        [430] Service Fabric 叢集安全性案例
+      - Service Fabric 中的憑證型驗證
+        [436] Service Fabric 叢集中的 X.509 憑證型驗證
+      - Service Fabric 中的憑證管理
+        [449] 管理多個 Service Fabric 叢集中的憑證
+      - Azure 原則的安全性控制
+        [468] 適用於 Azure Service Fabric 的 Azure 原則 法規合規性控制
+      - Azure 安全性效能評定的安全性基準
+        [479] Azure 的安全性基準
+    - 詞彙
+      [481] Service Fabric 術語概觀
+    - 建置應用程式
+      - 建置應用程式概觀
+        [487] Service Fabric 程式設計模型概觀
+      - 容器
+        - 容器概觀
+          [489] Service Fabric 和容器
+        - Docker Compose
+          [493] Azure Service Fabric 中 DockerCompose 的部署支援 (預覽)
+        - 探查
+          [498] Service Fabric 探查
+        - 容器映像管理
+          [503] 
+      - 可靠的服務
+        - Reliable Services 概觀
+          [506] Reliable Services 概觀
+        - 服務分割
+          [511] 分割 Service Fabric 可靠服務
+        - 重新設定具狀態服務
+          [525] 在 Azure Service Fabric 中重新設定
+        - Reliable Services 生命週期 - C#
+          [527] Reliable Services 生命週期概觀
+        - Reliable Services 生命週期 - Java
+          [533] Reliable Services 生命週期
+        - 複本和執行個體生命週期
+          [538] 複本和執行個體
+        - 可靠的集合
+          [545] Azure Service Fabric 具狀態服務中可靠的集合簡介
+        - Reliable Collections 指導方針與建議
+          [547] Azure Service Fabric 中 ReliableCollection 的指導方針與建議
+        - 使用可靠的集合
+          [550] 使用可靠的集合
+        - 交易和鎖定
+          [559] Azure Service Fabric Reliable Collections中的交易和鎖定模式
+        - 可靠的並行佇列
+          [562] Azure Service Fabric 中的ReliableConcurrentQueue 簡介
+        - Reliable Collection 序列化
+          [571] Azure Service Fabric 中的 ReliableCollection 物件序列化
+      - Reliable Actors
+        - Reliable Actors 概觀
+          [575] Service Fabric Reliable Actor 簡介
+        - 架構
+          [582] Reliable Actors 如何使用 Service Fabric平台
+        - 實作服務層級功能
+          [586] 在動作項目服務中實作服務層級功能
+        - 生命週期與記憶體回收
+          [592] 動作項目生命週期、自動記憶體回收，以及手動刪除
+        - 狀態管理
+          [596] Reliable Actors 狀態管理
+        - Polymorphism
+          [601] Reliable Actors 架構中的多型
+        - 重新進入
+          [604] Reliable Actors 重新進入
+        - 類型序列化
+          [607] Service Fabric Reliable Actors 類型序列化的注意事項
+      - 客體可執行檔
+        [611] 將現有可執行檔部署至 Service Fabric
+      - 資源管理
+        [614] 資源管理
+    - 應用程式及服務
+      - 應用程式模型 (部分機器翻譯)
+        [625] 在 Service Fabric 中模型化應用程式
+      - 建立應用程式模型範本
+        [628] 
+      - 應用程式及服務資訊清單
+        [635] Service Fabric 應用程式和服務資訊清單
+      - 使用 StartupServices 模型的服務設定
+        [641] 簡介 Service Fabric 應用程式中的StartupServices.xml
+      - 應用程式和服務資訊清單範例
+        [647] Service Fabric 應用程式和服務資訊清單範例
+        - Reliable Services 應用程式和服務資訊清單範例
+          [649] Reliable Services 應用程式和服務資訊清單範例
+        - 多容器應用程式和服務資訊清單範例
+          [665] 多容器應用程式和服務資訊清單範例
+      - 裝載模型
+        [679] Azure Service Fabric 主控模型
+      - 裝載啟用和停用生命週期進階主題
+        [687] Azure Service Fabric 裝載生命週期
+      - 應用程式安全性
+        [695] Service Fabric 應用程式和服務安全性
+      - 服務狀態
+        [700] 服務狀態
+      - 應用程式的延展性
+        [701] Service Fabric 中的縮放比例
+      - 服務的可用性
+        [709] Service Fabric 服務的可用性
+      - 服務通訊
+        - 服務通訊概觀
+          [711] 連接至 Service Fabric 中的服務並與其進行通訊
+        - DNS 服務
+          [720] Azure Service Fabric 中的 DNS 服務
+        - 反向 proxy
+          [733] Azure Service Fabric 中的反向 Proxy
+        - ASP.NET Core
+          [740] Azure Service Fabric Reliable Services 中的 ASP.NET Core
+      - 應用程式生命週期
+        - 應用程式週期概觀
+          [762] Service Fabric 應用程式生命週期
+        - 應用程式升級
+          - 應用程式升級概觀
+            [768] Service Fabric 應用程式升級
+          - 組態
+            [773] 在 Visual Studio 中設定 Service Fabric 應用程式的升級
+          - 應用程式升級參數
+            [776] 應用程式升級參數
+          - 應用程式升級的資料序列化
+            [787] 資料序列化如何影響應用程式升級
+          - 應用程式升級進階主題
+            [789] Service Fabric 應用程式升級：進階主題
+        - 管理多重環境應用程式
+          [796] 管理多重環境應用程式
+        - 測試應用程式
+          - 單元測試具狀態服務
+            [798] 對 Service Fabric 中的具狀態服務進行單元測試
+          - 以錯誤分析測試應用程式
+            [803] 錯誤分析服務簡介
+        - ImageStoreConnectionString 設定
+          [807] 了解 ImageStoreConnectionString 設定
+      - 服務資源
+        [810] 在服務資訊清單中指定資源
+      - 定期備份和還原
+        - 了解定期備份組態
+          [817] 在 Azure Service Fabric 中了解定期備份設定
+        - 觸發磁碟分割還原
+          [827] 在 Azure Service Fabric 中還原備份
+        - 磁碟分割隨選備份
+          [838] Azure Service Fabric 中的隨選備份
+        - 離線檢視和編輯 Reliable Collections 備份
+          [844] 使用備份總管來讀取和更新可靠的集合備份
+      - 初始設定式 Codepackage
+        [846] 初始設定式 Codepackage
+      - RunToCompletion
+        [851] RunToCompletion
+    - 叢集
+      - 叢集概觀
+        [855] 比較 Windows Server 和 Linux 上的Azure 和獨立 Service Fabric 叢集
+      - 叢集安全性
+        [857] Service Fabric 叢集安全性案例
+      - Linux 和 Windows 間的功能差異
+        [863] Linux 與 Windows 上的 Service Fabric 差異
+      - Azure 上的叢集
+        - Azure 叢集概觀
+          [866] Azure 上的 Service Fabric 叢集概觀
+        - 節點類型和虛擬機器擴展集
+          [871] Azure Service Fabric 節點類型與虛擬機器擴展集
+        - 升級 Azure 中的叢集
+          [875] 升級和更新 Azure Service Fabric 叢集
+        - 調整大小
+          [880] 調整 Azure Service Fabric 叢集
+        - 節點自動修復
+          [884] Azure Service Fabric 受控叢集 (SFMC) 節點自動修復
+        - 叢集網路模式
+          [886] Service Fabric 網路功能模式
+        - 適用於 Azure 叢集的基礎結構服務
+          [902] Service Fabric 基礎結構服務簡介
+      - 獨立叢集
+        - 獨立叢集概觀
+          [905] Service Fabric 叢集獨立叢集的概觀
+        - 升級獨立叢集
+          [908] 升級和更新 Service Fabric 獨立叢集
+        - 調整大小
+          [910] 調整 Service Fabric 獨立叢集
+      - 叢集資源管理員
+        - 叢集資源管理員概觀
+          [912] Service Fabric 叢集資源管理員簡介
+        - 架構
+          [915] 叢集資源管理員架構概觀
+        - 描述叢集
+          [918] 使用叢集資源管理員描述 Service Fabric叢集
+        - 應用程式群組概觀
+          [941] 應用程式群組簡介
+        - 設定叢集資源管理員設定
+          [948] 設定 Service Fabric 服務的叢集資源管理員設定
+        - 資源耗用計量
+          [950] 在 Service Fabric 中使用度量管理資源耗用量和負載
+        - 使用服務親和性
+          [963] 在 Service Fabric 中設定並使用服務同質性
+        - 服務敏感度
+          [967] 1.服務敏感度
+        - 服務放置原則
+          [974] Service Fabric 服務的放置原則
+        - 管理叢集
+          [981] 叢集資源管理員與 Service Fabric 叢集管理整合
+        - 叢集磁碟重組
+          [988] 度量的重組和 Service Fabric 中的負載
+        - 平衡叢集
+          [991] 平衡 Service Fabric 叢集
+        - 子叢集
+          [1004] 子叢集計量的平衡
+        - 節流
+          [1009] 對 Service Fabric 叢集資源管理員進行節流
+        - 服務動作
+          [1012] 服務移動成本
+        - 自動調整服務
+          [1017] 自動調整簡介
+        - 節點標記
+          [1025] 動態節點標記簡介
+        - InBuild 每個節點的復本節流
+          [1029] 每個節點的 InBuild 復本節流
+    - 監視和診斷
+      - 監視器
+        [1033] 監視 Azure Service Fabric
+      - 監視概觀
+        [1043] 對 Azure Service Fabric 進行監視和診斷
+      - 應用程式監視
+        [1048] 應用程式記錄檔
+      - 叢集監視
+        - 叢集監視概觀
+          [1050] 監視叢集
+        - Service Fabric 事件
+          [1054] Service Fabric 事件
+        - EventStore 概觀
+          [1056] EventStore 概觀
+        - Reliable Services 事件
+          [1060] 具狀態 Reliable Services 診斷功能
+        - 監視服務遠端處理
+          [1065] Reliable Service Remoting 的診斷和效能監視
+        - Reliable Actors 事件
+          [1069] Reliable Actors 的診斷和效能監視
+      - 基礎結構監視
+        [1076] 效能計量
+      - 健康情況模型概觀
+        [1079] Service Fabric 健康狀態監視簡介
+      - 報告健康情況事件
+        [1093] 新增自訂 Service Fabric 健康狀態報告
+      - 監視合作夥伴
+        [1104] Azure Service Fabric 監視合作夥伴
+    - 與 API 管理整合
+      [1106] Service Fabric 搭配 Azure API 管理概觀
+    - 應用程式資源模型
+      [1112] 
+    - 受控識別
+      [1119] 搭配 Service Fabric 使用 Azure 的受控身分識別
+    - 設定容器存放庫認證
+      [1122] 設定應用程式的存放庫認證以下載容器映像
+    - 受控叢集拒絕指派原則
+      [1126] Service Fabric 受控叢集的拒絕指派原則
+    - 受控叢集的 Service Fabric Explorer 封鎖作業
+      [1127] Service Fabric Explorer 封鎖作業
+  - 操作指南
+    - 使用 Service Fabric 受控叢集
+      - 設定您的受控叢集
+        [1129] Service Fabric 受控叢集設定選項
+      - 連線至您的受控叢集
+        [1130] 連線到 Service Fabric 受控叢集
+      - 設定 Microsoft Entra 用戶端存取
+        [1133] 如何設定 Azure Service Fabric 受控叢集進行 Active Directory 用戶端存取
+      - 在受控叢集上設定自動調整
+        [1134] Service Fabric 受控叢集的自動調整簡介
+      - 在受控叢集上設定節點類型
+        [1143] Service Fabric 受控叢集節點類型
+      - 將 VM 擴展集延伸模組新增至受控叢集節點類型
+        [1161] Service Fabric 受控叢集節點類型上的虛擬機器擴展集延伸模組支援
+      - 設定受控叢集網路設定
+        [1165] 設定 Service Fabric 受控叢集的網路設定
+      - 設定受控叢集可用性區域跨越
+        [1188] 跨可用性區域部署 Service Fabric 受控叢集
+      - 為受控叢集節點啟用磁碟加密
+        [1197] 為 Service Fabric 受控叢集節點啟用磁碟加密
+      - 為受控叢集節點選取受控磁碟類型
+        [1203] 選取 Service Fabric 受控叢集節點的受控磁碟類型
+      - 搭配使用受控叢集與專用主機
+        [1205] Service Fabric 受控叢集上的專用主機簡介 （預覽）
+      - 針對受控叢集中的節點類型使用暫時性 OS 磁碟
+        [1211] 適用於節點類型的暫時 OS 磁碟 ServiceFabric 受控叢集簡介 （預覽）
+      - 設定受控叢集升級選項
+        [1214] 管理 Service Fabric 受控叢集升級
+      - 設定受控叢集上的維護控制
+        [1218] Service Fabric 受控叢集上的MaintenanceControl 簡介
+      - 將應用程式秘密部署至受控叢集
+        [1222] 
+      - 使用 Azure Resource Manager 將應用程式部署至受控叢集
+        [1225] 
+      - 將具有受控識別的應用程式部署至受控叢集
+        [1232] 將具有受控識別的應用程式部署到Service Fabric 受控叢集
+      - 在受控叢集上授其他 Azure 資源的存取權
+        [1238] 將 Service Fabric 叢集上的 Azure 資源存取權授與 Service Fabric 應用程式
+      - 將僅限無狀態節點類型部署至受控叢集
+        [1242] 部署具有無狀態節點類型的 ServiceFabric 受控叢集
+      - 在受控叢集上設定大型調整的次要節點類型
+        [1247] Service Fabric 受控叢集節點類型縮放
+      - 為受控叢集節點使用受控識別
+        [1249] 將受控識別新增至 Service Fabric 受控叢集節點類型
+      - 使用受控識別搭配應用程式
+        [1255] 請如何利用 Service Fabric 應用程式的受控身分識別來存取 Service Fabric 受控叢集上的 Azure 服務
+      - 部署自訂映像
+        [1268] 在 Service Fabric 受控叢集內的新節點類型上部署自訂 Windows 或 AzureMarketplace 虛擬機器擴展集映像 (預覽)
+      - 使用 NAT 閘道
+        [1271] 在 Service Fabric 受控叢集上使用 NAT 閘道
+      - 在受控叢集中使用公用 IP 前置詞
+        [1277] 在 Service Fabric 受控叢集中使用公用 IP位址首碼
+      - 使用多個網路介面卡
+        [1281] 在 Service Fabric 受控叢集中使用多個網路介面卡
+      - 在受控叢集中使用 Azure DDoS 保護
+        [1284] 在 Service Fabric 受控叢集中使用 AzureDDoS 保護
+      - 針對受控叢集中的 SNAT 連接埠耗盡問題進行疑難排解
+        [1287] 針對 Service Fabric 受控叢集中的 SNAT連接埠耗盡問題進行疑難排解
+      - 在 Service Fabric 受控叢集中使用 Azure 應用程式閘道
+        [1289] 在 Service Fabric 受控叢集中使用 Azure應用程式閘道
+      - 啟用 保管庫 部署程式
+        [1293] 在 Service Fabric 受控叢集上啟用協調 保管庫 部署程式 （SDP）
+    - 設定開發環境
+      - Windows
+        [1295] 在 Windows 上準備您的開發環境
+      - Linux
+        [1298] 在 Linux 上準備您的開發環境
+      - macOS
+        [1308] 在 macOS X 上設定開發環境
+      - 設定 Service Fabric CLI
+        [1315] Azure Service Fabric CLI
+      - 在整合式開發環境 (IDE) 中工作
+        - 在 Windows/VS 開發人員環境中工作
+          - 在 Visual Studio 中管理應用程式
+            [1322] 使用 Visual Studio 簡化撰寫及管理Service Fabric 應用程式
+          - 在 Visual Studio 中設定安全連線
+            [1327] 從 Visual Studio 設定對 Service Fabric 叢集的安全連線
+          - 在 VS 中對 .NET 服務進行偵錯
+            [1330] 使用 Visual Studio 偵錯 Service Fabric 應用程式
+          - 使用 Service Fabric 和 VS 對 Windows 容器進行偵錯
+            [1342] 如何：使用 Visual Studio 2019 對 AzureService Fabric 中的 Windows 容器進行偵錯
+          - 常見錯誤及例外狀況
+            [1345] 使用 FabricClient API 時常見的例外狀況和錯誤
+          - 在本機上監視及診斷
+            [1347] 監視和診斷本機開發設定中的服務
+          - 在 Windows 上設定 Linux 叢集
+            [1350] 在 Windows 開發人員電腦上設定 LinuxService Fabric 叢集
+          - 透過 WSL2 在 Windows 上設定 Linux 叢集
+            [1354] 在 Windows 開發人員電腦上透過 WSL2設定 Linux Service Fabric 叢集
+          - 將 .NET Core 應用程式從 VS 部署至遠端 Linux 叢集
+            [1358] 使用 Visual Studio 來建立並發佈以遠端Linux Service Fabric 叢集為目標的 .NETCore 應用程式
+        - 在 Linux/Eclipse 開發人員環境中工作
+          - 開始使用 Eclipse 外掛程式進行 Java 部署
+            [1363] 適用於 Eclipse Java 應用程式開發的Service Fabric 外掛程式
+          - 在 Eclipse 中的 Java 服務中進行偵錯
+            [1379] 使用 Eclipse 針對 Java Service Fabric 應用程式進行偵錯
+          - 在本機上監視及診斷
+            [1381] 監視和診斷本機 Linux 機器開發設定中的服務
+        - 在 VS 環境中工作
+          - 開始使用 VS Code
+            [1385] 適用於 Visual Studio Code 的 ServiceFabric
+          - 使用 VS Code 開發 C# Service Fabric 應用程式
+            [1389] 使用 Visual Studio Code 開發 C# ServiceFabric 應用程式
+          - 使用 VS Code 開發 Java Service Fabric 應用程式
+            [1396] 使用 Visual Studio Code 開發 JavaService Fabric 應用程式
+    - 規劃和準備
+      - 規劃叢集容量
+        [1403] Service Fabric 叢集容量規劃考量
+      - 規劃獨立叢集部署
+        [1411] 規劃和準備您的 Service Fabric 獨立叢集部署
+      - 準備進行災害復原
+        [1417] Azure Service Fabric 中的災害復原
+      - 規劃應用程式容量
+        [1427] Service Fabric 應用程式的容量規劃
+    - 建立及維護叢集
+      - Azure 上的叢集
+        - 建立​​
+          - 規劃叢集部署
+            [1430] 規劃及準備叢集部署
+          - 在 Azure 入口網站中建立
+            [1434] 使用 Azure 入口網站在 Azure 中建立Service Fabric 叢集
+          - 跨可用性區域部署 Service Fabric 叢集
+            [1448] 跨可用性區域部署 Azure Service Fabric叢集
+          - 部署具有無狀態節點類型的 Service Fabric 叢集
+            [1464] 部署具有 Stateless-only 節點類型的Service Fabric 叢集
+          - 使用受控資料磁碟部署 Azure Service Fabric 叢集
+            [1471] 使用受控資料磁碟部署 Azure ServiceFabric 叢集節點類型
+          - 設定 Microsoft Entra 驗證
+            [1474] 設定客戶端驗證的 Microsoft Entra 識別碼
+          - 在 Azure 入口網站中設定 Microsoft Entra 驗證
+            [1488] 在 Azure 入口網站中設定 MicrosoftEntra ID 以進行用戶端驗證
+          - 建立自訂叢集範本
+            [1512] 建立 Service Fabric 叢集 ResourceManager 範本
+          - 使用資源管理員建立
+            [1520] 使用 Azure Resource Manager 來建立Service Fabric 叢集
+          - 使用憑證通用名稱建立
+            [1528] 部署使用憑證通用名稱 (而非指紋) 的Service Fabric 叢集
+          - 建立 Linux 叢集
+            [1534] 
+        - 調整
+          - 手動擴增
+            [1538] 將叢集相應縮小或相應放大
+          - 以程式設計方式擴增
+            [1546] 以程式設計方式調整 Service Fabric 叢集
+          - 擴大主要節點類型
+            [1550] 擴大 Service Fabric 叢集主要節點類型
+          - 擴大非主要節點類型
+            [1566] 擴大 Service Fabric 叢集非主要節點類型
+          - 新增節點類型
+            [1580] 透過新增虛擬機器擴展集來相應放大Service Fabric 叢集
+          - 移除節點類型
+            [1582] 如何移除 Service Fabric 節點類型
+        - 升級
+          - 管理 Service Fabric 叢集升級
+            [1588] 管理 Service Fabric 叢集升級
+          - 升級叢集組態
+            [1597] 在 Azure 中升級叢集的組態
+          - 修補叢集節點 (Windows)
+            [1599] 修補 Service Fabric 叢集中的 Windows作業系統
+            - 使用修補程式協調流程應用程式 (POA)
+              [1602] 使用修補程式協調流程應用程式
+          - 啟用磁碟加密 (Windows)
+            [1620] 在 Windows 中啟用 Azure Service Fabric叢集節點的磁碟加密
+          - 啟用磁碟加密 (Linux)
+            [1626] 在 Linux 中啟用 Azure Service Fabric 叢集節點的磁碟加密
+          - 設定存取控制
+            [1633] 角色型存取控制 (適用於 Service Fabric 用戶端)
+          - 在負載平衡器中開啟連接埠
+            [1636] 開啟 Service Fabric 叢集的連接埠
+          - 將叢集憑證變更為一般名稱
+            [1639] 將叢集憑證從以指紋為基礎的宣告轉換為一般名稱
+          - 手動變換叢集憑證
+            [1647] 手動變換 Service Fabric 叢集憑證
+          - 管理叢集憑證
+            [1649] 新增或移除 Azure 中 Service Fabric 叢集的憑證
+          - 遠端連線到叢集節點 VM
+            [1660] 遠端連線到虛擬機器擴展集執行個體或叢集節點
+          - 升級適用於 Azure Service Fabric 的 Linux OS
+            [1664] 升級適用於 Azure Service Fabric 的 LinuxOS
+      - 獨立叢集
+        - 建立​​
+          - 建立內部部署
+            [1669] 建立在 Windows Server 上執行的獨立叢集
+          - 使用憑證保護安全
+            [1676] 使用 X.509 憑證保護 Windows 上的獨立叢集
+          - 使用 Windows 安全性保護安全
+            [1687] 使用 Windows 安全性保護 Windows 上的獨立叢集
+          - 獨立套件的內容
+            [1692] 適用於 Windows Server 的 ServiceFabric 獨立封裝內容
+        - 調整
+          [1695] 在執行於 Windows Server 上的獨立Service Fabric 叢集中新增或移除節點
+        - 升級
+          - 升級 Service Fabric 版本
+            [1700] 升級在您叢集上執行之 Service Fabric 的版本
+          - 升級叢集組態
+            [1705] 升級獨立叢集的組態
+          - 組態設定
+            [1708] 獨立 Windows 叢集的組態設定
+          - 設定存取控制
+            [1715] 角色型存取控制 (適用於 Service Fabric 用戶端)
+          - 修補叢集節點 (Windows)
+            [1718] 修補 Service Fabric 叢集中的 Windows作業系統
+      - 將叢集移轉至 TLS 1.3
+        [1721] 如何移轉至 Service Fabric 的 TLS （傳輸層安全性） 1.3
+      - 使用 Service Fabric Explorer 進行視覺化
+        [1726] 使用 Service Fabric Explorer 將叢集視覺化
+      - 連線到安全的叢集
+        [1734] 連線到安全的叢集
+    - 監視和診斷
+      - 診斷常見案例
+        [1744] 針對 Service Fabric 的常見案例進行診斷
+      - 診斷程式碼封裝錯誤
+        [1754] 診斷使用 Service Fabric 時常見的程式碼封裝錯誤
+      - 監視應用程式
+        - 將記錄新增至您的應用程式
+          [1757] 為 Service Fabric 應用程式新增記錄功能
+        - 使用 Application Insights 分析
+          [1762] 使用 Application Insights 進行事件分析和視覺效果
+        - 使用 EventFlow 彙總記錄
+          [1767] 使用 EventFlow 的事件彙總與集合
+        - 監視容器
+          [1772] 使用 Azure 監視器記錄監視容器
+      - 監視叢集
+        - 設定 Azure 監視器記錄以收集叢集事件
+          [1775] 針對叢集設定 Azure 監視器記錄
+        - 使用 Azure 監視器記錄監視您的叢集
+          [1780] Azure 監視器記錄的事件分析和視覺化
+        - 查詢 EventStore API
+          [1786] 針對叢集事件查詢 EventStore API
+        - Windows 叢集診斷
+          [1792] 使用 Windows Azure 診斷的事件彙總和收集
+        - Linux 叢集診斷
+          [1805] Syslog 中的 Service Fabric Linux 叢集事件
+        - Linux 叢集事件匯總
+          [1810] 使用 Linux Azure 診斷的事件彙總和收集
+      - 監視基礎結構
+        - 使用 Log Analytics 代理程式來收集效能計數器
+          [1812] 使用 Azure 監視器記錄來監視效能
+        - 使用 WAD 收集效能計數器
+          [1818] 使用 Windows Azure 診斷延伸模組進行效能監視
+      - 監視健康情況
+        - 回報和檢查健康情況
+          [1823] 回報和檢查服務健康情況
+        - 使用系統健康狀態報表進行疑難排解
+          [1830] 使用系統健康狀態報告進行疑難排解
+        - 檢視健康情況報表
+          [1855] 檢視 Service Fabric 健康狀態報告
+      - 診斷反向 Proxy 事件
+        [1890] 在反向 proxy 監視和診斷要求處理
+      - 為本機叢集的問題進行疑難排解
+        [1896] 疑難排解本機開發叢集設定
+    - 建立您的第一個...
+      - Windows 容器應用程式
+        [1899] 在 Windows 建立第一個 Service Fabric容器應用程式
+      - Linux 容器應用程式
+        [1921] 在 Linux 建立第一個 Service Fabric 容器應用程式
+      - Windows 中的 C# Reliable Services 應用程式
+        [1936] 開始使用 Reliable Service
+      - Linux 中的 Java Reliable Services 應用程式
+        [1945] 開始使用 Java 中的 Reliable Services
+      - Linux 中的 C# Reliable Services 應用程式
+        [1953] 建立第一個 Azure Service Fabric 應用程式
+      - Windows 中的 C# Reliable Actors 應用程式
+        [1958] 開始使用 Reliable Actors
+      - Linux 中的 Java Reliable Actors 應用程式
+        [1965] 在 Linux 上建立第一個 Java ServiceFabric Reliable Actors 應用程式
+      - Windows 中的來賓可執行檔應用程式
+        [1976] 在 Azure Service Fabric 上裝載 Node.js應用程式
+    - 建置應用程式
+      - 建置可供來賓執行的服務
+        - 部署客體可執行檔
+          [1982] 將現有可執行檔封裝和部署至 ServiceFabric
+      - 建置容器服務
+        - Docker Compose
+          [1993] Azure Service Fabric 中 DockerCompose 的部署支援 (預覽)
+        - 磁碟區與記錄驅動程式
+          [1998] 適用於 Service Fabric 的 Azure 檔案儲存體磁碟區驅動程式
+        - 檢視容器記錄
+          [2006] 檢視 Service Fabric 容器服務的記錄
+        - 容器內的服務
+          [2009] 將 Windows 上的 Service Fabric ReliableServices 和 Reliable Actors 容器化
+        - 容器網路服務模式
+          [2013] Service Fabric 容器網路模式
+      - 建置 Reliable Services 服務
+        - 可靠的集合
+          - 使用可靠的集合
+            [2020] 使用可靠的集合
+          - 可靠的並行佇列
+            [2029] Azure Service Fabric 中的ReliableConcurrentQueue 簡介
+          - Reliable Collection 序列化
+            [2038] Azure Service Fabric 中的 ReliableCollection 物件序列化
+        - 與服務通訊
+          - 與 Reliable Services 通訊
+            [2042] 如何使用 Reliable Services 通訊 API
+          - 服務遠端處理 - C#
+            [2054] 使用 Reliable Services 在 C# 中進行服務遠端處理
+          - 服務遠端處理 - Java
+            [2068] 使用 Reliable Services 在 Java 中進行服務遠端處理
+          - 服務遠端中的例外狀況序列化
+            [2071] 遠端例外狀況序列化概觀
+          - WCF
+            [2082] 適用於 Reliable Services 的 WCF 式通訊堆疊
+          - 安全通訊 - C#
+            [2085] 保護 C# 服務中的服務遠端通訊
+          - 安全通訊 - Java
+            [2090] 保護 Java 服務中的服務遠端通訊
+          - 保護 WCF 通訊
+            [2093] 保護服務的 WCF 通訊
+        - 設定
+          [2096] 設定具狀態可靠服務
+        - 傳送通知
+          [2104] Reliable Services 通知
+        - 備份及還原
+          [2110] 備份與還原 Reliable Services 和 ReliableActors
+      - 建置 Reliable Actors 服務
+        - 存取、儲存及移除動作項目狀態
+          [2119] 存取、儲存、移除 Reliable Actors 狀態
+        - 列舉動作項目
+          [2127] 列舉 Service Fabric Reliable Actors
+        - 刪除動作項目與其狀態
+          [2130] 刪除 Reliable Actors 及其狀態
+        - 備份與還原動作項目
+          [2132] 實作 Reliable Actors 備份與還原
+        - 傳送動作項目通知
+          [2135] 動作項目事件
+        - 設定計時器和提醒
+          [2138] 動作項目計時器和提醒
+        - 設定 KvsActorStateProvider
+          [2144] 設定 Reliable Actors -KVSActorStateProvider
+        - 設定通訊設定
+          [2147] 設定 Reliable Actors 的 FabricTransport設定
+        - 設定 ReliableDictionaryActorStateProvider
+          [2151] 設定 Reliable Actors -ReliableDictionaryActorStateProvider
+      - 建置 ASP.NET Core 服務
+        [2157] Azure Service Fabric Reliable Services 中的 ASP.NET Core
+      - 在 Linux 上建置 Apache Tomcat 伺服器容器
+        [2179] 在 Linux 上建立執行 Apache Tomcat 伺服器的 Service Fabric 容器
+      - 設定安全性
+        - 與 API 管理整合
+          [2187] 整合 API 管理與 Azure 中的 ServiceFabric
+        - 管理應用程式密碼
+          [2197] 在 Service Fabric 應用程式中管理已加密的祕密
+        - 使用 Service Fabric 祕密存放區
+          [2202] Azure Service Fabric 中的中央秘密服務
+          - 設定加密憑證，並在 Windows 上將祕密加密
+            [2208] 設定加密憑證，並在 Windows 叢集上將祕密加密
+          - 設定加密憑證，並在 Linux 上將祕密加密
+            [2210] 設定加密憑證，並在 Linux 叢集上將祕密加密
+          - 使用 KeyVaultReference 安全地儲存祕密
+            [2212] 適用於 Azure 部署之 Service Fabric 應用程式的 KeyVaultReference 支援
+        - 設定安全通訊的反向 proxy
+          [2219] 安全服務與反向 Proxy 的連線
+        - 以本機使用者或系統帳戶身分執行服務啟動指令碼
+          [2225] 以本機使用者或系統帳戶身分執行服務啟動指令碼
+        - 以本機使用者或系統帳戶身分執行服務
+          [2232] 以本機使用者帳戶或本機系統帳戶身分執行服務
+        - 為端點指派安全性存取原則
+          [2237] 為 HTTP 和 HTTPS 端點指派安全性存取原則
+        - 以 AD 使用者或群組身分執行服務
+          [2239] 以 Active Directory 使用者或群組身分執行服務
+        - 以群組受控服務帳戶身分執行服務
+          [2241] 以群組受控服務帳戶身分執行服務
+        - 在容器中使用憑證
+          [2243] 將憑證檔案匯入到 Service Fabric 上執行的容器
+        - 為 Windows 容器設定 gMSA
+          [2245] 為在 Service Fabric 上執行的 Windows容器設定 gMSA
+        - 在 Linux 上設定憑證
+          [2246] Linux 叢集上的憑證和安全性
+      - 設定定期備份 (在 Azure 上的叢集)
+        [2250] Azure Service Fabric 叢集中的定期備份與還原
+      - 設定定期備份 (獨立的叢集)
+        [2262] 獨立 Service Fabric 中的定期備份和還原
+      - 移轉舊的 Java 應用程式以支援 Maven
+        [2272] 更新先前的 Java Service Fabric 應用程式，以從 Maven 擷取 Java 程式庫
+      - 使用 Service Fabric Java 用戶端 API
+        [2283] Azure Service Fabric JAVA 用戶端 API
+    - 管理應用程式生命週期
+      - 封裝應用程式
+        [2287] 封裝應用程式
+      - 使用組態檔中的參數
+        [2294] 如何參數化 Service Fabric 中的設定檔
+      - 使用參數指定連接埠號碼
+        [2297] 如何在 Service Fabric 中使用參數指定服務的連接埠號碼
+      - 指定環境變數
+        [2300] 如何在 Service Fabric 中指定服務的環境變數
+      - 部署或移除應用程式
+        - Azure Resource Manager
+          [2302] 將應用程式和服務視為 Azure ResourceManager 進行管理
+        - Azure PowerShell
+          [2309] 使用 PowerShell 部署與移除應用程式
+        - Service Fabric CLI
+          [2321] 使用 Azure Service Fabric CLI 來管理Azure Service Fabric 應用程式 (sfctl)
+        - FabricClient API
+          [2326] 使用 FabricClient 來部署和移除應用程式
+      - 升級應用程式
+        - 使用 Azure PowerShell 升級
+          [2335] 使用 PowerShell 進行 Service Fabric 應用程式升級
+        - 使用 Visual Studio 升級
+          [2341] 使用 Visual Studio 進行 Service Fabric 應用程式升級的教學課程
+        - 對應用程式升級進行疑難排解
+          [2346] 疑難排解應用程式升級
+      - 測試應用程式與服務
+        - 單元測試具狀態服務
+          [2353] 建立具狀態服務的單元測試
+        - 測試服務對服務的通訊
+          [2357] Service Fabric Testability 案例：服務通訊
+        - 模擬失敗
+          - 使用受控的混亂
+            [2360] 在 Service Fabric 叢集中引發受控制的混亂
+          - 使用測試動作
+            [2370] 
+          - 工作負載期間
+            [2379] 模擬服務工作負載期間的失敗案例
+          - 使用測試案例
+            [2383] Testability 案例
+          - 使用節點轉換 API
+            [2390] 以節點轉換 API 取代啟動節點和停止節點API
+      - 設定持續整合
+        - 透過 Azure Pipelines 設定連續整合
+          [2398] 教學課程：將搭配 CI/CD 的應用程式部署到 Service Fabric 叢集
+        - 使用 Jenkins 部署您的 Linux 應用程式
+          [2410] 教學課程：部署至 Service Fabric 叢集
+    - 設定反向 Proxy
+      - 設定反向 Proxy
+        [2424] 安裝及設定 Azure Service Fabric 中的反向 Proxy
+      - 設定安全通訊的反向 proxy
+        [2435] 安全服務與反向 Proxy 的連線
+    - 使用 Service Fabric 應用程式的受控識別
+      - 叢集設定
+        - 使用受控識別來設定現有的叢集
+          [2441] 在現有的 Service Fabric 叢集中設定受控識別支援
+        - 使用受控識別來設定新的 Azure Service Fabric 叢集
+          [2443] 設定新 Service Fabric 叢集的受控識別支援
+      - 應用程式設定
+        - 如何使用受控識別部署應用程式
+          - 如何使用系統指派的受控識別部署應用程式
+            [2445] 使用系統所指派的受控識別部署 ServiceFabric 應用程式
+          - 如何使用使用者指派的受控識別部署應用程式
+            [2448] 透過使用者指派的受控識別來部署Service Fabric 應用程式
+      - 搭配 Service Fabric 應用程式程式代碼使用受控識別
+        [2451] 如何利用 Service Fabric 應用程式的受控身分識別來存取 Azure 服務
+      - 將存取權授與其他 Azure 資源
+        [2464] 將 Service Fabric 應用程式的受控身分識別存取權授與 Azure 資源
+    - 將您的叢集遷移至新區域
+      - 如何將您的 Azure Service Fabric 叢集移至新區域
+        [2468] 將 Azure Service Fabric 叢集移至新區域
+    - 從雲端服務移轉
+      - 比較雲端服務與 Service Fabric
+        [2471] 
+      - 移轉至 Service Fabric
+        [2476] 將 Web 角色和背景工作角色轉換成Service Fabric 無狀態服務的指南
+      - 建議做法
+        [2485] 將 Web 角色和背景工作角色轉換成Service Fabric 無狀態服務的指南
+      - 打造現代化的應用程式
+  - 參考
+    - Azure PowerShell
+      [2494] Az.ServiceFabric
+    - PowerShell
+      [2499] ServiceFabric
+    - Azure CLI (az sf)
+      [2510] az sf
+    - Service Fabric CLI (sfctl)
+      [2517] sfctl
+      - sfctl application
+        [2519] sfctl application
+      - sfctl chaos
+        [2545] sfctl chaos
+        - sfctl chaos schedule
+          [2552] sfctl chaos schedule
+      - sfctl cluster
+        [2556] sfctl cluster
+      - sfctl compose
+        [2575] sfctl compose
+      - sfctl container
+        [2583] sfctl container
+      - sfctl is
+        [2587] sfctl is
+      - sfctl node
+        [2590] sfctl node
+      - sfctl partition
+        [2604] sfctl partition
+      - sfctl property
+        [2620] sfctl property
+      - sfctl replica
+        [2624] sfctl replica
+      - sfctl rpm
+        [2634] sfctl rpm
+      - sfctl sa-cluster
+        [2637] sfctl sa-cluster
+      - sfctl service
+        [2641] 
+      - sfctl settings
+        [2664] sfctl settings
+        - sfctl settings telemetry
+          [2665] sfctl settings telemetry
+      - sfctl store
+        [2667] sfctl store
+    - Java API
+      [2670] Service Fabric
+    - .NET
+      [2671] Azure Service Fabric libraries for .NET
+    - REST
+      [2675] Service Fabric REST API
+    - Resource Manager 範本
+      [2677] 
+    - Service Fabric 事件
+      [2692] Service Fabric 事件清單
+    - 監視資料參考
+      [2710] Azure Service Fabric 監視數據參考
+    - 設定叢集設定和網狀架構升級原則
+      [2712] 
+    - 服務模型 XML 結構描述
+      [2751] 服務模型 XML 結構描述文件
+      - 元素
+        [2752] 
+      - 複雜類型
+        [3004] 服務模型 XML 架構複雜類型
+      - 屬性群組
+        [3259] 服務模型 XML 結構描述屬性群組
+      - 簡單型別
+        [3285] 服務模型 XML 結構描述簡單類型
+      - 元素群組
+        [3286] Service Fabric 服務模型 XML 結構描述元素
+    - 環境變數
+      [3299] 
+    - Azure 原則內建
+      [3300] Azure 原則 Azure Service Fabric 的內建定義
+  - 資源
+    - Service Fabric 受控叢集常見問題集
+      [3301] 一般
+    - 常見問題
+      [3305] Service Fabric 的常見問題
+    - Azure 藍圖
+    - Microsoft 問與答頁面
+    - Azure Resource Manager 部署限制
+      [3313] Service Fabric 護欄
+    - 定價
+    - 定價計算機
+    - 版本資訊
+      [3316] Service Fabric 版本
+    - 範例指令碼
+    - Service Fabric 版本
+      [3330] Service Fabric 支援的版本
+    - 服務更新
+    - 影片
+  - 支援和疑難排解
+    [3347] Azure Service Fabric 支援選項

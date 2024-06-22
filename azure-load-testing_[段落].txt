@@ -1,0 +1,116 @@
+- ---< azure-load-testing.pdf >---
+  - Azure 負載測試檔
+    [1] Azure 負載測試檔
+  - 概觀
+    - 什麼是 Azure 負載測試？
+      [4] 什麼是 Azure 負載測試？
+  - 快速入門
+    - 建立 URL 型負載測試
+      [8] 快速入門：使用 Azure 負載測試建立和執行負載測試
+    - 使用 JMeter 腳本建立負載測試
+      [19] 在 Azure 負載測試中使用 JMeter 腳本對網站進行負載測試
+    - 使用 Azure Pipelines 將負載測試自動化
+      [26] 快速入門：使用 CI/CD 將現有的負載測試自動化
+  - 教學課程
+    - 識別效能瓶頸
+      [32] 教學課程：執行負載測試以識別 Web 應用程式中的效能瓶頸
+  - 概念
+    - 重要概念
+      [45] 新 Azure 負載測試使用者的重要概念
+    - 案例
+      - VNET 部署的案例
+        [50] 在虛擬網路中部署 Azure 負載測試的案例
+      - 負載測試 Azure App 服務 應用程式
+        [55] 負載測試 Azure App 服務 應用程式
+  - 操作指南
+    - 設定測試計劃
+      - 將 HTTP 要求新增至 URL 型測試
+        [60] 在 Azure 負載測試中將要求新增至 URL型負載測試
+      - 從 CSV 檔案讀取數據
+        [66] 使用 Azure 負載測試從 JMeter 中的 CSV檔案讀取資料
+      - 使用 JMeter 外掛程式自定義測試
+        [71] 使用 Apache JMeter 外掛程式和 Azure負載測試自訂負載測試
+      - 使用 JMeter 用戶屬性
+        [74] 搭配 Azure 負載測試使用 JMeter 使用者屬性
+    - 設定測試設定
+      - 設定高規模負載
+        [78] 設定適用于大規模負載的 Azure 負載測試
+      - 定義測試失敗準則
+        [84] 使用 Azure 負載測試定義負載測試的失敗準則
+      - 參數化負載測試
+        [90] 在 Azure 負載測試中使用秘密和環境變數
+      - 測試 App Service Web 應用程式
+        [104] 建立 Azure App 服務 Web 應用程式的負載測試
+      - 測試 Azure Functions
+        [110] 建立 Azure Functions 的負載測試
+      - 測試私人端點
+        [115] 在 Azure 虛擬網路中部署 Azure 負載測試，以測試私人端點
+      - 測試安全端點
+        [127] 使用 Azure 負載測試進行負載測試保護的端點
+    - 自動化
+      - 在 CI/CD 中執行負載測試
+        [134] 手動設定 CI/CD 工作流程以執行負載測試
+    - 分析測試結果
+      - 比較測試回合
+        [143] 比較 Azure 負載測試中的負載測試回合
+      - 設定伺服器端監視
+        [149] 使用 Azure 負載測試監視伺服器端應用程式計量
+      - 診斷失敗的負載測試
+        [153] 診斷 Azure 負載測試中的失敗負載測試
+      - 匯出測試結果
+        [157] 從 Azure 負載測試匯出測試結果，以用於第三方工具
+    - 安全性
+      - 管理使用者和角色
+        [163] 管理 Azure 負載測試的存取權
+      - 建立受控識別
+        [169] 使用 Azure 負載測試的受控識別
+      - 設定客戶管理的金鑰
+        [173] 使用 Azure 金鑰保存庫設定 Azure 負載測試的客戶自控金鑰
+    - 管理資源
+      - 建立與管理測試 （Azure 入口網站）
+        [181] 在 Azure 負載測試中建立和管理測試
+      - 建立與管理測試回合 （Azure 入口網站）
+        [194] 在 Azure 負載測試中建立和管理測試執行
+      - 在區域間移動
+        [198] 將 Azure 負載測試資源移至另一個區域
+      - 跨資源群組或訂用帳戶移動
+        [203] 將 Azure 負載測試資源移至另一個資源群組或訂用帳戶
+      - 監視 Azure 負載測試
+        [205] 監視 Azure 負載測試
+  - 範例
+    - Contoso Traders 雲端測試示範
+    - 範例存放庫
+  - 參考
+    - Azure CLI
+      [208] az load
+    - Azure PowerShell
+      [226] Az.LoadTesting
+    - .NET
+      [227] Azure Load Testing SDK for .NET - latest
+    - Java
+      [228] Azure Load Testing SDK for Java - latest
+    - Node.js
+      [229] 適用于 JavaScript 的 Azure 負載測試SDK - 最新
+    - Python
+      [230] 適用于 Python 的 Azure 負載測試 SDK -最新版
+    - REST API
+      [231] Azure 負載測試 REST API
+    - Resource Manager 範本
+      [232] Microsoft.LoadTestService 資源類型
+    - 監視資料參考
+      [233] 監視 Azure 負載測試資料參考
+    - 測試組態 YAML
+      [235] 在 YAML 中設定負載測試
+  - 資源
+    - Azure 負載測試部落格
+    - Azure 更新
+    - 定價
+    - 區域可用性
+    - 支援的 Apache JMeter 功能
+      [247] Azure 負載測試中支援的 Apache JMeter功能
+    - 支援的 Azure 資源類型
+      [249] 在 Azure 負載測試中監視支援的 Azure 資源類型
+    - 服務限制
+      [251] Azure 負載測試中的服務限制
+    - JMeter 屬性覆寫
+      [254] Azure 負載測試的 JMeter 屬性覆寫

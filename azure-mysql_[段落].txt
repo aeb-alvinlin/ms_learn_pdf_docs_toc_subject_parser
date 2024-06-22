@@ -1,0 +1,668 @@
+- ---< azure-mysql.pdf >---
+  - 適用於 MySQL 的 Azure 資料庫彈性伺服器文件
+    [1] 適用於 MySQL 的 Azure 資料庫彈性伺服器文件
+  - 概觀
+    - 什麼是適用於 MySQL 的 Azure 資料庫 - 彈性伺服器？
+      [6] 什麼是適用於 MySQL 的 Azure 資料庫 -彈性伺服器？
+    - 選取正確的部署類型
+      [10] 在 Azure 中選擇正確的 MySQL Server 選項
+    - 免費試用
+      [18] 使用 Azure 免費帳戶免費試用適用於MySQL 的 Azure 資料庫 - 彈性伺服器
+    - 預付保留容量
+      [29] 預付 適用於 MySQL 的 Azure 資料庫 - 具有保留實例的彈性伺服器計算資源
+    - 版本支援原則
+      [34] 適用於 MySQL 的 Azure 資料庫 版本支持原則
+    - 支援的版本
+      [40] 適用於 MySQL 的 Azure 資料庫 支援的版本 - 彈性伺服器
+  - 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器
+    - 概觀
+      - 彈性伺服器部署模型
+        [42] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器部署模型
+      - 新功能
+        [52] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器有何新功能？
+      - 版本資訊
+        - 2024 年一月
+          [76] 適用於 MySQL 的 Azure 資料庫彈性伺服器 2024 年 1 月維護
+        - 2024 年 2 月
+          [78] 適用於 MySQL 的 Azure 資料庫彈性伺服器 2024 年 2 月維護
+        - 2024 年 4 月
+          [79] 適用於 MySQL 的 Azure 資料庫彈性伺服器 2024 年 4 月維護
+        - 2024 年 5 月
+          [81] 適用於 MySQL 的 Azure 資料庫彈性伺服器 2024 年 5 月維護
+      - 服務層
+        [82] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器的服務層級
+    - 快速入門
+      - 建立 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器實例
+        - Azure 入口網站
+          [92] 快速入門：使用 Azure 入口網站 建立 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器實例
+        - Azure CLI
+          [98] 快速入門：使用 Azure CLI 建立 適用於MySQL 的 Azure 資料庫 實例 - 彈性伺服器
+        - Bicep
+          [107] 快速入門：使用 Bicep 檔案建立 適用於MySQL 的 Azure 資料庫 - 彈性伺服器實例
+        - ARM 範本
+          [115] 快速入門：使用 Azure ResourceManager 建立 適用於 MySQL 的 Azure資料庫 - 彈性伺服器實例
+        - Terraform
+          [127] 快速入門：使用 Terraform 建立 適用於MySQL 的 Azure 資料庫 實例 - 彈性伺服器
+      - 建立及管理資料庫
+        [135] 為適用於 MySQL 的 Azure 資料庫 - 彈性伺服器建立和管理資料庫
+      - 連線和查詢
+        - Azure CLI
+          [137] 快速入門：使用 適用於 MySQL 的 Azure資料庫 連線 - 使用 Azure CLI 彈性伺服器
+        - PHP
+          [142] 將 PHP 用於適用於 MySQL 的 Azure 資料庫 - 彈性伺服器
+        - Azure Data Studio
+          [149] 快速入門：使用 Azure Data Studio 連線並查詢 MySQL
+        - MySQL Workbench
+          [155] 搭配適用於 MySQL 的 Azure 資料庫 - 彈性伺服器使用 MySQL Workbench
+        - Python
+          [160] 快速入門：使用 Python 連線和查詢 適用於 MySQL 的 Azure 資料庫 中的數據 - 彈性伺服器
+        - Java
+          [168] 搭配 適用於 MySQL 的 Azure 資料庫 使用 Java 和 JDBC - 彈性伺服器
+        - .NET
+          [184] 快速入門：使用 .NET （C#） 連線及查詢適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的數據
+        - Node.js
+          [192] 快速入門：使用Node.js來連線和查詢 適用於 MySQL 的 Azure 資料庫 中的數據 -彈性伺服器
+        - 連線 VNET 中的伺服器
+          [200] 連線 適用於 MySQL 的 Azure 資料庫 - 具有私人存取連線方法的彈性伺服器
+      - 連線程式庫
+        [209] 適用於 MySQL 的 Azure 資料庫彈性伺服器的連線庫
+      - 使用 TLS/SSL 來連線
+        [211] 使用加密連線來連線到適用於 MySQL 的Azure 資料庫 (彈性伺服器)
+      - 設定伺服器參數
+        - Azure 入口網站
+          [223] 使用 Azure 入口網站在適用於 MySQL 的Azure 資料庫彈性伺服器中設定伺服器參數
+        - Azure CLI
+          [227] 使用 Azure CLI 在適用於 MySQL 的Azure 資料庫 - 彈性伺服器中設定伺服器參數
+      - 建立資料庫和使用者
+        [231] 在適用於 MySQL 的 Azure 資料庫中建立使用者
+    - 概念
+      - 伺服器管理
+        - 伺服器
+          [235] 「適用於 MySQL 的 Azure 資料庫 - 彈性伺服器」中的伺服器概念
+        - 伺服器參數
+          [238] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的伺服器參數
+        - 限制
+          [249] Azure MySQL Database 中的「限制」-彈性伺服器
+        - 儲存體 IOPS
+          [254] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的儲存體 IOPS
+        - 加速記錄
+          [261] 適用於 MySQL 的 Azure 資料庫 中的加速記錄功能 - 彈性伺服器 （預覽）
+      - 網路
+        - 網路概念
+          [266] 適用於 MySQL 的 Azure 資料庫彈性伺服器的連線和網路概念
+        - 私人存取
+          [270] 使用適用於 MySQL 的 Azure 資料庫 - 彈性伺服器的虛擬網路整合進行私人網路存取
+        - 公用存取
+          [276] 適用於 MySQL 的 Azure 資料庫公用網路- 彈性伺服器
+        - 私人連結
+          [279] 適用於 MySQL 的 Azure 資料庫私人存取- 彈性伺服器
+      - 服務維護
+        - 排程維護
+          [283] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的排程維護
+      - 高可用性
+        - 商務持續性概觀
+          [287] 「適用於 MySQL 的 Azure 資料庫 - 彈性伺服器」的商務持續性概觀
+        - 高可用性
+          [292] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的高可用性概念
+      - 監視
+        - 監視概觀
+          [301] 監視適用於 MySQL 的 Azure 資料庫彈性伺服器
+        - 慢速查詢記錄
+          [309] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的慢速查詢記錄
+        - 錯誤記錄
+          [314] 適用於 MySQL 的 Azure 資料庫 中的錯誤記錄 - 彈性伺服器 （預覽）
+        - 稽核記錄
+          [318] 使用適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的稽核記錄來追蹤資料庫活動
+        - 活頁簿
+          [325] 使用 Azure 監視器活頁簿監視適用於MySQL 的 Azure 資料庫 - 彈性伺服器
+      - 複寫
+        - 複寫中的資料
+          [327] 將資料複寫至適用於 MySQL 的 Azure 資料庫 - 彈性伺服器
+        - 資料輸出複寫
+          [330] 複寫適用於 MySQL 的 Azure 資料庫彈性伺服器的資料
+        - 讀取複本
+          [332] 適用於 MySQL 的 Azure 資料庫讀取複本- 彈性伺服器
+      - 備份與還原
+        - 備份與還原概念
+          [340] 在適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中進行備份與還原
+      - 安全性
+        - Microsoft Entra 驗證
+          [350] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器的 Microsoft Entra 驗證
+        - 資料加密
+          [356] 使用客戶管理的金鑰進行數據加密，適用於 MySQL 的 Azure 資料庫 - 彈性伺服器
+    - 整合
+      - 自動化工作
+        [362] 使用自動化工作管理適用於 MySQL 的Azure 資料庫 - 彈性伺服器 (預覽)
+      - Azure Key Vault
+        [370] 教學課程：在 Azure Key Vault 中管理適用於 MySQL 的 Azure 資料庫 - 彈性伺服器認證
+      - Azure Kubernetes Service
+        [373] Azure Kubernetes Service 和適用於MySQL 的 Azure 資料庫 - 彈性資料庫的最佳做法
+      - Power Apps
+        [375] 教學課程：使用適用於 MySQL 的 Azure資料庫 - 彈性伺服器建立 Power 應用程式
+      - Power Automate
+        [380] 教學課程: 使用適用於 MySQL 的 Azure資料庫 - 彈性伺服器建立 PowerAutomate 流程
+      - Power BI
+        [387] 在 Power BI 中從適用於 MySQL 的 Azure資料庫 - 彈性伺服器匯入資料
+      - Azure Cache for Redis
+        [395] 教學課程：使用 Azure Cache for Redis提升 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器效能
+      - Azure Logic 應用程式
+        [403] 教學課程：使用「適用於 MySQL 的Azure 資料庫 - 彈性伺服器」建立邏輯應用程式
+      - Azure AI 搜尋服務
+        [410] 從 適用於 MySQL 的 Azure 資料庫 彈性伺服器編製數據索引
+      - Azure Advisor
+        [417] 搭配適用於 MySQL 的 Azure 資料庫 - 彈性伺服器之一起使用的 Azure Advisor
+      - Azure Data Factory
+        [419] 使用 Azure Data Factory 或 SynapseAnalytics 在適用於 MySQL 的 Azure 資料庫中複製和轉換資料
+    - 教學課程
+      - XBOX Video Application Development
+        - App Service 上的 WordPress
+          [434] 建立 WordPress 網站
+        - Azure Kubernetes 上的 WordPress
+          [442] 教學課程：使用 適用於 MySQL 的 Azure資料庫 在 AKS 上部署 WordPress 應用程式 - 彈性伺服器
+        - VNet 中 App Service 上的 PHP （Laravel） 應用程式
+          [457] 教學課程：在 Azure App 服務 上建置PHP （Laravel） 和 適用於 MySQL 的Azure 資料庫 - 彈性伺服器應用程式
+        - VNet 中 AKS 上的 Java Spring Boot 應用程式
+          [469] 教學課程：在具有 適用於 MySQL 的Azure 資料庫 的 AKS 叢集上部署 SpringBoot 應用程式 - VNet 中的彈性伺服器
+        - 連線 使用公用存取的簡單應用程式
+          [484] 教學課程：在 Azure App 服務 上部署PHP 和 適用於 MySQL 的 Azure 資料庫 -彈性伺服器應用程式
+        - 使用私人 Web 應用程式 連線
+          [492] 教學課程：連線 應用程式服務 Web 應用程式來 適用於 MySQL 的 Azure 資料庫 -虛擬網路中的彈性伺服器
+        - 與 Service 連線 or 整合
+          [497] 整合 適用於 MySQL 的 Azure 資料庫 與Service 連線 or
+        - 資料庫部署
+          - GitHub 動作
+            [505] 快速入門：使用 GitHub Actions 連線至適用於 MySQL 的 Azure 資料庫 - 彈性伺服器
+          - Azure Pipelines
+            [511] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器的 Azure Pipelines
+      - 伺服器管理
+        - 管理伺服器
+          - Azure 入口網站
+            [515] 使用 Azure 入口網站管理適用於 MySQL的 Azure 資料庫 - 彈性伺服器
+          - Azure CLI
+            [518] 管理 適用於 MySQL 的 Azure 資料庫 - 使用 Azure CLI 的彈性伺服器
+        - 停止/啟動伺服器
+          - Azure 入口網站
+            [521] 停止/啟動適用於 MySQL 的 Azure 資料庫- 彈性伺服器執行個體
+          - Azure CLI
+            [524] 重新啟動/停止/啟動 適用於 MySQL 的Azure 資料庫 - 彈性伺服器實例
+        - 重新啟動伺服器
+          - Azure 入口網站
+            [528] 使用 Azure 入口網站重新啟動適用於MySQL 的 Azure 資料庫 - 彈性伺服器執行個體
+          - Azure CLI
+            [531] 重新啟動/停止/啟動 適用於 MySQL 的Azure 資料庫 - 彈性伺服器實例
+        - 在區域之間移動伺服器
+          [535] 使用 Azure 入口網站將適用於 MySQL 的Azure 資料庫 - 彈性伺服器執行個體移至另一個區域
+        - 主要版本升級
+          [540] 適用於 MySQL 的 Azure 資料庫 中的主要版本升級 - 彈性伺服器
+        - 伺服器維護
+          [548] 管理適用於 MySQL 的 Azure 資料庫 - 彈性伺服器的排程維護設定
+      - 網路
+        - 設定私人存取 （VNet 整合）
+          - Azure 入口網站
+            [550] 使用 Azure 入口網站建立和管理適用於MySQL 的 Azure 資料庫 - 彈性伺服器虛擬網路
+          - Azure CLI
+            [553] 使用 Azure CLI 建立和管理適用於 MySQL的 Azure 資料庫 - 彈性伺服器虛擬網路
+        - 設定公用存取（允許的IP 位址）
+          - Azure 入口網站
+            [556] 使用 Azure 入口網站管理 Azure MySQLDatabase - 彈性伺服器的防火牆規則
+          - Azure CLI
+            [561] 使用 Azure CLI 管理適用於 MySQL 的Azure 資料庫 - 彈性伺服器防火牆規則
+        - 設定 Private Link 存取
+          - Azure 入口網站
+            [567] 使用入口網站建立和管理適用於 MySQL的 Azure 資料庫 - 彈性伺服器的 PrivateLink
+          - Azure 入口網站 - 拒絕存取
+            [576] 使用 Azure 入口網站為適用於 MySQL 的Azure 資料庫 - 彈性伺服器拒絕公用網路存取
+          - Azure CLI
+            [578] 使用 Azure CLI 建立和管理適用於 MySQL的 Azure 資料庫 - 彈性伺服器的 PrivateLink
+      - 高可用性
+        - 設定區域備援高可用性
+          - Azure 入口網站
+            [585] 管理適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的區域備援高可用性
+          - Azure CLI
+            [588] 在 適用於 MySQL 的 Azure 資料庫 中管理區域備援高可用性 - 使用 Azure CLI 的彈性伺服器
+      - 監視
+        - 查詢效能深入解析
+          [591] 教學課程：「適用於 MySQL 的 Azure 資料庫 - 彈性伺服器」中的查詢效能深入解析
+        - 稽核
+          [600] 教學課程：使用適用於 MySQL 的 Azure資料庫 - 彈性伺服器設定稽核記錄
+        - 警示
+          [610] 針對適用於 MySQL 的 Azure 資料庫設定計量警示 - 彈性伺服器
+        - 設定伺服器記錄
+          - Azure 入口網站
+            [613] 啟用、列出和下載適用於 MySQL 的Azure 資料庫的伺服器記錄 - 彈性伺服器
+          - Azure CLI
+            [618] 
+      - 複寫
+        - 設定複寫中的資料
+          [620] 如何設定適用於 MySQL 的 Azure 資料庫- 彈性伺服器的資料輸入複寫
+        - 設定資料輸出複寫
+          [629] 如何設定適用於 MySQL 的 Azure 資料庫中的資料輸出複寫
+        - 建立讀取複本
+          - Azure 入口網站
+            [634] 如何使用 Azure 入口網站在 AzureDatabase for MySQL - Flexible Server 中建立和管理讀取複本
+          - Azure CLI
+            [644] 如何使用 Azure CLI，在適用於 MySQL 的Azure 資料庫 - 彈性伺服器中建立與管理讀取複本
+      - 備份與還原
+        - 還原伺服器
+          - Azure 入口網站
+            [647] 使用 Azure 入口網站在適用於 MySQL 的Azure 資料庫 - 彈性伺服器中進行時間點還原
+          - Azure CLI
+            [657] 適用於 MySQL 的 Azure 資料庫 中的時間點還原 - 使用 Azure CLI 的彈性伺服器
+        - 還原已刪除的伺服器
+          [660] 還原適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中已刪除的執行個體
+        - 觸發隨選備份
+          [663] 使用 Azure 入口網站 觸發 適用於 MySQL的 Azure 資料庫 的隨選備份 - 彈性伺服器實例
+      - 疑難排解
+        - 針對連線錯誤進行疑難排解
+          [668] 針對適用於 MySQL 的 Azure 資料庫 - 彈性伺服器的連線問題進行疑難排解
+        - 針對 CLI 錯誤進行疑難排解
+          [670] 針對適用於 MySQL 的 Azure 資料庫進行疑難排解 - 彈性伺服器 CLI 錯誤
+      - 安全性
+        - 設定 Microsoft Entra 帳戶驗證
+          [673] 為適用於 MySQL 的 Azure 資料庫 - 彈性伺服器設定 Microsoft Entra 驗證
+        - 使用 Azure 入口網站加密資料
+          [685] 使用 Azure 入口網站，針對適用於MySQL 的 Azure 資料庫 - 彈性伺服器進行資料加密
+        - 使用 Azure CLI 加密資料
+          [692] 適用於 MySQL 的 Azure 資料庫資料加密-Azure CLI 的彈性伺服器
+    - 範例
+      - Azure CLI 範例
+        - 範例概觀
+          [698] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器的 Azure CLI 範例
+        - 建立具有公用存取的伺服器
+          [700] 建立 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器實例，並使用 Azure CLI 啟用公用存取連線
+        - 使用 VNet 整合建立伺服器
+          [704] 使用 Azure CLI 在 VNet 中建立 適用於MySQL 的 Azure 資料庫 - 彈性伺服器資料庫
+        - 監視和調整伺服器
+          [709] 使用 Azure CLI 監視和調整 適用於MySQL 的 Azure 資料庫 - 彈性伺服器實例
+        - 還原伺服器
+          [714] 還原 適用於 MySQL 的 Azure 資料庫 - 使用 Azure CLI 的彈性伺服器實例
+        - 設定區域備援HA
+          [718] 在 適用於 MySQL 的 Azure 資料庫 中設定區域備援高可用性 - 使用 Azure CLI 的彈性伺服器實例
+        - 設定相同區域HA
+          [722] 在 適用於 MySQL 的 Azure 資料庫 中設定相同區域的高可用性 - 使用 Azure CLI的彈性伺服器
+        - 重新啟動、停止、啟動伺服器
+          [726] 重新啟動/停止/啟動 適用於 MySQL 的Azure 資料庫 - 使用 Azure CLI 的彈性伺服器實例
+        - 變更伺服器參數
+          [730] 列出和變更 適用於 MySQL 的 Azure 資料庫 的伺服器參數 - 使用 Azure CLI 的彈性伺服器
+        - 建立讀取複本
+          [734] 在 適用於 MySQL 的 Azure 資料庫 中建立和管理讀取複本 - 使用 Azure CLI 的彈性伺服器
+        - 設定稽核記錄
+          [738] 在 適用於 MySQL 的 Azure 資料庫 上設定稽核記錄 - 使用 Azure CLI 的彈性伺服器
+        - 設定慢速查詢記錄
+          [742] 在 適用於 MySQL 的 Azure 資料庫 上設定慢速查詢記錄 - 使用 Azure CLI 的彈性伺服器實例
+  - 適用於 MySQL 的 Azure 資料庫 - 單一伺服器
+    - 適用於 MySQL 的 Azure 資料庫 - 單一伺服器會發生什麼事？
+      [746] 適用於 MySQL 的 Azure 資料庫 - 單一伺服器會發生什麼事？
+    - 概觀
+      - 什麼是適用於 MySQL 的 Azure 資料庫 - 單一伺服器？
+        [755] 適用於 MySQL 的 Azure 資料庫單一伺服器
+      - 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器有何新功能？
+        [760] 適用於 MySQL 的 Azure 資料庫 - 單一伺服器的新功能？
+      - 定價層
+        - 定價層
+          [765] 適用於 MySQL 的 Azure 資料庫 - 單一伺服器服務層
+    - 快速入門
+      - 建立 適用於 MySQL 的 Azure 資料庫 - 單一伺服器實例
+        - Azure CLI
+          [772] 快速入門：使用 Azure CLI 建立適用於MySQL 的 Azure 資料庫伺服器
+        - Azure CLI up 命令
+          [777] 快速入門：使用簡單的 Azure CLI 命令建立適用於 MySQL 的 Azure 資料庫 - azmysql up （預覽）
+        - Azure PowerShell
+          [781] 快速入門：使用 PowerShell 建立 適用於MySQL 的 Azure 資料庫 伺服器
+        - Bicep
+          [790] 快速入門：使用 Bicep 建立適用於MySQL 的 Azure 資料庫伺服器
+        - ARM 範本
+          [796] 快速入門：使用ARM範本建立 適用於MySQL 的 Azure 資料庫 伺服器
+      - 連線和查詢
+        - 連線 和查詢指南
+          [806] 適用於 My SQL 的 Azure 資料庫的連線和查詢概觀 - 單一伺服器
+        - 應用程式 連接字串
+          [808] 如何將應用程式連線至適用於 MySQL 的Azure 資料庫
+        - 產生 連接字串 - PowerShell
+          [811] 如何使用 PowerShell 產生適用於 MySQL的 Azure 資料庫連接字串
+        - 連線 至網關節點
+          [813] 連線至特定 MySQL 版本的閘道節點
+        - MySQL Workbench
+          [816] 快速入門：使用 MySQL Workbench 來連線及查詢適用於 MySQL 的 Azure 資料庫中的資料
+        - Azure App Service
+          [822] 將現有的 Azure App Service 連線到適用於 MySQL 伺服器的 Azure 資料庫
+        - PHP
+          [826] 快速入門：使用 PHP 來連線及查詢適用於 MySQL 的 Azure 資料庫中的資料
+        - Java
+          [832] 快速入門：搭配使用 Java 和 JDBC 與適用於 MySQL 的 Azure 資料庫
+        - Java with Spring Data JDBC
+          [848] 搭配使用 Spring Data JDBC 搭配 適用於MySQL 的 Azure 資料庫
+        - Java with Spring Data JPA
+          [855] 搭配使用 Spring Data JPA 搭配 適用於MySQL 的 Azure 資料庫
+        - Java with Spring Data R2DBC
+          [862] 搭配使用 Spring Data R2DBC 搭配 適用於 MySQL 的 Azure 資料庫
+        - .NET
+          [873] 快速入門：使用 .NET (C#) 來連線及查詢適用於 MySQL 的 Azure 資料庫中的資料
+        - Python
+          [881] 快速入門：使用 Python 連線和查詢適用於 MySQL 的 Azure 資料庫中的資料
+        - Node.js
+          [889] 快速入門：使用Node.js來連線和查詢 適用於 MySQL 的 Azure 資料庫 中的數據
+        - Ruby
+          [897] 快速入門：使用 Ruby 來連線及查詢適用於 MySQL 的 Azure 資料庫中的資料
+        - C++
+          [904] 快速入門：使用 Connector/C++ 來連線及查詢適用於 MySQL 的 Azure 資料庫中的資料
+        - Go
+          [912] 快速入門：使用 Go 程式設計語言連線及查詢適用於 MySQL 的 Azure 資料庫的資料
+        - 針對連線錯誤進行疑難排解
+          [921] 針對適用於 MySQL 的 Azure 資料庫的連線問題進行疑難排解
+      - 設定 SSL
+        [924] 在您的應用程式中設定 SSL 連線能力，以安全地連線至適用於 MySQL 的 Azure 資料庫
+      - 設定防火牆規則
+        - 概念
+          [932] 適用於 MySQL 的 Azure 資料庫伺服器防火牆規則
+        - 使用 Azure 入口網站 設定防火牆規則
+          [936] 使用 Azure 入口網站建立和管理適用於MySQL 的 Azure 資料庫防火牆規則
+        - 使用 Azure CLI 設定防火牆規則
+          [940] 使用 Azure CLI 建立和管理適用於 MySQL的 Azure 資料庫防火牆規則
+      - 設定伺服器參數
+        - Azure 入口網站
+          [945] 使用 Azure 入口網站在 MySQL 的 Azure資料庫中設定伺服器參數
+        - Azure CLI
+          [950] 使用 Azure CLI 在適用於 MySQL 的Azure 資料庫中設定伺服器參數
+        - Azure PowerShell
+          [954] 使用 PowerShell 在 適用於 MySQL 的Azure 資料庫 中設定伺服器參數
+      - 建立資料庫和使用者
+        [957] 在適用於 MySQL 的 Azure 資料庫中建立使用者
+      - 監視伺服器
+        - 建立計量警示
+          [961] 使用 Azure 入口網站來設定適用於MySQL 之 Azure 資料庫的計量警示
+    - 概念
+      - XBOX Video Application Development
+        - 應用程式開發概觀
+          [966] 適用於 MySQL 的 Azure 資料庫的應用程式開發概觀
+        - 驅動程式和工具相容性
+          [968] 
+        - 連線恢復
+          [971] 處理暫時性錯誤並有效地連線到適用於MySQL 的 Azure 資料庫
+      - 網路
+        - 虛擬網路服務端點
+          [975] 針對適用於 MySQL 的 Azure 資料庫使用虛擬網路服務端點和規則
+        - 私人連結
+          [981] 適用於 MySQL 的 Azure 資料庫的 PrivateLink
+      - 安全性
+        - 安全性概觀
+          [987] 適用於 MySQL 的 Azure 資料庫安全性
+        - 安全性基準
+          [989] 適用於 適用於 MySQL 的 Azure 資料庫的 Azure 安全性基準 - 彈性伺服器
+        - Microsoft Entra 驗證
+          [1004] 使用 Microsoft Entra ID 向 MySQL 進行驗證
+        - 網路安全性 （加密進行中）
+          - 設定 SSL
+            [1009] 適用於 MySQL 的 Azure 資料庫中的SSL/TLS 連線能力
+        - 威脅防護搭配適用於雲端的 Microsoft Defender
+          [1012] 回應 Defender 開放原始碼資料庫警示
+        - 待用加密
+          - 資料加密
+            [1015] 使用客戶管理的金鑰 適用於 MySQL 的Azure 資料庫 數據加密
+          - 基礎結構雙重加密
+            [1022] 適用於 MySQL 的 Azure 資料庫基礎結構雙重加密
+        - 伺服器稽核
+          - 概念
+            [1025] 適用於 MySQL 的 Azure 資料庫中的稽核記錄
+        - 法規遵循
+          [1032] 適用於「適用於 MySQL 的 Azure 資料庫」的 Azure 原則法規合規性控制措施
+      - 高可用性
+        - 商務持續性簡介
+          [1051] 使用「適用於 MySQL 的 Azure 資料庫 -單一伺服器」的商務持續性概觀
+        - 高可用性
+          [1055] 適用於 MySQL 的 Azure 資料庫中的高可用性
+      - 伺服器管理
+        - 伺服器
+          [1059] 適用於 MySQL 的 Azure 資料庫中的伺服器概念
+        - 伺服器限制
+          [1062] 適用於 MySQL 的 Azure 資料庫中的限制
+        - 伺服器參數
+          [1065] 適用於 MySQL 的 Azure 資料庫中的伺服器參數
+      - 備份與還原
+        [1081] 在適用於 MySQL 的 Azure 資料庫中備份與還原
+      - 複寫
+        - 複寫中的資料
+          [1087] 將資料複寫至適用於 MySQL 的 Azure 資料庫
+        - 讀取複本
+          [1090] 讀取「適用於 MySQL 的 Azure 資料庫」中的複本
+      - 服務維護
+        - 預定的維修
+          [1100] 適用於 MySQL 的 Azure 資料庫 - 單一伺服器中的計劃性維護通知
+        - 閘道維護
+          [1103] 適用於 MySQL 的 Azure 資料庫中的連線架構
+        - SSL 根憑證即將到期
+          [1111] 了解「適用於 MySQL 的 Azure 資料庫」單一伺服器的根 CA 變更中的變更
+      - 監視與微調
+        - 監視概觀
+          [1118] 在適用於 MySQL 的 Azure 資料庫中監視
+        - 慢速查詢記錄
+          [1121] 適用於 MySQL 的 Azure 資料庫中的慢速查詢記錄
+        - 查詢存放區
+          [1126] 使用查詢存放區監視適用於 MySQL 的Azure 資料庫效能
+        - 查詢效能深入解析
+          [1133] 「適用於 MySQL 的 Azure 資料庫」中的查詢效能深入解析
+        - 效能建議
+          [1137] 「適用於 MySQL 的 Azure 資料庫」中的效能建議
+        - Azure Advisor 建議
+          [1140] 搭配適用於 MySQL 的 Azure 資料庫 - 彈性伺服器之一起使用的 Azure Advisor
+    - 教學課程
+      - XBOX Video Application Development
+        - 設計資料庫
+          - Azure CLI
+            [1142] 教學課程：使用 Azure CLI 設計適用於MySQL 的 Azure 資料庫
+          - Azure PowerShell
+            [1149] 教學課程：使用 PowerShell 設計 適用於MySQL 的 Azure 資料庫
+          - Azure Resource Manager 範本
+            [1157] 教學課程：使用 Azure ResourceManager 範本布建 適用於 MySQL 的Azure 資料庫 伺服器
+        - 使用 MySQL 建置 PHP Web 應用程式
+          - 使用 MySQL 的容器中的 Wordpress
+            [1165] 教學課程：在用於容器的 Web 應用程式中建立多容器 (預覽) 應用程式
+          - PHP with MySQL
+            [1183] 教學課程：將 PHP、MySQL 和 Redis 應用程式部署至 Azure App Service
+        - 使用重新導向 連線
+          [1208] 使用重新導向連線到適用於 MySQL 的Azure 資料庫
+        - 資料庫部署
+          - Azure Pipelines
+            [1213] 搭配適用於 MySQL 的 Azure 資料庫 - 單一伺服器一起使用的 Azure Pipelines
+      - 網路
+        - 使用 Azure 入口網站 設定 VNet 服務端點
+          [1218] 使用 Azure 入口網站建立及管理適用於MySQL 的 Azure 資料庫的 VNet 服務端點和 VNet 規則
+        - 使用 Azure CLI 設定 VNet 服務端點
+          [1222] 使用 Azure CLI 建立及管理適用於 MySQL的 Azure 資料庫的 VNet 服務端點
+        - 使用 Azure 入口網站 設定 Private Link
+          [1227] 使用入口網站建立與管理適用於 MySQL的 Azure 資料庫私人連結
+        - 使用 Azure CLI 設定 Private Link
+          [1236] 使用 CLI 針對適用於 MySQL 的 Azure 資料庫建立與管理私人連結
+      - 安全性
+        - 設定 Microsoft Entra 整合
+          [1242] 使用 Microsoft Entra ID 向 MySQL 進行驗證
+        - 使用受控識別進行連線
+          [1250] 使用受控識別連線到適用於 MySQL 的Azure 資料庫
+        - 設定 TLS
+          [1256] 使用 Azure 入口網站在適用於 MySQL 的Azure 資料庫中進行 TLS 設定
+        - 拒絕公用網路存取
+          [1258] 使用 Azure 入口網站拒絕適用於 MySQL的 Azure 資料庫中的公用網路存取
+        - 使用 Azure 入口網站 設定客戶受控金鑰的加密
+          [1260] 使用 Azure 入口網站，對適用於 MySQL的 Azure 資料庫進行資料加密
+        - 使用 Azure CLI 以客戶管理的金鑰設定加密
+          [1266] 使用 Azure CLI 的適用於 MySQL 的Azure 資料庫資料加密
+        - 數據加密驗證
+          [1274] 驗證適用於 MySQL 的 Azure 資料庫資料加密
+        - 設定基礎結構雙重加密
+          [1276] 適用於 MySQL 的 Azure 資料庫的基礎結構雙重加密
+        - 使用 Azure 入口網站 設定稽核記錄
+          [1280] 在 Azure 入口網站中設定和存取適用於MySQL 的 Azure 資料庫的稽核記錄
+        - 使用 Azure CLI 設定稽核記錄
+          [1286] 在 Azure CLI 中設定和存取稽核記錄
+      - 伺服器管理
+        - 管理及調整伺服器
+          - 使用 Azure 入口網站
+            [1289] 使用 Azure 入口網站管理適用於 MySQL的 Azure 資料庫伺服器
+          - 使用 Azure CLI
+            [1295] 使用 Azure CLI 管理適用於 MySQL 的Azure 資料庫單一伺服器
+        - 停止/啟動 MySQL 伺服器
+          [1298] 停止/啟動適用於 MySQL 的 Azure 資料庫
+        - 主要版本升級
+          [1301] 適用於 MySQL 的 Azure 資料庫 單一伺服器中的主要版本升級
+        - 自動成長記憶體
+          - 使用 Azure 入口網站
+            [1307] 使用 Azure 入口網站在適用於 MySQL 的Azure 資料庫中自動成長儲存體
+          - 使用 Azure CLI
+            [1309] 使用 Azure CLI 來自動成長適用於 MySQL的 Azure 資料庫儲存體
+          - 使用 Azure PowerShell
+            [1311] 使用 PowerShell 在適用於 MySQL 的Azure 資料庫中讓儲存體自動成長
+        - 重新啟動伺服器
+          - 使用 Azure 入口網站
+            [1313] 使用 Azure 入口網站重新啟動適用於MySQL 的 Azure 資料庫伺服器
+          - 使用 Azure CLI
+            [1316] 使用 Azure CLI 重新啟動適用於 MySQL的 Azure 資料庫伺服器
+          - 使用 Azure PowerShell
+            [1318] 使用 PowerShell 重新啟動 適用於 MySQL的 Azure 資料庫 伺服器
+        - 在區域之間移動伺服器
+          [1321] 使用 Azure 入口網站將適用於 MySQL 的Azure 資料庫伺服器移至另一個區域
+      - 備份與還原
+        - 還原伺服器
+          - 使用 Azure 入口網站
+            [1324] 如何使用 Azure 入口網站在適用於MySQL 的 Azure 資料庫中備份和還原伺服器
+          - 使用 Azure CLI
+            [1334] 如何使用 Azure CLI 在適用於 MySQL 的Azure 資料庫中備份和還原伺服器
+          - 使用 Azure PowerShell
+            [1339] 如何使用PowerShell備份和還原 適用於MySQL 的 Azure 資料庫 伺服器
+        - 還原已刪除的伺服器
+          [1344] 還原已刪除的適用於 MySQL 的 Azure 資料庫伺服器
+      - 複寫
+        - 設定複寫中的資料
+          [1347] 如何為適用於 MySQL 的 Azure 資料庫設定複寫中的資料
+        - 建立讀取複本
+          - 使用 Azure 入口網站
+            [1359] 如何使用 Azure 入口網站在適用於MySQL 的 Azure 資料庫中建立與管理讀取複本
+          - 使用 Azure CLI、REST API
+            [1372] 如何使用 Azure CLI 和 REST API 在適用於 MySQL 的 Azure 資料庫中建立與管理讀取複本
+          - 使用 Azure PowerShell
+            [1379] 如何使用 PowerShell 在 適用於 MySQL的 Azure 資料庫 中建立和管理讀取複本
+      - 監視與微調
+        - 設定慢速查詢記錄
+          - 使用 Azure 入口網站
+            [1384] 從 Azure 入口網站設定和存取慢速查詢記錄
+          - 使用 Azure CLI
+            [1391] 使用 Azure CLI 設定和存取慢速查詢記錄
+    - 範例
+      - Azure CLI 範例
+        - 範例概觀
+          [1393] 適用于 適用於 MySQL 的 Azure 資料庫的 Azure CLI 範例
+        - 建立伺服器
+          [1394] 使用 Azure CLI 建立 MySQL 伺服器並設定防火牆規則
+        - 監視和調整伺服器
+          [1397] 使用 Azure CLI 監視和調整適用於 MySQL的 Azure 資料庫伺服器
+        - 變更伺服器組態
+          [1401] 使用 Azure CLI 列出及更新 AzureDatabase for MySQL 伺服器的組態
+        - 還原伺服器
+          [1405] 使用 Azure CLI 還原「適用於 MySQL 的Azure 資料庫」伺服器
+        - 啟用伺服器記錄
+          [1409] 使用 Azure CLI 啟用並下載「適用於MySQL 的 Azure 資料庫」伺服器的伺服器慢速查詢記錄
+      - 設定 Java 連線共用
+        [1413] 說明連線集區的 Java 範例
+  - 遷移
+    - 常見問題集
+      [1418] 常見問題集 (FAQ)
+    - 選擇適合移轉的工具
+      [1420] 選取適當的工具來移轉至適用於 MySQL的 Azure 資料庫
+    - 將數據從內部部署 MySQL 遷移至 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器
+      [1423] 將 MySQL 內部部署移轉至適用於 MySQL的 Azure 資料庫
+    - 使用 Azure MySQL 匯入 CLI 遷移 MySQL 內部部署或 VM 工作負載
+      [1425] 使用適用於 MySQL 的 Azure 資料庫匯入CLI (公開預覽)，將 MySQL 內部部署或虛擬機器 (VM) 工作負載移轉至適用於MySQL 的 Azure 資料庫 - 彈性伺服器
+    - 將 適用於 MySQL 的 Azure 資料庫 - 單一伺服器移至 適用於 MySQL 的 Azure 資料庫 - 使用 DMS 離機彈性伺服器 （傳統）
+      [1432] 教學課程：透過 Azure 入口網站 將 適用於 MySQL 的 Azure 資料庫 移轉至離線使用 DMS 的彈性伺服器
+    - 將 適用於 MySQL 的 Azure 資料庫 - 單一伺服器移至 適用於 MySQL 的 Azure 資料庫 - 使用 DMS 線上彈性伺服器 （傳統）
+      [1452] 教學課程：透過 Azure 入口網站，使用DMS 將「適用於 MySQL 的 Azure 資料庫 - 單一伺服器」線上移轉至彈性伺服器
+    - 將 適用於 MySQL 的 Azure 資料庫 - 單一伺服器遷移至 適用於 MySQL 的 Azure 資料庫 - 使用 Azure MySQL 匯入 CLI 彈性伺服器
+      [1474] 移轉 適用於 MySQL 的 Azure 資料庫 - 使用 適用於 MySQL 的 Azure 資料庫 匯入CLI 將單一伺服器遷移至彈性伺服器
+    - 就地自動移轉 適用於 MySQL 的 Azure 資料庫 - 單一伺服器至 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器
+      [1485] 從適用於 MySQL 的 Azure 資料庫 – 單一伺服器就地移轉至彈性伺服器
+    - 使用 mysqldump 或 phpmyadmin 遷移數據
+      [1491] 使用傾印和還原來將 MySQL 資料庫移轉至適用於 MySQL 的 Azure 資料庫 - 彈性伺服器
+    - 將大型資料庫遷移至 適用於 MySQL 的 Azure 資料庫 - 使用 mydumper/myloader 的彈性伺服器
+      [1499] 使用 mydumper/myloader 將大型資料庫遷移至適用於 MySQL 的 Azure 資料庫
+    - 使用 dbForge Studio for MySQL 遷移數據
+      [1504] 使用 dbForge Studio for MySQL 將資料移轉至適用於 MySQL 的 Azure 資料庫
+    - 使用 MySQL Workbench 遷移數據
+      [1512] 使用匯入和匯出功能，移轉適用於MySQL 的 Azure 資料庫 - 彈性伺服器資料庫
+    - 使用 MySQL Workbench 遷移 RDS MySQL 數據
+      [1519] 使用 MySQL Workbench 將 AmazonRDS for MySQL 遷移至「適用於 MySQL的 Azure 資料庫」
+    - 使用數據輸入復寫遷移 RDS MySQL 數據
+      [1534] 使用資料輸入複寫將適用於 MySQL 的Amazon RDS 移轉至適用於 MySQL 的Azure 資料庫
+    - 適用於 MySQL 的 Azure 資料庫 - 要 適用於 MySQL 的 Azure 資料庫 的單一伺服器 - 彈性伺服器
+      [1543] 使用開放原始碼工具將「適用於 MySQL的 Azure 資料庫 - 單一伺服器」移轉至「適用於 MySQL 的 Azure 資料庫 - 彈性伺服器」
+    - 使用 DMS 的最短停機時間移轉 （傳統）
+      [1551] 以最短停機時間移轉至適用於 MySQL 的Azure 資料庫 - 彈性伺服器 | MicrosoftDocs
+    - 疑難排解常見錯誤
+      [1552] 對在移轉至適用於 MySQL 的 Azure 資料庫 - 彈性伺服器期間或之後常發生的錯誤進行疑難排解
+  - 疑難排解
+    - 解決容量錯誤
+      [1557] Resolve capacity errors for AzureDatabase for MySQL - Flexible Server
+    - 申請加大配額
+      [1561] Request quota increases for AzureDatabase for MySQL - Flexible Server
+    - 針對移轉錯誤進行疑難排解
+      [1564] 對在移轉至適用於 MySQL 的 Azure 資料庫 - 彈性伺服器期間或之後常發生的錯誤進行疑難排解
+    - 查詢效能
+      - 針對查詢效能進行疑難排解
+        [1569] 針對適用於 MySQL 的 Azure 資料庫 - 彈性伺服器進行查詢效能的疑難排解
+      - 設定檔查詢效能
+        [1579] 使用 EXPLAIN 分析適用於 MySQL 的Azure 資料庫 - 彈性伺服器中的查詢效能
+    - 針對低記憶體問題進行疑難排解
+      [1584] 針對適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的記憶體不足問題進行疑難排解
+    - 針對高 CPU 使用率進行疑難排解
+      [1590] 為「適用於 MySQL 的 Azure 資料庫 - 彈性伺服器」中的高 CPU 使用率疑難排解
+    - 將資料加密進行疑難排解
+      [1597] 針對適用於 MySQL 的 Azure 資料庫中的資料加密問題進行疑難排解
+    - 針對複寫延遲進行疑難排解
+      [1599] 對適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的複寫延遲進行疑難排解
+    - 針對資料庫損毀進行疑難排解
+      [1610] 針對適用於 MySQL 的 Azure 資料庫 - 彈性伺服器中的資料庫損毀進行疑難排解
+    - 針對連線能力問題進行疑難排解
+      [1613] 針對適用於 MySQL 的 Azure 資料庫 - 彈性伺服器連線能力問題進行疑難排解
+    - 使用 sys_schema 微調效能
+      [1617] 使用 sys_schema 在適用於 MySQL 的Azure 資料庫 - 彈性伺服器中微調效能並維護資料庫
+    - 疑難排解最佳做法
+      [1623] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器疑難排解的最佳做法
+  - 最佳作法
+    - 監視最佳做法
+      [1628] 監視適用於 MySQL 的 Azure 資料庫 - 彈性伺服器的最佳做法
+    - 效能最佳做法
+      [1630] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器的最佳效能最佳做法
+    - 效能效能評定最佳做法
+      [1636] 「適用於 MySQL 的 Azure 資料庫 - 彈性伺服器」的效能評定最佳做法
+    - 應用程式開發最佳做法
+      [1645] 使用適用於 MySQL 的 Azure 資料庫建立應用程式的最佳作法
+    - 運作相關最佳做法
+      [1650] 在適用於 MySQL 的 Azure 資料庫 - 彈性伺服器上進行伺服器作業的最佳做法
+  - 參考
+    - Azure CLI
+      [1653] az mysql
+    - REST API
+      [1667] 適用於 MySQL 的 Azure 資料庫 REST API
+    - Azure Resource Manager 範本
+      [1669] Microsoft.DBforMySQL 資源類型
+    - 管理預存程式
+      [1672] 適用於 MySQL 的 Azure 資料庫管理預存程式
+    - Azure 原則內建
+      [1674] 
+  - 資源
+    - 部署範本
+    - Azure 藍圖
+    - 定價
+    - Microsoft 問與答頁面
+    - Stack Overflow
+    - 影片
+      - 如何影片系列
+        - 了解產品功能和優點
+        - 將 MySQL 應用程式遷移至 Azure
+        - 建置及部署 Web Apps
+    - 要求功能
+    - 區域可用性
+    - 支援選項
+    - 客戶案例
+    - 合作夥伴
+      [1678] 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器移轉合作夥伴
+    - 資料庫移轉指南
+      [1680] 

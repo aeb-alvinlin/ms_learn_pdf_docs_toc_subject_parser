@@ -1,0 +1,514 @@
+ - ---< entra-identity-hybrid.pdf >---
+  - 混合式身分識別
+    [1] 混合式身分識別檔
+    - 什麼是混合式身分識別和AD整合？
+      [4] 什麼是具有 Microsoft Entra ID 的混合式身分識別？
+    - 什麼是身分識別保護？
+      [7] 什麼是身分識別保護？
+    - 什麼是目錄間布建？
+      [11] 什麼是目錄間布建？
+  - 案例
+    - 開始使用 Active Directory
+      - 常見案例
+        [13] 混合式案例
+      - 同步處理的工具
+        [16] 用於同步處理的工具
+      - 選擇正確的同步處理用戶端
+      - 啟動的步驟
+        [18] 開始與 Microsoft Entra 識別元整合的步驟
+      - 必要條件
+        [20] 與 Active Directory 整合的必要條件
+    - 管理部署
+      - 安裝同步處理工具
+        [23] 安裝同步處理工具
+      - 設定同步處理
+        [26] 設定與 Active Directory 的整合
+      - 設定帳戶設定
+        [28] 與 Active Directory 整合的帳戶
+      - 監視您的環境
+        [30] Microsoft Entra 連線 Health 作業
+      - Exchange 混合式回寫
+        [40] 發行項• 2023/11/21
+      - 解除委任連線同步 V1
+        [42] 解除委任 Azure AD 連線 V1
+      - 確認您的同步處理版本
+        [44] 確認布建代理程式的版本或連線同步
+    - 管理使用者與群組
+      - 視需要布建使用者
+        [47] 使用雲端同步進行隨選布建
+      - 群組回寫
+        [49] 使用 Microsoft Entra Cloud Sync 群組回寫 （預覽）
+      - 排程匯入
+        [52] Microsoft Entra 連線同步處理：排程器
+      - 防止意外刪除
+        [60] 如何防止意外刪除
+    - 管理密碼
+      - 什麼是密碼哈希同步處理？
+        [62] 什麼是使用 Microsoft Entra ID 的密碼雜湊同步處理？
+      - 什麼是傳遞驗證？
+        [64] 使用 Microsoft Entra 傳遞驗證來進行使用者登入
+      - 什麼是同盟？
+        [67] 什麼是與 Microsoft Entra 識別碼的同盟？
+      - 針對密碼同步處理進行疑難解答
+        [69] 針對使用 Microsoft Entra Connect 同步執行的密碼雜湊同步處理進行疑難排解
+    - 管理單一登錄
+      - 什麼是單一登入？
+        [85] Microsoft Entra 無縫單一登入
+      - 開始使用
+        [88] 開始使用單一登入
+      - 單一登錄常見問題
+        [90] 無縫 SSO 可搭配使用哪些登入方法
+             無縫 SSO 是否為免費功能？
+             Microsoft Azure 德國雲端和 MicrosoftAzure Government 雲端是否提供無縫SSO？
+             哪些應用程式會利用無縫 SSO 的'domain_hint' 或 'login_hint' 參數功能？
+    - 管理屬性
+      - 雲端同步處理中的屬性對應
+        [96] Microsoft Entra Cloud Sync 中的屬性對應
+      - 線上同步中預設組態的概觀
+        [105] Microsoft Entra Connect 同步處理：了解預設組態
+      - 如何在連線同步中變更預設組態
+        [117] Microsoft Entra 連線 Sync：變更預設組態
+      - 同步處理至 AD 的屬性
+        [137] Microsoft Entra 連線 Sync：同步處理至Microsoft Entra 識別碼的屬性
+    - 使用 Microsoft Entra Cloud Sync 布建至 AD
+      - 使用 Microsoft Entra ID 控管 控制管以 內部部署的 Active Directory 為基礎的應用程式 （Kerberos）
+        [157] 使用 Microsoft Entra ID 控管 管理以 內部部署的 Active Directory 為基礎的應用程式 （Kerberos）
+      - 將 Microsoft Entra 連線 Sync 群組回寫 V2 遷移至 Microsoft Entra Cloud Sync
+        [163] 將 Microsoft Entra 連線 Sync 群組回寫V2 遷移至 Microsoft Entra Cloud Sync
+  - 雲端同步參考
+    - 什麼是雲端同步？
+      [174] 什麼是 Microsoft Entra Cloud Sync？
+    - 什麼是布建代理程式？
+      [178] 什麼是 Microsoft Entra 布建代理程式？
+    - 教學課程
+      - 整合單一 AD 樹系與單一 Microsoft Entra 租使用者
+        [179] 教學課程：整合單一樹系與單一Microsoft Entra 租使用者
+      - 將現有及全新樹系與單一 Microsoft Entra 租用戶整合
+        [191] 將現有及全新樹系與單一 Microsoft Entra租用戶整合
+      - 針對現有的同步 AD 樹系進行雲端同步試驗
+        [203] 移轉至現有同步 AD 樹系的 MicrosoftEntra Cloud Sync
+      - 使用 Microsoft Entra ID 控管 控制管以 內部部署的 Active Directory 為基礎的應用程式 （Kerberos）
+        [224] 使用 Microsoft Entra ID 控管 管理以 內部部署的 Active Directory 為基礎的應用程式 （Kerberos）
+    - 概念
+      - 運作方式
+        [230] 雲端同步深入探討 - 運作方式
+      - 什麼是密碼哈希同步處理？
+        [235] 什麼是使用 Microsoft Entra ID 的密碼雜湊同步處理？
+      - 瞭解 Microsoft Entra 架構、屬性和運算式
+        [237] 瞭解 Microsoft Entra 架構
+      - 在 Microsoft Entra ID 中撰寫屬性對應的表達式
+        [245] 在 Microsoft Entra ID 中撰寫屬性對應的運算式
+    - 操作指南
+      - 安裝和升級
+        - 安裝必要條件
+          [267] Microsoft Entra 雲端同步的必要條件
+        - 安裝佈建代理程式
+          [273] 安裝 Microsoft Entra 布建代理程式
+        - 使用 CLI 和 PowerShell 安裝布建代理程式
+          [285] 使用 CLI 和 PowerShell 安裝 MicrosoftEntra 布建代理程式
+        - 設定 - AD 至 Microsoft Entra 識別符
+          [289] 建立 Microsoft Entra Cloud Sync 的新設定
+        - 使用 Microsoft Entra Cloud Sync 將群組布建至 AD
+          [301] 使用 Microsoft Entra Cloud Sync 將群組布建至 Active Directory （預覽）
+        - 隨選佈建
+          [316] Microsoft Entra Cloud Sync 中的隨選布建
+        - 屬性對應
+          [321] Microsoft Entra Cloud Sync 中的屬性對應
+        - 使用單一登錄
+          [330] 搭配雲端同步使用單一登錄
+        - 目錄延伸模組和自定義屬性
+          [332] 雲端同步目錄延伸模組和自定義屬性對應
+        - Exchange 混合式
+          [337] 使用雲端同步交換混合式回寫
+      - 遷移
+        - 移轉同步處理工具
+          [343] 從 Microsoft Entra 連線 移轉至Microsoft Entra Cloud Sync
+        - 將 Microsoft Entra 連線 Sync 群組回寫 V2 遷移至 Microsoft Entra Cloud Sync
+          [346] 將 Microsoft Entra 連線 Sync 群組回寫V2 遷移至 Microsoft Entra Cloud Sync
+      - 規劃和設計
+        - 雲端同步的拓撲和案例
+          [357] Microsoft Entra Cloud Sync 支援的拓撲和案例
+    - 管理
+      - 代理程式自動升級
+        [363] Microsoft Entra 連線雲端布建代理程式：自動升級
+      - 意外刪除
+        [367] 意外刪除防護
+      - 代理程式登錄選項
+        [372] 管理代理程式登錄選項
+      - Agent gMSA PowerShell Cmdlet
+        [375] Microsoft Entra 布建代理程序 gMSAPowerShell Cmdlet
+      - 如何使用雲端同步處理來對應usertype
+        [378] 使用雲端同步處理對應 UserType
+      - Microsoft Entra Connect 雲端同步深入解析活頁簿
+        [381] Microsoft Entra Connect 雲端同步深入解析活頁簿
+    - 開發
+      - 轉換
+        [385] 轉換
+      - 使用 MS Graph API 以程式設計方式設定雲端同步
+        [389] 如何使用 MS 圖形 API 以程式設計方式設定雲端同步
+      - 運算式產生器
+        [399] 使用雲端同步的運算式產生器
+      - Microsoft Entra 同步處理 API
+        [404] Microsoft Entra ID synchronization APIoverview
+    - 疑難排解
+      - 針對雲端同步進行疑難解答
+        [410] 雲端同步疑難解答
+      - 重複的屬性
+        [423] 身分識別同步處理和重複屬性恢復功能
+    - 參考
+      - 布建代理程式版本歷程記錄
+        [430] Microsoft Entra 布建代理程式：版本發行歷程記錄
+      - 雲端同步常見問題
+        [437] 雲端同步處理的執行頻率為何？
+              第一次執行時看到密碼雜湊同步失敗。 為什麼？
+              如果 Active Directory 實例具有雲端同步不支援的屬性（例如目錄延伸模組），會發生什麼情況？
+              用 Microsoft Entra 連線 Sync 與雲端同步有何差異？
+      - AADCloudSyncTools PowerShell 模組
+        [442] 適用于 Microsoft Entra Cloud Sync 的AADCloudSyncTools PowerShell 模組
+      - 同步處理的屬性
+        [448] Microsoft Entra 連線 Sync：同步處理至Microsoft Entra 識別碼的屬性
+      - 錯誤碼與描述
+        [468] 
+      - 基本 Active Directory 和 Microsoft Entra 環境
+        [470] 教學課程：基本 Active Directory 環境
+  - 連線 同步參考
+    - 什麼是連線同步處理？
+      [483] Microsoft Entra 連線 V2 簡介
+    - 教學課程
+      - 在 Active Directory 中使用混合式身分識別的密碼哈希同步處理
+        [488] 教學課程：在單一 Active Directory 樹系中使用混合式身分識別的密碼哈希同步處理
+      - 在 Active Directory 中使用混合式身分識別的傳遞驗證
+        [496] 教學課程：在單一 Active Directory 樹系中使用混合式身分識別的傳遞驗證
+      - 在 Active Directory 中使用混合式身分識別的同盟
+        [506] 教學課程：在單一 Active Directory 樹系中使用混合式身分識別的同盟
+      - 將密碼哈希同步設定為AD FS的備份
+        [518] 教學課程：將密碼雜湊同步設定為 Azure目錄同盟服務的備份
+    - 概念
+      - Microsoft Entra 連線 和 連線 Health
+        - 什麼是 Microsoft Entra 連線 和 連線 Health？
+          [525] 什麼是 Microsoft Entra Connect？
+        - 什麼是 Microsoft Entra 連線 V2.0？
+          [530] Microsoft Entra 連線 V2 簡介
+        - 選擇正確的驗證
+          [535] 為您的 Microsoft Entra 混合式身分識別解決方案選擇正確的驗證方法
+        - 身分識別同步處理和重複屬性恢復功能
+          [547] 身分識別同步處理和重複屬性恢復功能
+      - 密碼雜湊同步
+        - 什麼是密碼雜湊同步處理？
+          [554] 什麼是使用 Microsoft Entra ID 的密碼雜湊同步處理？
+        - 密碼雜湊同步處理如何運作
+          [556] 使用 Microsoft Entra 連線 Sync 實作密碼哈希同步處理
+        - 選擇性密碼哈希同步處理
+          [567] Microsoft Entra 連線的選擇性密碼雜湊同步處理組態
+      - 傳遞驗證
+        - 什麼是傳遞驗證？
+          [583] 使用 Microsoft Entra 傳遞驗證來進行使用者登入
+        - 傳遞驗證的運作方式
+          [586] Microsoft Entra 傳遞驗證：技術深入探討
+        - 傳遞驗證目前的限制
+          [588] Microsoft Entra 傳遞驗證：目前的限制
+        - 傳遞驗證的安全性深入探討
+          [590] Microsoft Entra 傳遞驗證安全性深入探討
+        - 傳遞驗證和用戶隱私權
+          [600] 使用者隱私權和 Microsoft Entra 傳遞驗證
+      - 同盟
+        - 什麼是同盟？
+          [603] 什麼是與 Microsoft Entra 識別碼的同盟？
+        - 同盟如何運作
+          [605] Microsoft Entra 連線 和同盟
+        - Microsoft Entra 同盟相容性清單
+          [607] Microsoft Entra 同盟相容性清單
+      - 單一登入
+        - 什麼是單一登入？
+          [608] Microsoft Entra 無縫單一登入
+        - 單一登錄的運作方式
+          [611] Microsoft Entra 無縫單一登錄：技術深入探討
+        - 單一登錄和用戶隱私權
+          [615] 使用者隱私權和 Microsoft Entra 無縫單一登入
+      - Microsoft Entra Connect Sync
+        - 什麼是連線同步處理？
+          [617] Microsoft Entra 連線 同步處理：瞭解和自定義同步處理
+        - Azure ADSync 服務帳戶
+          [620] ADSync 服務帳戶
+        - Microsoft Entra 連線 Sync 功能
+          [624] Microsoft Entra Connect Sync 服務功能
+        - 什麼是 Microsoft Entra 連線 Sync Service Manager？
+          [628] Microsoft Entra 連線 SynchronizationService Manager UI 簡介
+        - Microsoft Entra 連線 Sync 技術概念
+          [629] Microsoft Entra Connect 同步處理技術概念
+        - 了解 Microsoft Entra Connect 同步架構
+          [632] Microsoft Entra Connect 同步處理：了解架構
+        - 瞭解宣告式布建
+          [643] Microsoft Entra 連線 Sync：瞭解宣告式布建
+        - 瞭解宣告式布建表達式
+          [652] Microsoft Entra Connect 同步：了解宣告式佈建運算式
+        - 瞭解預設組態
+          [655] Microsoft Entra Connect 同步處理：了解預設組態
+        - 瞭解用戶和聯繫人
+          [667] Microsoft Entra Connect 同步：了解使用者、群組和連絡人
+        - 瞭解陰影屬性
+          [670] Microsoft Entra 連線 Sync 服務陰影屬性
+    - 操作指南
+      - 安裝和升級
+        - 安裝藍圖
+          [675] Microsoft Entra 連線 和 Microsoft Entra連線 Health 安裝藍圖
+        - 安裝先決條件
+          [682] Microsoft Entra Connect 的必要條件
+        - 選擇安裝類型
+          [692] 選取要用於 Microsoft Entra Connect 的安裝類型
+        - 使用快速設定安裝 Microsoft Entra 連線 （密碼哈希同步處理）
+          [694] 使用快速設定開始使用 Microsoft Entra連線
+        - 安裝 Microsoft Entra 連線 同盟或其他自定義設定
+          [699] Microsoft Entra Connect 的自訂安裝
+        - 匯入和匯出組態設定
+          [731] 匯入和導出 Microsoft Entra 連線 組態設定
+        - 使用傳遞驗證安裝 Microsoft Entra 連線
+          [737] Microsoft Entra 傳遞驗證：快速入門
+        - 安裝 Microsoft Entra 連線 Health 代理程式
+          [746] 安裝 Microsoft Entra 連線 Health 代理程式
+        - 自動升級
+          [761] Microsoft Entra 連線：自動升級
+        - 第二次執行安裝精靈
+          [766] Microsoft Entra 連線 Sync：第二次執行安裝精靈
+        - 升級至新版本的 Microsoft Entra 連線
+          [770] Microsoft Entra 連線：從舊版升級至最新版本
+        - 從 DirSync 或 Azure AD 同步 升級
+          [780] Microsoft Entra 連線：從 DirSync 升級
+        - 使用現有的ADSync資料庫安裝
+          [793] 使用現有的 ADSync 資料庫安裝Microsoft Entra 連線
+        - 使用 SQL 委派的系統管理員許可權進行安裝
+          [801] 使用 SQL 委派的系統管理員許可權安裝Microsoft Entra 連線
+        - 升級 PTA 的預覽代理程式
+          [805] Microsoft Entra 傳遞驗證：升級預覽驗證代理程式
+        - 將 Microsoft Entra 連線 資料庫從 SQL Express 移至 SQL Server
+          [808] 將 Microsoft Entra 連線資料庫從 SQLServer Express 移至遠端 SQL Server
+        - 當您已經有 Microsoft Entra 識別符時
+          [816] Microsoft Entra 連線：當您有現有的租使用者時
+        - 後續安裝工作
+          [820] 後續步驟及如何管理 Microsoft Entra 連線
+        - 卸載 Microsoft Entra 連線
+          [824] 卸載 Microsoft Entra 連線
+        - 使用已被取代的版本
+          [827] 發行項• 2023/11/06
+      - 規劃和設計
+        - 設計概念
+          [829] Microsoft Entra Connect：設計概念
+        - Microsoft Entra Connect 的拓撲
+          [841] Microsoft Entra Connect 的拓撲
+        - 影響 Microsoft Entra 連線 效能的因素
+          [851] 影響 Microsoft Entra 連線效能的因素
+        - 使用者如何登入
+          [858] Microsoft Entra 連線使用者登入選項
+        - Microsoft Entra UserPrincipalName population
+          [869] Microsoft Entra UserPrincipalNamepopulation
+        - 實例的特殊考慮
+          [878] Microsoft Entra 連線：實例的特殊考慮
+        - 遷移
+          - 從同盟移轉至雲端驗證
+            [880] 從同盟移轉至雲端驗證
+          - 將群組從一個樹系移至另一個樹系
+            [901] 將群組從一個樹系移轉至另一個樹系，以供 Microsoft Entra 連線
+          - 使用分段推出遷移至雲端驗證
+            [904] 使用分段推出移轉至雲端驗證
+      - 管理 Microsoft Entra Connect
+        - 啟用裝置回寫
+          [916] Microsoft Entra 連線：啟用裝置回寫
+        - 啟用群組回寫
+          [925] 啟用 Microsoft Entra 連線 群組回寫
+        - 修改群組回寫
+          [929] 修改 Microsoft Entra 連線群組回寫預設行為
+        - 停用群組回寫
+          [935] 停用群組回寫
+        - 裝置選項
+          [937] Microsoft Entra 連線：裝置選項
+        - Microsoft Entra 連線 中的其他功能
+          [940] 預覽中功能的詳細資料
+        - 防止意外刪除
+          [941] Microsoft Entra 連線 Sync：防止意外刪除
+        - 啟用 AD 回收站
+          [944] Microsoft Entra 連線同步處理：啟用Active Directory 回收站
+        - 設定 AD DS 連線 or 帳戶
+          [946] Microsoft Entra 連線：設定 AD DS 連線or 帳戶許可權
+        - 變更 Azure ADSync 服務帳戶密碼
+          [957] 變更 ADSync 服務帳戶密碼
+        - 變更 Microsoft Entra 連線 or 帳戶密碼
+          [962] 發行項• 2023/11/06
+        - 變更 AD DS 連線 or 帳戶密碼
+          [964] 變更 AD DS 連接器帳戶密碼
+      - 管理傳遞驗證
+        - 開始使用傳遞驗證
+          [966] Microsoft Entra 傳遞驗證：快速入門
+        - 傳遞驗證常見問題
+          [975] 我應該選擇哪一種方法來登入 MicrosoftEntra ID、傳遞驗證、密碼哈希同步處理，以及 Active Directory 同盟服務（AD FS） ？
+                傳遞驗證是否為免費功能？
+                條件式存取是否可與傳遞驗證搭配使用？
+                傳遞驗證是否支援「替代識別碼」作為用戶名稱，而不是 「userPrincipalName」？
+                密碼哈希同步處理是否作為傳遞驗證的後援？
+        - 停用 PTA 與 Microsoft Entra 連線「不要設定」
+          [983] 停用傳遞驗證
+      - 管理同盟服務
+        - 管理與 Microsoft Entra 連線 的同盟
+          [985] 使用 Microsoft Entra 連線管理及自訂 ADFS
+        - 同盟的多個網域支援
+          [1005] 與 Microsoft Entra ID 同盟的多個網域支援
+        - 將多個 Microsoft Entra ID 實例與 AD FS 的單一實例同盟
+          [1015] 將多個 Microsoft Entra ID 實例與 AD FS的單一實例同盟
+        - 更新 O365 和 Microsoft Entra 識別碼的同盟憑證
+          [1018] 更新 Microsoft 365 和 Microsoft Entra 標識符的同盟憑證
+        - 更新 AD FS 的 SSL 憑證
+          [1026] 更新 Active Directory 同盟服務 （ADFS） 伺服器陣列的 TLS/SSL 憑證
+        - 使用 Microsoft Entra 識別碼管理 AD FS 信任
+          [1033] 使用 Microsoft Entra 連線使用 MicrosoftEntra 識別碼管理 AD FS 信任
+        - 設定應用程式的群組宣告
+          [1039] 
+        - 變更 O365 RP 的哈希演算法
+          [1050] 變更 Microsoft 365 信賴憑證者信任的簽章雜湊演算法
+        - 使用 SAML 2.0 伺服器作為您的 Idp
+          [1052] 使用 SAML 2.0 識別提供者 （IdP） 進行單一登入
+        - AD FS 憑證的緊急輪替
+          [1063] AD FS 憑證的緊急輪替
+        - 監視同盟設定的變更
+          [1069] 監視 Microsoft Entra 識別碼中同盟設定的變更
+      - 管理單一登錄
+        - 開始使用無縫單一登錄
+          [1071] 快速入門：Microsoft Entra 無縫單一登入
+        - 單一登錄常見問題
+          [1085] 無縫 SSO 可搭配使用哪些登入方法
+                 無縫 SSO 是否為免費功能？
+                 Microsoft Azure 德國雲端和 MicrosoftAzure Government 雲端是否提供無縫SSO？
+                 哪些應用程式會利用無縫 SSO 的'domain_hint' 或 'login_hint' 參數功能？
+      - 管理 Microsoft Entra Connect Health
+        - Microsoft Entra 連線 Health Operations
+          [1091] Microsoft Entra 連線 Health 作業
+        - 搭配 AD FS 使用 Microsoft Entra 連線 Health
+          [1101] AD FS 的 Microsoft Entra 連線 Health 代理程式
+        - Microsoft Entra 連線 Health 與 AD FS 有風險的 IP 報告
+          [1121] 風險 IP 報告 （預覽）
+        - Microsoft Entra 連線 健康風險 IP 報告活頁簿
+          [1126] 具風險的 IP 報表活頁簿
+        - 具有 連線 Health 的 Microsoft Entra 識別碼中的 AD FS 登入
+          [1132] Microsoft Entra 識別碼中的 AD FS 登入與 連線 Health - 預覽
+        - 使用 Microsoft Entra 連線 Health 進行同步處理
+          [1136] 監視 Microsoft Entra 連線 同步處理與Microsoft Entra 連線 Health
+        - 搭配 AD DS 使用 Microsoft Entra 連線 Health
+          [1145] 搭配 AD DS 使用 Microsoft Entra 連線Health
+        - 健康情況服務數據過期
+          [1151] 健康情況服務資料不是最新的警示
+        - 診斷重複的屬性同步錯誤
+          [1156] 診斷和補救重複的屬性同步錯誤
+        - Microsoft Entra 連線 Health 警示目錄
+          [1164] 
+        - Microsoft Entra 連線 Health 數據擷取
+          [1177] Microsoft Entra 連線資料擷取的健康情況指示
+      - 管理 Microsoft Entra 連線 Sync
+        - 預備伺服器和災害復原
+          [1181] Microsoft Entra 連線：預備伺服器和災害復原
+        - 變更預設組態的最佳做法
+          [1196] Microsoft Entra 連線 Sync：變更預設設定的最佳做法
+        - 變更預設組態
+          [1200] Microsoft Entra 連線 Sync：變更預設組態
+        - 修正修改的默認規則
+          [1220] 修正 Microsoft Entra 連線中修改的預設規則
+        - 設定目錄延伸模組
+          [1233] Microsoft Entra 連線 Sync：目錄延伸模組
+        - 設定慣用的數據位置
+          [1238] Microsoft Entra 連線 Sync：設定Microsoft 365 資源的慣用數據位置
+        - 設定篩選
+          [1251] Microsoft Entra 連線 Sync：設定篩選
+        - 管理排程器
+          [1261] Microsoft Entra 連線同步處理：排程器
+        - 建立和自定義同步處理規則
+          [1269] 如何自訂同步處理規則
+        - Microsoft Entra Connect Sync V2 端點 API
+          [1272] Microsoft Entra Connect Sync V2 端點API
+        - Microsoft Entra 連線 Sync Service Manager
+          - 管理 Service Manager 作業索引標籤
+            [1274] 使用 [同步服務管理員作業] 索引標籤
+          - 搭配服務管理員使用連接器
+            [1276] 搭配 Microsoft Entra 連線 Sync ServiceManager 使用連接器
+          - Metaverse 設計工具
+            [1281] 同步處理 Service Manager Metaverse 設計工具
+          - Metaverse 搜尋
+            [1282] 同步處理 Service Manager Metaverse 搜尋
+    - 疑難排解
+      - 什麼是 Microsoft Entra Connect 管理代理程式？
+        [1283] 什麼是 Microsoft Entra 連線 管理員istration Agent？
+      - 什麼是AD連線ivityTools PowerShell模組？
+        [1286] 針對與 AD 連線 ivityTool PowerShell 模組的 Microsoft Entra 連線進行疑難解答
+      - Microsoft Entra 連線 單一物件同步處理
+        [1289] Microsoft Entra 連線 Single Object Sync
+      - 連線性
+        [1292] 針對 Microsoft Entra 連線連線問題進行疑難排解
+      - 同步處理期間發生錯誤
+        [1301] 了解 Microsoft Entra 同步期間的錯誤
+      - 物件未同步處理
+        [1315] 針對未與 Microsoft Entra ID 同步處理的物件進行疑難排解
+      - 安裝期間的來源錨點
+        [1326] 針對安裝期間的來源錨點問題進行疑難排解
+      - 使用疑難解答工作進行物件同步處理
+        [1330] 針對使用 Microsoft Entra Connect 同步所執行的物件同步處理進行疑難排解
+      - 密碼雜湊同步
+        [1336] 針對使用 Microsoft Entra Connect 同步執行的密碼雜湊同步處理進行疑難排解
+      - 傳遞驗證
+        [1352] 疑難排解 Microsoft Entra 傳遞驗證
+      - 單一登入
+        [1361] 疑難排解 Microsoft Entra 無縫單一登入
+      - userCertificate 所造成的 LargeObject 錯誤
+        [1368] Microsoft Entra 連線 Sync：處理userCertificate 屬性所造成的LargeObject 錯誤
+      - 如何從 LocalDB 10 GB 限制復原
+        [1375] Microsoft Entra Connect：如何從LocalDB 10-GB 的限制復原
+      - SQL 連線
+        [1379] 針對 Microsoft Entra 連線 的 SQL 連線問題進行疑難排解
+      - 屬性同步處理
+        [1384] 針對 Microsoft Entra 連線 中未同步處理的屬性進行疑難排解
+      - 安裝問題
+        [1388] 疑難排解：Microsoft Entra 連線安裝問題
+      - UPN 變更
+        [1390] 規劃和疑難解答 Microsoft Entra 識別碼中的用戶主體名稱變更
+      - 對象和屬性的端對端疑難解答
+        [1400] Microsoft Entra Connect 物件和屬性的端對端疑難解答
+    - 參考
+      - 混合式身分識別必要埠和通訊協定
+        [1427] 混合式身分識別必要埠和通訊協定
+      - Microsoft Entra 連線 版本歷程記錄
+        [1432] Microsoft Entra Connect：版本發行歷程記錄
+      - Microsoft Entra 連線 Health 版本歷程記錄
+        [1456] Microsoft Entra 連線 健全狀況：版本發行歷程記錄
+      - Microsoft Entra 傳遞驗證代理程式版本歷程記錄
+        [1466] Microsoft Entra 傳遞驗證代理程式：版本發行歷程記錄
+      - 連線 or 版本歷程記錄
+        [1469] 連接器版本發行歷程記錄
+      - 帳戶和許可權
+        [1487] Microsoft Entra Connect：帳戶和權限
+      - Microsoft Entra Connect 常見問題集 
+        [1499] 一般安裝
+      - Microsoft Entra 連線 Health 常見問題
+        [1511] 一般問題
+      - Azure Government 的混合式身分識別考慮
+        [1519] Azure Government 雲端的混合式身分識別考慮
+      - Microsoft Entra 連線 用戶隱私權
+        [1523] 使用者隱私權和 Microsoft Entra 連線
+      - Microsoft Entra 連線 Health 用戶隱私權
+        [1526] 使用者隱私權和 Microsoft Entra 連線Health
+      - 已同步處理的屬性
+        [1530] Microsoft Entra 連線 Sync：同步處理至Microsoft Entra 識別碼的屬性
+      - 函式參考
+        [1550] Microsoft Entra 連線 Sync：函式參考
+      - Microsoft Entra 同盟相容性清單
+        [1585] Microsoft Entra 同盟相容性清單
+      - TLS 1.2 強制執行
+        [1586] 
+      - ADSync 參考
+        [1591] 
+      - ADSyncConfig 參考
+        [1638] Microsoft Entra 連線：ADSyncConfigPowerShell 參考
+      - ADSyncTools 參考
+        [1676] 
+      - AD 連線 ivityTools 參考
+        [1747] Microsoft Entra Connect：ADConnectivityTools PowerShell 參考
+      - msExchUserHoldPolicies 和 cloudMSExchUserHoldPolicies
+        [1771] Microsoft Entra 連線 -msExchUserHoldPolicies 和cloudMsExchUserHoldPolicies
+      - Microsoft Entra 連線 版本歷程記錄封存
+        [1774] Microsoft Entra 連線：版本發行歷程記錄封存
+      - 如何使用 BypassDirSyncOverrides
+        [1827] 如何使用 Microsoft Entra 租使用者的BypassDirSyncOverridesEnabled 功能。

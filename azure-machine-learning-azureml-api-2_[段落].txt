@@ -1,0 +1,1071 @@
+- ---< azure-machine-learning-azureml-api-2.pdf >---
+  - Azure Machine Learning 文件
+    [1] Azure Machine Learning 文件
+  - 概觀
+    - 什麼是 Azure Machine Learning？
+      [4] 什麼是 Azure Machine Learning？
+    - Azure Machine Learning CLI 和 Python SDK
+      [11] 什麼是 Azure Machine Learning CLI 和Python SDK v2？
+    - 字彙
+      [15] Azure Machine Learning 字彙
+  - 設定
+    - 建立 ML 資源以開始使用
+      [18] 教學課程：建立開始使用所需的資源
+    - 設定開發環境
+      [26] 設定 Azure Machine Learning 的 Python開發環境
+    - 安裝和設定 CLI (v2)
+      [33] 安裝和設定 CLI (v2)
+    - 安裝和設定 SDK (v2)
+    - 設定 VS Code 擴充功能
+      [37] 使用 Microsoft Azure Machine Learning延伸模組，設定 Visual Studio Code 桌面（預覽版）
+  - 快速入門
+    - 開始使用 Azure 機器學習
+      [40] 快速入門：開始使用 Azure MachineLearning
+  - 教學課程
+    - 從基本概念著手
+      - 準備和探索資料
+        [53] 教學課程：上傳、存取及探索 Azure 機器學習 中的數據
+      - 在雲端工作站上開發
+        [64] 教學課程：雲端工作站上的模型開發
+      - 將模型定型
+        [78] 教學課程：在 Azure 機器學習 中定型模型
+      - 部署模型
+        [90] 將模型部署為在線端點
+      - 設定可重複使用的管線
+        [106] 教學課程：建立生產機器學習管線
+    - 建置模型
+      - 自動化 ML
+        - 使用 AutoML 的物件偵測 (SDK)
+          [123] 教學課程：使用 AutoML 和 Python 定型物件偵測模型
+        - 建立自動化機器學習實驗
+          [138] 教學課程：在 Azure Machine Learning工作室 中使用無程序代碼 AutoML 定型分類模型
+        - 預測需求 (自行車共用資料)
+          [150] 教學課程：在 Azure Machine Learning工作室中以無程式碼自動化機器學習預測需求
+      - 使用 Visual Studio Code
+        [159] 教學課程：使用 Azure Machine LearningVisual Studio Code 延伸模組來定型影像分類 TensorFlow 模型 (預覽)
+    - 受管理的功能存放區
+      - 使用受管理的功能存放區開發及註冊功能集
+        [164] 教學課程 1：使用受管理的功能存放區開發及註冊功能集
+      - 使用功能來實驗和定型模型
+        [185] 教學課程 2：使用功能來實驗和定型模型
+      - 啟用週期性具體化並執行批次推斷
+        [197] 教學課程 3：啟用週期性具體化並執行批次推斷
+      - 啟用線上具體化並執行線上推斷
+        [203] 教學課程 4：啟用線上具體化並執行線上推斷
+      - 使用自訂來源開發功能集
+        [220] 教學課程 5：使用自訂來源開發功能集
+      - 使用功能存放區的網路隔離
+        [228] 教學課程 6：使用功能存放區進行網路隔離
+  - 與 Azure Machine Learning 互動
+    - 資源和資產
+      - Azure Machine Learning 資源
+        [255] Azure 機器學習 的運作方式：資源和資產
+      - 工作區
+        [261] 什麼是 Azure Machine Learning 工作區？
+      - 中樞工作區
+        [266] 什麼是 Azure 機器學習 中樞工作區？ (預覽)
+      - 搜尋資產和資源
+        [271] 搜尋 Azure Machine Learning 資產
+      - 計算
+        - 計算執行個體
+          [275] 什麼是 Azure Machine Learning 計算執行個體？
+        - 計算目標
+          [281] Azure Machine Learning 中的計算目標是什麼？
+      - 環境
+        - 環境簡介
+          [288] Azure Machine Learning 環境是什麼？
+        - 管理工作室中的環境
+          [293] 在 Azure Machine Learning 工作室 中管理軟體環境
+        - 使用 SDK 和 CLI (v2) 管理環境
+          [297] 使用 CLI & SDK (v2) 來管理 AzureMachine Learning 環境
+        - 建立適用於 PyTorch 的 Azure 容器
+          [306] 在 Azure Machine Learning 工作室 中建立適用於 PyTorch 的自定義 Azure 容器（ACPT） 環境
+    - 開發環境
+      - Notebooks
+        - 建立及管理檔案
+          [311] 如何建立及管理工作區中的檔案
+        - 執行 Jupyter Notebook
+          [314] 在您的工作區中執行 Jupyter Notebook
+        - 使用終端機
+          [328] 存取工作區中的計算執行個體終端機
+        - 管理計算工作階段
+          [334] 管理筆記本和終端工作階段
+      - VS Code
+        - 啟動 VS Code 遠端存放庫
+          [336] 啟動與 Azure Machine Learning 整合的Visual Studio Code (預覽)
+        - 在 VS Code 遠端存放庫工作
+          [341] 在遠端連線到計算執行個體的 VS Code 中工作 (預覽)
+        - 管理資源 VS Code
+          [345] 使用 VS Code 擴充功能 (預覽) 來管理Azure Machine Learning 資源
+    - 與其他工具整合
+      - 搭配使用 MLflow
+        - MLflow 和 Azure Machine Learning
+          [355] MLflow 和 Azure Machine Learning
+        - MLflow 模型
+          [360] MLflow 中的成品到模型
+        - 設定 Azure Machine Learning 的 MLflow
+          [366] 設定 Azure Machine Learning 的 MLflow
+        - 訓練和追蹤
+          - 使用 MLflow 追蹤實驗
+            [372] 使用 MLflow 追蹤 ML 實驗和模型
+          - 使用 MLflow 追蹤 Azure Databricks 執行
+            [378] 使用 MLflow 和 Azure Machine Learning追蹤 Azure Databricks ML 實驗
+          - 使用 MLflow 追蹤 Azure Synapse Analytics 執行
+            [389] 使用 MLflow 和 Azure Machine Learning追蹤 Azure Synapse Analytics ML 實驗
+          - 使用 MLflow Projects 來定型
+            [396] 在 Azure Machine Learning 中使用MLflow 專案定型 (預覽)
+          - 記錄計量、參數和檔案
+            [401] 使用 MLflow 記錄計量、參數和檔案
+          - 記錄 MLflow 模型
+            [413] 記錄 MLflow 模型
+          - 使用 MLflow 查詢、比較實驗和執行
+            [419] 使用 MLflow 查詢和比較實驗和執行
+        - 管理
+          - 使用 MLflow 管理模型
+            [432] 使用 MLflow 管理 Azure MachineLearning 中的模型登錄
+          - 使用 MLflow 管理實驗和執行
+            [440] 使用 MLflow 查詢和比較實驗和執行
+        - 部署及取用模型
+          - 部署 MLflow 模型的指導方針
+            [453] 部署 MLflow 模型的指導方針
+          - 線上推斷
+            - 將 MLflow 模型部署至線上端點
+              [461] 將 MLflow 模型部署至線上端點
+            - MLflow 模型漸進式推出至線上端點
+              [474] MLflow 模型漸進式推出至線上端點
+          - 批次推斷
+            - 將 MLflow 模型部署至批次端點
+              [483] 在批次部署中部署 MLflow 模型
+            - 在 Spark 作業中部署和執行 MLflow 模型
+              [499] 在 Spark 作業中部署及執行 MLflow 模型
+      - 搭配 Azure Machine Learning 使用 R
+        - 攜帶 R 工作負載
+          [507] 帶入 R 工作負載
+        - 互動式 R 開發
+          [509] 互動式 R 開發
+        - 針對生產環境調整 R 指令碼
+          [516] 調整 R 指令碼以在生產環境中執行
+        - 定型 R 模型
+          [526] 執行 R 工作來定型模型
+        - 部署 R 模型
+          [532] 如何將已註冊的 R 模型部署到線上 (即時)端點
+      - 使用 Microsoft Fabric
+        - 從 Fabric 存取和使用批次部署
+          [541] 使用批次端點從 Fabric 執行 AzureMachine Learning 模型 (預覽版)
+  - 使用資料
+    - Azure Machine Learning 中的資料概念
+      [553] Azure Machine Learning 中的資料概念
+    - 資料系統管理
+      - 建立 Azure Machine Learning 資料存放區
+        [558] 建立資料存放區
+      - 設定儲存體驗證
+        [564] 資料管理
+    - 從外部來源匯入資料
+      - 建立外部資料來源的連線
+        [569] 建立連線 (預覽)
+      - 匯入資料
+        [574] 匯入資料資產 (預覽)
+      - 排程資料匯入
+        [579] 排程資料匯入作業（預覽版）
+      - 管理匯入的資料
+        [588] 管理匯入的資料資產 (預覽)
+    - 存取和探索您的資料
+      - 將您最愛的資料資產加入書籤
+        [590] 建立及管理資料資產
+      - 在互動式開發期間存取資料
+        [607] 
+      - 存取作業中的資料
+        [621] 
+      - 使用資料表 (mltable)
+        [645] 
+    - 標籤資料
+      - 設定
+        - 建立映像標記專案
+          [661] 設定影像標籤專案
+        - 建立文字標記專案
+          [672] 設定文字標籤項目和匯出標籤
+        - 新增使用者
+          [681] 將使用者新增至您的數據標籤專案
+        - 針對數據標記專案進行疑難解答
+          [689] 針對建立數據標記專案期間的問題進行疑難解答
+      - 管理標記專案
+        [696] 管理標記專案
+      - 標籤影像和文字
+        [706] 標記影像和文字文件
+      - 外包標籤工作
+        [718] 與資料標記商公司合作
+    - 使用 Apache Spark 準備資料
+      - 概觀
+        [721] Azure Machine Learning 中的 ApacheSpark
+      - 設定 Apache Spark 作業
+        [727] 在 Azure Machine Learning 中設定Apache Spark 作業
+      - 提交 Spark 作業
+        [734] 在 Azure Machine Learning 中提交 Spark作業
+      - 使用 Apache Spark 進行互動式開發
+        [746] 在 Azure Machine Learning 中使用Apache Spark 進行互動式資料整頓
+    - 受管理的功能存放區
+      - 什麼是受管理的功能存放區
+        [757] 什麼是受管理的功能存放區？
+      - 功能存放區實體
+        [762] 了解受管理的功能存放區中最上層實體
+      - 管理受管理的功能存放區的存取權
+        [765] 管理受管理的功能存放區的存取控制
+      - 功能轉換和最佳做法
+        [771] 
+      - 離線功能擷取與時間點聯結
+        [779] 使用時間點聯結的離線功能擷取
+      - 功能擷取規格
+        [782] 
+      - 功能集具體化
+        [788] 功能集具體化概念
+      - 針對受控功能存放區錯誤進行疑難解答
+        [797] 
+    - 法規遵循
+      - 匯出及刪除資料
+        [814] 匯出或刪除您的 Machine Learningservices 工作區資料
+    - 負責的人類資料來源
+      [818] 何謂「人類資料」，以及為何需要可靠來源？
+  - 自動化 Machine Learning
+    - 概念
+      - 自動化 ML 概觀
+        [822] 什麼是自動化機器學習 (AutoML)？
+      - 時間序列預測
+        - 預測方法
+          [830] AutoML 中的預測方法概觀
+        - 深度學習模型
+          [837] 使用 AutoML 預測進行深度學習
+        - 大規模預測
+          [844] 大規模預測：許多模型和分散式定型 (預覽)
+        - 模型掃掠和選取
+          [848] AutoML 中預測的模型掃掠和選取項目
+        - 行事曆功能
+          [851] AutoML 中時間序列預測的日曆特徵
+        - 延隔時間特徵
+          [855] AutoML 中時間序列預測的延隔功能
+        - 推斷和評估
+          [859] 預測模型的推斷和評估 (預覽)
+      - 過度學習和不平衡的資料
+        [864] 使用自動化 ML 來防止過度學習與不平衡資料
+    - 操作方式
+      - 針對表格式資料使用自動化 ML (Python、CLI)
+        [868] 使用 Azure Machine Learning CLI 和Python SDK 設定表格式資料的 AutoML定型
+      - 使用自動化 ML (介面)
+        [884] 使用工作室 UI 來設定表格式資料的無程式碼 AutoML 定型
+      - 為電腦視覺模型 (Python) 準備影像資料
+        [902] 使用自動化機器學習來準備用於電腦視覺工作的資料
+      - 自動定型電腦視覺模型 (Python)
+        [907] 設定 AutoML，以定型電腦視覺模型
+      - 自動定型小型物件偵測模型
+        [936] 使用 AutoML 來將小型物件偵測模型定型
+      - 自動定型自然語言處理模型
+        [940] 設定 AutoML 以訓練自然語言處理模型
+      - 時間序列預測
+        - 自動定型預測模型 (Python、CLI)
+          [953] 設定 AutoML 以使用 SDK 和 CLI 定型時間序列預測模型
+        - 常見問題集
+          [978] AutoML 中預測的常見問題
+      - 瞭解圖表和計量
+        [987] 評估自動化機器學習實驗結果
+      - 在 .NET 應用程式中使用 ONNX 模型
+        [1013] 
+      - 使用 ONNX 模型推斷影像模型
+        [1021] 透過 AutoML 的電腦視覺模型上的 ONNX進行預測
+      - 針對自動化 ML 進行疑難排解
+        [1034] 針對自動化 ML 實驗進行疑難排解
+  - 將模型定型
+    - 概觀
+      [1036] 使用 Azure Machine Learning 將模型定型
+    - 使用 CLI 和 SDK 進行定型
+      [1040] 使用 Azure Machine Learning CLI、SDK和 REST API 將模型定型
+    - 使用 UI 定型
+      [1045] 在工作室中提交定型作業
+    - CLI 和 Python SDK v2 運算式
+      [1056] Azure Machine Learning SDK 和 CLI v2中的運算式
+    - 在定型中使用密碼
+      [1059] 在 Azure Machine Learning 作業中使用驗證認證祕密
+    - 自定義定型
+      - 將 Scikit-learn 模型定型
+        [1062] 使用 Azure Machine Learning 大規模定型 PyTorch 模型
+      - 將 TensorFlow 模型定型
+        [1076] 使用 Azure Machine Learning 大規模將TensorFlow 模型定型
+      - 將 Keras 模型定型
+        [1090] 使用 Azure Machine Learning 大規模將Keras 模型定型
+      - 訓練 PyTorch 模型
+        [1106] 使用 Azure Machine Learning 大規模訓練 PyTorch 模型
+      - 微調超參數
+        [1119] 超參數微調模型 (2)
+    - 分散式訓練與深度學習
+      - 分散式訓練
+        [1133] Azure Machine Learning 的分散式定型
+      - 分散式 GPU 定型
+        [1135] 分散式 GPU 訓練指南 （SDK v2）
+      - 最佳化大型模型的檢查點效能
+        [1143] 使用星雲提升檢查點速度並降低成本
+      - 深度學習
+        [1150] Azure Machine Learning 中的深度學習與機器學習
+    - 追蹤和監視
+      - 監視並分析 Studio 中的作業
+        [1156] 監視並分析 Studio 中的作業
+      - 組織與管理作業 (預覽)
+        [1163] 組織及追蹤訓練工作(預覽)
+      - 視覺化定型結果 (預覽)
+        [1167] 在工作室中視覺化定型結果 (預覽)
+    - 偵錯作業
+      [1176] 偵錯作業並監視定型進度
+    - 排程作業
+      [1185] 排定機器學習管線作業
+  - 使用基礎模型
+    - 模型目錄概觀
+      [1196] 模型目錄和集合
+    - 模型目錄的數據、隱私權和安全性
+      [1204] 透過模型目錄使用模型的數據、隱私權和安全性
+    - 由 Azure 機器學習策劃的開放原始碼模型
+      [1208] 如何使用 Azure Machine Learning 所策展的開放原始碼基礎模型
+    - Hugging Face Hub 社群合作夥伴模型
+      [1217] 將模型從 HuggingFace 中樞部署到Azure 機器學習線上端點以進行即時推斷
+    - 如何部署 Mistral 系列模型
+      [1224] 如何使用 Azure Machine Learning 工作室部署 Mistral 模型
+    - 部署 Cohere 模型
+      - 如何部署 Cohere 命令模型
+        [1235] 如何使用 Azure Machine Learning 工作室 部署 Cohere 命令模型
+      - 如何部署 Cohere 內嵌模型
+        [1260] 如何使用 Azure Machine Learning 工作室 部署 Cohere 內嵌模型
+    - 部署 Llama 模型
+      - 如何部署 Llama 系列模型
+        [1273] 如何使用 Azure Machine Learning 工作室 部署Meta Llama模型
+    - 使用原則規範部署
+      [1289] 使用原則，規範模型目錄中的部署
+    - 搭配虛擬網路使用模型目錄集合
+      [1292] 搭配工作區受控虛擬網路使用模型目錄集合
+  - 使用生成式 AI
+    - 使用提示流程建置 AI 解決方案
+      - 什麼是提示流程？
+        [1295] 什麼是 Azure Machine Learning 提示流程
+      - 概念
+        - 連線
+          [1298] 提示流程中的連線
+        - 執行階段
+          [1300] 提示流程中的執行階段
+        - 流程
+          [1301] 提示流程中的流程？
+        - 工具
+          [1303] 提示流程中的工具？
+        - 變體
+          [1304] 提示流程中的變體
+        - 評估監視計量
+          [1306] 監視評估計量描述和使用案例
+      - 開始使用提示流程
+        [1309] 開始使用提示流程
+      - 提示流程生態系統
+        [1323] 提示流程生態系統
+      - 設定基礎結構
+        - 建立和管理執行階段
+          [1326] 在 Azure Machine Learning 工作室中建立及管理提示流程執行階段
+        - 自訂執行階段的環境
+          [1344] 自訂執行階段的環境
+        - 從受控線上端點/部署執行階段移轉
+          [1350] 受控線上端點/部署執行階段的淘汰計劃
+        - 提示流程中的網路隔離
+          [1351] 提示流程中的網路隔離
+      - 開發流程
+        - 開發流程
+          [1357] 開發流程
+        - 在提示流程中與 LangChain 整合
+          [1365] 與 LangChain 整合
+        - 使用變體調整提示
+          [1372] 使用變體調整提示
+        - 將影像併入提示流程
+          [1379] 將影像併入提示流程 (預覽)
+      - 評估流程
+        - 提交批次執行及評估流程
+          [1388] 提交批次執行及評估流程
+        - 自訂評估流程和計量
+          [1400] 自訂評估流程和計量
+        - 使用提示流程評估您的語意核心
+          [1408] 使用提示流程評估您的語意核心
+      - 使用 UI 將流程部署至線上端點以進行即時推斷
+        [1419] 
+      - 程式碼優先：從開發到生產
+        - 整合提示流程與 LLM 型應用程式 DevOps
+          [1438] 整合提示流程與 LLM 型應用程式 DevOps
+        - 使用 CLI 將流程部署至線上端點以進行即時推斷
+          [1454] 使用 CLI 將流程部署至線上端點以進行即時推斷
+        - 啟用流程部署的追蹤並收集意見反應
+          [1467] 啟用流程部署的追蹤並收集意見反應 （預覽）
+        - 如何使用從提示流程部署的串流端點
+          [1475] 如何使用從提示流程部署的串流端點
+        - 使用提示流程和 GitHub 設定端對端 LLMOps
+          [1489] 具有提示流程和 GitHub 的 LLMOps
+        - 使用提示流程和 Azure DevOps 設定端對端 LLMOps
+          [1497] 具有提示流程和 Azure DevOps 的LLMOps
+        - 自訂工具套件建立和使用方式
+          [1506] 自訂工具套件的建立和使用方式
+        - 提升您的成熟度層級
+          [1510] 進階大型語言模型作業的成熟度層級（LLMOps）
+      - 監視生產中的生成式 AI 應用程式
+        [1514] 生成式 AI 應用程式的模型監測 (預覽)
+      - 針對提示流程部署進行疑難解答
+        [1522] 
+      - 透明度注意事項
+        [1526] 提示流程中自動產生提示變體的透明度資訊
+      - 工具  參考
+        - 概觀
+          [1530] 提示流程中的工具概觀
+        - LLM 工具
+          [1532] LLM 工具
+        - 提示工具
+          [1535] 提示工具
+        - Python 工具
+          [1538] Python 工具
+        - 內嵌工具
+          [1543] 內嵌工具
+        - 向量索引查閱工具
+          [1545] 
+        - 內容安全性 (文字) 工具
+          [1547] 內容保管庫ty （文字） 工具
+        - 索引查閱工具
+          [1549] Azure 機器學習 的索引查閱工具 （預覽）
+        - Faiss 索引查閱工具
+          [1556] 
+        - 向量資料庫查閱工具
+          [1558] 向量資料庫查閱工具
+        - SERP API 工具
+          [1564] SerpAPI 工具
+        - 開啟模型 LLM 工具
+          [1566] 開啟模型 LLM 工具
+        - Azure OpenAI GPT-4 Turbo 搭配視覺工具
+          [1570] Azure OpenAI GPT-4 Turbo with Visiontool （預覽）
+        - OpenAI GPT-4V 工具
+          [1572] OpenAI GPT-4V （預覽）
+        - 疑難排解指引
+          [1574] 疑難排解指引
+    - 擷取擴增生成 (RAG)
+      - 什麼是 RAG
+        [1584] 使用 Azure Machine Learning 提示流程擷取擴增生成 (預覽)
+      - 什麼是向量存放區
+        [1587] Azure Machine Learning 中的向量存放區(預覽)
+      - 如何在提示流程中屎使用 RAG
+        [1589] 使用提示流程範例開始使用 RAG (預覽)
+      - 如何建立向量索引
+        [1593] 在 Azure Machine Learning 提示流程中建立向量索引 (預覽)
+      - 如何建立 RAG 管線
+        [1598] 使用沒有程式代碼的 Azure 機器學習 管線來建構 RAG 管線 （預覽）
+      - 如何保護 RAG 工作流程
+        [1600] 使用網路隔離保護您的 RAG 工作流程（預覽）
+      - RAG 雲端至本機
+        [1604] 從雲端到本機的 RAG - 自備資料 QnA (預覽)
+  - 負責任地開發與監視
+    - 負責任的 AI 概觀
+      - 什麼是負責任 AI？
+        [1613] 
+      - 模型可解釋性
+        [1615] 模型可解釋性
+      - Machine Learning 中的公平性
+        [1623] 模型效能和公平性
+      - 原因分析
+        [1627] 建立資料驅動的原則並影響決策制訂
+      - 評估 ML 模型中的錯誤
+        [1629] 評估機器學習模型中的錯誤
+      - 了解資料集
+        [1632] 了解資料集
+      - 反事實分析和假設
+        [1633] 反事實分析和假設
+    - 設定負責任的 AI 見解和評估
+      - 產生負責任的 AI 見解 (UI)
+        [1635] 在 Studio UI 中產生負責任 AI 深入解析
+      - 產生負責任的 AI 見解 (SDK、CLI)
+        [1653] 使用 YAML 和 Python 產生負責任 AI 深入解析
+      - 負責任的 AI 影像見解
+        [1669] 使用 YAML 和 Python 產生負責任 AI 視覺深入解析 (預覽)
+      - 負責任的 AI 文字見解
+        [1676] 使用 YAML 和 Python 產生負責任 AI 文字深入解析 (預覽)
+    - 設定負責任的 AI 儀表板
+      - 負責任的 AI 儀表板流程
+        [1679] 使用負責任 AI 儀表板評定 AI 系統
+      - 在工作室中使用負責任 AI 儀表板
+        [1687] 在 Azure Machine Learning 工作室中使用負責任 AI 儀表板
+      - 使用負責任的 AI 文字儀表板
+        [1707] Azure Machine Learning 工作室中的負責任 AI 文字儀表板 (預覽)
+      - 使用負責任的 AI 影像儀表板
+        [1718] Azure Machine Learning 工作室中的負責任 AI 影像儀表板 (預覽)
+    - 檢視負責任的 AI 計分卡
+      - 負責的 AI 計分卡
+        [1730] 使用負責任 AI 計分卡分享負責任 AI 深入解析 (預覽)
+      - 在工作室中使用負責任 AI 計分卡
+        [1732] 在 Azure Machine Learning 中使用負責任 AI 計分卡 (預覽)
+  - 使用管線協調工作流程
+    - 概觀
+      - 什麼是管線
+        [1741] 什麼是 Azure Machine Learning 管線？
+      - 什麼是元件
+        [1744] 什麼是 Azure Machine Learning 元件？
+      - 什麼是 Azure Machine Learning 設計工具 (v2)？
+        [1747] 什麼是 Azure Machine Learning 設計工具 (v2)？
+    - 如何使用元件建立管線
+      - 使用元件來建立 ML 管線 (Python SDK v2)
+        [1752] 使用元件搭配 Azure Machine LearningSDK v2 建立和執行機器學習管線
+      - 使用元件來建立 ML 管線 (CLI v2)
+        [1769] 使用元件搭配 Azure Machine LearningCLI 建立和執行機器學習管線
+      - 使用元件來建立 ML 管線 (UI)
+        [1781] 使用元件搭配 Azure Machine Learning工作室來建立和執行機器學習管線
+    - 在管線中使用 Azure Machine Learning 作業
+      - 如何在管線中使用平行作業
+        [1791] 
+      - 如何在管線中執行超參數掃掠
+        [1804] 如何在管線中執行超參數微調 (v2)
+    - 如何在管線中管理輸入和輸出
+      [1813] 管理元件和管線的輸入和輸出
+    - 如何在管線中使用管線元件
+      [1828] 如何使用管線元件來建置巢狀管線作業（V2）
+    - 排程管線作業
+      [1836] 排定機器學習管線作業
+    - 將管線元件部署為批次端點
+      [1847] 將您的管線部署為批次端點
+    - 偵錯管線作業
+      - 如何偵錯管線功能
+        [1848] 如何使用管線 UI 對 Azure MachineLearning 管線失敗進行偵錯
+      - 如何偵錯管線效能
+        [1857] 檢視分析以偵錯管線效能問題
+      - 如何偵錯管線重複使用問題
+        [1861] 如何在 Azure Machine Learning 中偵錯管線重複使用問題？
+  - 部署以進行推斷
+    - 用於推斷的端點
+      [1867] 生產環境中推斷的端點
+    - 線上端點 (即時)
+      - 線上端點
+        [1873] 用於即時推斷的線上端點和部署
+      - 使用線上端點來部署 ML 模型
+        [1892] 使用線上端點部署和評分機器學習模型
+      - 使用安全推出策略部署模型
+        [1910] 針對即時推斷執行新部署的安全推出
+      - 將模型封裝部署到線上端點
+        [1923] 將模型封裝部署到連線端點（預覽版）
+      - 自動調整線上端點
+        [1929] 自動調整線上端點
+      - 受控線上端點 VM SKU 清單
+        [1934] 受控線上端點 SKU 清單
+      - 檢視受控線上端點成本
+        [1936] 檢視 Azure Machine Learning 受控線上端點的成本
+      - 監視連線端點
+        [1939] 監視線上端點
+      - 本機 VS Code 的線上端點偵錯
+        [1952] 在 Visual Studio Code 中從本機偵錯線上端點
+      - 使用推斷 HTTP 伺服器對評分指令碼進行偵錯
+        [1959] 使用 Azure Machine Learning 推斷 HTTP伺服器偵錯評分指令碼
+      - 線上端點的疑難排解
+        [1973] 針對在線端點部署和評分進行疑難解答
+      - 部署案例
+        - 將 MLflow 模型部署至線上端點
+          [2004] 將 MLflow 模型部署至線上端點
+        - 使用自訂容器將模型部署至線上端點
+          [2017] 使用自訂容器將模型部署至線上端點
+        - 使用 Triton 的高效能服務
+          [2026] 使用 Triton 推斷伺服器的高效能服務
+        - 使用 REST 將模型部署為線上端點
+          [2033] 使用 REST 部署模型
+        - 將 AutoML 模型部署到線上端點
+          [2041] 如何將 AutoML 模型部署到線上端點
+      - 安全性
+        - 線上端點的驗證
+          [2045] 
+        - 驗證線上端點的用戶端
+          [2051] 驗證線上端點的用戶端
+        - 受控線上端點的網路隔離
+          [2063] 受控線上端點的網路隔離
+        - 使用網路隔離來保護受控線上端點
+          [2071] 使用網路隔離來保護受控線上端點
+        - 從線上端點存取 Azure 資源
+          [2081] 使用受控識別從線上端點存取 Azure 資源
+        - 線上端點中的秘密插入
+          [2092] 線上部署中的秘密插入 (預覽)
+        - 部署至具有秘密插入的線上端點
+          [2095] 
+    - 批次端點
+      - 批次端點
+        [2104] 批次端點
+      - 建立批次端點的作業和輸入資料
+        [2109] 建立批次端點的作業和輸入資料
+      - 部署模型
+        - 在批次端點中部署用於評分的模型
+          [2123] 在批次端點中部署用於評分的模型
+        - 在批次部署中部署 MLflow 模型
+          [2143] 在批次部署中部署 MLflow 模型
+        - 撰寫評分指令碼
+          [2159] 撰寫批次部署的評分指令碼
+        - 自訂批次工作中的輸出
+          [2166] 自訂批次部署中的輸出
+        - 使用批次模型部署進行影像處理
+          [2176] 使用批次模型部署進行映像處理
+        - 使用批次模型部署來部署語言模型
+          [2190] 在批次端點中部署語言模型
+        - 在批次端點中執行 OpenAI 模型以計算內嵌
+          [2202] 在批次端點中執行 OpenAI 模型以計算內嵌
+      - 部署管線元件
+        - 使用批次端點部署管線
+          [2215] 如何使用批次端點部署管線
+        - 在批次端點上運作定型管線
+          [2222] 如何使用批次端點操作定型管線
+        - 在批次端點上運作評分管線
+          [2239] 如何透過前置處理部署管線，以執行批次評分
+        - 從管線作業建立批次端點
+          [2254] 將現有的管線作業部署至批次端點
+      - 針對批次端點進行疑難排解
+        [2261] 針對批次端點進行疑難排解
+      - 安全性
+        - 批次端點的授權
+          [2268] 批次端點的授權
+        - 批次端點中的網路隔離
+          [2275] 批次端點中的網路隔離
+      - 成本管理
+        - 在批次部署中使用低優先順序 VM
+          [2278] 在批次部署中使用低優先順序 VM
+      - 整合
+        - 從 Azure Data Factory 執行批次端點
+          [2282] 
+        - 從儲存體中的事件方格事件執行批次端點
+          [2288] 從儲存體中的事件方格事件執行批次端點
+        - 從 Microsoft Fabric 執行批次端點
+          [2301] 使用批次端點從 Fabric 執行 AzureMachine Learning 模型 (預覽版)
+    - 在 Azure Machine Learning 外部部署模型
+      [2313] 在 Azure Machine Learning 外部封裝及部署模型 (預覽)
+    - 模型最佳化
+      - 使用 ONNX 加速推斷
+        [2320] ONNX 和 Azure 機器學習
+    - 預先建置的推斷 Docker 映像
+      [2324] 預先建置的推斷 Docker 映像
+  - 使用 MLOps 運作
+    - 概觀
+      - MLOps 功能
+        [2326] MLOps：使用 Azure Machine Learning進行模型管理、部署、譜系和監視
+      - 登錄
+        [2332] MLOps 的機器學習登錄
+    - 模型開發
+      - ML 管線
+        [2334] 什麼是 Azure Machine Learning 管線？
+      - 使用資產
+        [2337] 什麼是 Azure Machine Learning 元件？
+      - 如何管理模型
+        [2340] 在 Azure Machine Learning 中使用模型
+      - Git 整合
+        [2349] Azure Machine Learning 的 Git 整合
+    - 使用登錄跨工作區共享資產
+      - 共用模型、元件和環境
+        [2355] 透過登錄跨工作區共用模型、元件和環境
+      - 共用資料資產
+        [2371] 與登錄共用各工作區的資料 (預覽)
+    - 模型部署
+      - 用於推斷的端點
+        [2380] 生產環境中推斷的端點
+      - 模型部署的套件
+        [2386] 適用於部署的模型套件 (預覽)
+      - 如何封裝用於部署的模型
+        [2389] 建立模型套件 (預覽)
+    - 自動化
+      - 排程作業
+        [2399] 排定機器學習管線作業
+      - 適用於 CI/CD 的 Azure Pipelines 簡介
+        [2410] 使用 Azure Pipelines 搭配 AzureMachine Learning
+      - 適用於 CI/CD 的 GitHub Actions 簡介
+        [2416] 搭配 Azure Machine Learning 使用GitHub Actions
+      - 自訂 CI/CD 和事件驅動工作流程
+        [2423] 
+    - 設定 MLOps 的端對端範例
+      - 使用 Azure DevOps 設定 MLOps
+        [2431] 使用 Azure DevOps 設定 MLOps
+      - 使用GitHub Actions 設定 MLOps
+        [2448] 使用 GitHub 設定 MLOps
+      - 使用提示流程和 GitHub 設定 LLMOps
+        [2461] 具有提示流程和 GitHub 的 LLMOps
+  - 監視您的模型
+    - 模型資料收集
+      [2469] 生產環境中模型的數據收集
+    - 從生產環境收集推斷資料
+      [2471] 從部署以進行即時推斷的模型收集生產資料
+    - 模型監視
+      [2486] 使用 Azure Machine Learning 進行模型監測
+    - 執行連續監視
+      [2494] 監視部署至實際執行環境的模型效能
+  - 基礎結構和安全性
+    - 教學課程和範本
+      - 教學課程：在 Azure 入口網站中建立安全工作區
+        [2513] 教學課程：如何使用受控虛擬網路建立安全工作區
+      - 教學課程：使用範本建立安全的工作區
+        [2526] 教學課程：如何使用範本建立安全工作區
+    - 安全性概觀
+      - 企業安全性概觀
+        [2533] Azure Machine Learning 的 Enterprise 安全性與治理
+      - 安全的工作區流量
+        [2538] 使用安全工作區時的網路流量
+      - 安全性基準
+        [2546] Machine Learning 服務的 Azure 安全性基準
+      - Azure 原則的安全性控制
+        [2565] 適用於 Azure Machine Learning 的Azure 原則法規合規性控制
+      - 資料加密
+        [2572] Azure Machine Learning 的資料加密
+      - 客戶管理的金鑰
+        [2578] Azure Machine Learning 的客戶自控金鑰
+      - 弱點管理
+        [2583] Azure Machine Learning 的弱點管理
+    - 身分識別與存取管理
+      - 設定驗證
+        [2589] 設定 Azure Machine Learning 資源和工作流程的驗證
+      - 設定服務驗證
+        [2598] 設定 Azure Machine Learning 與其他服務之間的驗證
+      - 管理使用者和角色
+        [2616] 
+    - 網路安全性
+      - 規劃網路隔離
+        [2626] 對網路隔離進行規劃
+      - 虛擬網路概觀
+        [2637] 使用虛擬網路 (VNet) 保護 AzureMachine Learning 工作區資源
+      - 使用受控虛擬網路
+        [2648] 工作區受控虛擬網路隔離
+      - 針對受控虛擬網路進行疑難排解
+        [2668] 針對 Azure Machine Learning 受控虛擬網路進行疑難排解
+      - 使用私人端點
+        [2670] 設定 Azure Machine Learning 工作區的私人端點
+      - 使用自訂 DNS
+        [2682] 如何搭配自訂 DNS 伺服器來使用工作區
+      - 使用 Azure 虛擬網路
+        - 教學課程：使用 VNet 建立安全的工作區
+          [2704] 教學課程：如何使用 Azure 虛擬網路建立安全工作區
+        - 保護工作區資源
+          [2748] 使用虛擬網路保護 Azure MachineLearning 工作區
+        - 保護機器學習登錄
+          [2762] 使用 Azure Machine Learning 登錄的網路隔離
+        - 保護訓練環境
+          [2771] 使用虛擬網路保護 Azure MachineLearning 定型環境
+        - 保護推斷環境
+          [2790] 使用虛擬網路保護 Azure MachineLearning 推斷環境
+        - 在虛擬網路中使用 Studio
+          [2793] 在 Azure 虛擬網路中使用 Azure MachineLearning 工作室
+        - 設定必要的網路流量
+          [2799] 設定輸入和輸出網路流量
+        - 資料外流防護
+          [2815] Azure Machine Learning 資料外流防護
+        - 使用第 2 版設定網路隔離
+          [2821] Azure Resource Manager 上我們的新API 平台的網路隔離變更
+        - 安全地連結 Azure Databricks
+          [2825] 附加在虛擬網路 (VNet) 中受到保護的Azure Databricks 計算
+    - 資料保護
+      - 容錯移轉和災害復原
+        [2831] 商務持續性和災害復原的容錯移轉
+      - 重新產生儲存體存取金鑰
+        [2840] 重新產生儲存體帳戶存取金鑰
+    - 建立及管理工作區
+      - 使用 Azure 入口網站或 Python SDK
+        [2845] 在入口網站中或使用 Python SDK 管理Azure 機器學習 工作區 （v2）
+      - 使用 Azure CLI
+        [2861] 使用 Azure CLI 管理 Azure MachineLearning 工作區
+      - 使用 Azure PowerShell
+        [2873] 使用 Azure PowerShell 管理 AzureMachine Learning 工作區
+      - 使用 Resource Manager 範本
+        [2878] 使用 Azure Resource Manager 範本建立Azure Machine Learning 的工作區
+      - 使用 Terraform
+        [2893] 使用 Terraform 來管理 Azure MachineLearning 工作區
+      - 使用 REST
+        [2899] 使用 REST 建立、執行和刪除 AzureMachine Learning 資源
+      - 刪除後復原工作區
+        [2912] 虛刪除時復原工作區資料
+      - 如何移動工作區
+        [2918] 在訂用帳戶之間移動 Azure MachineLearning 工作區 (預覽)
+      - 安全地整合 Azure Synapse 和 Azure Machine Learning
+        [2927] 如何安全地整合 Azure Machine Learning與 Azure Synapse
+      - 工作區診斷
+        [2934] 如何使用工作區診斷
+      - 客戶管理的金鑰
+        [2937] 搭配使用客戶自控金鑰與 Azure MachineLearning
+    - 建立和管理中樞工作區
+      - 使用 Azure 入口網站
+        [2943] 在入口網站中管理 Azure 機器學習 中樞工作區
+      - 使用 Resource Manager 範本
+        [2959] 使用 Bicep 範本建立 Azure 機器學習 中樞工作區
+    - 建立和管理登錄
+      [2962] 管理 Azure Machine Learning 登錄
+    - 建立及管理計算資源
+      - 建立計算執行個體
+        [2968] 建立 Azure Machine Learning 計算執行個體
+      - 管理計算執行個體
+        [2986] 管理 Azure Machine Learning 計算執行個體
+      - 使用指令碼自訂運算執行個體
+        [2991] 使用指令碼自訂計算執行個體
+      - 計算叢集
+        [2996] 建立 Azure Machine Learning 計算叢集
+      - 無伺服器計算
+        [3003] 無伺服器計算上的模型定型
+      - 管理計算資源
+        [3013] 在 Studio 中管理模型定型和部署的計算資源
+      - 附加和管理 Synapse Spark 集區
+        [3018] 在 Azure Machine Learning 中連結及管理 Synapse Spark 集區
+    - 已啟用 AKS 和 Azure Arc 的 Kubernetes
+      - 什麼是 Kubernetes 計算目標
+        [3024] Azure Machine Learning 中的Kubernetes 計算目標簡介
+      - 步驟 1 - 部署 Azure Machine Learning 延伸模組
+        [3030] 在 AKS 或 Arc Kubernetes 叢集上部署Azure Machine Learning 延伸項目
+      - 步驟 2 - 將叢集附加至工作區
+        [3040] 將 Kubernetes 叢集連結至 AzureMachine Learning 工作區
+      - 建立和管理執行個體類型
+        [3045] 建立和管理執行個體類型以有效利用計算資源
+      - 管理 Azure Machine Learning 推斷路由器
+        [3052] Azure Machine Learning 推斷路由器和連線需求
+      - 保護推斷環境
+        [3059] 安全的 Azure Kubernetes Service 推斷環境
+      - 使用 TLS/SSL 設定安全的線上端點
+        [3063] 使用 TLS/SSL 設定安全的線上端點
+      - 針對 Azure Machine Learning 延伸模組進行疑難排解
+        [3070] 針對 Azure Machine Learning 延伸模組進行疑難排解
+      - 針對 Kubernetes 計算進行疑難排解
+        [3081] 對 Kubernetes 計算進行疑難排解
+      - 設定 Kubernetes 叢集的參考
+        [3092] 為 Azure Machine Learning 設定Kubernetes 叢集的參考
+      - 監視 Kube 線上端點推斷伺服器記錄
+        [3108] 監視 Kube 線上端點推斷伺服器記錄
+    - 規劃和管理成本
+      [3111] 規劃管理 Azure Machine Learning 的成本
+    - 管理資源配額
+      [3119] 管理及增加 Azure Machine Learning 資源的配額和限制
+    - 進行成本管理和最佳化
+      [3135] 管理和最佳化 Azure Machine Learning成本
+    - 監視器
+      [3139] 監視 Azure Machine Learning
+    - 安全程序代碼
+      [3147] 安全程序代碼的最佳做法
+    - 稽核與管理
+      [3149] 稽核與管理 Azure Machine Learning
+  - 疑難排解和已知問題
+    - 疑難排解
+      - 針對安全工作區連線能力進行疑難排解
+        [3157] 針對私人端點連線問題進行疑難排解
+      - 針對描述項錯誤進行疑難排解
+        [3162] 疑難排解 descriptors cannot not be
+created directly  錯誤
+      - 如何疑難排解資料存取
+        [3164] 
+      - 針對結構描述失敗錯誤的驗證進行疑難排解
+        [3167] 針對結構描述驗證失敗錯誤進行疑難排解
+      - 如何針對環境進行疑難排解
+        [3171] 針對環境問題進行疑難解答
+      - 線上端點的疑難排解
+        [3211] 針對在線端點部署和評分進行疑難解答
+      - 針對批次端點進行疑難排解
+        [3242] 針對批次端點進行疑難排解
+      - 對 Kubernetes 計算進行疑難排解
+        [3249] 對 Kubernetes 計算進行疑難排解
+      - 針對 Azure Machine Learning 延伸模組進行疑難排解
+        [3260] 針對 Azure Machine Learning 延伸模組進行疑難排解
+    - 已知問題
+      - Azure Machine Learning 的作用中已知問題
+        [3271] Azure Machine Learning 已知問題
+      - 計算執行個體已知問題
+        - Jupyter R 核心不會在新的計算執行個體映像中啟動
+          [3272] 已知問題 - Jupyter R 核心不會在新的計算執行個體映像中啟動
+        - 使用 A10 SKU 建立計算執行個體時的佈建錯誤
+          [3274] 已知問題 - 使用 A10 SKU 建立計算執行個體時的佈建錯誤
+        - Bicep 範本中的 Idleshutdown 屬性會導致錯誤
+          [3275] 已知問題 - Bicep 範本中的 Idleshutdown屬性會導致錯誤
+        - 計算執行個體終端機從掛接路徑的速度變慢
+          [3277] 已知問題 - 計算執行個體終端機從掛接路徑的速度變慢
+        - 在工作區移動之後建立計算執行個體會導致 Etag 衝突錯誤
+          [3279] 已知問題 - 在工作區移動之後建立計算執行個體會導致 Etag 衝突錯誤。
+        - 不支援應用程式共享原則
+          [3280] 已知問題 - 計算執行個體不支援ApplicationSharingPolicy 屬性
+      - 推斷已知問題
+        - 無法更新現有的 Kubernetes 計算
+          [3281] 已知問題 - 現有的 Kubernetes 計算無法使用 az ml compute attach  命令更新
+        - 部署期間的憑證無效錯誤
+          [3282] 已知問題 - AKS 叢集部署期間的憑證無效錯誤
+  - 範例
+    - Jupyter Notebook
+      [3284] 使用 Jupyter Notebook 探索 AzureMachine Learning
+    - 瀏覽程式碼範例
+    - 範例存放庫 (v2)
+    - 範例存放庫 (v1)
+    - 端對端 MLOps 範例
+  - 參考
+    - Python SDK v1
+      [3288] 什麼是適用於 Python 的 Azure MachineLearning SDK？
+    - Python SDK v2
+    - REST API
+      [3303] Machine Learning REST API 參考
+    - CLI (v2) 命令
+      [3304] az ml index
+    - CLI (v2) YAML 結構描述
+      - 概觀
+        [3313] CLI (v2) YAML 結構描述
+      - 核心語法
+        [3316] CLI （v2） 核心 YAML 語法
+      - 工作區
+        [3324] CLI (v2) 工作區 YAML 結構描述
+      - Environment
+        [3330] CLI (v2) 環境 YAML 結構描述
+      - 資料
+        [3334] CLI （v2） 資料 YAML 架構
+      - MLTable
+        [3338] 
+      - 模型
+        [3348] CLI (v2) 模型 YAML 結構描述
+      - 排程
+        - 工作 (Job)
+          [3350] CLI （v2） 作業排程 YAML 架構
+        - 資料匯入
+          [3362] CLI （v2） 匯入排程 YAML 架構
+        - 監視器
+          [3374] 
+      - 計算
+        - 計算叢集 (AmlCompute)
+          [3389] 
+        - 計算執行個體
+          [3393] 
+        - 連結的虛擬機器
+          [3396] CLI (v2) 附加的虛擬機器 YAML 結構描述
+        - 連結且已啟用 Azure Arc 的 Kubernetes (KubernetesCompute)
+          [3399] CLI (v2) 已啟用 Azure Arc 的 Kubernetes叢集 (KubernetesCompute) YAML 結構描述
+      - 工作 (Job)
+        - Command
+          [3401] CLI (v2) 命令作業 YAML 結構描述
+        - 整理
+          [3414] CLI （v2） 掃掠作業 YAML 架構
+        - 管線
+          [3428] CLI （v2） 管線作業 YAML 架構
+        - Parallel
+          [3435] CLI （v2） 平行作業 YAML 架構
+        - 自動化 ML 預測命令作業 YAML 結構描述
+          [3444] 
+        - 自動化 ML 影像分類
+          [3450] CLI (v2) 自動化 ML 影像分類作業 YAML架構
+        - 自動化 ML 影像執行個體分割
+          [3460] 
+        - 自動化 ML 影像多標籤分類
+          [3465] CLI (v2) 自動化 ML 映射多重標籤分類作業YAML 架構
+        - 自動化 ML 影像物件偵測
+          [3470] CLI (v2) 自動化 ML 映射物件偵測作業YAML 架構
+        - 自動化 ML NLP 文字分類
+          [3476] CLI (v2) 自動化 ML 文字分類作業 YAML架構
+        - 自動化 ML NLP 多標籤分類
+          [3486] CLI (v2) 自動化 ML 文字分類多標籤作業YAML 架構
+        - 自動化 ML NLP NER
+          [3496] CLI (v2) 自動化 ML 文字 NER 作業 YAML架構
+        - Spark
+          [3506] 
+      - Datastore
+        - Azure Blob
+          [3513] 
+        - Azure 檔案
+          [3516] 
+        - Azure Data Lake Gen1
+          [3519] 
+        - Azure Data Lake Gen2
+          [3522] 
+      - 功能存放區
+        - 功能存放區
+          [3525] 
+        - 功能集
+          [3527] CLI (v2) 功能集 YAML 架構
+        - 功能實體
+          [3533] CLI (v2) 功能實體 YAML 架構
+        - 功能擷取規格
+          [3535] 
+        - 功能集規格
+          [3536] 
+      - 端點
+        - 線上 (即時)
+          [3541] 
+        - Batch
+          [3545] CLI （v2） 批次端點 YAML 架構
+      - 部署
+        - 受控線上 (即時)
+          [3547] 
+        - Kubernetes 線上 (即時)
+          [3553] 
+        - Batch
+          [3557] 
+      - 元件
+        - Spark
+          [3563] CLI （v2） Spark 元件 YAML 架構
+        - Command
+          [3569] CLI (v2) 命令元件 YAML 結構描述
+        - 管線
+          [3576] CLI （v2） 管線元件 YAML 架構
+      - 登錄
+        - 登錄
+          [3580] CLI (v2) 登錄 YAML 架構
+    - Azure PowerShell
+      [3582] Az.MachineLearningServices
+    - 服務限制
+      [3590] Azure Machine Learning 中的服務限制
+    - AutoML 的影像資料結構描述
+      [3593] 使用自動化機器學習來定型電腦視覺模型的資料結構描述
+    - AutoML 電腦視覺工作的超參數
+      [3616] 
+    - Kubernetes 叢集設定
+      [3624] 為 Azure Machine Learning 設定Kubernetes 叢集的參考
+    - 設計工具元件參考
+      [3640] Azure 機器學習 設計工具的演算法和元件參考
+    - 監視資料參考
+      [3645] 
+    - Azure 原則內建
+      [3667] Azure 原則 適用於 Azure 機器學習 的內建原則定義
+    - 策展的環境
+      [3671] Azure 機器學習策展環境
+    - 適用於 PyTorch 的 Azure 容器
+      [3672] 適用於 PyTorch 的 Azure 容器 （ACPT）
+    - Azure CLI
+      [3674] az ml
+  - 升級為 v2
+    - 什麼是第 2 版？
+      [3690] 什麼是 Azure Machine Learning CLI 和Python SDK v2？
+    - 升級概觀
+      [3694] 升級為 v2
+    - 升級資源和資產
+      - 工作區
+        [3701] 升級工作區管理至 SDK v2
+      - 計算
+        [3705] 將計算管理升級至 v2
+      - Datastore
+        [3707] 將數據存放區管理升級至 SDK v2
+      - 資料資產
+        [3712] 將數據管理升級至 SDK v2
+      - 模型資產
+        [3717] 將模型管理升級至 SDK v2
+    - 升級定型
+      - 執行指令碼
+        [3719] 將指令碼執行升級至 SDK v2
+      - 本地執行
+        [3721] 將本機執行升級至 SDK v2
+      - AutoML
+        [3723] 將 AutoML 升級至 SDK v2
+      - 超參數微調
+        [3726] 將超參數微調升級至 SDK v2
+      - 平行執行步驟
+        [3732] 
+      - Pipelines
+        [3738] 將管線升級至 SDK v2
+    - 升級端點
+      - 線上端點
+        [3745] 將部署端點升級至 SDK v2
+      - 管線端點
+        [3750] 將管線端點升級至 SDK v2
+      - 從 ACI Web 服務升級到受控連線端點
+        [3753] 將 Azure 容器執行個體 web 服務升級至受控線上端點的步驟
+  - 資源
+    - Python SDK (v2) 版本資訊
+    - CLI (v2) 版本資訊
+      [3757] Azure 機器學習 CLI （v2） 版本資訊
+    - 計算執行個體映像版本資訊
+      [3767] Azure Machine Learning 計算執行個體映像版本資訊
+    - Azure 藍圖
+    - 定價
+    - Conda 授權
+      [3770] Anaconda licensing for Microsoftproducts and services
+    - 區域可用性
+    - 啟用預覽功能
+      [3771] 啟用 Azure Machine Learning 的預覽功能
+    - 跨區域的功能可用性
+      [3774] 
+    - 使用者論壇
+    - Microsoft Learn 訓練
+    - Stack Overflow
+    - 比較 ML 產品
+      [3783] 比較 Microsoft 機器學習產品和技術
+    - 設計工具協助工具功能
+      [3791] 使用鍵盤以使用 Azure Machine Learning設計工具

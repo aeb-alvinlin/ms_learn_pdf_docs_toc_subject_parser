@@ -1,0 +1,139 @@
+- ---< power-bi-developer-embedded.pdf >---
+  - Power BI 內嵌式分析檔
+    [1] Power BI 內嵌式分析檔
+    - 概觀
+      - 什麼是Power BI內嵌式分析？
+        [4] 什麼是Power BI內嵌式分析？
+      - Power BI Embedded 功能
+        [7] Power BI 進階版 功能
+      - 什麼是Power BI Embedded 分析遊樂場？
+        [9] 什麼是Power BI內嵌式分析遊樂場？
+    - Power BI Embedded 設定
+      - 建立 Microsoft Entra 租用戶
+        [14] 建立要與 Power BI 搭配使用的 MicrosoftEntra 租使用者
+      - Power BI 應用程式註冊工具
+        [18] 設定 Power BI Embedded
+      - 設定認證
+        [25] 以程式設計方式設定 Power BI 的認證
+      - 編輯您的應用程式許可權
+        [30] Microsoft Entra 權限
+      - 自動安裝應用程式
+        [33] 為組織內嵌內容時自動安裝 Power BI 應用程式
+      - 效能最佳做法
+        [35] 在 Power BI 內嵌式分析中加快效能的最佳做法
+      - 監視Power BI Embedded 應用程式
+        [39] Power BI Embedded 監視資料
+    - 內嵌內容
+      - 使用服務主體進行內嵌
+        [43] 使用服務主體和應用程式秘密內嵌PowerBI內容
+      - 使用服務主體和憑證進行內嵌
+        [54] 使用服務主體和憑證內嵌 Power BI 內容
+      - 為客戶內嵌內容
+        [62] 教學課程：使用客戶的應用程式內嵌範例內嵌Power BI內容
+      - 為組織內嵌內容
+        [76] 教學課程：使用組織的應用程式內嵌範例內嵌來內嵌Power BI內容
+      - 內嵌國家/地區雲端的內容
+        [85] 教學課程：針對國家/地區雲端將Power BI內容內嵌至您的應用程式
+      - 為客戶在應用程式中內嵌報表
+        [90] 教學課程：為客戶在應用程式中內嵌Power BI報表
+      - 在組織的應用程式中內嵌報表
+        [105] 教學課程：在組織的應用程式中內嵌Power BI報表
+      - 內嵌編頁報表
+        [119] 內嵌 Power BI 編頁報表
+      - 內嵌在 Salesforce 中
+        [123] 在 Salesforce 中內嵌 Power BI 內容
+      - 內嵌問答
+        [125] Power BI 內嵌式分析中的問答
+      - 安全內嵌
+        [128] 在安全的入口網站或網站內嵌報表
+    - 語彙基元
+      - 內嵌式分析存取令牌
+        [134] 內嵌式分析存取令牌
+      - 產生內嵌令牌
+        [138] 產生內嵌令牌
+      - 使用動態系結 連線 報表
+        [142] 使用動態系結將報表 連線 至語意模型
+    - 匯出至檔案
+      - 將報表導出至檔案
+        [144] 將 Power BI 報表匯出至檔案
+      - 將編頁報表導出至檔案
+        [154] 將編頁報表導出至檔案
+    - 容量和 SKU
+      - 將內嵌應用程式移至生產環境
+        [163] 將內嵌應用程式移至生產環境
+      - Power BI 內嵌式分析中的容量和 SKU
+        [168] Power BI 內嵌式分析中的容量和 SKU
+      - 產能規劃
+        [173] Power BI 內嵌式分析中的容量規劃
+      - 在 Azure 中建立容量
+        [177] 在 Azure 入口網站 中建立Power BIEmbedded容量
+      - 在 Azure 中使用多地理位置建立容量
+        [180] Power BI Embedded 的多地理位置支援
+      - 評估容量負載
+        [185] 評估您的容量負載
+      - 在 Azure 中調整容量
+        [187] 在 Azure 入口網站中調整 Power BIEmbedded 容量
+      - 在 Azure 中暫停和啟動容量
+        [192] 在Azure 入口網站中暫停並啟動 Power BIEmbedded 容量
+    - 工作區區隔和多租使用者
+      - 多租使用者應用程式的服務主體配置檔
+        [198] Power BI Embedded 中多租使用者應用程式的服務主體配置檔
+      - Power BI SDK 和服務主體配置檔
+        [209] 搭配服務主體設定檔使用 Power BI SDK
+      - 遷移至服務主體配置檔模型
+        [211] 將多客戶應用程式遷移至服務主體配置檔模型
+    - 安全性
+      - 內嵌安全性功能
+        [215] Power BI Embedded 中的安全性功能
+      - 使用 RLS 內嵌
+        [217] 使用 RLS 內嵌報表
+      - 內嵌編頁報表中的 RLS
+        [221] 在內嵌編頁報表中實作數據列層級安全性
+      - 內嵌內部部署 SQL Server Analysis Services （SSAS）
+        [228] 在內部部署 SQL Server Analysis Services上內嵌報表 （SSAS）
+      - 使用 Azure Analysis Services 內嵌 （AAS）
+        [234] 使用 Azure Analysis Services （AAS） 資料庫內嵌報表
+      - 使用單一登入內嵌 （SSO）
+        [240] 使用權杖型識別內嵌報表 （SSO）
+      - 使用物件層級安全性進行內嵌 （OLS）
+        [245] 物件層級安全性
+    - 合作夥伴解決方案
+      - 內嵌式分析解決方案加速器
+        [247] 來自 Microsoft 合作夥伴的內嵌分析解決方案加速器
+    - 支援
+      - 針對內嵌應用程式進行疑難解答
+        [254] 針對內嵌應用程式進行疑難解答
+      - 針對 REST API 錯誤進行疑難解答
+        [268] 針對 REST API 進行疑難解答
+      - 內嵌常見問題
+        [270] 一般
+    - 參考
+      - API
+        - Azure 資源管理 REST API
+          [283] Power BI Embedded Azure ResourceManager (ARM) REST API 參考
+        - Power BI REST API
+          [284] 使用 Power BI REST API
+        - 推送數據集限制
+          [288] 推送語意模型限制
+        - 語意模型許可權
+          [289] 語意模型 REST API 許可權
+      - 一天中的Power BI開發人員課程
+        [293] 一天中的Power BI開發人員課程
+      - 監視Power BI Embedded 資料參考
+        [297] 監視 Power BI Embedded 資料參考
+      - Power BI 連結庫
+      - Azure CLI
+        [302] az powerbi
+      - Power BI 詞彙
+        [305] Power BI 開發人員詞彙
+    - 資源
+      - Power BI Dev Camp
+        [325] Power BI Dev Camp
+      - 開發人員中心
+      - 內嵌安裝工具
+      - 內嵌式分析遊樂場
+      - Power BI 內嵌式分析用戶端 API
+        [327] Power BI 內嵌式分析用戶端 API
+      - 開發人員範例和腳本
+      - Power BI 社群
+      - Stack Overflow

@@ -1,0 +1,90 @@
+- ---< azure-architecture-web-apps (英文).pdf >---
+  - Web applications
+    [1] Web applications architecture design
+    - Explore ideas about
+      - Hosting an e-commerce web app
+        [5] 
+      - Network securing an e-commerce web app
+        [8] 
+      - Migrating a workload to containers with App Service
+        [11] 
+    - Design architectures
+      - Host web apps with App Service
+        - Basic web application
+          [16] 
+        - Baseline web application with zone redundancy
+          [27] 
+        - Active-passive multi-region web app
+          [46] 
+      - Host web apps with App Service Environment
+        - Standard deployment
+          [61] 
+        - High availability deployment
+          [77] 
+      - Host web apps with Azure Spring Apps
+        - Get started
+          [84] Azure Spring Apps (ASA) architecturedesign
+        - Baseline
+          [86] 
+        - Baseline in multiple regions
+          [97] 
+        - Baseline in landing zones
+          [108] 
+        - Guides
+          - Spring Apps through a reverse proxy
+            [122] 
+          - Blue/green deployments for applications
+            [139] 
+      - Manage your APIs with Azure API Management (APIM)
+        - Protect APIs with Application Gateway and APIM
+          [147] 
+        - Design API with API Management and GitHub
+          [152] 
+      - Host serverless web apps with Azure Functions
+        - Serverless web app
+          [162] 
+        - Serverless code walkthrough
+          [177] 
+    - Apply guidance
+      - Networking guidance for web apps
+        - Securing access to multitenant web apps from on prem
+          [197] 
+        - Automate Application Gateway reconfiguration for web apps
+          [207] 
+      - Security guidance for web apps
+        - Single-page application authorization
+          [214] 
+      - Monitoring guidance for web apps
+        - Monitoring a web application
+          [224] 
+      - Application development guidance for web apps
+        - Enterprise app patterns
+          - Reliable web app pattern
+            - Overview
+              [231] Reliable Web App pattern
+            - .NET
+              - Plan the implementation
+                [233] 
+              - Apply the pattern
+                [243] 
+            - Java
+              - Plan the implementation
+                [261] 
+              - Apply the pattern
+                [270] 
+    - Hosting applications
+      - WordPress
+        - Overview
+          [288] 
+        - Container hosting (AKS)
+          [296] 
+        - App Service hosting
+          [303] 
+        - VM hosting
+          [309] 
+      - Episerver
+        [316] 
+      - Sitecore
+        [319] 
+      - Umbraco
+        [322] 

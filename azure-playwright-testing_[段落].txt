@@ -1,0 +1,49 @@
+- ---< azure-playwright-testing.pdf >---
+  - Microsoft Playwright 測試檔
+    [1] Microsoft Playwright Testing Preview 檔
+  - 概觀
+    - 什麼是 Microsoft Playwright Testing？
+      [3] 什麼是 Microsoft Playwright TestingPreview？
+    - 免費試用 Microsoft Playwright Testing
+      [7] 免費試用 Microsoft Playwright TestingPreview
+  - 快速入門
+    - 大規模執行端對端測試
+      [11] 快速入門：使用 Microsoft PlaywrightTesting Preview 大規模執行端對端測試
+    - 設定連續端對端測試
+      [20] 快速入門：使用 Microsoft PlaywrightTesting Preview 設定連續端對端測試
+  - 概念
+    - 判斷最佳測試套件元件元件
+      [27] 判斷最佳測試套件組態
+  - 操作指南
+    - 優化區域延遲
+      [32] 在 Microsoft Playwright Testing Preview中優化工作區的區域延遲
+    - 管理工作區
+      [34] 在 Microsoft Playwright Testing Preview中管理工作區
+    - 管理存取令牌
+      [40] 在 Microsoft Playwright Testing Preview中管理工作區存取權杖
+    - 管理工作區存取
+      [45] 在 Microsoft Playwright Testing Preview中管理工作區的存取權
+    - 執行本機應用程式的測試
+      [52] 使用雲端裝載瀏覽器搭配 MicrosoftPlaywright Testing Preview 在本機部署的應用程式
+    - 設定視覺效果比較
+      [54] 使用 Microsoft Playwright TestingPreview 設定視覺比較
+    - 監視 Microsoft Playwright 測試
+      [57] 監視 Microsoft Playwright TestingPreview
+  - 範例
+    - Contoso Traders 雲端測試示範
+    - 範例存放庫
+  - 疑難解答和偵錯
+    - 針對 Playwright 入口網站登入問題進行疑難解答
+      [59] [已解決]AADSTS7000112：應用程式'b1fd4ebf-2bed-4162-be84-97e0fe523f64'（PlaywrightServiceAADLogin） 已停用。
+    - 針對測試回合失敗進行疑難解答
+      [61] 使用 Microsoft Playwright Testing 預覽針對執行測試的問題進行疑難解答
+  - 資源
+    - Azure 藍圖
+    - 劇作家檔
+    - 定價
+    - 區域可用性
+    - 服務限制
+      [64] Microsoft Playwright Testing Preview 中的服務限制
+  - 參考
+    - 監視數據參考
+      [66] 監視 Microsoft Playwright Testing 預覽資料參考

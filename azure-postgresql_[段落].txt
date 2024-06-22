@@ -1,0 +1,683 @@
+- ---< azure-postgresql.pdf >---
+  - 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器檔
+    [1] 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器檔
+  - 概觀
+    - 什麼是適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器？
+      [5] 什麼是適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器？
+    - 自我裝載與受控服務
+      [8] 在 Azure 中選擇正確的 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器裝載選項
+    - 比較部署選項
+      [12] 比較圖表：適用於 PostgreSQL 的 Azure資料庫 - 彈性伺服器與單一伺服器
+    - 服務更新
+      - SSL 根憑證即將到期
+        [18] 瞭解 適用於 PostgreSQL 的 Azure 資料庫單一伺服器根 CA 變更中的變更
+    - 版本控制原則
+      [25] 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器版本控制原則
+    - 主要版本升級
+      [29] 使用傾印和還原升級 PostgreSQL 資料庫
+    - 預付保留容量
+      [38] 預付 適用於 PostgreSQL 的 Azure 資料庫- 具有保留容量的彈性伺服器計算資源
+    - 申請加大配額
+      [44] 要求增加 適用於 PostgreSQL 的 Azure 資料庫 配額 - 彈性伺服器
+    - 解決容量錯誤
+      [47] Resolve capacity errors for AzureDatabase for PostgreSQL Flexible Server
+    - 已知問題與限制
+      [51] 適用於 PostgreSQL 的 Azure 資料庫 - 已知問題和限制
+  - 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+    - 概觀
+      [52] 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+    - 版本資訊
+      [60] 版本資訊 - 適用於 PostgreSQL 的 Azure資料庫 - 彈性伺服器
+    - API 版本資訊
+      [69] API 版本資訊 - 適用於 PostgreSQL 的Azure 資料庫 - 彈性伺服器
+    - CLI 版本資訊
+      [72] Azure CLI 版本資訊 - 適用於 PostgreSQL的 Azure 資料庫 - 彈性伺服器
+    - 免費試用
+      [75] 使用 Azure 免費帳戶嘗試 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器免費
+    - 快速入門
+      - 建立伺服器實例和資料庫
+        - ARM 範本
+          [86] 快速入門：使用ARM範本建立 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器實例
+        - Azure CLI
+          [91] 快速入門：使用 Azure CLI 建立 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器實例
+        - Azure 入口網站
+          [96] 快速入門：在 Azure 入口網站 中建立 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器實例
+        - Azure SDK for Python
+          [106] 快速入門：使用適用於 Python 的 Azure連結庫 （SDK） 來建立 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器實例
+        - Bicep
+          [111] 快速入門：使用 Bicep 檔案建立 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器實例
+      - 連線和查詢
+        - 連線 虛擬網路中的伺服器
+          [115] 連線 適用於 PostgreSQL 的 Azure 資料庫- 具有私人存取連線方法的彈性伺服器
+        - Azure CLI
+          [122] 快速入門：使用 Azure CLI 搭配適用於PostgreSQL 的 Azure 資料庫 來進行連線和查詢 - 彈性伺服器
+        - Python
+          [126] 快速入門：使用 Python 連線和查詢 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器中的數據
+        - Java
+          [132] 快速入門：搭配 適用於 PostgreSQL 的Azure 資料庫 使用 Java 和 JDBC - 彈性伺服器
+        - .NET
+          [148] 快速入門：使用 .NET （C#） 連線及查詢適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器中的數據
+      - 資料庫部署
+        - GitHub 動作
+          [156] 快速入門：使用 GitHub Actions 連線到適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+        - Azure Pipelines
+          [162] Azure Pipelines 工作 - 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+    - 概念
+      - 伺服器
+        [166] 適用於 PostgreSQL 的 Azure 資料庫 的伺服器概念 - 彈性伺服器
+      - 支援的版本
+        [169] 適用於 PostgreSQL 的 Azure 資料庫 中支援的 PostgreSQL 版本 - 彈性伺服器
+      - 計算
+        [171] 適用於 PostgreSQL 的 Azure 資料庫 中的計算選項 - 彈性伺服器
+      - 儲存體
+        [175] 適用於 PostgreSQL 的 Azure 資料庫 中的儲存體 選項 - 彈性伺服器
+      - 調整資源
+        [181] 調整 適用於 PostgreSQL 的 Azure 資料庫彈性伺服器中的資源
+      - 預付保留容量
+        [184] 預付 適用於 PostgreSQL 的 Azure 資料庫- 具有保留容量的彈性伺服器計算資源
+      - 網路
+        - 具有公用存取的網路功能（允許的IP 位址）
+          [190] 適用於 PostgreSQL 的 Azure 資料庫 的網路概觀 - 具有公用存取的彈性伺服器（允許的IP 位址）
+        - 使用私人存取的網路功能（虛擬網路整合）
+          [194] 適用於 PostgreSQL 的 Azure 資料庫 的網路概觀 - 具有私人存取的彈性伺服器（VNET 整合）
+        - 使用私人端點的網路功能
+          [203] 適用於 PostgreSQL 的 Azure 資料庫 - 使用 Private Link 的彈性伺服器網路
+        - 使用 SSL 和 TLS 保護連線
+          [210] 在 適用於 PostgreSQL 的 Azure 資料庫中使用 TLS 和 SSL 保護連線 - 彈性伺服器
+      - 防火牆規則
+        [218] 適用於 PostgreSQL 的 Azure 資料庫 中的防火牆規則 - 彈性伺服器
+      - 安全性
+        [222] 適用於 PostgreSQL 的 Azure 資料庫 中的安全性 - 彈性伺服器
+      - 生成式 AI
+        - 概觀
+          [231] 具有 適用於 PostgreSQL 的 Azure 資料庫的 Generative AI - 彈性伺服器
+        - 語意搜尋
+          [236] 具有 適用於 PostgreSQL 的 Azure 資料庫的語意搜尋 - 彈性伺服器和 AzureOpenAI
+        - 建議系統
+          [242] 具有 適用於 PostgreSQL 的 Azure 資料庫的建議系統 - 彈性伺服器和 AzureOpenAI
+        - 整合 Azure AI 功能
+          [248] 將 Azure AI 功能整合到 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+      - Azure 儲存體擴充功能
+        [259] 適用於 PostgreSQL 的 Azure 資料庫 中的Azure 儲存體 擴充功能 - 彈性伺服器
+      - Microsoft Entra 驗證
+        [267] 使用 適用於 PostgreSQL 的 Azure 資料庫進行 Microsoft Entra 驗證 - 彈性伺服器
+      - 主要版本升級
+        [273] 適用於 PostgreSQL 的 Azure 資料庫 中的主要版本升級 - 彈性伺服器
+      - 法規遵循
+        [276] 適用於 PostgreSQL 的 Azure 資料庫 中的安全性與合規性認證 - 彈性伺服器
+      - 限制
+        [278] 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器中的限制
+      - 使用客戶管理的金鑰進行加密
+        [284] 在 適用於 PostgreSQL 的 Azure 資料庫中使用客戶管理的金鑰進行資料加密 - 彈性伺服器
+      - 排程維護
+        [292] 適用於 PostgreSQL 的 Azure 資料庫 中的排程維護 - 彈性伺服器
+      - 連線集區 (PgBouncer)
+        [294] 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器中的 PgBouncer
+      - 伺服器參數
+        [301] 適用於 PostgreSQL 的 Azure 資料庫 中的伺服器參數 - 彈性伺服器
+      - 疑難排解指南
+        [308] 適用於 PostgreSQL 的 Azure 資料庫 的疑難解答指南 - 彈性伺服器
+      - 邏輯復寫和邏輯譯碼
+        [311] 適用於 PostgreSQL 的 Azure 資料庫彈性伺服器中的邏輯複寫和邏輯解碼
+      - 可靠性
+        - 概觀
+          [320] 「適用於 PostgreSQL 的 Azure 資料庫 -彈性伺服器」的商務持續性概觀
+        - 可靠性和高可用性
+          [327] 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器中的高可用性 (可靠性)
+        - 備份和還原
+          [340] 在適用於 PostgreSQL 的 Azure 資料庫 -彈性伺服器中備份與還原
+        - 異地災害復原
+          [351] 適用於 PostgreSQL 的 Azure 資料庫 中的異地災害復原 - 彈性伺服器
+      - 監視與微調
+        - 監視和微調概觀
+          [353] 監視 適用於 PostgreSQL 的 Azure 資料庫上的計量 - 彈性伺服器
+        - 活頁簿
+          [367] 監視 適用於 PostgreSQL 的 Azure 資料庫- 使用 Azure 監視器活頁簿的彈性伺服器
+        - 記錄
+          [369] 適用於 PostgreSQL 的 Azure 資料庫 中的記錄 - 彈性伺服器
+        - 稽核記錄
+          [371] 稽核 適用於 PostgreSQL 的 Azure 資料庫中的記錄 - 彈性伺服器
+        - 智慧效能
+          - 資料存放區概觀
+            [376] 使用查詢存放區監視效能
+          - 查詢存放區 使用案例
+            [388] 查詢存放區 的使用案例 - 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+          - 查詢存放區 最佳做法
+            [390] 查詢存放區 的最佳做法 - 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+          - 查詢效能深入解析
+            [392] 適用於 適用於 PostgreSQL 的 Azure 資料庫 的查詢效能深入解析 - 彈性伺服器
+          - 智慧型微調
+            [396] 在 適用於 PostgreSQL 的 Azure 資料庫中執行智慧型調整 - 彈性伺服器
+      - 讀取複本
+        - 概觀
+          [400] 適用於 PostgreSQL 的 Azure 資料庫中的讀取複本 - 彈性伺服器
+        - 異地複寫
+          [410] 適用於 PostgreSQL 的 Azure 資料庫 中的異地複寫 - 彈性伺服器
+        - 升級讀取複本
+          [413] 在 適用於 PostgreSQL 的 Azure 資料庫中升級讀取複本 - 彈性伺服器
+        - 虛擬端點
+          [417] 適用於 PostgreSQL 的 Azure 資料庫 中讀取複本的虛擬端點 - 彈性伺服器
+      - 應用程式開發
+        - 連線程式庫
+          [419] 適用於 PostgreSQL 的 Azure 資料庫 的連線 ion 連結庫 - 彈性伺服器
+        - 恢復連線
+          [421] 處理 適用於 PostgreSQL 的 Azure 資料庫的暫時性連線錯誤 - 彈性伺服器
+        - 連線 集區最佳做法
+          [423] 適用於 PostgreSQL 的 Azure 資料庫 的連線 集區策略 - 使用 PgBouncer 的彈性伺服器
+        - 使用 Azure Kubernetes Service 連線
+          [433] 連線 Azure Kubernetes Service 和 適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器
+      - Azure Advisor 建議
+        [435] 適用於 適用於 PostgreSQL 的 Azure 資料庫 的 Azure Advisor - 彈性伺服器
+    - 整合
+      - 透過自動化工作管理 Azure 資源
+        [437] 管理 適用於 PostgreSQL 的 Azure 資料庫- 使用自動化工作的彈性伺服器 （預覽）
+      - Power BI
+        [444] 從 適用於 PostgreSQL 的 Azure 資料庫匯入數據 - Power BI 中的彈性伺服器
+    - 疑難排解
+      - 疑難排解指南
+        [452] 
+      - 連接錯誤
+        - 用戶的密碼驗證失敗
+          [458] 用戶的密碼驗證失敗 <user-name>
+      - 功能疑難解答
+        - 針對 CLI 錯誤進行疑難排解
+          [462] 針對 適用於 PostgreSQL 的 Azure 資料庫進行疑難解答 - 彈性伺服器 CLI 錯誤
+        - 因復原衝突而取消語句
+          [465] 因復原衝突而取消語句
+      - 效能疑難排解
+        - 針對高 CPU 使用率進行疑難排解
+          [468] 針對 適用於 PostgreSQL 的 Azure 資料庫中的高 CPU 使用率進行疑難解答 - 彈性伺服器
+        - 針對高記憶體使用率進行疑難排解
+          [473] 適用於 PostgreSQL 的 Azure 資料庫 中的高記憶體使用率 - 彈性伺服器
+        - 針對高 IO 使用率進行疑難排解
+          [477] 針對 適用於 PostgreSQL 的 Azure 資料庫的高 IOPS 使用率進行疑難解答 - 彈性伺服器
+        - 針對 autovacuum 進行疑難解答
+          [482] 適用於 PostgreSQL 的 Azure 資料庫 中的自動數據清理調整 - 彈性伺服器
+        - 使用 pg_repack擴充功能的完整真空
+          [492] 優化 適用於 PostgreSQL 的 Azure 資料庫- 使用pg_repack彈性伺服器
+        - 疑難解答並識別執行緩慢的查詢
+          [497] 針對 適用於 PostgreSQL 的 Azure 資料庫中執行緩慢的查詢進行疑難解答和識別 -彈性伺服器
+        - 對連接進行疑難排解
+          [511] 針對 適用於 PostgreSQL 的 Azure 資料庫的連線問題進行疑難解答 - 彈性伺服器
+        - 優化查詢統計數據
+          [513] 優化 適用於 PostgreSQL 的 Azure 資料庫上的查詢統計數據收集 - 彈性伺服器
+        - 大量資料上傳的最佳做法
+          [514] 在 適用於 PostgreSQL 的 Azure 資料庫中大量上傳數據的最佳做法 - 彈性伺服器
+        - pg_dump和還原的最佳做法
+          [521] 適用於 PostgreSQL 的 Azure 資料庫 的pg_dump和pg_restore最佳做法 - 彈性伺服器
+    - 教學課程
+      - 使用 AKS 建置
+        - 在 Kubernetes 上部署 Python 應用程式
+          [525] 教學課程：使用 適用於 PostgreSQL 的Azure 資料庫 在 AKS 上部署 Django 應用程式 - 彈性伺服器
+      - 使用 App Services 建置
+        - 在虛擬網路中建立 Web 應用程式
+          [536] 教學課程：在虛擬網路中使用AppServices Web 應用程式建立 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器實例
+        - 在 App Service 上部署 Django 應用程式
+          [541] 在 Azure 中透過 PostgreSQL 部署Python (Django 或 Flask) Web 應用程式
+    - 操作指南
+      - 伺服器管理
+        - 管理伺服器
+          - Azure 入口網站
+            [562] 管理 適用於 PostgreSQL 的 Azure 資料庫- 使用 Azure 入口網站 彈性伺服器
+          - Azure CLI
+            [566] 管理 適用於 PostgreSQL 的 Azure 資料庫- 使用 Azure CLI 彈性伺服器
+          - 連線 和查詢指南
+            [571] 適用於 PostgreSQL 的 Azure 資料庫 的連線 和查詢概觀 - 彈性伺服器
+        - 自動成長記憶體
+          [573] 在 適用於 PostgreSQL 的 Azure 資料庫中使用 Azure 入口網站 自動成長 儲存體- 彈性伺服器
+        - 調整伺服器
+          - Azure 入口網站
+            [577] 調整 適用於 PostgreSQL 的 Azure 資料庫中的作業 - 彈性伺服器
+        - 還原已卸除的伺服器
+          - 還原已卸除的伺服器
+            [586] 還原已卸除 適用於 PostgreSQL 的 Azure資料庫 - 彈性伺服器實例
+        - 跨訂用帳戶和跨資源群組還原
+          - Azure 入口網站
+            [591] 適用於 PostgreSQL 的 Azure 資料庫 中的跨訂用帳戶和跨資源群組還原 - 彈性伺服器
+          - Azure REST API
+            [594] 適用於 PostgreSQL 的 Azure 資料庫 中的跨訂用帳戶和跨資源群組還原 - 使用Azure REST API 的彈性伺服器
+        - 重新啟動伺服器
+          - Azure 入口網站
+            [597] 重新啟動 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+          - Azure CLI
+            [599] 重新啟動 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器實例
+        - 還原伺服器
+          - Azure 入口網站
+            [601] 適用於 PostgreSQL 的 Azure 資料庫 的時間點還原 - 彈性伺服器實例
+          - Azure CLI
+            [607] 適用於 PostgreSQL 的 Azure 資料庫 的時間點還原 - 使用 Azure CLI 的彈性伺服器實例
+        - 停止/啟動伺服器
+          - Azure 入口網站
+            [610] 停止/啟動 適用於 PostgreSQL 的 Azure資料庫 - 使用 Azure 入口網站 的彈性伺服器實例
+          - Azure CLI
+            [612] 停止/啟動 適用於 PostgreSQL 的 Azure資料庫 - 使用 Azure CLI 的彈性伺服器
+        - 設定伺服器記錄
+          - Azure 入口網站
+            [615] 啟用、列出和下載 適用於 PostgreSQL 的Azure 資料庫 的伺服器記錄 - 彈性伺服器
+          - Azure CLI
+            [619] 
+        - 重新放置伺服器
+          [621] 將 適用於 PostgreSQL 的 Azure 資料庫重新放置至另一個區域
+      - 使用 CMK 加密
+        - Azure CLI
+          [625] 建立和管理 適用於 PostgreSQL 的 Azure資料庫 - 彈性伺服器，並使用 Azure CLI以客戶管理金鑰 （CMK） 加密的數據
+        - Azure 入口網站
+          [628] 建立和管理 適用於 PostgreSQL 的 Azure資料庫 - 彈性伺服器，並使用 Azure 入口網站 由客戶管理密鑰 （CMK） 加密的數據
+        - Azure REST API
+          [630] 建立和管理 適用於 PostgreSQL 的 Azure資料庫 - 彈性伺服器，並使用 Azure RESTAPI 以客戶管理金鑰 （CMK） 加密的數據
+      - 排程維護
+        - Azure 入口網站
+          [633] 管理 適用於 PostgreSQL 的 Azure 資料庫的排程維護設定 - 彈性伺服器
+      - 網路
+        - 使用 TLS/SSL 的加密連線
+          [634] 在適用於 PostgreSQL 的 Azure 資料庫中使用傳輸層安全性的加密連線 - 彈性伺服器
+        - 更新應用程式用戶端 SSL/TLS 憑證
+          [636] 使用 適用於 PostgreSQL 的 Azure 資料庫更新應用程式用戶端的用戶端 TLS 憑證 -彈性伺服器
+        - 虛擬網路整合的私人存取
+          - Azure 入口網站
+            [641] 使用 適用於 PostgreSQL 的 Azure 資料庫Azure 入口網站 建立和管理虛擬網路（VNET 整合） - 彈性伺服器
+          - Azure CLI
+            [645] 使用 Azure CLI 建立和管理適用於 適用於PostgreSQL 的 Azure 資料庫 的虛擬網路（VNET 整合） - 彈性伺服器
+        - 使用私人端點的網路功能
+          - Azure 入口網站
+            [649] 使用適用於 適用於 PostgreSQL 的 Azure資料庫 的 Private Link 建立和管理虛擬網路 - 彈性伺服器，方法是使用 Azure 入口網站
+          - Azure CLI
+            [653] 使用 Azure CLI 建立和管理具有 PrivateLink for 適用於 PostgreSQL 的 Azure 資料庫 的虛擬網路 - 彈性伺服器
+          - 透過私人端點 連線 至受控數據處理站
+            [655] 使用 Azure Private Link 將 連線 至具有適用於 PostgreSQL 的 Azure 資料庫 的Azure Data Factory 專用網路管線 - 彈性伺服器
+        - 公用存取 (允許的 IP 位址)
+          - Azure 入口網站
+            [660] 使用 Azure 入口網站建立和管理適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器防火牆規則
+          - Azure CLI
+            [663] 使用 Azure CLI 建立和管理適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器防火牆規則
+      - 設定伺服器參數
+        - Azure 入口網站
+          [669] 透過 Azure 入口網站，設定適用於PostgreSQL 的 Azure 資料庫中伺服器參數 (彈性伺服器)
+        - Azure CLI
+          [675] 使用 Azure CLI ，自訂適用於 PostgreSQL的 Azure 資料庫的伺服器參數 (彈性伺服器)
+      - 啟用驗證
+        - 建立使用者
+          [677] 在 適用於 PostgreSQL 的 Azure 資料庫中建立使用者 - 彈性伺服器
+        - 設定 Microsoft Entra 整合
+          [680] 使用 Microsoft Entra ID 搭配 適用於PostgreSQL 的 Azure 資料庫 進行驗證 -彈性伺服器
+        - 使用受控識別進行連線
+          [690] 使用受控識別 連線 適用於 PostgreSQL 的Azure 資料庫 - 彈性伺服器
+        - 管理 Microsoft Entra 使用者
+          [696] 在 適用於 PostgreSQL 的 Azure 資料庫中管理 Microsoft Entra 角色 - 彈性伺服器
+        - 使用 SCRAM 驗證 連線
+          [701] 適用於 PostgreSQL 的 Azure 資料庫 中的SCRAM 驗證 - 彈性伺服器
+      - 主要版本升級
+        - Azure 入口網站
+          [704] 適用於 PostgreSQL 的 Azure 資料庫 的主要版本升級 - 彈性伺服器
+        - Azure CLI
+          [707] 適用於 PostgreSQL 的 Azure 資料庫 的主要版本升級 - 使用 Azure CLI 的彈性伺服器
+      - 管理高可用性
+        - Azure 入口網站
+          [709] 管理 適用於 PostgreSQL 的 Azure 資料庫中的高可用性 - 彈性伺服器
+        - Azure CLI
+          [718] 使用 Azure CLI 管理 適用於 PostgreSQL的 Azure 資料庫 中的高可用性 - 彈性伺服器
+      - 監視器
+        - 使用入口網站在計量上建立警示
+          [720] 使用 Azure 入口網站 來設定 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器的計量警示
+        - 設定和存取記錄
+          [723] 在 適用於 PostgreSQL 的 Azure 資料庫中設定和存取記錄 - 彈性伺服器
+      - 智慧效能
+        - 智慧型微調
+          - Azure 入口網站
+            [727] 使用 Azure 入口網站 設定 適用於PostgreSQL 的 Azure 資料庫 的智慧型手機調整 - 彈性伺服器
+          - Azure CLI
+            [729] 使用 Azure CLI 設定 適用於 PostgreSQL的 Azure 資料庫 的智慧型手機調整 - 彈性伺服器
+      - 複寫
+        - Azure 入口網站、CLI、REST API
+          [733] 在 適用於 PostgreSQL 的 Azure 資料庫中建立和管理讀取複本 - 來自 Azure 入口網站、CLI 或 REST API 的彈性伺服器
+    - 擴充
+      - 概觀
+        [755] 
+      - Azure AI （azure_ai）
+        - 概觀
+          [768] 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器 Azure AI 擴充功能 （預覽）
+        - Azure OpenAI
+          [772] 在 適用於 PostgreSQL 的 Azure 資料庫上使用 Azure OpenAI 產生向量內嵌 - 彈性伺服器 （預覽）
+        - Azure 認知服務
+          [776] 整合 適用於 PostgreSQL 的 Azure 資料庫- 彈性伺服器與 Azure 認知服務 （預覽）
+        - Azure Machine Learning 服務
+          [797] 整合 適用於 PostgreSQL 的 Azure 資料庫與 Azure 機器學習 服務 （預覽版）
+      - Azure 儲存體 （pg_azure_storage）
+        [800] pg_azure_storage延伸模組 - 預覽
+      - 向量相似度搜尋 （pgvector）
+        - pgvector 的基本概念
+          [818] 如何在 適用於 PostgreSQL 的 Azure 資料庫 上啟用和使用 pgvector  - 彈性伺服器
+        - 使用 pgvector 時將效能最佳化
+          [826] 如何在 適用於 PostgreSQL 的 Azure 資料庫 上使用pgvector 時優化效能 - 彈性伺服器
+      - 資料分割
+        - 使用 pg_partman 進行數據分割
+          [838] 如何在 適用於 PostgreSQL 的 Azure 資料庫 上啟用和使用 pg_partman  - 彈性伺服器
+  - 移轉服務
+    - 概觀
+      [848] 適用於 PostgreSQL 的 Azure 資料庫 中的移轉服務
+    - 教學課程
+      - 從單一伺服器移轉
+        [853] 教學課程：使用移轉服務從 適用於PostgreSQL 的 Azure 資料庫 移轉至 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+      - 從內部部署或 Azure VM 移轉
+        [869] 教學課程：使用移轉服務從內部部署或裝載 PostgreSQL 的 Azure VM 遷移至 適用於 PostgreSQL 的 Azure 資料庫
+      - 從 AWS RDS 進行移轉
+        [883] 教學課程：使用移轉服務從 AWS RDSPostgreSQL 遷移至 適用於 PostgreSQL的 Azure 資料庫
+    - 概念
+      - 移轉前驗證
+        [897] 適用於 PostgreSQL 的 Azure 資料庫Preview 中移轉服務的預先移轉驗證
+      - 使用者角色和權限
+        [900] 在 適用於 PostgreSQL 的 Azure 資料庫中移轉移轉服務的使用者角色、擁有權和許可權
+      - 最佳作法
+        [903] 無縫移轉至 適用於 PostgreSQL 的 Azure資料庫 的最佳做法
+      - 已知問題與限制
+        [910] 適用於 PostgreSQL 的 Azure 資料庫 中移轉服務的已知問題和限制
+    - 操作指南
+      - 網路設定
+        [912] 適用於 PostgreSQL 的 Azure 資料庫中的移轉服務網路指南
+    - 疑難排解
+      - 預先移轉錯誤碼
+        [921] 移轉服務中的預先移轉驗證錯誤碼，適用於 適用於 PostgreSQL 的 Azure 資料庫
+  - 使用 pg_dump 移轉數據
+    [924] 使用傾印和還原來移轉 PostgreSQL 資料庫
+  - 使用 DMS 進行最短停機時間移轉
+    [933] 教學課程：使用移轉服務從 適用於PostgreSQL 的 Azure 資料庫 移轉至 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器
+  - 從 Oracle 移轉
+    [949] 將 Oracle 移轉至適用於 PostgreSQL 的Azure 資料庫
+  - 適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器
+    - 概觀
+      [960] 適用於 PostgreSQL 的 Azure 資料庫 單一伺服器
+    - 適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器會發生什麼事？
+      [964] 淘汰公告后 適用於 PostgreSQL 的 Azure資料庫 - 單一伺服器會發生什麼事？
+    - 快速入門
+      - 建立伺服器
+        - Azure 入口網站
+          [973] 快速入門：使用 Azure 入口網站 建立 適用於 PostgreSQL 的 Azure 資料庫 伺服器
+        - Azure CLI
+          [974] 快速入門：使用 Azure CLI 建立適用於PostgreSQL 的 Azure 資料庫伺服器
+        - Azure CLI up 命令
+          [980] 快速入門：使用 az postgres up 命令來建立 適用於 PostgreSQL 的 Azure 資料庫 -單一伺服器
+        - Azure PowerShell
+          [984] 快速入門：使用 PowerShell 建立 適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器
+        - Bicep
+          [994] 快速入門：使用 Bicep 建立 適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器
+        - ARM 範本
+          [1000] 快速入門：使用ARM範本建立 適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器
+      - 連線 和查詢
+        - Python
+          [1011] 快速入門：使用 Python 連線和查詢 適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器中的數據
+        - Node.js
+          [1017] 快速入門：使用Node.js連線和查詢 適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器中的數據
+        - Java
+          [1024] 快速入門：搭配 適用於 PostgreSQL 的Azure 資料庫 使用 Java 和 JDBC
+        - 使用 Spring 數據 JDBC 的 Java
+          [1039] 搭配使用 Spring Data JDBC 搭配 適用於PostgreSQL 的 Azure 資料庫
+        - Java 搭配 Spring 數據 JPA
+          [1046] 搭配使用 Spring Data JPA 搭配 適用於PostgreSQL 的 Azure 資料庫
+        - Java 與 spring data R2DBC
+          [1053] 搭配使用 Spring Data R2DBC 搭配 適用於 PostgreSQL 的 Azure 資料庫
+        - Ruby
+          [1065] 快速入門：使用 Ruby 連線和查詢 適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器中的數據
+        - PHP
+          [1071] 快速入門：使用 PHP 連線和查詢 適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器中的數據
+        - .NET
+          [1078] 快速入門：使用 .NET （C#） 連線和查詢適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器中的數據
+        - Go
+          [1087] 快速入門：使用 Go 語言來連線和查詢 適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器中的數據
+        - Rust
+          [1097] 快速入門：使用 Rust 與 適用於PostgreSQL 的 Azure 資料庫 互動 - 單一伺服器
+    - 教學課程
+      - 設計資料庫
+        - Azure 入口網站
+          [1106] 教學課程：使用 Azure 入口網站 設計 適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器
+        - Azure CLI
+          [1117] 教學課程：使用 Azure CLI 設計 適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器
+        - Azure PowerShell
+          [1126] 教學課程：使用 PowerShell 設計適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器
+      - 建置和部署 Python Web 應用程式 （Django）
+        [1134] 在 Azure 中透過 PostgreSQL 部署Python (Django 或 Flask) Web 應用程式
+      - 監視與微調
+        [1155] 教學課程：監視和微調 適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器
+    - 概念
+      - 成本最佳化
+        [1160] 如何在 適用於 PostgreSQL 的 Azure 資料庫 中將成本優化 - 彈性伺服器
+      - 伺服器
+        [1165] 適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器
+      - 支援的版本
+        [1168] 支援的 PostgreSQL 主要版本
+      - 擴充
+        [1170] 適用於 PostgreSQL 的 Azure 資料庫中的PostgreSQL 延伸模組 - 單一伺服器
+      - 限制
+        [1183] 適用於 PostgreSQL 的 Azure 資料庫中的限制 - 單一伺服器
+      - 了解定價層
+        - 定價層
+          [1186] 適用於 PostgreSQL 的 Azure 資料庫定價層 - 單一伺服器
+      - 安全性
+        - 安全性概觀
+          [1191] 適用於 PostgreSQL 的 Azure 資料庫 中的安全性 - 單一伺服器
+        - 設定 SSL
+          [1194] 在 適用於 PostgreSQL 的 Azure 資料庫中設定 TLS 連線 - 單一伺服器
+        - 連線架構
+          [1199] 適用於 PostgreSQL 的 Azure 資料庫中的連線 性架構
+        - 威脅防護搭配適用於雲端的 Microsoft Defender
+          [1206] 回應 Defender 開放原始碼資料庫警示
+        - Microsoft Entra 驗證
+          [1209] 使用 Microsoft Entra ID 向 PostgreSQL進行驗證
+        - 資料加密
+          [1214] 使用客戶管理的金鑰 適用於 PostgreSQL的 Azure 資料庫 單一伺服器數據加密
+        - 基礎結構雙重加密
+          [1221] 適用於 PostgreSQL 的 Azure 資料庫 基礎結構雙重加密
+        - Azure 原則的安全性控制
+          [1224] Azure 原則 適用於 PostgreSQL 的 Azure資料庫的法規合規性控制
+        - 安全性基準
+          [1246] Azure 的安全性基準
+      - 網路
+        - 防火牆規則
+          [1248] 適用於 PostgreSQL 的 Azure 資料庫 中的防火牆規則 - 單一伺服器
+        - 虛擬網路
+          [1253] 針對 適用於 PostgreSQL 的 Azure 資料庫使用 虛擬網絡 服務端點和規則 - 單一伺服器
+        - 私人連結
+          [1259] 適用於 PostgreSQL 的 Azure 資料庫-Single 伺服器的 Private Link
+      - 預定的維修
+        [1266] 適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器中計劃性維護通知
+      - 業務持續性
+        - 商務持續性簡介
+          [1269] 「適用於 PostgreSQL 的 Azure 資料庫 -單一伺服器」的商務持續性概觀
+        - 高可用性
+          [1272] 適用於 PostgreSQL 的 Azure 資料庫 中的高可用性 – 單一伺服器
+        - 備份及還原
+          [1277] 在適用於 PostgreSQL 的 Azure 資料庫 -單一伺服器中備份與還原
+      - 監視與微調
+        - 監視與微調
+          [1283] 監視和調整「適用於 PostgreSQL 的Azure 資料庫 - 單一伺服器」
+        - 記錄
+          [1287] 適用於 PostgreSQL 的 Azure 資料庫記錄- 單一伺服器
+        - 稽核記錄
+          [1292] 稽核 適用於 PostgreSQL 的 Azure 資料庫中的記錄 - 單一伺服器
+        - 查詢存放區
+          - 查詢存放區
+            [1297] 使用 查詢存放區 監視效能
+          - 查詢存放區使用案例
+            [1307] 查詢存放區的使用案例
+          - 查詢存放區最佳做法
+            [1309] 查詢存放區 的最佳做法
+        - 查詢效能深入解析
+          [1311] 查詢效能深入解析
+        - 效能建議
+          [1314] 適用於 PostgreSQL 的 Azure 資料庫 - 單一伺服器中的效能建議
+        - Azure Advisor 建議
+          [1317] 適用於 PostgreSQL 的 Azure Advisor
+      - 應用程式開發
+        - 最佳作法
+          [1320] 使用 適用於 PostgreSQL 的 Azure 資料庫單一伺服器建置應用程式的最佳做法
+        - 連線程式庫
+          [1324] 適用於 PostgreSQL 的 Azure 資料庫 的連線 ion 連結庫 - 單一伺服器
+        - 連線恢復
+          [1326] 處理適用於 PostgreSQL 的 Azure 資料庫的暫時性連線錯誤 - 單一伺服器
+      - 複寫
+        - 讀取複本
+          [1328] 在適用於 PostgreSQL 的 Azure 資料庫單一伺服器中讀取複本
+        - 邏輯解碼
+          [1336] 邏輯解碼
+    - 操作指南
+      - 管理和調整
+        - Azure 入口網站
+          [1342] 使用 Azure 入口網站 管理 適用於PostgreSQL 的 Azure 資料庫 伺服器
+        - Azure CLI
+          [1348] 使用 Azure CLI 管理 適用於 PostgreSQL的 Azure 資料庫 單一伺服器
+      - 重新啟動伺服器
+        - Azure 入口網站
+          [1352] 重新啟動 適用於 PostgreSQL 的 Azure 資料庫 - 使用 Azure 入口網站 的單一伺服器
+        - Azure CLI
+          [1355] 重新啟動 適用於 PostgreSQL 的 Azure 資料庫 - 使用 Azure CLI 的單一伺服器
+        - Azure PowerShell
+          [1357] 使用 PowerShell 重新啟動 適用於PostgreSQL 的 Azure 資料庫 伺服器
+      - 防火牆規則
+        - Azure 入口網站
+          [1359] 建立和管理適用於 PostgreSQL 的 Azure資料庫 - 使用 Azure 入口網站的單一伺服器
+        - Azure CLI
+          [1367] 
+      - 連線 和查詢指南
+        [1370] 適用於 PostgreSQL 的 Azure 資料庫的連線和查詢概觀 - 單一伺服器 \(部分機器翻譯\)
+      - 還原伺服器
+        - Azure 入口網站
+          [1372] 如何使用 Azure 入口網站，在適用於PostreSQL 的 Azure 資料庫 - 單一伺服器中備份和還原伺服器
+        - Azure CLI
+          [1382] 如何使用 Azure CL，在適用於 PostreSQL的 Azure 資料庫 - 單一伺服器中備份和還原伺服器
+        - Azure PowerShell
+          [1387] 如何使用PowerShell備份和還原 適用於PostgreSQL 的 Azure 資料庫 伺服器
+        - 還原已卸除的伺服器
+          [1392] 還原已卸除 適用於 PostgreSQL 的 Azure資料庫 伺服器
+      - 啟用驗證
+        - 建立使用者
+          [1395] 在 適用於 PostgreSQL 的 Azure 資料庫中建立使用者 - 單一伺服器
+        - 設定 Microsoft Entra 整合
+          [1398] 使用 Microsoft Entra ID 向 PostgreSQL進行驗證
+        - 使用受控識別進行連線
+          [1407] 使用受控識別連線到適用於 PostgreSQL的 Azure 資料庫
+      - 最佳化
+        - 大量插入
+          [1412] 優化大量插入，並在 適用於 PostgreSQL的 Azure 資料庫 上使用暫時性數據 - 單一伺服器
+        - Autovacuum
+          [1414] 將適用於 PostgreSQL 的 Azure 資料庫 -單一伺服器上的自動資料清理最佳化
+        - 查詢統計數據集合
+          [1419] 優化 適用於 PostgreSQL 的 Azure 資料庫上的查詢統計數據收集 - 單一伺服器
+        - 快顯通知數據表策略
+          [1421] 使用快顯通知數據表記憶體策略優化查詢時間
+      - 設定 TLS
+        [1423] 在 適用於 PostgreSQL 的 Azure 資料庫單一 - 使用 Azure 入口網站 的伺服器中設定 TLS 設定
+      - 連接字串
+        [1425] 如何使用PowerShell產生 適用於PostgreSQL 的 Azure 資料庫 連接字串
+      - 設定伺服器參數
+        - Azure 入口網站
+          [1427] 在 適用於 PostgreSQL 的 Azure 資料庫中設定伺服器參數 - 透過 Azure 入口網站單一伺服器
+        - Azure CLI
+          [1431] 使用 Azure CLI 自訂適用於 PostgreSQL的 Azure 資料庫設定參數 (單一伺服器)
+        - Azure PowerShell
+          [1434] 使用 PowerShell 自訂 適用於 PostgreSQL的 Azure 資料庫 伺服器參數
+      - 自動成長記憶體
+        - Azure 入口網站
+          [1437] 使用 適用於 PostgreSQL 的 Azure 資料庫中的 Azure 入口網站 自動增加記憶體 -單一伺服器
+        - Azure CLI
+          [1439] 自動成長 適用於 PostgreSQL 的 Azure 資料庫 記憶體 - 使用 Azure CLI 的單一伺服器
+        - Azure PowerShell
+          [1441] 使用 PowerShell 自動成長 適用於PostgreSQL 的 Azure 資料庫 記憶體
+      - 存取記錄
+        - Azure 入口網站
+          [1443] 設定和存取適用於 PostgreSQL 的 Azure資料庫 - 來自 Azure 入口網站的單一伺服器記錄
+        - Azure CLI
+          [1447] 使用 Azure CLI 設定和存取伺服器記錄
+      - 監視器
+        - 建立計量警示
+          [1449] 使用 Azure 入口網站來設定適用於PostgreSQL 之 Azure 資料庫 - 單一伺服器的計量警示
+      - 疑難排解
+        - 針對連線錯誤進行疑難排解
+          [1454] 針對 適用於 PostgreSQL 的 Azure 資料庫的連線問題進行疑難解答 - 單一伺服器
+        - 將資料加密進行疑難排解
+          [1457] 針對 適用於 PostgreSQL 的 Azure 資料庫中的數據加密進行疑難解答 - 單一伺服器
+      - 虛擬網路
+        - Azure 入口網站
+          [1459] 在 適用於 PostgreSQL 的 Azure 資料庫中建立和管理 VNet 服務端點和 VNet 規則 - 單一伺服器，方法是使用 Azure 入口網站
+        - Azure CLI
+          [1463] 使用 Azure CLI 來建立及管理適用於PostgreSQL 其 Azure 資料庫 - 單一伺服器的 VNet 服務端點和規則
+      - 私人連結
+        - Azure 入口網站
+          [1468] 使用入口網站建立和管理 適用於PostgreSQL 的 Azure 資料庫 的私人連結- 單一伺服器
+        - Azure CLI
+          [1477] 使用 CLI 建立和管理 適用於 PostgreSQL的 Azure 資料庫 的私人連結 - 單一伺服器
+      - 資料加密
+        - Azure 入口網站
+          [1484] 使用 Azure 入口網站 適用於 PostgreSQL的 Azure 資料庫 單一伺服器的數據加密
+        - Azure CLI
+          [1489] 使用 Azure CLI 適用於 PostgreSQL 的Azure 資料庫 單一伺服器的數據加密
+        - 數據加密驗證
+          [1496] 驗證 適用於 PostgreSQL 的 Azure 資料庫的數據加密
+      - 基礎結構雙重加密
+        - 設定雙重加密
+          [1498] 適用於 適用於 PostgreSQL 的 Azure 資料庫的基礎結構雙重加密
+      - 拒絕公用網路存取
+        - Azure 入口網站
+          [1502] 使用 Azure 入口網站 拒絕 適用於PostgreSQL 的 Azure 資料庫 單一伺服器中的公用網路存取
+      - 複寫
+        - Azure 入口網站
+          [1504] 在 適用於 PostgreSQL 的 Azure 資料庫中建立和管理讀取複本 - Azure 入口網站中的單一伺服器
+        - Azure CLI、REST API
+          [1518] 從 Azure CLI、REST API 建立並管理讀取複本
+        - Azure PowerShell
+          [1525] 如何使用 PowerShell 在 適用於PostgreSQL 的 Azure 資料庫 中建立和管理讀取複本
+      - 在區域間移動
+        - Azure 入口網站
+          [1530] 使用 Azure 入口網站 將適用於 適用於PostgreSQL 的 Azure 資料庫 的 Azure 資料庫 - 單一伺服器移至另一個區域
+      - 升級和移轉
+        - 主要版本升級方法
+          [1533] 使用傾印和還原升級 PostgreSQL 資料庫
+        - 使用pg_dump和pg_restore升級/遷移數據
+          [1542] 使用傾印和還原來移轉 PostgreSQL 資料庫
+  - 範例
+    - Azure CLI 範例
+      - 範例概觀
+        [1551] 「適用於 PostgreSQL 的 Azure 資料庫 -單一伺服器」的 Azure CLI 範例
+      - 建立伺服器和防火牆規則
+        [1553] 建立 適用於 PostgreSQL 的 Azure 資料庫- 彈性伺服器實例，並使用 Azure CLI 設定防火牆規則
+      - 使用虛擬網路規則建立伺服器
+        [1557] 建立 適用於 PostgreSQL 的 Azure 資料庫- 彈性伺服器實例，並使用 Azure CLI 設定 vNet 規則
+      - 調整伺服器
+        [1561] 使用 Azure CLI 監視和調整單一 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器實例
+      - 變更伺服器組態
+        [1565] 列出及更新 適用於 PostgreSQL 的 Azure資料庫 的組態 - 使用 Azure CLI 的彈性伺服器實例
+      - 還原伺服器
+        [1569] 還原 適用於 PostgreSQL 的 Azure 資料庫- 使用 Azure CLI 的彈性伺服器實例
+      - 使用伺服器記錄操作
+        [1572] 使用 Azure CLI 啟用和下載 適用於PostgreSQL 的 Azure 資料庫 的伺服器慢速查詢記錄 - 彈性伺服器實例
+  - 參考
+    - Azure CLI
+      [1576] az postgres
+    - REST API
+      [1592] 適用於 PostgreSQL 的 Azure 資料庫REST API
+    - Resource Manager 範本
+      [1594] Microsoft.DBforPostgreSQL 資源類型
+    - Azure 原則內建
+      [1597] 
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - 部署範本
+    - Azure 藍圖
+    - 定價
+    - Microsoft 問與答頁面
+    - Stack Overflow
+    - 影片
+      - 產品影片
+        [1601] Azure Database for PostgreSQL 影片
+      - 如何影片系列
+        - 了解產品功能和優點
+        - 將 PostgreSQL 應用程式遷移至 Azure
+        - 使用 Azure AI 服務建置智慧型手機應用程式
+        - 使用OSBA 連線容器
+        - 將應用程式的數據 連線 至 Power BI
+    - 意見反應論壇
+    - 區域可用性
+    - 支援選項
+    - 客戶案例
+    - 合作夥伴
+      [1603] 適用於 PostgreSQL 的 Azure 資料庫移轉合作夥伴
+    - 資料庫移轉指南
+      [1606] 

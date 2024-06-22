@@ -1,0 +1,2986 @@
+- ---< azure-synapse-analytics.pdf >---
+  - Azure Synapse Analytics
+    [1] Azure Synapse Analytics
+  - 切換至專用 SQL 集區 （先前稱為 SQL DW） >
+    [5] 什麼是 Azure Synapse Analytics 中的專用 SQL 集區（先前稱為 SQL DW？
+  - 概觀
+    - 什麼是 Azure Synapse？
+      [8] 什麼是 Azure Synapse Analytics？
+    - 新功能
+      [11] Azure Synapse Analytics 的新功能？
+    - 詞彙
+      [30] Azure Synapse Analytics 術語
+    - 常見問題集
+      [33] 一般
+  - 快速入門
+    - 開始使用
+      [40] 開始使用 Azure Synapse Analytics
+    - 1 建立 Synapse 工作區
+      [41] 建立 Synapse 工作區
+    - 2 使用無伺服器 SQL 集區進行分析
+      [45] 使用無伺服器 SQL 集區來分析資料
+    - 3 使用數據總管集區進行分析
+      [48] 快速入門：使用資料總管進行分析 (預覽)
+    - 4 使用無伺服器 Spark 集區進行分析
+      [51] 使用 Apache Spark 進行分析
+    - 5 使用專用 SQL 集區進行分析
+      [54] 使用專用 SQL 集區分析資料
+    - 6 分析記憶體帳戶中的數據
+      [57] 分析儲存體帳戶中的資料
+    - 7 與管線整合
+      [59] 與管線整合
+    - 8 使用 Power BI 可視化
+      [60] 使用 Power BI 視覺化資料
+    - 9 監視器
+      [63] 監視您的 Synapse 工作區
+    - 10 探索知識中心
+      [65] 探索 Synapse 知識中心
+    - 11 新增系統管理員
+      [67] 在 Synapse 工作區新增系統管理員
+  - 工作區
+    - 快速入門
+      - 建立工作區
+        - Azure 入口網站
+          [71] 快速入門：建立 Synapse 工作區
+        - Azure CLI
+          [75] 快速入門：使用 Azure CLI 建立 AzureSynapse 工作區
+        - Azure PowerShell
+          [79] 快速入門：使用 Azure PowerShell 建立Azure Synapse 工作區
+        - ARM 範本
+          [84] 快速入門：使用ARM範本建立 AzureSynapse 工作區
+      - 連結 Power BI 工作區
+        [86] 快速入門：將 Power BI 工作區連結至Synapse 工作區
+      - 將 ADLS Gen2 讀入 Pandas 數據框架
+        [92] 快速入門：在 Azure Synapse Analytics中，將 ADLS Gen2 中的資料讀取至Pandas 資料框架
+      - 連線 至 Azure 數據總管
+        [95] 使用適用於 Azure Synapse Analytics 的Apache Spark 連線到 Azure 資料總管
+      - 合作夥伴解決方案
+        [101] 透過 Synapse Studio 探索合作夥伴解決方案
+    - 概念
+      - 共用元數據管理
+        - 概觀
+          [104] Azure Synapse Analytics 共用中繼資料
+        - 中繼資料物件
+          - 共用資料庫
+            [106] 在 Azure Synapse Analytics 中使用無伺服器 SQL 集區存取 Lake 資料庫
+          - 共用數據表
+            [112] Azure Synapse Analytics 共用中繼資料資料表
+        - 程序代碼成品
+          - Apache Spark Notebooks
+            [119] 在 Azure Synapse Analytics 中建立、開發及維護 Synapse 筆記本
+          - SQL 指令碼
+            [147] Azure Synapse Analytics 的 SynapseStudio SQL 指令碼
+          - 資料流程
+            [153] Azure Synapse Analytics 中的資料流程
+      - 維護排程
+        [159] 使用維護排程管理服務更新和維護
+      - 原始檔控制
+        [166] Synapse Studio 中的原始程式碼控制
+      - 持續整合和傳遞
+        [185] Azure Synapse Analytics 工作區的持續整合和傳遞
+      - 安全性
+        - 安全性基準
+          [210] 適用於 Azure Synapse Analytics 的 Azure安全性基準
+        - 依 Azure 原則的安全性控制
+          [225] 適用於 Azure Synapse Analytics 的 Azure原則 法規合規性控制
+        - 加密
+          [232] Azure Synapse Analytics 工作區的加密
+        - 網路安全性
+          - Synapse 工作區 IP 防火牆規則
+            [238] Azure Synapse Analytics IP 防火牆規則
+          - 連線能力設定
+            [242] Azure Synapse Analytics 連線設定 \(部分機器翻譯\)
+          - 閘道 IP 位址
+            [248] 閘道 IP 位址
+          - Synapse 工作區的受控虛擬網路
+            [252] Azure Synapse Analytics 受控虛擬網路
+          - Synapse 工作區的受控私人端點
+            [256] Synapse 受控私人端點
+          - Synapse 工作區數據外洩保護
+            [258] Azure Synapse Analytics 工作區的資料外流保護
+          - 具有私人鏈接中樞的 Synapse 工作區
+            [260] 使用 Azure Private Link 中樞連線至Azure Synapse Studio
+          - 連線 安全記憶體帳戶
+            [263] 從您的 Synapse 工作區連線到安全的Azure 儲存體帳戶
+        - 驗證和傳遞
+          - Microsoft Entra ID
+            [266] 使用 Microsoft Entra 驗證搭配 SynapseSQL 進行驗證
+          - 多重要素驗證
+            [274] 搭配 Synapse SQL 使用多重要素Microsoft Entra 驗證 （MFA 的 SSMS 支援）
+          - SQL 授權
+            [279] Azure Synapse Analytics 中的 SQL 驗證
+          - 條件式存取
+            [285] Azure Synapse Analytics 中的條件式存取
+        - 存取控制
+          - 概觀
+            [286] Azure Synapse 存取控制
+          - Synapse RBAC
+            [290] 什麼是 Synapse 角色型存取控制(RBAC)？
+          - Synapse RBAC 角色
+            [293] Synapse RBAC 角色
+          - 瞭解 Synapse RBAC 角色
+            [303] 瞭解在 Azure Synapse 中執行一般工作所需的角色
+          - 系統與使用者指派的受控識別
+            [310] 適用於 Azure Synapse 的受控服務識別
+          - 使用者指派受控識別的認證
+            [322] Azure Data Factory 和 Azure Synapse 中的認證
+    - 操作指南
+      - 管理和監視
+        - 監視器
+          [327] 監視 Azure Synapse Analytics
+        - 監視資料參考
+          [335] 
+      - 安全
+        - 管理存取控制
+          - 設定訪問控制
+            [361] 如何設定 Azure Synapse 工作區的存取控制
+          - 檢閱 Synapse 角色指派
+            [372] 如何檢閱 Synapse RBAC 角色指派
+          - 管理 Synapse 角色指派
+            [376] 如何在 Synapse Studio 中管理 SynapseRBAC 角色指派
+          - 設定 Azure Synapse 工作區受控識別的許可權
+            [381] 將權限授與工作區受控識別
+        - 資料外洩保護
+          - 建立和管理具有數據外泄保護的工作區
+            [387] 建立已啟用資料外泄保護的工作區
+        - 管理私人端點
+          - 將受控私人端點設定為數據源
+            [390] 建立資料來源的受控私人端點
+          - 使用私人端點 連線 至 Azure Synapse 工作區
+            [394] 使用私人連結連線到您的 Azure Synapse工作區
+          - 使用受控 VNet 布建及保護連結服務
+            [398] 使用 Private Link 保護連結服務
+          - 從受限制的網路 連線 到 Synapse 工作區
+            [401] 從受限制的網路連線至工作區資源
+      - 疑難排解
+        - Azure Synapse Analytics 已知問題
+          [413] Azure Synapse Analytics 已知問題
+        - 針對 Synapse Studio 進行疑難解答
+          [422] Synapse Studio 疑難排解
+        - 針對 Synapse Studio 連線問題進行疑難排解
+          [430] 使用 PowerShell 疑難排解 SynapseStudio 的連線能力問題
+        - 針對 Synapse Studio 與記憶體之間的連線進行疑難解答
+          [432] 針對 Azure Synapse Analytics SynapseStudio 與儲存體之間的連線進行疑難排解
+        - 針對 SDK 所建立的工作區進行疑難解答
+          [436] 針對使用 SDK 建立的 Azure SynapseAnalytics 工作區進行疑難排解
+        - 針對讀取UTF-8文字進行疑難解答
+          [437] 在 Azure Synapse Analytics 中使用無伺服器 SQL 集區讀取 CSV 或 Parquet 檔案中 UTF-8 文字的疑難排解
+        - 針對 Spark 作業失敗進行疑難解答
+          [439] 解譯 Synapse Analytics 中的錯誤碼
+      - 將工作區移至新區域
+        [443] 將 Azure Synapse Analytics 工作區從一個區域移至另一個區域
+      - 將工作區移至另一個租使用者
+        [459] 將訂用帳戶轉移至不同的 Microsoft Entra目錄之後，復原 Synapse Analytics 工作區 (租用戶)
+  - 資料庫範本
+    - 概觀
+      - 資料庫範本概觀
+        [464] 什麼是 Azure Synapse 資料庫範本？
+      - 地圖數據概觀
+        [467] Azure Synapse Analytics 中的對應資料
+    - 快速入門
+      - 建立湖資料庫
+        [473] 快速入門：利用資料範本建立新的 lake 資料庫
+    - 概念
+      - 資料庫範本
+        [477] Lake 資料庫範本
+      - Lake 資料庫
+        [480] Lake 資料庫
+    - 操作指南
+      - 建立空白的 Lake 資料庫
+        [482] 建立空白的 Lake 資料庫
+      - 從資料庫範本建立 Lake 資料庫
+        [486] 從資料庫範本建立 Lake 資料庫
+      - 修改 Lake 資料庫
+        [490] 修改 Lake 資料庫
+      - 複製 Lake 資料庫
+        [498] 操作方式：複製 Lake 資料庫
+  - Synapse SQL
+    - 概觀
+      - Synapse SQL 架構
+        [502] Azure Synapse SQL 架構
+      - 無伺服器 SQL 集區
+        [507] Azure Synapse Analytics 中的無伺服器SQL 集區
+      - 專用 SQL 集區
+        [512] 什麼是 Azure Synapse Analytics 中的專用 SQL 集區（先前稱為 SQL DW？
+      - 功能概觀
+        [515] 
+      - 資源耗用量模型
+        [521] Synapse SQL 資源耗用量
+      - 容量限制
+        [527] Azure Synapse Analytics 中專用 SQL 集區的容量限制
+      - 無伺服器 SQL 集區的成本管理
+        [533] Azure Synapse Analytics 中無伺服器 SQL集區的成本管理
+    - 快速入門
+      - 使用無伺服器 SQL 集區
+        [539] 快速入門：使用無伺服器 SQL 集區
+      - 使用 Synapse Studio 建立專用 SQL 集區
+        [544] 快速入門：使用 Synapse Studio 建立專用的 SQL 集區
+      - 使用 Azure 入口網站 建立專用 SQL 集區
+        [550] 快速入門：使用 Azure 入口網站建立專用SQL 集區
+      - 使用 PowerShell 暫停和繼續
+        [555] 快速入門：使用 Azure PowerShell 在Synapse 工作區的專用 SQL 集區中暫停和繼續計算
+      - 使用 Azure 入口網站 暫停和繼續
+        [559] 快速入門：透過 Azure 入口網站暫停和繼續專用 SQL 集區中的計算
+      - 使用專用 SQL 集區載入數據
+        - COPY 語句
+          [565] 快速入門：使用 COPY 陳述式大量載入資料
+        - COPY 語句範例
+          [568] 使用 Synapse SQL 安全地載入資料
+        - Synapse Studio
+          [575] 快速入門：使用 Synapse Studio 大量載入
+      - 工作負載管理
+        - 使用 Azure 入口網站 調整計算
+          [579] 快速入門：使用 Azure 入口網站 調整Synapse 工作區中Azure Synapse專用SQL 集區的計算
+        - 使用 PowerShell 調整計算規模
+          [581] 快速入門：使用 Azure Synapse 工作區調整專用 SQL 集區的計算Azure PowerShell
+        - 使用 T-SQL 調整計算
+          [585] 快速入門：使用 T-SQL 調整 AzureSynapse Analytics 中的專用 SQL 集區 (先前稱為 SQL DW) 的計算
+        - 建立工作負載分類器
+          - 入口網站
+            [592] 快速入門：使用 Azure 入口網站 建立專用 SQL 集區工作負載分類器
+          - T-SQL
+            [599] 快速入門：使用 T-SQL 建立工作負載分類器
+        - 建立工作負載隔離
+          - 入口網站
+            [602] 快速入門：使用 Azure 入口網站中的工作負載群組來設定專用 SQL 集區工作負載隔離
+          - T-SQL
+            [606] 快速入門：使用 T-SQL 在專用 SQL 集區中設定工作負載隔離
+    - 教學課程
+      - 使用無伺服器 SQL 集區來分析數據
+        [609] 教學課程：使用無伺服器 SQL 集區探索和分析 Data Lake
+      - 使用無伺服器 SQL 集區建立邏輯數據倉儲
+        [617] 教學課程：使用無伺服器 SQL 集區建立邏輯資料倉儲
+      - Power BI Desktop
+        [624] 教學課程：搭配 Power BI Desktop 使用無伺服器 SQL 集區並建立報表
+    - 概念
+      - 備份及還原
+        [631] 在 Azure Synapse Analytics 中備份和還原專用 SQL 集區
+      - 資料內嵌和準備
+        - 概觀
+          [638] Azure Synapse Analytics 中專用 SQL 集區的資料載入策略
+        - 最佳作法
+          [644] 將資料載入 Azure Synapse Analytics 中專用 SQL 集區的最佳做法
+        - 數據行存放區壓縮
+          [649] 將資料行存放區索引效能的資料列群組品質最大化
+        - 數據載入概觀
+          [654] 針對 Azure Synapse Analytics 中的專用SQL 集區設計 PolyBase 資料載入策略
+      - 部署
+        - 概觀
+          [659] Azure Synapse Analytics 中 Synapse SQL功能的設計決策和編碼技術
+        - 無伺服器 SQL 集區的最佳做法
+          [661] Azure Synapse Analytics 中無伺服器 SQL集區的最佳做法
+        - 專用 SQL 集區的最佳做法
+          [669] Azure Synapse Analytics 中專用 SQL 集區的最佳做法
+        - Distribution Advisor
+          [676] Azure Synapse SQL 中的散發建議程式
+        - 具體化檢視
+          - 效能微調指導方針
+            [681] 使用 Azure Synapse Analytics 中專用SQL 集區的具體化檢視微調效能
+          - 建立​​
+            [691] CREATE MATERIALIZED VIEW AS SELECT(Transact-SQL)
+          - 變更
+            [699] ALTER MATERIALIZED VIEW (Transact-SQL)
+        - 已排序的叢集資料行存放區索引
+          - 效能微調指導方針
+            [701] 透過已排序的叢集資料行存放區索引進行效能微調
+        - 結果集快取
+          - 效能微調指導方針
+            [708] 使用結果集快取進行效能微調
+          - 設定資料庫
+            [711] ALTER DATABASE SET 選項 (Transact-SQL)
+          - 設定會話
+            [719] SET RESULT SET CACHING (Transact-SQL)
+          - 檢查快取大小
+            [721] DBCC SHOWRESULTCACHESPACEUSED(Transact-SQL)
+          - 清除快取
+            [723] DBCC DROPRESULTSETCACHE (Transact-SQL)
+        - 機器學習預測
+          [725] 使用 PREDICT 對機器學習模型進行評分
+        - 資料表
+          - 概觀
+            [728] 使用 Azure Synapse Analytics 的Synapse SQL 設計資料表
+          - CETAS
+            [741] CETAS 搭配 Synapse SQL
+          - CTAS
+            [745] CREATE TABLE AS SELECT (CTAS)
+          - 資料類型
+            [752] Synapse SQL 中的數據表數據類型
+          - 分散式資料表
+            [755] 使用 Azure Synapse Analytics 的專用SQL 集區來設計分散式資料表的指引
+          - 資料表條件約束
+            [763] 在 Azure Synapse Analytics 中使用專用SQL 集區的主索引鍵、外部索引鍵和唯一索引鍵
+          - 外部表格
+            [767] 搭配 Synapse SQL 使用外部資料表
+          - 索引數
+            [776] 透過 Azure Synapse Analytics 編製專用SQL 集區的資料表索引
+          - 身分識別
+            [786] 使用 IDENTITY 在 Azure SynapseAnalytics 中使用專用 SQL 集區建立代理金鑰
+          - OPENROWSET
+            [792] 如何在 Azure Synapse Analytics 中使用無伺服器 SQL 集區來使用 OPENROWSET
+          - 資料分割
+            [807] 分割專用 SQL 集區中的資料表
+          - 複寫資料表
+            [817] 在 Synapse SQL 集區中使用複寫數據表的設計指導方針
+          - 統計資料
+            [825] Synapse SQL 中的統計資料
+          - 暫存
+            [848] Synapse SQL 中的暫存資料表
+        - T-SQL 語言元素
+          - 迴圈
+            [854] 在 Azure Synapse Analytics 中使用 T-SQL 迴圈搭配 Synapse SQL
+          - 預存程序
+            [856] 在 Azure Synapse Analytics 中使用Synapse SQL 的預存程序
+          - 交易
+            - 專用 SQL 集區交易
+              [862] 在 Azure Synapse Analytics 的專用 SQL集區中使用交易
+            - 專用 SQL 集區最佳做法交易
+              [868] 在 Azure Synapse Analytics 中使用專用SQL 集區來將交易最佳化
+          - 使用者定義結構描述
+            [878] Synapse SQL 內的使用者定義結構描述
+          - 變數指派
+            [881] 使用 Synapse SQL 指派變數
+          - 檢視
+            [883] Azure Synapse Analytics 中專用 SQL 集區和無伺服器 SQL 集區的 T-SQL 檢視
+        - 查詢
+          - 動態 SQL
+            [885] Synapse SQL 中的動態 SQL
+          - 依選項分組
+            [886] Synapse SQL 中的 GROUP BY 選項
+          - 標籤
+            [890] 在 Synapse SQL 中使用查詢標籤
+          - 儲存體 檔案
+            - 概觀
+              [892] 在 Azure Synapse Analytics 中使用無伺服器 SQL 集區存取外部儲存體
+            - 儲存體 存取控制
+              [898] 在 Azure Synapse Analytics 中控制無伺服器 SQL 集區的儲存體帳戶存取
+            - 適用於 Azure Synapse 外部數據表的 Apache Spark
+              [910] 在無伺服器 SQL 集區中同步處理 ApacheSpark for Azure Synapse 的外部資料表定義
+      - 監視
+        - 概觀
+          [911] 使用 Azure Synapse Analytics 中的專用SQL 集區進行管理和監視
+        - 資源使用率和查詢活動
+          [912] 監視 Azure Synapse Analytics 中的資源使用率和查詢活動
+        - 建議
+          [914] 針對 Azure Synapse Analytics 中專用SQL 集區的 Azure Advisor 建議
+      - 安全性
+        - 資料庫訪問控制
+          [917] 將資料庫存取權限授與 SQL Database、SQL 受控執行個體和 Azure SynapseAnalytics
+        - 共用資料庫訪問控制
+          [925] 如何在無伺服器 SQL 集區中設定同步處理物件的存取控制
+        - 資料安全性
+          - 資料行層級安全性
+            [928] 資料行層級安全性
+          - 資料列層級安全性
+            [931] 資料列層級安全性
+        - 資料加密
+          - 透明資料加密 概觀
+            [952] SQL Database、SQL 受控執行個體和Azure Synapse Analytics 的透明資料加密
+          - 使用您自己的金鑰進行 TDE
+            [957] 搭配使用 Azure SQL 透明資料加密與客戶自控金鑰
+      - 工作負載管理
+        - 概觀
+          [971] 什麼是工作負載管理？
+        - 工作負載分類
+          [973] Azure Synapse Analytics 中專用 SQL 集區的工作負載分類
+        - 工作負載重要性
+          [976] Azure Synapse Analytics 工作負載重要性
+        - 工作負載隔離
+          [978] Azure Synapse Analytics 工作負載群組隔離
+        - 工作負載管理監視
+          [982] Azure Synapse Analytics – 工作負載管理入口網站監視
+        - 記憶體和並行限制
+          [987] 
+        - 資源類別
+          [991] 在 Azure Synapse Analytics 中使用資源類別進行的工作負載管理
+    - 操作指南
+      - 備份及還原
+        - 建立還原點
+          [1007] 用戶定義的還原點
+        - 還原專用 SQL 集區
+          [1009] 還原現有的專用 SQL 集區
+        - 從已刪除的工作區還原 SQL 集區
+          [1017] 從已刪除的工作區還原專用 SQL 集區
+        - 使用 Synapse Pipelines 暫停和繼續
+          [1019] 使用 Synapse Pipelines 暫停和繼續專用SQL 集區
+      - 管理和監視
+        - SQL 要求 - Synapse Studio
+          [1030] 使用 Synapse Studio 監視 SQL 要求
+        - SQL 集區 - Synapse Studio
+          [1033] 使用 Synapse Studio 來監視 SQL 集區
+        - 監視 Gen2 快取
+          [1037] 如何監視自適性快取
+        - 監視您的工作負載 - DMV
+          [1040] 使用 DMV 監視您的 Azure SynapseAnalytics 專用 SQL 集區工作負載
+        - 監視您的工作負載 - 入口網站
+          [1050] 監視工作負載 - Azure 入口網站
+        - 查詢歷程記錄和分析
+          [1055] Azure Synapse Analytics 中的歷程查詢儲存體和分析
+        - 管理工作負載
+          - 分析您的工作負載
+            [1059] 分析 Azure Synapse Analytics 中專用SQL 集區的工作負載
+          - 設定工作負載重要性
+            [1063] 在適用於 Azure Synapse Analytics 的專用 SQL 集區中設定工作負載重要性
+          - 管理和監視工作負載重要性
+            [1065] 管理及監視專用 SQL 集區中 AzureSynapse Analytics 的工作負載重要性
+          - 將資源類別轉換為工作負載群組
+            [1067] 將資源類別轉換成工作負載群組
+          - 針對遺漏分類進行疑難解答
+            [1070] 針對 Azure Synapse Analytics 中分類錯誤的工作負載進行疑難排解
+      - 內嵌和準備數據
+        - 進入數據倉儲
+          - Azure Data Lake 儲存體
+            [1079] 將資料從 Azure Data Lake 儲存體載入Azure Synapse Analytics 中的專用 SQL集區
+          - Data Factory
+            [1083] 使用 Azure Data Factory 或 Synapse 管線將資料載入 Azure Synapse Analytics
+          - Azure Databricks
+            [1098] 教學課程：使用 Azure Databricks 擷取、轉換及載入數據
+          - SSIS
+            [1113] 使用 SQL Server Integration Services(SSIS) 將資料載入 Azure SynapseAnalytics 中的專用 SQL 集區
+          - 紐約計程車數據
+            [1130] 教學課程：載入紐約計程車資料集
+          - Contoso 公用數據
+            [1142] 將 Contoso 零售資料載入 Azure SynapseAnalytics 中的專用 SQL 集區
+          - 載入WideWorldImporters
+            [1151] 教學課程：將資料載入至 Azure SynapseAnalytics SQL 集區
+          - 使用複製活動
+            [1179] 將資料內嵌到專用的 SQL 集區
+        - 進入 Data Lake
+          - 使用複製活動
+            [1182] 將資料擷取到 Azure Data Lake StorageGen2 中
+      - 變更管理和部署
+        - 安裝 Visual Studio SSDT
+          [1184] Visual Studio 2019 使用者入門
+        - 持續整合和部署
+          [1185] Azure Synapse Analytics 中專用 SQL 集區的持續整合和部署
+        - 使用 VSTS 部署連結的 ARM 範本
+          [1189] 使用 VSTS 部署連結的 ARM 範本
+      - 查詢外部數據
+        - 概觀
+          [1193] 使用 Azure Synapse Analytics 中的無伺服器 SQL 集區來查詢儲存體資料
+        - 查詢 CSV 檔案
+          [1201] 查詢 CSV 檔案
+        - 查詢 Parquet 檔案
+          [1212] 在 Azure Synapse Analytics 中使用無伺服器 SQL 集區查詢 Parquet 檔案
+        - 查詢 JSON 檔案
+          [1217] 在 Azure Synapse Analytics 中使用無伺服器 SQL 集區來查詢 JSON 檔案
+        - 查詢巢狀類型
+          [1222] 
+        - 查詢 Delta Lake
+          [1227] 在 Azure Synapse Analytics 中使用無伺服器 SQL 集區，查詢以 Delta Lake 檔案
+        - 查詢資料夾和多個檔案
+          [1233] 查詢資料夾和多個檔案
+        - 使用檔案元數據查詢分割的檔案
+          [1241] 使用無伺服器 SQL 集區查詢中的檔案中繼資料
+        - 建立和使用檢視
+          [1244] 在 Azure Synapse Analytics 中使用無伺服器 SQL 集區建立及使用檢視
+        - 建立及使用外部數據表
+          [1250] 在 Azure Synapse Analytics 中使用 SQL集區建立和使用原生外部資料表
+        - 將查詢結果儲存至記憶體
+          [1257] 在 Azure Synapse Analytics 中使用無伺服器 SQL 集區將查詢結果儲存至儲存體
+        - 在 Azure Cosmos DB 的 Azure Synapse Link 中查詢 Parquet 檔案和容器
+          [1260] 
+      - 整合
+        - 建置數據管線
+          - 新增 Azure 串流分析作業
+            [1265] 在 Azure Synapse Analytics 中使用 Azure串流分析搭配專用 SQL 集區
+      - 使用工具和應用程式 連線
+        - 概觀
+          [1273] 連線到 Synapse SQL
+        - 使用 Azure Data Studio 進行查詢
+          [1277] 使用 Azure Data Studio 連線 SynapseSQL
+        - 連接字串
+          [1283] Synapse SQL 的連接字串
+        - 使用 SSMS 進行查詢
+          [1285] 使用 SQL Server Management Studio 連線至 Synapse SQL （SSMS）
+        - 連線 至 Power BI Desktop
+          [1292] 使用 Power BI Professional 連線到無伺服器 SQL 集區
+        - 使用 Visual Studio SSDT 進行查詢
+          [1296] 使用 Visual Studio 和 SSDT 連線至Synapse SQL
+        - 使用 .NET Core 進行查詢
+          [1300] 快速入門：使用 .NET (C#) 查詢資料庫
+        - 使用 Visual Studio .NET 進行查詢
+          [1305] 快速入門：在 Visual Studio 使用 .NET 和C# 連線和查詢資料庫
+        - 使用 Python 查詢
+          [1309] 快速入門：使用 Python 在 Azure SQL 資料庫或 Azure SQL 受控執行個體中查詢資料庫
+        - 使用 sqlcmd 查詢
+          [1312] 使用 sqlcmd 連線至 Synapse SQL
+      - 針對無伺服器 SQL 集區進行疑難解答
+        - 針對無伺服器 SQL 集區進行疑難解答
+          [1315] 針對 Azure Synapse Analytics 中的無伺服器 SQL 集區進行疑難排解
+  - 資料總管
+    - 概觀
+      - 數據總管概觀
+        [1349] Azure Synapse 資料總管是什麼？ (預覽)
+      - 與 Azure 數據總管比較
+        [1353] Azure Synapse 資料總管與 Azure 資料總管之間的差異為何？ (預覽)
+      - 資料擷取
+        - 數據擷取概觀
+          [1355] Azure Synapse 資料總管資料擷取概觀(預覽)
+        - 數據擷取屬性
+          [1360] 
+        - 數據擷取格式
+          [1364] Azure Synapse 資料總管支援擷取的資料格式 (預覽版)
+    - 快速入門
+      - 使用 Azure 入口網站 建立數據總管集區
+        [1367] 快速入門：使用 Azure 入口網站建立資料總管集區 (預覽)
+      - 使用 Synapse Studio 建立數據總管集區
+        [1373] 快速入門：使用 Synapse Studio 建立資料總管集區 (預覽版)
+      - 內嵌資料
+        - 概觀
+          [1380] Azure Synapse 資料總管資料擷取概觀(預覽)
+        - 單鍵擷取
+          [1385] 快速入門：一鍵內嵌資料 (預覽版)
+        - 串流擷取
+          [1393] 在 Azure Synapse Analytics 資料總管集區上設定串流擷取 (預覽)
+        - 事件中樞
+          - 事件中樞數據連線
+            [1401] 事件中樞資料連線 (預覽)
+          - Azure 入口網站
+            [1407] 將數據從事件中樞內嵌至 Azure Synapse數據總管
+          - 單鍵
+            [1421] 使用單鍵擷取建立 Azure Synapse 資料總管的事件中樞資料連線 (預覽)
+          - C#
+            [1428] 使用 C# 建立 Azure Synapse 資料總管的事件中樞資料連線 （預覽）
+          - Python
+            [1435] 使用 Python 建立 Azure Synapse 資料總管的事件中樞資料連線 （預覽）
+          - Azure Resource Manager 範本
+            [1441] 使用 Azure Resource Manager 範本建立適用於 Azure Synapse 資料總管的事件中樞資料連線 (預覽)
+        - 事件方格
+          - 事件方格資料連線
+            [1448] 事件方格資料連線 (預覽)
+          - Azure 入口網站
+            [1452] 訂閱事件方格通知，即可在 AzureSynapse 資料總管內嵌 blob (預覽版)
+        - 使用管線內嵌數據
+          [1465] 快速入門：使用 Azure Synapse Pipelines內嵌數據 （預覽）
+      - 監視和診斷集區
+        [1473] 快速入門：使用 Synapse Studio 監視資料總管集區 (預覽)
+    - Kusto 查詢語言
+      - Kusto 查詢概觀
+        [1476] Kusto 查詢語言 (KQL) 概觀
+      - 快速參考指南
+        [1479] KQL 快速參考
+      - 教學課程
+        [1483] 教學課程：瞭解常見運算符
+      - 範例
+        [1492] 教學課程：瞭解常見運算符
+      - 查詢最佳做法
+        [1501] Kusto 查詢語言 查詢的最佳做法
+      - 跨叢集查詢
+        - 跨叢集查詢和架構變更
+          [1506] 跨叢集和跨資料庫查詢
+        - 跨資料庫和跨叢集查詢
+          [1511] 跨叢集和跨資料庫查詢
+      - 實體
+        - 實體類型
+          [1516] 發行項• 2024/01/10
+        - 實體名稱
+          [1518] 實體名稱
+        - 實體參考
+          [1521] 發行項• 2023/08/30
+        - 資料庫
+          [1523] 資料庫
+        - 資料表
+          [1524] 資料表
+        - 資料行
+          [1526] 資料行
+        - 預存函式
+          [1528] 預存函式
+        - 外部表格
+          [1529] 外部資料表
+        - 事實和維度數據表
+          [1531] 事實和維度資料表
+      - 資料類型
+        - 純量數據類型
+          [1533] 純量資料類型
+        - bool
+          [1535] 布林值資料類型
+        - Datetime
+          [1536] 日期時間資料類型
+        - decimal
+          [1540] 十進位資料類型。
+        - dynamic
+          [1541] 動態資料類型
+        - guid
+          [1548] GUID 資料類型
+        - int
+          [1549] int 資料類型
+        - long
+          [1550] long 資料類型
+        - real
+          [1551] 實際資料類型
+        - 字串
+          [1552] 字串資料類型
+        - 時間範圍
+          [1558] timespan 資料類型
+        - Null 值
+          [1561] Null 值
+        - 不支援的純量數據類型
+          [1566] 純量資料類型
+      - 函式
+        - 函數類型
+          [1568] 函式類型
+        - 使用者定義的函式
+          [1569] 使用者定義的函式
+      - 查詢陳述式
+        - 查詢語句類型
+          [1580] 查詢陳述式類型
+        - Alias 語句
+          [1582] Alias 陳述式
+        - Let 陳述式
+          [1585] Let 陳述式
+        - Pattern 語句
+          [1593] Pattern 陳述式
+        - 查詢參數語句
+          [1599] 查詢參數宣告陳述式
+        - Restrict 語句
+          [1602] Restrict 陳述式
+        - Set 陳述式
+          [1606] Set 陳述式
+        - 表格式運算式陳述式
+          [1608] 表格式運算式陳述式
+        - 批次
+          [1611] 批次
+      - 表格式運算子
+        - 查詢運算子
+          [1613] 查詢運算子
+        - as 運算子
+          [1614] as 運算子
+        - 取用運算子
+          [1616] consume 運算子
+        - count 運算符
+          [1617] 發行項• 2024/01/23
+        - datatable 運算符
+          [1619] datatable 運算子
+        - distinct 運算符
+          [1621] distinct 運算子
+        - evaluate 運算符
+          - 評估運算子外掛程式
+            [1623] evaluate 外掛程式運算子
+          - autocluster 外掛程式
+            [1626] autocluster 外掛程式
+          - bag_unpack外掛程式
+            [1630] bag_unpack 外掛程式
+          - 購物籃外掛程式
+            [1637] basket 外掛程式
+          - cosmosdb_sql_request外掛程式
+            [1641] 
+          - dcount_intersect外掛程式
+            [1645] dcount_intersect 外掛程式
+          - diffpatterns 外掛程式
+            [1647] 
+          - diffpatterns_text外掛程式
+            [1650] diffpatterns_text 外掛程式
+          - infer_storage_schema外掛程式
+            [1653] infer_storage_schema 外掛程式
+          - ipv4_lookup外掛程式
+            [1656] 
+          - mysql_request外掛程式
+            [1660] mysql_request外掛程式
+          - 窄外掛程式
+            [1665] narrow 外掛程式
+          - pivot 外掛程式
+            [1668] pivot 外掛程式
+          - 預覽外掛程式
+            [1674] preview 外掛程式
+          - Python 外掛程式
+            [1676] Python 外掛程式
+          - R 外掛程式
+            [1684] R 外掛程式 (預覽)
+          - rolling_percentile外掛程式
+            [1691] rolling_percentile() 外掛程式
+          - schema_merge外掛程式
+            [1695] schema_merge 外掛程式
+          - sql_request 外掛程式
+            [1698] sql_request 外掛程式
+          - sequence_detect外掛程式
+            [1703] sequence_detect 外掛程式
+        - extend 運算符
+          [1706] extend 運算子
+        - externaldata 運算符
+          [1709] externaldata 運算子
+        - facet 運算符
+          [1713] facet 運算子
+        - find 運算符
+          [1716] 尋找運算子
+        - fork 運算符
+          [1725] fork 運算子
+        - 取得chema 運算符
+          [1728] getschema 運算子
+        - invoke 運算子
+          [1730] invoke 運算子
+        - join 運算子
+          - join 運算子
+            [1732] join 運算子
+          - 隨機查詢
+            [1737] 隨機查詢
+          - 跨叢集聯結
+            [1747] 跨叢集聯結
+          - 廣播聯結
+            [1751] 廣播聯結
+          - 時間範圍聯結
+            [1753] 時段聯結
+        - limit 運算符
+          [1758] take 運算子
+        - lookup 運算符
+          [1760] lookup 運算子
+        - make-series 運算符
+          [1764] make-series 運算子
+        - mv-apply 運算符
+          [1772] mv-apply 運算子
+        - mv-expand 運算符
+          [1779] mv-expand 運算子
+        - order 運算符
+          [1786] sort 運算子
+        - 項目運算元
+          [1789] project 運算子
+        - project-away 運算符
+          [1793] 
+        - project-keep 運算符
+          [1796] project-keep 運算子
+        - project-rename 運算符
+          [1799] project-rename 運算子
+        - project-reorder 運算符
+          [1801] project-reorder operator
+        - parse 運算符
+          [1804] parse 運算子
+        - parse-where 運算符
+          [1814] parse-where 運算子
+        - partition 運算符
+          [1821] partition 運算子
+        - print 運算符
+          [1829] print 運算子
+        - range 運算子
+          [1831] range 運算子
+        - reduce 運算符
+          [1834] reduce 運算子
+        - render 運算符
+          [1839] render 運算子
+        - sample 運算符
+          [1845] sample 運算子
+        - sample-distinct 運算符
+          [1848] sample-distinct 運算子
+        - scan 運算符
+          [1850] 掃描運算子
+        - 搜尋運算子
+          [1867] search 運算子
+        - serialize 運算符
+          [1872] serialize 運算子
+        - sort 運算符
+          [1875] sort 運算子
+        - summarize 運算符
+          - summarize 運算符概觀
+            [1878] 
+          - 使用 hll（） 和 tdigest（）
+            [1884] 使用 hll() 和 tdigest()
+          - shuffle
+            [1892] 隨機查詢
+        - take 運算子
+          [1902] take 運算子
+        - top 運算子
+          [1904] top 運算子
+        - top-nested 運算符
+          [1906] 
+        - top-hitters 運算符
+          [1914] top-hitters 運算子
+        - union 運算符
+          [1917] union 運算子
+        - where 運算符
+          [1922] where 運算子
+      - 特殊函式
+        - cluster()
+          [1925] cluster()
+        - database()
+          [1928] database()
+        - external_table（）
+          [1931] external_table()
+        - 具體化（）
+          [1933] materialize()
+        - materialized_view（）
+          [1938] materialized_view () 函式
+        - table（）
+          [1940] table()
+        - toscalar（）
+          [1944] toscalar()
+      - Scalar 運算子
+        - 位 （二進位） 運算符
+          [1948] 位元 (二元) 運算子
+        - Datetime/timespan 算術
+          [1949] Datetime/timespan 算術
+        - 邏輯 （二進位） 運算符
+          [1952] 邏輯 (二元) 運算子
+        - 數值運算子
+          [1956] 數值運算子
+        - 字串運算子
+          - 字串運算子概觀
+            [1959] 字串運算子
+          - in 和 ！in 運算符
+            [1964] in~ 運算子
+          - has_all 運算符
+            [1969] has_all 運算子
+          - has_any 運算子
+            [1972] has_any 運算子
+        - 介於運算符之間
+          [1977] between 運算子
+        - 不介於運算符之間 （！between）
+          [1980] !between 運算子
+      - 純量函式
+        - 純量函式類型
+          [1983] 純量函式類型一覽
+        - abs（）
+          [2000] 發行項• 2024/01/18
+        - acos（）
+          [2002] acos()
+        - ago（）
+          [2003] ago()
+        - 周圍（）
+          [2005] around()
+        - array_concat（）
+          [2007] array_concat()
+        - array_iif（）
+          [2009] array_iff ()
+        - array_index_of（）
+          [2012] array_index_of()
+        - array_length（）
+          [2014] array_length()
+        - array_reverse（）
+          [2016] array_reverse()
+        - array_rotate_left（）
+          [2018] array_rotate_left()
+        - array_rotate_right（）
+          [2020] array_rotate_right()
+        - array_shift_left（）
+          [2022] array_shift_left()
+        - array_shift_right（）
+          [2025] array_shift_right()
+        - array_slice（）
+          [2028] array_slice()
+        - array_sort_asc（）
+          [2031] array_sort_asc()
+        - array_sort_desc（）
+          [2036] array_sort_desc()
+        - array_split（）
+          [2041] array_split()
+        - array_sum（）
+          [2043] array_sum()
+        - asin（）
+          [2045] 發行項• 2024/01/18
+        - assert（）
+          [2047] assert()
+        - atan（）
+          [2050] 發行項• 2024/01/18
+        - atan2（）
+          [2052] atan2()
+        - bag_keys（）
+          [2054] bag_keys()
+        - bag_merge（）
+          [2056] bag_merge()
+        - bag_remove_keys（）
+          [2058] bag_remove_keys()
+        - base64_decode_toarray（）
+          [2061] base64_decode_toarray()
+        - base64_decode_tostring（）
+          [2063] base64_decode_tostring()
+        - base64_encode_fromarray（）
+          [2065] base64_encode_fromarray()
+        - base64_encode_tostring（）
+          [2067] base64_encode_tostring()
+        - beta_cdf（）
+          [2069] beta_cdf()
+        - beta_inv（）
+          [2071] beta_inv()
+        - beta_pdf（）
+          [2073] beta_pdf()
+        - bin（）
+          [2075] bin()
+        - bin_at（）
+          [2079] bin_at（）
+        - bin_auto（）
+          [2083] bin_auto()
+        - binary_and()
+          [2085] binary_and()
+        - binary_not()
+          [2086] 發行項• 2024/01/23
+        - binary_or()
+          [2088] binary_or()
+        - binary_shift_left()
+          [2089] binary_shift_left()
+        - binary_shift_right()
+          [2091] binary_shift_right()
+        - binary_xor()
+          [2093] binary_xor()
+        - bitset_count_ones（）
+          [2095] bitset_count_ones()
+        - case（）
+          [2097] case()
+        - ceiling（）
+          [2099] 發行項• 2024/01/10
+        - coalesce（）
+          [2101] coalesce()
+        - column_ifexists（）
+          [2103] 發行項• 2024/01/18
+        - cos（）
+          [2105] 發行項• 2024/01/23
+        - 科特（）
+          [2107] 發行項• 2024/01/18
+        - countof（）
+          [2109] countof()
+        - current_cluster_endpoint（）
+          [2111] current_cluster_endpoint()
+        - current_cursor（）
+          [2112] cursor_current()
+        - current_database（）
+          [2113] current_database()
+        - current_principal()
+          [2114] current_principal()
+        - current_principal_details（）
+          [2115] current_principal_details()
+        - current_principal_is_member_of（）
+          [2117] current_principal_is_member_of()
+        - cursor_after()
+          [2119] cursor_after()
+        - cursor_before_or_at()
+          [2121] cursor_before_or_at()
+        - cursor_current（）
+          [2122] cursor_current()
+        - datetime_add（）
+          [2123] 
+        - datetime_diff（）
+          [2125] datetime_diff()
+        - datetime_part（）
+          [2127] 
+        - dayofmonth（）
+          [2130] 發行項• 2024/01/10
+        - dayofweek（）
+          [2132] dayofweek()
+        - dayofyear（）
+          [2135] 發行項• 2024/01/18
+        - dcount_hll（）
+          [2137] dcount_hll()
+        - degrees（）
+          [2140] degrees()
+        - dynamic_to_json（）
+          [2142] dynamic_to_json()
+        - endofday（）
+          [2144] endofday()
+        - endofmonth（）
+          [2146] endofmonth()
+        - endofweek（）
+          [2148] endofweek()
+        - endofyear（）
+          [2150] endofyear()
+        - estimate_data_size（）
+          [2152] estimate_data_size()
+        - exp（）
+          [2154] exp()
+        - exp10（）
+          [2155] exp10()
+        - exp2（）
+          [2156] exp2()
+        - extent_id()
+          [2157] extent_id()
+        - extent_tags()
+          [2158] extent_tags()
+        - extract（）
+          [2160] extract()
+        - extract_all（）
+          [2162] extract_all()
+        - extractjson（）
+          [2166] extract_json ()
+        - floor（）
+          [2168] bin()
+        - format_bytes（）
+          [2172] format_bytes()
+        - format_datetime（）
+          [2174] format_datetime()
+        - format_ipv4（）
+          [2179] format_ipv4()
+        - format_ipv4_mask（）
+          [2181] format_ipv4_mask()
+        - format_timespan（）
+          [2183] format_timespan()
+        - gamma（）
+          [2187] gamma()
+        - getmonth（）
+          [2188] monthofyear()
+        - gettype（）
+          [2190] gettype()
+        - getyear（）
+          [2192] 發行項• 2024/01/18
+        - has_any_ipv4（）
+          [2194] has_any_ipv4()
+        - has_ipv4（）
+          [2197] has_ipv4()
+        - has_any_ipv4_prefix（）
+          [2200] has_any_ipv4_prefix()
+        - has_ipv4_prefix（）
+          [2203] has_ipv4_prefix()
+        - hash（）
+          [2206] hash()
+        - hash_combine（）
+          [2209] hash_combine()
+        - hash_many（）
+          [2211] hash_many()
+        - hash_md5（）
+          [2213] hash_md5()
+        - hash_sha256（）
+          [2215] 
+        - hll_merge（）
+          [2217] hll_merge()
+        - hourofday（）
+          [2220] 發行項• 2024/01/18
+        - iif（）
+          [2222] iff()
+        - indexof（）
+          [2224] indexof()
+        - indexof_regex（）
+          [2226] indexof_regex()
+        - ingestion_time()
+          [2228] 發行項• 2024/01/10
+        - ipv4_compare（）
+          [2230] ipv4_compare()
+        - ipv4_is_in_range（）
+          [2233] ipv4_is_in_range()
+        - ipv4_is_match（）
+          [2235] ipv4_is_match()
+        - ipv4_is_private（）
+          [2238] ipv4_is_private()
+        - ipv4_netmask_suffix（）
+          [2241] ipv4_netmask_suffix()
+        - ipv6_compare（）
+          [2243] ipv6_compare()
+        - ipv6_is_match（）
+          [2248] ipv6_is_match()
+        - isascii（）
+          [2253] 發行項• 2024/01/23
+        - isempty（）
+          [2255] 發行項• 2024/01/23
+        - isfinite（）
+          [2257] isfinite()
+        - isinf（）
+          [2259] isinf()
+        - isnan（）
+          [2261] isnan()
+        - isnotempty（）， notempty（）
+          [2263] isnotempty()
+        - nototnull（）， notnull（）
+          [2265] isnotnull()
+        - isnull（）
+          [2267] isnull（）
+        - isutf8（）
+          [2270] isutf8()
+        - log（）
+          [2271] log()
+        - log10（）
+          [2273] log10()
+        - log2（）
+          [2275] log2()
+        - loggamma（）
+          [2277] loggamma()
+        - make_datetime（）
+          [2279] make_datetime()
+        - make_string（）
+          [2282] unicode_codepoints_to_string ()
+        - make_timespan（）
+          [2285] make_timespan()
+        - max_of（）
+          [2287] max_of()
+        - min_of（）
+          [2289] min_of()
+        - monthofyear（）
+          [2291] monthofyear()
+        - new_guid（）
+          [2293] new_guid()
+        - not（）
+          [2294] not()
+        - now（）
+          [2296] now()
+        - pack（）
+          [2299] bag_pack ()
+        - pack_all（）
+          [2303] pack_all()
+        - pack_array（）
+          [2306] pack_array()
+        - pack_dictionary（）
+          [2308] bag_pack ()
+        - parse_command_line（）
+          [2312] parse_command_line()
+        - parse_csv（）
+          [2314] parse_csv()
+        - parse_ipv4（）
+          [2317] parse_ipv4()
+        - parse_ipv4_mask（）
+          [2319] parse_ipv4_mask()
+        - parse_ipv6（）
+          [2321] parse_ipv6()
+        - parse_ipv6_mask（）
+          [2323] parse_ipv6_mask()
+        - parse_path（）
+          [2326] 
+        - parse_url（）
+          [2328] parse_url()
+        - parse_urlquery（）
+          [2330] parse_urlquery()
+        - parse_user_agent（）
+          [2332] parse_user_agent()
+        - parse_version（）
+          [2335] parse_version()
+        - parse_xml（）
+          [2338] parse_xml()
+        - percentile_tdigest（）
+          [2341] percentile_tdigest()
+        - percentrank_tdigest（）
+          [2344] percentrank_tdigest()
+        - pi（）
+          [2346] pi()
+        - pow()
+          [2347] pow()
+        - radians（）
+          [2349] radians()
+        - rand()
+          [2351] rand()
+        - range（）
+          [2352] range()
+        - rank_tdigest（）
+          [2356] rank_tdigest()
+        - regex_quote（）
+          [2359] 發行項• 2024/01/23
+        - repeat（）
+          [2361] repeat()
+        - replace（）
+          [2363] replace_regex()
+        - reverse（）
+          [2365] reverse()
+        - round（）
+          [2367] 發行項• 2024/01/18
+        - set_difference（）
+          [2369] set_difference()
+        - set_has_element（）
+          [2371] set_has_element()
+        - set_intersect（）
+          [2373] set_intersect()
+        - set_union（）
+          [2375] set_union()
+        - sign（）
+          [2378] 發行項• 2024/01/18
+        - sin（）
+          [2380] sin()
+        - split（）
+          [2382] split()
+        - sqrt（）
+          [2384] sqrt()
+        - startofday（）
+          [2385] startofday()
+        - startofmonth（）
+          [2387] startofmonth()
+        - startofweek（）
+          [2389] startofweek()
+        - startofyear（）
+          [2391] startofyear()
+        - strcat（）
+          [2393] strcat()
+        - strcat_array（）
+          [2395] strcat_array()
+        - strcat_delim（）
+          [2397] strcat_delim()
+        - strcmp（）
+          [2399] strcmp()
+        - string_size（）
+          [2401] string_size()
+        - strlen（）
+          [2403] strlen()
+        - strrep（）
+          [2406] strrep()
+        - substring（）
+          [2408] substring()
+        - tan（）
+          [2410] tan()
+        - tdigest_merge（）
+          [2411] merge_tdigest()
+        - to_utf8（）
+          [2413] unicode_codepoints_from_string ()
+        - tobool（）
+          [2415] 發行項• 2024/01/23
+        - todatetime（）
+          [2417] todatetime()
+        - todecimal（）
+          [2419] todecimal()
+        - todouble（）， toreal（）
+          [2421] toreal()
+        - todynamic（）， parse_json（）
+          [2423] parse_json()
+        - toguid（）
+          [2425] toguid()
+        - tohex（）
+          [2427] tohex()
+        - toint（）
+          [2429] toint()
+        - tolong（）
+          [2431] tolong()
+        - tolower（）
+          [2433] tolower()
+        - tostring（）
+          [2434] tostring()
+        - totimespan（）
+          [2435] 發行項• 2024/01/23
+        - toupper（）
+          [2437] toupper()
+        - translate（）
+          [2438] 發行項• 2024/01/23
+        - treepath（）
+          [2440] treepath()
+        - trim（）
+          [2442] trim()
+        - trim_end（）
+          [2445] trim_end()
+        - trim_start（）
+          [2447] trim_start()
+        - unixtime_microseconds_todatetime（）
+          [2449] unixtime_microseconds_todatetime()
+        - unixtime_milliseconds_todatetime（）
+          [2451] unixtime_milliseconds_todatetime()
+        - unixtime_nanoseconds_todatetime（）
+          [2453] unixtime_nanoseconds_todatetime()
+        - unixtime_seconds_todatetime（）
+          [2455] unixtime_seconds_todatetime()
+        - url_decode（）
+          [2457] url_decode()
+        - url_encode（）
+          [2459] url_encode()
+        - url_encode_component（）
+          [2461] url_encode_component()
+        - weekofyear（）
+          [2463] week_of_year()
+        - welch_test（）
+          [2465] welch_test()
+        - zip（）
+          [2467] zip()
+        - zlib_compress_to_base64_string（）
+          [2469] zlib_compress_to_base64_string()
+        - zlib_decompress_from_base64_string（）
+          [2471] zlib_decompress_from_base64_string()
+      - 彙總函數
+        - any（）
+          [2473] take_any() (彙總函式)
+        - anyif（）
+          [2476] take-anyif() (彙總函式)
+        - arg_max（）
+          [2478] arg_max() (彙總函式)
+        - arg_min（）
+          [2482] arg_min() (彙總函式)
+        - avg（）
+          [2486] avg() (彙總函數)
+        - avgif（）
+          [2488] avgif() (彙總函數)
+        - binary_all_and
+          [2490] binary_all_and() (彙總函數)
+        - binary_all_or
+          [2492] binary_all_or() (彙總函式)
+        - binary_all_xor
+          [2494] binary_all_xor() (彙總函式)
+        - buildschema（）
+          [2496] buildschema() (彙總函數)
+        - count（）
+          [2499] count() (彙總函式)
+        - countif（）
+          [2501] countif() (彙總函式)
+        - dcount（）
+          [2504] dcount() (彙總函式)
+        - dcountif（）
+          [2508] dcountif() (彙總函式)
+        - hll（）
+          [2512] 
+        - hll_merge（）
+          [2516] 
+        - make_bag（）
+          [2519] make_bag() (彙總函式)
+        - make_bag_if（）
+          [2522] make_bag_if() (彙總函式)
+        - make_list（）
+          [2525] make_list() (彙總函式)
+        - make_list_if（）
+          [2529] make_list_if() (彙總函式)
+        - make_list_with_nulls（）
+          [2531] make_list_with_nulls() (彙總函式)
+        - make_set（）
+          [2533] make_set() (彙總函式)
+        - make_set_if（）
+          [2537] make_set_if() (aggregation function)
+        - max（）
+          [2539] max() (彙總函數)
+        - maxif（）
+          [2541] maxif() (彙總函數)
+        - min（）
+          [2543] min() (彙總函式)
+        - minif（）
+          [2545] minif() (彙總函式)
+        - percentiles（）， percentile（）
+          [2547] 
+        - stdev（）
+          [2552] stdev() (彙總函式)
+        - stdevif（）
+          [2554] stdevif() (彙總函式)
+        - stdevp（）
+          [2556] stdevp() (彙總函式)
+        - sum（）
+          [2558] sum() (彙總函式)
+        - sumif（）
+          [2560] sumif() (彙總函式)
+        - tdigest（）
+          [2563] 
+        - tdigest_merge（）
+          [2565] 
+        - 變異數（）
+          [2567] variance() (彙總函式)
+        - varianceif（）
+          [2569] varianceif () (彙總函式)
+        - variancep（）
+          [2571] variancep() (彙總函式)
+      - 視窗函數
+        - 視窗函式概觀
+          [2573] Window 函式概觀
+        - next（）
+          [2575] next()
+        - prev（）
+          [2579] prev()
+        - row_cumsum（）
+          [2583] row_cumsum()
+        - row_number（）
+          [2586] row_number()
+        - row_rank（）
+          [2589] row_rank_dense ()
+        - row_window_session（）
+          [2592] row_window_session()
+      - 時間序列分析
+        - 時間序列分析概觀
+          [2594] 時間序列分析
+        - make-series 運算符
+          [2604] make-series 運算子
+        - series_add（）
+          [2612] series_add()
+        - series_decompose（）
+          [2614] series_decompose()
+        - series_decompose_anomalies（）
+          [2619] series_decompose_anomalies()
+        - series_decompose_forecast（）
+          [2624] series_decompose_forecast()
+        - series_divide（）
+          [2627] series_divide()
+        - series_equals（）
+          [2629] series_equals()
+        - series_fft（）
+          [2631] series_fft()
+        - series_fill_backward（）
+          [2634] series_fill_backward()
+        - series_fill_const（）
+          [2636] 
+        - series_fill_forward（）
+          [2638] series_fill_forward()
+        - series_fill_linear（）
+          [2640] 
+        - series_fir（）
+          [2642] series_fir()
+        - series_fit_2lines（）
+          [2645] series_fit_2lines()
+        - series_fit_2lines_dynamic（）
+          [2648] series_fit_2lines_dynamic()
+        - series_fit_line（）
+          [2651] series_fit_line()
+        - series_fit_line_dynamic（）
+          [2653] series_fit_line_dynamic()
+        - series_fit_poly（）
+          [2655] series_fit_poly()
+        - series_greater（）
+          [2660] series_greater()
+        - series_greater_equals（）
+          [2662] series_greater_equals()
+        - series_ifft（）
+          [2664] series_ifft()
+        - series_iir（）
+          [2666] series_iir()
+        - series_less（）
+          [2669] series_less()
+        - series_less_equals（）
+          [2671] series_less_equals()
+        - series_multiply（）
+          [2673] series_multiply()
+        - series_not_equals（）
+          [2675] series_not_equals()
+        - series_outliers（）
+          [2677] series_outliers()
+        - series_pearson_correlation（）
+          [2680] series_pearson_correlation()
+        - series_periods_detect（）
+          [2682] series_periods_detect()
+        - series_periods_validate（）
+          [2685] series_periods_validate()
+        - series_seasonal（）
+          [2688] 
+        - series_stats（）
+          [2690] 
+        - series_stats_dynamic（）
+          [2692] series_stats_dynamic()
+        - series_subtract（）
+          [2694] series_subtract()
+      - Machine Learning
+        - autocluster 外掛程式
+          [2696] autocluster 外掛程式
+        - 購物籃外掛程式
+          [2700] basket 外掛程式
+        - diffpatterns 外掛程式
+          [2704] 
+        - diffpatterns_text外掛程式
+          [2707] diffpatterns_text 外掛程式
+      - 地理空間
+        - geo_distance_2points（）
+          [2710] geo_distance_2points()
+        - geo_distance_point_to_line（）
+          [2714] geo_distance_point_to_line()
+        - geo_geohash_to_central_point（）
+          [2721] geo_geohash_to_central_point()
+        - geo_line_densify（）
+          [2724] geo_line_densify()
+        - geo_point_in_circle（）
+          [2728] geo_point_in_circle()
+        - geo_point_in_polygon（）
+          [2733] geo_point_in_polygon()
+        - geo_point_to_geohash（）
+          [2748] geo_point_to_geohash()
+        - geo_point_to_s2cell（）
+          [2753] geo_point_to_s2cell()
+        - geo_polygon_to_s2cells（）
+          [2759] geo_polygon_to_s2cells()
+        - geo_polygon_densify（）
+          [2770] geo_polygon_densify()
+        - geo_s2cell_to_central_point（）
+          [2774] geo_s2cell_to_central_point()
+      - 使用者分析
+        - 使用者分析外掛程式概觀
+          [2776] 使用者分析外掛程式
+        - active_users_count外掛程式
+          [2778] active_users_count 外掛程式
+        - activity_counts_metrics外掛程式
+          [2782] activity_counts_metrics plugin
+        - activity_engagement外掛程式
+          [2785] 
+        - activity_metrics外掛程式
+          [2789] 
+        - new_activity_metrics外掛程式
+          [2795] 
+        - funnel_sequence_completion外掛程式
+          [2800] funnel_sequence_completion plugin
+        - funnel_sequence外掛程式
+          [2803] funnel_sequence plugin
+        - session_count外掛程式
+          [2810] session_count plugin
+        - sliding_window_counts外掛程式
+          [2814] sliding_window_counts 外掛程式
+      - 限制和錯誤
+        - 查詢一致性
+          [2817] 查詢一致性
+        - 查詢限制
+          [2820] 查詢限制
+        - 部分查詢失敗
+          [2827] 部分查詢失敗
+          - 結果截斷
+            [2828] 查詢結果集已超過內部的...限制
+          - 失控查詢
+            [2829] 失控查詢
+          - 溢位
+            [2830] 溢出
+      - Kusto 查詢語言 的參考數據
+        - RE2 語法
+          [2831] RE2 語法
+        - RE2 連結庫
+          [2851] RE2 語法
+        - SQL 對 Kusto 的功能提要
+          [2871] SQL 到 Kusto 查詢語言 速查表
+        - Splunk 至 Kusto 速查表
+          [2875] Splunk 至 Kusto 查詢語言對應
+    - 管理命令
+      - 控制命令概觀
+        [2882] 管理命令概觀
+      - 工作負載群組
+        - 工作負載群組概觀
+          [2884] 工作負載群組
+        - 工作負載群組管理
+          [2888] .show workload_group 命令
+        - 要求分類原則
+          - 要求分類原則
+            [2890] 要求分類原則
+          - 要求分類原則命令
+            [2894] 
+        - 要求限制原則
+          [2896] 
+        - 要求速率限制原則
+          [2900] 
+        - 要求速率限制強制執行原則
+          [2905] 要求速率限制強制執行原則
+        - 要求佇列原則
+          [2908] 要求佇列原則 (預覽)
+      - 結構描述
+        - 結構描述管理的最佳做法
+          [2909] 發行項• 2023/03/21
+        - 資料庫
+          [2911] 管理資料庫
+          - .show 資料庫
+            [2912] .show databases 命令
+          - .show 資料庫
+            [2913] .show 資料庫命令
+          - .show 叢集資料庫
+            [2917] .show 叢集資料庫命令
+          - .alter database prettyname
+            [2919] .alter database prettyname 命令
+          - .show database（s） 架構
+            [2921] 
+          - .execute 資料庫腳本
+            [2926] .execute 資料庫腳本命令
+        - 資料表
+          - 數據表管理
+            [2930] 資料表管理
+          - .alter-merge 數據表
+            [2932] .alter-merge table 命令
+          - .alter 數據表
+            [2934] .alter table 命令
+          - .alter table docstring
+            [2937] 發行項• 2024/01/23
+          - .alter table 資料夾
+            [2939] .alter table folder 命令
+          - .alter ingestion mapping
+            [2941] 
+          - .create 擷取對應
+            [2944] 
+          - .drop 擷取對應
+            [2946] .drop 擷取對應命令
+          - .show 擷取對應
+            [2948] 
+          - .create 數據表
+            [2950] .create table 命令
+          - .create table based-on
+            [2952] .create table based-on 命令
+          - .create 數據表
+            [2955] .create tables 命令
+          - .create-merge 數據表
+            [2957] .create-merge table 命令
+          - .create-merge 數據表
+            [2959] .create-merge tables 命令
+          - .drop table（s）
+            [2961] .drop table 命令
+          - .rename table（s）
+            [2963] .rename table 命令
+          - .show 數據表
+            [2966] .show tables 命令
+          - .undo drop table
+            [2968] .undo drop table 命令
+          - .show 數據表詳細數據
+            [2971] 
+          - .show 數據表架構
+            [2973] .show 數據表架構命令
+          - .clear 表格資料
+            [2975] .clear 數據表數據命令
+        - 外部表格
+          - 建立和改變 Azure 儲存體外部資料表
+            [2977] 
+          - 建立和改變 SQL Server 外部資料表
+            [2983] 建立和改變 Azure SQL 外部數據表
+          - .drop external table
+            [2989] .drop 外部數據表命令
+          - .show 外部數據表
+            [2991] .show 外部數據表命令
+          - .show external table schema
+            [2993] 
+        - 具體化檢視
+          - 具體化檢視概觀
+            [2995] 具體化檢視
+          - .create materialized-view
+            [3001] .create materialized-view
+          - .alter materialized-view
+            [3017] 
+          - .create-or-alter materialized-view
+            [3020] 
+          - .alter materialized-view docstring
+            [3023] 
+          - .alter materialized-view 資料夾
+            [3025] 
+          - .alter materialized-view lookback
+            [3027] 
+          - .alter materialized-view autoUpdateSchema
+            [3029] 
+          - .show 具體化檢視命令
+            [3031] 
+          - .drop materialized-view
+            [3033] 
+          - .clear 具體化檢視數據
+            [3035] .clear materialized-view data
+          - .disable | .enable materialized-view
+            [3037] 
+          - 具體化檢視原則
+            [3040] 具體化檢視原則
+          - 具體化檢視數據清除
+            [3043] 具體化檢視資料清除
+        - 預存查詢結果
+          [3045] 發行項• 2024/04/12
+        - 資料行
+          - 數據行管理
+            [3047] 資料行管理
+          - .alter 數據行
+            [3048] .alter column 命令
+          - .alter-merge table column-docstrings
+            [3051] 發行項• 2024/01/23
+          - .drop 數據行
+            [3053] .drop column 命令
+          - .rename 數據行（s）
+            [3056] .rename 資料行命令
+        - 資料對應
+          [3058] 擷取對應
+        - 函式
+          - 預存函式管理概觀
+            [3063] 預存函數管理概觀
+          - .alter 函式
+            [3064] .alter 函式命令
+          - .alter 函式 docstring
+            [3066] .alter 函式 docstring 命令
+          - .alter function 資料夾
+            [3068] .alter function folder 命令
+          - .create 函式
+            [3070] .create 函式命令
+          - .create-or-alter 函式
+            [3073] .create-or-alter 函式命令
+          - .drop 函式
+            [3075] .drop 函式命令
+          - .show 函式
+            [3077] .show functions 命令
+      - 原則
+        - 自動刪除
+          - 自動刪除原則
+            [3080] 自動刪除原則
+          - 自動刪除原則命令
+            [3081] .show 數據表原則auto_delete命令
+        - 擷取批處理
+          - 擷取batching 原則
+            [3083] 內嵌批次處理原則
+          - 擷取batching 原則命令
+            [3086] 內嵌批次處理原則
+        - Cache
+          - 快取原則 （經常性快取和冷快取）
+            [3089] 快取原則 (經常性快取和冷快取)
+          - 快取原則命令
+            [3092] 快取原則 (經常性快取和冷快取)
+        - 圖說文字
+          [3095] 註標原則
+        - Capacity
+          - 容量原則
+            [3098] 產能原則
+          - 容量原則命令
+            [3104] 產能原則
+        - 擷取時間
+          - 擷取時間原則
+            [3111] IngestionTime 原則
+          - ingestiontime 原則命令
+            [3112] 發行項• 2024/01/23
+        - 合併
+          - 合併原則
+            [3114] 合併原則
+          - 合併原則命令
+            [3117] 合併原則
+        - 資料分割
+          - 數據分割原則
+            [3120] 資料分割原則
+          - 數據分割原則命令
+            [3129] 資料分割原則
+        - 保留
+          - 保留原則
+            [3138] 保留原則
+          - 保留原則命令
+            [3143] 保留原則
+        - 範圍標籤保留
+          - 範圍卷標保留原則
+            [3148] 範圍標籤保留原則
+          - .show 範圍標籤保留原則
+            [3150] 發行項• 2024/01/18
+          - .delete 範圍標籤保留原則
+            [3152] .delete 範圍標籤保留原則命令
+          - .alter extent 標記保留原則
+            [3154] .alter 資料庫原則extent_tags_retention命令
+        - 限制檢視存取
+          - 受限制的檢視存取原則
+            [3156] 受限的檢視存取原則
+          - restricted_view_access原則命令
+            [3158] .show 數據表原則restricted_view_access命令
+        - 資料列層級安全性
+          - 數據列層級安全策略
+            [3160] 資料列層級安全性
+          - row_level_security原則命令
+            [3166] 資料列層級安全性
+        - Roworder
+          - Roworder 原則
+            [3172] 資料列順序原則
+          - roworder 原則命令
+            [3173] 發行項• 2024/01/23
+        - 沙箱
+          - 使用沙箱
+            [3175] 沙箱
+          - 沙箱原則
+            [3179] 沙箱原則
+          - 沙箱原則命令
+            [3181] 沙箱原則
+        - 分區化
+          - 分區化原則
+            [3183] 發行項• 2024/01/16
+          - 分區化原則命令
+            [3185] 發行項• 2024/01/16
+        - 串流擷取
+          - 串流內嵌原則
+            [3187] 串流內嵌原則
+          - 串流擷取原則命令
+            [3189] .show 數據表原則串流擷取命令
+        - 更新
+          - 更新原則
+            [3191] 更新原則概觀
+          - 更新原則命令
+            [3198] 更新原則概觀
+        - 查詢弱式一致性
+          - 查詢弱式一致性原則
+            [3205] 
+          - .alter 查詢弱式一致性原則
+            [3207] 
+          - .show 查詢弱式一致性原則
+            [3210] 
+      - 資訊安全角色
+        [3211] 安全性角色概觀
+      - 資料擷取
+        - 從記憶體擷取
+          [3215] 從儲存體內嵌
+        - 從查詢擷取
+          [3223] 從查詢內嵌 (.set、.append、.set-or-append、.set-or-replace)
+        - 內嵌擷取
+          [3229] .ingest inline 命令 (推送)
+        - 串流擷取
+          - 串流內嵌和架構變更
+            [3232] 串流擷取和結構描述變更
+          - 清除用於串流內嵌的架構快取
+            [3234] 清除用於串流內嵌的架構快取
+      - 資料匯出
+        [3236] 資料匯出
+        - 至雲端記憶體
+          [3238] 
+        - 至 SQL 數據表
+          [3244] 將資料匯出到 SQL
+        - 外部數據表
+          [3248] 
+        - 連續資料匯出
+          - 連續數據匯出概觀
+            [3252] 連續資料匯出概觀
+          - 建立或改變連續匯出
+            [3258] 
+          - 停用或啟用連續匯出
+            [3261] 停用或啟用連續匯出
+          - 卸除連續匯出
+            [3263] 置放連續匯出
+          - 顯示連續匯出
+            [3264] 顯示連續匯出
+          - 顯示連續匯出成品
+            [3266] 
+          - 顯示連續匯出失敗
+            [3267] 顯示連續匯出失敗
+      - 資料庫數據指標
+        [3269] 資料庫指標
+      - 外掛程式命令
+        - .show 外掛程式
+          [3272] .show plugins 命令
+        - .enable 外掛程式
+          [3274] .enable plugin 命令
+        - .disable 外掛程式
+          [3276] .disable plugin 命令
+      - 查詢結果快取
+        [3278] 查詢結果快取命令
+        - 顯示快取
+          [3279] .show 資料庫快取query_results命令
+        - Clear cache
+          [3280] .clear 資料庫快取query_results命令
+      - 系統資訊
+        [3282] 系統資訊
+        - 診斷
+          [3283] 系統資訊
+        - 日誌
+          [3284] 
+        - 查詢
+          [3286] .show 查詢命令
+        - 命令
+          [3290] 
+        - 命令和查詢
+          [3293] .show commands-and-queries 命令
+        - Operations
+          [3295] 
+      - 存取控制
+        [3298] 存取控制概觀
+        - 身分識別
+          [3301] 參考安全性主體
+        - Microsoft Entra ID
+          [3305] 如何在應用程式中使用 Microsoft 驗證程式庫 (MSAL) 進行驗證
+        - 主體角色
+          [3312] Kusto 角色型存取控制
+        - 允許跨租用戶查詢和命令
+          [3315] 允許跨租用戶查詢和命令
+        - 操作說明 Microsoft Entra 驗證
+          [3317] 如何在應用程式中使用 Microsoft 驗證程式庫 (MSAL) 進行驗證
+      - 進階數據管理
+        - 範圍 （資料分區）
+          - 範圍概觀
+            [3324] 範圍 (資料分區)
+          - 範圍命令
+            - .alter extent
+              [3326] .alter extent tags 命令
+            - .drop extents
+              [3330] .drop extents 命令
+            - .drop extent tags
+              [3335] .drop 數據表範圍標籤
+            - .move 範圍
+              [3340] .move extents 命令
+            - .replace extents
+              [3345] .replace extents 命令
+            - .show 範圍
+              [3350] .show extents
+          - 範圍容器清除命令
+            [3356] 範圍 (資料分區)
+        - 叢集追蹤程式
+          [3358] 
+        - 資料清除
+          [3371] 
+      - 錯誤和失敗
+        - 擷取錯誤碼
+          [3379] 擷取錯誤碼
+        - 擷取失敗
+          [3387] 
+    - 參考
+      - API
+        - API 概觀
+          [3389] Azure 資料總管 API 概觀
+        - 用戶端程式庫
+          [3392] Kusto 用戶端程式庫
+        - 連接字串
+          - 連線 字串概觀
+            [3393] 連接字串概觀
+          - Kusto 連接字串
+            [3395] Kusto 連接字串
+          - 儲存體 連接字串
+            [3405] 
+        - REST API
+          - REST API 概觀
+            [3410] 發行項• 2023/12/08
+          - 驗證
+            [3412] 透過 HTTPS 驗證
+          - 查詢/管理 HTTP 要求
+            [3415] 查詢/管理 HTTP 要求
+          - 查詢/管理 HTTP 回應
+            [3420] 
+          - 查詢 v2 HTTP 回應
+            [3424] 查詢 V2 HTTP 回應
+          - UI （深層連結）
+            [3432] UI 深層連結
+          - 串流內嵌
+            [3436] 串流擷取 HTTP 要求
+        - MS-TDS
+          - MS-TDS 概觀
+            [3440] Azure 資料總管 API 概觀
+          - T-SQL
+            [3443] 使用 T-SQL 查詢數據
+          - 透過 TDS 的 KQL
+            [3448] 使用 SQL Server 模擬執行 KQL 查詢和預存函式
+          - 用戶端
+            [3451] 使用 SQL Server 模擬來查詢 Azure DataExplorer 中的資料
+          - 連結的伺服器
+            [3454] Azure Data Explorer作為SQL Server的連結伺服器
+          - Microsoft Entra ID
+            [3456] 使用 JDBC 連線至 Azure 資料總管
+          - 已知問題
+            [3459] 使用 T-SQL 查詢數據
+        - .NET SDK
+          - 一般
+            - 關於 SDK
+              [3464] 關於 Kusto .NET SDK
+            - 控制追蹤
+              [3465] 控制及隱藏 Kusto SDK 用戶端追蹤
+          - Kusto.Data
+            - Kusto.Data 概觀
+              [3468] Kusto 資料庫概觀
+            - 要求屬性，ClientRequestProperties
+              [3470] Request properties
+          - Kusto.Ingest
+            - Kusto.Ingest 概觀
+              [3476] Kusto 內嵌程式庫概觀
+            - 權限
+              [3478] Kusto 內嵌程式庫概觀
+            - 客戶端參考
+              [3480] Kusto.Ingest 用戶端介面和類別
+            - 錯誤和例外狀況
+              [3496] 
+            - 作業狀態
+              [3502] Kusto.Ingest 擷取狀態報告
+            - Kusto.Ingest 最佳做法
+              [3509] Kusto 內嵌程式庫的最佳做法
+            - 程式碼範例
+              [3512] Kusto.Ingest 擷取程式碼範例
+            - 如何使用 REST API 進行數據擷取
+              [3517] 如何使用 REST API 內嵌數據
+        - Python SDK
+          - azure-kusto-python
+            [3526] Kusto Python SDK
+        - R SDK
+          - azure-kusto-r
+            [3527] Kusto R SDK
+        - Java SDK
+          - azure-kusto-java
+            [3528] Kusto JAVA SDK
+        - Node SDK
+          - azure-kusto-node
+            [3529] Kusto Node SDK
+        - Go SDK
+          - azure-kusto-go
+            [3530] Kusto Golang SDK
+        - PowerShell
+          - 從 PowerShell 呼叫 Kusto
+            [3531] 
+        - 摩納哥 IDE 整合
+          - 摩納哥-kusto 概觀
+            [3535] 在應用程式中整合Kusto 查詢語言支援與Kusto 查詢語言
+          - 在 iFrame 中內嵌 Web UX
+            [3539] 
+      - 函式連結庫
+        - 函式清單
+          [3547] 函式程式庫
+        - bartlett_test_fl（）
+          [3551] bartlett_test_fl()
+        - binomial_test_fl（）
+          [3554] binomial_test_fl()
+        - comb_fl（）
+          [3558] comb_fl()
+        - factorial_fl（）
+          [3561] factorial_fl()
+        - kmeans_fl（）
+          [3563] 
+        - ks_test_fl（）
+          [3567] ks_test_fl()
+        - normality_test_fl（）
+          [3570] normality_test_fl()
+        - levene_test_fl（）
+          [3573] levene_test_fl()
+        - 曼-惠特尼-u-test-fl（）
+          [3576] mann_whitney_u_test_fl()
+        - perm_fl（）
+          [3580] perm_fl()
+        - predict_fl（）
+          [3583] predict_fl()
+        - predict_onnx_fl（）
+          [3588] predict_onnx_fl()
+        - quantize_fl（）
+          [3592] quantize_fl()
+        - series_dbl_exp_smoothing_fl（）
+          [3596] series_dbl_exp_smoothing_fl()
+        - series_dot_product_fl（）
+          [3599] series_dot_product_fl()
+        - series_downsample_fl（）
+          [3602] series_downsample_fl()
+        - series_exp_smoothing_fl（）
+          [3606] series_exp_smoothing_fl()
+        - series_fit_lowess_fl（）
+          [3609] series_fit_lowess_fl()
+        - series_fit_poly_fl（）
+          [3616] series_fit_poly_fl()
+        - series_fbprophet_forecast_fl（）
+          [3624] series_fbprophet_forecast_fl()
+        - series_metric_fl（）
+          [3629] series_metric_fl()
+        - series_moving_avg_fl（）
+          [3634] series_moving_avg_fl()
+        - series_rate_fl（）
+          [3637] series_rate_fl()
+        - series_rolling_fl（）
+          [3642] series_rolling_fl()
+        - time_weighted_avg_fl（）
+          [3649] time_weighted_avg_fl()
+        - two_sample_t_test_fl（）
+          [3653] two_sample_t_test_fl()
+        - wilcoxon_test_fl（）
+          [3657] wilcoxon_test_fl()
+  - Apache Spark
+    - Apache Spark 概觀
+      [3660] Azure Synapse Analytics 中的 ApacheSpark
+    - 快速入門
+      - 建立筆記本
+        [3664] 快速入門：使用 Web 工具在 AzureSynapse Analytics 中建立無伺服器Apache Spark 集區
+      - 使用 Azure 入口網站 建立 Spark 集區
+        [3670] 快速入門：使用 Azure 入口網站 建立新的無伺服器 Apache Spark 集區
+      - 使用 Synapse Studio 建立 Spark 集區
+        [3678] 快速入門：使用 Synapse Studio 建立無伺服器 Apache Spark 集區
+    - 教學課程
+      - Synapse Studio 筆記本的數據視覺效果
+        [3684] 使用 Apache Spark 分析資料
+      - 使用 Apache Spark 和 Power BI 分析數據
+        [3691] 教學課程：使用 Apache Spark 和 AzureSynapse Analytics 建立 Power BI 報表
+      - 使用 Pandas 讀取/寫入 ADLS
+        [3697] 教學課程：使用 Pandas 在 SynapseAnalytics 的無伺服器 Apache Spark 集區中讀取/寫入 Azure Data Lake 儲存體Gen2 數據
+      - 具有文件系統規格的讀取/寫入ADLS
+        [3705] 教學課程：在 Synapse Analytics 中使用FSSPEC，來讀取/寫入無伺服器 ApacheSpark 集區中的 ADLS 資料
+      - 建立機器學習模型
+        [3711] 教學課程：使用 Apache Spark MLlib 和Azure Synapse Analytics 來建置機器學習應用程式
+      - 提交 Spark 作業定義
+        [3719] 教學課程：在 Synapse Studio 中建立Apache Spark 作業定義
+    - 概念
+      - Apache Spark
+        [3734] Azure Synapse Analytics 核心概念中的Apache Spark
+      - Apache Spark 集區組態
+        [3738] Azure Synapse Analytics 中的 ApacheSpark 集區組態
+      - GPU 加速的 Apache Spark 集區
+        [3741] Azure Synapse Analytics 中的 GPU 加速Apache Spark 集區 （預覽）
+      - Delta Lake
+        [3744] 什麼是 Delta Lake？
+      - 優化 Delta Lake 上的 Apache Spark 寫入
+        [3746] 在 Apache Spark 上優化寫入的需求
+      - Delta Lake 上的低隨機合併
+        [3751] 差異資料表上的低隨機合併優化
+      - Apache Spark 自動調整行為
+        [3754] 自動調整 Azure Synapse AnalyticsApache Spark 集區
+      - 智慧型快取
+        [3758] Azure Synapse Analytics 中的智慧型快取
+      - 適用於 Apache Spark 的 Azure Synapse 運行時間
+        - Apache Spark 的運行時間概觀
+          [3762] Azure Synapse 運行時間
+        - Azure Synapse Apache Spark 3.4 運行時間 （GA）
+          [3766] 適用於 Apache Spark 3.4 的 AzureSynapse Runtime （GA）
+        - Azure Synapse Apache Spark 3.3 運行時間 （GA）
+          [3768] 
+        - Azure Synapse Apache Spark 3.2 運行時間 （EOSA）
+          [3783] 適用于 Apache Spark 3.2 的 AzureSynapse 執行時間 (EOLA)
+        - Azure Synapse Apache Spark 3.1 運行時間 （已淘汰）
+          [3834] 適用於 Apache Spark 3.1 的 AzureSynapse Runtime （不支援）
+        - Azure Synapse Apache Spark 2.4 運行時間 （已淘汰）
+          [3876] 適用于 Apache Spark 2.4 的 AzureSynapse Runtime （不支援）
+        - 生命週期與支援性
+          [3899] Apache Spark 生命週期和支援性的Synapse 運行時間
+      - 機器學習服務
+        [3902] 機器學習和 Apache Spark
+      - Notebooks
+        [3905] Azure Synapse Analytics 筆記本
+      - 套件管理
+        [3907] 管理 Azure Synapse Analytics 中的Apache Spark 程式庫
+      - 監視 Apache Spark 應用程式
+        [3911] 在 Synapse Studio 中監視您的 ApacheSpark 應用程式
+    - 操作指南
+      - 使用 Delta Lake
+        [3914] 
+      - 管理套件
+        - 管理工作區套件
+          [3923] 工作區套件
+        - 管理 Spark 集區套件
+          [3925] 在 Azure Synapse Analytics 中管理Apache Spark 集區的程式庫
+        - 管理筆記本會話套件
+          [3930] 管理工作階段範圍的套件
+        - 針對 Python 套件安裝錯誤進行疑難解答
+          [3939] 對程式庫安裝錯誤進行疑難排解
+        - 建立 Conda 私人頻道
+          [3945] 建立用於封裝管理的自訂 Conda 通道
+        - 透過 Azure PowerShell Cmdlet 和 REST API 自動化連結庫管理程式
+          [3949] 透過Azure PowerShell Cmdlet 和 RESTAPI 將程式庫管理程式自動化
+      - 使用筆記本和 IDE 工具
+        - 管理筆記本
+          [3952] 在 Azure Synapse Analytics 中建立、開發及維護 Synapse 筆記本
+        - 將資料視覺化
+          [3980] 顯現資料
+        - 使用 IntelliJ 外掛程式 連線 至 Spark
+          [3993] 教學課程：使用 Synapse 工作區使用IntelliJ 建立 Apache Spark 應用程式
+      - 探索語言
+        - 適用於 Apache Spark 的 R
+          [4009] 搭配 Azure Synapse Analytics 使用 R forApache Spark （預覽版）
+        - 適用於 Apache Spark 的 .NET
+          [4014] 搭配 Azure Synapse Analytics 使用適用于 Apache Spark 的 .NET
+      - 安全性
+        - 使用 TokenLibrary 保護認證
+          [4019] 使用 mssparkutils 保護具有連結服務的認證
+      - 最佳化效能
+        - Apache Spark 效能
+          [4027] 最佳化 Azure Synapse Analytics 中的Apache Spark 工作
+        - 使用 Hyperspace 索引的 Apache Spark 效能優化
+          [4033] Hyperspace：Apache Spark 的索引子系統
+        - 使用 NVIDIA RAPIDS 加速 ETL 作業
+          [4068] Azure Synapse Analytics 中的 ApacheSpark GPU 加速集區 （預覽）
+      - 管理和監視
+        - 流覽 Apache Spark 集區歷程記錄伺服器
+          [4073] 使用擴充的 Apache Spark 記錄伺服器對Apache Spark 應用程式進行偵錯和診斷
+        - 監視 Spark 應用程式
+          [4085] 使用 Synapse Studio 監視您的 ApacheSpark 應用程式
+        - 監視 Apache Spark 集區
+          [4099] 使用 Synapse Studio 監視您的 ApacheSpark 集區
+        - 使用 API 收集 Apache Spark 應用程式計量
+          [4102] 使用 API 收集 Apache Spark 應用程式計量
+        - 使用 Prometheus 和 Grafana 監視 Apache Spark 應用程式計量
+          [4110] 使用 Prometheus 和 Grafana 監視Apache Spark 應用程式計量
+        - 使用 Azure Log Analytics 監視 Apache Spark 應用程式
+          [4117] 
+        - 使用 Azure 儲存體 帳戶收集 Apache Spark 應用程式記錄和計量
+          [4126] 
+        - 使用 Azure 事件中樞 收集 Apache Spark 應用程式記錄和計量
+          [4131] 
+        - 管理 Apache Spark 設定
+          [4134] 管理 Apache Spark 設定
+        - Apache Spark Advisor
+          [4142] Azure Synapse Analytics (Preview) 中的Apache Spark Advisor
+      - 資料來源
+        - Azure Cosmos DB Spark 3
+          [4146] 使用 Azure Synapse Link 中的 ApacheSpark 3 與 Azure Cosmos DB 互動
+        - Azure Cosmos DB Spark 2
+          [4152] 使用 Azure Synapse Link 中的 ApacheSpark 2 與 Azure Cosmos DB 互動
+        - Azure 資料總管 (Kusto)
+          [4159] 適用於 Apache Spark 的 Azure 資料總管(Kusto) 連接器
+        - Azure Spark CDM 連線 or
+          [4162] 
+        - Azure SQL 專用
+          [4176] 適用於 Apache Spark 的 Azure Synapse專用 SQL 集區連接器
+        - Azure SQL 和 SQL Server
+          [4195] 適用於 Apache Spark 的 Azure SQL 資料庫 和 SQL Server 連接器
+        - 外部 Hive 中繼存放區
+          [4199] 
+  - Synapse Link
+    - 概觀
+      - 適用於 Azure Cosmos DB 的 Synapse Link
+        [4209] 什麼是適用於 Azure Cosmos DB 的Azure Synapse Link
+      - SQL 的 Synapse Link
+        [4215] 什麼是適用於 SQL 的 Azure SynapseLink？
+      - 適用於 Dataverse 的 Synapse Link
+        [4217] 什麼是 Azure Synapse Link forDataverse？
+    - 快速入門
+      - 連線 Azure Cosmos DB 的 Synapse Link
+        [4220] 快速入門：連線至適用於 Azure CosmosDB 的 Azure Synapse Link
+    - 概念
+      - Azure Cosmos DB
+        - 分析存放區概觀
+          [4222] 什麼是 Azure Cosmos DB 分析存放區？
+        - Synapse Link 支援的功能
+          [4245] 適用於 Azure Cosmos DB 的 AzureSynapse Link 支援的功能
+        - Azure Cosmos DB 常見問題
+          [4247] 一般常見問題集
+        - Synapse Link 使用案例
+          [4256] 適用於 Azure Cosmos DB 的 AzureSynapse Link：近乎即時的分析使用案例(機器翻譯)
+      - SQL Database
+        - 適用於 Azure SQL 資料庫 的 Synapse Link
+          [4263] 適用於 Azure SQL Database 的 AzureSynapse Link
+        - SQL 常見問題
+          [4265] 我是否可以使用適用於 SQL 的 AzureSynapse Link，將資料複寫至作為目的地存放區的 Azure Synapse SQL 無伺服器集區？
+適用於 SQL 的 Azure Synapse Link 是否支援 Azure SQL 受控執行個體作為來源存放區？
+當我想要新增或移除要複寫的資料表時，是否需要停止連結連線？
+我的目的地資料表存在於目標專用 SQL 集區中，進而導致我的連結連線無法啟動。我該怎麼辦？
+      - SQL Server 2022
+        - SQL Server 2022 的 Synapse Link
+          [4271] 適用於 SQL Server 2022 的 AzureSynapse Link
+        - SQL 常見問題
+          [4274] 我是否可以使用適用於 SQL 的 AzureSynapse Link，將資料複寫至作為目的地存放區的 Azure Synapse SQL 無伺服器集區？
+適用於 SQL 的 Azure Synapse Link 是否支援 Azure SQL 受控執行個體作為來源存放區？
+當我想要新增或移除要複寫的資料表時，是否需要停止連結連線？
+我的目的地資料表存在於目標專用 SQL 集區中，進而導致我的連結連線無法啟動。我該怎麼辦？
+      - Dataverse
+        - 什麼是 Dataverse
+          [4280] 什麼是 Microsoft Dataverse？
+        - Synapse Link 中的組態設定
+          [4285] Azure Synapse Link 中的進階組態選項
+        - Dataverse 常見問題
+          [4289] 
+    - 操作指南
+      - Azure Cosmos DB
+        - 設定 Synapse Link
+          [4296] 設定及使用適用於 Azure Cosmos DB 的Azure Synapse Link
+        - 連線 Azure Cosmos DB 的 Azure Synapse Link
+          [4306] 連線至適用於 Azure Cosmos DB 的Azure Synapse Link
+        - Synapse Link 和整合式 Power BI
+          [4308] 啟用 Synapse Link 帳戶的 Azure CosmosDB 入口網站中的整合式 Power BI 體驗
+        - 使用 Power BI 和無伺服器 SQL 集區來分析 Azure Cosmos DB
+          [4313] 運用 Synapse Link，使用 Power BI 和無伺服器 Synapse SQL 集區來分析 AzureCosmos DB 資料
+        - 使用 Apache Spark 3 查詢 Azure Cosmos DB 分析存放區
+          [4318] 使用 Azure Synapse Link 中的 ApacheSpark 3 與 Azure Cosmos DB 互動
+        - 使用 Apache Spark 2 查詢 Azure Cosmos DB 分析存放區
+          [4324] 使用 Azure Synapse Link 中的 ApacheSpark 2 與 Azure Cosmos DB 互動
+        - 使用 Apache Spark 將數據從 Synapse Link 複製到專用 SQL 集區
+          [4331] 使用 Apache Spark 將資料從 AzureCosmos DB 複製到專用 SQL 集區
+        - 使用無伺服器 SQL 集區查詢 Azure Cosmos DB 分析存放區
+          [4335] 
+      - SQL Database
+        - 設定 Synapse Link
+          [4344] 開始使用適用於 Azure SQL Database 的Azure Synapse Link
+        - 使用受控虛擬網路設定 Synapse Link
+          [4353] 設定適用於 Azure SQL Database 的Azure Synapse Link 以取得網路安全性
+        - 監視 Synapse Link
+          [4364] 透過 Synapse Studio 和 Azure 監視器監視適用於 Azure SQL Database 的 AzureSynapse Link
+        - 疑難排解
+          - 已知限制及問題
+            [4377] 
+          - Azure SQL 資料庫 的故障轉移
+            [4382] 疑難排解：容錯移轉 Azure SQLDatabase 後，Azure SQL Database 的Azure Synapse Link
+          - Microsoft Entra 用戶模擬
+            [4386] 疑難排解：適用于 Azure SQL 資料庫 和Microsoft Entra 使用者的 Azure SynapseLink 模擬
+          - 針對初始快照集進行疑難解答
+            [4388] 疑難排解：SQL 初始快照集問題的AzureSynapse連結
+          - 針對建立問題進行疑難解答
+            [4391] 疑難排解：針對 Azure SQL 資料庫 建立Azure Synapse Link
+      - SQL Server 2022
+        - 設定 Synapse Link
+          [4393] 開始使用適用於 SQL Server 2022 的Azure Synapse Link
+        - 使用受控虛擬網路設定 Synapse Link
+          [4413] 設定適用於 SQL Server 2022 的 AzureSynapse Link 以取得網路安全性
+        - 監視 Synapse Link
+          [4426] 透過 Synapse Studio 和 Azure 監視器，監視適用於 SQL Server 2022 的 AzureSynapse Link
+        - 疑難排解
+          - 已知限制及問題
+            [4439] 
+          - 針對初始快照集進行疑難解答
+            [4444] 疑難排解：SQL 初始快照集問題的AzureSynapse連結
+      - Dataverse
+        - 設定 Dataverse 的 Synapse Link
+          [4447] 使用 Azure Synapse Workspace 建立Azure Synapse Link for Dataverse
+        - 將數據匯出至 Azure Synapse
+          [4455] 匯出資料至 Azure Synapse Analytics (預覽版)
+  - 管線和數據流
+    - 快速入門
+      - 使用複製活動將數據載入 SQL 集區
+        [4459] 快速入門：使用複製活動將資料載入專用SQL 集區中
+      - 使用對應資料流程來轉換資料
+        [4469] 快速入門：使用對應資料流轉換資料
+      - 使用 Apache Spark 作業定義轉換數據
+        [4484] 快速入門：使用 Apache Spark 工作定義轉換資料
+    - 概念
+      - 管線和活動
+        [4492] Azure Data Factory 和 Azure SynapseAnalytics 中的管線及活動
+      - 連結服務
+        [4510] Azure Data Factory 和 Azure SynapseAnalytics 中的連結服務
+      - 資料集
+        [4515] Azure Data Factory 和 Azure SynapseAnalytics 中的資料集
+      - 執行和觸發程式
+        [4522] Azure Data Factory或 Azure SynapseAnalytics 中的管線執行和觸發程序
+      - 整合執行階段
+        [4538] Azure Data Factory 中的整合執行階段
+      - Azure Data Factory 的差異
+        [4547] Azure Synapse Analytics 與 Azure DataFactory 中的數據整合
+      - 資料流程
+        - 數據流概觀
+          [4548] Azure Synapse Analytics 中的資料流程
+        - 偵錯模式
+          [4554] 對應數據流偵錯模式
+        - 結構描述漂移
+          [4561] 對應資料流中的結構描述漂移
+        - 資料行模式
+          [4565] 在對應資料流程中使用資料行模式
+        - 資料流程監視
+          [4570] 監視資料流
+        - 資料流程效能
+          - 概觀
+            [4576] 對應資料流的效能和調整指南
+          - 將來源最佳化
+            [4581] 將來源最佳化
+          - 將接收最佳化
+            [4584] 將接收最佳化
+          - 將轉換最佳化
+            [4588] 將轉換最佳化
+          - 在管線中使用資料流程
+            [4592] 在管線中使用資料流程
+          - 記憶體最佳化計算
+        - 整合執行階段效能
+          [4594] 優化 Azure Integration Runtime 的效能
+        - 管理圖表
+          [4597] 管理對應資料流圖表
+        - 運算式產生器
+          [4603] 在對應資料流中組建運算式
+        - 運算式語言
+          [4613] 對應資料流中的運算式函數
+    - 操作指南
+      - 作者
+        - 以視覺化方式撰寫的資料處理站
+          [4620] Azure Data Factory 中的視覺化撰寫
+        - 反覆式開發法與偵錯
+          [4626] 使用 Azure Data Factory 和 SynapseAnalytics 管線的反覆式開發法和偵錯
+      - 連接器
+        - 連接器概觀
+          [4633] Azure Data Factory 和 Azure SynapseAnalytics 連接器概觀
+        - Amazon Marketplace Web Service
+          [4640] 使用 Azure Data Factory 或 SynapseAnalytics 複製 Amazon MarketplaceWeb Service 中的資料
+        - 適用於 Oracle 的 Amazon RDS
+          [4648] 使用 Azure Data Factory 或 AzureSynapse Analytics 從 Amazon RDS forOracle 複製資料
+        - 適用於 SQL Server 的 Amazon RDS
+          [4662] 使用 Azure Data Factory 或 AzureSynapse Analytics，從 Amazon RDS forSQL Server 中複製資料
+        - Amazon Redshift
+          [4680] 使用 Azure Data Factory 或 SynapseAnalytics 從 Amazon Redshift 複製資料
+        - Amazon S3
+          [4691] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Amazon SimpleStorage Service 中複製和轉換資料
+        - Amazon S3 相容儲存體
+          [4712] 使用 Azure Data Factory 或 SynapseAnalytics 從 Amazon S3 相容儲存體複製資料
+        - AppFigures
+          [4725] 使用 Azure Data Factory 或 SynapseAnalytics 來轉換 AppFigures (預覽版) 中的資料
+        - Asana
+          [4731] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Asana (預覽版) 中的資料
+        - Avro 格式
+          [4737] Azure Data Factory 和 Synapse Analytics中的 Avro 格式
+        - Azure Blob 儲存體
+          [4742] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Azure Blob 儲存體中複製和轉換資料
+        - Azure AI 搜尋服務
+          [4779] 使用 Azure Data Factory 或 SynapseAnalytics 將資料複製到 Azure AI 搜尋服務索引
+        - 適用於 NoSQL 的 Azure Cosmos DB
+          [4788] 使用 Azure Data Factory 複製和轉換Azure Cosmos DB for NoSQL 中的資料
+        - Azure Cosmos DB for MongoDB
+          [4807] 
+        - Azure 資料總管
+          [4816] 使用 Azure Data Factory 或 SynapseAnalytics 將資料複製到 Azure 資料總管或從該處複製資料
+        - Azure Data Lake Storage Gen1
+          [4831] 使用 Azure Data Factory 或 AzureSynapse Analytics，將資料複製到 AzureData Lake Storage Gen1 以及從中複製資料
+        - Azure Data Lake Storage Gen2
+          [4860] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Azure Data LakeStorage Gen2 中複製和轉換資料
+        - 適用於 MariaDB 的 Azure 資料庫
+          [4896] 使用 Azure Data Factory 或 SynapseAnalytics 從適用於 MariaDB 的 Azure 資料庫複製資料
+        - 適用於 MySQL 的 Azure 資料庫
+          [4904] 使用 Azure Data Factory 或 SynapseAnalytics 在適用於 MySQL 的 Azure 資料庫中複製和轉換資料
+        - 適用於 PostgreSQL 的 Azure 資料庫
+          [4919] 使用 Azure Data Factory 或 SynapseAnalytics 在適用於 PostgreSQL 的 Azure資料庫中複製和轉換資料
+        - Azure Databricks Delta Lake
+          [4935] 使用 Azure Data Factory 或 AzureSynapse Analytics，將資料複製到 AzureDatabricks Delta Lake 以及從中複製資料
+        - Azure 檔案儲存體
+          [4952] 使用 Azure Data Factory 從 Azure 檔案儲存體複製資料或將資料複製到其中
+        - Azure SQL Database
+          [4975] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Azure SQLDatabase 中複製和轉換資料
+        - Azure SQL 受控執行個體
+          [5012] 使用 Azure Data Factory 或 SynapseAnalytics 在 Azure SQL 受控執行個體中複製和轉換資料
+        - Azure Synapse Analytics
+          [5046] 使用 Azure Data Factory 或 Synapse 管線在 Azure Synapse Analytics 中複製和轉換數據
+        - Azure 表格儲存體
+          [5086] 使用 Azure Data Factory 或 SynapseAnalytics 將資料複製到 Azure 資料表儲存體或從該處複製資料
+        - 二進位格式
+          [5099] Azure Data Factory 和 Synapse Analytics中的二進位格式
+        - Cassandra
+          [5104] 使用 Azure Data Factory 或 SynapseAnalytics 複製 Cassandra 的資料
+        - Common Data Model 格式
+          [5115] Azure Data Factory 和 Synapse Analytics中的 Common Data Model 格式
+        - Concur
+          [5122] 使用 Azure Data Factory 或 SynapseAnalytics，從 Concur 複製資料 (預覽)
+        - Couchbase
+          [5131] 使用 Azure Data Factory 從 Couchbase複製資料 (預覽)
+        - data.world
+          [5139] 使用 Azure Data Factory 或 SynapseAnalytics 轉換 data.world (預覽) 中的資料
+        - Dataverse
+          [5145] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Dynamics 365(Microsoft Dataverse) 或 Dynamics CRM中複製和轉換資料
+        - DB2
+          [5168] 使用 Azure Data Factory 或 SynapseAnalytics 從 DB2 複製資料
+        - 分隔符號文字格式
+          [5179] 
+        - 深入探詢
+          [5185] 使用 Azure Data Factory 或 SynapseAnalytics 從 Drill 複製資料
+        - Dynamics 365
+          [5193] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Dynamics 365(Microsoft Dataverse) 或 Dynamics CRM中複製和轉換資料
+        - Dynamics AX
+          [5216] 使用 Azure Data Factory 或 SynapseAnalytics 從 Dynamics AX 複製資料
+        - Dynamics CRM
+          [5224] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Dynamics 365(Microsoft Dataverse) 或 Dynamics CRM中複製和轉換資料
+        - Excel 格式
+          [5247] Azure Data Factory 和 Azure SynapseAnalytics 中的 Excel 檔案格式
+        - 檔案系統
+          [5254] 使用 Azure Data Factory 或 AzureSynapse Analytics 針對檔案系統來回複製資料
+        - FTP
+          [5274] 使用 Azure Data Factory 或 SynapseAnalytics 從 FTP 伺服器複製資料
+        - GitHub
+          [5289] 使用 GitHub 讀取 Common Data Model實體參考
+        - Google AdWords
+          [5292] 
+        - Google BigQuery
+          [5301] 使用 Azure Data Factory 或 SynapseAnalytics 從 Google BigQuery 複製數據
+        - Google Cloud Storage
+          [5311] 使用 Azure Data Factory 或 SynapseAnalytics，從 Google Cloud Storage 複製資料
+        - Google Sheets
+          [5327] 使用 Azure Data Factory 或 SynapseAnalytics 來轉換 Google 試算表 (預覽)中的資料
+        - Greenplum
+          [5333] 使用 Azure Data Factory 或 SynapseAnalytics 從 Greenplum 複製資料
+        - hbase
+          [5341] 使用 Azure Data Factory 或 SynapseAnalytics 從 HBase 複製資料
+        - HDFS
+          [5350] 使用 Azure Data Factory 或 SynapseAnalytics 從 HDFS 伺服器複製資料
+        - Hive
+          [5372] 使用 Azure Data Factory 從 Hive 複製和轉換資料
+        - HTTP
+          [5383] 使用 Azure Data Factory 或 AzureSynapse Analytics 從 HTTP 端點複製資料
+        - HubSpot
+          [5397] 使用 Azure Data Factory 或 SynapseAnalytics 從 HubSpot 複製資料
+        - Impala
+          [5405] 使用 Azure Data Factory 或 SynapseAnalytics 複製 Impala 的資料
+        - Informix
+          [5413] 使用 Azure Data Factory 或 SynapseAnalytics，從 IBM Informix 複製資料或將資料複製到該處
+        - Jira
+          [5422] 使用 Azure Data Factory 或 SynapseAnalytics 從 Jira 複製資料
+        - JSON 格式
+          [5429] 
+        - Magento
+          [5438] 使用 Azure Data Factory 或 SynapseAnalytics，從 Magento 複製資料 (預覽)
+        - MariaDB
+          [5445] 使用 Azure Data Factory 或 SynapseAnalytics 從 MariaDB 複製數據
+        - Marketo
+          [5456] 使用 Azure Data Factory 或 SynapseAnalytics，從 Marketo 複製資料 (預覽版)
+        - Microsoft Access
+          [5463] 使用 Azure Data Factory 或 SynapseAnalytics 將數據從 Microsoft Access 複製至 Microsoft Access
+        - MongoDB
+          [5472] 使用 Azure Data Factory 或 SynapseAnalytics 從 MongoDB 複製資料或將資料複製到 MongoDB
+          - MongoDB (舊版)
+            [5482] 使用 Azure Data Factory 或 SynapseAnalytics 從 MongoDB 複製數據（舊版）
+        - MongoDB Atlas
+          [5492] 使用 Azure Data Factory 或 SynapseAnalytics 從 MongoDB Atlas 複製資料或將資料複製到 MongoDB
+        - MySQL
+          [5503] 使用 Azure Data Factory 或 SynapseAnalytics 從 MySQL 複製數據
+        - Netezza
+          [5516] 使用 Azure Data Factory 或 SynapseAnalytics 從 Netezza 複製資料
+        - OData
+          [5527] 使用 Azure Data Factory 或 SynapseAnalytics 複製 OData 來源中的資料
+        - ODBC
+          [5542] 使用 Azure Data Factory 或 SynapseAnalytics 從 ODBC 資料存放區複製資料或將資料複製到該處
+        - Office 365
+          [5552] 利用 Azure Data Factory 或 SynapseAnalytics，從 Microsoft 365 (Office 365)複製資料並轉換至 Azure
+        - Oracle
+          [5567] 使用 Azure Data Factory 或 AzureSynapse Analytics 將資料從 Oracle 複製至 Oracle
+        - Oracle 雲端儲存空間
+          [5584] 使用 Azure Data Factory 或 SynapseAnalytics 從 Oracle Cloud 儲存體複製資料
+        - Oracle Eloqua
+          [5596] 使用 Azure Data Factory 或 SynapseAnalytics 從 Oracle Eloqua 複製資料（預覽）
+        - Oracle Responsys
+          [5603] 使用 Azure Data Factory 或 SynapseAnalytics 從 Oracle Responsys 複製資料（預覽）
+        - Oracle Service Cloud
+          [5610] 使用 Azure Data Factory 或 SynapseAnalytics 從 Oracle 服務雲端複製資料（預覽）
+        - ORC 格式
+          [5617] Azure Data Factory 和 Synapse Analytics中的 ORC 格式
+        - Parquet 格式
+          [5624] Azure Data Factory 和 Azure SynapseAnalytics 中的 Parquet 格式
+        - PayPal
+          [5632] 使用 Azure Data Factory 或 SynapseAnalytics，從 PayPal 複製資料 (預覽版)
+        - Phoenix
+          [5639] 使用 Azure Data Factory 或 SynapseAnalytics 從 Phoenix 複製資料
+        - PostgreSQL
+          [5647] 使用 Azure Data Factory 或 SynapseAnalytics 從 PostgreSQL 複製數據
+        - Presto
+          [5660] 使用 Azure Data Factory 或 SynapseAnalytics 從 Presto 複製資料
+        - Quickbase
+          [5668] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Quickbase (預覽版) 中的資料
+        - QuickBooks Online
+          [5674] 使用 Azure Data Factory 或 SynapseAnalytics，複製 QuickBooks Online 的資料 (預覽版)
+        - REST
+          [5682] 使用 Azure Data Factory 從 REST 端點複製資料並轉換資料到 REST 端點
+        - Salesforce
+          [5713] 使用 Azure Data Factory 或 AzureSynapse Analytics 將數據從 Salesforce複製至 Salesforce
+        - Salesforce 服務雲端
+          [5728] 使用 Azure Data Factory 或 AzureSynapse Analytics 將數據從 SalesforceService Cloud 複製至
+        - Salesforce 行銷雲端
+          [5742] 使用 Azure Data Factory 或 SynapseAnalytics 從 Salesforce 行銷雲端複製資料
+        - SAP Business Warehouse Open Hub
+          [5751] 使用 Azure Data Factory 或 SynapseAnalytics，透過 Open Hub 從 SAPBusiness Warehouse 複製資料
+          - 載入 SAP BW 資料
+            [5761] 使用 Azure Data Factory 或 SynapseAnalytics 從 SAP Business Warehouse 複製資料
+        - SAP Business Warehouse MDX
+          [5780] 使用 Azure Data Factory 或 SynapseAnalytics 從 SAP Business Warehouse 複製資料
+        - SAP Cloud for Customer
+          [5789] 使用 Azure Data Factory 或 SynapseAnalytics，從 SAP Cloud for Customer(C4C) 來回複製資料
+        - SAP ECC
+          [5799] 使用 Azure Data Factory 或 SynapseAnalytics 從 SAP ECC 複製資料
+        - SAP HANA
+          [5810] 使用 Azure Data Factory 或 SynapseAnalytics 從 SAP HANA 複製資料
+        - SAP Table
+          [5824] 使用 Azure Data Factory 或 AzureSynapse Analytics 從 SAP 資料表複製資料
+        - ServiceNow
+          [5841] 使用 Azure Data Factory 或 SynapseAnalytics 從 ServiceNow 複製資料
+        - SFTP
+          [5849] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 SFTP 伺服器中複製和轉換資料
+        - SharePoint Online 清單
+          [5872] 使用 Azure Data Factory 或 AzureSynapse Analytics 從 SharePoint Online清單複製資料
+        - Shopify
+          [5884] 使用 Azure Data Factory 或 SynapseAnalytics，從 Shopify 複製資料 (預覽版)
+        - Smartsheet
+          [5891] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Smartsheet (預覽版) 中的資料
+        - Snowflake
+          [5897] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Snowflake 中複製和轉換資料
+        - Spark
+          [5919] 使用 Azure Data Factory 或 SynapseAnalytics 從 Spark 複製資料
+        - SQL Server
+          [5927] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 SQL Server 複製/貼上和轉換資料
+        - Square
+          [5960] 使用 Azure Data Factory 或 SynapseAnalytics，從 Square 複製資料 (預覽版)
+        - Sybase
+          [5968] 使用 Azure Data Factory 或 SynapseAnalytics 從 Sybase 複製資料
+        - TeamDesk
+          [5976] 使用 Azure Data Factory 或 SynapseAnalytics 轉換 TeamDesk (預覽版) 中的資料
+        - Teradata
+          [5983] 使用 Azure Data Factory 和 SynapseAnalytics 從 Teradata Vantage 複製資料
+        - Twilio
+          [5998] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Twilio (預覽版) 中的資料
+        - Vertica
+          [6004] 使用 Azure Data Factory 或 SynapseAnalytics 複製 Vertica 的資料
+        - Web 資料表
+          [6012] 使用 Azure Data Factory 或 SynapseAnalytics 從 Web 資料表複製資料
+        - Xero
+          [6023] 使用 Azure Data Factory 或 SynapseAnalytics 從 Xero 複製資料
+        - XML 格式
+          [6034] 
+        - Zendesk
+          [6038] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Zendesk (預覽版) 中的資料
+        - Zoho
+          [6045] 使用 Azure Data Factory 或 SynapseAnalytics 從 Zoho 複製資料 (預覽)
+      - 移動資料
+        - 使用複製活動來複製資料
+          [6054] Azure Data Factory 和 Azure SynapseAnalytics 中的複製活動
+        - 監視複製活動
+          [6069] 監視複製活動
+        - 使用刪除活動刪除檔案
+          [6076] Azure Data Factory 和 Azure SynapseAnalytics 中的 Delete 活動
+        - 複製資料工具
+          [6095] 在 Azure Data Factory 和 SynapseAnalytics 中複製資料工具
+        - 格式和壓縮支援
+          [6103] Azure Data Factory 和 Azure Synapse 管線中複製活動支援的檔案格式和壓縮轉碼器
+        - 複製活動效能
+          - 效能和延展性指南
+            [6105] 複製活動效能和可擴縮性指南
+          - 針對效能進行疑難排解
+            [6111] 對複製活動效能進行疑難排解
+          - 效能功能
+            [6121] 複製活動效能最佳化功能
+        - 保留中繼資料和 ACL
+          [6130] 在 Azure Data Factory 或 SynapseAnalytics 中使用複製活動來保留中繼資料和 ACL
+        - 結構描述和類型對應
+          [6135] 複製活動中的架構和數據類型對應
+        - 容錯
+          [6150] Azure Data Factory 和 Synapse Analytics管線中複製活動的容錯
+        - 資料一致性驗證
+          [6162] 複製活動中的資料一致性驗證
+        - 格式和壓縮支援 (舊版)
+          [6167] 
+      - 轉換資料
+        [6182] 在 Azure Data Factory 和 Azure SynapseAnalytics 中轉換資料
+        - 執行資料流程活動
+          [6187] Azure Data Factory 和 Azure SynapseAnalytics 中的資料流程活動
+        - Synapse 筆記本活動
+          [6197] 藉由執行 Synapse 筆記本來轉換資料
+        - Synapse SQL 集區預存程序活動
+          [6205] 在 Azure Synapse Analytics 中使用 SQL集區預存程序活動來轉換資料
+        - Azure 函式活動
+          [6207] Azure Data Factory 中的 Azure 函式活動
+        - 自訂活動
+          [6212] 在 Azure Data Factory 或 Azure SynapseAnalytics 管線中使用自訂活動
+        - Databricks Jar 活動
+          [6224] 在 Azure Databricks 中執行 Jar 活動來轉換資料
+        - Databricks Notebook 活動
+          [6229] 執行 Databricks Notebook 來轉換資料
+        - Databricks Python 活動
+          [6234] 在 Azure Databricks 中執行 Python 活動來轉換資料
+        - 資料總管命令活動
+          [6239] 使用 Azure Data Factory 命令活動來執行Azure Data Explorer 管理命令
+        - 資料湖 U-SQL 活動
+          [6253] 使用 Azure Data Factory 和 SynapseAnalytics 在 Azure Data Lake Analytics上執行 U-SQL 指令碼來處理資料
+        - HDInsight Hive 活動
+          [6260] 使用 Azure Data Factory 或 SynapseAnalytics 中的 Hadoop Hive 活動轉換資料
+        - HDInsight MapReduce 活動
+          [6264] 使用 Azure Data Factory 或 SynapseAnalytics 中的 Hadoop MapReduce 活動轉換資料
+        - HDInsight Pig 活動
+          [6269] 使用 Azure Data Factory 或 SynapseAnalytics 中的 Hadoop Pig 活動轉換資料
+        - HdInsight Spark 活動
+          [6272] 使用 Azure Data Factory 與 SynapseAnalytics 中的 Spark 活動轉換資料
+        - HDInsight 串流活動
+          [6277] 使用 Azure Data Factory 或 SynapseAnalytics 中的 Hadoop 資料流活動轉換資料
+        - 機器學習 執行管線活動
+          [6281] 在 Azure Data Factory 和 SynapseAnalytics 中執行 Azure MachineLearning 管線
+        - 機器學習 Studio （傳統） 批次執行活動
+          [6285] 使用 Machine Learning 工作室 (傳統) 搭配 Data Factory 或 Synapse Analytics 建立預測管線
+        - Machine Learning Studio (傳統) 更新資源活動
+          [6293] 使用更新資源活動更新 Machine Learning工作室 (傳統) 模型
+        - 預存程序活動
+          [6302] 使用 Azure Data Factory 或 SynapseAnalytics 中的 SQL Server 預存程序活動轉換資料
+        - 指令碼活動
+          [6306] 使用 Azure Data Factory 或 SynapseAnalytics 中的指令碼活動來轉換資料
+        - 計算已連結的服務
+          [6313] Azure Data Factory 和 Synapse Analytics管線支援的計算環境
+      - 控制流程
+        - 附加變數活動
+          [6336] Azure Data Factory 和 Synapse Analytics中的附加變數活動
+        - 執行管線活動
+          [6338] 在 Azure Data Factory 和 SynapseAnalytics 中執行管線活動
+        - 篩選活動
+          [6345] 篩選 Azure Data Factory 和 SynapseAnalytics 管線中的活動
+        - 針對每個活動
+          [6350] Azure Data Factory 和 Azure SynapseAnalytics 中的 ForEach 活動
+        - 取得中繼資料活動
+          [6365] 
+        - If 條件活動
+          [6373] 在 Azure Data Factory 和 SynapseAnalytics 管線中的 If 條件活動
+        - 查閱活動
+          [6381] Azure Data Factory 和 Azure SynapseAnalytics 中的查閱活動
+        - 設定變數活動
+          [6396] Azure Data Factory 和 Azure SynapseAnalytics 中的設定變數活動
+        - Until 活動
+          [6401] Azure Data Factory 和 Synapse Analytics中的 Until 活動
+        - 驗證活動
+          [6410] Azure Data Factory 和 Synapse Analytics管線中的驗證活動
+        - Wait 活動
+          [6413] 在 Azure Data Factory 和 SynapseAnalytics 中執行 Wait 活動
+        - 網路活動
+          [6417] Azure Data Factory 和 Azure SynapseAnalytics 中的 Web 活動
+        - Webhook 活動
+          [6426] Azure Data Factory 中的 Webhook 活動
+      - 資料流程轉換
+        - 轉換概觀
+          [6432] 對應資料流轉換概觀
+        - 彙總
+          [6434] 對應資料流程中的彙總轉換
+        - 更改資料列
+          [6439] 在對應資料流程中更改資料列轉換
+        - 條件式分割
+          [6444] 對應資料流中的條件式分割轉換
+        - 衍生資料行
+          [6447] 對應資料流程中的衍生資料行轉換
+        - Exists
+          [6452] 對應資料流中的存在項目轉換
+        - 篩選器
+          [6457] 對應資料流中的篩選轉換
+        - 扁平化
+          [6459] 對應資料流程中的壓平合併轉換
+        - 聯結
+          [6466] 對應資料流程中的聯結轉換
+        - 查詢
+          [6474] 對應資料流程中的查閱轉換
+        - 新增分支
+          [6479] 在對應資料流程中建立新的分支
+        - 樞紐
+          [6481] 對應資料流中的樞紐轉換
+        - 順位
+          [6486] 對應資料流中的順位轉換
+        - 選取
+          [6489] 對應資料流中的選取轉換
+        - 接收
+          [6495] 對應資料流中的接收轉換
+        - Sort
+          [6506] 對應資料流中的排序轉換
+        - 來源
+          [6509] 對應數據流中的來源轉換
+        - Surrogate 金鑰
+          [6517] 對應資料流中的代理鍵轉換
+        - Union
+          [6521] 對應資料流中的聯集轉換
+        - 取消樞紐
+          [6525] 對應資料流中的取消樞紐轉換
+        - Window
+          [6529] 對應資料流中的視窗轉換
+      - 參數化
+        - 將已連結的服務參數化
+          [6533] 在 Azure Data Factory 和 Azure SynapseAnalytics 中將連結服務參數化
+        - 運算式語言
+          [6537] Azure Data Factory 和 Azure SynapseAnalytics 中的運算式和函式
+        - 系統變數
+          [6626] Azure Data Factory 和 Azure SynapseAnalytics 支援的系統變數
+        - 數據流參數
+          [6630] 將已對應的資料流參數化
+      - 管理和監視
+        - 管線執行
+          [6637] 使用 Synapse Studio 來監視您的工作區管線執行
+        - 從管線傳送電子郵件
+          [6640] 使用 Azure Data Factory 或 AzureSynapse 管線傳送電子郵件
+        - 從管線傳送 Microsoft 小組通知
+          [6647] 從 Azure Data Factory 或 SynapseAnalytics 管線將通知傳送至 MicrosoftTeams 通道
+      - 建立整合執行階段
+        - Azure 整合執行階段
+          [6670] 如何建立和設定 Azure 整合執行階段
+        - 自我裝載整合執行階段
+          [6676] 
+      - 建立觸發程序
+        - 建立事件型觸發程式
+          [6703] 
+        - 建立排程觸發程序
+          [6711] 建立依排程執行管線的觸發程序
+        - 建立輪轉視窗觸發程序
+          [6737] 
+        - 建立輪轉視窗觸發程序相依性
+          [6745] 建立輪轉視窗觸發程序相依性
+      - 疑難排解指南
+        - 活動疑難解答
+          [6752] 針對 Azure Data Factory 和 Synapse 管線進行疑難排解
+        - 連線 or 疑難解答
+          - 總覽和一般複製活動錯誤
+            [6789] 
+          - Azure Blob 儲存體
+            [6796] 針對 Azure Data Factory 和 AzureSynapse 中的 Azure Blob 儲存體連接器進行疑難排解
+          - Azure Cosmos DB （包括 SQL API）
+            [6799] 在 Azure Data Factory 和 Azure SynapseAnalytics 中針對 Azure Cosmos DB 連接器進行疑難排解
+          - Azure 資料總管
+            [6803] 針對 Azure Data Factory 和 AzureSynapse 中的 Azure Data Explorer 連接器進行疑難排解
+          - Azure Data Lake (Gen1 和 Gen2)
+            [6805] 針對 Azure Data Factory 與 AzureSynapse 中的 Azure Data Lake Storage連接器進行疑難排解
+          - 適用於 PostgreSQL 的 Azure 資料庫
+            [6811] 
+          - Azure 檔案
+            [6813] 針對 Azure Data Factory 和 AzureSynapse 中的 Azure 檔案儲存體連接器進行疑難排解
+          - Azure Synapse Analytics、Azure SQL Database 和 SQL Server
+            [6814] 疑難排解 Azure Data Factory 和 AzureSynapse 中 SQL Server 連接器的 AzureSynapse Analytics、Azure SQLDatabase、SQL Server、Azure SQL 受控執行個體和 Amazon RDS 的問題
+          - Azure 資料表儲存體
+            [6826] 針對 Azure Data Factory 和 AzureSynapse 中的 Azure 資料表儲存體連接器進行疑難排解
+          - DB2
+            [6828] 為 Azure Data Factory 和 Azure Synapse中的 DB2 連接器疑難排解
+          - 分隔符號文字格式
+            [6829] 針對 Azure Data Factory 和 AzureSynapse 中的分隔符號文字格式連接器問題進行疑難排解
+          - Dynamics 365、Dataverse (常見資料服務) 和 Dynamics CRM
+            [6831] 針對 Dynamics 365、Dataverse(Common Data Service) 和 DynamicsCRM 連接器在 Azure Data Factory 和Azure Synapse 中的問題進行疑難排解
+          - FTP、SFTP 和 HTTP
+            [6838] 針對 Azure Data Factory 和 AzureSynapse 中的 FTP、SFTP 和 HTTP 連接器進行疑難排解
+          - Hive
+            [6845] 針對 Azure Data Factory 和 AzureSynapse 中的 Hive 連接器進行疑難排解
+          - Oracle
+            [6847] 針對 Azure Data Factory 和 AzureSynapse 中的 Oracle 連接器進行疑難解答
+          - ORC 格式
+            [6849] 排解 Azure Data Factory 和 AzureSynapse Analytics 中 ORC 格式連接器的疑難問題
+          - Parquet 格式
+            [6852] 對 Azure Data Factory 與 Azure SynapseAnalytics 中的 Parquet 格式連接器進行疑難排解
+          - REST
+            [6858] 針對 Azure Data Factory 和 AzureSynapse 中的 REST 連接器進行疑難排解
+          - SAP 資料表、SAP Business Warehouse Open Hub 和 SAP ODP
+            [6861] 針對 Azure Data Factory 和 AzureSynapse 中的 SAP Table、SAP BusinessWarehouse Open Hub 及 SAP ODP 連接器進行疑難排解
+          - SharePoint Online 清單
+            [6863] 針對 Azure Data Factory 和 AzureSynapse 中的 SharePoint Online 清單連接器進行疑難排解
+          - Snowflake
+            [6866] 為 Azure Data Factory 和 Azure Synapse中的 Snowflake 連接器疑難排解
+          - XML 格式
+            [6868] 疑難排解 Azure Data Factory 和 AzureSynapse 中 XML 格式連接器的問題
+        - 持續整合與部署
+          [6870] 針對 Azure Data Factory 和 SynapseAnalytics 的 CI-CD、Azure DevOps 和GitHub 問題進行疑難排解
+        - 安全性和存取控制
+          [6883] 針對 Azure Data Factory 和 SynapseAnalytics 的安全性與存取控制問題進行疑難排解
+        - 自我裝載整合運行時間疑難解答
+          [6894] 針對自我裝載整合執行階段進行疑難排解
+  - Machine Learning
+    - 概觀
+      - 什麼是 Azure Synapse 中的機器學習？
+        [6939] Azure Synapse Analytics 中的機器學習功能
+    - 快速入門
+      - 從資源庫使用範例筆記本
+        [6943] 快速入門：使用 Synapse Analytics 資源庫中的範例筆記本
+      - 使用零售 AI 解決方案
+        [6947] 產業 AI 解決方案
+      - 建立連結的服務
+        - Azure Machine Learning
+          [6949] 快速入門：在 Synapse 中建立新的 AzureMachine Learning 連結服務
+        - Azure AI 服務
+          [6955] 快速入門：設定在 Azure SynapseAnalytics 中使用 Azure AI 服務的必要條件
+    - 概念
+      - 將機器學習模型定型
+        [6964] 將機器學習模型定型
+      - 深度學習
+        [6967] 深度學習 (預覽)
+      - SynapseML 連結庫
+        [6970] 什麼是 SynapseML？
+    - 教學課程
+      - 數據存取和準備
+        - 使用 Apache Spark 將數據可視化
+          [6973] 使用 Apache Spark 分析資料
+        - 從 Azure ML 存取 ADLSg2
+          [6980] Tutorial: Accessing Azure Synapse ADLSGen2 Data in Azure Machine Learning
+      - 將模型定型
+        - 使用 Apache Spark MLlib
+          [6983] 教學課程：使用 Apache Spark MLlib 和Azure Synapse Analytics 來建置機器學習應用程式
+        - 使用自動化機器學習服務 （已淘汰）
+          - 無程式代碼 （已淘汰）
+            [6991] 教學課程：在沒有程式代碼的情況下定型機器學習模型（已淘汰）
+          - 在 Python 中 （已淘汰）
+            [7001] 教學課程：使用自動化機器學習在Python 中定型模型（已淘汰）
+        - 使用 Horovod 和 Petastorm
+          - 使用 Horovod 和 PyTorch 定型模型
+            [7013] 教學課程：使用 Horovod 估算器和PyTorch 的分散式定型 (預覽)
+          - 使用 Horovod 和 TensorFlow 定型模型
+            [7020] 教學課程：使用 Horovod 執行器和TensorFlow 的分散式定型 (預覽)
+          - 使用 Petastorm 寫入和載入數據
+            [7029] 使用 Petastorm 載入資料 (預覽)
+      - 為模型評分
+        - 使用專用 SQL 集區的評分精靈
+          [7036] 教學課程：專用 SQL 集區的機器學習模型評分精靈
+        - 使用在 AML 或 ADLS 中註冊的模型，在 Synapse Spark 中預測分數
+          [7046] 教學課程：在無伺服器 Apache Spark 集區中，使用 PREDICT 為機器學習模型評分
+        - 使用 Azure AI 服務
+          - 概觀
+            [7057] Azure Synapse Analytics 中的 Azure AI服務
+          - 設定環境
+            [7074] 為巨量資料設定 Azure AI 服務的環境
+          - 情感分析精靈
+            [7079] 教學課程：使用 Azure AI 服務的情感分析
+          - 異常偵測精靈
+            [7085] 教學課程：使用 Azure AI 服務的異常偵測
+          - 使用 Apache Spark 文字分析 （SynapseML）
+            [7090] 教學課程：使用 Azure AI 服務進行文字分析
+          - 使用 Apache Spark 電腦視覺 （SynapseML）
+            [7098] 教學課程：使用 Azure AI 服務的視覺
+          - 使用 Apache Spark 的文件智慧 （SynapseML）
+            [7107] 教學課程：搭配 Azure AI 服務使用文件智慧服務
+          - 使用 Apache Spark 翻譯工具 （SynapseML）
+            [7118] 教學課程：具有 Azure AI 服務的翻譯工具
+          - 使用 Apache Spark （SynapseML）
+            [7125] 教學課程：使用 Synapse MachineLearning 建置機器學習應用程式
+  - 資料目錄和管理
+    - 快速入門
+      - 連線 Microsoft Purview 帳戶
+        [7134] 快速入門：將 Synapse 工作區連線至Microsoft Purview 帳戶
+    - 操作指南
+      - 存取受保護的 Microsoft Purview 帳戶
+        [7138] 從 Azure Synapse Analytics 存取受保護的 Microsoft Purview 帳戶
+      - 使用 Microsoft Purview 探索、連線及探索 Synapse 中的數據
+        [7143] 使用 Microsoft Purview 探索、連線及瀏覽 Synapse 中的資料
+  - 操作方式
+    - 規劃和管理成本
+      [7145] 規劃和管理 Azure Synapse Analytics 的成本
+    - 使用 ACL 瀏覽 ADLS Gen2 資料夾
+      [7154] 在 Azure Synapse Analytics 工作區中瀏覽 ADLS Gen2 資料夾 (預覽)
+  - 指引
+    - Azure Synapse 成功設計
+      - 簡介
+        [7156] Success by Design
+      - Synapse 概念證明劇本
+        - 概觀
+          [7157] Azure Synapse 概念證明劇本
+        - 具有專用 SQL 集區的數據倉儲
+          [7159] Synapse POC 劇本：Azure SynapseAnalytics 中使用專用 SQL 集區的資料倉儲
+        - 使用無伺服器 SQL 集區進行數據湖探索
+          [7169] Synapse POC 劇本：在 Azure SynapseAnalytics 中使用無伺服器 SQL 集區進行資料湖探索
+        - 使用數據總管集區進行巨量數據分析
+          [7175] Synapse POC 劇本：Azure SynapseAnalytics 中使用數據總管集區進行巨量數據分析
+        - 使用 Apache Spark 集區進行巨量數據分析
+          [7186] Synapse POC 劇本：Azure SynapseAnalytics 中使用 Apache Spark 集區進行巨量資料分析
+      - Synapse 實作成功方法
+        - 概觀
+          [7194] 根據設計成功實作 Azure SynapseAnalytics
+        - 評估環境
+          [7198] Synapse 實作成功方法：評估環境
+        - 評估工作區設計
+          [7208] Synapse 實作成功方法：評估工作區設計
+        - 評估數據整合設計
+          [7212] Synapse 實作成功方法：評估資料整合設計
+        - 評估專用 SQL 集區設計
+          [7216] Synapse 實作成功方法：評估專用 SQL 集區設計
+        - 評估無伺服器 SQL 集區設計
+          [7218] Synapse 實作成功方法：評估無伺服器SQL 集區設計
+        - 評估 Spark 集區設計
+          [7221] Synapse 實作成功方法：評估 Spark 集區設計
+        - 評估項目計劃
+          [7224] Synapse 成功實作方法：評估專案計劃
+        - 評估解決方案開發環境設計
+          [7226] Synapse 實作成功方法：評估解決方案開發環境設計
+        - 評估小組技能集
+          [7228] Synapse 實作成功方法：評估小組技能集
+        - 執行作業整備檢閱
+          [7233] Synapse 實作成功方法：執行作業整備檢閱
+        - 執行使用者整備和上線計劃檢閱
+          [7236] Synapse 實作成功方法：執行使用者整備和上線計劃檢閱
+        - 執行監視檢閱
+          [7238] Synapse 實作成功方法：執行監視檢閱
+    - 移轉指南
+      - 所有移轉指南
+        [7240] Azure Synapse Analytics 移轉指南
+      - 遷移至專用 SQL 集區
+        [7243] 將資料倉儲遷移至 Azure SynapseAnalytics 中的專用 SQL 集區
+      - 從 Teradata
+        - 1 Teradata 移轉的設計效能
+          [7246] Teradata 移轉的設計和效能
+        - 2 ETL 和負載移轉考慮
+          [7259] Teradata 移轉的資料移轉、ETL 和負載
+        - 3 安全性存取作業
+          [7268] Teradata 移轉的安全性、存取和作業
+        - 4 視覺效果和報告
+          [7281] Teradata 移轉的視覺效果和報告
+        - 5 將 SQL 問題降至最低
+          [7294] 將 Teradata 移轉的 SQL 問題減到最少
+        - 6 Microsoft 和第三方工具
+          [7308] 適用於將 Teradata 資料倉儲移轉到 AzureSynapse Analytics 的工具
+        - 7 實作新式數據倉儲
+          [7313] 不僅進行 Teradata 移轉，也在 MicrosoftAzure 中實作新式資料倉儲
+      - 從 Netezza
+        - 1 Netezza 移轉的設計效能
+          [7330] Netezza 移轉的設計和效能
+        - 2 ETL 和負載移轉考慮
+          [7343] Netezza 移轉的資料移轉、ETL 和載入
+        - 3 安全性存取作業
+          [7354] Netezza 移轉的安全性、存取和作業
+        - 4 視覺效果和報告
+          [7367] Netezza 移轉的視覺效果和報表
+        - 5 將 SQL 問題降至最低
+          [7380] 將 Netezza 移轉的 SQL 問題降到最少
+        - 6 Microsoft 和第三方工具
+          [7390] 用於將 Netezza 資料倉儲移轉到 AzureSynapse Analytics 的工具
+        - 7 實作新式數據倉儲
+          [7395] 除了 Netezza 移轉之外，也會在Microsoft Azure 中實作新式資料倉儲
+      - 從 Oracle
+        - 1 Oracle 移轉的設計效能
+          [7412] Oracle 移轉的設計和效能
+        - 2 ETL 和負載移轉考慮
+          [7433] Oracle 移轉的資料移轉、ETL 和載入
+        - 3 安全性存取作業
+          [7447] Oracle 移轉的安全性、存取和作業
+        - 4 視覺效果和報告
+          [7463] Oracle 移轉的視覺效果和報表
+        - 5 將 SQL 問題降至最低
+          [7476] 將 Oracle 移轉的 SQL 問題發生率降到最低
+        - 6 Microsoft 和第三方工具
+          [7487] 適用於將 Oracle 資料倉儲移轉到 AzureSynapse Analytics 的工具
+        - 7 實作新式數據倉儲
+          [7493] 除了 Oracle 移轉之外，也會在 MicrosoftAzure 中實作新式資料倉儲
+    - 安全性技術白皮書
+      - 簡介
+        [7510] Azure Synapse Analytics 安全性技術白皮書：簡介
+      - 資料保護
+        [7514] Azure Synapse Analytics 安全性白皮書：數據保護
+      - 存取控制
+        [7517] Azure Synapse Analytics 安全性白皮書：存取控制
+      - 驗證
+        [7520] Azure Synapse Analytics 安全性技術白皮書：驗證
+      - 網路安全性
+        [7521] Azure Synapse Analytics 安全性白皮書：網路安全性
+      - 威脅保護
+        [7532] Azure Synapse Analytics 安全性技術白皮書：威脅偵測
+  - 參考
+    - Azure CLI
+      [7534] Azure 命令列介面 (CLI) 文件
+    - 資料庫定序類型
+      [7537] Azure Synapse Analytics 中 Synapse SQL的資料庫定序支援
+    - Go
+    - .NET
+      [7540] Microsoft.Azure.Management.SynapseNamespace
+    - Azure PowerShell
+      [7548] Az.Synapse
+    - REST API
+      [7561] Azure Synapse Analytics REST API
+    - Microsoft Spark 公用程式
+      [7562] Microsoft Spark 公用程序簡介
+    - Synapse 中的檔案掛接/卸除 API
+      [7579] Azure Synapse Analytics 中的檔案掛接/卸載 API 簡介
+    - 範例
+    - 系統檢視表
+      [7590] 
+    - Azure 原則內建
+      [7596] 
+    - T-SQL
+      - 完整參考
+        [7601] Transact-SQL 參考 (資料庫引擎)
+      - Synapse SQL T-SQL 語言元素
+        [7604] Azure Synapse Analytics 中專用 SQL 集區的 T-SQL 語言元素
+      - Synapse SQL T-SQL 語句
+        [7612] Azure Synapse Analytics 中專用 SQL 集區支援的 T-SQL 陳述式
+  - 資源
+    - Azure 藍圖
+    - Microsoft 問與答頁面
+    - 功能要求
+    - 定價
+    - 定價計算機
+    - 問題和解答
+    - 每月更新封存
+      [7616] Azure Synapse Analytics 封存的新功能
+    - 服務更新
+    - Stack Overflow
+    - 支援
+      [7642] 要求增加配額及取得 Azure SynapseAnalytics 的支援
+    - 合作夥伴
+      - 商務智慧
+        [7653] Azure Synapse Analytics 商業智能合作夥伴
+      - 資料整合
+        [7657] Azure Synapse Analytics 數據整合合作夥伴
+      - 資料管理
+        [7663] Azure Synapse Analytics 資料管理合作夥伴
+      - 機器學習服務和 AI
+        [7666] Azure Synapse Analytics 機器學習和 AI合作夥伴
+      - 系統整合
+        [7667] Azure Synapse Analytics 系統整合合作夥伴
+      - 第三方應用程式的相容性問題
+        [7669] 協力廠商應用程式與 Azure SynapseAnalytics 的相容性問題

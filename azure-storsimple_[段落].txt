@@ -1,0 +1,7 @@
+- ---< azure-storsimple.pdf >---
+  - StorSimple 文件
+    [1] StorSimple 文件
+  - StorSimple 8000 系列
+    - 概觀
+      - 解決方案為何？
+        [3] StorSimple 8000 系列：混合式雲端存放解決方案

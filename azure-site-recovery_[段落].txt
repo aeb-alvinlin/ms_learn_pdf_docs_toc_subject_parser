@@ -1,0 +1,562 @@
+- ---< azure-site-recovery.pdf >---
+  - Site Recovery 文件
+    [1] Azure Site Recovery 文件
+  - 概觀
+    - 關於 Site Recovery
+      [4] 關於 Site Recovery
+    - Site Recovery 最新功能
+      [7] Site Recovery 最新功能
+    - 「新增功能」的封存
+      [16] Site Recovery 最新功能的封存
+    - 站台復原 - 常見問題
+      [39] 一般
+  - 快速入門
+    - 在 Azure VM 上設定災害復原
+      [55] 快速入門：設定 Azure VM 到次要 Azure區域的災害復原
+    - 在內部部署 VMware VM 上設定災害復原
+      [58] 快速入門：為內部部署 VMware VM 設定以 Azure 為目標的災害復原 - 現代化
+    - 建立保存庫 - Bicep
+      [64] 快速入門：使用 Bicep 建立復原服務保存庫
+    - 建立保存庫 - ARM 範本
+      [67] 快速入門：使用ARM範本建立復原服務保存庫
+  - 教學課程
+    - Azure VM 至 Azure 災害復原
+      - 設定適用於 Azure VM 的災害復原
+        [73] 
+      - 使用共用磁碟設定災害復原
+        [85] 使用共享磁碟設定 Azure 虛擬機的災害復原 （預覽）
+      - 執行災害復原演練
+        [97] 教學課程：執行 Azure VM 的災害復原演練
+      - 執行容錯移轉並重新保護
+        [102] 教學課程：將 Azure VM 容錯移轉至次要區域
+      - 執行容錯回復
+        [108] 教學課程：將 Azure VM 容錯回復至主要區域
+    - VMware VM 至 Azure 災害復原
+      - 準備 Azure
+        [113] 準備 Azure 以進行內部部署災害復原至Azure
+      - 準備內部部署 VMware
+        [119] 
+      - 設定複寫
+        [123] 為內部部署 VMware VM 設定 Azure 的災害復原 - 現代化
+      - 執行災害復原演練
+        [133] 執行 Azure 的災害復原演練
+      - 執行 VMware VM 容錯移轉至 Azure
+        [136] 容錯移轉 VMware VM - 已現代化
+    - Hyper-V VM 至 Azure 災害復原
+      - 準備 Azure
+        [141] 準備 Azure 資源以進行 Hyper-V 災害復原
+      - 準備內部部署 Hyper-V
+        [149] 準備內部部署 Hyper-V 伺服器以進行至Azure 的災害復原
+      - 在 VMM 雲端中設定 Hyper-V VM 的複寫
+        [153] 將 VMM 雲端中 Hyper-V VM 的災害復原設定至 Azure
+      - 執行災害復原演練
+        [160] 執行 Azure 的災害復原演練
+      - 容錯移轉至 Azure
+        [163] 將 Hyper-V VM 容錯移轉至 Azure
+      - 透過私人端點啟用內部部署複寫
+        [166] 使用私人端點複寫內部部署電腦
+    - 設定 Hyper-V VM 的複寫
+      [181] 設定 Hyper-V VM 至 Azure 的災害復原
+    - Azure VMware 解決方案至 Azure 的災害復原
+      - 準備 Azure
+        [190] 準備 Azure Site Recovery 資源，以進行Azure VMware 解決方案 VM 的災害復原
+      - 準備 Azure VMware 解決方案
+        [196] 
+      - 設定複寫
+        [200] 針對 Azure VMware 解決方案 VM 設定Azure Site Recovery
+      - 執行災害復原演練
+        [209] 執行從 Azure VMware 解決方案到 Azure的災害復原鑽研
+      - 容錯移轉至 Azure
+        [212] 容錯移轉 Azure VMware 解決方案 VM
+      - 重新保護 VM
+        [215] 從 Azure 移至 Azure VMware 解決方案私人雲端來重新保護
+      - 從 Azure 容錯移轉
+        [218] 將 VM 容錯回復至 Azure VMware 解決方案私人雲端
+    - 移至現代化 VMware VM 災害復原
+      - 傳統到現代化 VMware 災害復原
+        [220] 從傳統移至現代化 VMware 災害復原
+      - 從傳統移至現代化 VMware 災害復原
+        [227] 如何從傳統移至現代化 VMware 災害復原
+    - 設定 Azure 公用多接取邊緣運算 (MEC) VM 的災害復原
+      - 使用復原服務保存庫進行災害復原
+        [231] 教學課程：使用保存庫流程為 Azure 公用MEC 上的 VM 設定災害復原
+      - 在建立 VM 時設定災害復原
+        [237] 教學課程：使用 VM Flow 為 Azure 公用MEC 設定災害復原
+    - 移動
+      - 將 Azure VM 移至另一個區域 (Resource Mover)
+        [241] 跨區域移動 Azure VM
+      - 將 Azure VM 移至可用性區域
+        [254] 將 Azure VM 移至可用性區域中
+      - 在 Government 和公用區域間移動 Azure VM
+        [260] 在 Azure Government 和公用區域之間移動 Azure VM
+      - 將保存庫移到不同的區域
+        [276] 將復原服務保存庫和 Azure Site Recovery組態移至另一個 Azure 區域
+    - 移轉至 Azure
+      - 準備 Azure 以進行內部部署複寫
+        [278] 準備 Azure 以進行內部部署災害復原至Azure
+      - 將內部部署機器移轉至 Azure
+        [284] 將內部部署機器移轉至 Azure
+      - 將內部部署 Windows Server 2008 伺服器遷移至 Azure
+        [286] 將執行 Windows Server 2008 的伺服器移轉到 Azure
+      - 將 AWS 執行個體移轉至 Azure
+        [294] 將 Amazon Web Services (AWS) VM 移轉至 Azure
+    - VMware VM 至 Azure 災害復原 (傳統)
+      - 準備 Azure
+        [295] 準備 Azure 以進行內部部署災害復原至Azure
+      - 準備內部部署 VMware
+        [301] 
+      - 執行災害復原演練
+        [305] 執行 Azure 的災害復原演練
+      - 執行 VMware VM 容錯移轉至 Azure
+        [308] 容錯移轉 VMware VM - 已現代化
+  - 概念
+    - 支援矩陣
+      - Azure 至 Azure
+        [313] Azure 區域之間的 Azure VM 災害復原支援矩陣
+      - VMware/實體至 Azure
+        [342] 從 VMware VM 和實體伺服器至 Azure 災害復原的支援矩陣
+      - Azure 至 Azure 共用磁碟
+        [375] Azure Site Recovery 共用磁碟的支援矩陣（預覽）
+      - 內部部署 Hyper-V VM 至 Azure
+        [377] 內部部署 Hyper-V VM 至 Azure 的災害復原支援矩陣
+      - Azure Site Recovery 複寫設備的支援需求
+        [387] 支援部署 Azure Site Recovery 複寫設備的矩陣 - 改良版
+      - 備份中心支援矩陣
+        [393] 備份中心支援的矩陣
+      - 使用 Site Recovery 搭配 Azure 備份
+        [400] 支援搭配 Azure 備份使用 Site Recovery
+    - 常見問題集 (FAQ)
+      - Azure 至 Azure 災害復原
+        [401] 常見問題：Azure 至 Azure 災害復原
+      - VMware 到 Azure 的複寫
+        [416] VMware 到 Azure 的複寫常見問題
+      - Hyper-V 至 Azure 災害復原
+        [429] 常見問題 - 從 Hyper-V 至 Azure 的災害復原
+      - 監視
+        [438] 有關 Site Recovery 監視的常見問題
+    - 關於 Azure VM 災害復原
+      - Azure 至 Azure 災害復原架構
+        [441] 
+      - Azure 信任啟動 VM
+        [450] Azure 信任啟動虛擬機的 Azure SiteRecovery 支援 （預覽）
+      - 設定多個 IP 位址的容錯移轉
+        [452] 使用 Azure Site Recovery 設定多個 IP 位址的容錯移轉
+      - Azure 虛擬機器災害復原加速的網路功能
+        [454] 加速網路與 Azure 虛擬機器災害復原
+      - 含 Azure 虛擬機器災害復原的 ExpressRoute
+        [458] 整合 ExpressRoute 與 Azure VM 的災害復原
+      - Azure VM 災害復原 - 高變換率支援
+        [466] Azure VM 災害復原 - 高流失支援
+      - 關於將 Azure VM 移至另一個區域
+        [472] 將 Azure VM 移至另一個 Azure 區域
+    - 關於 VMware VM 災害復原
+      - 淘汰傳統體驗
+        [478] 淘汰使用 Azure Site Recovery 保護VMware 及實體機器的傳統體驗
+      - 部署 Azure Site Recovery 複寫設備 (現代化)
+        [480] Deploy Azure Site Recovery 複寫設備 -改良版
+      - 容錯移轉和容錯回復 - 現代化
+        [494] 關於內部部署災害復原容錯移轉/容錯回復 - 現代化
+      - VMware 至 Azure 架構 - 現代化
+        [502] VMware 至 Azure 災害復原架構 - 現代化
+    - 關於 Hyper-V VM 災害復原
+      - Hyper-V 至 Azure 架構
+        [510] 
+      - 關於將不要複寫的磁碟排除
+        [518] 從災害復原排除磁碟
+    - 關於備份中心
+      - 備份中心概觀
+        [531] 關於 Azure 備份和 Azure Site Recovery的備份中心
+    - 關於實體伺服器災害復原
+      - 淘汰傳統體驗
+        [535] 淘汰使用 Azure Site Recovery 保護VMware 及實體機器的傳統體驗
+      - 實體伺服器至 Azure 架構 - 現代化
+        [537] 實體伺服器至 Azure 的災害復原結構 – 現代化
+    - 關於災害復原的網路功能
+      - 使用 Site Recovery 的 Azure 流量管理員
+        [544] Azure 流量管理員搭配 Azure SiteRecovery
+      - 使用 Site Recovery 的 ExpressRoute
+        [551] Azure ExpressRoute 搭配 Azure SiteRecovery
+      - 使用 Site Recovery 的網路安全性群組
+        [554] 網路安全性群組搭配 Azure Site Recovery
+      - 使用 Site Recovery 搭配公用 IP 位址
+        [557] 在容錯移轉之後設定公用 IP 位址
+    - 關於復原方案
+      [559] 關於復原方案
+    - 移轉
+      - 移轉至 Azure
+        [563] 遷移至 Azure
+      - 移轉至可用性區域
+        [565] 將 Azure 復原服務保存庫移轉至可用性區域支援
+    - 安全性
+      - 安全性基準
+        [567] 適用于 Site Recovery 的 Azure 安全性基準
+      - Transport Layer Security (傳輸層安全性)
+        [577] Azure Site Recovery 中的傳輸層安全性
+    - VMware 至 Azure 架構
+      - 傳統
+        [580] 
+    - 從 Azure 到 VMware 的容錯回復位置選項
+      [588] 災害復原至 Azure 後的 VMware VM 容錯回復
+    - VMware 災害復原的多租用戶支援
+      [590] 概述多租用戶如何支援使用 CSP 將VMware 災害復原至 Azure
+    - 關於站台復原的角色型存取控制
+      [599] 使用 Azure 角色型存取控制 (AzureRBAC) 管理 Site Recovery 存取權
+  - 操作指南
+    - Azure 至 Azure 災害復原
+      - 設定網路
+        - 準備 Azure VM 災害復原的網路功能
+          [602] 關於 Azure VM 災害復原的網路功能
+        - 自訂目標 Azure 虛擬機器的網路設定
+          [611] 自訂目標 Azure 虛擬機器的網路設定
+        - 設定網路對應，並在容錯移轉之後保留 IP 位址
+          [614] 為 VNet 設定網路對應和 IP 位址
+        - 在容錯移轉之後保留 IP 位址的範例
+          [619] 在容錯轉移期間保留 IP 位址
+        - 整合 ExpressRoute 與 Azure VM 災害復原
+          [626] 整合 ExpressRoute 與 Azure VM 的災害復原
+      - 設定災害復原
+        - 在 Azure VM 上
+          [634] 將 Azure VM 複寫至另一個 Azure 區域
+        - 針對全域災害復原
+          [643] 使用 Azure Site Recovery 啟用全球災害復原
+        - 使用 Azure 原則
+          [646] 使用 Azure 原則來設定 Azure SiteRecovery
+        - 針對鄰近放置群組
+          [653] 將在鄰近放置群組中執行的虛擬機器複寫至另一個區域
+        - 在加密的 VM 上
+          [665] 將已啟用 Azure 磁碟加密的虛擬機器複寫至另一個 Azure 區域
+        - 在已啟用 CMK 的磁碟上
+          [677] 使用已啟用客戶自控金鑰 (CMK) 的磁碟來複寫機器
+        - 針對 S2D VM
+          [686] 將執行儲存空間直接存取的 Azure 虛擬機器複寫到另一個區域
+        - 針對新增的磁碟
+          [692] 為新增至 Azure VM 的磁碟啟用複寫
+        - 排除磁碟
+          [694] 從 Azure Vm 的 PowerShell 複寫中排除磁片
+        - 移轉至 Azure 之後，設定 Azure VM 的災害復原
+          [698] 移轉至 Azure 之後，設定 Azure VM 的災害復原
+        - 透過私人端點啟用複寫
+          [701] 使用私人端點複製電腦
+      - 管理
+        - 更新 Azure VM 行動服務
+          [713] Azure 至 Azure 複寫中的自動更新行動服務
+        - 從執行身分帳戶移轉到受控識別
+          [729] 從執行身分帳戶移轉到受控識別
+        - 管理 Site Recovery 更新
+          [734] Azure Site Recovery 中的服務更新
+        - 移除伺服器並停用保護
+          [738] 移除伺服器並停用保護
+        - 刪除保存庫
+          [746] 刪除 Site Recovery 復原服務保存庫
+        - 在 VMM 伺服器上清除指令碼
+          [748] 在 VMM 伺服器上清除指令碼
+      - 區域對區域的災害復原
+        - 啟用地區內區域間的複寫
+          [766] 啟用可用性區域之間的 Azure VM 災害復原
+      - 在容錯移轉之後重新保護 Azure VM
+        [772] 重新保護已容錯移轉至主要區域的 Azure虛擬機器
+    - VMware 至 Azure 災害復原
+      - 淘汰傳統體驗
+        [778] 淘汰使用 Azure Site Recovery 保護VMware 及實體機器的傳統體驗
+      - 設定大規模災害復原
+        [780] 為 VMware VM/實體伺服器設定大規模的災害復原
+      - 設定網路
+        - 管理內部部署至 Azure 複寫的網路介面
+          [787] 管理內部部署至 Azure 災害復原的 VM 網路介面
+        - 設定容錯移轉的 IP 位址
+          [790] 從內部部署容錯移轉後連線至 Azure VM
+        - 切換複寫設備 (現代化)
+          [796] 切換 Azure Site Recovery 複寫設備
+      - 執行容量規劃
+        - 規劃容量
+          [801] 針對復原到 Azure 的 VMware 災害復原進行容量和規模調整規劃
+        - 擴增處理伺服器以供 VMware 進行複寫
+          [812] 擴增額外處理序伺服器
+        - 將 VMware 複寫至 Azure 的部署規劃工具
+          - 概觀和必要條件
+            [825] 關於 VMware 至 Azure 的 Azure SiteRecovery 部署規劃工具
+          - 部署規劃工具版本歷程記錄
+            [830] Azure Site Recovery 部署規劃工具版本歷程記錄
+          - 執行部署規劃工具
+            [835] 執行 VMware 災害復原的部署規劃工具
+          - 分析已產生的報告
+            [850] 分析部署規劃工具針對 VMWare 至 Azure的災害復原所做的報告
+          - 分析成本預估報告
+            [864] 在 VMware 部署規劃工具中檢閱成本估計
+      - 設定災害復原
+        - 設定來源環境
+          [871] 設定從 VMware 複寫到 Azure 的來源環境
+        - 部署組態伺服器
+          [874] 部署設定伺服器
+        - 設定目標環境
+          [887] 準備目標環境以進行從 VMware VM 或實體伺服器至 Azure 的災害復原
+        - 設定複寫設定
+          [890] 設定及管理 VMware 災害復原的複寫原則
+        - 透過私人端點啟用內部部署複寫
+          [893] 使用私人端點複寫內部部署電腦
+        - 啟用實體伺服器的複寫 - 現代化
+          [908] 啟用實體伺服器的複寫 – 現代化
+        - 啟用適用於 VMware VM 的複寫
+          [917] 讓 VMware VM 能夠複寫至 Azure
+        - 針對新增的磁碟
+          [928] 為新增至 VMware 虛擬機器的磁碟啟用複寫
+        - 從複寫排除磁碟
+          [930] 將磁碟排除於 VMware VM 到 Azure 的複寫外
+        - 逐步解說 - 使用多租用戶和適用於 VMware VM 的 CSP 來設定複寫
+          [932] 使用雲端解決方案提供者 (CSP) 方案在多租用戶環境中設定 VMware 災害復原
+        - 部署行動服務
+          - 關於適用於 VMware VM 和實體伺服器的行動服務
+            [938] 關於適用於 VMware VM 和實體伺服器的行動服務
+          - 準備推入安裝
+            [958] 準備來源電腦以進行行動代理程式的推送安裝
+          - 將行動服務部署自動化
+            [962] 自動化行動服務安裝
+      - 執行容錯移轉和容錯回復
+        - 設定復原計畫
+          [977] 建立並自訂復原方案
+        - 執行 Azure 的災害復原演練
+          [980] 執行以 Azure 為目標的測試容錯移轉 (災害復原訓練)
+        - 執行容錯移轉到 Azure
+          [985] 執行從內部部署容錯移轉至 Azure
+        - 準備重新保護/容錯回復
+          [991] 準備 VMware VM 的重新保護和容錯回復
+        - 從 Azure 移至內部部署來重新保護
+          [996] 從 Azure 移至內部部署來重新保護
+        - 從 Azure 容錯回復至內部部署
+          [999] 將 VMware VM 容錯回復至內部部署網站
+        - 在 Azure 中設定容錯回復處理序伺服器
+          [1001] 在 Azure 中設定容錯回復的處理序伺服器
+        - 將 Linux VM 設定為容錯回復的主要目標伺服器
+          [1005] 安裝 Linux 主要目標伺服器以便進行容錯回復
+      - 管理
+        - 管理行動代理程式
+          [1027] 管理行動代理程式
+        - 升級行動代理程式 (現代化)
+          [1031] 升級行動服務和設備元件 (現代化)
+        - 管理 VMware VM 的組態伺服器
+          [1042] 管理 VMware VM/實體伺服器災害復原的設定伺服器
+        - 管理處理序伺服器
+          [1056] 管理處理序伺服器
+        - 管理 vCenter 伺服器
+          [1064] 管理 VMware vCenter Server
+        - 管理 Site Recovery 更新
+          [1073] Azure Site Recovery 中的服務更新
+        - 移除伺服器並停用保護
+          [1077] 移除伺服器並停用保護
+        - 刪除保存庫
+          [1085] 刪除 Site Recovery 復原服務保存庫
+    - 實體至 Azure 災害復原
+      - 設定網路
+        - 管理內部部署至 Azure 複寫的網路介面
+          [1087] 管理內部部署至 Azure 災害復原的 VM 網路介面
+        - 設定容錯移轉的 IP 位址
+          [1090] 從內部部署容錯移轉後連線至 Azure VM
+      - 設定災害復原
+        - 設定來源環境
+          [1096] 為組態伺服器設定從實體伺服器至 Azure的災害復原
+        - 逐步解說 - 設定災害復原
+          [1110] 設定內部部署實體伺服器至 Azure 的災害復原
+        - 設定目標環境
+          [1129] 準備目標環境以進行從 VMware VM 或實體伺服器至 Azure 的災害復原
+        - 透過私人端點啟用內部部署複寫
+          [1132] 使用私人端點複寫內部部署電腦
+        - 部署行動服務
+          - 關於行動服務安裝
+            [1147] 關於適用於 VMware VM 和實體伺服器的行動服務
+          - 為行動服務的推入安裝做準備
+            [1167] 準備來源電腦以進行行動代理程式的推送安裝
+          - 使用 Configuration Manager 部署行動服務
+            [1171] 自動化行動服務安裝
+      - 設定大規模災害復原
+        [1186] 為 VMware VM/實體伺服器設定大規模的災害復原
+      - 執行容錯移轉和容錯回復
+        [1193] 將複寫的實體伺服器容錯移轉及容錯回復至 Azure
+      - 管理
+        - 管理行動服務
+          [1198] 管理行動代理程式
+        - 管理組態伺服器
+          [1202] 管理實體伺服器災害復原的組態伺服器
+        - 管理處理序伺服器
+          [1218] 管理處理序伺服器
+        - 管理 Site Recovery 更新
+          [1226] Azure Site Recovery 中的服務更新
+        - 移除伺服器並停用保護
+          [1230] 移除伺服器並停用保護
+        - 刪除保存庫
+          [1238] 刪除 Site Recovery 復原服務保存庫
+    - Hyper-V 至 Azure 災害復原
+      - 鄰近放置群組的站台復原
+        [1240] 將在鄰近放置群組中執行的虛擬機器複寫至另一個區域
+      - 設定網路
+        - 管理內部部署至 Azure 複寫的網路介面
+          [1252] 管理內部部署至 Azure 災害復原的 VM 網路介面
+        - 設定容錯移轉的 IP 位址
+          [1255] 從內部部署容錯移轉後連線至 Azure VM
+      - 設定災害復原
+        - 準備 Hyper-V VM 災害復原的網路對應功能
+          [1261] 準備「Hyper-V VM 災害復原至 Azure」的網路對應
+        - 從複寫排除磁碟
+          [1265] 從複寫排除磁碟
+      - 管理
+        - 取代 Site Recovery 資料加密
+          [1267] 淘汰 Site Recovery 資料加密功能
+        - 將透過 Site Recovery 設定的 Windows Servers 進行升級
+          [1268] 將 Windows Server 和 System CenterVMM 2012 R2 升級至 2016
+        - 管理 Site Recovery 更新
+          [1272] Azure Site Recovery 中的服務更新
+        - 移除伺服器並停用保護
+          [1276] 移除伺服器並停用保護
+        - 刪除保存庫
+          [1284] 刪除 Site Recovery 復原服務保存庫
+      - 執行容錯移轉和容錯回復
+        - 設定復原計畫
+          [1286] 建立並自訂復原方案
+        - 將 VMM 指令碼加入復原方案
+          [1289] 使用 PowerShell 和 Azure ResourceManager，針對 Hyper-V VM 設定 Azure的災害復原
+        - 執行 Azure 的災害復原演練
+          [1297] 執行以 Azure 為目標的測試容錯移轉 (災害復原訓練)
+        - 執行容錯移轉到 Azure
+          [1302] 執行從內部部署容錯移轉至 Azure
+        - 從 Azure 容錯回復至 Hyper-V
+          [1308] 執行 Hyper-V VM 的容錯回復
+      - 執行容量規劃
+        - 將 Hyper-V 複寫至 Azure 的部署規劃工具
+          - 概觀和必要條件
+            [1312] 關於 Hyper-V 至 Azure 災害復原的 AzureSite Recovery 部署規劃工具
+          - 部署規劃工具版本歷程記錄
+            [1318] Azure Site Recovery 部署規劃工具版本歷程記錄
+          - 執行部署規劃工具
+            [1323] 針對 Hyper-V 至 Azure 的災害復原執行Azure Site Recovery 部署規劃工具
+          - 分析已產生的報告
+            [1338] 分析 Azure Site Recovery 部署規劃工具報告
+          - 分析成本預估報告
+            [1357] Azure Site Recovery 部署規劃工具的成本估計報告
+    - Azure Stack VM 災害復原
+      - 逐步解說 - 設定適用於 Azure Stack VM 的災害復原
+        [1364] 
+    - 應用程式災害復原
+      - 關於內部部署應用程式的災害復原
+        [1384] 關於內部部署應用程式的災害復原
+      - Active Directory 和 DNS
+        [1390] 設定 Active Directory 和 DNS 的災害復原
+      - SQL Server
+        [1401] 設定 SQL Server 災害復原
+      - SharePoint
+        [1410] 使用 Azure Site Recovery 設定多層式SharePoint 應用程式的災害復原，以便進行災害復原
+      - Dynamics AX
+        [1422] 設定多層式 Dynamics AX 應用程式的災害復原
+      - RDS
+        [1433] 
+      - Exchange
+        [1440] 
+      - SAP
+        [1442] 設定多層式 SAP NetWeaver 應用程式部署的災害復原
+      - 檔案伺服器
+        [1450] 使用 Azure Site Recovery 保護檔案伺服器
+      - IIS 型 Web 應用程式
+        [1457] 設定多層式 IIS 型 Web 應用程式的災害復原
+      - Citrix XenApp 和 XenDesktop
+        [1465] 終止支援 Citrix 工作負載的災害復原
+      - 其他工作負載
+        [1466] 關於內部部署應用程式的災害復原
+    - 備份中心
+      - 取得深入解析
+        [1472] 使用備份中心取得深入解析
+      - 執行動作
+        [1474] 使用備份中心執行動作
+  - 自動化
+    - 使用 PowerShell 設定 Azure VM 災害復原
+      [1482] 使用 Azure PowerShell 來設定 Azure 虛擬機器的災害復原
+    - 在公用 MEC VM 上使用 PowerShell 設定災害復原
+      [1501] 將 Azure 公用 MEC 中執行的虛擬機器複寫至 Azure 區域
+    - 在公用 MEC VM 上使用 PowerShell 設定另一個公用 MEC 的災害復原
+      [1514] 將 Azure 公用 MEC 中執行的虛擬機器複寫至相同區域中的另一個 Azure 公用MEC
+    - 使用 PowerShell 設定 VMware VM 至 Azure 的災害復原
+      [1528] 
+    - 使用 PowerShell 設定 Hyper-V VM 至 Azure 的災害復原
+      [1537] 使用 PowerShell 和 Azure ResourceManager，針對 Hyper-V VM 設定 Azure的災害復原
+    - 將自動化 Runbook 新增至復原方案
+      [1545] 將 Azure 自動化 Runbook 新增至復原方案
+    - ARM 範本
+      [1556] 適用於 Azure Site Recovery 的 AzureResource Manager 範本
+    - 取代參數 - New-AzRecoveryServicesAsrVMNicConfig cmdlet
+      [1557] 淘汰 Cmdlet New-AzRecoveryServicesAsrVMNicConfig 的IP 設定參數
+  - 監視
+    - 監視器
+      [1560] 監視 Azure Site Recovery
+    - 使用復原服務儀錶板
+      [1567] 監視 Site Recovery
+    - 使用 Azure 監視器記錄
+      [1584] 透過 Azure 監視器記錄監視 SiteRecovery
+    - 監視虛擬機上的變換模式
+      [1597] 監視虛擬機器上的變換模式
+    - 監視處理序伺服器
+      [1601] 監視處理序伺服器
+    - 監視資料參考
+      [1606] 
+    - 使用備份中心進行監視
+      [1610] 使用備份中心監視和操作備份以及災害復原
+  - 報表
+    - 設定 Site Recovery 報告
+      [1617] （預覽）設定 Azure Site Recovery 報告
+    - 記錄分析
+      [1622] 適用於 Azure Site Recovery 的 LogAnalytics 數據模型
+  - 疑難排解
+    - Azure VM 疑難排解
+      - Azure VM 複寫錯誤
+        [1630] 對 Azure 至 Azure VM 的複寫錯誤進行疑難排解
+      - Azure VM 連線問題
+        [1650] 
+      - Azure VM 災害復原複寫錯誤
+        [1655] 針對 Azure VM 嚴重損壞修復中的複寫進行疑難排解
+      - Azure VM 擴充功能問題
+        [1662] 對 Azure VM 延伸模組的問題進行疑難排解
+    - VMware VM/實體伺服器疑難排解
+      - VMware VM/實體伺服器複寫錯誤
+        [1666] 針對 VMware VM 和實體伺服器的複寫問題進行疑難排解
+      - 組態伺服器錯誤
+        [1674] 針對設定伺服器問題進行疑難排解
+      - 處理序伺服器錯誤
+        [1682] 
+      - 行動服務 - 推送安裝錯誤
+        [1693] 針對行動服務推送安裝進行疑難排解
+      - 容錯移轉到 Azure 錯誤
+        [1707] 針對將 VMware VM 或實體機器容錯移轉至 Azure 時的錯誤進行疑難排解
+      - VMware VM 的重新保護和容錯回復錯誤
+        [1715] 針對從 Azure 至內部部署環境的容錯回復進行疑難排解
+      - Azure Site Recovery 提供者升級失敗
+        [1718] 對 Microsoft Azure Site RecoveryProvider 升級失敗進行疑難排解
+      - VMware vCenter 探索失敗
+        [1721] 對 vCenter Server 探索進行疑難排解失敗
+    - Hyper-V 疑難排解
+      - Hyper-V 複寫錯誤
+        [1723] 對 Hyper-V 至 Azure 的複寫和容錯移轉進行疑難排解
+      - 將 VMware VM/實體機器容錯移轉至 Azure 錯誤
+        [1730] 針對將 VMware VM 或實體機器容錯移轉至 Azure 時的錯誤進行疑難排解
+  - 參考
+    - Azure PowerShell
+      [1738] Az.RecoveryServices
+    - AzureRM PowerShell
+      [1746] AzureRM.RecoveryServices
+    - Resource Manager 範本
+      [1750] 
+    - REST
+      [1786] Site Recovery REST API
+    - Azure 架構完善的架構 \(部分機器翻譯\)
+  - 相關
+    - Azure 備份
+      [1787] Azure 備份服務文件
+    - Azure Automation
+      [1791] Azure 自動化文件
+    - Azure Resource Mover
+      [1793] Azure Resource Mover 文件
+    - Azure Migrate
+      [1794] Azure Migrate 文件
+  - 資源
+    - Azure 藍圖
+    - 部落格
+    - Microsoft 問與答頁面
+    - 學習路徑
+    - 定價
+    - 定價計算機
+    - 服務更新

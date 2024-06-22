@@ -1,0 +1,323 @@
+- ---< azure-service-bus-messaging.pdf >---
+  - 服務匯流排傳訊文件
+    [1] Azure 服務匯流排傳訊文件
+  - 概觀
+    - 什麼是服務匯流排傳訊？
+      [5] 什麼是 Azure 服務匯流排？
+    - 搭配使用服務匯流排與 Java 訊息服務 (JMS) 2.0
+      [12] 搭配使用 JAVA 訊息服務 2.0 API 與Azure 服務匯流排進階
+    - 比較訊息服務
+      [18] 選擇 Azure 訊息服務 - 事件方格、事件中樞和服務匯流排
+  - 快速入門
+    - 服務匯流排佇列
+      - 建立服務匯流排佇列
+        - Azure 入口網站
+          [22] 使用 Azure 入口網站 建立 服務匯流排 命名空間和佇列
+        - Azure PowerShell
+          [27] 使用 Azure PowerShell 建立 服務匯流排命名空間和佇列
+        - Azure CLI
+          [31] 使用 Azure CLI 建立 服務匯流排 命名空間和佇列
+        - Bicep
+          [34] 快速入門：使用 Bicep 檔案建立服務匯流排命名空間和佇列
+        - ARM 範本
+          [38] 快速入門：使用ARM範本建立 服務匯流排 命名空間和佇列
+      - 傳送和接收訊息
+        - .NET
+          [43] 快速入門：從 Azure 服務匯流排 佇列傳送和接收訊息 （.NET）
+        - Go
+          [64] 在 Azure 服務匯流排佇列 (Go) 中傳送和接收訊息
+        - Java
+          - Java
+            [74] 將訊息傳送至 Azure 服務匯流排 佇列並從中接收訊息 （Java）
+          - Spring
+            [90] 在 Spring 中使用 JMS 存取 Azure 服務匯流排
+        - JavaScript
+          [96] 將訊息傳送至 Azure 服務匯流排 佇列並從中接收訊息 （JavaScript）
+        - Python
+          [109] 將訊息傳送至 Azure 服務匯流排 佇列並接收訊息 （Python）
+    - 服務匯流排主題和訂用帳戶
+      - 建立主題和訂用帳戶
+        - Azure 入口網站
+          [122] 使用 Azure 入口網站 來建立主題的 服務匯流排 主題和訂用帳戶
+        - Azure CLI
+          [130] 使用 Azure CLI 建立主題 服務匯流排 主題和訂用帳戶
+        - ARM 範本
+          [134] 快速入門：使用 Azure ResourceManager 範本建立服務匯流排命名空間與主題和訂閱
+      - 發佈和訂閱訊息
+        - .NET
+          [138] 開始使用 Azure 服務匯流排 主題和訂用帳戶 （.NET）
+        - Java
+          - Java
+            [161] 將訊息傳送至 Azure 服務匯流排 主題，並從訂用帳戶接收主題的訊息（Java）
+          - Spring
+            [179] 在 Spring 中使用 JMS 存取 Azure 服務匯流排
+        - JavaScript
+          [185] 將訊息傳送至 Azure 服務匯流排 主題，並從訂用帳戶接收主題的訊息（JavaScript）
+        - Python
+          [201] 將訊息傳送至 Azure 服務匯流排 主題，並從訂用帳戶接收主題的訊息（Python）
+  - 教學課程
+    - 更新清查
+      [217] 教學課程：使用 Azure 入口網站 和主題/訂用帳戶更新清查
+    - 透過事件方格處理服務匯流排事件
+      - Azure Logic 應用程式
+        [236] 教學課程：使用 Azure Logic Apps，回應透過 Azure 事件方格接收到的 Azure 服務匯流排事件
+      - Azure Functions
+        [254] 教學課程：使用 Azure Functions 來回應透過 Azure 事件方格所收到的 Azure 服務匯流排事件
+    - 使用 NServiceBus 建立訊息導向的商務應用程式
+      [266] 使用 NServiceBus 和 Azure 服務匯流排建置訊息驅動的商務應用程式
+  - 範例
+    - 服務匯流排範例
+      [279] 服務匯流排傳樣本或範例
+  - 概念
+    - 佇列、主題和訂用帳戶
+      [282] 服務匯流排佇列、主題和訂用帳戶
+    - 進階傳訊
+      [287] 服務匯流排 進階傳訊層
+    - Azure 佇列和服務匯流排佇列的比較
+      [295] 儲存體佇列和服務匯流排佇列 - 異同比較
+    - 進階功能
+      - 進階功能概觀
+        [306] Azure 服務匯流排 - 進階功能
+      - 訊息工作階段
+        [309] 訊息工作階段
+      - 重複訊息偵測
+        [314] 重複資料偵測
+      - 主題篩選和動作
+        [317] 主題篩選和動作
+      - 訊息瀏覽
+        [322] 流覽或查看訊息
+      - 訊息傳輸、鎖定和安置
+        [326] 訊息傳輸、鎖定和安置
+      - 無效信件佇列
+        [332] 服務匯流排寄不出的信件佇列的概觀
+      - 訊息延遲
+        [336] 訊息延遲
+      - 預先擷取訊息
+        [338] 預先擷取 Azure 服務匯流排訊息
+      - 建立實體與自動轉寄的鏈結
+        [341] 使用自動轉寄鏈結服務匯流排實體
+      - 交易處理
+        [344] 服務匯流排交易處理概觀
+      - 最佳化效能
+        [347] 使用服務匯流排傳訊的效能改進最佳作法
+      - 異地災害復原和異地複寫
+        [358] Azure 服務匯流排地理災害復原
+      - 非同步傳訊模式與高可用性
+        [370] 非同步傳訊模式和高可用性
+      - 處理中斷與災害
+        [373] 將應用程式與服務匯流排中斷和災難隔絕的最佳做法
+      - 節流
+        [377] Azure 服務匯流排上的節流作業
+      - 強制執行最低必要 TLS 版本
+        [381] 對服務匯流排命名空間的要求強制執行最低必要版本的傳輸層安全性 (TLS)
+    - 同盟
+      - 訊息複寫和跨區域同盟
+        [384] 訊息複寫和跨區域同盟
+      - 訊息複寫工作和應用程式
+        [393] 訊息複寫工作和應用程式
+      - 訊息複寫工作模式
+        [398] 訊息複寫工作模式
+      - 設定複寫工作
+        [403] 設定複寫工作
+      - 在服務匯流排實體之間複寫事件
+      - 將訊息複寫至事件中樞
+      - 從事件中樞取得訊息
+    - 安全性
+      - 安全性基準
+        [409] 服務匯流排的 Azure 安全性基準
+      - 驗證和授權
+        [421] 服務匯流排驗證與授權
+        - 使用共用存取簽章進行驗證
+          [423] 使用共用存取簽章 服務匯流排 訪問控制
+        - 使用 Microsoft Entra ID
+          - 使用 Azure 資源的受控識別進行驗證
+            [435] 使用 Microsoft Entra ID 來驗證受控識別，以存取 Azure 服務匯流排資源
+          - 從應用程式進行驗證
+            [439] 使用 Microsoft Entra ID 驗證和授權應用程式，以存取 Azure 服務匯流排實體
+      - Azure 原則的安全性控制
+        [446] Azure 服務匯流排 傳訊的 Azure 原則 法規合規性控制
+      - 網路安全性
+        [456] Azure 服務匯流排的網路安全性
+    - 與其他服務整合
+      - Azure 服務匯流排與 Event Grid 的整合
+        [460] Azure 服務匯流排與 Event Grid 的整合概觀
+  - 操作指南
+    - 開發
+      - 設定訂用帳戶篩選和動作
+        [467] 設定訂閱篩選 (Azure 服務匯流排)
+      - 訊息處理
+        - Java 訊息服務 (JMS) 2.0 實體
+          [477] Java 訊息服務 (JMS) 2.0 實體
+        - JAVA 訊息服務 (JMS) 開發人員指南
+          [483] Azure 服務匯流排 JMS 2.0 開發人員指南
+        - 訊息、承載和序列化
+          [491] 訊息、承載和序列化
+        - 訊息排序和時間戳記
+          [496] 訊息排序和時間戳記
+        - 訊息到期 (存留時間)
+          [499] Azure 服務匯流排 - 訊息到期 (存留時間)
+      - 從標準遷移到進階命名空間
+        [504] 將現有的 Azure 服務匯流排標準命名空間遷移至進階層
+      - 分割的佇列和主題
+        [517] 分割的佇列和主題
+      - AMQP
+        - AMQP 概觀
+          [522] 
+        - .NET
+          [527] 使用舊版 WindowsAzure.ServiceBus.NET Framework 程式庫搭配 AMQP 1.0
+        - Java 訊息服務 (JMS) 和 AMQP
+          [531] 搭配使用 Java 訊息服務 1.1 與 Azure 服務匯流排標準和 AMQP 1.0
+        - AMQP 通訊協定指南
+          [541] Azure 服務匯流排和事件中樞的 AMQP1.0 通訊協定指南
+        - AMQP 以要求與回應為基礎的作業
+          [562] Microsoft Azure 服務匯流排中的 AMQP1.0：要求/回應架構作業
+        - AMQP 錯誤
+          [584] Azure 服務匯流排中的 AMQP 錯誤
+      - 建置多層式服務匯流排應用程式
+        [586] 使用 Azure 服務匯流排佇列的 .NET 多層式應用程式
+    - 移轉
+      - 從 ActiveMQ 遷移至 Azure 服務匯流排
+        [608] 將現有的 Java 訊息服務 (JMS) 2.0 應用程式從 Apache ActiveMQ 移轉至 Azure 服務匯流排
+      - 從 Azure Service Manager (傳統) API 遷移至 Resource Manager API
+        [617] 
+      - 移轉至無密碼連線
+        [621] 移轉應用程式以搭配 Azure 服務匯流排使用無密碼連線
+    - 監視器
+      - 端對端追蹤和診斷
+        [629] 
+      - 監測 Azure 服務匯流排
+        [636] 監視 Azure 服務匯流排
+      - Azure 監視器 - 服務匯流排深入解析
+        [642] Azure 監視器 - 服務匯流排深入解析
+    - 整合
+      - 與 RabbitMQ 整合
+        [651] 如何整合服務匯流排與 RabbitMQ
+    - 管理
+      - 啟用佇列或訂用帳戶的會話
+        [660] 啟用 Azure 服務匯流排佇列或訂閱的訊息工作階段
+      - 啟用佇列或主題的重複偵測
+        [668] 針對 Azure 服務匯流排佇列或主題啟用重複訊息偵測
+      - 啟用分割區 (基本 / 標準)
+        [677] 在 Azure 服務匯流排基本或標準中啟用資料分割
+      - 在進階層中啟用佇列或主題的分割區
+        [684] 為 Azure 服務匯流排進階命名空間啟用資料分割
+      - 啟用佇列或訂用帳戶的自動轉送
+        [688] 啟用 Azure 服務匯流排佇列和訂用帳戶的自動轉送
+      - 啟用佇列或訂用帳戶的無效信件
+        [699] 針對 Azure 服務匯流排佇列和訂閱啟用訊息到期的無效信件處理
+      - 取得訊息計數器
+        [709] 取得訊息計數器
+      - 跨區域移動
+        [713] 將 Azure 服務匯流排命名空間移至另一個區域
+      - 自動更新傳訊單位
+        [722] 自動更新 Azure 服務匯流排命名空間的傳訊單位
+      - 使用 Azure PowerShell 佈建實體
+        [741] 使用 PowerShell 來管理服務匯流排資源
+      - 服務匯流排管理程式庫
+        [746] 
+      - 暫停及重新啟用訊息實體
+        [749] 暫止及重新啟動傳訊實體 (停用)
+      - 使用 Service Bus Explorer
+        [753] 使用 Service Bus Explorer 來執行服務匯流排上的資料作業
+      - 準備計劃性維護
+        [768] Azure 服務匯流排的 Azure 維護事件指引
+      - 使用 ARM 範本
+        [769] 使用 Azure Resource Manager 範本建立服務匯流排資源
+        - 建立命名空間
+          [776] 使用 Azure Resource Manager 範本來建立服務匯流排命名空間
+        - 建立命名空間和佇列的授權規則
+          [780] 使用 Azure Resource Manager 範本建立命名空間和佇列的服務匯流排授權規則
+        - 建立命名空間與主題、訂用帳戶和規則
+          [785] 使用 Azure Resource Manager 範本建立服務匯流排命名空間與主題、訂用帳戶和規則
+    - 安全
+      - 允許從特定 IP 位址的存取
+        [790] 允許從特定 IP 位址或範圍存取 Azure 服務匯流排命名空間
+      - 允許從特定虛擬網路的存取
+        [800] 允許從特定虛擬網路存取 Azure 服務匯流排命名空間
+      - 允許透過私人端點的存取
+        [814] 允許透過私人端點來存取 Azure 服務匯流排命名空間
+      - 使用客戶管理的金鑰加密資料
+        [830] 設定客戶自控金鑰來加密 Azure 服務匯流排待用資料
+      - 停用本機或 SAS 驗證
+        [851] 使用 Azure 服務匯流排停用本機或共用存取金鑰驗證
+      - 設定最低必要 TLS 版本
+        [854] 設定服務匯流排命名空間的最低 TLS 版本
+      - 稽核最低必要 TLS 版本
+        [859] 使用 Azure 原則來稽核 Azure 服務匯流排命名空間的最低 TLS 版本合規性
+      - 設定用戶端的 TLS 版本
+        [863] 針對服務匯流排用戶端應用程式設定傳輸層安全性 (TLS)
+    - 疑難排解
+      - 疑難排解指南
+        [865] Azure 服務匯流排的疑難排解指南
+      - SDK 疑難排解指南
+      - 資源管理員例外狀況
+        [877] 
+      - 服務匯流排例外狀況
+        [880] 服務匯流排傳訊例外狀況 (.NET)
+      - 服務匯流排例外狀況 (已被取代)
+        [888] 服務匯流排傳訊例外狀況 (已被取代)
+  - 參考
+    - 監視資料參考
+      [900] 監視 Azure 服務匯流排 數據參考
+    - .NET
+      - 從 Microsoft.Azure.ServiceBus 遷移至 Azure.Messaging.ServiceBus
+      - 從 WindowsAzure.ServiceBus 遷移至 Azure.Messaging.ServiceBus
+      - Azure.Messaging.ServiceBus (.NET Standard - 最新)
+        [915] Azure.Messaging.ServiceBusNamespace
+      - Microsoft.Azure.ServiceBus (.NET Standard - 舊版)
+        [919] Microsoft.Azure.ServiceBus Namespace
+      - Microsoft.ServiceBus.Messaging (.NET Framework - 舊版)
+        [923] Microsoft.ServiceBus.MessagingNamespace
+    - Java
+      - 從 azure-servicebus 遷移至 azure-messaging-servicebus
+      - azure-messaging-servicebus (最新)
+        [931] com.azure.messaging.servicebus
+      - azure-servicebus (舊版)
+        [939] com.microsoft.azure.servicebus
+    - Spring
+      - Spring JMS 支援
+        [942] Spring Cloud Azure 開發人員指南
+      - Spring Integration 與 Azure 服務匯流排
+        [947] Spring Cloud Azure 開發人員指南
+      - 適用於 Azure 服務匯流排的 Spring Cloud Stream Binder
+        [952] Spring Cloud Azure 開發人員指南
+    - Python
+      - azure-servicebus 第 7 版
+        [957] 適用於 Python 的服務匯流排程式庫
+      - 從 azure-servicebus 0.50 版遷移至第 7 版
+    - JavaScript
+      - azure/service-bus 第 7 版
+        [967] 適用於 JavaScript 的 Azure 服務匯流排模組
+      - 從第 1 版遷移至第 7 版
+    - Go
+    - PHP
+    - Ruby
+    - Azure CLI
+      [969] az servicebus
+    - Azure PowerShell
+      [977] Az.ServiceBus
+    - REST
+      [981] Azure 服務匯流排 REST API
+    - Resource Manager 範本
+      [982] Microsoft.ServiceBus 資源類型
+    - 配額
+      [985] 服務匯流排配額
+    - 訂用帳戶規則 SQL 篩選語法
+      [989] 訂用帳戶規則 SQL 篩選語法
+    - 訂用帳戶規則 SQL 動作語法
+      [996] 訂用帳戶規則 SQL 動作語法
+    - Azure 原則內建
+      [1003] 
+  - 資源
+    - 常見問題集
+      [1006] 
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure 藍圖
+    - 部落格
+    - Microsoft 問與答頁面
+    - 定價
+    - 定價計算機
+    - 服務匯流排總管
+    - 服務更新
+    - Stack Overflow
+    - 影片

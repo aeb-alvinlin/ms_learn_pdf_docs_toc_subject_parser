@@ -1,0 +1,122 @@
+- ---< azure-open-datasets.pdf >---
+  - Azure 開放資料集文件
+    [1] Azure 開放資料集文件
+  - 概觀
+    - 什麼是 Azure 開放資料集？
+      [2] 什麼是 Azure 開放資料集，以及如何使用它們？
+  - 教學課程
+    - 使用自動化機器學習進行迴歸
+      [5] 
+    - 擴充影像分類模型
+      [13] 快速入門：開始使用 Azure MachineLearning
+  - 作法指南
+    - Azure Machine Learning 中的資料集
+      [26] 從 Azure 開放數據集建立 Azure 機器學習數據集
+  - 資料集目錄
+    - 資料集目錄
+      [31] Azure 開放資料集
+    - Transportation
+      - Tartanair AirSim
+        [34] TartanAir：AirSim 模擬資料集，用於同時進行當地語系化和對應 (SLAM)
+      - NYC 計程車 - 黃色
+        [44] 
+      - NYC 計程車 - 綠色
+        [47] 
+      - NYC 計程車 - 出租車輛
+        [51] 
+    - 健康情況與基因體學
+      - COVID-19 資料湖
+        - COVID-19 資料湖
+          [55] COVID-19 Data Lake
+        - Bing COVID-19-19 資料
+          [57] 
+        - COVID-19 追蹤專案
+          [61] 
+        - ECDC COVID-19 案例
+          [65] 
+        - 牛津 COVID-19 政府回應追蹤器
+          [69] 
+      - COVID-19 公開研究
+        [74] COVID-19 開放研究資料集
+      - 基因體學資料湖
+        - 基因體學資料湖
+          [84] 基因體學資料湖
+        - Illumina Platinum Genomes
+          [86] Illumina Platinum Genomes
+        - 人類參考基因體
+          [92] 人類參考基因體
+        - ClinVar 註釋
+          [96] ClinVar 註釋
+        - SnpEff
+          [100] SnpEff：Genomic Variant 註釋和功能效果預測工具箱
+        - gnomAD
+          [102] 基因組彙總資料庫 (gnomAD)
+        - 千人基因組
+          [104] 千人基因組
+        - OpenCravat
+          [106] OpenCravat：開啟 Variants 工具組的自定義排名分析
+        - 編碼
+          [108] 編碼：DNA 元素的百科全書
+        - GATK 資源搭售方案
+          [110] GATK 資源套件組合
+        - TCGA 開放式資料
+          [113] TCGA Open Data
+        - 移動流覽UK-Biobank
+          [115] 潘 UK-Biobank：英國生物銀行的泛祖遺傳分析
+    - 人力和經濟效益
+      - US Labor Force Statistics (美國勞動力統計資料)
+        [117] 
+      - US National Employment Hours and Earnings (美國全國的工時與工資)
+        [121] 
+      - US State Employment Hours and Earnings (美國各州的工時與工資)
+        [125] 
+      - US Local Area Unemployment Statistics (美國各地區域的失業統計資料)
+        [128] 
+      - US Consumer Price Index (美國消費者物價指數)
+        [131] 
+      - US Producer Price Index - Industry (美國生產者物價指數 - 產業)
+        [134] 
+      - US Producer Price Index - Commodities (美國生產物價指數 - 商品)
+        [138] 
+    - 人口和安全性
+      - 美國人口數 (依郡排列)
+        [142] 美國人口數 (依郡排列)
+      - 美國人口數 (依郵遞區號排列)
+        [146] 依郵遞區號編列的美國人口
+      - 波士頓安全資料
+        [150] 
+      - 芝加哥安全資料
+        [154] 
+      - 紐約市安全資料
+        [158] 
+      - 舊金山安全資料
+        [162] 
+      - 西雅圖安全資料
+        [166] 
+    - 一般資料集
+      - 糖尿病
+        [170] 糖尿病資料集
+      - OJ 銷售模擬資料
+        [173] OJ 銷售模擬
+      - MNIST
+        [178] 手寫數位的 MNIST 資料庫
+      - Microsoft 新聞建議資料集
+        [184] Microsoft 新聞 建議
+      - 國定假日
+        [192] 公共假日
+      - 俄文開啟語音轉換文字
+        [197] 俄文開放語音轉換文字
+  - 範例
+    [212] 顯示如何運用開放資料集擴充資料的Jupyter Notebook 範例
+  - 參考
+    - Python SDK
+      [214] opendatasets 套件
+    - Jupyter Notebook
+  - 資源
+    - Azure 開放資料集目錄
+    - Microsoft Research 開放資料
+    - Azure 藍圖
+    - 定價
+    - 區域可用性
+    - Microsoft 問答集
+    - Stack Overflow

@@ -1,0 +1,455 @@
+- ---< azure-virtual-desktop.pdf >---
+  - Azure 虛擬桌面
+    [1] Azure 虛擬桌面文件
+  - 概觀
+    - 什麼是 Azure 虛擬桌面？
+      [4] 什麼是 Azure 虛擬桌面？
+    - 詞彙
+      [6] Azure 虛擬桌面術語
+    - 服務架構和復原能力
+      [10] Azure 虛擬桌面服務架構和復原能力
+    - 了解和估計成本
+      [18] 了解和估計 Azure 虛擬桌面的成本
+    - 授權
+      [22] 授權 Azure 虛擬桌面
+    - 必要條件
+      [26] Azure 虛擬桌面的必要條件
+    - 新功能
+      - Azure 虛擬桌面
+        [35] Azure 虛擬桌面有哪些新功能？
+      - Azure 虛擬桌面代理程式
+        [76] Azure 虛擬桌面代理程式的新功能？
+      - Azure 虛擬桌面深入解析
+        [87] Azure 虛擬桌面深入解析的新功能為何？
+      - FSLogix
+        [96] FSLogix 版本資訊
+      - WebRTC 重新導向器服務
+        [103] 遠端桌面 WebRTC 重新導向器服務的新功能
+      - 多媒體重新導向
+        [106] 多媒體重新導向的新功能為何？
+      - MSIXMGR 工具
+        [108] MSIXMGR 工具的新功能
+      - 遠端桌面用戶端
+        - Windows
+          [109] Windows 遠端桌面用戶端的新功能
+        - macOS
+          [137] 適用於 macOS 的遠端桌面用戶端的新功能
+        - iOS/iPadOS
+          [160] iOS 和 iPadOS 遠端桌面用戶端的新功能
+        - Android/Chrome OS
+          [174] Android 和 Chrome OS 遠端桌面用戶端的新功能
+      - 文件
+        [179] Azure 虛擬桌面檔的新功能
+  - 教學課程
+    - 部署範例 Windows 11 桌面
+      [185] 教學課程：使用 Windows 11 桌面部署範例 Azure 虛擬桌面基礎結構
+  - 概念
+    - 部署
+      - 工作階段主機
+        - 已加入 Microsoft Entra 的會話主機
+          [192] Azure 虛擬桌面中加入 Microsoft Entra的會話主機
+        - 虛擬機器大小指導方針
+          [196] 工作階段主機虛擬機器大小調整指導方針
+        - 自訂映像範本
+          [200] Azure 虛擬桌面中的自定義映像範本
+        - Windows 企業版多重工作階段常見問題集
+          [202] 什麼是 Windows 企業版多重工作階段？
+在 Windows 企業版多重工作階段上，有多少個使用者可以同時擁有互動式工作階段？
+為什麼我的應用程式將 Windows 企業版多重工作階段回報為伺服器作業系統？面行
+        - Fair Share 技術
+          [207] 遠端桌面服務預設會啟用 Fair Share 技術
+      - 網路連線
+        - 了解網路連線能力
+          [209] 了解 Azure 虛擬桌面網路連線能力
+        - RDP Shortpath
+          [212] Azure 虛擬桌面的 RDP Shortpath
+        - Azure Private Link
+          [219] Azure Private Link 與 Azure 虛擬桌面
+        - 必要的 FQDN 和端點
+          [224] Azure 虛擬桌面的必要 FQDN 和端點
+        - 帶寬考慮
+          [229] 遠端桌面通訊協定 (RDP) 頻寬需求
+        - Proxy 支援指導方針
+          [234] Azure 虛擬桌面的 Proxy 伺服器指導方針
+        - 實作服務品質
+          [239] 實作 Azure 虛擬桌面的服務品質 (QoS)
+      - 身分識別和存取管理
+        - 身分識別和驗證
+          [243] 支援的身分識別與驗證方法
+        - Azure RBAC 角色
+          [248] 
+        - 委派存取
+          [257] Azure 虛擬桌面中的委派存取權
+        - 建議 用於內部和外部商業用途
+          [259] 建議 用於針對內部或外部商業用途部署Azure 虛擬桌面
+      - Azure 虛擬桌面代理程式
+        [261] 開始使用 Azure 虛擬桌面代理程式
+      - 主機集區負載平衡方法
+        [264] Azure 虛擬桌面中的主機集區負載平衡演算法
+      - FSLogix 配置檔容器
+        - FSLogix 配置檔容器和 Azure 檔案儲存體
+          [266] FSLogix 設定檔容器和 Azure 檔案
+        - FSLogix 設定檔容器的 儲存體 選項
+          [270] 儲存體 Azure 虛擬桌面中 FSLogix 設定檔容器的選項
+      - 應用程式
+        - 應用程式附加
+          [274] Azure 虛擬桌面中的 MSIX 應用程式連結和應用程式連結
+        - Microsoft Teams 支援的功能
+          [281] Azure 虛擬桌面上的 Microsoft Teams 支援的功能
+      - 資料位置
+        [285] Azure 虛擬桌面的資料位置
+      - Azure 虛擬桌面常見問題集
+        [288] 我需要管理物件的最低管理員權限為何？
+我可以跨多個 Microsoft Entra 租用戶部署 Azure 虛擬桌面嗎？
+      - 在 Azure Stack HCI 上部署
+        [295] 使用 Azure Stack HCI 的 Azure 虛擬桌面
+      - 範例架構案例
+        - 適用於企業的 Azure 虛擬桌面
+          [298] 
+        - 多個身分識別來源
+          - AD DS 和 Microsoft Entra ID
+            [308] 
+          - Microsoft Entra ID、AD DS 和 Microsoft Entra Domain Services
+            [313] 
+    - 管理
+      - 災害復原概念
+        [317] Azure 虛擬桌面災害復原概念
+      - 工作階段主機
+        - 會話主機管理
+          [324] 使用 Microsoft Intune 管理工作階段主機
+        - 會話主機狀態和健康情況檢查
+          [325] Azure 虛擬桌面中工作階段主機的狀態和健康情況檢查
+        - 調整會話主機
+          - Autoscale
+            - 自動調整的運作方式
+              [328] Azure 虛擬桌面中的自動調整規模調整方案和範例案例
+            - 自動調整詞彙
+              [344] Azure 虛擬桌面的自動調整詞彙
+            - 自動調整常見問題集
+              [348] 一般問題
+          - Azure 自動化 和 Azure Logic Apps
+            - 縮放工具的運作方式
+              [353] 使用適用於 Azure 虛擬桌面的 Azure 自動化 和 Azure Logic Apps 調整會話主機
+      - 安全性
+        - 安全性建議
+          [356] Azure 虛擬桌面中的安全性建議
+        - 套用 零信任 原則
+          [367] 將 零信任 原則套用至 Azure 虛擬桌面部署
+        - 安全性基準
+          [376] Azure 虛擬桌面的 Azure 安全性基準
+      - 標記資源
+        [394] 標記 Azure 虛擬桌面資源以管理成本
+    - 連線
+      - Windows 應用程式
+        - 什麼是 Windows 應用程式？
+          [398] 什麼是 Windows 應用程式？
+        - 比較 Windows 應用程式功能
+          [400] 比較跨平臺和裝置的 Windows 應用程式功能
+      - 遠端桌面用戶端
+        - 用戶端概觀
+          [412] 適用於 Azure 虛擬桌面的遠端桌面用戶端
+        - 比較跨平台的遠端桌面用戶端
+          [414] 比較連線到 Azure 虛擬桌面時遠端桌面用戶端的功能
+        - 支援的 RDP 屬性
+          [419] 
+        - 統一資源標識碼配置
+          [429] 使用適用於 Azure 虛擬桌面的遠端桌面用戶端的統一資源識別碼配置
+      - 多媒體重新導向
+        [432] 瞭解 Azure 虛擬桌面的多媒體重新導向
+      - 使用通用列印進行列印
+        [436] 使用通用列印在 Azure 虛擬桌面上列印
+    - 監視器
+      - Azure 虛擬桌面深入解析
+        - 評估 Azure 監視器成本 (部分機器翻譯)
+          [439] 預估 Azure 虛擬桌面監視成本
+        - 詞彙
+          [447] Azure 虛擬桌面深入解析詞彙
+      - 分析用戶連線品質
+        [457] 分析 Azure 虛擬桌面中的連線品質
+  - 操作指南
+    - 部署
+      - 部署 Azure 虛擬桌面
+        [461] 部署 Azure 虛擬桌面
+      - 快速入門
+        [476] 使用快速入門建立範例基礎結構
+      - 工作階段主機
+        - 將工作階段主機新增至主機集區
+          [484] 將工作階段主機新增至主機集區
+        - 啟用 GPU 加速
+          [494] 設定 Azure 虛擬桌面的 GPU 加速
+        - 自訂會話主機映像
+          - 使用自定義映像範本建立自定義映像
+            [499] 使用自定義映像範本在 Azure 虛擬桌面中建立自定義映像
+          - 在 Azure 中設定黃金映像
+            [506] 在 Azure 中建立黃金映射
+          - 準備和自定義 VHD 映像
+            [509] 準備和自訂 Azure 虛擬桌面的 VHD 映射
+          - 在主要 VHD 映像上安裝 Office
+            [518] 在自定義 VHD 映像上安裝 Office
+        - 新增語言
+          - Windows 10 多會話映射
+            [523] 將語言套件新增至 Windows 10 多會話映像
+          - Windows 11 企業版 影像
+            [531] 將語言新增至 Windows 11 企業版 映像
+      - 應用程式
+        - 使用 RemoteApp 發佈應用程式
+          [538] 在 Azure 虛擬桌面中使用 RemoteApp 發佈應用程式
+        - 應用程式附加
+          - 建立 MSIX 映像
+            [544] 在 Azure 虛擬桌面中建立要與應用程式連結搭配使用的 MSIX 映像
+          - 新增和管理應用程式附加應用程式
+            [547] 在 Azure 虛擬桌面中新增和管理 MSIX 應用程式連結和應用程式連結應用程式
+          - 測試 MSIX 套件
+            [555] 測試應用程式附加的 MSIX 套件
+          - 從 MSIX 應用程式附加移轉至應用程式連結
+            [563] Migrate MSIX packages from MSIX appattach to app attach
+          - MSIXMGR 工具參數
+            [569] MSIXMGR 工具參數
+        - 特定應用程式
+          - 使用 Microsoft Teams
+            [576] 在 Azure 虛擬桌面上使用 MicrosoftTeams
+          - 搭配 RemoteApp 使用 OneDrive
+            [582] 在 Azure 虛擬桌面中搭配 RemoteApp 使用 Microsoft OneDrive (預覽)
+          - 設定 Windows 沙箱
+            [585] 在 Azure 虛擬桌面中使用 RemoteApp 發佈應用程式
+      - 身分識別和存取管理
+        - 強制執行 Microsoft Entra 多重要素驗證
+          [591] 使用條件式存取強制執行 Azure 虛擬桌面的 Microsoft Entra 多重要素驗證
+        - 使用 Microsoft Entra ID 設定單一登錄
+          [598] 使用 Microsoft Entra ID 驗證設定 Azure虛擬桌面的單一登入
+        - 使用AD FS 設定單一登入
+          [606] 使用AD FS設定 Azure 虛擬桌面的單一登入
+        - 將 RBAC 角色指派給服務主體
+          [620] 將 RBAC 角色指派給 Azure 虛擬桌面服務主體
+        - 設定 KDC Proxy
+          [623] 設定 Kerberos 金鑰發佈中心 Proxy
+      - 網路連線
+        - 檢查必要 FQDN 和端點的存取權
+          [625] 檢查 Azure 虛擬桌面所需 FQDN 和端點的存取權
+        - 設定 RDP Shortpath
+          [630] 設定 Azure 虛擬桌面的 RDP Shortpath
+        - 限制 RDP Shortpath 埠範圍
+          [639] 使用公用網路的 RDP Shortpath 時限制連接埠範圍
+        - 設定 Azure Private Link
+          [642] 使用 Azure 虛擬桌面設定 Private Link
+        - 使用 Azure 防火牆保護 Azure 虛擬桌面
+          [654] 使用 Azure 防火牆來保護 Azure 虛擬桌面部署
+      - FSLogix 配置檔容器
+        - 使用以 VM 為基礎的檔案共用
+          [657] 使用檔案共用建立主機集區的配置檔容器
+        - 使用 Azure NetApp Files
+          [659] 使用 Azure NetApp Files 建立配置檔容器
+        - 使用 Azure 檔案儲存體和 Active Directory
+          [667] 使用 Azure 檔案儲存體 和 ActiveDirectory 網域服務 或 Microsoft EntraDomain Services 設定 FSLogix 配置檔容器
+        - 使用 Azure 檔案儲存體 和 Microsoft Entra 識別碼
+      - 從傳統移轉
+        - 自動移轉
+          [675] 自動從 Azure 虛擬桌面移轉 （傳統版）
+        - 手動遷移
+          [683] 從 Azure 虛擬桌面手動移轉 （傳統）
+    - 管理
+      - 使用 Azure CLI 和 Azure PowerShell
+        [686] 以 Azure 虛擬桌面使用 Azure CLI 和Azure PowerShell
+      - 在區域之間移動資源
+        [689] 在區域之間移動 Azure 虛擬桌面資源
+      - 在每個使用者存取定價中註冊
+        [692] 註冊 Azure 虛擬桌面的每個使用者存取定價
+      - 主機集區
+        - 自定義 RDP 屬性
+          [694] 自訂主機集區的遠端桌面通訊協定 (RDP)屬性
+        - 設定負載平衡方法
+          [699] 設定 Azure 虛擬桌面負載平衡方法
+        - 設定個人桌面指派
+          [702] 設定個人桌面指派
+        - 設定驗證環境
+          [708] 將主機集區設定為驗證環境
+        - 排程代理程式更新
+          [710] Azure 虛擬桌面主機集區的排程代理程式更新
+        - 刪除主機集區
+          [714] 刪除主機集區
+      - 工作階段主機
+        - 管理員 istrative 範本
+          [716] 使用 Azure 虛擬桌面的系統管理範本
+        - 使用 Azure 虛擬桌面授權
+          [718] 將 Windows 授權套用至工作階段主機虛擬機器
+        - 調整會話主機
+          - Autoscale
+            - 建立和指派調整計劃
+              [721] 建立及指派 Azure 虛擬桌面的自動調整調整方案
+            - 監視自動調整作業
+              [731] 使用 Azure 虛擬桌面中的深入解析監視自動調整作業
+          - Azure 自動化 和 Azure Logic Apps
+            - 使用 Runbook 和邏輯應用程式進行調整
+              [739] 使用適用於 Azure 虛擬桌面的 Azure 自動化 和 Azure Logic Apps 來設定調整工具
+        - 清空會話主機
+          [749] 清空工作階段主機以在 Azure 虛擬桌面中進行維護
+        - 使用 Intune 管理
+          - 管理單一會話主機
+            [751] 使用 Azure 虛擬桌面搭配 Intune
+          - 管理多會話主機
+            [754] Windows 10 或 Windows 11 企業版 多重會話遠端桌面
+        - 使用 Configuration Manager 部署更新
+          [763] 使用 Microsoft Configuration Manager自動將軟體更新部署至 Azure 虛擬桌面工作階段主機
+        - 在連線時啟動 VM
+          - 在 連線 上設定啟動 VM
+            [765] 在 連線 上設定啟動 VM
+          - 在 連線 常見問題上啟動 VM
+            [768] 在 連線 常見問題上啟動 VM
+      - 安全性
+        - 螢幕擷取保護
+          [770] 在 Azure 虛擬桌面中啟用螢幕擷取保護
+        - 浮浮水印
+          [772] Azure 虛擬桌面中的浮浮水印
+        - 設定剪貼簿傳輸方向
+          [778] 設定可在 Azure 虛擬桌面中複製的剪貼簿傳輸方向和數據類型
+      - 設定災害復原計劃
+        [782] Azure 虛擬桌面災害復原
+    - 連線
+      - Windows 應用程式
+        - 開始使用 Windows 應用程式
+          [787] 開始使用 Windows 應用程式來連線到裝置和應用程式
+      - 遠端桌面用戶端
+        - Windows
+          [792] 使用適用於 Windows 的遠端桌面用戶端連線至 Azure 虛擬桌面
+        - 網頁瀏覽器
+          [796] 使用遠端桌面 Web 用戶端 連線 至 Azure虛擬桌面
+        - macOS
+          [798] 使用 macOS 的遠端桌面用戶端 連線 至Azure 虛擬桌面
+        - iOS/iPadOS
+          [800] 使用適用於 iOS 和 iPadOS 的遠端桌面用戶端，連線 至 Azure 虛擬桌面
+        - Android/Chrome OS
+          [802] 使用適用於 Android 和 Chrome OS 的遠端桌面用戶端，連線 至 Azure 虛擬桌面
+        - 精簡型用戶端
+          [805] 使用精簡用戶端 連線 至 Azure 虛擬桌面
+        - 使用用戶端功能
+          - Windows
+            [806] 在連線至 Azure 虛擬桌面時，使用適用於Windows 的遠端桌面用戶端功能
+          - 網頁瀏覽器
+            [817] 連線到 Azure 虛擬桌面時，使用遠端桌面Web 用戶端的功能
+          - macOS
+            [823] 連線到 Azure 虛擬桌面時，使用 macOS遠端桌面用戶端的功能
+          - iOS/iPadOS
+            [833] 在連線至 Azure 虛擬桌面時，使用適用於iOS 和 iPadOS 的遠端桌面用戶端功能
+          - Android/Chrome OS
+            [841] 連線到 Azure 虛擬桌面時，使用適用于Android 和 Chrome OS 的遠端桌面用戶端功能
+        - 根據每個使用者安裝適用於 Windows 的遠端桌面用戶端
+          [848] 使用 Intune 或 Configuration Manager，以每個用戶為基礎安裝適用於 Windows的遠端桌面用戶端
+      - 設定裝置重新導向
+        [851] 設定裝置重新導向
+      - 設定電子郵件探索
+        [858] 設定電子郵件探索以訂閱您的 RDS 摘要
+      - 自訂顯示名稱
+        [859] 自訂 Azure 虛擬桌面使用者的摘要
+      - 設定多媒體重新導向
+        [864] 使用 Azure 虛擬桌面上的多媒體重新導向
+    - 監視器
+      - 將診斷數據傳送至Log Analytics
+        [873] 將診斷數據傳送至適用於 Azure 虛擬桌面的 Log Analytics
+      - 啟用深入解析
+        [879] 啟用深入解析以監視 Azure 虛擬桌面
+      - 設定診斷以監視代理程式更新
+        [885] 設定診斷監視代理程式更新
+      - 設定服務警示
+        [887] 設定服務警示
+      - Azure 虛擬桌面深入解析的使用案例
+        [889] Azure 虛擬桌面深入解析的使用案例
+      - 收集和查詢用戶連線質量數據
+        [898] 收集和查詢連線品質資料
+      - 使用 Insights 監視自動調整作業
+        [902] 使用 Azure 虛擬桌面中的深入解析監視自動調整作業
+      - 設定自動調整的診斷
+        [910] 在 Azure 虛擬桌面中設定自動調整的診斷
+      - 解決 Azure Advisor 建議
+        [913] 如何處理 Azure Advisor 建議
+  - 疑難排解
+    - 疑難解答概觀、意見反應和支援
+      [916] Azure 虛擬桌面的意見反應、支援和疑難排解概觀
+    - 快速入門
+      [919] 針對 Azure 虛擬桌面快速入門進行疑難解答
+    - 主機集區建立
+      [926] 主機集區建立
+    - 會話主機虛擬機設定
+      [937] 工作階段主機虛擬機器設定
+    - 管理問題
+      [947] 管理問題
+    - Azure 虛擬桌面 PowerShell
+      [949] Azure 虛擬桌面 PowerShell
+    - Azure 虛擬桌面代理程式
+      [952] 
+    - 遠端桌面服務連線
+      [970] Azure 虛擬桌面服務連線
+    - 遠端桌面用戶端
+      - Windows 桌面用戶端基本疑難解答
+        [972] Windows 遠端桌面用戶端的基本疑難解答
+      - Windows 桌面用戶端
+        [975] 針對連線到 Azure 虛擬桌面時的Windows 遠端桌面客戶端進行疑難解答
+      - Azure 虛擬桌面市集應用程式
+        [982] 針對適用於 Windows 的 Azure 虛擬桌面市集應用程式進行疑難解答
+      - Web 用戶端
+        [989] 針對連線到 Azure 虛擬桌面時的遠端桌面Web 用戶端進行疑難解答
+      - macOS 用戶端
+        [993] 針對連線到 Azure 虛擬桌面時的 macOS遠端桌面用戶端進行疑難解答
+      - iOS/iPadOS 用戶端
+        [997] 針對在連線至 Azure 虛擬桌面時，使用適用於 iOS 和 iPadOS 的遠端桌面用戶端進行疑難排解
+      - Android/Chrome OS 用戶端
+        [1000] 針對連線到 Azure 虛擬桌面時的 Android和 Chrome OS 遠端桌面用戶端進行疑難解答
+      - 適用於 Windows 的遠端桌面應用程式
+        [1002] 針對連線到 Azure 虛擬桌面時的Windows 遠端桌面應用程式進行疑難解答
+    - 診斷圖形效能問題
+      [1004] 診斷遠端桌面中的圖表效能問題
+    - 已加入 Microsoft Entra 的 VM 連線
+      [1007] 針對已加入 Microsoft Entra 的 VM 連線進行疑難排解
+    - 裝置重新導向
+      [1011] 針對 Azure 虛擬桌面的裝置重新導向進行疑難解答
+    - Azure 虛擬桌面深入解析
+      [1013] 針對 Azure 虛擬桌面深入解析進行疑難解答
+    - Azure 檔案儲存體 授權
+      [1016] 使用 Active Directory 對 Azure 檔案儲存體 驗證進行疑難解答
+    - 連線 質量問題
+      [1018] 針對 Azure 虛擬桌面的連線品質進行疑難排解
+    - RDP Shortpath
+      [1020] 對公用網路的 RDP Shortpath 進行疑難排解
+    - 多媒體重新導向
+      [1022] 針對 Azure 虛擬桌面的多媒體重新導向進行疑難排解
+    - Microsoft Teams
+      [1025] 針對適用於 Azure 虛擬桌面的 MicrosoftTeams 進行疑難解答
+    - 自訂映像範本
+      [1027] 針對 Azure 虛擬桌面中的自訂映射範本進行疑難排解
+    - 應用程式附加
+      [1030] 針對 Azure 虛擬桌面中的應用程式連結進行疑難排解
+  - 參考
+    - Azure CLI
+      [1032] az desktopvirtualization
+    - Azure PowerShell
+      [1034] Az.DesktopVirtualization
+    - Bicep
+      [1037] 
+    - Azure Resource Manager 範本
+      [1041] 
+    - Terraform
+      [1045] 
+    - REST API
+      [1050] Azure 虛擬桌面
+    - MSIXMGR 工具參數
+      [1051] MSIXMGR 工具參數
+  - 資源
+    - 使用者體驗估算器
+    - 定價
+      - Azure 虛擬桌面定價
+      - 定價計算機
+    - 學習路徑
+    - 架構和架構
+      - 雲端採用架構
+        [1058] 將終端使用者桌面移轉至 Azure 虛擬桌面
+      - Azure 架構中心
+    - 作法影片
+    - Microsoft 技術社群
+    - Azure 虛擬桌面藍圖
+    - Azure 資源管理員範本
+    - Terraform 範例
+      [1060] 使用 Terraform 設定 Azure 虛擬桌面
+    - Azure 虛擬桌面的應用程式保證
+      [1072] 
+    - Azure 合規性供應項目
+    - Azure 虛擬桌面 (傳統版) 文件
+      [1078] Azure 虛擬桌面 (傳統版) 文件

@@ -1,0 +1,1434 @@
+- ---< azure-cloud-adoption-framework (英文).pdf >---
+  - Cloud Adoption Framework for Azure
+    [1] 
+  - About the Framework
+    [4] What is the Microsoft Cloud AdoptionFramework for Azure?
+  - What's new
+    [8] What's new in the Microsoft CloudAdoption Framework for Azure
+  - Scenarios
+    - Overview
+      [18] Cloud adoption scenarios
+    - Azure VMware Solution
+      [23] Migrate to Azure with Azure VMwareSolution
+    - Cloud-scale analytics
+      [26] Cloud-scale analytics
+    - High-performance computing
+      [32] Introduction to the Azure high-performance computing (HPC) scenario
+    - Hybrid and multicloud
+      [34] Introduction to hybrid and multicloud
+    - Modern application platform
+      [38] Introduction to the modern applicationplatform scenario
+    - Oracle
+      [41] Oracle on Azure Virtual Machineslanding zone accelerator
+    - SAP
+      [50] Introduction to an SAP adoptionscenario
+    - Virtual desktops
+      [54] Migrate end-user desktops to AzureVirtual Desktop
+    - Retail industry
+      [56] Cloud adoption for the retail industry
+    - Defense
+      [58] Introduction to the defense scenario
+  - Adoption journeys
+    - Get started
+      - Overview
+        [60] Get started with the Cloud AdoptionFramework
+      - Foundational alignment
+        - Document foundational alignment decisions
+          [63] Get started: Understand and documentfoundational alignment decisions
+        - How does Azure work?
+          [69] How does Azure work?
+        - Azure fundamental concepts
+          [71] Azure fundamental concepts
+        - How does Azure Resource Manager work?
+          [75] Resource access management in Azure
+        - Portfolio hierarchy
+          [87] Portfolio hierarchy
+        - Azure hierarchy support
+          [96] How do Azure products support theportfolio hierarchy?
+      - Accelerate adoption
+        - Accelerate migration
+          [98] Get started: Accelerate migration
+        - Build new products and services
+          [107] Get started: Accelerate new product andservice innovation in the cloud
+        - Unblock environment design and configuration
+          [116] Get started: Environment design andconfiguration
+    - Improve controls
+      - Enable customer success
+        [123] Enable customer success with a soundoperating model and organizationalalignment
+      - Deliver operational excellence
+        [126] Get started: Deliver operationalexcellence during digital transformation
+      - Manage cloud costs
+        [131] Get started: Manage cloud costs
+      - Secure the enterprise environment
+        [138] Get started: Implement security acrossthe enterprise environment
+      - Improve reliability
+        [150] Get started: Improve reliability with theright controls
+      - Ensure consistent performance
+        [157] Get started: Ensure consistentperformance across a portfolio
+    - Establish teams
+      - Align your organization
+        [163] Get started: Align your organization
+      - Build a cloud strategy team
+        [166] Get started: Build a cloud strategy team
+      - Build a cloud adoption team
+        [174] Get started: Build a cloud adoptionteam
+      - Build a cloud governance team
+        [180] Get started: Build a cloud governanceteam
+      - Build a cloud operations team
+        [186] Get started: Build a cloud operationsteam
+    - Antipatterns to avoid
+      [193] Cloud adoption antipatterns
+  - Strategy
+    - Overview
+      [195] Develop a cloud adoption strategy
+    - Assess cloud adoption strategy
+      [197] Assess your cloud adoption strategy
+    - Motivations
+      [199] Why are we moving to the cloud?
+    - Business outcomes
+      - Overview
+        [203] What business outcomes are associatedwith transformation journeys?
+      - Data innovation
+        [206] Data innovations
+      - Data democratization
+        [209] Support business with data innovation
+      - Fiscal outcomes
+        [211] Examples of fiscal outcomes
+      - Agility outcomes
+        [216] Examples of agility outcomes
+      - Global reach outcomes
+        [219] Examples of global reach outcomes
+      - Customer engagement outcomes
+        [221] Examples of customer engagementoutcomes
+      - Performance outcomes
+        [223] Examples of performance outcomes
+      - Sustainability outcomes
+        [225] Sustainability outcomes and benefits forbusiness
+      - Business outcome template
+        [233] How to use the business outcometemplate
+      - Align technical efforts to outcome metrics
+        [236] How can we align technical efforts tomeaningful outcome metrics?
+      - Objectives and key results
+        [239] Measure business outcomes usingobjectives and key results
+    - Financial considerations
+      - Overview
+        [242] Understand financial considerations
+      - Common finance vocabulary terms
+        [244] Glossary of common finance terms
+      - Understand cloud accounting
+        [246] What is cloud accounting?
+    - Technical considerations
+      - Overview
+        [249] Understand technical considerations
+      - Achieve more with your investment
+        [252] Achieve more with your investment inthe cloud
+      - Align your partner strategy
+        [257] Strategy for partner alignment
+    - Build a digital transformation timeline
+      [262] Build a digital transformation timeline
+    - Create a business case
+      [266] Create a business case for cloudmigration
+    - Building your devops practice
+      [271] Building your DevOps practice
+    - Share your strategy
+      [275] Share your strategy
+    - Additional considerations
+      - Balance competing priorities
+        [278] Balance competing priorities
+      - Balance the portfolio
+        [287] Balance the portfolio
+      - Global markets
+        [293] How will global market decisions affectthe transformation journey?
+      - Define a sovereignty strategy
+        [295] Define a sovereignty strategy
+      - Define security strategy
+        [299] Define a security strategy
+      - Define monitoring strategy
+        [315] Cloud monitoring strategy
+      - Responsible AI
+        [330] Responsible AI
+      - Accelerate cloud adoption with GitHub
+        [332] How GitHub accelerates cloud adoption
+    - Skills relevant to strategy
+      [339] Skills needed to support the strategyphase of cloud adoption
+    - Strategy antipatterns
+      [343] Cloud strategy antipatterns
+  - Plan
+    - Overview
+      [345] Develop a cloud adoption plan
+    - Digital estate
+      - The five Rs of rationalization
+        [346] Cloud rationalization
+      - What is a digital estate?
+        [351] What is a digital estate?
+      - Digital estate planning
+        [353] Approaches to digital estate planning
+      - Gather inventory data
+        [356] Gather inventory data for a digitalestate
+      - Rationalize the digital estate
+        [358] Rationalize the digital estate
+      - Align cost models to forecast costs
+        [365] Align cost models with the digital estateto forecast cloud costs
+      - Measure business outcomes with AppDynamics
+        [366] Measure business outcomes by usingAppDynamics
+    - Initial organization alignment
+      [371] Initial organization alignment
+    - Skills readiness plan
+      - Build a readiness plan
+        [374] Adapt existing roles, skills, andprocesses for the cloud
+      - Map roles and skills
+        [377] Get started on a skills readiness path
+    - Cloud adoption plan
+      - Overview
+        [379] Plan for cloud adoption
+      - Prerequisites
+        [381] Prerequisites for an effective cloudadoption plan
+      - Deploy the template to Azure DevOps
+        [383] Cloud adoption plan and Azure DevOps
+      - Define and prioritize workloads
+        [386] Define and prioritize workloads for acloud adoption plan
+      - Align assets to workloads
+        [391] Align assets to prioritized workloads
+      - Review rationalization decisions
+        [393] Review rationalization decisions
+      - Establish iterations and release plans
+        [396] Establish iterations and release plans
+      - Estimate timelines
+        [399] Timelines in a cloud adoption plan
+    - Best practices
+      - Digital estate assessment in Azure
+        [400] Assess on-premises workloads formigration to Azure
+      - Plan a data warehouse migration
+        [432] Plan a data warehouse migration
+    - Strategic Migration Assessment and Readiness Tool (SMART)
+      [442] Strategic Migration Assessment andReadiness Tool (SMART)
+    - Sustainability considerations
+      [446] Sustainability considerations in cloudadoption planning
+    - Plan antipatterns
+      [450] Cloud adoption plan antipatterns
+  - Ready
+    - Overview
+      [454] Prepare for cloud adoption
+    - Azure setup guide
+      - Setup guide overview
+        [457] Azure setup guide overview
+      - Organize resources
+        [458] Organize your Azure resourceseffectively
+      - Select regions
+        [463] Select Azure regions
+      - Manage access
+        [472] Manage access to your Azureenvironment with Azure role-basedaccess control
+      - Manage costs and billing
+        [474] Manage costs and billing for your Azureresources
+      - Plan governance, security, and compliance
+        [476] Governance, security, and compliance inAzure
+      - Monitoring and reporting
+        [478] Monitoring and reporting in Azure
+      - Stay current with Azure
+        [480] Stay current with Azure
+    - Operating model
+      - Overview
+        [481] Understand cloud operating models
+      - Define your operating model
+        [484] Define your cloud operating model
+      - Compare common cloud operating models
+        [486] Review and compare common cloudoperating models
+      - Common operating model terms
+        [501] Operating model terminology
+    - Azure landing zones
+      - What is an Azure landing zone?
+        [503] What is an Azure landing zone?
+      - Design principles
+        [507] Azure landing zone design principles
+      - Journey to the target architecture
+        [512] Journey toward the target architecture
+      - Design areas
+        [515] Azure landing zone design areas andconceptual architecture
+        - Azure billing and Active Directory tenant
+          - Overview
+            [519] Azure billing offers and Active Directorytenants
+          - Enterprise Agreement
+            [521] Plan for Enterprise Agreementenrollment
+          - Microsoft customer agreement
+            [526] Plan for the Microsoft customeragreement service
+          - Cloud solution provider
+            [529] Plan for the Cloud Solution Providerservice
+          - Define a Microsoft Entra tenant
+            [532] Define Microsoft Entra tenants
+          - Handling Azure landing zones across multiple tenants
+            - Overview
+              [535] Azure landing zones and multipleMicrosoft Entra tenants
+            - Scenarios
+              [540] Scenarios for multiple Microsoft Entratenants
+            - Considerations & recommendations
+              - General
+                [546] Considerations and recommendationsfor multi-tenant Azure landing zonescenarios
+              - Automation
+                [553] Automate Azure landing zones acrossmultiple tenants
+              - Canary environments
+                [559] Azure landing zones canary approachwith multiple tenants
+              - Azure Lighthouse
+                [560] Azure Lighthouse usage in Azurelanding zones multi-tenant scenarios
+        - Identity and access management
+          - Overview
+            [562] Azure identity and access managementdesign area
+          - Active Directory and Hybrid Identity
+            [564] Microsoft Entra ID and hybrid identity
+          - Platform access
+            [567] Identity for Azure platform resources
+          - Landing zones
+            [570] 
+        - Resource organization
+          - Overview
+            [574] Resource organization
+          - Management groups
+            [577] Management groups
+          - Subscriptions
+            [582] Subscription considerations andrecommendations
+          - Application environments
+            [589] Manage application developmentenvironments in Azure landing zones
+          - Modify a landing zone to meet requirements across multiple locations
+            [597] Modify an Azure landing zonearchitecture to meet requirementsacross multiple locations
+          - Tailoring the Azure landing zones architecture
+            [606] Tailor the Azure landing zonearchitecture to meet requirements
+          - Adopt policy-driven guardrails
+            [612] Adopt policy-driven guardrails
+          - Additional information
+            - Naming and tagging
+              [622] Develop your naming and taggingstrategy for Azure resources
+            - Define your naming convention
+              [624] Define your naming convention
+            - Abbreviations for resource types
+              [635] Abbreviation examples for Azureresources
+            - Define your tagging strategy
+              [648] Define your tagging strategy
+            - Resource naming and tagging decision guide
+              [652] Resource naming and tagging decisionguide
+            - Move resources
+              [657] Move resources to a new resourcegroup or subscription
+          - Design options for specific use cases
+            - Create your initial subscriptions
+              [675] Create your initial Azure subscriptions
+            - Scale with multiple subscriptions
+              [678] Create additional subscriptions to scaleyour Azure environment
+            - Organize your subscriptions
+              [681] Organize and manage multiple Azuresubscriptions
+        - Network topology and connectivity
+          - Overview
+            [685] Network topology and connectivity
+          - Topology
+            - Define an Azure network topology
+              [688] Define an Azure network topology
+            - Traditional Azure networking topology
+              [693] Traditional Azure networking topology
+            - Virtual WAN network topology (Microsoft-managed)
+              [701] Virtual WAN network topology
+            - Plan for IP addressing
+              [707] Plan for IP addressing
+          - Connectivity
+            - Connectivity to Azure
+              [715] Connectivity to Azure
+            - Connectivity to Azure PaaS services
+              [718] Connectivity to Azure PaaS services
+            - Limit cross-tenant private endpoint connections
+              [722] Limit cross-tenant private endpointconnections in Azure
+            - Connectivity to other cloud providers
+              [731] Connectivity to other cloud providers
+            - Connectivity to Oracle Cloud Infrastructure
+              [736] Connectivity to Oracle CloudInfrastructure
+            - Plan for application delivery
+              [741] Plan for application delivery
+          - Network security
+            - Plan for inbound and outbound internet connectivity
+              [743] Plan for inbound and outbound internetconnectivity
+            - Plan for landing zone network segmentation
+              [746] Plan for landing zone networksegmentation
+            - Define network encryption requirements
+              [749] Define network encryptionrequirements
+            - Plan for traffic inspection
+              [751] Plan for traffic inspection
+          - Resources
+            - Private Link and DNS integration at scale
+              [753] Private Link and DNS integration atscale
+            - DNS for on-premises and Azure resources
+              [773] DNS for on-premises and Azureresources
+            - Plan for virtual machine remote access
+              [775] Plan for virtual machine remote access
+        - Security
+          - Overview
+            [779] Design area: Security
+          - Secure privileged access
+            [786] Securing privileged access for hybridand cloud deployments in MicrosoftEntra ID
+          - Encryption and keys
+            [806] Encryption and key management inAzure
+          - Service enablement framework
+            [809] Service enablement framework
+          - Security control mapping
+            [812] Security control mapping with Azurelanding zones
+          - Incorporate Zero Trust practices in your landing zone
+            [822] Incorporate Zero Trust practices in yourlanding zone
+        - Management
+          - Overview
+            [831] Design area: Management for Azureenvironments
+          - Inventory and visibility
+            [834] Inventory and visibility considerations
+          - Baseline monitoring
+            [838] Monitor Azure platform landing zonecomponents
+          - Protect and recover
+            [842] Business continuity and disasterrecovery
+          - Operational compliance
+            [845] Operational compliance considerations
+          - Workloads
+            [847] Workload management and monitoring
+        - Governance
+          - Overview
+            [849] Design area: Azure governance
+          - Track costs
+            [855] Track costs across business units,environments, or projects
+          - Optimize your cloud investment
+            [860] How to optimize your cloud investmentwith Cost Management
+          - Create and manage budgets
+            [869] Tutorial: Create and manage budgets
+          - Export cost data
+            [880] Tutorial: Create and manage exporteddata
+          - Optimize costs from recommendations
+            [896] Tutorial: Optimize costs fromrecommendations
+          - Monitor usage and spending
+            [901] Use cost alerts to monitor usage andspending
+        - Platform automation and DevOps
+          - Overview
+            [905] Platform automation and DevOps
+          - Platform automation
+            - Automation
+              [907] Automation
+          - Subscription vending
+            [911] Subscription vending
+          - DevOps
+            - DevOps considerations
+              [917] DevOps considerations
+            - Team topologies
+              [923] DevOps teams topologies
+          - Development strategy
+            - Development lifecycle
+              [928] Development lifecycle
+            - Infrastructure as Code
+              [934] Infrastructure as Code
+            - Environments
+              [940] Environments
+            - Test-driven development for Azure Landing Zones
+              [943] Test-driven development for Azurelanding zones
+            - DevOps Toolchain considerations
+              [950] DevOps toolchain
+          - Security considerations
+            - Overview
+              [957] Security considerations for DevOpsplatforms
+            - Role-based access control for DevOps Tools
+              [960] Role-based access control for DevOpstools
+      - Implementation options
+        [964] Landing zone implementation options
+        - Choose a landing zone option
+          [968] Choose the landing zone for yourorganization
+        - Start with enterprise scale
+          - Overview
+            [975] Start with Cloud Adoption Frameworkenterprise-scale landing zones
+          - Implement enterprise-scale landing zones
+            [977] Implement Cloud Adoption Frameworkenterprise-scale landing zones in Azure
+          - Scenario-specific enterprise-scale landing zones
+            [979] Scenario-specific enterprise-scalelanding zones in Azure
+        - Start small and expand
+          - CAF Migration landing zone blueprint
+            [981] Deploy a migration landing zone inAzure
+          - CAF Foundation blueprint
+            [987] Deploy a CAF Foundation blueprint inAzure
+        - Deploy Azure landing zones with Terraform
+          [992] 
+        - ISV considerations for landing zones
+          [1003] Independent software vendor (ISV)considerations for Azure landing zones
+        - Sovereignty considerations and the sovereign landing zone
+          [1017] Sovereignty considerations for Azurelanding zones
+        - Get landing zone help
+          [1023] How to get help building a landing zone
+      - Align
+        - Refactor landing zones
+          [1027] Refactor landing zones
+        - Transition to the Azure landing zone conceptual architecture
+          [1033] Transition an existing Azureenvironment to the Azure landing zoneconceptual architecture
+        - Alignment scenarios
+          - Transition a single subscription with no management groups
+            [1037] Scenario: Transition a singlesubscription with no managementgroups to the Azure landing zoneconceptual architecture
+          - Transition management groups
+            [1040] Scenario: Transition managementgroups to the Azure landing zoneconceptual architecture
+          - Transition a regional organization environment
+            [1044] Scenario: Transition a regionalorganization environment to the Azurelanding zone conceptual architecture
+        - Alignment approaches
+          - Transition by duplicating a landing zone management group
+            [1048] Scenario: Transition an environment byduplicating a landing zone managementgroup
+        - Brownfield landing zone considerations
+          [1051] Brownfield landing zone considerations
+      - Enhance
+        - Expand your landing zone
+          [1054] Expand your landing zone
+        - Improve landing zone operations
+          [1056] Improve landing zone operations
+        - Testing approach for Azure landing zones
+          [1060] Testing approach for Azure landingzones
+        - Landing zone sandbox environments
+          [1067] Landing zone sandbox environments
+        - Landing zone regions
+          [1072] Landing zone regions
+        - Policy management
+          - Advanced Azure Policy management
+            [1078] Advanced Azure Policy management
+        - Improve landing zone governance
+          - Overview
+            [1081] Improve landing zone governance
+          - Naming and tagging standards
+            [1084] Develop your naming and taggingstrategy for Azure resources
+          - Track costs across workloads
+            [1086] Track costs across business units,environments, or projects
+          - Scale with multiple subscriptions
+            [1091] Create additional subscriptions to scaleyour Azure environment
+          - Organize subscriptions
+            [1094] Resource organization
+        - Improve landing zone security
+          - Overview
+            [1097] Improve landing zone security
+          - Onboard a subscription to Microsoft Defender for Cloud
+            [1102] Connect your Azure subscriptions
+          - Onboard Microsoft Sentinel
+            [1108] Quickstart: Onboard Microsoft Sentinel
+          - Implementing a secure hybrid network architecture in Azure
+            [1114] 
+          - Azure identity management and access control security best practices
+            [1123] Azure Identity Management and accesscontrol security best practices
+          - Azure network security best practices
+            [1138] Azure best practices for networksecurity
+          - Azure operational security best practices
+            [1148] Azure Operational Security bestpractices
+      - Azure landing zones FAQ
+        [1161] Azure landing zone frequently askedquestions (FAQ)
+    - Skills relevant to ready and landing zones
+      [1168] Skills readiness path during thereadiness phase of a migration journey
+    - Ready antipatterns
+      [1171] Cloud readiness antipatterns
+  - Adopt
+    - Overview
+      [1175] Cloud adoption
+    - Cloud adoption journey
+      [1177] Cloud adoption journey
+    - Migrate or modernize first?
+      [1181] Migrate or modernize first?
+    - Migrate
+      - Overview
+        [1183] Cloud migration in the Cloud AdoptionFramework
+      - Azure migration guide
+        - Migration guide overview
+          [1187] Azure migration guide overview
+        - Migration tools decision guide
+          [1189] Migration tools decision guide
+        - Assess workloads
+          [1193] Assess workloads and refine plans
+        - Readying your landing zone for migration
+          [1199] Readying your landing zone formigration
+        - Deploy workloads
+          [1206] Migrate assets
+        - Release workloads
+          [1215] Release, promote and optimizeworkloads (test, optimize, and handoff)
+        - Migration-focused cost-control mechanisms
+          [1219] Migration-focused cost controlmechanisms
+        - Get assistance
+          [1226] Get assistance
+      - Migration scenarios
+        - Overview
+          [1228] The One Migrate approach to migratingthe IT portfolio
+        - Contoso overview
+          [1230] Overview of application migrationexamples for Azure
+        - Tailwind Traders case study
+          - Assessment and migration planning with Azure Migrate for servers
+            [1237] Assessment and migration planningwith Azure Migrate for servers
+          - Migration execution with Azure Migrate for servers
+            [1249] Migration execution with Azure Migratefor servers
+        - AWS
+          - Discover AWS instances
+            [1260] 
+          - Assess AWS instances for migration to Azure
+            [1273] Tutorial: Assess AWS instances formigration to Azure
+          - Migrate AWS instances
+            [1281] Discover, assess, and migrate AmazonWeb Services (AWS) VMs to Azure
+        - Containers
+          - Migrate to Azure Kubernetes Service (AKS)
+            [1301] Migrate to Azure Kubernetes Service(AKS)
+        - Windows and Linux servers
+          - VMWare
+            - Discover servers running in a VMware environment
+              [1309] 
+            - Assess VMware VMs for migration to Azure VMs
+              [1329] Tutorial: Assess VMware VMs formigration to Azure VMs
+            - Select a VMware migration option
+              [1338] Select a VMware migration option
+          - Hyper-V
+            - Discover servers running in a Hyper-V environment
+              [1341] 
+            - Assess Hyper-V VMs for migration to Azure
+              [1359] Tutorial: Assess Hyper-V VMs formigration to Azure
+            - Migrate Hyper-V VMs to Azure
+              [1367] Migrate Hyper-V VMs to Azure
+        - Databases and data platforms
+          - SQL Server workloads
+            - Migrate from SQL Server to Azure SQL
+              [1380] Migration guide: SQL Server to AzureSQL Database
+            - Migrate from SQL Server to Azure SQL Managed Instance
+              [1390] Migration guide: SQL Server to AzureSQL Managed Instance
+            - Migrate from SQL Server to SQL Server on Azure VM
+              [1402] Migration guide: SQL Server to SQLServer on Azure Virtual Machines
+          - DB2
+            - Migrate from DB2 to Azure SQL
+              [1412] Migration guide: IBM Db2 to Azure SQLDatabase
+            - Migrate from DB2 to Azure SQL Managed Instance
+              [1422] Migration guide: IBM Db2 to Azure SQLManaged Instance
+            - Migrate from DB2 to Azure SQL on Azure VM
+              [1432] Migration guide: IBM Db2 to SQL Serveron Azure VM
+          - Oracle
+            - Migrate from Oracle to Azure SQL
+              [1441] Migration guide: Oracle to Azure SQLDatabase
+            - Migrate from Oracle to Azure SQL Managed Instance
+              [1463] Migration guide: Oracle to Azure SQLManaged Instance
+            - Migrate from Oracle to Azure SQL on Azure VM
+              [1485] Migration guide: Oracle to SQL Serveron Azure Virtual Machines
+          - Access
+            - Migrate from Access to Azure SQL
+              [1513] Migration guide: Access to Azure SQLDatabase
+          - Linux and open-source databases
+            - Migrate open-source databases to Azure
+              [1524] Migrate open-source databases toAzure
+            - Migrate from MySQL to Azure SQL
+              [1531] Migration guide: MySQL to Azure SQLDatabase
+            - Migrate PostgreSQL to Azure
+              [1543] Migrate PostgreSQL databases to Azure
+            - Migrate MariaDB to Azure
+              [1559] Migrate MariaDB databases to Azure
+            - Rehost a Linux application on Azure VMs
+              [1568] Rehost an on-premises Linux applicationto Azure VMs
+            - Rehost a Linux application on Azure VMs and Azure Database for MySQL
+              [1585] Rehost an on-premises Linux applicationto Azure VMs and Azure Database forMySQL
+        - Storage migration
+          - Storage migration overview
+            [1615] Azure Storage migration overview
+          - Tools for unstructured storage migration
+            [1620] 
+        - Open-source platforms
+          - Moodle migration
+            - Overview
+              [1627] Overview of Moodle manual migration
+            - Prepare for Moodle migration
+              [1628] How to prepare for a Moodle migration
+            - Architecture and template
+              [1640] Moodle migration architecture andtemplates
+            - Moodle migration resources
+              [1644] Moodle migration resources
+            - Migration steps
+              [1648] Moodle manual migration steps
+            - Set up Moodle worker nodes
+              [1660] How to set up Moodle worker nodes
+            - Follow up Moodle migration
+              [1664] How to follow up after a Moodlemigration
+        - Dev/test workloads
+          - Migrate dev/test environments to Azure IaaS
+            [1673] Rehost an on-premises dev/testenvironment on Azure Virtual Machinesvia Azure Migrate
+          - Migrate to Azure DevTest Labs
+            [1690] Migrate a dev/test environment toAzure DevTest Labs
+        - ASP.NET and PHP web apps
+          - Refactor a Windows application onto App Service and Azure SQL Database
+            [1712] Migrate an application to Azure AppService and SQL Database
+          - Refactor a Windows application onto App Service and SQL Managed Instance
+            [1740] Refactor an on-premises application toan App Service web app and a SQLmanaged instance
+          - Refactor a Linux application onto App Service and MySQL
+            [1771] Refactor a Linux application by usingAzure App Service, Traffic Manager, andAzure Database for MySQL
+          - Rebuild an application in Azure
+            [1803] Rebuild an on-premises application inAzure
+          - Refactor TFS to Azure DevOps Services
+            [1863] Refactor a Team Foundation Serverdeployment to Azure DevOps Services
+        - Java applications
+          - Migration overview
+            [1896] Migrate Java applications to Azure
+          - Spring Boot to Azure App Service
+            [1903] Java to Azure migration strategydocumentation
+          - Spring Boot to AKS
+            [1906] Java to Azure migration strategydocumentation
+          - Spring Boot to Azure Spring Cloud
+            [1909] Migrate Spring Boot applications toAzure Spring Apps
+          - Spring Cloud to Azure Spring Cloud
+            [1922] Migrate Spring Cloud applications toAzure Spring Apps
+          - Tomcat to Azure App Service
+            [1937] Migrate Tomcat applications to Tomcaton Azure App Service
+          - Tomcat to containers on AKS
+            [1948] Migrate Tomcat applications tocontainers on Azure Kubernetes Service
+          - Tomcat to Azure Spring Cloud
+            [1958] Migrate Tomcat applications to Tomcaton Azure App Service
+          - WebLogic to Azure
+            - WebLogic to Azure Virtual Machines
+              [1969] Migrate WebLogic Server applicationsto Azure Virtual Machines
+            - WebLogic with Microsoft Entra ID via LDAP
+              [1982] Tutorial: Configure secure LDAP for aMicrosoft Entra Domain Servicesmanaged domain
+            - WebLogic with Application Gateway
+              [1998] Tutorial: Migrate a WebLogic Servercluster to Azure with Azure ApplicationGateway as a load balancer
+          - WildFly to WildFly on AKS
+            [2011] Migrate WildFly applications to WildFlyon Azure Kubernetes Service
+          - WebLogic to WildFly on AKS
+            [2029] Migrate WebLogic Server applicationsto WildFly on Azure Kubernetes Service
+          - WebSphere to WildFly on AKS
+            [2048] Migrate WebSphere applications toWildFly on Azure Kubernetes Service
+          - JBoss EAP to WildFly on AKS
+            [2066] Migrate JBoss EAP applications toWildFly on Azure Kubernetes Service
+        - SAP
+          - Migrate an SAP platform to Azure
+            [2084] Migrate an SAP platform to Azure
+          - Learning path for Migrate SAP workloads to Azure
+          - SAP on Azure migration
+          - Migrate from SAP ASE to Azure SQL
+            [2087] Migration guide: SAP ASE to Azure SQLDatabase
+        - Specialized workloads
+          - Move on-premises VMware infrastructure to AVS
+            [2092] Move on-premises VMwareinfrastructure to Azure VMWareSolution
+          - Azure NetApp Files
+          - Cray in Azure
+          - VDI
+            [2106] Move on-premises Remote DesktopServices to Azure Virtual Desktopscenario
+        - Azure Stack
+          - Overview
+            [2122] Azure Stack: A strategic option forrunning Azure in your datacenter
+          - Planning
+            [2124] Plan your Azure Stack Hub migration
+          - Azure landing zone review
+            [2126] Ready your cloud environment forAzure Stack Hub migration
+          - Assess
+            [2128] Assess workloads for Azure Stack Hubmigration
+          - Migrate and deploy
+            [2131] Deploy workloads to Azure Stack Hub
+          - Govern
+            [2133] Govern an Azure instance in yourdatacenter
+          - Manage
+            [2135] Manage workloads that run on AzureStack Hub
+        - Analytics solutions
+          - Overview
+            [2137] Azure Synapse Analytics solutions
+          - Teradata
+            [2139] Azure Synapse Analytics solutions andmigration for Teradata
+          - Netezza
+            [2151] Azure Synapse Analytics solutions andmigration for Netezza
+          - Exadata
+            [2163] Azure Synapse Analytics solutions andmigration for an Oracle data warehouse
+        - Multitenant migration
+          - Azure Lighthouse for scale migration
+            [2165] Manage Azure Migrate projects at scalewith Azure Lighthouse
+        - Mainframes
+          - Overview
+            [2169] Mainframe migration overview
+          - Switch from mainframes to Azure
+            [2173] Make the switch from mainframes toAzure
+          - Mainframe application migration
+            [2177] Mainframe application migrationstrategies
+        - Migrate secure workloads
+          - Secure and manage workloads after migration
+            [2185] Best practices to secure and manageAzure workloads
+          - Azure database security best practices
+            [2214] Playbook for addressing commonsecurity requirements with Azure SQLDatabase and Azure SQL ManagedInstance
+          - Azure data security and encryption best practices
+            [2244] Azure data security and encryption bestpractices
+          - Azure PaaS best practices
+            [2251] Securing PaaS deployments
+          - Azure Service Fabric security best practices
+            [2260] Azure Service Fabric security bestpractices
+          - Best practices for Azure VM security
+            [2268] Security best practices for IaaSworkloads in Azure
+          - IoT security best practices
+            [2276] Security best practices for IoT solutions
+          - Securing PaaS databases in Azure
+            [2282] Best practices for securing PaaSdatabases in Azure
+          - Securing PaaS web and mobile applications using Azure App Service
+            [2286] Best practices for securing PaaS weband mobile applications using AzureApp Service
+          - Securing PaaS web and mobile applications using Azure Storage
+            [2288] Best practices for securing PaaS weband mobile applications using AzureStorage
+          - Security best practices for IaaS workloads in Azure
+            [2292] Security best practices for IaaSworkloads in Azure
+      - Best practices
+        - Overview
+          [2300] Azure cloud migration best practiceschecklist
+        - Multiple datacenters
+          [2302] Multiple datacenters
+        - Multiple regions
+          [2305] Select Azure regions for a migration
+        - Data requirements exceed network capacity
+          [2313] Best practices when data requirementsexceed network capacity during amigration effort
+        - Set up networking for migrated workloads
+          [2317] Best practices to set up networking forworkloads migrated to Azure
+        - Deploy a migration infrastructure
+          [2345] Readying your landing zone formigration
+        - Cost optimize migrated workloads
+          [2352] Best practices to cost and sizeworkloads migrated to Azure
+        - Scale a migration
+          [2368] Scale a migration to Azure
+        - Schema migration and DDL commands
+          [2382] Schema migration and DDL commands
+        - Database restore points for Azure Synapse
+          [2397] Database-restore points for AzureSynapse Analytics
+        - Governance or compliance
+          [2399] Governance or compliance strategy
+        - Adopt low-code application platform
+          [2402] Microsoft Power Platform adoption bestpractices
+      - Migrate antipatterns
+        [2404] Cloud migration antipatterns
+      - Process improvements
+        - Overview
+          [2408] Cloud Adoption Framework migrationmodel
+        - Prerequisites
+          - Overview
+            [2411] Prerequisites for migration
+          - Decisions that affect migration
+            [2414] Decisions that affect migration
+          - Environment planning checklist
+            [2419] Migration environment planningchecklist: Validate environmentalreadiness prior to migration
+          - Align roles and responsibilities
+            [2422] Prepare for cultural complexity: Aligningroles and responsibilities
+          - Agile change management
+            [2426] Prepare for technical complexity: Agilechange management
+          - Migration backlog review
+            [2433] Migration backlog review
+        - Assess workloads
+          - Validate assessment assumptions before migration
+            [2435] Assess workloads and validateassumptions before migration
+          - Classify workloads
+            [2438] Workload classification beforemigration
+          - Keep priorities aligned
+            [2440] Business priorities during atransformation process
+          - Evaluate workload readiness
+            [2442] Evaluate workload readiness
+          - Architect workloads
+            [2445] Design workload architectures beforemigration
+          - Update and refine initial cloud estimates
+            [2448] Estimate cloud costs
+          - Understand partnership options
+            [2450] Understand partnership and supportoptions
+          - Manage change
+            [2455] Manage change in an incrementalmigration effort
+          - Approve architecture changes
+            [2457] Approve architecture changes beforemigration
+        - Deploy workloads
+          - Overview
+            [2462] Deploy workloads
+          - Promotion models
+            [2464] Promotion model types
+          - Remediate assets
+            [2468] Remediate assets prior to migration
+          - Replicate assets
+            [2471] The role of replication in the migrationprocess
+          - Replicate options
+            [2474] Replication options
+          - Stage workloads
+            [2477] Understand staging activities during amigration
+        - Release workloads
+          - Overview
+            [2478] Release workloads
+          - Business change plan
+            [2480] Business change plan
+          - Business testing
+            [2483] Guidance for business testing (UAT)during migration
+          - Benchmark and resize assets
+            [2485] Benchmark and resize cloud assets
+          - Prepare for promotion
+            [2487] Prepare a migrated application forproduction promotion
+          - Promote to production
+            [2489] What is required to promote a migratedresource to production?
+          - Decommission retired assets
+            [2491] Decommission retired assets
+          - Conduct retrospectives
+            [2493] How do retrospectives help build agrowth mindset?
+      - Skills relevant to migrate
+        [2495] Skills readiness for cloud migration
+    - Modernize
+      - Overview
+        [2497] Modernize in the cloud
+      - Business alignment
+        - Overview
+          [2499] Business alignment for cloudmodernization
+        - Envision
+          [2501] Envision cloud modernizationpossibilities
+        - Evaluate
+          [2505] Evaluate cloud modernization readiness
+        - Commit
+          [2507] Commit to modernization
+      - Modernization strategies
+        - Overview
+          [2510] Cloud modernization strategies
+        - Process modernization
+          [2512] Modernize your processes for the cloud
+        - Application modernization
+          [2516] Modernize any application in the cloud
+        - Database modernization
+          [2519] Modernize any database in the cloud
+    - Innovate
+      - Overview
+        [2524] Cloud adoption-related innovation
+      - Azure innovation guide
+        - Innovation guide overview
+          [2528] Azure innovative solutions guideoverview
+        - Prepare for customer feedback
+          [2530] Prepare for customer feedback
+        - Democratize data
+          [2532] Data democratization tools
+        - Engage customers through applications
+          [2533] Engage customers through applications
+        - Empower adoption
+          [2536] Empower cloud adoption
+        - Interact through devices
+          [2538] Interact through connected devices
+        - Innovate with AI
+          [2540] Innovate with AI in Azure
+      - Innovation scenarios
+        - Kubernetes
+          - Innovation with Kubernetes
+            [2544] Kubernetes in the Cloud AdoptionFramework
+          - Application development and deployment
+            [2545] Application development anddeployment
+          - Cluster design and operations
+            [2550] Cluster design and operations
+          - Cluster and application security
+            [2553] Cluster and application security
+        - AI
+          - Innovate with AI
+            [2556] Innovation with AI in the CloudAdoption Framework
+          - Machine learning
+            [2557] Machine learning
+          - AI applications and agents
+            [2559] AI applications and agents
+          - Knowledge mining
+            [2562] Knowledge mining
+      - Best practices
+        - Overview and Azure toolchain
+          [2564] Develop digital inventions in Azure
+        - Democratize data
+          [2566] Innovation tools to democratize data inAzure
+        - Engage via applications
+          [2570] Tools to engage with applications inAzure
+        - Empower adoption
+          [2574] Tools to empower adoption in Azure
+        - Interact with devices
+          [2577] Ambient experience tools to interactwith devices in Azure
+        - Innovate with AI
+          - Overview
+            [2580] Use innovation tools with AI to predictand influence
+          - Machine learning
+            - What is machine learning?
+              [2582] What is machine learning?
+            - How to approach machine learning operations
+              [2587] How to approach machine learningoperations
+            - The machine learning operations process
+              [2591] The machine learning operationsprocess
+            - Machine learning security
+              [2596] Machine learning security
+            - Deploy machine learning models
+              [2598] Deploy machine learning models inproduction environments
+            - Determine compute instances for your model
+              [2607] Determine development, training, andcompute instances for your machinelearning model
+            - Set up machine learning workspaces
+              [2609] How to set up machine learningworkspaces
+            - Responsible and trusted AI
+              [2613] Responsible and trusted AI
+          - AI applications and agents
+            - What are AI applications?
+              [2621] What are AI applications?
+            - What are AI agents
+              [2625] What are AI agents?
+          - Knowledge mining
+            - What is Azure AI Search?
+              [2630] What is Azure AI Search?
+      - Process improvements
+        - Overview
+          [2633] Innovation in the digital economy
+        - Business value consensus
+          [2637] Build consensus on the business valueof innovation
+        - Customer adoption
+          - Feedback loops
+            [2641] Create customer partnerships throughthe build-measure-learn feedback loop
+          - Build with customer empathy
+            [2643] Build with customer empathy
+          - Measure for customer impact
+            [2650] How to measure for customer impact
+          - Learn with customers
+            [2653] Learn with customers
+          - Customer challenges and blockers
+            [2657] Common technology adoption blockersand challenges to innovation
+        - Digital invention
+          - Develop digital inventions
+            [2661] Develop digital inventions
+          - Democratize data
+            [2663] Democratize data with digital invention
+          - Application development for innovative applications
+            [2668] Application development for innovativeapplications
+          - Empower adoption
+            [2674] Empower adoption with digitalinvention
+          - Interact with devices
+            [2680] Ambient user experiences: Interact withdevices
+          - Predict and influence
+            [2686] Predictive modeling and influencingcustomer behavior
+    - Relocate
+      - Overview
+        [2691] Relocate cloud workloads
+      - Initiate
+        [2694] Initiate a cloud relocation project
+      - Evaluate
+        [2697] Evaluate a cloud workload for relocation
+      - Select
+        [2703] Select a relocation strategy for cloudworkloads
+      - Migrate
+        [2709] Migrate a cloud workload to anotherregion
+      - Cutover
+        [2713] Cut over a cloud workload
+  - Govern
+    - Overview
+      [2715] Governance in the Microsoft CloudAdoption Framework for Azure
+    - Methodology
+      [2717] Govern methodology for the cloud
+    - Benchmark
+      [2720] Assess your transformation journey
+    - Initial governance foundation
+      [2721] Establish an initial cloud governancefoundation
+    - Governance foundation improvements
+      [2723] Improve your initial cloud governancefoundation
+    - Governance guides
+      - Overview
+        [2725] Cloud governance guides
+      - Standard enterprise governance guide
+        - Overview
+          [2729] Standard enterprise governance guide
+        - Narrative
+          [2736] Standard enterprise governance guide:The narrative behind the governancestrategy
+        - Initial corporate policy
+          [2739] Standard enterprise governance guide:Initial corporate policy behind thegovernance strategy
+        - Prescriptive guidance
+          [2743] Standard enterprise governance: Bestpractices explained
+        - Improve the Security Baseline discipline
+          [2751] Standard enterprise governance guide:Improve the Security Baseline discipline
+        - Improve the Resource Consistency discipline
+          [2758] Standard enterprise governance guide:Improve the resource consistencydiscipline
+        - Improve the Cost Management discipline
+          [2763] Standard enterprise governance guide:Improve the Cost Managementdiscipline
+        - Multicloud scenarios
+          [2766] Standard enterprise governance guide:Multicloud improvement
+      - Governance guide for complex enterprises
+        - Overview
+          [2770] Governance guide for complexenterprises
+        - Narrative
+          [2778] Governance guide for complexenterprises: The supporting narrative
+        - Initial corporate policy
+          [2782] Governance guide for complexenterprises: Initial corporate policybehind the governance strategy
+        - Prescriptive guidance
+          [2786] Complex enterprise governance: Bestpractices explained
+        - Improve the Identity Baseline discipline
+          [2795] Governance guide for complexenterprises: Improve the IdentityBaseline discipline
+        - Improve the Security Baseline discipline
+          [2799] Governance guide for complexenterprises: Improve the SecurityBaseline discipline
+        - Improve the Resource Consistency discipline
+          [2808] Governance guide for complexenterprises: Improve the ResourceConsistency discipline
+        - Improve the Cost Management discipline
+          [2813] Governance guide for complexenterprises: Improve the CostManagement discipline
+        - Multicloud scenarios
+          [2817] Governance guide for complexenterprises: Multicloud improvement
+        - Multiple layers of governance
+          [2820] Governance guide for complexenterprises: Multiple layers ofgovernance
+    - Governance considerations
+      - Evaluate corporate policy
+        [2823] Evaluate corporate policy
+      - Cloud-ready corporate policy and compliance
+        - Make corporate policy cloud-ready
+          [2825] Prepare corporate IT policy for thecloud
+        - Understand business risks
+          [2829] Understand business risk during cloudmigration
+        - Evaluate risk tolerance
+          [2832] Evaluate risk tolerance
+        - Define corporate policy
+          [2837] Define corporate policy for cloudgovernance
+        - Align design with policy
+          [2840] Align your cloud governance designguide with corporate policy
+        - Establish policy adherence processes
+          [2842] Establish policy adherence processes
+        - Implement cloud service controls
+          [2846] Implement cloud service controls
+        - Regulatory compliance
+          [2857] Introduction to regulatory compliance
+        - Cloud security readiness
+          [2860] CISO cloud readiness guide
+        - Cloud policy review
+          [2863] Conduct a cloud policy review
+        - Data classification
+          [2866] What is data classification?
+        - Sustainability considerations
+          [2868] Sustainability considerations in yourcloud governance strategy
+    - Disciplines of cloud governance
+      [2871] The Five Disciplines of CloudGovernance
+    - Implement disciplines of cloud governance
+      - Cost management
+        - Overview of cost management
+          [2873] Cost Management discipline overview
+        - Download the template
+          [2875] Cost Management discipline template
+        - Understand business risks
+          [2876] Motivations and business risks in theCost Management discipline
+        - Risk tolerance metrics and indicators
+          [2878] Risk tolerance metrics and indicators inthe Cost Management discipline
+        - Sample Cost Management policies
+          [2881] Cost Management sample policystatements
+        - Policy compliance processes
+          [2885] Cost Management policy complianceprocesses
+        - Improve cost management
+          [2888] Cost Management disciplineimprovement
+        - Best practices
+          [2892] Best practices for costing and sizingresources hosted in Azure
+        - Azure tools for cost management
+          [2911] Cost Management tools in Azure
+      - Security baseline
+        - Overview of the security baseline
+          [2912] Security Baseline discipline overview
+        - Download the template
+          [2915] Security Baseline discipline template
+        - Understand business risks
+          [2916] Motivations and business risks in theSecurity Baseline discipline
+        - Risk tolerance metrics and indicators
+          [2918] Risk tolerance metrics and indicators inthe Security Baseline discipline
+        - Sample Security Baseline policies
+          [2921] Security Baseline sample policystatements
+        - Policy compliance processes
+          [2925] Security Baseline policy complianceprocesses
+        - Improve the security baseline
+          [2929] Security Baseline disciplineimprovement
+        - Cloud-native security baseline
+          [2934] Cloud-native Security Baseline policy
+        - Additional Azure security guidance
+          [2939] Microsoft security guidance
+        - Azure tools for security baseline
+          [2943] Security Baseline tools in Azure
+      - Identity baseline
+        - Overview of the identity baseline
+          [2945] Identity Baseline discipline overview
+        - Microsoft Entra ID Governance guidance
+          [2946] Microsoft Entra configuration
+        - Administrative access governance guidance
+          [2954] Administrative access
+        - Business user access governance guidance
+          [2956] Business user access
+        - Application access governance guidance
+          [2959] Application access governance
+      - Resource consistency
+        - Overview of resource consistency
+          [2961] Resource Consistency discipline
+        - Management groups guidance
+          [2963] Management group structure
+        - Resource naming guidance
+          [2965] Naming overview
+        - Resource tagging guidance
+          [2968] Tagging overview
+        - Managing business constraints
+          [2970] Business constraints
+        - Keep your Azure landing zone up to date
+          [2973] Keep your Azure landing zone up todate
+        - Migrate Azure landing zone policies to Azure built-in policies
+          [2975] Azure landing zone governance guide:Migrate Azure landing zone policies toAzure built-in policies
+        - Update Azure landing zone custom policies
+          [2980] Update Azure landing zone custompolicies
+      - Deployment acceleration
+        - Overview of deployment acceleration
+          [2986] Deployment Acceleration discipline
+        - Consistency and repeatability in deployments
+          [2987] Consistency and repeatability indeployment
+        - Policy visibility in deployments
+          [2989] Policy visibility in the deploymentprocess
+    - Govern antipatterns
+      [2990] Govern antipatterns
+  - Manage
+    - Overview
+      [2993] Cloud management in the CloudAdoption Framework
+    - Azure Management Guide
+      - Before you start
+        [2996] Azure Management Guide: Before youstart
+      - Inventory and visibility
+        [2998] Inventory and visibility in Azure
+      - Operational compliance
+        [3002] Operational compliance in Azure
+      - Protect and recover
+        [3006] Protect and recover in Azure
+      - Enhanced baseline
+        [3009] Enhanced management baseline inAzure
+      - Platform specialization
+        [3014] Platform specialization for cloudmanagement
+      - Workload specialization
+        [3019] Workload specialization for cloudmanagement
+    - Best practices
+      - Overview
+        [3022] Establish operational managementpractices in the cloud
+      - Azure server management services
+        - Introduction to Azure server management services
+          [3025] Overview of Azure server managementservices
+        - Getting ready for cloud operations
+          [3027] Phase 1: Prerequisite planning for Azureserver management services
+        - Get started with cloud operations
+          - Overview
+            [3034] Phase 2: Onboarding Azure servermanagement services
+          - Configure the service for a single VM
+            [3036] Enable server management services ona single VM for evaluation
+          - Configure the service for an entire subscription
+            [3038] Configure Azure server managementservices at scale
+          - Configure at scale with automation
+            [3046] Automate onboarding
+          - Set up basic alerts
+            [3048] Set up basic alerts
+        - Ongoing cloud operations
+          - Overview
+            [3050] Phase 3: Ongoing management andsecurity
+          - Enable guest configuration policy
+            [3051] Azure Policy guest configurationextension
+          - Critical changes (tracking and alerting)
+            [3053] Enable tracking and alerting for criticalchanges
+          - Update schedules
+            [3057] Create update schedules
+          - Common policies in Azure
+            [3060] Common Azure Policy examples
+        - Review of tools and services
+          [3063] Azure server management tools andservices
+      - Monitoring
+        - Overview
+          [3067] The cloud monitoring guide
+        - Monitoring platforms overview
+          [3069] Cloud monitoring guide: Monitoringplatforms overview
+        - Monitoring cloud models
+          [3079] Monitoring strategy for clouddeployment models
+        - Observability
+          [3091] Observability in cloud monitoring
+        - Service Level Objectives
+          [3100] Cloud monitoring service levelobjectives
+        - Data collection
+          [3110] Collect the right monitoring data
+        - Response
+          [3113] Cloud monitoring and response
+        - Skills relevant to monitoring
+          [3119] Skills readiness for cloud monitoring
+      - Centralize management operations
+        [3124] Centralize management operations
+      - Establish an operational fitness review
+        [3126] Establish operations managementprocesses
+      - Improving platform or workload reliability
+        - Reliability checklist for Azure services
+          [3133] Resiliency checklist for specific Azureservices
+        - Failure mode analysis
+          [3143] Failure mode analysis for Azureapplications
+        - Recover from a region wide service disruption
+          [3159] Recover from a region-wide servicedisruption
+        - Recover from data corruption or accidental deletion
+          [3169] Recommendations for designing forredundancy
+    - How to update ALZ
+      - Use infrastructure as code to update Azure landing zones
+        [3177] Use infrastructure as code to updateAzure landing zones
+    - Management considerations
+      - Overview
+        [3181] IT management and operations in thecloud
+      - Business alignment
+        [3183] Create business alignment in cloudmanagement
+      - Define criticality
+        [3185] Business criticality in cloudmanagement
+      - Understand business impact
+        [3189] Business impact in cloud management
+      - Establish business commitments
+        [3192] Business commitment in cloudmanagement
+      - Management disciplines
+        [3200] Cloud management disciplines
+      - Inventory and visibility
+        [3203] Inventory and visibility in cloudmanagement
+      - Operational compliance
+        [3208] Operational compliance in cloudmanagement
+      - Protect and recovery
+        [3211] Protect and recover in cloudmanagement
+      - Platform operations
+        [3215] Platform operations in cloudmanagement
+      - Workload operations
+        [3219] Workload operations in cloudmanagement
+      - Sustainability alignment
+        [3223] Sustainability alignment in cloudmanagement
+    - Advanced management and system design
+      [3226] Apply design principles and advancedoperations
+    - Manage antipatterns
+      [3232] Cloud operation and managementantipatterns
+  - Secure
+    - Overview
+      [3234] Security in the Microsoft CloudAdoption Framework for Azure
+    - Methodology
+      - Risk insights
+        [3240] Risk management insights
+      - Security integration
+        [3245] Security integration
+      - Business resilience
+        [3253] Business resilience
+      - Access control
+        [3256] Access control
+      - Security operations
+        [3263] Security operations
+      - Asset protection
+        [3270] Asset protection
+      - Security governance
+        [3277] Security governance
+      - Innovation security
+        [3281] Innovation security
+      - DevSecOps controls
+        [3291] DevSecOps controls
+    - Best practices
+      - Infrastructure and development security
+        - Introduction
+          [3300] Infrastructure and development securitybest practices
+        - Infrastructure security
+          - Overview
+            [3302] Infrastructure security overview
+          - Strategy
+            [3303] Infrastructure security strategy
+          - Architecture
+            [3305] Infrastructure security architecture
+          - Implementation
+            [3308] Infrastructure security implementation
+          - Operations and governance
+            [3310] Infrastructure security operations andgovernance
+        - Development security
+          - Strategy
+            [3313] Development security strategy
+          - Innovation security
+            [3315] Development innovation security
+          - Securing DevOps strategy and process
+            [3318] Securing DevOps strategy and process
+          - Securing DevOps CI/CD pipelines
+            [3322] Securing the pipeline and CI/CDworkflow
+          - Secure DevOps governance
+            [3327] End-to-end governance from DevOps toAzure
+          - Architecture
+            [3331] Development security architecture
+          - Implementation
+            [3334] Development security implementationand operations
+      - Toolchain
+        [3337] Security toolchain
+    - Security considerations
+      - Security strategy
+        [3338] Define a security strategy
+      - Roles and responsibilities
+        [3354] Cloud security functions
+      - Getting started
+        [3358] Get started: Implement security acrossthe enterprise environment
+      - Security best practices
+        [3370] Azure security best practices
+      - Microsoft Cybersecurity Reference Architectures
+        [3391] Microsoft Cybersecurity ReferenceArchitectures
+      - Security documentation
+        [3394] 
+      - Azure Security Benchmark
+        [3398] Microsoft cloud security benchmarkdocumentation
+  - Organize
+    - Managing organization alignment
+      [3402] Manage organizational alignment
+    - Required cloud functions
+      - Cloud strategy functions
+        [3404] Understand the function of cloudstrategy
+      - Cloud adoption functions
+        [3408] Cloud adoption functions
+      - Cloud governance functions
+        [3411] Cloud governance functions
+      - Central IT functions
+        [3416] Understand the functions of a central ITteam
+      - Cloud operations functions
+        [3422] Cloud operations functions
+      - Cloud center of excellence functions
+        [3425] Cloud center of excellence (CCoE)functions
+      - Cloud platform functions
+        [3432] Cloud platform functions
+      - Cloud automation functions
+        [3435] Cloud automation functions
+      - Cloud data functions
+        [3438] Understand cloud data functions
+      - Cloud security functions
+        - Cloud security team functions
+          [3441] Cloud security functions
+        - Policy and standards
+          [3445] Function of cloud security policy andstandards
+        - Security operations center (SOC)
+          [3447] Security operations (SecOps) functions
+        - Security architecture
+          [3449] Cloud security architecture functions
+        - Security compliance management
+          [3451] Cloud security compliance managementfunctions
+        - People security
+          [3453] People security functions in the cloud
+        - Application security and DevSecOps
+          [3455] Application security and DevSecOpsfunctions
+        - Data security
+          [3457] Function of cloud data security
+        - Infrastructure and endpoint security
+          [3458] Function of cloud infrastructure andendpoint security
+        - Identity and keys
+          [3460] Function of identity and keymanagement in the cloud
+        - Threat intelligence
+          [3462] Function of cloud threat intelligence
+        - Posture management
+          [3463] Function of cloud security posturemanagement
+        - Incident preparation
+          [3465] Function of cloud security incidentpreparation
+    - Mature teams structure
+      [3466] Mature team structures
+    - Align the RACI matrix
+      [3472] 
+    - Building technical skills
+      [3475] Build technical skills
+    - Creating a cost-conscious organization
+      [3478] Build a cost-conscious organization
+    - Organize antipatterns
+      - Organizational antipatterns
+        [3483] Cloud organizational antipatterns
+      - IT fiefdoms and IT silos
+        [3487] Silos and fiefdoms
+  - Resources
+    - Tools and templates
+      [3495] Tools and templates
+    - Decision guides
+      - Overview
+        [3501] Architectural decision guides
+      - Identity
+        - Identity decision guide
+          [3503] Identity decision guide
+        - Azure role-based access control
+          [3509] Azure role-based access control
+      - Networking
+        - Hub and spoke network topology
+          [3513] Hub-and-spoke network topology
+        - Perimeter networks
+          [3519] Perimeter networks
+      - Resource consistency
+        [3525] Resource consistency decision guide
+      - Logging and reporting
+        [3529] Logging and reporting decision guide
+      - AI + machine learning
+        - Organize and set up Azure Machine Learning
+          [3535] Organize and set up Azure MachineLearning environments
+        - Best practices for enterprise security
+          [3543] Azure Machine Learning best practicesfor enterprise security
+        - Manage budget, cost, and quota with Azure
+          [3555] Manage budgets, costs, and quota forAzure Machine Learning atorganizational scale
+        - Machine learning operations
+          [3567] Machine learning operations
+    - Additional resources
+      - Azure Architecture Center for solution architecture
+        [3580] 
+      - Microsoft Azure Well-Architected Framework for workload architecture
+      - Docs for product implementation
+      - Learn to develop skills
+      - Assessments to personalize guidance
+    - Archived resources
+      - Cloud operating model
+        [3585] Cloud Operating Model is now part ofthe Microsoft Cloud AdoptionFramework for Azure
+      - Azure enterprise scaffold
+        [3586] Azure enterprise scaffold is now theMicrosoft Cloud Adoption Frameworkfor Azure
+      - Virtual datacenter (VDC)
+        [3587] Azure Virtual Datacenter
+      - Virtual datacenter boundary security
+        [3588] The virtual datacenter: A networkperspective

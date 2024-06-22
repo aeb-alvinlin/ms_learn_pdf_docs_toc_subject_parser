@@ -1,0 +1,678 @@
+- ---< azure-active-directory-b2c.pdf >---
+  - Azure AD B2C 檔
+    [1] 
+  - 概觀
+    - 關於 Azure AD B2C
+      [3] 什麼是 Azure Active Directory B2C？
+    - 技術概觀
+      [7] Azure Active Directory B2C 的技術和功能概觀
+    - Docs 有哪些新功能？
+      [24] Azure Active Directory B2C：新功能
+  - 快速入門
+    - 設定 ASP.NET 應用程式的登入
+      [26] 快速入門：設定使用 Azure ActiveDirectory B2C 登入 ASP.NET 應用程式
+    - 設定傳統型應用程式的登入
+      [31] 快速入門：使用 Azure Active DirectoryB2C 設定傳統型應用程式的登入
+    - 設定單頁應用程式的登入
+      [35] 快速入門：設定使用 Azure ActiveDirectory B2C 的單頁應用程式登入
+  - 教學課程
+    - 1 - 建立 Azure AD B2C 租使用者
+      [39] 教學課程：建立 Azure Active DirectoryB2C 租用戶
+    - 2 - 註冊 Web 應用程式
+      [45] 教學課程：在 Azure Active DirectoryB2C 中註冊 Web 應用程式
+    - 3 - 建立使用者流程和自定義原則
+      [49] 教學課程：在 Azure Active DirectoryB2C 中建立使用者流程和自定義原則
+    - 4 - 管理您的租使用者
+      - 新增系統管理員（工作帳戶）
+        [56] 在 Azure Active Directory B2C 中管理系統管理員帳戶
+      - 管理緊急存取
+        [62] 管理 Azure Active Directory B2C 中的緊急存取帳戶
+      - 檢查租使用者建立許可權
+        [64] 在 Azure Active Directory B2C 中檢閱租使用者建立許可權
+      - 尋找租用戶名稱和識別碼
+        [66] 在 Azure Active Directory B2C 中尋找租使用者名稱和租使用者識別碼
+      - 管理目錄配額
+        [69] 管理 Azure Active Directory B2C 租使用者的目錄大小配額
+    - 5 - 清除和刪除租使用者
+      [71] 清除資源並刪除租使用者
+  - 範例
+    - 整合 Azure AD B2C 與您的應用程式
+      [76] Azure Active Directory B2C 程式碼範例
+    - 使用 API 連接器修改您的使用者流程
+      [80] API 連接器 REST API 範例
+  - 概念
+    - 比較外部身分識別的解決方案
+      [82] Microsoft Entra 外部 ID 簡介
+    - 支援的 Microsoft Entra 識別符功能
+      [89] 支援的 Microsoft Entra 識別符功能
+    - 了解驗證基本概念
+      - 驗證和授權
+        [91] 驗證與授權
+      - 語彙基元
+        [93] 令牌和宣告概觀
+      - 應用程式驗證要求
+        [96] Microsoft 身分識別平台的應用程式類型
+      - 驗證程式庫
+        [103] Microsoft 驗證資源庫 (MSAL) 概觀
+    - Azure AD B2C 全域身分識別架構
+      - 全域身分識別解決方案
+        [105] Azure Active Directory B2C 全域身分識別架構
+      - 漏鬥圖型設計
+        [110] 使用漏斗圖型方法建置全域身分識別解決方案
+      - 以區域為基礎的設計
+        [124] 使用以區域為基礎的方法來建置全域身分識別解決方案
+      - 漏鬥型概念證明
+        [137] Azure Active Directory B2C 全域身分識別架構概念證明，適用于漏斗型設定
+      - 以區域為基礎的概念證明
+        [143] Azure Active Directory B2C 全域身分識別架構的概念證明，適用于以區域為基礎的設定
+    - Azure AD B2C 最佳做法
+      [155] Azure Active Directory B2C 的建議和最佳做法
+    - 應用程式類型
+      [160] 可在 Active Directory B2C 中使用的應用程式類型
+    - 驗證通訊協定
+      - OAuth2 通訊協定
+        [165] Azure AD B2C：驗證通訊協定
+      - OpenID 連線 通訊協定
+        [168] 在 Azure Active Directory B2C 中使用OpenID 連線 進行 Web 登入
+      - 授權碼授與流程
+        [180] Azure Active Directory B2C 中的 OAuth2.0 授權碼流程
+      - 隱含流程
+        [189] 在 Azure Active Directory B2C 中使用OAuth 2.0 隱含流程的單頁應用程式登入
+      - 語彙基元
+        [200] 概述 Azure Active Directory B2C 中的權杖
+      - 要求存取權杖
+        [207] 要求 Azure Active Directory B2C 中的存取權杖
+    - 使用者體驗
+      - 登入選項
+        [211] Azure AD B2C 登入選項
+      - 使用者流程和自定義原則
+        [216] 使用者流程和自訂原則概觀
+      - 自定義原則概觀
+        [221] Azure AD B2C 自定義原則概觀
+    - API 連線 ors
+      [229] 使用 API 連接器搭配外部身分識別資料來源，自訂和擴充註冊使用者流程與自訂原則
+    - 使用者帳戶
+      [232] Azure Active Directory B2C 中的使用者帳戶概觀
+    - 使用者配置檔屬性
+      [235] 
+    - 角色和資源訪問控制
+      [245] 角色和資源存取控制
+    - Identity Protection 和條件式存取
+      [246] Azure AD B2C 的 Identity Protection 和條件式存取
+    - 原則金鑰
+      [249] Azure Active Directory B2C 中原則密鑰的概觀
+  - 操作指南
+    - 驗證和授權
+      - 註冊及設定應用程式
+        - 註冊應用程式
+          [250] 在 Azure Active Directory B2C 中註冊應用程式
+        - 註冊單頁應用程式 （SPA）
+          [251] 在 Azure Active Directory B2C 中註冊單頁應用程式
+        - 註冊 Web 應用程式
+          [255] 教學課程：在 Azure Active DirectoryB2C 中註冊 Web 應用程式
+        - 註冊原生用戶端 （適用於行動裝置和桌面版）
+          [259] 將原生用戶端應用程式新增至您的 AzureActive Directory B2C 租用戶
+        - 註冊 Web API 應用程式
+          [261] 將 Web API 應用程式新增至您的 AzureActive Directory B2C 租用戶
+        - 註冊精靈應用程式 （客戶端認證）
+          [264] 在 Azure Active Directory B2C 中設定OAuth 2.0 用戶端認證流程
+        - 註冊 Microsoft Graph 應用程式
+          [274] 註冊 Microsoft Graph 應用程式
+        - 註冊 SAML 應用程式
+          [278] 在 Azure AD B2C 中註冊 SAML 應用程式
+        - 在 Microsoft Entra 應用連結庫中發佈應用程式
+          [292] 將 Azure Active Directory B2C 應用程式發佈至 Microsoft Entra 應用程式庫
+      - 建立使用者流程或自定義原則
+        - 註冊或登入原則
+          [296] 在 Azure Active Directory B2C 中設定註冊和登入流程
+        - 登入原則
+          [302] 在 Azure Active Directory B2C 中設定登入流程
+        - 密碼重設原則
+          - 自助式密碼重設
+            [305] 在 Azure Active Directory B2C 中設定密碼重設流程
+          - 自助式密碼變更
+            [310] 在 Azure Active Directory B2C 中使用自訂原則設定密碼變更
+          - 強制重設密碼
+            [311] 在 Azure Active Directory B2C 中設定強制密碼重設流程
+        - 配置檔編輯原則
+          [315] 在 Azure Active Directory B2C 中設定設定檔編輯流程
+        - 用戶端認證原則
+          [317] 在 Azure Active Directory B2C 中設定OAuth 2.0 用戶端認證流程
+        - 資源擁有者密碼認證原則
+          [327] 在 Azure Active Directory B2C 中設定資源擁有者密碼認證流程
+        - 電話 註冊和登入
+          [333] 設定使用者流程的電話註冊和登入
+      - 整合應用程式
+        - 單頁應用程式 (SPA)
+          - SPA 驗證文件
+            [341] 單頁應用程式 (SPA) 驗證文件
+          - JavaScript
+            - 設定範例 SPA 應用程式
+              [343] 使用 Azure AD B2C 在範例單頁應用程式中設定驗證
+            - 在 SPA 應用程式中啟用驗證
+              [356] 使用 Azure AD B2C 在您自己的單頁應用程式中啟用驗證
+            - 驗證選項
+              [368] 使用 Azure AD B2C 在單頁應用程式中設定驗證選項
+          - React
+            - 設定範例 React 應用程式
+              [374] 使用 Azure Active Directory B2C 在範例React 單頁應用程式中設定驗證
+            - 在 React 應用程式中啟用驗證
+              [387] 使用 Azure Active Directory B2C 在您自己的 React 應用程式中啟用驗證
+            - 驗證選項
+              [391] 使用 Azure Active Directory B2C 在React 應用程式中設定驗證選項
+          - Angular
+            - 設定範例 Angular 應用程式
+              [397] 使用 Azure Active Directory B2C 在範例Angular 單頁應用程式中設定驗證
+            - 在 Angular 應用程式中啟用驗證
+              [409] 使用 Azure Active Directory B2C 在您自己的 Angular 應用程式中啟用驗證
+            - 驗證選項
+              [426] 使用 Azure Active Directory B2C 在Angular 應用程式中設定驗證選項
+        - Web 應用程式
+          - Web 應用程式驗證文件
+            [435] Web 應用程式檔
+          - ASP.NET Core
+            - 設定範例 Web 應用程式
+              [436] 使用 Azure AD B2C 在範例 Web 應用程式中設定驗證
+            - 在 Web 應用程式中啟用驗證
+              [441] 使用 Azure AD B2C 在您自己的 Web 應用程式中啟用驗證
+            - 驗證選項
+              [448] 使用 Azure AD B2C 啟用 Web 應用程式驗證選項
+          - Node.js
+            - 設定範例 Node.js Web 應用程式
+              [459] 使用 Azure Active Directory B2C 在範例Node.js Web 應用程式中設定驗證
+            - 在 Node.js Web 應用程式中啟用驗證
+              [466] 使用 Azure Active Directory B2C 在您自己的節點 Web 應用程式中啟用驗證
+            - 驗證選項
+              [482] 使用 Azure Active Directory B2C 在Node.js Web 應用程式中啟用驗證選項
+          - Python
+            - 設定範例 Python Web 應用程式
+              [487] 使用 Azure AD B2C 在範例 Python Web應用程式中設定驗證
+            - 在 Python Web 應用程式中啟用驗證
+              [498] 使用 Azure Active Directory B2C 在您自己的 Python Web 應用程式中啟用驗證
+            - 驗證選項
+              [508] 使用 Azure AD B2C 啟用 Python Web 應用程式驗證選項
+          - Azure Web 應用程式
+            - 設定 Azure Web 應用程式
+              [510] 使用 Azure AD B2C 在 Azure Web 應用程式中設定驗證
+            - 檔案型組態
+              [515] 使用 Azure AD B2C 在 Azure Web 應用程式組態檔中設定驗證
+          - Static Web Apps
+            - 設定 Azure 靜態 Web 應用程式
+              [520] 使用 Azure AD B2C 在 Azure 靜態 Web應用程式中設定驗證
+            - 驗證選項
+              [526] 使用 Azure AD B2C 在 Azure Static WebApp 中啟用驗證選項
+        - Web API
+          - Web API 驗證文件
+            [529] Web API 應用程式文件
+          - ASP.NET 呼叫 Web API 的 Core Web 應用程式
+            - 設定呼叫 Web API 的範例 Web 應用程式
+              [531] 在使用 Azure AD B2C 呼叫 Web API 的範例 Web 應用程式中設定驗證
+            - 在 Web 應用程式中啟用驗證
+              [542] 在使用 Azure AD B2C 呼叫 Web API 的Web 應用程式中啟用驗證
+            - 驗證選項
+              [550] 使用 Azure AD B2C，在要呼叫 Web API的 Web 應用程式中設定驗證選項
+          - 呼叫 Web API 的 Node.js Web 應用程式
+            - 設定範例 Node.js Web API
+              [557] 使用 Azure Active Directory B2C 在範例Node.js Web API 中設定驗證
+            - 在 Node.js Web API 中啟用驗證
+              [569] 使用 Azure Active Directory B2C 在您自己的 Node.js Web API 中啟用驗證
+            - 驗證選項
+              [585] 使用 Azure Active Directory B2C 啟用Node.js Web API 驗證選項
+          - 保護 Web API 的存取權 （ASP.NET Core 和 Node.js）
+            [591] 使用 Azure AD B2C 在您自己的 Web API中啟用驗證
+          - 安全 API 管理 API
+            [600] 使用 Azure AD B2C 保護 Azure API 管理API
+        - 行動裝置應用程式
+          - 行動應用程式驗證文件
+            [610] 行動應用程式驗證文件
+          - Android （Java 和 Kotlin）
+            - 設定範例 Android 應用程式
+              [611] 使用 Azure AD B2C 在範例 Android 應用程式中設定驗證
+            - 在Android應用程式中啟用驗證
+              [621] 使用 Azure AD B2C 在您自己的 Android應用程式中啟用驗證
+            - 驗證選項
+              [632] 使用 Azure AD B2C 在 Android 應用程式中設定驗證選項
+          - iOS (Swift)
+            - 設定範例 iOS 應用程式
+              [639] 使用 Azure AD B2C 在範例 iOS Swift 應用程式中設定驗證
+            - 在您的 iOS 應用程式中啟用驗證
+              [651] 使用 Azure AD B2C 在您自己的 iOS Swift應用程式中啟用驗證
+            - 驗證選項
+              [660] 使用 Azure AD B2C 在 iOS Swift 應用程式中啟用驗證選項
+        - WPF 傳統型應用程式
+          - 傳統型應用程式驗證文件
+            [667] 傳統型應用程式驗證文件
+          - 設定範例傳統型應用程式
+            [668] 使用 Azure AD B2C 在範例 WPF 傳統型應用程式中設定驗證
+          - 驗證選項
+            [677] 使用 Azure AD B2C 在 WPF 傳統型應用程式中啟用驗證選項
+        - 精靈或服務 （客戶端認證流程）
+          [682] 在 Azure Active Directory B2C 中設定OAuth 2.0 用戶端認證流程
+        - Microsoft Power Apps
+          [692] 使用 Azure AD B2C 設定 OpenIDConnect 提供者
+        - SAML 應用程式
+          - 設定 SAML 應用程式
+            [696] 在 Azure AD B2C 中註冊 SAML 應用程式
+          - 設定 SAML 應用程式選項
+            [697] 在 Azure AD B2C 中註冊 SAML 應用程式的選項
+      - 設定識別提供者
+        - 本機帳戶識別提供者
+          [698] 設定本機帳戶識別提供者
+        - 新增識別提供者
+          [701] 將識別提供者新增至 Active DirectoryB2C 租用戶
+        - AD FS （OpenID 連線）
+          [703] 在 Azure Active Directory B2C 中使用自定義原則，將 AD FS 新增為 OpenID 連線識別提供者
+        - AD FS （SAML）
+          [707] 在 Azure Active Directory B2C 中使用自定義原則，將 AD FS 新增為 SAML 識別提供者
+        - Amazon
+          [708] 使用 Azure Active Directory B2C 設定使用 Amazon 帳戶註冊和登入
+        - Apple
+          [710] 使用 Azure Active Directory B2C 以Apple ID 設定註冊和登入
+        - Microsoft Entra ID （單一租使用者）
+          [713] 在 Azure Active Directory B2C 中設定特定 Microsoft Entra 組織的登入
+        - Microsoft Entra ID （多租使用者）
+          [718] 在 Azure Active Directory B2C 中使用自定義原則設定多租使用者 Microsoft EntraID 的登入
+        - Azure AD B2C
+          [719] 使用另一個 Azure AD B2C 租使用者的Azure AD B2C 帳戶設定註冊和登入
+        - eBay
+          [724] 使用 Azure Active Directory B2C 設定使用 eBay 帳戶註冊和登入
+        - Facebook
+          [725] 使用 Azure Active Directory B2C 設定使用 Facebook 帳戶註冊和登入
+        - 泛型 OpenId 連線
+          [728] 使用 Azure Active Directory B2C 設定使用一般 OpenID 連線註冊和登入
+        - 一般 SAML 識別提供者
+          - 設定 SAML 識別提供者
+            [732] 使用 Azure Active Directory B2C 設定SAML 身分識別提供者的註冊和登入
+          - 設定 SAML 識別提供者選項
+            [733] 使用 Azure Active Directory B2C 設定SAML 識別提供者選項
+        - GitHub
+          [734] 使用 Azure Active Directory B2C 以GitHub 帳戶設定註冊和登入
+        - Google
+          [736] 使用 Azure Active Directory B2C 設定使用 Google 帳戶註冊和登入
+        - ID.me
+          [739] 使用 Azure Active Directory B2C 以ID.me 帳戶設定註冊和登入
+        - itsme
+          [740] 使用 Azure Active Directory B2C 設定itsme OpenID 連線 （OIDC）
+        - LinkedIn
+          [745] 使用 Azure Active Directory B2C 以LinkedIn帳戶設定註冊和登入
+        - Microsoft 帳戶
+          [747] 使用 Azure Active Directory B2C 設定使用 Microsoft 帳戶註冊和登入
+        - 行動識別碼
+          [750] 使用 Azure Active Directory B2C 以行動標識碼設定註冊和登入
+        - PingOne （Ping Identity）
+          [753] 使用 Azure Active Directory B2C 設定使用 PingOne 帳戶註冊和登入
+        - Qq
+          [756] 使用 Azure Active Directory B2C 以 QQ帳戶設定註冊和登入
+        - Salesforce
+          [758] 使用 Azure Active Directory B2C 設定使用 Salesforce 帳戶註冊和登入
+        - Salesforce （SAML）
+          [761] 在 Azure Active Directory B2C 中使用SAML 通訊協定設定使用 SalesforceSAML 提供者的登入
+        - SwissID
+          [762] 使用 Azure Active Directory B2C 設定使用 SwissID 帳戶註冊和登入
+        - Twitter
+          [765] 使用 Azure Active Directory B2C 設定使用 Twitter 帳戶註冊和登入
+        - WeChat
+          [768] 使用 Azure Active Directory B2C 設定使用 WeChat 帳戶註冊和登入
+        - 微 博
+          [770] 使用 Azure Active Directory B2C 設定使用 Weibo 帳戶註冊和登入
+        - 傳遞識別提供者權杖
+          [772] 在 Azure Active Directory B2C 中將識別提供者存取令牌傳遞至您的應用程式
+      - 管理權杖和會話
+        - 設定會話行為
+          [775] 在 Azure Active Directory B2C 中設定會話行為
+        - 設定權杖
+          [781] 在 Azure Active Directory B2C 中設定令牌
+        - 設定直接登入
+          [785] 使用 Azure Active Directory B2C 設定直接登入
+    - 管理使用者
+      - 透過 Azure 入口網站 管理使用者
+        [787] 使用 Azure 入口網站 在 Azure AD B2C 中建立和刪除取用者使用者
+      - 移轉使用者
+        [791] 將使用者遷移至 Azure AD B2C
+      - 合作夥伴整合
+        - N8identity
+          [795] 使用 Azure Active Directory B2C 設定TheAccessHub 管理員 Tool
+        - Grit IAM B2B2C
+          [804] 教學課程：使用 Azure Active DirectoryB2C 設定 Grit IAM B2B2C 解決方案
+        - Saviynt
+          [808] 使用 Azure Active Directory B2C 設定Saviynt 的教學課程
+        - 神秘IAM Rampart
+          [812] 設定 WhoIAM Rampart 與 Azure ActiveDirectory B2C
+    - 自訂
+      - 定義自訂屬性
+        [816] 在 Azure Active Directory B2C 中定義自訂屬性
+      - 自訂 UI/UX
+        - 設定使用者輸入
+          [819] 在 Azure Active Directory B2C 中新增用戶屬性並自定義用戶輸入
+        - 自訂 UI
+          [824] 在 Azure Active Directory B2C 中自定義使用者介面
+        - 使用 HTML 範本自訂 UI
+          [831] 使用 Azure Active Directory B2C 中的HTML 範本自訂使用者介面
+        - 啟用 JavaScript 和版面配置
+          [842] 在 Azure Active Directory B2C 中啟用JavaScript 和版面配置版本
+        - 使用 iframe 的內嵌登入
+          [848] 內嵌註冊或登入體驗
+        - 密碼複雜性
+          [849] 在 Azure Active Directory B2C 中設定密碼的複雜度需求
+        - 停用電子郵件驗證
+          [852] 在 Azure Active Directory B2C 中客戶註冊期間停用電子郵件驗證
+      - 自訂語言
+        [854] Azure Active Directory B2C 中的語言自定義
+      - 使用 API 連接器
+        - 修改註冊體驗
+          [862] 將 API 連接器新增至註冊使用者流程
+        - 使用外部宣告擴充權杖
+          [875] 使用 API 連接器擴充來自外部來源的宣告的權杖
+        - 保護 API 連接器
+          [882] 在 Azure AD B2C 中用於 API 連接器的安全 API
+      - 使用自訂網域
+        - b2clogin.com 概觀
+          [888] 將 Azure Active Directory B2C 的重新導向 URL 設定為 b2clogin.com
+        - 設定自訂網域
+          [893] 啟用 Azure Active Directory B2C 的自定義網域
+        - 設定 Web API 網域
+          [908] 將 OWIN 型的 Web API 移轉到b2clogin.com 或自訂網域
+      - 自訂電子郵件驗證
+        - Mailjet
+          [913] 使用 Mailjet 進行自訂電子郵件驗證
+        - SendGrid
+          [914] 使用 SendGrid 進行自訂電子郵件驗證
+      - UserInfo 端點
+        [915] UserInfo 端點
+      - 與我們的技術合作夥伴整合
+        - Azure AD B2C 合作夥伴資源庫
+          [916] Azure Active Directory B2C ISV 合作夥伴
+      - 自訂原則指南系列
+        - 1 - 概觀
+          [921] 在 Azure Active Directory B2C 中建立並執行您自己的自定義原則
+        - 2 - 建立 Hello World 自訂原則
+          [923] 撰寫您的第一個 Azure Active DirectoryB2C 自定義原則 - Hello World！
+        - 3 - 使用自訂原則收集使用者輸入
+          [931] 使用 Azure Active Directory B2C 自定義原則收集及操作用戶輸入
+        - 4 - 驗證使用者輸入自訂原則
+          [945] 使用 Azure Active Directory B2C 自訂原則驗證使用者輸入
+        - 5 - 在使用者旅程圖中建立分支
+          [960] 使用 Azure Active Directory B2C 自訂原則在使用者旅程圖中建立分支
+        - 6 - 驗證自訂原則檔案
+          [968] 使用 TrustFrameworkPolicy 架構驗證自訂原則檔案
+        - 7 - 從自訂原則進行 HTTP 呼叫
+          [970] 使用 Azure Active Directory B2C 自訂原則呼叫 REST API
+        - 8 - 建立和讀取使用者記錄自訂原則
+          [980] 使用 Azure Active Directory B2C 自定義原則建立和讀取用戶帳戶
+        - 9 - 註冊並登入 （本機帳戶）
+          [994] 使用 Azure Active Directory B2C 自訂原則設定本機帳戶的註冊和登入流程
+        - 10 - 註冊並登入 （社交帳戶）
+          [1003] 使用 Azure Active Directory B2C 自定義原則設定社交帳戶的註冊和登入流程
+    - 安全
+      - 安全性概觀
+        [1022] 如何保護您的 Azure Active DirectoryB2C 身分識別解決方案
+      - 啟用 MFA
+        - 多重要素驗證
+          [1028] 在 Azure Active Directory B2C 中啟用多重要素驗證 | Microsoft Docs
+        - 安全電話型 MFA
+          [1033] 保護電話型多重要素驗證
+        - 合作夥伴整合
+          - Asignio
+            [1039] 使用 Azure Active Directory B2C 設定Asignio 以進行多重要素驗證
+          - BlokSec
+            [1051] 教學課程：搭配 BlokSec 設定 AzureActive Directory B2C 以進行無密碼驗證
+          - Haventec
+            [1061] 教學課程：設定 Haventec 向 AzureActive Directory B2C 進行驗證，以進行單一步驟、多重要素無密碼驗證
+          - HYPR
+            [1065] 搭配 Azure Active Directory B2C 設定HYPR 的教學課程
+          - IDEMIA
+            [1068] 教學課程：使用 Azure Active DirectoryB2C 設定 ID以 MOBILE ID
+          - itsme
+            [1077] 使用 Azure Active Directory B2C 設定itsme OpenID 連線 （OIDC）
+          - 無鍵
+            [1082] 教學課程：使用 Azure Active DirectoryB2C 設定 Keyless
+          - Nevis
+            [1086] 設定 Nevis 與 Azure Active DirectoryB2C 以實現無密碼驗證的教學課程
+          - Nok Nok
+            [1092] 教學課程：使用 Azure Active DirectoryB2C 設定 Nok Passport 進行無密碼FIDO2 驗證
+          - 傳輸安全性
+            [1096] 使用 Azure Active Directory B2C 設定Transmit Security 以進行無密碼驗證
+          - Trusona
+            [1104] 使用 Azure Active Directory B2C 設定Trusona Authentication Cloud
+          - Twilio
+            [1112] 整合 Twilio 驗證應用程式與 Azure ActiveDirectory B2C
+          - TypingDNA
+            [1116] 使用 Azure Active Directory B2C 設定TypingDNA 的教學課程
+          - 神秘IAM
+            [1122] 設定 Azure Active Directory B2C 與WhoIAM 的教學課程
+          - xID
+            [1125] 使用 Azure Active Directory B2C 設定xID 以進行無密碼驗證
+      - Web 應用程式防火牆合作夥伴
+        - Akamai
+          [1137] 使用 Akamai Web 應用程式保護裝置設定Azure Active Directory B2C
+        - Azure WAF
+          [1141] 教學課程：使用 Azure Web 應用程式防火牆設定 Azure Active Directory B2C
+        - Cloudflare
+          [1145] 教學課程：使用 Azure Active DirectoryB2C 設定 Cloud Web 應用程式防火牆
+      - 詐騙保護合作夥伴
+        - Arkose Labs
+          [1149] 教學課程：使用 Arkose Labs 平臺設定Azure Active Directory B2C
+        - BioCatch
+          [1157] 教學課程：使用 Azure Active DirectoryB2C 設定 BioCatch
+        - Microsoft Dynamics 365 Fraud Protection
+          [1167] 
+      - 使用 Identity Protection 調查風險
+        [1172] 使用 Azure AD B2C 中的 IdentityProtection 調查風險
+      - 設定條件式存取
+        [1177] 將條件式存取新增至 Azure ActiveDirectory B2C 中的使用者流程
+      - 減輕認證攻擊
+        [1190] 使用智能鎖定降低 Azure AD B2C 中的認證攻擊
+      - 保護對舊版和內部部署應用程式的存取
+        - Akamai
+          [1193] 使用 Akamai Enterprise ApplicationAccess 設定 Azure Active Directory B2C以進行 SSO 和保護混合式存取
+        - Datawiza
+          [1194] 教學課程：使用 Datawiza 設定 AzureActive Directory B2C 以提供安全的混合式存取
+        - F5
+          [1199] 教學課程：使用 Azure Active DirectoryB2C 和 F5 BIG-IP 為應用程式啟用安全的混合式存取
+        - 砂礫
+          [1215] 使用標頭型驗證將應用程式移轉至 AzureActive Directory B2C 搭配使用 AzureActivet 的應用程式 Proxy
+        - Ping Identity
+          [1219] 教學課程：使用 Azure Active DirectoryB2C 設定 Ping 身分識別來進行安全的混合式存取
+        - 地層
+          [1229] 使用 Strata 設定 Azure Active DirectoryB2C 的教學課程
+        - Zscaler
+          [1238] 教學課程：使用 Azure Active DirectoryB2C 設定 Zscaler 私人存取
+      - 身分識別驗證和校訂
+        - 身分識別驗證和校訂合作夥伴
+          [1245] 身分識別驗證和校訂合作夥伴
+        - 推斷
+          [1247] 設定具有 Deduce 的 Azure ActiveDirectory B2C 來對抗身分識別詐騙，並建立受信任的用戶體驗
+        - eID-Me
+          [1265] 使用 Bluink eID-Me 設定 Azure ActiveDirectory B2C 以進行身分識別驗證
+        - Experian
+          [1280] 
+        - 識別碼
+          [1285] 使用 Azure Active Directory B2C 設定IDology 的教學課程
+        - Jumio
+          [1290] 搭配 Azure Active Directory B2C 設定Jumio 的教學課程
+        - LexisNexis
+          [1295] 使用 Azure Active Directory B2C 設定LexisNexis 的教學課程
+        - Onfido
+          [1300] 
+      - 身分識別驗證工具
+        - 格裡特 IEF 編輯器
+          [1304] 使用 Grit 視覺 IEF 編輯器編輯 AzureActive Directory B2C Identity ExperienceFramework (IEF) XML
+        - 格裡特生物特徵辨識驗證
+          [1307] 使用 Azure Active Directory B2C 設定您的生物特徵辨識驗證
+    - 自動化
+      - 使用 Microsoft Graph API 管理作業
+        [1310] 使用 Microsoft Graph 管理 Azure ADB2C
+      - 使用 Azure Pipelines 進行部署
+        [1320] 使用 Azure Pipelines 部署自訂原則
+      - 使用 GitHub Actions 進行部署
+        [1326] 
+      - 使用 PowerShell 管理原則
+        [1331] 使用 Azure PowerShell 管理 Azure ADB2C 自訂原則
+    - 監視和疑難排解
+      - 監視和威脅管理
+        - Azure 監視器
+          [1336] 使用 Azure 監視器監視 Azure AD B2C
+        - Microsoft Sentinel
+          [1353] 教學課程：使用 Microsoft Sentinel 設定Azure Active Directory B2C 資料的安全性分析
+      - 疑難排解
+        - 使用 Application Insights 收集記錄
+          [1364] 使用 Application Insights 收集 AzureActive Directory B2C 記錄
+        - 疑難排解與錯誤處理
+          [1365] 針對 Azure AD B2C 自定義原則和使用者流程進行疑難解答
+      - 記錄
+        - 稽核記錄
+          [1367] 存取 Azure AD B2C 稽核記錄
+        - 使用量分析
+          [1374] 使用 Application Insights 追蹤 Azure ADB2C 中的用戶行為
+    - 合規性
+      - 使用者存取
+        [1375] 在 Azure Active Directory B2C 中管理使用者存取
+      - 使用者資料
+        [1384] 在 Azure Active Directory B2C 中管理使用者資料
+      - 設定年齡管制
+        [1386] 在 Azure Active Directory B2C 中啟用年齡管制
+  - 參考
+    - 自定義原則架構
+      - TrustFrameworkPolicy
+        [1389] TrustFrameworkPolicy
+      - BuildingBlocks
+        [1392] BuildingBlocks
+        - ClaimsSchema
+          [1394] ClaimsSchema
+        - ClaimsTransformations
+          [1407] ClaimsTransformations
+          - 布林值
+            [1412] 布林值宣告轉換
+          - Date
+            [1419] 日期宣告轉換
+          - 一般
+            [1428] 一般宣告轉換
+          - 整數
+            [1432] 整數宣告轉換
+          - JSON
+            [1437] JSON 宣告轉換
+          - 電話號碼
+            [1455] 
+          - 外部帳戶
+            [1460] 
+          - StringCollection
+            [1464] StringCollection 宣告轉換
+          - String
+            [1470] 字串宣告轉換
+        - 述詞
+          [1508] Predicates 與 PredicateValidations
+        - ContentDefinitions
+          [1520] 
+        - 當地語系化
+          [1527] Localization 元素
+          - 當地語系化字串識別碼
+            [1539] 
+        - DisplayControls
+          [1564] 顯示控制項
+          - 驗證
+            [1572] 驗證顯示控制項
+          - 以時間為基礎的單次密碼 （TOTP）
+            [1574] TOTP 顯示控制項
+      - ClaimsProviders
+        [1578] ClaimsProviders
+        - 技術配置檔
+          [1581] 技術配置檔
+          - 關於驗證技術配置檔
+            [1601] 在 Azure Active Directory B2C 自定義原則中定義驗證技術配置檔
+          - Microsoft Entra ID
+            [1605] 在 Azure Active Directory B2C 自訂原則中定義 Microsoft Entra 技術設定檔
+          - Microsoft Entra 多重要素驗證
+            [1613] 在 Azure AD B2C 自定義原則中定義Microsoft Entra ID 多重要素驗證技術配置檔
+          - Microsoft Entra SSPR
+            [1624] 在 Azure AD B2C 自訂原則中定義Microsoft Entra ID SSPR 技術設定檔
+          - 宣告轉換
+            [1629] 定義 Azure Active Directory B2C 自訂原則中的宣告轉換技術設定檔
+          - 條件式存取
+            [1634] 在 Azure Active Directory B2C 自訂原則中定義條件式存取技術設定檔
+          - 標識元令牌提示
+            [1639] 在 Azure Active Directory B2C 自定義原則中定義標識碼令牌提示技術配置檔
+          - JWT 令牌簽發者
+            [1647] 
+          - OAuth1 識別提供者
+            [1651] 在 Azure Active Directory B2C 自訂原則中定義 OAuth1 技術設定檔
+          - OAuth2 識別提供者
+            [1654] 在 Azure Active Directory B2C 自訂原則中定義 OAuth2 技術設定檔
+          - OAuth2 自定義錯誤
+            [1667] 在 Azure Active Directory B2C 自訂原則中定義 OAuth2 自訂錯誤技術設定檔
+          - 一次性密碼
+            [1672] 在 Azure AD B2C 自訂原則中定義一次性密碼技術設定檔
+          - OpenID 連線 識別提供者
+            [1678] 定義 Azure Active Directory B2C 自訂原則中的 OpenID Connect 技術設定檔
+          - 電話因素
+            [1684] 在 Azure Active Directory B2C 自定義原則中定義電話因素技術配置檔
+          - REST
+            [1688] 在 Azure Active Directory B2C 自定義原則中定義 RESTful 技術配置檔
+          - SAML 識別提供者
+            [1698] 在 Azure Active Directory B2C 自訂原則中定義 SAML 識別提供者技術設定檔
+          - SAML 令牌簽發者
+            [1707] 在 Azure Active Directory B2C 自訂原則中定義 SAML 權杖簽發者的技術設定檔
+          - 自我判斷
+            [1710] 在 Azure Active Directory B2C 自定義原則中定義自我判斷技術配置檔
+          - SSO 工作階段
+            [1718] Azure Active Directory B2C 中的單一登入工作階段提供者
+      - UserJourneys
+        [1729] UserJourneys
+      - SubJourneys
+        [1740] 子旅程
+      - RelyingParty
+        [1744] RelyingParty
+      - 宣告解析程式
+        [1756] 
+    - 版本資訊
+      [1765] Azure Active Directory B2C 的開發人員注意事項
+    - 服務限制
+      [1773] Azure Active Directory B2C 服務限制
+    - TLS 和加密套件需求
+      [1777] Azure Active Directory B2C TLS 和加密套件需求
+    - 應用程式註冊
+      [1779] Azure Active Directory B2C 的新 應用程式註冊 體驗
+    - 計費模型
+      [1783] Azure Active Directory B2C 的計費模型
+    - 程式碼範例
+    - Cookie 定義
+      [1793] Azure AD B2C 的 Cookie 定義
+    - 錯誤碼
+      [1796] 錯誤碼：Azure Active Directory B2C
+    - 延伸模組應用程式
+      [1804] Azure AD B2C 中的延伸模組應用程式
+    - 版面配置版本
+      [1806] 版面配置版本
+    - 區域可用性與數據落地
+      [1818] Azure Active Directory B2C：區域可用性與數據落地
+    - 為復原能力而建置
+      - Azure AD B2C 復原簡介
+        [1822] 使用 Azure Active Directory B2C 在客戶身分識別和存取管理中建置復原能力
+      - 終端使用者體驗
+        [1824] 復原使用者體驗
+      - 具有外部進程的介面
+        [1828] 具有外部進程的復原介面
+      - Azure AD B2C 開發人員最佳做法
+        [1831] 透過開發人員最佳做法進行復原
+      - 監視和分析
+        [1836] 透過監視和分析的復原能力
+    - 使用者流程版本
+      [1839] Azure Active Directory B2C 中的使用者流程版本
+    - 舊版使用者流程版本
+      [1843] Azure Active Directory B2C 中的舊版使用者流程版本
+  - 資源
+    - Azure 藍圖
+    - 常見問題集
+      [1846] Microsoft Entra 外部 ID預覽
+一般
+    - 取得說明
+      [1856] 適用於開發人員的支援與說明選項
+    - 定價
+    - 定價計算機
+    - 服務更新
+    - 解決方案和訓練
+      [1859] Azure Active Directory B2C 的解決方案和訓練
+    - Stack Overflow
+    - 支援
+      [1861] 尋找說明並開啟 Azure Active DirectoryB2C 的支援票證
+    - 影片
+      [1865] Microsoft Azure Active Directory B2C 外部身分識別視訊系列

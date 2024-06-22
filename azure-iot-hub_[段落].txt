@@ -1,0 +1,404 @@
+- ---< azure-iot-hub.pdf >---
+  - IoT 中心文件
+    [1] Azure IoT 中樞文件
+  - 概觀
+    - IoT 概念和 Azure IoT 中樞
+      [3] 什麼是 Azure IoT 中心？
+  - 快速入門
+    - 使用 CLI 的無程式代碼快速入門
+      [7] 快速入門：使用 Azure CLI 將遙測資料從裝置傳送至 IoT 中樞並加以監視
+    - 使用 SDK 傳送遙測
+      [17] 教學課程：將遙測從 IoT 隨插即用 裝置傳送至 Azure IoT 中樞
+    - 控制裝置
+      [28] 快速入門：控制連線到 IoT 中樞的裝置
+    - 使用 Bicep 自動路由訊息
+      [35] 快速入門：使用 Bicep 部署 Azure IoT 中樞和記憶體帳戶
+    - 使用 ARM 範本自動路由訊息
+      [42] 快速入門：使用ARM範本部署 Azure IoT中樞和記憶體帳戶
+  - 教學課程
+    - 將裝置訊息路由傳送至記憶體
+      [50] 教學課程：使用 IoT 中樞訊息路由，將裝置資料傳送至 Azure 儲存體
+    - 訊息擴充
+      [63] 教學課程：使用 Azure IoT 中樞訊息擴充
+    - 使用計量和記錄
+      [73] 教學課程：設定及使用IoT中樞的計量和記錄
+    - 執行手動故障轉移
+      [96] 教學課程：執行手動容錯移轉 IoT 中樞
+    - 設定您的裝置
+      [107] 教學課程：從後端服務設定您的裝置
+    - 管理裝置更新
+      [120] 教學課程：使用 Raspberry Pi 3 B+ 參考映像的 Azure IoT 中樞裝置更新
+    - 測試裝置連線能力
+      [133] 教學課程：使用模擬裝置來測試IoT中樞的連線能力
+    - 建立及上傳用於測試的憑證
+      [145] 教學課程：建立和上傳用於測試的憑證
+    - 與其他服務整合
+      - 將 Power BI 中的資料視覺化
+        [158] 教學課程：使用 Power BI 將來自 AzureIoT 中樞 的即時感測器數據可視化
+      - 在 App Service Web 應用程式中將數據可視化
+        [169] 教學課程：在 Web 應用程式中將來自Azure IoT 中樞的即時感應器資料視覺化
+      - 使用Logic Apps監視和通知
+        [179] 教學課程：使用 Azure Logic Apps 監視IoT 裝置並傳送通知
+  - 概念
+    - IoT 中樞 概念概觀
+      [194] Azure IoT 中樞概念概觀
+    - 開發
+      - 裝置到雲端功能指南
+        [197] Device-to-cloud communicationsguidance
+      - 雲端到裝置功能指南
+        [199] 雲端到裝置的通訊指引
+      - 了解攣生裝置
+        [201] 瞭解及使用 IoT 中樞 中的裝置對應項
+      - 了解模組對應項
+        [211] 瞭解和使用 IoT 中樞 中的模組對應項
+      - 叫用裝置上的直接方法
+        [220] 了解 IoT 中樞的直接方法並從中樞叫用直接方法。
+      - 排程多個裝置上的作業
+        [226] 排程多個裝置上的作業
+      - IoT 中樞端點
+        [232] IoT 中樞端點
+      - 查詢
+        - 查詢語言概觀
+          [239] 裝置與模組對應項、作業和訊息路由的IoT 中樞查詢語言
+        - 裝置和模組對應項查詢
+          [248] IoT 中樞裝置和模組對應項的查詢
+        - 作業查詢
+          [253] 針對 IoT 中樞作業的查詢
+      - 比較 IoT 中樞 和事件中樞
+        [255] 將 IoT 裝置連接到 Azure：IoT 中樞和事件中樞
+      - 使用事件方格回應 IoT 中樞 事件
+        [257] 使用事件方格觸發動作來回應 IoT 中樞 事件
+      - 從裝置上傳檔案
+        [263] 使用 IoT 中樞上傳檔案
+      - IoT 中樞 裝置串流概觀 （預覽）
+        [272] IoT 中樞 裝置串流 （預覽）
+    - 管理
+      - 選擇正確的 IoT 中樞 層
+        [279] 為您的解決方案選擇正確的 IoT 中樞 層和大小
+      - 配額及節流
+        [284] IoT 中樞配額和節流
+      - 定價範例
+        [290] Azure IoT 中樞帳單資訊
+    - 傳訊
+      - 傳送和接收訊息
+        [297] 使用 IoT 中樞 傳送和接收訊息
+      - 建立和讀取 IoT 中樞 訊息
+        [299] 建立和讀取 IoT 中樞 訊息
+      - 非遙測事件架構
+        [305] Azure IoT 中樞非遙測事件結構描述
+      - 從 IoT 中樞 傳送雲端到裝置訊息
+        [313] 從 IoT 中樞傳送雲端到裝置訊息
+      - 選擇裝置通訊協定
+        [319] 選擇裝置通訊協定
+      - 從內建端點讀取裝置到雲端訊息
+        [322] 從內建端點讀取裝置到雲端訊息
+      - 訊息擴充概觀
+        [326] 裝置到雲端 IoT 中樞訊息的訊息擴充
+    - 訊息路由
+      - 將裝置到雲端訊息路由傳送至 Azure 服務
+        [330] 使用 IoT 中樞 訊息路由將裝置到雲端訊息傳送至 Azure 服務
+      - 將查詢新增至訊息路由
+        [335] IoT 中樞訊息路由查詢語法
+      - 比較訊息和事件路由
+        [342] 比較訊息路由和事件方格以進行 IoT 中樞
+    - 裝置管理
+      - 裝置管理概觀
+        [346] 使用 IoT 中樞進行裝置管理的概觀 (英文)
+      - 管理裝置身分識別
+        [352] 了解 IoT 中樞的身分識別登錄
+      - 監視裝置連線狀態
+        [359] 監視裝置連線狀態
+      - 裝置設定最佳做法
+        [362] IoT 解決方案內的裝置設定最佳做法
+    - 連線性
+      - 瞭解IoT中樞IP位址
+        [365] IoT 中樞 IP 位址
+    - 調整和可用性
+      - 大規模 IoT 裝置部署的最佳做法
+        [367] 大規模IoT裝置部署的最佳做法
+      - 高可用性和災害復原
+        [373] IoT 中樞高可用性和災害復原
+    - 驗證與授權
+      - Microsoft Entra ID
+        [382] 使用 Microsoft Entra ID 控制對IoT 中樞的存取
+      - 共用存取簽章
+        [388] 使用共用存取簽章控制對 IoT 中樞的存取
+      - X.509 憑證
+        [398] 使用 X.509 憑證驗證身分識別
+    - IoT 中樞 SDK
+      - SDK 概觀
+        [409] Azure IoT 中樞 SDK
+      - 不使用 SDK 進行開發
+        [412] 在不使用 Azure IoT 中樞 SDK 的情況下進行開發
+    - 通訊協定支援
+      - MQTT 支援
+        [414] 使用 MQTT 通訊協定與 IoT 中樞通訊
+      - AMQP 支援
+        [428] 使用 AMQP 通訊協定來與 IoT 中樞進行通訊
+      - 支援其他通訊協定
+        [438] 如何使用 IoT Edge 裝置作為閘道
+    - 安全性
+      - TLS 支援
+        [444] IoT 中樞 中的傳輸層安全性 （TLS） 支援
+      - 虛擬網路支援
+        [450] 使用 Azure Private Link 的虛擬網路IoT中樞支援
+      - 安全性基準
+        [454] 適用於 IoT 中樞的 Azure 安全性基準
+      - Azure 原則的安全性控制
+        [466] 適用於 Azure IoT 中樞 的 Azure 原則 法規合規性控制
+      - IoT 安全性的最佳做法
+        [475] IoT 解決方案的安全性最佳做法
+      - IoT 安全性架構
+        [479] IoT 解決方案的安全性架構
+  - 操作指南
+    - 管理
+      - 建立 IoT 中樞
+        - 使用 Azure 入口網站
+          [488] 使用 Azure 入口網站 建立 IoT 中樞
+        - 使用 Visual Studio Code
+          [500] 使用適用于 Visual Studio Code 的 AzureIoT 中樞 擴充功能建立 IoT 中樞
+        - 使用 Azure PowerShell
+          [503] 使用 New-AzIotHub Cmdlet 建立 IoT 中樞
+        - 使用 Azure CLI
+          [507] 使用 Azure CLI 建立 IoT 中樞
+        - 使用 REST API
+          [510] 使用資源提供者 REST API 建立 IoT 中樞(.NET)
+        - 從 Azure PowerShell 使用範本
+          [515] 使用 Azure Resource Manager 範本建立IoT 中樞 (PowerShell)
+      - 建立訊息路由和端點
+        - Azure 入口網站
+          [517] 使用 Azure 入口網站 建立和刪除路由和端點
+        - Azure CLI
+          [524] 使用 Azure CLI 建立和刪除路由和端點
+        - PowerShell
+          [531] 使用 Azure PowerShell 建立和刪除路由和端點
+        - Azure Resource Manager
+          [536] 使用 Azure Resource Manager 建立和刪除路由和端點
+      - 設定受控識別
+        [543] IoT 中樞支援受控識別
+      - 設定檔案上傳
+        - 使用 Azure 入口網站
+          [558] 使用 Azure 入口網站設定 IoT 中樞檔案上傳
+        - 使用 Azure PowerShell
+          [561] 使用 PowerShell 設定 IoT 中樞 檔案上傳
+        - 使用 Azure CLI
+          [565] 使用 Azure CLI 設定IoT 中樞檔案上傳
+      - 升級或移轉IoT中樞
+        - 升級IoT中樞
+          [572] 如何升級 IoT 中樞
+        - 使用 CLI 自動移轉 IoT 中樞
+          [575] 如何使用 Azure CLI 自動移轉 IoT 中樞
+        - 使用ARM手動移轉IoT中樞
+          [581] 如何使用 Azure Resource Manager 範本手動移轉 Azure IoT 中樞
+        - 大容量導入和導出IoT裝置
+          [599] 大量匯入和匯出 IoT 中樞裝置身分識別
+      - 設定 IP 篩選
+        [612] 使用IP篩選器
+      - 管理公用網路存取
+        [621] 管理 IoT 中樞的公用網路存取
+      - 限制輸出網路存取
+        [625] 限制 Azure IoT 中樞的輸出網路存取
+      - 大規模自動裝置管理
+        - 使用 Azure 入口網站
+          [627] 使用 Azure 入口網站自動進行 IoT 裝置和模組管理 (英文)
+        - 使用 Azure CLI
+          [635] 使用 Azure CLI 自動進行 IoT 裝置和模組管理 (英文)
+      - 管理裝置對應項標籤
+        [642] 如何在 Azure IoT 中樞內使用裝置對應項標記來管理裝置 | Microsoft Docs
+    - 開發
+      - 傳送雲端到裝置訊息
+        - .NET
+          [649] 使用 IoT 中樞傳送雲端到裝置訊息 (.NET)
+        - Python
+          [658] 使用 IoT 中樞傳送雲端到裝置訊息(Python)
+        - Node.js
+          [665] 使用 IoT 中樞傳送雲端到裝置訊息(Node.js)
+        - Java
+          [673] 使用 IoT 中樞傳送雲端到裝置訊息 (Java)
+        - iOS
+          [683] 使用 IoT 中樞傳送雲端到裝置訊息 (iOS)
+      - 從裝置上傳檔案
+        - .NET
+          [688] 使用 Azure IoT 中樞 將檔案從您的裝置上傳至雲端（.NET）
+        - Python
+          [698] 使用 Azure IoT 中樞 將檔案從您的裝置上傳至雲端（Python）
+        - Node.js
+          [706] 使用 Azure IoT 中樞 將檔案從您的裝置上傳至雲端（Node.js）
+        - Java
+          [717] 使用 Azure IoT 中樞 將檔案從您的裝置上傳至雲端（Java）
+      - 開始使用攣生裝置
+        - CLI
+          [731] 開始使用裝置對應項目 （Azure CLI）
+        - .NET
+          [741] 開始使用裝置對應項目 （.NET）
+        - Python
+          [751] 開始使用裝置對應項目 （Python）
+        - Node.js
+          [761] 開始使用裝置對應項目 （Node.js）
+        - Java
+          [770] 開始使用裝置對應項目 （Java）
+      - 開始使用模組對應項
+        - 入口網站
+          [784] 使用 Azure 入口網站 和 .NET 裝置開始使用IoT 中樞模組身分識別和模組對應項
+        - CLI
+          [791] 使用 Azure CLI 開始使用IoT 中樞模組身分識別和模組對應項
+        - .NET
+          [797] 開始使用 IoT 中樞模組身分識別和模組對應項 (.NET)
+        - Python
+          [806] 開始使用 IoT 中樞模組身分識別和模組對應項 (Python)
+        - Node.js
+          [815] 開始使用 IoT 中樞模組身分識別和模組對應項 (Node.js)
+        - C
+          [822] 開始使用 IoT 中樞模組身分識別和模組對應項 (C)
+      - 裝置管理入門
+        - CLI
+          [832] 開始使用 Azure CLI (裝置管理)
+        - .NET
+          [839] 開始使用裝置管理 (.NET)
+        - Python
+          [848] 開始使用裝置管理 (Python)
+        - Node.js
+          [858] 開始使用裝置管理 (Node.js)
+        - Java
+          [866] 開始使用裝置管理 (Java)
+      - 排程及廣播工作
+        - CLI
+          [880] (Azure CLI) 排程和廣播作業
+        - .NET
+          [886] 排程及廣播作業 (.NET)
+        - Python
+          [895] 排程及廣播作業 (Python)
+        - Node.js
+          [904] 排程及廣播作業 (Node.js)
+        - Java
+          [913] 排定及廣播作業 (Java)
+      - 從中樞路由查詢 Avro 數據
+        [927] 使用 Azure Data Lake Analytics 查詢Avro 資料
+      - 使用Raspberry Pi來執行範例
+        [935] Connect Raspberry Pi to Azure IoT Hub
+    - 監視器
+      - 監視 IoT 中樞
+        [941] 監視 Azure IoT 中樞
+      - 監視資料參考
+        [954] 
+      - 啟用訊息追蹤
+        [970] 
+      - IoT 中樞 服務和資源健康情況
+        [977] 檢查 IoT 中樞服務和資源健康情況
+      - 從事件方格排序裝置連線狀態事件
+        [980] 使用 Azure Cosmos DB 排序來自 AzureIoT 中樞的裝置連線事件
+    - 部署更新
+      - 建立裝置更新帳戶
+        [995] 建立 IoT 中樞 資源的裝置更新
+      - 匯入更新
+        [1001] 將更新匯入至裝置更新以進行 IoT 中樞
+      - 建立更新群組
+        [1009] 在裝置更新中管理裝置群組以進行 IoT 中樞
+      - 部署更新
+        [1016] 使用裝置更新部署更新以進行 Azure IoT中樞
+    - 疑難解答並解決問題
+      - 針對裝置連線能力進行疑難解答
+        [1022] 監視、診斷和疑難解答 Azure IoT 中樞 裝置連線能力
+      - 針對訊息路由進行疑難解答
+        [1031] 針對訊息路由進行疑難解答
+      - 解決錯誤碼
+        [1036] 了解並解決 Azure IoT 中樞 錯誤
+      - 擷取追蹤記錄
+        [1043] 如何從 Azure IoT 裝置收集偵錯記錄
+    - 移轉 TLS 憑證跟證書
+      [1045] 將 IoT 中樞資源移轉至新的 TLS 憑證根
+  - 參考
+    - Azure CLI
+      [1050] IoT
+    - Azure PowerShell
+      [1051] Az.IotHub
+    - .NET SDK
+      - 裝置
+        [1055] Microsoft.Azure.Devices.ClientNamespace
+      - 服務
+        [1059] Microsoft.Azure.Devices Namespace
+      - 管理
+        [1064] Microsoft Azure IoT Hub managementclient library for .NET
+    - Python SDK
+      - 裝置
+        [1067] device 套件
+      - 服務
+        [1070] hub 套件
+      - 管理
+        [1073] iothub 套件
+    - Node.js SDK
+      - 裝置
+        [1075] azure-iot-device package
+      - 服務
+        [1080] azure-iothub package
+      - 管理
+        [1083] 適用于 JavaScript 的Azure IoT 中樞模組
+    - Java SDK
+      - 裝置
+        [1085] com.microsoft.azure.sdk.iot.device
+      - 服務
+        [1088] com.microsoft.azure.sdk.iot.service
+      - 管理
+        [1091] Azure Resource Manager IotHub clientlibrary for Java - version 1.2.0
+    - C SDK 和連結庫
+    - REST API
+      [1094] IoT 中樞 REST (英文)
+    - 適用於 Visual Studio Code 的 Azure IoT 中樞 延伸模組
+      [1097] Visual Studio Code的Azure IoT 中樞擴充功能
+    - Resource Manager 範本
+      [1103] Microsoft.Devices (IoT 中樞) 資源類型
+    - Azure 原則內建
+      [1105] 
+    - X.509 憑證
+      [1108] X.509 憑證
+    - 功能與 API 淘汰
+      - TLS 1.0 和 1.1 淘汰
+        [1117] 淘汰 IoT 中樞中的 TLS 1.0 和1.1
+  - 資源
+    - 支援和協助選項
+      [1118] Azure IoT 支援和協助選項有哪些？
+    - IoT 詞彙
+      [1120] IoT 詞彙詞彙
+    - Azure IoT 服務
+      - IoT 中樞
+        [1149] Azure IoT 中樞文件
+      - IoT 中樞 裝置佈建服務 （DPS）
+        [1151] Azure IoT 中樞裝置佈建服務 (DPS) 文件
+      - IoT Central
+        [1153] Azure IoT Central 文件
+      - IoT Edge
+        [1156] Azure IoT Edge 文件
+      - Azure 地圖服務
+        [1158] Azure 地圖服務文件
+      - 時間序列深入解析
+        [1164] Azure Time Series Insights 文件
+    - Azure IoT SDK
+      - IoT 服務 SDK
+        [1167] 
+      - IoT 裝置 SDK
+        [1169] Azure IoT SDK
+    - Azure IoT 範例
+      - C# (.NET)
+      - Node.js
+      - Java
+      - Python
+      - iOS 平台
+    - Terraform 模組
+      - IoT 中樞 實例資源
+      - IoT 中樞 實例數據源
+      - IoT 中樞 憑證資源
+      - IoT 中樞 取用者群組資源
+      - IoT 中樞 共用存取原則資源
+      - IoT 中樞 共用存取原則數據源
+    - Azure IoT 開發人員中心
+    - 客戶數據要求
+      [1176] Azure IoT 中樞裝置的客戶資料要求功能
+    - Azure 藍圖
+    - 適用於 Visual Studio Code 的 Azure IoT 中樞 延伸模組
+    - Azure IoT 檔案總管工具
+    - iothub-diagnostics 工具
+    - 定價
+    - 定價計算機
+    - 服務更新
+    - 技術案例研究
+    - 影片

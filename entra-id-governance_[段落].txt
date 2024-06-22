@@ -1,0 +1,284 @@
+---< entra-id-governance.pdf >---
+  - Microsoft Entra ID 控管 檔
+    [1] Microsoft Entra ID 控管檔
+  - 概觀
+    - 什麼是身分識別治理？
+      [4] 什麼是 Microsoft Entra 識別碼治理？
+    - 什麼是權利管理？
+      [10] 什麼是權利管理？
+    - 什麼是存取權檢閱？
+      [16] 什麼是存取權檢閱？
+    - 什麼是身分識別生命週期管理？
+      [19] 什麼是身分識別生命週期管理？
+    - 什麼是佈建？
+      [23] 什麼是佈建？
+    - 什麼是生命週期工作流程？
+      [28] 什麼是生命週期工作流程？
+    - 什麼是我的存取入口網站？
+      [31] 什麼是我的存取入口網站？
+  - 教學課程
+    - 控管應用程式的存取權
+      - 連線的應用程式
+        [33] Microsoft Entra ID 控管整合
+      - 自動化身分識別治理工作 - PowerShell
+        [67] 透過 Azure 自動化和 Microsoft Graph 將Microsoft Entra ID 控管 工作自動化
+      - 控管應用程式的現有使用者 - PowerShell
+        [74] 控管應用程式的現有使用者 - MicrosoftPowerShell
+      - 控管不可布建應用程式的使用者 - PowerShell
+        [96] 控管不支援布建的應用程式使用者 -Microsoft PowerShell
+      - 管理 SAP 應用程式的存取權
+        [111] 管理 SAP 應用程式的存取權
+    - 權利管理
+      - 管理對資源的存取
+        [116] 教學課程：管理權利管理中資源的存取權
+      - 管理資源的存取權 - Microsoft Graph
+        [132] Manage access to resources using theentitlement management APIs
+      - 管理資源的存取權 - PowerShell
+        [149] Tutorial: Manage access to resources inMicrosoft Entra entitlementmanagement using Microsoft GraphPowerShell
+      - 在 Microsoft Entra ID 中管理群組型授權的生命週期
+        [163] 教學課程：在 Microsoft Entra ID 中管理群組型授權的生命週期
+      - 透過核准程式將外部用戶上線至 Microsoft Entra ID
+        [167] 教學課程 - 透過核准程式將外部用戶上線至 Microsoft Entra ID
+      - 建立應用程式的存取套件 - PowerShell
+        [171] 使用 PowerShell 為具有單一角色的應用程式，在權利管理中建立存取套件
+      - 移轉組織角色模型
+        [186] 將組織角色模型遷移至Microsoft Entra ID控管來管理存取權
+      - 自動化 ServiceNow 票證建立整合
+        [191] 教學課程：使用 Microsoft Entra 權利管理整合建立自動化 ServiceNow 票證
+      - 自動化 Teams 傳訊整合
+        [205] 教學課程：使用自定義擴充性和LogicApps整合 Microsoft Entra 權利管理與 Microsoft Teams
+      - Azure 數據總管中的自定義權利報告
+        [215] 教學課程：使用來自 Microsoft Entra ID的數據，在 Azure 數據總管中自定義報告
+    - 存取權檢閱
+      - 檢閱 Microsoft 365 群組的存取權 - Microsoft Graph
+        [227] Review guest access to groups usingaccess reviews APIs
+      - 檢閱來賓使用者的存取權 - Microsoft Graph
+        [235] Review guest access to groups usingaccess reviews APIs
+      - 檢閱安全組的存取權 - Microsoft Graph
+        [243] Review access to security groups usingaccess reviews APIs
+      - 檢閱特殊許可權角色的存取權 - Microsoft Graph
+        [258] Review access to administrative rolesusing the access reviews APIs
+    - 生命週期工作流程
+      - 自動化員工上線工作 - Microsoft Entra 系統管理中心
+        [274] 在與 Microsoft Entra 系統管理中心合作的第一天之前，將員工上線工作自動化
+      - 自動化員工上線工作 - Microsoft Graph
+        [284] Automate employee onboarding tasksbefore their first day of work usingLifecycle Workflows APIs
+      - 即時下線員工 - Microsoft Entra 系統管理中心
+        [293] 使用生命週期工作流程執行員工終止工作
+      - 即時下線員工 - Microsoft Graph
+        [305] Complete employee offboarding tasksin real-time on their last day of workusing Lifecycle Workflows APIs
+      - 自動化員工下架工作 - Microsoft Entra 系統管理中心
+        [313] 在與 Microsoft Entra 系統管理中心合作的最後一天之後，將員工下架工作自動化
+      - 將員工下架工作自動化 - Microsoft Graph
+        [322] Automate employee offboarding tasksafter their last day of work usingLifecycle Workflows APIs
+      - 自動化員工移動器工作 - Microsoft Entra 系統管理中心
+        [331] 使用 Microsoft Entra 系統管理中心變更工作時，將員工移動工作自動化
+  - 概念
+    - 權利管理
+      - 委派和角色
+        [338] 權利管理中的委派和角色
+      - 要求程式和電子郵件
+        [347] 權利管理中的要求程式和電子郵件通知
+      - 將外部用戶上線
+        [361] 使用權利管理將外部用戶上線
+    - 存取權檢閱
+      - 啟用多階段檢閱
+        [364] 使用多階段檢閱來符合 Microsoft Entra的證明和認證需求
+      - 使用檢閱管理存取權
+        [372] 使用存取權檢閱管理使用者和來賓使用者存取權
+      - 管理從條件式存取排除的使用者
+        [377] 使用存取權檢閱來管理條件式存取原則中排除的使用者
+      - 檢閱存取權檢閱的建議
+        [386] 存取權檢閱的檢閱建議
+      - 檢閱和移除外部組織的使用者
+        [388] 使用 Microsoft Entra ID 控管 來檢閱和移除不再具有資源存取權的外部使用者
+    - 生命週期工作流程
+      - 瞭解生命週期工作流程
+        [393] 瞭解生命週期工作流程
+      - 範本
+        [400] 生命週期工作流程範本和類別
+      - 內建工作
+        [416] 生命週期工作流程內建工作
+      - 自訂工作延伸模組
+        [460] 生命週期工作流程自定義工作延伸模組
+      - 版本控制
+        [465] 生命週期工作流程版本控制
+      - 工作流程稽核記錄
+        [469] 稽核生命週期工作流程
+      - 工作流程歷程記錄
+        [471] 生命週期工作流程歷程記錄
+      - 同步的內部部署使用者 （預覽）
+        [478] 使用生命週期工作流程管理同步的內部部署使用者
+      - Workflow Insights （預覽）
+        [481] Workflow Insights （預覽）
+  - 操作指南
+    - 控管應用程式的存取權
+      - 準備
+        [487] 控管環境中應用程式的存取權
+      - 定義
+        [490] 定義管理環境中應用程式存取的組織原則
+      - 整合
+        [493] 整合應用程式與 Microsoft Entra 識別符，並建立檢閱存取基準
+      - 部署
+        [498] 部署組織原則，以控管與 Microsoft EntraID 整合之應用程式的存取權
+    - 權利管理
+      - 常見案例
+        [502] 權利管理的常見案例
+      - 系統管理員
+        - 委派給目錄建立者
+          [507] 將存取控管委派給權利管理中的目錄建立者
+        - 新增已連線的組織
+          [510] 在權利管理中管理已連線的組織
+        - 管理外部使用者的存取權
+          [521] 控管權利管理中外部使用者的存取權
+        - 檢視報表和記錄
+          [531] 在權利管理中檢視報告和記錄
+        - 封存記錄和報告
+          [537] 在 Azure 監視器中封存權利管理的記錄和報告
+        - 疑難排解
+          [545] 針對權利管理進行疑難解答
+      - 目錄擁有者
+        - 建立資源目錄
+          [551] 在權利管理中建立和管理資源目錄
+        - 建立目錄的自訂延伸模組 （邏輯應用程式）
+          [564] 在權利管理中使用自定義延伸模組觸發LogicApps
+        - 委派以存取套件管理員
+          [579] 委派存取權控管，以存取權利管理中的套件管理員
+        - 設定群組回寫
+          [581] 在權利管理內設定群組回寫
+      - 存取套件管理員和存取套件指派管理員
+        - 建立新的存取套件
+          [583] 在權利管理中建立存取套件
+        - 共用存取套件連結
+          [609] 在權利管理中要求存取套件的共享連結
+        - 變更資源角色
+          [611] 變更權利管理中存取套件的資源角色
+        - 變更要求設定
+          [627] 變更權利管理中存取套件的要求設定
+        - 設定已驗證的識別碼設定
+          [640] 在權利管理中設定存取套件的已驗證標識符設定
+        - 變更核准設定
+          [644] 變更權利管理中存取套件的核准和要求者信息設定
+        - 變更生命周期設定
+          [654] 變更權利管理中存取套件的生命周期設定
+        - 設定自動指派
+          [657] 在權利管理中設定存取套件的自動指派原則
+        - 設定職責區隔
+          [661] 設定許可權管理中存取套件的職責檢查的分隔
+        - 檢視和移除要求
+          [669] 在權利管理中檢視和移除存取套件的要求
+        - 重新處理要求
+          [672] 在權利管理中重新處理存取套件的要求
+        - 檢視、新增和移除指派
+          [674] 在權利管理中檢視、新增和移除存取套件的指派
+        - 將用戶轉換成受控管
+          [687] 管理來賓使用者生命週期
+        - 重新處理指派
+          [689] 在權利管理中重新處理存取套件的指派
+        - 隱藏或刪除
+          [691] 隱藏或刪除權利管理中的存取套件
+        - 指派 Microsoft Entra 角色 （預覽）
+          [693] 指派 Microsoft Entra 角色 （預覽）
+      - 核准者
+        - 核准要求
+          [699] 核准或拒絕權利管理中的存取要求
+      - 要求者
+        - 要求存取
+          [705] 在權利管理中要求存取套件的存取權
+    - 存取權檢閱
+      - 規劃存取權檢閱部署
+        [712] 規劃 Microsoft Entra 存取權檢閱部署
+      - 建立存取權檢閱歷程記錄報告
+        [731] 在 Microsoft Entra 存取權檢閱中建立和管理可下載的存取權檢閱歷程記錄報告
+      - 設定範圍 - Microsoft Graph
+        [734] Configure the scope of access reviewsusing access reviews APIs
+      - 指派檢閱者 - Microsoft Graph
+        [745] Assign reviewers to access reviews usingaccess reviews APIs
+      - 存取套件
+        - 建立存取權檢閱
+          [749] 在權利管理中建立存取套件的存取權檢閱
+        - 檢閱存取
+          [757] 在 Microsoft 權利管理中自我檢閱存取套件和資源
+      - 群組和應用程式
+        - 準備應用程式存取權檢閱
+          [761] 準備存取權檢閱使用者對應用程式的存取權
+        - 建立存取權檢閱
+          [771] 在 Microsoft Entra ID 中建立群組與應用程式的存取權檢閱
+        - 檢閱存取
+          [789] 在存取權檢閱中檢閱群組和應用程式的存取權
+        - 檢閱自己存取權
+          [796] 檢閱存取權檢閱中群組或應用程式的存取權
+        - 完成存取權檢閱
+          [806] 在存取權檢閱中完成群組和應用程式的存取權檢閱
+      - Microsoft Entra 角色和 Azure 資源角色
+        - 建立存取權檢閱
+          [813] 在 PIM 中建立 Azure 資源和 MicrosoftEntra 角色的存取權檢閱
+        - 執行存取權檢閱
+          [824] 在 PIM 中執行 Azure 資源和 MicrosoftEntra 角色的存取權檢閱
+        - 完成存取權檢閱
+          [826] 完成 PIM 中 Azure 資源和 MicrosoftEntra 角色的存取權檢閱
+      - 群組的 Microsoft Entra PIM
+        - 建立存取權檢閱
+          [830] 在 Microsoft Entra ID 中建立群組 PIM 的存取權檢閱 （預覽）
+    - 生命週期工作流程
+      - 部署
+        [833] 規劃生命週期工作流程部署
+      - 建立​​
+        - 建立生命週期工作流程
+          [845] 建立生命週期工作流程
+        - 根據自定義工作延伸模組觸發LogicApps
+          [851] 根據自訂工作延伸模組觸發 Logic Apps
+      - 管理
+        - 同步處理屬性
+          [857] 如何同步處理生命週期工作流程的屬性
+        - 管理工作流程屬性
+          [867] 管理工作流程屬性
+        - 管理工作流程版本
+          [870] 管理工作流程版本
+        - 使用自訂安全性屬性
+          [876] 使用自訂安全性屬性來設定工作流程的範圍
+        - 視需要執行工作流程
+          [879] 視需要執行工作流程
+        - 自訂電子郵件
+          [883] 自訂從工作流程工作傳送的電子郵件
+        - 檢查工作流程的狀態
+          [889] 檢查工作流程的狀態
+        - 下載工作流程歷程記錄報告
+          [896] 下載工作流程歷程記錄報告
+        - 檢查執行用戶範圍
+          [900] 檢查工作流程的執行用戶範圍
+        - 自訂工作流程的排程
+          [902] 自訂工作流程的排程
+        - 管理同步的內部部署使用者 （預覽）
+          [904] 使用工作流程管理同步的內部部署使用者（預覽）
+        - 檢查工作流程深入解析 （預覽）
+          [906] 檢查工作流程深入解析 （預覽）
+      - 刪除
+        - 刪除生命週期工作流程
+          [909] 刪除生命週期工作流程
+  - 參考
+    - 身分識別治理儀錶板
+      [913] 身分識別治理儀錶板 （預覽）
+    - 身分識別治理服務限制
+      [915] Microsoft Entra ID 控管 服務限制
+    - 授權基本概念
+      [917] Microsoft Entra ID 控管 授權基本概念
+    - 服務和整合合作夥伴
+      [927] 適用於 Microsoft Entra ID 控管的服務與整合合作夥伴
+    - 身分識別治理 - PowerShell
+      [929] 
+    - 存取權檢閱 - Microsoft Graph API
+      [1047] 
+    - 權利管理 - Microsoft Graph API
+      [1051] 
+    - 生命週期工作流程
+      - 生命週期工作流程 - Microsoft Graph API
+        [1057] Overview of Lifecycle Workflows APIs
+      - 生命週期工作流程 - 常見問題
+        [1064] 生命週期工作流程 - 常見問題
+      - 為 leaver 工作流程設定 EmployeeLeaveDateTime
+        [1066] Configure the employeeLeaveDateTimeproperty for a user
+      - 準備生命週期工作流程的用戶帳戶教學課程
+        [1068] 準備生命週期工作流程的用戶帳戶教學課程
+      - 設定使用生命週期工作流程的邏輯應用程式
+        [1078] 設定使用生命週期工作流程的邏輯應用程式

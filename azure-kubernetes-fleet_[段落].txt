@@ -1,0 +1,58 @@
+- ---< azure-kubernetes-fleet.pdf >---
+  - Azure Kubernetes 機群管理員
+    [1] Azure Kubernetes 機群管理員
+  - 概觀
+    - 關於 Azure Kubernetes Fleet Manager
+      [3] 什麼是 Azure Kubernetes FleetManager？
+  - 快速入門
+    - 建立車隊並加入成員叢集
+      - 使用 Azure 入口網站
+        [4] 快速入門：使用 Azure 入口網站 建立Azure Kubernetes Fleet Manager 資源並加入成員叢集
+      - 使用 Azure CLI
+        [7] 快速入門：使用 Azure CLI 建立 AzureKubernetes Fleet Manager 資源並加入成員叢集
+    - 存取 Fleet 資源的 Kubernetes API
+      [12] 快速入門：存取 Fleet 資源的 KubernetesAPI
+    - 將資源從中樞叢集傳播至成員叢集
+      [15] 快速入門：將資源從 Azure KubernetesFleet Manager （Fleet） 中樞叢集傳播至成員叢集
+  - 概念
+    - 艦隊和成員叢集
+      [20] Azure Kubernetes Fleet Manager 和成員叢集
+    - 排程器和排程架構
+      [24] Azure Kubernetes Fleet Manager 排程器和排程架構
+    - 跨多個成員叢集更新協調流程
+      [26] 跨多個成員叢集更新協調流程
+    - Kubernetes 工作負載協調流程
+      [28] Kubernetes 資源從中樞叢集傳播到成員叢集 （預覽）
+    - 多叢集第 4 層負載平衡
+      [38] 多叢集第 4 層負載平衡 （預覽）
+  - 操作指南
+    - 跨多個成員叢集協調更新
+      [40] 使用 Azure Kubernetes Fleet Manager 跨多個叢集協調更新
+    - 多叢集第 4 層負載平衡
+      [47] 設定跨 Azure Kubernetes Fleet Manager成員叢集的多叢集第 4 層負載平衡 （預覽）
+    - 使用污點和容忍來排程工作負載
+      [54] 在成員叢集上使用污點，以及在叢集資源放置上使用污點
+  - 資源
+    - 定價
+    - 車隊經理藍圖
+  - 參考
+    - Azure CLI
+      [61] az fleet
+    - REST
+      [81] Azure Kubernetes Fleet Manager RESTAPI 參考
+    - Terraform
+    - PowerShell
+      [82] Az.Fleet
+    - .NET
+      [84] Azure Container Service Fleet SDK for.NET - latest
+    - Python
+      [85] Azure Container Service Fleet SDK forPython - latest
+    - Java
+      [86] Azure Container Service Fleet SDK forJava - latest
+    - Node.js
+      [87] Azure Container Service Fleet SDK forJavaScript - latest
+    - Resource Manager 範本
+      [88] 
+  - 常見問題集
+    [91] 常見問題 - Azure Kubernetes FleetManager
+  - 疑難排解

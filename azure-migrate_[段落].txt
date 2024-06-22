@@ -1,0 +1,331 @@
+- ---< azure-migrate.pdf >---
+  - Azure Migrate 檔
+    [1] Azure Migrate 文件
+  - 概觀
+    - 關於 Azure Migrate
+      [4] 關於 Azure Migrate
+    - 最新功能
+      [9] Azure Migrate 中的新功能
+    - 常見問題
+      - 一般
+        [20] Azure Migrate：常見問題
+      - Azure Migrate 設備
+        [24] Azure Migrate 設備：常見問題
+      - 探索和相依性分析
+        [35] 探索和相依性分析 - 常見問題
+      - 評量
+        [39] 評量 - 常見問題
+      - 商務案例
+        [51] 商務案例 （預覽） - 常見問題
+      - 移轉和現代化工具
+        [56] 移轉和現代化：常見問題
+  - 快速入門
+    - 建立專案 - ARM 範本
+      [69] 快速入門：使用ARM範本建立 AzureMigrate 專案
+  - 教學課程
+    - 探索
+      - VMware 環境
+        - 探索 VMware 環境中的伺服器
+          [74] 教學課程：使用 Azure Migrate 探索在VMware 環境中執行的伺服器
+        - 在 VMware 環境中匯入伺服器
+          [93] 教學課程：使用 RVTools XLSX 匯入VMware 環境中執行的伺服器（預覽）
+      - 探索 Hyper-V 環境中的伺服器
+        [98] 教學課程：使用 Azure Migrate 探索在Hyper-V 上執行的伺服器：探索和評量
+      - 探索實體伺服器
+        [116] 教學課程：使用 Azure Migrate 探索實體伺服器：探索和評量
+      - 探索 AWS 實例
+        [133] 教學課程：使用 Azure Migrate 探索AWS 實例：探索和評量
+      - 探索 GCP 實例
+        [146] 教學課程：使用 Azure Migrate 探索Google Cloud Platform （GCP） 實例：探索和評量
+      - 探索 Spring Boot 應用程式
+        [160] 教學課程：探索在資料中心執行的 SpringBoot 應用程式（預覽版）
+      - 探索 SAP 系統 （預覽）
+        [171] 教學課程：使用 Azure Migrate 探索 SAP系統 （預覽）
+    - 決定
+      - 建立商業案例
+        [177] 建置商業案例 （預覽）
+    - 評估
+      - 評估 VMware 環境中的伺服器
+        - 評估要移轉至 Azure VM 的伺服器
+          [183] 教學課程：評估 VMware VM 以移轉至Azure VM
+        - 評估要移轉至 Azure SQL 的 SQL執行個體
+          [191] 教學課程：評估 SQL 實例以移轉至 AzureSQL
+        - 評估要移轉至 AVS 的伺服器
+          [205] 教學課程：評估 VMware 伺服器以移轉至AVS
+      - 評估 Hyper-V 環境中的伺服器
+        - 評估要移轉至 Azure VM 的伺服器
+          [217] 教學課程：評估 Hyper-V VM 以移轉至Azure
+        - 評估要移轉至 Azure SQL 的 SQL執行個體
+          [224] 教學課程：評估 SQL 實例以移轉至 AzureSQL
+      - 評估實體伺服器
+        - 評估要移轉至 Azure VM 的伺服器
+          [238] 教學課程：評估實體伺服器以移轉至Azure
+        - 評估要移轉至 Azure SQL 的 SQL執行個體
+          [246] 教學課程：評估 SQL 實例以移轉至 AzureSQL
+      - 評估 AWS 實例以移轉至 Azure
+        [260] 教學課程：評估 AWS 實例以移轉至Azure
+      - 評估要移轉至 Azure 的 GCP 實例
+        [267] 教學課程：評估Google Cloud Platform（GCP） VM 實例以移轉至 Azure
+      - 評估 Web 應用程式以移轉至 Azure Kubernetes Service （AKS）
+        [274] 評估要移轉至 Azure Kubernetes Service的 Web 應用程式 （預覽版）
+      - 評估要移轉至 Azure App 服務的 Web 應用程式
+        [284] 教學課程：評估 Web 應用程式以移轉至Azure App 服務
+      - 評估 Spring Boot Web 應用程式以進行移轉
+        [294] 教學課程：評估 Spring Boot 應用程式以移轉至 Azure Spring Apps（預覽版）
+      - 建置商務案例或評估要移轉至 Azure 的匯入伺服器
+        [298] 教學課程：使用匯入的 CSV 檔案建置商務案例或評估伺服器
+      - 評估 SAP 系統以進行移轉 （預覽）
+        [308] 教學課程：評估 SAP 系統以移轉至 Azure（預覽版）
+    - 移轉
+      - 移轉 VMware 環境中的伺服器
+        - VMware 環境中的伺服器移轉選項
+          [314] 選取 VMware 移轉選項
+        - 使用無代理程式移轉進行移轉 （入口網站）
+          [317] 將 VMware VM 遷移至 Azure（無代理程式）
+        - 使用代理程式型移轉進行移轉
+          [328] 將 VMware vSphere VM 遷移至 Azure（代理程式型）
+        - 使用無代理程式移轉進行移轉 （PowerShell）
+          [348] 將 VMware VM 遷移至 Azure （無代理程式） - PowerShell
+      - 移轉 Hyper-V 環境中的伺服器
+        [365] 將 Hyper-V VM 遷移至 Azure
+      - 移轉實體伺服器
+        [376] 將機器視為實體伺服器遷移至 Azure
+      - 移轉 AWS 實例
+        [393] 探索、評估 Amazon Web Services(AWS) VM，並將其遷移至 Azure
+      - 移轉 GCP 實例
+        [411] 探索和評估 Google Cloud Platform(GCP) VM 並將其遷移至 Azure
+    - 現代化
+      - 容器化 ASP.NET 應用程式並移轉至 AKS
+        [429] ASP.NET 應用程式容器化和移轉至 Azure Kubernetes Service
+      - 容器化 Java Web 應用程式並移轉至 AKS
+        [443] JAVA Web 應用程式容器化和移轉至Azure Kubernetes Service
+      - 容器化 ASP.NET 應用程式並移轉至 App Service 容器
+        [457] ASP.NET 應用程式容器化和移轉至 Azure App Service
+      - 容器化 Java Web 應用程式並移轉至 App Service 容器
+        [471] Java Web 應用程式容器化和移轉至Azure App 服務
+      - 將 Web 應用程式 ASP.NET 現代化至 App Service 程式代碼
+        [485] 將 ASP.NET Web 應用程式現代化以 Azure App 服務程式碼
+      - 將 web 應用程式現代化 ASP.NET 至 AKS
+        [491] 將 ASP.NET Web 應用程式現代化至 Azure Kubernetes Service (預覽)
+      - 第 2 天作業的 CI/CD
+        [505] 使用 Azure DevOps 進行容器化應用程式的持續部署
+  - 概念
+    - 一般
+      - Azure Migrate 支援
+        [509] Azure Migrate 支援矩陣
+    - 安全性
+      - 安全性基準
+        [515] Azure Migrate 的 Azure 安全性基準
+    - 探索
+      - VMware 探索支援
+        [523] VMware 探索的支援矩陣
+      - Hyper-V 探索支援
+        [526] Hyper-V 評量的支援矩陣
+      - 實體伺服器探索支援
+        [539] 實體伺服器探索和評量的支援矩陣
+      - Azure Migrate 設備需求
+        [554] Azure Migrate 設備
+      - Azure Migrate 設備探索元數據
+        [571] Azure Migrate 設備探索到的中繼資料
+      - 相依性分析概觀
+        [589] 相依性分析
+    - 決定
+      - 商務案例概觀
+        [592] 商務案例 （預覽） 概觀
+    - 評估
+      - 評定概觀 （遷移至 Azure VM）
+        [604] 評量概觀 （遷移至 Azure VM）
+      - 評定概觀 （遷移至 Azure SQL）
+        [619] 評量概觀 (移轉至 Azure SQL)
+      - 評定概觀（遷移至 App Service）
+        [636] 評量概觀 (移轉至 Azure App Service)
+      - 評定概觀（遷移至 Azure Spring Apps）
+        [641] 評定概觀 （遷移至 Azure Spring Apps）（預覽）
+      - 評定概觀（遷移至 AVS）
+        [645] 評定概觀（遷移至 Azure VMware 解決方案）
+      - 評量最佳做法
+        [657] 適用於建立評量的最佳做法
+      - 評定概觀（探索和評估 SAP 系統） （預覽）
+        [664] 評定概觀 （遷移至 SAP 系統） （預覽版）
+    - 移轉
+      - 建置移轉計劃
+        [665] 使用 Azure Migrate 建立移轉計劃
+      - VMware 移轉支援
+        [674] VMware vSphere 移轉的支援矩陣
+      - Hyper-V 移轉支援
+        [685] Hyper-V 移轉的支援矩陣
+      - 實體伺服器移轉支援
+        [691] 移轉實體伺服器、AWS VM 和 GCP VM的支援矩陣
+      - 復寫設備需求
+        [695] 複寫設備
+      - VMware 無代理程式移轉架構
+        [703] VMware 虛擬機器的 Azure Migrate 無代理程式移轉
+        - 準備 VMware 無代理程式移轉
+          [712] 
+      - Hyper-V 移轉架構
+        [721] Hyper-V 複寫如何運作？
+      - VMware 代理程式型移轉架構
+        [724] 代理程式移轉架構
+      - Web 應用程式移轉支援
+        [729] Web 應用程式移轉的支援矩陣
+  - 操作指南
+    - 建立和管理 Azure Migrate 專案
+      [731] 建立和管理專案
+    - 搭配私人端點使用 Azure Migrate
+      - 支援需求和考慮
+        [737] 私人端點連線的支援需求和考慮
+      - 使用 Azure Private Link 探索和評估
+        [740] 探索及評估使用 Private Link 進行移轉的伺服器
+      - 使用 Private Link 將伺服器遷移至 Azure
+        [748] 使用 Private Link 將伺服器遷移至 Azure
+      - 對網路連線能力進行疑難排解
+        [757] 對網路連線能力進行疑難排解
+    - 準備使用ISV工具/Movere
+      [775] 準備使用 ISV 工具或 Movere
+    - 探索
+      - 部署 Azure Migrate 設備
+        - 使用樣本部署裝置 （VMware）
+          [777] 
+        - 使用樣本部署裝置 （Hyper-V）
+          [788] 為 Hyper-V 上的伺服器設定設備
+        - 使用文稿部署裝置 （VMware/Hyper-V）
+          [799] 使用腳本設定設備
+        - 部署實體伺服器的設備
+          [805] 設定實體伺服器的設備
+        - 在 Azure Government 中部署設備
+          [815] 設定 Azure Government 雲端的設備
+      - 限制 VMware 環境中的伺服器探索範圍
+        [822] 在 VMware vSphere 環境中設定伺服器的探索範圍
+      - 建立 SQL Server 探索的最低許可權認證
+        [825] 為 SQL 探索和評量布建具有最低許可權的自訂帳戶
+      - 如何新增伺服器認證
+        [828] 提供伺服器認證來探索軟體清查、相依性、Web 應用程式和 SQL Server 實例和資料庫
+      - 探索應用程式/角色/功能
+        [832] 探索已安裝的軟體清查、Web 應用程式和SQL Server 實例和資料庫
+      - 探索現有專案中的 SQL 實例和 Web 應用程式
+        [837] 探索現有專案中的 Web 應用程式和 SQLServer 實例
+      - 分析機器相依性（代理程式為基礎）
+        [841] 設定相依性視覺效果
+      - 剖析電腦相依性 （無代理程式）
+        [848] 分析伺服器相依性 (無代理程式)
+    - 決定
+      - 建立商業案例
+        [859] 建置商業案例 （預覽）
+      - 檢閱商務案例
+        [865] 檢視商業案例 （預覽）
+    - 評估
+      - Azure Migrate 應用程式和程式代碼評估
+        [872] Azure Migrate 應用程式和程式代碼評估
+      - 新增評量工具
+        [873] 新增評量工具
+      - 群組計算機以進行評量
+        [878] 請建立評量的群組
+      - 建立 Azure VM 評量
+        [883] 建立 Azure VM 評量
+      - 建立 Azure SQL 評量
+        [891] 建立 Azure SQL 評量
+      - 建立 Azure App Service 評量
+        [904] 建立 Azure App Service 評量
+      - 建立 Azure Spring Apps 評量
+        [911] 建立 Azure Spring 應用程式評量 (預覽)
+      - 建立 AVS 評量
+        [917] 建立 Azure VMware 解決方案 評定
+      - 評估 SQL Server 資料庫
+        [926] 使用 Data Migration Assistant 評估移轉至 Azure SQL Database 的 SQL Server 資料資產整備程度
+      - 自訂評量
+        [939] 自訂評量
+      - 調整評量
+        - 評估 VMware 環境中的大量伺服器
+          [946] 評估 VMware 環境中大量伺服器以移轉至Azure
+        - 評估 Hyper-V 環境中的大量伺服器
+          [951] 針對移轉至 Azure，在 Hyper-V 環境中評估大量伺服器
+        - 評估大量的實體伺服器
+          [954] 評估大量實體伺服器以移轉至 Azure
+    - 移轉
+      - 新增移轉工具
+        [957] 新增移轉工具
+      - 使用 ExpressRoute 複寫
+        [962] 透過 ExpressRoute 複寫具有公用端點連線能力之 Azure Migrate 項目的數據
+      - 準備機器以進行移轉
+        [973] 準備內部部署電腦以移轉至 Azure
+      - 準備 Windows 2003 伺服器以進行移轉
+        [982] 準備 Windows Server 2003 機器以進行移轉
+      - 移轉 VMware VM
+        - 將 VMware VM 遷移至加密的 Azure VM
+          [984] 
+      - 測試移轉
+        [991] 測試移轉複寫虛擬機器
+      - 升級 Windows OS
+        [997] Azure Migrate Windows Server 升級（預覽）
+      - 調整移轉規模
+        - 如何使用無代理程序復寫方法大規模移轉 VMware VM
+          [1005] 將 VMware 虛擬機的無代理程式移轉至Azure
+        - 自動移轉大量 VM
+          [1014] 調整 VM 的移轉規模
+        - 如何自動化 VMware 移轉
+          [1017] VMware VM 的規模移轉
+    - 管理
+      - 刪除 Azure Migrate 專案
+        [1024] 刪除 Azure Migrate 專案
+      - 使用舊版的 Azure Migrate
+        [1028] 使用舊版的 Azure Migrate
+      - 將 VMware 虛擬環境中的內部部署伺服器上線至 Azure Arc
+        [1040] 
+      - 使用 Azure Lighthouse 管理移轉專案
+        [1047] 使用 Azure Lighthouse 大規模管理 AzureMigrate 專案
+  - 疑難排解
+    - 一般
+      - 為 Azure Migrate 疑難排解
+        [1051] 為 Azure Migrate 疑難排解
+      - 針對 Azure Migrate 專案進行疑難解答
+        [1052] 針對 Azure Migrate 專案進行疑難排解
+    - 探索
+      - 針對 Azure Migrate 設備進行疑難解答
+        [1054] Azure Migrate 設備疑難排解
+      - 使用設備診斷進行疑難解答
+        [1064] 診斷和解決 Azure Migrate 設備的問題
+      - 針對 Spring Boot 探索和評量進行疑難解答
+        [1068] 針對 Spring Boot 應用程式的探索和評量期間的常見問題進行疑難解答 （預覽）
+      - 針對探索進行疑難解答
+        [1073] 針對進行中的伺服器探索、軟體清查和SQL 和 Web 應用程式探索進行疑難解答
+      - 針對相依性視覺效果進行疑難解答
+        [1094] 針對相依性視覺效果進行疑難解答
+    - 評估
+      - 針對評量進行疑難排解
+        - 常見的問題
+          [1114] Azure Migrate 評量中的常見問題
+        - 支援的案例
+          [1131] Troubleshoot assessment - supportedscenarios
+        - 常見問題集
+          [1134] Troubleshoot assessment - FAQ
+    - 移轉
+      - 針對無代理程式 VMware 移轉中的複寫問題進行疑難解答
+        [1143] 針對無代理程式 VMware VM 移轉中的複寫問題進行疑難解答
+      - 針對無代理程式 VMware 中的停滯複寫和移轉緩慢問題進行疑難解答
+        [1156] 針對無代理程式 VMware 移轉中的複寫緩慢或移轉停滯問題進行疑難排解
+      - 針對 Web 應用程式移轉問題進行疑難解答
+        [1160] 
+      - 針對 Windows OS 升級問題進行疑難解答
+        [1164] 針對 Windows OS 升級問題進行疑難排解
+  - 參考
+    - Azure CLI
+      [1166] az offazure
+    - Azure PowerShell
+      [1169] Az.Migrate
+    - Azure 原則內建
+      [1172] Azure 原則 適用於 Azure Migrate 的內建定義
+  - 資源
+    - 雲端採用架構 中的移轉
+      [1173] 移轉概觀
+    - Contoso 移轉範例
+      [1176] 檢閱產品移轉案例
+    - REST API
+      [1184] Azure Migrate REST API
+    - Resource Manager 範本
+      [1185] Microsoft.Migrate 資源類型
+    - 定價
+    - UserVoice
+    - Microsoft 問與答頁面
+    - 部落格
+    - Azure Migrate
+    - Azure 藍圖

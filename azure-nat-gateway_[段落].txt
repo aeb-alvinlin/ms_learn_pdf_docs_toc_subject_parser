@@ -1,0 +1,90 @@
+- ---< azure-nat-gateway.pdf >---
+  - Azure NAT 閘道文件
+    [1] Azure NAT 閘道文件
+  - 概觀
+    - 什麼是 Azure NAT Gateway？
+      [4] 什麼是 Azure NAT Gateway？
+  - 快速入門
+    - 入口網站
+      [10] 快速入門：使用 Azure 入口網站建立 NAT閘道
+    - PowerShell
+      [20] 快速入門：使用 Azure PowerShell 建立NAT 閘道
+    - CLI
+      [26] 快速入門：使用 Azure CLI 建立 NAT 閘道
+    - Bicep
+      [32] 快速入門：建立 NAT 閘道 - Bicep
+    - ARM 範本
+      [39] 快速入門：建立 NAT 閘道 - ARM 範本
+    - Terraform
+      [48] 快速入門：使用 Terraform 建立 AzureNAT 閘道
+  - 教學課程
+    - 使用 NAT 閘道設定雙堆疊輸出
+      [57] 教學課程：使用 NAT 閘道和公用負載平衡器設定雙堆疊輸出連線
+    - 搭配中樞和輪輻網路使用 NAT 閘道
+      [72] 教學課程：搭配中樞和輪輻網路使用NAT閘道
+    - 搭配 Azure 防火牆使用 NAT 閘道
+      [99] 教學課程：在中樞和輪輻網路中整合 NAT閘道與 Azure 防火牆 以進行輸出連線
+    - 整合 NAT 閘道公用負載平衡器
+      [112] 教學課程：使用 Azure 入口網站 整合NAT 閘道與公用負載平衡器
+    - 整合 NAT 閘道內部負載平衡器
+      [125] 教學課程：使用 Azure 入口網站 整合NAT 閘道與內部負載平衡器
+    - 移轉輸出存取
+      [137] 教學課程：將輸出存取遷移至 Azure NAT閘道
+    - 移轉虛擬機器公用 IP 位址
+      [143] 教學課程：將虛擬機公用IP位址遷移至Azure NAT 閘道
+  - 概念
+    - NAT 閘道資源
+      [148] Azure NAT 閘道資源
+    - 可用性區域
+      [155] NAT 閘道和可用性區域
+    - 安全性
+      - NAT 閘道安全性基準
+        [160] Azure NAT 閘道的 Azure 安全性基準
+    - 具有 NAT 閘道的 SNAT
+      [164] 來源網路位址轉換 （SNAT） 與 AzureNAT 閘道
+    - NAT 閘道設計指引
+      [170] 使用 Azure NAT 閘道設計虛擬網路
+  - 操作方式
+    - 計量與警示
+      [176] 什麼是 Azure NAT 閘道計量和警示？
+    - 資源健康情況
+      [190] Azure NAT 閘道 資源健康狀態
+    - 管理 NAT 閘道
+      [193] 管理 NAT 閘道
+    - 跨區域移動
+      - 在區域移動之後建立及設定 NAT 閘道
+        [199] 將資源移至另一個區域之後，建立並設定NAT閘道
+    - 疑難排解
+      - NAT 閘道疑難排解
+        [202] 針對 Azure NAT 閘道進行疑難解答
+      - 針對 NAT 閘道連線能力進行疑難排解
+        [208] 針對 Azure NAT 閘道連線進行疑難排解
+      - 針對 NAT 閘道和 Azure 服務進行疑難排解
+        [218] 針對 NAT 閘道和 Azure 服務的輸出連線進行疑難解答
+  - 參考
+    - Azure CLI
+      [222] Networking
+    - Azure PowerShell
+      [223] 
+    - .NET
+      [255] 適用于 .NET 的 Azure 虛擬網路 SDK - 最新
+    - Java
+    - Node.js
+      [256] 適用於 JavaScript 和 Node.js 開發人員的Azure
+    - Python
+    - REST
+      [260] Nat Gateways
+    - Resource Manager 範本
+      [261] Microsoft.Network 資源類型
+    - 程式碼範例
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure 藍圖
+    - 網路部落格
+    - Azure 網路的 Microsoft 問與答頁面
+    - 網路意見反應
+    - 定價
+    - 定價計算機
+    - Stack Overflow
+    - 常見問題集
+      [299] Azure NAT 閘道基本知識

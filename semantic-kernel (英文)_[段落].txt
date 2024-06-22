@@ -1,0 +1,94 @@
+- ---< semantic-kernel (英文).pdf >---
+  - Overview
+    [1] What is Semantic Kernel?
+  - Getting started
+    - Quick start guide
+      [7] Start learning how to use SemanticKernel
+    - Hackathon materials
+      [11] Hackathon materials for SemanticKernel
+    - In-depth tutorials
+      [15] Additional learning for Semantic Kernel
+    - Supported languages
+      [17] Supported Semantic Kernel languages
+    - Contributing to Semantic Kernel
+      [21] Contributing to Semantic Kernel
+  - Prompt engineering
+    - Understanding prompts
+      [25] What are prompts?
+    - Authoring your first prompt
+      [28] Prompting AI models with SemanticKernel
+    - Templatizing prompts
+      [38] Templatizing your prompts
+    - Calling nested functions in prompts
+      [44] Calling functions within a prompt
+    - Configuring prompts
+      [48] Configuring prompts
+    - Saving your prompts as files
+      [52] Saving and sharing prompts
+    - Prompt template syntax
+      [60] Prompt template syntax
+  - Creating AI agents
+    - Creating your first agent
+      [65] What is an agent?
+    - Initialize the kernel
+      - Understanding the kernel
+        [75] Understanding the kernel in SemanticKernel
+      - Adding AI services to the kernel
+        [79] Adding AI services to Semantic Kernel
+    - Give your agent skills with plugins
+      - Understanding plugins
+        [83] Understanding AI plugins in SemanticKernel
+      - Native functions
+        [89] Creating native functions for AI to call
+      - Out-of-the-box plugins
+        [98] Use the out-of-the-box plugins in thekernel
+    - Improve automation with planners
+      - Understanding planners
+        [101] Automatically orchestrate AI withplanners
+      - Evaluate with Prompt flow
+        - Using Prompt flow with Semantic Kernel
+          [108] Using Prompt flow with Semantic Kernel
+        - Creating a Prompt flow with Semantic Kernel
+          [115] Create a Prompt flow with SemanticKernel
+        - Running batches with Prompt flow
+          [124] Running batches with Prompt flow
+        - Evaluating plugins and planners
+          [133] Evaluate your plugins and planners withPrompt flow
+        - Deploy Semantic Kernel with Prompt flow
+          [141] Deploy Prompt flows with SemanticKernel to Azure AI Studio
+  - Giving your AI memories
+    - Overview
+      [146] What are Memories?
+    - Understanding embeddings
+      [148] What are Embeddings?
+    - Store context in vector databases
+      [150] What is a vector database?
+  - Using AI responsibly
+    - The Schillace Law's
+      [154] Schillace Laws of Semantic AI
+    - Responsible AI
+      [157] Responsible AI and Semantic Kernel
+  - Chat Copilot
+    - About Chat Copilot
+      [162] Chat Copilot: A reference application forSemantic Kernel
+    - Running Chat Copilot locally
+      [165] Getting started with Chat Copilot
+    - Customizing Chat Copilot
+      [168] Customize Chat Copilot for your usecase
+    - Test plugins with Chat Copilot
+      [172] Test your OpenAI plugins with ChatCopilot
+    - Deploying Chat Copilot
+      [177] Deploy Chat Copilot to Azure as a webapp service
+    - Publish changes to Azure
+      [184] Learn how to make changes to theSemantic Kernel web app service
+  - Getting Support
+    - Overview
+      [187] Support for Semantic Kernel
+    - FAQs
+      [188] Semantic Kernel FAQ's
+    - Migrating to v1+
+      [190] 
+    - Code of Conduct
+      [201] Contributor Covenant Code of Conduct
+    - Glossary
+      [203] Glossary for Semantic Kernel

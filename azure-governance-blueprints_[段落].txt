@@ -1,0 +1,119 @@
+- ---< azure-governance-blueprints.pdf >---
+  - Azure 藍圖文件
+    [1] Azure 藍圖文件
+  - 概觀
+    - 什麼是 Azure 藍圖？
+      [4] 什麼是 Azure 藍圖 (預覽)？
+  - 快速入門
+    - 建立藍圖 - 入口網站
+      [10] 快速入門：在入口網站中定義和指派藍圖
+    - 建立藍圖 - Azure PowerShell
+      [21] 快速入門：使用 PowerShell 定義和指派Azure 藍圖
+    - 建立藍圖 - Azure CLI
+      [32] 快速入門：使用 Azure CLI 定義和指派Azure 藍圖
+    - 建立藍圖 - REST API
+      [43] 快速入門：使用 REST API 定義和指派Azure 藍圖
+    - 建立藍圖 - ARM 範本
+      [68] 
+  - 教學課程
+    - 從藍圖範例中建立
+      [74] 教學課程：從藍圖範例建立環境
+    - 使用藍圖資源鎖定保護新資源
+      [81] 教學課程：使用 Azure 藍圖資源鎖定保護新資源
+    - 了解：使用 Azure 藍圖管理多個訂用帳戶
+  - 範例
+    - 索引
+      [88] Azure 藍圖範例
+    - Azure 安全性效能評定基礎
+      - 概觀
+        [91] Azure 安全性效能評定基礎藍圖範例的概觀
+      - 部署步驟
+        [94] 部署 Azure 安全性效能評定基礎藍圖範例
+    - 澳大利亞政府受保護的 ISM
+      - 概觀
+        [100] 澳大利亞政府 ISM 受保護藍圖範例概觀
+      - 控制項對應
+        [101] 澳大利亞政府 ISM 受保護藍圖範例控制措施對應
+      - 部署步驟
+        [113] 部署澳大利亞政府 ISM 受保護藍圖範例
+    - 加拿大聯邦 PBMM
+      [131] 加拿大聯邦 PBMM 藍圖樣本
+    - ISO 27001
+      [136] ISO 27001 藍圖範例
+    - ISO 27001 - 共用的服務
+      - 概觀
+        [141] ISO 27001 共用服務藍圖範例概觀
+      - 控制項對應
+        [144] ISO 27001 共用服務藍圖範例的控制項對應
+      - 部署步驟
+        [151] 部署 ISO 27001 共用服務藍圖範例
+    - ISO 27001 - ASE/SQL 工作負載
+      - 概觀
+        [159] ISO 27001 App Service 環境/SQLDatabase 工作負載藍圖範例概觀
+      - 控制項對應
+        [162] ISO 27001 ASE/SQL 工作負載藍圖的控制項對應
+      - 部署步驟
+        [169] 部署 ISO 27001 App Service 環境/SQLDatabase 工作負載藍圖範例
+    - SWIFT CSP v2020
+      - 概觀
+        [177] SWIFT CSP-CSCF v2020 藍圖範例概觀
+      - 控制項對應
+        [178] SWIFT CSP-CSCF v2020 藍圖範例的控制項對應
+      - 部署步驟
+        [189] 部署 SWIFT CSP-CSCF v2020 藍圖範例
+    - UK OFFICIAL 與 UK NHS
+      [194] UK OFFICIAL 與 UK NHS 藍圖範例
+    - CAF 基礎
+      - 概觀
+        [198] 適用於 Azure 的 Microsoft 雲端採用架構基礎藍圖範例的概觀
+      - 部署步驟
+        [201] 部署適用於 Azure 的 Microsoft 雲端採用架構的基礎藍圖範例
+    - CAF 移轉登陸區域
+      - 概觀
+        [205] 適用於 Azure 的 Microsoft 雲端採用架構，移轉登陸區域藍圖範例的概觀
+      - 部署步驟
+        [208] 部署適用於適用於 Azure 的 Microsoft 雲端採用架構的移轉登陸區域藍圖範例
+  - 概念
+    - 藍圖生命週期
+      [212] 了解 Azure 藍圖生命週期
+    - 藍圖部署的階段
+      [216] 藍圖部署的階段
+    - 藍圖中的動態參數
+      [218] 透過參數建立動態藍圖
+    - 排列藍圖部署順序
+      [226] 了解 Azure 藍圖中的部署順序
+    - 在 Azure 藍圖中鎖定資源
+      [230] 
+  - 操作指南
+    - 以 PowerShell 管理指派
+      [234] 如何使用 PowerShell 管理指派
+    - 使用 PowerShell 匯入和匯出
+      [245] 使用 PowerShell 匯入和匯出藍圖定義
+    - 從入口網站更新現有的指派
+      [249] 如何更新現有的藍圖指派
+    - 設定藍圖操作員環境
+      [253] 設定藍圖操作員環境
+    - 管理藍圖即程式碼 (社群)
+  - 疑難排解
+    [255] 針對使用 Azure 藍圖發生的錯誤進行疑難排解
+  - 參考
+    - Azure CLI
+      [258] az blueprint
+    - Azure PowerShell
+      [279] Az.Blueprint
+    - 適用於 .NET 的 Azure SDK
+      [280] Microsoft.Azure.Management.BlueprintNamespace
+    - REST
+      [283] 藍圖 REST API 參考
+    - PSGallery (Az.Blueprint 模組)
+    - PSGallery (社群模組)
+    - 藍圖函式
+      [284] 搭配 Azure 藍圖使用的函式
+  - 資源
+    - GitHub - Azure 藍圖範例
+    - 適用於 Azure 藍圖的 Microsoft 問答集
+    - 治理 YouTube 頻道
+    - Azure Friday - Azure 藍圖概觀
+    - Azure 更新
+    - 定價計算機
+    - UserVoice

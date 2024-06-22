@@ -1,0 +1,714 @@
+- ---< azure-stack-hci.pdf >---
+  - Azure Stack HCI 文件
+    [1] Azure Stack HCI 文件
+  - 概觀
+    - 什麼是 Azure Stack HCI？
+      [4] Azure Stack HCI 解決方案概觀
+    - Azure Stack HCI 的新功能
+      [10] Azure Stack HCI 版本 23H2 的新功能
+    - 版本資訊
+      - 版本資訊
+        [13] Azure Stack HCI 版本 23H2 版本資訊
+      - 已知問題 2402
+        - 2402.2 - 目前
+          [16] 
+        - 2402.1
+          [20] 
+        - 2402
+          [24] 
+      - 已知問題 2311
+        - 2311.5 - 目前
+          [28] 
+        - 2311.4
+          [31] 
+        - 2311.3
+          [34] 
+        - 2311.2 - GA
+          [39] 
+        - 2311 (preview) 
+          [44] 
+      - 安全性更新
+        - 2024 年 4 月 - 目前
+          [50] April 2024 OS security update (KB5036910) for Azure Stack HCI, version23H2
+        - 2024 年 3 月
+          [53] Azure Stack HCI 版本 23H2 的 2024 年 3月 OS 安全性更新 (KB 5035856)
+        - 2024年2月
+          [55] Azure Stack HCI 版本 23H2 的 2024 年 2月 OS 安全性更新 (KB 5034769)
+        - 2024 年 1 月
+          [58] Azure Stack HCI 版本 23H2 的 2024 年 1月 OS 安全性更新 (KB 5034130)
+        - 2023 年 12 月
+          [60] 2023 年 12 月 OS 安全性更新 (KB5033383) ，適用於 Azure Stack HCI 版本23H2
+        - 2023年11月
+          [62] Azure Stack HCI 版本 23H2 的 2023 年 11月 OS 安全性更新 (KB 5032202)
+    - 與 Windows Server 比較
+      [64] 比較 Azure Stack HCI 與 WindowsServer
+    - 常見問題集
+      [70] Azure Stack HCI 如何使用雲端？
+我儲存在 Azure Stack HCI 上的資料會傳送到雲端嗎？
+Azure Stack HCI 的控制平面會經過雲端嗎？
+  - 評估
+    - 虛擬部署
+      [75] 部署虛擬 Azure Stack HCI 版本 23H2 系統
+    - Azure 中的 HCIBox
+  - 計畫
+    - 檢閱需求
+      - 系統需求
+        [86] Azure Stack HCI 版本 23H2 的系統需求
+      - 實體網路需求
+        [93] Azure Stack HCI 的實體網路需求
+      - 主機網路需求
+        [100] Azure Stack HCI 的主機網路需求
+      - 防火牆需求
+        [115] Azure Stack HCI 的防火牆需求
+    - 檢閱網路參考模式
+      - 網路參考模式概觀
+        [125] Azure Stack HCI 的網路參考模式概觀
+      - 選擇網路參考模式
+        [127] Azure Stack HCI 網路部署模式
+      - 單一伺服器部署
+        - 單一伺服器部署
+          [131] 檢閱 Azure Stack HCI 的單一伺服器記憶體部署網路參考模式
+        - 模式元件
+          [141] 檢閱 Azure Stack HCI 的單一伺服器記憶體參考模式元件
+        - 模式IP需求
+          [144] 檢閱 Azure Stack HCI 的單一伺服器記憶體參考模式 IP 需求
+      - 雙節點部署
+        - 無記憶體交換器，單一交換器
+          [148] 檢閱 Azure Stack HCI 的雙節點記憶體無交換器單一交換器部署網路參考模式
+        - 無記憶體交換器，兩個交換器
+          [157] 檢閱兩節點記憶體無交換器，兩個交換器部署 Azure Stack HCI 的網路參考模式
+        - 記憶體交換、非交集
+          [166] 檢閱 Azure Stack HCI 的雙節點記憶體交換、非聚合式部署網路參考模式
+        - 記憶體交換，完全交集
+          [175] 檢閱 Azure Stack HCI 的雙節點記憶體交換、完全交集部署網路參考模式
+        - 模式元件
+          [184] 檢閱 Azure Stack HCI 的雙節點記憶體參考模式元件
+        - 模式IP需求
+          [187] 檢閱 Azure Stack HCI 的雙節點記憶體參考模式 IP 需求
+        - 決策矩陣
+          [191] 檢閱 Azure Stack HCI 的雙節點記憶體參考模式決策矩陣
+      - 三節點無切換部署
+        - 記憶體無交換器、雙重 TOR、單一連結
+          [192] 檢閱 Azure Stack HCI 的三節點記憶體無交換器雙 TOR 單一連結部署網路參考模式
+        - 記憶體無開關、雙重 TOR、雙重連結
+          [199] 檢閱 Azure Stack HCI 的三節點記憶體無交換器、雙重 TOR、雙連結部署網路參考模式
+      - SDN 考慮
+        [207] 檢閱網路參考模式的SDN考慮
+    - 檢閱雲端部署網路考慮
+      [209] Azure Stack HCI 版本 23H2 的雲端部署網路考慮
+    - 檢閱安全性
+      - 關於安全性功能
+        [223] Azure Stack HCI 版本 23H2 的安全性功能
+      - 下載 Azure Stack HCI 安全性書籍
+    - 評估環境整備程度
+      [229] 評估 Azure Stack HCI 版本 23H2 環境的部署整備程度
+  - 部署
+    - 閱讀概觀
+      [241] 關於 Azure Stack HCI 版本 23H2 部署
+    - 完成必要條件
+      [244] 檢閱 Azure Stack HCI 版本 23H2 的部署必要條件
+    - 1.準備 Active Directory
+      [247] 準備 Active Directory 以進行 AzureStack HCI 版本 23H2 部署
+    - 2.下載軟體
+      [251] 下載 Azure Stack HCI 版本 23H2 軟體
+    - 3.安裝 OS
+      [254] 安裝 Azure Stack HCI 版本 23H2 操作系統
+    - 4.向Arc註冊並設定許可權
+      [261] 註冊伺服器並指派 Azure Stack HCI 版本23H2 部署的許可權
+    - 5.選擇部署方法
+      - 5A. 透過 Azure 入口網站 進行部署
+        [267] 使用 Azure 入口網站 部署 Azure StackHCI 版本 23H2 系統
+      - 5B。 透過 ARM 範本進行部署
+        [286] 透過 Azure Resource Manager 部署範本部署 Azure Stack HCI 23H2 版
+    - 部署 SDN
+      - 使用 Express 腳本
+        [301] 使用適用於 Azure Stack HCI 的 SDNExpress 部署 SDN 基礎結構
+      - 使用 Windows Admin Center
+        [308] 使用適用於 Azure Stack HCI 的 WindowsAdmin Center 部署 SDN
+    - 部署工作負載
+      - 在 HCI 上執行 AKS
+        [317] 使用 Azure CLI 建立 Kubernetes 叢集
+      - 在 HCI 上執行 Azure 虛擬桌面
+        [324] 部署 Azure 虛擬桌面
+      - 執行 Azure Arc VM
+        [339] Create Azure Stack HCI 上的 Arc 虛擬機
+  - 更新
+    - 關於 匯報
+      [346] 關於 Azure Stack HCI 版本 23H2 的更新
+    - 瞭解更新階段
+      [350] 檢閱 Azure Stack HCI 版本 23H2 的更新階段
+    - 透過PowerShell更新
+      [353] 透過PowerShell更新 Azure Stack HCI 版本 23H2
+    - 透過 Azure 入口網站更新
+      [365] 使用 Azure 更新管理員 更新 Azure StackHCI 版本 23H2
+    - 疑難排解更新
+      [376] 針對 Azure Stack HCI 版本 23H2 的解決方案更新進行疑難解答
+  - 管理
+    - Azure Arc VM
+      - 什麼是 Azure Arc VM 管理？
+        [380] 什麼是 Azure Arc VM 管理？
+      - 檢閱必要條件
+        [383] Azure Arc VM 管理必要條件
+      - 指派 RBAC 角色
+        [385] 使用角色型 存取控制 來管理 Azure StackHCI 虛擬機器
+      - Create Arc VM 資源
+        - 1.Create 記憶體路徑
+          [390] 建立 Azure Stack HCI 的記憶體路徑
+        - 2.Create VM 映射
+          - 使用 Azure Marketplace映像
+            [395] 
+          - 在 Azure 記憶體帳戶中使用映像
+            [409] 在 Azure 記憶體帳戶中使用映像建立Azure Stack HCI VM 映像
+          - 在本機共用中使用映像
+            [420] 使用本機共用中的映像建立 Azure StackHCI VM 映像
+          - 使用 Linux VM 映像
+            - 使用Ubuntu VM映像
+              [431] 準備 Azure Stack HCI 虛擬機的 Ubuntu映射
+            - 使用 CentOS VM 映像
+              [438] 為 Azure Stack HCI 虛擬機準備 CentOSLinux 映像
+            - 使用 Red Hat Enterprise VM 映像
+              [454] 準備 Azure Stack HCI 虛擬機的 Red HatEnterprise 映像
+        - 3. Create 邏輯網路
+          [471] 建立 Azure Stack HCI 的邏輯網路
+        - 4. Create 網路介面
+          [479] 在 Azure Stack HCI 上建立 Arc 虛擬機的網路介面 (預覽)
+        - 5. Create Arc VM
+          [486] Create Azure Stack HCI 上的 Arc 虛擬機
+      - 管理 Arc VM
+        [493] 管理 Azure Stack HCI 上的 Arc VM
+      - 管理 Arc VM 資源
+        [504] 管理 Azure Stack HCI 上 Arc VM 的資源
+      - 管理 VM 擴充功能
+        [511] 管理 Azure Stack HCI 虛擬機上的 VM 擴充功能
+      - 疑難排解
+        [515] 針對 Azure Arc VM 管理進行疑難解答
+      - 常見問題集
+        [520] Azure Stack HCI 版本 22H2 上的 AzureArc 虛擬機 (VM) 管理有何變更？
+Azure Stack HCI 22H2 版的重大變更對我和我的工作負載有何意義？
+在即將推出的 Azure Stack HCI 版本23H2 中，我可以預期 Arc VM 有哪些重大改善和功能？
+如何? 升級 Azure Arc VM 管理基礎結構元件嗎？
+      - VM 的 Azure 驗證
+        [524] VM 的 Azure 驗證
+      - 授權 Windows Server VM
+        [534] 授權 Azure Stack HCI 上的 WindowsServer VM
+    - Arc VM 的信任啟動
+      - 什麼是 Arc VM 的信任啟動？
+        [543] Azure Stack HCI 版本 23H2 上 Azure ArcVM 的信任啟動簡介
+      - 部署 Arc VM 的信任啟動
+        [545] 在 Azure Stack HCI 版本 23H2 上部署Azure Arc VM 的信任啟動
+      - 管理客體狀態保護金鑰
+        [550] 管理 Azure Stack HCI 版本 23H2 上受信任的啟動 Arc VM 客體狀態保護密鑰
+    - 非 Arc VM
+      - 延伸安全性更新 (ESU)
+        [553] 透過 Azure Stack HCI 的免費延伸安全性更新 (ESU)
+      - 管理 VM
+        [557] 使用 Windows Admin Center 管理 VM
+      - 以 PowerShell 管理 VM
+        [572] 使用 Windows PowerShell 管理 AzureStack HCI 上的 VM
+      - 建立 VM 親和性規則
+        [579] 建立 VM 的伺服器和網站親和性規則
+      - VM 負載平衡
+        [589] 負載平衡虛擬機器
+      - 動態 CPU 相容性
+        [594] Azure Stack HCI 中的動態處理器相容性模式
+      - 使用 GPU 搭配叢集式 VM
+        [599] 使用 GPU 搭配叢集式 VM
+      - GPU 數據分割
+        [606] GPU 分割
+      - 分割並指派 GPU 給虛擬機
+        [609] 分割 GPU 並指派給虛擬機器
+      - 將 GPU 附加至 Linux VM
+        [618] 將 GPU 附加至 Azure Stack HCI 上的Ubuntu Linux VM
+    - 安全性
+      - 管理安全性預設值
+        [638] 
+      -  (WDAC) 管理應用程控
+        [644] 管理 Azure Stack HCI 23H2 版 WindowsDefender 應用程控
+      - 管理 BitLocker 加密
+        [650] 管理 Azure Stack HCI 版本 23H2 上的BitLocker 加密
+      - 管理秘密輪替
+        [654] 輪替 Azure Stack HCI 版本 23H2 上的秘密
+      - 管理 syslog 轉送
+        [657] 管理 Azure Stack HCI 的 syslog 轉送
+      - 使用雲端 Microsoft Defender 進行管理
+        [665] 使用 Cloud (preview Microsoft Defender管理系統安全性)
+    - 叢集
+      - 設定 Proxy
+        [671] 設定 Azure Stack HCI 版本 23H2 的Proxy 設定
+      - 使用儀錶板大規模管理
+        [676] 使用儀錶板來管理 Azure Stack HCI 系統(預覽)
+    - Azure 服務
+      - 從 Azure 增強管理
+        [681] 從 Azure 使用 Azure Stack HCI 增強式管理
+      - 使用 Azure Site Recovery
+        [684] 使用 Azure Stack HCI 上的 Azure SiteRecovery 保護 VM 工作負載 (預覽版)
+    - Azure Arc 延伸模組
+      - Arc 延伸模組管理
+        [699] Azure Stack HCI 上的 Azure Arc 延伸模組管理
+      - 遙測和診斷延伸模組
+        [706] Azure Stack HCI 遙測和診斷延伸模組
+      - 遠端支援延伸模組
+        [710] Azure Stack HCI 遠端支援ARC擴充功能概觀
+    - 儲存體
+      - 儲存體精簡佈建
+        [717] Azure Stack HCI 23H2 版中的記憶體精簡布建
+      - 使用 ReFS 重複資料刪除和壓縮
+        [721] 在 Azure Stack HCI 中使用 ReFS 重複資料刪除和壓縮優化記憶體
+    - 容量
+      - 新增伺服器
+        [728] 在 Azure Stack HCI 版本 23H2 上新增伺服器
+      - 修復伺服器
+        [734] 修復 Azure Stack HCI 版本 23H2 上的伺服器
+    - SDN
+      - 更新 SDN 基礎結構
+        [740] 更新 Azure Stack HCI 的 SDN 基礎結構
+      - 管理租用戶邏輯網路
+        [743] 管理租用戶邏輯網路
+      - 管理租用戶虛擬網路
+        [748] 管理租用戶虛擬網路
+      - 管理軟體負載平衡器
+        [753] 管理 SDN 的軟體負載平衡器
+      - 管理閘道連線
+        [764] 管理 Azure Stack HCI 網路閘道連線
+      - 管理預設網路存取原則
+        [772] 在 Azure Stack HCI 上的虛擬機上使用預設網路存取原則
+      - 使用 Windows Admin Center 設定網路安全組
+        [779] 使用 Windows Admin Center 設定網路安全組
+      - 使用 PowerShell 設定網路安全組
+        [786] 使用 PowerShell 在 Azure Stack HCI 上設定網路安全組
+      - 使用標籤設定網路安全組
+        [797] 在 Windows Admin Center 中使用標籤設定網路安全組
+      - 管理SDN多月臺
+        [804] 管理 Azure Stack HCI 的 SDN 多月臺
+      - 將公用IP位址指派給VM
+        [810] 將公用IP指派給虛擬機
+      - 設定高可用性連接埠的負載平衡器
+        [814] 設定高可用性連接埠的軟體負載平衡器
+      - 平衡多個邏輯網路的負載
+        [818] 針對 Azure Stack HCI 對多個 SDN 邏輯網路進行負載平衡
+      - 管理 SDN 安全性
+        - 管理 SDN 的憑證
+          [821] 管理軟體定義網路的憑證
+        - 更新網路控制器憑證
+          [829] 更新網路控制站的憑證
+        - 更新 SDN 基礎結構憑證
+          [837] 更新軟體定義網路基礎結構的憑證
+        - 保護網路控制卡
+          [841] 保護網路控制卡
+        - 使用 Kerberos 進行驗證
+          [847] Kerberos 搭配服務主體名稱 (SPN)
+    - 計費
+      - Azure Hybrid Benefit
+        [850] 適用於 Azure Stack HCI 的 Azure HybridBenefit
+      - 帳單與付款
+        [856] Azure Stack HCI 計費和付款 (機器翻譯)
+  - 監視
+    - 概觀
+      [858] 什麼是 Azure Stack HCI 監視？
+    - 透過 Azure
+      - 深入解析
+        - 單一叢集
+          [861] 使用 Insights 監視單一 Azure Stack HCI版本 23H2 叢集
+        - 多個叢集
+          [874] 使用 Insights 監視多個 Azure Stack HCI版本 23H2 叢集
+        - 功能活頁簿
+          [889] 使用 Insights 監視 Azure Stack HCI 功能
+      - 計量
+        [899] 使用 Azure 監視器計量監視 Azure StackHCI
+      - 警示
+        - 健康狀態警示
+          [911] 使用 Azure 監視器警示回應 Azure StackHCI 健康情況警示
+        - 記錄警示
+          [916] 設定 Azure Stack HCI 的記錄警示
+        - 度量警示
+          [925] 設定 Azure Stack HCI 的計量警示
+        - 建議的警示規則
+          [929] 啟用 Azure Stack HCI 的建議警示規則
+    - 透過 PowerShell
+      - 健康情況服務
+        - 監視叢集
+          [935] 使用健全狀況服務監視叢集
+        - 取得叢集效能歷程記錄
+          [940] 取得叢集效能歷程記錄
+        - 檢視錯誤
+          [945] 
+        - 追蹤動作
+          [963] 追蹤健全狀況服務動作
+        - 修改設定
+          [964] 修改健全狀況服務設定
+  - 疑難排解
+    - 收集記錄
+      [967] 收集 Azure Stack HCI 的診斷記錄
+    - 取得部署問題的支援
+      [985] 取得 Azure Stack HCI 部署問題的支援
+    - 取得 Azure Stack HCI 的支援
+      [989] 取得 Azure Stack HCI 的支援
+    - 取得遠端支援
+      [991] 取得 Azure Stack HCI 的遠端支援
+    - 疑難排解 SDN
+      - 針對 SDN 部署進行疑難解答
+        [1005] 透過 Windows Admin Center 針對 AzureStack HCI 中的軟體定義網路部署進行疑難解答
+      - 收集 SDN 記錄
+        [1010] 收集 Azure Stack HCI 上軟體定義網路的記錄
+      - 針對 SDN 的軟體 Load Balancer 進行疑難解答
+        [1018] 針對 SDN 的軟體 Load Balancer 進行疑難解答
+  - 移轉
+    - 移轉概觀
+      [1029] 關於將 VM 工作負載遷移至 Azure StackHCI (預覽) 的選項
+    - 使用 Azure Migrate (預覽版移轉) 
+      - 概觀
+        [1031] Azure Stack HCI (預覽版的 AzureMigrate 型移轉概觀)
+      - 準備
+        - 檢閱需求
+          [1034] 使用 Azure Migrate () 預覽版檢閱 Hyper-V VM 移轉至 Azure Stack HCI 的需求
+        - 完成必要條件
+          [1038] 使用 Azure Migrate (預覽版將 Hyper-VVM 移轉至 Azure Stack HCI 的必要條件)
+      - 探索、複寫
+        [1041] 
+      - 移轉、驗證
+        [1054] 使用 Azure Migrate (預覽版將 Hyper-VVM 遷移至 Azure Stack HCI)
+      - 疑難排解
+        [1061] 針對透過 Azure Migrate (Preview) 將Hyper-V VM 遷移至 Azure Stack HCI 的問題進行疑難解答
+      - 常見問題集
+        [1072] 我執行了 Windows Server 2008 R2 虛擬機 (VM) 。 如何將此 VM 遷移至我的Azure Stack HCI 叢集？
+    - 僅使用 SCVMM (v22H2 進行移轉) 
+      - 適用於 Hyper-V VM
+        [1086] 
+      - 針對 VMware VM
+        [1105] 
+    - 僅) 手動移轉 (v22H2
+      - 相同硬體
+        [1114] 移轉至相同硬體上的 Azure Stack HCI
+      - 至新硬體
+        [1122] 移轉至新硬體上的 Azure Stack HCI
+  - 概念
+    - Azure Stack HCI 可觀察性
+      [1133] Azure Stack HCI 可觀察性
+    - SDN
+      - SDN 技術參考
+        [1139] Azure Stack HCI 中軟體定義網路的技術參考
+      - SDN 概觀
+        [1141] Azure Stack HCI 23H2 版中的軟體定義網路 (SDN)
+      - 規劃 SDN 基礎結構
+        [1143] 規劃 Azure Stack HCI 版本 23H2 的軟體定義網路基礎結構
+      - 網路控制器概觀
+        [1152] 什麼是網路控制卡？
+      - 計畫網路控制卡
+        [1155] 規劃部署 Azure Stack HCI 的網路控制站版本 23H2
+      - 軟體負載平衡器概觀
+        [1159] 什麼是 SDN 的軟體負載平衡器 (SLB)？
+      - 資料中心防火牆概觀
+        [1166] 什麼是資料中心防火牆？
+      - RAS 網路閘道概觀
+        [1169] 什麼是適用於軟體定義網路的遠端存取服務 (RAS) 網路閘道？
+      - 路由反映程式概觀
+        [1173] 什麼是路由反映程式？
+      - SDN 多月台概觀
+        [1175] 什麼是 SDN Multisite？
+  - 版本 22H2
+    - 版本 22H2 的版本資訊
+      [1183] Azure Stack HCI 版本 22H2 版本資訊
+    - 檢閱 22H2 的需求
+      [1185] Azure Stack HCI 的系統需求 \(部分機器翻譯\)
+    - 部署版本 22H2
+      - 0.下載 Azure Stack HCI 軟體
+        [1190] 下載 Azure Stack HCI 軟體
+      - 1. 部署 Azure Stack HCI OS
+        [1193] 部署 Azure Stack HCI 作業系統
+      - 2. 建立叢集
+        [1202] 使用 Windows Admin Center 建立 AzureStack HCI 叢集 \(部分機器翻譯\)
+      - 3. 設定叢集見證
+        [1214] 設定叢集見證
+      - 4.向 Azure 註冊
+        [1220] 註冊 Azure Stack HCI 與 Azure
+      - 5. 驗證叢集
+        [1227] 驗證 Azure Stack HCI 叢集 \(部分機器翻譯\)
+      - 使用 PowerShell 部署
+        - 在單一伺服器上部署
+          [1241] 在單一伺服器上部署 Azure Stack HCI
+        - 單一伺服器向外延展
+          [1244] Azure Stack HCI 的單一伺服器向外延展
+        - 使用 PowerShell 建立叢集
+          [1249] 使用 Windows PowerShell 建立 AzureStack HCI 叢集
+        - 使用網路 ATC 的主機網路功能
+          [1263] 使用網路 ATC 部署主機網路功能
+      - 部署 SDN
+        - 使用 Windows Admin Center 進行部署
+          [1275] 使用 Windows Admin Center 部署 SDN
+        - 使用 SDN Express 進行部署
+          [1284] 使用 SDN Express 部署 SDN 基礎結構
+        - 在建立叢集時部署
+          [1300] 
+      - 在 VMM 中部署和管理
+        [1303] 在 VMM 中部署和管理 Azure Stack HCI叢集
+      - 部署工作負載
+        - 分公司與邊緣
+          [1322] 在 Azure Stack HCI 上部署分公司與邊緣
+        - 虛擬桌面基礎結構
+          [1325] 在 Azure Stack HCI 中部署虛擬桌面基礎結構 (VDI)
+        - SQL Server
+          [1328] 在 Azure Stack HCI 上部署 SQL Server
+        - 受信任的企業虛擬化
+          [1331] 在 Azure Stack HCI 中部署信任的企業虛擬化
+    - 管理
+      - 管理 VM
+        - 部署 Windows Server Azure Edition VM
+          [1334] 部署 Windows Server Azure Edition VM
+        - 將 VM 升級至 Windows Server Azure Edition
+          [1336] 將 VM 升級至 Windows Server AzureEdition
+      - 管理儲存體
+        - 建立磁碟區
+          [1338] 
+        - 建立延伸的磁片區
+          [1345] 建立延展式叢集磁碟區並設定複寫
+        - 加密和重複資料刪除磁碟區
+          [1351] 在 Azure Stack HCI 和 Windows Server中啟用磁片區加密和重復資料刪除
+        - 管理磁碟區
+          [1353] 管理 Azure Stack HCI 和 WindowsServer 中的磁碟區
+        - 更換磁碟機
+          [1356] 取代 Azure Stack HCI 上失敗的磁碟機
+        - 使用 CSV 記憶體內部讀取快取
+          [1359] 使用 CSV 記憶體內部讀取快取
+        - 管理 SMB 多重通道
+          [1362] 管理 SMB 多重通道
+        - 儲存體精簡佈建
+          [1370] Azure Stack HCI 中的儲存體精簡佈建
+        - 精簡布建轉換
+          [1376] 將固定轉換成 Azure Stack HCI 上的精簡布建磁片區
+        - 可調整的儲存體修復速度
+          [1381] Azure Stack HCI 和 Windows Server 中可調整的儲存體修復速度
+      - 監視叢集
+        - 使用 Insights 監視單一叢集
+          [1384] 使用 Insights 監視單一 Azure Stack HCI叢集
+        - 使用 Insights 監視多個叢集
+          [1403] 使用 Insights 監視多個 Azure Stack HCI叢集
+        - 從 Windows Admin Center 監視叢集
+          [1418] 從 Windows Admin Center 監視 AzureStack HCI 叢集
+        - 使用 DISKSPD 測試工作負載
+          [1427] 使用 DISKSPD 來測試工作負載儲存效能
+      - 管理叢集
+        -  (選擇性) 設定 Proxy 設定
+          [1439] 設定 Azure Stack HCI 的 Proxy 設定
+        - 管理叢集註冊
+          [1445] 管理 Azure Stack HCI 叢集註冊
+        - 使用 Windows Admin Center 管理叢集
+          [1457] 使用 Windows 系統管理中心管理 AzureStack HCI 叢集
+        - 使用 PowerShell 管理叢集
+          [1469] 使用 PowerShell 管理 Azure Stack HCI 和Windows Server 叢集
+        - 管理網路 ATC
+          [1475] 管理網路 ATC
+        - 更新叢集
+          [1487] 更新 Azure Stack HCI 叢集
+        - 管理快速重新啟動
+          [1505] 使用核心軟重新開機來啟用快速重新開機
+      - 管理叢集伺服器
+        - 新增或移除伺服器
+          [1509] 新增或移除 Azure Stack HCI 叢集的伺服器
+        - 轉換成延展式叢集
+          [1518] 轉換成延伸的 Azure Stack HCI 叢集
+        - 使伺服器離線以進行維護
+          [1522] 容錯移轉叢集維護程序
+        - 變更語言
+          [1529] 變更 Azure Stack HCI 中的語言
+        - 變更隱私權設定
+          [1532] 變更個別伺服器的隱私權設定
+        - 使用 BitLocker 搭配叢集共用磁碟區
+          [1534] 搭配叢集共用磁碟區 (CSV) 使用BitLocker
+      - 管理 Azure 服務
+        - 使用 Azure 服務的混合式功能
+          [1545] 使用 Azure 服務的 Azure Stack HCI 混合式功能
+        - 使用 Azure 註冊 Windows Admin Center
+          [1548] 使用 Azure 註冊 Windows Admin Center
+        - 在 Azure 中使用 Windows Admin Center
+          [1554] 在 Azure 中使用 Windows Admin Center管理 Azure Stack HCI 叢集 (預覽)
+        - 使用 Azure 入口網站
+          [1567] 搭配 Azure Stack HCI 使用 Azure 入口網站 (機器翻譯)
+        - 使用 Azure 備份
+          [1571] 使用 Azure 備份伺服器來備份 AzureStack HCI 虛擬機器
+    - 移轉
+      - 叢集到相同的硬體
+        [1579] 移轉至相同硬體上的 Azure Stack HCI
+      - 叢集到新的硬體
+        [1587] 移轉至新硬體上的 Azure Stack HCI
+    - 疑難排解
+      - 針對叢集註冊進行疑難排解
+        [1598] 針對 Azure Stack HCI 註冊進行疑難排解
+      - 針對叢集驗證報告進行疑難排解
+        [1612] 針對叢集驗證報告進行疑難排解
+      - 針對 CredSSP 進行疑難排解
+        [1616] 針對 CredSSP 進行疑難排解
+      - 針對即時移轉進行疑難解答
+        [1621] 針對即時移轉問題進行疑難解答
+      - 疑難解答 儲存空間直接存取
+        [1639] 
+      - 針對記憶體健康情況進行疑難解答
+        [1649] 針對儲存空間和儲存空間直接存取健康情況和作業狀態進行疑難排解
+      - 收集診斷資料
+        [1660] 收集叢集的診斷資料
+      - 使用診斷支援工具
+        [1667] 使用 Azure Stack HCI 支援診斷工具來針對問題進行疑難解答
+    - 概念
+      - 儲存體和叢集
+        - 單一節點叢集
+          [1671] 在單一伺服器上使用 Azure Stack HCI
+        - 選擇磁碟機
+          [1674] 選擇 Azure Stack HCI 和 WindowsServer 叢集的磁碟機
+        - 磁碟機對稱考量
+          [1679] Azure Stack HCI 和 Windows Server 叢集的磁碟機對稱考量
+        - 規劃磁碟區
+          [1686] 規劃 Azure Stack HCI 和 WindowsServer 叢集上的磁碟區
+        - 瞭解儲存空間直接存取
+          [1697] 儲存空間直接存取概觀
+        - 瞭解儲存空間直接存取的巢狀復原
+          [1705] 儲存空間直接存取的巢狀復原
+        - 了解存放集區快取
+          [1714] 了解存放集區快取
+        - 容錯和儲存效率
+          [1725] Azure Stack HCI 與 Windows Server 叢集的容錯和儲存效率
+        - 了解和監視存放裝置重新同步
+          [1734] 了解和監視存放裝置重新同步
+        - 延伸的叢集
+          [1740] 延展式叢集概觀
+        - 叢集和存放集區仲裁
+          [1744] 了解叢集和集區仲裁
+        - 了解和部署持續性記憶體
+          [1754] 了解和部署持續性記憶體
+        - 持續性記憶體健康狀態管理
+          [1763] 持續性記憶體健康狀態管理
+        - 巢狀虛擬化
+          [1770] Azure Stack HCI 中的巢狀虛擬化
+      - 主機網路功能
+        - 網路 ATC 概觀
+          [1772] 網路 ATC 概覽
+        - 網路 HUD 概觀
+          [1774] 網路 HUD 概觀
+      - 軟體定義網路 (SDN)
+        - SDN 概觀
+          [1778] Azure Stack HCI 和 Windows Server 的軟體定義網路 (SDN)
+        - 規劃 SDN 基礎結構
+          [1780] 規劃軟體定義網路的基礎結構
+        - 計畫網路控制卡
+          [1789] 規劃部署網路控制卡
+      - 維護和更新
+        - 更新和升級
+          [1793] 更新和升級
+        - 安全性考量
+          [1796] Azure Stack HCI 安全性考量
+        - 公用程式應用程式
+          [1803] 適用於 Azure Stack HCI 的公用程式應用程式
+        - 資料集合
+          [1806] Azure Stack HCI 資料收集
+  - 參考
+    - 針對 Azure Arc VM 管理
+      - Azure Stack HCI VM PowerShell 命令
+        [1810] Az.StackHCIVM
+    - 針對 Azure Stack HCI 叢集、服務和管理
+      - Azure 註冊 Azure CLI 命令
+        [1813] az stack-hci
+      - Azure 註冊 PowerShell 命令
+        [1816] Az.StackHCI
+      - 適用於 ARM Azure Stack HCI 服務 API 的 Go 套件
+      - Azure Stack HCI JAVA 服務類別和介面
+        [1819] com.microsoft.azure.management.azurestackhci.v2020_10_01
+      - Azure Stack HCI 管理服務 Python 套件
+        [1822] azurestackhci 套件
+      - Azure Stack HCI JavaScript 套件
+        [1823] @azure/arm-azurestackhci package
+      - Azure Stack HCI REST API 參考
+        [1833] Azure Stack HCI REST API 參考
+      - Azure Stack HCI 的 .NET 命名空間
+        [1834] Azure Stack HCI SDK for .NET - latest
+    - 針對 OS 和記憶體管理
+      - Hyper-V PowerShell 命令
+        [1835] Hyper-V
+      - 儲存體 PowerShell 命令
+        [1847] Storage
+      - ClusterAwareUpdating PowerShell 命令
+        [1855] ClusterAwareUpdating
+      - FailoverClusters PowerShell 命令
+        [1857] FailoverClusters
+      - StorageReplica PowerShell 命令
+        [1864] StorageReplica
+      - NetAdapter PowerShell 命令
+        [1866] NetAdapter
+      - NetQoS PowerShell 命令
+        [1870] NetQoS
+      - DcbQoS PowerShell 命令
+        [1871] DcbQoS
+  - 相關參考
+    - Azure Stack HCI 和 Windows Server 上的 Azure Kubernetes Service
+      [1872] 什麼是由 Azure Arc 啟用的 AKS？
+    - Azure Stack 系列
+      [1874] 
+    - Azure 混合式雲端
+      [1875] 
+    - Windows Server
+      [1880] 
+    - Windows Admin Center
+      [1883] Windows Admin Center
+    - System Center
+      [1887] 
+  - 資源
+    - 保證
+      - Azure Stack HCI 和安全性標準
+        [1889] Azure Stack HCI 和安全性標準
+      - ISO/IEC 27001 指引
+        [1892] Azure Stack HCI 和 ISO/IEC 27001：2022
+      - PCI DSS指引
+        [1901] Azure Stack HCI 和 PCI DSS
+      - HIPAA 指引
+        [1908] Azure Stack HCI 和 HIPAA
+    - Azure Stack HCI 產品頁面
+    - 定價
+    - Azure 權益 (22H2 和更早版本) 
+      [1914] Azure Stack HCI (22H2 和更早版本的Azure 權益)
+    - 學習路徑和課程模組
+      - Azure Stack HCI 基礎
+      - 操作與維護 Azure Stack HCI
+      - 實作資料中心防火牆和軟體負載平衡器
+      - 在 Azure Stack HCI 上規劃和部署 SDN 基礎結構
+    - 評估指南
+    - 較早的版本
+      - 22H2 版的 Azure Arc VM 管理
+      - 22H2 版的新功能
+        [1922] Azure Stack HCI 版本 22H2 的新功能
+      - 21H2 版的新功能
+        [1929] Azure Stack HCI 21H2 版的新功能
+      - 2310 中的已知問題
+        [1934] 
+      - 建立以 VM 為基礎的實驗室
+        [1938] 教學課程：為 Azure Stack HCI 建立 VM型實驗室
+      - 22H2 補充套件 (Preview) 
+        - 預覽版是什麼？
+          - 2306 版 - 目前
+            [1946] Azure Stack HCI 2306 版預覽版 (預覽版)
+          - 2306 更新
+            - 2306.7 版
+              [1949] Azure Stack HCI 2306.7 版預覽版 (預覽版)
+            - 2306.5 版
+              [1952] Azure Stack HCI 2306.5 版預覽版 (預覽版)
+            - 2306.4 版
+              [1954] Azure Stack HCI 的預覽版，2306.4 版(預覽版)
+            - 2306.3 版
+              [1956] Azure Stack HCI 2306.3 版預覽版 (預覽版)
+            - 2306.2 版
+              [1958] Azure Stack HCI 的預覽版，2306.2 版 (預覽版)
+            - 2306.1 版
+              [1960] Azure Stack HCI 2306.1 版預覽版 (預覽版)
+        - 檢視已知問題
+          - 2306.7 更新版本 - 目前
+            [1963] 
+          - 2306.5 更新版本
+            [1966] 
+          - 2306.4 更新版本
+            [1969] 檢視 Azure Stack HCI、2306.4 補充套件版本 (預覽版中的已知問題)
+          - 2306.3 更新版本
+            [1972] 檢視 Azure Stack HCI、2306.3 補充套件版本 (預覽版的已知問題)
+          - 2306.2 更新版本
+            [1975] 在 Azure Stack HCI、2306.2 補充套件版本中檢視已知問題， (預覽版)
+          - 2306.1 更新版本
+            [1978] 檢視 Azure Stack HCI、2306.1 補充套件版本 (預覽版中的已知問題)
+          - 2306 版
+            [1981] 在 Azure Stack HCI、2306 補充套件版本(預覽版中檢視已知問題)
+        - 22H2 補充套件方案、部署和管理
+          - 部署和管理指南

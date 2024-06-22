@@ -1,0 +1,268 @@
+- ---< azure-operator-nexus.pdf >---
+  - Azure 操作員 Nexus 檔
+    [1] 運算子 Nexus
+  - 概觀
+    - 什麼是 Azure 操作員 Nexus？
+      [3] 什麼是 Azure 操作員 Nexus？
+  - 概念
+    - 資源類型
+      [9] Azure 操作員 Nexus 資源類型
+    - 計算概觀
+      [14] Azure 操作員 Nexus 計算
+    - 儲存空間概觀
+      [18] Azure 操作員 Nexus 記憶體設備
+    - 網路網狀架構
+      - 網路網狀架構概觀
+        [26] Azure 操作員 Nexus - 網路網狀架構
+      - 網路網狀架構控制器
+        [28] 網路網狀架構控制器概觀
+      - 網路網狀架構服務
+        [37] 網路網狀架構服務概觀
+      - Network Fabric 資源更新和認可
+        [41] 更新和認可 Network Fabric 資源
+      - Network Fabric 唯讀命令
+        [47] 用於疑難解答的網路網狀架構唯讀命令
+      - 網路網狀架構讀寫命令
+        [51] 執行讀寫命令
+      - 停用邊界閘道通訊協定鄰居
+        [67] 停用邊界閘道通訊協定鄰居
+    - 隔離網域
+      - 隔離網域概觀
+        [75] Isolation Domain Overview
+      - 隔離網域設定
+        [77] 隔離網域組態
+      - 隔離網域的技術需求
+        [82] 隔離網域的技術需求
+    - 存取控制清單
+      [84] Azure 操作員 Nexus Network Fabric 中的 存取控制 列表
+    - Nexus Kubernetes
+      - 概觀
+        [86] Nexus Kubernetes 叢集概觀
+      - 資源放置
+        [87] Azure 操作員 Nexus Kubernetes 中的資源放置
+    - 可檢視性
+      - 可檢視性
+        [95] Azure 操作員 Nexus 可觀察性
+      - 計量
+        [99] Azure 操作員 Nexus 可觀察性計量
+      - Azure 操作員 Nexus Network Fabric 設定監視
+        [107] Nexus Network Fabric 組態監視概觀
+      - Azure 操作員 Nexus Network Fabric 內部網路 BGP 計量
+        [109] Azure 操作員 Nexus Network Fabric 內部網路 BGP 計量
+    - 安全性
+      [112] Azure 操作員 Nexus 安全性
+    - 控制平面復原
+      [114] 使用操作員 Nexus 服務確保控制平面復原
+    - 存取和身分識別
+      [116] 使用 Azure 角色型訪問控制來提供 Azure操作員 Nexus 資源的存取權
+    - 路由原則
+      - 路由原則概觀
+        [117] 在 Azure 操作員 Nexus 受控網路網狀架構中路由原則
+      - IP 前置詞概觀
+        [120] Azure 操作員 Nexus IP 前置資源
+    - 可用性
+      [121] 可用性簡介
+    - 網路封包代理
+      [127] Network Packet Broker Overview
+  - 快速入門
+    - 開始工作負載部署之前
+      [130] 部署租使用者工作負載的必要條件
+    - 部署 Nexus Kubernetes 叢集
+      - 使用 Azure CLI
+        [136] 快速入門：使用 Azure CLI 建立 AzureNexus Kubernetes 叢集
+      - 使用 ARM 範本
+        [144] Quickstart: Deploy an Azure NexusKubernetes cluster by using AzureResource Manager template (ARMtemplate)
+      - 使用 Bicep 檔案
+        [163] Quickstart: Deploy an Azure NexusKubernetes cluster using Bicep
+      - 使用 Azure PowerShell
+        [178] 快速入門：使用 Azure PowerShell 建立Azure Nexus Kubernetes 叢集
+    - 部署 Nexus 虛擬機
+      - 使用 Azure CLI
+        [186] 快速入門：使用 Azure CLI 建立 Azure 操作員 Nexus 虛擬機器
+      - 使用 ARM 範本
+        [192] 快速入門：使用 Azure ResourceManager 範本建立 Azure 操作員 Nexus虛擬機器 （ARM 範本）
+      - 使用 Bicep 檔案
+        [201] 快速入門：使用 Bicep 建立 Azure 操作員Nexus 虛擬機器
+      - 使用 Azure PowerShell
+        [208] 快速入門：使用 Azure PowerShell 建立Azure 操作員 Nexus 虛擬機器
+  - 操作說明指南
+    - 操作員 Nexus 實例部署和升級
+      - 管理平面
+        - 開始部署之前
+          [214] 操作員 Nexus Azure 資源必要條件
+        - 網路網狀架構控制器
+          [216] 
+        - 叢集管理員
+          [221] 叢集管理員：如何在運算子 Nexus 中管理叢集管理員
+      - 內部部署操作員 Nexus 實例
+        - 操作員 Nexus 實例生命週期管理
+          - 開始操作員 Nexus 平臺部署之前
+            [226] 操作員 Nexus 平臺必要條件
+          - 網路網狀架構
+            [243] 使用 Azure CLI 建立及布建網路網狀架構
+          - Cluster
+            [275] 使用 Azure CLI 建立及布建叢集
+          - 實例整備測試
+            [283] Azure 操作員 Nexus 實例整備測試（IRT）
+          - 叢集升級
+            [296] 從 Azure CLI 升級叢集運行時間
+          - 認證輪替
+            [302] 內部部署裝置的認證輪替管理
+          - 認證管理員 金鑰保存庫
+            [303] 在操作員 Nexus 中設定受控認證輪替的金鑰保存庫
+          - 服務主體輪替
+            [306] 目標叢集上的服務主體輪替
+      - 網路網狀架構
+        - 隔離網域
+          [309] 
+        - 隔離網域組態範例
+          [323] 建立隔離網域的組態範例
+        - 網路網狀架構路由原則
+          [329] 網路網狀架構中的路由原則
+        - IP 前置綴
+          [344] 如何建立和管理IP前綴
+        - 網路封包代理
+          [350] 網路封包代理
+        - 驗證 Nexus Network Fabric 的纜線
+          [363] 驗證 Nexus 網路網狀架構的纜線
+        - 建立 存取控制 清單 （ACL）
+          [369] 建立 NNI 和第 3 層隔離網域外部網路的存取控制 清單 （ACL） 管理
+        - 將 ACL 套用至網路對網路互連 （NNI）
+          [374] NNI 存取控制 清單 （ACL） 管理
+        - 更新網路對網路互連的 ACL （NNI）
+          [377] 更新 NNI 或外部網路上的 ACL
+        - 移除與網路對網路互連相關聯的 ACL （NNI）
+          [381] 移除與網路對網路互連相關聯的 ACL（NNI）
+        - 如何在 Nexus Network Fabric 中設定診斷 設定 和監視組態差異
+          [385] 如何在 Nexus Network Fabric 中設定診斷設定和監視組態差異
+        - 如何在 Azure Nexus Network Fabric 中刪除 L3 隔離網域
+          [389] 如何在 Azure Nexus Network Fabric 中刪除 L3 隔離網域
+        - 如何監視網路網狀架構裝置的介面傳入和輸出封包速率
+          [391] 如何監視網路網狀架構裝置的介面傳入和輸出封包速率
+        - 如何在 Azure Nexus Network Fabric 中刪除 L3 隔離網域
+          [396] 如何在 Azure Nexus Network Fabric 中刪除 L3 隔離網域
+    - Nexus Kubernetes 叢集
+      - 建立雙堆棧叢集
+        [398] 建立雙堆棧 Azure 操作員 NexusKubernetes 叢集
+      - 瞭解代理程式集區
+        [404] 在 Nexus Kubernetes 叢集中使用代理程式集區
+      - 連線至叢集
+        [406] 連線 至 Azure 操作員 Nexus Kubernetes叢集
+      - 設定角色型存取控制
+        [414] Azure 操作員 Nexus Kubernetes 叢集中的角色型存取控制
+      - 升級 Nexus Kubernetes 叢集
+        [417] 升級 Azure 操作員 Nexus Kubernetes 叢集
+      - 設定叢集虛擬機的龐大頁面
+        [422] 使用自訂的巨頁組態建立 NexusKubernetes 叢集
+      - 設定服務負載平衡器
+        [425] 在 Azure 操作員 Nexus Kubernetes 服務中設定服務負載平衡器
+      - 在 Nexus Kubernetes 1.27+ 中停用 cgroupsv2
+        [430] 在 Nexus Kubernetes 節點上停用
+      - 重新啟動叢集節點
+        [434] 重新啟動 Azure 操作員 NexusKubernetes 叢集節點
+      - 自訂叢集 DNS
+        [436] 在 Nexus Kubernetes 叢集上自定義 DNS
+      - 自訂背景工作節點
+        [441] 使用 DaemonSet 自定義背景工作節點
+    - Nexus 虛擬機
+      - 建立虛擬機映像
+        [443] 建立 Azure 操作員 Nexus 虛擬機器的映射
+      - 虛擬機主控台服務
+        [449] 虛擬機主控台服務簡介
+      - 虛擬機放置提示
+        [457] 在 Azure 操作員 Nexus 虛擬機器中使用放置提示
+    - 可檢視性
+      - 監視 Nexus Kubernetes 叢集
+        [469] 監視 Nexus Kubernetes 叢集
+      - 監視 VNF 的 VM
+        [495] 監視虛擬機器（適用於虛擬化網路功能）
+      - 叢集計量組態管理
+        [504] 叢集計量設定
+      - 追蹤異步操作
+        [509] 使用 Azure CLI 追蹤非同步作業
+    - 安全性
+      - 設定 適用於雲端的 Defender 安全性
+        [511] 在您的操作員 Nexus 訂用帳戶上設定 適用於雲端的 Defender 安全性環境
+      - 搭配運算子 Nexus 資源使用 Azure 原則
+        [514] 使用 Azure 原則 保護您的 Nexus 資源
+      - MDE 執行時間保護
+        [517] 適用於端點的 Microsoft Defender 運行時間保護服務的簡介
+      - 在管理 VPN 上設定 SSH 存取的網路 存取控制 清單
+        [523] 在 Azure 操作員 Nexus 中的 NNI 上建立ACL
+    - 安裝 CLI 擴充功能
+      [533] 準備安裝 Azure CLI 擴充功能
+  - 疑難排解
+    - 針對裸機計算機進行疑難解答
+      [535] 針對 Azure 操作員 Nexus 伺服器問題進行疑難解答
+    - 針對隔離網域進行疑難解答
+      [538] 針對隔離網域布建失敗進行疑難解答
+    - 針對因特網主機虛擬機進行疑難解答
+      [540] 針對存取 AKS 混合式叢集中的 CSN 連線因特網主機名進行疑難解答
+    - 針對 Nexus Kubernetes 叢集的雙堆疊設定問題進行疑難解答
+      [543] 針對雙堆疊 Nexus Kubernetes 叢集設定問題進行疑難排解
+    - 針對 BMM 重新啟動問題進行疑難解答
+      [546] 在封鎖和重新啟動裸機機器之後，針對VM 問題進行疑難解答
+    - 針對在 ContainerCreating 中停滯的解決 CSN 記憶體 Pod 進行疑難解答
+      [549] CSN storage pod container stuck in
+    - 針對硬體驗證失敗進行疑難解答
+      [551] 針對 Nexus 叢集中的硬體驗證失敗進行疑難解答
+    - 啟用節點關閉清除程式
+      [560] 啟用節點關閉清除程式
+    - BareMetal 動作
+      - BareMetal BMM 存取設定
+        [562] 使用管理裸機計算機的緊急存取 az
+      - BareMetal BMC 存取設定
+        [572] 使用管理裸機計算機的緊急存取 az
+      - BareMetal 函式
+        [581] 管理裸機機器的生命週期
+      - BareMetal 執行-讀取執行
+        [585] 使用 針對 BMM 問題進行疑難解答 az
+      - BareMetal Run-Data-Extract 執行
+        [593] 使用 az networkcloud baremetalmachine
+run-data-extract  命令針對裸機電腦問題進行疑難排解
+    - 針對控制平面仲裁進行疑難解答
+      [597] 針對控制平面仲裁遺失進行疑難解答
+  - 常見問題集
+    [599] Azure 操作員 Nexus 常見問題 （FAQ）
+  - 參考
+    - Nexus Kubernetes 服務
+      - 支援的 VM 大小
+        [605] Azure 操作員 Nexus Kubernetes 叢集VM SKU
+      - 支援的 Kubernetes 版本
+        [607] Azure 操作員 Nexus Kubernetes 服務中支援的 Kubernetes 版本
+    - 平臺叢集運行時間版本控制
+      [621] 操作員 Nexus Platform Cluster 運行時間升級治理
+    - 支援的軟體版本
+      [623] Azure 操作員 Nexus 中支援的Kubernetes 版本
+    - 內部部署 WAN 連線 ivity 的實例
+      [624] PE-CE 連線的組態選項
+    - 收集的計量清單
+      [627] 
+    - 近邊緣計算
+      [651] 近邊緣計算
+    - BareMetal 計算機角色
+      [653] 
+    - 近邊緣記憶體
+      [656] 近邊緣 Azure 操作員 Nexus 儲存體設備
+    - 限制和配額
+      [658] Azure 操作員 Nexus 限制和配額
+    - 鄰近群組組態概觀
+      [662] 鄰近群組組態概觀
+    - 路由原則
+      - 路由原則設定
+        [665] 
+      - 路由原則設定範例
+        [668] Azure 操作員 Nexus 路由原則的設定範例
+      - 路由原則作業
+        [679] Azure 操作員 Nexus 路由原則的設定作業
+    - 存取控制清單
+      - 存取控制 清單組態
+        [683] 存取控制 清單組態
+      - 存取控制 清單組態範例
+        [687] 存取控制 清單建立和組態範例
+    - 操作員 Nexus Network Fabric SKU
+      [691] Azure 操作員 Nexus Fabric SKU
+  - 版本資訊
+    - 2024
+      - 2404.2
+        [693] 操作員 Nexus 版本 2404.2

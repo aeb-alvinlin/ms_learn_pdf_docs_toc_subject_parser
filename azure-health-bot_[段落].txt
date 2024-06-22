@@ -1,0 +1,164 @@
+- ---< azure-health-bot.pdf >---
+  - Azure AI Health Bot Documentation
+    [1] Azure AI Health Bot
+  - Overview
+    - Azure AI Health Bot Overview
+      [3] Azure AI Health Bot Overview
+    - Updates and Announcements
+      [10] Azure AI Health Bot Updates andAnnouncements
+    - Choosing the right Azure AI Health Bot plan
+      [12] Choosing the right Azure AI Health Botplan
+  - Quickstarts
+    - Create your first Azure AI Health Bot
+      [17] Create your first Azure AI Health Bot
+    - Experience a built-in converation
+      [20] Experience a built-in Azure AI HealthBot conversation
+    - Create your first scenario
+      [23] Author your first Azure AI Health Botscenario Quickstart
+  - Concepts
+    - Azure AI Health Bot Scenarios
+      - Scenario Template Catalog
+        [35] Scenario Template Catalog
+      - Built-in supporting Scenarios
+        - Help intent
+          [37] Asking for help
+        - Viewing terms
+          [38] Viewing terms
+        - Providing End-user consent
+          [39] Provide end user Consent
+        - View and export your data
+          [41] Viewing and exporting personal data
+        - Deleting your data
+          [43] Deleting personal data
+        - Cancelling an active scenario
+          [45] Cancelling a scenario
+        - Interrupting an active scenario
+          [47] Interrupting a scenario
+        - Leaving feedback
+          [51] Leaving feedback
+      - Create your own scenarios
+        - Scenario Management
+          [52] Scenario Management 
+        - Authoring custom scenarios
+          [53] Scenario Elements
+          - Conversational
+            [57] Conversational Elements
+          - Flow Control
+            [63] Data Flow Elements
+          - Advanced Functionality
+            [69] Advanced Functionality
+          - Instance variables
+            [81] Azure AI Health Bot instance variables 
+          - Author Cards
+            [84] Adding Cards
+          - Debugging
+            [92] Debugging
+          - Writing Action Code
+            [102] 
+          - Error handling
+            [108] Error Handling
+          - Scenario Snapshots
+            [109] Scenario Snapshots
+          - How-to
+            - Configure an automatic welcome option
+              [111] Automatic Welcome Options
+            - Enabling Voice Interactions
+              [114] Enabling Voice Interactions
+            - Configure interrupting scenarios
+              [116] Configure interrupting scenarios
+    - Healthcare Intelligence
+      - Triage and symptom checking
+        [120] Built-in Medical Intelligence andContent
+      - Medical Information
+        [129] Medical Information
+    - Language
+      - Language models
+        - Overview
+          [130] Language models
+        - Extend your Azure AI Health Bot with Conversational Language Understanding
+          [135] Extend your Azure AI Health Bot withConversational LanguageUnderstanding
+        - Extend your Azure AI Health Bot with Question Answering
+          [146] Extend your Azure AI Health Bot withQuestion Answering
+        - Extend your Azure AI Health Bot with QnA Maker
+          [153] Extend your Azure AI Health Bot withQnA Maker
+        - Extend your Azure AI Health Bot with LUIS
+          [159] Extend your Azure AI Health Bot withLUIS
+      - Localization
+        - Overview
+          [164] Overview
+        - Localize a scenario
+          [175] Localize your first scenario
+    - Configuration
+      - Compliance and Conversation
+        - Overview
+          [178] Configuring Azure AI Health BotBehavior
+        - Unrecognized Utterances
+          [182] Unrecognized Utterances
+        - Handoff to live agent
+          [184] Handoff overview
+        - Handoff using Microsoft Teams
+          [200] Handoff to a live agent using MicrosoftTeams
+        - Dynamics 365 Omnichannel
+          [208] Dynamics 365 Omnichannel Integration
+        - Configure Customer Managed Keys
+          [215] Configure Customer Managed Keys fordata encryption in Azure AI Health Bot
+      - General
+        - Backup your bot
+          [218] Backup and restore
+    - Integration
+      - Data Connections
+        [220] Data Connections
+      - Authentication Providers
+        [232] Authentication Providers
+      - Skills
+        [237] Skills
+      - Secrets and Keys
+        - Overview
+          [248] Secrets and Keys
+        - Custom Telemetry
+          [250] Azure AI Health Bot Custom Telemetry
+      - Channels
+        - Overview
+          [253] Azure AI Health Bot Channels
+        - WebChat
+          [255] Embed your Azure AI Health Botinstance in your application usingWebChat
+        - Direct Line
+          [263] Embed an Azure AI Health Bot instancein your client application using DirectLine channel
+        - Microsoft Teams
+          [266] Connect your Azure AI Health Bot toMicrosoft Teams
+        - SMS via Azure Communication Services
+          [268] Connect your Azure AI Health Bot toAzure Communication SMS Services
+        - SMS via Twilio
+          [271] Connect your Azure AI Health Bot toTwilio
+        - WhatsApp
+          [273] Connect your Azure AI Health Bot toWhatsApp (via Twilio) - Preview
+        - Facebook
+          [275] Connect your Azure AI Health Bot toFacebook
+        - Dynamics Omnichannel
+          [277] Connect your Azure AI Health Bot toMicrosoft Dynamics Omnichannel
+    - Analytics
+      - Reports
+        [279] Azure AI Health Bot Analytics Reports
+      - Feedback
+        [281] Leaving feedback
+      - Conversation Logs
+        [282] Conversation logs
+    - Users
+      - Portal User Management
+        [284] Assign user access to Azure AI HealthBot management portal
+      - Audit Trails
+        [289] Audit Trails
+  - Resources
+    - Files & Environment Variables
+      [291] Managing Bot's Resources
+  - APIs
+    - Proactive scenario API
+      [294] Invoke scenario proactively
+    - Scenario management API
+      [297] Microsoft Azure AI Health Bot Servicemanagement API
+    - Create a Azure AI Health Bot Instance using Azure PowerShell
+      [299] Quickstart: Create an Azure AI HealthBot instance using Azure PowerShell
+    - Create a Azure AI Health Bot Instance using Azure CLI
+      [302] Create your first Azure AI Health Botusing Azure CLI
+    - Programmatic client side scenario invocation
+      [305] Programmatic client side scenarioinvocation

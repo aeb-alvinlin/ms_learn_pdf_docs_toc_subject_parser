@@ -1,0 +1,287 @@
+- ---< azure-virtual-wan.pdf >---
+  - Virtual WAN 文件
+    [1] Virtual WAN 文件
+  - 概觀
+    - 什麼是虛擬 WAN？
+      [4] 什麼是 Azure 虛擬 WAN？
+  - 快速入門
+    - ARM 範本
+      - 任意對任意路由
+        [10] 快速入門：使用ARM樣本建立任意對任意組態
+      - 路由至共用服務 VNet
+        [16] 快速入門：使用ARM範本路由至共用服務VNet
+    - BICEP 範本
+      - 部署具有路由意圖和路由原則的虛擬 WAN
+  - 教學課程
+    - 建立站對站連線
+      [22] 教學課程：使用 Azure 虛擬 WAN 建立站對站連線
+    - 建立使用者 VPN (點對站) 連線
+      [41] 教學課程：使用 Azure 虛擬 WAN 建立P2S 使用者 VPN 連線
+    - 建立 ExpressRoute 連線
+      [57] 教學課程：建立與 Virtual WAN 的ExpressRoute 關聯 - Azure 入口網站
+  - 概念
+    - 新功能
+      [67] Azure 虛擬 WAN 有哪些新功能？
+    - 遠端工作
+      - 遠端工作的支援
+        [74] 使用 Azure 網路服務啟用遠端工作
+      - 運用虛擬 WAN
+        [78] Azure 虛擬 WAN 和支援的遠端工作
+    - 虛擬 WAN 常見問題集
+      [81] 虛擬 WAN 常見問題集
+    - 虛擬 WAN 中樞中的 NVA
+      [102] 關於 Virtual WAN 中樞內的 NVA
+    - 位置與合作夥伴
+      - 中樞位置與合作夥伴
+        [113] 虛擬 WAN 合作夥伴、區域和虛擬中樞位置
+      - 合作夥伴的自動化指導方針
+        [117] 虛擬 WAN 合作夥伴的自動化指導方針
+      - 軟體即服務 (SaaS)
+        [125] 在虛擬 WAN 中設定 Palo Alto NetworksCloud NGFW
+    - 架構
+      - 遷移至虛擬 WAN
+        [135] 移轉移至 Azure 虛擬 WAN
+      - 全域傳輸網路架構
+        [150] 全域傳輸網路架構和虛擬 WAN
+      - SD-WAN 連線架構
+        [159] 使用 Azure 虛擬 WAN 的 SD-WAN 連線結構
+      - 虛擬 WAN 的私人連結和 DNS 結構
+        [164] 
+      - 針對 Azure NetApp Files 設定虛擬 WAN
+        [173] 設定 Azure NetApp Files 的虛擬 WAN
+      - 與中國互連
+        [179] 使用 Azure 虛擬 WAN 和安全中樞與中國互相連線
+    - 路由
+      - 關於虛擬中樞路由
+        [189] 關於虛擬中樞路由
+      - 關於路由對應
+        [194] 關於虛擬中樞的路由對應 (預覽版)
+      - 案例
+        - 虛擬中樞路由喜好設定
+          [200] 虛擬中樞路由喜好設定
+        - 任意對任意
+          [205] 案例：任意到任意
+        - 隔離 VNet
+          [207] 情節：隔離 VNet
+        - 隔離 VNet - 自訂
+          [209] 案例：VNet 的自訂隔離
+        - 隔離虛擬網路和分支
+          [212] 案例：虛擬網路和分支的自訂隔離
+        - 共用服務 VNet
+          [216] 案例：路由傳送至共用服務 VNet
+        - 透過 NVA 路由傳送
+          [219] 案例：透過 NVA 路由傳送流量
+        - 透過 NVA 路由傳送 - 自訂
+          [225] 情節：使用自訂設定以透過 NVA 來路由傳送流量
+        - 使用虛擬中樞的 BGP 對等互連
+          [233] 案例：使用虛擬中樞進行 BGP 對等互連
+        - Azure 防火牆 - 自訂
+          [239] 案例：Azure 防火牆 - 自訂
+        - 應用程式閘道和後端集區
+          [242] 案例：保護應用程式閘道與後端集區之間的流量
+        - Microsoft 365 - ExpressRoute 私人對等互連
+          [245] 案例：使用 ExpressRoute 私人對等互連透過 Virtual WAN 連線到 Microsoft 365
+      - 深入探討虛擬 WAN 路由
+        [250] 深入探討虛擬 WAN 路由
+    - 站對站
+      - 關於 S2S IPsec 原則
+        [261] 站對站 IPsec 原則
+      - 多個 ISP 連結 - Azure 路徑選擇
+        [264] 跨多個 ISP 連結的 Azure 路徑選擇
+    - 點對站
+      - P2S 概念
+        [267] 使用者 VPN (點對站) 概念
+      - P2S IPsec 原則
+        [273] 點對站 IPsec 原則
+      - P2S 用戶端位址集區
+        [275] 關於Virtual WAN點對站組態的用戶端位址集區
+      - P2S 全域和中樞設定檔
+        [278] 下載使用者 VPN 用戶端的全域和中樞VPN 配置檔
+      - 使用者群組 - 指派用戶端特定位址
+        [284] 關於 P2S 使用者 VPN 的使用者群組與 IP位址集區
+    - ExpressRoute
+      - 虛擬 WAN 中的 ExpressRoute
+        [290] 關於 Azure 虛擬 WAN 中的ExpressRoute 連線
+    - 虛擬中樞設定
+      [293] 關於虛擬中樞設定
+    - 閘道設定
+      [299] 關於虛擬 WAN 網路閘道設定
+    - 安全虛擬中樞
+      [302] 什麼是安全虛擬中樞？
+    - 安全性基準
+      [303] 適用于 Virtual WAN 的 Azure 安全性基準
+    - 價格說明
+      [307] 關於虛擬 WAN 價格
+  - 操作指南
+    - 從 Basic 升級到 Standard
+      [318] 將虛擬 WAN 從基本升級至標準類型
+    - 虛擬中樞中的整合式 NVA
+      - 在虛擬中樞中建立 NVA
+        [321] 如何在 Azure 虛擬 WAN 中樞中建立網路虛擬設備
+      - 設定DNAT/因特網輸入
+        [329] 如何在 Azure 虛擬 WAN 中樞中設定網路虛擬裝置的目的地 NAT （DNAT）
+    - 將 VNet 連線至虛擬中樞
+      - Azure 入口網站
+        [340] 將虛擬網路 連線 至虛擬 WAN 中樞 - 入口網站
+      - Azure PowerShell
+        [343] 將虛擬網路連線至虛擬 WAN 中樞 -PowerShell
+    - 建立跨租用戶 VNet 連線
+      - Azure PowerShell
+        [345] 連線 跨租使用者虛擬網路至虛擬 WAN 中樞
+      - Azure CLI
+        [351] 使用 Azure CLI 將跨租使用者虛擬網路連線至Virtual WAN中樞
+    - ExpressRoute
+      - 建立 ExpressRoute 關聯
+        - Azure 入口網站
+          [355] 教學課程：建立與 Virtual WAN 的ExpressRoute 關聯 - Azure 入口網站
+        - Azure PowerShell
+          [365] 建立與虛擬 WAN 的 ExpressRoute 關聯 -PowerShell
+      - 設定 ExpressRoute 加密
+        [372] 針對虛擬 WAN 透過 ExpressRoute 設定IPsec
+    - 站對站
+      - 建立站對站連線
+        - Azure 入口網站
+          [379] 教學課程：使用 Azure 虛擬 WAN 建立站對站連線
+        - Azure PowerShell
+          [398] 使用 PowerShell 對 Azure 虛擬 WAN 建立站對站連線
+      - 將虛擬網路閘道連線到虛擬 WAN
+        [406] 將 VPN 閘道 (虛擬網路閘道) 連線到虛擬WAN
+      - 設定自訂 IPsec 原則
+        [414] 使用入口網站為 Virtual WAN 來設定自訂IPsec 原則
+      - 設定 NAT 規則
+        - Azure 入口網站
+          [417] 設定虛擬 WAN VPN 閘道的 NAT 規則
+        - Azure PowerShell
+          [426] 使用 PowerShell 設定虛擬 WAN VPN 閘道的 NAT 規則
+    - 使用者 VPN (點對站)
+      - P2S 伺服器設定
+        - 憑證或 RADIUS 驗證
+          - 設定 P2S VPN
+            - Azure 入口網站
+              [430] 教學課程：使用 Azure 虛擬 WAN 建立P2S 使用者 VPN 連線
+            - PowerShell
+              [446] 使用 Azure 虛擬 WAN 建立 P2S 使用者VPN 連線 - PowerShell
+          - 建立自我簽署憑證
+            [453] 使用 PowerShell 針對使用者 VPN 連線產生並匯出憑證
+        - Microsoft Entra 驗證
+          - 設定 P2S VPN
+            [463] 使用 Azure 虛擬 WAN 建立 P2S 使用者VPN 連線 - Microsoft Entra 驗證
+          - 設定租用戶
+            [480] 設定 Microsoft Entra 租用戶，以進行P2S 使用者 VPN OpenVPN 通訊協定連線
+          - 設定 Multi-Factor Authentication (MFA)
+            [483] 使用 Microsoft Entra 驗證為 VPN 使用者啟用 Microsoft Entra 多重要素驗證(MFA)
+      - P2S 用戶端設定
+        - Microsoft Entra 驗證用戶端
+          - Windows 用戶端
+            [489] 設定 P2S OpenVPN 通訊協定連線的 VPN用戶端：Microsoft Entra 驗證
+          - macOS 用戶端
+            [504] Microsoft Entra 驗證：設定 P2SOpenVPN 通訊協定連線的 VPN 用戶端 -macOS
+          - 多應用程式 Microsoft Entra 驗證
+            [513] 建立 P2S OpenVPN 通訊協定連線的Microsoft Entra 租用戶
+        - 憑證驗證用戶端
+          - Windows 用戶端
+            [534] 使用者 VPN （P2S） 用戶端設定 - 憑證驗證 - Windows
+          - macOS 和 iOS 用戶端
+            [538] 設定使用者 VPN 點對站連線用戶端 - 憑證驗證 - macOS 和 iOS
+          - 安裝用戶端憑證
+            [558] 安裝使用者 VPN 連線的用戶端憑證
+        - VPN 用戶端設定檔
+          - 下載全域和中樞設定檔
+            [560] 下載使用者 VPN 用戶端的全域和中樞VPN 配置檔
+          - 擷取和檢視設定檔資訊
+            [566] 使用使用者 VPN 用戶端設定檔檔案
+          - Intune - 部署 VPN 用戶端設定檔
+            [568] 建立自訂 Intune 設定檔以部署使用者VPN 用戶端設定檔
+        - Azure VPN Client 選用設定
+          [572] 設定 Azure VPN 用戶端選擇性設定 -OpenVPN 通訊協定
+        - OpenVPN 用戶端軟體設定
+          [576] 設定 Azure 虛擬 WAN 的 OpenVPN 用戶端
+      - 設定 Always On 通道
+        - 使用者通道
+          [589] 針對虛擬 WAN 設定 Always On VPN 使用者通道
+        - 裝置通道
+          [594] 針對 Virtual WAN 設定 Always On 的VPN 裝置通道
+      - 設定強制通道
+        [600] 設定虛擬 WAN 點對站 VPN 的強制通道
+      - 針對位址集區設定使用者群組
+        - 設定使用者群組
+          [609] 針對 P2S 使用者 VPN 設定使用者群組和IP 位址集區
+        - RADIUS - 設定 NPS 廠商特定屬性
+          [617] RADIUS - 設定廠商特定屬性的 NPS - P2S使用者群組
+    - 路由
+      - 設定虛擬中樞路由
+        - Azure 入口網站
+          [624] 如何設定虛擬中樞路由 - Azure 入口網站
+        - Azure PowerShell
+          [631] 如何設定虛擬中樞路由 - AzurePowerShell
+      - 設定虛擬中樞路由喜好設定
+        - Azure 入口網站
+          [635] 設定虛擬中樞路由喜好設定 - Azure 入口網站
+        - Azure PowerShell
+          [637] 設定虛擬中樞路由喜好設定：AzurePowerShell
+      - 檢視虛擬中樞的有效路由
+        [639] 
+      - 設定路由對應
+        [640] 如何設定路由對應 (預覽版)
+      - 如何設定路由意圖和原則
+        [650] 如何設定虛擬 WAN 中樞路由意圖和路由原則
+      - 將流量從虛擬中樞路由傳送至 NVA (舊版)
+        - Azure 入口網站
+          [671] 建立 NVA 的虛擬 WAN 中樞路由表：Azure 入口網站
+        - Azure PowerShell
+          [676] 建立虛擬中樞路由表以將流量引導到網路虛擬設備
+      - 設定 NVA 的 BGP 對等互連
+        - Azure 入口網站
+          [680] 設定 NVA 的 BGP 對等互連 - Azure 入口網站
+        - Azure PowerShell
+          [687] 設定 NVA 的 BGP 對等互連 - PowerShell
+    - 安全性
+      - 在中樞安裝 Azure 防火牆
+        [691] 在虛擬 WAN 中樞中設定 Azure 防火牆
+      - 中樞間和分支對分支檢查
+        [696] 如何設定虛擬 WAN 中樞路由意圖和路由原則
+      - 軟體即服務 (SaaS)
+        [717] 在虛擬 WAN 中設定 Palo Alto NetworksCloud NGFW
+      - 設定 Private Link 連線能力
+        [727] 在 Virtual WAN 中使用 Private Link
+      - 管理對資源的存取 - 輪輻 VNet P2S
+        [733] 對使用者 VPN 用戶端的輪輻 VNet 中所含的資源進行安全存取管理
+    - 監視
+      - 監視虛擬 WAN
+        [749] 監視 Azure 虛擬 WAN
+      - 監視 - 最佳做法
+        [755] 監視 Azure 虛擬 WAN - 最佳做法
+      - 監視 - 資料參考
+        [764] 監視虛擬 WAN - 資料參考
+      - Azure 監視器見解
+        [771] 虛擬 WAN 的 Azure 監視器深入解析
+      - BGP 儀表板
+        [776] 使用 BGP 儀表板監視站對站 VPN BGP 路由
+      - 路由對應儀表板
+        [781] 使用路由對應儀表板監視路由對應 (預覽)
+      - 設定 S2S VPN 封包擷取
+        - Azure 入口網站
+          [784] 設定 Virtual WAN 站對站 VPN 的封包擷取：Azure 入口網站
+        - PowerShell
+          [789] 設定 Virtual WAN 站對站 VPN 封包擷取：PowerShell
+      - P2S VPN 的進階監視
+        [794] 如何監視虛擬 WAN 的點對站連線
+    - 設定客戶控制的閘道維護作業
+      [804] 為虛擬 WAN 設定客戶控制的閘道維護作業 (預覽)
+  - 參考
+    - Azure PowerShell
+      [809] 
+    - REST
+      [841] Azure REST API 參考
+    - Azure CLI
+      [851] az network
+    - Python SDK
+  - 資源
+    - 定價
+    - 訂用帳戶與服務限制
+      [974] 
+    - 網路藍圖
+    - 網路部落格
+    - 網路更新公告
+    - 定價計算機
+    - SLA

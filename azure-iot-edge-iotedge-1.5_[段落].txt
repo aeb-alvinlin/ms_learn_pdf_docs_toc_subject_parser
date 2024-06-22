@@ -1,0 +1,297 @@
+- ---< azure-iot-edge-iotedge-1.5.pdf >---
+  - Azure IoT Edge 文件
+    [1] Azure IoT Edge 文件
+  - 概觀
+    - 關於 Azure IoT Edge
+      [3] 什麼是 Azure IoT Edge
+    - 版本/版本資訊
+      [6] Azure IoT Edge 版本和版本資訊
+    - 支援的平台
+      [10] Azure IoT Edge 支援的平臺
+  - 快速入門
+    - 將程式代碼部署至 Linux 裝置
+      [16] 快速入門：將您的第一個IoT Edge模組部署至虛擬Linux裝置
+  - 教學課程
+    - 開發模組
+      - 使用 VS Code 開發模組
+        [28] 教學課程：使用Visual StudioCode開發IoT Edge模組
+      - 使用 Visual Studio 開發模組
+        [48] 使用 Visual Studio 2022 來開發和偵錯Azure IoT Edge 的模組
+    - 將 Azure 服務部署為模組
+      - 使用 Azure Functions 篩選數據
+        [57] 教學課程：將 Azure Functions 部署為IoT Edge 模組
+      - 部署串流分析模組
+        [65] 教學課程：將 Azure 串流分析部署為 IoTEdge 模組
+      - 使用 自訂視覺 分類影像
+        [74] 教學課程：使用 自訂視覺 Service 在邊緣執行影像分類
+      - 使用 SQL 在本機儲存數據
+        [91] 教學課程：使用 SQL Server 資料庫將數據儲存在邊緣
+    - 建立IoT Edge裝置的階層
+      [102] 教學課程：建立 IoT Edge 裝置的階層架構
+    - 設定 EST 伺服器
+      [114] 教學課程：為 Azure IoT Edge 設定透過安全傳輸伺服器的註冊
+    - 設定、連線及驗證 GPU
+      [126] 教學課程：設定、連線及驗證 GPU 的 IoTEdge 模組
+    - 監視裝置和模組
+      [134] 教學課程：監視IoT Edge裝置
+  - 概念
+    - IoT Edge 執行階段
+      [142] 了解 Azure IoT Edge 執行階段和架構
+    - IoT Edge 代理程式和中樞屬性
+      [148] IoT Edge 代理程式和 IoT Edge 中樞模組對應項的屬性
+    - 瞭解 Azure IoT Edge 模組
+      [156] 瞭解 Azure IoT Edge 模組
+    - IoT Edge 裝置作為閘道
+      [160] 如何使用 IoT Edge 裝置作為閘道
+    - 生產檢查清單
+      [166] 準備在生產環境中部署 IoT Edge 解決方案
+    - 部署
+      - 開發模組
+        [183] 開發您自己的IoT Edge模組
+      - 開發環境
+        [188] 準備IoT Edge的開發與測試環境
+    - 部署
+      - 部署資訊清單
+        [192] 了解如何在 IoT Edge 中部署模組及建立路由
+      - 自動部署
+        [203] 瞭解單一裝置或大規模IoT Edge自動部署
+    - 安全性
+      - 保護 Azure IoT Edge
+        [211] Azure IoT Edge 的安全性標準
+      - IoT Edge 安全性管理員
+        [215] Azure IoT Edge 安全性管理員
+      - IoT Edge 憑證
+        [221] 了解 Azure IoT Edge 如何使用憑證
+      - 搭配IoT Edge使用 Private Link
+        [236] 搭配IoT Edge使用 Private Link
+      - 機密運算
+        [238] 邊緣的機密運算
+    - 離線功能
+      [241] 瞭解IoT Edge裝置、模組和子裝置的擴充離線功能
+    - 限制事項
+      [245] 瞭解 Azure IoT Edge 限制
+  - 操作指南
+    - 安裝和布建 IoT Edge
+      - 建立 IoT Edge 裝置
+        [249] 建立 IoT Edge 裝置
+      - 設定裝置設定
+        [254] 設定IoT Edge裝置設定
+      - 設定 Proxy 支援
+        [268] 設定 IoT Edge 裝置以透過 Proxy 伺服器進行通訊
+      - Linux 主機上的Linux容器
+        - 布建單一裝置
+          - X.509 憑證證明
+            [279] 使用 X.509 憑證在 Linux 上建立和布建IoT Edge 裝置
+          - 對稱金鑰證明
+            [292] 使用對稱密鑰在 Linux 上建立和布建 IoTEdge 裝置
+        - 大規模布建裝置
+          - X.509 憑證證明
+            [304] 使用 X.509 憑證大規模在 Linux 上建立及布建 IoT Edge 裝置
+          - TPM 證明
+            [314] 使用 Linux 上的 TPM 大規模建立及布建IoT Edge 裝置
+          - 對稱金鑰證明
+            [326] 使用對稱金鑰大規模在 Linux 上建立和布建 IoT Edge 裝置
+      - 更新 IoT Edge
+        [335] 更新 IoT Edge
+      - 管理裝置憑證
+        [340] 管理 IoT Edge 憑證
+      - 在 Kubernetes 上執行 IoT Edge
+        [357] 如何在 Kubernetes 上安裝 IoT Edge
+      - 使用 Bicep 檔案部署 IoT Edge VM
+        [358] 使用 Bicep 在 Ubuntu 虛擬機器 上執行Azure IoT Edge
+      - 使用ARM範本部署IoT Edge VM
+        [362] 在 Ubuntu 虛擬機器 上執行 Azure IoTEdge
+    - 開發自定義模組
+      - 設定模組建置選項
+        [368] 設定 IoT Edge 模組組建選項
+      - 設定模組 createOptions
+        - 瞭解及使用 createOptions
+          [370] 如何設定 IoT Edge 模組的容器建立選項
+        - 為模組提供裝置本機記憶體的存取權
+          [375] 為模組提供裝置本機記憶體的存取權
+      - 使用 VS Code 對模組進行偵錯
+        [380] 使用 Visual Studio Code 對 Azure IoTEdge 模組進行偵錯
+    - 部署模組
+      - 部署到個別裝置
+        - Azure 入口網站
+          [389] 從 Azure 入口網站部署 Azure IoT Edge模組
+        - Azure CLI
+          [394] 使用 Azure CLI 部署 Azure IoT Edge 模組
+        - Visual Studio Code
+          [399] 從 Visual Studio Code 部署 Azure IoTEdge 模組
+      - 大規模部署
+        - Azure 入口網站
+          [404] 使用 Azure 入口網站大規模部署 IoTEdge 模組
+        - Azure CLI
+          [411] 使用 Azure CLI 大規模部署和監視 IoTEdge 模組
+        - Visual Studio Code
+          [419] 使用 Visual Studio Code 大規模部署 IoTEdge 模組
+    - 監視和診斷
+      - 監視 IoT Edge 部署
+        [426] 監視 IoT Edge 部署
+      - 監視模組對應項
+        [430] 監視模組對應項
+      - IoT Edge 的端對端可觀察性
+        [438] 如何使用監視和疑難解答來實作IoT Edge可檢視性
+      - 使用edgeAgent直接方法
+        [450] 使用內建的直接方法與 EdgeAgent 通訊
+      - 使用直接方法擷取記錄
+        [454] 從 IoT Edge 部署擷取記錄
+      - 存取內建計量
+        [467] 
+      - Azure 監視器整合
+        - 收集及傳輸計量
+          [472] 收集及傳輸計量
+        - 探索策劃的視覺效果
+          [481] 探索 Azure IoT Edge 中的策劃視覺效果
+        - 建立警示規則
+          [485] 使用警示取得有關問題的通知
+        - 新增自訂計量
+          [488] 新增自訂計量
+        - 常見問題與疑難排解
+          [491] 常見問題集和疑難排解
+    - 使用IoT Edge裝置作為閘道
+      - IoT 裝置的閘道
+        - 設定透明閘道
+          [493] 設定 IoT Edge 裝置作為透明閘道
+        - 驗證下游裝置
+          [500] 向 Azure IoT 中樞驗證下游裝置
+        - 連線 下游裝置
+          [509] 將下游裝置連線到 Azure IoT Edge 閘道
+        - Modbus 通訊協議閘道
+          [515] 透過 IoT Edge 裝置閘道連線 ModbusTCP 裝置
+      - IoT Edge 裝置的閘道
+        - 設定IoT Edge裝置的閘道
+          [518] 將 Azure IoT Edge 裝置連線以建立階層
+        - 設定 API Proxy 模組
+          [545] 設定閘道階層案例的 API Proxy 模組
+    - IoT Edge 上的 Azure Blob 儲存體
+      - 了解邊緣的 Blob 記憶體
+        [554] 
+      - 部署 Blob 記憶體模組
+        [562] 將 IoT Edge 模組上的 Azure Blob 儲存體部署至您的裝置
+    - IoT Edge 上的 Azure SQL Edge
+      - 了解邊緣的 Azure SQL
+        [575] 什麼是 Azure SQL Edge？
+      - 部署 Azure SQL Edge 模組
+        [578] 部署 Azure SQL Edge
+    - 使用DevOps工具管理
+      [586] 持續整合和持續部署至 Azure IoT Edge裝置
+    - 疑難排解
+      - 診斷 IoT Edge 裝置
+        [601] 針對 IoT Edge 裝置進行疑難排解
+      - Azure 入口網站 中的疑難解答
+        [609] 針對來自 Azure 入口網站的IoT Edge裝置進行疑難解答
+      - 解決常見錯誤
+        [615] [Azure IoT Edge 常見問題的解決方案]
+  - Windows 上的適用於 Linux 的 Azure IoT Edge （EFLOW）
+    - 關於EFLOW
+      [631] 什麼是 Windows 上的適用於 Linux 的Azure IoT Edge
+    - 部署至 Windows 裝置
+      [634] 快速入門：將第一個IoT Edge模組部署至Windows 裝置
+    - 概念
+      - 福利
+        [647] 為何在 Windows 上使用適用於 Linux 的Azure IoT Edge？
+      - 更新
+        [649] 更新 Windows 上的適用於 Linux 的 IoTEdge
+      - 安全性
+        [653] Windows 安全性上的適用於 Linux 的 IoTEdge
+      - 網路
+        [658] Windows 網路上適用於 Linux 的 IoTEdge
+      - 支援的平台
+        [664] Windows 支持的系統上適用於 Linux 的Azure IoT Edge
+    - 安裝和布建
+      - 單一裝置
+        - X.509 憑證證明
+          [668] 使用 X.509 憑證在 Windows 裝置上建立及布建適用於 Linux 的 IoT Edge
+        - 對稱金鑰證明
+          [679] 使用對稱密鑰在 Windows 裝置上建立及布建適用於 Linux 的 IoT Edge
+      - 大規模布建
+        - X.509 憑證證明
+          [688] 使用 X.509 憑證大規模在 Windows 裝置上建立及布建適用於 Linux 的 IoT Edge
+        - TPM 證明
+          [699] 使用 TPM 大規模在 Windows 裝置上建立及布建適用於 Linux 的 IoT Edge
+        - 對稱金鑰證明
+          [709] 使用對稱金鑰大規模在 Windows 裝置上建立和布建適用於 Linux 的 IoT Edge
+    - 設定
+      - 存取 TPM 秘密
+        [718] Windows 上適用於 Linux 的 Azure IoTEdge 的 dTPM 存取
+      - 設定 Windows VM 的巢狀虛擬化
+        [724] 適用於 Azure IoT Edge for Linux onWindows 的巢狀虛擬化
+      - 連線 USB 裝置
+        [726] 如何在 Windows 上將 USB 裝置連線到適用於 Linux 的 Azure IoT Edge
+      - GPU 加速
+        [730] 適用於 Azure IoT Edge for Linux onWindows 的 GPU 加速
+      - 網路
+        - 瞭解 VM 網路功能
+          [735] 適用於 Azure IoT Edge for Linux onWindows 的網路設定
+        - 虛擬交換器
+          [741] Azure IoT Edge for Linux on Windows 虛擬交換器建立
+        - 多個 NIC
+          [747] Windows 虛擬多個 NIC 組態上的適用於Linux 的 Azure IoT Edge
+        - DMZ 上的 VM
+          [752] 如何在 Windows 工業 IoT 和 DMZ 設定上設定適用於 Linux 的 Azure IoT Edge
+      - 共用資料夾
+        [759] 在 Windows 上與適用於 Linux 的 AzureIoT Edge 共用 Windows 資料夾
+    - 開發和偵錯
+      [765] 教學課程：在 Windows 上使用適用於Linux 的 IoT Edge 開發 IoT Edge 模組與Linux 容器
+    - 建立IoT Edge裝置的階層
+      [781] 教學課程：在 Windows 上使用適用於Linux 的 IoT Edge 建立 IoT Edge 裝置的階層
+    - 疑難排解
+      - 診斷虛擬機
+        [793] 針對 Windows 裝置上的適用於 Linux 的IoT Edge 進行疑難解答
+      - 診斷虛擬機網路
+        [801] 針對 Windows 網路上適用於 Linux 的IoT Edge 進行疑難解答
+      - 解決常見錯誤
+        [809] Windows 上適用於 Linux 的 Azure IoTEdge 常見問題和解決方案
+    - 參考
+      - PowerShell 函式
+        [825] 適用於 IoT Edge for Linux on Windows的 PowerShell 函式
+  - 參考
+    - Azure IoT Edge 1.1 封存
+    - 運行時間模組環境變數
+    - 建立測試憑證
+      [839] 建立示範憑證來測試 IoT Edge 裝置功能
+    - Azure CLI
+      [847] IoT
+  - 資源
+    - 支援和協助選項
+      [848] Azure IoT 支援和協助選項有哪些？
+    - IoT 詞彙
+      [850] IoT 詞彙詞彙
+    - Azure IoT 服務
+      - IoT 中樞
+        [879] Azure IoT 中樞文件
+      - IoT 中樞裝置佈建服務
+        [881] Azure IoT 中樞裝置佈建服務 (DPS) 文件
+      - IoT Central
+        [883] Azure IoT Central 文件
+      - IoT Edge
+        [886] Azure IoT Edge 文件
+      - Azure 地圖服務
+        [888] Azure 地圖服務文件
+      - 時間序列深入解析
+        [894] Azure Time Series Insights 文件
+    - Azure IoT SDK
+      - IoT 服務 SDK
+        [897] 
+      - IoT 裝置 SDK
+        [899] Azure IoT 中樞 SDK
+    - Azure IoT 範例
+      - C# (.NET)
+      - C
+      - Node.js
+      - Java
+      - Python
+      - iOS 平台
+    - Azure IoT 開發人員中心
+    - Azure 藍圖
+    - Azure IoT Edge for Visual Studio Code
+    - 適用於 Visual Studio Code 的 Azure IoT 中樞 延伸模組
+    - Azure IoT 檔案總管工具
+    - iothub-diagnostics 工具
+    - 定價
+    - 定價計算機
+    - 服務更新
+    - 技術案例研究
+    - 影片

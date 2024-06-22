@@ -1,0 +1,171 @@
+- ---< azure-role-based-access-control.pdf >---
+  - Azure RBAC 文件
+    [1] Azure RBAC 文件
+  - 概觀
+    - 什麼是 Azure RBAC？
+      [3] 什麼是 Azure 角色型存取控制 (AzureRBAC)？
+    - 什麼是 Azure ABAC？
+      [11] 什麼是 Azure 屬性型存取控制 （AzureABAC）？
+    - 瞭解不同的角色
+      [17] Azure 角色、Microsoft Entra 角色和傳統訂用帳戶管理員角色
+  - 快速入門
+    - 檢查使用者的存取權
+      [26] 快速入門：檢查使用者對單一 Azure 資源的存取權
+    - Bicep
+      [30] 快速入門：使用 Bicep 指派 Azure 角色
+    - ARM 範本
+      [33] 快速入門：使用 ARM 範本指派 Azure 角色
+  - 教學課程
+    - 授與使用者存取權 - 入口網站
+      [39] 教學課程：使用 Azure 入口網站為使用者授與 Azure 資源的存取權
+    - 授與使用者存取權 - PowerShell
+      [44] 教學課程：使用 Azure PowerShell 將Azure 資源的存取權授與使用者
+    - 授與群組存取權 - PowerShell
+      [52] 教學課程：使用 Azure PowerShell 將Azure 資源的存取權授與群組
+    - 建立自定義角色 - PowerShell
+      [60] 教學課程：使用 Azure PowerShell 建立Azure 自訂角色
+    - 建立自定義角色 - CLI
+      [68] 教學課程：使用 Azure CLI 建立 Azure 自訂角色
+  - 概念
+    - 角色定義
+      [75] 了解 Azure 角色定義
+    - 角色指派
+      [88] 了解 Azure 角色指派。
+    - 範圍
+      [93] 瞭解 Azure RBAC 的範圍
+    - 最佳作法
+      [99] Azure RBAC 的最佳做法
+    - Delegate
+      - 委派角色指派管理概觀
+        [102] 將 Azure 存取管理委派給其他人
+      - 授權動作和屬性
+        [110] 授權動作和屬性 （預覽）
+    - ABAC 條件
+      - 條件格式
+        [114] Azure 角色指派條件格式和語法
+      - 條件必要條件
+        [132] Azure 角色指派條件的必要條件
+      - 條件常見問題
+        [134] Azure 角色指派條件的常見問題
+      - 自定義安全性屬性範例
+        [136] 使用條件和自定義安全性屬性調整 Azure角色指派的管理
+    - 安全性
+      - Azure 原則的安全性控制
+        [141] 適用於 Azure RBAC 的 Azure 原則 法規合規性控制
+  - 操作指南
+    - 列出角色定義
+      [150] 列出 Azure 角色定義
+    - 列出角色指派
+      - 入口網站
+        [164] 使用 Azure 入口網站列出 Azure 角色指派
+      - PowerShell
+        [176] 使用 Azure PowerShell 列出 Azure 角色指派
+      - CLI
+        [182] 使用 Azure CLI 列出 Azure 角色指派
+      - REST API
+        [187] 使用 REST API 列出 Azure 角色指派
+    - 指派角色
+      - 指派角色的步驟
+        [190] 指派 Azure 角色的步驟
+      - 入口網站
+        - 指派角色
+          [195] 使用 Azure 入口網站指派 Azure 角色
+        - 受控識別
+          [204] 將 Azure 角色指派給受控識別 (預覽)
+        - 外部來賓使用者
+          [208] 使用 Azure 入口網站將 Azure 角色指派給外部來賓使用者
+      - PowerShell
+        [223] 使用 Azure PowerShell 指派 Azure 角色
+      - CLI
+        [233] 使用 Azure CLI 指派 Azure 角色
+      - REST API
+        [242] 使用 REST API 指派 Azure 角色
+      - ARM 範本
+        [246] 使用 Azure Resource Manager 範本指派Azure 角色
+    - Delegate
+      - 具有條件的訂用帳戶管理員
+        [257] 將使用者指派為 Azure 訂用帳戶的系統管理員
+      - 使用條件委派角色指派管理
+        [262] 將 Azure 角色指派管理委派給有條件的其他人 （預覽）
+      - 範例條件
+        [268] 使用條件委派 Azure 角色指派管理的範例（預覽）
+    - 新增或編輯 ABAC 條件
+      - 入口網站
+        [277] 使用 Azure 入口網站 新增或編輯 Azure角色指派條件
+      - PowerShell
+        [286] 使用 Azure PowerShell 新增或編輯 Azure角色指派條件
+      - CLI
+        [292] 使用 Azure CLI 新增或編輯 Azure 角色指派條件
+      - REST API
+        [296] 使用 REST API 新增或編輯 Azure 角色指派條件
+      - ARM 範本
+        [300] 使用 Azure Resource Manager 範本新增Azure 角色指派條件
+      - Blob 儲存體 的範例條件
+        [303] Blob 儲存體 的 Azure 角色指派條件範例
+      - 條件和自定義安全性屬性
+        [358] 允許根據標記和自訂安全性屬性對 Blob的讀取存取
+    - 移除角色指派
+      [370] 移除 Azure 角色指派
+    - 列出拒絕指派
+      - 概觀
+        [376] 瞭解 Azure 否定性指派。
+      - 入口網站
+        [379] 使用 Azure 入口網站 列出 Azure 拒絕指派
+      - PowerShell
+        [384] 使用 Azure PowerShell 列出 Azure 拒絕指派
+      - REST API
+        [387] 使用 REST API 列出 Azure 拒絕指派
+    - 建立自訂角色
+      - 概觀
+        [391] Azure 自訂角色 (機器翻譯)
+      - 入口網站
+        [402] 使用 Azure 入口網站建立或更新 Azure 自訂角色
+      - PowerShell
+        [417] 使用 Azure PowerShell 建立或更新 Azure自訂角色
+      - CLI
+        [427] 使用 Azure CLI 建立或更新 Azure 自訂角色
+      - REST API
+        [433] 使用 REST API 建立或更新 Azure 自訂角色
+      - Bicep
+        [446] 使用 Bicep 建立或更新 Azure 自訂角色
+      - ARM 範本
+        [451] 使用 ARM 範本建立或更新 Azure 自訂角色
+    - 檢視活動記錄
+      [458] 檢視 Azure RBAC 變更的活動記錄
+    - 特殊許可權角色指派的警示
+      [466] 具特殊許可權 Azure 角色指派的警示
+    - 提高存取權
+      [471] 提高存取權以管理所有 Azure 訂用帳戶和管理群組
+    - 傳統系統管理員
+      [485] Azure 傳統訂用帳戶管理員
+    - 將訂用帳戶轉移至不同的目錄
+      [493] 將 Azure 訂用帳戶轉移至不同的Microsoft Entra 目錄
+    - 疑難排解
+      - 疑難排解 Azure RBAC
+        [506] 疑難排解 Azure RBAC
+      - 針對 Azure RBAC 限制進行疑難解答
+        [525] 針對 Azure RBAC 限制進行疑難排解
+      - 針對 ABAC 條件進行疑難解答
+        [541] 針對 Azure 角色指派條件進行疑難解答
+  - 參考
+    - 內建角色
+      [552] Azure 內建角色
+    - 資源提供者作業
+      [1075] Azure 資源提供者作業
+    - Azure RBAC 限制
+      [1984] 
+    - Azure PowerShell
+      [2055] 
+    - CLI
+      [2062] az role
+    - REST API
+      [2063] 授權
+    - ARM 範本
+      - 角色指派
+        [2064] 
+      - 角色定義
+        [2071] Microsoft.Authorization roleDefinitions
+    - Azure 原則內建
+      [2075] Azure 原則 Azure RBAC 的內建定義
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧

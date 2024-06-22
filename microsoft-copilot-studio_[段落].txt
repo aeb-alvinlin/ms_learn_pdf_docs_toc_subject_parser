@@ -1,0 +1,286 @@
+- ---< microsoft-copilot-studio.pdf >---
+  - Microsoft Copilot Studio 文件
+    [1] 
+  - 概觀
+    - 什麼是 Microsoft Copilot Studio
+      [3] Microsoft Copilot Studio 概觀
+    - 合規性供應項目
+      [6] Copilot Studio 合規性供應項目
+    - Copilot Studio 中的安全性和治理
+      [11] Copilot Studio 安全性和控管
+    - 配額、限制與設定值
+      [13] Copilot Studio 的配額、限制、應用程式限制、憑證和設定值
+    - 遷移至整合畫布
+      [23] 最新 Microsoft Copilot Studio 整合製作發行版本的考量
+    - Composer 使用者的重要概念
+      [33] Bot Framework Composer 使用者的重要概念
+  - 開始使用
+    - 取得 Microsoft Copilot Studio 的存取權
+      [34] 取得 Microsoft Copilot Studio 存取權
+    - 在 Microsoft Teams 中使用預建的副手範本
+      [38] 在 Microsoft Teams 中使用預先建立的機器人範本
+    - 快速入門 - 建立和部署副手
+      [39] 快速入門：建立和部署 Copilot Studio 副手
+    - 社群說明及支援
+      [51] Microsoft Copilot Studio 的社群說明及支援
+  - Microsoft Copilot Studio 中的生成式 AI
+    - 以 AI 為基礎的副手製作概觀
+      [53] 以 AI 為基礎的副手製作概觀
+    - 使用 GPT 建立副手的快速入門指南
+      [56] 使用生成式 AI 建立副手的快速入門指南
+    - 生成式解答
+      [63] 生成式答案
+    - 使用搜尋和摘要的生成式解答
+      [71] 使用搜尋和摘要內容的生成式解答
+    - 使用提示修改為副手提供自訂指令
+      [75] 使用提示修改向副手提供自訂指令
+    - 使用 Bing 自訂搜尋來搜尋網站
+      [78] 搜尋公用資料，或使用 Bing 自訂搜尋來生成答案
+    - 根據您的資料使用 Azure OpenAI 的連線
+      [80] 將資料連接到 Azure OpenAI 以獲得生成式回答
+    - 使用上傳的文件
+      [84] 使用上傳的文件產生生程式答案
+    - 針對 SharePoint 或商務用 OneDrive 使用內容
+      [87] 使用 SharePoint 或商務用 OneDrive 的內容產生生成式答案
+    - 使用自訂資料來源
+      [90] 使用自訂資料來源的生成式答案
+    - 使用 Copilot 建立和編輯
+      [93] 使用 Copilot Studio 建立和編輯
+    - 適用於 Teams 和傳統 Bot 的 AI 功能
+      [99] 適用於 Teams 和傳統副手的 AI 功能
+    - 疑難排解生成式 AI
+      - 生成式解答不會傳回回覆
+        [107] 指向 SharePoint 或 OneDrive 來源的生成式答案未傳回結果
+  - 使用外掛程式展開副手
+    - 建立和設定副手外掛程式 (預覽版)
+      [114] 建立和設定副手外掛程式 (預覽版)
+    - 建立 Microsoft Copilot 的交談外掛程式
+      [119] 建立 Microsoft Copilot (預覽) 的交談外掛程式
+    - 建立 Microsoft Copilot 的 AI 外掛程式
+      [126] 建立 Microsoft Copilot 的 AI 外掛程式(預覽版)
+    - 在 Microsoft Copilot Studio 中使用外掛程式動作
+      [134] 在 Microsoft Copilot Studio 中使用外掛程式動作 (預覽版)
+    - 在 Microsoft Copilot Studio 中使用生成式動作
+      [149] 在 Microsoft Copilot Studio 中使用生成式動作 (預覽版)
+    - Microsoft Copilot Studio 架構
+      [156] Microsoft Copilot Studio 外掛程式架構
+  - 管理員和管理
+    - 指派授權
+      [163] 指派授權，並管理對 Microsoft CopilotStudio 的存取
+    - 適用於 US Government 客戶的 Microsoft Copilot Studio
+      [167] 
+    - 註冊試用版帳戶
+      [174] 註冊 Microsoft Copilot Studio 試用版
+    - 使用環境
+      [177] 在 Microsoft Copilot Studio 中使用環境
+    - 跨地理位置設定資料移動
+      [183] 為生成式 AI 設定跨地理位置的資料移動
+    - 套用和設定資料外洩防護原則
+      - 管理副手的資料外洩防護
+        [185] 為副手設定資料外洩防護
+      - 範例 - 要求終端使用者驗證
+        [193] 資料遺失防護範例 - 需要 MicrosoftCopilot Studio 副手的終端使用者身份驗證
+      - 範例 - 封鎖 Power Platform 連接器
+        [199] 資料遺失防護範例 - 禁止來自 MicrosoftCopilot Studio 副手的 Power Platform 連接器
+      - 範例 - 封鎖 HTTP 要求
+        [203] 資料遺失防護範例 - 禁止來自 MicrosoftCopilot Studio 副手的 HTTP 要求
+      - 範例 - 封鎖技能
+        [207] 資料遺失防護範例 - 禁止 MicrosoftCopilot Studio 副手中的技能
+    - 使用解決方案匯出和匯入副手
+      [210] 使用解決方案匯出和匯入副手
+    - 組織的區域設定和資料位置
+      [219] 使用 Microsoft Copilot Studio 之組織的地區設定與資料位置
+    - 檢視稽核記錄檔
+      [223] 檢視 Copilot Studio 稽核記錄
+  - 撰寫和編輯
+    - 主要概念 - 製作
+      [228] 主要概念 - 製作 Copilot Studio 副手
+    - 建立和刪除副手
+      [230] 建立和刪除副手
+    - 使用課程主題
+      [233] 使用 Copilot Studio 中的課程主題
+    - 使用系統主題
+      [237] 在 Copilot Studio 中使用系統主題
+    - 建立和編輯主題
+      [240] 建立和編輯主題
+    - 使用主題觸發程序
+      [249] 使用主題觸發程序
+    - 從範例主題開始
+      [254] 使用 Copilot Studio 中的課程主題
+    - 從現有內容開始
+      [258] 從傳統聊天機器人建立副手
+    - 傳送訊息
+      [260] 傳送訊息
+    - 使用系統後援主題
+      [273] 設定系統後援主題
+    - 管理主題
+      [276] 管理 Microsoft Copilot Studio 中的主題
+    - 提出問題
+      [284] 提出問題
+    - 新增註解至副手
+      [288] 新增註解至副手
+    - 測試您的副手
+      [290] 在 Copilot Studio 中測試您的副手
+    - 支援的語言
+      [296] 支援的語言
+    - 設定和建立多語言副手
+      [301] 設定和建立多語言副手
+    - 瞭解錯誤碼
+      [307] 瞭解錯誤碼
+  - 增強並改善
+    - 主要概念 - 增強製作
+      [311] 重要概念 - Microsoft Copilot Studio 中的增強製作
+    - 使用實體和插槽填寫
+      [313] 在 Microsoft Copilot Studio 副手中使用實體和填槽
+    - 使用變數
+      [331] 使用變數
+    - 提出 HTTP 要求
+      [348] 提出 HTTP 要求
+    - 傳送事件活動
+      [355] 傳送事件活動
+    - 在主題間重複使用變數
+      [358] 在主題間重複使用變數
+    - 從現有的支援內容建立主題
+      [363] 從現有的線上支援內容建立主題
+    - 從 Customer Service Insights 建立主題
+      [374] 從 Customer Service Insights 建立機器人主題
+    - 新增使用者驗證
+      [376] 新增使用者驗證至 Microsoft CopilotStudio 機器人
+    - 使用 Power Fx 來使用運算式
+      [382] 使用 Power Fx 建立使用運算式
+    - 在 Microsoft Teams 中傳送主動式訊息和卡片
+      [388] 傳送主動訊息 Microsoft Teams
+    - 容納時區
+      [402] 容納時區
+    - 觸發移交至真人專員
+      [406] 移交給即時助理
+    - 使用 Power Automate 流程
+      - 重要概念 - 流程
+        [410] 重要概念 - 在 Copilot Studio 中使用Power Automate 流程
+      - 使用 Power Automate 連接器 (預覽版)
+        [412] 關鍵概念 - 在 Microsoft Copilot Studio中使用 Power Automate 連接器 (預覽版)
+      - 建立流程
+        [413] 建立流程
+      - 將流程稱為動作
+        [426] 將流程稱為動作
+      - 新增輸入和輸出變數
+        [432] 新增輸入和輸出變數
+      - 傳回結果的清單
+        [438] 傳回結果的清單
+  - 發佈及整合
+    - 重要概念 - 發佈您的副手
+      [447] 主要概念 - 發佈您的 Bot
+    - 將您的副手新增到即時網站
+      [454] 設定示範網站，並將副手新增至您的即時網站
+    - 將副手新增至 Power Pages
+      [457] 將 Bot 新增至 Power Pages
+    - 將聊天機器人新增至 Microsoft Teams
+      [458] 新增聊天機器人到 Microsoft Teams
+    - 建立 Teams 的隱私權聲明和使用條款
+      [478] 在 Microsoft Teams 中建立隱私權聲明與使用規定
+    - 將副手新增至 Facebook
+      [480] 將機器人新增至 Facebook
+    - 將副手新增至行動應用程式或自訂應用程式
+      [491] 將副手新增至行動裝置應用程式和自訂應用程式
+    - 將副手新增至 Azure Bot Service 管道
+      [499] 將 Copilot Studio 副手新增至 Azure BotService 管道
+    - 與問題解答整合
+      [506] 與問題解答整合
+    - 整合和移交交談
+      - 建立副手以進行客戶參與和移交
+        [507] 建立副手以進行客戶參與和移交
+      - 移交給一般業務開發中心
+        [510] 設定對一般業務開發中心的移交
+      - 移交給 Dynamics 365 Customer Service
+        [514] 設定轉接至 Dynamics 365 CustomerService
+      - 移交給 Genesys
+        [521] 移交給 Genesys
+      - 移交給 LivePerson
+        [524] 移交給 LivePerson
+      - 移交給 Salesforce Einstein 機器人
+        [525] 移交給 Salesforce Einstein 機器人
+      - 移交給 ServiceNow
+        [528] 移交給 ServiceNow
+    - 與交談語言理解整合
+      - 對話語言理解整合概觀
+        [530] 對話語言理解整合概觀
+      - 開始使用對話語言理解整合
+        [534] 開始使用對話語言理解整合
+      - 對話語言理解整合的實體
+        [547] 對話語言理解整合的實體
+    - 與 Bot Framework 技能整合
+      - 設定在副手中使用的技能
+        [551] 在 Copilot Studio 中設定使用的 BotFramework 技能
+      - 使用 Bot Framework 技能
+        [555] 在 Microsoft Copilot Studio 中使用Microsoft Bot Framework 技能
+      - 將傳統聊天機器人做為技能使用
+        [557] 將 Microsoft Copilot Studio 副手做為技能使用
+    - 使用 Bot Framework Composer 擴充
+      - Bot Framework Composer 的概觀
+        [586] Bot Framework Composer 的概觀
+      - 開始使用 Composer
+        [592] 開始使用 Bot Framework Composer
+      - 擷取遙測
+        [602] 透過 Application Insights 擷取遙測
+      - 顯示調適型卡片
+        [606] 範例 1 – 在 Microsoft Copilot Studio 中顯示調適型卡片
+      - 顯示多重選取選項清單
+        [619] 範例 2 – 在 Microsoft Copilot Studio 中顯示多重選取選項清單
+      - 使用 Bing Search 做為遞補
+        [629] 範例 3 – 在 Microsoft Copilot Studio 中使用 Bing Search 做為遞補
+      - 顯示包含 [提交] 按鈕的表單
+        [635] 範例 4 - 在 Microsoft Copilot Studio 中顯示包含 [提交] 按鈕的表單
+  - 監視和診斷
+    - 主要概念 - 分析
+      [646] 主要概念 - 在 Copilot Studio 中的分析
+    - 分析副手效能和使用方式
+      [649] 在 Copilot Studio 中分析副手效能和使用方式
+    - 分析客戶滿意度
+      [654] 分析副手的客戶滿意度衡量標準
+    - 分析工作階段資訊
+      [656] 分析 Copilot Studio 中的工作階段資訊
+    - 使用交談文字記錄
+      [660] 使用交談文字記錄
+    - 分析主題使用方式
+      [673] 分析 Copilot Studio 中的主題使用方式
+    - 分析和管理計費訊息和容量
+      [675] Microsoft Copilot Studio 訊息和容量管理
+    - 分析計費工作階段資訊
+      [678] 檢視計費工作階段
+  - 設定與自訂
+    - 重要概念 - 設定
+      [681] 重要概念 - 設定 Microsoft Copilot Studio
+    - 與組織中的使用者共用副手
+      [683] 與其他使用者共用您的副手
+    - 設定使用者驗證
+      [696] 在 Microsoft Copilot Studio 中設定使用者驗證
+    - 停用預設驗證
+      [703] 停用 Microsoft Copilot Studio 副手的預設驗證
+    - 使用 Microsoft Entra ID 設定使用者驗證
+      [705] 使用 Microsoft Entra ID 設定使用者驗證
+    - 設定網頁和 Direct Line 管道安全性
+      [718] 設定 Web 及 Direct Line 通道安全性
+    - 設定 Web 的單一登入
+      [725] 使用 Microsoft Entra ID 設定單一登入
+    - 設定 Teams 的單一登入
+      [731] 使用 Microsoft Entra ID 為 MicrosoftTeams 中的 Microsoft Copilot Studio 機器人設定單一登入
+    - 將您的副手設定為自動開始交談
+      [743] 自動開始交談
+    - 自訂副手的外觀和風格
+      [750] 自訂副手的外觀和風格
+  - 回應個人資料要求
+    - 個人資料要求概觀
+      [761] Copilot Studio 的個人資料要求
+    - 要求匯出並下載資料
+      [762] 匯出資料以回應要求，以取得 CopilotStudio 中個人資料複本
+    - 要求刪除資料
+      [765] 回應資料主體的個人資料刪除要求
+    - 要求探索資料
+      [766] 回應資料主體的個人資料探索要求
+  - 負責 AI
+    - 概觀
+      [767] Microsoft Copilot Studio 的負責 AI 常見問題集
+    - 生成式解答常見問題集
+      [768] 生成式答案常見問題集
+    - 副手常見問題集
+      [772] 副手常見問題

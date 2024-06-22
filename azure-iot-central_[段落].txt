@@ -1,0 +1,242 @@
+- ---< azure-iot-central.pdf >---
+  - Azure IoT Central 文件
+    [1] Azure IoT Central 文件
+  - 概觀
+    - 什麼是 Azure IoT Central
+      [4] 什麼是 Azure IoT Central？
+    - UI 導覽
+      [9] 開始導覽 Azure IoT 中心 UI
+    - API 導覽
+      [22] 流覽 Azure IoT Central API
+  - 快速入門
+    - 1. 連線 您的第一個裝置
+      [24] 快速入門 - 使用智慧型手機作為裝置將遙測傳送至IoT Central 應用程式
+    - 2.設定規則和動作
+      [31] 快速入門：在 Azure IoT Central 中為您的裝置設定規則和動作
+    - 3.導出數據
+      [35] 快速入門：從 IoT Central 應用程式匯出資料
+  - 教學課程
+    - 連接裝置
+      - 建立及連線裝置
+        [42] 教學課程：建立用戶端應用程式並將其連線至 Azure IoT Central 應用程式
+      - 建立裝置群組
+        [60] 教學課程：使用裝置群組來分析裝置遙測
+      - 連線 IoT Edge 裝置
+        [66] 教學課程：將IoT Edge裝置連線到 AzureIoT Central 應用程式
+      - 建立閘道裝置範本
+        [74] 教學課程：在 Azure IoT Central 應用程式中定義新的 IoT 閘道裝置類型
+    - 擴充您的應用程式
+      - 建立規則
+        [83] 教學課程：在 Azure IoT Central 應用程式中建立規則和設定通知
+      - 探索IoT Central API
+        [90] 教學課程：使用 REST API 來管理 AzureIoT Central 應用程式
+    - 建立產業特定的示範應用程式
+      - Retail
+        - 店內分析結帳
+          - 1- 建立零售應用程式
+            [99] 教學課程：建立和部署店內分析應用程式範本
+          - 2 - 自定義操作員儀錶板
+            [109] 教學課程：在 Azure IoT Central 中自定義儀錶板和管理裝置
+          - 3 - 匯出數據並將深入解析可視化
+            [118] 教學課程：從 Azure IoT Central 匯出數據，並將 Power BI 中的深入解析可視化
+        - 建立智慧庫存管理應用程式
+          [136] 教學課程：部署智慧庫存管理應用程式範本
+        - 建立聯網物流應用程式
+          [142] 教學課程：部署和逐步解說連線物流應用程式範本
+        - 建立數位配送中心應用程式
+          [149] 教學課程：部署和逐步解說數位配送中心應用程式範本
+        - 建立微型物流中心應用程式
+          [155] 教學課程：部署和檢閱微型物流中心應用程式範本
+      - 能源
+        - 建立智慧型手機電錶監視應用程式
+          [161] 教學課程：部署及逐步解說監視智慧型手機的應用程式範本
+        - 建立太陽能板監視應用程式
+          [167] 教學課程：部署並逐步解說太陽能板監視應用程式範本
+      - 政府
+        - 建立連線廢棄物管理應用程式
+          [173] 教學課程：部署並逐步解說連線廢棄物管理應用程式範本
+        - 建立用水量監視應用程式
+          [184] 教學課程：部署和逐步解說用水量監視應用程式
+        - 建立水質監視應用程式
+          [195] 教學課程：部署和逐步解說水質監視應用程式
+      - 醫療保健
+        - 建立持續病患監視應用程式
+          [205] 教學課程：部署和檢閱持續病患監視應用程式範本
+  - 概念
+    - 常見問題集
+      [212] 如何? 取得應用程式的相關信息嗎？
+    - 架構
+      [219] Azure IoT Central 架構
+    - 裝置連線指南
+      [223] IoT Central 裝置連線指南
+      - 裝置實作和最佳做法
+        [229] IoT Central 的裝置實作和最佳做法
+      - 裝置驗證
+        [234] IoT Central 中的裝置驗證概念
+      - 裝置範本
+        [239] 什麼是裝置範本？
+      - 連線 IoT Edge 裝置
+        [247] 將 Azure IoT Edge 裝置連線至 Azure IoTCentral 應用程式
+    - 裝置管理指南
+      [258] IoT Central 裝置管理指南
+    - 數據整合指南
+      [263] IoT Central 整合和延伸模組指南
+    - 應用程式管理指南
+      [268] IoT Central 應用程式管理指南
+    - 應用程式安全性指南
+      [272] IoT Central 安全性指南
+    - 使用私人端點的網路安全性
+      [275] 使用私人端點的 IoT Central 網路安全性
+    - IoT Central 如何調整及啟用HADR？
+      [279] IoT Central 具有高可用性、災害復原（HADR）和彈性規模意味著什麼？
+    - IoT Central 的規模限制為何？
+      [282] 配額和限制
+  - 操作指南
+    - 建立應用程式
+      [286] 建立 IoT Central 應用程式
+    - 建置和連線裝置
+      - 設定裝置範本
+        [293] 在 Azure IoT Central 應用程式中定義新的 IoT 裝置類型
+      - 編輯裝置範本
+        [308] 編輯現有的裝置範本
+      - 如何使用屬性
+        [313] 使用 Azure IoT Central 解決方案中的屬性
+      - 如何使用命令
+        [320] 如何在 Azure IoT Central 解決方案中使用命令
+      - 連線 使用 X.509 的裝置
+        [328] 如何將 IoT Central 應用程式與具有 x.509憑證的裝置連線
+      - 管理 IoT Edge 部署指令清單
+        [343] 在 IoT Central 應用程式中管理 IoT Edge部署資訊清單
+      - 透過IoT Edge透明閘道 連線裝置
+        [350] 如何透過IoT Edge透明網關聯機裝置
+      - 使用 Azure CLI 監視裝置連線能力
+        [360] 使用 Azure CLI 監視裝置連線能力
+    - 檢視和分析裝置數據
+      - 建置分析查詢
+        [363] 如何使用資料總管來分析裝置資料
+      - 建立儀表板
+        [369] 建立和管理儀表板
+      - 使用位置數據
+        [377] 在 Azure IoT Central 解決方案中使用位置數據
+    - 管理您的裝置
+      - 個別管理裝置
+        [381] 在 Azure IoT Central 應用程式中管理個別裝置
+      - 使用作業大量管理裝置
+        [388] 在 Azure IoT Central 應用程式中大量管理裝置
+      - 設定和使用檔案上傳
+        [397] 從裝置將檔案上傳至雲端
+      - 將裝置遷移至 IoT 中樞
+        [401] 將裝置遷移至 Azure IoT 中樞
+    - 擴充您的應用程式
+      - 設定規則
+        [409] 設定規則
+      - 使用規則和工作流程與其他服務整合
+        [417] 使用工作流程將 Azure IoT Central 應用程式與其他雲端服務整合
+      - 將數據匯出至雲端目的地
+        - 匯出至 Blob 儲存體
+          [424] 將 IoT 數據匯出至 Blob 儲存體
+        - 匯出至 服務匯流排
+          [437] 將 IoT 資料匯出至 服務匯流排
+        - 匯出至事件中樞
+          [447] 將 IoT 數據匯出至事件中樞
+        - 匯出至 Azure 數據總管
+          [456] 將IoT數據匯出至 Azure 資料總管
+        - 導出至 Webhook
+          [467] 將 IoT 數據導出至 Webhook
+        - 在內部轉換數據以進行匯出
+          [476] 轉換 IoT Central 應用程式內的資料以進行匯出
+      - 在輸入時於內部轉換數據
+        [495] 在輸入過程中將遙測資料對應至 IoTCentral
+      - 在外部轉換數據
+        [501] 在 IoT Central 外部轉換數據
+      - 使用裝置網橋 連線 其他雲端
+        [522] 使用 IoT Central 裝置橋接器將其他 IoT雲端連線到 IoT Central
+    - 使用 REST API
+      - 驗證和授權 REST API 呼叫
+        [532] 如何驗證和授權 IoT Central REST API 呼叫
+      - 查詢裝置
+        [537] 如何使用 IoT Central REST API 來查詢裝置
+      - 管理使用者和角色
+        [546] 如何使用 IoT Central REST API 來管理使用者和角色
+      - 管理組織
+        [552] 如何使用 IoT Central REST API 來管理組織
+      - 資料匯出
+        [562] 如何使用 IoT Central REST API 管理資料匯出
+      - 管理裝置範本
+        [573] 如何使用 IoT Central REST API 來管理裝置範本
+      - 管理部署指令清單
+        [601] 如何使用 IoT Central REST API 來管理部署資訊清單
+      - 管理裝置
+        [613] 如何使用 IoT Central REST API 來管理裝置
+      - 控制裝置
+        [636] 如何使用 IoT Central REST API 來控制裝置
+      - 管理工作
+        [650] 如何使用 IoT Central REST API 來建立和管理作業
+      - 管理應用程式
+        [663] 使用 REST API 來建立和管理 IoT Central應用程式
+      - File upload
+        [666] 如何使用 IoT Central REST API 上傳檔案
+    - 保護及管理您的應用程式
+      - 管理您的個人喜好設定
+        [675] 管理您的個人應用程式喜好設定
+      - 變更應用程式設定
+        [677] 
+      - 管理使用者和角色
+        [679] 管理 IoT Central 應用程式中的使用者和角色
+      - 使用稽核記錄
+        [693] 使用稽核記錄來追蹤IoT Central 應用程式中的活動
+      - 管理組織
+        [698] 管理 IoT Central 組織 (部分機器翻譯)
+      - 自訂應用程式 UI
+        [706] 自訂 Azure IoT Central UI
+      - 與 DevOps 整合
+        [713] 整合 IoT Central 與 Azure Pipelines 以進行持續整合和持續傳遞
+      - 管理和監視應用程式
+        [724] 管理及監視IoT Central 應用程式
+      - 從 CSP 入口網站管理
+        [728] 從 CSP 入口網站建立和管理 Azure IoTCentral 應用程式
+      - 建立裝置的私人端點
+        [733] 建立和設定 IoT Central 的私人端點
+      - 匯出至安全的 VNET
+        [741] 將資料匯出至 Azure 虛擬網路上的安全目的地
+    - 疑難排解
+      [745] Azure IoT Central 中的疑難解答
+  - 參考
+    - Azure CLI
+      [754] IoT
+    - IoT Central API 參考
+      [755] Azure IoT Central REST API 參考
+  - 資源
+    - 部落格
+    - 程式碼範例
+    - 引導式學習路徑
+    - 支援和協助選項
+      [757] Azure IoT 支援和協助選項有哪些？
+    - 影片資源
+    - IoT 詞彙
+      [759] IoT 詞彙詞彙
+    - 產業連線合作夥伴
+      - CloudRAIL
+      - 點火
+    - Azure IoT 服務
+      - IoT 中樞
+        [788] Azure IoT 中樞文件
+      - IoT 中樞裝置佈建服務
+        [790] Azure IoT 中樞裝置佈建服務 (DPS) 文件
+      - IoT Edge
+        [792] Azure IoT Edge 文件
+      - Azure 地圖服務
+        [794] Azure 地圖服務文件
+      - 時間序列深入解析
+        [800] Azure Time Series Insights 文件
+    - Azure IoT SDK
+      - IoT 服務 SDK
+        [803] 
+      - IoT 裝置 SDK
+        [805] Azure IoT 中樞 SDK
+    - 客戶數據落地
+      [808] Azure IoT Central 客戶資料落地
+    - 客戶數據要求
+      [809] Azure IoT Central 客戶資料要求功能
+    - 支援的瀏覽器
+      [811] Azure IoT Central 支援的瀏覽器

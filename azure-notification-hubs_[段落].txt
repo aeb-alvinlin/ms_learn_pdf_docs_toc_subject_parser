@@ -1,0 +1,178 @@
+- ---< azure-notification-hubs.pdf >---
+  - 通知中樞文件
+    [1] Azure 通知中樞文件
+  - 概觀
+    - 關於通知中樞
+      [3] 什麼是 Azure 通知中樞？
+    - 與 App Service Mobile Apps 整合
+      [7] 與 App Service Mobile Apps 整合
+  - 快速入門
+    - 建立通知中樞 - Azure 入口網站
+      [8] 快速入門：在 Azure 入口網站 中建立Azure 通知中樞
+    - 建立通知中樞 - Azure CLI
+      [13] 使用 Azure CLI 建立 Azure 通知中樞
+    - 建立通知中樞 - Bicep
+      [19] 快速入門：使用 Bicep 來建立通知中樞
+    - 建立通知中樞 - 範本
+      [22] 快速入門：使用 Resource Manager 範本建立通知中樞
+    - 建立通知中樞 - Terraform
+      [26] 快速入門：使用 Terraform 建立 Azure 通知中樞
+    - 設定通知中樞
+      [32] 快速入門：設定通知中樞中的推播通知
+  - 教學課程
+    - Android
+      - Firebase 雲端傳訊
+        - 將推播通知傳送至所有註冊
+          [38] 教學課程：使用 Firebase SDK 1.0.0-preview1 版將推播通知傳送至 Android裝置
+        - 將推播通知傳送至特定裝置
+          [55] 教學課程：使用通知中樞和GoogleFirebase雲端通訊將通知傳送至特定裝置
+        - 將推播通知傳送給特定使用者
+          [66] 教學課程：使用 Azure 通知中樞將推播通知傳送至特定 Android 應用程式
+        - 使用 Firebase SDK 0.6 版傳送推播通知
+          [91] 教學課程：使用 Firebase SDK 0.6 版將推播通知傳送至 Android 裝置
+        - 將推播通知傳送至 Xamarin Android 應用程式
+          [119] 教學課程：使用通知中樞將推播通知傳送至 Xamarin.Android 應用程式
+    - iOS
+      - iOS 13+ 的通知中樞更新
+        [136] 適用於 iOS 13 的 Azure 通知中樞更新
+      - 設定 iOS 應用程式以使用 Azure 通知中樞
+        [138] 教學課程：設定 iOS 應用程式以使用Azure 通知中樞
+      - 從 Azure 通知中樞接收推播通知的初始設定
+        [155] 教學課程：從 Azure 通知中樞接收推播通知的初始設定
+      - 將推播通知傳送至特定裝置
+        [166] 教學課程：使用 Azure 通知中樞將推播通知傳送至特定 iOS 裝置
+      - 將推播通知傳送給特定使用者
+        [179] 教學課程：使用 Azure 通知中樞將推播通知傳送給特定使用者
+      - 將推播通知傳送至 Xamarin iOS 應用程式
+        [206] 教學課程：使用 Azure 通知中樞將推播通知傳送至 Xamarin.iOS 應用程式
+      - 將當地語系化推播通知傳送至 iOS 裝置
+        [226] 教學課程：使用 Azure 通知中樞將當地語系化的推播通知傳送至 iOS
+    - Windows
+      - 將推播通知傳送至 通用 Windows 平台 應用程式
+        [236] 教學課程：使用 Azure 通知中樞將通知傳送至 通用 Windows 平台 應用程式
+      - 將推播通知傳送至特定裝置
+        [249] 教學課程：將通知傳送至執行通用平台應用程式的特定 Windows 裝置
+      - 將推播當地語系化通知傳送至應用程式
+        [259] 教學課程：使用 Azure 通知中樞將當地語系化的推播通知傳送至 Windows 應用程式
+      - 將推播通知傳送給特定使用者
+        [269] 教學課程：使用 Azure 通知中樞將通知傳送給特定使用者
+      - 傳送推播位置型通知
+        [291] 教學課程：使用通知中樞和 Bing 空間資料傳送以位置為基礎的推播通知
+  - 範例
+    - 程式碼範例
+      [311] Azure 通知中樞範例
+    - PowerShell
+      [312] 適用於 Microsoft Azure 通知中樞的Azure PowerShell 範例
+    - UWP React Native 範例概觀
+      [313] 將通知傳送至 Android 和 iOS 應用程式
+  - 概念
+    - 可用性區域和災害復原
+      [329] Azure 通知中樞的可靠性
+    - 歐盟資料邊界
+      [334] 歐盟資料界限
+    - 待用資料加密
+      [335] 待用資料的 Azure 通知中樞加密
+    - 傳輸層安全性 (TLS)
+      [336] 傳輸層安全性 (TLS)
+    - 企業推送架構指引
+      [337] 企業推播架構指引
+    - 裝置註冊
+      [347] 註冊管理
+      - 註冊的標籤
+        [356] 路由與標記運算式
+      - 範本註冊
+        [360] 通知中樞範本
+    - 安全性模型
+      [366] 通知中樞安全性
+  - 操作指南
+    - FCM 移轉
+      - Firebase v1 移轉指南
+        [369] Azure 通知中樞和 Google Firebase 雲端通訊移轉
+      - 使用 REST API 和 Azure 入口網站 進行 FCM 移轉
+        [372] 使用 REST API 和 Azure 入口網站 進行Google Firebase 雲端傳訊移轉
+      - 使用 Azure SDK 進行 FCM 移轉
+        [380] 使用 Azure SDK 進行 Google Firebase 雲端通訊移轉
+    - 變更定價層
+      [386] 變更 Azure 通知中樞命名空間的定價層
+    - 傳送跨平台通知
+      [391] 使用 Azure 通知中樞傳送跨平台通知
+    - 使用私人連結
+      [394] 使用 Private Link （預覽）
+    - 將豐富內容推送至裝置
+      [405] Azure 通知中心豐富內容推播
+    - 傳送瀏覽器推播通知
+      [417] 使用 Azure 通知中樞的 Web 推播通知
+    - 傳送排定通知
+      [425] 作法：傳送排定通知
+    - 使用 Azure PowerShell 部署和管理通知中樞
+      [426] 使用 PowerShell 來部署和管理通知中樞
+    - 傳送安全通知給使用者
+      [430] 從 Azure 通知中樞傳送安全推播通知
+    - 大量匯出和匯入註冊
+      [439] 大量匯出及匯入 Azure 通知中樞註冊
+    - 在區域之間移動資源
+      [446] 在 Azure 區域之間移動資源
+    - 使用 SDK 建立通知中樞
+      - 建立通知中樞 - .NET
+        [450] Azure Notification Hubs libraries for.NET
+      - 建立通知中樞 - Node.js
+        [452] 使用 Azure 通知中樞和 Node.js 傳送推播通知
+      - 建立通知中樞 - Java
+        [458] 如何從 Java 使用通知中樞
+      - 建立通知中樞 - PHP
+        [467] 如何從 PHP 使用通知中樞
+      - 建立通知中樞 - Python
+        [474] 如何透過 Python 使用通知中樞
+    - 設定平臺通知服務設定
+      - 設定 Apple Push Notification Service 設定
+        [485] 在 Azure 入口網站中，組態通知中樞的Apple Push Notification Service 設定
+      - 設定Google Firebase雲端通訊設定
+        [487] 在 Azure 入口網站 中設定通知中樞的Google Firebase 設定
+      - 設定 Windows 推播通知服務
+        [489] 在 Azure 入口網站設定 Windows 推播通知服務設定
+      - 設定 Microsoft 推播通知服務
+        [491] 在 Azure 入口網站設定 Microsoft 推播通知服務 (MPNS) 設定
+      - 設定百度雲端推播
+        [493] 已淘汰：在 Azure 入口網站中設定通知中樞的百度網盤推播設定
+    - 向應用程式後端註冊
+      [495] 使用 ASP.NET 來註冊目前使用者以取得推
+播通知
+    - 搭配 Apple 裝置使用令牌型驗證
+      [502] APNS 的令牌型 （HTTP/2） 驗證
+    - 針對已卸除的通知進行疑難解答
+      [506] 診斷 Azure 通知中樞中已卸除的通知
+    - 使用百度雲端推播的推播通知
+      [520] 使用百度開始使用通知中樞
+    - 透過通知中樞使用APNS VOIP
+      [539] 透過通知中樞使用 APNS VOIP (未正式支援)
+    - 監視器
+      [541] 監視 Azure 通知中樞
+    - 啟用診斷記錄
+      [548] 啟用通知中樞的診斷記錄
+  - 參考
+    - .NET
+      [552] Microsoft.Azure.NotificationHubsNamespace
+    - Azure CLI
+      [557] az notification-hub
+    - PowerShell
+      [577] Az.NotificationHubs
+    - REST
+      [579] Azure 通知中樞 REST API
+    - Resource Manager 範本
+      [580] Microsoft.NotificationHubs 資源類型
+    - 監視資料參考
+      [582] Azure 通知中樞監視數據參考
+  - 資源
+    - 常見問題集
+      [595] 一般
+    - Google GCM 至 FCM 移轉
+      [602] Azure 通知中樞和 Google Firebase 雲端通訊移轉
+    - SDK
+      [605] Azure 通知中樞 SDK
+    - Azure 藍圖
+    - 定價
+    - Microsoft 問與答頁面
+    - Stack Overflow
+    - 要求功能
+    - 區域可用性
+    - 支援選項

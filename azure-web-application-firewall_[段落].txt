@@ -1,0 +1,207 @@
+- ---< azure-web-application-firewall.pdf >---
+  - Azure Web 應用程式防火牆 檔
+    [1] Web 應用程式防火牆文件
+  - 概觀
+    - 什麼是 Azure Web 應用程式防火牆？
+      [4] 什麼是 Azure Web 應用程式防火牆？
+    - 應用程式閘道
+      - 應用程式閘道上的 Web 應用程式防火牆
+        [6] 什麼是 Azure 應用程式閘道上的 Web 應用程式防火牆？
+      - 最新功能
+        [29] 
+    - Front Door
+      - Azure Front Door 上的 Web 應用程式防火牆
+        [30] Azure Front Door 上的 Azure Web 應用程式防火牆
+    - 內容傳遞網路
+      - Azure CDN 上的 Web 應用程式防火牆
+        [36] 來自 Microsoft 的 Azure 內容傳遞網路 上的 Azure Web 應用程式防火牆
+  - 快速入門
+    - 應用程式閘道
+      - 部署 WAF v2 - Bicep
+        [41] 快速入門：使用 Bicep 在應用程式閘道上建立 Azure WAF v2
+      - 部署 WAF v2 - ARM 範本
+        [51] 快速入門：使用ARM範本建立 AzureWeb 應用程式防火牆 v2
+  - 教學課程
+    - 應用程式閘道
+      - 啟用 Web 應用程式防火牆
+        [63] 教學課程：使用 Azure 入口網站建立包含Web 應用程式防火牆的應用程式閘道
+    - Front Door
+      - 設定 WAF 原則 - 入口網站
+        [74] 教學課程：使用 Azure 入口網站在 AzureFront Door 上建立 WAF 原則
+  - 概念
+    - 應用程式閘道
+      - 受控規則
+        [81] Web 應用程式防火牆 DRS 和 CRS 規則群組和規則
+      - 自定義規則概觀
+        [100] 在 Azure 應用程式閘道上自訂 Web 應用程式防火牆 v2 的規則
+      - 地區比對自訂規則
+        [106] 地區比對自訂規則
+      - 排除清單
+        [117] 
+      - 要求大小限制
+        [122] Web 應用程式防火牆 要求和檔案上傳大小限制
+      - WAF 原則概觀
+        [127] Azure Web 應用程式防火牆 (WAF) 原則概觀
+      - Bot 保護概觀
+        [129] Azure 應用程式閘道 Bot 保護概觀上的Azure Web 應用程式防火牆
+      - WAF 引擎
+        [131] Azure 應用程式閘道上的 WAF 引擎
+      - 敏感數據保護
+        [133] 什麼是 Azure Web 應用程式防火牆 敏感數據保護？
+      - 速率限制
+        [135] 應用程式閘道 上 Web 應用程式防火牆 的速率限制為何？
+      - 最佳作法
+        [137] Azure 應用程式閘道上的 Azure Web 應用程式防火牆 (WAF) 最佳做法
+      - 常見問題集
+        [140] 什麼是 Azure WAF？
+WAF SKU 支援哪些功能？
+如何監視 WAF？
+偵測模式是否會封鎖流量？
+我可以自訂 WAF 規則嗎？
+WAF 目前可使用哪些規則？
+    - Front Door
+      - 調整
+        [143] 調整 Azure Front Door 的 Azure Web 應用程式防火牆
+      - 受控規則
+        [157] Web 應用程式防火牆 DRS 規則群組和群組
+      - 自訂規則
+        [175] Azure Front Door 上 Azure Web 應用程式防火牆 的自定義規則
+      - 排除清單
+        [181] 使用 Azure Front Door 排除清單 Web 應用程式防火牆
+      - 原則設定
+        [185] Azure Front Door 中Web 應用程式防火牆的原則設定
+      - 敏感數據保護
+        [187] 什麼是 Azure Front Door 敏感數據保護上的 Azure Web 應用程式防火牆 （預覽版） ？
+      - 速率限制
+        [189] Azure Front Door 的速率限制為何？
+      - 地區篩選
+        [192] 什麼是 Azure Front Door 的網域地區篩選？
+      - 最佳作法
+        [203] Azure Front Door 中 Azure Web 應用程式防火牆的最佳做法
+      - 常見問題集
+        [207] 什麼是 Azure WAF？
+什麼是 Azure Front Door 上的 WAF？
+Azure WAF 是否支援 HTTPS？
+Azure WAF 是否支援 IPv6？
+受控規則集的更新情況為何？自己行
+    - 安全性
+      - 安全性基準
+        [211] 適用于 Azure Web 應用程式防火牆 的Azure 安全性基準
+      - 應用程式 DDoS 保護
+        [219] 應用 （第 7 層） DDoS 保護
+    - WAF 和 Azure 原則
+      [223] Azure Web 應用程式防火牆和 Azure 原則
+  - 操作指南
+    - 應用程式閘道
+      - 建立 WAF 原則
+        [228] 建立 應用程式閘道 的 Web 應用程式防火牆 原則
+      - 設定 Web Application Firewall
+        - Azure PowerShell
+          [235] 使用 Azure PowerShell 啟用 Web 應用程式防火牆
+        - Azure CLI
+          [244] 使用 Azure CLI 啟用 Web 應用程式防火牆
+      - 升級 WAF
+        - 升級至 WAF 原則
+          [250] 升級至 Azure 應用程式閘道 WAF 原則
+        - 使用 PowerShell 升級
+          [253] 使用 Azure PowerShell 升級 Web 應用程式防火牆 原則
+      - 個別網站原則
+        [259] 使用 Azure PowerShell 設定個別網站的WAF 原則
+      - 自定義 WAF 規則
+        - Azure 入口網站
+          [271] 使用 Azure 入口網站自訂 Web 應用程式防火牆規則
+        - Azure PowerShell
+          [274] 使用 PowerShell 自訂 Web 應用程式防火牆規則
+        - Azure CLI
+          [277] 使用 Azure CLI 自訂 Web 應用程式防火牆規則
+      - 設定 WAF v2 自定義規則 - PowerShell
+        [281] 使用 Azure PowerShell 以自訂規則在應用程式閘道上設定 Web 應用程式防火牆v2
+      - 自訂規則範例
+        [285] 建立和使用應用程式閘道上的 Web 應用程式防火牆 v2 自訂規則
+      - Bot 保護
+        [298] 在 Azure 應用程式閘道上的 Web 應用程式防火牆設定 Bot 保護
+      - 將原則與現有的 應用程式閘道 產生關聯
+        [300] 將 WAF 原則與現有應用程式閘道建立關聯
+      - 資源記錄
+        [302] Azure Web 應用程式防火牆的資源記錄
+      - 監視與記錄
+        [313] Azure Web 應用程式防火牆監視與記錄
+      - 遮罩敏感數據
+        [317] 如何在 Azure Web 應用程式防火牆 上遮罩敏感數據
+      - 建立速率限制規則
+        [319] 為 WAF v2 建立 應用程式閘道 速率限制自定義規則
+      - 針對 WAF 進行疑難解答
+        [322] 針對 Azure 應用程式閘道的 Web 應用程式防火牆 （WAF） 進行疑難解答
+    - Front Door
+      - 設定 WAF 原則 - PowerShell
+        [333] 使用 Azure PowerShell 設定 WAF 原則
+      - 設定 Bot 保護
+        [337] 設定 Web 應用程式防火牆 的 Bot 保護
+      - 設定排除清單
+        [339] 設定 Web 應用程式防火牆排除清單
+      - 設定自定義回應碼
+        [342] 設定 Azure Web 應用程式防火牆的自訂回應
+      - 設定IP限制
+        [345] 使用適用于 Azure Front Door 的 WAF 設定 IP 限制規則
+      - 遮罩敏感數據
+        [355] 如何在 Azure Front Door 上遮罩 AzureWeb 應用程式防火牆 上的敏感數據（預覽）
+      - 設定速率限制
+        [358] 設定Web 應用程式防火牆速率限制規則
+      - 設定異地篩選 WAF 原則
+        [367] 設定 Azure Front Door 的異地篩選 WAF原則
+      - 監視與記錄
+        [371] Azure Web 應用程式防火牆監視和記錄
+    - 使用防火牆管理員設定原則
+      [376] 使用 Azure 防火牆管理員設定 WAF 原則
+    - 使用 Web 應用程式防火牆 保護APIM中裝載的 API
+      [378] 使用 Azure Web 應用程式防火牆 保護裝載在 API 管理 上的 API
+    - 使用 Azure Web 應用程式防火牆 保護 Azure OpenAI
+      [385] 在 Azure Front Door 上使用 Azure Web應用程式防火牆保護 Azure OpenAI
+    - 搭配 Web 應用程式防火牆 使用 Microsoft Sentinel
+      [392] 搭配 Azure Web 應用程式防火牆使用Microsoft Sentinel
+    - 使用 Microsoft Sentinel 偵測新的威脅
+      [398] 使用 Microsoft Sentinel 搭配 Azure Web應用程式防火牆 偵測新的威脅
+    - 自動化偵測和回應
+      [403] 使用 Microsoft Sentinel 自動偵測和回應Azure WAF
+    - 使用地理對應自定義規則來增強網路安全性
+      [409] 使用 Azure WAF 地理對應自定義規則來增強網路安全性
+    - 疑難排解
+      - 應用程式閘道
+        - 針對 WAF 進行疑難解答
+          [425] 針對 Azure 應用程式閘道的 Web 應用程式防火牆 （WAF） 進行疑難解答
+        - 記錄分析
+          [436] 使用 Log Analytics 檢查應用程式閘道Web 應用程式防火牆 (WAF) 記錄
+  - 參考
+    - 受控規則
+      - Front Door
+        [439] Web 應用程式防火牆 DRS 規則群組和群組
+      - 應用程式閘道
+        [457] Web 應用程式防火牆 DRS 和 CRS 規則群組和規則
+    - Azure CLI
+      - Front Door
+        [476] az network front-door waf-policy
+      - 應用程式閘道
+        [494] az network application-gateway
+      - CDN
+    - Azure PowerShell
+      - Front Door
+        [545] Az.FrontDoor
+      - 應用程式閘道
+        [548] 
+      - CDN
+    - REST API
+      - Front Door
+        [580] Policies
+      - 應用程式閘道
+        [581] 應用程式閘道 REST API
+    - .NET
+    - Java
+    - Node.js
+    - Python
+  - 資源
+    - 作者範本
+      [582] 了解 ARM 範本的結構和語法 \(部分機器翻譯\)
+    - Azure 藍圖
+    - 社群範本
+    - 定價
+    - 區域可用性

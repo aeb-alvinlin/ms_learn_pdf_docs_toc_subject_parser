@@ -1,0 +1,447 @@
+- ---< azure-app-service.pdf >---
+  - App Service 文件
+    [1] App Service 文件
+  - 開始使用
+    - 開始使用
+      [3] 開始使用 Azure App Service
+    - 關於 App Service
+      [4] App Service 概觀
+    - 關於 App Service Environment
+      [7] App Service 環境 概觀
+    - 比較 Web 主機選項
+      [15] 
+  - 快速入門
+    - 部署 ASP.NET
+      [27] 快速入門：部署 ASP.NET Web 應用程式
+    - 部署 Node.js
+      [37] 在 Azure 中部署 Node.js Web 應用程式
+    - 部署 PHP
+      [44] 在 Azure App 服務 中建立 PHP Web 應用程式
+    - 部署 Java
+      [51] 快速入門：在 Azure App 服務 上建立Java 應用程式
+    - 部署 Python
+      [58] 快速入門：將 Python （Django 或Flask） Web 應用程式部署至 Azure App服務
+    - 部署 WordPress
+      [67] 建立 WordPress 網站
+    - 部署自訂容器
+      [75] 在 Azure 中執行自訂容器
+    - 使用 ARM 範本部署
+      [83] 快速入門：使用ARM範本建立AppService 應用程式
+  - 部署和設定
+    - 部署最佳做法
+      [90] 部署最佳做法
+    - REST API (教學課程)
+      [96] 教學課程：在 Azure App 服務 中使用CORS裝載 RESTful API
+    - 一般設定
+      [109] 設定 App Service 應用程式
+    - 使用應用程式組態的設定
+      [121] 使用 App Service 與 Azure Functions 的應用程式組態參考 (預覽)
+    - 設定專屬語言
+      - 設定 ASP.NET
+        [129] 設定 Azure App Service 的 ASP.NET 應用
+程式
+      - 設定 ASP.NET Core
+        [133] 針對 Azure App Service 設定 ASP.NET
+Core 應用程式
+      - 設定 Node.js
+        [141] 為 Azure App Service 設定 Node.js 應用程式
+      - 設定 PHP
+        [151] 為 Azure App Service 設定 PHP 應用程式
+      - 設定 Python
+        [159] 設定適用於 Azure App Service 的 LinuxPython 應用程式
+      - 設定 Java
+        [176] 針對 Azure App Service 設定 Java 應用程式
+    - 部署方法
+      - 使用 ZIP 或 WAR 檔案
+        [202] 
+      - 使用 FTP
+        [206] 使用 FTP/S 將您的應用程式部署至 AzureApp Service
+      - 連續部署
+        [211] 持續部署至 Azure App Service
+      - 使用本機 Git
+        [217] 本機 Git 部署至 Azure App Service
+      - 使用 Azure Pipelines
+        [223] 使用 Azure Pipelines 部署至 App Service
+      - 使用 GitHub Actions
+        - 使用 GitHub Actions 部署 (教學課程)
+          [233] 教學課程：使用 GitHub Actions 部署至App Service 並連線至資料庫
+        - 關於 GitHub Actions 部署
+          [239] 使用 GitHub Actions 部署至 App Service
+      - 從套件執行
+        [245] 在 Azure App Service 中直接從 ZIP 套件執行應用程式
+    - 適用於部署的驗證
+      [249] 依 Azure App Service 中部署方法的驗證類型
+    - 設定部署認證
+      [252] 設定 Azure App Service 的部署認證
+    - 建立預備環境
+      [255] 在 Azure App Service 中設定預備環境 \(部分機器翻譯\)
+    - 裝載 Azure 儲存體
+      [273] 將 Azure 儲存體掛接為 App Service 中的本機共用
+    - 自動化佈建
+      - 使用 Bicep
+        [278] 使用 Bicep 建立 App Service 應用程式
+      - 使用 Terraform
+        [282] 使用 Terraform 範本建立 App Service 應用程式
+      - ARM 範本參考
+        [286] Microsoft.Web 資源類型
+    - 應用程式設定參考
+      [336] 
+  - 記錄和監視
+    - 監視器
+      [350] 監視 Azure App 服務
+    - 監視資料參考
+      [358] Azure App 服務 監視數據參考
+    - Azure 監視器教學課程
+      [363] 教學課程：使用 Azure 監視器針對 AppService 應用程式進行疑難排解
+    - 監視選項
+      [376] Azure App Service 監視概觀
+    - 資料流診斷記錄
+      [378] 
+    - 在容器中開啟 Web 應用程式的 SSH 工作階段
+      [387] 在 Azure App Service 中開啟容器的 SSH工作階段
+    - 監視執行個體健全狀況
+      [391] 使用健康情況檢查來監視 App Service 執行個體
+    - 關於 App Service 診斷工具
+      [399] Azure App Service 診斷概觀
+    - 關於配額和警示
+      [411] 監視 Azure App Service 中的應用程式
+  - 網域和憑證
+    - 網域和憑證快速入門
+      [418] 教學課程: 使用自訂網域和受控憑證保護您的 Azure App Service 應用程式
+    - 自訂網域
+      - 對應您自己的自訂網域
+        [426] 將現有的自訂 DNS 名稱對應至 AzureApp Service
+      - 購買 App Service 網域
+        [435] 購買 App Service 網域，並使用此網域設定應用程式
+      - 使用流量管理員對應網域
+        [450] 在與流量管理員整合的 Azure AppService 中設定自訂網域名稱
+      - 移轉作用中的網域
+        [456] 將作用中的 DNS 名稱移轉至 Azure AppService
+    - TLS/SSL 憑證
+      - TLS 概觀
+        [465] Azure App Service TLS 概觀
+      - 使用 TLS/SSL 保護自訂網域
+        [467] 在 Azure App Service 中使用 TLS/SSL 繫結保護自訂 DNS 名稱
+      - 新增 TLS/SSL 憑證
+        [473] 新增和管理 Azure App Service 中的TLS/SSL 憑證
+      - 購買 App Service 憑證
+        [487] 建立和管理 Web 應用程式的 App Service憑證
+      - 在程式碼中使用 TLS/SSL 憑證
+        [497] 在 Azure App Service 的程式碼中使用TLS/SSL 憑證
+      - 設定 TLS 相互驗證
+        [504] 為 Azure App Service 設定 TLS 相互驗證
+  - 資料庫和服務連線
+    - 連線能力案例概觀
+      [517] 從 Azure App Service 安全地連線到Azure 服務和資料庫
+    - 連結至資料庫 (教學課程)
+      - ASP.NET Core 搭配 SQL DB
+        [521] 教學課程：將 ASP.NET Core 和 Azure
+SQL 資料庫 應用程式部署至 Azure App服務
+      - ASP.NET 搭配 SQL DB
+        [541] 教學課程：使用 Azure SQL Database 將ASP.NET 應用程式部署至 Azure
+      - PHP with MySQL
+        [563] 教學課程：將 PHP、MySQL 和 Redis 應用程式部署至 Azure App Service
+      - Node.js with MongoDB
+        [588] 將 Node.js + MongoDB Web 應用程式部署到 Azure
+      - Python 搭配 Postgres
+        [612] 在 Azure 中透過 PostgreSQL 部署Python (Django 或 Flask) Web 應用程式
+      - 使用 MySQL 的 Tomcat
+        [633] 教學課程：在Linux和 MySQL 上建置具有Azure App 服務的Tomcat Web 應用程式
+      - 使用 MongoDB 的 Spring Boot
+        [656] 教學課程：使用 Linux 上的 Azure AppService 和 Azure Cosmos DB 建置 JavaSpring Boot Web 應用程式
+      - 使用 Postgres 的 Quarkus
+        [668] 教學課程：使用 Linux 上的 App Service和 PostgreSQL 建置 Quarkus Web 應用程式
+    - 使用祕密進行連線
+      - 使用應用程式設定中的祕密
+        [692] 設定 App Service 應用程式
+      - 從 Key Vault 使用祕密
+        [704] 在 Azure App Service 和 Azure Functions中使用 Key Vault 參考作為應用程式設定
+      - 端對端教學課程
+        - 應用程式設定中的祕密
+          - 線上到 Logic Apps
+            [712] 教學課程：傳送電子郵件並從 AppService 叫用其他商務流程
+        - 金鑰保存庫中的秘密
+          - 連結至 Azure AI 服務
+            - 使用 .NET
+              [719] 教學課程：使用 Key Vault 從 .NET AppService 保護認知服務連線
+            - 使用 JavaScript
+              [725] 教學課程：使用 Key Vault 從 JavaScriptApp Service 保護認知服務連線
+            - 使用 PHP
+              [731] 教學課程：使用 Key Vault 從 PHP AppService 保護認知服務連線
+    - 使用應用程式身分識別進行連線
+      - 受控識別概觀
+        [737] 如何使用 App Service 和 AzureFunctions 的受控身分識別
+      - 使用受控識別連線到資料庫
+        [743] 教學課程：使用無祕密的受控識別從 AppService 連線至 Azure 資料庫
+      - 端對端教學課程
+        - 使用受控識別連線到 DB
+          - 將 .NET 應用程式連線至 SQL Database
+            [750] 教學課程：使用受控識別從 .NET AppService 連線到 SQL Database 而不使用秘密
+          - 將 Java Tomcat 連線至 Postgres
+            [760] 教學課程：使用受控識別，在無祕密的情況下，從 JAVA Tomcat App Service 連線至 PostgreSQL 資料庫
+        - 使用受控識別連線到 Microsoft Graph
+          - 使用 .NET
+            [766] 教學課程：從安全的 .NET 應用程式中，以應用程式身分存取 Microsoft Graph
+          - 使用 Node.js
+            [773] 教學課程：以應用程式身分，從安全的JavaScrip 應用程式中存取 MicrosoftGraph
+        - 使用受控識別連線至其他 Azure 服務
+          - 使用 .NET
+            [780] 教學課程：從 .NET Web 應用程式存取Azure 服務
+          - 使用 Node.js
+            [787] 教學課程：從 JavaScript Web 應用程式存取 Azure 服務
+    - 作為已驗證的使用者連線
+      - 作為使用者連線至 Microsoft Graph
+        - 使用 .NET
+          [793] 教學課程：從安全的 .NET 應用程式中，以使用者身分存取 Microsoft Graph
+        - 使用 Node.js
+          [802] 教學課程：以使用者身分，從安全的JavaScrip 應用程式中存取 MicrosoftGraph
+      - 作為使用者連線到 SQL Database
+        [809] 教學課程：連線 App Service 應用程式，代表登入的使用者 SQL 資料庫
+      - 作為使用者連線至另一個應用程式
+        [820] 教學課程：在 Azure App Service 中端對端驗證和授權使用者
+      - 作為使用者從應用程式到應用程式到另一個 Azure 服務
+        [836] 教學課程：從 App Service 經由後端 API針對 Microsoft Graph 的流程驗證
+  - 調整和效能
+    - 擴大伺服器容量
+      [847] 在 Azure App Service 中擴大應用程式
+    - 自動擴增
+      [851] Azure App Service 中的自動調整
+    - 具有規則的擴增
+      [857] 開始在 Azure 中自動調整規模
+    - 新增 CDN
+      [867] 教學課程：將 Azure 內容傳遞網路 新增至 Azure App 服務 Web 應用程式
+    - 關於高密度託管
+      [879] 對 Azure App Service 上的高密度託管使用個別應用程式調整
+    - 關於本機快取
+      [883] Azure App Service 本機快取概觀
+  - 驗證
+    - 啟用內建驗證快速入門
+      [889] 快速入門：將應用程式驗證新增至在Azure App 服務 上執行的 Web 應用程式
+    - 內建驗證概觀
+      [896] Azure App Service 和 Azure Functions 中的驗證和授權
+    - 身分識別案例
+      [904] 驗證案例和建議
+    - 身分識別基本概念
+      [907] 身分識別和存取管理 （IAM） 基本概念
+    - 設定識別提供者
+      - 使用 Microsoft Entra
+        [912] 設定 App Service 或 Azure Functions 應用程式以使用 Microsoft Entra 登入
+      - 使用 Facebook
+        [923] 將 App Service 或 Azure Functions 應用程式設定為使用 Facebook 登入
+      - 使用 GitHub
+        [925] 設定 App Service 或 Azure Functions 應用程式使用 GitHub 登入
+      - 使用 Google
+        [927] 將 App Service 或 Azure Functions 應用程式設定為使用 Google 登入
+      - 使用 Twitter
+        [929] 設定您的 App Service 或 AzureFunctions 應用程式使用 Twitter 登入
+      - 使用 OpenID Connect
+        [931] 使用 OpenID Connect 提供者設定 AppService 或 Azure Functions 應用程式以登入
+      - 使用 Apple 登入 (預覽)
+        [933] 將 App Service 或 Azure Functions 應用程式設定為以「使用 Apple 登入」提供者來登入 (預覽)
+    - 自訂登入/登出
+      [940] 自定義登入和註銷 Azure App 服務 驗證
+    - 存取使用者身分識別
+      [946] 在 Azure App Service 驗證中使用使用者身分識別
+    - 使用權杖
+      [950] 在 Azure App Service 驗證中使用 OAuth權杖
+    - 管理 API 版本
+      [954] 管理 App Service 驗證的 API 和執行階段版本
+    - 使用以檔案為基礎的設定
+      [961] Azure App 服務驗證中以檔案為基礎的組態
+  - 安全性和網路服務
+    - 安全性概觀
+      [966] Azure App Service 中的安全性
+    - 部署多區應用程式 (教學課程)
+      [970] 教學課程：在 Azure App Service 中建立高可用性的多區域應用程式
+    - 部署多層式架構應用程式 (教學課程)
+      [990] 教學課程: 在 Azure App Service 中建立安全的多層式架構 (N-Tier) 應用程式
+    - 隔離網路流量 (教學課程)
+      [1006] 教學課程：使用虛擬網路整合在 AzureApp Service 中隔離後端通訊
+    - 停用基本驗證
+      [1013] 在 App Service 部署中停用基本驗證
+    - 安全性
+      - 加密網站資料
+        [1019] 使用客戶自控金鑰進行待用加密
+      - 關於作業系統和執行階段修補
+        [1023] Azure App Service 中的 OS 和執行階段修補
+      - 關於名稱解析 (DNS)
+        [1027] App Service 中的名稱解析 (DNS)
+      - 關於子網域接管
+        [1030] 避免 Azure App Service 中的子網域接管
+      - 安全性基準參考
+        [1032] 適用於 App Service 的 Azure 安全性基準
+      - Azure 原則參考的安全性控制
+        [1050] 適用於 Azure App Service 的 Azure 原則法規合規性控制措施
+    - 網路
+      - 網路功能概觀
+        [1107] App Service 網路功能
+      - 輸入和輸出IP
+        [1120] Azure App Service 中的輸入和輸出 IP 位址
+      - 存取限制
+        - 存取限制概觀
+          [1123] Azure App Service 存取限制
+        - 來自 IP 的限制存取
+          [1129] 設定 Azure App Service 存取限制
+      - 虛擬網路整合
+        - VNet 整合概觀
+          [1145] 將您的應用程式與 Azure 虛擬網路整合
+        - 啟用虛擬網路整合
+          [1155] 在 Azure App Service 中啟用虛擬網路整合
+        - 設定網路路由
+          [1159] 管理 Azure App 服務虛擬網路整合路由
+        - 需要閘道設定整合
+          [1162] 設定需要閘道的虛擬網路整合
+      - 在私人端點後方部署應用程式
+        [1168] 使用 App Service 應用程式的私人端點
+      - 使用 Azure 防火牆控制輸出流量
+        [1174] 使用 Azure 防火牆控制輸出流量
+      - 與應用程式閘道整合
+        [1182] 應用程式閘道整合
+      - 與 NAT 閘道整合
+        [1187] Azure NAT 閘道整合
+      - 與流量管理員整合
+        [1192] 使用 Azure 流量管理員來控制 Azure AppService 流量
+      - 關於混合式連線
+        [1194] Azure App Service 混合式連線 (機器翻譯)
+      - 即時 Web 應用程式
+        [1207] 操作說明：使用 Azure Web PubSub 建置即時共同作業白板，並將其部署至 AzureApp Service
+    - Azure 原則內建參考
+      [1217] 
+  - 資源管理
+    - App Service 規劃概述
+      [1227] Azure App Service 方案概觀
+    - 管理 App Service 方案
+      [1232] 在 Azure 建立管理 App Service 方案
+    - 設定 PremiumV3 層
+      [1237] 設定 Azure App Service 的進階 V3 層
+    - 備份與還原應用程式
+      [1243] 在 Azure App Service 中備份並還原您的應用程式
+    - 複製應用程式
+      [1256] 使用 PowerShell 複製 Azure App ServiceApp
+    - 還原已刪除的應用程式
+      [1261] 使用 PowerShell 還原已刪除的 AppService 應用程式
+    - 在區域之間移動應用程式
+      [1266] 將 App Service 資源移至另一個區域
+    - 在訂用帳戶間移動應用程式
+      [1268] 將 Azure 資源移至新的資源群組或訂用帳戶 (機器翻譯)
+    - 關於成本管理
+      [1284] 規劃和管理 Azure App Service 的成本
+  - 自訂容器
+    - 設定自訂容器
+      [1292] 設定 Azure App Service 的自訂容器
+    - 對自訂容器進行持續整合與持續傳遞
+      [1303] 在 Azure App 服務 中使用自定義容器的持續部署
+    - 部署多容器應用程式
+      [1310] 使用 Docker Compose 設定建立多容器(預覽) 應用程式
+    - 關於適用容器的 GitHub Action
+      [1317] 使用 GitHub Actions 將自訂容器部署至App Service
+    - 端對端教學課程
+      - 設定 Sidecar 容器
+        [1323] 教學課程：在 Azure App 服務 中設定自定義容器的 Sidecar 容器 （預覽）
+      - 使用 Azure Container Registry 部署應用程式
+        [1333] 將自訂軟體移轉至使用自訂容器的 AzureApp Service
+      - 使用 GitHub Actions 進行部署
+        [1348] 教學課程：使用 GitHub Actions 部署至App Service 自訂容器並連線到資料庫
+      - 部署多容器 WordPress 應用程式
+        [1354] 教學課程：在用於容器的 Web 應用程式中建立多容器 (預覽) 應用程式
+  - 可靠性
+    - Azure App Service 的可靠性
+      [1372] Azure App Service 的可靠性
+    - 移轉至可用性區域
+      [1390] Azure App Service 的可靠性
+    - 將 App Service 應用程式移至另一個區域
+      [1408] 將 App Service 應用程式移至另一個區域
+  - 範例
+    - Azure CLI
+      [1413] Azure App Service 的 CLI 範例
+    - Azure PowerShell
+      [1415] Azure App Service 的 PowerShell 範例
+    - Resource Manager 範本
+      [1417] Azure Resource Manager 的 App Service範本
+    - Terraform
+      [1420] Azure App Service 的 Terraform 範例
+    - Bicep
+      [1421] App Service 的 Bicep 檔案
+  - 參考
+    - Azure CLI
+      [1422] az appservice
+    - Azure PowerShell
+      [1427] Az.Websites
+    - REST API
+      [1433] Azure App Service
+  - 其他資源
+    - App Service 部落格
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure 藍圖
+    - 定價
+    - 配額資訊
+      [1443] 
+    - 服務更新
+    - 常式維護
+      [1537] Azure App Service 的例行性 (計劃性) 維護
+    - 語言支援原則
+      [1541] App Service 的語言執行階段支援原則
+    - 作業系統功能
+      [1545] Azure App Service 中的作業系統功能
+    - Kudu 服務
+      [1551] Kudu 服務概觀
+    - 部署在 App Service 上使用 OpenAI 的應用程式
+      [1553] 在 Azure App 服務 上部署使用 OpenAI的應用程式
+    - gRPC 組態
+      [1561] 在 App Service 上設定 gRPC
+    - 建議的服務 （預覽）
+      [1564] Recommended services (preview)
+    - Azure Arc 上的 App Service (預覽)
+      - Azure Arc 主機概觀
+        [1566] Azure Arc 上的 App Service、Functions和 Logic Apps (預覽)
+      - 啟用 Azure Arc 上的 App Service
+        [1575] 設定已啟用 Azure Arc 的 Kubernetes 叢集以執行 App Service、Functions 和Logic Apps （預覽）
+      - 建立 Azure Arc 上的應用程式
+        [1584] 在 Azure Arc (預覽) 上建立 App Service應用程式
+    - WebJobs
+      - 建立 WebJobs
+        [1589] 在 Azure App Service 中使用 WebJobs執行背景工作
+      - 使用 VS 開發 WebJobs
+        [1600] 使用 Visual Studio 開發和部署 WebJob
+      - 開始使用 WebJobs SDK
+        [1613] 教學課程：開始使用 Azure WebJobsSDK 進行事件驅動背景處理
+      - 使用 WebJobs SDK
+        [1632] 如何使用 Azure WebJobs SDK 進行事件驅動幕後處理
+    - 最佳作法
+      [1659] Azure App Service 的最佳做法
+    - 範例
+    - 影片
+    - 移轉至 App Service
+      - 評估 .NET
+        [1663] 大規模評定 .NET Web 應用程式
+      - 探索 .NET
+        [1664] 大規模探索 .NET Web 應用程式
+      - 移轉 .NET
+        [1665] Azure App Service 的 .NET 移轉案例
+      - 移轉容器化的 .NET
+        [1669] ASP.NET 應用程式容器化和移轉至 Azure
+App Service
+      - 移轉 Java
+        [1683] 適用於 Azure App Service 的 JAVA 移轉資源
+      - 移轉 Tomcat
+        [1685] 將 Tomcat 應用程式遷移至 Azure AppService 上的 Tomcat
+      - 移轉 JBoss EAP
+        [1695] 將 JBoss EAP 應用程式遷移至 Azure AppService 上的 JBoss EAP
+      - 移轉 WebLogic
+        [1705] 將 WebLogic Server 應用程式遷移至Azure App 服務 上的 JBoss EAP
+      - 移轉 WebSphere
+        [1716] 將 WebSphere 應用程式遷移至 AzureApp 服務 上的 JBoss EAP
+      - 移轉 WordPress
+        [1724] 在 Linux 上的 App Service 上移轉WordPress
+    - Cookbooks
+      - 參考架構
+        [1729] 
+      - 部署指令碼
+        [1739] 使用現有的 Runbook 和模組
+    - IP 位址變更
+      - 輸入 IP 位址
+        [1748] 如何為輸入 IP 位址變更進行準備
+      - 輸出 IP 位址
+        [1750] 如何為輸出 IP 位址變更進行準備
+      - TLS/SSL 位址
+        [1752] 如何為 TLS/SSL IP 位址變更進行準備

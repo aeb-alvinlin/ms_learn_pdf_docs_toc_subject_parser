@@ -1,0 +1,141 @@
+- ---< entra-identity-managed-identities-azure-resources.pdf >---
+  - 適用於 Azure 資源的受控識別
+    [1] 適用于 Azure 資源的受控識別檔
+  - 概觀
+    - 關於 Azure 資源的受控識別
+      [3] 什麼是 Azure 資源受控識別？
+  - 快速入門
+    - 使用 VM 受控識別來存取 Azure Resource Manager
+      - Windows VM
+        [6] 使用 Windows VM 系統指派的受控識別來存取 Resource Manager
+      - Linux VM
+        [10] 使用 Linux VM 系統指派的受控識別來存取 Azure Resource Manager
+  - 教學課程
+    - Windows VM/VMSS
+      - 存取 Azure Data Lake Store
+        [16] 教學課程：使用 Windows VM 系統指派的受控識別來存取 Azure Data Lake Store
+      - 存取 Azure 儲存體
+        [23] 教學課程：使用 Windows VM 系統指派的受控識別來存取 Azure 儲存體
+      - 存取 Azure SQL
+        [30] 教學課程：使用 Windows VM 系統指派的受控識別來存取 Azure SQL
+      - 存取 Azure 金鑰保存庫
+        [36] 教學課程：使用 Windows VM 系統指派的受控識別來存取 Azure 金鑰保存庫
+      - 使用使用者指派的受控識別存取 Azure Resource Manager
+        [43] 教學課程：在 Windows VM 上使用使用者指派的受控識別來存取 Azure ResourceManager
+    - Linux VM/VMSS
+      - 存取 Azure Data Lake Store
+        [49] 教學課程：使用 Linux VM 系統指派的受控識別來存取 Azure Data Lake Store
+      - 存取 Azure 儲存體
+        [54] 教學課程：使用 Linux VM 系統指派的受控識別來存取 Azure 儲存體
+      - 使用存取金鑰存取 Azure 儲存體
+        [59] 教學課程：使用Linux VM系統指派的受控識別，透過存取密鑰存取 Azure 儲存體
+      - 使用 SAS 存取 Azure 儲存體
+        [66] 教學課程：使用Linux VM系統指派的身分識別，透過SAS認證存取 Azure 儲存體
+      - 存取 Azure 金鑰保存庫
+        [75] 教學課程：使用 Linux VM 系統指派的受控識別來存取 Azure Key Vault
+      - 存取 Azure Container Registry
+        [82] 使用 Azure 受控識別向 Azure 容器登錄進行驗證
+      - 使用使用者指派的受控識別存取 Azure Resource Manager
+        [90] 教學課程：在Linux VM上使用使用者指派的受控識別來存取 Azure ResourceManager
+    - 存取 Azure Cosmos DB
+      [96] 如何使用受控識別從 Azure 虛擬機連線到Azure Cosmos DB
+    - Azure 服務匯流排
+      [104] 使用 Microsoft Entra ID 來驗證受控識別，以存取 Azure 服務匯流排資源
+    - Azure App 服務和函式
+      [108] 如何使用 App Service 和 AzureFunctions 的受控身分識別
+    - Azure 事件中樞
+      [114] 使用 Microsoft Entra ID 驗證受控識別以存取事件中樞資源
+    - Azure 容器執行個體
+      [119] 如何搭配 Azure 容器執行個體使用受控識別
+    - 檢視受控識別活動
+      [130] 檢視受控識別的更新和登入活動
+  - 概念
+    - 開發人員簡介和指導方針
+      [136] 連線從您的應用程式到資源，而不需要處理認證
+    - 受控識別和 Azure VM
+      [151] Azure 資源受控識別如何與 Azure 虛擬機器搭配運作
+    - 最佳做法建議
+      [155] 受控識別最佳做法建議
+  - 操作指南
+    - 在 VM 上設定受控識別
+      - 入口網站
+        [162] 使用 Azure 入口網站在虛擬機器上設定Azure 資源的受控識別
+      - CLI
+        [168] 使用 Azure CLI 在 Azure VM 上設定Azure 資源的受控識別
+      - PowerShell
+        [175] 使用 PowerShell 在 Azure VM 上設定Azure 資源的受控識別
+      - Azure Resource Manager 範本
+        [181] 使用範本在 Azure VM 上設定 Azure 資源的受控識別
+      - REST
+        [188] 使用 REST API 呼叫在 Azure VM 上設定Azure 資源的受控識別
+      - Azure SDK
+        [213] 使用 Azure SDK 為 Azure 資源設定具有受控識別的 VM
+      - 使用 Azure 原則
+        [215] [預覽]使用 Azure 原則 指派受控識別
+    - 在虛擬機擴展集上設定受控識別
+      - 入口網站
+        [219] 使用 Azure 入口網站 在虛擬機擴展集上設定 Azure 資源的受控識別
+      - CLI
+        [225] 使用 Azure CLI 在虛擬機擴展集上設定Azure 資源的受控識別
+      - PowerShell
+        [232] 使用 PowerShell 在虛擬機擴展集上設定Azure 資源的受控識別
+      - Azure Resource Manager 範本
+        [237] 使用範本在 Azure 虛擬機器規模上設定Azure 資源的受控識別
+      - REST
+        [244] 使用 REST API 呼叫在虛擬機器擴展集上設定 Azure 資源的受控識別
+      - 使用 Azure 原則
+        [269] [預覽]使用 Azure 原則 指派受控識別
+    - 在 VM 上使用受控識別
+      - 取得存取權杖
+        [273] 如何在 Azure VM 上使用 Azure 資源的受控識別來取得存取權杖
+      - 使用受控識別登入 PowerShell 和 CLI
+        [287] 如何在 Azure VM 上使用 Azure 資源的受控識別進行登入
+      - 搭配 Azure SDK 使用
+        [290] 如何使用 Azure VM 上的 Azure 資源與Azure SDK 的受控識別
+    - 將受控識別存取權指派給另一個 Azure 資源
+      - 入口網站
+        [292] 使用 Azure 入口網站 指派資源的受控識別存取權
+      - CLI
+        [294] 使用 Azure CLI 將受控識別存取權指派給資源
+      - PowerShell
+        [296] 使用 PowerShell 將受控識別存取權指派給資源
+    - 管理使用者指派的受控識別
+      [298] 管理使用者指派的受控識別
+    - 檢視受控識別的相關資源
+      [303] 檢視使用者指派受控識別的相關聯 Azure資源 （預覽）
+    - 檢視受控識別服務主體
+      - 入口網站
+      - CLI
+        [311] 使用 Azure CLI 檢視受控識別的服務主體
+      - PowerShell
+        [313] 使用 PowerShell 檢視受控識別的服務主體
+    - 將受控識別指派給應用程式角色
+      - PowerShell
+        [315] 使用 PowerShell 將受控識別存取權指派給應用程式角色
+      - CLI
+        [319] 使用 Azure CLI 將受控識別存取權指派給應用程式角色
+    - 檢視受控識別活動
+      [323] 檢視受控識別的更新和登入活動
+    - 將受控識別重新放置到另一個區域
+      [329] 將 Azure 資源的受控識別重新放置到另一個區域
+  - 參考
+    - .NET
+      [331] Azure Identity client library for .NET -version 1.11.3
+    - Java
+      [347] Azure Identity client library for Java -version 1.12.1
+    - JavaScript
+      [362] 適用於 JavaScript 的 Azure 身分識別用戶端連結庫 - 4.2.0 版
+    - Python
+      [375] 適用于 Python 的 Azure 身分識別用戶端程式庫 - 1.14.1 版
+    - Go
+  - 資源
+    - 常見問題集
+      [387] Azure 資源的受控識別常見問題
+    - 已知問題
+      [393] Azure 資源適用受控身分識別的已知問題
+    - 支援 Azure 資源的受控識別的 Azure 服務
+      [395] 可使用受控識別來存取其他服務的 Azure服務
+    - 支援 Microsoft Entra 驗證的 Azure 服務
+      [399] 支援 Microsoft Entra 驗證的 Azure 服務
+    - Stack Overflow
+    - Microsoft Entra Developers 論壇

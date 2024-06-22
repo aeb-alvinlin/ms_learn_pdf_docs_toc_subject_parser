@@ -1,0 +1,90 @@
+- ---< azure-kinect-dk.pdf >---
+  - Azure Kinect DK 文件
+    [1] Azure Kinect DK 文件
+  - 概觀
+    - 關於 Azure Kinect DK
+      [3] 關於 Azure Kinect DK
+  - 快速入門
+    - 設定 Azure Kinect DK
+      [7] 快速入門：設定您的 Azure Kinect DK
+    - 將感應器串流記錄至檔案
+      [11] 快速入門：將 Azure Kinect 感應器串流錄製到檔案
+    - 建置第一個應用程式
+      [13] 快速入門: 建置第一個 Azure Kinect 應用程式
+    - 設定全身追蹤 SDK
+      [17] 快速入門：設定 Azure Kinect 主體追蹤
+    - 建立第一個全身追蹤應用程式
+      [21] 快速入門：建立 Azure Kinect 全身追蹤應用程式
+  - 概念
+    - 深度相機
+      [27] Azure Kinect DK 深度相機
+    - 座標系統
+      [34] Azure Kinect DK 座標系統
+    - 全身追蹤接點
+      [37] Azure Kinect 全身追蹤關節
+    - 全身追蹤索引對應
+      [42] Azure Kinect 主體追蹤索引對應
+  - 操作指南
+    - 使用感應器 SDK
+      - Azure Kinect 感應器 SDK
+        [44] 關於 Azure Kinect 感應器 SDK
+      - 尋找然後開啟裝置
+        [45] 尋找然後開啟 Azure Kinect 裝置
+      - 取出映像
+        [48] 擷取 Azure Kinect 影像資料
+      - 取出 IMU 範例
+        [51] 擷取 Azure Kinect IMU 範例
+      - 存取麥克風
+        [54] 存取 Azure Kinect DK 麥克風輸入資料
+      - 使用映像轉換
+        [55] 使用 Azure Kinect 感應器 SDK 影像轉換
+      - 使用校正功能
+        [60] 使用 Azure Kinect 校正函式
+      - 擷取裝置同步處理
+        [63] 擷取 Azure Kinect 裝置同步處理
+      - 錄製和播放
+        [65] 
+    - 使用全身追蹤 SDK
+      - 取得全身追蹤結果
+        [69] 取得全身追蹤結果
+      - 存取全身框架中的資料
+        [73] 存取全身框架中的資料
+    - 將 Azure Kinect 程式庫新增至 VS 專案
+      [75] 將 Azure Kinect 程式庫新增至 VisualStudio 專案
+    - 更新 Azure Kinect 韌體
+      [76] 更新 Azure Kinect DK 韌體
+    - 搭配外部同步處理單位使用錄製器
+      [78] 搭配外部同步處理裝置使用 Azure Kinect錄製器
+  - 工具
+    - Azure Kinect 檢視器
+      [81] Azure Kinect 檢視器
+    - Azure Kinect 錄製器
+      [88] Azure Kinect DK 錄製器
+    - Azure Kinect 韌體工具
+      [91] Azure Kinect DK 韌體工具
+  - 資源
+    - 下載感應器 SDK
+      [94] Azure Kinect Sensor SDK 下載
+    - 下載全身追蹤 SDK
+      [96] 下載 Azure Kinect 全身追蹤 SDK
+    - 系統需求
+      [99] Azure Kinect 感應器 SDK 系統需求
+    - 硬體規格
+      [101] Azure Kinect DK 硬體規格
+    - 同步處理多個裝置
+      [112] 同步多個 Azure Kinect DK 裝置
+    - 與適用於 Windows 的 Kinect 比較
+      [121] Azure Kinect 和 Kinect Windows v2 比較
+    - 重設 Azure Kinect DK
+      [124] 重設 Azure Kinect DK
+    - Azure Kinect 支援
+      [126] Azure Kinect 支援選項和資源
+    - Azure Kinect 疑難排解
+      [128] Azure Kinect 已知問題和疑難排解
+    - 擔保、擴充服務方案和條款與條件
+    - 安全資訊
+  - 參考
+    - 感應器 API
+    - 全身追蹤 API
+    - 記錄檔案格式
+      [134] 使用 Azure Kinect 感應器 SDK 來錄製檔案格式

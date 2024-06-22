@@ -1,0 +1,211 @@
+- ---< azure-firewall.pdf >---
+  - Azure 防火牆文件
+    [1] Azure 防火牆文件
+  - 概觀
+    - Azure 防火牆是什麼？
+      [4] Azure 防火牆是什麼？
+    - 精心架構的 Azure 防火牆 評論
+      [8] Azure Well-Architected Framework 檢閱- Azure 防火牆
+  - 快速入門
+    - 使用IP群組進行部署 - Bicep
+      [20] 快速入門：建立 Azure 防火牆和 IP 群組 -Bicep
+    - 使用IP群組部署 - Terraform
+      [31] 快速入門：建立 Azure 防火牆和 IP 群組 -Terraform
+    - 使用IP群組部署 - ARM 樣本
+      [43] 快速入門：建立 Azure 防火牆 和IP群組 -ARM 樣本
+    - 使用多個位址進行部署 - Bicep
+      [57] 快速入門：建立具有多個公用 IP 位址的Azure 防火牆 - Bicep
+    - 使用多個位址進行部署 - Terraform
+      [66] 快速入門：建立具有多個公用IP位址的Azure 防火牆 - Terraform
+    - 使用多個位址進行部署 - ARM 範本
+      [76] 快速入門：建立具有多個公用IP位址的Azure 防火牆 - ARM 範本
+    - 使用 可用性區域 部署 - Bicep
+      [87] 快速入門：使用可用性區域部署 Azure 防火牆 - Bicep
+    - 使用 可用性區域 部署 - Terraform
+      [97] 快速入門：使用 可用性區域 部署 Azure防火牆 - Terraform
+    - 使用 可用性區域 部署 - ARM 範本
+      [108] 快速入門：使用 可用性區域 部署 Azure防火牆 - ARM 範本
+  - 教學課程
+    - 部署和設定
+      [120] 教學課程：使用 Azure 入口網站部署和設定 Azure 防火牆和原則
+    - 在混合式網路中部署
+      [129] 教學課程：使用 Azure 入口網站在混合式網路中部署及設定 Azure 防火牆和原則
+    - 使用DNAT篩選輸入流量
+      [144] 教學課程：使用 Azure 入口網站以 Azure防火牆原則 DNAT 篩選輸入網際網路流量
+    - 使用 DDoS 保護部署防火牆
+      [151] 教學課程：部署具有 Azure DDoS 保護的防火牆
+    - 整合 NAT 閘道與 Azure 防火牆
+      [161] 教學課程：在中樞和輪輻網路中整合 NAT閘道與 Azure 防火牆以進行輸出連線
+  - 概念
+    - SKU
+      - 基本
+        - Azure 防火牆 基本功能
+          [174] Azure 防火牆 基本功能
+      - 標準
+        - Azure 防火牆標準功能
+          [178] Azure 防火牆標準功能
+      - Premium
+        - Azure 防火牆進階版功能
+          [185] Azure 防火牆進階版功能
+        - 入口網站中的 Azure 防火牆 進階版
+          [196] Azure 入口網站中的 Azure 防火牆進階版
+        - Azure 防火牆 進階版 憑證
+          [201] Azure 防火牆進階版憑證
+        - IDPS 簽章規則類別
+          [210] Azure 防火牆 IDPS 簽章規則類別
+      - 選擇 Azure 防火牆 SKU
+        [215] 選擇正確的 Azure 防火牆 版本以符合您的需求
+    - 預覽
+      - Azure 防火牆 預覽功能
+        [216] Azure 防火牆預覽功能
+    - 標籤
+      - FQDN 標籤
+        [218] FQDN 標籤概觀
+      - 服務標籤
+        [220] Azure 防火牆服務標籤
+    - 記錄和計量
+      - 結構化防火牆記錄
+        [222] Azure 結構化防火牆記錄
+      - 記錄和計量概觀
+        [226] Azure 防火牆記錄和計量概觀
+      - 計量與警示
+        [228] Azure 防火牆計量和警示
+      - 診斷記錄 （舊版）
+        [233] Azure 防火牆診斷記錄 (舊版)
+    - 原則
+      - 原則規則集
+        [237] Azure 防火牆原則規則集
+      - 原則分析
+        [240] Azure 防火牆原則分析
+    - Azure 防火牆 Web 類別
+      [242] Azure 防火牆 Web 類別
+    - 基礎結構 FQDN
+      [247] 基礎結構 FQDN
+    - 威脅情報
+      [248] 以 Azure 防火牆威脅情報為主的篩選
+    - 規則處理邏輯
+      [251] 設定 Azure 防火牆規則
+    - IP 群組
+      [258] Azure 防火牆中的 IP 群組
+    - 已強制進行通道作業
+      [263] Azure 防火牆強制通道
+    - 認證
+      [266] Azure 防火牆認證
+    - 中央管理
+      [267] Azure 防火牆中央管理
+    - 遠端工作支援
+      [269] Azure 防火牆遠端工作支援
+    - 網路規則中的 FQDN
+      [270] 在網路規則中使用 FQDN 篩選
+    - DNS Proxy 詳細數據
+      [271] Azure 防火牆 DNS Proxy 詳細資料
+    - 安全性基準
+      [273] 適用于Azure 防火牆的 Azure 安全性基準
+    - FTP 支援
+      [285] Azure 防火牆 FTP 支援
+    - 效能
+      [288] Azure 防火牆效能
+    - 長時間執行的 TCP 工作階段
+      [291] 長時間執行的 TCP 會話與 Azure 防火牆
+    - 輕鬆升級/降級
+      [293] Azure 防火牆輕鬆升級/降級
+    - 明確 Proxy
+      [295] Azure 防火牆明確 Proxy (預覽)
+    - 多中樞和輪輻
+      [298] 使用 Azure 防火牆 路由傳送多中樞和輪輻拓撲
+    - 使用 Microsoft Sentinel Azure 防火牆
+      [302] Azure 防火牆與 Microsoft Sentinel 概觀
+    - 效能的最佳做法
+      [306] Azure 防火牆效能的最佳做法
+  - 操作指南
+    - 部署
+      - 部署和設定 - 傳統
+        [309] 使用 Azure 入口網站部署及設定 Azure 防火牆
+      - 在混合式網路中部署 - 傳統
+        [317] 使用 Azure 入口網站在混合式網路中部署及設定 Azure 防火牆
+      - 使用 DNAT 篩選輸入流量 - 傳統
+        [332] 使用 Azure 入口網站 篩選具有 Azure 防火牆 DNAT 的輸入因特網流量
+      - 部署防火牆基本
+        [339] 使用 Azure 入口網站 部署和設定Azure 防火牆基本和原則
+      - 使用 Azure PowerShell 進行部署
+        [347] 使用 Azure PowerShell 部署和設定 Azure防火牆
+      - 使用 Azure PowerShell 部署原則
+        [355] 使用 Azure PowerShell 部署及設定 Azure防火牆原則
+      - 在混合式網路中部署 - PowerShell
+        [363] 使用 Azure PowerShell 在混合式網路中部署和設定 Azure 防火牆
+      - 使用 Azure CLI 部署
+        [376] 使用 Azure CLI 部署和設定 Azure 防火牆
+      - 使用多個公用IP進行部署
+        [384] 使用 Azure PowerShell 部署具有多個公用 IP 位址的 Azure 防火牆
+      - 使用 可用性區域進行部署
+        [387] 使用 Azure PowerShell 部署具有可用性區域的 Azure 防火牆
+      - 部署和設定防火牆 進階版
+        [389] 部署和設定 Azure 防火牆 進階版
+      - 部署 進階版 的企業 CA 憑證
+        [395] 了為 Azure 防火牆進階版部署和設定企業CA 憑證
+    - 保護
+      - 保護 Azure 虛擬桌面
+        [404] 使用 Azure 防火牆來保護 Azure 虛擬桌面部署
+      - 保護 Azure Kubernetes Service （AKS）
+        [407] 使用 Azure 防火牆來保護 AzureKubernetes Service (AKS) 叢集
+      - 保護 Office 365
+        [423] 使用 Azure 防火牆來保護 Office 365
+      - 使用 Microsoft Sentinel 偵測惡意代碼
+        [426] 使用適用於 Azure 防火牆的 MicrosoftSentinel 偵測惡意程式碼
+    - 遷移
+      - 遷移至 Azure 防火牆 進階版
+        [430] 移轉至 Azure 防火牆進階版
+      - 使用 Terraform 遷移至 進階版
+        [438] 使用 Terraform 將 Azure 防火牆Standard 遷移至 進階版
+    - 監視器
+      - 監視診斷記錄
+        [446] 監視 Azure 防火牆記錄 (舊版) 和計量
+      - 啟用前10個流程和流程追蹤記錄
+        [451] 在 Azure 防火牆 中啟用頂端流程和流程追蹤記錄
+      - Azure 防火牆 活頁簿
+        [458] 使用 Azure 防火牆活頁簿
+    - 調整輸出 SNAT 埠
+      [465] 使用 Azure NAT 閘道調整 SNAT 連接埠的規模
+    - 使用 PowerShell 新增或修改規則
+      [468] 使用 Azure PowerShell 新增或修改多個Azure 防火牆規則
+    - 備份 Azure 防火牆
+    - 透過SFTP 連線 Azure 儲存體
+      [470] 透過 Azure 防火牆靜態公用 IP 位址使用SFTP 存取儲存體帳戶
+    - 與負載平衡器整合
+      [477] 整合 Azure 防火牆與 Azure StandardLoad Balancer
+    - 使用 SQL FQDN 的應用程式規則
+      [481] 使用 SQL FQDN 設定 Azure 防火牆應用程式規則
+    - SNAT 私人範圍
+      [484] Azure 防火牆 SNAT 私人 IP 位址範圍
+    - 建立IP群組
+      [494] 建立 IP 群組
+    - DNS 設定
+      [496] Azure 防火牆 DNS 設定
+  - 參考
+    - Azure CLI
+      [503] az network firewall
+    - Azure PowerShell
+      [531] New-AzFirewall
+    - .NET
+    - Java
+    - Node.js
+    - Python
+    - REST
+      [553] Azure 防火牆 REST API
+    - Azure Resource Manager
+      [554] 什麼是 Azure Resource Manager？
+  - 資源
+    - 常見問題集
+      [560] Azure 防火牆是什麼？
+Azure 防火牆中支援哪些功能？
+Azure 防火牆的一般部署模型是什麼？
+如何安裝 Azure 防火牆？
+有哪些 Azure 防火牆概念？
+    - 已知問題與限制
+      [574] Azure 防火牆的已知問題和限制
+    - 撰寫範本
+      [580] 了解 ARM 範本的結構和語法 \(部分機器翻譯\)
+    - Azure 藍圖
+    - 社群範本
+    - 定價
+    - 區域可用性

@@ -1,0 +1,1224 @@
+- ---< azure-sentinel.pdf >---
+  - Microsoft Sentinel 文件
+    [1] Microsoft Sentinel 文件
+  - 概觀
+    - 什麼是 Microsoft Sentinel？
+      [4] 什麼是 Microsoft Sentinel？
+    - 最新功能
+      [13] Microsoft Sentinel 的新功能
+    - 最佳作法
+      [19] Microsoft Sentinel 的最佳做法
+    - Defender 入口網站中的體驗
+      [25] Microsoft Defender 入口網站中的Microsoft Sentinel （預覽）
+  - 計劃
+    - 部署規劃指南
+      [32] Microsoft Sentinel 的部署指南
+    - 必要條件
+      [36] 部署 Microsoft Sentinel 的必要條件
+    - 工作區架構
+      - 檢閱最佳作法
+        [38] Microsoft Sentinel 工作區架構最佳做法
+      - 設計工作區架構
+        [44] 設計 Microsoft Sentinel 工作區架構
+      - 檢閱範例工作區設計
+        [53] Microsoft Sentinel 範例工作區設計
+      - 準備多個工作區
+        [62] 準備 Microsoft Sentinel 中的多個工作區和租使用者
+    - 設定數據連接器的優先順序
+      [65] 排定 Microsoft Sentinel 的資料連線器優先順序
+    - 規劃角色和許可權
+      [67] Microsoft Sentinel 中的角色與權限
+    - 規劃成本
+      [73] 規劃成本並瞭解 Microsoft Sentinel 定價和計費
+    - 可用性與支援
+      - 地理可用性和數據落地
+        [82] Microsoft Sentinel 中的地理可用性和數據落地
+      - 支援不同雲端中的數據類型
+        [84] 支援跨不同雲端的 Microsoft Sentinel 資料類型
+      - 不同雲端的功能支援
+        [87] Azure 商業/其他雲端的 MicrosoftSentinel 功能支援
+      - 區域可用性
+      - 安全性基準
+        [95] Microsoft Sentinel 的 Azure 安全性基準
+  - 部署
+    - 啟用 Microsoft Sentinel 和初始功能和內容
+      [107] 啟用 Microsoft Sentinel 和初始功能和內容
+    - 上線至 Microsoft Sentinel
+      [108] 快速入門：在 Microsoft Sentinel 上架
+    - 設定內容
+      [114] 設定 Microsoft Sentinel 內容
+    - 設定多個工作區
+      [116] 在 Microsoft Sentinel 中設定多個工作區和租使用者
+    - 啟用使用者與實體行為分析 （UEBA）
+      [117] 在 Microsoft Sentinel 中啟用使用者和實體行為分析 （UEBA）
+    - 設定數據保留和封存
+      [121] 在 Microsoft Sentinel 中設定資料保留和封存
+    - 並存部署
+      [122] 將 Microsoft Sentinel 並排部署至現有的SIEM
+  - 遷移至 Microsoft Sentinel
+    - 規劃和設計移轉
+      - 規劃移轉
+        [126] 規劃移轉至 Microsoft Sentinel
+      - 使用 SIEM 移轉體驗
+        [131] 使用 SIEM 移轉體驗移轉至 MicrosoftSentinel
+      - 使用活頁簿追蹤移轉
+        [138] 使用活頁簿追蹤您的 Microsoft Sentinel移轉
+    - 從 ArcSight 移轉
+      - 移轉偵測規則
+        [149] 將 ArcSight 偵測規則移轉至 MicrosoftSentinel
+      - 移轉 SOAR 自動化
+        [161] 將 ArcSight SOAR 自動化移轉到Microsoft Sentinel
+      - 匯出歷程記錄數據
+        [165] 從 ArcSight 匯出歷程資料
+    - 從 Splunk 移轉
+      - 移轉偵測規則
+        [167] 
+      - 移轉 SOAR 自動化
+        [182] 將 Splunk SOAR 自動化移轉到 MicrosoftSentinel
+      - 匯出歷程記錄數據
+        [186] 從 Splunk 匯出歷程資料
+    - 從 QRadar 移轉
+      - 移轉偵測規則
+        [188] 將 QRadar 偵測規則移轉至 MicrosoftSentinel
+      - 移轉 SOAR 自動化
+        [202] 將 IBM Security QRadar SOAR 自動化移轉至 Microsoft Sentinel
+      - 匯出歷程記錄數據
+        [206] 從 QRadar 匯出歷程資料
+    - 內嵌歷程記錄數據
+      - 選取目標平臺
+        [210] 選取目標 Azure 平台來裝載匯出的歷程資料
+      - 選取數據擷取工具
+        [216] 選取資料擷取工具
+      - 內嵌資料
+        [220] 將歷程記錄資料內嵌至目標平臺
+    - 將儀錶板轉換成活頁簿
+      [223] 將儀表板轉換為 Azure 活頁簿
+    - 更新SOC程式
+      [226] 更新 SOC 程式
+  - 啟用解決方案和內容
+    - 概觀
+      [233] 關於 Microsoft Sentinel 內容和解決方案
+    - 教學課程 - 監視 零信任 安全性架構
+      [239] 使用 Microsoft Sentinel 監視 零信任（TIC 3.0） 安全性架構
+    - OOTB 內容集中化變更
+      [247] Microsoft Sentinel 現用內容集中處理變更
+    - 部署現用內容
+      [254] 探索及管理 Microsoft Sentinel 現用內容
+    - 刪除現用內容
+      [265] 刪除已安裝的 Microsoft Sentinel 現用內容和解決方案
+    - 合作夥伴整合最佳做法
+      [268] 針對合作夥伴與 Microsoft Sentinel 整合的最佳做法
+    - 解決方案目錄
+      - 所有解決方案
+        [275] Microsoft Sentinel 內容中樞目錄
+      - ASIM 型網域解決方案
+        [278] 適用於 Microsoft Sentinel 的進階安全性資訊模型 （ASIM） 型領域解決方案 （預覽）
+    - 從存放庫管理自定義內容
+      - 概觀
+        [281] 使用 Microsoft Sentinel 存放庫管理自訂內容 (公開預覽)
+      - 從存放庫部署自定義內容
+        [285] 從您的存放庫部署自訂內容 (公開預覽)
+      - 自訂存放庫部署
+        [292] 自訂存放庫部署 （公開預覽）
+    - 保護商務應用程式
+      - 整合 SAP 應用程式
+        - SAP 解決方案概觀
+          - 概觀
+            [299] 適用於 SAP® 應用程式的 MicrosoftSentinel 解決方案概觀
+          - 內容概觀
+            [303] 適用於 SAP® 應用程式的 MicrosoftSentinel 解決方案：安全性內容參考
+          - 跨多個工作區使用SAP解決方案
+            [320] 針對跨多個工作區的 SAP® 應用程式使用Microsoft Sentinel 解決方案
+          - 使用劇本回應 SAP 事件
+            [324] 適用于 SAP 的 Microsoft Sentinel 事件回應劇本
+          - SAP 的自動攻擊中斷
+            [327] SAP 的自動攻擊中斷 （預覽）
+          - 部署指南
+            - 概觀
+              [329] 部署適用於 SAP® 應用程式的 MicrosoftSentinel 解決方案
+            - 部署先決條件
+              [332] 為 SAP® 應用程式部署 MicrosoftSentinel 解決方案的必要條件
+            - 準備 SAP 環境
+              [338] 設定 SAP 授權並部署選擇性的 SAP 變更要求
+            - 設定稽核
+              [355] 啟用和設定 Microsoft Sentinel 的 SAP 稽核
+            - 部署資料連線器代理程式
+              [360] 部署和設定裝載SAP數據連接器代理程式的容器
+            - 部署 SAP 安全性內容
+              [378] 從內容中樞部署適用于 SAP 應用程式的®Microsoft Sentinel 解決方案
+            - 設定解決方案
+              [383] 設定 SAP® 應用程式的 MicrosoftSentinel 解決方案
+            - 更新連接器
+              [388] 更新 Microsoft Sentinel 的 SAP 數據連接器代理程式
+            - 停用連接器
+              [397] 
+          - 參考
+            - SAP 解決方案數據參考
+              [399] 適用於 SAP® 應用程式資料參考的Microsoft Sentinel 解決方案
+            - 受監視的 SAP 安全性參數
+              [435] 監視的 SAP 安全性參數，用於偵測可疑的組態變更
+            - SAP 稽核記錄活頁簿
+              [445] 適用於 SAP® 應用程式的 MicrosoftSentinel 解決方案 - SAP -Security Audit記錄和初始存取活頁簿
+            - SAP 稽核控件活頁簿
+              [453] 適用於 SAP® 應用程式的 MicrosoftSentinel 解決方案 - SAP 稽核控件活頁簿（預覽）
+            - Kickstart 腳本參考
+              [461] Kickstart 腳本參考
+            - 容器更新腳本參考
+              [471] 更新指令碼參考
+            - Systemconfig.json檔案參考
+              [474] Systemconfig.json 檔案參考
+            - Systemconfig.ini檔案參考
+              [482] Systemconfig.ini 檔案參考
+        - 選擇性部署步驟
+          - 設定 SAP 資料連接器以使用 SNC
+            [488] 使用 SNC 部署適用於 SAP 的 MicrosoftSentinel 資料連接器
+          - 收集 SAP HANA 稽核記錄
+            [496] 在 Microsoft Sentinel 中收集 SAP Hana稽核記錄
+          - 手動部署 SAP 連接器
+            [498] 專家組態選項、內部部署和 SAPControl記錄來源
+          - 設定SAP稽核記錄監視規則
+            [508] 設定 SAP 稽核記錄監視規則
+          - 選取 SAP 擷取設定檔
+            [511] 選取 SAP 擷取設定檔
+        - SAP BTP 解決方案
+          - 概觀
+            [516] 適用于 SAP® BTP 的 Microsoft Sentinel解決方案概觀
+          - 內容概觀
+            [518] 適用于 SAP® BTP 的 Microsoft Sentinel解決方案：安全性內容參考
+          - 部署 SAP BTP
+            [522] 部署適用於 SAP BTP 的 MicrosoftSentinel 解決方案
+      - 整合 Microsoft 商務應用程式
+        - Dynamics 365 Finance and Operations 解決方案
+          - 概觀
+            [527] Dynamics 365 Finance and Operations的 Microsoft Sentinel 解決方案概觀
+          - 內容概觀
+            [529] Dynamics 365 Finance and Operations的 Microsoft Sentinel 解決方案：安全性內容參考
+          - 部署解決方案
+            [531] 部署 Dynamics 365 Finance andOperations 的 Microsoft Sentinel 解決方案
+        - Microsoft Power Platform 解決方案
+          - 概觀
+            [537] Microsoft Sentinel solution forMicrosoft Power Platform overview
+          - 內容概觀
+            [541] Microsoft Sentinel solution forMicrosoft Power Platform: securitycontent reference
+          - 部署解決方案
+            [547] Deploy the Microsoft Sentinel solutionfor Microsoft Power Platform
+          - 疑難排解
+            [554] 針對 Microsoft Power Platform 的Microsoft Sentinel 解決方案進行疑難解答
+    - 整合適用於IoT的 Microsoft Defender
+      - 使用 Microsoft Sentinel 連線 適用於 IoT 數據的 Defender
+        [557] 教學課程：使用 Microsoft Sentinel 連線適用於 IoT 的 Microsoft Defender
+      - 使用 Microsoft Sentinel 調查適用於 IoT 的 Defender 事件
+        [562] 教學課程：調查和偵測 IoT 裝置的威脅
+    - 整合 Microsoft 365 Defender
+      [575] Microsoft Defender 全面偵測回應 與Microsoft Sentinel 整合
+    - 整合 適用於雲端的 Microsoft Defender
+      [579] 使用 Microsoft Defender 全面偵測回應整合內嵌 適用於雲端的 MicrosoftDefender 事件
+  - 收集資料
+    - 概觀
+      [582] Microsoft Sentinel 資料連接器
+    - 最佳作法
+      [587] 資料收集最佳做法
+    - 教學課程 - 將 syslog 數據轉送至工作區
+      [592] 教學課程：使用 Azure 監視器代理程式，使用 Microsoft Sentinel 將 Syslog 資料轉送到 Log Analytics 工作區
+    - 連線資料來源
+      [596] 使用數據連接器將數據源 連線 至Microsoft Sentinel
+    - 使用實體分類數據
+      [600] Microsoft Sentinel 中的實體
+    - 擷取時間數據轉換
+      [603] Microsoft Sentinel 中的自訂資料擷取和轉換
+    - Microsoft Sentinel 的 AMA 移轉
+      [608] Microsoft Sentinel 的 AMA 移轉
+    - 尋找數據連接器
+      [612] 尋找您的 Microsoft Sentinel 資料連線器
+    - 所有連接器
+      - [已淘汰]透過舊版代理程序進行 Akamai 安全性事件
+        [632] [已淘汰]透過適用于 Microsoft Sentinel的舊版代理程式連接器的 Akamai 安全性事件
+      - [已淘汰]阿路巴 ClearPass 透過舊版代理程式
+        [635] [已淘汰]阿路巴 ClearPass 透過適用于Microsoft Sentinel 的舊版代理程式連接器
+      - [已淘汰]Broadcom Symantec DLP 透過舊版代理程式
+        [638] [已淘汰]透過適用于 Microsoft Sentinel的舊版代理程式連接器，BroadcomSymantec DLP
+      - [已淘汰]Cisco Secure Email Gateway via Legacy Agent
+        [641] [已淘汰]Cisco Secure Email Gateway viaLegacy Agent connector for MicrosoftSentinel
+      - [已淘汰]透過舊版代理程序進行 Claroty
+        [644] [已淘汰]透過適用於 Microsoft Sentinel的舊版代理程式連接器 Claroty
+      - [已淘汰]FireEye 網路安全性 （NX） 透過舊版代理程式
+        [647] [已淘汰]FireEye 網路安全性 （NX） 透過適用于 Microsoft Sentinel 的舊版代理程式連接器
+      - [已淘汰]透過舊版代理程序強制點 CASB
+        [650] [已淘汰]透過 Microsoft Sentinel 的舊版代理程式連接器強制端點 CASB
+      - [已淘汰]透過舊版代理程序強制點 CSG
+        [653] [已淘汰]透過 Microsoft Sentinel 的舊版代理程式連接器強制端點 CSG
+      - [已淘汰]透過舊版代理程序強制點 NGFW
+        [657] [已淘汰]透過 Microsoft Sentinel 的舊版代理程式連接器強制端點 NGFW
+      - [已淘汰]透過舊版代理程式的 Illumio Core
+        [661] [已淘汰]透過舊版代理程式連接器的Illumio Core for Microsoft Sentinel
+      - [已淘汰]卡巴斯基資訊安全中心透過舊版代理程式
+        [664] [已淘汰]卡巴斯基資訊安全中心透過適用于 Microsoft Sentinel 的舊版代理程式連接器
+      - [已淘汰]Morphisec UTPP
+        [667] 尋找您的 Microsoft Sentinel 資料連線器
+      - [已淘汰]Netwrix 稽核員透過舊版代理程式
+        [687] [已淘汰]Netwrix 稽核員透過適用于Microsoft Sentinel 的舊版代理程式連接器
+      - [已淘汰]Nozomi Networks N2OS 透過舊版代理程式
+        [690] [已淘汰]Nozomi Networks N2OS viaLegacy Agent connector for MicrosoftSentinel
+      - [已淘汰]透過舊版代理程式 OSSEC
+        [693] [已淘汰]透過適用于 Microsoft Sentinel的舊版代理程式連接器 OSSEC
+      - [已淘汰]Palo Alto Networks Cortex Data Lake （CDL） 透過舊版代理程式
+        [696] [已淘汰]Palo Alto Networks Cortex DataLake （CDL） 透過 Microsoft Sentinel 的舊版代理程式連接器
+      - [已淘汰]PingFederate 透過舊版代理程式
+        [699] [已淘汰]透過 Microsoft Sentinel 的舊版代理程式連接器 PingFederate
+      - [已淘汰]Trend Micro Apex One via Legacy Agent
+        [702] [已淘汰]Trend Micro Apex One viaLegacy Agent connector for MicrosoftSentinel
+      - [已被取代] vArmour 應用程式控制器
+        [705] 尋找您的 Microsoft Sentinel 資料連線器
+      - WireX 網路鑑識平臺
+        [725] 尋找您的 Microsoft Sentinel 資料連線器
+      - [建議]透過 AMA 的 Akamai 安全性事件
+        [745] [建議]透過適用于 Microsoft Sentinel 的AMA 連接器的 Akamai 安全性事件
+      - [建議]阿路巴 ClearPass 透過 AMA
+        [747] [建議]阿路巴 ClearPass 透過適用于Microsoft Sentinel 的 AMA 連接器
+      - [建議]Broadcom Symantec DLP 透過 AMA
+        [749] [建議]Broadcom Symantec DLP 透過適用于 Microsoft Sentinel 的 AMA 連接器
+      - [建議]Cisco Secure Email Gateway via AMA
+        [751] [建議]Cisco Secure Email Gateway viaAMA connector for Microsoft Sentinel
+      - [建議]透過 AMA 的 Claroty
+        [753] [建議]透過適用於 Microsoft Sentinel 的AMA 連接器的 Claroty
+      - [建議]FireEye 網路安全性 （NX） 透過 AMA
+        [755] [建議]FireEye 網路安全性 （NX） 透過適用于 Microsoft Sentinel 的 AMA 連接器
+      - [建議]透過 AMA 的 Forcepoint CASB
+        [757] [建議]透過適用于 Microsoft Sentinel 的AMA 連接器強制端點 CASB
+      - [建議]透過 AMA 強制點 CSG
+        [759] [建議]透過適用于 Microsoft Sentinel 的AMA 連接器強制端點 CSG
+      - [建議]透過 AMA 強制點 NGFW
+        [762] [建議]透過 Microsoft Sentinel 的 AMA 連接器強制端點 NGFW
+      - [建議]透過 AMA 的 Illumio Core
+        [765] [建議]透過適用于 Microsoft Sentinel 的AMA 連接器的 Illumio Core
+      - [建議]卡巴斯基資訊安全中心透過 AMA
+        [767] [建議]卡巴斯基資訊安全中心透過適用于Microsoft Sentinel 的 AMA 連接器
+      - [建議]Netwrix 稽核員透過 AMA
+        [769] [建議]Netwrix 稽核員透過適用于Microsoft Sentinel 的 AMA 連接器
+      - [建議]Nozomi Networks N2OS via AMA
+        [771] [建議]Nozomi Networks N2OS via AMAconnector for Microsoft Sentinel
+      - [建議]透過 AMA 的 OSSEC
+        [773] [建議]透過適用于 Microsoft Sentinel 的AMA 連接器的 OSSEC
+      - [建議]Palo Alto Networks Cortex Data Lake （CDL） 透過 AMA
+        [775] [建議]Palo Alto Networks Cortex DataLake （CDL） 透過 Microsoft Sentinel 的AMA 連接器
+      - [建議]PingFederate 透過 AMA
+        [777] [建議]PingFederate 透過適用于Microsoft Sentinel 的 AMA 連接器
+      - [建議]Trend Micro Apex One via AMA
+        [779] [建議]Trend Micro Apex One via AMAconnector for Microsoft Sentinel
+      - AbnormalSecurity （使用 Azure Functions）
+        [781] 適用於 Microsoft Sentinel 的異常安全性（使用 Azure Functions） 連接器
+      - AI Vectra Stream
+        [785] 適用於 Microsoft Sentinel 的 AI VectraStream 連接器
+      - AIShield
+        [789] 適用於 Microsoft Sentinel 的 AIShield 連接器
+      - AliCloud （使用 Azure Functions）
+        [791] Microsoft Sentinel 的 AliCloud （使用Azure Functions） 連接器
+      - Amazon Web Services
+        [795] 適用於 Microsoft Sentinel 的 AmazonWeb Services 連接器
+      - Amazon Web Services S3
+        [796] 適用於 Microsoft Sentinel 的 AmazonWeb Services S3 連接器
+      - Apache HTTP Server
+        [798] 適用於 Microsoft Sentinel 的 ApacheHTTP Server 連接器
+      - Apache Tomcat
+        [800] 適用於 Microsoft Sentinel 的 ApacheTomcat 連接器
+      - API 保護
+        [802] 適用於 Microsoft Sentinel 的 API 保護連接器
+      - ARGOS 雲端安全性
+        [805] 適用於 Microsoft Sentinel 的 ARGOSCloud Security 連接器
+      - Armis 活動 （使用 Azure Functions）
+        [808] 適用於 Microsoft Sentinel 的 Armis 活動（使用 Azure Functions） 連接器
+      - Armis 警示 （使用 Azure Functions）
+        [812] 適用於 Microsoft Sentinel 的 Armis 警示（使用 Azure Functions） 連接器
+      - Armis 裝置 （使用 Azure Functions）
+        [816] 適用於 Microsoft Sentinel 的 Armis 裝置（使用 Azure Functions） 連接器
+      - Armorblox （使用 Azure Functions）
+        [820] 適用於 Microsoft Sentinel 的 Armorblox（使用 Azure Functions） 連接器
+      - Atlassian 信標警示
+        [824] Microsoft Sentinel 的 Atlassian 信標警示連接器
+      - Atlassian Confluence 稽核 （使用 Azure Functions）
+        [826] Atlassian Confluence Audit （使用 AzureFunctions） 連接器 for MicrosoftSentinel
+      - Atlassian Jira Audit （使用 Azure Functions）
+        [830] 適用於 Microsoft Sentinel 的 AtlassianJira Audit （使用 Azure Functions） 連接器
+      - 驗證0 存取管理（使用 Azure 函式） （使用 Azure Functions）
+        [834] 適用於 Microsoft Sentinel 的 Auth0Access Management（使用 AzureFunction） （使用 Azure Functions） 連接器
+      - 自動化邏輯 WebCTRL
+        [838] 適用於 Microsoft Sentinel 的自動化邏輯WebCTRL 連接器
+      - Awake Security (英文)
+        [840] Microsoft Sentinel 的 Awake Security 連接器
+      - Azure 活動
+        [844] 適用於 Microsoft Sentinel 的 Azure 活動連接器
+      - Azure Batch 帳戶
+        [845] 適用於 Microsoft Sentinel 的 AzureBatch 帳戶連接器
+      - Azure 認知搜尋
+        [847] 適用於 Microsoft Sentinel 的 Azure 認知搜尋 連接器
+      - Azure DDoS 保護
+        [849] 適用於 Microsoft Sentinel 的 AzureDDoS 保護連接器
+      - Azure 事件中樞
+        [850] 適用於 Microsoft Sentinel 的 Azure 事件中樞連接器
+      - Azure 防火牆
+        [852] 適用於 Microsoft Sentinel 的 Azure 防火牆 連接器
+      - Azure Key Vault
+        [853] 適用於 Microsoft Sentinel 的 Azure 金鑰保存庫 連接器
+      - Azure Kubernetes Service (AKS)
+        [854] 適用於 Microsoft Sentinel 的 AzureKubernetes Service （AKS） 連接器
+      - Azure Logic 應用程式
+        [855] 適用於 Microsoft Sentinel 的 AzureLogic Apps 連接器
+      - Azure 服務匯流排
+        [857] 適用於 Microsoft Sentinel 的 Azure 服務匯流排 連接器
+      - Azure SQL Database
+        [859] 適用於 Microsoft Sentinel 的 Azure SQL資料庫 s 連接器
+      - Azure 儲存體帳戶
+        [860] 適用於 Microsoft Sentinel 的 Azure 儲存體 帳戶連接器
+      - Azure 串流分析
+        [862] 適用於 Microsoft Sentinel 的 Azure 串流分析連接器
+      - Azure Web 應用程式防火牆 (WAF)
+        [864] 適用於 Microsoft Sentinel 的 Azure Web應用程式防火牆 （WAF） 連接器
+      - Barracuda CloudGen Firewall
+        [865] 適用於 Microsoft Sentinel 的 BarracudaCloudGen 防火牆連接器
+      - BETTER Mobile Threat Defense （MTD）
+        [868] 適用於 Microsoft Sentinel 的 BETTERMobile Threat Defense （MTD） 連接器
+      - Bitglass （使用 Azure Functions）
+        [871] 適用於 Microsoft Sentinel 的 Bitglass（使用 Azure Functions） 連接器
+      - Blackberry CylancePROTECT
+        [875] 適用於 Microsoft Sentinel 的 BlackberryCylancePROTECT 連接器
+      - Box （使用 Azure Functions）
+        [878] Box （使用適用於 Microsoft Sentinel 的Azure Functions） 連接器
+      - Cisco 應用程式中心基礎結構
+        [880] 適用於 Microsoft Sentinel 的 CiscoApplication Centric InfrastructureConnector
+      - Cisco ASA/FTD 透過 AMA （預覽）
+        [882] 適用於 Microsoft Sentinel 的 CiscoASA/FTD 透過 AMA （預覽） 連接器
+      - Cisco Duo Security （使用 Azure Functions）
+        [884] 適用於 Microsoft Sentinel 的 Cisco DuoSecurity （使用 Azure Functions） 連接器
+      - Cisco ETD （使用 Azure Functions）
+        [887] 適用於 Microsoft Sentinel 的 Cisco ETD（使用 Azure Functions） 連接器
+      - Cisco Identity Services 引擎
+        [889] 適用於 Microsoft Sentinel 的 CiscoIdentity Services Engine 連接器
+      - Cisco Meraki
+        [891] 適用於 Microsoft Sentinel 的 CiscoMeraki 連接器
+      - Cisco Secure Endpoint （AMP） （使用 Azure Functions）
+        [894] 適用於 Microsoft Sentinel 的 CiscoSecure Endpoint （AMP） （使用 AzureFunctions） 連接器
+      - Cisco Software Defined WAN
+        [898] 適用於 Microsoft Sentinel 的 CiscoSoftware 定義 WAN 連接器
+      - Cisco 隱形手錶
+        [903] 適用於 Microsoft Sentinel 的 CiscoStealthwatch 連接器
+      - Cisco UCS
+        [906] 適用於 Microsoft Sentinel 的 Cisco UCS連接器
+      - Cisco Umbrella （使用 Azure Functions）
+        [908] 適用於 Microsoft Sentinel 的 CiscoUmbrella （使用 Azure Functions） 連接器
+      - Cisco Web Security Appliance
+        [911] 適用於 Microsoft Sentinel 的 Cisco WebSecurity Appliance 連接器
+      - Citrix ADC （前 NetScaler）
+        [913] 適用於 Microsoft Sentinel 的 Citrix ADC（前 NetScaler） 連接器
+      - Cloudflare （預覽版） （使用 Azure Functions）
+        [916] Cloudflare （預覽） （使用 AzureFunctions） 連接器 For MicrosoftSentinel
+      - Cognni
+        [920] 適用於 Microsoft Sentinel 的 Cognni 連接器
+      - 凝聚力 （使用 Azure Functions）
+        [922] 適用於 Microsoft Sentinel 的 Cohesity（使用 Azure Functions） 連接器
+      - 常見事件格式 (CEF)
+        [924] Microsoft Sentinel 的通用事件格式（CEF） 連接器
+      - 透過 AMA 的通用事件格式 （CEF）
+        [925] 透過 Microsoft Sentinel 的 AMA 連接器的通用事件格式 （CEF）
+      - Corelight 連線 or 導出工具
+        [926] 適用於 Microsoft Sentinel 的 Corelight連線 or 匯出工具連接器
+      - Cortex XDR - 事件
+        [930] Cortex XDR - Microsoft Sentinel 的事件連接器
+      - 網路盲點插播（使用 Azure Functions）
+        [932] 適用於 Microsoft Sentinel 的網路盲點插播 （使用 Azure Functions） 連接器
+      - CyberArkAudit （使用 Azure Functions）
+        [936] CyberArkAudit （使用 AzureFunctions） 連接器 For MicrosoftSentinel
+      - CyberArkEPM （使用 Azure Functions）
+        [940] CyberArkEPM （使用 Azure Functions）連接器 For Microsoft Sentinel
+      - Cybersixgill 可採取動作的警示 （使用 Azure Functions）
+        [944] 適用於 Microsoft Sentinel 的 Cybersixgill可採取動作警示 （使用 AzureFunctions） 連接器
+      - Cyborg Security HUNTER Hunt 套件
+        [948] 適用於 Microsoft Sentinel 的 CyborgSecurity HUNTER Hunt Packages 連接器
+      - Cynerio 安全性事件
+        [950] Microsoft Sentinel 的 Cynerio 安全性事件連接器
+      - 適用於 Microsoft Sentinel REST API 的 Darktrace 連線 or
+        [952] 適用於 Microsoft Sentinel 的 Darktrace連線 or REST API 連接器
+      - Datalake2Sentinel
+        [956] 適用於 Microsoft Sentinel 的Datalake2Sentinel 連接器
+      - Dataminr Pulse Alerts data 連線 or （使用 Azure Functions）
+        [958] Dataminr Pulse Alerts Data 連線 or （使用 Azure Functions） 連接器 forMicrosoft Sentinel
+      - Derdack SIGNL4
+        [964] 適用於 Microsoft Sentinel 的 DerdackSIGNL4 連接器
+      - 數字守護者數據外洩防護
+        [967] 適用於 Microsoft Sentinel 的數位守護者數據外洩防護連接器
+      - 數位陰影搜尋燈 （使用 Azure Functions）
+        [970] 
+      - Dynamics 365
+        [973] 適用於 Microsoft Sentinel 的 Dynamics365 連接器
+      - Dynatrace 攻擊
+        [974] Microsoft Sentinel 的 Dynatrace 攻擊連接器
+      - Dynatrace 稽核記錄
+        [976] 適用於 Microsoft Sentinel 的 Dynatrace稽核記錄連接器
+      - Dynatrace 問題
+        [978] Microsoft Sentinel 的 Dynatrace 問題連接器
+      - Dynatrace 運行時間弱點
+        [981] Microsoft Sentinel 的 Dynatrace 運行時間弱點連接器
+      - 彈性代理程式 （獨立）
+        [984] 適用於 Microsoft Sentinel 的彈性代理程式 （獨立） 連接器
+      - ESET PROTECT
+        [987] Microsoft Sentinel 的 ESET PROTECT 連接器
+      - Exabeam 進階分析
+        [991] 適用於 Microsoft Sentinel 的 Exabeam進階分析連接器
+      - Exchange Security Insights 內部部署收集器
+        [993] 適用於 Microsoft Sentinel 的 ExchangeSecurity Insights 內部部署收集器連接器
+      - Exchange Security Insights Online 收集器（使用 Azure Functions）
+        [995] 適用於 Microsoft Sentinel 的 ExchangeSecurity Insights Online 收集器 （使用Azure Functions） 連接器
+      - F5 BIG-IP
+        [998] 適用於 Microsoft Sentinel 的 F5 BIG-IP連接器
+      - Feedly
+        [1000] 適用於 Microsoft Sentinel 的摘要連接器
+      - 耀斑
+        [1003] Microsoft Sentinel 的 Flare 連接器
+      - Forcepoint DLP
+        [1005] Microsoft Sentinel 的 Forcepoint DLP 連接器
+      - Forescout
+        [1007] 適用於 Microsoft Sentinel 的 Forescout連接器
+      - Forescout 主機屬性監視器
+        [1009] Forescout Host Property Monitorconnector for Microsoft Sentinel
+      - Fortinet FortinDR Cloud （使用 Azure Functions）
+        [1011] 
+      - Gigamon AMX 數據 連線 or
+        [1014] 適用於 Microsoft Sentinel 的 GigamonAMX 數據連接器
+      - GitHub （使用 Webhook） （使用 Azure Functions）
+        [1016] 適用於 Microsoft Sentinel 的 GitHub（使用 Webhooks） （使用 AzureFunctions） 連接器
+      - GitHub Enterprise Audit Log
+        [1018] 適用於 Microsoft Sentinel 的 GitHubEnterprise Audit Log 連接器
+      - GitLab
+        [1020] 適用於 Microsoft Sentinel 的 GitLab 連接器
+      - Google ApigeeX （使用 Azure Functions）
+        [1022] 適用於 Microsoft Sentinel 的 GoogleApigeeX （使用 Azure Functions） 連接器
+      - Google Cloud Platform Cloud Monitoring （使用 Azure Functions）
+        [1026] 適用於 Microsoft Sentinel 的 GoogleCloud Platform Cloud Monitoring （使用 Azure Functions） 連接器
+      - Google Cloud Platform DNS （使用 Azure Functions）
+        [1030] 適用於 Microsoft Sentinel 的 GoogleCloud Platform DNS （使用 AzureFunctions） 連接器
+      - Google Cloud Platform IAM （使用 Azure Functions）
+        [1034] 適用於 Microsoft Sentinel 的 GoogleCloud Platform IAM （使用 AzureFunctions） 連接器
+      - Google Workspace （G Suite） （使用 Azure Functions）
+        [1038] 適用於 Microsoft Sentinel 的 GoogleWorkspace （G Suite） （使用 AzureFunctions） 連接器
+      - GreyNoise 威脅情報 （使用 Azure Functions）
+        [1044] 適用於 Microsoft Sentinel 的 GreyNoise威脅情報 （使用 Azure Functions） 連接器
+      - HackerView Intergration （使用 Azure Functions）
+        [1047] 
+      - Holm 安全性資產數據 （使用 Azure Functions）
+        [1051] 適用於 Microsoft Sentinel 的 Holm 安全性資產數據 （使用 Azure Functions） 連接器
+      - HYAS Protect （使用 Azure Functions）
+        [1054] HYAS Protect （使用 Azure Functions）連接器 for Microsoft Sentinel
+      - Imperva Cloud WAF （使用 Azure Functions）
+        [1057] 適用於 Microsoft Sentinel 的 ImpervaCloud WAF （使用 Azure Functions） 連接器
+      - Infoblox NIOS
+        [1061] 適用於 Microsoft Sentinel 的 InfobloxNIOS 連接器
+      - InfoSecGlobal Data 連線 or
+        [1063] 適用於 Microsoft Sentinel 的InfoSecGlobal 數據連接器
+      - IONIX 安全性記錄
+        [1065] 適用於 Microsoft Sentinel 的 IONIX 安全性記錄連接器
+      - ISC 系結
+        [1067] 適用於 Microsoft Sentinel 的 ISC 系結連接器
+      - Island Enterprise Browser 管理員 Audit （Polling CCP）
+        [1070] Microsoft Sentinel 的 Island EnterpriseBrowser 管理員 Audit （Polling CCP）連接器
+      - Island Enterprise Browser 用戶活動 （輪詢 CCP）
+        [1072] Microsoft Sentinel 的 Island EnterpriseBrowser 用戶活動 （Polling CCP） 連接器
+      - Ivanti Unified Endpoint Management
+        [1074] 適用於 Microsoft Sentinel 的 IvantiUnified Endpoint Management 連接器
+      - Jamf Protect
+        [1076] 適用於 Microsoft Sentinel 的 JamfProtect 連接器
+      - JBoss 企業應用程式平臺
+        [1078] 適用於 Microsoft Sentinel 的 JBossEnterprise 應用程式平台連接器
+      - Juniper IDP
+        [1080] 適用於 Microsoft Sentinel 的 Juniper IDP連接器
+      - Juniper SRX
+        [1082] 適用於 Microsoft Sentinel 的 JuniperSRX 連接器
+      - LastPass Enterprise - 報告 （Polling CCP）
+        [1085] LastPass Enterprise - Reporting (PollingCCP) connector for Microsoft Sentinel
+      - Lookout （使用 Azure 函式）
+        [1087] Lookout （使用 Azure Function） 連接器 for Microsoft Sentinel
+      - 亮度 IOC 和外泄認證 （使用 Azure Functions）
+        [1090] 適用於 Microsoft Sentinel 的 LuminarIOC 和外洩認證（使用 AzureFunctions） 連接器
+      - MailGuard 365
+        [1094] 適用於 Microsoft Sentinel 的 MailGuard365 連接器
+      - MailRisk by Secure Practice （使用 Azure Functions）
+        [1096] 適用於 Microsoft Sentinel 的 MailRisk bySecure Practice （使用 AzureFunctions） 連接器
+      - MarkLogic 稽核
+        [1099] 適用於 Microsoft Sentinel 的 MarkLogicAudit 連接器
+      - McAfee ePolicy Orchestrator （ePO）
+        [1102] 適用於 Microsoft Sentinel 的 McAfeeePolicy Orchestrator （ePO） 連接器
+      - McAfee 網路安全性平臺
+        [1104] 適用於 Microsoft Sentinel 的 McAfee 網路安全性平台連接器
+      - Microsoft 365
+        [1106] Microsoft Sentinel 的 Microsoft 365 連接器
+      - Microsoft 365 Defender
+        [1107] 適用於 Microsoft Sentinel 的 MicrosoftDefender 全面偵測回應 連接器
+      - Microsoft 365 內部風險管理
+        [1109] 適用於 Microsoft Sentinel 的 Microsoft365 測試人員風險管理連接器
+      - Microsoft Defender for Cloud Apps
+        [1110] 適用於 Microsoft Sentinel 的 適用於雲端的 Microsoft Defender Apps 連接器
+      - 適用於端點的 Microsoft Defender
+        [1111] 適用於 Microsoft Sentinel 的 適用於端點的 Microsoft Defender 連接器
+      - 適用於身分識別的 Microsoft Defender
+        [1112] 適用於 Microsoft Sentinel 的 適用於身分識別的 Microsoft Defender 連接器
+      - 適用於 IoT 的 Microsoft Defender
+        [1113] 適用於 Microsoft Sentinel 的適用於 IoT的 Microsoft Defender 連接器
+      - 適用於 Office 365 的 Microsoft Defender (預覽版)
+        [1114] 適用於 Microsoft Sentinel 的 適用於Office 365 的 Microsoft Defender （預覽） 連接器
+      - Microsoft Defender 威脅情報 （預覽）
+        [1115] 適用於 Microsoft Sentinel 的 MicrosoftDefender 威脅情報 （預覽） 連接器
+      - Microsoft Defender XDR
+        [1116] 適用於 Microsoft Sentinel 的 MicrosoftDefender 全面偵測回應 連接器
+      - Microsoft Entra ID
+        [1118] Microsoft Sentinel 的 Microsoft Entra ID連接器
+      - Microsoft Entra 識別碼保護
+        [1119] 適用於 Microsoft Sentinel 的 MicrosoftEntra ID Protection 連接器
+      - Microsoft Exchange 記錄和事件
+        [1120] 適用於 Microsoft Sentinel 的 MicrosoftExchange 記錄和事件連接器
+      - Microsoft PowerBI
+        [1122] 適用於 Microsoft Sentinel 的 MicrosoftPowerBI 連接器
+      - Microsoft Project
+        [1123] Microsoft Sentinel 的 Microsoft Project連接器
+      - Microsoft Purview （預覽）
+        [1124] 適用於 Microsoft Sentinel 的 MicrosoftPurview （預覽） 連接器
+      - Microsoft Purview 資訊保護
+        [1126] 適用於 Microsoft Sentinel 的 MicrosoftPurview 資訊保護 連接器
+      - 適用於 Linux 的 Microsoft Sysmon
+        [1127] 適用於 Microsoft Sentinel 的 MicrosoftSysmon For Linux 連接器
+      - Mimecast Audit & Authentication （使用 Azure Functions）
+        [1129] 適用於 Microsoft Sentinel 的 MimecastAudit & Authentication （使用 AzureFunctions） 連接器
+      - 適用於 Microsoft 的 Mimecast Intelligence - Microsoft Sentinel （使用 Azure Functions）
+        [1133] 適用於 Microsoft 的 MimecastIntelligence - 適用於 Microsoft Sentinel的 Microsoft Sentinel （使用 AzureFunctions） 連接器
+      - Mimecast Secure Email Gateway （使用 Azure Functions）
+        [1137] 適用於 Microsoft Sentinel 的 MimecastSecure Email Gateway （使用 AzureFunctions） 連接器
+      - Mimecast 目標威脅防護 （使用 Azure Functions）
+        [1141] 適用於 Microsoft Sentinel 的 Mimecast目標威脅防護 （使用 Azure Functions）連接器
+      - MISP2Sentinel
+        [1146] Microsoft Sentinel 的 MISP2Sentinel 連接器
+      - MongoDB 稽核
+        [1148] 適用於 Microsoft Sentinel 的 MongoDB稽核連接器
+      - MuleSoft Cloudhub （使用 Azure Functions）
+        [1150] 適用於 Microsoft Sentinel 的 MuleSoftCloudhub （使用 Azure Functions） 連接器
+      - Nasuni Edge 設備
+        [1154] 適用於 Microsoft Sentinel 的 NasuniEdge Appliance 連接器
+      - NC 保護
+        [1156] 適用於 Microsoft Sentinel 的 NC 保護連接器
+      - Netclean ProActive 事件
+        [1159] Microsoft Sentinel 的 NetcleanProActive Incidents 連接器
+      - Netskope （使用 Azure Functions）
+        [1162] 
+      - 網路安全性群組
+        [1166] 適用於 Microsoft Sentinel 的網路安全組連接器
+      - NGINX HTTP 伺服器
+        [1167] 適用於 Microsoft Sentinel 的 NGINXHTTP 伺服器連接器
+      - Microsoft Sentinel 的 Noname 安全性
+        [1169] Microsoft Sentinel 的 Noname 安全性連接器
+      - NXLog AIX 稽核
+        [1171] 適用於 Microsoft Sentinel 的 NXLog AIX稽核連接器
+      - NXLog BSM macOS
+        [1174] 適用於 Microsoft Sentinel 的 NXLogBSM macOS 連接器
+      - NXLog DNS 記錄
+        [1176] 適用於 Microsoft Sentinel 的 NXLogDNS 記錄連接器
+      - NXLog FIM
+        [1178] 適用於 Microsoft Sentinel 的 NXLog FIM連接器
+      - NXLog LinuxAudit
+        [1180] 適用於 Microsoft Sentinel 的 NXLogLinuxAudit 連接器
+      - Okta 單一登錄 （使用 Azure Functions）
+        [1182] 適用於 Microsoft Sentinel 的 Okta 單一登入 （使用 Azure Functions） 連接器
+      - OneLogin IAM 平臺（使用 Azure Functions）
+        [1185] 適用於 Microsoft Sentinel 的 OneLoginIAM Platform（使用 Azure Functions）連接器
+      - OpenVPN 伺服器
+        [1187] 適用於 Microsoft Sentinel 的 OpenVPNServer 連接器
+      - Oracle 雲端基礎結構 （使用 Azure Functions）
+        [1189] 適用於 Microsoft Sentinel 的 Oracle 雲端基礎結構 （使用 Azure Functions） 連接器
+      - Oracle 資料庫稽核
+        [1192] 適用於 Microsoft Sentinel 的 Oracle 資料庫稽核連接器
+      - Oracle WebLogic Server （使用 Azure Functions）
+        [1194] 適用於 Microsoft Sentinel 的 OracleWebLogic Server （使用 AzureFunctions） 連接器
+      - Orca 安全性警示
+        [1196] 適用於 Microsoft Sentinel 的 Orca 安全性警示連接器
+      - Palo Alto Prisma Cloud CSPM （使用 Azure Functions）
+        [1198] 適用於 Microsoft Sentinel 的 Palo AltoPrisma Cloud CSPM （使用 AzureFunctions） 連接器
+      - 周邊81活動記錄
+        [1201] Microsoft Sentinel 的周邊 81 活動記錄連接器
+      - PostgreSQL 事件
+        [1203] 適用於 Microsoft Sentinel 的 PostgreSQL事件連接器
+      - Prancer Data 連線 or
+        [1205] 適用於 Microsoft Sentinel 的 PrancerData 連接器
+      - Proofpoint On Demand 電子郵件安全性 （使用 Azure Functions）
+        [1207] 適用於 Microsoft Sentinel 的 ProofpointOn Demand 電子郵件安全性 （使用Azure Functions） 連接器
+      - Proofpoint TAP （使用 Azure Functions）
+        [1211] 適用於 Microsoft Sentinel 的 ProofpointTAP （使用 Azure Functions） 連接器
+      - Pulse 連線 Secure
+        [1214] 適用於 Microsoft Sentinel 的 Pulse 連線Secure 連接器
+      - Qualys VM 知識庫 （使用 Azure Functions）
+        [1217] 適用於 Microsoft Sentinel 的 Qualys VM知識庫 （使用 Azure Functions） 連接器
+      - Qualys 弱點管理 （使用 Azure Functions）
+        [1220] 適用於 Microsoft Sentinel 的 Qualys 弱點管理 （使用 Azure Functions） 連接器
+      - Rapid7 Insight Platform 弱點管理報告 （使用 Azure Functions）
+        [1225] 適用於 Microsoft Sentinel 的 Rapid7Insight Platform 弱點管理報告 （使用Azure Functions） 連接器
+      - RIDGEBOT - Microsoft Sentinel 的數據連接器
+        [1228] RIDGEBOT - Microsoft Sentinel 的數據連接器
+      - RSA® SecurID （驗證管理員）
+        [1230] Microsoft Sentinel 的 RSA® SecurID（Authentication Manager） 連接器
+      - Rubrik Security Cloud Data Connector （使用 Azure Functions）
+        [1232] 適用於 Microsoft Sentinel 的 RubrikSecurity Cloud 資料連接器 （使用 AzureFunctions） 連接器
+      - SaaS 安全性
+        [1237] Microsoft Sentinel 的 SaaS 安全性連接器
+      - SailPoint IdentityNow （使用 Azure 函式）
+        [1239] SailPoint IdentityNow （使用 AzureFunction） 連接器 for Microsoft Sentinel
+      - Salesforce Service Cloud （使用 Azure Functions）
+        [1243] 適用於 Microsoft Sentinel 的 SalesforceService Cloud （使用 Azure Functions）連接器
+      - 透過舊版代理程式的安全性事件
+        [1246] 透過 Microsoft Sentinel 的舊版代理程式連接器的安全性事件
+      - SAP 的 SecurityBridge 威脅偵測
+        [1247] 適用於 Microsoft Sentinel 的 SAP 連接器SecurityBridge 威脅偵測
+      - SenservaPro （預覽）
+        [1250] Microsoft Sentinel 的 SenservaPro （預覽） 連接器
+      - SentinelOne （使用 Azure Functions）
+        [1255] SentinelOne （使用 Azure Functions）連接器適用於 Microsoft Sentinel
+      - Seraphic Web 安全性
+        [1259] Microsoft Sentinel 的 Seraphic WebSecurity 連接器
+      - Slack 稽核 （使用 Azure Functions）
+        [1261] 適用於 Microsoft Sentinel 的 Slack Audit（使用 Azure Functions） 連接器
+      - Snowflake （使用 Azure Functions）
+        [1263] 適用於 Microsoft Sentinel 的 Snowflake（使用 Azure Functions） 連接器
+      - Sonrai Data 連線 or
+        [1266] 適用於 Microsoft Sentinel 的 Sonrai 數據連接器
+      - SonicWall 防火牆
+        [1268] Microsoft Sentinel 的 SonicWall 防火牆連接器
+      - Sophos Cloud Optix
+        [1271] Microsoft Sentinel 的 Sophos CloudOptix 連接器
+      - Sophos Endpoint Protection （使用 Azure Functions）
+        [1273] 適用於 Microsoft Sentinel 的 SophosEndpoint Protection （使用 AzureFunctions） 連接器
+      - Sophos XG 防火牆
+        [1275] Microsoft Sentinel 的 Sophos XG 防火牆連接器
+      - Squid Proxy
+        [1278] Microsoft Sentinel 的 Squid Proxy 連接器
+      - 以訂用帳戶為基礎的 適用於雲端的 Microsoft Defender （舊版）
+        [1280] Microsoft Sentinel 的訂閱型 適用於雲端的 Microsoft Defender（舊版）連接器
+      - Symantec Endpoint Protection
+        [1281] 適用於 Microsoft Sentinel 的 SymantecEndpoint Protection 連接器
+      - Symantec 整合式網路防禦交換
+        [1283] 適用於 Microsoft Sentinel 的 Symantec整合式網路防禦 Exchange 連接器
+      - Symantec ProxySG
+        [1285] 適用於 Microsoft Sentinel 的 SymantecProxySG 連接器
+      - Symantec VIP
+        [1288] 適用於 Microsoft Sentinel 的 SymantecVIP 連接器
+      - Syslog
+        [1291] Microsoft Sentinel 的 Syslog 連接器
+      - 透過 AMA 的 Syslog
+        [1292] 透過適用於 Microsoft Sentinel 的 AMA連接器進行 Syslog
+      - Talon Insights
+        [1293] 適用於 Microsoft Sentinel 的 TalonInsights 連接器
+      - Tenable.io 弱點管理 （使用 Azure 函式）
+        [1295] Tenable.io Microsoft Sentinel 的弱點管理 （使用 Azure 函式） 連接器
+      - 租使用者型 適用於雲端的 Microsoft Defender （預覽）
+        [1300] Microsoft Sentinel 的租使用者型 適用於雲端的 Microsoft Defender （預覽） 連接器
+      - TheHive Project - TheHive （使用 Azure Functions）
+        [1302] TheHive Project - 適用於 MicrosoftSentinel 的 TheHive （使用 AzureFunctions） 連接器
+      - Theom
+        [1304] Microsoft Sentinel 的 Theom 連接器
+      - 威脅情報 - TAXII
+        [1306] 威脅情報 - 適用於 Microsoft Sentinel 的TAXII 連接器
+      - 威脅情報平台
+        [1307] 適用於 Microsoft Sentinel 的威脅情報平台連接器
+      - 威脅情報上傳指標 API （預覽）
+        [1308] 適用於 Microsoft Sentinel 的威脅情報上傳指標 API （預覽） 連接器
+      - Trend Micro Deep Security
+        [1309] 適用於 Microsoft Sentinel 的趨勢 MicroDeep Security 連接器
+      - Trend Micro TippingPoint
+        [1313] 適用於 Microsoft Sentinel 的 TrendMicro TippingPoint 連接器
+      - 趨勢視覺 One （使用 Azure Functions）
+        [1317] 適用於 Microsoft Sentinel 的趨勢視覺One （使用 Azure Functions） 連接器
+      - Ubiquiti UniFi （使用 Azure Functions）
+        [1320] 適用於 Microsoft Sentinel 的 UbiquitiUniFi （使用 Azure Functions） 連接器
+      - Vectra XDR （使用 Azure Functions）
+        [1322] 適用於 Microsoft Sentinel 的 Vectra XDR（使用 Azure Functions） 連接器
+      - VMware Carbon Black Cloud （使用 Azure Functions）
+        [1328] 適用於 Microsoft Sentinel 的 VMwareCarbon Black Cloud （使用 AzureFunctions） 連接器
+      - VMware ESXi
+        [1333] 適用於 Microsoft Sentinel 的 VMwareESXi 連接器
+      - VMware vCenter
+        [1336] 適用於 Microsoft Sentinel 的 VMwarevCenter 連接器
+      - WatchGuard Firebox
+        [1339] Microsoft Sentinel 的 WatchGuardFirebox 連接器
+      - 透過 AMA 的 Windows DNS 事件
+        [1342] 透過適用於 Microsoft Sentinel 的 AMA連接器的 Windows DNS 事件
+      - Windows 防火牆
+        [1343] 適用於 Microsoft Sentinel 的 Windows防火牆連接器
+      - 透過 AMA 的 Windows 防火牆事件 （預覽）
+        [1344] 尋找您的 Microsoft Sentinel 資料連線器
+      - Windows 轉送事件
+        [1364] 適用於 Microsoft Sentinel 的 Windows轉送事件連接器
+      - 透過 AMA 的 Windows 安全性事件
+        [1365] 透過 Microsoft Sentinel 的 AMA 連接器Windows 安全性 事件
+      - 透過 連線 or 的 WithSecure 元素
+        [1366] 透過 Microsoft Sentinel 連接器的WithSecure Elements
+      - 奇才
+        [1370] 適用於 Microsoft Sentinel 的 Wiz 連接器
+      - 來自 Facebook 的工作場所 （使用 Azure Functions）
+        [1373] 適用於 Microsoft Sentinel 的 Facebook工作場所 （使用 Azure Functions） 連接器
+      - 零網路區段稽核
+        [1376] Microsoft Sentinel 的零網路區段稽核連接器
+      - 零網路區段稽核 （函式） （使用 Azure Functions）
+        [1378] Microsoft Sentinel 的零網路區段稽核連接器
+      - Zimperium Mobile Threat Defense
+        [1380] 適用於 Microsoft Sentinel 的 ZimperiumMobile Threat Defense 連接器
+      - 縮放報表 （使用 Azure Functions）
+        [1382] Microsoft Sentinel 的 Zoom Reports（使用 Azure Functions） 連接器
+      - Zscaler Private Access
+        [1384] 適用於 Microsoft Sentinel 的 ZscalerPrivate Access 連接器
+    - 依類型 連線 指示
+      - Microsoft 連接器的一般指示
+        - 連線 Microsoft Sentinel 至 Microsoft 連接器
+          [1387] 連線 Microsoft Sentinel 至 Azure、Windows、Microsoft 和 Amazon 服務
+        - API 型連線
+          [1389] 使用 API 型數據連接器將 MicrosoftSentinel 連線 至其他 Microsoft 服務
+        - 診斷設定型連線
+          [1391] 使用以診斷設定為基礎的連線，將Microsoft Sentinel 連線至其他 Microsoft服務
+        - Windows 代理程式型連線
+          [1395] 使用以 Windows 代理程式為基礎的資料連線器，將 Microsoft Sentinel 連線至其他 Microsoft 服務
+      - Azure Functions API 連線
+        [1402] 使用 Azure Functions 將 MicrosoftSentinel 連線至您的資料來源
+      - CEF/Syslog
+        - 概觀
+          [1406] 透過 AMA 和通用事件格式 （CEF） 透過Microsoft Sentinel 的 AMA 連接器進行Syslog
+        - 透過 AMA 的 CEF 和 Syslog
+          [1409] 使用 Azure 監視器代理程式將 Syslog 和CEF 訊息內嵌至 Microsoft Sentinel
+        - CEF over Syslog sources （legacy）
+          [1422] 將裝置或設備中的 CEF 格式記錄傳輸到Microsoft Sentinel
+        - 部署記錄轉寄站 （舊版）
+          [1427] 將記錄轉寄站部署至內嵌 Syslog 和 CEF記錄至 Microsoft Sentinel
+        - Syslog （原始） 來源 （舊版）
+          [1434] 使用 Syslog 從以 Linux 為基礎的來源收集數據
+      - 透過 AMA 的 DNS
+        [1440] 使用 AMA 連接器串流和篩選來自Windows DNS 伺服器的數據
+      - 自訂記錄來源
+        [1452] 使用 Log Analytics 代理程式將自訂記錄格式中的數據收集到 Microsoft Sentinel
+      - 具有數據收集規則的Logstash外掛程式
+        [1456] 使用Logstash透過 DCR 型 API 透過管線轉換串流記錄
+      - Logstash 外掛程式 （舊版）
+        [1471] 使用 Logstash 搭配 HTTP 資料收集 API串流記錄 （舊版）
+      - Microsoft Sentinel 數據收集器 API
+        [1479] 將資料來源連線至 Microsoft Sentinel 資料收集器 API 以擷取資料
+    - 服務 連線 指示
+      - Amazon Web Services 記錄
+        [1481] 將 Microsoft Sentinel 連線至 AmazonWeb Services 以內嵌 AWS 服務記錄資料
+      - 透過 Lambda 函式的 CloudWatch 事件
+      - Google Cloud Platform 連接器
+        [1493] 將Google Cloud Platform 記錄數據內嵌至 Microsoft Sentinel
+      - Azure Active Directory
+        [1500] 連線 Microsoft Entra 資料至 MicrosoftSentinel
+      - Azure Stack VM
+        [1503] 將 Azure Stack Hub 虛擬機器連接至Microsoft Sentinel
+      - Azure 虛擬桌面
+        [1506] 將 Azure 虛擬桌面資料連線至 MicrosoftSentinel
+      - 適用於雲端的 Microsoft Defender
+        [1508] 將 適用於雲端的 Microsoft Defender 警示內嵌至 Microsoft Sentinel
+      - Microsoft 365 Defender
+        [1512] 從 Microsoft Defender 全面偵測回應 到Microsoft Sentinel 連線 數據
+      - 整合 Microsoft Purview
+        [1517] 整合 Microsoft Sentinel 和 MicrosoftPurview (公開預覽版)
+      - Purview 資訊保護 數據
+        [1524] 將資料從 Microsoft Purview 資訊保護 串流至 Microsoft Sentinel
+      - Windows 安全性事件
+        [1528] 透過 Microsoft Sentinel 的 AMA 連接器Windows 安全性 事件
+    - 設定擷取時間轉換
+      [1529] 在 Microsoft Sentinel 的擷取時間轉換或自定義資料 （預覽）
+    - 設定 RDP 登入偵測
+      [1532] 針對異常 RDP 登入偵測設定安全性事件或Windows 安全性事件連接器
+    - 建立自訂連接器
+      [1533] 用於建立 Microsoft Sentinel 自訂連接器的資源
+    - 建立無程式代碼連接器
+      [1540] 建立 Microsoft Sentinel 的無程式代碼連接器 （公開預覽）
+    - 舊版無程式代碼連接器
+      [1563] 為 Microsoft Sentinel 建立舊版無程式代碼連接器
+    - 正規化數據
+      - ASIM 總覽
+        [1588] 正規化和進階安全性資訊模型 (ASIM) (公開預覽)
+      - ASIM 架構
+        [1592] 進階安全性資訊模型 （ASIM） 架構
+      - ASIM 剖析器
+        [1605] 進階安全性資訊模型 (ASIM) 剖析器 (公開預覽)
+      - 擷取時間正規化
+        [1608] 擷取時間正規化
+      - 使用 ASIM
+        [1611] 使用進階安全性資訊模型 (ASIM) (公開預覽)
+      - 開發 ASIM 剖析器
+        [1614] 開發進階安全性資訊模型 (ASIM) 剖析器(公開預覽)
+      - 管理 ASIM 剖析器
+        [1631] 管理進階安全性資訊模型 (ASIM) 剖析器(公開預覽)
+      - 修改內容以使用 ASIM
+        [1638] 修改內容以使用進階安全性資訊模型(ASIM) (公開預覽)
+  - 整合威脅情報
+    - 概觀
+      [1641] 瞭解 Microsoft Sentinel 中的威脅情報
+    - 威脅情報整合
+      [1649] Microsoft Sentinel 中的威脅情報整合
+    - 啟用 MDTI 資料連接器
+      [1655] 啟用 Microsoft Defender 威脅情報 的數據連接器
+    - 連線 威脅情報上傳 API
+      [1658] 使用上傳指標 API 將威脅情報平臺 連線至 Microsoft Sentinel
+    - 連線 威脅情報平臺
+      [1664] 將威脅情報平臺 連線 至 MicrosoftSentinel
+    - 連線 STIX/TAXII 摘要
+      [1671] 連線 Microsoft Sentinel 至 STIX/TAXII 威脅情報摘要
+    - 依檔案大量新增指標
+      [1675] 從 CSV 或 JSON 檔案將指標大量新增至Microsoft Sentinel 威脅情報
+    - 使用威脅指標
+      [1683] 在 Microsoft Sentinel 中使用威脅指標
+    - 將實體新增至威脅指標
+      [1690] 在 Microsoft Sentinel 中將實體新增至威脅情報
+    - 在分析規則中使用威脅指標
+      [1695] 在分析規則中使用威脅指標
+    - 使用比對分析來偵測威脅
+      [1699] 使用比對分析來偵測威脅
+  - 偵測威脅並分析數據
+    - 監視資料並將其視覺化
+      - 將收集的資料視覺化
+        [1707] 將收集的資料視覺化
+      - 使用 Azure 監視器活頁簿
+        [1714] 在 Microsoft Sentinel 中使用活頁簿可視化及監視您的數據
+      - 建立 Power BI 報表
+        [1719] 從 Microsoft Sentinel 數據建立 Power BI報表
+    - 教學課程 - 使用分析規則偵測威脅
+      [1733] 教學課程：在 Microsoft Sentinel 中流量分析規則偵測威脅
+    - MITRE ATT&CK 涵蓋範圍
+      [1744] 瞭解 MITRE ATT&CK® 架構的安全性涵蓋範圍
+    - 內建威脅偵測規則
+      [1747] 立即偵測威脅
+    - 近乎即時 （NRT） 分析規則
+      [1753] 使用 Microsoft Sentinel 中的近即時(NRT) 分析規則來快速偵測威脅
+    - 使用者與實體行為分析 （UEBA）
+      [1755] Microsoft Sentinel 中的進階威脅偵測與使用者和實體行為分析 （UEBA）
+    - 異常偵測規則
+      - 概觀
+        [1760] 使用可自訂的異常來偵測 MicrosoftSentinel 中的威脅
+      - 使用現用的異常規則
+        [1762] 在 Microsoft Sentinel 中使用異常偵測分析規則
+    - 多階段攻擊 （融合）
+      - 概觀
+        [1766] Microsoft Sentinel 中的進階多階段攻擊偵測
+      - 設定多階段攻擊 （Fusion） 規則
+        [1772] 在 Microsoft Sentinel 中設定多階段攻擊偵測 （Fusion） 規則
+    - 關注清單
+      - 概觀
+        [1779] Microsoft Sentinel 中的關注清單
+      - 建立監看清單
+        [1783] 在 Microsoft Sentinel 中建立監看清單
+      - 建置查詢或規則
+        [1797] 在 Microsoft Sentinel 中使用關注清單建置查詢或偵測規則
+      - 管理關注清單
+        [1803] 在 Microsoft Sentinel 中管理監看清單
+    - 建立威脅偵測規則
+      - 建立排程的查詢規則
+        [1808] 從頭開始建立自定義分析規則
+      - 將數據欄位對應至實體
+        [1823] 將資料欄位對應至 Microsoft Sentinel 中的實體
+      - 在警示中顯示自定義詳細數據
+        [1828] Microsoft Sentinel 警示中的 Surface 自定義事件詳細數據
+      - 自訂警示詳細數據
+        [1831] 在 Microsoft Sentinel 中自定義警示詳細數據
+      - 匯出和匯入分析規則
+        [1836] 從 ARM 範本匯出和匯入分析規則
+      - 建立近乎即時 （NRT） 分析規則
+        [1838] 在 Microsoft Sentinel 中使用近乎即時的偵測分析規則
+      - 管理分析規則的範本版本
+        [1841] 管理 Microsoft Sentinel 中排程分析規則的範本版本
+      - 處理分析規則中的擷取延遲
+        [1846] 處理排程分析規則中的擷取延遲
+      - 取得微調建議
+        [1851] 為您 Microsoft Sentinel 中的分析規則取得微調建議
+      - 針對分析規則進行疑難解答
+        [1855] 針對 Microsoft Sentinel 中的分析規則進行疑難解答
+    - 部署和監視 decoy honeytokens
+      [1858] 使用 Microsoft Sentinel 部署和監視Azure 金鑰保存庫 honeytokens （社群支援）
+    - 處理誤判
+      [1859] 處理 Microsoft Sentinel 中的誤報
+    - 從 Microsoft 安全性警示建立事件
+      [1865] 自動從 Microsoft 安全性警示建立事件
+  - 搜尋威脅
+    - 概觀
+      [1869] Microsoft Sentinel 中的威脅搜捕
+    - 進行端對端搜捕
+      [1880] 在 Microsoft Sentinel 中執行端對端主動式威脅搜捕
+    - 使用 Kusto 查詢語言 搜捕
+      - 概觀
+        [1895] Microsoft Sentinel 中的 Kusto 查詢語言
+      - 查詢最佳做法
+        [1919] Kusto 查詢語言 查詢的最佳做法
+      - SQL 至 KQL 速查表
+        [1924] SQL 到 Kusto 查詢語言 速查表
+      - Splunk 至 KQL 速查表
+        [1928] Splunk 至 Kusto 查詢語言對應
+      - KQL 快速參考
+        [1935] KQL 快速參考
+      - 其他 KQL 資源
+        [1939] 在 Microsoft Sentinel 中使用 Kusto 查詢語言的實用資源
+    - 使用書籤進行搜尋
+      [1941] 使用 Microsoft Sentinel 搜捕期間追蹤數據
+    - 使用即時串流進行搜捕
+      [1949] 在 Microsoft Sentinel 中使用搜捕即時串流來偵測威脅
+    - 使用筆記本搜尋
+      - 概觀
+        [1953] 具有 Microsoft Sentinel 搜捕功能的Jupyter Notebook
+      - 開始使用筆記本和 MSTICPy
+        [1957] 在 Microsoft Sentinel 中開始使用Jupyter Notebook 和 MSTICPy
+      - 啟動 Jupyter Notebook
+        [1977] 使用 Jupyter Notebook 搜捕安全性威脅
+      - 設定進階 MSTICPy 設定
+        [1985] Microsoft Sentinel 中 Jupyter Notebook和 MSTICPy 的進階設定
+    - 攜帶您自己的機器學習
+      [1991] 將您的 Machine Learning (ML) 帶到Microsoft Sentinel 中
+  - 調查事件
+    - 概觀
+      [1997] 瞭解 Microsoft Sentinel 的事件調查和案例管理功能
+    - 調查事件 （新增）
+      [2002] 在 Microsoft Sentinel 中巡覽和調查事件
+    - 調查事件 （舊版）
+      [2027] 使用 Microsoft Sentinel 調查事件
+    - 教學課程 - 使用 UEBA 調查
+      [2040] 教學課程：使用 UEBA 數據調查事件
+    - 將警示與事件建立關聯
+      [2046] 將警示關聯至 Microsoft Sentinel 中的事件
+    - 手動建立事件
+      [2061] 在 Microsoft Sentinel 中手動建立您自己的事件
+    - 刪除事件
+      [2070] 刪除 Microsoft Sentinel 中的事件
+    - 在調查時補救威脅
+      [2074] 在 Microsoft Sentinel 中調查或威脅搜捕時回應威脅執行者
+    - 使用工作管理事件工作流程
+      - 概觀
+        [2079] 使用工作來管理 Microsoft Sentinel 中的事件
+      - 使用工作來處理事件工作流程
+        [2083] 在 Microsoft Sentinel 中使用事件工作
+      - 稽核和追蹤事件工作的變更
+        [2090] 稽核和追蹤 Microsoft Sentinel 中事件工作的變更
+    - 調查實體
+      - 概觀
+        [2096] Microsoft Sentinel 中的實體頁面
+      - 啟用擴充小工具
+        [2101] 在 Microsoft Sentinel 中啟用擴充小工具
+      - 建立自定義實體活動
+        [2108] 自定義實體頁面時程表上的活動
+    - 調查大型數據集
+      - 概觀
+        [2116] 藉由搜尋大型數據集中的事件來開始調查
+      - 搜尋大型資料集
+        [2120] 在大型數據集中跨長時間搜尋
+      - 還原歷程記錄資料
+        [2125] 從搜尋還原封存的記錄
+    - 在 Microsoft Teams 中共同作業
+      [2130] 在 Microsoft Teams 中共同作業 （公開預覽）
+  - 自動回應
+    - 概觀
+      [2134] Microsoft Sentinel 中的安全性協調流程、自動化和回應 （SOAR）
+    - 教學課程 - 使用自動化響應威脅
+      [2138] 教學課程：在 Microsoft Sentinel 中使用劇本搭配自動化規則來響應威脅
+    - 教學課程 - 自動擴充事件資訊
+      [2152] 教學課程：在事件中自動檢查和記錄IP位址信譽資訊
+    - 教學課程 - 使用非原生動作擷取事件實體
+      [2167] 教學課程：使用非原生動作擷取事件實體
+    - 自動化規則
+      - 自動化規則
+        [2175] 使用自動化規則將 Microsoft Sentinel 中的威脅回應自動化
+      - 建立自動化規則
+        [2188] 建立和使用 Microsoft Sentinel 自動化規則來管理回應
+      - 將進階條件新增至自動化規則
+        [2201] 將進階條件新增至 Microsoft Sentinel 自動化規則
+      - 使用自動化規則建立事件工作
+        [2209] 使用自動化規則在 Microsoft Sentinel 中建立事件工作
+    - 劇本
+      - 概觀
+        [2216] 使用 Microsoft Sentinel 中的劇本將威脅回應自動化
+      - 向 Microsoft Sentinel 驗證劇本
+        [2229] 向 Microsoft Sentinel 驗證劇本
+      - 在劇本中使用觸發程序和動作
+        [2235] 在 Microsoft Sentinel 劇本中使用觸發程式和動作
+      - 將警示劇本移轉至自動化規則
+        [2249] 將 Microsoft Sentinel 警示觸發程式劇本移轉至自動化規則
+      - 從範本自定義劇本
+        [2255] 從內容範本建立和自定義 MicrosoftSentinel 劇本
+      - 設定劇本的進階安全性
+        [2264] 設定 Microsoft Sentinel 劇本的進階安全性
+      - 使用劇本建立和執行進階事件工作
+        [2269] 使用劇本在 Microsoft Sentinel 中建立和執行事件工作
+  - 優化您的安全性作業
+    - SOC 優化概觀
+      [2276] 優化您的安全性作業 （預覽）
+    - SOC 優化參考
+      [2282] 建議的 SOC 優化參考 （預覽）
+  - 管理 Microsoft Sentinel
+    - 管理成本和計費
+      - 監視成本
+        [2284] 管理及監視 Microsoft Sentinel 的成本
+      - 降低成本
+        [2290] 降低 Microsoft Sentinel 的成本
+      - 切換至簡化的定價層
+        [2295] 切換至 Microsoft Sentinel 的簡化定價層
+      - 教學課程 - 設定數據保留原則
+        [2299] 教學課程：在 Log Analytics 工作區中設定資料表的資料保留原則
+      - 基本記錄最佳做法
+        [2303] 用於基本記錄擷取的記錄來源
+    - 連線 Microsoft Sentinel Microsoft Defender 全面偵測回應
+      [2305] 將 Microsoft Sentinel 連線至 MicrosoftDefender XDR (預覽)
+    - 管理多個工作區
+      - 工作區管理員
+        [2310] 使用工作區管理員集中管理多個Microsoft Sentinel 工作區 （預覽）
+      - 跨多個工作區延伸
+        [2319] 跨工作區和租用戶擴充 MicrosoftSentinel
+    - 適用於 MSSP 的 Microsoft Sentinel
+      - 管理多個租使用者 （MSSP）
+        [2323] 以 MSSP 的身分管理 Microsoft Sentinel中的多個租用戶
+      - 在多個工作區中使用事件
+        [2326] 一次處理多個工作區中的事件
+      - 在 Microsoft Sentinel 中管理您的智慧財產權
+        [2328] 保護 Microsoft Sentinel 中的 MSSP 智慧財產權
+    - 管理工作區存取
+      [2335] 依資源管理 Microsoft Sentinel 資料的存取權
+    - 設定客戶管理的金鑰
+      [2340] 設定 Microsoft Sentinel 客戶管理的金鑰
+    - 使用事件計量管理SOC
+      [2346] 透過事件計量更好的管理 SOC
+    - 監視 Microsoft Sentinel 健康情況
+      - 概觀
+        [2351] Microsoft Sentinel 中的稽核和健康情況監視
+      - 啟用稽核和健康情況監視
+        [2354] 開啟 Microsoft Sentinel (預覽版的稽核和健康情況監視)
+      - 監視數據連接器健康情況
+        [2358] 監視數據連接器的健康情況
+      - 監視自動化規則和劇本健康情況
+        [2364] 監視自動化規則和劇本的健康情況
+      - 監視並優化分析規則的執行
+        [2372] 監視並優化排程分析規則的執行
+      - 稽核及監視分析規則的健康情況
+        [2378] 監視健康情況並稽核分析規則的完整性
+      - 監視 SAP 系統健康情況和角色
+        [2390] 監視 SAP 系統的健康情況和角色
+    - 使用 Azure 活動記錄稽核 Microsoft Sentinel
+      [2394] 稽核 Microsoft Sentinel 查詢和活動
+    - 從工作區移除 Microsoft Sentinel
+      [2401] 從您的工作區移除 Microsoft Sentinel
+  - 疑難排解
+    - 針對 CEF/Syslog 資料收集進行疑難解答
+      [2407] 針對 CEF 或 Syslog 資料連接器進行疑難解答
+    - 疑難排解 AWS S3 連接器問題
+      [2422] 疑難排解 AWS S3 連接器問題
+    - 對 Jupyter 筆記本進行疑難排解
+      [2427] 對 Jupyter 筆記本進行疑難排解
+    - 針對 SAP 解決方案部署進行疑難解答
+      [2430] 針對 SAP® 應用程式部署的 MicrosoftSentinel 解決方案進行疑難解答
+  - 參考
+    - 服務限制
+      [2440] Microsoft Sentinel 的服務限制
+    - 比較劇本、活頁簿和筆記本
+      [2445] 使用 Microsoft Sentinel 的實用資源
+    - Microsoft Sentinel REST-API
+      [2448] Microsoft Sentinel
+    - 管理參考
+      - Microsoft Sentinel Logic Apps 連接器
+        [2449] Microsoft Sentinel (Preview)
+Microsoft Sentinel Connector
+      - Azure CLI
+        [2511] az sentinel
+      - Microsoft Sentinel PowerShell
+        [2522] Az.SecurityInsights
+      - SentinelHealth 數據表參考
+        [2525] Microsoft Sentinel 健康情況資料表參考
+      - SentinelAudit 數據表參考
+        [2530] Microsoft Sentinel 稽核資料表參考
+      - Azure RBAC 角色
+        - 所有 Azure 角色
+          [2533] Azure 內建角色
+        - Microsoft Sentinel 角色
+          [2582] 
+    - 進階安全性資訊模型 （ASIM）
+      - ASIM 內容
+        [2591] 進階安全性資訊模型 (ASIM) 安全性內容(公開預覽)
+      - ASIM 剖析器
+        [2597] Microsoft Sentinel 進階安全性資訊模型清單 （ASIM） 剖析器 （公開預覽）
+      - ASIM 通用欄位
+        [2604] 進階安全性資訊模型 （ASIM） 通用架構欄位參考 （預覽）
+      - ASIM 協助程式函式
+        [2612] 進階安全性資訊模型 (ASIM) 協助程式函數 (公開預覽版)
+      - ASIM 已知問題
+        [2615] 進階安全性資訊模型 (ASIM) 已知問題 (公開預覽)
+      - ASIM 架構
+        - ASIM 稽核事件架構
+          [2617] 進階安全性資訊模型 （ASIM） 稽核事件正規化架構參考 （公開預覽）
+        - ASIM 驗證架構
+          [2630] 進階安全性資訊模型 （ASIM） 驗證正規化架構參考 （公開預覽）
+        - ASIM DNS 架構
+          [2645] 進階安全性資訊模型 （ASIM） DNS 正規化架構參考 （公開預覽）
+        - ASIM DHCP 架構
+          [2665] 進階安全性資訊模型 （ASIM） DHCP 正規化架構參考 （公開預覽）
+        - ASIM 檔案事件架構
+          [2672] 進階安全性資訊模型 （ASIM） 檔案事件正規化架構參考 （公開預覽）
+        - ASIM 網路會話架構
+          [2687] 進階安全性資訊模型 （ASIM） 網路會話正規化架構參考 （公開預覽）
+        - ASIM進程事件架構
+          [2711] 進階安全性資訊模型 （ASIM） 進程事件正規化架構參考 （公開預覽）
+        - ASIM 登錄事件架構
+          [2727] 進階安全性資訊模型 （ASIM） 登錄事件正規化架構參考 （公開預覽）
+        - ASIM 使用者管理架構
+          [2735] Microsoft Sentinel 使用者管理正規化架構參考 （預覽）
+        - ASIM Web 工作階段架構
+          [2746] 
+        - 舊版網路正規化架構
+          [2755] 
+    - 數據收集參考
+      - 數據源架構參考
+        [2774] 資料來源架構參考
+      - 安全性警示架構參考
+        [2777] Microsoft Sentinel 安全性警示架構參考
+      - CEF 記錄欄位對應
+        [2780] CEF 和 CommonSecurityLog 欄位對應
+      - Windows 安全性事件集
+        [2791] 可以傳送至 Microsoft Sentinel 的Windows 安全性事件集合
+      - 透過 AMA 參考的 DNS
+        [2793] 透過 AMA 連接器參考的 DNS - 可用的欄位和正規化結構描述
+      - 建立資料收集規則的 API 要求範例 （DCR）
+        [2796] 建立資料收集規則的 API 要求範例（DCR）
+      - Microsoft Purview 資訊保護 參考
+        [2801] 
+      - Microsoft 365 Defender 連接器數據類型支援
+        [2805] 支援不同雲端中的Microsoft Defender 全面偵測回應連接器資料類型
+    - 偵測和分析參考
+      - 熱門 Microsoft Sentinel 活頁簿
+        [2809] 常用的 Microsoft Sentinel 活頁簿
+      - 實體參考
+        [2812] 
+      - UEBA 參考
+        [2833] Microsoft Sentinel UEBA 參考
+      - 異常參考
+        [2846] Microsoft Sentinel 機器學習引擎偵測到的異常狀況
+      - 多階段攻擊偵測案例
+        [2876] Microsoft Sentinel Fusion 引擎偵測到的案例
+      - 關注清單範本架構
+        [2898] Microsoft Sentinel 內建關注清單範本架構 （預覽）
+      - REST API - 範例
+        - 使用 REST-API 管理搜捕查詢
+          [2903] 使用 REST API 管理 Azure Sentinel 中的搜捕和即時資料流查詢
+        - 使用 REST-API 擴充具有地理位置數據的實體
+          [2906] 
+        - 上傳指標 API 參考
+          [2908] 參考上傳指標 API （預覽） 將威脅情報匯入 Microsoft Sentinel
+        - 數據連接器定義 API 參考
+          [2917] 無程式代碼 連線 or 平台的數據連接器定義參考
+        - 數據連接器 API 參考
+          [2934] 
+      - 適用於雲端的 Defender 應用程式警示未上線至 Microsoft 365 Defender
+        [2952] 
+    - 自動化和響應參考
+      - SOAR 內容目錄
+        [2955] Microsoft Sentinel SOAR 內容目錄
+  - 資源
+    - 範例工作區架構
+      [2967] Microsoft Sentinel 範例工作區設計
+    - Microsoft Sentinel 部落格
+    - 定價
+    - 建置 Microsoft Sentinel 的技能
+      - Microsoft 套用技能 - 使用 Microsoft Sentinel 設定 SIEM 安全性作業
+      - Microsoft Sentinel 技能訓練
+        [2976] Microsoft Sentinel 技能訓練
+      - 瞭解 Microsoft Sentinel 的模組
+      - 學習 Kusto 查詢語言 模組 （KQL）

@@ -1,0 +1,158 @@
+- ---< entra-identity-domain-services.pdf >---
+  - Microsoft Entra Domain Services 文件
+    [1] Microsoft Entra Domain Services 文件
+  - 概觀
+    - 什麼是 Microsoft Entra Domain Services?
+      [4] 什麼是 Microsoft Entra DomainServices?
+    - 比較身分識別服務
+      [8] 比較自我管理 Active Directory DomainServices、Microsoft Entra ID 和受控Microsoft Entra Domain Services
+  - 教學課程
+    - 建立受控網域
+      [13] 教學課程：建立及設定 Microsoft EntraDomain Services 受控網域
+    - 設定應用程式的虛擬網路
+      [22] 教學課程：設定 Microsoft Entra DomainServices 受控網域的虛擬網路
+    - 網域加入 Windows Server VM
+      [29] 教學課程：將 Windows Server 虛擬機器加入 Microsoft Entra Domain Services 受控網域
+    - 安裝管理工具
+      [41] 教學課程：建立管理 VM 以設定和管理Microsoft Entra Domain Services 受控網域
+    - 設定安全LDAP
+      [48] 教學課程：設定 Microsoft Entra DomainServices 受控網域的安全 LDAP
+    - 設定密碼哈希同步處理
+      [63] 教學課程：在混合式環境中啟用Microsoft Entra Domain Services 中的密碼同步處理
+    - 建立副本集
+      [67] 教學課程：在 Microsoft Entra DomainServices 中建立和使用複本集以進行復原或地理位置
+    - 執行災害復原演練
+      [72] 教學課程：在 Microsoft Entra DomainServices 中使用複本集執行災害復原演練
+    - 建立自定義的受控網域
+      [75] 教學課程：使用進階組態選項建立及設定Microsoft Entra Domain Services 受控網域
+    - 建立樹系信任
+      [87] 教學課程：使用內部部署網域在Microsoft Entra Domain Services 中建立雙向樹系信任
+  - 範例
+    - 使用 PowerShell 建立受控網域
+      [96] 使用 PowerShell 啟用 Microsoft EntraDomain Services
+    - 使用範本建立受控網域
+      [105] 使用 Azure Resource Manager 範本建立Microsoft Entra Domain Services 受控網域
+    - 使用 Microsoft Graph PowerShell 設定限定範圍的同步處理
+      [114] 使用 Microsoft Graph PowerShell 設定從Microsoft Entra 識別碼到 MicrosoftEntra Domain Services 的範圍同步處理
+    - 使用 PowerShell 建立樹系信任
+      [120] 使用 Azure PowerShell 建立內部部署網域的 Microsoft Entra Domain Services 樹系信任
+  - 概念
+    - 管理員 管理基本概念
+      [134] Microsoft Entra Domain Services 中用戶帳戶、密碼和管理的管理概念
+    - 常見的部署案例
+      [138] Microsoft Entra Domain Services 的常見使用案例和案例
+    - 複本集
+      [146] 複本集 Microsoft Entra Domain Services的概念和功能
+    - 樹系信任
+      [150] Active Directory 中樹系的信任關係如何運作
+    - 網域服務同步處理的運作方式
+      [161] 物件和認證在 Microsoft Entra DomainServices 受控網域中的同步處理方式
+    - 密碼雜湊同步處理如何運作
+      [169] 使用 Microsoft Entra 連線 Sync 實作密碼哈希同步處理
+    - 自訂屬性
+      [180] Microsoft Entra Domain Services 的自訂屬性
+    - 虛擬網路考慮
+      [183] Microsoft Entra Domain Services 的虛擬網路設計考慮和組態選項
+    - 什麼是 Microsoft Entra 識別碼？
+      [192] 什麼是 Microsoft Entra 識別碼？
+    - Microsoft Entra 架構
+      [197] 什麼是 Microsoft Entra 架構？
+  - 如何
+    - 設定一般設定
+      - 設定 Microsoft Entra 識別碼的範圍同步處理
+        [202] 使用 Microsoft Entra 系統管理中心設定從 Microsoft Entra 識別碼到 MicrosoftEntra Domain Services 的範圍同步處理
+      - 建立組織單位 （OU）
+        [206] 在 Microsoft Entra Domain Services 受控網域中建立組織單位 （OU）
+      - 建立群組受控服務帳戶 （gMSA）
+        [211] 在 Microsoft Entra Domain Services 中建立群組受控服務帳戶 （gMSA）
+    - 管理網域服務
+      - 管理員 註冊組策略
+      - 管理 DNS
+        [214] 在 Microsoft Entra Domain Services 受控網域中管理 DNS 並建立條件式轉寄站
+      - 檢查健康情況狀態
+        [220] 檢查 Microsoft Entra Domain Services 受控網域的健康狀態
+      - 車隊計量
+        [223] 檢查 Microsoft Entra Domain Services 的機隊計量
+      - 設定電子郵件通知
+        [232] 設定 Microsoft Entra Domain Services 中問題的電子郵件通知
+      - 刪除受控網域
+        [236] 刪除 Microsoft Entra Domain Services 受控網域
+      - 變更 SKU
+        [237] 變更現有 Microsoft Entra DomainServices 受控網域的 SKU
+      - 取出資料
+        [240] 用於擷取資料的 Microsoft Entra DomainServices 指示
+    - 安全網域服務
+      - 保護您的受控網域
+        [244] 強化 Microsoft Entra Domain Services 受控網域
+      - 設定 Kerberos 限制委派
+        [249] 在 Microsoft Entra Domain Services 中設定 Kerberos 限制委派 （KCD）
+      - 設定密碼和帳戶鎖定原則
+        [253] Microsoft Entra Domain Services 受控網域的密碼和帳戶鎖定原則
+      - 啟用安全性稽核事件
+        [259] 啟用 Microsoft Entra Domain Services 的安全性和 DNS 稽核
+      - 使用 Azure 監視器活頁簿分析稽核事件
+        [270] 使用 Azure 監視器活頁簿檢閱 MicrosoftEntra Domain Services 中的安全性稽核事件
+      - 保護對 VM 的遠端訪問
+        [276] 保護 Microsoft Entra Domain Services 中虛擬機器的遠端存取
+      - 安全性基準
+        [280] 適用于 Azure Active Directory 網域服務的 Azure 安全性基準
+    - 加入網域的 VM
+      - 來自範本的 Windows Server VM
+        [290] 使用 Resource Manager 範本將Windows Server 虛擬機器加入 MicrosoftEntra Domain Services 受控網域
+      - CentOS
+        [295] 將 CentOS Linux 虛擬機加入 MicrosoftEntra Domain Services 受控網域
+      - CoreOS
+        [301] 將 CoreOS 虛擬機器加入 Microsoft EntraDomain Services 受控網域
+      - Red Hat Enterprise Linux
+        [306] 將 Red Hat Enterprise Linux 虛擬機器加入 Microsoft Entra Domain Services 受控網域
+      - Ubuntu Server
+        [313] 將 Ubuntu Linux 虛擬機器加入 MicrosoftEntra Domain Services 受控網域
+      - SUSE Linux Enterprise
+        [321] 將 SUSE Linux Enterprise 虛擬機器加入Microsoft Entra Domain Services 受控網域
+    - 透過LDAP Linux進行Active Directory 驗證
+      - Active Directory 驗證未加入網域的 Linux 虛擬機器
+        [333] Active Directory 驗證未加入網域的 Linux虛擬機器
+    - 部署應用程式
+      - 部署 Microsoft Entra 應用程式 Proxy
+        [339] 部署 Microsoft Entra 應用程式 Proxy，以安全地存取 Microsoft Entra DomainServices 受控網域中的內部應用程式
+      - 啟用 SharePoint Server 的設定檔同步處理
+        [344] 設定 Microsoft Entra Domain Services 以支援 SharePoint Server 的使用者設定檔同步處理
+    - 疑難排解
+      - 常見錯誤
+        [347] Microsoft Entra Domain Services 的常見錯誤和疑難排解步驟
+      - 加入網域問題
+        [353] 針對 Microsoft Entra Domain Services 受控網域的加入網域問題進行疑難排解
+      - 帳戶鎖定
+        [355] 針對 Microsoft Entra Domain Services 受控網域的帳戶鎖定問題進行疑難排解
+      - 登入問題
+        [359] 針對 Microsoft Entra Domain Services 受控網域的帳戶登入問題進行疑難排解
+      - 解決不相符的租用戶錯誤
+        [362] 解決現有 Microsoft Entra DomainServices 受控網域的目錄錯誤
+      - 暫停的網域
+        [365] 瞭解健全狀況狀態，並解決 MicrosoftEntra Domain Services 中暫停的網域
+      - 安全LDAP問題
+        [369] 針對 Microsoft Entra Domain Services 受控網域的安全 LDAP 連線問題進行疑難解答
+      - 已知問題
+        - 常見警示
+          [370] 已知問題：Microsoft Entra DomainServices 中的常見警示和解決方式
+        - 網路警示
+          [381] 
+        - 服務主體警示
+          [384] 已知問題：Microsoft Entra DomainServices 中的服務主體警示
+        - 安全LDAP警示
+          [387] 已知問題：Microsoft Entra DomainServices 中的安全 LDAP 警示
+  - 參考
+    - Graph PowerShell
+      [389] Microsoft Graph PowerShell overview
+    - Azure 原則內建
+      [391] Azure 原則 Microsoft Entra DomainServices 的內建定義
+  - 資源
+    - 常見問題集
+      [393] 組態
+    - 功能可用性
+      [402] Microsoft Entra Domain Services 功能可用性
+    - 服務更新
+    - 定價
+    - Microsoft Entra 意見反應論壇
+    - 在 Azure CSP 訂用帳戶中使用 Microsoft Entra Domain Services
+      [404] 適用于 Azure 雲端解決方案提供者 的Microsoft Entra Domain Services 部署和管理

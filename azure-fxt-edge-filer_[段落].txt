@@ -1,0 +1,39 @@
+- ---< azure-fxt-edge-filer.pdf >---
+  - Azure FXT Edge Filer 文件
+    [1] Azure FXT Edge Filer 文件
+  - 概觀
+    - 什麼是 Azure FXT Edge Filer？
+      [3] 什麼是 Azure FXT Edge Filer 混合式儲存體快取？
+  - 教學課程
+    - 1 - 安裝硬體
+      [5] 教學課程：安裝 Azure FXT Edge Filer
+    - 2 - 為網路連接埠接線並提供電源
+      [17] 教學課程：建立網路連線，並提供電源給Azure FXT Edge Filer 節點
+    - 3 - 設定硬體密碼
+      [23] 教學課程：設定硬體密碼
+    - 4 - 建立叢集
+      [27] 教學課程：建立 Azure FXT Edge Filer 叢集
+    - 5 - 新增叢集節點
+      [42] 教學課程：將叢集節點新增至 Azure FXTEdge Filer 叢集
+    - 6 - 新增後端儲存體並設定虛擬命名空間
+      [47] 教學課程：新增後端儲存體並設定虛擬命名空間
+    - 7 - 設定叢集網路設定
+      [55] 教學課程：設定叢集的網路設定
+    - 8 - 掛接用戶端
+      [60] 教學課程：掛接叢集
+  - 操作指南
+    - 監視 Azure FXT Edge Filer 硬體
+      [64] 監視 Azure FXT Edge Filer 硬體狀態
+    - 安全地關閉硬體節點的電源
+      [68] 如何安全地關閉 Azure FXT Edge Filer 硬體的電源
+  - 資源
+    - 硬體規格
+      [69] Azure FXT Edge Filer 規格
+    - 其他文件
+      [75] Azure FXT Edge Filer 的其他文件
+    - 支援的加密
+      [76] Azure FXT Edge Filer 支援的加密標準
+    - 網路連接埠
+      [78] 必要的網路連接埠
+    - 開啟支援票證
+      [81] 提交有關 Azure FXT Edge Filer 的支援票證

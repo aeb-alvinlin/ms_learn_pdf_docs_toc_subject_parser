@@ -1,0 +1,686 @@
+- ---< azure-stream-analytics.pdf >---
+  - Azure 串流分析文件
+    [1] Azure 串流分析文件
+  - 概觀
+    - 歡迎使用串流分析
+      [6] 歡迎使用 Azure 串流分析
+  - 快速入門
+    - 建立作業
+      - Azure 入口網站
+        [10] 快速入門：使用 Azure 入口網站建立串流分析作業
+      - Visual Studio Code
+        [26] 快速入門：使用 Visual Studio Code 建立串流分析工作
+      - Azure CLI
+        [49] 快速入門 - 使用 Azure CLI 建立串流分析作業
+      - Bicep
+        [57] 快速入門：使用 Bicep 來建立 Azure 串流分析工作
+      - ARM 範本
+        [60] 快速入門：使用 ARM 範本建立 Azure 串流分析作業
+      - Terraform
+        [65] 快速入門：使用 Terraform 來建立 Azure串流分析工作
+      - PowerShell
+        [71] 快速入門：使用 Azure PowerShell 建立串流分析作業
+    - 建立叢集
+      - Azure 入口網站
+        [81] 快速入門：使用 Azure 入口網站建立專用的 Azure 串流分析叢集
+    - 建置端對端串流應用程式
+      [84] 快速入門：建置適用於點選流分析的 E2E串流應用程式
+  - 教學課程
+    - 擷取以 Parquet 格式的事件中樞資料
+      [91] 教學課程：使用 parquet 格式擷取事件中樞資料，並使用 Azure Synapse Analytics進行分析
+    - 將輸出資料寫入 ADLS Gen2 中的差異資料表
+      [100] 教學課程：寫入儲存在 Azure Data Lake儲存體 Gen2 中的 Delta 數據表
+    - 無需程式碼編輯器即可建置即時儀表板
+      [110] 使用串流分析無程式碼編輯器建置即時Power BI 儀表板
+    - 在 Power BI 中將詐騙電話視覺化
+      [128] 教學課程：使用串流分析分析來分析詐騙通話數據，並在Power BI儀錶板中將結果可視化
+    - 使用 Azure Functions 整合第三方服務
+      [145] 教學課程：從 Azure 串流分析作業執行Azure Functions
+    - 建立自訂 .NET 還原序列化程式
+      [162] 教學課程：Visual Studio Code 中適用於Azure 串流分析的自定義 .NET 還原串行化程式 （預覽）
+    - 建立 IoT Edge 工作
+      [169] 教學課程：將 Azure 串流分析部署為 IoTEdge 模組
+  - 範例
+    - 程式碼範例
+      - .NET
+      - Java
+      - JavaScript 和 TypeScript
+      - Python
+  - 概念
+    - 串流分析資源模型
+      - 資源模型概觀
+        [178] Azure 串流分析資源模型
+      - 串流分析叢集
+        [181] Azure 串流分析叢集概觀
+    - 端對端解決方案模式
+      [184] Azure 串流分析解決方案模式
+    - 選擇串流分析技術
+      [195] 在 Azure 上選擇即時分析和串流處理技術
+    - 選擇作業的開發工具
+      [197] 選擇用於建置串流分析工作的開發人員工具
+    - 於本機開發
+      [199] 在本機開發和偵錯 Azure 串流分析工作
+    - 安全性
+      - 將工作連線至 Azure 虛擬網路 (VNet)
+        [200] 將串流分析作業連線至 Azure 虛擬網路(VNET) 中的資源
+      - Azure 原則的安全性控制
+        [202] 適用於 Azure 串流分析的 Azure 原則 法規合規性控制
+      - 安全性基準
+        [210] 適用于 Azure 串流分析的 Azure 安全性基準
+    - 作業監視的計量
+      - 串流分析計量
+        [221] Azure 串流分析作業計量
+      - 串流分析計量維度
+        [225] Azure 串流分析計量的維度
+    - 與結構描述登錄整合
+      [229] 與 Azure 串流分析中的架構登錄整合 (公開預覽版)
+    - 作業的輸入類型
+      - 輸入概觀
+        [233] 了解 Azure 串流分析的輸入
+      - 串流資料輸入
+        [235] 將資料作為輸入串流處理至串流分析中
+      - 參考資料輸入
+        [244] 使用參考資料在串流分析中進行查閱
+      - Kafka 輸入
+        [251] 將 Kafka 的資料串流至串流分析 (預覽)
+      - 驗證輸入結構描述
+        [259] 
+      - 使用自訂還原序列化程式讀取任何格式的輸入
+        [268] 使用 .NET 自訂還原序列化程式讀取任何格式的輸入 (預覽)
+    - 作業的輸出類型
+      - 輸出概觀
+        [274] 來自 Azure 串流分析的輸出
+      - Azure SQL Database
+        - SQL Database 輸出概觀
+          [278] 從 Azure 串流分析的 Azure SQLDatabase 輸出
+        - SQL Database 輸出效能
+          [281] 從 Azure 串流分析增加 Azure SQLDatabase 的輸送量效能
+      - Azure Synapse Analytics
+        [284] Azure Synapse Analytics 的 Azure 串流分析輸出
+      - Azure Blob 儲存體和 Azure Data Lake Gen2
+        - Azure Blob 和資料湖輸出概觀
+          [286] 來自 Azure 串流分析的 Blob 記憶體和Azure Data Lake Gen2 輸出
+        - 將資料寫入 Delta Lake
+          [293] Azure 串流分析 - 寫入 Delta Lake 數據表
+        - 自訂路徑模式
+          [297] Azure 串流分析自訂 Blob 輸出資料分割
+      - Azure 事件中樞
+        [305] Azure 串流分析的事件中樞輸出
+      - Power BI
+        [308] Azure 串流分析的 Power BI 輸出
+      - Azure Cosmos DB
+        - Azure Cosmos DB 輸出概觀
+          [312] 從 Azure 串流分析輸出至 Azure CosmosDB
+        - Azure Cosmos DB 最佳化
+          [314] Azure 串流分析輸出至 Azure Cosmos DB
+      - Azure 資料總管
+        [321] Azure 串流分析的 Azure 資料總管輸出
+      - 適用於 PostgreSQL 的 Azure 資料庫
+        [324] 來自 Azure 串流分析的適用於PostgreSQL 的 Azure 資料庫輸出
+      - 表格儲存體
+        [326] Azure 串流分析的資料表儲存體輸出
+      - 服務匯流排佇列
+        [328] Azure 串流分析的服務匯流排佇列輸出
+      - 服務匯流排主題
+        [332] Azure 串流分析的服務匯流排主題輸出
+      - Azure Functions
+        [335] Azure 串流分析的 Azure Functions 輸出
+      - Kafka 輸出
+        [337] 串流分析的 Kafka 輸出 (預覽)
+    - 使用函式擴充查詢
+      - 函式概觀
+        [345] Azure 串流分析中的使用者定義函式
+      - JavaScript UDF
+        [347] Azure 串流分析中的 JavaScript 使用者定義函式
+      - JavaScript UDA
+        [355] Azure 串流分析 JavaScript 使用者定義彙總
+      - C# UDF
+        [362] 針對 Azure 串流分析作業開發 .NETStandard 使用者定義的函式 (預覽)
+      - 機器學習 UDF
+        [376] 整合 Azure 串流分析與 Azure MachineLearning
+      - 偵錯 UDF
+        [384] 在 Azure 串流分析中偵錯使用者定義函式
+    - 最佳化您的串流分析作業
+      - 了解及調整串流單位
+        [390] 了解和調整串流分析串流單位
+      - 改善查詢效能
+        [397] 使用串流分析中的查詢平行化作業
+      - 重新分割您的輸入
+        [408] 使用重新分割將 Azure 串流分析的處理最佳化
+      - 增加作業輸送量
+        [411] 調整 Azure 串流分析作業以增加輸送量
+    - 沒有程式碼編輯器
+      [415] 串流分析中的無程式碼串流處理
+    - IoT Edge
+      [446] IoT Edge 上的 Azure 串流分析
+    - 作業狀態
+      [451] Azure 串流分析工作狀態
+    - 視窗函數
+      [453] 串流分析視窗化函式簡介
+    - GeoSpatial 函式
+      [461] 串流分析地理空間函式簡介
+    - 相容性層級
+      [467] Azure 串流分析作業的相容性層級
+    - 常見查詢模式
+      [472] Azure 串流分析中的常見查詢模式
+    - 剖析 JSON 和 AVRO 資料
+      [496] 在 Azure 串流分析中剖析 JSON 和 Avro資料
+    - 剖析 Protobuf
+      [504] 在 Azure 串流分析中剖析 Protobuf
+    - 事件排序
+      - 事件排序概觀
+        [509] 設定 Azure 串流分析的事件排序原則
+      - 時間掌握考量
+        [513] 了解 Azure 串流分析中的時間處理
+    - 檢查點和重新執行
+      [522] Azure 串流分析作業中的檢查點和重新執行概念
+    - 作業圖表
+      [525] Azure 入口網站中的串流分析作業圖表(預覽)
+    - 錯誤原則
+      [534] Azure 串流分析輸出錯誤原則
+  - 操作指南
+    - 開發作業
+      - 測試查詢
+        [535] 在入口網站中測試 Azure 串流分析作業
+      - 啟動作業
+        [542] 如何啟動 Azure 串流分析作業
+      - 停止或刪除作業
+        [544] 停止或刪除 Azure 串流分析作業
+      - 自動調整作業
+        [546] 自動調整串流單位
+      - 新增 SQL Database 作為輸出
+        [554] 從 Azure 串流分析作業寫入至 Azure SQLDatabase 資料表
+      - 使用 SQL 參考資料
+        [563] 將來自 SQL Database 的參考資料用於Azure 串流分析作業
+      - 更新認證
+        [577] 針對串流分析作業的輸入和輸出替換登入認證
+    - 管理工作
+      - 複製或備份作業
+        [581] 在區域之間複製、備份和移動 Azure 串流分析作業
+      - 配對作業以獲得較高的可靠性
+        [583] 在服務更新期間確保串流分析工作可靠性
+      - 異地備援
+        [584] 達成 Azure 串流分析作業的異地備援
+      - 將資料進行加密 (CMK)
+        [586] Azure 串流分析中的資料保護
+      - 設定警示
+        [591] 設定 Azure 串流分析工作的警示
+    - 管理串流分析叢集
+      - 建立和刪除私人端點
+        [595] 在 Azure 串流分析叢集中建立及刪除受控私人端點
+      - 新增和移除作業
+        [598] 在 Azure 串流分析叢集中新增和移除作業
+      - 調整叢集大小
+        [600] 調整 Azure 串流分析叢集大小
+      - 將叢集移至其他區域
+        [601] 使用 Azure PowerShell 來移動 Azure 串流分析叢集
+    - 不使用程式碼編輯器來建置
+      - 使用 Power BI 資料集來建置即時儀表板
+        [603] 使用從串流分析產生的 Power BI 資料集建置即時儀表板，而不需要程式碼編輯器
+      - 擷取 Delta Lake 格式的事件中樞資料
+        [615] 以 Delta Lake 格式從事件中樞擷取數據
+      - 擷取以 Parquet 格式的事件中樞資料
+        [621] 以 Parquet 格式從事件中樞擷取資料
+      - 將資料具體化至 Azure Cosmos DB
+        [629] 使用串流分析無程式碼編輯器在 AzureCosmos DB 中具體化資料
+      - 篩選並內嵌 Synapse SQL 資料
+        [633] 使用串流分析無程式碼編輯器，篩選及擷取至 Azure Synapse SQL
+      - 篩選並內嵌至 Data Lake Storage Gen2
+        [641] 使用串流分析無程式碼編輯器，篩選並內嵌至 Azure Data Lake Storage Gen2
+      - 擴充資料並內嵌至事件中樞
+        [648] 使用串流分析無程式碼編輯器以擴充資料並內嵌至事件中樞
+      - 轉換並內嵌至 SQL 資料庫
+        [657] 使用串流分析無程式碼編輯器，在 AzureSQL 資料庫中轉換和儲存資料
+      - 篩選並內嵌至 Azure Data Explorer
+        [667] 使用串流分析無程式碼編輯器，來篩選及擷取至 Azure Data Explorer
+    - 使用受控識別進行驗證
+      - 受控識別概觀
+        [676] 適用於 Azure 串流分析的受控識別
+      - 使用者指派的受控身分識別
+        [678] 適用於 Azure 串流分析的使用者指派受控識別
+      - Azure Blob 儲存體和 Azure Data Lake Gen2
+        [682] 使用受控識別向 Azure Blob 儲存體驗證Azure 串流分析作業
+      - Azure Cosmos DB
+        [694] 使用受控識別從 Azure 串流分析作業存取Azure Cosmos DB
+      - Azure Data Explorer
+        [699] 使用受控識別從 Azure 串流分析作業存取Azure Data Explorer
+      - Azure 事件中樞
+        [704] 使用受控識別從 Azure 串流分析作業存取事件中樞
+      - Power BI
+        [709] 使用受控識別向 Power BI 驗證 Azure 串流分析作業
+      - Azure SQL DB 與 Azure Synapse Analytics
+        [718] 使用受控識別，從串流分析作業存取Azure SQL Database 或 Azure SynapseAnalytics
+      - 服務匯流排
+        [731] 使用受控識別從 Azure 串流分析作業存取服務匯流排
+    - 建置方案
+      - Twitter 情緒分析
+        [736] 使用 Azure 串流分析進行社交媒體分析
+      - 在 Azure Stack 上執行作業
+        [745] 在 Azure Stack 上執行 Azure 串流分析
+      - 收費亭感應器資料分析
+        [754] 利用串流分析來建置 IoT 解決方案
+      - 高頻率交易
+        [765] 使用串流分析進行高頻率交易模擬
+      - 處理 IoT 串流資料
+        [778] 使用 Azure 串流分析處理即時 IoT 資料流
+      - 閾值型規則
+        [786] 在 Azure 串流分析中處理可設定閾值型規則
+      - 使用 Azure Functions 在 SQL Database 中進行更新或合併
+        [793] 使用 Azure Functions 更新或合併 AzureSQL Database 中的記錄
+      - 處理 Kafka 事件
+        [805] 教學課程：使用串流分析處理適用於事件中樞事件的 Apache Kafka
+      - 處理事件中樞資料
+        [815] 使用 Azure 串流分析處理來自事件中樞的資料
+      - Azure SQL Database 流程
+        [824] 使用 Azure 串流分析整合 (預覽版) 將資料串流至 Azure SQL Database
+      - 地理空間案例
+        [831] 搭配 Azure 串流分析的地理柵欄和地理空間彙總情節
+    - 監視器
+      - 監視 Azure 串流分析
+        [837] 監視 Azure 串流分析
+      - 監視資料參考
+        [846] Azure 串流分析監視數據參考
+      - 監視作業 - Azure 入口網站
+        [856] 使用 Azure 入口網站監視串流分析作業
+      - 監視作業- PowerShell
+        [859] 透過 Azure PowerShell Cmdlet 監視和管理串流分析工作
+      - 監視作業 - Azure .NET SDK
+        [875] 以程式設計方式來建立串流分析工作監視
+    - 將作業最佳化
+      - 作業模擬
+        [880] 使用作業模擬最佳化查詢
+      - 實體作業圖表
+        [887] 在 Azure 入口網站中使用實體作業圖表(預覽版) 進行偵錯
+      - 邏輯作業圖表
+        [894] 在 Azure 入口網站中使用邏輯作業圖表(預覽) 進行偵錯
+    - 自動化
+      - 使用 PowerShell 進行自動暫停
+        [899] 使用 PowerShell 和 Azure Functions 或Azure 自動化 自動暫停作業
+      - 使用 .NET SDK 進行管理
+        [917] 管理 .NET SDK：透過適用於 .NET 的Azure 串流分析 API 來設定及執行分析工作
+      - 使用適用於 IoT Edge 的 API 作業
+        [926] 
+      - 使用 Azure Resource Manager 進行匯出並部署
+        [930] 匯出 Azure 串流分析作業的 AzureResource Manager 範本
+    - 持續整合與持續傳遞
+      - CI/CD 概觀
+        [933] 串流分析作業的持續整合和持續部署(CI/CD)
+      - 使用 PowerShell 建置、測試及部署
+        [934] 自動建置、測試和部署串流分析專案
+      - 使用 Azure DevOps 設定管線
+        [941] 使用 Azure DevOps 建立串流分析作業的CI/CD 管線
+      - 使用 GitHub Actions 設定管線
+        [953] 與 GitHub Actions 整合
+      - 使用 Bicep 部署作業
+        [961] 使用 Bicep 檔案部署串流分析作業
+      - 設定自動調整設定
+        [963] 使用 CI/CD 工具設定串流分析作業的自動調整設定
+    - Visual Studio Code
+      - 匯出和管理作業
+        [970] 在 Visual Studio Code 中匯出和管理串流分析作業
+      - 使用即時資料在本機測試
+        [977] 使用 Visual Studio Code 針對即時串流輸入在本機測試串流分析查詢
+      - 使用 IntelliSense 完成程式碼
+        [984] 適用於 Visual Studio Code 的 Azure 串流分析工具中的 IntelliSense
+      - 使用 VS Code 在本機執行作業
+        [988] 使用 ASA 工具在 Visual Studio Code 中本地測試串流分析作業的概觀
+      - 使用範例資料在本機測試
+        [990] 使用 Visual Studio Code 在本機使用範例資料測試串流分析查詢
+      - 使用作業圖表偵錯查詢
+        [995] 在本機使用 Visual Studio Code 中的作業圖表對 Azure 串流分析查詢進行偵錯 (預覽)
+      - 建立 .NET 自訂還原序列化程式並進行偵錯
+        [1002] 教學課程：Visual Studio Code 中適用於Azure 串流分析的自定義 .NET 還原串行化程式 （預覽）
+      - JobConfig.json 欄位
+        [1009] Azure 串流分析 JobConfig.json 欄位
+    - Visual Studio
+      - 移轉至 VS Code
+        [1011] 如何將 ASA 專案移轉至 Visual StudioCode
+      - 快速入門
+        [1021] 快速入門：使用 Visual Studio 建立串流分析作業
+      - 使用範例資料在本機測試
+        [1038] 使用 Visual Studio 在本機測試串流分析查詢
+      - 使用即時資料在本機測試
+        [1044] 使用適用於 Visual Studio 的 Azure 串流分析工具 (預覽) 在本機測試即時資料
+      - 檢視 Visual Studio 中的作業
+        [1047] 使用 Visual Studio 檢視 Azure 串流分析工作
+      - Visual Studio 中的監視作業
+        [1052] 使用 Visual Studio 監視和管理串流分析工作
+      - 使用作業圖表偵錯查詢
+        [1055] 在本機使用 Visual Studio 中的作業圖表對 Azure 串流分析查詢進行偵錯
+      - 建立自訂 .NET 還原序列化程式
+        [1061] Visual Studio 中的 Azure 串流分析自訂.NET 還原序列化程式 (Preview)
+      - 開發邊緣作業
+        [1066] 使用 Visual Studio 工具來開發串流分析Edge 作業
+      - 執行 C# UDF
+        [1074] 教學課程：針對串流分析作業撰寫 C# 使用者定義的函式 (預覽)
+      - 設定 CI/CD 管線
+        [1081] 使用 Azure 串流分析 CI/CD NuGet 套件進行整合和開發
+    - 疑難排解
+      - 輸入
+        [1084] 對輸入連線進行疑難排解
+      - 輸出
+        [1091] 針對 Azure 串流分析輸出進行疑難解答
+      - 查詢邏輯
+        [1095] 針對 Azure 串流分析查詢進行疑難解答
+      - 浮水印延遲增加
+        [1103] 使用計量和維度來分析串流分析的作業效能
+      - 活動和資源記錄
+        [1108] 
+      - 資料錯誤
+        [1114] Azure 串流分析資料錯誤
+      - 錯誤碼
+        - 組態錯誤
+          [1122] Azure 串流分析設定錯誤碼
+        - 資料錯誤
+          [1125] Azure 串流分析資料錯誤碼
+        - 外部可用性錯誤
+          [1127] Azure 串流分析的外部可用性錯誤碼
+        - 外部錯誤
+          [1128] Azure 串流分析外部錯誤碼
+        - 內部錯誤
+          [1131] Azure 串流分析內部錯誤碼
+    - 與 Machine Learning 整合
+      - 使用 ML 模型進行情感分析
+        [1132] 使用 Azure 串流分析和 MachineLearning Studio (傳統) 進行情感分析
+      - 異常偵測
+        [1142] Azure 串流分析中的異常偵測
+      - 使用 ML REST API
+        [1148] 串流分析中的 Machine Learning 工作室(傳統) 整合
+    - 隨著 ML 函式縮放
+      [1154] 使用 Machine Learning Studio (傳統) 函式調整串流分析作業
+    - 在您的虛擬網路中執行作業
+      [1160] 在 Azure 虛擬網路中執行串流分析作業(公開預覽)
+    - 連線到 confluent cloud kafka
+      - 連線到 confluent cloud kafka 作為輸入
+        [1166] 使用串流分析從 Confluent Cloud Kafka串流資料
+      - 連線到 confluent cloud Kafka 作為輸出
+        [1174] 將資料從 Azure 串流分析串流至串流雲端
+  - Stream Analytics 查詢語言
+    - 串流分析查詢語言概觀
+      [1181] 串流分析查詢語言參考
+    - 內建函式
+      - 內建函式概觀
+        [1183] 內建函數 (Azure Stream Analytics)
+      - 彙總函式
+        - 彙總函式概觀
+          [1185] 彙總函式 (Azure Stream Analytics)
+        - 平均
+          [1186] AVG (Azure Stream Analytics)
+        - COUNT
+          [1188] COUNT (Azure Stream Analytics)
+        - 收集
+          [1190] 收集 Azure 串流分析 ()
+        - CollectTOP
+          [1192] CollectTOP (Azure Stream Analytics)
+        - 最大值
+          [1195] MAX (Azure Stream Analytics)
+        - 最小值
+          [1197] MIN (Azure Stream Analytics)
+        - Percentile_Cont
+          [1199] Percentile_Cont (Azure 串流分析)
+        - Percentile_Disc
+          [1201] Percentile_Disc (Azure 串流分析)
+        - STDEV
+          [1203] STDEV (Azure Stream Analytics)
+        - STDEVP
+          [1204] STDEVP (Azure Stream Analytics)
+        - SUM
+          [1205] SUM (Azure Stream Analytics)
+        - TopOne
+          [1207] TopOne (Azure 串流分析)
+        - VAR
+          [1209] VAR (Azure Stream Analytics)
+        - VARP
+          [1210] VARP (Azure Stream Analytics)
+      - 分析函式
+        - 分析函式概觀
+          [1211] 分析函數 (Azure Stream Analytics)
+        - AnomalyDetection_SpikeAndDip
+          [1212] AnomalyDetection_SpikeAndDip (Azure串流分析)
+        - AnomalyDetection_ChangePoint
+          [1216] AnomalyDetection_ChangePoint (Azure串流分析)
+        - ISFIRST
+          [1220] ISFIRST (Azure Stream Analytics)
+        - LAG
+          [1223] LAG (Azure Stream Analytics)
+        - LAST
+          [1227] 上次 (Azure 串流分析)
+      - 陣列函式
+        - 陣列函式概觀
+          [1230] 串流分析 (陣列函式)
+        - GetArrayLength
+          [1231] GetArrayLength (Azure 串流分析)
+        - GetArrayElement
+          [1232] Azure 串流分析 (GetArrayElement)
+        - GetArrayElements
+          [1236] GetArrayElements (Azure 串流分析)
+      - 位元運算子
+        - 位元運算子概觀
+          [1238] 位運算子 (Azure 串流分析)
+        - 位元 AND
+          [1240] & (位 AND) (Azure 串流分析)
+        - 位元 OR
+          [1244] | (位 OR) (Azure 串流分析)
+        - 位元 XOR
+          [1248] ^ (位獨佔 OR) (Azure 串流分析)
+        - 位元 NOT
+          [1252] ~ (位 NOT) (Azure 串流分析)
+      - 轉換函式
+        - 轉換函式概觀
+          [1256] Conversion Functions (Azure StreamAnalytics)
+        - CAST
+          [1257] CAST (Azure Stream Analytics)
+        - GetType
+          [1259] GetType (Azure 串流分析)
+        - TRY_CAST
+          [1260] TRY_CAST (Azure 串流分析)
+      - 日期及時間函式
+        - 日期和時間函式概觀
+          [1262] 日期和時間函數 (Azure Stream Analytics)
+        - DATEADD
+          [1263] DATEADD (Azure Stream Analytics)
+        - DATEDIFF
+          [1265] DATEDIFF (Azure Stream Analytics)
+        - DATENAME
+          [1267] DATENAME (Azure Stream Analytics)
+        - DATEPART
+          [1269] DATEPART (Azure Stream Analytics)
+        - DATETIMEFROMPARTS
+          [1271] DATETIMEFROMPARTS (Azure StreamAnalytics)
+        - DAY
+          [1272] DAY (Azure Stream Analytics)
+        - MONTH
+          [1273] MONTH (Azure Stream Analytics)
+        - YEAR
+          [1274] YEAR (Azure Stream Analytics)
+      - GeoSpatial 函式
+        - GeoSpatial 函式概觀
+          [1275] 地理空間函數 (Azure 串流分析)
+        - CreateLineString
+          [1276] CreateLineString (Azure 串流分析)
+        - CreatePoint
+          [1278] CreatePoint (Azure 串流分析)
+        - CreatePolygon
+          [1280] CreatePolygon (Azure 串流分析)
+        - ST_DISTANCE
+          [1282] ST_DISTANCE (Azure 串流分析)
+        - ST_OVERLAPS
+          [1284] ST_OVERLAPS (Azure 串流分析)
+        - ST_INTERSECTS
+          [1286] ST_INTERSECTS (Azure 串流分析)
+        - ST_WITHIN
+          [1288] ST_WITHIN (Azure 串流分析)
+      - 輸入中繼資料函式
+        - 輸入中繼資料函式概觀
+          [1290] Azure 串流分析 (輸入中繼資料函式)
+        - GetMetadataPropertyValue
+          [1291] GetMetadataPropertyValue (Azure 串流分析)
+      - 數學函式
+        - 數學函式概觀
+          [1295] Azure 串流分析 (數學函式)
+        - ABS
+          [1296] ABS (絕對值 - Azure 串流分析)
+        - CEILING
+          [1297] CEILING (Azure 串流分析)
+        - EXP
+          [1298] EXP (Azure 串流分析)
+        - FLOOR
+          [1299] FLOOR (Azure 串流分析)
+        - POWER
+          [1300] POWER (Azure 串流分析)
+        - ROUND
+          [1301] ROUND (Azure 串流分析)
+        - SIGN
+          [1303] SIGN (Azure 串流分析)
+        - SQUARE
+          [1304] SQUARE (Azure 串流分析)
+        - SQRT
+          [1305] SQRT (Azure 串流分析)
+      - 記錄函式
+        - 記錄函式概觀
+          [1306] (Azure 串流分析) 記錄函式
+        - GetRecordProperties
+          [1307] GetRecordProperties (Azure 串流分析)
+        - GetRecordPropertyValue
+          [1308] GetRecordPropertyValue (Azure 串流分析)
+      - 字串函式
+        - 字串函式概觀
+          [1310] 字串函數 (Azure Stream Analytics)
+        - CHARINDEX
+          [1312] CHARINDEX (Azure Stream Analytics)
+        - CONCAT
+          [1314] CONCAT (Azure Stream Analytics)
+        - CONCAT_WS
+          [1316] CONCAT_WS (Azure 串流分析)
+        - LEFT
+          [1318] LEFT (Azure 串流分析)
+        - LEN
+          [1320] LEN (Azure Stream Analytics)
+        - LOWER
+          [1321] LOWER (Azure Stream Analytics)
+        - LTRIM
+          [1322] LTRIM (Azure 串流分析)
+        - NCHAR
+          [1324] NCHAR (Azure 串流分析)
+        - PATINDEX
+          [1325] PATINDEX (Azure Stream Analytics)
+        - REGEXMATCH
+          [1326] REGEXMATCH (Azure 串流分析)
+        - REPLACE
+          [1328] REPLACE (Azure 串流分析)
+        - REPLICATE
+          [1330] 複寫 (Azure 串流分析)
+        - REVERSE
+          [1332] REVERSE (Azure 串流分析)
+        - RIGHT
+          [1333] RIGHT (Azure 串流分析)
+        - RTRIM
+          [1335] RTRIM (Azure 串流分析)
+        - SPACE
+          [1337] SPACE (Azure 串流分析)
+        - STUFF
+          [1339] STUFF (Azure 串流分析)
+        - SUBSTRING
+          [1341] SUBSTRING (Azure Stream Analytics)
+        - TRANSLATE
+          [1343] TRANSLATE (Azure 串流分析)
+        - TRIM
+          [1345] TRIM (Azure 串流分析)
+        - UNICODE
+          [1347] UNICODE (Azure 串流分析)
+        - UPPER
+          [1348] UPPER (Azure Stream Analytics)
+      - 時間範圍函式
+        - 時間範圍函式概觀
+          [1349] Azure 串流分析 (視窗化函式)
+        - 跳動時間範圍
+          [1351] 跳動視窗 (Azure 資料流分析)
+        - 工作階段時間範圍
+          [1354] Azure 串流分析) (工作階段視窗
+        - 滑動視窗
+          [1358] 滑動視窗 (Azure 資料流分析)
+        - 快照集視窗
+          [1360] Azure 串流分析 (快照集視窗)
+        - 輪轉視窗
+          [1363] 輪轉視窗 (Azure 資料流分析)
+        - 彙總時間範圍函式
+          [1366] Windows (Azure 串流分析)
+    - 資料類型
+      - 資料類型概觀
+        [1369] 資料類型 (Azure Stream Analytics)
+      - 剖析 JSON 和 AVRO 資料
+        [1374] 在 Azure 串流分析中剖析 JSON 和 Avro資料
+      - 剖析 Protobuf
+        [1382] 在 Azure 串流分析中剖析 Protobuf
+    - 查詢語言元素
+      - 查詢語言元素概觀
+        [1387] Azure 串流分析) (查詢語言元素
+      - APPLY
+        [1389] 套用 (Azure 串流分析)
+      - CASE
+        [1392] CASE (Azure Stream Analytics)
+      - COALESCE
+        [1395] COALESCE (Azure 串流分析)
+      - 建立資料表
+        [1396] CREATE TABLE (Stream Analytics)
+      - FROM
+        [1399] FROM (Azure Stream Analytics)
+      - GROUP BY
+        [1401] GROUP BY (Azure Stream Analytics)
+      - HAVING
+        [1403] HAVING (Azure Stream Analytics)
+      - INTO
+        [1404] INTO (Azure Stream Analytics)
+      - JOIN
+        [1406] JOIN (Azure 資料流分析)
+      - MATCH_RECOGNIZE
+        [1411] MATCH_RECOGNIZE (串流分析)
+      - NULLIF
+        [1417] NullIF (Azure 串流分析)
+      - 參考資料 JOIN
+        [1419] 參考資料 JOIN (Azure Stream Analytics)
+      - SELECT
+        [1421] SELECT (Azure Stream Analytics)
+      - UNION
+        [1423] UNION (Azure Stream Analytics)
+      - WHERE
+        [1425] WHERE (Azure Stream Analytics)
+      - WITH
+        [1428] WITH (Azure Stream Analytics)
+    - 時間管理
+      - 時間管理概觀
+        [1430] 時間管理 (Azure 串流分析)
+      - System.Timestamp
+        [1431] System.Timestamp () (串流分析)
+      - TIMESTAMP BY
+        [1434] TIMESTAMP BY (Azure 串流分析)
+      - 時間偏差原則
+        [1438] Azure 串流分析) (時間扭曲原則
+    - 事件傳遞保證
+      [1440] Azure 串流分析) (事件傳遞保證
+  - 參考
+    - Azure PowerShell
+      [1442] Az.StreamAnalytics
+    - .NET
+      [1445] Microsoft.Azure.Management.StreamAnalytics Namespace
+    - REST
+      [1447] 串流分析 REST API
+    - Resource Manager 範本
+      [1448] Microsoft.StreamAnalytics 資源類型
+    - Azure CLI
+      [1449] az stream-analytics
+    - Azure 原則內建
+      [1454] 
+  - 資源
+    - 串流分析預覽
+      [1456] Azure 串流分析預覽功能
+    - Azure 藍圖
+    - 部落格
+    - 意見反應論壇
+    - Microsoft 問與答頁面
+    - 定價
+    - 定價計算機
+    - 服務更新
+    - Stack Overflow
+    - 影片
+    - 客戶案例研究

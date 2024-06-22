@@ -1,0 +1,118 @@
+- ---< azure-spatial-anchors.pdf >---
+  - Spatial Anchors 文件
+    [1] Azure Spatial Anchors 文件
+  - 概觀
+    - 關於 Spatial Anchors
+      [3] Azure Spatial Anchors 概觀
+  - 快速入門
+    - 執行範例應用程式
+      - Unity
+        - HoloLens - Unity
+          [5] 執行範例應用程式：HoloLens - Unity（C#）
+        - Android - Unity
+          [14] 執行範例應用程式：Android - Unity（C#）
+        - iOS - Unity
+          [24] 執行範例應用程式：iOS - Unity （C#）
+      - HoloLens - Visual Studio (Native) 
+        [35] 執行範例應用程式：HoloLens - VisualStudio （C++/WinRT）
+      - Android - Android Studio
+        [40] 執行範例應用程式：Android - AndroidStudio （JAVA 或 C++/NDK）
+      - iOS - Xcode
+        [46] 執行範例應用程式：iOS - Xcode （Swift或 Objective-C）
+      - Xamarin
+        - Android - Xamarin
+          [53] 執行範例應用程式：Android - Xamarin（C#）
+        - iOS - Xamarin
+          [62] 執行範例應用程式：iOS - Xamarin（C#）
+  - 教學課程
+    - 建立您自己的 HoloLens 應用程式 - Unity
+      [71] 教學課程：使用 Azure Spatial Anchors建立新 HoloLens Unity 應用程式的逐步指示
+    - 建立您自己的 Android 應用程式 - Android Studio
+      [106] 教學課程：使用 Azure Spatial Anchors建立新 Android 應用程式的逐步指示
+    - 跨工作階段和裝置共用
+      [132] 教學課程：跨會話和裝置共享空間錨點
+      - 透過 Azure Cosmos DB 持續共用
+        [142] 教學課程：跨工作階段和裝置與 AzureCosmos DB 後端共用 Azure SpatialAnchors
+  - 操作方式
+    - 建立 Azure 空間錨點帳戶
+      [147] 建立 Azure Spatial Anchors 帳戶
+    - 建立並找出錨點
+      [150] 如何使用 Azure Spatial Anchors 建立和尋找錨點
+      - 使用 Unity
+        [151] 如何在 Unity 中使用 Azure SpatialAnchors 建立和尋找錨點
+      - 使用 Objective-C
+        [162] 如何在 Objective-C 中使用 Azure SpatialAnchors 建立和尋找錨點
+      - 使用 Swift
+        [173] 如何在 Swift 中使用 Azure SpatialAnchors 建立和尋找錨點
+      - 使用 Java
+        [184] 如何在 Java 中使用 Azure SpatialAnchors 建立和尋找錨點
+      - 使用 C++/NDK
+        [196] 如何在 C++/NDK 中使用 Azure SpatialAnchors 建立和尋找錨點
+      - 使用 C++/WinRT
+        [208] 如何在 C++/WinRT 中使用 Azure SpatialAnchors 建立和尋找錨點
+    - 使用粗略重新定位來探索附近的錨點
+      - 使用 C#/Unity
+        [219] 如何在 C# 中使用粗略重新定位建立和尋找錨點
+      - 使用 Objective-C
+        [221] 如何在 Objective-C 中使用粗略重新定位建立和尋找錨點
+      - 使用 Swift
+        [223] 如何在 Swift 中使用粗略重新定位建立和尋找錨點
+      - 使用 Java
+        [225] 如何在 Java 中使用粗略重新定位建立和尋找錨點
+      - 使用 C++/NDK
+        [227] 如何在 C++/NDK 中使用粗略重新定位建立和尋找錨點
+      - 使用 C++/WinRT
+        [229] 如何在 C++/WinRT 中使用粗略重新定位建立和尋找錨點
+    - 在不使用錨點工作階段的情況下使用粗略重新定位
+      [231] 在不使用錨點工作階段的情況下使用粗略重新定位
+    - 專案設定
+      - Unity
+        [232] 設定 Azure Spatial Anchors 供 Unity 專案使用
+      - C++/WinRT
+        [236] 在 C++/WinRT HoloLens 專案中設定Azure Spatial Anchors
+    - 在區域之間移動 Spatial Anchors 帳戶
+      [237] 在區域之間移動空間錨點帳戶
+  - 範例
+    - Azure Spatial Anchors 範例 (GitHub)
+    - GitHub)  (MROpenXR Azure Spatial Anchors 範例
+  - 概念
+    - 驗證
+      [241] Azure Spatial Anchors 的驗證和授權
+    - 錨點關聯性
+      [248] Azure Spatial Anchors 中的錨點關聯性和指向作業
+    - 經驗指導方針
+      [252] 使用 Azure Spatial Anchors 建立有效的錨點體驗
+    - 記錄和診斷
+      [257] Azure Spatial Anchors 中的記錄和診斷
+    - 粗略地重新當地語系化
+      [260] 粗略重新置放
+    - 錨點定位策略
+      [266] 了解 AnchorLocateCriteria 類別
+    - Spatial Anchors 中的可靠性
+      [269] Azure Spatial Anchors 中的可靠性為何？
+    - 安全性
+      - 安全性基準
+        [271] Azure Spatial Anchors 的 Azure 安全性基準
+  - 參考資料
+    - 適用於 Unity 的 SDK
+      [281] Microsoft.Azure.SpatialAnchors 命名空間
+    - 適用於 iOS Objective-C 的 SDK
+      [284] 適用于 Objective-C 的 Azure SpatialAnchors SDK
+    - 適用於 Android Java 的 SDK
+      [286] com.microsoft.azure.spatialanchors
+    - 適用於 Android NDK 的 SDK
+      [289] Azure Spatial Anchors SDK forAndroid/NDK
+    - 適用於 HoloLens C++/WinRT 的 SDK
+      [291] Azure Spatial Anchors SDK forC++/WinRT
+    - Azure CLI
+      [293] az spatial-anchors-account
+    - Azure PowerShell
+      [304] Az.MixedReality
+  - 資源
+    - 版本資訊
+    - Azure 混合實境資源管理 REST API
+      [306] Azure Mixed Reality REST API 參考
+    - 常見問題集
+      [307] Azure Spatial Anchors 產品常見問題
+    - 支援&意見反應
+      [313] Azure Spatial Anchors 支持選項

@@ -1,0 +1,1696 @@
+- ---< azure-virtual-machines.pdf >---
+  - 虛擬機器 檔
+    [1] Azure 中的虛擬機器
+  - 概觀
+    [8] 
+  - 快速入門
+    - 建立 Linux VM
+      - CLI
+        [10] 快速入門：在 Azure 上使用 Azure CLI 建立 Linux 虛擬機
+      - 入口網站
+        [14] 快速入門：在 Azure 入口網站中建立Linux 虛擬機器
+      - PowerShell
+        [19] 快速入門：使用 PowerShell 在 Azure 中建立 Linux 虛擬機器
+      - Terraform
+        - Terraform VM
+          [22] 快速入門：使用 Terraform 建立 LinuxVM
+        - Terraform VM 叢集
+          [31] 快速入門：使用 Terraform 在 Azure 中建立 Linux VM 叢集
+      - Bicep
+        [40] 快速入門：使用 Bicep 檔案建立 UbuntuLinux 虛擬機器
+      - ARM 範本
+        [47] 快速入門：透過使用 ARM 範本建立Ubuntu Linux 虛擬機器
+    - 建立 Windows VM
+      - CLI
+        [56] 快速入門：使用 Azure CLI 建立 Windows虛擬機器
+      - 入口網站
+        [60] 快速入門：在 Azure 入口網站中建立Windows 虛擬機器
+      - PowerShell
+        [66] 快速入門：使用 PowerShell 在 Azure 中建立 Windows 虛擬機器
+      - Terraform
+        - Terraform VM
+          [69] 快速入門：使用 Terraform 建立Windows VM
+        - Terraform VM 叢集
+          [78] 快速入門：使用 Terraform 在 Azure 中建立 Windows VM 叢集
+      - Bicep
+        [84] 快速入門：使用 Bicep 檔案建立Windows 虛擬機器
+      - ARM 範本
+        [92] 快速入門：使用範本建立 Windows 虛擬機
+    - 建立虛擬機器擴展集
+      - 入口網站
+        [101] 使用 Azure 入口網站在擴展集中建立虛擬機器
+      - Azure CLI
+        [106] 使用 Azure CLI 在擴展集中建立虛擬機器
+      - Azure PowerShell
+        [108] 使用 PowerShell 在擴展集中建立虛擬機器
+      - Bicep
+        [110] 快速入門：使用 Bicep 建立 Windows 虛擬機器擴展集
+      - ARM 範本
+        [121] 使用ARM樣本在擴展集中建立虛擬機
+  - 教學課程
+    - Linux
+      - 建立/管理 VM
+        [133] 教學課程：使用 Azure CLI 建立和管理Linux VM
+      - 建立/管理磁碟
+        [144] 
+      - 自動化設定
+        [151] 教學課程 - 如何使用 cloud-init 在首次開機時於 Azure 中自訂 Linux 虛擬機器
+      - 建立 VM 映像
+        [159] 教學課程：使用 Azure CLI 建立 AzureVM 的自訂映像
+      - 管理網路服務
+        [165] 教學課程：使用 Azure CLI 來建立和管理Linux 虛擬機器的 Azure 虛擬網路
+      - 負載平衡 VM
+        [174] 快速入門：使用 Azure CLI 建立公用負載平衡器，來平衡 VM 的負載
+      - 建立和管理擴展集
+        [185] 教學課程 - 使用 Azure CLI 建立及管理虛擬機器擴展集
+    - Windows
+      - 建立/管理 VM
+        [193] 教學課程：使用 Azure PowerShell 建立和管理 Windows VM
+      - 建立/管理磁碟
+        [202] 教學課程：使用 Azure PowerShell 管理磁碟
+      - 自動化設定
+        [217] 教學課程 - 使用自訂指令碼擴充功能將應用程式部署至 Azure 中的 Windows 虛擬機器
+      - 建立 VM 映像
+        [220] 教學課程：使用 Azure PowerShell 建立Windows VM 映像
+      - 管理網路服務
+        [226] 教學課程：使用 Azure PowerShell 來建立及管理 Windows 虛擬機器的 Azure 虛擬網路
+      - 負載平衡 VM
+        [234] 快速入門：使用 Azure PowerShell 來建立公用負載平衡器以平衡 VM 的負載
+      - 建立和管理擴展集
+        [245] 教學課程：使用 Azure PowerShell 建立和管理虛擬機擴展集
+  - 開發
+    - REST API
+      [252] Virtual Machines
+    - Python
+      - Python SDK
+      - 範例
+    - .NET
+      - .NET SDK
+      - 參考
+        [254] Azure Compute SDK for .NET - latest
+    - Java
+      - 使用 Java 建立和管理 VM
+        [255] 在 Azure 中使用 JAVA 建立並管理Windows VM
+      - Java SDK
+      - 參考
+        [265] com.azure.resourcemanager.compute
+    - Go
+      - Go SDK
+      - 參考
+        [266] 快速入門：使用 Azure SDK for Go 從範本部署 Azure 虛擬機
+    - Azure CLI 範例存放庫
+    - PowerShell 範例存放庫
+    - Azure Resource Graph 查詢
+      [275] 適用於 Azure 虛擬機器的 AzureResource Graph 範例查詢
+  - 工作負載
+    - Red Hat
+      [289] Azure 上的 Red Hat 工作負載
+    - Ubuntu
+      [292] 在 Azure 上將 Ubuntu Server 就地升級到Ubuntu Pro
+    - OpenShift
+      - OpenShift 容器平臺 4.x
+        [297] 在 Azure 中部署 OpenShift 容器平台 4.x
+      - Azure Stack
+        [298] 將 OpenShift 容器平台或 OKD 部署至Azure Stack Hub
+    - Azure 上的 SAP
+      [299] Azure 上的 SAP 檔
+    - Azure 上的 Oracle 產品
+      [303] Azure 上的 Oracle 檔
+    - 適用於遊戲的 Azure
+      [304] Azure gaming documentation
+    - Elasticsearch
+      [307] 在 Azure VM 上安裝彈性堆疊 (ELK)
+    - 大型主機重新裝載
+      [315] 大型主機重新裝載到 Azure 虛擬機器
+    - Azure 機密計算
+      [319] 什麼是機密運算？
+    - 虛擬機器 上的 SQL
+      [321] Azure VM 文件上的 SQL Server
+    - 高效能運算 (HPC)
+      - Azure 上的 HPC
+        [324] Azure 上的高效能運算 (HPC)
+      - H 系列和 N 系列虛擬機器適用的 HPC
+        [335] 在啟用 InfiniBand 的 HB 系列和 N 系列VM 上的高效能運算
+      - 如何設定 HPC/AI 虛擬機器
+        [337] 設定 Azure HPC 或 AI VM
+      - 組態
+        - 設定和最佳化 VM
+          [339] 設定和最佳化 VM
+        - 啟用 InfiniBand
+          [345] 啟用 InfiniBand
+        - 設定 MPI
+          [348] 設定 HPC 的訊息傳遞介面
+      - 調整應用程式
+        [359] 調整 HPC 應用程式
+  - 執行個體
+    - 規模
+      - 概觀
+        [363] Azure 中的虛擬機器大小
+      - 一般用途
+        - 概觀
+          [366] 一般用途的虛擬機器大小
+        - Dasv6 和 Dadsv6 系列
+          [369] 
+        - Dalsv6 和 Daldsv6 系列
+          [372] 
+        - Dv5 和 Dsv5 系列
+          [375] Dv5 和 Dsv5 系列
+        - Dlsv5 和 Dldsv5 系列
+          [379] 
+        - Dv4 和 Dsv4 系列
+          [383] Dv4 和 Dsv4 系列
+        - Ddv5 和 Ddsv5 系列
+          [387] 
+        - Ddv4 和 Ddsv4 系列
+          [391] 
+        - Dasv5 和 Dadsv5 系列
+          [395] 
+        - Dav4 和 Dasv4 系列
+          [399] 
+        - DC 系列機密
+          - DCasv5 和 DCadsv5 系列
+            [403] DCasv5 和 DCadsv5 系列機密 VM
+          - DCas_cc_v5 和 DCads_cc_v5 系列
+            [407] DCas_cc_v5 和 DCads_cc_v5 系列 (預覽)
+          - DCesv5 和 DCedsv5 系列
+            [411] 
+        - Dpsv5 和 Dpdsv5 系列
+          [415] 
+        - Dplsv5 和 Dpldsv5 系列
+          [419] 
+        - Av2 系列
+          [423] Av2 系列
+        - Av1 系列淘汰
+          [426] Av1 系列淘汰
+        - B 系列高載
+          - B 系列 CPU 信用模型
+            [428] B 系列 CPU 點數模型
+          - Bsv2 系列
+            [430] 
+          - Basv2 系列
+            [433] 
+          - Bpsv2 系列
+            [436] 
+          - B 系列 V1
+            [439] 
+        - 先前的 VM 系列
+          - Dv3 和 DSv3 系列
+            [441] 
+          - Dv2 和 DSv2 系列
+            [445] Dv2 和 DSv2 系列
+          - DC 系列機密
+            - DCsv3 和 DCdsv3 系列
+              [449] DCsv3 和 DCdsv3 系列
+            - DCsv2 系列
+              [452] DCsv2 系列
+      - 計算最佳化
+        - 概觀
+          [454] 計算最佳化的虛擬機器大小
+        - Fasv6 和 Falsv6 系列
+          [456] 
+        - Fsv2 系列
+          [460] 
+        - 先前的 VM 系列
+          - FX 系列
+            [463] FX 系列
+      - 記憶體最佳化
+        - 概觀
+          [465] 記憶體最佳化的虛擬機器大小
+        - Easv6 和 Eadsv6 系列
+          [468] 
+        - Ev5 和 Esv5 系列
+          [472] Ev5 和 Esv5 系列
+        - Ev4 和 Esv4 系列
+          [477] Ev4 和 Esv4 系列
+        - Edv5 和 Edsv5 系列
+          [482] 
+        - Edv4 和 Edsv4 系列
+          [486] 
+        - Ebdsv5 和 Ebsv5 系列
+          [490] 
+        - Easv5 和 Eadsv5 系列
+          [494] 
+        - Eav4 和 Easv4 系列
+          [499] 
+        - EC 系列機密
+          - ECasv5 和 ECadsv5 系列
+            [503] ECasv5 和 ECadsv5 系列
+          - ECas_cc_v5和 ECads_cc_v5 系列
+            [508] ECas_cc_v5 和 ECads_cc_v5 系列 (預覽)
+          - ECesv5 和 ECedsv5 系列
+            [512] 
+        - Epsv5 和 Epdsv5 系列
+          [516] 
+        - Msv3 和 Mdsv3 中型記憶體系列
+          [520] 
+        - Msv2 和 Mdsv2 中型記憶體系列
+          [523] 
+        - Msv2 和 Mdsv2 移轉指南
+          [526] Msv2 和 Mdsv2 隔離大小淘汰
+        - Mv2 系列
+          [528] Mv2 系列
+        - Dv2 和 DSv2 系列
+          [531] 記憶體最佳化 Dv2 和 Dsv2 系列
+        - 限制的 vCPU
+          [535] 資料庫工作負載的受限 vCPU 大小
+        - 先前的 VM 系列
+          - Ev3 和 Esv3 系列
+            [538] 
+          - M 系列
+            [542] 
+      - 儲存體最佳化
+        - 概觀
+          [545] 儲存體最佳化的虛擬機器大小
+        - Lsv2 系列
+          [547] 
+        - Lsv3 系列
+          [550] 
+        - Lasv3 系列
+          [553] 
+        - 最佳化效能
+          - Linux
+            [556] 將 Lsv3、Lasv3 和 Lsv2 系列 Linux VM 的效能最佳化
+          - Windows
+            [560] 將 Lsv3、Lasv3 和 Lsv2 系列 WindowsVM 的效能最佳化
+      - GPU - 加速計算
+        - 概觀
+          [564] GPU 最佳化的虛擬機器大小
+        - NC 系列
+          [567] NC 系列
+        - NCads_H100_v5系列
+          [570] NCads H100 v5 系列
+        - NCv2 系列
+          [573] NCv2 系列
+        - NCv3 系列
+          [576] NCv3 系列
+        - NCasT4_v3 系列
+          [579] NCasT4_v3 系列
+        - NC_A100_v4系列
+          [582] 
+        - NDasrA100_v4系列
+          [585] ND A100 v4 系列
+        - NDm_A100_v4 系列
+          [588] NDm A100 v4 系列
+        - ND 系列
+          [591] ND 系列
+        - NDv2 系列
+          [594] 已更新的 NDv2 系列
+        - ND-H100-v5 系列
+          [597] 
+        - NGads V620 系列
+          [600] 
+        - NV 系列
+          [603] NV 系列
+        - NVv3 系列
+          [606] NVv3 系列
+        - NVv4 系列
+          [609] NVv4 系列
+        - NVadsA10_v5系列
+          [612] NVadsA10 v5 系列
+        - 設定 NVIDIA GPU 驅動程式
+          - Linux
+            [615] 在執行 Linux 的 N 系列 VM 上安裝NVIDIA GPU 驅動程式
+          - Windows
+            [629] 在執行 Windows 的 N 系列 VM 上安裝NVIDIA GPU 驅動程式
+        - 設定 AMD GPU 驅動程式
+          [634] 在執行 Windows 的 N 系列 VM 上安裝AMD GPU 驅動程式
+        - NC 系列淘汰
+          [639] 在 2023 年 9 月 6 日前移轉 NC 和NC_Promo 系列虛擬機器
+        - NCv2 系列淘汰
+          [641] 在 2023 年 9 月 6 日前移轉您的 NCv2 系列虛擬機器
+        - Ncv3 Nc24rs 淘汰
+          [643] Migrate your Standard_NC24rs_v3virtual machine size by March 31, 2025
+        - Ncv3 NC6s NC12s NC24s 淘汰
+          [645] Migrate your NC6s_v3, NC12s_v3,NC24s_v3 virtual machine sizes bySeptember 30, 2025
+        - ND 系列淘汰
+          [648] 在 2023 年 9 月 6 日前移轉您的 ND 系列虛擬機器
+        - GPU 計算移轉指南
+          [649] Azure 中 GPU 計算工作負載的移轉指南
+        - NV 系列淘汰
+          [656] 請在 2023 年 9 月 6 日前移轉 NV 和NV_Promo 系列虛擬機器
+        - NV 系列移轉指南
+          [657] NV 系列移轉指南
+      - FPGA - 加速計算
+        - 概觀
+          [661] FPGA 最佳化的虛擬機器大小
+        - NP 系列
+          [662] NP 系列
+        - FPGA 證明服務
+          [667] Azure NP 系列 VM 的 FPGA 證明 (預覽版)
+      - 高效能計算
+        - 概觀
+          [671] 高效能運算 VM 大小
+        - 設定 Azure HPC 或 AI VM
+          [676] 設定 Azure HPC 或 AI VM
+        - 設定和最佳化 VM
+          [678] 設定和最佳化 VM
+        - HB 系列
+          [684] 
+          - 概觀
+            [687] HB 系列虛擬機器概觀
+          - 效能
+            [690] HB 系列虛擬機器大小
+          - HB 系列淘汰
+            [693] 請在 2024 年 8 月 31 日前移轉 HB 系列虛擬機器
+        - HBv2 系列
+          [696] 
+          - 概觀
+            [699] HBv2 系列虛擬機器概觀
+          - 效能
+            [702] HBv2 系列虛擬機器大小
+        - HBv3 系列
+          - 概觀
+            [705] HBv3 系列虛擬機器概觀
+          - HBv3 系列
+            [713] 
+          - 效能
+            [716] HBv3 系列虛擬機器效能
+        - HBv4 系列
+          - 概觀
+            [718] HBv4 系列虛擬機器概觀
+          - HBv4 系列
+            [727] 
+          - 效能
+            [730] HBv4 系列虛擬機器效能
+        - HC 系列
+          - 概觀
+            [733] HC 系列虛擬機器概觀
+          - HC 系列
+            [736] 
+          - 效能
+            [739] HC 系列虛擬機器大小
+        - HX 系列
+          - 概觀
+            [742] HX 系列虛擬機器概觀
+          - HX 系列
+            [751] 
+          - 效能
+            [754] HX 系列虛擬機器效能
+        - HPC for HB 系列和 N 系列 VM
+          [757] 在啟用 InfiniBand 的 HB 系列和 N 系列VM 上的高效能運算
+        - HB 系列和 N 系列 VM 的已知問題
+          [759] HB 系列和 N 系列 VM 的已知問題
+        - 設定適用於 HPC 的 MPI
+          [763] 設定 HPC 的訊息傳遞介面
+        - 調整 HPC 應用程式
+          [774] 調整 HPC 應用程式
+      - NVMe 常見問題
+        - 一般
+          [778] 概觀
+        - 支援的OS映像
+          [791] 在虛擬機器上啟用 NVMe 和 SCSI 介面
+        - 暫存 NVMe 磁碟
+          [798] 在 VM 上啟用暫存 NVMe 介面的必要條件為何？
+Dl/D/E_v6 VM 中的暫存 NVMe 磁碟如何不同？
+當您使用暫存 NVMe 磁碟設定 VM 時，應該準備哪些變更？
+        - 遠端 NVMe 磁碟
+          [814] 在 VM 上啟用遠端 NVMe 介面的必要條件為何？
+如何? 在 VM 系列上啟用遠端 NVMe 磁碟嗎？
+      - 舊一代和已淘汰的大小
+        - 概觀
+          [824] 上一代和已淘汰 VM 大小系列
+        - 上一代大小
+          [826] 前代 Azure VM 大小系列
+        - 已淘汰的大小
+          [829] 已淘汰的 Azure VM 大小系列
+      - 第 2 代 VM
+        [832] Azure 上第 2 代 VM 的支援
+      - 隔離大小
+        [841] Azure 中的虛擬機器隔離
+      - Azure 計算單位 （ACU）
+        [844] Azure 計算單位 (ACU)
+      - 基準測試分數
+        - Linux
+          [848] 
+        - Windows
+          [894] Windows VM 的計算基準測試分數
+      - vCPU 配額
+        [960] 檢查 vCPU 配額
+      - 虛擬機器選取器工具
+      - 變更 VM 大小
+        [962] 變更虛擬機器的大小
+      - 狀態和計費
+        [966] Azure 虛擬機器的狀態和計費狀態
+      - 沒有暫存磁碟的 Azure VM
+        [970] 什麼是無本機暫存磁碟？
+如果我仍然想使用本機暫存磁碟，該怎麼辦？
+是否可以將具有本機暫存磁碟的 VM 大小調整為沒有本機暫存磁碟的 VM 大小？
+      - Azure VM 大小命名慣例
+        [973] Azure 虛擬機器大小命名慣例
+    - Azure Compute Gallery
+      - 概觀
+        [976] 在 Azure Compute Gallery 中儲存和共用資源
+      - 最新功能
+        [986] Azure Compute Gallery 的新功能
+      - 建立資源庫
+        [987] 建立資源庫，儲存並共用資源
+      - 共用資源庫
+        - RBAC
+          [992] 使用 RBAC 跨訂用帳戶和租用戶共用資源庫資源
+        - 應用程式註冊
+          [994] 使用應用程式註冊跨 Azure 租用戶共用資源庫 VM 映像
+        - 直接共用
+          [997] 與訂用帳戶或租用戶中的所有使用者共用資源庫 (預覽)
+        - 社群資源庫
+          [1002] 使用社群資源庫共用映像
+      - 影像
+        - 資源庫中的影像
+          [1008] 在 Azure Compute Gallery 中儲存和共用映像
+        - 在入口網站中擷取 VM
+          [1017] 在入口網站中建立 VM 的映像
+        - 建立映像
+          [1019] 建立映像定義和映像版本
+        - 建立 VM
+          - 一般化
+            [1025] 從一般化映像版本建立 VM
+          - 特殊化
+            [1032] 使用特製化映像版本建立 VM
+        - 更新映像資源
+          [1039] 列出、更新和刪除資源庫資源
+        - Resource Manager 範本
+          - 建立 Azure Compute Gallery
+          - 在 Azure Compute Gallery 中建立映像定義
+          - 在 Azure Compute Gallery 中建立映像版本
+        - 針對共用映像進行疑難解答
+          [1045] 針對 Azure Compute Gallery 中的映像進行疑難排解
+        - 使用客戶管理的金鑰
+          [1057] 使用客戶管理的金鑰建立加密映像版本
+        - 將映射導出至受控磁碟
+          [1062] 將映像版本匯出至受控磁碟
+        - 將受控映像遷移至計算資源庫
+          [1065] 將受控映像遷移至 Azure 計算資源庫映像版本
+        - 購買方案資訊
+          [1067] 在建立映像時提供 Azure Marketplace 購買方案資訊
+        - 已淘汰的映像常見問題
+          [1074] 
+      - VM 應用程式
+        - 概觀
+          [1083] 
+        - 部署 VM 應用程式
+          [1094] 建立和部署 VM 應用程式
+    - 影像
+      - 尋找 Azure Marketplace 映像
+        - 使用 CLI 尋找映像
+          [1098] 使用 Azure CLI 尋找 Azure Marketplace映像資訊
+        - 使用 PowerShell 尋找影像
+          [1106] 使用 Azure PowerShell 尋找和使用 AzureMarketplace VM 映像
+        - Windows 用戶端映像
+          [1115] 在 Azure 中使用 Windows 用戶端進行開發/測試案例
+        - Windows 11 映射
+          [1118] 如何在 Azure 上部署 Windows 11
+      - 一般化 VM
+      - Linux 自定義映像
+        - 概觀
+          [1123] 在 Azure 中帶入並建立 Linux 映像
+        - Linux 布建
+          [1127] Azure Linux VM 佈建
+        - 背書散發套件
+          [1130] Azure 上認可的 Linux 發行版本
+        - 散發特定需求
+          - 一般步驟
+            [1135] 準備 Linux 以用於 Azure 映像
+          - CentOS
+            [1146] 準備適用於 Azure 的 CentOS 型虛擬機器
+          - Debian
+            [1159] 為 Azure 準備 Debian VHD
+          - Flatcar Container Linux
+            [1163] 使用 Azure 的預建 Flatcar 映像
+          - FreeBSD
+            [1164] Azure 上的 FreeBSD 簡介
+          - Oracle Linux
+            [1168] 準備適用於 Azure 的 Oracle Linux 虛擬機器
+          - OpenBSD
+            [1177] 建立 OpenBSD 磁碟映像並上傳至 Azure
+          - Red Hat
+            [1182] 準備適用於 Azure 的 Red Hat 型虛擬機器
+          - SUSE
+            [1221] 準備適用於 Azure 的 SLES 或 openSUSELeap 虛擬機器
+          - Ubuntu
+            [1230] 準備適用於 Azure 的 Ubuntu 虛擬機器
+        - 使用 cloud-init
+          - Cloud-Init 概觀
+            [1236] Azure 中適用於虛擬機器的 Cloud-init 支援
+          - 深入探索
+            [1244] 深入探索 cloud-init
+          - 疑難排解
+            [1247] 對使用 cloud-init 的 VM 佈建進行疑難排解
+          - 設定 VM 主機名
+            [1252] 使用 cloud-init 為 Azure 上的 Linux 虛擬機器設定主機名稱
+          - 更新 VM 中的套件
+            [1254] 使用 cloud-init 在 Azure 上的 Linux VM中更新和安裝封裝
+          - 在 VM 上新增使用者
+            [1257] 使用 cloud-init 將使用者新增至 Azure 上的 Linux 虛擬機器
+          - 設定交換檔
+            [1260] 使用 cloud-init 在 Linux 虛擬機器上設定交換分割區
+          - 執行現有的Bash腳本
+            [1264] 使用 cloud-init 在 Azure 上的 Linux 虛擬機器中執行 Bash 指令碼
+        - 建立 Linux 映像而不佈建代理程式
+          [1267] 建立一般化映像而不佈建代理程式
+        - 停用Linux代理程式布建
+          [1276] 停用或移除 VM 與映像中的 Linux 代理程式
+      - Windows 自定義映像
+        - 準備要上傳的 VHD
+          [1282] 
+        - Visual Studio
+          [1297] Azure 上的 Visual Studio 映像
+      - VM Image Builder
+        - 概觀
+          [1301] Azure VM Image Builder 概觀
+        - CLI
+          - Linux
+            [1309] 使用 Azure CLI 建立 Linux 映像並將其發佈至 Azure Compute Gallery
+          - Windows
+            [1316] 使用 Azure VM Image Builder 建立Windows VM
+        - PowerShell
+          - Windows
+            [1323] 使用 PowerShell 建立具有 VM 映射產生器的 Windows VM
+          - Azure 虛擬桌面
+            [1333] 使用 VM Image Builder 和 PowerShell，建立 Azure 虛擬桌面映像
+        - 安全性
+          - 隔離的映像組建
+            [1342] 什麼是 Azure Image Builder 的隔離式映像組建?
+          - Azure 原則的安全性控制
+            [1345] 適用於 Azure VM Image Builder 的Azure 原則法規合規性控制項
+        - 使用虛擬網路
+          - CLI
+            [1352] 使用適用於 Linux VM 的 Azure VMImage Builder 來存取現有的 Azure 虛擬網路
+          - PowerShell
+            [1360] 使用 Azure VM Image Builder 來存取現有的 Azure 虛擬網路
+        - 網路功能選項
+          [1368] Azure VM Image Builder 網路選項
+        - 設定權限
+          - CLI
+            [1371] 利用 Azure CLI 設定 Azure VM ImageBuilder 權限
+          - PowerShell
+            [1378] 利用 PowerShell 設定 Azure VM ImageBuilder 權限
+        - DevOps 工作
+          [1384] Azure VM　Image Builder ServiceDevOps 工作 (預覽)
+        - VM 映像產生器範本參考
+          [1395] 
+        - 映像庫的建置
+          - Linux
+            [1416] 建立 Linux 映像並將其散發至 AzureCompute Gallery
+          - Windows
+            [1423] 建立 Windows 映像並將其發佈到 AzureCompute Gallery
+        - 更新現有映像
+          - Linux
+            [1432] 在 Linux 中使用 Azure VM Image Builder根據現有的映像建立新的 VM 映像
+          - Windows
+            [1437] 使用 Azure VM Image Builder，根據現有映像建立新的 Windows VM 映像
+        - 如何使用 AIB 觸發程式來設定自動映像建置
+          [1442] 如何使用 Azure Image Builder 觸發程序來設定自動映像組建
+        - 儲存腳本
+          [1449] 建立映像，並以使用者指派的受控識別來存取 Azure 儲存體帳戶中的檔案
+        - Azure VM Image Builder 的新功能
+          [1455] Azure VM Image Builder 的新功能
+        - 疑難排解
+          [1459] 針對 Azure VM Image Builder 進行疑難排解
+        - 最佳作法
+          [1494] Azure VM 映射產生器最佳做法
+        - Image Builder 可靠性
+          [1495] Azure Image Builder (AIB) 中的可靠性
+        - 影像優化
+          [1500] 使用 Azure VM Image Builder 針對資源庫映像進行 VM 最佳化
+      - 使用 Packer 建置映像
+        - Linux
+          [1503] 如何在 Azure 中使用 Packer 來建立 Linux虛擬機器映像
+        - Windows
+          [1510] PowerShell：如何在 Azure 中使用 Packer來建立虛擬機器映像
+      - 擷取舊版受控映像
+    - 專用主機
+      - 概觀
+        [1518] Azure 專用主機
+      - 操作方式
+        [1526] 將 VM 和擴展集部署到專用主機
+      - 一般用途 SKU
+        [1534] 一般用途 Azure 專用主機 SKU
+      - 計算優化 SKU
+        [1547] 運算最佳化 Azure 專用主機 SKU
+      - 記憶體優化 SKU
+        [1550] 記憶體最佳化 Azure 專用主機 SKU
+      - 儲存體 優化 SKU
+        [1566] 儲存最佳化 Azure 專用主機 SKU
+      - GPU 優化 SKU
+        [1569] GPU 最佳化 Azure 專用主機 SKU
+      - 專用主機 SKU 淘汰
+        [1571] Azure 專用主機 SKU 淘汰
+      - 專用主機 SKU 移轉
+        [1574] Azure 專用主機 SKU 淘汰移轉指南
+    - Azure Spot 虛擬機器
+      - 概觀
+        [1578] 使用 Azure Spot Virtual Machines
+      - CLI
+        [1584] 使用 Azure CLI 來部署 Azure SpotVirtual Machines
+      - 入口網站
+        [1588] 使用 Azure 入口網站來部署 Azure SpotVirtual Machines
+      - PowerShell
+        [1591] 使用 Azure PowerShell 部署 Azure SpotVirtual Machines
+      - ARM 範本
+        [1595] 使用 Resource Manager 範本部署 AzureSpot Virtual Machines
+      - 現成優先順序混合
+        [1600] 高可用性和節省成本的現成優先順序混合
+      - VM 大小建議
+        [1606] 現成虛擬機器大小建議
+      - 錯誤碼
+        [1609] Azure Spot Virtual Machines 和擴展集的錯誤訊息
+      - 處理現成收回
+        [1613] 
+    - Azure Boost
+      [1622] Microsoft Azure Boost
+    - Azure Hybrid Benefit
+      - Linux
+        [1627] 適用於 Red Hat Enterprise Linux (RHEL)的 Azure Hybrid Benefit 與 SUSE LinuxEnterprise Server (SLES) 虛擬機器
+      - Windows
+        [1640] 探索適用於 Windows Server 的 AzureHybrid Benefit
+    - 保留執行個體
+      - 什麼是 Azure 保留？
+        [1647] 什麼是 Azure 保留項目？
+      - 預付 VM
+        [1651] 使用 Azure 保留的 VM 執行個體節省成本
+      - 預付專用主機
+        [1656] 使用 Azure 專用主機保留項目來節省成本
+      - VM 實例大小彈性
+        [1660] 利用保留 VM 執行個體獲得虛擬機器大小彈性
+    - 容量保留
+      - 概觀
+        [1662] 隨需容量預留
+      - 建立容量保留
+        [1671] 建立容量保留
+      - 過度配置容量保留
+        [1676] 過度配置容量保留
+      - 修改容量保留
+        [1680] 修改容量保留
+      - 建立 VM 關聯
+        [1686] 將 VM 關聯至容量保留群組
+      - 移除 VM
+        [1690] 從容量保留群組中移除 VM 關聯
+      - 建立擴展集的關聯 - 彈性
+        [1693] 將虛擬機器擴展集與彈性協調流程關聯至容量保留群組
+      - 建立擴展集的關聯 - 統一
+        [1695] 將虛擬機器擴展集與統一協調流程關聯至容量保留群組
+      - 拿掉擴展集
+        [1702] 從容量保留群組中移除虛擬機器擴展集關聯
+    - 建立虛擬機器
+      - Linux
+        - CLI
+          [1706] 使用 Azure CLI 來建立完整的 Linux 虛擬機器
+        - ARM 範本
+          [1720] 如何使用 Azure Resource Manager 範本建立 Linux 虛擬機
+        - 使用 SSH 的 REST
+          [1727] 
+        - LAMP 堆疊
+          [1892] 教學課程：在 Azure Linux VM 上安裝LAMP 堆疊
+        - LEMP 堆疊
+          [1900] 教學課程：在 Azure Linux VM 上安裝LEMP 堆棧
+        - 持續傳遞
+          - 設定滾動部署策略
+            [1918] 設定 Azure Linux 虛擬機器的輪流部署策略
+        - 使用 TLS\SSL 保護網頁伺服器
+          [1923] 教學課程：使用 TLS/SSL 憑證來保護網頁伺服器
+      - Windows
+        - ARM 範本
+          [1928] 從 Resource Manager 範本建立Windows 虛擬機器
+        - 使用 TLS\SSL 保護網頁伺服器
+          [1937] 教學課程：使用儲存在 Key Vault 中的TLS 憑證保護 Azure 中 Windows 虛擬機上的網頁伺服器
+      - 從現有的 OS 磁碟或 VHD 建立
+        [1943] 使用 PowerShell 從特製化磁碟建立 VM
+    - 自動將 VM 關機
+      [1945] 自動將虛擬機器關機
+    - 休眠 虛擬機器
+      - 概觀
+        [1946] Azure 虛擬機的休眠
+      - 休眠 Linux VM
+        [1951] 休眠Linux虛擬機
+      - 休眠的 Windows VM
+        [1958] 休眠 Windows 虛擬機
+      - 針對 VM 休眠功能進行疑難排解
+        - 一般休眠疑難解答
+          [1964] 針對 Azure 中的休眠進行疑難解答
+        - Linux VM 休眠疑難解答
+          [1968] 針對 Linux VM 上的休眠進行疑難解答
+        - Windows VM 休眠疑難解答
+          [1973] 針對 Windows VM 上的休眠進行疑難解答
+    - 刪除 VM 及其資源
+      [1981] 刪除 VM 和連結的資源
+    - 連線至虛擬機器
+      - Linux
+        - 連線至 Linux VM (英文)
+          [1986] 連線至 Linux VM (英文)
+        - 在本機建立和管理SSH 金鑰
+          [1992] 詳細步驟：在 Azure 中建立和管理對Linux VM 進行驗證所需的 SSH 金鑰
+        - 在入口網站中建立和管理 SSH 金鑰
+          [2000] 在 Azure 入口網站中產生和儲存 SSH 金鑰
+        - 使用 Azure CLI 建立和管理 SSH 金鑰
+          [2005] 使用 Azure CLI 產生並儲存 SSH 金鑰
+        - Linux 或 macOS 上的 SSH
+          [2007] 快速步驟：在 Azure 中建立和使用 LinuxVM 的 SSH 公開和私密金鑰組
+        - Windows 上的 SSH
+          [2011] 如何在 Azure 上搭配 Windows 使用 SSH金鑰
+        - 適用於 Linux 的遠端桌面
+          [2015] 安裝和設定 xrdp 以搭配 Ubuntu 使用遠端桌面
+      - Windows
+        - 遠端桌面
+        - SSH
+          [2022] 如何使用安全殼層 (SSH) 連線並登入執行Windows 的 Azure 虛擬機器
+        - WinRM
+          [2026] 在 Azure Resource Manager 中設定虛擬機器的 WinRM 存取
+    - 時間同步
+      - Linux
+        [2031] Azure 中的 Linux VM 時間同步
+      - Windows
+        [2038] Azure 中 Windows VM 的時間同步
+      - Azure 中 Active Directory Windows 虛擬機器的時間機制
+        [2044] 在 Azure 中設定 Active DirectoryWindows 虛擬機器 的時間機制
+    - 執行命令
+      - 概觀
+        [2048] 使用執行命令在 VM 中執行指令碼
+      - 適用於 Linux 的動作執行命令
+        [2050] 使用動作執行命令在 Linux VM 中執行指令碼
+      - 適用於 Windows 的動作執行命令
+        [2056] 使用動作執行命令在 Windows VM 中執行指令碼
+      - 適用於 Linux 的受控執行命令
+        [2063] 使用受控執行命令在 Linux VM 中執行指令碼
+      - 適用於 Windows 的受控執行命令
+        [2075] 使用受控執行命令在 Windows VM 中執行指令碼
+    - 擴充
+      - 概觀
+        [2087] Azure 虛擬機器擴充功能和功能
+      - Linux
+        - Linux 功能
+          [2090] 適用於 Linux 的虛擬機器擴充功能和功能
+        - Linux VM 代理程式
+          [2103] Azure Linux VM 代理程式概觀
+      - Windows
+        - Windows 功能
+          [2115] 適用於 Windows 的虛擬機器擴充功能和功能
+        - Windows VM 代理程式
+          [2129] Azure Windows VM 代理程式概觀
+      - 適用於 SQL Server 的 Azure 備份
+        - 適用於 SQL Server 的 Azure 備份
+          [2134] 
+      - Azure 磁碟加密
+        - Linux
+          [2136] 適用於 Linux 的 Azure 磁碟加密(Microsoft.Azure.Security.AzureDiskEncryptionForLinux)
+        - Windows
+          [2141] 適用於 Windows 的 Azure 磁碟加密(Microsoft.Azure.Security.AzureDiskEncryption)
+      - Azure Key Vault
+        - Linux
+          [2146] 
+        - Windows
+          [2155] 
+      - Azure 原則客體設定
+        [2166] Azure Automanage 機器組態延伸模組
+      - 應用程式健康情況擴充功能
+        [2172] 搭配 Azure 虛擬機器使用應用程式健康情況擴充功能
+      - Custom Script
+        - Linux - 第 2 版
+          [2183] 
+        - Windows
+          [2196] 
+      - 適用於 Windows 的 IaaS 反惡意程式碼軟體
+        [2203] 適用於 Windows 的 MicrosoftAntimalware 擴充功能
+      - VM 快照集
+        - Linux
+          [2208] 
+        - Windows
+          [2211] 
+      - 網路監看員延伸模組
+        - Linux
+          [2214] 管理適用於Linux的 網路監看員 Agent 虛擬機擴充功能
+        - Windows
+          [2220] 管理適用於 Windows 的 網路監看員Agent 虛擬機擴充功能
+        - 更新為最新版本
+          [2225] 將 Azure 網路監看員 擴充功能更新為最新版本
+      - InfiniBand 驅動程式
+        - Linux
+          [2232] 適用於 Linux 的 InfiniBand 驅動程式擴充功能
+        - Windows
+          [2238] 適用於 Windows 的 InfiniBand 驅動程式擴充功能
+        - 啟用 Infiniband
+          [2243] 啟用 InfiniBand
+      - NVIDIA GPU 驅動程式
+        - Linux
+          [2246] 適用於 Linux 的 NVIDIA GPU 驅動程式擴充功能
+        - Windows
+          [2256] 適用於 Windows 的 NVIDIA GPU 驅動程式擴充功能
+      - AMD GPU 驅動程式
+        - Windows
+          [2264] 適用於 Windows 的 AMD GPU 驅動程式擴充功能
+      - Azure 監視器
+        - Azure 監視器代理程式
+          [2271] 
+        - 診斷擴充功能
+          [2279] Azure 診斷延伸模組概觀
+        - VM 深入解析
+          - Linux 相依性代理程式
+            [2283] 適用於 Linux 的 Azure 監視器相依性虛擬機器擴充功能
+          - Windows 相依性代理程式
+            [2288] 適用於 Windows 的 Azure 監視器相依性虛擬機器擴充功能
+        - 舊版擴充功能
+          - Log Analytics
+            - Linux
+              [2293] 
+            - Windows
+              [2300] 
+      - PowerShell DSC
+        [2306] Azure Desired State Configuration 延伸模組處理常式簡介
+        - DSC 和 Windows
+          [2314] PowerShell DSC 延伸模組
+        - 處理認證
+          [2320] 將認證傳遞至 Azure DSCExtension 處理常式
+        - 使用範本
+          [2323] 
+      - 適用於 Linux 的 VMAccess
+        [2334] 適用於 Linux 的 VM 存取擴充功能
+      - 第三方延伸模組
+        - Chef
+          [2344] 
+        - Salt Minion
+          [2348] Install Salt Minion on Linux or WindowsVMs using the VM Extension
+        - Stackify Retrace
+          [2352] Stackify Retrace Linux 代理程式擴充功能
+        - 成立
+          [2357] Tenable 單鍵 Nessus 代理程式
+      - 限制擴充功能安裝
+        - Linux
+          [2361] 使用 Azure 原則來限制 Linux VM 上的延伸模組安裝
+        - Windows
+          [2365] 使用 Azure 原則來限制 Windows VM 上的延伸模組安裝
+      - 更新 Linux 代理程式
+        [2369] 如何更新虛擬機器上的 Azure Linux 代理程式
+      - 匯出延伸模組
+        [2372] 匯出包含 VM 擴充功能的資源群組
+      - 一般疑難排解步驟
+        [2377] 針對 Azure Windows VM 擴充功能的失敗進行疑難排解
+      - 已啟用 Python 3 的 Linux 系統問題
+        [2385] 在已啟用 Python 3 的 Linux Azure 虛擬機器系統中使用 VM 延伸模組的問題
+    - 巢狀虛擬化
+      [2388] 什麼是巢狀虛擬化？
+    - 遷移至 Azure Resource Manager
+      - 從 2023 年 9 月 6 日起退休
+        [2392] 請於 2023 年 9 月 6 日之前將您的 IaaS資源移轉至 Azure Resource Manager
+      - 移轉概觀
+        [2394] 平台支援的 IaaS 資源移轉 (從傳統移轉至Azure Resource Manager)
+      - 深入瞭解移轉
+        [2401] 平台支援的從傳統移轉至 Azure ResourceManager 的技術深入探討
+      - 規劃移轉
+        [2413] 將 IaaS 資源從傳統移轉至 AzureResource Manager 的規劃
+      - 使用 CLI 移轉
+        [2421] 使用 Azure CLI 將 IaaS 資源從傳統移轉至Azure Resource Manager
+      - 使用 Powershell 進行移轉
+        [2428] 使用 PowerShell 將 IaaS 資源從傳統遷移至 Azure Resource Manager
+      - 常見的移轉錯誤
+        [2439] 從傳統移轉至 Azure Resource Manager期間經常發生的錯誤
+      - 移轉的社群工具
+        [2446] 用以將 IaaS 資源從傳統移轉至 AzureResource Manager 的社群工具
+      - 常見問題集
+        [2448] 什麼是 Azure Service Manager，以及傳統的意義為何？
+什麼是 Azure Resource Manager？
+移轉需要多久時間？
+如何定義 IaaS VM (傳統) 的新客戶？
+如何定義 IaaS 虛擬機器 (傳統) 的現有客戶？
+  - 可用性和規模
+    - 概觀
+      [2455] Azure 虛擬機器的可用性選項
+    - 可用性區域
+      - 概觀
+        [2458] 什麼是可用性區域？
+      - CLI
+        [2461] 使用 Azure CLI 在可用性區域中建立虛擬機器
+      - PowerShell
+        [2466] 使用 Azure PowerShell 在可用性區域中建立虛擬機器
+      - 入口網站
+        [2471] 使用 Azure 入口網站在可用性區域中建立虛擬機器
+      - 遷移至 可用性區域
+        [2473] 將虛擬機器和虛擬機器擴展集移轉至可用性區域支援
+      - 區域到區域性移動指南
+        - 入口網站
+          [2482] 將 Azure 單一執行個體 VM 從地區移至區域目標可用性區域
+        - PowerShell 和 CLI
+          [2489] 使用 Azure PowerShell 和 CLI 在可用性區域中移動虛擬機器
+        - 常見問題集
+          [2501] 常見問題 - 將 Azure 單一執行個體虛擬機器從地區可用性區域移至區域可用性區域
+    - 虛擬機器擴展集
+      - 概觀
+        [2506] 什麼是虛擬機器擴展集？
+      - 調整配置檔
+        [2509] 縮放設定檔
+      - 將 VM 連結至擴展集
+        [2512] 
+    - 鄰近放置群組
+      - 概觀
+        [2519] 鄰近位置群組
+      - CLI
+        [2525] 使用 Azure CLI 將 VM 部署至鄰近放置群組
+      - PowerShell
+        [2528] 使用 Azure PowerShell 將 VM 部署至鄰近放置群組
+      - 入口網站
+        [2533] 使用入口網站建立鄰近放置群組
+    - 了解 VM 重新開機
+      [2536] 了解 VM 重新開機 - 維護與停機時間
+    - Azure 區域
+      [2538] Azure 中虛擬機器的區域
+    - 可用性設定組
+      - 概觀
+        [2541] 可用性設定組概觀
+      - 變更可用性設定組
+  - Disks
+    - 概觀
+      [2544] Azure 受控磁碟簡介
+    - 磁碟類型
+      [2552] 
+    - 瞭解磁碟 儲存體 計費
+      [2564] 瞭解 Azure 磁碟 儲存體 計費
+    - 磁碟備援選項
+      [2572] 受控磁碟的備援選項
+    - Azure 磁碟儲存體的新功能
+      [2575] Azure 磁碟儲存體的新功能
+    - 部署 Ultra 磁碟
+      [2580] 使用 Azure Ultra 磁碟
+    - 部署進階 SSD v2
+      [2592] 部署進階 SSD v2
+    - 部署 ZRS 磁碟
+      [2596] 部署使用區域備援儲存體的受控磁碟
+    - 達到高可用性的最佳做法
+      [2600] 使用 Azure 虛擬機和受控磁碟達到高可用性的最佳做法
+    - 在 VM 之間共用磁碟
+      - 關於共用磁碟
+        [2606] 共用 Azure 受控磁碟
+      - 啟用共用磁碟
+        [2618] 啟用共用磁碟
+    - 加密
+      - 磁碟加密概觀
+        [2631] 受控磁碟加密選項概觀
+      - 伺服器端加密
+        - 伺服器端加密概觀
+          [2634] Azure 磁碟儲存體的伺服器端加密
+        - 啟用客戶管理的金鑰
+          - 入口網站
+          - PowerShell
+            [2641] Azure PowerShell - 使用伺服器端加密來啟用客戶自控金鑰 - 受控磁碟
+          - CLI
+            [2650] 使用 Azure CLI 為受控磁碟啟用採用客戶自控金鑰的伺服器端加密
+        - 跨 Microsoft Entra 租使用者使用客戶管理的金鑰
+          [2657] 使用跨租用戶的客戶自控金鑰加密受控磁碟
+        - 啟用主機上的加密
+          - 入口網站
+            [2671] 使用 Azure 入口網站以使用主機上的加密啟用端對端加密
+          - PowerShell
+            [2682] 使用 Azure PowerShell 模組以使用主機上的加密啟用端對端加密
+          - CLI
+            [2694] 使用 Azure CLI 以使用主機上的加密啟用端對端加密
+        - 啟用待用雙重加密
+          - 入口網站
+            [2704] 使用 Azure 入口網站，為受控磁碟啟用待用雙重加密
+          - PowerShell
+            [2707] 使用 Azure PowerShell 模組，為受控磁碟啟用待用雙重加密
+          - CLI
+            [2710] 使用 Azure CLI，為受控磁碟啟用待用雙重加密
+      - Azure 磁碟加密
+        - Linux
+          - 概觀
+            [2713] 適用於 Linux VM 的 Azure 磁碟加密
+          - 快速入門
+            - Azure CLI
+              [2726] 快速入門：使用 Azure CLI 來建立和加密Linux VM
+            - Azure PowerShell
+              [2729] 快速入門：使用 Azure PowerShell 在Azure 中建立和加密 Linux VM
+            - Azure 入口網站
+              [2732] 快速入門：使用 Azure 入口網站建立和加密 Linux 虛擬機器
+          - Linux 的磁碟加密案例
+            [2737] Linux VM 上的 Azure 磁碟加密案例 \(部分機器翻譯\)
+          - 適用於 Azure 磁碟加密的金鑰保存庫
+            [2747] 建立及設定適用於 Azure 磁碟加密的金鑰保存庫
+          - 磁碟加密範例腳本
+            [2755] 適用於 Linux VM 的 Azure 磁碟加密範例指令碼
+          - 隔離網路上的磁碟加密
+            [2770] 隔離式網路上的 Azure 磁碟加密
+          - 如何驗證加密狀態
+            [2772] 驗證 Linux 加密狀態
+          - 如何在 crypt 上設定 LVM RAID
+            [2785] 在加密裝置上設定 LVM 和 RAID
+          - 如何調整加密 LVM 磁碟區的大小
+            [2802] 如何調整使用 Azure 磁碟加密的邏輯磁碟區管理裝置大小
+          - 磁碟加密疑難解答
+            [2837] Linux VM 的 Azure 磁碟加密疑難排解指南
+          - 磁碟加密常見問題
+            [2842] 什麼是適用於 Linux VM 的 Azure 磁碟加密？
+Azure 磁碟加密會在那裡正式運作 (GA)？
+Azure 磁碟加密有哪些使用者體驗？
+Azure 磁碟加密如何收費？
+如何開始使用 Azure 磁碟加密？大小支
+          - 從舊版升級至目前版本
+            [2849] Azure 磁碟加密版本升級
+          - 磁碟加密 - 舊版
+            - 概觀
+              [2852] Azure 磁碟加密搭配 Microsoft Entra ID(舊版)
+            - 適用於 Azure 磁碟加密的金鑰保存庫
+              [2854] 對 Linux VM 使用 Microsoft Entra ID (預覽版) 建立和設定 Azure 磁碟加密的金鑰保存庫
+            - Linux 的磁碟加密案例
+              [2871] 在 Linux VM (預覽版) 以 Microsoft EntraID 啟用 Azure 磁碟加密
+        - Windows
+          - 概觀
+            [2884] 適用於 Windows VM 的 Azure 磁碟加密
+          - 快速入門
+            - Azure CLI
+              [2888] 快速入門：使用 Azure CLI 來建立和加密Windows VM
+            - Azure PowerShell
+              [2892] 快速入門: 使用 PowerShell 在 Azure 中建立和加密 Windows 虛擬機器
+            - Azure 入口網站
+              [2895] 快速入門: 使用 Azure 入口網站建立和加密 Windows 虛擬機器
+          - Windows 的磁碟加密案例
+            [2900] Windows VM 上的 Azure 磁碟加密案例
+          - 適用於 Azure 磁碟加密的金鑰保存庫
+          - 磁碟加密範例腳本
+            [2912] Azure 磁碟加密範例指令碼
+          - 磁碟加密疑難解答
+            [2921] Azure 磁碟加密疑難排解指南
+          - 磁碟加密常見問題
+            [2925] 什麼是適用於 Windows VM 的 Azure 磁碟加密？
+Azure 磁碟加密會在那裡正式運作 (GA)？
+Azure 磁碟加密有哪些使用者體驗？
+Azure 磁碟加密如何收費？
+如何開始使用 Azure 磁碟加密？大小支
+          - 磁碟加密 - 舊版
+            - 概觀
+              [2931] 使用 Azure AD 進行 Azure 磁碟加密 (舊版)
+            - 適用於 Azure 磁碟加密的金鑰保存庫
+              [2933] 使用 Microsoft Entra ID (舊版) 建立和設定 Azure 磁碟加密的金鑰保存庫
+            - Windows 的磁碟加密案例
+              [2949] Microsoft Entra ID 的 Azure 磁碟加密 (適用於 Windows VM) (舊版)
+    - 效能和成本優化
+      - 提高進階 SSD 和標準 SSD/HDD 的效能
+        [2961] 預覽 - 提升 Azure 進階 SSD 和標準SSD/HDD 的 IOPS 和輸送量限制
+      - 虛擬機器和磁碟效能
+        [2963] 虛擬機器和磁碟效能
+      - 磁碟 儲存體 保留
+        [2971] 了解如何將您的保留折扣套用至 Azure 磁碟儲存體
+      - 保留磁碟 儲存體
+        [2973] 
+      - 為高效能而設計
+        [2979] 
+      - 磁碟相關計量
+        [2994] 磁碟效能計量
+      - 磁碟高載模型
+        [3002] 受控磁碟高載
+      - 啟用隨需高載
+        [3012] 啟用隨需高載
+      - 磁碟效能層級
+        [3014] 受控磁碟的效能層級
+      - 變更磁碟效能層級
+        - CLI 和 PowerShell
+          [3016] 使用 Azure PowerShell 模組或 Azure CLI變更效能層，但不需停機
+        - 入口網站
+          [3019] 使用 Azure 入口網站變更效能層級
+      - 啟用寫入加速器
+        [3022] 啟用寫入加速器
+      - 基準測試磁碟
+        [3033] 基準測試磁碟
+    - 磁碟適用的延展性目標
+      [3041] 
+    - 備份和資料保護
+      - 建立增量快照集
+        [3047] 建立受控磁碟的增量快照集
+      - 跨區域複製增量快照集
+        [3053] 將增量快照集複製到新的區域
+      - Azure 磁碟備份
+        - 概觀
+          [3056] Azure 磁碟備份概觀
+        - 設定 Azure 磁碟備份
+          [3060] 備份 Azure 受控磁碟
+        - 使用 Azure 磁碟備份還原磁碟
+          [3076] 還原 Azure 受控磁碟
+      - 受控磁碟的備份和災害復原
+        [3084] Azure 受控磁碟的備份和災害復原
+      - 為磁碟建立快照
+        [3090] 建立虛擬硬碟的快照集
+      - 備份非受控磁碟
+        [3092] 使用增量快照集來備份 Azure 非受控虛擬機器磁碟
+      - 非受控磁碟的備份和災害復原
+        [3097] Azure 非受控磁碟的備份和災害復原
+    - 暫時 OS 磁碟
+      - 概觀
+        [3108] Azure VM 的暫時性 OS 磁碟
+      - 使用暫時OS磁碟建立 VM
+        [3113] 如何部署 Azure VM 的暫時性 OS 磁碟
+      - 暫時OS磁碟的常見問題
+        [3118] 暫時性 OS 磁碟相關的常見問題集
+    - 安全地匯入/匯出磁碟
+      - 限制存取的選項
+        [3121] 限制受控磁碟匯入或匯出
+      - 設定磁碟的私人連結 - CLI
+        [3123] Azure CLI - 使用 Private Link 限制受控磁碟的匯入/匯出存取
+      - 設定磁碟的私人連結 - 入口網站
+      - 將 vhd 上傳至磁碟 - PowerShell
+        [3127] 將 VHD 上傳至 Azure，或將受控磁碟複製到另一個區域 - Azure PowerShell
+      - 將 vhd 上傳至磁碟 - CLI
+        [3134] 將 VHD 上傳至 Azure，或將受控磁碟複製到另一個區域 - Azure CLI
+      - 匯出至儲存體帳戶
+        - 將快照集匯出為 VHD 至記憶體帳戶 - CLI
+          [3140] 使用 CLI 將快照集匯出/複製到不同區域中的儲存體帳戶
+        - 將受控磁碟匯出為 VHD 至記憶體帳戶 - CLI
+          [3143] 使用 Azure CLI 將受控磁碟匯出/複製到儲存體帳戶
+        - 將快照集導出為 VHD 至記憶體帳戶 - PowerShell
+          [3147] 使用 PowerShell 將受控快照集匯出/複製到不同區域的儲存體帳戶當做 VHD
+        - 將受控磁碟匯出為 VHD 至記憶體帳戶 - PowerShell
+          [3149] 使用 PowerShell 將受控磁碟的 VHD 匯出/複製到不同區域的儲存體帳戶(Windows)
+      - 下載 VHD
+        - Linux
+          [3152] 從 Azure 下載 Linux VHD
+        - Windows
+          [3156] 從 Azure 下載 Windows VHD
+    - 移轉和轉換
+      - 變更磁碟類型
+        [3160] 變更 Azure 受控磁碟的磁碟類型
+      - 從 LRS 遷移至 ZRS
+        [3165] 將磁碟從 LRS 轉換為 ZRS
+      - 移轉至相同或不同的訂用帳戶
+        - 將受控磁碟複製到相同或不同的訂用帳戶 - CLI
+          [3169] 使用 CLI將受控磁碟複製到相同或不同的訂用帳戶
+        - 將快照集複製到相同或不同的訂用帳戶 - CLI
+          [3173] 使用 CLI將受控磁碟快照集複製到相同或不同的訂用帳戶
+        - 將快照集複製到相同或不同的訂用帳戶 - PowerShell
+          [3178] 使用 PowerShell 複製相同訂用帳戶或不同訂用帳戶中的受控磁碟快照集(Windows)
+      - 將 AWS 和內部部署磁碟遷移至 Azure
+        [3180] 從 Amazon Web Services (AWS) 和其他平台移轉至 Azure 中的受控磁碟
+      - 使用 Azure Site Recovery 遷移至進階 SSD
+        - Linux
+          [3183] 使用 Site Recovery 移轉到進階儲存體
+        - Windows
+          [3197] 使用 Azure Site Recovery 移轉到進階儲存體
+      - 移轉到受控磁碟
+        [3211] 將 Azure VM 移轉至 Azure 中的受控磁碟
+      - 非受控磁碟淘汰
+        [3213] 請在 2025 年 9 月 30 日前移轉 Azure 非受控磁碟
+      - 非受控 VM 至 受控磁碟
+        - CLI
+          [3215] 將 Linux 虛擬機器從非受控磁碟移轉至受控磁碟
+        - PowerShell
+          [3219] 將 Windows 虛擬機器從非受控磁碟移轉至受控磁碟
+    - 建立資源
+      - 從 VHD 建立磁碟 - CLI
+        [3223] 使用 CLI 從相同訂用帳戶的儲存體帳戶的VHD 檔案建立受控磁碟 (Linux)
+      - 從快照集建立磁碟 - CLI
+        [3226] 使用 CLI 從快照集建立受控磁碟 (Linux)
+      - 從 VHD 建立磁碟 - PowerShell
+        [3231] 使用 PowerShell 從相同或不同訂用帳戶的儲存體帳戶的 VHD 檔案建立受控磁碟
+      - 從快照集建立磁碟 - PowerShell
+        [3234] 使用 PowerShell 從快照集建立受控磁碟
+      - 從 VHD 建立快照集 - PowerShell
+        [3237] 使用 PowerShell 從 VHD 建立快照集以在短時間內建立多個相同的受控磁碟(Windows)
+      - 從快照集建立虛擬機 - CLI
+        [3239] 使用 CLI 從快照集建立虛擬機器
+      - 從現有的 OS 磁碟建立虛擬機 - CLI
+        [3242] 使用現有受控 OS 磁碟搭配 CLI 以建立虛擬機器
+    - 新增資料磁碟
+      - Linux
+        - Azure CLI
+          [3245] 在 Linux VM 中新增磁碟
+        - Azure 入口網站
+      - Windows
+        - Azure PowerShell
+          [3252] 使用 PowerShell 將資料磁碟連結至Windows VM
+        - Azure 入口網站
+        - 變更暫存磁碟驅動器號
+          [3256] 使用 D: 磁碟機做為 Windows VM 上的資料磁碟機
+    - 中斷連結磁碟
+      - Linux
+        [3258] 如何從 Linux 虛擬機器中斷資料磁碟連結
+      - Windows
+    - 擴充磁碟
+      - Linux
+        [3262] 擴充 Linux VM 上的虛擬硬碟
+      - Windows
+        [3269] 如何擴充連結至 Windows 虛擬機器的虛擬硬碟
+      - 非受控磁碟
+        [3279] 擴充連結至虛擬機器的非受控虛擬硬碟大小
+    - 管理儲存體
+      - 使用ARM範本部署磁碟
+        [3282] 在 Azure Resource Manager 範本中使用磁碟
+      - 使用 儲存體總管 來管理磁碟
+        [3289] 使用 Azure 儲存體總管來管理 Azure 受控磁碟
+      - 交換 OS 磁碟 - CLI
+        [3300] 使用 Azure CLI 變更 Azure VM 所使用的OS 磁碟
+      - 交換OS磁碟 - PowerShell
+        [3302] 使用 PowerShell 變更 Azure VM 所使用的作業系統磁碟
+      - 將受控磁碟對應至客體磁碟 - Linux
+        [3304] 如何將 Azure 磁碟對應至 Linux VM 客體磁碟
+      - 將受控磁碟對應至客體磁碟 - Windows
+        [3306] 如何將 Azure 磁碟對應至 Windows VM客體磁碟
+      - 檔案儲存體
+        - 將檔案複製到 VM
+          [3308] 使用 SCP 在 VM 中移動檔案
+      - 尋找未連結的磁碟
+        - CLI
+          [3311] 使用 Azure CLI 尋找及刪除未連結的Azure 受控和非受控磁碟
+        - PowerShell
+          [3314] 使用 Azure PowerShell 尋找和刪除未連結的 Azure 受控和非受控磁碟
+        - 入口網站
+      - 磁碟常見問題
+        [3317] 受控磁碟
+  - 網路
+    - 概觀
+      [3332] Azure 中的虛擬網路與虛擬機器
+    - 最佳化網路輸送量
+      [3342] 最佳化 Azure 虛擬機器的網路輸送量
+    - 最佳作法
+      [3346] Azure 虛擬網路概念和最佳做法
+    - 建立虛擬網路
+      [3348] 快速入門：使用 Azure CLI 建立虛擬網路
+    - 篩選網路流量
+      - Azure 入口網站
+        [3355] 教學課程：使用 Azure 入口網站透過網路安全性群組篩選網路流量
+      - Azure PowerShell
+        [3368] 使用 PowerShell 篩選網路安全組的網路流量
+      - Azure CLI
+        [3376] 使用 Azure CLI 透過網路安全性群組篩選網路流量
+    - 網路安全性群組測試
+      [3383] 網路安全性群組測試
+    - 建立 VM - 靜態公用 IP
+      - Azure 入口網站
+        [3391] 使用 Azure 入口網站建立具有靜態公用 IP位址的虛擬機器
+      - Azure PowerShell
+        [3395] 使用 Azure PowerShell 建立具有靜態公用 IP 位址的虛擬機器
+      - Azure CLI
+        [3399] 使用 Azure CLI 建立具有靜態公用 IP 位址的虛擬機器
+      - 將公用 IP 位址新增到現有的虛擬機器中
+        [3403] 將公用 IP 位址與虛擬機器建立關聯
+      - 中斷公用 IP 位址與 VM 的關聯
+        [3408] 中斷公用 IP 位址與 Azure VM 的關聯
+    - 建立 VM - 靜態私人 IP
+      - Azure 入口網站
+        [3414] 使用 Azure 入口網站建立具有靜態私人 IP位址的虛擬機器
+      - Azure PowerShell
+        [3420] 使用 Azure PowerShell 建立具有靜態私人 IP 位址的虛擬機器。
+      - Azure CLI
+        [3423] 使用 Azure CLI 建立具有靜態私人 IP 位址的虛擬機器
+    - 建立 VM - 多個 IP
+      - Azure 入口網站
+        [3426] 使用 Azure 入口網站將多個 IP 位址指派給虛擬機器
+      - Azure PowerShell
+        [3447] 使用 Azure PowerShell 將多個 IP 位址指派給虛擬機器
+      - Azure CLI
+        [3470] 使用 Azure CLI 對虛擬機器指派多個 IP 位址
+      - 新增或移除網路介面
+      - 建立 VM - 多個 NIC
+        - Azure PowerShell
+          [3491] 建立及管理具有多個 NIC 的 Windows 虛擬機器
+        - Azure CLI
+          [3499] 如何在 Azure 中建立有多個網路介面卡的Linux 虛擬機器
+    - 建立 VM - 加速網路
+      - Azure PowerShell
+        [3506] 使用 Azure PowerShell 建立具有加速網路的 VM
+      - Azure CLI
+        [3515] 使用 Azure CLI 建立具有加速網路的Windows 或 Linux VM
+        - 設定 DPDK
+          [3524] 在 Linux 虛擬機器中設定 DPDK
+    - 適用於 Azure VM 的 TCP/IP 效能微調
+      [3531] 適用於 Azure VM 的 TCP/IP 效能微調
+    - 虛擬機器網路輸送量
+      [3542] 虛擬機器網路頻寬
+    - 建立 DDOS 保護計劃
+      - 入口網站
+        [3545] 快速入門：使用 Azure 入口網站 建立及設定 Azure DDoS 網路保護
+      - PowerShell
+        [3553] 快速入門：使用 Azure PowerShell 建立及設定 Azure DDoS 網路保護
+      - CLI
+        [3557] 快速入門：使用 Azure CLI 建立及設定Azure DDoS 網路保護
+      - ARM 範本
+        [3562] 快速入門：使用ARM範本建立及設定Azure DDoS 網路保護
+    - 移轉虛擬機器公用 IP 位址
+      [3568] 教學課程：將虛擬機器公用 IP 位址移轉至 Azure NAT 閘道
+    - 指派公用IP位址
+      [3573] 使用 Azure CLI 建立具有靜態公用 IP 位址的虛擬機器
+    - 使用自訂功能變數名稱
+      [3577] 將自訂網域新增至 Azure VM 或資源中
+    - 使用多個 NIC
+      - 使用 CLI 的 Linux
+        [3580] 如何在 Azure 中建立有多個網路介面卡的Linux 虛擬機器
+      - 使用 PowerShell 的 Windows
+        [3587] 建立及管理具有多個 NIC 的 Windows 虛擬機器
+    - 指派公用 DNS 名稱
+      [3595] 在 Azure 入口網站中建立 VM 的完整網域名稱
+    - Linux Azure VM 的 DNS 解析
+      [3596] Azure 中 Linux 虛擬機器的 DNS 名稱解析選項
+    - 使用內部 DNS
+      [3601] 在 Azure 上建立虛擬網路介面卡並使用內部 DNS 進行 VM 名稱解析
+  - 安全性
+    - 概觀
+      [3606] Azure 虛擬機器安全性概觀
+    - 零信任原則
+      [3611] 將 零信任 原則套用至 Azure 中的虛擬機
+    - 適用於雲端的 Microsoft Defender
+      [3627] 什麼是適用於雲端的 MicrosoftDefender？
+    - 安全性基準
+      - Linux
+        [3632] 適用於 虛擬機器 的 Azure 安全性基準 -Linux 虛擬機器
+      - Windows
+        [3659] 適用於 虛擬機器 的 Azure 安全性基準 -Windows 虛擬機器
+    - 可信啟動
+      - 概觀
+        [3686] Azure 虛擬機器的可信啟動
+      - 部署受信任的啟動 VM
+        [3692] 部署已啟用可信啟動的 VM
+      - 在現有的 VM 上啟用信任啟動
+        [3699] 在現有的 Azure VM 上啟用信任啟動
+      - 開機完整性監視
+        [3704] 開機完整性監視概觀
+      - 信任的啟動常見問題
+        [3708] 可信啟動常見問題
+    - Just-In-Time 存取
+    - 原則
+      - 概觀
+        [3721] 在 Azure 中的虛擬機器上保護及使用原則
+      - 依原則控制
+        [3724] 適用於 Azure 虛擬機器的 Azure 原則法規合規性控制
+      - 原則參考文件
+        [3877] 
+      - 指派原則
+        - 入口網站
+          [3899] 快速入門：建立原則指派，以使用 Azure入口網站 識別不符合規範的資源
+        - Azure CLI
+          [3904] 快速入門：使用 Azure CLI 建立原則指派以識別不符合規範的資源
+        - Terraform
+          [3909] 快速入門：使用 Terraform 建立原則指派，以識別不符合規範的資源
+        - Azure PowerShell
+          [3915] 快速入門：使用 Azure PowerShell 建立原則指派，以識別不相容資源
+        - .NET
+          [3920] 快速入門：使用 Azure PowerShell 建立原則指派，以識別不相容資源
+        - JavaScript
+          [3925] 快速入門：使用 Azure PowerShell 建立原則指派，以識別不相容資源
+        - Python
+          [3930] 快速入門：使用 Azure PowerShell 建立原則指派，以識別不相容資源
+        - REST
+          [3935] 快速入門：使用 REST API 建立原則指派，以識別不符合規範的資源
+        - ARM 範本
+          [3941] 快速入門：使用ARM範本建立原則指派，以識別不符合規範的資源
+        - Bicep
+          [3948] 快速入門：使用 Bicep 檔案建立原則指派，以識別不符合規範的資源
+    - Bastion
+      - 概觀
+        [3954] 何謂 Azure Bastion？
+      - 建立 Bastion 主機
+        - 入口網站
+          [3959] 教學課程：使用指定的設定來部署Bastion
+        - PowerShell
+          [3969] 使用 Azure PowerShell 部署 Bastion
+        - CLI
+          [3977] 使用 Azure CLI 部署 Bastion
+        - Bastion SSH 連線
+          [3984] 使用 Azure Bastion 建立 Linux VM 的SSH 連線
+        - Bastion RDP 連線
+          [3992] 使用 Azure Bastion 建立 Windows VM 的RDP 連線
+      - 使用訪問控制
+        [3996] 什麼是 Azure 角色型存取控制 (AzureRBAC)？
+      - 建立 Key Vault
+        - CLI
+          [4004] 如何使用 Azure CLI 設定虛擬機器的 KeyVault
+        - PowerShell
+          [4006] 使用 Azure PowerShell 設定虛擬機器的金鑰保存庫
+    - 緩和推測性執行
+      [4008] 晶片型微架構和推測性執行旁路攻擊弱點的風險降低指引
+    - 將 Linux VM 加入 Microsoft Entra 識別碼
+      - Red Hat Enterprise Linux
+        [4013] 將 Red Hat Enterprise Linux 虛擬機器加入 Microsoft Entra Domain Services 受控網域
+      - CentOS
+        [4020] 將 CentOS Linux 虛擬機加入 MicrosoftEntra Domain Services 受控網域
+      - Ubuntu
+        [4026] 將 Ubuntu Linux 虛擬機器加入 MicrosoftEntra Domain Services 受控網域
+    - 設定受控識別
+      - 入口網站
+        [4034] 使用 Azure 入口網站 在 VM 上設定Azure 資源的受控識別
+      - CLI
+        [4040] 使用 Azure CLI 在 Azure VM 上設定Azure 資源的受控識別
+      - PowerShell
+        [4047] 使用 PowerShell 在 Azure VM 上設定Azure 資源的受控識別
+      - Azure Resource Manager 範本
+        [4053] 使用範本在 Azure VM 上設定 Azure 資源的受控識別
+      - REST
+        [4060] 使用 REST API 呼叫在 Azure VM 上設定Azure 資源的受控識別
+      - Azure SDK
+        [4085] 使用 Azure SDK 為 Azure 資源設定具有受控識別的 VM
+    - 具有 Microsoft Entra 識別碼的 Linux VM SSH
+      [4087] 使用 Microsoft Entra ID 和 OpenSSH 登入 Azure 中的 Linux 虛擬機
+    - Windows VM 和 Microsoft Entra 識別符
+      [4105] 使用 Microsoft Entra 識別符登入 Azure中的 Windows 虛擬機，包括無密碼
+  - 更新和維護
+    - 概觀
+      [4124] 客體更新和主機維護概觀
+    - 自動 OS 映像升級
+      [4128] Azure 虛擬機器擴展集的 OS 映像自動升級
+    - Windows Server 就地升級
+      [4145] 在 Azure 中執行 Windows Server 的 VM就地升級
+    - 自動 VM 客體修補
+      - 概觀
+        [4152] Azure VM 的自動 VM 客體修補
+      - 熱修補
+        [4169] 虛擬機器的熱修補
+    - 自動升級擴充功能
+      [4174] Azure 中 VM 和擴展集的自動擴充功能升級
+    - Azure 自動化 中的更新管理
+      [4182] 更新管理概觀
+    - 啟用更新管理員
+      [4191] Azure Update Manager 檔
+    - 維護
+      - 概觀
+        [4193] Azure 中虛擬機器進行的維修
+      - 維修通知
+        - 概觀
+          [4197] 處理計劃性維護通知
+        - CLI
+          [4201] 使用 Azure CLI 處理計劃性維護通知
+        - 入口網站
+          [4203] 使用入口網站處理計劃性維護通知
+        - PowerShell
+          [4205] 使用 PowerShell 處理計劃性維護
+      - 維護設定
+        - 概觀
+          [4208] 使用維修設定管理 VM 更新
+        - CLI
+          [4213] 使用維護設定和 Azure CLI 來控制更新
+        - PowerShell
+          [4223] 使用維護組態和 Azure PowerShell 控制更新
+        - 入口網站
+          [4233] 使用維護設定和 Azure 入口網站控制更新
+        - 疑難排解
+          [4239] 針對維護設定的問題進行疑難解答
+        - OS 映射升級的維護控制
+          - 概觀
+            [4246] Azure 虛擬機器擴展集的維修控制項
+          - PowerShell
+            [4247] 透過 PowerShell，在 Azure 虛擬機器擴展集上進行 OS 影像升級的維修控制項
+          - CLI
+            [4250] 使用 Azure CLI，在 Azure 虛擬機器擴展集上進行 OS 映像升級的維修控制項
+          - 入口網站
+            [4252] 使用 Azure 入口網站，在 Azure 虛擬機器擴展集上進行 OS 映像升級的維修控制項
+          - ARM 範本
+            [4255] 使用 ARM 範本，在 Azure 虛擬機器擴展集上進行 OS 映像升級的維修控制項
+      - 排程的事件
+        - Linux
+          [4258] Azure 中繼資料服務：Linux VM 的已排定事件
+        - Windows
+          - 排程的事件
+            [4273] Azure 中繼資料服務：Windows VM 的已排定事件
+          - 監視已排定事件
+            [4288] 在 Azure VM 中監視已排定事件
+      - 追蹤和更新 VM
+        - Linux
+          [4296] 教學課程：在 Azure 中監視變更及更新Linux 虛擬機器
+        - Windows
+          [4305] 教學課程：在 Azure 中監視變更及更新Windows 虛擬機器
+  - 監視
+    - 監視器
+      [4314] 監視 Azure 虛擬機器
+    - 監視資料參考
+      [4325] Azure 虛擬機器 監視數據參考
+    - Resource Graph 的可用性
+      [4343] Azure Resource Graph 中的 VM 可用性資訊
+    - 教學課程
+      - 啟用建議的警示
+        [4347] 教學課程: 啟用 Azure 虛擬機器的建議警示規則
+      - 建立可用性警示
+        [4352] 教學課程：建立多個 Azure 虛擬機的可用性警示規則 (預覽)
+      - 啟用 VM 深入解析
+        [4358] 教學課程: 透過 VM Insights 啟用對 Azure虛擬機器的監控
+      - 收集來賓記錄和計量
+        [4362] 教學課程：從 Azure 虛擬機器收集客體記錄和計量
+    - 監視虛擬機指南
+      - 概觀
+        [4370] 使用 Azure 監視器監視虛擬機器
+      - 部署代理程式
+        [4374] 使用 Azure 監視器監視虛擬機器：部署代理程式
+      - 收集資料
+        [4378] 使用 Azure 監視器監視虛擬機器：收集資料
+      - 分析資料
+        [4390] 使用 Azure 監視器監視虛擬機器：分析監視資料
+      - 建立警示
+        [4400] 使用 Azure 監視器監視虛擬機器：警示
+      - 移轉管理組件邏輯
+        [4412] 從 System Center Operations Manager(SCOM) 遷移至 Azure 監視器
+    - VM 深入解析
+      [4417] VM 深入解析概觀
+    - Azure 監視器代理程式
+      [4419] Azure 監視器代理程式概觀
+    - 監視可用性
+      - 概觀
+        [4431] Flash 專案 - 提升 Azure 虛擬機器可用性監視
+      - 使用 Azure Resource Graph
+        [4433] Flah 專案 - 使用 Azure Resource Graph監視 Azure 虛擬機器可用性
+      - 使用 Azure 事件方格
+        [4439] Flash 專案 - 使用 Azure 事件方格監視Azure 虛擬機器可用性
+      - 使用 Azure 監視器
+        [4442] Flash 專案 - 使用 Azure 監視器監視Azure 虛擬機器可用性
+      - 使用 Azure 資源健康狀態
+        [4445] Flah 專案 - 使用 Azure 資源健康狀態監視Azure 虛擬機器可用性
+    - 分析可用性
+      [4449] Azure Resource Graph 中的 VM 可用性資訊
+    - VM 使用量
+      [4453] 
+    - 標記 VM
+      [4460] 使用標籤來組織 Azure 資源和管理階層
+    - 監視元數據
+      [4464] Azure 執行個體中繼資料服務
+    - 使用 REST 取得使用計量
+      [4506] 使用 REST API 來取得虛擬機器的使用量計量
+    - 開機診斷
+      [4509] Azure 開機診斷
+  - 備份及復原
+    - 概觀
+      [4515] Azure 中虛擬機器的備份和還原選項
+  - 虛擬機器的可靠性
+    - 虛擬機器的可靠性
+      [4517] 虛擬機器的可靠性
+    - 服務中斷
+      [4545] 
+    - 備份 VM
+      - 概觀
+        [4548] Azure VM 備份的概觀
+      - 快速入門
+        - CLI
+          [4556] 使用 Azure CLI 在 Azure 中備份虛擬機器
+        - PowerShell
+          [4561] 使用 PowerShell 在 Azure 中備份虛擬機器
+        - 入口網站
+          [4566] 快速入門：在 Azure 中備份虛擬機器
+        - 範本
+          [4579] 使用 ARM 範本在 Azure 中備份虛擬機器
+      - 備份多個 VM
+        [4587] 教學課程：使用 Azure 入口網站 備份多個虛擬機
+      - 還原選項
+        [4598] 如何在 Azure 入口網站 中還原 Azure VM數據
+      - 支援矩陣
+        [4627] Azure VM 備份的支援矩陣
+      - 定價
+        [4645] Azure 備份定價
+      - 常見問題集
+        [4650] 
+    - 災害復原
+      - 概觀
+        [4663] 關於 Site Recovery
+      - 啟用災害復原
+        - Linux
+          [4666] 
+        - Windows
+          [4678] 
+      - 將 VM 容錯移轉到另一個區域
+        [4690] 教學課程：將 Azure VM 容錯移轉至次要區域
+      - 將 VM 容錯回復到主要區域
+        [4696] 教學課程：將 Azure VM 容錯回復至主要區域
+    - VM 還原點
+      - 概觀
+        [4701] VM 還原點概觀
+      - 快速入門
+        - 建立 VM 還原點
+          [4705] 快速入門：使用 API 建立 VM 還原點
+        - VMSnapshot 擴充功能
+          [4707] VMSnapshot 擴充功能
+        - 跨區域複製
+          [4709] VM 還原點的跨區域複製概觀 (預覽)
+      - 管理 VM 還原點
+        [4711] 管理 VM 還原點
+      - 教學課程
+        - CLI
+          [4713] 使用 Azure CLI 建立虛擬機器還原點
+        - PowerShell
+          [4716] 使用 PowerShell 建立虛擬機器還原點
+        - 入口網站
+          [4719] 使用 Azure 入口網站建立虛擬機器還原點
+        - 如何將 VM 還原點複製到另一個區域
+          [4726] VM 還原點的跨區域複本
+      - 支援矩陣
+        [4735] VM 還原點的支援矩陣
+      - 疑難排解
+        [4740] 針對還原點失敗進行疑難排解：與代理程式或延伸模組相關的問題
+    - 移動和移轉 VM
+      - 變更訂用帳戶或資源群組
+        [4753] 將 Azure 資源移至新的資源群組或訂用帳戶 (機器翻譯)
+      - 變更 Marketplace VM 的訂用帳戶
+        [4769] 將 Marketplace Azure 虛擬機器移至另一個訂用帳戶
+      - 將 VM 移至另一個區域
+        [4773] 將 VM 移至另一個 Azure 區域
+      - 移至可用性區域
+        [4778] 將 Azure VM 移至可用性區域中
+      - 將維護控制組態移至另一個區域
+        [4784] 將維護控制設定移至另一個區域
+      - 將維護控制設定資源移至另一個區域
+        [4786] 將維護控制設定中的資源移至另一個區域
+      - 將 AWS VM 遷移至 Azure
+        [4789] 探索、評估 Amazon Web Services(AWS) VM，並將其遷移至 Azure
+  - 基礎結構自動化
+    - 概觀
+      [4807] 在 Azure 中使用基礎結構自動化工具搭配虛擬機器
+    - 使用者資料
+      [4812] Azure 虛擬機器的使用者資料
+    - 自訂資料
+      [4817] Azure 虛擬機器上的自訂資料和 cloud-init
+    - Ansible
+      [4820] Azure 上的 Ansible 檔
+    - Terraform
+      [4822] Terraform on Azure 文件
+    - Jenkins
+      [4825] Azure 上的 Jenkins 檔
+    - Azure DevOps
+  - 成本最佳化
+    - 規劃管理成本
+      [4828] 規劃管理虛擬機的成本
+    - 監視成本
+      [4835] Monitor costs for virtual machines
+    - 最佳作法
+      [4839] Best practices for virtual machine costoptimization
+  - 資源
+    - 雲端採用架構
+      [4842] 開始使用 雲端採用架構
+    - 架構中心
+      [4845] 
+    - 移轉工具
+      [4850] 移轉概觀
+    - Microsoft 問 & 答
+    - Azure 快速入門範本
+    - 定價
+    - 區域可用性
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure 藍圖
+    - 定價計算機
+    - 常見 CLI 命令
+      [4853] 用來管理 Azure 資源的常用 Azure CLI 命令
+    - 常見 PowerShell 命令
+      [4856] 用於建立及管理 Azure 虛擬機器的常用PowerShell 命令
+    - 常見網路 PowerShell 命令
+      [4859] Azure 虛擬網路的常用 PowerShell 命令
+    - VM 範本描述
+      [4863] Azure Resource Manager 範本中的虛擬機器
+    - 傳統部署
+      - 使用傳統部署的Linux VM
+      - 使用傳統部署的 Windows VM
+    - 常見問題集
+      - Linux
+        [4875] 我可以在 Azure VM 上執行什麼？
+我可以使用多少的儲存體搭配虛擬機器？
+如何存取我的虛擬機器？
+我可以使用暫存磁碟 (/dev/sdb1) 儲存資料嗎？
+      - Windows
+        [4879] 我可以在 Azure VM 上執行什麼？
+我可以使用多少的儲存體搭配虛擬機器？
+如何存取我的虛擬機器？用
+  - 支援和疑難排解
+    [4884] Azure VM 的支援和疑難排解

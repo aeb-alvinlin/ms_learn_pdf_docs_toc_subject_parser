@@ -1,0 +1,1295 @@
+- ---< azure-storage-blobs.pdf >---
+  - Azure Blob 儲存體文件
+    [1] Azure Blob 儲存體文件
+  - 概觀
+    - 什麼是 Azure Blob 儲存體？
+      [5] 什麼是 Azure Blob 儲存體？
+    - 比較核心儲存體服務
+      [7] Azure 儲存體簡介
+    - Blob 儲存體功能支援
+      [16] Azure 儲存體帳戶中的 Blob 儲存體功能支援
+  - Blob 儲存體
+    - 概觀
+      - Blob 儲存體簡介
+        [21] Azure Blob 儲存體簡介
+    - 架構
+      - 架構良好的考量
+        [26] Azure 架構完善的架構檢視 Azure Blob儲存體
+    - 快速入門
+      - Azure 入口網站
+        [37] 快速入門：使用 Azure 入口網站上傳、下載及列出 Blob
+      - 儲存體總管
+        [42] 快速入門：使用 Azure 儲存體總管建立Blob
+      - PowerShell
+        [49] 快速入門：使用 PowerShell 上傳、下載及列出 Blob
+      - Azure CLI
+        [55] 快速入門：使用 Azure CLI 建立、下載及列出 Blob
+      - .NET
+        [61] 快速入門：適用於 .NET 的 Azure Blob 儲存體用戶端程式庫
+      - Java
+        - Java
+          [75] 快速入門：適用於 JAVA 的 Azure Blob 儲存體用戶端程式庫
+        - Spring
+          [89] 將檔案上傳至 Azure Blob 儲存體
+      - Python
+        [94] 快速入門：適用於 Python 的 Azure Blob儲存體用戶端程式庫
+      - JavaScript
+        - 適用於 Node.js 的 JavaScript
+          [105] 快速入門：Azure Blob 儲存體 適用於Node.js 的客戶端連結庫
+        - 適用於瀏覽器的 JavaScript
+          [117] 快速入門：在瀏覽器中使用 JavaScriptv12 SDK 來管理 Blob
+      - C++
+        [130] 快速入門：適用於 C++ 的 Azure Blob 儲存體用戶端程式庫
+      - Go
+        [140] 快速入門：適用於 Go 的 Azure Blob 儲存體用戶端程式庫
+      - Terraform
+        [149] 快速入門：使用 Terraform 在 Azure 儲存體上部署靜態網站
+      - TypeScript
+        - Node.js 的 TypeScript
+          [155] 快速入門：使用 TypeScript Node.jsAzure Blob 儲存體 客戶端連結庫
+    - 儲存體帳戶
+      - 儲存體帳戶概觀
+        [167] 儲存體帳戶概觀
+      - 進階區塊 Blob 儲存體
+        [178] 進階區塊 Blob 儲存體帳戶
+      - 帳戶管理
+        - 建立儲存體帳戶
+          [186] 建立儲存體帳戶
+        - 升級儲存體帳戶
+          [203] 升級至一般用途 v2 儲存體帳戶
+        - 復原已刪除的儲存體帳戶
+          [208] 復原已刪除的儲存體帳戶
+        - 鎖定儲存體帳戶
+          [210] 將 Azure Resource Manager 鎖定套用至儲存體帳戶。
+        - 取得帳戶設定屬性
+          [212] 取得儲存體帳戶設定資訊
+        - 將記憶體帳戶重新放置到另一個區域
+          [216] 將 Azure 儲存體 帳戶重新配置至另一個區域
+      - 傳統儲存體帳戶淘汰
+        [221] 在 2024 年 8 月 31 日前將傳統儲存體帳戶移轉至 Azure Resource Manager
+        - 瞭解傳統帳戶的移轉流程
+          [226] 了解從傳統部署模型至 Azure ResourceManager 的儲存體帳戶移轉
+        - 將傳統儲存體帳戶遷移至 Resource Manager
+          [232] 如何將傳統儲存體帳戶移轉至 AzureResource Manager
+      - Data Lake Storage Gen2
+        - 規劃升級帳戶
+          [238] 使用 Azure Data Lake Storage Gen2 功能升級 Azure Blob 儲存體
+        - 升級帳戶
+          [245] 使用 Azure Data Lake Storage Gen2 功能升級 Azure Blob 儲存體
+    - 資料傳輸和移轉
+      - 儲存體移轉概觀
+        [252] Azure 儲存體移轉概觀
+      - 比較資料轉送解決方案
+        [257] 選擇適合資料轉送的 Azure 解決方案
+        - 大型資料集、低網路頻寬
+          [260] 在低速或無網路頻寬之情況下進行大型資料集的資料轉送
+        - 大型資料集、中至高網路頻寬
+          [263] 在有中速至高速的網路頻寬之情況下進行大型資料集的資料轉送
+        - 小型資料集、低至中網路頻寬
+          [267] 使用低速至中速網路頻寬進行小型資料集資料轉送
+        - 定期資料轉送
+          [270] 適用於定期資料轉送的解決方案
+      - AzCopy
+        - 開始使用
+          [273] 開始使用 AzCopy
+        - 使用 Microsoft Entra 識別碼進行授權
+          [280] 使用 AzCopy 和 Microsoft Entra ID 授權Blob 和檔案的存取權
+        - 最佳化效能
+          [291] 使用 Azure 儲存體將 AzCopy 的效能最佳化
+        - 使用記錄來尋找錯誤並繼續作業
+          [296] 在 AzCopy 中使用記錄檔和計畫檔案，尋找錯誤並繼續工作
+        - 範例：上傳
+          [300] 使用 AzCopy 將檔案上傳到 Azure Blob儲存體
+        - 範例：下載
+          [309] 使用 AzCopy 從 Azure Blob 儲存體下載Blob
+        - 範例：在帳戶之間複製
+          [317] 使用 AzCopy 在 Azure 儲存體帳戶之間複製 Blob
+        - 範例：同步處理
+          [324] 使用 AzCopy 來與 Azure Blob 儲存體同步
+        - 範例：屬性和中繼資料
+          [330] 以 AzCopy v10 取代 Blob 屬性和中繼資料(預覽)
+        - 範例：Amazon S3 貯體
+          [335] 使用 AzCopy 將資料從 Amazon S3 複製到 Azure 儲存體
+        - 範例：Google Cloud 儲存體貯體
+          [341] 使用 AzCopy 將資料從 Google CloudStorage 複製到 Azure 儲存體
+        - 教學課程：將資料移轉至雲端
+          [347] 教學課程：使用 AzCopy 將內部部署資料移轉至雲端儲存體
+        - 針對 AzCopy 問題進行疑難排解
+          [354] 針對 AzCopy v10 中的問題進行疑難解答
+      - Azure Data Factory
+        [360] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Azure Blob 儲存體中複製和轉換資料
+        - Azure Data Factory (Data Lake Storage)
+          [397] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Azure Data LakeStorage Gen2 中複製和轉換資料
+      - BlobFuse
+        - 什麼是 BlobFuse2？
+          [433] 什麼是 BlobFuse？ - BlobFuse2
+        - 在 Linux 上部署 BlobFuse2
+          [438] 如何使用 BlobFuse2 在 Linux 上裝載Azure Blob 儲存體容器
+        - 在 Linux 上部署 BlobFuse v1
+          [446] 如何使用 Blobfuse v1 將 Azure Blob 儲存體裝載為檔案系統
+        - BlobFuse2 的健康情況監視
+          [451] 如何使用健康情況監視器取得 BlobFuse2掛接的見解
+        - 針對 BlobFuse2 進行疑難排解
+          [452] 如何針對 BlobFuse2 的問題進行疑難排解
+      - NFS 3.0
+        - 概觀
+          [453] 適用於 Azure Blob 儲存體的網路檔案系統 (NFS) 3.0 通訊協定支援
+        - 效能考量
+          [457] Azure Blob 儲存體中的網路檔案系統(NFS) 3.0 效能考量
+        - 效能基準檢驗
+          [461] Azure Blob 儲存體 上的 NFS 3.0 效能基準檢驗建議
+        - 使用 NFS 裝載儲存體
+          [467] 使用網路檔案系統 (NFS) 3.0 通訊協定來掛接 Blob 儲存體
+        - 限制和已知問題
+          [473] Azure Blob 儲存體中網路檔案系統 (NFS)3.0 通訊協定支援的已知問題
+      - SFTP
+        - 概觀
+          [475] Azure Blob 儲存體中 SSH 檔案傳輸通訊協定 (SFTP) 的支援
+        - 啟用或停用 SFTP
+          [484] 在 Azure Blob 儲存體 中啟用或停用 SSH檔案傳輸通訊協定 （SFTP） 支援
+        - 授權存取權
+          [487] 授權存取 SSH 檔案傳輸通訊協定（SFTP） 用戶端的 Azure Blob 儲存體
+        - 從SFTP用戶端 連線
+          [493] 使用 SSH 檔案傳輸通訊協定 (SFTP) 連線至 Azure Blob 儲存體
+        - 效能考量
+          [498] Azure Blob 儲存體中的 SSH 檔案傳輸通訊協定 (SFTP) 效能考量
+        - 限制和已知問題
+          [500] Azure Blob 儲存體中 SSH 檔案傳輸通訊協定 (SFTP) 支援的限制和已知問題
+      - 資料移動程式庫
+        [504] 透過資料移動程式庫傳輸資料
+    - 資料管理
+      - 容器和 Blob
+        - 區塊 Blob、附加 Blob 及分頁 Blob。
+          [518] 瞭解區塊 Blob、附加 Blob 和分頁 Blob
+        - 管理容器 (Azure 入口網站)
+          [521] 使用 Azure 入口網站管理 blob 容器
+        - 管理容器 (PowerShell)
+          [533] 使用 PowerShell 管理 Blob 容器
+        - 管理容器 (CLI)
+          [542] 使用 Azure CLI 管理 Blob 容器
+        - 分頁 Blob 功能
+          [552] Azure 分頁 Blob 的概觀
+        - 管理 Blob (PowerShell)
+          [558] 使用 PowerShell 管理區塊 Blob
+        - 管理 Blob (CLI)
+          [574] 使用 Azure CLI 管理區塊 Blob
+        - 將附加和分頁 Blob 轉換為區塊 Blob
+          [590] 將附加 Blob 和分頁 Blob 轉換成區塊Blob
+      - Blob 庫存
+        [592] Azure 儲存體 blob 清查
+        - 啟用 Blob 清查報表
+          [607] 啟用 Azure 儲存體 blob 清查報表
+        - 計算 Blob 計數和總大小
+        - 教學課程：分析 Blob 清查報表
+          [611] 教學課程：分析 Blob 清查報表
+        - 教學課程：計算容器統計資料
+          [620] 教學課程：使用 Databricks 計算容器統計資料
+      - Blob 索引標籤
+        [626] 使用 Blob 索引標籤來管理及尋找 AzureBlob 資料
+        - 使用 Blob 索引標籤
+          [637] 使用 Blob 索引標記來管理和尋找 AzureBlob 儲存體上的資料
+      - 全文檢索搜尋
+        [641] 搜尋 Azure Blob 儲存體內容
+      - 靜態網站
+        - 靜態網站
+          [647] Azure 儲存體中的靜態網站裝載 \(機器翻譯\)
+        - 託管靜態網站
+          [652] 在 Azure 儲存體中裝載靜態網站
+        - 與 Azure CDN 整合
+          [659] 快速入門：整合 Azure 儲存體 帳戶與Azure 內容傳遞網路
+        - 使用 GitHub Actions 將靜態網站部署至 Azure 儲存體
+          [664] 使用 GitHub Actions 工作流程在 Azure儲存體中部署您的靜態網站
+        - 教學課程：裝載靜態網站
+          [669] 教學課程：將靜態網站裝載於 Blob 儲存體上
+    - 安全性和網路服務
+      - 安全性建議
+        [674] 適用於 Blob 儲存體的安全性建議
+      - 安全性基準
+        [679] 儲存體的 Azure 安全性基準
+      - 加密
+        - 待用加密
+          [691] 待用資料的 Azure 儲存體加密
+        - 加密範圍
+          [696] Blob 儲存體的加密範圍
+          - 啟用帳戶的基礎結構加密
+            [700] 針對資料的雙重加密啟用基礎結構加密
+          - 管理加密範圍
+            [703] 建立及管理加密範圍
+        - 檢查帳戶的加密金鑰模型
+          [710] 判斷哪個 Azure 儲存體加密金鑰模型正在用於儲存體帳戶
+        - 檢查 Blob 是否已加密
+          [712] 檢查 Blob 的加密狀態
+        - 客戶管理的金鑰
+          - 使用客戶管理的金鑰進行加密
+            [714] 為 Azure 儲存體加密的客戶自控金鑰
+          - 在 Azure Key Vault 中設定客戶自控金鑰
+            - 在相同的租用戶中設定金鑰和儲存體帳戶
+              - 設定新帳戶的金鑰
+                [720] 在相同租用戶中針對新儲存體帳戶設定客戶自控金鑰
+              - 設定現有帳戶的金鑰
+                [730] 在相同租用戶中為現有儲存體帳戶設定客戶自控金鑰
+            - 在不同的租用戶中設定金鑰和儲存體帳戶
+              - 為新帳戶設定客戶自控金鑰
+                [741] 為新的儲存體帳戶設定跨租用戶的客戶自控金鑰
+              - 為現有帳戶設定客戶自控金鑰
+                [756] 為現有的儲存體帳戶設定跨租用戶的客戶自控金鑰
+          - 在受控 HSM 中設定客戶自控金鑰
+            [772] 使用儲存在 Azure Key Vault 受控 HSM中的客戶自控金鑰來設定加密
+        - 客戶提供的金鑰
+          [775] 針對 Blob 儲存體的要求提供加密金鑰
+        - 設定用戶端加密
+          [778] Blob 的用戶端加密
+        - 使用 Azure Key Vault 加密及解密 Blob
+          [785] 教學課程：使用 Azure 金鑰保存庫加密及解密 Blob
+      - 網路
+        - 需要安全傳輸
+          [793] 要求安全傳輸以確保安全連線
+        - 設定防火牆和虛擬網路
+          [797] 設定 Azure 儲存體的防火牆和虛擬網路
+        - 使用 Azure 私人端點
+          [812] 
+        - 限制複製作業的範圍
+          [817] 將複製作業的來源限制為儲存體帳戶
+        - 管理傳輸層安全性（TLS） 
+          - 對傳入要求強制使用 TLS 最低版本
+            [823] 對儲存體帳戶的要求強制執行最低必要版本的傳輸層安全性 (TLS)
+          - 設定用戶端應用程式的 TLS 版本
+            [835] 針對用戶端應用程式設定傳輸層安全性(TLS)
+          - 移轉至 TLS 1.2
+            [837] 移轉至適用於 Azure Blob 儲存體的 TLS1.2
+        - 網路路由喜好設定
+          [840] 適用於 Azure 儲存體的網路路由喜好設定
+          - 設定網路路由喜好設定
+            [845] 設定 Azure 儲存體的網路路由喜好設定
+        - 使用自訂網域
+          [849] 
+      - 授權
+        - 授權資料作業
+          - 授權資料作業
+            [857] 授權存取 Azure 儲存體中的資料
+          - 使用者適用的授權選項
+            - 入口網站
+              [861] 選擇如何在 Azure 入口網站授與 Blob 資料的存取權
+            - PowerShell
+              [868] 使用 Microsoft Entra 認證來執行PowerShell 命令以存取 Blob 資料
+            - Azure CLI
+              [871] 選擇如何使用 Azure CLI 來授與 Blob 資料的存取權
+          - 使用 Microsoft Entra 識別碼進行授權
+            - 使用 Microsoft Entra ID 和 Azure RBAC 進行授權
+              [875] 使用 Microsoft Entra ID 授權存取 Blob
+            - 使用 Azure RBAC 管理存取權限
+              [882] 指派 Azure 角色以存取 blob 資料
+            - 使用 Azure ABAC 設定角色指派條件
+              [885] 使用 Azure 角色指派條件來授權 AzureBlob 儲存體的存取
+              - 條件的動作和屬性
+                [889] Azure Blob 儲存體的 Azure 角色指派條件的動作和屬性
+              - 條件安全性
+                [918] Azure Blob 儲存體中 Azure 角色指派條件的安全性考量
+              - 範例條件
+                [922] Blob 儲存體的 Azure 角色指派條件範例
+              - 新增角色指派條件 (Azure 入口網站)
+                [984] 教學課程：使用 Azure 入口網站新增角色指派條件，以限制對 Blob 的存取
+              - 新增角色指派條件 (PowerShell)
+                [994] 教學課程：使用 Azure PowerShell 新增角色指派條件，以限制對 Blob 的存取
+              - 新增角色指派條件 (Azure CLI)
+                [1005] 教學課程：使用 Azure CLI 新增角色指派條件，以限制對 blob 的存取
+          - 使用共用金鑰進行授權
+            [1016] 使用共用金鑰進行授權
+            - 檢視和管理帳戶金鑰
+              [1028] 管理儲存體帳戶存取金鑰
+            - 設定連接字串
+              [1036] 設定 Azure 儲存體連接字串
+            - 使用 Azure 儲存體 REST API
+              [1043] 使用共用金鑰授權呼叫 REST API 作業
+            - 防止使用共用金鑰進行授權
+              [1058] 防止 Azure 儲存體帳戶的共用金鑰授權
+          - 使用共用存取簽章授權 (SAS)
+            [1070] 使用共用存取簽章 (SAS) 對 Azure 儲存體資源授與有限存取權
+            - 建立使用者委派 SAS
+              - PowerShell
+                [1078] 使用 PowerShell 建立容器或 Blob 的使用者委派 SAS
+              - Azure CLI
+                [1084] 使用 Azure CLI 建立容器或 Blob 的使用者委派 SAS
+              - .NET
+                [1089] 使用 .NET 建立 Blob 的使用者委派 SAS
+            - 建立服務 SAS
+              [1095] 使用 .NET 建立 blob 的服務 SAS
+            - 建立帳戶 SAS (.NET)
+              [1101] 使用 .NET 建立帳戶 SAS
+            - 建立儲存的存取原則
+              [1104] 使用 .NET 建立預存存取原則
+            - 設定 SAS 到期原則
+              [1107] 設定共用存取簽章的到期原則
+        - 授權管理作業
+          [1113] 使用 Azure 儲存體資源提供者存取管理資源
+        - 移轉至無密碼連線
+          [1116] 移轉應用程式對 Azure Blob 儲存體使用無密碼連線
+        - 多個服務之間的無密碼連線
+          [1124] 設定多個 Azure 應用程式和服務之間的無密碼連線
+        - 管理對 Blob 資料的匿名讀取存取
+          - 概觀
+            [1132] 概觀：補救 Blob 資料的匿名讀取存取
+          - 補救匿名存取 (Azure Resource Manager 部署)
+            [1134] 補救對 Blob 資料的匿名讀取存取 (AzureResource Manager 部署)
+          - 補救匿名存取 (傳統部署)
+            [1150] 補救 Blob 資料的匿名讀取存取 (傳統部署)
+          - 設定匿名存取
+            [1155] 設定容器和 Blob 的匿名讀取存取
+      - 適用於儲存體的 Microsoft Defender
+        [1161] 適用於 儲存體 的 Microsoft Defender 概觀
+    - 資料保護
+      - 資料保護
+        [1168] 資料保護概觀
+      - 虛刪除
+        - 容器的虛刪除
+          [1175] 容器的虛刪除
+        - 啟用容器的虛刪除
+          [1178] 啟用及管理容器的虛刪除
+        - Blob 的虛刪除
+          [1181] Blob 的虛刪除
+        - 啟用 Blob 虛刪除
+          [1189] 啟用 Blob 的虛刪除
+        - 管理和還原虛刪除的 Blob
+      - 版本控制
+        [1192] 
+        - 啟用 Blob 版本設定
+          [1204] 啟用和管理 Blob 版本設定
+      - 還原時間點
+        [1207] 區塊 Blob 的時間點還原
+        - 啟用時間點還原
+          [1212] 對區塊 Blob 資料執行時間點還原
+      - 快照集
+        [1218] Blob 快照集
+      - 不可變儲存體
+        [1224] 以寫入一次不可變記憶體儲存業務關鍵Blob 數據，讀取許多 （WORM） 狀態
+        - 容器層級原則
+          [1232] 容器層級寫入一次，讀取許多不可變 Blob數據的 WORM 原則
+        - 版本層級原則
+          [1236] 版本層級寫入一次，讀取許多不可變 Blob數據的 WORM 原則
+        - 設定容器層級原則
+          [1242] 為容器設定不變性原則
+        - 設定版本層級原則
+          [1250] 為 Blob 版本設定不變性原則
+    - 可用性和災難復原
+      - 設計可用性高的應用程式
+        [1268] 使用異地備援來設計高可用性的應用程式
+      - 教學課程：設計高可用性的應用程式
+        - 1 - 讓您的應用程式保持高可用性
+          [1276] 教學課程：建置採用 Blob 儲存體的高可用性應用程式
+        - 2 - 從主要區域模擬資料讀取失敗
+          [1282] 教學課程：從主要區域模擬資料讀取失敗
+      - 資料備援
+        [1287] Azure 儲存體複寫
+        - 變更備援性組態
+          [1300] 變更儲存體帳戶的備援設定
+        - 支援 ZRS 的區域
+          [1315] 支援區域備援記憶體的 Azure 區域（ZRS）
+        - 支援 GZRS 的區域
+          [1318] 支援異地區域備援記憶體的 Azure 區域（GZRS）
+      - 災害復原
+        - 災害復原規劃和容錯移轉
+          [1320] Azure 儲存體災害復原規劃與容錯移轉
+        - 客戶自控容錯移轉如何運作
+          [1329] 客戶自控容錯移轉如何運作
+        - 初始化帳戶容錯移轉
+          [1338] 起始儲存體帳戶容錯移轉
+        - 檢查上次同步時間屬性
+          [1342] 檢查儲存體帳戶的 [上次同步時間] 屬性
+        - 針對儲存體帳戶使用私人端點的容錯移轉考量事項
+          [1344] 針對儲存體帳戶使用私人端點的容錯移轉考量事項
+    - 效能、規模和成本
+      - 效能和規模
+        - 效能和擴充檢查清單
+          [1351] Blob 儲存體的效能和延展性檢查清單
+        - Blob 儲存體中的延遲
+          [1363] Blob 儲存體中的延遲
+        - 擴充和效能目標
+          - Blob 儲存體
+            [1366] Blob 儲存體的延展性和效能目標
+          - 標準儲存體帳戶
+            [1368] 標準儲存體帳戶的延展性和效能目標
+          - 進階區塊 Blob 儲存體帳戶
+            [1372] 進階區塊 Blob 儲存體帳戶的可擴縮性目標
+          - 進階頁面 Blob 儲存體帳戶
+            [1373] Premium 分頁 Blob 儲存體帳戶的可擴縮性和效能目標
+          - 儲存體資源提供者
+            [1375] Azure 儲存體資源提供者的可擴縮性和效能目標
+        - 教學課程：效能和延展性最佳化
+          - 1 - 建立虛擬機器和儲存體帳戶
+            [1376] 為可擴充的應用程式建立虛擬機器和儲存體帳戶
+          - 2 - 將大量資料上傳至 Azure 儲存體帳戶
+            [1380] 將大量隨機資料平行上傳至 Azure 儲存體
+          - 3 - 從 Azure 儲存體帳戶下載大量資料
+            [1385] 從 Azure 儲存體下載大量隨機資料
+          - 4 - 驗證輸送量和延遲計量
+            [1390] 驗證儲存體帳戶的輸送量和延遲計量
+      - 成本管理
+        - 規劃和管理成本
+          [1393] 規劃和管理 Azure Blob 儲存體
+        - Azure 儲存體保留容量
+          [1403] 使用保留容量將 Blob 儲存體的成本最佳化
+        - 將每項 REST 作業對應至價格
+          [1409] 將每項 REST 作業對應至價格
+        - 估計 AzCopy 傳輸的成本
+          [1414] 估計使用 AzCopy 傳輸 Blob 的成本
+        - 估計封存資料的成本
+          [1426] 評估封存資料的成本
+      - 存取層
+        [1433] blob 資料的存取層
+        - 最佳作法
+          [1442] 使用 Blob 存取層的最佳做法
+        - 建立 Blob 的存取層
+          [1445] 設定 Blob 的存取層
+        - 生命週期管理原則
+          [1452] 自動管理資料生命週期以最佳化成本
+          - 設定生命週期管理原則
+            [1466] 設定生命週期管理原則
+        - 封存和解除凍結
+          - Blob 解除凍結概觀
+            [1472] 從封存層將 Blob 解除凍結
+          - 封存 Blob
+            [1477] 封存 blob
+          - 解除凍結 Blob
+            [1486] 將封存的 Blob 解除凍結到線上階層
+          - 處理 Blob 解除凍結上的事件
+            [1499] 執行 Azure 函式以回應 Blob 解除凍結事件
+      - 物件複寫
+        - 物件複寫
+          [1511] 區塊 Blob 的物件複寫
+        - 設定物件複寫原則
+          [1520] 設定區塊 Blob 的物件複寫
+        - 防止跨租用戶的物件複寫
+          [1529] 防止跨 Microsoft Entra 租用戶進行物件複寫
+    - 監視計量和記錄
+      - 遠端 Blob 儲存體
+        [1538] 監視 Azure Blob 儲存體
+      - 監視情節和最佳做法
+        [1549] 監視 Azure Blob 儲存體的最佳做法
+      - 使用儲存體深入解析
+        [1560] 使用 Azure 監視器的儲存體深入解析功能監視儲存體服務
+      - 從傳統計量轉換
+        [1575] 轉換為 Azure 監視器中的計量
+      - 監視 (傳統)
+        - Storage Analytics
+          [1579] Storage Analytics
+        - 記錄
+          [1581] Azure 儲存體分析記錄
+        - 啟用和管理記錄
+          [1587] 啟用和管理 Azure 儲存體分析記錄 (傳統)
+    - XBOX Video Application Development
+      - Blob 儲存體物件模型
+        - 了解應用程式如何與 Blob 儲存體資料資源互動
+          [1594] 了解應用程式如何與 Blob 儲存體資料資源互動
+        - 建立和管理用戶端物件
+          [1597] 
+        - 查詢 Blob 儲存體端點
+          [1602] 使用 Azure 儲存體管理程式庫來查詢Blob 儲存體端點
+      - .NET
+        - 開始使用
+          [1607] 開始使用 Azure Blob 儲存體和 .NET
+        - 授權從您的應用程式存取
+          - Azure Active Directory
+            - 概觀
+              [1611] 如何使用 .NET Azure SDK 向 Azure 服務驗證 .NET 應用程式
+            - 使用開發人員服務主體驗證
+              [1617] 於本機開發期間用服務主體向 Azure 服務驗證 NET 應用程式
+            - 使用開發人員帳戶驗證
+              [1625] 使用開發人員帳戶，在本機開發期間向Azure 服務驗證 .NET 應用程式
+            - 從 Azure 裝載的應用程式驗證
+              [1632] 使用 Azure SDK for .NET 向 Azure 資源驗證 Azure 裝載的應用程式
+            - 從內部部署應用程式驗證
+              [1637] 從內部部署裝載的 .NET 應用程式向Azure 資源進行驗證
+        - 容器動作
+          - 建立容器
+            [1644] 使用 .NET 建立 Blob 容器
+          - 刪除和還原容器
+            [1647] 使用 .NET 刪除和還原 Blob 容器
+          - 列出容器
+            [1651] 使用 .NET 列出 Blob 容器
+          - 管理容器租用
+            [1654] 使用 .NET 建立和管理容器租用
+          - 管理屬性和中繼資料
+            [1659] 使用 .NET 管理容器屬性和中繼資料
+          - 產生共用存取簽章 (SAS)
+            - 建立容器的使用者委派 SAS
+              [1663] 使用 .NET 建立容器的使用者委派 SAS
+            - 建立容器的服務 SAS
+              [1668] 使用 .NET 建立容器的服務 SAS
+            - 建立帳戶 SAS
+              [1674] 使用 .NET 建立帳戶 SAS
+        - Blob 動作
+          - 上傳 Blob
+            [1677] 使用 .NET 上傳 Blob
+          - 下載 Blob
+            [1686] 使用 .NET 下載 Blob
+          - 複製 Blob
+            - 複製作業概觀
+              [1691] 使用 .NET 複製 Blob
+            - 從來源物件 URL 複製
+              [1693] 使用 .NET 從來源物件 URL 複製 Blob
+            - 使用非同步排程複製
+              [1697] 使用 .NET 複製有非同步排程的 Blob
+          - 列出 Blob
+            [1703] 使用 .NET 列出 Blob
+          - 刪除和還原 Blob
+            [1710] 透過 .NET 刪除及還原 Blob
+          - 使用標記尋找 Blob
+            [1715] 透過 .NET 使用 Blob 索引標籤來管理和尋找資料
+          - 管理 Blob 屬性和中繼資料
+            [1720] 使用 .NET 管理 Blob 屬性和中繼資料
+          - 管理 Blob 租用
+            [1725] 使用 .NET 建立和管理 Blob 租用
+          - 建立和管理快照集
+            [1731] 藉由 .NET 建立和管理 Blob 快照集
+          - 建立及列出 Blob 版本
+            [1735] 在 .NET 中建立及列出 Blob 版本
+          - 設定或變更 Blob 的存取層
+            [1739] 使用 .NET 設定或變更區塊 Blob 的存取層
+          - 產生共用存取簽章 (SAS)
+            - 建立 Blob 的使用者委派 SAS
+              [1743] 使用 .NET 建立 Blob 的使用者委派 SAS
+            - 建立 blob 的服務 SAS
+              [1749] 使用 .NET 建立 blob 的服務 SAS
+            - 建立帳戶 SAS
+              [1755] 使用 .NET 建立帳戶 SAS
+        - 附加 Blob 動作
+          - 將資料附加至附加 Blob
+            [1758] 使用 .NET 將資料附加至附加 Blob
+        - 用戶端程式庫設定選項
+          - 上傳和下載的效能微調
+            [1760] 使用 .NET 進行上傳和下載的效能微調
+          - 實作重試原則
+            [1765] 使用 .NET 實作重試原則
+          - 設定記錄
+            [1768] 使用適用於 .NET 的 Azure SDK 進行記錄
+          - 管理並行
+            [1777] 管理 Blob 儲存體中的並行存取
+          - 在寫入要求上提供加密金鑰
+            [1783] 使用 .NET 在 Blob 儲存體要求上指定客戶提供的金鑰
+        - 教學課程：上傳和處理映像檔案
+          [1786] 教學課程：使用 Azure Functions 和 Blob儲存體來上傳和分析檔案
+      - Java
+        - 開始使用
+          [1800] 開始使用 Azure Blob 儲存體和 Java
+        - 授權從您的應用程式存取
+          - Azure Active Directory
+            - 概觀
+              [1805] 使用 Java 和 Azure 身分識別進行 Azure驗證
+            - 開發環境中的驗證
+              [1808] Java 開發環境中的 Azure 驗證
+            - 使用使用者認證進行驗證
+              [1814] 使用使用者認證進行 Azure 驗證
+            - 使用服務主體進行驗證
+              [1818] 使用服務主體進行 Azure 驗證
+            - Azure 主應用程式中的驗證
+              [1821] 驗證 Azure 裝載的 Java 應用程式
+        - 容器動作
+          - 建立容器
+            [1826] 使用 JAVA 建立 Blob 容器
+          - 刪除和還原容器
+            [1829] 使用 Java 刪除和還原 Blob 容器
+          - 列出容器
+            [1832] 使用 Java 列出 Blob 容器
+          - 管理容器租用
+            [1836] 使用 Java 建立和管理容器租用
+          - 管理屬性和中繼資料
+            [1841] 使用 Java 管理容器屬性和中繼資料
+          - 產生共用存取簽章 (SAS)
+            - 建立容器的使用者委派 SAS
+              [1844] 使用 Java 建立用於存取容器的使用者委派 SAS
+            - 建立容器的服務 SAS
+              [1849] 使用 Java 建立容器的服務 SAS
+            - 建立帳戶 SAS
+              [1852] 使用 Java 建立帳戶 SAS
+        - Blob 動作
+          - 上傳 Blob
+            [1856] 使用 JAVA 上傳區塊 Blob
+          - 下載 Blob
+            [1862] 使用 JAVA 下載 Blob
+          - 複製 Blob
+            - 複製作業概觀
+              [1866] 使用 Java 複製 Blob
+            - 從來源物件 URL 複製
+              [1868] 使用 Java 從來源物件 URL 複製 Blob
+            - 使用非同步排程複製
+              [1871] 使用 JAVA 以非同步排程來複製 Blob
+          - 列出 Blob
+            [1876] 使用 Java 列出 Blob
+          - 刪除和還原 Blob
+            [1881] 使用 JAVA 刪除和還原 Blob
+          - 使用標記尋找 Blob
+            [1886] 透過 Java 使用 Blob 索引標籤來管理和尋找資料
+          - 管理 Blob 租用
+            [1890] 使用 JAVA 建立和管理 Blob 租用
+          - 管理 Blob 屬性和中繼資料
+            [1895] 使用 JAVA 管理 Blob 屬性和中繼資料
+          - 設定或變更 Blob 的存取層
+            [1899] 使用 JAVA 設定或變更區塊 Blob 的存取層
+          - 產生共用存取簽章 (SAS)
+            - 建立 Blob 的使用者委派 SAS
+              [1904] 使用 JAVA 建立 Blob 的使用者委派 SAS
+            - 建立 blob 的服務 SAS
+              [1909] 使用 Java 建立 blob 的服務 SAS
+            - 建立帳戶 SAS
+              [1912] 使用 Java 建立帳戶 SAS
+        - 用戶端程式庫設定選項
+          - 上傳和下載的效能微調
+            [1916] 使用 Java 進行上傳和下載的效能微調
+          - 實作重試原則
+            [1921] 使用Java實作重試原則
+          - 設定記錄
+            [1923] 在 Azure SDK for Java 中設定記錄
+      - JavaScript
+        - 開始使用
+          [1928] 開始使用 Azure Blob 儲存體和 JavaScript
+        - 授權從您的應用程式存取
+          - Azure Active Directory
+            - 概觀
+              [1938] 如何使用適用於 JavaScript 的 Azure SDK向 Azure 服務驗證 JavaScript 應用程式
+            - 使用開發人員服務主體驗證
+              [1943] 使用服務主體在本機開發期間向 Azure 服務驗證 JavaScript 應用程式
+            - 使用開發人員帳戶驗證
+              [1951] 使用開發人員帳戶在本機開發期間向Azure 服務驗證 JavaScript 應用程式
+            - 從 Azure 裝載的應用程式驗證
+              [1957] 使用適用於 JavaScript 的 Azure SDK 向Azure 資源驗證 Azure 裝載的應用程式
+            - 從內部部署應用程式驗證
+              [1962] 從內部部署 JavaScript 應用程式向 Azure資源進行驗證
+          - 使用 SAS 權杖
+            - 使用者委派 SAS
+              [1967] 使用 Azure Blob 儲存體和 JavaScript 建立使用者委派 SAS 權杖
+            - 服務 SAS
+              [1975] 使用 JavaScript 建立容器或 blob 的服務SAS
+            - 帳戶 SAS
+              [1978] 使用 Azure Blob 儲存體 和 JavaScript 建立和使用帳戶 SAS 權杖
+        - 容器動作
+          - 建立容器
+            [1983] 使用 JavaScript 建立 Blob 容器
+          - 取得容器 URL
+            [1986] 使用 JavaScript 取得容器或 Blob 的 URL
+          - 刪除和還原容器
+            [1988] 使用 JavaScript 刪除和還原 Blob 容器
+          - 列出容器
+            [1992] 使用 JavaScript 列出 Blob 容器
+          - 管理容器租用
+            [1997] 使用 JavaScript 建立和管理容器租用
+          - 管理屬性和中繼資料
+            [2002] 使用 JavaScript 管理容器屬性和中繼資料
+        - Blob 動作
+          - 上傳 Blob
+            [2005] 使用 JavaScript 上傳 Blob
+          - 下載 Blob
+            [2011] 使用 JavaScript 下載 Blob
+          - 複製 Blob
+            - 複製作業概觀
+              [2014] 使用 JavaScript 複製 Blob
+            - 從來源物件 URL 複製
+              [2016] 使用 JavaScript 從來源物件 URL 複製Blob
+            - 使用非同步排程複製
+              [2019] 使用 JavaScript 以非同步排程來複製Blob
+          - 列出 Blob
+            [2024] 使用 JavaScript 列出 Blob
+          - 刪除和還原 Blob
+            [2030] 透過 JavaScript 刪除及還原 Blob
+          - 使用標記尋找 Blob
+            [2033] 使用 Blob 索引標籤搭配 JavaScript 管理和尋找資料
+          - 管理 Blob 租用
+            [2039] 使用 JavaScript 建立和管理 Blob 租用
+          - 管理 Blob 屬性和中繼資料
+            [2044] 使用 JavaScript 管理 Blob 屬性和中繼資料
+          - 取得 Blob URL
+            [2049] 使用 JavaScript 取得容器或 Blob 的 URL
+          - 設定或變更 Blob 的存取層
+            [2051] 使用 JavaScript 設定或變更區塊 Blob 的存取層
+        - 教學課程：上傳和處理映像檔案
+          [2056] JavaScript 教學課程：使用 AzureFunctions 和 Blob 儲存體來上傳和分析檔案
+      - TypeScript
+        - 開始使用
+          [2071] 開始使用 Azure Blob 儲存體和TypeScript
+        - 授權從您的應用程式存取
+          - Azure Active Directory
+            - 概觀
+              [2082] 如何使用適用於 JavaScript 的 Azure SDK向 Azure 服務驗證 JavaScript 應用程式
+            - 使用開發人員服務主體驗證
+              [2087] 使用服務主體在本機開發期間向 Azure 服務驗證 JavaScript 應用程式
+            - 使用開發人員帳戶驗證
+              [2095] 使用開發人員帳戶在本機開發期間向Azure 服務驗證 JavaScript 應用程式
+            - 從 Azure 裝載的應用程式驗證
+              [2101] 使用適用於 JavaScript 的 Azure SDK 向Azure 資源驗證 Azure 裝載的應用程式
+            - 從內部部署應用程式驗證
+              [2106] 從內部部署 JavaScript 應用程式向 Azure資源進行驗證
+          - 使用 SAS 權杖
+            - 使用者委派 SAS
+              [2111] 使用 Azure Blob 儲存體和 JavaScript 建立使用者委派 SAS 權杖
+            - 服務 SAS
+              [2119] 使用 JavaScript 建立容器或 blob 的服務SAS
+            - 帳戶 SAS
+              [2122] 使用 Azure Blob 儲存體 和 JavaScript 建立和使用帳戶 SAS 權杖
+        - 容器動作
+          - 建立容器
+            [2127] 使用 TypeScript 建立 Blob 容器
+          - 取得容器 URL
+            [2130] 使用 TypeScript 取得容器或 Blob URL
+          - 刪除和還原容器
+            [2133] 使用 TypeScript 刪除和還原 Blob 容器
+          - 列出容器
+            [2138] 透過 TypeScript 列出 Blob 容器
+          - 管理容器租用
+            [2143] 使用 TypeScript 建立和管理容器租用
+          - 管理屬性和中繼資料
+            [2148] 使用 TypeScript 管理容器屬性和中繼資料
+        - Blob 動作
+          - 上傳 Blob
+            [2152] 上傳具有 TypeScript 的 Blob
+          - 下載 Blob
+            [2158] 下載具有 TypeScript 的 Blob
+          - 複製 Blob
+            - 複製作業概觀
+              [2162] 使用 TypeScript 複製 Blob
+            - 從來源物件 URL 複製
+              [2164] 使用 TypeScript 從來源物件 URL 複製Blob
+            - 使用非同步排程複製
+              [2167] 使用 TypeScript 透過非同步排程複製Blob
+          - 列出 Blob
+            [2173] 使用 TypeScript 列出 Blob
+          - 刪除和還原 Blob
+            [2179] 透過 TypeScript 刪除及還原 Blob
+          - 使用標記尋找 Blob
+            [2183] 透過 TypeScript 使用 Blob 索引標籤來管理和尋找資料
+          - 管理 Blob 租用
+            [2189] 使用 TypeScript 建立和管理 Blob 租用
+          - 管理 Blob 屬性和中繼資料
+            [2194] 使用 TypeScript 管理 Blob 屬性和中繼資料
+          - 取得 Blob URL
+            [2199] 使用 TypeScript 取得容器或 Blob URL
+          - 設定或變更 Blob 的存取層
+            [2202] 使用 TypeScript 設定或變更區塊 Blob 的存取層
+      - Python
+        - 開始使用
+          [2208] 開始使用 Azure Blob 儲存體和 Python
+        - 授權從您的應用程式存取
+          - Azure Active Directory
+            - 概觀
+              [2213] 使用適用於 Python 的 Azure SDK 向Azure 服務驗證 Python 應用程式
+            - 使用開發人員服務主體驗證
+              [2219] 於本機開發期間使用服務主體向 Azure 服務驗證 Python 應用程式
+            - 使用開發人員帳戶驗證
+              [2225] 於本機開發期間使用開發人員帳戶向Azure 服務驗證 Python 應用程式
+            - 從 Azure 裝載的應用程式驗證
+              [2230] 使用 Azure SDK for Python 向 Azure 資源驗證 Azure 裝載的應用程式
+            - 從內部部署應用程式驗證
+              [2234] 從裝載於內部部署的 Python 應用程式向Azure 資源進行驗證
+        - 容器動作
+          - 建立容器
+            [2238] 使用 Python 建立 Blob 容器
+          - 刪除和還原容器
+            [2242] 使用 Python 刪除和還原 Blob 容器
+          - 列出容器
+            [2246] 使用 Python 列出 Blob 容器
+          - 管理容器租用
+            [2250] 使用 Python 建立和管理容器租用
+          - 管理屬性和中繼資料
+            [2256] 使用 Python 管理容器屬性和中繼資料
+          - 產生共用存取簽章 (SAS)
+            - 建立容器的使用者委派 SAS
+              [2261] 使用 Python 建立容器的使用者委派 SAS
+            - 建立容器的服務 SAS
+              [2267] 使用 Python 建立容器的服務 SAS
+            - 建立帳戶 SAS
+              [2270] 使用 Python 建立帳戶 SAS
+        - Blob 動作
+          - 上傳 Blob
+            [2273] 使用 Python 上傳區塊 Blob
+          - 下載 Blob
+            [2280] 使用 Python 下載 Blob
+          - 複製 Blob
+            - 複製作業概觀
+              [2286] 使用 Python 複製 Blob
+            - 從來源物件 URL 複製
+              [2288] 使用 Python 從來源物件 URL 複製 Blob
+            - 使用非同步排程複製
+              [2293] 使用 Python 複製具有非同步排程的 Blob
+          - 列出 Blob
+            [2299] 使用 Python 列出 Blob
+          - 刪除和還原 Blob
+            [2305] 透過 Python 刪除及還原 Blob
+          - 使用標記尋找 Blob
+            [2310] 透過 Python 使用 Blob 索引標籤來管理和尋找資料
+          - 管理 Blob 租用
+            [2316] 使用 Python 建立和管理 Blob 租用
+          - 管理 Blob 屬性和中繼資料
+            [2323] 使用 Python 管理 Blob 屬性和中繼資料
+          - 設定或變更 Blob 的存取層
+            [2329] 使用 Python 設定或變更區塊 Blob 的存取層
+          - 產生共用存取簽章 (SAS)
+            - 建立 Blob 的使用者委派 SAS
+              [2334] 使用 Python 建立 Blob 的使用者委派SAS
+            - 建立 blob 的服務 SAS
+              [2339] 使用 Python 建立 Blob 的服務 SAS
+            - 建立帳戶 SAS
+              [2342] 使用 Python 建立帳戶 SAS
+        - 用戶端程式庫設定選項
+          - 上傳和下載的效能微調
+            [2345] 使用 Python 進行上傳和下載的效能微調
+          - 實作重試原則
+            [2350] 使用 Python 實作重試原則
+          - 設定記錄
+            [2354] 在適用於 Python 的 Azure 連結庫中設定記錄
+      - 使用儲存體模擬器進行測試
+        - 使用 Azurite open-source 模擬器
+          [2361] 使用 Azurite 模擬器進行本機 Azure 儲存體開發
+        - 使用 Azurite 執行自動化測試
+          [2379] 使用 Azurite 執行自動化測試
+        - 使用 Azure 儲存體模擬器 (已淘汰)
+          [2384] 使用 Azure 儲存體模擬器進行開發和測試(已淘汰)
+      - 變更摘要和事件
+        - 變更摘要
+          [2397] Azure Blob 儲存體中的變更摘要支援
+        - 處理變更摘要記錄
+          [2412] 處理 Azure Blob 儲存體中的變更摘要
+        - 事件處理
+          [2418] 回應 Blob 儲存體事件
+        - 將事件路由至自訂端點
+          [2422] 快速入門：使用 Azure CLI 將儲存體事件路由至 Web 端點
+    - 疑難排解
+      [2428] 
+    - 範例
+      - .NET
+        [2431] 使用 v12 .NET 用戶端程式庫的 Azure 儲存體範例
+      - Java
+        [2437] 使用 v12 Java 用戶端程式庫的 Azure 儲存體範例
+      - Spring
+      - Python
+        [2444] 使用 v12 Python 用戶端程式庫的 Azure儲存體範例
+      - JavaScript
+        [2452] 使用 v12 JavaScript 用戶端程式庫的Azure 儲存體範例
+      - C++
+        [2458] 使用 v12 C++ 用戶端程式庫的 Azure 儲存體範例
+      - 其他語言
+        [2461] Azure 儲存體範例
+      - Azure PowerShell
+        [2463] 適用於 Azure Blob 儲存體的 AzurePowerShell 範例
+      - Azure CLI
+        - 概觀
+          [2464] 適用於 Azure Blob 儲存體的 Azure CLI 範例
+        - 擷取/輪替存取金鑰
+          [2465] 建立儲存體帳戶，並輪替其帳戶存取金鑰
+        - 計算 Blob 儲存體容器的大小
+          [2468] 計算 Blob 儲存體容器的大小
+        - 刪除具有特定前置詞的容器
+          [2472] 使用 Azure CLI 指令碼，根據容器名稱前置詞來刪除容器
+        - Azure Resource Graph 查詢
+          [2476] 適用於 Azure 儲存體的 Azure ResourceGraph 範例查詢
+    - 參考
+      - Blob 儲存體 API
+        - 資料存取 API
+          - REST API
+            [2479] Azure Blob 儲存體 REST API
+          - .NET SDK
+            [2483] Azure Storage client libraries for .NET
+          - Java SDK
+            [2486] Azure Storage libraries for Java
+          - Python SDK
+            [2498] 適用于 Python 的 Azure 儲存體用戶端程式庫
+          - JavaScript SDK
+            [2501] 適用于 JavaScript 的 Azure 儲存體程式庫
+        - 資源管理 API
+          - REST API
+            [2504] Azure 儲存體資源提供者 REST API 參考
+          - .NET SDK
+            [2505] Microsoft Azure Storage managementclient library for .NET
+          - Java SDK
+            [2509] Management
+          - Python SDK
+            [2510] 適用于 Python 的 Azure 儲存體用戶端程式庫
+          - JavaScript SDK
+            [2513] 適用于 JavaScript 的 Azure 儲存體程式庫
+        - Spring Cloud Azure
+          [2516] Spring Cloud Azure 開發人員指南
+      - Data Lake Storage Gen2 API
+        - REST
+          [2521] Azure Data Lake Storage Gen2 REST API
+        - .NET
+          [2522] Azure.Storage.Files.DataLakeNamespace
+        - Java
+          [2524] Azure File Data Lake client library forJava - version 12.18.4
+        - Python
+          [2536] 適用于 Python 的 Azure DataLake 服務用戶端程式庫 - 12.14.0 版
+        - JavaScript
+          [2544] 適用於 JavaScript 的 Azure 記憶體檔案Data Lake 用戶端連結庫 - 12.17.0 版
+        - C++
+      - 查詢加速參考
+        [2559] 查詢加速 SQL 語言參考
+      - AzCopy v10
+        - 組態設定
+          [2569] AzCopy v10 組態設定 （Azure 儲存體）
+        - 錯誤碼
+          [2574] 錯誤碼：AzCopy V10
+        - azcopy
+          [2576] azcopy
+        - azcopy 工作台
+          [2578] azcopy 工作台
+        - azcopy 複製
+          [2581] azcopy 複製
+        - azcopy 文件
+          [2593] azcopy doc
+        - azcopy 環境
+          [2594] azcopy env
+        - azcopy 作業
+          [2595] azcopy jobs
+        - azcopy 作業清除
+          [2597] azcopy jobs clean
+        - azcopy 作業清單
+          [2599] azcopy jobs list
+        - azcopy 作業移除
+          [2601] azcopy jobs remove
+        - azcopy 作業繼續
+          [2603] azcopy jobs resume
+        - azcopy 作業顯示
+          [2605] azcopy jobs show
+        - azcopy 清單
+          [2607] azcopy list
+        - azcopy 登入
+          [2609] azcopy login
+        - azcopy 登入狀態
+          [2612] azcopy login status
+        - azcopy 登出
+          [2614] azcopy logout
+        - azcopy 製作
+          [2616] azcopy make
+        - azcopy 移除
+          [2618] azcopy remove
+        - azcopy 同步
+          [2621] azcopy 同步
+        - azcopy 設定屬性
+          [2628] azcopy set-properties （預覽）
+      - BlobFuse2
+        - 配置設定
+          [2632] 如何進行 BlobFuse2 的設定
+        - 命令
+          - BlobFuse2 命令集
+            [2634] 如何使用 BlobFuse2 命令集
+          - BlobFuse2 mount
+            [2636] 
+            - BlobFuse2 mount all
+              [2641] 
+            - BlobFuse2 mount list
+              [2645] 
+          - BlobFuse2 mountv1
+            [2648] 如何使用 BlobFuse2 mountv1 命令
+          - BlobFuse2 unmount
+            [2653] 如何使用 BlobFuse2 unmount 命令
+            - BlobFuse2 unmount all
+              [2655] 如何使用 BlobFuse2 unmount all 命令來卸載所有現有的掛接點
+          - BlobFuse2 completion
+            [2657] BlobFuse2 completion 命令
+            - BlobFuse2 completion bash
+              [2659] BlobFuse2 completion bash 命令
+            - BlobFuse2 completion fish
+              [2661] BlobFuse2 completion fish 命令
+            - BlobFuse2 completion PowerShell
+              [2663] BlobFuse2 completion PowerShell
+            - BlobFuse2 completion zsh
+              [2665] BlobFuse2 completion zsh 命令
+          - BlobFuse2 secure
+            [2667] 如何使用 BlobFuse2 secure 命令
+            - BlobFuse2 secure encrypt
+              [2669] 如何使用 BlobFuse2 secure encrypt 命令來加密 BlobFuse2 設定檔
+            - BlobFuse2 secure decrypt
+              [2671] 如何使用 BlobFuse2 secure decrypt 命令來解密 BlobFuse2 設定檔
+            - BlobFuse2 secure get
+              [2673] 如何使用 BlobFuse2 secure get 命令，顯示加密 BlobFuse2 設定檔的參數值
+            - BlobFuse2 secure set
+              [2675] 如何使用 BlobFuse2 secure set 命令，變更加密 BlobFuse2 設定檔的參數值
+          - BlobFuse2 version
+            [2677] BlobFuse2 version 命令
+          - BlobFuse2 help
+            [2679] BlobFuse2 help 命令
+      - Resource Manager 範本
+        [2681] Microsoft.Storage 資源類型
+      - 監視資料
+        [2685] 
+      - 主機金鑰 (SFTP) 支援
+        [2694] Azure Blob 儲存體中 SSH 檔案傳輸通訊協定 (SFTP) 的主機金鑰支援
+      - Azure 原則內建
+        [2810] 
+    - 資源
+      - 常見問題集
+        [2817] 生命週期管理原則
+      - Azure 更新
+      - Azure 儲存體總管
+        - 下載儲存體總管
+        - 開始使用儲存體總管
+          [2824] 開始使用儲存體總管
+        - 登入儲存體總管
+          [2836] 登入儲存體總管
+        - 儲存體總管網路
+          [2838] 儲存體總管中的網路連接
+        - 儲存體總管版本資訊
+        - 針對儲存體總管進行疑難排解
+          [2842] Azure 儲存體總管 疑難解答指南
+        - 將模擬器連線至儲存體總管
+          [2859] 將模擬器連線至儲存體總管
+        - 儲存體總管命令列選項
+          [2861] Azure 儲存體總管命令列選項
+        - 儲存體總管直接連結
+          [2863] Azure 儲存體總管直接連結
+        - 儲存體總管安全性
+          [2865] Azure 儲存體總管安全性指南
+        - 儲存體總管虛刪除
+          [2868] Azure 儲存體總管虛刪除指南
+        - 儲存體總管 Blob 版本設定
+          [2871] Azure 儲存體總管 Blob 版本設定指南
+        - 儲存體總管管理 Azure Blob 儲存體
+          [2875] 使用儲存體總管來管理 Azure Blob 儲存體資源
+        - 儲存體總管建立檔案共用
+          [2887] 搭配使用儲存體總管與 Azure 檔案儲存體
+        - 儲存體總管支援原則和生命週期
+          [2899] Azure 儲存體總管支援生命週期和原則
+        - 儲存體總管協助工具
+          [2903] 儲存體總管協助工具
+      - Microsoft Q&A 上的 Blob 儲存體
+      - Stack Overflow 上的 Blob 儲存體
+      - 區塊 Blob 的定價
+      - 資料湖儲存體的定價
+      - 分頁 Blob 的定價
+      - Azure 定價計算機
+      - 影片
+      - 將 NFS 的存取權與 Azure Blob 儲存體、Azure 檔案儲存體和 Azure NetApp Files 進行比較
+        [2907] 比較使用 NFS 對 Azure 檔案儲存體、Blob 儲存體和 Azure NetApp Files 的存取
+      - NuGet 套件 (.NET)
+        - Microsoft.Azure.Storage.Common (版本 11.x)
+        - Azure.Storage.Common (版本 12.x)
+        - Microsoft.Azure.Storage.Blob (版本 11.x)
+        - Azure.Storage.Blob (版本 12.x)
+        - Azure 組態管理員
+        - Azure 儲存體資料移動程式庫
+        - 儲存體資源提供者程式庫
+      - 原始程式碼
+        - .NET
+          - Azure 儲存體用戶端程式庫
+            - 版本 12.x
+            - 版本 11.x 和舊版
+          - 資料移動程式庫
+          - 儲存體資源提供者程式庫
+        - Java
+          - Azure 儲存體用戶端程式庫版本 12.x
+          - Azure 儲存體用戶端程式庫版本 8.x 和舊版
+        - Node.js
+          - Azure 儲存體用戶端程式庫版本 12.x
+          - Azure 儲存體用戶端程式庫版本 10.x
+        - Python
+          - Azure 儲存體用戶端程式庫版本 12.x
+          - Azure 儲存體用戶端程式庫版本 2.1
+      - 使用已淘汰 SDK 的程式碼範例
+        - .NET
+      - 合規性供應項目
+        [2909] Azure 儲存體合規性供應項目
+  - Data Lake Storage Gen2
+    - 概觀
+      - Data Lake Storage 簡介
+        [2910] Azure Data Lake Storage Gen2 簡介
+      - Blob 儲存體功能支援
+        [2914] Azure 儲存體帳戶中的 Blob 儲存體功能支援
+    - 教學課程
+      - 搭配 Synapse SQL 使用
+        [2919] 教學課程：使用 Synapse Analytics 中的SQL 語言查詢 Azure Data Lake StorageGen2
+      - 搭配 Databricks 和 Spark 使用
+        [2923] 教學課程：Azure Data Lake StorageGen2、Azure Databricks 和 Spark
+      - 搭配 Apache Hive 和 HDInsight 使用
+        [2932] 教學課程：使用 Azure HDInsight 擷取、轉換和載入資料
+      - 搭配 Databricks Delta 和 Event Grid 使用
+        [2941] 教學課程：實作資料湖擷取模式以更新Databricks 差異資料表
+      - 搭配其他 Azure 服務使用
+        [2953] 搭配使用 Azure 服務與 Azure Data LakeStorage Gen2 的教學課程
+    - 概念
+      - 授權
+        - 授權資料作業
+          [2955] 授權存取 Azure 儲存體中的資料
+          - 使用 Microsoft Entra 識別碼進行授權
+            - 使用 Microsoft Entra ID 和 Azure RBAC 進行授權
+              [2959] 使用 Microsoft Entra ID 授權存取 Blob
+            - 使用 Azure ABAC 設定角色指派條件
+              [2966] 使用 Azure 角色指派條件來授權 AzureBlob 儲存體的存取
+              - 條件的動作和屬性
+                [2970] Azure Blob 儲存體的 Azure 角色指派條件的動作和屬性
+              - 條件安全性
+                [2999] Azure Blob 儲存體中 Azure 角色指派條件的安全性考量
+              - 範例條件
+                [3003] Blob 儲存體的 Azure 角色指派條件範例
+      - 最佳作法
+        [3065] 使用 Azure Data Lake Storage Gen2 的最佳做法
+      - 查詢加速
+        [3073] Azure Data Lake Storage 查詢加速
+      - Data Lake Storage 的進階層
+        [3076] Azure Data Lake Storage 的進階層
+      - 架構
+        - 適用於 Hadoop 的 Azure Blob 檔案系統驅動程式
+          [3078] Azure Blob 檔案系統驅動程式 (ABFS)：Hadoop 專用的 Azure 儲存體驅動程式
+        - Azure Blob 檔案系統 URI
+          [3081] 使用 Azure Data Lake Storage Gen2 URI
+        - 關於階層命名空間
+          [3083] Azure Data Lake Storage Gen2 階層式命名空間
+      - 安全性
+        - 存取控制模型
+          [3085] Azure Data Lake Storage Gen2 中的存取控制模型
+        - 存取控制清單
+          [3094] Azure Data Lake Storage Gen2 中的存取控制清單 (ACL)
+      - 相容性
+        - 多重通訊協定存取
+          [3107] Azure Data Lake Storage 上的多重通訊協定存取
+        - 支援的 Blob 儲存體功能
+          [3109] Azure 儲存體帳戶中的 Blob 儲存體功能支援
+        - 支援的 Azure 服務
+          [3114] 支援 Azure Data Lake Storage Gen2 的Azure 服務
+        - 支援的開放原始碼平台
+          [3117] 支援 Azure Data Lake Storage Gen2 的開放原始碼平台
+      - 監視
+        - 遠端 Blob 儲存體
+          [3118] 監視 Azure Blob 儲存體
+        - 從傳統計量轉換
+          [3129] 轉換為 Azure 監視器中的計量
+        - 監視 (傳統)
+          - Storage Analytics
+            [3133] Storage Analytics
+          - 記錄
+            [3135] Azure 儲存體分析記錄
+          - 監控、診斷及疑難排解
+            [3141] 
+    - 如何
+      - 建立儲存體帳戶
+        [3160] 建立儲存體帳戶以與 Azure Data LakeStorage Gen2 搭配使用
+      - 遷移帳戶和資料存放區
+        - 遷移 HDFS 存放區
+          - 離線遷移 HDFS 存放區
+            [3162] 從內部部署的 HDFS 存放區遷移至具有Azure 資料箱的 Azure 儲存體
+          - 線上遷移 HDFS 存放區
+            [3172] 使用適用於 Azure 的 WANdisco LiveDataPlatform 將內部部署 Hadoop 資料遷移至 Azure Data Lake 儲存體 Gen2
+        - 從 Data Lake Storage Gen1 遷移
+          - 使用 Azure 入口網站移轉
+            [3179] 使用 Azure 入口網站，將 Azure DataLake 儲存體 從 Gen1 遷移至 Gen2
+          - 移轉指導方針和模式
+            [3191] Azure Data Lake 儲存體 移轉指導方針和模式
+      - 傳輸資料
+        - AzCopy
+          - 開始使用
+            [3200] 開始使用 AzCopy
+          - 使用 Microsoft Entra 識別碼進行授權
+            [3207] 使用 AzCopy 和 Microsoft Entra ID 授權Blob 和檔案的存取權
+          - 最佳化效能
+            [3218] 使用 Azure 儲存體將 AzCopy 的效能最佳化
+          - 使用記錄來尋找錯誤並繼續作業
+            [3223] 在 AzCopy 中使用記錄檔和計畫檔案，尋找錯誤並繼續工作
+          - 範例：上傳
+            [3227] 使用 AzCopy 將檔案上傳到 Azure Blob儲存體
+          - 範例：下載
+            [3236] 使用 AzCopy 從 Azure Blob 儲存體下載Blob
+          - 範例：在帳戶之間複製
+            [3244] 使用 AzCopy 在 Azure 儲存體帳戶之間複製 Blob
+          - 範例：同步處理
+            [3251] 使用 AzCopy 來與 Azure Blob 儲存體同步
+          - 範例：屬性和中繼資料
+            [3257] 以 AzCopy v10 取代 Blob 屬性和中繼資料(預覽)
+          - 範例：Amazon S3 貯體
+            [3262] 使用 AzCopy 將資料從 Amazon S3 複製到 Azure 儲存體
+          - 範例：Google Cloud 儲存體貯體
+            [3268] 使用 AzCopy 將資料從 Google CloudStorage 複製到 Azure 儲存體
+        - Azure Data Factory
+          [3274] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Azure Data LakeStorage Gen2 中複製和轉換資料
+        - 使用 DistCp 工具傳輸資料
+          [3310] 使用 DistCp 在 Azure 儲存體 Blob 與Azure Data Lake Storage Gen2 之間複製資料
+        - 透過資料移動程式庫傳輸資料
+          [3314] 透過資料移動程式庫傳輸資料
+      - 管理存取控制
+        - Azure 入口網站
+          [3328] 使用 Azure 入口網站管理 Azure DataLake Storage Gen2 中的 ACL
+        - 儲存體總管
+          [3333] 使用 Azure 儲存體總管來管理 AzureData Lake Storage Gen2 中的 ACL
+        - PowerShell
+          [3339] 使用 PowerShell 管理 Azure Data LakeStorage Gen2 中的 ACL
+        - CLI
+          [3351] 使用 Azure CLI 管理 Azure Data LakeStorage Gen2 中的 ACL
+        - .NET
+          [3359] 使用 .NET 管理 Azure Data Lake StorageGen2 中的 ACL
+        - Java
+          [3372] 使用 Java 管理 Azure Data Lake StorageGen2 中的 ACL
+        - Python
+          [3387] 使用 Python 管理 Azure Data LakeStorage Gen2 中的 ACL
+        - JavaScript
+          [3397] 使用 Node.js 中的 JavaScript SDK 來管理Azure Data Lake Storage Gen2 中的 ACL
+      - 使用資料
+        - 儲存體總管
+          [3403] 使用 Azure 儲存體總管來管理 AzureData Lake Storage Gen2 中的目錄和檔案
+        - PowerShell
+          [3409] 使用 PowerShell 管理 Azure Data LakeStorage Gen2 中的目錄和檔案
+        - CLI
+          [3417] 透過 Azure CLI 管理 Azure Data LakeStorage Gen2 中的目錄和檔案
+        - .NET
+          [3423] 使用 .NET 來管理 Azure Data LakeStorage Gen2 中的目錄和檔案
+        - Java
+          [3435] 使用 Java 來管理 Azure Data LakeStorage Gen2 中的目錄和檔案
+        - Python
+          [3442] 使用 Python 來管理 Azure Data LakeStorage Gen2 中的目錄和檔案
+        - JavaScript
+          [3448] 使用 Node.js 中的 JavaScript SDK 來管理Azure Data Lake Storage Gen2 中的目錄和檔案
+        - 查詢加速
+          [3455] 使用 Azure Data Lake Storage 查詢加速篩選資料
+        - Hadoop 檔案系統 CLI
+          [3459] 使用 HDFS CLI 搭配 Data Lake StorageGen2
+      - 使用 Azure 服務
+        [3463] 搭配使用 Azure 服務與 Azure Data LakeStorage Gen2 的教學課程
+    - 參考
+      - .NET
+        [3465] Azure.Storage.Files.DataLakeNamespace
+      - Java
+        [3467] Azure File Data Lake client library forJava - version 12.18.4
+      - Python
+        [3479] 適用于 Python 的 Azure DataLake 服務用戶端程式庫 - 12.14.0 版
+      - JavaScript
+        [3487] 適用於 JavaScript 的 Azure 記憶體檔案Data Lake 用戶端連結庫 - 12.17.0 版
+      - C++
+      - REST
+        [3502] Azure Data Lake Storage Gen2 REST API
+      - Azure CLI
+        [3503] az dls
+      - 查詢加速參考
+        [3507] 查詢加速 SQL 語言參考
+      - Resource Manager 範本
+        [3517] Microsoft.Storage 資源類型
+      - Azure 原則內建
+        [3521] 
+    - 資源
+      - 已知問題
+        [3528] Azure Data Lake Storage Gen2 的已知問題
+      - Azure 藍圖
+      - Azure 更新
+      - Azure 儲存體用戶端工具
+        [3532] 與 Azure 儲存體搭配使用的 Microsoft 用戶端工具
+      - Azure 儲存體總管
+        - 下載儲存體總管
+        - 開始使用儲存體總管
+          [3533] 開始使用儲存體總管
+        - 儲存體總管版本資訊
+        - 針對儲存體總管進行疑難排解
+          [3545] Azure 儲存體總管 疑難解答指南
+        - 儲存體總管安全性
+          [3562] Azure 儲存體總管安全性指南
+        - 儲存體總管 Blob 版本設定
+          [3565] Azure 儲存體總管 Blob 版本設定指南
+        - 儲存體總管管理 Azure Blob 儲存體
+          [3569] 使用儲存體總管來管理 Azure Blob 儲存體資源
+        - 儲存體總管建立檔案共用
+          [3581] 搭配使用儲存體總管與 Azure 檔案儲存體
+        - 儲存體總管支援原則和生命週期
+          [3593] Azure 儲存體總管支援生命週期和原則
+        - 儲存體總管協助工具
+          [3597] 儲存體總管協助工具
+      - Microsoft 問與答頁面
+      - Stack Overflow 上的 Azure 儲存體
+      - 定價
+      - Azure 定價計算機
+      - 定價計算機
+      - 服務更新
+      - Stack Overflow
+      - 影片
+      - 合作夥伴
+        [3601] 來自 Microsoft 合作夥伴的 Azure 儲存體解決方案

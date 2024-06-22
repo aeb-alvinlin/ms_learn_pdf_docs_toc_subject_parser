@@ -1,0 +1,126 @@
+- ---< entra-fundamentals.pdf >---
+  - 基本概念檔
+    [1] Microsoft Entra 基本概念檔
+  - 概觀
+    - 什麼是 Microsoft Entra 識別碼？
+      [3] 什麼是 Microsoft Entra 識別碼？
+    - Azure AD 的新名稱
+      [8] Azure Active Directory 的新名稱
+    - 身分識別基本概念
+      [23] 身分識別和存取管理 （IAM） 基本概念
+    - 身分識別和存取管理簡介 （IAM）
+      [28] 什麼是身分識別和存取管理 （IAM）？
+  - 首要步驟
+    - 建立目錄
+      [32] 快速啟動工具：在 Microsoft Entra ID 中建立新的租用戶
+    - 新增自訂網域名稱
+    - 建立 Azure 訂用帳戶的關聯
+    - 新增隱私權資訊
+    - 新增公司商標
+      [36] 設定公司商標
+    - 重新命名 Azure AD
+    - 充分利用檔
+      [46] 如何充分利用 Microsoft Entra 檔
+  - 使用者、群組和授權
+    - 建立或刪除使用者
+    - 將授權套用至使用者
+    - 使用者
+      - 將角色指派給使用者
+      - 管理「保持登入？」 Prompt
+      - 管理使用者配置檔資訊
+      - 重設使用者密碼
+      - 還原已刪除的使用者
+      - 設定預設用戶權力
+        [49] 
+    - 群組
+      - 瞭解群組
+        [59] 瞭解 Microsoft Entra 識別碼中的群組和訪問許可權
+      - 建立群組和新增成員
+        [63] 快速入門：建立具有成員的群組，並檢視所有群組和成員
+      - 管理群組
+    - 授權
+      - 群組型授權
+        [70] 什麼是 Microsoft Entra 識別碼中的群組型授權？
+      - Microsoft Entra ID 預覽計劃
+        [72] Microsoft Entra ID 預覽計劃資訊
+      - Microsoft Entra ID 授權
+        [73] Microsoft Entra ID 授權
+      - 註冊 Microsoft Entra ID P1 或 P2
+        [84] 註冊 Microsoft Entra ID P1 或 P2 版本
+  - Microsoft Copilot for Security + Microsoft Entra
+    - 概觀
+      [89] Microsoft Entra 中的 Microsoft Copilot
+    - 使用風險性使用者摘要回應身分識別威脅
+      [92] 使用具風險的使用者摘要回應身分識別威脅
+    - 使用 Microsoft Copilot for Security 調查事件
+      [95] 使用 Microsoft Copilot for Security 調查安全性事件
+  - 快速安全性獲勝
+    - 啟用 MFA
+      [98] Microsoft Entra 多重要素驗證的功能和授權
+    - 身分識別安全分數
+      [103] 什麼是身分識別安全分數？
+    - 改善您的安全性態勢
+      [109] 使用 Microsoft Entra ID 保護貴組織的身分識別
+    - 整合所有應用程式與 Microsoft Entra 識別碼
+      [116] 將您的應用程式與 Microsoft Entra ID 整合的五個步驟
+    - 安全性預設值
+      [123] Microsoft Entra ID 中的安全性預設值
+    - 封鎖較不安全的驗證
+      [132] 使用 Microsoft Entra 條件式存取封鎖舊版驗證
+  - 支援和說明
+    - 尋找您的用戶識別碼
+    - 取得 Microsoft Entra 標識符的支援
+      [137] 尋找說明並取得 Microsoft Entra 標識符的支援
+    - 支援存取要求
+      - 什麼是支援存取要求（預覽）？
+        [142] 什麼是 Microsoft 支援服務 存取要求（預覽）？
+      - 核准與管理支援存取要求 （預覽）
+        [144] 核准和管理 Microsoft 支援服務 存取要求（預覽）
+      - 檢視支援存取要求活動記錄
+        [148] 檢視 Microsoft 支援服務 存取要求的活動記錄 （預覽）
+  - 參考
+    - 新功能
+      - Microsoft Entra ID 的新功能
+        [150] Microsoft Entra 標識符的新功能？
+      - 封存新功能？在 Microsoft Entra ID 中
+        [170] Microsoft Entra ID 的新功能封存？
+    - 常見問題集
+      [212] 存取 Microsoft Entra 識別碼和 Azure 的協助
+    - 公司商標 CSS 範本參考指南
+      [219] CSS 範本參考指南
+    - 法規遵循
+      - Microsoft Entra 標識碼和數據落地
+        [226] Microsoft Entra 標識碼和數據落地
+      - 數據作業考慮
+        [233] 數據作業考慮
+      - 數據保護考慮
+        [235] 數據保護考慮
+      - 歐洲的客戶數據儲存和處理
+        [239] Microsoft Entra ID 中的歐洲客戶數據儲存和處理
+      - 澳大利亞和紐西蘭的客戶數據記憶體
+        [242] Microsoft Entra ID 中適用於澳大利亞和紐西蘭客戶的身分識別數據記憶體
+      - 澳大利亞和紐西蘭的身分識別數據記憶體
+        [243] Microsoft Entra ID 中適用於澳大利亞和紐西蘭客戶的客戶數據記憶體
+      - 日本的身分識別數據記憶體
+        [244] Microsoft Entra ID 中日本客戶的客戶數據記憶體
+    - 比較 Microsoft Entra ID 與 AD DS
+      [245] 比較 Active Directory 與 Microsoft EntraID
+    - 自訂安全性屬性
+      - 什麼是自定義安全性屬性
+        [248] 什麼是 Microsoft Entra ID 中的自定義安全性屬性？
+      - 新增或停用屬性定義
+        [256] 在 Microsoft Entra ID 中新增或停用自定義安全性屬性定義
+      - 管理對屬性的存取
+        [275] 管理 Microsoft Entra 識別碼中自定義安全性屬性的存取權
+      - 將屬性指派給使用者
+        [286] 指派、更新、列出或移除使用者的自定義安全性屬性
+      - 將屬性指派給應用程式
+        [301] 管理應用程式的自定義安全性屬性
+      - 針對屬性進行疑難解答
+        [305] 針對 Microsoft Entra 識別碼中的自訂安全性屬性進行疑難解答
+    - Microsoft Graph API 參考
+      [312] Manage Microsoft Entra identity andnetwork access capabilities by usingMicrosoft Graph
+    - Microsoft Graph 延伸模組
+      [320] Add custom data to resources usingextensions
+    - 一線員工管理
+      [338] 一線員工管理

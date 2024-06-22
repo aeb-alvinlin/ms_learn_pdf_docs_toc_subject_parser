@@ -1,0 +1,690 @@
+---< entra-identity-platform.pdf >---
+  - Microsoft 身分識別平台
+    [1] 
+  - 概觀
+    - 什麼是 Microsoft 身分識別平台？
+      [4] 什麼是 Microsoft 身分識別平台？
+    - Docs 有哪些新功能？
+      [8] Microsoft 身分識別平台 檔：新功能
+    - 範例
+      [10] Microsoft 身分識別平台 程式代碼範例
+  - 概念
+    - 身分識別平台的基本概念
+      - 身分識別基本概念
+        [19] 身分識別和存取管理 （IAM） 基本概念
+      - 身分識別和存取管理簡介
+        [24] 什麼是身分識別和存取管理 （IAM）？
+      - 驗證與授權
+        [28] 驗證與授權
+      - OAuth 2.0 和 OpenID Connect
+        [30] Microsoft 身分識別平台 中的 OAuth 2.0和 OpenID 連線 （OIDC）
+      - 應用程式類型和驗證流程
+        [34] Microsoft 身分識別平台 應用程式類型和驗證流程
+      - 安全性權杖
+        [45] 令牌和宣告概觀
+      - Microsoft Authentication Library (MSAL)
+        [48] Microsoft 驗證資源庫 (MSAL) 概觀
+      - 公用和機密用戶端應用程式
+        [50] 公用用戶端和機密用戶端應用程式
+      - MSAL 支援的驗證流程
+        [54] MSAL 中的驗證流程支援
+      - Microsoft Graph
+        [64] Overview of Microsoft Graph
+      - 名詞解釋
+        [71] 詞彙：Microsoft 身分識別平台
+    - 權限和存取權
+      - 權限和同意概觀
+        [81] Microsoft 身分識別平台 中的許可權和同意概觀
+      - 委派存取
+        [85] 瞭解委派存取
+      - 僅限應用程式存取
+        [89] 瞭解僅限應用程式存取
+      - 範圍和權限
+        [93] Microsoft 身分識別平台中的範圍和許可權
+      - 授權選項：ACL、RBAC、ABAC
+        [100] 授權基本概念
+      - 適用於應用程式開發人員的 RBAC
+        [103] 應用程式開發人員的角色型訪問控制
+      - 透過同意要求權限
+        [107] 透過同意要求權限
+      - 應用程式同意體驗
+        [114] Microsoft Entra ID 中應用程式的同意體驗
+      - 條件式存取開發人員指南
+        [124] Microsoft Entra 條件式存取的開發人員指引
+      - 條件式存取驗證內容
+        [131] 條件式存取驗證內容的開發人員指南
+      - 行動單一登入 (SSO)
+        [141] 在您所開發的行動應用程式中支援單一登錄和應用程式保護原則
+      - 共用的裝置
+        [144] 共用裝置模式概觀
+    - 應用程式註冊和工作負載身分識別
+      - 應用程式模型
+        [147] 應用程式模型 (部分機器翻譯)
+      - 工作負載身分識別
+        [150] 什麼是工作負載身分識別？
+      - 應用程式與服務主體
+        [153] Microsoft Entra 中的應用程式和服務主體物件 (機器翻譯)
+      - 新增應用程式的方式和原因
+        [158] 應用程式新增至 Microsoft Entra 識別符的方式和原因
+      - 單一租用戶與多租用戶應用程式
+        [163] Microsoft Entra ID 中的租用戶
+    - 自訂驗證延伸模組
+      - 概觀
+        [165] 自訂驗證延伸模組概觀
+      - 自訂宣告提供者
+        [168] 自訂宣告提供者 （預覽）
+    - 安全性
+      - 應用程式安全性
+        [170] Microsoft Entra ID 中應用程式屬性的安全性最佳做法
+      - 最低權限存取權
+        [177] 使用最低權限原則加強安全性
+      - 使用群組來保護存取控制
+        [180] 使用 Microsoft Entra 識別碼中的群組保護訪問控制
+      - 令牌和宣告
+        - 令牌和宣告概觀
+          [182] 令牌和宣告概觀
+        - 存取權杖
+          [185] Microsoft 身分識別平台內的存取權杖
+        - 目錄擴充屬性
+          [196] 宣告中的目錄擴充屬性
+        - ID 權杖
+          [199] Microsoft 身分識別平台內的識別碼權杖
+        - 重新整理權杖
+          [202] 重新整理 Microsoft 身分識別平台 中的令牌
+        - 權杖存留期
+          [205] Microsoft 身分識別平台 中可設定的權杖存留期 （預覽）
+        - 驗證宣告
+          [211] 藉由驗證宣告來保護應用程式和 API
+      - 零信任
+        [214] 使用 零信任 原則增加應用程式安全性
+    - 身分識別平台最佳做法
+      [217] Microsoft 身分識別平台最佳做法和建議(部分機器翻譯)
+  - 單頁應用程式 (SPA)
+    - SPA 驗證
+      [221] 單頁應用程式 （SPA） 檔案
+    - 快速入門
+      - React
+        [222] 快速入門：在單頁應用程式中登入使用者（SPA），並使用 React 呼叫 MicrosoftGraph API
+      - Angular
+        [229] 快速入門：在單頁應用程式 （SPA） 中登入使用者，並使用 Angular 呼叫Microsoft Graph API
+      - JavaScript
+        [236] 快速入門：在單頁應用程式中登入使用者，並使用JavaScript呼叫 MicrosoftGraph API
+      - Blazor WebAssembly
+        [242] 快速入門：在單頁應用程式中登入使用者，並使用 Blazor WebAssembly 呼叫Microsoft Graph API
+    - 教學課程
+      - React
+        - 註冊您的應用程式
+          [247] 教學課程：向 Microsoft 身分識別平台 註冊單頁應用程式
+        - 準備您的應用程式
+          [250] 教學課程：準備單頁應用程式以進行驗證
+        - 登入使用者
+          [255] 教學課程：在 React 單頁應用程式中新增登入和註銷功能元件
+        - 從 Web API 取得用戶數據
+          [260] 教學課程：從 React 單頁應用程式呼叫Microsoft Graph API
+      - Angular
+        [269] 教學課程：使用驗證碼流程從 Angular 單頁應用程式登入使用者並呼叫 MicrosoftGraph API
+      - JavaScript
+        [294] 教學課程：使用驗證碼流程從 JavaScript單頁應用程式登入使用者並呼叫Microsoft Graph API
+    - 範例
+      [315] Microsoft 身分識別平台 程式代碼範例
+    - 操作方式
+      - 登入使用者並呼叫 Web API 的 SPA
+        - 應用程式註冊
+          [324] 單頁應用程式：應用程式註冊
+        - 程式碼設定
+          [327] 單頁應用程式：程式代碼設定
+        - 登入和登出
+          [329] 單頁應用程式：登入和註銷
+        - 取得 API 的權杖
+          [334] 單頁應用程式：取得令牌以呼叫 API
+        - 呼叫 Web API
+          [337] 單頁應用程式：呼叫 Web API
+  - Web 應用程式
+    - Web 應用程式驗證
+      [338] Web 應用程式檔
+    - 快速入門
+      - ASP.NET
+        [340] 快速入門：從 ASP.NET Web 應用程式登入使用者並呼叫 Microsoft Graph API
+      - ASP.NET Core
+        [346] 快速入門：從 ASP.NET Core Web 應用程式登入使用者並呼叫 Microsoft GraphAPI
+      - Node.js - MSAL
+        [352] 快速入門：使用 MSAL 節點從Node.jsWeb 應用程式登入使用者並呼叫Microsoft Graph API
+      - Java
+        [356] 快速入門：從 Java Web 應用程式登入使用者並呼叫 Microsoft Graph API
+      - Python
+        - Flask
+          [363] 快速入門：從 Python Flask Web 應用程式登入使用者並呼叫 Microsoft Graph
+    - 教學課程
+      - ASP.NET Core
+        - 註冊您的應用程式
+          [368] 教學課程：向 Microsoft 身分識別平台 註冊應用程式
+        - 準備您的應用程式
+          [371] 教學課程：準備應用程式以進行驗證
+        - 登入使用者
+          [376] 教學課程：將登入新增至應用程式
+        - 從 Web API 取得用戶數據
+          [380] 教學課程：呼叫 API 並顯示結果
+      - Python Flask
+        - 註冊您的應用程式
+          [387] 教學課程：向 Microsoft 身分識別平台 註冊 Python Web 應用程式
+        - 準備您的應用程式
+          [390] 準備 Python Flask Web 應用程式以進行驗證
+        - 登入使用者
+          [396] 教學課程：將登入新增至 Python FlaskWeb 應用程式
+        - 從 Web API 取得用戶數據
+          [401] 教學課程：呼叫受保護的 API 並顯示結果
+      - Node.js
+        [405] 教學課程：在 Node.js 和 Express Web 應用程式中登入使用者並取得 MicrosoftGraph 的令牌
+      - Spring
+        [426] 使用 Microsoft Entra 帳戶將登入新增至Spring Web 應用程式
+      - 保護 Web 應用程式存取儲存體和 Microsoft Graph
+        - 概觀
+          [439] 在 App Service 中登入使用者並存取記憶體和 Microsoft Graph
+        - 設定 App Service 驗證
+          [440] 將驗證新增至在 Azure App 服務 上執行的 Web 應用程式
+        - 以應用程式身分存取儲存體
+          [444] 教學課程：從 Web 應用程式存取 Azure儲存體
+        - 以使用者身分選取 Microsoft Graph
+          [450] 教學課程：以使用者身分從受保護的應用程式存取 Microsoft Graph
+        - 以應用程式身分存取 Microsoft Graph
+          [458] 從受保護的應用程式存取 MicrosoftGraph 作為應用程式
+        - 清除資源
+          [464] 教學課程：清除資源
+    - 範例
+      [466] 
+    - 操作方式
+      - 登入使用者的 Web 應用程式
+        - 應用程式註冊
+          [474] 登入使用者的 Web 應用程式：應用程式註冊
+        - 程式碼設定
+          [478] 登入使用者的 Web 應用程式：程式代碼設定
+        - 登入和登出
+          [485] 登入使用者的 Web 應用程式：登入和註銷
+      - 呼叫 API 的 Web 應用程式
+        - 應用程式註冊
+          [489] 呼叫 Web API 的 Web 應用程式：應用程式註冊
+        - 程式碼設定
+          [491] 呼叫 Web API 的 Web 應用程式：程式代碼設定
+        - 全域登出
+          [500] 呼叫 Web API 的 Web 應用程式：從全域註銷時從令牌快取中移除帳戶
+        - 取得應用程式的權杖
+          [501] 呼叫 Web API 的 Web 應用程式：取得應用程式的令牌
+        - 呼叫 Web API
+          [504] 呼叫 Web API 的 Web 應用程式：呼叫Web API
+      - 在管線中部署和設定App Service驗證
+        [508] 在管線中部署 Web 應用程式並設定 AppService 驗證
+  - Web API
+    - Web API 驗證
+      [525] Web API 檔 |Microsoft 身分識別平台
+    - 快速入門
+      - ASP.NET
+        [526] 快速入門：呼叫受 Microsoft 身分識別平台 保護的 ASP.NET Web API
+      - ASP.NET Core
+        [532] 快速入門：使用 Microsoft 身分識別平台保護 ASP.NET Core Web API
+    - 教學課程
+      - ASP.NET Core
+        - 註冊 API
+          [537] 教學課程：向 Microsoft 身分識別平台 註冊 Web API
+        - 建立和設定專案
+          [540] 教學課程：建立和設定 ASP.NET Core 專案以進行驗證
+        - 保護 API 端點
+          [543] 教學課程：對 API 實作受保護的端點
+    - 範例
+      [549] 
+    - 操作方式
+      - 使用 cURL 呼叫 Web API
+        [555] 使用 cURL 呼叫 ASP.NET Core Web API
+      - 使用失眠呼叫 Web API
+        [563] 使用失眠呼叫 ASP.NET Core Web API
+      - 受保護的 Web API
+        - 應用程式註冊
+          [570] 受保護的 Web API：應用程式註冊
+        - 程式碼設定
+          [574] 受保護的 Web API：程式代碼設定
+        - 範圍或應用程式角色驗證
+          [578] 受保護的 Web API：驗證範圍和應用程式角色
+      - 呼叫 API 的 Web API
+        - 應用程式註冊
+          [586] 呼叫 Web API 的 Web API：應用程式註冊
+        - 程式碼設定
+          [588] 呼叫 Web API 的 Web API：程式代碼設定
+        - 取得權杖
+          [594] 呼叫 Web API 的 Web API：取得應用程式的令牌
+        - 呼叫 Web API
+          [596] 呼叫 Web API 的 Web API：呼叫 API
+  - 桌面
+    - 傳統型應用程式驗證
+      [600] 傳統型應用程式驗證檔
+    - 快速入門
+      - Node.js Electron
+        [601] 快速入門：從Node.js傳統型應用程式登入使用者並呼叫 Microsoft Graph
+      - 通用 Windows 平台
+        [605] 快速入門：在 通用 Windows 平台 應用程式中登入使用者並呼叫 Microsoft Graph
+      - Windows Presentation Foundation
+        [610] 快速入門：在 Windows 傳統型應用程式中登入使用者並呼叫 Microsoft Graph
+    - 教學課程
+      - 通用 Windows 平台 (UWP)
+        [616] 教學課程：從 通用 Windows 平台（UWP） 應用程式呼叫 Microsoft GraphAPI
+      - Windows Presentation Foundation (WPF)
+        [633] 教學課程：在 Windows PresentationFoundation (WPF) 傳統型應用程式中登入使用者並呼叫 Microsoft Graph
+      - Electron
+        [646] 教學課程：在電子桌面應用程式中登入使用者並呼叫 Microsoft Graph API
+    - 範例
+      [666] 
+    - 操作方式
+      - 呼叫 API 的傳統型應用程式
+        - 概觀
+          [671] 案例：呼叫 Web API 的桌面應用程式
+        - 應用程式註冊
+          [674] 呼叫 Web API 的桌面應用程式：應用程式註冊
+        - 程式碼設定
+          [677] 呼叫 Web API 的桌面應用程式：程式代碼設定
+        - 取得權杖
+          - 概觀
+            [682] 呼叫 Web API 的桌面應用程式：取得令牌
+          - 以互動方式
+            [684] 呼叫 Web API 的桌面應用程式：以互動方式取得令牌
+          - 與 WAM 互動
+            [691] 呼叫 Web API 的桌面應用程式：使用WAM 取得令牌
+          - 整合式 Windows 驗證
+            [696] 呼叫 Web API 的桌面應用程式：使用整合式 Windows 驗證 取得令牌
+          - 使用者名稱和密碼
+            [700] 呼叫 Web API 的桌面應用程式：使用使用者名稱和密碼取得令牌
+          - 裝置代碼流程
+            [707] 呼叫 Web API 的桌面應用程式：使用裝置程式代碼流程取得令牌
+        - 呼叫 Web API
+          [711] 呼叫 Web API 的桌面應用程式：呼叫Web API
+        - 移動至生產環境
+          [714] 呼叫 Web API 的桌面應用程式：移至生產環境
+  - 行動
+    - 行動應用程式驗證
+      [718] 行動應用程式驗證檔
+    - 快速入門
+      - Android
+        [719] 快速入門：從Android應用程式登入使用者並呼叫 Microsoft Graph
+      - iOS 和 macOS
+        [732] 快速入門：從iOS或macOS應用程式登入使用者並呼叫 Microsoft Graph
+    - 教學課程
+      - Android
+        [739] 教學課程：從Android應用程式登入使用者並呼叫 Microsoft Graph API
+      - Android - 共用裝置模式
+        [769] 教學課程：在Android應用程式中使用共用裝置模式
+      - iOS 和 macOS
+        [783] 教學課程：從iOS或macOS應用程式登入使用者並呼叫 Microsoft Graph
+    - 範例
+      [809] 
+    - 操作方式
+      - 呼叫 API 的行動應用程式
+        - 概觀
+          [813] 案例：呼叫 Web API 的行動應用程式
+        - 應用程式註冊
+          [815] 註冊呼叫 Web API 的行動應用程式
+        - 程式碼設定
+          [819] 設定呼叫 Web API 的行動應用程式
+        - 程式碼設定：Android 和 iOS
+          - Android
+            - Android 上的系統瀏覽器
+              [829] 使用 MSAL.NET 的 Xamarin Android 系統瀏覽器考慮
+            - Xamarin Android
+              [832] 使用 MSAL.NET 的 Xamarin Android 設定需求和疑難解答秘訣
+            - 適用於 Android 裝置的共用裝置模式
+              [839] 適用於 Android 裝置的共用裝置模式
+          - iOS
+            - 適用於 Apple 裝置的 Microsoft 企業單一登入外掛程式
+              [845] 適用於 Apple 裝置的 Microsoft 企業單一登入外掛程式
+            - Xamarin iOS
+              [861] 搭配使用 Xamarin iOS 與 MSAL.NET 的考慮
+            - 適用於 iOS 裝置的共用裝置模式
+              [866] Shared device mode for iOS devices
+        - 取得權杖
+          [874] 取得呼叫 Web API 的行動應用程式令牌
+        - 使用代理程式取得權杖
+          [882] 在 Xamarin 應用程式中使用 MicrosoftAuthenticator 或 Intune 公司入口網站
+        - 呼叫 Web API
+          [893] 從行動應用程式呼叫 Web API
+        - 移動至生產環境
+          [899] 準備生產環境的行動應用程式
+      - 移轉啟用了代理程式的 Xamarin Android 應用程式 MSAL.NET
+        [901] 將使用訊息代理程式從 ADAL.NET 移轉至MSAL.NET
+      - 移轉啟用了代理程式的 Xamarin iOS 應用程式 MSAL.NET
+        [904] 將使用 Microsoft Authenticator 的 iOS應用程式從 ADAL.NET 移轉至 MSAL.NET
+  - 服務、精靈、指令碼
+    - 服務/精靈驗證
+      [910] 後端服務、精靈和腳本驗證檔
+    - 快速入門
+      - .NET
+        [911] 快速入門：存取受保護 Web API 的 .NET控制台應用程式
+      - Java
+        [916] 快速入門：取得令牌，並從 Java 精靈應用程式呼叫 Microsoft Graph
+      - Node.js
+        [923] 快速入門：從Node.js控制台應用程式取得令牌並呼叫 Microsoft Graph
+      - Python
+        [929] 快速入門：取得令牌，並從 Python 精靈應用程式呼叫 Microsoft Graph
+    - 教學課程
+      - .NET
+        [935] 教學課程：建置使用 Microsoft 身分識別平台 的多租用戶精靈
+      - Node.js
+        [945] 教學課程：在 Node.js 主控台精靈應用程式中呼叫 Microsoft Graph API
+    - 範例
+      [959] 
+    - 操作方式
+      - 呼叫 Web API 的非互動式應用程式
+        - 概觀
+          [962] 案例：呼叫 Web API 的精靈應用程式
+        - 應用程式註冊
+          [965] 呼叫 Web API 的精靈應用程式 - 應用程式註冊
+        - 程式碼設定
+          [968] 呼叫 Web API 的精靈應用程式 - 程式代碼設定
+        - 取得權杖
+          [973] 取得令牌以使用精靈應用程式呼叫 WebAPI
+        - 呼叫 Web API
+          [978] 呼叫 Web API 的精靈應用程式 - 從應用程式呼叫 Web API
+        - 移動至生產環境
+          [980] 呼叫 Web API 的精靈應用程式 - 移至生產環境
+  - 案例
+    - 組建
+      - 依應用程式類型排列的 Microsoft 驗證程式庫
+        [983] Microsoft 身分識別平台驗證程式庫
+      - 準備進行開發
+        - 取得 Microsoft Entra 租使用者
+          [988] 快速入門：設定租用戶
+        - 註冊應用程式或 Web API
+          [991] 快速入門：使用 Microsoft 身分識別平台來註冊應用程式
+        - 在 Web API 註冊中公開範圍
+          [1000] 快速入門：設定應用程式以公開 Web API
+        - 授與範圍權限給 Web API
+          [1006] 快速入門：設定用戶端應用程式以存取Web API
+        - 建立自我簽署憑證以驗證您的應用程式
+          [1012] 建立自我簽署的公用憑證來驗證您的應用程式
+      - 登入使用者
+        - 登入對象
+          [1016] 支援的帳戶類型
+        - 應用程式登入流程
+          [1018] 具有 Microsoft 身分識別平台的應用程式登入流程
+        - 支援無密碼驗證
+          [1022] 在開發的應用程式中使用 FIDO2 金鑰支援無密碼驗證
+      - 保護並存取 API
+        - 將您的應用程式限制為僅供一組使用者存取
+          [1025] 將您的 Microsoft Entra 應用程式限制為Microsoft Entra 租用戶中的一組使用者
+        - 更新應用程式所要求的許可權
+          [1028] 在 Microsoft Entra ID 中更新應用程式要求的許可權
+        - 在您的應用程式中新增應用程式角色
+          [1034] 將應用程式角色新增至您的應用程式，並在權杖中接收這些角色
+        - 在您的應用程式中實作 RBAC
+          [1041] 實作角色型存取控制
+        - 支援 FIDO2 驗證
+          [1045] 在開發的應用程式中使用 FIDO2 金鑰支援無密碼驗證
+      - 自訂權杖和宣告
+        - 設定選擇性宣告
+          [1048] 設定選擇性宣告
+        - 設定角色宣告
+          [1057] 設定角色宣告
+        - 使用系統管理中心自定義 JWT 宣告
+          [1062] 針對企業應用程式自定義 JSON Web 令牌（JWT） 中發出的宣告
+        - 使用系統管理中心自定義 SAML 宣告
+          [1080] 自訂 SAML 令牌宣告
+        - 使用 PowerShell 自訂宣告
+          [1092] 使用 PowerShell 為租使用者中的特定應用程式自定義令牌中發出的宣告
+        - 設定存取令牌存留期原則
+        - 設定應用程式多重實例
+          [1096] 設定應用程式多重實例
+      - 自訂宣告提供者
+        - 令牌發行開始事件
+          - 建立令牌發行事件的 REST API
+            [1098] 在 Azure Functions 中建立令牌發行開始事件的 REST API
+          - 設定自定義宣告提供者令牌發行事件
+            [1103] 設定權杖發行事件的自訂宣告提供者 （預覽）
+          - 設定 SAML 應用程式以呼叫自定義宣告提供者
+            [1114] 設定 SAML 應用程式以從外部市集接收具有宣告的權杖 （預覽）
+          - 針對自定義宣告提供者 API 進行疑難解答
+            [1118] 
+      - 屬性集合自定義延伸模組
+        - 建立屬性集合開始並提交事件
+          [1124] 屬性集合的自訂驗證延伸模組開始和提交事件 （預覽）
+        - OnAttributeCollectionStart 事件參考
+          [1136] OnAttributeCollectionStart 事件參考的自定義擴充功能 （預覽）
+        - OnAttributeCollectionSubmit 事件參考
+          [1141] OnAttributeCollectionSubmit 事件參考的自定義擴充功能 （預覽）
+      - 處理瀏覽器 Cookie 限制
+        - 如何在瀏覽器中處理第三方 Cookie 封鎖
+          [1146] 如何在瀏覽器中處理第三方 Cookie 封鎖
+        - 處理 Chrome 中的 SameSite Cookie 變更
+          [1150] 處理 Chrome 瀏覽器中的 SameSiteCookie 變更
+    - 連線
+      - 用 AD FS SAML 交換 Microsoft Graph 存取權杖
+        [1152] 交換 AD FS 所簽發的 SAML 令牌，以取得 Microsoft Graph 存取令牌
+    - 部署
+      - 自動使用者佈建 (SCIM)
+        - 一般佈建案例
+          [1156] 搭配使用 SCIM 和 Microsoft Graph 來布建使用者，並使用所需的資料擴充應用程式
+        - 使用 MS Graph 將組態自動化
+          [1161] 使用 Microsoft Graph API 設定布建
+        - 開發和整合 SCIM 端點
+          [1171] 
+    - 安全
+      - 為復原能力而建置
+        - 開發概觀
+          [1203] 增加您所開發之驗證和授權應用程式的復原能力
+        - 用戶端應用程式
+          [1204] 在您所開發的用戶端應用程式中增加驗證和授權的復原能力
+        - 精靈應用程式
+          [1212] 增加您所開發精靈應用程式中驗證和授權的復原能力
+        - OpenID Connect 中繼資料重新整理
+          [1215] 建置可復原 Microsoft Entra ID OpenID連線 元數據重新整理的服務
+      - 使用持續性存取評估 API
+        [1217] 如何在應用程式中使用已啟用持續存取評估的 API
+      - 宣告挑戰和要求
+        [1220] 宣告挑戰、宣告要求和用戶端功能
+      - 設定應用程式實例屬性鎖定
+        [1226] 如何設定應用程式的應用程式實例屬性鎖定
+    - 測試
+      - 建置測試環境
+        [1229] 設定應用程式的 Microsoft Entra 測試環境
+      - 以使用者身份執行自動化整合測試
+        [1234] 執行自動化整合測試
+      - 使用 Azure 入口網站建立服務主體
+        [1242] 建立可存取資源的 Microsoft Entra 應用程式和服務主體
+      - 使用 Azure PowerShell 建立服務主體
+        [1249] 使用 Azure PowerShell 建立具有憑證的服務主體
+    - 發佈
+      - 準備應用程式以進行多租用戶存取
+        - 啟用多租用戶登入
+          [1255] 在 Microsoft Entra 識別碼上，將單一租使用者應用程式轉換為多租使用者
+        - 修改應用程式支援的帳戶
+          [1263] 修改應用程式支援的帳戶
+      - 成為已驗證的發行者
+        - 發行者驗證
+          [1266] 發行者驗證
+        - 設定發行者網域
+          [1270] 設定應用程式的發行者網域
+        - 將應用程式標示為發行者已驗證
+          [1277] 將應用程式標示為發行者已驗證
+        - 針對發行者驗證進行疑難排解
+          [1279] 針對發行者驗證進行疑難排解
+      - 滿足市集需求
+        - 遵循商標指導方針
+          [1289] 使用 Microsoft 登入：應用程式的商標指導方針
+        - 設定服務條款和隱私權聲明
+          [1294] 設定應用程式的服務條款和隱私聲明
+      - 將應用程式發佈至市集
+        - 發行到 App Source
+          [1298] 取得經 Microsoft Entra ID 認證的AppSource
+        - 發佈至 Microsoft Entra App Gallery
+          [1310] 提交要求以在 Microsoft Entra 應用連結庫中發佈您的應用程式
+        - 發佈至 Microsoft 365 App Store
+          [1315] 儲存逐步提交指南
+    - 移轉
+      - 將應用程式從 ADAL 遷移至 MSAL
+        [1325] 將應用程式移轉至 Microsoft 驗證程式庫(MSAL)
+      - 使用 ADAL 列出所有應用程式
+        [1329] 在租使用者中使用ADAL取得應用程式的完整清單
+      - 移轉電子郵件型授權
+        [1334] 移轉離開使用電子郵件宣告進行用戶識別或授權
+    - 取代
+      - 移除應用程式註冊
+        [1338] 移除向 Microsoft 身分識別平臺 註冊的應用程式
+      - 還原或移除已刪除的應用程式註冊
+        [1340] 使用 Microsoft 身分識別平台 還原或移除最近刪除的應用程式
+  - 參考
+    - 令牌宣告參考
+      - 存取權杖
+        [1342] 
+      - 宣告對應原則類型
+        [1350] 宣告對應原則類型
+      - 標識元令牌
+        [1366] 識別碼權杖宣告參考
+      - 選擇性宣告
+        [1371] 
+      - SAML 令牌
+        [1378] SAML 權杖宣告參考
+    - Microsoft Authentication Library (MSAL) 參考
+      - 要求和快取權杖
+        [1386] 使用 Microsoft 驗證連結庫取得和快取權杖 （MSAL）
+      - 國家雲端和 MSAL
+        [1391] 在國家雲端環境中使用 MSAL
+      - 應用程式設定
+        [1393] 應用程式組態選項
+      - MSAL Android
+        - 程式庫初始化
+          - Android MSAL 組態檔
+            [1399] 
+          - 共用裝置模式
+            [1405] 適用於 Android 裝置的共用裝置模式
+          - 與 Azure AD B2C 整合
+            [1411] 搭配 B2C 使用適用於 Android 的 MSAL
+        - 驗證和單一登入 (SSO)
+          - 使用 MSAL Android 的 SSO
+            [1418] 使用 MSAL 在 Android 上啟用跨應用程式 SSO
+          - 帳戶和租用戶設定檔
+            [1426] 帳戶和租使用者設定檔 （Android）
+          - 單一和多帳戶公用用戶端應用程式
+            [1431] 單一和多個帳戶公用用戶端應用程式
+        - 記錄和錯誤處理
+          - Android 版 MSAL 中的記錄
+            [1436] Android 版 MSAL 中的記錄
+          - 處理 Android 版 MSAL 中的錯誤和例外狀況
+            [1438] 
+        - 從 ADAL 移轉至 MSAL Android
+          [1441] 
+      - MSAL iOS 和 macOS
+        [1450] Microsoft Authentication Library for iOSand macOS
+      - MSAL Java
+        [1454] Microsoft Authentication Library forJava
+      - MSAL.js
+        - 程式庫初始化
+          - Init MSAL.js 2.x 和 1.x 用戶端
+            [1456] 使用 MSAL.js初始化用戶端應用程式
+          - 在 IE 中執行和偵錯
+            [1460] Internet Explorer 瀏覽器的已知問題(MSAL.js)
+          - 與 Azure AD B2C 整合
+            [1462] 使用適用於 JavaScript 的 Microsoft 驗證連結庫來處理 Azure AD B2C
+        - 驗證和單一登入 (SSO)
+          - 使用 MSAL.js 進行單一登入
+            [1463] 使用 MSAL.js 進行單一登入
+          - 在驗證狀態中傳遞自訂要求
+            [1469] 使用 MSAL.js 在驗證要求中傳遞自定義狀態
+          - 提示行為
+            [1470] 使用 MSAL.js 提示行為
+          - 避免頁面重新載入
+            [1473] 避免使用 MSAL.js 以無訊息方式取得和更新令牌時重載頁面
+        - 移轉
+          - 遷移至 MSAL.js
+            [1477] 如何將 JavaScript 應用程式從 ADAL.js 遷移至 MSAL.js
+          - 將 SPA 從隱含遷移至驗證程式代碼流程
+            [1490] 將 JavaScript 單頁應用程式從隱含授與遷移至驗證碼流程
+        - 記錄和錯誤處理
+          - MSAL.js 中的記錄
+            [1494] MSAL.js 中的記錄
+          - 處理 MSAL.js 中的錯誤和例外狀況
+            [1497] 處理 MSAL.js 中的錯誤和例外狀況
+          - 已知問題 - IE 和 Microsoft Edge
+            [1502] Internet Explorer 和 Microsoft Edge 瀏覽器的已知問題 （MSAL.js）
+      - MSAL.NET
+        [1505] Microsoft Authentication Library for.NET
+      - Microsoft.Identity.Web (MSAL 包裝函式)
+        [1508] Microsoft Identity Web authenticationlibrary
+      - MSAL Node
+        - 遷移至 MSAL 節點
+          [1511] 如何將 Node.js 應用程式從 ADAL 遷移至MSAL
+        - 將權杖快取至磁碟
+          [1525] 適用於節點的 Microsoft 驗證延伸模組
+      - MSAL Python
+        [1528] Microsoft Authentication Library (MSAL)for Python
+    - 通訊協定參考 (OAuth、OIDC、SAML)
+      - OAuth 2.0 和 OpenID Connect (OIDC)
+        - 權杖授與流程
+          - OAuth 2.0 驗證碼授與
+            [1533] Microsoft 身分識別平台和 OAuth 2.0 授權碼流程
+          - OAuth 2.0 用戶端認證授與
+            [1552] Microsoft 身分識別平台和 OAuth 2.0 用戶端認證流程
+          - OAuth 2.0 裝置程式碼流程
+            [1563] Microsoft 身分識別平台 和 OAuth 2.0 裝置授權授與流程
+          - OAuth 2.0 代理者流程
+            [1568] Microsoft 身分識別平台 和 OAuth 2.0 代理者流程
+          - OAuth 2.0 隱含授與流程
+            [1580] Microsoft 身分識別平台 和 OAuth 2.0 隱含授與流程
+          - OAuth 2.0 資源擁有者密碼認證授與
+            [1589] Microsoft 身分識別平台 和 OAuth 2.0 資源擁有者密碼認證
+          - OpenID Connect
+            [1593] Microsoft 身分識別平台上的 OpenIDConnect
+        - OAuth 2.0 應用程式類型
+          [1606] Microsoft 身分識別平台的應用程式類型
+        - 憑證認證
+          [1613] Microsoft 身分識別平台 應用程式驗證憑證認證
+        - 簽署金鑰變換
+          [1618] Microsoft 身分識別平台 中的簽署金鑰變換
+        - 使用者資訊端點 (OIDC)
+          [1630] Microsoft 身分識別平臺 UserInfo 端點
+      - SAML 2.0
+        - Microsoft Entra ID 如何使用 SAML 通訊協定
+          [1633] 瞭解 Microsoft 身分識別平台如何使用SAML 通訊協定
+        - SAML 單一登入 (SSO)
+          [1634] 單一登入 SAML 通訊協定
+        - 登出 (SAML)
+          [1643] 單一登出 SAML 通訊協定
+        - 權杖交換案例
+          [1646] 使用 SAML 和 OIDC/OAuth Microsoft 身分識別平台 令牌交換案例
+      - WS-同盟
+        - 同盟中繼資料
+          [1647] 同盟中繼資料
+    - App 註冊參考
+      - 應用程式資訊清單
+        [1652] Microsoft Entra 應用程式資訊清單
+      - 重新導向 URI/回覆 URL 限制
+        [1671] 重新導向 URI （回復 URL） 限制和限制
+      - 依支援的帳戶類型區分的驗證差異
+        [1676] 
+    - Spring Cloud Azure
+      [1679] Spring Cloud Azure 開發人員指南
+    - 已設定的許可權限制疑難解答
+      [1684] 針對設定的許可權限制進行疑難解答
+    - 依應用程式類型排列的 Microsoft 驗證程式庫
+      [1688] Microsoft 身分識別平台驗證程式庫
+    - AADSTS 錯誤碼參考
+      [1693] Microsoft Entra 驗證和授權錯誤碼
+    - 端點參考：管理員同意 URI
+      [1716] Microsoft 身分識別平台上的管理員同意
+    - 端點參考：國家/地區和公用雲端 URI
+      [1720] 國家/地區雲端
+    - Microsoft Graph API 參考 (身分識別作業)
+      [1723] Manage Microsoft Entra identity andnetwork access capabilities by usingMicrosoft Graph
+    - 自訂宣告提供者參考
+      [1731] 自訂宣告提供者參考
+    - MSA 伺服器端 API 參考
+      [1737] Microsoft 帳戶 （MSA） 伺服器端 API參考
+    - Microsoft Entra ID WAM API 參考
+      [1741] 
+    - 屬性集合開始自定義延伸模組參考
+      [1744] OnAttributeCollectionStart 事件參考的自定義擴充功能 （預覽）
+    - 屬性集合提交自定義延伸模組參考
+      [1749] OnAttributeCollectionSubmit 事件參考的自定義擴充功能 （預覽）
+  - 資源
+    - 說明及支援選項
+      [1754] 適用於開發人員的支援與說明選項
+    - 更新和重大變更
+      [1757] 驗證的新功能？
+    - 影片學習
+      [1771] Microsoft 身分識別平台 影片
+    - 部落格：Microsoft 365 開發人員 - Microsoft 身分識別平台
+    - 部落格：Microsoft Entra ID - 身分識別
+    - Azure 藍圖 - 安全性與身分識別

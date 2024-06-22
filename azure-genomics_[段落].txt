@@ -1,0 +1,37 @@
+- ---< azure-genomics.pdf >---
+  - Microsoft Genomics 文件
+    [1] Microsoft Genomics 文件
+  - 概觀
+    - 什麼是 Microsoft Genomics？
+      [2] 什麼是 Microsoft Genomics？
+  - 快速入門
+    - 執行範例 Genomics 工作流程
+      [3] 快速入門：透過 Microsoft Genomics 服務執行工作流程
+  - 操作指南
+    - 使用各種輸入檔案格式
+      - FASTQ 檔案組
+        [11] 在 Microsoft Genomics 中使用 FASTQ 檔案輸入來提交工作流程
+      - BAM 檔案
+        [13] 使用 BAM 檔案輸入提交工作流程
+      - 多個 FASTQ 或 BAM 檔案
+        [15] 使用相同範例中的多個輸入來提交工作流程
+    - 輸入 SAS 權杖，而不是帳戶金鑰
+      [19] 使用 SAS (而非儲存體帳戶金鑰) 將工作流程提交到 Microsoft Genomics
+  - 資源
+    - 常見問題
+      [23] 如何在 Microsoft Genomics 上執行GATK4 工作流程？
+如何啟用輸出壓縮？
+什麼是適用於 Microsoft Genomics 的SLA？
+我的帳單上會用什麼方式顯示 MicrosoftGenomics 的使用量？用戶
+    - 疑難排解指南
+      [27] 疑難排解指南
+    - 提出支援要求
+      [32] 如何連絡 Microsoft Genomics 以取得支援
+    - 版本發行歷程記錄
+      [36] 版本發行歷程記錄
+    - 業務持續性
+      [38] 使用 Microsoft Genomics 的商務持續性概觀
+    - Azure 藍圖
+    - 定價
+    - 區域可用性
+    - 支援選項

@@ -1,0 +1,327 @@
+- ---< azure-virtual-network.pdf >---
+  - 虛擬網路文件
+    [1] 虛擬網路文件
+  - 概觀
+    - 關於虛擬網路
+      [6] 什麼是 Azure 虛擬網路？
+  - 快速入門
+    - 建立虛擬網路 - 入口網站
+      [10] 快速入門：使用 Azure 入口網站建立虛擬網路
+    - 建立虛擬網路 - PowerShell
+      [20] 快速入門：使用 Azure PowerShell 建立虛擬網路
+    - 建立虛擬網路 - Azure CLI
+      [28] 快速入門：使用 Azure CLI 建立虛擬網路
+    - 建立虛擬網路 - Bicep
+      [35] 快速入門：使用 Bicep 範本建立虛擬網路
+    - 建立虛擬網路 - ARM 範本
+      [47] 快速入門：使用 Resource Manager 範本建立虛擬網路
+    - 建立虛擬網路 - Terraform
+      [51] 快速入門：使用 Terraform 建立虛擬網路
+  - 教學課程
+    - 篩選網路流量
+      [57] 教學課程：使用 Azure 入口網站透過網路安全性群組篩選網路流量
+    - 路由網路流量
+      [70] 教學課程：使用 Azure 入口網站以路由表路由傳送網路流量
+    - 限制對資源的網路存取
+      [89] 教學課程：使用 Azure 入口網站透過虛擬網路服務端點來限制對 PaaS 資源的網路存取
+    - 連線虛擬網路
+      [110] 教學課程：使用 Azure 入口網站透過虛擬網路對等互連來連線虛擬網路
+  - 概念
+    - 概念和最佳做法
+      [123] Azure 虛擬網路概念和最佳做法
+    - 業務持續性
+      [125] 虛擬網路 – 商務持續性
+    - 連線性
+      - 路由
+        [127] 虛擬網路流量路由 \(部分機器翻譯\)
+      - 後端連線能力互通性
+        - 控制項平面分析
+          [142] Azure 中的互通性 - 控制平面分析
+      - 容器網路功能
+        [147] 讓容器使用 Azure 虛擬網路功能
+      - 對等互連
+        [151] 虛擬網路對等互連
+    - 整合 Azure 服務
+      - 概觀
+        [156] 整合 Azure 服務與虛擬網路以進行網路隔離
+      - 部署專用服務
+        [164] 將專用 Azure 服務部署至虛擬網路
+      - Private Link
+        [167] 什麼是 Azure Private Link？
+      - 服務端點
+        [170] 虛擬網路服務端點
+      - 服務標籤
+        [177] 虛擬網路服務標籤
+    - 安全性
+      - 虛擬網路安全性基準
+        [192] 適用于虛擬網路的 Azure 安全性基準
+      - 虛擬網路 NAT 安全性基準
+        [197] Azure NAT 閘道的 Azure 安全性基準
+      - Azure 服務的網路隔離
+        [201] 整合 Azure 服務與虛擬網路以進行網路隔離
+      - 虛擬網路加密
+        - 概觀
+          [209] 什麼是 Azure 虛擬網路加密?
+        - 常見問題集
+          [211] 我可以在現有的虛擬網路、虛擬機、網路介面或 NSG 上啟用虛擬網路加密嗎？
+如何? 確認我的資料是否已加密？
+是否有數據未加密？
+Azure 主機上的 DTLS 建立會使用哪些憑證？
+效能效果為何？
+是否支援 VPN 閘道、應用程式閘道、Azure 防火牆 或 PaaS？
+加密在何處終止？
+      - 網路安全性群組
+        - 概觀
+          [213] 網路安全性群組
+        - 運作方式
+          [219] 網路安全性群組如何篩選網路流量
+      - 應用程式安全性群組
+        [222] 應用程式安全性群組
+      - IP 型存取控制清單
+        [225] 什麼是IP型訪問控制清單 （ACL）？
+      - 服務標籤
+        [227] 虛擬網路服務標籤
+      - 服務端點原則
+        [242] Azure 儲存體的虛擬網路服務端點原則
+      - Kubernetes 網路原則
+        [248] Azure Kubernetes 網路原則
+      - DDoS 保護
+        [260] Azure DDoS 保護是什麼？
+      - 虛擬網路 TAP
+        [264] 虛擬網路 TAP
+      - Azure 原則的安全性控制
+        [267] 適用於 Azure 虛擬網路的 Azure 原則法規合規性控制
+    - 子網路
+      - 子網路延伸模組
+        [295] 子網路延伸模組
+      - 子網路委派
+        [297] 什麼是子網路委派?
+    - 虛擬機器網路
+      [299] Azure 中的虛擬網路與虛擬機器
+    - 傳統部署
+  - 操作指南
+    - 規劃和設定
+      - 規劃虛擬網路
+        [309] 規劃虛擬網路
+      - VM 與雲端服務的名稱解析
+        [314] Azure 虛擬網路中的資源名稱解析
+      - 使用動態 DNS 搭配您自己的 DNS 伺服器
+        [326] 在您自己的 DNS 伺服器中使用動態 DNS來註冊主機名稱
+      - 最佳化網路輸送量
+        [328] 最佳化 Azure 虛擬機器的網路輸送量
+      - 檢視及修改主機名稱
+      - 記錄
+        [332] 
+    - 連線性
+      - 路由網路流量
+        - Azure 入口網站
+          [339] 教學課程：使用 Azure 入口網站以路由表路由傳送網路流量
+        - Azure PowerShell
+          [358] 使用 PowerShell 以路由表路由傳送網路流量
+        - Azure CLI
+          [367] 使用 Azure CLI 以路由表路由網路流量
+        - Ansible
+          [375] 教學課程：使用 Ansible 設定 Azure 路由表
+        - 管理路由表
+      - 管理 NIC
+        [381] 建立、變更或刪除網路介面
+      - 建立具有多個前置詞的子網
+        [395] 在 Azure 虛擬網絡 中建立子網的多個前置詞 - 預覽
+      - 管理虛擬網路
+      - 管理子網路
+        [398] 新增、變更或刪除虛擬網路子網路
+      - 管理子網路委派
+        [403] 新增或移除子網路委派
+      - 建立 VNet 對等互連
+        - 相同部署模型 - 相同訂用帳戶
+          - Azure PowerShell
+            [408] 使用 PowerShell 以虛擬網路對等互連連線虛擬網路
+          - Azure CLI
+            [415] 使用 Azure CLI 以虛擬網路對等互連連線虛擬網路
+        - 相同的部署模型 - 不同的訂用帳戶
+          [421] 建立虛擬網路對等互連 - ResourceManager，不同的訂用帳戶和 MicrosoftEntra 租用戶
+        - 相同的部署模型 - 不同的訂用帳戶 - SPN
+          [434] 以服務主體名稱 連線 不同訂用帳戶中的虛擬網路
+        - 不同的部署模型 - 相同的訂用帳戶
+          [448] 建立虛擬網路對等互連 - 不同部署模型、相同訂用帳戶
+        - 不同的部署模型 - 不同的訂用帳戶
+          [456] 建立虛擬網路對等互連 - 不同部署模型和訂用帳戶
+      - 管理 VNet 對等互連
+        [467] 建立、變更或刪除虛擬網路對等互連
+      - 更新 VNet 對等互連位址空間
+      - 連線能力案例
+        - 虛擬網路至虛擬網路
+          [479] 使用 PowerShell 設定 VNet 對 VNet 的VPN 閘道連線
+        - VNet (Resource Manager) 至 VNet (傳統)
+          [493] 使用入口網站從不同的部署模型連接虛擬網路
+        - VNet 至內部部署 (VPN)
+          [503] 教學課程：在 Azure 入口網站中建立站對站 VPN 連線
+        - VNet 至內部部署網路 (ExpressRoute)
+          [520] 使用 Azure 入口網站將虛擬網路連線至ExpressRoute 線路
+        - 高可用性的混合式網路架構
+          [534] 
+      - 設定虛擬網路 TAP
+        [540] 使用 Azure CLI 來處理虛擬網路 TAP
+      - 獨立 Docker 主機容器網路
+        - Linux
+          [544] 部署獨立 Linux Docker 主機的容器網路功能
+        - Windows
+          [554] 部署獨立 Windows Docker 主機的容器網路功能
+      - 部署容器網路服務
+        [568] 部署 Azure 虛擬網路容器網路介面外掛程式
+    - 安全性
+      - 使用加密建立虛擬網路
+        - Azure 入口網站
+          [573] 使用 Azure 入口網站建立具有加密的虛擬網路
+        - Azure PowerShell
+          [578] 使用 Azure PowerShell 建立具有加密的虛擬網路
+        - Azure CLI
+          [582] 使用 Azure CLI 建立具有加密的虛擬網路
+      - 篩選網路流量
+        - Azure 入口網站
+          [585] 教學課程：使用 Azure 入口網站透過網路安全性群組篩選網路流量
+        - Azure PowerShell
+          [598] 使用 PowerShell 篩選網路安全組的網路流量
+        - Azure CLI
+          [606] 使用 Azure CLI 透過網路安全性群組篩選網路流量
+      - 網路隔離
+        - 正在使用私人端點
+          - Azure 入口網站
+            [613] 快速入門：使用 Azure 入口網站 建立私人端點
+          - Azure PowerShell
+            [626] 快速入門：使用 Azure PowerShell 建立私人端點
+          - Azure CLI
+            [636] 快速入門：使用 Azure CLI 建立私人端點
+        - 正在使用服務端點
+          - Azure 入口網站
+            [644] 教學課程：使用 Azure 入口網站透過虛擬網路服務端點來限制對 PaaS 資源的網路存取
+          - Azure PowerShell
+            [665] 透過使用 PowerShell 和虛擬網路服務端點來限制對 PaaS 資源的網路存取
+          - Azure CLI
+            [676] 透過使用 Azure CLI 的虛擬網路服務端點來限制對 PaaS 資源的網路存取
+        - 使用服務端點原則
+          - Azure 入口網站
+            [686] 使用 Azure 入口網站建立、變更或刪除服務端點原則
+          - Azure PowerShell
+            [693] 使用 Azure PowerShell 搭配虛擬網路服務端點原則管理對於 Azure 儲存體帳戶的資料外流
+          - Azure CLI
+            [704] 使用 Azure CLI 搭配虛擬網路服務端點原則來管理對 Azure 儲存體帳戶的資料外流
+      - 管理 DDoS 保護
+        [713] 快速入門：使用 Azure 入口網站 建立及設定 Azure DDoS 網路保護
+      - 將合作夥伴上架至 Azure DDoS 保護
+        [721] 與 Azure DDoS 保護合作
+      - 管理網路安全性群組
+        [726] 建立、變更或刪除網路安全性群組
+      - 安全性案例
+        - 虛擬設備的安全網路
+          [747] 虛擬設備的案例
+        - Azure 和網際網路之間的 DMZ
+          [754] 
+    - VM 網路
+      - 移轉虛擬機器公用 IP 位址
+        [762] 教學課程：將虛擬機器公用 IP 位址移轉至 Azure NAT 閘道
+      - 新增或移除網路介面
+      - 建立 VM - 多個 NIC
+        - Azure PowerShell
+          [767] 建立及管理具有多個 NIC 的 Windows 虛擬機器
+        - Azure CLI
+          [775] 如何在 Azure 中建立有多個網路介面卡的Linux 虛擬機器
+      - 加速網路 (AccelNet)
+        - 加速網路概觀
+          [782] 加速網路概觀
+        - 使用 PowerShell 建立 AccelNet VM
+          [786] 使用 Azure PowerShell 建立具有加速網路的 VM
+        - 使用 Azure CLI 建立 AccelNet VM
+          [795] 使用 Azure CLI 建立具有加速網路的Windows 或 Linux VM
+          - 加速網路的運作方式
+            [804] 加速網路在 Linux 和 FreeBSD VM 中的運作方式
+          - 設定 DPDK
+            [812] 在 Linux 虛擬機器中設定 DPDK
+        - Microsoft Azure 網路介面卡 (MANA)
+          - Microsoft Azure 網路介面卡 (MANA) 概觀
+            [819] Microsoft Azure 網路適配器概觀
+          - 使用 MANA 的 Linux VM
+            [821] 使用 Microsoft Azure 網路適配器的Linux VM
+          - 使用 MANA 的 Windows VM
+            [824] 使用 Microsoft Azure 網路適配器的Windows VM
+      - 適用於 Azure VM 的 TCP/IP 效能微調
+        [828] 適用於 Azure VM 的 TCP/IP 效能微調
+      - 虛擬機器網路輸送量
+        [839] 虛擬機器網路頻寬
+    - 跨區域移動
+      - 網路安全性群組 (NSG)
+        [842] 跨區域移動 Azure VM
+      - 虛擬網路
+        [855] 跨區域移動 Azure VM
+      - 網路介面 (NIC)
+        [868] 跨區域移動 Azure VM
+      - 手動重新配置
+        - 網路安全性群組 (NSG)
+          [881] 將 Azure 網路安全組 （NSG） 重新放置到另一個區域
+        - 虛擬網路
+          [886] 將 Azure 虛擬網絡 重新放置至另一個區域
+    - 疑難排解
+      - 針對虛擬網路對等互連問題進行疑難排解
+        [897] 針對虛擬網路對等互連問題進行疑難排解
+      - 設定和驗證 VNet 或 VPN 連線
+        [905] 設定和驗證虛擬網路或 VPN 連線
+      - 網路安全性群組
+        [917] 診斷虛擬機器網路流量篩選問題
+      - 路由
+        [926] 診斷虛擬機器路由問題
+      - 輸送量測試
+        [932] 使用 NTTTCP 測試 VM 網路輸送量
+      - 測試 VM 網路延遲
+        [937] 測試 Azure VM 之間的網路延遲
+      - 無法刪除虛擬網路
+        [940] 疑難排解：無法刪除 Azure 中的虛擬網路
+      - VM 至 VM 連線問題
+        [945] 為 Azure VM 之間的連線問題疑難排解
+      - 設定 PTR 以進行 SMTP Banner 檢查
+        [948] 設定反向對應區域用於 SMTP Banner 檢查
+      - 為虛擬設備的檢查清單進行疑難排解
+        [949] Azure 中的網路虛擬設備問題
+      - 針對輸出 SMTP 連線能力進行疑難排解
+        [953] 針對 Azure 中的輸出 SMTP 連線能力問題進行疑難排解
+      - 關於 IP 位址 168.63.129.16
+        [955] IP 位址 168.63.129.16 是什麼？
+      - Azure VM 連線能力問題疑難排解
+        [959] Azure VM 連線能力問題疑難排解
+    - Azure 虛擬機上的 DHCP 伺服器
+      [969] Deploy a DHCP server in Azure on avirtual machine
+    - 監視虛擬網路
+      [983] 監視 Azure 虛擬網路
+    - 傳統部署
+    - 從傳統移轉至 Resource Manager
+      [986] 使用 Azure PowerShell 將 Azure 虛擬網路從傳統模型移轉至 Resource Manager
+  - 參考
+    - 監視資料參考
+      [991] 監視 Azure 虛擬網路的資料參考
+    - Azure CLI
+      [994] Networking
+    - Azure PowerShell
+      [995] 
+    - .NET
+      [1027] 適用于 .NET 的 Azure 虛擬網路 SDK - 最新
+    - Java
+    - Node.js
+      [1028] 適用於 JavaScript 和 Node.js 開發人員的Azure
+    - Python
+    - REST
+      [1032] 虛擬網路 REST API
+    - Resource Manager 範本
+      [1033] Microsoft.Network 資源類型
+    - 程式碼範例
+    - Azure 原則內建
+      [1071] 適用於 Azure 虛擬網路的 Azure 原則內建定義
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure 藍圖
+    - 網路部落格
+    - Azure 網路的 Microsoft 問與答頁面
+    - 網路意見反應
+    - 定價
+    - 定價計算機
+    - Stack Overflow
+    - 常見問題集
+      [1082] Azure 虛擬網路常見問題 (FAQ)

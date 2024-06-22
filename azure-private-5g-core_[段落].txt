@@ -1,0 +1,189 @@
+- ---< azure-private-5g-core.pdf >---
+  - Azure 私人 5G 核心文件
+    [1] Azure 私人 5G 核心文件
+  - 概觀
+    - 什麼是 Azure 私人 5G 核心？
+      [5] 什麼是 Azure 私人 5G 核心？
+    - 新功能
+      [13] Azure 私人 5G 核心版的新功能？
+    - 封包核心版本資訊
+      - 2404 - 目前
+        [30] Azure Private 5G Core 2404 版本資訊
+      - 2403
+        [33] Azure Private 5G Core 2403 版本資訊
+      - 2310
+        [36] Azure Private 5G Core 2310 版本資訊
+      - 2308
+        [39] Azure Private 5G Core 2308 版本資訊
+      - 2307
+        [43] Azure Private 5G Core 2307 版本資訊
+      - 2306
+        [46] Azure Private 5G Core 2306 版本資訊
+      - 2305
+        [48] Azure Private 5G Core 2305 版本資訊
+      - 2303
+        [51] Azure Private 5G Core 2303 版本資訊
+      - 2302
+        [53] Azure Private 5G Core 2302 版本資訊
+      - 2301
+        [55] Azure Private 5G Core 2301 版本資訊
+      - 2211
+        [57] Azure Private 5G Core 2211 版本資訊
+      - 2210
+        [60] Azure Private 5G Core 2210 版本資訊
+      - 2209
+        [62] Azure Private 5G Core 2209 版本資訊
+      - 2208
+        [66] Azure Private 5G Core 2208 版本資訊
+    - 封包核心和 Azure Stack Edge 相容性
+      [69] 封包核心和 Azure Stack Edge （ASE） 相容性
+  - 快速入門
+    - 部署私人行動網路和網站 - ARM 範本
+      [71] 快速入門：部署私人行動網路和網站 -ARM 範本
+    - 部署私人行動網路和月臺 - 命令行
+      [76] 快速入門：部署私人行動網路和網站 -Azure CLI
+    - 部署私人行動網路和網站 - PowerShell
+      [85] 快速入門：部署私人行動網路和網站 -Azure PowerShell
+  - 教學課程
+    - 建立範例原則控制組態集
+      [92] 教學課程：建立 Azure Private 5G Core的範例原則控制組態集
+  - 概念
+    - 私人行動網路的主要元件
+      [130] 私人行動網路的主要元件
+    - 私人行動網路設計需求
+      [133] 私人行動網路設計需求
+    - 合規性聲明
+      [142] 合規性聲明 - Azure Private 5G Core
+    - 原則控制
+      [146] 原則控制
+    - 默認服務和允許所有 SIM 卡原則
+      [152] 預設服務和允許所有 SIM 卡原則
+    - 監視 Azure Private 5G Core
+      - 使用 Azure 監視器平臺計量進行雲端監視
+        [155] 使用 Azure 監視器平台計量監視 AzurePrivate 5G Core
+      - 使用 Azure 監視器活頁簿進行雲端監視
+        [158] 使用 Azure 監視器活頁簿監視 Azure 私人5G 核心
+      - 使用事件中樞監視 UE 使用量的雲端
+        [161] 使用事件中樞監視 UE 使用量
+      - 使用封包核心儀錶板進行本機監視
+        [166] 封包核心儀表板
+      - 使用分散式追蹤進行本機監視
+        [174] 分散式追蹤
+    - 可靠性
+      [180] Azure Private 5G Core 的可靠性
+    - 安全性
+      [185] Azure Private 5G Core 的安全性
+    - Azure Stack Edge 中斷連線
+      [188] 暫時 AP5GC 中斷連線
+  - 操作指南
+    - 初始設定
+      - 完成部署私人行動網路的必要條件工作
+        [190] 完成部署私人行動網路的必要條件工作
+      - 委託 AKS 叢集
+        [200] 委託 AKS 叢集
+      - 設定高可用性部署的路由器
+        [214] 設定高可用性部署的路由器
+    - 要求支援
+      - 如何開啟支援要求
+        [217] 取得 Azure 私人 5G 核心服務的支援
+    - Kubectl 存取
+      - 設定 kubectl 存取
+        [220] 設定 kubectl 存取
+    - 私人行動網路
+      - 收集部署私人行動網路所需的資訊
+        [223] 收集部署私人行動網路所需的資訊
+      - 部署私人行動網路 - Azure 入口網站
+        [230] 透過 Azure Private 5G Core 部署私人行動網路 - Azure 入口網站
+      - 設定 Azure 私人 5G 核心網路以存取 UE IP 位址
+        [238] 設定 Azure 私人 5G 核心網路以存取 UEIP 位址
+      - 啟用 SUPI 隱藏
+        [241] 啟用 SUPI 隱藏
+    - 配量
+      - 建立和管理網路配量 - Azure 入口網站
+        [246] 建立和管理網路配量 - Azure 入口網站
+      - 建立網路配量 - ARM 範本
+        [252] 使用ARM樣本建立配量
+    - Sites
+      - 收集網站的必要資訊
+        [256] 收集網站的必要資訊
+      - 建立網站 - Azure 入口網站
+        [264] 使用 Azure 入口網站 建立網站
+      - 建立網站 - ARM 範本
+        [272] 使用ARM範本建立網站
+      - 為月臺建立其他 Packet Core 實例 - Azure 入口網站
+        [281] 使用 Azure 入口網站為月臺建立額外的Packet Core 實例
+      - 修改服務方案
+        [284] 修改服務方案
+      - 刪除網站
+        [289] 使用Azure 入口網站刪除網站
+    - 封包核心
+      - 修改封包核心實例
+        [295] 修改封包核心實例
+      - 升級封包核心實例 - Azure 入口網站
+        [306] 升級月臺中的封包核心實例 - Azure 入口網站
+      - 升級封包核心實例 - ARM 範本
+        [313] 升級站台中的封包核心實例 - ARM 範本
+      - 重新安裝封包核心執行個體
+        [318] 在月臺中重新安裝封包核心實例 - Azure入口網站
+      - 建立自訂警示
+        [323] 建立警示以追蹤封包核心的效能
+    - 原則控制
+      - 收集服務的必要資訊
+        [326] 收集 Azure Private 5G Core 服務的必要資訊
+      - 設定服務 - Azure 入口網站
+        [331] 設定 Azure Private 5G Core 的服務 -Azure 入口網站
+      - 收集 SIM 原則的必要資訊
+        [341] 收集 Azure 私人 5G 核心版 SIM 原則的必要資訊
+      - 設定 SIM 原則 - Azure 入口網站
+        [346] 設定 Azure 私人 5G 核心版的 SIM 原則 -Azure 入口網站
+      - 設定服務和 SIM 卡原則 - ARM 範本
+        [355] 使用 ARM 範本設定服務和 SIM 原則
+      - 將 UE 設定為 UE 內部轉送 - Azure 入口網站
+        [363] 設定 Azure Private 5G Core 的 UE 到 UE內部轉送 - Azure 入口網站
+    - SIM 卡
+      - 布建新的 SIM - Azure 入口網站
+        [375] 為 Azure 私人 5G 核心佈建新的 SIM -Azure 入口網站
+      - 布建新的 SIM - ARM 範本
+        [386] 為 Azure 私人 5G 核心版布建新的 SIM -ARM 範本
+      - 管理現有的 SIM
+        [396] 管理 Azure 私人 5G 核心版的現有 SIM -Azure 入口網站
+      - 管理 SIM 群組
+        [404] 管理 SIM 群組 - Azure 入口網站
+    - 本機監視工具
+      - 啟用 Microsoft Entra ID
+        [413] 
+      - 匯出、上傳和共享追蹤
+        [419] 匯出和共用追蹤
+      - 修改封包核心實例的本機存取設定
+        [421] 修改月臺中的本機存取設定
+    - 網路診斷工具
+      - 在封包核心實例上執行封包擷取
+        [426] 在封包核心實例上執行封包擷取
+      - 在封包核心實例上使用 Ping 和追蹤路由
+        [431] 在封包核心實例上使用 Ping 和追蹤路由
+    - 收集診斷
+      [433] 使用 Azure 入口網站 收集診斷
+    - 管理資源
+      - 移動私人行動網路資源
+        [436] 將私人行動網路資源移至不同的區域
+      - 刪除資源
+        [441] 刪除 Azure 私人 5G 核心資源
+  - 參考
+    - REST API
+      [444] Azure 私人 5G 核心 REST API
+    - 區域代碼名稱
+      [445] 區功能變數代碼名稱
+    - 服務限制和資源使用量
+      [446] 服務限制和資源使用量
+    - 5QI 與 DSCP 對應
+      [449] 5QI 與 DSCP 對應
+    - 支援存留期
+      [451] 支援存留期
+    - Azure 原則定義
+      [452] 適用於 Azure Private 5G Core 的 Azure原則 原則定義
+  - 資源
+    - Azure Private 5G Core 產品頁面
+    - Azure 私人 MEC 檔
+      [453] Azure 私人多重存取邊緣計算檔
+    - Azure 藍圖
+    - 部落格

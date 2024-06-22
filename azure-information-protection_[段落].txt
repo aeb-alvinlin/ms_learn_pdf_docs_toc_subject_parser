@@ -1,0 +1,152 @@
+- ---< azure-information-protection.pdf >---
+  - Azure 資訊保護 檔
+    [1] Azure 資訊保護 （AIP） 檔
+  - 概觀
+    - 什麼是 Azure 資訊保護？
+      [4] 什麼是 Azure 資訊保護？
+    - 已移除和淘汰的服務
+      [8] 已移除和淘汰的服務
+    - AIP 也稱為 ...
+      [10] Azure 資訊保護 - 也稱為 ...
+  - 概念
+    - AIP 需求
+      - 概觀
+        [13] Azure 資訊保護 需求
+      - 其他 Microsoft Entra 需求
+        [21] Azure 資訊保護 的其他 Microsoft Entra需求
+      - 21Vianet 營運的 Office 365
+        [24] 由 21Vianet 運作的 Office 365 的 Azure資訊保護 支援
+    - Azure Rights Management
+      - 概觀
+        [33] 什麼是 Azure 版權管理？
+      - Rights Management 保護的運作方式
+        [39] Azure RMS 的運作方式為何？ 在頭罩下
+      - 應用程式如何支援 Azure Rights Management 保護
+        - 概觀
+          [48] 應用程式如何支援 Azure RightsManagement 服務
+        - Office 應用程式 lications 和服務
+          [50] Office 應用程式和服務如何支援 AzureRights Management
+        - 支援 RMS API 的其他應用程式
+          [54] 支援 Rights Management API 的其他應用程式
+      - 個人版 RMS 和 Azure 資訊保護
+        [55] 個人版 RMS 和 Azure 資訊保護
+      - Azure 資訊保護 和 AD RMS
+        [57] 比較 Azure 資訊保護 和 AD RMS
+      - RMS 用戶端部署注意事項
+        [61] 
+    - 您的 Azure 資訊保護 租使用者金鑰
+      [72] 規劃和實作 Azure 資訊保護租用戶金鑰
+    - 部署藍圖
+      [75] 分類、標記和保護的 AIP 部署藍圖
+    - 安全性
+      - 安全性基準
+        [82] 適用於 Azure 資訊保護 的 Azure 安全性基準
+  - 操作指南
+    - 概觀
+      [93] Azure 資訊保護常見使用案例的操作指南
+    - 部署和使用保護服務
+      - 準備保護服務
+        - 設定自備金鑰 （BYOK） 保護
+          [95] 攜帶您自己的金鑰 （BYOK） Azure 資訊保護 詳細數據
+        - 開始使用租使用者根金鑰
+          [106] 開始使用租使用者根金鑰
+        - 租使用者金鑰的作業
+          - 概觀
+            [108] Azure 資訊保護租用戶金鑰的作業
+          - Microsoft 管理的
+            [110] Microsoft 管理：租用戶金鑰生命週期作業
+          - 客戶管理
+            [114] 客戶管理：租使用者金鑰生命周期作業
+        - 準備使用者和群組
+          [118] 準備 Azure 資訊保護 的使用者和群組
+        - 管理 Active Directory 行動裝置擴充功能
+          [126] Active Directory Rights ManagementServices 行動裝置延伸模組
+        - 從 AD RMS 移轉
+          - 概觀
+            [137] 從 AD RMS 遷移至 Azure 資訊保護
+          - 階段 1 - 準備
+            [144] 移轉階段 1 - 準備
+          - 階段 2 - 伺服器端設定
+            - 概觀
+              [149] 移轉階段 2 - AD RMS 的伺服器端設定
+            - 軟體金鑰到軟體金鑰
+              [156] 步驟 2：軟體保護金鑰移轉至軟體保護的金鑰
+            - HSM 金鑰至 HSM 金鑰
+              [158] 步驟 2：HSM 保護的金鑰移轉至受 HSM保護的金鑰
+            - HSM 金鑰的軟體金鑰
+              [161] 步驟 2：受軟體保護的金鑰移轉至 HSM保護的金鑰
+          - 階段 3 - 客戶端設定
+            [166] 移轉階段 3 - 客戶端設定
+          - 階段 4 - 支援服務設定
+            [171] 移轉階段 4 - 支援服務設定
+          - 階段 5 - 移轉後工作
+            [176] 移轉階段 5 - 移轉後工作
+      - 設定保護服務
+        - 啟用保護
+          [181] 從 Azure 資訊保護 啟用保護服務
+        - 設定應用程式
+          - 概觀
+            [184] 設定 Azure Rights Management 的應用程式
+          - Microsoft 365 服務
+            [186] Microsoft 365：線上服務 使用 AzureRights Management 服務的設定
+          - Office 應用程式
+            [214] Office 應用程式：用戶端使用 AzureRights Management 服務的設定
+        - 設定許可權
+          [215] 為 Azure 資訊保護設定使用權
+        - 設定探索服務或數據復原的進階使用者
+          [228] 設定 Azure 資訊保護和探索服務或資料復原的進階使用者
+      - 部署 RMS 連接器
+        - 概觀
+          [232] 部署 Microsoft Rights Management 連接器
+        - 安裝和設定連接器
+          [237] 安裝和設定 Microsoft RightsManagement 連接器
+        - 設定伺服器
+          - 概觀
+            [249] 設定 Microsoft Rights Management 連接器的伺服器
+          - 登錄設定
+            [257] Rights Management 連接器的登錄設定
+        - 監視連接器
+          [262] 監視 Microsoft Rights Management 連接器
+      - 驗證保護服務
+        [267] 驗證 Azure Rights Management 服務
+      - 管理個人資料
+        [268] 管理 Azure 資訊保護 的個人資料
+      - 使用 PowerShell 管理員 註冊
+        - 概觀
+          [276] 使用 PowerShell 管理員 從 Azure 資訊保護 註冊保護
+        - 安裝 AIPService PowerShell 模組
+          [280] 安裝 AIPService PowerShell 模組
+      - 解除委任和停用 AIP
+        [284] 解除委任和停用 Azure 資訊保護 的保護
+    - 部署及使用用戶端
+      - 部署用戶端
+        [287] Azure 資訊保護 （AIP） 統一標籤用戶端
+    - 使用 AIP 監視
+      - 使用 AIP 報表
+        [288] Azure 資訊保護的分析和中央報表
+      - 檢視和分析服務使用量
+        [292] 
+    - 開發及自定義應用程式
+      - Microsoft 資訊保護 SDK
+        [298] Microsoft 資訊保護 SDK 檔
+      - Rights Management SDK 取代通知
+        [300] RMS SDK 4.2 和 RMS SDK 2.1 淘汰通知
+      - Rights Management SDK 檔（已淘汰）
+  - 資源
+    - 常見問題集
+      - 常見問題 - 一般
+        [302] Azure 資訊保護 的常見問題 （AIP）
+      - 常見問題 - 分類和標籤
+        [310] Azure 資訊保護 中分類和標籤的常見問題
+      - 常見問題 - 數據保護
+        [312] Azure 資訊保護中資料保護的常見問題
+    - 已知問題
+      [321] 已知問題 - Azure 資訊保護
+    - 合規性與支持資訊
+      [330] Azure 資訊保護 的合規性和支持資訊
+    - PowerShell 參考
+      [332] 資訊保護
+    - 稽核記錄參考
+      [334] Azure 資訊保護 稽核記錄參考 （公開預覽）
+    - 詞彙
+      [340] Azure 資訊保護 術語

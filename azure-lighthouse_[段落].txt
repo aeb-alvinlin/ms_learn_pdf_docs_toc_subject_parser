@@ -1,0 +1,91 @@
+- ---< azure-lighthouse.pdf >---
+  - Azure Lighthouse 文件
+    [1] Azure Lighthouse 文件
+  - 概觀
+    - 什麼是 Azure Lighthouse？
+      [4] 什麼是 Azure Lighthouse？
+  - 範例
+    - 索引
+      [7] Azure Lighthouse 範例
+  - 概念
+    - 架構
+      [10] Azure Lighthouse 結構
+    - 跨租用戶管理體驗
+      [13] 跨租用戶管理體驗
+    - 租用戶、角色和使用者
+      [19] Azure Lighthouse 案例中的租用戶、使用者和角色 (機器翻譯)
+    - Azure Marketplace 中的受控服務供應項目
+      [22] Azure Marketplace 中的受控服務供應項目
+    - 雲端解決方案提供者計畫
+      [24] Azure Lighthouse 與雲端解決方案提供者計畫
+    - 企業案例
+      [27] Azure Lighthouse 在企業案例中的運用
+    - ISV 案例
+      [30] Azure Lighthouse 在 ISV 案例中的運用
+    - Azure Lighthouse 和 Azure 受控應用程式
+      [32] Azure Lighthouse 和 Azure 受控應用程式
+    - 安全性
+      - 建議的安全性作法
+        [35] 建議的安全性作法
+      - 安全性基準
+        [37] 適用于 Azure Lighthouse 的 Azure 安全性基準
+  - 操作指南
+    - 客戶動作
+      - 檢視和管理服務提供者
+        [41] 檢視和管理服務提供者
+      - 監視服務提供者活動
+        [45] 監視服務提供者活動
+    - 上線和委派管理
+      - 讓客戶上線
+        [47] 
+      - 將受控服務供應項目發佈到 Azure Marketplace
+        [57] 將受控服務供應項目發佈至 AzureMarketplace
+      - 建立合格的授權
+        [60] 建立合格的授權
+      - 更新委派
+        [69] 更新委派
+      - 移除委派的存取權
+        [72] 移除委派的存取權
+      - 監視委派變更
+        [75] 監視管理租用戶中的委派變更
+      - 將訂用帳戶上線到管理群組
+        [81] 將訂用帳戶上線到管理群組
+    - 檢視和管理客戶
+      [84] 在 Azure 入口網站中檢視及管理客戶與委派的資源
+    - Azure 服務整合
+      - Azure Arc 整合
+        [88] 使用 Azure Arc 大規模管理混和式基礎結構
+      - Azure Migrate 整合
+        [90] 使用 Azure Lighthouse 大規模管理 AzureMigrate 專案
+      - Azure 監視器整合
+        [94] 大規模監視委派資源
+      - Azure 原則整合
+        - 大規模部署原則
+          [98] 大規模地將 Azure 原則部署至委派的訂用帳戶
+        - 部署可補救的原則
+          [101] 部署可在委派的訂用帳戶內補救的原則
+      - Microsoft Sentinel 整合
+        [104] 大規模管理 Microsoft Sentinel 工作區
+  - 參考
+    - Azure CLI
+      [108] az managedservices
+    - Azure PowerShell
+      [109] Az.ManagedServices
+    - Azure SDK for .NET
+      [110] Microsoft.Azure.Management.ManagedServices Namespace
+    - Azure SDK for .NET (NuGet)
+    - Azure SDK for Python
+      [111] managedservices 套件
+    - REST
+      [112] Azure 委派的資源管理
+    - OpenAPI
+    - Azure 原則內建
+      [113] Azure 原則 適用於 Azure Lighthouse 的內建定義
+    - Terraform
+    - Ansible
+  - 資源
+    - 適用於 Azure Lighthouse 的 Microsoft 問答集
+    - Azure 更新
+    - 定價計算機
+    - 區域可用性
+    - 產品意見反應

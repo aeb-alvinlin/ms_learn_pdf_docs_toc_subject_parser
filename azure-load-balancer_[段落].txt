@@ -1,0 +1,260 @@
+- ---< azure-load-balancer.pdf >---
+  - Load Balancer 文件
+    [1] Load Balancer 文件
+  - 概觀
+    - 什麼是 Azure Load Balancer？
+      [4] 什麼是 Azure Load Balancer？
+  - 快速入門
+    - 建立公用負載平衡器
+      - 入口網站
+        [7] 快速入門：使用 Azure 入口網站建立公用負載平衡器，以負載平衡 VM
+      - PowerShell
+        [22] 快速入門：使用 Azure PowerShell 來建立公用負載平衡器以平衡 VM 的負載
+      - CLI
+        [33] 快速入門：使用 Azure CLI 建立公用負載平衡器，來平衡 VM 的負載
+      - Bicep
+        [44] 快速入門：使用 Bicep 檔案建立公用負載平衡器以平衡 VM 的負載
+      - ARM 範本
+        [56] 快速入門：使用 ARM 範本來建立公用負載平衡器以平衡 VM 的負載
+      - Terraform
+        [71] 快速入門：使用 Terraform 來建立公用負載平衡器以平衡 VM 的負載
+    - 建立內部負載平衡器
+      - 入口網站
+        [81] 快速入門：使用 Azure 入口網站建立內部負載平衡器，以負載平衡 VM
+      - PowerShell
+        [98] 快速入門：使用 Azure PowerShell 來建立內部負載平衡器以平衡 VM 的負載
+      - CLI
+        [111] 快速入門: 使用 Azure CLI 建立內部負載平衡器以負載平衡 VM
+      - Bicep
+        [122] 快速入門：使用 Bicep 建立內部負載平衡器以平衡 VM 的負載
+      - ARM 範本
+        [129] 快速入門：使用ARM範本建立內部負載平衡器以負載平衡 VM
+      - Terraform
+        [138] 快速入門: 建立內部負載平衡器，以使用Terraform 對 VM 的內部流量進行負載平衡
+  - 教學課程
+    - 傳入的 NAT 規則
+      - 建立單一 VM 輸入 NAT 規則
+        [149] 教學課程：使用 Azure 入口網站建立單一虛擬機器輸入 NAT 規則
+      - 建立多重 VM 輸入 NAT 規則
+        [161] 教學課程：使用 Azure 入口網站建立多重虛擬機器輸入 NAT 規則
+      - 將輸入 NAT 集區遷移至 NAT 規則
+        [172] 教學課程：從輸入 NAT 集區移轉至 NAT規則
+    - 調整和可用性
+      - 在特定可用性區域內為 VM 進行負載平衡
+        [175] 教學課程：使用 Azure 入口網站來平衡可用性區域內的 VM 負載
+      - 使用多個可用性設定組來平衡 VM 的負載
+        [189] 教學課程：使用 Azure 入口網站，建立具有後端集區中多個可用性設定組的負載平衡器
+    - 跨區域負載平衡器
+      - 建立跨區域負載平衡器 - 入口網站
+        [206] 教學課程：使用 Azure 入口網站建立跨區域 Azure Load Balancer
+      - 建立跨區域負載平衡器 - PowerShell
+        [212] 教學課程：使用 Azure PowerShell 建立跨區域 Azure Load Balancer
+      - 建立跨區域負載平衡器 - Azure CLI
+        [218] 教學課程：使用 Azure CLI 建立跨區域Azure Load Balancer
+      - 部署跨區域負載平衡器 - ARM 範本
+        [223] 教學課程：使用 Azure ResourceManager 範本部署跨區域負載平衡器
+    - 閘道負載平衡器
+      - 建立閘道負載平衡器 - 入口網站
+        [234] 教學課程：使用 Azure 入口網站建立網路閘道負載平衡器
+      - 建立閘道負載平衡器 - PowerShell
+        [249] 教學課程：使用 Azure PowerShell 建立網路閘道負載平衡器
+      - 建立閘道負載平衡器 - Azure CLI
+        [257] 教學課程：使用 Azure CLI 建立網路閘道負載平衡器
+      - 部署雙堆疊閘道負載平衡器
+        [265] 部署雙堆疊 Azure 閘道負載平衡器
+      - 使用閘道負載平衡器設定輸出連線
+        [271] 教學課程: 使用閘道負載平衡器設定輸出連線
+    - NAT 閘道
+      - 整合 NAT 閘道公用負載平衡器
+        [277] 教學課程：使用 Azure 入口網站整合 NAT閘道與公用負載平衡器
+      - 整合 NAT 閘道內部負載平衡器
+        [290] 教學課程：使用 Azure 入口網站整合 NAT閘道與內部負載平衡器
+    - 以 IP 為基礎的後端
+      - 使用以 IP 為基礎的後端建立公用負載平衡器 - 入口網站
+        [302] 教學課程：使用 Azure 入口網站以 IP 為基礎的後端建立公用負載平衡器
+    - 透過 DDoS 保護部署公用負載平衡器
+      [313] 教學課程：使用 Azure DDoS 保護來保護公用負載平衡器
+  - 概念
+    - 新功能
+      [326] Azure Load Balancer 的新功能
+    - 入口網站設定
+      [329] Azure Load Balancer 入口網站設定
+    - 元件
+      [365] Azure Load Balancer 元件
+    - 負載平衡演算法
+      [371] Azure Load Balancer 演算法
+    - 分散模式
+      [373] 
+    - 健康情況探查
+      [376] Azure Load Balancer 健全狀態探查
+    - 跨區域負載平衡器
+      [382] 全域負載平衡器
+    - 可靠性
+      - 可用性區域和跨區域負載平衡器
+        [387] Load Balancer 中的可靠性
+      - 可用性區域移轉
+        [401] 將 Load Balancer 移轉至可用性區域支援
+    - 閘道負載平衡器
+      - 概觀
+        [404] 閘道負載平衡器
+      - 合作夥伴
+        [407] Azure 網路閘道負載平衡器合作夥伴
+    - SKU
+      [412] Azure Load Balancer SKU
+    - Standard Load Balancer 和虛擬機器擴展集
+      [415] 含 Azure Load Balancer 的虛擬機器擴展集的指引
+    - 使用 Azure Instance Metadata Service 取出資訊
+      [417] 使用 Azure Instance Metadata Service 擷取負載平衡器資訊
+    - 健康狀態監視
+      - 監視負載平衡器
+        [418] 監視負載平衡器
+      - 監視資料參考
+        [426] 
+      - 適用於 Load Balancer 的 Azure 監視器深入解析
+        [431] 使用見解來監視和設定您的 Azure LoadBalancer
+      - 標準 Load Balancer計量和診斷
+        [435] 包含計量、警示和資源健康情況的Standard Load Balancer 診斷
+    - 輸入連線
+      - 輸入 NAT 規則
+        [450] 輸入 NAT 規則
+      - 高可用性連接埠
+        [453] 高可用性連接埠概觀
+      - 多個前端
+        [457] Azure Load Balancer 的多個前端 (機器翻譯)
+      - 逾時時的 TCP 重設
+        [460] 負載平衡器 TCP 重設和閒置逾時
+    - 輸出連線
+      - 對網際網路進行輸出連線的 SNAT
+        [463] 針對輸出連線，執行來源網路位址轉譯(SNAT)
+      - 設定輸出規則
+        [472] 輸出規則 Azure Load Balancer
+    - 安全性
+      - 安全性基準
+        [479] 適用于 Azure Load Balancer 的 Azure 安全性基準
+  - 操作方式
+    - 後端集區管理
+      [483] 後端集區管理
+    - 使用 Azure IMDS 取出中繼資料
+      [489] 使用 Azure Instance Metadata Service(IMDS) 擷取負載平衡器中繼資料
+    - 健康情況探查
+      - 管理健全狀態探查
+        [492] 使用 Azure 入口網站管理 Azure LoadBalancer 的健全狀態探查
+      - 建立自訂 HTTP/HTTPS 健全狀態探查
+        [500] 為 Azure Load Balancer 建立自訂HTTP/HTTPS 健全狀態探查
+    - 負載平衡器計量
+      - 使用 Azure 監視器 CLI 取得 Load Balancer 計量
+        [507] 使用 Azure 監視器 CLI 取得 LoadBalancer 計量
+      - 使用 REST 取得 Load Balancer 計量
+        [511] 使用 Azure REST API 取得 Load Balancer的使用計量
+    - 輸入連線
+      - 浮動 IP 設定
+        [514] Azure Load Balancer 浮動 IP 設定
+      - 管理負載平衡器規則
+        [520] 使用 Azure 入口網站管理 Azure LoadBalancer 的規則
+      - 管理輸入 NAT 規則
+        [531] 管理 Azure Load Balancer 的輸入 NAT 規則
+      - 設定 TCP 重設和閒置逾時
+        [541] 設定 Azure Load Balancer 的 TCP 重設和閒置逾時
+      - 設定 Load Balancer 的分配模式
+        [544] 設定 Azure Load Balancer 的分配模式
+    - 輸出連線
+      - 移轉輸出存取
+        [546] 教學課程：將輸出存取移轉至 Azure NAT閘道
+      - 僅限輸出的負載平衡器設定
+        [552] 僅輸出負載平衡器組態
+    - 虛擬機器擴展集
+      - 設定虛擬機擴展集的輸入 NAT 規則
+        [565] 設定虛擬機擴展集的輸入 NAT 規則
+      - 在一個 Azure Load Balancer 背後新增多個虛擬機擴展集執行個體
+        [568] 在一個 Azure Load Balancer 後方新增多個虛擬機擴展集實例
+      - 使用虛擬機器擴展集執行個體搭配現有 Azure Load Balancer
+        [570] 設定含現有 Azure 標準負載平衡器的虛擬機器擴展集
+    - 從基本升級至標準負載平衡器
+      - 升級選項和指導方針
+        [575] 從基本負載平衡器升級 - 指導
+      - 使用 PowerShell 從基本升級至標準
+        [579] 使用 PowerShell 升級基本負載平衡器
+    - 使用多個 IP 組態
+      - Azure 入口網站
+        [590] 教學課程：使用 Azure 入口網站在多個 IP設定上進行負載平衡
+      - Azure CLI
+        [613] 使用 Azure CLI 在多個 IP 組態上進行負載平衡
+      - Azure PowerShell
+        [617] 使用 PowerShell 在多個 IP 組態上進行負載平衡
+    - 跨區域移動
+      - 公用負載平衡器 - 入口網站
+        [621] 使用 Azure 入口網站將外部負載平衡器移至另一個區域
+      - 公用負載平衡器 - PowerShell
+        [633] 使用 Azure PowerShell 將 Azure 外部負載平衡器移至另一個區域
+      - 內部負載平衡器 - 入口網站
+        [647] 使用 Azure 入口網站將 Azure 內部負載平衡器移至另一個區域
+      - 內部負載平衡器 - PowerShell
+        [659] 使用 PowerShell 將 Azure 內部負載平衡器移至另一個區域
+    - IPv6
+      - 設定 Linux VM 的 DHCPv6
+        [673] 設定 Linux VM 的 DHCPv6
+      - 公用 Load Balancer
+        - 具有 IPv6 的標準公用負載平衡器 - PowerShell
+          [675] 使用 PowerShell 在 Azure 虛擬網路中部署 IPv6 雙重堆疊應用程式
+        - 具有 IPv6 的標準公用負載平衡器 - Azure CLI
+          [686] 使用 Azure CLI 在 Azure 虛擬網路中部署IPv6 雙重堆疊應用程式
+        - 具有 IPv6 的標準公用負載平衡器 - ARM 範本
+          [696] 在 Azure 虛擬網路中部署 IPv6 雙重堆疊應用程式 - 範本
+      - 內部負載平衡器
+        - 具有 IPv6 的標準內部負載平衡器 - PowerShell
+          [701] 使用 PowerShell，在 Azure 中使用Standard Internal Load Balancer 部署IPv6 雙重堆疊應用程式
+      - 將 IPv6 新增至現有的部署
+        - 將 IPv6 新增至 IPv4 應用程式 - PowerShell
+          [711] 使用 PowerShell 將 IPv4 應用程式新增至Azure 虛擬網路中的 IPv6
+        - 將 IPv6 新增至 IPv4 應用程式 - Azure CLI
+          [717] 使用 Azure CLI 將 IPv6 新增至 Azure 虛擬網路中的 IPv4 應用程式
+    - 疑難排解
+      - 針對 Azure Load Balancer 進行疑難排解
+        [722] 針對 Azure Load Balancer 進行疑難排解
+      - 測試輸入前端 IP 位址可觸達性
+        [725] 使用 ping 和 traceroute 測試 Azure 公用Load Balancer 前端的連線能力
+      - 健康情況探查狀態
+        [731] 針對 Azure Load Balancer 健全狀態探查狀態進行疑難排解
+      - 後端集區 (VM) 流量
+        [734] 針對 Azure Load Balancer 後端流量回應進行疑難排解
+      - 針對 SNAT 耗盡和連線逾時進行疑難排解
+        [738] 針對 Azure Load Balancer 輸出連線問題進行疑難排解
+      - 資源健康狀態和輸入可用性問題
+        [742] 針對資源健康狀態和輸入可用性問題進行疑難排解
+      - Azure Instance Metadata Service (IMDS) 的常見錯誤碼
+        [745] 使用 IMDS 來擷取負載平衡器資訊時的常見錯誤碼
+      - 一般部署錯誤
+        [747] 
+  - 參考
+    - 程式碼範例
+    - Azure PowerShell
+      [750] 
+    - Azure CLI
+      [782] az network lb
+    - .NET
+      [806] Microsoft.Azure.Management.Network.Models Namespace
+    - Java
+      [845] com.microsoft.azure.management.network
+    - Node.js
+      [935] 適用於 JavaScript 的 AzureNetworkManagement 用戶端連結庫 -33.1.0 版
+    - Ruby
+    - Python
+      [939] LoadBalancersOperations 類別
+    - REST
+      [952] Load Balancers
+    - Resource Manager 範本
+      [953] Microsoft.Network loadBalancers
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure 藍圖
+    - Azure Load Balancer 意見反應
+    - 定價
+    - 定價計算機
+    - 產品更新
+    - 常見問題集
+      [984] 存在哪些類型的 Azure Load Balancer？
+如何從基本升級至標準負載平衡器？
+Azure 中有哪些不同的負載平衡選項？
+可在哪裡找到負載平衡器 ARM 範本？
+輸入 NAT 規則與負載平衡規則有何不同？
+什麼是 IP 168.63.129.16？

@@ -1,0 +1,71 @@
+- ---< azure-managed-instance-apache-cassandra.pdf >---
+  - 適用於 Apache Cassandra 的 Azure 受控執行個體文件
+    [1] 適用於 Apache Cassandra 的 Azure 受控執行個體文件
+  - 概觀
+    - 什麼是 Azure Managed Instance for Apache Cassandra？
+      [3] 什麼是適用於 Apache Cassandra 的Azure 受控執行個體？
+    - 管理作業
+      [5] 適用於 Apache Cassandra 的 Azure 受控執行個體 管理作業
+  - 快速入門
+    - 建立叢集 - 入口網站
+      [10] 快速入門：從 Azure 入口網站 建立適用於 Apache Cassandra 叢集的 Azure 受控執行個體
+    - 建立叢集 -CLI
+      [31] 快速入門：使用 Azure CLI 建立適用於Apache Cassandra 叢集的 Azure 受控執行個體
+    - 建立多區域叢集 - CLI
+      [39] 快速入門：使用適用於Apache Cassandra的 Azure 受控執行個體 建立多區域叢集
+    - 設定混合式叢集
+      [47] 快速入門：使用 Client Configurator 為Apache Cassandra 設定具有 Azure 受控執行個體 的混合式叢集
+    - 設定混合式叢集 - CLI
+      [52] 快速入門：使用適用於Apache Cassandra的 Azure 受控執行個體 設定混合式叢集
+    - 使用 Databricks 來部署 Spark 叢集
+      [63] 快速入門：使用 Azure Databricks 部署受控 Apache Spark 叢集
+    - 使用 Lucene 索引進行搜尋
+      [69] 快速入門：使用 Lucene Index (Preview)搜尋適用于 Apache Cassandra 的 Azure受控執行個體
+  - 教學課程
+    - 遷移
+      - 使用雙重寫入 Proxy - 即時
+        [74] 使用雙寫入 Proxy 即時移轉至適用于Apache Cassandra 的 Azure 受控執行個體
+      - 使用 Apache Spark - 離線
+        [83] 使用 Apache Spark 遷移至適用于Apache Cassandra 的 Azure 受控執行個體
+  - 概念
+    - 安全性概觀
+      [87] Azure Managed Instance for ApacheCassandra 中的安全性 - 概觀
+    - 建置彈性應用程式
+      [89] 高可用性和災害復原的最佳做法
+    - 常見問題集
+      [93] 適用於 Apache Cassandra 的 Azure 受控執行個體 常見問題
+  - 操作指南
+    - 獲得最佳效能的最佳做法
+      [97] 最佳效能的最佳做法
+    - 新增用於部署的服務主體
+      [105] 使用 Azure 入口網站新增 Azure CosmosDB 服務主體
+    - 設定客戶自控金鑰
+      [108] 適用於 Apache Cassandra 的 Azure 受控執行個體 中客戶管理的金鑰
+    - 啟用 LDAP 驗證
+      [114] 如何在適用于 Apache Cassandra 的Azure 受控執行個體中啟用 LDAP 驗證
+    - 監視受控執行個體
+      [119] 
+    - 使用 Azure CLI 管理
+      [125] 使用 Azure CLI 管理 Apache Cassandra資源的 Azure 受控執行個體
+    - 必要的輸出網路規則
+      [134] 必要的輸出網路規則
+    - 使用 Grafana 將 Prometheus 中的計量視覺化
+      [138] 設定 Grafana 以視覺化從受控執行個體叢集發出的計量
+    - 啟用具體化檢視
+      [144] 適用於 Apache Cassandra 的 Azure 受控執行個體 具體化檢視
+    - 使用本機磁碟來改善讀取效能
+      [146] 適用於 Apache Cassandra 的 Azure 受控執行個體 中的寫入快取
+    - 使用 Azure Managed Instance for Apache Cassandra 來執行 Jaeger
+      [152] 使用適用於 Apache Cassandra 的 Azure受控執行個體 執行 Jaeger
+    - 搭配使用 VPN 與 Azure Managed Instance for Apache Cassandra
+      [155] 搭配 Azure 受控執行個體 for ApacheCassandra 使用 VPN
+    - Nodetool 命令
+      [158] 適用於 Apache Cassandra 的 Azure 受控執行個體 DBA 命令
+  - 參考
+    - REST API
+      - Cassandra 叢集
+        [165] Cassandra Clusters
+      - Cassandra 資料中心
+        [166] Cassandra Data Centers
+    - Azure CLI
+      [167] az managed-cassandra

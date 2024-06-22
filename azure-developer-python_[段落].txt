@@ -1,0 +1,193 @@
+- ---< azure-developer-python.pdf >---
+  - Azure for Python developers
+    [1] Azure for Python Developers
+  - Get started
+    [4] Get started with Python on Azure
+  - Azure AI apps
+    - Develop with Azure AI services
+      [14] Develop Python apps that use Azure AIservices
+    - Get started with the Python enterprise chat sample
+      [19] Get started with the Python enterprisechat sample using RAG
+    - Evaluate your chat app
+      [31] Get started with evaluating answers in achat app
+  - Web
+    - Set up local web dev environment
+      [43] Configure your local environment fordeploying Python web apps on Azure
+    - Python Web azd Templates
+      - Overview
+        [51] Overview of the Python Web azdTemplates
+      - Quickstart in local env
+        [58] Quickstart: Create and deploy a Pythonweb app to Azure using an azd template
+      - Quickstart in Codespaces
+        [65] Quickstart: Create and deploy a Pythonweb app from GitHub Codespaces toAzure using an Azure Developer CLItemplate
+      - Scale with Bicep
+        [73] Quickstart: Scaling services deployedwith the azd Python web templatesusing Bicep
+    - Web app solutions
+      - Django/Flask
+        [83] Quickstart: Deploy a Python (Django orFlask) web app to Azure App Service
+      - Django/Flask + db
+        [92] Deploy a Python (Django or Flask) webapp with PostgreSQL in Azure
+      - Passwordless auth - system-assigned managed identity
+        [113] Create and deploy a Flask Python webapp to Azure with system-assignedmanaged identity
+      - Passwordless auth - user-assigned managed identity
+        [119] Create and deploy a Django web app toAzure with a user-assigned managedidentity
+      - Static websites
+        - Hosting in Azure Storage
+          [128] Static website hosting in Azure Storage
+        - Deploy from VS Code
+          [134] Quickstart: Building your first static sitewith Azure Static Web Apps
+      - Configure web apps
+        - Codespaces dev environment
+          [139] Create a GitHub Codespaces devenvironment with FastAPI and Postgres
+        - Configure a startup file for App Service
+          [143] Configure a custom startup file forPython apps on Azure App Service
+      - CI/CD with App Service
+        - GitHub Actions
+          [147] Use CI/CD with GitHub Actions todeploy a Python web app to Azure AppService on Linux
+        - Azure Pipelines
+          [157] Use CI/CD to deploy a Python web appto Azure App Service on Linux
+      - Add sign in
+        [178] Quickstart: Sign in users and call theMicrosoft Graph API from a Python webapp
+      - Store and retrieve secrets
+        [183] Quickstart: Azure Key Vault secret clientlibrary for Python
+      - Set up Azure monitor
+    - Serverless solutions
+      - Create a function
+        - Using Visual Studio Code
+          [190] Quickstart: Create a function in Azurewith Python using Visual Studio Code
+        - Using the Azure CLI
+          [199] Quickstart: Create a Python function inAzure from the command line
+      - Connect to Azure Storage
+        - Using Visual Studio Code
+          [209] Connect Azure Functions to AzureStorage using Visual Studio Code
+        - Using the Azure CLI
+          [218] Connect Azure Functions to AzureStorage using command line tools
+  - Data
+    - Data engineering solutions
+      [226] Data solutions for Python apps on Azure
+    - Data science solutions
+      - Deploy machine learning models
+        [229] Machine learning for Python apps onAzure
+  - Containers
+    - Python containers overview
+      [231] Overview of Python Container Apps inAzure
+    - Deploy to App Service
+      - Simple web app
+        [244] Deploy a containerized Flask or FastAPIweb app on Azure App Service
+      - Web app + MongoDB
+        - 1. Overview
+          [251] Overview: Containerized Python webapp on Azure with MongoDB
+        - 2. Build and test container locally
+          [255] Build and run a containerized Pythonweb app locally with MongoDB
+        - 3. Build container in Azure
+          [263] Build a containerized Python web app inthe cloud
+        - 4. Deploy container App Service
+          [267] Deploy a containerized Python app toApp Service
+        - 5. Clean up resources
+          [274] Containerize tutorial cleanup and nextsteps
+    - Deploy to Container Apps
+      - Simple web app
+        [276] Deploy a Flask or FastAPI web app onAzure Container Apps
+      - Web app + PostgreSQL
+        - Overview
+          [281] Overview: Deploy a Python web app onAzure Container Apps
+        - Build and deploy a container app
+          [285] Build and deploy a Python web app withAzure Container Apps and PostgreSQL
+        - Configure CI/CD
+          [296] Configure continuous deployment for aPython web app in Azure ContainerApps
+    - Deploy a Kubernetes cluster
+      [305] Quickstart: Deploy an Azure KubernetesService (AKS) cluster using Azure CLI
+  - Logs
+  - Azure SDK for Python
+    - Overview
+      [316] Use the Azure libraries (SDK) for Python
+    - Library usage patterns
+      [321] Azure libraries for Python usagepatterns
+    - Authentication
+      - Overview
+        [329] Authenticate Python apps to Azureservices by using the Azure SDK forPython
+      - Auth during local development
+        - Auth using developer service principals
+          [336] Authenticate Python apps to Azureservices during local development usingservice principals
+        - Auth using developer accounts
+          [343] Authenticate Python apps to Azureservices during local development usingdeveloper accounts
+      - Auth from Azure-hosted apps
+        [348] Authenticating Azure-hosted apps toAzure resources with the Azure SDK forPython
+      - Auth from on-premises apps
+        [353] Authenticate to Azure resources fromPython apps hosted on-premises
+      - Additional auth methods
+        [357] Additional methods to authenticate toAzure resources from Python apps
+      - Walkthrough tutorial
+        - 1. Introduction and background
+          [360] Walkthrough: Integrated authenticationfor Python apps with Azure services
+        - 2. Authentication requirements
+          [363] Part 2: Authentication needs in thescenario
+        - 3. Third-party API implementation
+          [366] Part 3: Example third-party APIimplementation
+        - 4. Main app implementation
+          [368] Part 4: Example main applicationimplementation
+        - 5. Dependencies and environment variables
+          [371] Part 5: Main app dependencies, importstatements, and environment variables
+        - 6. Main app startup code
+          [374] Part 6: Main app startup code
+        - 7. Main app endpoint
+          [377] Part 7: Main application API endpoint
+    - Install Azure packages
+      [381] How to install Azure library packagesfor Python
+    - Use Azure packages
+      - Create a resource group
+        [384] Example: Use the Azure libraries tocreate a resource group
+      - List groups and resources
+        [389] Example: Use the Azure libraries to listresource groups and resources
+      - Create Azure storage
+        [394] Example: Create Azure Storage usingthe Azure libraries for Python
+      - Use Azure storage
+        [401] Example: Access Azure Storage usingthe Azure libraries for Python
+      - Create & deploy a web app
+        [410] Example: Use the Azure libraries tocreate and deploy a web app
+      - Create & query a database
+        [418] Example: Use the Azure libraries tocreate a database
+      - Create a virtual machine
+        [426] Example: Use the Azure libraries tocreate a virtual machine
+      - Use Azure Managed Disks with a VM
+        [435] Use Azure Managed Disks with theAzure libraries (SDK) for Python
+      - Configure logging
+        [443] Configure logging in the Azure librariesfor Python
+      - Configure proxies
+        [450] How to configure proxies for the AzureSDK for Python
+      - Use a sovereign domain
+        [453] Multicloud: Connect to all regions withthe Azure libraries for Python
+  - SDK PyPI package index
+    [457] Azure libraries package index
+  - SDK reference documentation
+    [487] Reference
+  - Explore services supporting Python
+    - App hosting
+      [489] Hosting Python apps on Azure
+    - Data solutions
+      [491] Data solutions for Python apps on Azure
+    - Identity and security
+      [494] Identity and security for Python apps onAzure
+    - Machine learning
+      [496] Machine learning for Python apps onAzure
+    - Azure AI services
+      [498] AI services for Python apps on Azure
+    - Messaging, Events & IoT
+      [499] Messaging, Events, and IoT for Pythonapps on Azure
+    - Other services
+      [501] Other services for Python apps on Azure
+  - Samples
+    - Web apps & serverless
+    - Databases
+    - Storage
+      - Azure Storage
+      - Redis Cache
+    - Identity & Security
+    - IoT
+    - Data science
+      - Machine Learning Service
+      - Databricks
+      - HDInsight
+    - Azure AI services
+    - Search
+    - All Samples

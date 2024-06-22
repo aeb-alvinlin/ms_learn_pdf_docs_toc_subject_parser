@@ -1,0 +1,98 @@
+- ---< azure-update-manager.pdf >---
+  - Azure Update Manager 檔
+    [1] Azure Update Manager 檔
+  - 概觀
+    - 關於 Azure 更新管理員
+      [3] 
+    - 支援矩陣
+      [8] Azure 更新管理員支援矩陣
+    - 新功能
+      [19] Azure 更新管理員的新功能
+    - 常見問題集
+      [23] Azure 更新管理員常見問題
+  - 快速入門
+    - 檢查並安裝隨選更新
+      [29] 快速入門：檢查並安裝隨選更新
+  - 教學課程
+    - 使用原則排程更新並大規模啟用定期評量
+      [33] 教學課程：使用原則在 Azure VM 上啟用定期評量和排程更新
+    - 動態範圍
+      - 使用動態範圍動態和大規模排程更新
+        [36] 教學課程：排程對動態範圍的更新
+    - 前置與張貼事件 （預覽）
+      - 使用 Webhook 搭配自動化 Runbook 建立預先和張貼事件
+        [38] 教學課程：使用 Webhook 搭配自動化建立預先和張貼事件
+      - 使用 Azure Functions 建立預先和張貼事件
+        [42] 教學課程：使用 Azure Functions 建立預先和張貼事件
+  - 概念
+    - 更新選項和協調流程
+      [48] Azure 更新管理員中的更新選項和協調流程
+    - 評定選項
+      [53] 更新管理員中的評定選項
+    - 使用 Azure Resource Graph 查詢資源
+      [56] Azure Update Manager 中的查詢記錄概觀
+    - 管理多部機器上的更新
+      [64] 使用 Azure Update Manager 管理多部機器
+    - 活頁簿
+      [72] 關於活頁簿
+  - 範例
+    - Azure Resource Graph 查詢
+      [76] 範例查詢
+  - 操作指南
+    - 部署
+      - 設定 Windows Update 用戶端
+        [79] 設定 Azure Update Manager 的Windows Update 設定
+    - 管理
+      - SQL Server 修補
+        - 概觀
+          [83] 使用 Azure 更新管理員修補 Azure VM 上SQL Server 的指引
+        - 在 Azure VM 上修補 SQL Server 的指引
+          [84] 適用於 Azure VM 上的 SQL Server 的Azure 更新管理員
+      - Azure Stack HCI 修補
+        [91] 使用 Azure 更新管理員 更新 Azure StackHCI 版本 23H2
+      - 使用 更新 檢視部署和管理更新
+        [102] 使用更新檢視部署和管理更新
+      - 建立警示 （預覽）
+        [107] 建立警示 （預覽）
+      - 前置與張貼事件 （預覽）
+        - 概觀
+          [113] 關於前置和張貼事件
+        - 管理前置和張貼事件 （預覽）
+          [115] 管理前置和張貼事件 （預覽）
+        - 常見問題集
+          [124] 前置和張貼事件 （預覽） 常見問題
+      - 動態範圍
+        - 概觀
+          [131] 關於動態範圍
+        - 管理動態範圍
+          [133] 管理動態範圍
+        - 排程 Azure VM 上的修補組態，以取得商務持續性
+          [137] 設定 Azure VM 上的排程修補，以保持商務持續性
+      - 檢查更新合規性
+        [142] 使用 Azure Update Manager 檢查更新合規性
+      - 部署更新並追蹤結果
+        [144] 立即部署更新，並使用 Azure UpdateManager 追蹤結果
+      - 更新排程
+        [151] 使用 Azure 入口網站 和 Azure 原則 排程機器的週期性更新
+      - 管理更新設定
+        [163] 管理更新組態設定
+      - 使用 REST API 管理 Azure VM 的更新
+        [167] 如何以程式設計方式管理 Azure VM 的更新
+      - 使用 REST API 管理已啟用 Arc 的伺服器更新
+        [174] 如何以程序設計方式管理已啟用 AzureArc 的伺服器更新
+      - 使用原則大規模自動評估
+        [182] 使用 Azure 原則 大規模自動評估
+      - 使用活頁簿建立報表
+        [185] 在 Azure Update Manager 中建立報告
+      - 管理自定義映像的更新
+        [187] 管理自定義映像的更新
+    - 疑難排解
+      - 針對問題進行疑難排解
+        [190] 針對 Azure 更新管理員問題進行疑難排解
+  - 指引
+    - 將虛擬機從自動化更新管理移至 Azure Update Manager
+      [199] 從自動化更新管理移至 Azure 更新管理員
+    - 將 Azure VM 從 Microsoft Configuration Manager 移轉至 Azure Update Manager
+      [220] 將虛擬機從 Microsoft ConfigurationManager 移轉至 Azure Update Manager的指引
+    - 安全性感知和Ubuntu Pro支援
+      [226] 安全性感知和 Ubuntu Pro 支援的指引

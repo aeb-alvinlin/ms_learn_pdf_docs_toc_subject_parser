@@ -1,0 +1,61 @@
+- ---< azure-storage-container-storage.pdf >---
+  - Azure 容器儲存體文件
+    [1] Azure 容器儲存體文件
+  - 概觀
+    - 什麼是 Azure 容器儲存體？
+      [2] 什麼是 Azure 容器儲存體? 預覽​
+  - 快速入門
+    - 使用 AKS 的 Azure 容器儲存體
+      [8] 快速入門：搭配 Azure KubernetesService 使用 Azure 容器儲存體預覽
+  - 教學課程
+    - 建立 AKS 叢集並安裝 Azure 容器儲存體
+      [16] 教學課程：安裝 Azure 容器儲存體預覽以與 Azure Kubernetes Service 搭配使用
+  - 操作指南
+    - 搭配 Azure 磁碟使用
+      [24] 使用 Azure 容器儲存體預覽，搭配 Azure受控磁碟
+    - 搭配暫時性磁碟使用
+      [35] 將 Azure 容器儲存體預覽版與暫時性磁碟搭配使用
+    - 搭配 Azure 彈性 SAN 使用
+      [46] 使用 Azure 容器儲存體預覽搭配 Azure 彈性 SAN
+    - 使用磁碟區快照集和還原
+      [54] 搭配 Azure Container 儲存體 Preview 使用磁碟區快照集
+    - 展開永續性磁碟區
+      [60] 在 Azure Container Storage Preview 中調整永續性磁碟區的大小
+    - 複製永續性磁碟區
+      [62] 在 Azure 容器儲存體預覽版中複製永續性磁碟區
+    - 啟用多重區域儲存體備援
+      [65] 在 Azure 容器儲存體預覽版中啟用多區域儲存體備援
+    - 移除 Azure 容器儲存體
+      [68] 拿掉 Azure Container 儲存體 Preview
+    - 針對 Azure 容器 儲存體 進行疑難解答
+      [69] 針對 Azure Container 儲存體 Preview 進行疑難解答
+  - 概念
+    - 常見問題集
+      [72] 
+  - 參考
+    - 資料存取 API
+      - REST API
+        [75] Azure 儲存體 REST API 參考
+      - .NET SDK
+        [78] Azure Storage client libraries for .NET
+      - Java SDK
+        [81] Azure Storage libraries for Java
+      - Python SDK
+        [93] 適用于 Python 的 Azure 儲存體用戶端程式庫
+      - JavaScript SDK
+        [96] 適用于 JavaScript 的 Azure 儲存體程式庫
+    - 資源管理 API
+      - REST API
+        [99] Azure 儲存體資源提供者 REST API 參考
+      - .NET SDK
+        [100] Microsoft Azure Storage managementclient library for .NET
+      - Java SDK
+        [104] Management
+      - Python SDK
+        [105] 適用于 Python 的 Azure 儲存體用戶端程式庫
+      - JavaScript SDK
+        [108] 適用于 JavaScript 的 Azure 儲存體程式庫
+    - Resource Manager 範本
+      [111] Microsoft.Storage 資源類型
+  - 資源
+    - Azure 容器儲存體價格

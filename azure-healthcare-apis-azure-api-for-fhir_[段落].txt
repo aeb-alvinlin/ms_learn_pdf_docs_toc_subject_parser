@@ -1,0 +1,144 @@
+- ---< azure-healthcare-apis-azure-api-for-fhir.pdf >---
+  - Azure API for FHIR 文件
+    [1] Azure API for FHIR 檔
+  - 概觀
+    - 什麼是 Azure API for FHIR？
+      [3] 什麼是 Azure API for FHIR？
+    - FHIR REST API 功能
+      [6] 適用于 Azure API for FHIR 的 FHIR RESTAPI 功能
+    - Azure 原則的安全性控制
+      [11] 適用於 Azure API for FHIR 的 Azure 原則法規合規性控制
+    - Microsoft Entra ID 和 Azure API for FHIR
+      [17] 適用于 Azure API for FHIR 的 AzureActive Directory 身分識別設定
+  - 快速入門
+    - 開始使用 Azure API for FHIR
+      [20] 開始使用 Azure API for FHIR
+    - 部署 Azure API for FHIR
+      - 使用入口網站
+        [24] 快速入門：使用 Azure 入口網站部署Azure API for FHIR
+      - 使用 PowerShell
+        [29] 快速入門：使用 PowerShell 部署 AzureAPI for FHIR
+      - 使用 CLI
+        [33] 快速入門：使用 Azure CLI 部署 AzureAPI for FHIR
+      - 使用ARM範本
+        [36] 快速入門：使用ARM範本來部署 AzureAPI for FHIR
+  - 教學課程
+    - 部署 JavaScript 應用程式
+      - 1.初始設定和 FHIR 部署
+        [42] 部署 JavaScript 應用程式以從 Azure APIfor FHIR 讀取資料
+      - 2.註冊公用用戶端應用程式
+        [44] Azure API for FHIR 的用戶端應用程式註冊
+      - 3.使用 Postman 測試設定
+        [48] 在 Azure API for FHIR 上測試 FHIR API
+      - 4.撰寫 Web 應用程式
+        [53] 撰寫 Azure Web 應用程式以讀取 AzureAPI for FHIR 中的 FHIR 資料
+    - FHIR 適用的 SMART
+      [58] SMART on FHIR 概觀
+    - 互操作性和病患存取
+      - CMS 互操作性和病患存取規則
+        [65] (CMS) 互通性和病患存取規則簡介的中樞
+      - 藍色按鈕的 CARIN 實作
+        [68] 適用于 Azure API for FHIR 的藍色按鈕®的 CARIN 實作指南
+      - 達芬奇藥物配方
+        [72] 適用于 Azure API for FHIR 的 Da VinciDrug Formulary 教學課程
+      - Da Vinci PDex
+        [75] Da Vinci PDex for Azure API for FHIR
+      - 達芬奇計劃網
+        [78] 適用于 Azure API for FHIR 的 Da Vinci 方案 Net
+  - 操作說明
+    - 註冊應用程式
+      - 註冊應用程式以進行 Azure API for FHIR 概觀
+        [82] 為 Azure API for FHIR 註冊 Azure ActiveDirectory 應用程式
+      - 資源應用程式
+        [84] 在適用于 Azure API for FHIR 的 AzureActive Directory 中註冊資源應用程式
+      - 機密用戶端應用程式
+        [86] 在適用于 Azure API for FHIR 的 AzureActive Directory 中註冊機密用戶端應用程式
+      - 公用用戶端應用程式
+        [91] 在適用于 Azure API for FHIR 的 AzureActive Directory 中註冊公用用戶端應用程式
+      - 服務客戶端應用程式
+        [94] 在適用于 Azure API for FHIR 的 AzureActive Directory 中註冊服務用戶端應用程式
+    - 配置設定
+      - 設定 Azure RBAC
+        [97] 設定 Azure RBAC for FHIR
+      - 設定本機 RBAC
+        [101] 設定本機 RBAC for FHIR
+      - 設定資料庫設定
+        [104] 設定資料庫設定
+      - 設定客戶管理的金鑰
+        [106] 設定待用客戶管理的金鑰
+      - 設定 CORS
+        [111] 在 Azure API for FHIR 中設定跨原始來源資源分享
+      - 設定 Private Link
+        [113] 設定私人連結
+      - Autoscale
+        [121] 適用于 Azure API for FHIR 的自動調整
+      - 災害復原
+        [125] Azure API for FHIR 的災害復原
+      - 啟用診斷記錄
+        [131] 在 Azure API for FHIR 中啟用診斷記錄
+      - 使用自訂 HTTP 標頭將數據新增至稽核記錄
+        [136] 將自訂 HTTP 標頭新增至 FHIR 服務中的稽核記錄
+      - 存取令牌驗證
+        [138] Azure API for FHIR 存取權杖驗證
+    - Search
+      - FHIR 搜尋概觀
+        [141] Azure API for FHIR 中的搜尋概觀
+      - 定義自定義搜尋參數
+        [148] 定義 Azure API for FHIR 的自訂搜尋參數
+      - 如何執行重新編製索引作業
+        [154] 在 Azure API for FHIR 中執行重新編制索引作業
+      - 搜尋範例
+        [161] 適用于 Azure API for FHIR 的 FHIR 搜尋範例
+    - FHIR 作業
+      - $export
+        - 設定匯出
+          [168] 在 Azure API for FHIR 中設定匯出設定，並設定儲存體帳戶
+        - 匯出資料
+          [171] 在 Azure API for FHIR 中匯出 FHIR 數據
+        - 已取消識別的導出
+          [178] 匯出 Azure API for FHIR 的已解除識別資料
+      - $member比對
+        [180] 適用于 Azure API for FHIR 的$member比對作業
+      - 病患/$everything
+        [182] FHIR 中的病患一切
+      - $purge歷程記錄
+        [187] Azure API for FHIR 的清除歷程記錄作業
+      - $bulk刪除
+        [189] 大量刪除作業
+      - $validate
+        - 市集配置檔
+          [192] 在 Azure API for FHIR 中儲存設定檔
+        - 使用$validate
+          [198] 驗證作業：概觀
+    - 將數據轉換成 FHIR
+      [202] 將資料轉換成 FHIR for Azure API forFHIR
+    - 將數據複製到 Synapse
+      [212] 將資料從 Azure API for FHIR 複製到Azure Synapse Analytics
+    - 尋找身分識別物件標識碼
+      [218] 尋找適用于 Azure API for FHIR 驗證組態的身分識別物件識別碼
+    - 取得 Azure API for FHIR 的令牌 - CLI
+      [220] 使用 Azure CLI 取得 Azure API for FHIR的存取權杖
+    - 移至不同的訂用帳戶
+      [222] 將 Azure API for FHIR 移至不同的訂用帳戶或資源群組
+  - 概念
+    - Microsoft Entra ID 和 Azure API for FHIR 概觀
+      [227] 適用于 Azure API for FHIR 的 AzureActive Directory 身分識別設定
+    - 存取令牌驗證
+      [230] Azure API for FHIR 存取權杖驗證
+    - FHIR REST API 功能
+      [233] 適用于 Azure API for FHIR 的 FHIR RESTAPI 功能
+    - 安全性
+      - Azure 原則的安全性控制
+        [238] 適用於 Azure API for FHIR 的 Azure 原則法規合規性控制
+  - 資源
+    - GitHub Projects
+      [244] 相關的 GitHub 專案
+    - 版本資訊
+      [246] 版本資訊：Azure API for FHIR
+    - 支援的功能
+      [255] 功能
+  - 參考
+    - Azure 原則內建
+      [259] Azure 原則 適用於 Azure API for FHIR 的內建定義
+    - 常見問題集
+      [261] Azure API for FHIR：基本概念

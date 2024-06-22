@@ -1,0 +1,54 @@
+- ---< azure-resource-mover.pdf >---
+  - Azure Resource Mover 文件
+    [1] Azure Resource Mover 文件
+  - 總覽
+    - 關於 Azure Resource Mover
+      [2] 什麼是 Azure Resource Mover？
+    - 選取一項工具來移動資源
+      [4] 選擇用來移動 Azure 資源的工具
+    - 常見問題
+      [5] 常見問題
+    - 新功能
+      [9] Resource Mover 的新功能
+  - 教學課程
+    - 將 Azure VM 移至其他區域
+      [10] 跨區域移動 Azure VM
+    - 將加密的 Azure VM 移至另一個區域
+      [23] 跨區域移動加密的 Azure VM
+    - 使用 PowerShell 跨區域行動資源
+      [41] 在 PowerShell 中跨區域移動資源
+    - 將 SQL 資源移至另一個區域
+      [54] 將 Azure SQL 資料庫資源移至另一個區域
+  - 概念
+    - 移動概觀
+      [67] 關於移動程式
+    - 支援-跨區域移動 Azure VM
+      [72] 支援在 Azure 區域之間移動 Azure VM
+    - 支援-跨區域移動 Azure SQL
+      [81] 支援在 Azure 區域之間移動 Azure SQL資源
+    - Support-Move Extension 資源類型
+      [83] 支援在 Azure 區域之間移動延伸模組資源類型
+  - 操作指南
+    - 跨區域移動
+      - 將 Azure VM 移到可用性區域
+        [84] 使用 Azure Resource Mover 將 AzureVM 移至另一個區域中的可用性區域
+      - 跨區域移動 （從資源群組）
+        [98] 使用 Azure Resource Mover 跨區域行動資源 （從資源群組） 移動資源
+    - 管理區域移動
+      - 修改目的地設定
+        [111] 修改目的地設定
+      - 從移動集合中移除資源
+        [117] 管理移動集合和資源群組
+      - 管理移動期間建立的資源
+        [125] 管理為虛擬機移動建立的資源
+  - 資源
+    - 雲端採用架構 中的移轉
+      [126] 移轉概觀
+    - Azure 服務 relcoation 指引概觀
+      [129] Azure 服務重新配置指引概觀 （預覽）
+    - Resource Manager 範本
+      [132] Microsoft.Migrate 資源類型
+    - Azure 藍圖
+  - 監視
+    - 監視跨區域移動
+      [133] 跨區域移動儀表板

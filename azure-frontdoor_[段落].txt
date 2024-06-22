@@ -1,0 +1,609 @@
+- ---< azure-frontdoor.pdf >---
+  - Front Door 和 CDN 文件
+    [1] Azure Front Door 與 CDN 文件
+  - 概觀
+    - Front Door
+      - Azure Front Door 是什麼？
+        [5] Azure Front Door 是什麼？
+      - 什麼是 Azure Front Door (傳統)？
+        [9] 什麼是 Azure Front Door (傳統)？
+      - 選擇正確的負載平衡器
+        [13] 
+    - CDN
+      - 什麼是 Azure 內容傳遞網路 (Azure CDN)？
+        [20] 什麼是 Azure 上的內容傳遞網路？
+      - 比較產品功能
+        [23] Azure 內容傳遞網路 產品功能之間的比較為何？
+    - Front Door 和 CDN 比較
+      [26] Azure Front Door 與 Azure CDN 服務之間的比較
+    - Front Door 的架構良好評論
+      [31] Azure Front Door 上的 Azure Well-Architected Framework 檢視方塊
+  - 快速入門
+    - Front Door
+      - 標準/高階
+        - 建立 Front Door - Portal
+          [43] 快速入門：建立 Azure Front Door 設定檔 - Azure 入口網站
+        - 建立 Front Door - PowerShell
+          [58] 快速入門：建立 Azure Front DoorStandard/進階版 - Azure PowerShell
+        - 建立 Front Door - CLI
+          [66] 快速入門：建立 Azure Front Door 標準/進階版 - Azure CLI
+        - 建立 Front Door - Bicep
+          [77] 快速入門：使用 Bicep 建立 Front Door標準版/進階版
+        - 建立 Front Door - ARM 範本
+          [83] 快速入門：使用ARM範本建立 FrontDoor Standard/進階版
+        - 建立 Front Door - Terraform
+          [91] 快速入門：使用 Terraform 建立 AzureFront Door Standard/進階版 配置檔
+      - 傳統
+        - 建立 Front Door - Portal
+          [100] 快速入門：為高可用性的全域 Web 應用程式建立 Front Door
+        - 建立 Front Door - PowerShell
+          [112] 快速入門：使用 Azure PowerShell 為高可用性的全域 Web 應用程式建立 FrontDoor
+        - 建立 Front Door - CLI
+          [118] 快速入門：使用 Azure CLI 為高可用性的全域 Web 應用程式建立 Front Door
+        - 建立 Front Door - Bicep
+          [123] 快速入門：使用 Bicep 建立 Front Door
+        - 建立 Front Door - ARM 範本
+          [128] 快速入門：使用ARM範本建立 FrontDoor
+        - 建立 Front Door - Terraform
+          [134] 快速入門：使用 Terraform 建立 AzureFront Door （傳統版）
+    - CDN
+      - Microsoft (傳統)
+        - 整合儲存體帳戶
+          [141] 快速入門：整合 Azure 儲存體 帳戶與Azure 內容傳遞網路
+        - 建立設定檔和端點 - 入口網站
+          [146] 快速入門：建立 Azure 內容傳遞網路設定檔與端點
+        - 建立設定檔和端點 - Azure CLI
+          [152] 使用 Azure CLI 建立 Azure 內容傳遞網路配置文件和端點
+        - 建立設定檔和端點 - Bicep
+          [155] 快速入門：建立 Azure 內容傳遞網路 配置檔和端點 - Bicep
+        - 建立設定檔和端點 - ARM 範本
+          [159] 快速入門：建立 Azure 內容傳遞網路 配置檔和端點 - ARM 範本
+        - 建立設定檔和端點 - Terraform
+          [165] 快速入門：使用 Terraform 建立 AzureCDN 配置檔和端點
+  - 教學課程
+    - Front Door
+      - 傳統
+        - 使用規則引擎新增安全性標頭
+          [172] 教學課程：使用規則引擎新增安全性標頭
+        - Web 應用程式防火牆和 Front Door
+          [175] 教學課程：使用 Azure Front Door 和Azure Web 應用程式防火牆 (WAF) 快速調整和保護 Web 應用程式
+    - CDN
+      - Microsoft (傳統)
+        - 將 Azure CDN 新增 Web 應用程式
+          [180] 教學課程：將 Azure 內容傳遞網路 新增至 Azure App 服務 Web 應用程式
+        - 使用自訂網域，透過 HTTPS 存取 Blob
+          [192] 教學課程：透過 HTTPS 使用 Azure 內容傳遞網路 自定義網域存取記憶體 Blob
+        - 新增自訂網域
+          [195] 教學課程：將自定義網域新增至您的端點
+        - 在自訂網域上設定 HTTPS
+          [202] 教學課程：在 Azure CDN 自定義網域上設定 HTTPS
+        - 設定快取規則
+          [215] 教學課程：設定 Azure 內容傳遞網路 快取規則
+  - 概念
+    - Front Door
+      - 標準/高階
+        - Front Door 管理員
+          [219] 什麼是 Azure Front Door 管理員？
+        - 快取功能
+          [221] 使用 Azure Front Door 快取
+        - 流量加速
+          [227] 流量加速
+        - 路由
+          - 路由傳送架構
+            [229] 路由架構概觀
+          - 路由比對
+            [232] 要求如何與路由設定進行比對
+          - 路由限制
+            [237] Front Door 路由限制
+        - 端點
+          [240] Azure Front Door 中的端點
+        - 原點
+          - 概觀
+            [242] Azure Front Door 中的原始來源和來源群組
+          - 來源選取範圍
+            [246] 傳送至原點的流量路由傳送方法
+          - Private Link
+            [251] 在 Azure Front Door 進階版中使用Private Link 保護原點
+          - 健康情況探查
+            [257] 健康情況探查
+        - 網域
+          - 概觀
+            [260] Azure Front Door 中的網域
+          - 頂點網域
+            [269] Azure Front Door 中的 Apex 網域
+          - 萬用字網域
+            [271] Azure Front Door 中的萬用字元網域
+        - 規則引擎
+          - 概觀
+            [274] 什麼是 Azure Front Door 中的規則集？
+          - 比對條件
+            [277] 規則比對條件
+          - 動作
+            [296] 規則集動作
+          - 伺服器變數
+            [303] Azure Front Door 規則集伺服器變數
+          - URL 重寫
+            [307] URL 重寫
+          - URL 重新導向
+            [309] URL 重新導向
+        - 敏感性資料保護
+          [311] Azure Front Door 敏感數據保護
+        - 了解計費
+          [313] 瞭解 Azure Front Door 計費
+        - 階層之間的價格比較
+          [320] 比較 Azure Front Door 服務層級之間的定價
+        - 記錄和計量
+          [331] Azure Front Door 中的監視計量和記錄
+        - 最佳作法
+          [339] Front Door 的最佳做法
+        - 案例
+          - 概觀
+            [343] 使用 Azure Front Door 加速和保護 Web應用程式
+          - Azure 儲存體 Blob
+            [348] 使用 Azure Front Door 搭配 Azure 儲存體 Blob
+          - 上傳至 Azure 儲存體 Blob
+            [352] 透過 Azure Front Door 將可靠的檔案上傳至 Azure 儲存體 Blob
+      - 傳統
+        - 移轉至標準層或進階層
+          - 關於層級移轉
+            [358] 關於 Azure Front Door (傳統) 至標準/進階層的移轉 (英文)
+          - 傳統到標準/進階對應
+            [364] 設定 Azure Front Door （傳統） 與標準/進階版 層之間對應
+        - Front Door （傳統） 淘汰常見問題
+          [368] Azure Front Door （傳統） 淘汰常見問題
+        - 快取功能
+          [372] 使用 Azure Front Door 快取
+        - 流量加速
+          [380] 流量加速
+        - 路由
+          - 路由傳送架構
+            [382] 路由架構概觀
+          - 路由比對
+            [385] 要求如何與路由設定進行比對
+          - 流量路由方法
+            [390] 傳送至原點的流量路由傳送方法
+          - 路由限制
+            [395] Front Door 路由限制
+        - 後端集區
+          [398] Azure Front Door 中的原始來源和來源群組
+        - 萬用字元網域
+          [402] Azure Front Door 中的萬用字元網域
+        - 健康情況探查
+          [406] 健康情況探查
+        - 規則引擎
+          - 規則引擎結構
+            [409] 什麼是 Azure Front Door 中的規則集？
+          - 規則比對條件
+            [412] 規則比對條件
+          - 規則動作
+            [425] 規則集動作
+        - URL 重寫
+          [429] URL 重寫
+        - URL 重新導向
+          [431] URL 重新導向
+      - 安全性
+        - 安全性基準
+          [434] Azure Front Door 的 Azure 安全性基準
+        - DDoS 保護
+          [442] Front Door 上的 DDoS 保護
+        - 端對端 TLS 加密
+          [444] 使用 Azure Front Door 的端對端 TLS
+        - Web 應用程式防火牆
+          [449] Azure Front Door 上的 Web 應用程式防火牆 (WAF)
+        - 地區篩選
+          [452] 什麼是 Azure Front Door 的網域地區篩選？
+        - 保護來源的流量
+          [463] 保護流向 Azure Front Door 來源的流量
+      - 通訊協定
+        - HTTP/2
+          [465] Azure Front Door 中的 HTTP/2 支援
+      - 常見問題集
+        [467] 一般
+    - CDN
+      - 移轉 CDN 提供者
+        [477] 在內容傳遞網路提供者之間移轉
+      - Akamai 淘汰常見問題集
+        [480] 來自 Akamai 的 Azure CDN 標準淘汰常見問題
+      - 安全性基準
+        [482] 內容傳遞網路的 Azure 安全性基準
+      - DDoS 保護
+        [489] Azure 內容傳遞網路 DDoS 保護
+      - 快取如何運作 \(機器翻譯\)
+        [490] 快取如何運作 \(機器翻譯\)
+      - HTTP/2 支援
+        [495] Azure 內容傳遞網路 中的 HTTP/2 支援
+      - 擷取 POP IP 的
+        [497] 擷取 Azure 內容傳遞網路 目前的 POP IP清單
+      - 從標準 Edgio 移轉至進階 Edgio
+        [499] 將 Azure 內容傳遞網路 配置檔從標準Edgio 遷移至 Edgio 進階版
+      - 中國內容傳遞
+        [501] 使用 Azure 內容傳遞網路 的中國內容傳遞
+  - 操作指南
+    - Front Door
+      - 標準/高階
+        - 設定
+          - 升級至進階層
+            - Azure 入口網站
+              [503] 從 Azure Front Door 標準升級至進階
+            - Azure PowerShell
+              [507] 使用 Azure PowerShell 從 Azure FrontDoor 標準升級至進階
+          - 設定新的端點
+            [510] 使用 Front Door 管理員新增端點
+          - 將來源新增至原始群組
+            [518] 如何設定 Azure Front Door 的原點
+          - 設定受控身分識別
+            [527] 使用受控識別來存取 Azure Key Vault 憑證
+          - 網域
+            - 新增自訂網域
+              [541] 使用 Azure 入口網站 在 Azure FrontDoor 上設定自定義網域
+            - 新增根或 apex 網域
+              [551] 將根或頂點網域上線至 Azure Front Door
+            - 在自訂網域上設定 HTTPS
+              [557] 使用 Azure 入口網站 在 Azure FrontDoor 自定義網域上設定 HTTPS
+          - 設定快取
+            [568] 在 Azure Front Door 上設定快取
+          - 規則引擎
+            [571] 在 Azure Front Door 中設定規則集
+          - 清除快取
+            - Azure 入口網站
+              [579] Azure Front Door 中的快取清除
+            - Azure PowerShell
+              [582] 使用 Azure PowerShell 在 Azure FrontDoor 中快取清除
+            - Azure CLI
+              [585] 使用 Azure CLI 清除 Azure Front Door 中的快取
+          - 保護敏感數據
+            [588] 保護 Azure Front Door 記錄中的敏感數據
+          - 壓縮
+            [591] 在 Azure Front Door 中壓縮檔案以改善效能
+          - 使用 Front Door 進行藍色/綠色部署
+            [600] 使用 Azure Front Door 的藍/綠部署
+        - 啟用 Private Link 以保護原點
+          - 連線至內部負載平衡器
+            [609] 使用 Private Link 將 Azure Front Door 進階版連線至內部負載平衡器來源
+          - 連線至儲存體帳戶
+            - Azure 入口網站
+              [614] 使用 Private Link 將 Azure Front Door 進階版 連線 至記憶體帳戶來源
+            - Azure CLI
+              [618] 藉由 Azure CLI 使用 Private Link 將Azure Front Door 進階版連線到儲存體帳戶原點
+          - 連線到儲存體靜態網站
+            [621] 連線 Azure Front Door 進階版 至具有Private Link 的記憶體靜態網站
+          - 連線到 App Service
+            - Azure 入口網站
+              [627] 使用 Private Link 將 Azure Front Door 進階版連線到 App Service (Web 應用程式)原點
+            - Azure CLI
+              [632] 利用 Azure CLI 使用 Private Link 將Azure Front Door 進階版連線至 AppService 來源
+        - 監視和報告
+          - 設定診斷記錄
+            [635] 設定 Azure Front Door 記錄
+          - 取得計量並建立警示
+            [638] Azure Front Door 中的即時監視
+          - 檢視 Front Door 報告
+            [641] Azure Front Door 報告
+        - 整合
+          - Azure 儲存體帳戶
+            [654] 整合 Azure 儲存體帳戶與 Azure FrontDoor
+          - Azure API 管理
+            [661] 在 Azure API 管理前方設定 Front Door標準版/進階版
+          - Azure Open AI
+            [669] 在 Azure Front Door 上使用 Azure Web應用程式防火牆保護 Azure OpenAI
+          - Azure 靜態 Web 應用程式
+            [676] 教學課程：設定 Azure Static Web Apps的 Azure Front Door
+          - Azure Spring Apps
+            [678] 
+      - 傳統
+        - 移轉至標準層或進階層
+          - Azure 入口網站
+            [692] 將 Azure Front Door （傳統） 遷移至標準/進階版 層
+          - Azure PowerShell
+            [705] 使用 Azure PowerShell 將 Azure FrontDoor（傳統版）遷移至標準/進階版 層
+        - 新增自訂網域
+          - Azure 入口網站
+            [709] 將自訂網域新增到 Azure Front Door
+          - Azure CLI
+            [715] Azure Front Door：部署自訂網域
+        - 在自訂網域上設定 HTTPS
+          [721] 在 Front Door (傳統) 自訂網域上設定HTTPS
+        - 新增根或 apex 網域
+          [732] 將根或頂點網域上線至 Azure Front Door
+        - 設定規則引擎
+          [737] 教學課程：設定規則引擎
+        - 設定 HTTP 至 HTTPS 的重新導向
+          [744] 使用 Azure 入口網站設定 HTTP 對HTTPS 重新導向
+        - 設定傳統診斷
+          [750] Azure Front Door 中的監視計量和記錄
+      - 使用 Web 應用程式防火牆進行安全防護
+        - 設定安全性原則
+          [758] 教學課程：使用 Azure 入口網站在 AzureFront Door 上建立 WAF 原則
+        - 設定地區篩選
+          [765] 設定 Azure Front Door 的異地篩選 WAF原則
+        - 設定速率限制
+          [769] 設定Web 應用程式防火牆速率限制規則
+        - 設定 IP 限制
+          [778] 使用適用于 Azure Front Door 的 WAF 設定 IP 限制規則
+      - 疑難排解
+        - 針對 Front Door 問題進行疑難排解
+          [788] 針對 Azure Front Door 常見問題進行疑難排解
+        - 針對 Front Door 效能問題進行疑難排解
+          [795] 針對 Azure Front Door 的一般效能問題進行疑難排解
+        - 允許的憑證授權單位
+        - 檔案壓縮
+          [802] 針對 Azure Front Door 檔案壓縮進行疑難排解
+        - 訂閱供應項目和頻寬節流設定
+          [806] Azure Front Door Standard/Premium 訂用帳戶供應項目和頻寬節流
+    - CDN
+      - Microsoft (傳統)
+        - 最佳化內容
+          [807] 針對內容類型傳遞優化 Azure 內容傳遞網路
+          - 大型檔案最佳化
+            [810] 使用 Azure 內容傳遞網路 進行大型檔案下載優化
+          - 媒體串流最佳化
+            [813] 使用 Azure 內容傳遞網路 進行媒體串流優化
+        - 管理
+          - 建立端點
+            [815] 建立 Azure 內容傳遞網路 端點
+          - 使用 Azure PowerShell 進行管理
+            [819] 使用 PowerShell 管理 Azure 內容傳遞網路
+          - 根或 apex 網域上線
+            [827] 將根或頂點網域上線至現有的 Azure CDN端點
+          - 設定受控身分識別
+            [832] 使用 Azure 內容傳遞網路 的受控識別來存取 Azure 金鑰保存庫 憑證
+          - 藉由壓縮檔案來改善效能
+            [840] 在 Azure CDN 中壓縮檔案以改善效能 \(機器翻譯\)
+          - 端點的多個來源
+            [847] Azure CDN 端點多重來源
+          - 使用標準規則引擎強制執行 HTTPS
+            [861] 設定 Azure 內容傳遞網路 的標準規則引擎
+          - 控制快取行為
+            - 依查詢字串區分的快取內容
+              [864] 使用查詢字串控制 Azure 內容傳遞網路快取行為 - 標準層
+            - 清除快取的資產
+              [867] 清除 Azure 內容傳遞網路端點
+          - 共用存取簽章儲存體支援
+            [870] 搭配SAS使用 Azure 內容傳遞網路
+          - 跨原始資源共用
+            [875] 搭配 CORS 使用 Azure CDN
+          - 監視資源
+            [879] 監視 Azure 內容傳遞網路 資源的健康情況
+          - 使用流量管理員
+            [884] 使用 Azure 流量管理員 跨多個端點進行故障轉移
+        - 分析
+          [888] 分析 Azure CDN 使用模式
+          - 監視、計量和存取記錄
+            [890] Azure CDN 的即時監視、計量和存取記錄
+          - Azure 診斷記錄
+            [907] 診斷記錄 - Azure 內容傳遞網路
+        - 開發
+          - .NET
+            [920] 開始使用適用於 .NET 的 Azure CDN 連結庫
+          - Node.js
+            [935] 開始使用 Azure CDN 開發
+      - Edgio
+        - 標準
+          - 最佳化內容
+            [949] 針對內容類型傳遞優化 Azure 內容傳遞網路
+            - 大型檔案最佳化
+              [952] 使用 Azure 內容傳遞網路 進行大型檔案下載優化
+            - 媒體串流最佳化
+              [955] 使用 Azure 內容傳遞網路 進行媒體串流優化
+            - 動態網站加速
+              [957] 透過 Azure 內容傳遞網路 動態網站加速
+          - 管理
+            - 建立端點
+              [964] 建立 Azure 內容傳遞網路 端點
+            - 使用 Azure PowerShell 進行管理
+              [968] 使用 PowerShell 管理 Azure 內容傳遞網路
+            - 根或 apex 網域上線
+              [976] 將根或頂點網域上線至現有的 Azure CDN端點
+            - 依國家或地區限制存取
+              [981] 按國家/地區限制 Azure CDN 內容
+            - 藉由壓縮檔案來改善效能
+              [986] 在 Azure CDN 中壓縮檔案以改善效能 \(機器翻譯\)
+            - 端點的多個來源
+              [993] Azure CDN 端點多重來源
+            - 控制快取行為
+              - 透過使用快取規則控制快取行為
+                [1007] 使用快取規則控制 Azure 內容傳遞網路快取行為
+              - 依查詢字串區分的快取內容
+                [1012] 使用查詢字串控制 Azure 內容傳遞網路快取行為 - 標準層
+              - 清除快取的資產
+                [1015] 清除 Azure 內容傳遞網路端點
+              - 預先載入快取資產
+                [1018] 在 Azure CDN 端點上預先載入資產
+            - 設定存留時間 (TTL)
+              - Azure 網頁內容
+                [1021] 管理 Azure 內容傳遞網路 中的 Web 內容到期日
+              - Azure Blob 儲存體
+                [1026] 管理 Azure 內容傳遞網路 中的 AzureBlob 記憶體到期日
+            - 共用存取簽章儲存體支援
+              [1033] 搭配SAS使用 Azure 內容傳遞網路
+            - 跨原始資源共用
+              [1038] 搭配 CORS 使用 Azure CDN
+            - 監視資源
+              [1042] 監視 Azure 內容傳遞網路 資源的健康情況
+            - 使用流量管理員
+              [1047] 使用 Azure 流量管理員 跨多個端點進行故障轉移
+          - 分析
+            [1051] 分析 Azure CDN 使用模式
+            - Azure 診斷記錄
+              [1053] 診斷記錄 - Azure 內容傳遞網路
+            - 來自 Edgio 的 Azure CDN 分析工具
+              - 核心報告
+                [1066] 來自 Edgio 的核心報告
+              - 自訂報告
+                [1074] 來自 Edgio 的自訂報告
+          - 開發
+            - .NET
+              [1078] 開始使用適用於 .NET 的 Azure CDN 連結庫
+            - Node.js
+              [1093] 開始使用 Azure CDN 開發
+        - 進階
+          - 最佳化內容
+            [1107] 針對內容類型傳遞優化 Azure 內容傳遞網路
+            - 大型檔案最佳化
+              [1110] 使用 Azure 內容傳遞網路 進行大型檔案下載優化
+            - 媒體串流最佳化
+              [1113] 使用 Azure 內容傳遞網路 進行媒體串流優化
+            - 動態網站加速
+              [1115] 透過 Azure 內容傳遞網路 動態網站加速
+          - 管理
+            - 建立端點
+              [1122] 建立 Azure 內容傳遞網路 端點
+            - 使用 Azure PowerShell 進行管理
+              [1126] 使用 PowerShell 管理 Azure 內容傳遞網路
+            - 根或 apex 網域上線
+              [1134] 將根或頂點網域上線至現有的 Azure CDN端點
+            - 依國家或地區限制存取
+              [1139] 按國家/地區限制 Azure CDN 內容
+            - 藉由壓縮檔案來改善效能
+              [1144] 在 Azure CDN 中壓縮檔案以改善效能 \(機器翻譯\)
+            - 控制快取行為
+              - 依查詢字串區分的快取內容
+                [1151] 使用查詢字串控制 Azure 內容傳遞網路快取行為 - 進階層
+              - 清除快取的資產
+                [1153] 清除 Azure 內容傳遞網路端點
+              - 預先載入快取資產
+                [1156] 在 Azure CDN 端點上預先載入資產
+            - 設定存留時間 (TTL)
+              - Azure 網頁內容
+                [1159] 管理 Azure 內容傳遞網路 中的 Web 內容到期日
+              - Azure Blob 儲存體
+                [1164] 管理 Azure 內容傳遞網路 中的 AzureBlob 記憶體到期日
+            - 權杖驗證
+              [1171] 使用令牌驗證保護 Azure 內容傳遞網路資產
+            - 共用存取簽章儲存體支援
+              [1178] 搭配SAS使用 Azure 內容傳遞網路
+            - 跨原始資源共用
+              [1183] 搭配 CORS 使用 Azure CDN
+            - 監視資源
+              [1187] 監視 Azure 內容傳遞網路 資源的健康情況
+            - 使用規則覆寫行為
+              [1192] 使用來自 Edgio 的 Azure CDN 進階版 規則引擎覆寫 HTTP 行為
+            - 使用流量管理員
+              [1200] 使用 Azure 流量管理員 跨多個端點進行故障轉移
+          - 分析
+            [1204] 分析 Azure CDN 使用模式
+            - Azure 診斷記錄
+              [1206] 診斷記錄 - Azure 內容傳遞網路
+            - 核心報告
+              [1219] 來自 Edgio 的核心報告
+            - 自訂報告
+              [1227] 來自 Edgio 的自訂報告
+            - 產生進階 HTTP 報告
+              [1231] 使用 Azure CDN 進階 HTTP 報告分析使用量統計數據
+            - 檢視即時統計資料
+              [1239] Microsoft Azure 內容傳送網絡 中的實時狀態
+            - 分析邊緣效能
+              [1244] 在 Microsoft Azure CDN 中分析邊緣節點效能
+            - 取得即時警示
+              [1253] Microsoft Azure CDN 中的即時警示
+          - 開發
+            - .NET
+              [1259] 開始使用適用於 .NET 的 Azure CDN 連結庫
+            - Node.js
+              [1274] 開始使用 Azure CDN 開發
+      - 疑難排解
+        - 404 狀態
+          [1288] 針對傳回 404 狀態代碼的 Azure 內容傳遞網路 端點進行疑難解答
+        - 檔案壓縮
+          [1294] 針對 Azure 內容傳遞網路 檔案壓縮進行疑難解答
+        - 允許的憑證授權單位
+        - 訂閱供應項目和頻寬節流設定
+          [1299] Azure CDN 訂用帳戶供應專案和頻寬節流
+  - 參考
+    - Front Door
+      - HTTP 標頭通訊協定支援
+        [1300] 
+      - Azure Front Door POP 位置
+        - 依地區的 POP 位置
+          [1303] 依城市排序的 Azure Front Door POP 位置
+        - 依縮寫的 POP 位置
+          [1307] 依 Azure Front Door 縮寫的 MicrosoftPOP 位置
+      - 標準/高階
+        - Azure CLI
+          [1313] az afd
+        - Azure PowerShell
+          [1320] 
+        - Bicep 和 Resource Manager 範本
+          [1329] Front Door 的 Bicep 和 Azure ResourceManager部署模型範本
+        - Terraform
+          [1331] Front Door 的 Terraform 部署模型範本
+        - REST API
+          [1332] Azure Front Door Service REST API
+        - Python SDK
+          [1333] cdn 套件
+        - Go SDK
+        - JavaScript SDK
+          [1334] 適用于 JavaScript 的 Azure CDN 模組
+      - 傳統
+        - Azure CLI
+          [1335] az afd
+        - Azure PowerShell
+          [1342] Az.FrontDoor
+        - Bicep 和 Resource Manager 範本
+          [1345] Front Door 的 Bicep 和 Azure ResourceManager部署模型範本
+        - Terraform
+          [1347] Front Door 的 Terraform 部署模型範本
+        - REST API
+          [1348] Azure Front Door Service REST API
+        - JavaScript SDK
+          [1349] 適用於 JavaScript 的 AzureFrontDoorManagement 用戶端連結庫 -5.3.0 版
+        - Java SDK
+          [1353] Azure Resource Manager CDN clientlibrary for Java - version 2.38.0
+    - CDN
+      - Azure CDN POP 位置
+        - 依地區的 POP 位置
+          [1356] 由 Metro 提供的 Azure 內容傳遞網路 涵蓋範圍
+        - 依縮寫的 POP 位置
+          - Microsoft (傳統)
+            [1362] Azure CDN 縮寫的 Microsoft POP 位置
+          - Edgio
+            [1368] 依縮寫的 Azure CDN POP 位置
+      - 標準規則引擎
+        [1376] Azure 內容傳遞網路 的標準規則引擎參考
+        - 標準規則引擎比對條件
+          [1378] Azure 內容傳遞網路 標準規則引擎中的比對條件
+        - 標準規則引擎動作
+          [1386] 適用於 Azure 內容傳遞網路 的標準規則引擎中的動作
+      - Microsoft 特定的 HTTP 標題
+        [1390] 從 Microsoft 對 Azure CDN 的 HTTP 標頭進行偵錯
+      - Edgio
+        - Edgio Premium 規則引擎參考
+          [1391] 來自 Edgio 進階版 規則引擎參考的 Azure內容傳遞網路
+          - 規則引擎條件運算式
+            [1397] 來自 Edgio Premium 規則引擎條件運算式的 Azure CDN
+          - 規則引擎比對條件
+            [1398] 來自 Edgio 進階版 規則引擎比對條件的Azure 內容傳遞網路
+          - 規則引擎功能
+            [1404] 來自 Edgio 進階版 規則引擎功能的 Azure內容傳遞網路
+          - HTTP 變數
+            [1409] Azure CDN 規則引擎的 HTTP 變數
+        - Edgio 特定的 HTTP 標頭
+          [1420] Azure 內容傳遞網路 規則引擎的 Edgio 特定 HTTP 標頭
+          - X-EC-Debug 標題
+            [1423] 適用於 Azure 內容傳遞網路 規則引擎的X-EC-Debug HTTP 標頭
+      - Azure CLI
+        [1428] az cdn
+      - Azure PowerShell
+        [1435] 
+      - .NET
+        [1444] Microsoft.Azure.Management.CdnNamespace
+      - Java
+        [1447] com.microsoft.azure.management.cdn
+      - REST
+        [1466] Azure CDN REST API
+  - 資源
+    - Front Door
+      - Azure 藍圖
+      - 定價
+      - 定價計算機
+      - 服務更新
+    - CDN
+      - Azure 內容傳遞網路帳單
+        [1467] 瞭解 Azure 內容傳遞網路 計費
+      - Azure 藍圖
+      - Microsoft 問與答頁面
+      - 定價
+      - 定價計算機
+      - 服務更新
+      - Stack Overflow
+      - 影片

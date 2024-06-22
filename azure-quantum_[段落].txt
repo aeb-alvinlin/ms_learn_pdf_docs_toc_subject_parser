@@ -1,0 +1,333 @@
+- ---< azure-quantum.pdf >---
+  - Azure Quantum 檔
+    [1] Azure Quantum 文件 (預覽)
+  - 概觀
+    - 什麼是 Azure Quantum？
+      [2] 什麼是 Azure Quantum？
+    - 了解量子計算
+      [7] 了解量子計算
+    - 什麼是 Q# 和 Quantum 開發工具包
+      [14] 什麼是 Q# 和 Azure QuantumDevelopment Kit？
+    - Microsoft 的量子機器
+      [20] Microsoft 的量子計算機
+  - 開始使用
+    - 新式 QDK 的新功能
+      [21] Azure Quantum 開發工具包 (新式 QDK)的新功能
+    - 探索 Azure Quantum
+      [27] 探索 Azure Quantum 網站
+    - 建立 Azure Quantum 工作區
+      [31] 建立 Azure Quantum 工作區
+    - 開始使用 Azure Quantum Notebook
+      [34] 開始使用 Q# 和 Azure Quantum 筆記本
+    - 開始使用 Quantum 開發套件
+      [37] 開始使用 Azure Quantum DevelopmentKit (新式 QDK)
+    - 開始使用 Q# 和 VS Code
+      [42] 開始使用 Q# 程式和 Visual Studio Code
+    - 將您的程式代碼遷移至新式 QDK
+      [50] 將您的程式 Q# 代碼遷移至新式 QDK
+  - 管理 Azure Quantum
+    - 使用者和工作區
+      - 使用 Azure Quantum 筆記本
+        [57] 在 Azure Quantum 工作區中使用 JupyterNotebook
+      - 使用 Azure Quantum 工作區
+        - 聯機到您的 Azure Quantum 工作區
+          [63] 聯機到 Azure Quantum 工作區的不同方式
+        - 瞭解 Azure Quantum 工作區存取
+          [68] 瞭解 Azure Quantum 工作區存取權
+        - 將群組新增至 Azure Quantum 工作區
+          [73] 將群組新增至 Azure Quantum 工作區
+        - 共用 Azure Quantum 工作區的存取權
+          [80] 共用 Azure Quantum 工作區的存取權
+      - 使用工作
+        [84] 使用 Azure Quantum 作業
+      - 使用 Azure CLI 使用 Azure Quantum
+        [87] 使用 Azure CLI 管理量子工作區
+      - Azure CLI 命令 >>
+        [92] az quantum
+      - 使用 Azure Resource Manager 與 Azure Quantum 搭配運作
+        [102] 使用 Azure Resource Manager 管理量子工作區
+    - 定價、發票開立、點數和配額
+      - Azure Quantum 點數
+        [108] Azure Quantum 點數
+      - Azure Quantum 點數計劃常見問題
+        [111] 常見問題：Azure Quantum 點數計畫的應用程式
+      - Azure Quantum 價格
+        [114] Azure Quantum 價格
+      - Azure Quantum 發票
+        [120] 發票和帳單
+      - Azure Quantum 配額
+        [123] Azure Quantum 配額
+      - 了解 Azure Quantum 中的作業成本
+        [130] 了解 Azure Quantum 中的作業成本
+    - 安全性
+      - 使用服務主體進行驗證
+        [134] 使用服務主體進行驗證
+      - 使用受控識別進行驗證
+        [137] 使用受控識別進行驗證
+      - 使用存取金鑰進行驗證
+        [140] 使用存取金鑰進行驗證
+      - 使用資源鎖定保護 Azure Quantum
+        [144] 使用 Azure Resource Manager (ARM) 鎖定來保護 Azure Quantum 資源
+    - 維護
+      - 更新 QDK
+        [150] 將 Azure Quantum Development Kit (新式 QDK) 更新為最新版本
+      - 新增或移除提供者
+        [153] 新增或移除提供者
+    - 與 Azure 架構整合
+      - 適用於量子運算的 DevOps
+        [155] DevOps 架構設計
+      - 量子運算與傳統應用程式整合
+        [160] 
+  - 混合式量子運算 (QC) 
+    - 混合式 QC 簡介
+      [169] 發行項• 2024/04/16
+    - Batch 混合式 QC
+      [171] 批次量子運算
+    - 互動式混合式 QC (工作階段) 
+      - 開始使用會話
+        [172] 互動式量子運算：會話
+      - 管理會話
+        [178] 如何管理會話
+    - 整合式混合式 QC
+      [184] 整合式混合式運算
+    - 分散式混合式 QC
+      [192] 分散式混合式運算
+    - 混合式 QC 的概念
+      [193] 混合式量子運算概念
+  - 資源估計
+    - 開始使用
+      - 資源估算器簡介
+        [196] Azure Quantum Resource 估算器簡介
+      - 執行您的第一個資源估計值
+        [200] 快速入門：執行您的第一個資源估計值
+      - 執行資源估算器的不同方式
+        [204] 執行資源估算器的不同方式
+      - 自訂資源估算器的目標參數
+        [218] target自訂資源估算器的參數
+      - 了解資源估算器的結果
+        [236] 了解資源估算器的結果數據
+    - 使用資源估算器
+      - 執行多個組態
+        [246] 如何使用資源估算器執行多個參數位組target 態
+      - 使用已知的估計值
+        [249] 如何搭配資源估算器使用已知的估計值
+      - 處理大型程式
+        [252] 如何使用資源估算器優化執行大型程式
+      - 資源估算器和密碼編譯
+        [255] 資源估計和密碼編譯
+    - 資源估算器的教學課程
+      - 雙因素化化學
+        [257] 教學課程：估計量子化學問題的資源
+      - 使用 QIR 的資源估計
+        [262] 教學課程：將 QIR 程式提交至 AzureQuantum Resource 估算器
+  - 量子程序設計
+    - Q# 使用者指南
+      - Q# 程序的結構
+        [268] Q#程序的結構
+      - 使用 Q# 專案
+        [274] 使用 Q# 專案
+      - 偵錯和測試
+        [282] 偵錯和測試量子程序代碼
+      - 執行長時間執行的實驗
+        [289] 如何在 Azure Quantum 上執行長時間執行的實驗
+    - 將量子電路圖可視化
+      [292] 使用 視覺化量子線路圖 Q#
+    - 使用 Q 的教學課程#
+      - 量子隨機數字產生器
+        [301] 教學課程：在 Q# 中實作量子亂數產生器
+      - 量子糾纏
+        [311] 教學課程：使用 探索量子糾纏 Q#
+      - Grover 的演算法
+        [320] 教學課程：以 Q# 執行格羅弗搜尋演算法
+      - 量子傅立葉轉換
+        [329] 教學課程：在 中實作 Quantum Fourier轉換 Q#
+    - 使用 Python 執行量子線路
+      - 使用 Qiskit 提交線路
+        [343] 快速入門：提交 Qiskit 電路至 AzureQuantum
+      - 使用 Cirq 提交線路
+        [352] 如何使用 Cirq 將線路提交至 AzureQuantum
+      - 以提供者特定格式提交線路
+        [360] 如何將特定格式化線路提交至 AzureQuantum
+      - 將 Qiskit 範例調整為 Azure Quantum
+        [376] 調整 Qiskit 範例以在 Azure Quantum 上執行
+    - Q# 語言參考
+      - 程式結構
+        - 程式實作
+          [379] 程式執行
+        - 命名空間
+          [383] 命名空間
+        - 型別宣告
+          [385] 發行項• 2024/04/19
+        - 可呼叫宣告
+          [387] 可呼叫宣告
+        - 特製化宣告
+          [390] 特製化宣告
+        - 註解
+          [394] 註解
+      - 陳述式
+        - Q# 中的陳述式
+          [396] 陳述式
+        - 繫結範圍
+          [397] 本機變數的可見度
+        - 變數宣告和指派
+          [399] 變數宣告和重新指派
+        - 量子記憶體管理
+          [402] 量子記憶體管理
+      - 運算式
+        - Q# 中的運算式
+          [405] 運算式
+        - 優先順序與關聯性
+          [406] 優先順序與關聯性
+        - 運算子
+          - 複製和更新運算式
+            [410] 複製和更新運算式
+          - 條件運算式
+            [413] 條件運算式
+          - 比較運算式
+            [414] 比較表達式
+          - 邏輯運算式
+            [415] 邏輯運算式
+          - 位元運算式
+            [416] 位元運算式
+          - 算術運算式
+            [417] 算術運算式
+          - 串連
+            [418] 串連
+        - 修飾元和組合器
+          - 函子應用程式
+            [419] 函子應用程式
+          - 項目存取運算式
+            [421] 項目存取
+        - 呼叫表達式
+          [424] 呼叫表達式
+        - 退回和終止
+          [425] 退回和終止
+        - 反覆運算次數
+          [427] 反覆運算次數
+        - 條件式迴圈
+          [429] 條件式迴圈
+        - 條件式分支
+          [431] 條件式分支
+        - 動詞變化
+          [433] 動詞變化
+        - 結束
+          [434] 結束
+        - 內容運算式
+          [437] 關係型和省略的表達式
+        - 數值常值和預設值
+          [439] 常值
+      - 型別系統
+        - Q# 中的型別系統
+          [444] 型別系統
+        - 量子資料型別
+          [446] 量子特定數據類型
+        - 不變性
+          [448] 不變性
+        - 作業和函式
+          [449] 作業和函式
+        - 單一資料庫元組等價
+          [451] 單一資料庫元組等價
+        - Subtyping 和變異數
+          [452] Subtyping 和變異數
+        - 輸入參數化
+          [454] 輸入參數化
+        - 類型推斷
+          [457] 類型推斷
+    - 使用 Quantum Katas 來學習 Q#
+      [459] 透過 Quantum Katas 學習量子運算
+  - 量子模擬器
+    - 疏鬆模擬器
+      [461] 疏鬆量子模擬器
+    - 後端模擬器
+      [462] 後端量子模擬器
+  - 量子提供者
+    - 量子運算提供者
+      [465] Azure Quantum 上的量子運算提供者
+    - 量子運算配置檔目標
+      [468] Azure Quantum 中的目標設定檔類型
+    - Azure Quantum 提供者全域可用性
+      [472] Azure Quantum 提供者的全域可用性
+    - IonQ
+      - IonQ 提供者 & 目標
+        [476] IonQ 提供者
+      - IonQ 支持原則
+        [489] Azure Quantum 中 IonQ 的支援原則
+    - Microsoft
+      - Microsoft 提供者 & 目標
+        [491] Microsoft 提供者
+    - PASQAL (Private preview) 
+      - PASQAL 提供者 & 目標
+        [492] PASQAL 提供者
+      - PASQAL 支持原則
+        [495] Azure Quantum 中 PASQAL 的支援原則
+    - Quantinuum
+      - Quantinuum 提供者 & 目標
+        [496] Quantinuum 提供者
+      - Quantinuum 支持原則
+        [509] Azure Quantum 中的 Quantinuum 支援原則
+    - Rigetti
+      - Rigetti 提供者 & 目標
+        [512] Rigetti 提供者
+      - Rigetti 支持原則
+        [516] Azure Quantum 中 Rigetti 的支援原則
+  - 概念
+    - 量子計算的線性代數
+      [517] 量子計算的線性代數
+    - 向量和矩陣
+      [520] 
+    - 進階矩陣概念
+      [524] 量子運算中的進階矩陣概念
+    - 量子位元
+      [527] 量子運算中的量子位元
+    - 多個量子位元
+      [531] 
+    - Dirac 標記
+      [539] Dirac 標記
+    - Pauli 量值
+      [547] 單量子位元和多量子位元 Pauli 測量作業
+    - T 閘道 & T Factory
+      [553] T 閘道和 T Factory
+    - 量子線路慣例
+      [557] 量子電路圖慣例
+    - 量子 Oracle
+      [563] 使用和定義量子 Oracle
+    - Grover 演演算法的理論
+      [566] 
+    - 量子中繼表示法
+      [571] 量子中繼表示法
+  - 疑難排解
+    - 針對整合式混合式 QC 進行疑難解答
+      [575] 針對整合式混合式問題進行疑難解答
+    - 針對問題進行疑難排解
+      [581] 針對 Azure Quantum 進行疑難解答
+    - Q# 編譯程式訊息
+      - QS3308
+        [590] QS3308
+      - QS6307
+        [593] QS6307
+  - 資源
+    - 使用 Microsoft 訓練 >> 建置您的技能
+    - 參與 Azure Quantum
+      [597] 參與 Azure Quantum 開發工具包
+    - 進階閱讀
+      [598] 進階閱讀：量子運算學習資源
+  - 版本資訊
+    - Azure Quantum 版本資訊
+      [602] (QDK) 和 Azure Quantum 的版本資訊Quantum Development Kit
+    - 封存的版本資訊
+      - 2024 版本資訊
+        [603] (QDK) 和 Azure Quantum 最新版本的版本資訊Quantum Development Kit
+      - 2023 版本資訊
+        [604] (QDK) 和 Azure Quantum 的版本資訊Quantum Development Kit - 2023
+      - 2022 版本資訊
+        [608] (QDK) 和 Azure Quantum 的版本資訊Quantum Development Kit - 2022
+      - 2021 版本資訊
+        [616] (QDK) 和 Azure Quantum - 2021 的版本資訊Quantum Development Kit
+      - 2020 版本資訊
+        [624] (QDK) 和 Azure Quantum 的版本資訊Quantum Development Kit - 2020
+      - 2019 版本資訊
+        [631] (QDK) 和 Azure Quantum 的版本資訊Quantum Development Kit - 2019
+      - 2018 版本資訊
+        [639] (QDK) 和 Azure Quantum - 2018 的版本資訊 Quantum Development Kit
+      - 2017 版本資訊
+        [646] (QDK) 和 Azure Quantum 的版本資訊Quantum Development Kit - 2017

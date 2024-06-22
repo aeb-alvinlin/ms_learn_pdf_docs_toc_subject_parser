@@ -1,0 +1,336 @@
+- ---< azure-storage-files.pdf >---
+  - Azure 檔案儲存體文件
+    [1] Azure 檔案儲存體文件
+  - 概觀
+    - 什麼是 Azure 檔案儲存體？
+      [3] 什麼是 Azure 檔案儲存體？
+    - 規劃 Azure 檔案服務部署 (機器翻譯)
+      [6] 規劃 Azure 檔案服務部署 (機器翻譯)
+    - SMB 檔案共用
+      [17] SMB Azure 檔案共用
+    - NFS 檔案共用
+      [24] NFS Azure 檔案共用
+    - Azure 檔案儲存體的新功能？
+      [29] Azure 檔案儲存體和 Azure 檔案同步 的新功能
+  - 教學課程
+    - 建立 Windows SMB 檔案共用
+      [39] 教學課程：使用 Azure 入口網站建立SMB Azure 檔案共用，並將其連線至Windows VM
+    - 建立 Linux NFS 檔案共用
+      [52] 教學課程：使用 Azure 入口網站建立 NFSAzure 檔案共用，並將其掛接在 LinuxVM 上
+    - 使用 Azure 檔案同步擴充 Windows 檔案伺服器
+      [64] 教學課程：使用 Azure 檔案同步擴充Windows 檔案伺服器
+  - 建立檔案共用
+    - 快速入門
+      [81] 快速入門：建立和使用 Azure 檔案共用
+    - 建立 SMB 檔案共用
+      [87] 建立 SMB Azure 檔案共用
+    - 建立 NFS 檔案共用
+      [96] 教學課程：使用 Azure 入口網站建立 NFSAzure 檔案共用，並將其掛接在 LinuxVM 上
+  - 掛接檔案共用
+    - 將 SMB 檔案共用掛接到 Windows
+      [108] 在 Windows 上掛接 SMB Azure 檔案共用
+    - 將 SMB 檔案共用掛接到 Linux
+      [119] 在 Linux 上掛接 SMB Azure 檔案共用
+    - 將 NFS 檔案共用裝載至 Linux
+      [128] 在 Linux 上掛接 NFS Azure 檔案共用
+    - 將 SMB 檔案共用掛接至 macOS
+      [136] 在 macOS 上掛接 SMB Azure 檔案共用
+  - 資料傳輸和移轉
+    - 遷移至 SMB Azure 檔案共用
+      [140] 遷移至 SMB Azure 檔案共用
+    - 遷移至 NFS Azure 檔案共用
+      [147] 遷移至 NFS Azure 檔案共用
+    - 在 Azure 檔案共享之間移轉檔案
+      [154] 將檔案從一個SMB Azure檔案共用移轉至另一個
+    - 以僅限雲端的部署為目標
+      - 使用 Azure Storage Mover 移轉至 SMB Azure 檔案共用
+        [156] 使用 Azure Storage Mover 移轉至 SMBAzure 檔案共用
+      - 使用 Robocopy 遷移至 SMB Azure 檔案共用
+        [159] 使用 RoboCopy 遷移至 Azure 檔案共用
+      - 使用資料箱從內部部署 NAS 遷移至 Azure 檔案共用
+        [169] 使用資料箱從網路連接儲存裝置 (NAS) 移轉至 Azure 檔案共用
+    - 以 Azure 檔案同步的混合式部署為目標
+      - 以 Azure 檔案同步取代 Windows 檔案伺服器
+        [182] 使用 Azure 檔案儲存體和 Azure 檔案同步取代或擴充 Windows 檔案伺服器
+      - 使用 Azure 檔案同步從 Linux 遷移至混合式檔案伺服器
+        [186] 使用 Azure 檔案同步從 Linux 遷移至混合式雲端部署
+      - 使用 Azure 檔案同步從內部部署 NAS 遷移至混合式檔案伺服器
+        [202] 使用 Azure 檔案同步從網路連接儲存裝置(NAS) 遷移至混合式雲端部署
+      - 使用資料箱從內部部署 NAS 遷移至混合式檔案伺服器
+        [217] 使用資料箱，可以運用 Azure 檔案同步將檔案從網路連接儲存裝置 (NAS) 移轉到混合式雲端部署
+    - 使用 AzCopy 傳輸檔案
+      - 開始使用 AzCopy
+        [237] 開始使用 AzCopy
+      - 搭配使用 AzCopy 與檔案儲存體
+        [244] 使用 AzCopy 和檔案儲存空間傳輸資料
+      - 對 AzCopy 進行設定、最佳化及疑難排解
+        [264] 在 AzCopy 中使用記錄檔和計畫檔案，尋找錯誤並繼續工作
+  - 安全性和網路服務
+    - 網路
+      - 直接存取的網路功能考量
+        [268] Azure 檔案儲存體的網路功能考量
+      - 設定 Azure 檔案儲存體網路端點
+        [276] 設定 Azure 檔案儲存體網路端點
+      - 在 Windows 上設定點對站 VPN
+        [284] 在 Windows 上設定點對站 (P2S) VPN 以用於 Azure 檔案儲存體
+      - 在 Linux 上設定點對站 VPN
+        [297] 在 Linux 上設定點對站 (P2S) VPN 以用於Azure 檔案儲存體
+      - 設定站對站 VPN
+        [303] 設定站對站 VPN 以用於 Azure 檔案儲存體
+      - 設定防火牆和虛擬網路
+        [312] 設定 Azure 儲存體的防火牆和虛擬網路
+      - 需要安全傳輸
+        [327] 要求安全傳輸以確保安全連線
+      - 設定 Azure 檔案儲存體的 DNS 轉送
+        [331] 設定 Azure 檔案儲存體的 DNS 轉送
+      - 搭配 Azure 檔案儲存體使用 DFS-N
+        [337] 如何使用 DFS 命名空間搭配 Azure 檔案儲存體
+      - 在 Windows SMB 用戶端上停用 SMB 1
+        [346] 如何在 Windows 中偵測、啟用和停用SMBv1、SMBv2 和 SMBv3 (部分機器翻譯)
+      - 在 Linux SMB 用戶端上停用 SMB
+        [358] 在 Linux 用戶端上停用 SMB 1
+    - 加密
+      - 待用加密
+        [362] 待用資料的 Azure 儲存體加密
+      - 使用客戶管理的金鑰加密待用資料
+        [367] 為 Azure 儲存體加密的客戶自控金鑰
+      - 管理儲存體帳戶的加密金鑰
+        - 檢查帳戶的加密金鑰模型
+          [373] 判斷哪個 Azure 儲存體加密金鑰模型正在用於儲存體帳戶
+        - 在 Azure Key Vault 中設定客戶自控金鑰
+          - 在相同的租用戶中設定客戶自控金鑰
+            - 為新帳戶設定客戶自控金鑰
+              [375] 在相同租用戶中針對新儲存體帳戶設定客戶自控金鑰
+            - 為現有帳戶設定客戶自控金鑰
+              [385] 在相同租用戶中為現有儲存體帳戶設定客戶自控金鑰
+          - 在不同的租用戶中設定客戶自控金鑰
+            - 為新帳戶設定客戶自控金鑰
+              [396] 為新的儲存體帳戶設定跨租用戶的客戶自控金鑰
+            - 為現有帳戶設定客戶自控金鑰
+              [411] 為現有的儲存體帳戶設定跨租用戶的客戶自控金鑰
+        - 在受控 HSM 中設定客戶自控金鑰
+          [427] 使用儲存在 Azure Key Vault 受控 HSM中的客戶自控金鑰來設定加密
+      - 啟用基礎結構加密
+        [430] 針對資料的雙重加密啟用基礎結構加密
+      - 管理傳輸層安全性（TLS） 
+        - 對傳入要求強制使用 TLS 最低版本
+          [433] 對儲存體帳戶的要求強制執行最低必要版本的傳輸層安全性 (TLS)
+        - 設定用戶端應用程式的 TLS 版本
+          [445] 針對用戶端應用程式設定傳輸層安全性(TLS)
+    - 授權
+      - 以身分識別為基礎的驗證選項概觀
+        [447] 適用於 SMB 存取的 Azure 檔案儲存體以身分識別為基礎的驗證選項概觀
+      - 啟用內部部署 AD DS 驗證
+        - AD DS 概觀
+          [455] 概觀 - 為 Azure 檔案共用啟用透過 SMB的內部部署 Active Directory DomainServices 驗證
+        - 啟用 AD DS 驗證
+          [459] 為 Azure 檔案共用啟用 AD DS 驗證
+        - 指派共用層級權限
+          [468] 指派共用層級權限
+        - 指派目錄/檔案層級權限
+          [473] 透過 SMB 設定目錄和檔案層級權限
+        - 掛接檔案共用
+          [479] 裝載 Azure 檔案共用
+        - 更新密碼
+          [483] 在 AD DS 中更新儲存體帳戶身分識別的密碼
+      - 搭配多個 AD DS 樹系使用 Azure 檔案儲存體
+        [485] 搭配多個 Active Directory 樹系使用Azure 檔案儲存體
+      - 啟用 Microsoft Entra Domain Services 驗證
+        [496] 在 Azure 檔案儲存體上啟用 MicrosoftEntra Domain Services 驗證
+      - 啟用混合式身分識別的 Microsoft Entra Kerberos 驗證
+        [508] 在 Azure 檔案儲存體上啟用混合式身分識別的 Microsoft Entra Kerberos 驗證
+      - 開啟 Linux 用戶端的 AD Kerberos 驗證 (SMB)
+        [517] 針對存取 Azure 檔案儲存體的 Linux 用戶端啟用透過 SMB 的 Active Directory 驗證
+      - 選擇如何授權檔案資料的存取權
+        [532] 選擇如何在 Azure 入口網站授權存取檔案資料
+      - 使用 OAuth over REST 以 Microsoft Entra ID 授權存取權
+        [537] 使用 Microsoft Entra ID 搭配 Azure 檔案儲存體 OAuth over REST 存取 Azure 檔案共用
+    - 啟用威脅保護
+      [543] 適用於 儲存體 的 Microsoft Defender 概觀
+  - 資料保護
+    - 資料保護概觀
+      [550] Azure 檔案儲存體資料保護概觀
+    - 防止資料意外刪除
+      [554] 防止意外刪除 Azure 檔案共用
+    - 啟用虛刪除
+      [556] 在 Azure 檔案共用上啟用虛刪除
+    - 共用快照集和還原
+      [560] Azure 檔案的共用快照集概觀
+    - 關於 Azure 檔案共用備份
+      [564] 關於 Azure 檔案共享備份
+    - 備份檔案共用
+      - 入口網站
+        [568] 備份 Azure 檔案共用
+      - CLI
+        [580] 使用 Azure CLI 備份 Azure 檔案共用
+      - PowerShell
+        [584] 使用 PowerShell 備份 Azure 檔案共用
+      - REST API
+        [594] 透過 REST API 使用 Azure 備份來備份Azure 檔案共用
+    - 還原檔案共用
+      - 入口網站
+        [609] 還原 Azure 檔案共用
+      - CLI
+        [615] 使用 Azure CLI 來還原 Azure 檔案共用
+      - PowerShell
+        [622] 使用 PowerShell 還原 Azure 檔案
+      - REST API
+        [627] 使用 REST API 來還原 Azure 檔案共用
+    - 管理檔案共用備份
+      - 入口網站
+        [639] 管理 Azure 檔案共享備份
+      - CLI
+        [652] 使用 Azure CLI 管理 Azure 檔案共用備份
+      - PowerShell
+        [663] 使用 PowerShell 管理 Azure 檔案共用備份
+      - REST API
+        [667] 使用 REST API 管理 Azure 檔案共用備份
+  - 可用性和災難復原
+    - 儲存體備援
+      [673] Azure 檔案儲存體資料備援
+    - 災害復原和容錯移轉
+      [682] Azure 檔案儲存體的災害復原和容錯移轉
+    - 大型檔案共用的異地備援
+      [688] Azure 檔案儲存體 大型檔案共用的異地備援
+    - 變更備援設定
+      [692] 變更儲存體帳戶的備援設定
+    - 起始儲存體帳戶容錯移轉
+      [707] 起始儲存體帳戶容錯移轉
+    - 進階檔案共用 ZRS 支援
+      [711] Azure 檔案儲存體 進階檔案共用的區域備援記憶體
+    - 使用進階檔案共用部署 SQL Server 容錯移轉叢集
+      [713] 使用進階檔案共用建立 FCI (Azure VM 上的 SQL Server)
+  - 效能、規模和成本
+    - 了解效能
+      [723] 了解 Azure 檔案儲存體的效能
+    - SMB 效能
+      [730] 改善 SMB Azure 檔案共用效能
+    - NFS 效能
+      [739] 改善 NFS Azure 檔案共用效能
+    - NFS 大型目錄最佳做法
+      [747] 使用 NFS Azure 檔案共用中的大型目錄
+    - 擴充和效能目標
+      [751] Azure 檔案服務延展性和效能目標
+    - 了解計費
+      [762] 了解 Azure 檔案儲存體的計費方式
+    - 使用儲存體保留將成本最佳化
+      [776] 使用 Azure 檔案儲存體 保留將成本優化
+  - 監視計量和記錄
+    - 監視 Azure 檔案儲存體
+      [781] 監視 Azure 檔案儲存體
+    - 分析計量
+      [791] 使用 Azure 監視器分析 Azure 檔案儲存體計量
+    - 建立警示
+      [798] 建立 Azure 檔案儲存體的監視警示
+  - XBOX Video Application Development
+    - 設定連接字串
+      [805] 設定 Azure 儲存體連接字串
+    - .NET
+      [812] 使用 .NET 開發 Azure 檔案服務
+    - Java
+      [828] 使用 Java 開發 Azure 檔案服務
+    - C++
+      [836] 使用 C++ 開發 Azure 檔案服務
+    - Python
+      [845] 使用 Python 開發 Azure 檔案服務
+  - 疑難排解
+    - 針對 Azure 檔案儲存體進行疑難排解
+      [854] 疑難解答 Azure 檔案儲存體
+    - 對 Azure 檔案儲存體連線進行疑難排解 (SMB)
+      [860] 針對SMB) (Azure 檔案儲存體 連線能力和存取問題進行疑難解答
+    - 針對 Azure 檔案儲存體驗證進行疑難排解 (SMB)
+      [878] 針對SMB) (Azure 檔案儲存體 身分識別型驗證和授權問題進行疑難解答
+    - 針對 Azure 檔案儲存體效能進行疑難排解
+      [891] 針對 Azure 檔案儲存體 效能問題進行疑難解答
+    - 針對 Linux 上的一般 SMB 問題進行疑難排解
+      [903] 針對 Linux (SMB) 中的 Azure 檔案儲存體問題進行疑難解答
+    - 針對 Linux 上的一般 NFS 問題進行疑難排解
+      [911] 針對 NFS Azure 檔案共用進行疑難解答
+    - 建立檔案共享節流警示
+      [918] 建立警示 Azure 檔案儲存體 疑難解答
+    - 針對備份檔案共用進行疑難排解
+      [923] 
+    - 針對 ClientOtherErrors 進行疑難排解
+      [930] 
+  - 參考
+    - Azure 檔案儲存體常見問題集
+      [934] 關於 Azure 檔案服務的常見問題集 (FAQ)
+    - 資料存取 API
+      - REST API
+        [943] Azure 檔案儲存體 REST API
+      - .NET SDK
+        [946] Azure Storage client libraries for .NET
+      - Java SDK
+        [949] Azure Storage libraries for Java
+      - Python SDK
+        [961] 適用于 Python 的 Azure 儲存體用戶端程式庫
+      - JavaScript SDK
+        [964] 適用于 JavaScript 的 Azure 儲存體程式庫
+    - 資源管理 API
+      - REST API
+        [967] Azure 儲存體資源提供者 REST API 參考
+      - .NET SDK
+        [968] Microsoft Azure Storage managementclient library for .NET
+      - Java SDK
+        [972] Management
+      - Python SDK
+        [973] 適用于 Python 的 Azure 儲存體用戶端程式庫
+      - JavaScript SDK
+        [976] 適用于 JavaScript 的 Azure 儲存體程式庫
+    - Spring Cloud Azure
+      [979] Spring Cloud Azure 開發人員指南
+    - 合規性供應項目
+      [984] Azure 儲存體合規性供應項目
+    - 使用 Azure 獨立雲端
+      [985] 使用 PowerShell 在 Azure 獨立雲端中管理儲存體
+    - 監視資料參考
+      [990] 
+    - Resource Manager 範本
+      [998] Microsoft.Storage 資源類型
+    - 範例
+  - 資源
+    - Azure 更新
+    - Microsoft Q&A 上的 Azure 檔案儲存體
+    - Stack Overflow 上的 Azure 檔案儲存體
+    - Azure 檔案的定價
+    - Azure 定價計算機
+    - 影片
+      [1002] Azure 檔案儲存體和 Azure 檔案同步影片
+    - Azure 檔案儲存體和 Azure NetApp Files 的比較
+      [1003] Azure 檔案儲存體和 Azure NetApp Files的比較
+    - 將 NFS 存取與 Azure 檔案儲存體、Blob 儲存體和 NetApp Files 進行比較
+      [1009] 比較使用 NFS 對 Azure 檔案儲存體、Blob 儲存體和 Azure NetApp Files 的存取
+    - 客戶案例研究
+      [1011] Azure 檔案儲存體和 Azure 檔案同步客戶案例研究
+    - NuGet 套件 (.NET)
+      - Microsoft.Azure.Storage.Common (版本 11.x)
+      - Azure.Storage.Common (版本 12.x - 預覽)
+      - Microsoft.Azure.Storage.File (版本 11.x)
+      - Azure.Storage.File (版本 12.x - 預覽)
+      - Azure 組態管理員
+      - Azure 儲存體資料移動程式庫
+      - 儲存體資源提供者程式庫
+    - 原始程式碼
+      - .NET
+        - Azure 儲存體用戶端程式庫
+          - 版本 12.x (預覽)
+          - 版本 11.x 和舊版
+        - 資料移動程式庫
+        - 儲存體資源提供者程式庫
+      - Java
+        - Azure 儲存體用戶端程式庫版本 12.x (預覽)
+        - Azure 儲存體用戶端程式庫版本 8.x 和舊版
+      - Node.js
+        - Azure 儲存體用戶端程式庫版本 12.x (預覽)
+        - Azure 儲存體用戶端程式庫版本 10.x
+      - Python
+        - Azure 儲存體用戶端程式庫版本 12.x (預覽)
+        - Azure 儲存體用戶端程式庫版本 2.1
+    - 使用已取代 SDK 的程式碼範例
+      - .NET
+        - 版本 11.x 範例
+          [1013] 使用 .NET 11.x 版用戶端程式庫的 Azure檔案共用程式碼範例
+      - Java 版本 8 範例
+        [1023] 使用 Java 第 8 版用戶端程式庫的 Azure檔案共用程式代碼範例
+      - Python 版本 2 範例
+        [1028] 使用 Python 第 2 版用戶端程式庫的Azure 檔案共用程式代碼範例

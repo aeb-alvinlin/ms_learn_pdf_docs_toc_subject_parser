@@ -1,0 +1,1116 @@
+- ---< azure-sphere-azure-sphere-integrated.pdf >---
+  - Azure 球體檔
+    [1] Azure 球體檔
+  - 新功能
+    [4] Azure 球體的新功能
+  - 概述
+    - 什麼是 Azure 球體
+      [9] 什麼是 Azure 球體？
+    - Azure 球體 (整合式) 與 Azure 球體 (舊版) 
+      [17] Azure 球體 (整合 式) 與 Azure 球體 (舊版)
+    - 術語
+      [20] 術語
+  - 開始使用開發套件
+    - 快速入手
+      - 關於快速入手
+        [27] 快速開始使用 Azure 球體開發人員套件
+      - 1. 安裝 SDK
+        - 安裝 Windows 版 SDK
+          [28] 快速入門：安裝適用于 Windows 的Azure 球體 SDK
+        - 安裝適用於Linux的SDK
+          [31] 快速入門：安裝適用于 Linux 的 Azure 球體 SDK
+      - 2. 宣告您的裝置
+        [37] 快速入門：選擇目錄並宣告您的裝置
+      - 3. 設定網路功能以進行開發
+        [40] 快速入門：設定網路功能並更新裝置操作系統
+      - 4. 訂閱通知
+        [43] 快速入門：訂閱 Azure 球體通知
+    - 教程
+      - 關於教學課程
+        [44] Azure 球體教學課程
+      - 建置高階應用程式
+        [45] 教學課程：建立高階應用程式
+      - 建立雲端部署
+        [49] 教學課程：建立雲端部署
+      - 建置支援即時的應用程式
+        [53] 教學課程：建立支持即時功能的應用程式
+      - 建立合作夥伴應用程式
+        [58] 教學課程：建立及偵錯合作夥伴應用程式
+    - 解決
+      [64] 疑難解答 Azure 球體問題
+  - 線上解決方案
+    - 聯機能力概觀
+      [76] 網路連線概觀
+      - 線上到 Wi-Fi
+        [77] 將 Azure 球體連線到 Wi-Fi
+        - 設定欄位中的 Wi-Fi
+          [81] 設定欄位中的 Wi-Fi
+        - 適用於 Wi-Fi 的 EAP-TLS
+          - 概述
+            [83] 使用 EAP-TLS
+          - 取得及部署憑證
+            [87] 取得及部署 EAP-TLS 網路憑證
+          - 更新憑證
+            [90] 憑證生命週期與續約
+          - 從 CLI 設定 EAP-TLS 網路
+            [95] 從 CLI 設定 EAP-TLS 網路
+          - 從應用程式設定 EAP-TLS 網路
+            [99] 在應用程式中設定 EAP-TLS 網路
+      - 線上到乙太網路
+        [103] 將 Azure 球體連線到乙太網路
+        - 為乙太網路準備 Azure 球體
+          [104] 為乙太網路準備 Azure 球體
+        - 支援的乙太網路卡
+          [110] 支援的乙太網路卡和開發面板
+      - 透過 Proxy 伺服器連線
+        [114] 透過 Proxy 伺服器連接 Azure 球體
+      - 使用網路服務
+        [118] 使用網路服務
+    - 網路需求
+      [124] Azure 球體 OS 網路需求
+    - 服務卷標存取限制
+      [126] 使用服務標籤限制 Azure 球體安全性服務的存取權
+    - 網路疑難解答
+      [128] 疑難排解網路問題
+  - 應用程式開發
+    - 概念
+      - Azure 球體應用程式概觀
+        [133] Azure 球體應用程式概觀
+      - 開發環境
+        [137] 開發環境
+      - 應用程式範本
+        [140] 應用程式範本
+      - 裝置功能
+        [142] 裝置功能與通訊
+      - 應用程式的生命週期
+        [146] 應用程式的生命週期
+      - 可用的記憶體
+        [147] Azure 球體上可用的記憶體
+      - 元件識別碼
+        [148] 什麼是元件識別碼？
+      - 終端模擬器
+        [149] Azure 球體開發中的終端模擬器
+    - 操作指南
+      - 檢視舊版) 租使用者資訊 (裝置和 Azure 球體
+        [150] 在 Azure 球體總管中檢視裝置和 Azure 球(舊版) 租使用者資訊
+      - 開發高階應用程式
+        - 建立高階應用程式
+          [151] 建立高階應用程式
+        - 管理目標硬體相依性
+          [154] 使用硬體定義
+        - 使用介面設備
+          - 概述
+            [157] 在高階應用程式中使用周邊設備
+          - 使用 ADC
+            [159] 在高階應用程式中使用 ADC
+          - 使用 GPIO
+            [164] 在高階應用程式中使用 GPIO
+          - 使用 I2C
+            [168] 在高階應用程式中使用 I2C
+          - 使用 PWM
+            [171] 在高階應用程式中使用 PWM
+          - 使用 SPI
+            [174] 在高階應用程式中使用 SPI
+          - 使用UART
+            [177] 在高階應用程式中使用 UART
+        - 線上至 Web 服務
+          [180] 線上至 Web 服務
+        - 使用 wolfSSL 進行 TLS 連線
+          [188] 使用 wolfSSL 進行 TLS 連線
+        - 管理憑證
+          [194] 管理高階應用程式中的憑證
+        - 瞭解記憶體使用
+          [198] 在高階應用程式中使用記憶體
+        - 延遲裝置更新
+          [205] 延遲裝置更新
+        - 管理時間並使用即時時鐘
+          [208] 在高階應用程式中管理系統時間和 RTC
+        - 使用裝置儲存空間
+          [212] 使用 Azure 球體上的儲存空間
+        - 與支援即時功能的應用程式通訊
+          [216] 與支援即時功能的應用程式通訊
+        - 管理裝置電源
+          - 管理 Power Down 狀態
+            [218] 管理 Azure 球體裝置的 Power Down 狀態
+          - 設定電源配置檔
+            [221] 設定 Azure 球體裝置的電源設定檔
+        - 執行服務探索
+          [223] 執行服務探索
+        - 適用於高階應用程式的最佳做法
+          - 初始化與終止
+            [226] 初始化與終止
+          - 定期工作
+            [227] 定期工作
+          - 異步事件、對話和併行數目
+            [228] 非同步事件和並行數目
+          - 驗證碼以提供安全性
+            [229] 編碼以取得身分安全性
+          - 天限時間器
+            [232] 使用系統計時器做為制定時器
+          - 控點和記錄錯誤
+            [234] 錯誤處理和記錄
+          - 結束代碼
+            [235] 結束代碼
+          - 管理 RAM 使用量
+            [238] 管理高階應用程式中 RAM 使用量的最佳做法
+      - 開發支援即時的應用程式
+        - 建立支援即時的應用程式
+          [240] 建立支援即時的應用程式
+        - 移轉現有的應用程式
+          [242] 移轉現有的支援即時應用程式
+        - 在支援即時的應用程式中使用介面設備
+          - 概述
+            [244] 在支援即時的應用程式中使用周邊設備
+          - 在 RTApps 中使用 ADC
+            [246] 在支援即時的應用程式中使用 ADC
+          - 在 RTApps 中使用 GPIO
+            [248] 在支援即時的應用程式中使用 GPIO
+          - 在 RTApps 中使用 I2C
+            [250] 在支援 I2C 的即時應用程式中使用
+          - 在 RTApps 中使用 I2S
+            [252] 在支援 I2S 的即時應用程式中使用
+          - 在 RTApps 中使用一般用途的時程器
+            [254] 在支援即時的應用程式中使用 GPT
+          - 在 RTApps 中使用 PWM
+            [255] 在支援即時的應用程式中使用 PWM
+          - 在 RTApps 中使用 SPI
+            [257] 在支援 SPI 的即時應用程式中使用
+          - 在 RTApps 中使用 UART
+            [259] 在支援 UART 的即時應用程式中使用UART
+          - 在 RTApps 中使用外部中斷
+            [261] 在支援即時的應用程式中使用外部中斷
+          - 在 RTApps 中使用容性時程表
+            [265] 在 RTApp 中使用方塊計時器
+        - 管理記憶體和延遲考慮
+          [266] 管理記憶體和延遲考慮
+        - 使用高階應用程式進行通訊
+          [270] 與高階應用程式通訊
+        - 解決
+          [273] 針對支援即時功能的應用程式進行疑難排解
+      - 開發合作夥伴應用程式
+        [275] 建立合作夥伴應用程式
+      - 建立
+        - 應用程式指令清單
+          [280] 應用程式資訊清單
+        - 使用 CMake 設定組建
+          [288] 使用 CMake 設定組建
+        - 傳遞自變數
+          [298] 將引數傳遞給應用程式
+        - 建置高階應用程式
+          - 目標 API 集、sysroots、ARV
+            [299] 應用程式運行時間版本、sysroots 和 BetaAPI
+          - 建置高階應用程式
+            [302] 建置高階應用程式
+        - 建置支援即時的應用程式
+          [305] 建置支援即時的應用程式
+        - 建立合作夥伴應用程式
+          [309] 建置及部署合作夥伴應用程式
+        - 在容器中建置
+          - 使用容器來建置應用程式
+            [311] 使用容器建立 Azure 球體應用程式
+          - 使用 Visual Studio Code 在容器中建立和偵錯
+            [320] 使用容器來建置及偵錯Visual StudioCode
+          - 使用 Visual Studio Code 在 GitHub 程式代碼區中建置和偵錯
+            [323] 使用 GitHub 程式碼區來建置和偵錯
+          - 在持續整合中使用容器
+            [327] 將持續整合新增至容器組建
+        - 使用 Visual Studio Code 與 SSH 一起建置
+          [332] 在遠端主機上搭配安全殼層 (SSH) 使用Visual Studio Code
+      - 在本機偵錯和測試
+        - 偵錯高階應用程式
+          [336] 偵錯高階應用程式
+        - 偵錯支援即時的應用程式
+          [337] 偵錯支援即時的應用程式
+        - 偵錯合作夥伴應用程式
+          [339] 偵錯合作夥伴應用程式
+        - 測試雲端部署
+          [340] 建立雲端部署以進行測試
+        - 用於測試的側載
+          [342] 側載應用程式映射套件以進行測試
+        - 拿掉應用程式
+          [345] 移除應用程式
+      - 搭配 Azure 球體使用 Azure IoT
+        [346] 搭配 Azure 球體使用 Azure IoT
+        - 設定 IoT 中樞
+          [348] 設定 Azure 球體的Azure IoT 中樞
+          - 使用裝置布建服務設定 IoT 中樞
+            [356] 使用裝置布建服務設定 Azure 球AzureIoT 中樞
+          - 設定 IoT Edge
+            [363] 設定 Azure 球IoT Edge的 Azure IoT Edge
+        - 設定IoT中心
+          [373] 設定 Azure IoT 中心以搭配 Azure 球體使用
+      - 卸載 SDK
+        [376] 卸載 Azure 球體 SDK
+  - 部署和作業
+    - 概念
+      - 關於 Azure 球體資源的 Azure RBAC
+        - Azure 球體 ARM 資源概觀 Azure RBAC
+          [377] Azure 球體 ARM 資源概觀 Azure RBAC
+        - Azure 球體預先建置的 RBAC 角色和 Azure 球體資源階層
+          [378] Azure 球體預先建置的 RBAC 角色和資源階層
+        - Azure RBAC 最佳做法和 Azure RBAC 一般內建角色
+          [380] Azure RBAC 最佳做法和 Azure RBAC 一般內建角色
+        - 在整合至 Azure 球體目錄期間處理 Azure 租用戶用戶帳戶
+          [382] 在整合至 Azure 球體 (整合) 目錄期間，管理 Azure 球體 (舊版) 租使用者用戶帳戶
+        - 適用於多位商務使用者的 RBAC 設定範例
+          [383] 適用於多位商務使用者的 RBAC 設定範例
+      - 部署基本概念
+        [385] 部署基本概念
+    - 操作指南
+      - 管理目錄
+        - 建立目錄
+          [388] 建立目錄
+        - 將 Azure 球 (舊版) 資產整合至 Azure 球體 (整合) 
+          [390] 將 Azure 球體 (舊版) 租使用者整合至Azure 球體 (整合式) 型目錄
+        - 清單目錄
+          [392] 清單目錄
+        - 顯示目錄詳細數據
+          [393] 顯示目錄詳細數據
+        - 刪除型錄
+          [394] 刪除型錄
+      - 管理產品
+        - 建立產品
+          [395] 建立產品
+        - 更新產品
+          [397] 更新產品
+        - 列出產品
+          [399] 檢視產品清單
+        - 顯示產品詳細數據
+          [400] 檢視產品詳細數據
+        - 刪除產品
+          [401] 刪除產品
+      - 管理裝置群組
+        - 建立裝置群組
+          [402] 建立裝置群組
+        - [更新裝置] 群組
+          [404] 更新裝置群組
+        - 列出裝置群組
+          [406] 列出裝置群組
+        - 顯示裝置群組詳細數據
+          [408] 檢視裝置群組的詳細數據
+        - 刪除裝置群組
+          [409] 刪除裝置群組
+      - 管理裝置
+        - 宣告裝置
+          [410] 宣告裝置
+        - 宣告大量裝置
+          [412] 宣告大量裝置
+        - 取消指派裝置
+          [414] 取消指派裝置
+        - 指派裝置
+          [416] 指派裝置
+        - 清單裝置
+          [418] 清單裝置
+        - 顯示裝置詳細數據
+          [419] 顯示裝置詳細數據
+        - 顯示計數裝置
+          [420] 顯示裝置計數
+      - 管理影像
+        - 新增/上傳影像
+          [421] 新增影像
+        - 下載影像
+          [422] 下載影像
+        - 清單影像
+          [423] 清單影像
+        - 清單目標影像
+          [424] 列出目標影像
+        - 顯示影像
+          [425] 顯示影像
+      - 管理憑證
+        - 清單憑證
+          [426] 清單憑證
+        - 下載憑證
+          [428] 下載憑證
+        - 下載鏈狀憑證
+          [429] 下載鏈狀憑證
+        - 下載憑證的憑證
+          [431] 下載憑證的憑證
+      - 管理部署
+        - 建立部署
+          [433] 建立部署
+        - 複製部署
+          [434] 複製部署
+        - 清單部署
+          [435] 清單部署
+        - 顯示部署
+          [436] 顯示部署
+      - 設定雲端服務的目錄 CA 憑證
+        [437] 設定雲端服務的目錄 CA 憑證
+      - 復原系統軟體
+        [440] 復原系統軟體
+      - 收集並報告診斷數據
+        - 診斷數據類型概觀
+          [442] 診斷資料類型概觀
+        - 收集及解譯錯誤數據
+          [443] 收集及解譯錯誤資料
+        - 設定損毀傾印
+          [449] 設定損毀傾印
+      - 監控 Azure 球體資源
+        [452] 概觀- 監控 Azure 球體資源
+        - 監控 Azure 球體數據參照
+          [456] 監控 Azure 球體資料參照
+        - 使用入口網站監控 Azure 球體資源
+          [460] 使用入口網站監控 Azure 球體資源
+      - 與 Azure Iot Hub 和裝置佈建服務整合 (DPS) 
+        [462] 與 Azure IoT 中樞 與裝置布建服務整合(DPS)
+      - 疑難解答 - 部署
+        [464] 疑難解答 - 部署和作業
+  - 裝置設計與製造
+    - 概述
+      [466] 硬體與製造概觀
+    - MT3620 資訊
+      - MT3620 支持狀態
+        [467] MT3620 支援狀態
+      - MT3620 RDB 使用者指南
+        [485] MT3620 參考開發面板 (RDB) 使用者指南
+      - MT3620 RDB v1.6 使用者指南
+        [494] MT3620 參考開發面板 (RDB) 使用者指南- v1.6 及更舊版本
+      - MT3620 參考面板設計
+        [505] MT3620 參考面板設計
+      - MT3620 硬體筆記
+        [507] MT3620 硬體筆記
+      - 硬體設計驗證
+        [514] 硬體設計驗證
+      - MCU 程式設計與偵錯介面
+        [520] MCU 程式設計與偵錯介面
+    - RF 工具
+      [531] RF 工具
+    - 監護人模組
+      [545] 監護人模組
+    - 製造指南
+      [549] 連線裝置的製造指南
+      - 製造準備
+        [550] 製造流程準備
+      - 工廠樓層工作
+        [557] 工廠樓層工作
+      - 雲端設定工作
+        [567] 雲端設定工作
+    - 範例的硬體抽象檔案
+      [570] 硬體定義
+  - 應用程式附註
+    - 關於應用程式筆記
+      [576] 應用程式附注
+    - 生產就緒的應用程式
+      - 開發生產就緒應用程式的建議
+        [577] 開發生產就緒應用程式的建議
+      - 撰寫基礎
+        [580] 撰寫基礎
+      - 高階核心應用程式設計建議
+        [583] 高階核心應用程式設計建議
+      - 即時核心應用程式設計建議
+        [587] 即時核心應用程式設計建議
+      - 解決方案設計考慮
+        [589] 解決方案設計考慮
+    - 下拉 OTA 更新
+      [590] 含 Azure 球體的下層 OTA 更新
+    - 偵錯應用程式開發的輸出
+      [593] 取得 Azure 球體裝置偵錯輸出
+    - Wi-Fi 設定選項
+      [597] Azure 球體 Wi-Fi 設定
+    - 遠端疑難解答的最佳做法
+      [601] Azure 球體裝置遠端疑難排解的最佳做法
+  - 參考
+    - Azure CLI 擴充功能命令
+      - 概述
+        [605] Azure CLI 的 Azure 球體擴充功能概觀
+      - 設定預設參數
+        [609] 設定預設參數
+      - az 球形 ca 憑證
+        [611] az 球狀 ca-certificate
+      - az 球形目錄
+        [615] az 球形目錄
+      - az 球部署
+        [619] az 球部署
+      - az 球形裝置命令
+        - az 球形裝置
+          [622] az 球形裝置
+        - az 球形裝置應用程式
+          [638] az 球形裝置應用程式
+        - az 球形裝置功能
+          [645] az 球形裝置功能
+        - az 球形裝置憑證
+          [650] az 球形裝置憑證
+        - az 球形裝置影像
+          [656] az 球形裝置影像
+        - az 球形裝置製造狀態
+          [659] az 球形裝置製造狀態
+        - az 球形裝置網路
+          [662] az 球形裝置網路
+        - az 球形裝置網路 Proxy
+          [669] az 球形裝置網路 Proxy
+        - az 球形裝置側載
+          [675] az 球形裝置側載
+        - az 球形裝置網路 Proxy
+          [680] az 球形裝置網路 Proxy
+      - az 球形裝置群組
+        [686] az 球體裝置群組
+      - az 球形取得支持數據
+        [693] az 球形取得支持數據
+      - az 球形硬體定義
+        [695] az 球形硬體定義
+      - az 球形圖像
+        [697] az 球形圖像
+      - az 球形顯示 sdk 版本
+        [700] az 球形顯示 sdk-version
+      - az 球形產品
+        [701] az 球形產品
+    - 基本 API
+      - 概述
+        [706] Azure 球體基礎 API 概觀
+      - 多國元圖
+        [709] I/O 控制項 ()
+      - IoT C SDK 文件庫
+        [712] Azure IoT C SDK 文件庫
+        - IoTHubDeviceClient_LL_CreateWithAzureSphereDeviceAuthProvisioning
+          [714] IoTHubDeviceClient_LL_CreateWithAzureSphereDeviceAuthProvisioning
+        - IoTHubDeviceClient_LL_CreateWithAzureSphereFromDeviceAuth
+          [715] IoTHubDeviceClient_LL_CreateWithAzureSphereFromDeviceAuth
+        - AzureIoT_OverrideAzureSphereAuthDPS
+          [716] AzureIoT_OverrideAzureSphereAuthDPS
+        - AzureIoT_OverrideAzureSphereAuthIoTHub
+          [717] AzureIoT_OverrideAzureSphereAuthIoTHub
+      - TLS 公用程式文檔庫
+        [718] TLS 公用程式文件庫
+    - 應用程式庫 API
+      - 概述
+        [719] Azure 球體應用程式庫
+      - adc.h
+        [720] Applibs adc.h
+        - 功能
+          - ADC_GetSampleBitCount
+            [722] ADC_GetSampleBitCount函數
+          - ADC_Open
+            [723] ADC_Open函數
+          - ADC_Poll
+            [724] ADC_Poll函數
+          - ADC_SetReferenceVoltage
+            [725] ADC_SetReferenceVoltage函數
+        - Typedefs
+          - ADC_ChannelId
+            [726] ADC_ChannelId Typedef
+          - ADC_ControllerId
+            [727] ADC_ControllerId Typedef
+      - application.h
+        [728] Applibs 應用程式。h
+        - 功能
+          - Application_Connect
+            [729] Application_Connect函數
+          - Application_IsDeviceAuthReady
+            [730] Application_IsDeviceAuthReady 函數
+      - applications.h
+        [731] Applibs 應用程式。h
+        - 功能
+          - Applications_GetPeakUserModeMemoryUsageInKB
+            [732] Applications_GetPeakUserModeMemoryUsageInKB函數
+          - Applications_GetTotalMemoryUsageInKB
+            [733] Applications_GetTotalMemoryUsageInKB 函數
+          - Applications_GetUserModeMemoryUsageInKB
+            [734] Applications_GetUserModeMemoryUsageInKB函數
+          - Applications_GetOSVersion
+            [735] Applications_GetOsVersion 函數
+      - certstore.h
+        [736] Applibs certstore.h
+        - 功能
+          - CertStore_DeleteCertificate
+            [738] CertStore_DeleteCertificate 函數
+          - CertStore_GetAvailableSpace
+            [740] CertStore_GetAvailableSpace函數
+          - CertStore_GetCertificateCount
+            [741] CertStore_GetCertificateCount 函數
+          - CertStore_GetCertificateIdentifierAt
+            [742] CertStore_GetCertificateIdentifierAt 函數
+          - CertStore_GetCertificateIssuerName
+            [744] CertStore_GetCertificateIssuerName函數
+          - CertStore_GetCertificateNotAfter
+            [746] CertStore_GetCertificateNotAfter 函數
+          - CertStore_GetCertificateNotBefore
+            [748] CertStore_GetCertificateNotBefore函數
+          - CertStore_GetCertificateSubjectName
+            [750] CertStore_GetCertificateSubjectName函數
+          - CertStore_InstallClientCertificate
+            [752] CertStore_InstallClientCertificate 函數
+          - CertStore_InstallRootCACertificate
+            [754] CertStore_InstallRootCACertificate函數
+          - CertStore_MoveCertificate
+            [756] CertStore_MoveCertificate函數
+        - 結構
+          - CertStore_Identifier
+            [758] CertStore_Identifier結構
+          - CertStore_IssuerName
+            [759] CertStore_IssuerName指示
+          - CertStore_SubjectName
+            [760] CertStore_SubjectName指示
+      - deviceauth.h
+        [761] Deviceauth.h
+        - 功能
+          - DeviceAuth_GetCertificatePath
+            [762] DeviceAuth_GetCertificatePath函數
+      - deviceauth_curl.h
+        [763] Deviceauth_curl.h
+        - 枚舉
+          - DeviceAuthSslResult
+            [764] DeviceAuthSslResult Enum
+        - 功能
+          - DeviceAuth_CurlSslFunc
+            [765] DeviceAuth_CurlSslFunc函數
+          - DeviceAuth_SslCtxFunc
+            [766] DeviceAuth_SslCtxFunc函數
+      - eventloop.h
+        [767] Applibs eventloop.h
+        - 功能
+          - EventLoop_Close
+            [769] EventLoop_Close函數
+          - EventLoop_Create
+            [770] EventLoop_Create函數
+          - EventLoop_GetWaitDescriptor
+            [771] EventLoop_GetWaitDescriptor函數
+          - EventLoop_RegisterIo
+            [772] EventLoop_RegisterIo函數
+          - EventLoop_Run
+            [773] EventLoop_Run函數
+          - EventLoop_Stop
+            [775] EventLoop_Stop函數
+          - EventLoop_UnregisterIo
+            [776] EventLoop_UnregisterIo函數
+          - EventLoopIoCallback
+            [777] EventLoopIoCallback 函數
+        - 枚舉
+          - EventLoop_IoEvents
+            [778] EventLoop_IoEvents Enum
+          - EventLoop_Run_Result
+            [779] EventLoop_Run_Result Enum
+        - 結構
+          - EventLoop
+            [780] EventLoop Struct
+          - EventRegistration
+            [781] EventRegistration Struct
+      - gpio.h
+        [782] Applibs gpio.h
+        - 功能
+          - GPIO_GetValue
+            [785] GPIO_GetValue函數
+          - GPIO_OpenAsInput
+            [786] GPIO_OpenAsInput函數
+          - GPIO_OpenAsOutput
+            [788] GPIO_OpenAsOutput函數
+          - GPIO_SetValue
+            [790] GPIO_SetValue函數
+        - 結構
+          - gpiopin_request
+            [791] gpiopin_request結構
+        - 枚舉
+          - GPIO_OutputMode
+            [793] GPIO_OutputMode Enum
+          - GPIO_Value
+            [795] GPIO_Value Enum
+          - pin_config_param_type
+            [796] pin_config_param_type Enum
+        - 多國元圖
+          - GPIO_SET_PIN_CONFIG_IOCTL
+            [797] GPIO_SET_PIN_CONFIG_IOCTL I/O 控制項
+        - Typedefs
+          - GPIO_Id
+            [798] GPIO_Id Typedef
+          - GPIO_OutputMode_Type
+            [799] GPIO_OutputMode_Type Typedef
+          - GPIO_Value_Type
+            [800] GPIO_Value_Type Typedef
+      - i2c.h
+        [801] Applibs i2c.h
+        - 功能
+          - I2CMaster_Open
+            [803] I2CMaster_Open函數
+          - I2CMaster_Read
+            [804] I2CMaster_Read函數
+          - I2CMaster_SetBusSpeed
+            [806] I2CMaster_SetBusSpeed函數
+          - I2CMaster_SetDefaultTargetAddress
+            [807] I2CMaster_SetDefaultTargetAddress函數
+          - I2CMaster_SetTimeout
+            [808] I2CMaster_SetTimeout函數
+          - I2CMaster_Write
+            [809] I2CMaster_Write函數
+          - I2CMaster_WriteThenRead
+            [811] I2CMaster_WriteThenRead函數
+        - Typedefs
+          - I2C_DeviceAddress
+            [813] I2C_DeviceAddress Typedef
+          - I2C_InterfaceId
+            [814] I2C_InterfaceId Typedef
+      - log.h
+        [815] Applibs log.h
+        - 功能
+          - Log_Debug
+            [816] Log_Debug函數
+          - Log_DebugVarArgs
+            [817] Log_DebugVarArgs函數
+      - networking.h
+        [818] Applibs 網路功能。h
+        - 功能
+          - Networking_DhcpServer_Start
+            [822] Networking_DhcpServer_Start函數
+          - Networking_DhcpServerConfig_Destroy
+            [824] Networking_DhcpServerConfig_Destroy函數
+          - Networking_DhcpServerConfig_Init
+            [825] Networking_DhcpServerConfig_Init函數
+          - Networking_DhcpServerConfig_SetLease
+            [826] Networking_DhcpServerConfig_SetLease函數
+          - Networking_DhcpServerConfig_SetNtpServerAddresses
+            [828] Networking_DhcpServerConfig_SetNtpServerAddresses函數
+          - Networking_GetHardwareAddress
+            [830] Networking_GetHardwareAddress函數
+          - Networking_GetInterfaceConnectionStatus
+            [831] Networking_GetInterfaceConnectionStatus函數
+          - Networking_GetInterfaceCount
+            [833] Networking_GetInterfaceCount函數
+          - Networking_GetInterfaces
+            [834] Networking_GetInterfaces函數
+          - Networking_IpConfig_Apply
+            [836] Networking_IpConfig_Apply函數
+          - Networking_IpConfig_Destroy
+            [838] Networking_IpConfig_Destroy函數
+          - Networking_IpConfig_EnableAutomaticDns
+            [839] Networking_IpConfig_EnableAutomaticDns函數
+          - Networking_IpConfig_EnableCustomDns
+            [840] Networking_IpConfig_EnableCustomDns函數
+          - Networking_IpConfig_EnableDynamicIp
+            [842] Networking_IpConfig_EnableDynamicIp函數
+          - Networking_IpConfig_EnableStaticIp
+            [843] Networking_IpConfig_EnableStaticIp函數
+          - Networking_IpConfig_Init
+            [844] Networking_IpConfig_Init函數
+          - Networking_IpConfig_ReleaseIp
+            [845] Networking_IpConfig_ReleaseIp函數
+          - Networking_IpConfig_RenewIp
+            [847] Networking_IpConfig_RenewIp函數
+          - Networking_IsNetworkingReady
+            [849] Networking_IsNetworkingReady函數
+          - Networking_Proxy_Create
+            [850] Networking_Proxy_Create函數
+          - Networking_Proxy_Destroy
+            [851] Networking_Proxy_Destroy函數
+          - Networking_Proxy_Apply
+            [852] Networking_Proxy_Apply函數
+          - Networking_Proxy_Get
+            [854] Networking_Proxy_Get
+          - Networking_Proxy_SetProxyOptions
+            [856] Networking_Proxy_SetProxyOptions函數
+          - Networking_Proxy_SetProxyAddress
+            [858] Networking_Proxy_SetProxyAddress函數
+          - Networking_Proxy_SetAnonymousAuthentication
+            [860] Networking_Proxy_SetAnonymousAuthentication函數
+          - Networking_Proxy_SetBasicAuthentication
+            [862] Networking_Proxy_SetBasicAuthentication函數
+          - Networking_Proxy_SetProxyNoProxyAddresses
+            [864] Networking_Proxy_SetProxyNoProxyAddresses函數
+          - Networking_Proxy_GetProxyOptions
+            [866] Networking_Proxy_GetProxyOptions函數
+          - Networking_Proxy_GetProxyAddress
+            [868] Networking_Proxy_GetProxyAddress函數
+          - Networking_Proxy_GetProxyPort
+            [870] Networking_Proxy_GetProxyPort函數
+          - Networking_Proxy_GetProxyType
+            [872] Networking_Proxy_GetProxyType函數
+          - Networking_Proxy_GetProxyUsername
+            [874] Networking_Proxy_GetProxyUsername函數
+          - Networking_Proxy_GetProxyPassword
+            [876] Networking_Proxy_GetProxyPassword函數
+          - Networking_Proxy_GetAuthType
+            [878] Networking_Proxy_GetAuthType函數
+          - Networking_Proxy_GetNoProxyAddresses
+            [880] Networking_Proxy_GetNoProxyAddresses函數
+          - Networking_Proxy_GetProxyStatus
+            [882] Networking_Proxy_GetProxyStatus函數
+          - Networking_SetHardwareAddress
+            [884] Networking_SetHardwareAddress函數
+          - Networking_SetInterfaceState
+            [886] Networking_SetInterfaceState函數
+          - Networking_SntpServer_Start
+            [888] Networking_SntpServer_Start函數
+          - Networking_SntpServerConfig_Destroy
+            [890] Networking_SntpServerConfig_Destroy函數
+          - Networking_SntpServerConfig_Init
+            [891] Networking_SntpServerConfig_Init函數
+          - Networking_TimeSync_EnableAutomaticNtp
+            [892] Networking_TimeSync_EnableAutomaticNtp
+          - Networking_TimeSync_EnableCustomNtp
+            [893] Networking_TimeSync_EnableCustomNTP 函數
+          - Networking_TimeSync_EnableDefaultNtp
+            [895] Networking_TimeSync_EnableDefaultNtp函數
+          - Networking_TimeSync_GetEnabled
+            [896] Networking_TimeSync_GetEnabled函數
+          - Networking_TimeSync_GetLastNtpSyncInfo
+            [897] Networking_TimeSync_GetLastNtpSyncInfo函數
+          - Networking_TimeSync_SetEnabled
+            [899] Networking_TimeSync_SetEnabled函數
+        - 結構
+          - Networking_DhcpServerConfig
+            [900] Networking_DhcpServerConfig結構]
+          - Networking_DhcpServerConfiguration
+            [901] Networking_DhcpServerConfiguration結構
+          - Networking_IpConfig
+            [903] Networking_IpConfig結構]
+          - Networking_NetworkInterface
+            [904] Networking_NetworkInterface結構
+          - Networking_ProxyConfig
+            [906] Networking_ProxyConfig Struct
+          - Networking_SntpServerConfig
+            [907] Networking_SntpServerConfig結構
+          - Networking_StaticIpConfiguration
+            [908] Networking_StaticIpConfiguration Struct
+        - 枚舉
+          - Networking_InterfaceConnectionStatus
+            [909] Networking_InterfaceConnectionStatusEnum
+          - Networking_InterfaceMedium
+            [911] Networking_InterfaceMedium Enum
+          - Networking_IpType
+            [912] Networking_IpType Enum
+          - Networking_NtpOption
+            [913] Networking_NtpOption Enum
+          - Networking_ProxyOptions
+            [914] Networking_ProxyOptions Enum
+          - Networking_ProxyType
+            [915] Networking_ProxyType Enum
+          - Networking_ProxyAuthType
+            [916] Networking_ProxyAuthType Enum
+          - Networking_ProxyStatus
+            [917] Networking_ProxyStatus Enum
+        - Typedefs
+          - Networking_InterfaceMedium_Type
+            [918] Networking_InterfaceMedium_TypeTypedef
+          - Networking_IpType_Type
+            [919] Networking_IpType_Type Typedef
+          - Networking_ProxyOptions
+            [920] Networking_ProxyOptions Typedef
+          - Networking_ProxyType
+            [921] Networking_ProxyType Typedef
+          - Networking_ProxyAuthType
+            [922] Networking_ProxyAuthType Typedef
+          - Networking_ProxyStatus
+            [923] Networking_ProxyStatus Typedef
+      - networking_curl.h
+        [924] Applibs networking_curl.h
+        - 功能
+          - Networking_Curl_SetDefaultProxy
+            [925] Networking_Curl_SetDefaultProxy函數
+      - 電源管理。h
+        [927] Applibs 電源管理。h
+        - 功能
+          - PowerManagement_ForceSystemPowerDown
+            [928] PowerManagement_ForceSystemPowerDown函數
+          - PowerManagement_ForceSystemReboot
+            [929] PowerManagement_ForceSystemReboot函數
+          - PowerManagement_SetSystemPowerProfile
+            [930] PowerManagement_SetSystemPowerProfile函數
+      - pwm.h
+        [932] Applibs pwm.h
+        - 功能
+          - PWM_Apply
+            [934] PWM_Apply函數
+          - PWM_Open
+            [935] PWM_Open函數
+        - 枚舉
+          - PWM_Polarity
+            [936] PWM_Polarity Enum
+        - 結構
+          - PwmState
+            [937] PwmState Struct
+        - Typedefs
+          - PWM_ChannelId
+            [938] PWM_ChannelId Typedef
+          - PWM_ControllerId
+            [939] PWM_ControllerId Typedef
+      - rtc.h
+        [940] Applibs rtc.h
+        - 功能
+          - clock_systohc
+            [941] clock_systohc函數
+      - spi.h
+        [942] Applibs spi.h
+        - 枚舉
+          - SPI_BitOrder
+            [944] SPI_BitOrder Enum
+          - SPI_ChipSelectPolarity
+            [945] SPI_ChipSelectPolarity Enum
+          - SPI_Mode
+            [946] SPI_Mode Enum
+          - SPI_TransferFlags
+            [947] SPI_TransferFlags Enum
+        - 功能
+          - SPIMaster_InitConfig
+            [948] SPIMaster_InitConfig函數
+          - SPIMaster_InitTransfers
+            [949] SPIMaster_InitTransfers函數
+          - SPIMaster_Open
+            [950] SPIMaster_Open函數
+          - SPIMaster_SetBitOrder
+            [952] SPIMaster_SetBitOrder函數
+          - SPIMaster_SetBusSpeed
+            [953] SPIMaster_SetBusSpeed函數
+          - SPIMaster_SetMode
+            [954] SPIMaster_SetMode函數
+          - SPIMaster_TransferSequential
+            [955] SPIMaster_TransferSequential函數
+          - SPIMaster_WriteThenRead
+            [956] SPIMaster_WriteThenRead函數
+        - 結構
+          - SPIMaster_Config
+            [957] SPIMaster_Config結構]
+          - SPIMaster_Transfer
+            [958] SPIMaster_Transfer Struct
+        - Typedefs
+          - SPI_ChipSelectId
+            [960] SPI_ChipSelectId Typedef
+          - SPI_InterfaceId
+            [961] SPI_InterfaceId Typedef
+      - storage.h
+        [962] Applibs 儲存空間。h
+        - 功能
+          - Storage_DeleteMutableFile
+            [963] Storage_DeleteMutableFile函數
+          - Storage_GetAbsolutePathInImagePackage
+            [964] Storage_GetAbsolutePathInImagePackage函數
+          - Storage_OpenFileInImagePackage
+            [966] Storage_OpenFileInImagePackage函數
+          - Storage_OpenMutableFile
+            [967] Storage_OpenMutableFile函數
+      - sysevent.h
+        [968] Applibs sysevent.h
+        - 功能
+          - SysEvent_DeferEvent
+            [970] SysEvent_DeferEvent函數
+          - SysEvent_EventsCallback
+            [971] SysEvent_EventsCallback函數
+          - SysEvent_Info_GetUpdateData
+            [972] SysEvent_Info_GetUpdateData函數
+          - SysEvent_RegisterForEventNotifications
+            [973] SysEvent_RegisterForEventNotifications函數
+          - SysEvent_ResumeEvent
+            [975] SysEvent_ResumeEvent函數
+          - SysEvent_UnregisterForEventNotifications
+            [976] SysEvent_UnregisterForEventNotifications函數
+        - 枚舉
+          - SysEvent_Events
+            [977] SysEvent_Events Enum
+          - SysEvent_Status
+            [979] SysEvent_Status Enum
+          - SysEvent_UpdateType
+            [980] SysEvent_UpdateType Enum
+        - 結構
+          - SysEvent_Info
+            [981] SysEvent_Info結構]
+          - SysEvent_Info_UpdateData
+            [982] SysEvent_Info_UpdateData Struct
+      - uart.h
+        [983] Applibs uart.h
+        - 功能
+          - UART_InitConfig
+            [985] UART_InitConfig函數
+          - UART_Open
+            [986] UART_Open函數
+        - 結構
+          - UART_Config
+            [988] UART_Config結構]
+        - 枚舉
+          - UART_BlockingMode
+            [990] UART_BlockingMode Enum
+          - UART_DataBits
+            [991] UART_DataBits Enum
+          - UART_FlowControl
+            [992] UART_FlowControl Enum
+          - UART_Parity
+            [993] UART_Parity Enum
+          - UART_StopBits
+            [994] UART_StopBits Enum
+        - Typedefs
+          - UART_BaudRate_Type
+            [995] UART_BaudRate_Type Typedef
+          - UART_BlockingMode_Type
+            [996] UART_BlockingMode_Type Typedef
+          - UART_DataBits_Type
+            [997] UART_DataBits_Type Typedef
+          - UART_FlowControl_Type
+            [998] UART_FlowControl_Type Typedef
+          - UART_Id
+            [999] UART_Id Typedef
+          - UART_Parity_Type
+            [1000] UART_Parity_Type Typedef
+          - UART_StopBits_Type
+            [1001] UART_StopBits_Type Typedef
+      - wificonfig.h
+        [1002] Applibs wificonfig.h
+        - 功能
+          - WifiConfig_AddNetwork
+            [1005] WifiConfig_AddNetwork函數
+          - WifiConfig_AddDuplicateNetwork
+            [1007] WifiConfig_AddDuplicateNetwork函數
+          - WifiConfig_ForgetAllNetworks
+            [1009] WifiConfig_ForgetAllNetworks函數
+          - WifiConfig_ForgetNetwork
+            [1010] WifiConfig_ForgetNetwork函數
+          - WifiConfig_ForgetNetworkById
+            [1012] WifiConfig_ForgetNetworkById函數
+          - WiFiConfig_GetClientCertStoreIdentifier
+            [1014] WifiConfig_GetClientCertStoreIdentifier函數
+          - WiFiConfig_GetClientIdentity
+            [1016] WifiConfig_GetClientIdentity 函數
+          - WifiConfig_GetConnectedNetworkId
+            [1018] WifiConfig_GetConnectedNetworkId函數
+          - WifiConfig_GetCurrentNetwork
+            [1020] WifiConfig_GetCurrentNetwork函數
+          - WifiConfig_GetNetworkDiagnostics
+            [1022] WifiConfig_GetNetworkDiagnostics函數
+          - WifiConfig_GetNetworkIdByConfigName
+            [1024] WifiConfig_GetNetworkIdByConfigName函數
+          - WiFiConfig_GetRootCACertStoreIdentifier
+            [1026] WifiConfig_GetRootCACertStoreIdentifier函數
+          - WifiConfig_GetScannedNetworks
+            [1028] WifiConfig_GetScannedNetworks函數
+          - WifiConfig_GetStoredNetworkCount
+            [1030] WifiConfig_GetStoredNetworkCount函數
+          - WifiConfig_GetStoredNetworks
+            [1031] WifiConfig_GetStoredNetworks函數
+          - WifiConfig_PersistConfig
+            [1033] WifiConfig_PersistConfig函數
+          - WifiConfig_ReloadConfig
+            [1034] WifiConfig_ReloadConfig函數
+          - WiFiConfig_SetClientCertStoreIdentifier
+            [1035] WifiConfig_SetClientCertStoreIdentifier函數
+          - WiFiConfig_SetClientIdentity
+            [1037] WifiConfig_SetClientIdentity 函數
+          - WifiConfig_SetConfigName
+            [1039] WifiConfig_SetConfigName函數
+          - WifiConfig_SetNetworkEnabled
+            [1041] WifiConfig_SetNetworkEnabled函數
+          - WifiConfig_SetPSK
+            [1043] WifiConfig_SetPSK函數
+          - WiFiConfig_SetRootCACertStoreIdentifier
+            [1045] WifiConfig_SetRootCACertStoreIdentifier函數
+          - WifiConfig_SetSecurityType
+            [1047] WifiConfig_SetSecurityType函數
+          - WifiConfig_SetSSID
+            [1049] WifiConfig_SetSSID函數
+          - WifiConfig_SetTargetedScanEnabled
+            [1051] WifiConfig_SetTargetedScanEnabled函數
+          - WifiConfig_StoreOpenNetwork
+            [1053] WifiConfig_StoreOpenNetwork函數
+          - WifiConfig_StoreWpa2Network
+            [1055] WifiConfig_StoreWpa2Network函數
+          - WifiConfig_TriggerScanAndGetScannedNetworkCount
+            [1057] WifiConfig_TriggerScanAndGetScannedNetworkCount函數
+        - 結構
+          - WifiConfig_ClientIdentity
+            [1058] WifiConfig_ClientIdentity結構
+          - WifiConfig_ConnectedNetwork
+            [1059] WifiConfig_ConnectedNetwork結構]
+          - WifiConfig_NetworkDiagnostics
+            [1061] WifiConfig_NetworkDiagnostics指示
+          - WifiConfig_ScannedNetwork
+            [1064] WifiConfig_ScannedNetwork結構]
+          - WifiConfig_StoredNetwork
+            [1066] WifiConfig_StoredNetwork Struct
+        - 枚舉
+          - WifiConfig_Security
+            [1068] WifiConfig_Security Enum
+        - Typedefs
+          - WifiConfig_Security_Type
+            [1069] WifiConfig_Security_Type Typedef
+    - Azure 球體安全性服務 (AS3) API
+      - 概述
+        [1070] Azure 球體安全性服務 (AS3) REST API 概觀
+      - 目錄
+        - 計算裝置數目
+          [1071] 目錄 - 計數裝置
+        - 建立或更新
+          [1075] 
+        - 刪除
+          [1079] 目錄 - 刪除
+        - 獲取
+          [1082] 
+        - 依資源群組列出
+          [1086] 
+        - 依訂閱列出
+          [1090] 
+        - 清單部署
+          [1094] 
+        - 列出裝置群組
+          [1099] 
+        - 清單裝置深入解析
+          [1104] 目錄 - 清單裝置深入解析
+        - 清單裝置
+          [1109] 
+        - 更新
+          [1113] 
+      - 證書
+        - 獲取
+          [1117] 
+        - 依目錄列出
+          [1121] 
+        - 擷取憑證鏈
+          [1125] 憑證 - 擷取憑證鏈結
+        - 擷取天性證明
+          [1129] 憑證 - 擷取憑證
+      - 部署
+        - 建立或更新
+          [1134] 
+        - 刪除
+          [1139] 部署 - 刪除
+        - 獲取
+          [1142] 
+        - 依裝置群組列出
+          [1147] 
+      - 裝置群組
+        - 宣告裝置
+          [1152] 裝置群組 - 宣告裝置
+        - 計算裝置數目
+          [1156] 裝置群組 - 計算裝置數目
+        - 建立或更新
+          [1160] 
+        - 刪除
+          [1165] 裝置群組 - 刪除
+        - 獲取
+          [1168] 
+        - 依產品清單
+          [1172] 
+        - 更新
+          [1177] 
+      - 設備
+        - 建立或更新
+          [1182] 
+        - 刪除
+          [1186] 裝置 - 刪除
+        - 產生功能圖像
+          [1189] 裝置 - 產生功能映射
+        - 獲取
+          [1193] 
+        - 依裝置群組列出
+          [1197] 
+        - 更新
+          [1201] 
+      - 圖像
+        - 建立或更新
+          [1205] 
+        - 刪除
+          [1210] 影像 - 刪除
+        - 獲取
+          [1213] 
+        - 依目錄列出
+          [1217] 
+      - 操作
+        - 清單
+          [1222] 作業 - 清單
+      - 產品
+        - 計算裝置數目
+          [1227] 產品 - 計數裝置
+        - 建立或更新
+          [1231] 
+        - 刪除
+          [1235] 產品 - 刪除
+        - 產生預設裝置群組
+          [1238] 
+        - 獲取
+          [1243] 
+        - 依目錄列出
+          [1246] 
+        - 更新
+          [1250] 

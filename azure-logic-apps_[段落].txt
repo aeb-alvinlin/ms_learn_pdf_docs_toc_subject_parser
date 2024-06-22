@@ -1,0 +1,478 @@
+- ---< azure-logic-apps.pdf >---
+  - Azure Logic Apps 文件
+    [1] Azure Logic Apps 文件
+  - 概觀
+    - 關於 Azure Logic Apps
+      [5] 什麼是 Azure Logic Apps？
+  - 快速入門
+    - 使用量邏輯應用程式工作流程
+      - 入口網站
+        [17] 快速入門：使用 Azure 入口網站建立範例使用量邏輯應用程式工作流程
+      - Visual Studio
+        [31] 快速入門：使用多租用戶 Azure LogicApps 和 Visual Studio 建立自動化整合工作流程
+      - Visual Studio Code
+        [44] 快速入門：使用多租用戶 Azure LogicApps 和 Visual Studio Code 來建立和管理邏輯應用程式工作流程定義
+      - Bicep
+        [59] 快速入門：使用 Bicep 在多租用戶 AzureLogic Apps 中建立和部署使用量邏輯應用程式工作流程
+      - ARM 範本
+        [63] 快速入門：使用ARM範本在多租使用者Azure Logic Apps 中建立和部署取用邏輯應用程式工作流程
+      - Azure CLI
+        [68] 快速入門：在 Azure Logic Apps 中使用Azure CLI 建立和管理工作流程
+      - Azure PowerShell
+        [76] 快速入門：在 Azure Logic Apps 中，使用 Azure PowerShell 建立並管理工作流程
+    - 標準邏輯應用程式工作流程
+      - 入口網站
+        [80] 使用 Azure 入口網站 在單一租使用者Azure Logic Apps 中建立標準工作流程範例
+      - Visual Studio Code
+        [104] 使用 Visual Studio Code 在單一租使用者Azure Logic Apps 中建立標準邏輯應用程式工作流程
+  - 教學課程
+    - 建立以取用排程為基礎的工作流程
+      [165] 教學課程：使用 Azure Logic Apps 建立排程型自動化工作流程
+    - 建立以取用核准為基礎的工作流程
+      [189] 教學課程：使用 Azure Logic Apps 建立以核准為基礎的自動化工作流程
+    - 使用 Azure 儲存體和 Azure Functions 建立取用工作流程
+      [211] 教學課程：建立使用 Azure Logic Apps、Azure Functions 和 Azure 儲存體 處理電子郵件的工作流程
+  - 範例
+    - Azure CLI - 取用工作流程範例指令碼
+      [237] Azure CLI 指令碼範例 - 建立邏輯應用程式
+    - Azure 程式碼範例
+    - Resource Manager - 取用工作流程快速入門範本
+  - 概念
+    - 連接器
+      - 關於連接器
+        [243] 什麼是 Azure Logic Apps 中的連接器
+      - 內建連接器
+        [249] Azure Logic Apps 中的內建連接器
+      - 受控連接器
+        [267] Azure Logic Apps 中的受控連接器
+      - 自訂連接器
+        [280] 自訂 Azure Logic Apps 中的連接器
+    - 已排程的週期性工作流程
+      [287] Azure Logic Apps 工作流程中週期性觸發程序的排程
+    - 透過 Azure 進行無伺服器運算
+      [304] Azure 無伺服器概觀：使用 Azure LogicApps 和 Azure Functions 建立雲端式應用程式和解決方案
+    - B2B 整合與 EDI 處理
+      [307] 搭配 Azure Logic Apps 與企業整合套件的 B2B 企業整合工作流程
+    - 大型主機現代化
+      [310] 使用 Azure Logic Apps 進行大型主機和中範圍現代化
+    - 商務持續性和災害復原
+      [319] 適用於 Azure Logic Apps 的商務持續性和災害復原
+    - 安全性
+      - Azure 原則的安全性控制
+        [333] 適用於 Azure Logic Apps 的 Azure 原則法規合規性控制
+      - 安全性基準
+        [341] 適用於 Logic Apps 的 Azure 安全性基準
+  - 操作指南
+    - 單一租用戶 Azure Logic Apps
+      - 概觀
+        [353] 標準單一租用戶邏輯應用程式與使用量多租用戶邏輯應用程式之間的差異
+      - 關於標準工作流程設計工具
+        [368] 關於單一租用戶 Azure Logic Apps 中的標準邏輯應用程式工作流程設計工具
+      - 內建與 Azure 連接器作業
+        [372] Azure Logic Apps (標準) 中的內建作業與Azure 連接器之間的差異
+      - 建立標準工作流程 - 入口網站
+        [374] 使用 Azure 入口網站 在單一租使用者Azure Logic Apps 中建立標準工作流程範例
+      - 從工作流程助理取得採用 AI 技術的協助
+        [398] 在 Azure Logic Apps (預覽版) 為標準工作流程取得 AI 技術支援的協助
+      - 建立標準工作流程 - Visual Studio Code
+        [406] 使用 Visual Studio Code 在單一租使用者Azure Logic Apps 中建立標準邏輯應用程式工作流程
+      - 預估儲存體成本
+        [467] 預估單一租用戶 Azure Logic Apps 中標準邏輯應用程式工作流程的儲存體成本
+      - 設定 SQL 記憶體
+        [473] 在單一租用戶 Azure Logic Apps 中設定標準邏輯應用程式的 SQL 資料庫儲存體(預覽)
+      - 建立並執行 .NET Framework 程式碼
+        [487] 在 Azure Logic Apps 中從標準工作流程建立和執行 .NET Framework 程式碼
+      - 啟用無狀態內建連接器的具狀態模式
+        [502] 
+      - 編輯應用程式和主機設定
+        [506] 
+      - 保護標準工作流程與虛擬網路之間的流量
+        [527] 使用私人端點保護標準邏輯應用程式與Azure 虛擬網路之間的流量
+      - 建立自定義的內建連接器
+        [532] 為單一租用戶 Azure Logic Apps 的標準邏輯應用程式建立自訂內建連接器
+      - 設定部署位置
+        [547] 設定部署位置以在 Azure Logic Apps 中啟用零停機時間部署 （預覽）
+      - DevOps 部署
+        [553] 單一租用戶 Azure Logic Apps 的 DevOps部署
+      - 設定DevOps部署
+        [562] 在單一租用戶 Azure Logic Apps 中設定標準邏輯應用程式工作流程的 DevOps 部署
+      - 自動化DevOps建置和部署
+        [569] 使用 Azure DevOps 自動化標準邏輯應用程式工作流程的建置和部署 （預覽）
+      - 將標準邏輯應用程式部署至私人儲存體帳戶
+        [582] 使用私人端點將單一租用戶標準邏輯應用程式部署至私人儲存體帳戶
+      - 將取用工作流程匯出至標準邏輯應用程式
+        [586] 將取用工作流程匯出至標準邏輯應用程式
+      - 從整合服務環境匯出至標準邏輯應用程式
+        [596] 將 ISE 工作處理序匯出至標準邏輯應用程式
+    - 支援 Azure Arc 的 Logic Apps
+      - 關於支援 Azure Arc 的 Logic Apps
+        [606] 已啟用 Azure Arc 的 Logic Apps 是什麼？ (預覽)
+      - 建立及部署支援 Azure Arc 的邏輯應用程式
+        [610] 
+    - 移轉
+      - 從 Power Automate 匯出流程，並部署至 Azure Logic Apps
+        [623] 從 Power Automate 匯出流程，並部署至Azure Logic Apps
+      - 從 BizTalk 移轉至 Azure
+        - 為何要從 BizTalk 服務進行伺服器？
+          [634] 為何從 BizTalk Server 遷移至 Azure 整合服務？
+        - 要選擇的整合服務
+          [677] 選擇 Azure 中適用於企業整合案例的最佳整合服務
+        - 移轉選項和最佳做法
+          [680] 將 BizTalk Server 移轉至 Azure 整合服務的方法
+        - 從 BizTalk 服務移轉
+          [696] 將應用程式和解決方案從 BizTalk 服務移轉至 Azure Logic Apps
+    - 開發
+      - 從預先建置的範本建立
+        [702] 從預先建置的範本建立使用量邏輯應用程式工作流程
+      - 使用觸發程序或動作建置工作流程
+        [711] 在 Azure Logic Apps 中使用觸發程序或動作建置工作流程
+      - 控制工作流程執行
+        - 條件陳述式
+          [720] 新增條件以控制 Azure Logic Apps 中的工作流程動作
+        - Switch 陳述式
+          [724] 建立切換動作，以根據 Azure Logic Apps中的特定值執行工作流程動作
+        - 分支
+          [730] 在 Azure Logic Apps 中使用工作流程動作建立或聯結平行分支
+        - 迴圈
+          [738] 使用 Azure Logic Apps 建立迴圈以在工作流程中重複動作
+        - 範圍
+          [751] 在 Azure Logic Apps 中，根據群組狀態使用範圍執行動作
+      - 建立用來儲存值的變數
+        [767] 建立變數以在 Azure Logic Apps 中儲存和管理值
+      - 執行資料作業
+        [781] 在 Azure Logic Apps 中執行資料作業
+      - 使用內嵌程式碼新增和執行程式碼片段
+        [821] 在 Azure Logic Apps 中使用內嵌程式碼作業以在工作流程中執行程式碼片段
+      - 為工作流程建立跨環境參數
+        [833] 在 Azure Logic Apps 中建立工作流程輸入的跨環境參數
+      - 呼叫 Azure Functions
+        [838] 從 Azure Logic Apps 中的工作流程呼叫Azure Functions
+      - 從 Azure Functions 呼叫邏輯應用程式
+        [854] 使用 Azure Functions 呼叫邏輯應用程式工作流程，以設定長時間執行的工作
+      - 從 Power Apps 呼叫工作流程
+        [862] 從 Power Apps 呼叫邏輯應用程式工作流程
+      - 呼叫、觸發或巢狀邏輯應用程式
+        [865] 建立可以在 Azure Logic Apps 中使用HTTPS 端點來呼叫、觸發或建立巢狀的工作流程
+      - 利用分頁取得大量資料
+        [881] 在 Azure Logic Apps 中使用分頁來取得更多資料、項目或記錄
+      - 批次程序訊息
+        [884] 在 Azure Logic Apps 中傳送、接收及批次處理訊息
+      - 依順序傳送訊息 - 循序群組
+        [896] 在具 Azure 服務匯流排的 Azure LogicApps 中使用循序群組傳送相關訊息
+      - 以 JSON 撰寫工作流程定義
+        [919] 在 Azure Logic Apps 中建立、編輯或擴充邏輯應用程式工作流程定義的 JSON
+      - 處理內容類型
+        [927] 在 Azure 邏輯應用程式中處理內容類型
+      - 處理錯誤和例外狀況
+        [933] 處理 Azure Logic Apps 中的錯誤和例外狀況
+      - 處理大型訊息
+        [947] 在 Azure Logic Apps 中利用區塊化在工作流程中處理大型訊息
+      - 處理 SQL 連接器的長時間執行預存程序
+        [954] 處理 Azure Logic Apps 的 SQL 連接器中預存程序的逾時
+      - 處理節流問題或 429 錯誤
+        [960] 處理 Azure Logic Apps 中的節流問題(429 -「要求太多」錯誤)
+      - 開發自訂 API
+        - 建立適用於邏輯應用程式的自訂 API
+          [969] 建立您可以從 Azure Logic Apps 呼叫的自訂 API
+        - 提升對自訂 API 呼叫的安全性
+          [979] 從 Azure Logic Apps 呼叫自訂 API 的作業時新增驗證
+        - 部署和呼叫自訂 API
+          [990] 在 Azure Logic Apps 中從工作流程部署和呼叫自訂 API
+      - 在邏輯應用程式中支援非 UTF-8 字元編碼
+        [993] 在 Azure Logic Apps 中支援非 Unicode字元編碼
+      - 針對錯誤進行疑難排解
+        [999] 針對 Azure Logic Apps 中的失敗進行疑難排解和診斷
+    - 存取 Azure 虛擬網路
+      - 存取 Azure 虛擬網路
+        [1008] 使用整合服務環境 (ISE) 從 Azure LogicApps 存取 Azure 虛擬網路
+      - 設定多個整合服務環境的存取權
+        [1017] 在 Azure Logic Apps 中為一或多個整合服務環境設定單一 IP 位址
+      - 將資源新增到整合服務環境
+        [1023] 使用 Azure Logic Apps 將資源新增至您的整合服務環境 (ISE)
+    - 存取內部部署資料來源
+      - 安裝內部部署資料閘道
+        [1032] 安裝 Azure Logic Apps 的內部部署資料閘道
+      - 連線到內部部署資料來源
+        [1045] 從 Azure Logic Apps 連線到內部部署資料來源
+    - 針對 B2B 案例進行開發
+      - 整合帳戶與成品
+        - 刪除整合帳戶
+          [1055] 使用企業整合套件在 Azure Logic Apps中建立及管理適用於 B2B 工作流程的整合帳戶
+        - 合作對象
+          [1068] 將合作對象新增至您企業整合帳戶中的Azure Logic Apps 工作流程
+        - 合約
+          [1071] 針對 Azure Logic Apps 中的工作流程，在企業整合帳戶中新增合作夥伴之間的合約
+        - 結構描述
+          [1075] 新增結構描述，以在搭配使用具有 AzureLogic Apps 的工作流程
+        - 地圖
+          [1082] 新增對應來使用 Azure Logic Apps 以進行工作流程中的轉換
+        - 憑證
+          [1093] 新增憑證至整合帳戶，以保護 AzureLogic Apps 工作流程中的訊息
+        - 構件中繼資料
+          [1100] 管理 Azure Logic Apps 整合帳戶中的成品中繼資料
+      - 接收和傳送 B2B 訊息
+        [1110] 在 Azure Logic Apps 中使用工作流程於合作夥伴之間交換 B2B 訊息
+      - AS2 傳訊
+        - 交換 AS2 訊息
+          [1123] 使用 Azure Logic Apps 中的工作流程交換 AS2 訊息
+        - AS2 訊息設定
+          [1132] Azure Logic Apps 合約中，AS2 訊息設定的參考
+        - AS2 MDN 通知
+          [1137] Azure Logic Apps 中 AS2 訊息的 MDN通知
+      - EDIFACT 傳訊
+        - 交換 EDIFACT 訊息
+          [1140] 使用 Azure Logic Apps 中的工作流程交換 EDIFACT 訊息
+        - EDIFACT 訊息設定
+          [1150] Azure Logic Apps 合約中，EDIFACT 訊息設定的參考
+        - EDIFACT CONTRL 通知與錯誤碼
+          [1159] Azure Logic Apps 中 EDIFACT 訊息的CONTRL 通知和錯誤碼
+      - RosettaNet 傳訊
+        - 交換 RosettaNet 訊息
+          [1171] 使用 Azure Logic Apps 中的工作流程交換適用於 B2B 整合的 RosettaNet 訊息
+      - X12 傳訊
+        - 交換 X12 訊息
+          [1187] 使用 Azure Logic Apps 中的工作流程交換 X12 訊息
+        - X12 訊息設定
+          [1194] Azure Logic Apps 合約中 X12 訊息設定的參考
+        - X12 TA1 通知
+          [1205] Azure Logic Apps 中 X12 訊息的 TA1 技術通知和錯誤碼
+        - X12 997 通知
+          [1210] Azure Logic Apps 中 X12 訊息的 997 功能通知和錯誤碼
+      - 批次處理並傳送 EDI 訊息
+        [1219] 以批次或群組的方式，在 Azure LogicApps 中的合作對象之間交換 EDI 訊息
+      - 處理一般檔案
+        [1229] 在 Azure Logic Apps 中編碼和解碼一般檔案
+      - XML 與 JSON 轉換
+        - 在 Visual Studio Code 中建立地圖
+          [1238] 使用 Visual Studio Code 建立對應以在Azure Logic Apps 中轉換資料
+        - 轉換 XML
+          [1257] 使用 Azure Logic Apps 轉換工作流程中的 XML
+        - 處理 XML
+          [1262] 採用 Enterprise Integration Pack 的Azure Logic Apps 中的 X12 訊息和一般檔案
+        - 驗證 XML
+          [1263] 使用 Azure Logic Apps 驗證工作流程中的 XML
+        - 轉換 JSON
+          [1267] 在 Azure Logic Apps 中，使用 Liquid 範本作為工作流程中的對應來轉換 JSON 和XML
+      - 針對 B2B 錯誤進行疑難排解
+        [1281] Azure Logic Apps 的 B2B 錯誤與解決方案
+    - 連接器 - 操作指南
+      - AS2
+        [1285] 使用 Azure Logic Apps 中的工作流程交換 AS2 訊息
+      - Azure AI 搜尋和 Azure OpenAI
+        [1294] 在 Azure Logic Apps 中整合 Azure AI 服務與標準工作流程（預覽版）
+      - Azure Blob 儲存體
+        [1303] 在 Azure Logic Apps 中，從工作流程連線至 Azure Blob 儲存體
+      - Azure 容器執行個體
+        [1318] 使用 Azure Logic Apps 部署及管理 Azure容器執行個體
+      - Azure Cosmos DB
+        [1321] 使用 Azure Logic Apps 處理及建立 AzureCosmos DB 文件
+      - Azure 事件網格
+        [1330] 教學課程：使用 Azure 事件方格和 AzureLogic Apps 監視虛擬機器的變更
+      - Azure 事件中樞
+        [1348] 從 Azure Logic Apps 中的工作流程連線到事件中樞
+      - Azure Functions
+        [1357] 從 Azure Logic Apps 中的工作流程呼叫Azure Functions
+      - Azure Logic 應用程式
+        [1373] 建立可以在 Azure Logic Apps 中使用HTTPS 端點來呼叫、觸發或建立巢狀的工作流程
+      - Azure 監視器 Application Insights
+        [1389] 從 Azure Logic Apps 中的工作流程連線到 Azure Application Insights
+      - Azure 監視器記錄
+        [1390] 從 Azure Logic Apps 中的工作流程連線到 Log Analytics 或 Application Insights
+      - Azure 服務匯流排
+        [1397] 從 Azure Logic Apps 中的工作流程 連線Azure 服務匯流排
+      - Azure SQL Database
+        [1412] 從 Azure Logic Apps 的工作流程連線至SQL 資料庫
+      - 自訂 API 和 Web 應用程式
+        [1427] 建立您可以從 Azure Logic Apps 呼叫的自訂 API
+      - 延遲
+        [1437] 在 Azure Logic Apps 中延遲執行下一個動作
+      - Dynamics 365 （已淘汰）
+        [1441] 從 Azure Logic Apps 中的工作流程連線至 Dynamics 365 (已取代)
+      - EDIFACT
+        [1442] 使用 Azure Logic Apps 中的工作流程交換 EDIFACT 訊息
+      - File System
+        [1452] 從 Azure Logic Apps 中的工作流程連線到內部部署檔案系統
+      - 一般檔案
+        [1463] 在 Azure Logic Apps 中編碼和解碼一般檔案
+      - FTP
+        [1472] 從 Azure Logic Apps 中的工作流程連線到 FTP 伺服器
+      - Gmai l- Google 資料安全性與隱私權原則
+        [1490] Azure Logic Apps 中 Google 連接器的資料安全性和隱私權原則
+      - HTTP
+        [1496] 從 Azure Logic Apps 中的工作流程呼叫外部 HTTP 或 HTTPS 端點
+      - HTTP + Swagger
+        [1509] 從 Azure Logic Apps 中的工作流程連線或呼叫 REST API 端點
+      - HTTP Webhook
+        [1515] 在 Azure Logic Apps 中使用 HTTPWebhook 訂閱並等候事件執行工作流程
+      - IBM 3270
+        [1522] 使用 Azure Logic Apps 和 IBM 3270 連接器，將 IBM 大型主機上的 3270 畫面控制項驅動應用程式與 Azure 整合
+      - IBM CICS
+        [1530] 在 IBM 大型主機上整合 CICS 程式與Azure Logic Apps 中的標準工作流程
+      - IBM DB2
+        [1538] 使用 Azure Logic Apps 存取和管理 IBMDB2 資源
+      - IBM 主機檔案
+        [1558] 從 IBM 大型主機剖析和產生主機檔案，用於 Azure Logic Apps 中的標準工作流程
+      - IBM i
+        [1570] 在IBM中層系統上整合COBOL和 RPG 程式與 Azure Logic Apps 中的標準工作流程
+      - IBM IMS
+        [1577] 在 IBM 大型主機上整合 IMS 程式與Azure Logic Apps 中的標準工作流程
+      - IBM Informix
+        [1585] 使用 Azure Logic Apps 管理 IBMInformix 資料庫資源
+      - IBM MQ
+        [1594] 從 Azure Logic Apps 的工作流程連線至IBM MQ 伺服器
+      - 整合帳戶
+        [1606] 管理 Azure Logic Apps 整合帳戶中的成品中繼資料
+      - Microsoft Dataverse
+        [1616] 從 Azure Logic Apps 中的工作流程連線至 Microsoft Dataverse
+      - Microsoft Graph Security
+        [1626] 使用 Microsoft Graph 安全性和 AzureLogic Apps 整合安全性作業，改善威脅防護功能
+      - Office 365 Outlook
+        [1633] 從 Azure Logic Apps 連線至 Office 365Outlook
+      - Oracle Database
+        [1638] 從 Azure Logic Apps 連線 至 OracleDatabase
+      - 週期
+        [1646] 使用 Azure Logic Apps 中的週期性觸發程序來排定及執行週期性工作流程
+      - 要求/回應
+        [1654] 接收及回應對 Azure Logic Apps 中的工作流程進行的輸入 HTTPS 呼叫
+      - RosettaNet
+        [1665] 使用 Azure Logic Apps 中的工作流程交換適用於 B2B 整合的 RosettaNet 訊息
+      - SAP
+        - 先決條件和安裝程式
+          [1681] 從 Azure Logic Apps 的工作流程中連線至 SAP
+        - 建立常見的範例工作流程
+          [1714] 在 Azure Logic Apps 中建立常見 SAP 整合案例的工作流程
+        - 產生 SAP 成品的結構描述
+          [1751] 在 Azure Logic Apps 中產生 SAP 成品的結構描述
+      - SFTP - SSH
+        [1767] 在 Azure Logic Apps 中從工作流程連線至 SFTP 檔案伺服器
+      - 滑動視窗
+        [1772] 使用 Azure Logic Apps 中的滑動視窗觸發程序排程並執行連續資料的工作
+      - SMTP
+        [1777] 從 Azure Logic Apps 連線到 SMTP 帳戶
+      - SQL Server
+        [1780] 從 Azure Logic Apps 的工作流程連線至SQL 資料庫
+      - 轉換 XML
+        [1795] 使用 Azure Logic Apps 轉換工作流程中的 XML
+      - X12
+        [1800] 使用 Azure Logic Apps 中的工作流程交換 X12 訊息
+      - XML 驗證
+        [1807] 使用 Azure Logic Apps 驗證工作流程中的 XML
+    - 安全
+      - 保護邏輯應用程式
+        [1811] 
+      - 使用受控識別進行驗證
+        [1849] 在 Azure Logic Apps 中使用受控識別來驗證對 Azure 資源的存取和連線
+      - 封鎖連接器使用方式
+        [1884] 
+      - 封鎖跨租用戶的連線
+        [1896] 封鎖 Azure Logic Apps 中其他租用戶的連線
+    - 管理
+      - 管理邏輯應用程式 - Azure 入口網站
+        [1899] 在 Azure 入口網站中管理邏輯應用程式工作流程
+      - 管理邏輯應用程式 - Visual Studio
+        [1910] 使用 Visual Studio 管理邏輯應用程式
+      - 管理整合帳戶
+        [1926] 使用企業整合套件在 Azure Logic Apps中建立及管理適用於 B2B 工作流程的整合帳戶
+      - 管理整合服務環境
+        [1939] 在 Azure Logic Apps 中管理您的整合服務環境 (ISE)
+      - 規劃和管理成本
+        [1957] 規劃和管理 Azure Logic Apps 的成本
+      - 透過自動化工作管理 Azure 資源
+        [1967] 建立自動化工作來管理 Azure 資源和監視成本 (預覽)
+      - 移動邏輯應用程式資源
+        [1990] 將邏輯應用程式資源移至其他 Azure 資源群組、區域或訂閱
+      - 更新使用工作流程的結構
+        [1994] 針對 Azure Logic Apps 中工作流程定義語言更新結構描述 - 2016 年 6 月 1 日
+    - Test
+      - 使用模擬資料測試邏輯應用程式
+        [2000] 在 Azure Logic Apps 中使用模擬資料來測試工作流程 (預覽版)
+    - 部署
+      - 關於自動化部署 (多租用戶)
+        [2008] 概觀：使用 Azure Resource Manager 範本自動部署 Azure Logic Apps
+      - 建立邏輯應用程式範本
+        [2039] 建立 Azure Resource Manager 範本以自動部署用於 Azure Logic Apps 的取用邏輯應用程式
+      - 部署邏輯應用程式範本
+        [2043] 部署 Azure Logic Apps 的 AzureResource Manager 範本
+    - 監視器
+      - 概觀
+        [2047] 概觀：監視 Azure Logic Apps
+      - 監視工作流程
+        [2056] 監視工作流程執行狀態、檢閱觸發程序和工作流程執行歷程記錄，以及在 AzureLogic Apps 中設定警示
+      - 檢視健康情況和效能計量
+        [2071] 在 Azure Logic Apps 中檢視工作流程健康情況和效能的計量
+      - 啟用和檢視標準工作流程的增強遙測
+        [2073] 在 Azure Logic Apps 中啟用和檢視Application Insights 中標準工作流程的增強遙測資料
+      - 監視和收集工作流程的診斷資料
+        [2103] 監視及收集 Azure Logic Apps 中工作流程的診斷資料
+      - 在適用於雲端的 Microsoft Defender 中監視工作流程
+        [2118] 設定記錄，監視適用於雲端的 MicrosoftDefender 中的邏輯應用程式
+      - 使用 Azure 監視器記錄監視 B2B 訊息
+        [2122] 在 Azure Logic Apps 中設定 Azure 監視器記錄並收集 B2B 訊息的診斷資料
+      - 監視訊息的追蹤結構描述
+        [2134] 在 Azure Logic Apps 中監視 B2B 訊息的追蹤架構
+      - 建立監視和追蹤查詢
+        [2150] 在 Azure Logic Apps 的 Azure 監視器記錄中檢視和建立用於監視和追蹤的查詢
+    - 商務持續性和災害復原
+      - 設定區域備援邏輯應用程式
+        [2153] 使用區域備援和可用性區域防止邏輯應用程式發生區域性失敗
+      - 複寫適用於商務持續性和災害復原的 Azure 資源
+        [2157] 使用 Azure Logic Apps 建立 Azure 資源的複寫工作 (預覽)
+      - 組建 B2B 商務持續性和災害復原計劃
+        [2189] 在 Azure Logic Apps 中設定企業整合帳戶的跨區域災害復原
+    - 範例、案例和逐步解說
+      [2208] Azure Logic Apps 的常見情節、範例、教學課程和逐步解說
+      - 資料作業 - 程式碼範例
+        [2214] 適用於 Azure Logic Apps 的資料作業程式碼範例
+      - 監視社交媒體
+        [2222] 使用 Azure Logic Apps 與 AzureFunctions 來建立串流的客戶深入解析儀表板
+      - 建立無伺服器應用程式 - Visual Studio
+        [2226] 在 Visual Studio 中使用 Azure LogicApps 和 Azure Functions 建立無伺服器應用程式的範例
+      - B2B 處理
+        [2235] 在 Azure Logic Apps 中使用工作流程於合作夥伴之間交換 B2B 訊息
+  - 參考
+    - 計費和定價模型
+      [2248] Azure Logic Apps 的使用量計量、計費和定價
+    - 架構模式
+      - 基本企業整合
+        [2259] 
+      - 搭配佇列和事件的企業整合
+        [2267] 
+    - 受控連接器參考識別碼
+      [2273] 
+    - 內建服務提供者連接器參考 - 標準
+      [2339] Azure Logic Apps Standard built-inservice provider connectorsdocumentation
+    - 監視資料參考
+      [2341] 
+    - 服務限制與設定
+      [2352] Azure Logic Apps 的限制和組態參考
+    - Azure CLI - 使用量
+      [2386] az logic
+    - Azure CLI - 標準
+      [2391] az logicapp
+    - Azure PowerShell
+      [2411] Az.LogicApp
+    - REST API
+      [2414] Azure Logic Apps
+    - Resource Manager 範本參考
+      [2415] Microsoft.Logic 資源類型
+    - 工作流程定義語言結構描述
+      [2418] Azure Logic Apps 中工作流程定義語言的架構參考指南
+      - 觸發程序和動作類型參考
+        [2429] 
+      - 函式參考
+        [2498] Azure Logic Apps 和 Power Automate 中工作流程表達式函式的參考指南
+    - Azure 原則內建
+      [2650] 
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure Logic Apps 藍圖
+    - Azure 藍圖
+    - Azure Logic Apps 定價
+    - 定價計算機
+    - 客戶案例
+    - 影片
+    - Microsoft 問與答頁面
+    - Stack Overflow
+    - Twitter
+    - 提供產品意見反應
+    - 服務更新

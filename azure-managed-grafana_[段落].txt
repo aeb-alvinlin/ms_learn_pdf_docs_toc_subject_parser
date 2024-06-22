@@ -1,0 +1,101 @@
+- ---< azure-managed-grafana.pdf >---
+  - Azure 受控 Grafana
+    [1] Azure 受控 Grafana 檔
+  - 總覽
+    - 關於 Azure 受控 Grafana
+      [3] 什麼是 Azure 受控 Grafana？
+    - 新功能
+      [6] Azure 受控 Grafana 的新功能
+  - 快速入門
+    - 建立實例 - 入口網站
+      [8] 快速入門：使用 Azure 入口網站 建立Azure 受控 Grafana 工作區
+    - 建立實例 - Azure CLI
+      [12] 快速入門：使用 Azure CLI 建立 Azure 受控 Grafana 實例
+  - 教學課程
+    - 連線 透過受控私人端點自我裝載 Prometheus
+      [15] 教學課程：使用受控私人端點連線到 AKS叢集上的自我裝載 Prometheus 服務
+    - 以程式設計方式呼叫 Grafana API
+      [23] 教學課程：以程序設計方式呼叫 GrafanaAPI
+  - 概念
+    - 服務可靠性
+      [29] Azure 受控 Grafana 服務可靠性
+    - 加密
+      [31] Azure 受控 Grafana 中的加密
+  - 操作指南
+    - 存取和共用
+      - 設定驗證和許可權
+        [32] 設定 Azure 受控 Grafana 驗證和授權
+      - 修改 Azure 監視器的訪問許可權
+        [38] 如何修改 Azure 監視器的存取權限
+      - 同步小組與 Microsoft Entra 群組
+        [42] 同步 Grafana 小組與 Microsoft Entra 群組 （預覽）
+      - 共用工作區
+        [46] 如何共用 Azure 受控 Grafana 的存取權
+    - 資料來源
+      - 設定資料來源
+        [49] 如何在 Azure Managed Grafana 中管理數據源
+      - 新增 Azure 監視器工作區
+        [55] 將 Azure 監視器工作區新增至 Azure 受控Grafana 以收集 Prometheus 數據
+      - 新增 Azure 數據總管
+        [60] 設定 Azure 數據總管數據源
+      - 啟用 Grafana Enterprise
+        [62] 啟用 Grafana Enterprise
+      - 管理外掛程式
+        [68] 如何管理 Grafana 外掛程式
+    - 儀表板​​
+      - 建立儀表板
+        [71] 在 Azure 受控 Grafana 中建立儀錶板
+      - 共用儀表板
+        [76] 共用 Grafana 儀表板或面板
+    - 警示和通知
+      - 搭配 Grafana 使用 Azure 監視器警示
+        [79] 搭配 Grafana 使用 Azure 監視器警示
+      - 設定 SMTP 設定
+        [81] 設定 SMTP 設定
+      - 使用報告和影像轉譯
+        [86] 使用報告和影像轉譯 （預覽）
+    - 網路
+      - 設定私人存取
+        [89] 設定私人存取
+      - 使用具決定性的輸出IP
+        [95] 使用具決定性的輸出IP
+      - 私下 連線 數據源
+        [98] 私下 連線 數據源
+    - 可用性
+      - 啟用區域備援
+        [104] 在 Azure 受控 Grafana 中啟用區域備援
+    - 管理員 管理與自動化
+      - 使用服務帳戶
+        [107] 如何在 Azure 受控 Grafana 中使用服務帳戶
+      - 建立與管理 API 金鑰 （已淘汰）
+        [112] 在 Azure 受控 Grafana 中建立和管理Grafana API 金鑰 （已淘汰）
+      - 監視 Azure 受控 Grafana
+        [117] 如何使用記錄監視 Azure 受控 Grafana 實例
+    - 遷移至 Azure 受控 Grafana
+      [121] 將自我裝載 Grafana 遷移至 Azure 受控Grafana
+    - 轉換至 grafana.azure.com 網域
+      [125] 轉換為使用 grafana.azure.com 網域
+    - 升級至 Grafana 10
+      [126] 升級至 Grafana 10
+    - 常見問題疑難排解
+      [130] 針對 Azure 受控 Grafana 的問題進行疑難排解
+    - 已知的限制
+      [141] Azure 受控 Grafana 的限制
+  - 參考
+    - Azure CLI
+      [144] az grafana
+    - ARM、Bicep 和 Terraform 範本
+      [164] Microsoft.Dashboard grafana 2021-09-01-preview
+    - Azure PowerShell
+    - 控制平面 API
+      [167] Azure 受控 Grafana
+    - 資料平面 API
+    - Grafana UI
+      [168] Grafana 使用者介面
+  - 資源
+    - 常見問題集
+      [170] Azure 受控 Grafana 常見問題
+    - Q&A
+    - 功能要求
+    - 支援
+      [172] 尋找說明或開啟 Azure 受控 Grafana 的支援票證

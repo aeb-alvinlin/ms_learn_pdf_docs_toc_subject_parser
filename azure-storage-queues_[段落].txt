@@ -1,0 +1,287 @@
+- ---< azure-storage-queues.pdf >---
+  - Azure 佇列儲存體文件
+    [1] Azure 佇列儲存體文件
+  - 概觀
+    - 什麼是 Azure 佇列？
+      [3] 什麼是 Azure 佇列儲存體？
+  - 快速入門
+    - 無需程式碼也能管理佇列
+      - Azure 入口網站
+        [5] 快速入門: 透過 Azure 入口網站建立佇列並新增訊息
+    - 針對佇列開發
+      - .NET
+        [8] 快速入門：適用於 .NET 的 Azure 佇列儲存體用戶端程式庫
+      - Java
+        [20] 快速入門：適用於 JAVA 的 Azure 佇列儲存體用戶端程式庫
+      - JavaScript
+        [33] 快速入門：適用於 JavaScript 的 Azure 佇列儲存體用戶端程式庫
+      - Python
+        [46] 快速入門: 適用於 Python 的 Azure 佇列儲存體用戶端程式庫
+  - 教學課程
+    - 使用 Azure 儲存體佇列
+      [57] 教學課程：在 .NET 中使用 Azure 佇列儲存體佇列
+  - 範例
+    - .NET
+      [70] 使用 v12 .NET 用戶端程式庫的 Azure 儲存體範例
+    - Java
+      [76] 使用 v12 Java 用戶端程式庫的 Azure 儲存體範例
+    - Spring
+    - Python
+      [83] 使用 v12 Python 用戶端程式庫的 Azure儲存體範例
+    - JavaScript
+      [91] 使用 v12 JavaScript 用戶端程式庫的Azure 儲存體範例
+    - 其他語言
+      [97] Azure 儲存體範例
+    - Azure Resource Graph 查詢
+      [99] 適用於 Azure 儲存體的 Azure ResourceGraph 範例查詢
+  - 概念
+    - 儲存體帳戶
+      [102] 儲存體帳戶概觀
+    - 授權
+      [113] 授權存取 Azure 儲存體中的資料
+      - 授權資料作業
+        [117] 授權存取 Azure 儲存體中的資料
+        - 使用 Microsoft Entra 識別碼進行授權
+          - 使用 Azure 角色授權
+            [121] 使用 Microsoft Entra ID 授權存取佇列。
+          - 使用條件進行授權
+            [128] 使用 Azure 角色指派條件來授權佇列的存取
+          - 條件的動作和屬性
+            [131] Azure 佇列儲存體的 Azure 角色指派條件的動作和屬性
+          - 範例條件
+            [138] 佇列儲存體的 Azure 角色指派條件範例
+      - 使用 Microsoft Entra ID 驗證和授權
+        [147] 使用 Microsoft Entra ID 授權存取佇列。
+      - 使用共用金鑰進行授權
+        - 檢視和管理帳戶金鑰
+          [154] 管理儲存體帳戶存取金鑰
+        - 設定連接字串
+          [162] 設定 Azure 儲存體連接字串
+        - 使用 Azure 儲存體 REST API
+          [169] 使用共用金鑰授權呼叫 REST API 作業
+      - 使用 SAS 進行授權
+        [184] 使用共用存取簽章 (SAS) 對 Azure 儲存體資源授與有限存取權
+      - 移轉至無密碼連線
+        [192] 移轉應用程式對 Azure 佇列儲存體使用無密碼連線
+    - 授權管理作業
+      [201] 使用 Azure 儲存體資源提供者存取管理資源
+    - 安全性
+      - Azure 儲存體待用加密
+        [204] 待用資料的 Azure 儲存體加密
+        - 使用客戶管理的金鑰進行加密
+          [209] 為 Azure 儲存體加密的客戶自控金鑰
+      - 使用 Azure 私人端點
+        [215] 
+      - Azure 原則的安全性控制
+        [220] 適用於 Azure 儲存體的 Azure 原則法規合規性控制項
+      - 安全性建議
+        [252] 佇列儲存體的安全性建議
+      - 安全性基準
+        [256] 儲存體的 Azure 安全性基準
+    - 資料備援
+      [268] Azure 儲存體複寫
+    - 災害復原和容錯移轉
+      [281] Azure 儲存體災害復原規劃與容錯移轉
+    - 效能、調整和成本最佳化
+      - 擴充和效能目標
+        - 佇列儲存體
+          [290] Azure 佇列儲存體的延展性和效能目標
+        - 標準儲存體帳戶
+          [291] 標準儲存體帳戶的延展性和效能目標
+        - 儲存體資源提供者
+          [295] Azure 儲存體資源提供者的可擴縮性和效能目標
+      - 效能和擴充檢查清單
+        [296] 佇列儲存體的效能和延展性檢查清單
+    - 監視和疑難排解
+      - 監視佇列儲存體
+        [304] 監視 Azure 佇列儲存體
+      - 監視 (傳統)
+        - Storage Analytics
+          [316] Storage Analytics
+        - 記錄
+          [318] Azure 儲存體分析記錄
+        - 監控、診斷及疑難排解
+          [324] 
+  - 如何
+    - 建立及管理儲存體帳戶
+      - 建立儲存體帳戶
+        [343] 建立儲存體帳戶
+      - 升級儲存體帳戶
+        [360] 升級至一般用途 v2 儲存體帳戶
+      - 復原已刪除的儲存體帳戶
+        [365] 復原已刪除的儲存體帳戶
+      - 將傳統帳戶移轉至 Azure Resource Manager
+        [367] 如何將傳統儲存體帳戶移轉至 AzureResource Manager
+      - 取得帳戶設定屬性
+        [373] 取得儲存體帳戶設定資訊
+    - 保護佇列資料
+      - 授與佇列資料的存取權
+        - 使用者適用的授權選項
+          - 入口網站
+            [377] 選擇如何在 Azure 入口網站授權存取佇列資料
+          - PowerShell
+            [382] 使用 Microsoft Entra 認證執行PowerShell 命令以存取佇列資料
+          - Azure CLI
+            [385] 選擇如何使用 Azure CLI 來授與佇列資料的存取權
+        - 使用 Azure RBAC 管理存取權限
+          [389] 指派 Azure 角色以存取佇列資料
+        - 使用共用金鑰進行授權
+          - 檢視和管理帳戶金鑰
+            [391] 管理儲存體帳戶存取金鑰
+          - 設定連接字串
+            [399] 設定 Azure 儲存體連接字串
+          - 使用 Azure 儲存體 REST API
+            [406] 使用共用金鑰授權呼叫 REST API 作業
+          - 防止使用共用金鑰進行授權
+            [421] 防止 Azure 儲存體帳戶的共用金鑰授權
+      - 管理 Azure 儲存體加密
+        - 建立支援客戶管理金鑰的帳戶
+          [433] 建立支援針對資料表和佇列使用客戶自控金鑰的帳戶
+        - 使用客戶自控金鑰來設定加密
+          - 檢查帳戶的加密金鑰模型
+            [436] 判斷哪個 Azure 儲存體加密金鑰模型正在用於儲存體帳戶
+          - 在 Azure Key Vault 中設定客戶自控金鑰
+            - 在相同的租用戶中設定客戶自控金鑰
+              - 為新帳戶設定客戶自控金鑰
+                [438] 在相同租用戶中針對新儲存體帳戶設定客戶自控金鑰
+              - 為現有帳戶設定客戶自控金鑰
+                [448] 在相同租用戶中為現有儲存體帳戶設定客戶自控金鑰
+            - 在不同的租用戶中設定客戶自控金鑰
+              - 為新帳戶設定客戶自控金鑰
+                [459] 為新的儲存體帳戶設定跨租用戶的客戶自控金鑰
+              - 為現有帳戶設定客戶自控金鑰
+                [474] 為現有的儲存體帳戶設定跨租用戶的客戶自控金鑰
+          - 在受控 HSM 中設定客戶自控金鑰
+            [490] 使用儲存在 Azure Key Vault 受控 HSM中的客戶自控金鑰來設定加密
+        - 啟用帳戶的基礎結構加密
+          [493] 針對資料的雙重加密啟用基礎結構加密
+      - 設定用戶端加密
+        [496] 佇列的用戶端加密
+      - 設定網路安全性
+        - 設定防火牆和虛擬網路
+          [500] 設定 Azure 儲存體的防火牆和虛擬網路
+        - 需要安全傳輸
+          [515] 要求安全傳輸以確保安全連線
+        - 管理傳輸層安全性（TLS） 
+          - 對傳入要求強制使用 TLS 最低版本
+            [519] 對儲存體帳戶的要求強制執行最低必要版本的傳輸層安全性 (TLS)
+          - 設定用戶端應用程式的 TLS 版本
+            [531] 針對用戶端應用程式設定傳輸層安全性(TLS)
+      - 使用適用於儲存體的 Microsoft Defender 啟用威脅防護
+        [533] 適用於 儲存體 的 Microsoft Defender 概觀
+    - 管理資料備援
+      - 變更資料複寫的方式
+        [540] 變更儲存體帳戶的備援設定
+      - 設計可用性高的應用程式
+        [555] 使用異地備援來設計高可用性的應用程式
+    - 管理災害復原
+      - 檢查上次同步時間屬性
+        [563] 檢查儲存體帳戶的 [上次同步時間] 屬性
+      - 初始化帳戶容錯移轉
+        [565] 起始儲存體帳戶容錯移轉
+    - 使用儲存體模擬器
+      - 使用 Azurite open-source 模擬器
+        [569] 使用 Azurite 模擬器進行本機 Azure 儲存體開發
+      - 使用 Azure 儲存體模擬器 (已淘汰)
+        [587] 使用 Azure 儲存體模擬器進行開發和測試(已淘汰)
+    - 管理佇列
+      - 適用於 Azure 佇列的 PowerShell
+        [600] 如何從 PowerShell 使用 Azure 佇列儲存體
+      - 適用於中國、政府與德國雲端的 PowerShell
+        [606] 使用 PowerShell 在 Azure 獨立雲端中管理儲存體
+      - 監視器
+        - 需求和最佳做法
+          [611] 監視 Azure 佇列儲存體的最佳做法
+        - 監視 (傳統)
+          - 在 Azure 入口網站中進行監視 (傳統)
+            [618] 啟用和管理 Azure 儲存體分析記錄 (傳統)
+    - 疑難排解
+      - 效能
+        [625] 針對 Azure 記憶體帳戶中的效能進行疑難解答
+      - 可用性
+        [630] 針對 Azure 記憶體帳戶中的可用性問題進行疑難解答
+      - 用戶端錯誤
+        [634] 
+      - 延遲問題
+        [640] 針對使用 儲存體分析 記錄的延遲進行疑難解答
+  - 參考
+    - 資料存取 API
+      - REST API
+        [645] 佇列儲存體 REST API
+      - .NET SDK
+        [647] Azure Storage client libraries for .NET
+      - Java SDK
+        [650] Azure Storage libraries for Java
+      - Python SDK
+        [662] 適用于 Python 的 Azure 儲存體用戶端程式庫
+      - JavaScript SDK
+        [665] 適用于 JavaScript 的 Azure 儲存體程式庫
+    - 資源管理 API
+      - REST API
+        [668] Azure 儲存體資源提供者 REST API 參考
+      - .NET SDK
+        [669] Microsoft Azure Storage managementclient library for .NET
+      - Java SDK
+        [673] Management
+      - Python SDK
+        [674] 適用于 Python 的 Azure 儲存體用戶端程式庫
+      - JavaScript SDK
+        [677] 適用于 JavaScript 的 Azure 儲存體程式庫
+    - 監視 Azure 佇列儲存體參考
+      [680] 
+    - Spring 與 Azure 儲存體佇列整合
+      [687] Spring Cloud Azure 開發人員指南
+    - Resource Manager 範本
+      [692] Microsoft.Storage 資源類型
+  - 資源
+    - Azure 更新
+    - Azure 儲存體總管
+      - 下載儲存體總管
+      - 開始使用儲存體總管
+        [696] 開始使用儲存體總管
+      - 儲存體總管版本資訊
+      - 針對儲存體總管進行疑難排解
+        [708] Azure 儲存體總管 疑難解答指南
+      - 儲存體總管協助工具
+        [725] 儲存體總管協助工具
+    - Microsoft Q&A 上的佇列儲存體
+    - Stack Overflow 上的佇列儲存體
+    - 佇列儲存體的定價
+    - Azure 定價計算機
+    - 影片
+    - NuGet 套件 (.NET)
+      - Microsoft.Azure.Storage.Common (版本 11.x)
+      - Azure.Storage.Common (版本 12.x)
+      - Microsoft.Azure.Storage.Queue (版本 11.x)
+      - Azure.Storage.Queue (版本 12.x)
+      - Azure 組態管理員
+      - 儲存體資源提供者程式庫
+    - 原始程式碼
+      - .NET
+        - Azure 儲存體用戶端程式庫
+          - 版本 12.x
+          - 版本 11.x 和舊版
+        - 資料移動程式庫
+          [729] Microsoft.Azure.Storage.DataMovementNamespace
+        - 儲存體資源提供者程式庫
+      - Java
+        - Azure 儲存體用戶端程式庫版本 12.x
+        - Blob、佇列和檔案 (版本 8)
+          [731] Azure Storage libraries for Java
+        - Azure 儲存體用戶端程式庫版本 8.x 和舊版
+      - Node.js
+        - Azure 儲存體用戶端程式庫版本 12.x
+        - Azure 儲存體用戶端程式庫版本 10.x
+      - Python
+        - Azure 儲存體用戶端程式庫版本 12.x
+        - Azure 儲存體用戶端程式庫版本 2.1
+    - 使用已淘汰 SDK 的程式碼範例
+      - .NET
+        - 版本 11.x 範例
+          [743] 使用 .NET 11.x 版用戶端程式庫的 Azure佇列儲存體程式碼範例
+      - Java 版本 8 範例
+        [751] 使用 Java 8 版用戶端程式庫的 Azure 佇列儲存體程式碼範例
+      - Python 版本 2 範例
+        [759] 使用 Python 2 版用戶端程式庫的 Azure佇列儲存體程式碼範例
+    - 合規性供應項目
+      [763] Azure 儲存體合規性供應項目

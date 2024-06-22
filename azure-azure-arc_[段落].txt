@@ -1,0 +1,67 @@
+- ---< azure-azure-arc.pdf >---
+  - Azure Arc 檔
+    [1] 
+  - 概觀
+    - 關於 Azure Arc
+      [3] Azure Arc 概觀
+    - 選擇正確的 Azure Arc 服務
+      [6] 為機器選擇正確的 Azure Arc 服務
+  - 概念
+    - 自訂位置
+      [12] 自訂位置
+  - 範例
+    - Azure Resource Graph 查詢
+      [15] Azure Arc 的 Azure Resource Graph 範例查詢
+  - Azure Arc 資源橋接器
+    - 關於 Azure Arc 資源網橋
+      [17] Azure Arc 資源橋接器是什麼？
+    - 系統需求
+      [24] Azure Arc 資源網橋系統需求
+    - 網路需求
+      [30] Azure Arc 資源網橋網路需求
+    - 安全性概觀
+      [37] Azure Arc 資源橋接器安全性概觀
+    - 部署概觀
+      [39] Azure Arc 資源橋接器部署命令概觀
+    - 升級
+      [42] 升級 Arc 資源網橋
+    - 維護
+      [47] Azure Arc 資源網橋維護作業
+    - 疑難排解
+      [49] 疑難排解 Azure Arc 資源橋接器問題
+  - 已啟用 Azure Arc 的伺服器>
+    [63] 什麼是啟用 Azure Arc 的伺服器？
+  - 已啟用 Azure Arc 的 Kubernetes >
+    [67] 什麼是已啟用 Azure Arc 的 Kubernetes？
+  - 已啟用 Azure Arc 的資料服務 >
+    [69] 什麼是啟用 Azure Arc 的資料服務？
+  - Azure Arc 月臺管理員>
+    [72] 什麼是 Azure Arc 網站管理員（預覽版）？
+  - 已啟用 Azure Arc 的 VMware vSphere >
+    [75] 什麼是已啟用 Azure Arc 的 VMwarevSphere？
+  - 已啟用 Azure Arc 的 System Center Virtual Machine Manager >
+    [79] 已啟用 Arc 的 System Center VirtualMachine Manager 概觀
+  - Azure Stack HCI 上的 Azure Arc VM 管理>
+    [87] 什麼是 Azure Arc VM 管理？
+  - 已啟用 Azure Arc 的 SQL Server >
+    [90] 透過 Azure Arc 啟用的 SQL Server
+  - Arc 驗證程式
+    - 計畫概觀
+      [102] 已啟用 Azure Arc 的服務驗證概觀
+    - 已驗證的 Kubernetes 合作夥伴
+      [103] 已啟用 Azure Arc 的 Kubernetes 驗證
+    - 已驗證的數據服務合作夥伴
+      [106] 已啟用 Azure Arc 的資料服務 Kubernetes驗證
+  - 參考
+    - 網路需求
+      [112] Azure Arc 網路需求
+    - Azure CLI
+      - Azure Arc 資源橋接器
+        [126] az arcappliance
+  - 資源
+    - Azure Arc 快速入門
+    - 適用於 Azure Arc 的 Microsoft Q&A
+    - Azure 更新
+    - 定價計算機
+    - 區域可用性
+    - 產品意見反應

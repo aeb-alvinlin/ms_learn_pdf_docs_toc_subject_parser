@@ -1,0 +1,232 @@
+- ---< azure-mariadb.pdf >---
+  - 適用於 MariaDB 的 Azure 資料庫文件
+    [1] 適用於 MariaDB 的 Azure 資料庫文件
+  - 概觀
+    - 適用于 MariaDB 的 Azure DB 發生什麼事
+      [4] 適用於 MariaDB 的 Azure 資料庫 會發生什麼事？
+    - 什麼是適用於 MariaDB 的 Azure DB？
+      [8] 什麼是適用於 MariaDB 的 Azure 資料庫？
+    - 我應該選擇哪個 MariaDB 選項？
+      [11] 在 Azure 中選擇正確的 MariaDB 伺服器選項
+    - 支援的版本
+      [16] 支援的適用於 MariaDB 的 Azure 資料庫伺服器版本
+    - 定價層
+      [18] 適用於 MariaDB 的 Azure 資料庫 定價層
+    - 預付保留容量
+      [22] 預付具有保留容量的 適用於 MariaDB 的Azure 資料庫 計算資源
+  - 快速入門
+    - 建立 DB
+      - 建立 DB - 入口網站
+        [26] 快速入門：使用 Azure 入口網站 建立 適用於 MariaDB 的 Azure 資料庫 伺服器
+      - 建立 DB - Azure CLI
+        [38] 快速入門：使用 Azure CLI 建立 適用於MariaDB 的 Azure 資料庫 伺服器
+      - 建立 DB - Azure PowerShell
+        [47] 快速入門：使用 PowerShell 建立 適用於MariaDB 的 Azure 資料庫 伺服器
+      - 建立 DB - Bicep
+        [56] 快速入門：使用 Bicep 建立 適用於MariaDB 的 Azure 資料庫 伺服器
+      - 建立 DB - ARM 範本
+        [61] 快速入門：使用ARM範本建立 適用於MariaDB 的 Azure 資料庫 伺服器
+    - 連線和查詢
+      - MySQL Workbench
+        [70] 快速入門：適用於 MariaDB 的 Azure 資料庫：使用 MySQL Workbench 連線和查詢數據
+      - 連接字串
+        - 連線應用程式
+          [75] 如何將應用程式連線至適用於 MariaDB的 Azure 資料庫
+        - Azure PowerShell
+          [78] 如何使用PowerShell產生 適用於MariaDB 的 Azure 資料庫 連接字串
+      - 使用重新導向連線
+        [80] 使用重新導向 連線 適用於 MariaDB 的Azure 資料庫
+    - 設定 SSL
+      [84] 在您的應用程式中設定 SSL 連線能力，以安全地連線至適用於 MariaDB 的 Azure資料庫
+    - 建立使用者
+      [91] 在適用於 MariaDB 的 Azure 資料庫中建立使用者
+    - 設定伺服器參數
+      - Azure 入口網站
+        [95] 使用 Azure 入口網站 在 適用於 MariaDB的 Azure 資料庫 中設定伺服器參數
+      - Azure CLI
+        [99] 使用 Azure CLI 在 適用於 MariaDB 的Azure 資料庫 中設定伺服器參數
+      - Azure PowerShell
+        [103] 使用 PowerShell 在 適用於 MariaDB 的Azure 資料庫 中設定伺服器參數
+    - 監視伺服器
+      [106] 使用 Azure 入口網站 來設定 適用於MariaDB 的 Azure 資料庫 計量的警示
+  - 應用程式開發
+    - 設計資料庫
+      - Azure 入口網站
+        [111] 教學課程：使用 Azure 入口網站 設計 適用於 MariaDB 的 Azure 資料庫 資料庫
+      - Azure CLI
+        [121] 教學課程：使用 Azure CLI 設計 適用於MariaDB 的 Azure 資料庫
+      - Azure PowerShell
+        [128] 教學課程：使用 PowerShell 設計 適用於MariaDB 的 Azure 資料庫
+    - 驅動程式和工具相容性
+      [135] 
+    - 恢復連線
+      [137] 處理 適用於 MariaDB 的 Azure 資料庫的暫時性連線錯誤
+  - 伺服器管理
+    - 伺服器概念
+      [139] 適用於 MariaDB 的 Azure 資料庫 中的伺服器概念
+    - 限制
+      [142] 適用於 MariaDB 的 Azure 資料庫的限制
+    - 伺服器參數
+      [145] 適用於 MariaDB 的 Azure 資料庫 中的伺服器參數
+    - 管理伺服器
+      - Azure 入口網站
+        [154] 使用 Azure 入口網站 管理 適用於MariaDB 的 Azure 資料庫 伺服器
+    - 自動成長的儲存體
+      - Azure 入口網站
+        [160] 使用 Azure 入口網站 自動增加 適用於MariaDB 的 Azure 資料庫 中的記憶體
+      - Azure CLI
+        [163] 使用 Azure CLI 自動成長 適用於 MariaDB的 Azure 資料庫 記憶體
+      - Azure PowerShell
+        [165] 使用 PowerShell 在 適用於 MariaDB 的Azure 資料庫 伺服器中自動增加記憶體
+    - 重新啟動伺服器
+      - Azure 入口網站
+        [167] 使用 Azure 入口網站重新啟動適用於MariaDB 的 Azure 資料庫伺服器
+      - Azure CLI
+        [170] 使用 Azure CLI 重新啟動 適用於 MariaDB的 Azure 資料庫 伺服器
+      - Azure PowerShell
+        [172] 使用 PowerShell 重新啟動 適用於MariaDB 的 Azure 資料庫 伺服器
+    - 在區域間移動伺服器
+      [174] 使用 Azure 入口網站 將 適用於 MariaDB的 Azure 資料庫 伺服器移至另一個區域
+  - 高可用性
+    - 業務持續性簡介
+      [177] 使用 適用於 MariaDB 的 Azure 資料庫的商務持續性概觀
+    - 高可用性叢集
+      [181] 適用於 MariaDB 的 Azure 資料庫 中的高可用性
+  - 網路
+    - 連線架構
+      [185] 適用於 MariaDB 的 Azure 資料庫中的連線架構
+    - 防火牆規則概念
+      [192] 適用於 MariaDB 的 Azure 資料庫 伺服器防火牆規則
+    - 設定防火牆規則
+      - 使用 Azure 入口網站設定防火牆規則
+        [196] 使用 Azure 入口網站 建立和管理 適用於MariaDB 的 Azure 資料庫 防火牆規則
+      - 使用 Azure CLI 設定防火牆規則
+        [200] 使用 Azure CLI 建立和管理 適用於MariaDB 的 Azure 資料庫 防火牆規則
+    - 虛擬網路
+      [205] 針對適用於 MariaDB 的 Azure 資料庫使用虛擬網路服務端點和規則
+    - 設定虛擬網路
+      - 使用 Azure 入口網站
+        [210] 使用 Azure 入口網站 建立和管理 適用於MariaDB 的 Azure 資料庫 VNet 服務端點和 VNet 規則
+      - Azure CLI
+        [214] 使用 Azure CLI 建立和管理 適用於MariaDB 的 Azure 資料庫 VNet 服務端點
+    - Private Link
+      [218] 適用於 MariaDB 的 Azure 資料庫的Private Link
+    - 私人連結
+      - 使用 Azure 入口網站設定私人連結
+        [224] 使用入口網站建立及管理 適用於MariaDB 的 Azure 資料庫的私人連結
+      - 使用 Azure CLI 設定私人連結
+        [233] 使用 CLI 建立和管理 適用於 MariaDB 的Azure 資料庫 的 Private Link
+    - 拒絕公用網路存取
+      - Azure 入口網站
+        [239] 使用 Azure 入口網站 拒絕 適用於MariaDB 的 Azure 資料庫 中的公用網路存取
+  - 安全性
+    - 安全性概觀
+      [241] 適用於 MariaDB 的 Azure 資料庫安全性
+    - 安全性基準
+      [243] 適用於 適用於 MariaDB 的 Azure 資料庫的 Azure 安全性基準
+    - Azure 原則的安全性控制
+      [256] Azure 原則 適用於 MariaDB 的 Azure 資料庫的法規合規性控制
+    - 使用 SSL 設定網路安全性
+      [268] 適用於 MariaDB 的 Azure 資料庫 中的SSL/TLS 連線能力
+    - 設定 TLS
+      [271] 使用 Azure 入口網站 在 適用於 MariaDB的 Azure 資料庫 中設定 TLS 設定
+    - 威脅防護搭配適用於雲端的 Microsoft Defender
+      [273] 回應 Defender 開放原始碼資料庫警示
+    - 稽核概念
+      [276] 適用於 MariaDB 的 Azure 資料庫 中的稽核記錄
+    - 設定稽核記錄
+      - Azure 入口網站
+        [282] 在 Azure 入口網站 中設定和存取稽核記錄
+      - Azure CLI
+        [288] 在 Azure CLI 中設定和存取 適用於MariaDB 的 Azure 資料庫 稽核記錄
+  - 服務維護
+    - 預定的維修
+      [291] 適用於 MariaDB 的 Azure 資料庫 中的計劃性維護通知
+    - SSL 根憑證即將到期
+      [294] 瞭解 適用於 MariaDB 的 Azure 資料庫 根CA 變更中的變更
+  - 備份與還原
+    - 概念
+      [301] 在 適用於 MariaDB 的 Azure 資料庫 中備份和還原
+    - 還原伺服器
+      - Azure 入口網站
+        [306] 如何使用 Azure 入口網站，在 適用於MariaDB 的 Azure 資料庫 中備份和還原伺服器
+      - Azure CLI
+        [316] 如何使用 Azure CLI 在 適用於 MariaDB的 Azure 資料庫 中備份和還原伺服器
+      - Azure PowerShell
+        [321] 如何使用PowerShell備份和還原 適用於MariaDB 的 Azure 資料庫 伺服器
+    - 還原已刪除的伺服器
+      [326] 還原已刪除 適用於 MariaDB 的 Azure 資料庫 伺服器
+  - 監視與微調
+    - 概念
+      [329] 在適用於 MariaDB 的 Azure 資料庫中監視
+    - 慢速查詢記錄
+      [332] 適用於 MariaDB 的 Azure 資料庫 中的查詢記錄變慢
+    - 存取慢速查詢記錄
+      - Azure 入口網站
+        [337] 設定和存取來自 Azure 入口網站 的慢速查詢記錄 適用於 MariaDB 的 Azure 資料庫
+      - Azure CLI
+        [344] 使用 Azure CLI 設定和存取慢速查詢記錄適用於 MariaDB 的 Azure 資料庫
+    - 查詢存放區
+      [346] 使用 查詢存放區 監視 適用於 MariaDB 的Azure 資料庫 效能
+    - 查詢效能深入解析
+      [353] 適用於 MariaDB 的 Azure 資料庫中的查詢效能深入解析
+    - Azure Advisor 建議
+      [356] 適用於 MariaDB 的 Azure Advisor
+  - 複寫
+    - 複寫中的資料
+      [358] 將數據復寫至 適用於 MariaDB 的 Azure資料庫
+    - 正在設定資料複寫
+      [360] 在 適用於 MariaDB 的 Azure 資料庫 中設定數據傳入複寫
+    - 讀取複本
+      [370] 讀取 適用於 MariaDB 的 Azure 資料庫 中的複本
+    - 建立讀取複本
+      - 在 Azure 入口網站中建立讀取複本
+        [377] 如何使用 Azure 入口網站 在 適用於MariaDB 的 Azure 資料庫 中建立和管理讀取複本
+      - 建立讀取複本 Azure CLI，REST API
+        [388] 如何使用 Azure CLI 和 REST API 在 適用於 MariaDB 的 Azure 資料庫 中建立和管理讀取複本
+      - 在 Azure PowerShell 中建立讀取複本
+        [394] 如何使用 PowerShell 在 適用於 MariaDB的 Azure 資料庫 中建立和管理讀取複本
+  - 遷移
+    - 移轉伺服器
+      [398] 使用傾印和還原來將 MariaDB 資料庫移轉至適用於 MariaDB 的 Azure 資料庫
+  - 疑難排解
+    - 針對連線問題進行疑難排解
+      [404] 針對適用於 MariaDB 的 Azure 資料庫的連線問題進行疑難排解
+    - 針對查詢效能進行疑難排解
+      [406] 如何使用 EXPLAIN 來分析 適用於MariaDB 的 Azure 資料庫 中的查詢效能
+  - 範例
+    - Azure CLI 範例
+      - 範例概觀
+        [410] 適用於 適用於 MariaDB 的 Azure 資料庫的 Azure CLI 範例
+      - 建立具有防火牆規則的伺服器
+        [412] 使用 Azure CLI 建立 MariaDB 伺服器並設定防火牆規則
+      - 建立具有 VNet 規則的伺服器
+        [416] 使用 Azure CLI 建立 MariaDB 伺服器並設定 vNet 規則
+      - 調整伺服器
+        [420] 使用 Azure CLI 監視和調整 適用於MariaDB 的 Azure 資料庫 伺服器
+      - 變更伺服器組態
+        [424] 使用 Azure CLI 列出和更新 適用於MariaDB 的 Azure 資料庫 伺服器的組態
+      - 還原伺服器
+        [428] 使用 Azure CLI 還原 適用於 MariaDB 的Azure 資料庫 伺服器
+      - 管理伺服器記錄
+        [431] 使用 Azure CLI 啟用和下載 適用於MariaDB 的 Azure 資料庫 伺服器的伺服器慢速查詢記錄
+  - 參考
+    - Azure CLI
+      [435] az mariadb
+    - REST API
+      [439] 適用於 MariaDB 的 Azure 資料庫 RESTAPI
+    - Resource Manager 範本
+      [441] Microsoft.DBforMariaDB 資源類型
+    - 預存程序管理
+      [442] 適用於 MariaDB 的 Azure 資料庫 管理預存程式
+    - Azure 原則內建
+      [444] 
+  - 資源
+    - 部署範本
+    - Azure 藍圖
+    - 定價
+    - Microsoft 問與答頁面
+    - Stack Overflow
+    - 要求功能
+    - 區域可用性
+    - 支援選項

@@ -1,0 +1,92 @@
+- ---< azure-hpc-cache.pdf >---
+  - Azure HPC Cache 文件
+    [1] Azure HPC Cache 文件
+  - 概觀
+    - 什麼是 Azure HPC Cache？
+      [3] 什麼是 Azure HPC Cache？
+  - 概念
+    - 決定 HPC Cache 是否為正確解決方案
+      [6] 您的工作是否適用 Azure HPC Cache？
+    - 規劃彙總的命名空間
+      [8] 規劃彙總的命名空間
+    - 了解快取使用量模型
+      [10] 瞭解快取使用模型
+    - 安全性
+      - 安全性基準
+        [13] 適用于 Azure HPC Cache 的 Azure 安全性基準
+      - 安全性資訊
+        [24] Azure HPC Cache 的安全性資訊
+  - 操作指南
+    - 必要條件
+      [26] Azure HPC Cache 的必要條件
+    - 建立快取
+      [34] 建立 Azure HPC Cache
+    - 新增儲存體
+      - 新增儲存體目標
+        [43] 新增記憶體目標
+      - 新增命名空間路徑
+        [53] 設定彙總的命名空間
+      - 將資料移至儲存體目標 (若有需要)
+        - 將資料移至 Blob 儲存體
+          [58] 將資料移至 Azure Blob 儲存體
+        - 其他資料內嵌方法
+          - 使用平行複製植入快取
+            [61] Azure HPC Cache 資料內嵌 - 平行複製指令碼方法
+          - 使用 msrsync 植入快取
+            [63] Azure HPC Cache 資料內嵌 - msrsync 方法
+          - 使用檔案複製植入快取
+            [65] Azure HPC Cache 資料擷取 - 手動複製方法
+      - 編輯儲存體目標
+        [71] 編輯記憶體目標
+      - 檢視並管理儲存目標
+        [76] 檢視和管理儲存體目標
+    - 連接到快取
+      [83] 掛接 Azure HPC Cache
+    - 管理快取
+      [89] 管理快取
+    - 計量和監視
+      [96] 快取計量和監視
+    - 使用選擇性設定
+      - 設定選擇性設定
+        [99] 設置額外 Azure HPC Cache 設定
+      - 自訂存取原則
+        [103] 控制用戶端存取
+      - 設定目錄服務
+        [107] 設定目錄服務
+  - 參考
+    - Azure CLI
+      [113] az hpc-cache
+    - Azure PowerShell
+      [133] Az.HPCCache
+  - 資源
+    - 連絡支援
+      [134] 請連絡支援人員以取得 Azure HPC Cache
+    - 增加配額
+      [136] 要求增加 HPC Cache 配額
+    - 疑難排解
+      - 針對 NFS 儲存目標的建立進行疑難排解
+        [139] 針對 NAS 設定和 NFS 儲存目標問題進行疑難排解
+      - 解決 Blob 儲存體帳戶防火牆設定問題
+        [144] 解決 Blob 儲存體帳戶防火牆設定問題
+      - 從區域性中斷復原
+        [145] 對區域容錯移轉復原使用多個快取
+      - 移動快取
+        [147] 如何將 Azure HPC Cache 移至另一個區域
+    - 儲存體選項
+      - 搭配使用掛接 NFS 的 Blob 儲存體與 Azure HPC Cache
+        [150] 搭配 Azure HPC Cache 使用 NFS 掛接的Blob 儲存體
+      - 使用 Azure NetApp Files 搭配 Azure HPC Cache
+        [154] 對 Azure NetApp Files 使用 Azure HPCCache
+    - 使用由客戶管理的加密金鑰
+      [157] 針對 Azure HPC Cache 使用客戶管理的加密金鑰
+    - 平衡用戶端流量的負載
+      [165] HPC Cache 用戶端流量的負載平衡
+    - 自訂檔案回寫
+      [170] 在 Azure HPC Cache 中自訂檔案回寫
+    - 對快取進行基本
+      [172] 在 Azure HPC Cache 中預先載入檔案
+    - 設定適用於 Azure HPC Cache 的 Azure CLI
+      [182] 設定適用於 Azure HPC Cache 的 AzureCLI
+    - 產品概觀
+    - 定價和購買選項
+    - 產品常見問題集

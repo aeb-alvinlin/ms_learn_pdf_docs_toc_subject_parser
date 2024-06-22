@@ -1,0 +1,66 @@
+- ---< entra-id-protection.pdf >---
+  - Microsoft Entra ID Protection 檔
+    [1] Microsoft Entra ID Protection 檔
+  - 概觀
+    - 什麼是 Microsoft Entra ID Protection？
+      [2] 什麼是 Identity Protection？
+  - 概念
+    - Microsoft Entra ID Protection 儀錶板
+      [7] Microsoft Entra ID Protection 儀錶板
+    - 什麼是風險？
+      [15] 什麼是風險偵測？
+    - 風險型訪問控制原則
+      [25] 以風險為基礎的存取原則
+    - 使用者登入體驗
+      [29] Microsoft Entra ID Protection 和條件式存取的自我補救體驗
+    - 保護工作負載身分識別
+      [34] 保護工作負載身分識別
+    - Microsoft Entra ID Protection 和 B2B 使用者
+      [39] Microsoft Entra ID Protection 和 B2B 使用者
+  - 操作指南
+    - 部署 Microsoft Entra ID Protection
+      [43] 規劃 Identity Protection 部署
+    - 設定通知
+      [48] Microsoft Entra ID Protection 通知
+    - 原則設定
+      - 設定 MFA 註冊原則
+        [52] 如何：設定多重要素驗證註冊原則
+      - 設定風險原則
+        [54] 設定及啟用風險原則
+    - 模擬風險偵測
+      [59] 在 Microsoft Entra ID Protection 中模擬風險偵測
+    - 調查和補救
+      - 調查風險
+        [63] How To:調查風險
+      - 補救風險偵測並解除封鎖
+        [71] 補救風險並將使用者解除封鎖
+      - 匯出風險資料
+        [77] 操作說明：匯出風險資料
+      - 使用 Microsoft Graph PowerShell
+        [81] Microsoft Entra ID Protection 和Microsoft Graph PowerShell
+    - 提供風險偵測的意見反應
+      [84] 如何：在 Microsoft Entra ID Protection中提供風險意見反應
+    - 影響分析活頁簿
+      [87] 活頁簿：風險型存取原則的影響分析
+    - 常見問題集
+      [89] 關閉用戶風險已知問題
+  - 參考
+    - Microsoft Graph API
+      - riskDetection API
+        [93] riskDetection resource type
+      - riskyUsers API
+        [98] riskyUser resource type
+      - signIn API
+        [101] 
+      - servicePrincipalRiskDetection API
+        [107] servicePrincipalRiskDetection resourcetype
+      - riskyServicePrincipal API
+        [112] riskyServicePrincipal resource type
+  - 資源
+    - Azure 意見反應論壇
+    - Microsoft 問與答頁面
+    - 定價
+    - 服務更新
+      [115] Microsoft Entra 標識符的新功能？
+    - Stack Overflow
+    - 影片

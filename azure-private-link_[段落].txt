@@ -1,0 +1,111 @@
+- ---< azure-private-link.pdf >---
+  - Azure Private Link 文件
+    [1] Private Link 文件
+  - 概觀
+    - 什麼是 Azure Private Link？
+      [3] 什麼是 Azure Private Link？
+  - 快速入門
+    - 建立私人端點 - Azure 入口網站
+      [6] 快速入門：使用 Azure 入口網站 建立私人端點
+    - 建立私人端點 - PowerShell
+      [19] 快速入門：使用 Azure PowerShell 建立私人端點
+    - 建立私人端點 - Azure CLI
+      [29] 快速入門：使用 Azure CLI 建立私人端點
+    - 建立私人端點 - Bicep
+      [37] 快速入門：使用 Bicep 建立私人端點
+    - 建立私人端點 - ARM 範本
+      [45] 快速入門：使用ARM範本建立私人端點
+    - 建立私人端點 - Terraform
+      [55] 快速入門：使用 Terraform 建立私人端點
+    - 建立 Private Link 服務 - Azure 入口網站
+      [66] 快速入門：使用 Azure 入口網站建立Private Link 服務
+    - 建立私人連結服務 - PowerShell
+      [77] 快速入門：使用 Azure PowerShell 建立Private Link 服務
+    - 建立私人連結服務 - Azure CLI
+      [85] 快速入門：使用 Azure CLI 建立 PrivateLink 服務
+    - 建立私人連結服務 - Bicep
+      [93] 快速入門：使用 Bicep 建立私人鏈接服務
+    - 建立私人連結服務 - ARM 範本
+      [104] 快速入門：使用ARM範本建立私人連結服務
+  - 教學課程
+    - 使用 Azure 防火牆檢查私人端點流量
+      [117] 教學課程：使用 Azure 防火牆檢查私人端點流量
+    - 使用私人解析器部署私人端點
+      [137] 教學課程：使用適用於內部部署工作負載的 Azure 私人解析器來建立私人端點DNS 基礎結構
+    - 連線至儲存體帳戶
+      [155] 教學課程：使用 Azure 私人端點連線至儲存體帳戶
+    - 連線至 Azure Cosmos DB 帳戶
+      [168] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+    - SQL
+      - 連線到 SQL server - Azure 入口網站
+        [188] 教學課程：使用 Azure 入口網站，使用Azure 私人端點 連線 至 Azure SQLServer
+      - 連線到 SQL Server - PowerShell
+        [200] 教學課程：使用 Azure PowerShell 使用Azure 私人端點 連線 至 Azure SQLServer
+      - 連線到 SQL server - Azure CLI
+        [209] 教學課程：使用 Azure CLI 透過 Azure 私人端點連線到 Azure SQL 伺服器
+  - 概念
+    - 可用性
+      [217] Azure Private Link 可用性
+    - 什麼是私人端點？
+      [225] 什麼是私人端點？
+    - Private Link 服務
+      [237] 什麼是 Azure Private Link 服務？
+    - DNS
+      - 私人 DNS 區域值
+        [244] Azure 私人端點私人 DNS 區域值
+      - 私人端點 DNS 整合
+        [267] Azure 私人端點 DNS 整合
+    - RBAC 權限
+      [275] 適用於 Azure Private Link 的 Azure RBAC權限
+    - Azure 虛擬 WAN 中的 Private Link 和 DNS
+      [280] 
+    - Azure 防火牆流量檢查
+      [289] 用來檢查目的地是私人端點的流量的Azure 防火牆案例
+    - 安全性
+      - 安全性基準
+        [294] 適用于 Azure Private Link 的 Azure 安全性基準
+  - 操作方式
+    - 核准訂用帳戶之間的私人連結連線
+      [298] 核准跨訂閱的 Private Link 連線
+    - 設定應用程式安全性群組
+      [306] 設定具有私人端點的應用程式安全性群組
+    - 匯出私人端點 DNS 記錄
+      [311] 使用 Azure 入口網站匯出私人端點的DNS 記錄
+    - 管理私人端點的網路原則
+      [314] 管理私人端點的網路原則
+    - 停用 Private Link 服務的網路原則
+      [316] 停用 Private Link 服務來源 IP 的網路原則
+    - 管理私人端點
+      [318] 管理 Azure 私人端點
+    - 疑難排解
+      - 針對私人端點連線問題進行疑難排解
+        [324] 針對 Azure 私人端點連線問題進行疑難排解
+      - 針對 Private Link 服務連線問題進行疑難排解
+        [332] 針對 Azure Private Link 服務連線能力的問題進行疑難排解
+  - 參考
+    - Azure CLI
+      [339] az network private-link-service
+    - Azure PowerShell
+      [358] 
+    - .NET
+      [390] 適用于 .NET 的 Azure 虛擬網路 SDK - 最新
+    - Java
+    - Node.js
+      [391] 適用於 JavaScript 和 Node.js 開發人員的Azure
+    - Python
+    - REST
+      [395] Private Endpoints
+    - Resource Manager 範本
+      [396] Microsoft.Network 資源類型
+    - 程式碼範例
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure 藍圖
+    - 網路部落格
+    - Azure 網路的 Microsoft 問與答頁面
+    - 網路意見反應
+    - 定價
+    - 定價計算機
+    - Stack Overflow
+    - 常見問題集
+      [434] Private Link

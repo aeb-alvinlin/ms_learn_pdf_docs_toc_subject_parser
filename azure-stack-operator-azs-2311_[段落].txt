@@ -1,0 +1,651 @@
+- ---< azure-stack-operator-azs-2311.pdf >---
+  - Azure Stack Hub 操作員文件
+    [1] Azure Stack Hub 操作員文件
+  - 概觀
+    - 什麼是 Azure Stack Hub？
+      [3] Azure Stack Hub 概觀
+    - 比較 Azure 生態系統
+      [9] 全域 Azure、Azure Stack Hub 與 AzureStack HCI 之間的差異
+    - 版本資訊
+      - 安全性更新
+        [12] Azure Stack Hub 安全性更新
+      - 版本資訊
+        [19] Azure Stack Hub 版本資訊
+      - Hotfix
+        - Hotfix 1.2311.2.23
+          [23] Azure Stack Hub Hotfix 1.2311.2.23
+        - Hotfix 1.2306.4.74
+          [25] Azure Stack Hub Hotfix 1.2306.4.74
+        - Hotfix 1.2301.3.72
+          [27] Azure Stack Hub Hotfix 1.2301.3.72
+        - Hotfix 1.2306.4.73
+          [29] Azure Stack Hub Hotfix 1.2306.4.73
+        - Hotfix 1.2206.2.77
+          [31] Azure Stack Hub Hotfix 1.2206.2.77
+        - Hotfix 1.2301.2.64
+          [33] Azure Stack Hub Hotfix 1.2301.2.64
+        - Hotfix 1.2206.2.76
+          [35] Azure Stack Hub Hotfix 1.2206.2.76
+        - Hotfix 1.2301.2.63
+          [37] Azure Stack Hub Hotfix 1.2301.2.63
+        - Hotfix 1.2301.2.60
+          [39] Azure Stack Hub Hotfix 1.2301.2.60
+        - Hotfix 1.2206.2.66
+          [41] Azure Stack Hub Hotfix 1.2206.2.66
+        - Hotfix 1.2108.2.130
+          [43] Azure Stack Hub Hotfix 1.2108.2.130
+        - Hotfix 1.2102.31.153
+          [46] Azure Stack Hub Hotfix 1.2102.31.153
+        - Hotfix 1.2206.2.52
+          [49] Azure Stack Hub Hotfix 1.2206.2.52
+        - Hotfix 1.2108.2.127
+          [51] Azure Stack Hub Hotfix 1.2108.2.127
+        - Hotfix 1.2102.31.152
+          [54] Azure Stack Hub Hotfix 1.2102.31.152
+        - Hotfix 1.2206.2.38
+          [57] Azure Stack Hub Hotfix 1.2206.2.38
+        - Hotfix 1.2108.2.113
+          [59] Azure Stack Hub Hotfix 1.2108.2.113
+        - Hotfix 1.2102.30.148
+          [61] Azure Stack Hub Hotfix 1.2102.30.148
+        - Hotfix 1.2206.1.25
+          [64] Azure Stack Hub Hotfix 1.2206.1.25
+        - Hotfix 1.2206.1.24
+          [66] Azure Stack Hub Hotfix 1.2206.1.24
+        - 1.2108.2.111 的修正程式
+          [68] Azure Stack Hub Hotfix 1.2108.2.111
+        - 1.2102.30.146 的修正程式
+          [70] Azure Stack Hub Hotfix 1.2102.30.146
+        - 1.2008.41.161 的修正程式
+          [73] Azure Stack Hub Hotfix 1.2008.41.161
+        - 1.2108.2.102 的修正程式
+          [77] Azure Stack Hub Hotfix 1.2108.2.102
+        - 1.2102.30.132 的修正程式
+          [79] Azure Stack Hub Hotfix 1.2102.30.132
+        - 1.2008.41.159 的修正程式
+          [82] Azure Stack Hub Hotfix 1.2008.41.159
+        - 1.2108.2.83 的修正程式
+          [86] Azure Stack Hub Hotfix 1.2108.2.83
+        - 1.2102.30.118 的修正程式
+          [88] Azure Stack Hub 修正程式 1.2102.30.118
+        - 1.2008.40.156 的修正程式
+          [91] Azure Stack Hub Hotfix 1.2008.40.156
+        - 1.2102.30.116 的修正程式
+          [95] Azure Stack Hub Hotfix 1.2102.30.116
+        - 1.2102.30.109 的修正程式
+          [98] Azure Stack Hub 修正程式 1.2102.30.109
+        - 1.2102.30.106 的修正程式
+          [101] Azure Stack Hub 修正程式 1.2102.30.106
+        - 1.2102.30.104 的修正程式
+          [104] Azure Stack Hub Hotfix 1.2102.30.104
+        - 1.2008.40.154 的修正程式
+          [107] Azure Stack Hub Hotfix 1.2008.40.154
+        - 1.2005.48.137 的修正程式
+          [111] Azure Stack Hub Hotfix 1.2005.48.137
+        - 1.2102.30.102 的修正程式
+          [114] Azure Stack Hub Hotfix 1.2102.30.102
+        - 1.2008.40.151 的修正程式
+          [117] Azure Stack Hub 修正程式 1.2008.40.151
+        - 1.2005.47.135 的修正程式
+          [121] Azure Stack Hub Hotfix 1.2005.47.135
+        - 1.2102.30.101 的修正程式
+          [124] Azure Stack Hub Hotfix 1.2102.30.101
+        - 1.2008.40.150 的修正程式
+          [127] Azure Stack Hub Hotfix 1.2008.40.150
+        - 1.2005.46.133 的修正程式
+          [131] Azure Stack Hub Hotfix 1.2005.46.133
+        - 1.2102.28.89 的修正程式
+          [134] Azure Stack Hub Hotfix 1.2102.28.89
+        - 1.2008.40.148 的修正程式
+          [136] Azure Stack Hub Hotfix 1.2008.40.148
+        - 1.2005.42.126 的修正程式
+          [140] Azure Stack Hub 修正程式 1.2005.42.126
+        - 1.2102.28.87 的修正程式
+          [143] Azure Stack Hub Hotfix 1.2102.28.87
+        - 1.2008.37.139 的修正程式
+          [145] Azure Stack Hub Hotfix 1.2008.37.139
+        - 1.2005.41.124 的修正程式
+          [148] Azure Stack Hub 修正程式 1.2005.41.124
+        - 1.2002.69.179 的修正程式
+          [151] Azure Stack Hub Hotfix 1.2002.69.179
+        - 1.2008.33.131 的修正程式
+          [155] Azure Stack Hub Hotfix 1.2008.33.131
+        - 1.2005.35.112 的修正程式
+          [158] Azure Stack Hub Hotfix 1.2005.35.112
+        - 1.2008.31.126 的修正程式
+          [161] Azure Stack Hub Hotfix 1.2008.31.126
+        - 1.2005.33.108 的修正程式
+          [164] Azure Stack Hub 修正程式 1.2005.33.108
+        - 1.2008.27.118 的修正程式
+          [167] Azure Stack Hub Hotfix 1.2008.27.118
+        - 1.2005.32.106 的修正程式
+          [170] Azure Stack Hub Hotfix 1.2005.32.106
+        - 1.2002.67.175 的修正程式
+          [173] Azure Stack Hub Hotfix 1.2002.67.175
+        - 1.2008.26.116 的修正程式
+          [177] Azure Stack Hub Hotfix 1.2008.26.116
+        - 1.2005.30.102 的修正程式
+          [180] Azure Stack Hub Hotfix 1.2005.30.102
+        - 1.2002.66.173 的修正程式
+          [183] Azure Stack Hub 修正程式 1.2002.66.173
+        - 1.2008.25.114 的修正程式
+          [187] Azure Stack Hub Hotfix 1.2008.25.114
+        - 1.2005.29.100 的修正程式
+          [189] Azure Stack Hub Hotfix 1.2005.29.100
+      - 已知問題
+        [192] Azure Stack Hub 的已知問題
+    - 管理更新
+      - 管理更新概觀
+        [195] 在 Azure Stack Hub 中管理更新
+      - 更新與服務原則
+        [199] Azure Stack Hub 服務原則
+      - 適用於套用更新的檢查清單
+        [203] Azure Stack Hub 更新活動檢查清單
+      - 準備更新套件
+        [206] 準備 Azure Stack Hub 更新套件
+      - 套用更新
+        - 套用更新
+          [212] 安裝 Azure Stack Hub 更新
+        - 套用 OEM 更新
+          [216] 套用 Azure Stack Hub 原始設備製造商(OEM) 更新
+      - 監視更新狀態
+        - 使用 PowerShell
+          [219] 使用 PowerShell 在 Azure Stack Hub 中監視更新
+        - 使用具有特殊權限的端點
+          [221] 使用具有特殊權限的端點來監視 AzureStack Hub 中的更新
+  - 快速入門
+    - 使用管理員入口網站
+      [226] 使用 Azure Stack Hub 中的系統管理員入口網站
+  - 教學課程
+    - 提供服務給使用者
+      [230] 在 Azure Stack Hub 中為使用者建立服務供應項目
+    - 測試服務供應項目
+      [239] 教學課程：測試服務供應項目
+  - 概念
+    - 容量規劃
+      - 概觀
+        [244] Azure Stack Hub 的容量規劃概觀
+      - 計算
+        [246] Azure Stack Hub 計算能量
+      - 儲存體
+        - 儲存體容量規劃
+          [255] Azure Stack Hub 儲存體容量規劃
+        - 儲存體基礎結構概觀
+          [259] Azure Stack Hub 儲存體基礎結構概觀
+      - Azure Stack Hub Capacity Planner
+        [264] Azure Stack Hub Capacity Planner
+    - 資料中心整合
+      - 逐步介紹
+        [268] Azure Stack Hub 資料中心整合逐步解說
+      - 一般考量
+        [273] Azure Stack Hub 整合式系統的資料中心整合規劃考量
+      - 連線模型
+        [284] Azure Stack Hub 整合式系統連線模式
+      - 已連線的部署
+        [286] 適用於 Azure Stack Hub 整合式系統的Azure 連線部署規劃決策
+      - 已中斷連線的部署
+        [290] 適用於 Azure Stack Hub 整合式系統的Azure 中斷連線部署規劃決策
+      - 資料中心網路整合
+        - 網路整合
+          [293] Azure Stack Hub 的網路整合規劃
+        - 界限連線能力
+          [301] 界限連線能力
+        - 交換器設定
+          [304] 變更 Azure Stack Hub 交換器設定上的設定
+        - DNS 整合
+          [306] Azure Stack Hub 資料中心 DNS 整合
+        - 設定 DNS 轉寄站
+          [313] 更新 Azure Stack Hub 中的 DNS 轉寄站
+        - 設定時間伺服器
+          [315] 設定 Azure Stack Hub 的時間伺服器
+        - 防火牆/Proxy
+          - 防火牆整合
+            [317] Azure Stack Hub 防火牆整合
+          - 透明 Proxy
+            [321] Azure Stack Hub 的透明 Proxy
+          - 發佈端點
+            [328] 
+          - 延伸主機
+            [337] 在 Azure Stack Hub 中準備延伸主機
+        - 驗證資料中心網路整合
+          [345] 驗證 Azure Stack Hub 的資料中心網路整合
+      - 部署工作表
+        [354] Azure Stack Hub 整合式系統的部署工作表
+      - 身分識別整合
+        - 身分識別提供者和 ADFS 整合
+          [357] 整合 AD FS 身分識別與您的 Azure StackHub 資料中心
+        - 建立註冊角色
+          [370] 建立 Azure Stack Hub 註冊的自訂角色
+        - 驗證 Azure 身分識別
+          [373] 驗證 Azure 身分識別
+        - 驗證 ADFS 整合
+          [379] 驗證 Azure Stack Hub 的 AD FS 整合
+        - 驗證圖表整合
+          [383] 驗證 Azure Stack Hub 的圖表整合
+      - 外部 PKI 憑證
+        - PKI 憑證需求
+          [387] Azure Stack Hub 公開金鑰基礎結構 (PKI)憑證需求
+        - 產生 PKI 憑證
+          [393] 產生 Azure Stack Hub 的憑證簽署要求
+        - 準備 Azure Stack Hub PKI 憑證
+          [398] 準備 Azure Stack Hub PKI 憑證以進行部署或輪替
+        - 驗證 PKI 憑證
+          [408] 驗證 Azure Stack Hub PKI 憑證
+        - 修復 PKI 憑證
+          [415] 修正 Azure Stack Hub PKI 憑證的常見問題
+      - 部署資源
+        - 關於部署網路功能
+          [420] 部署網路流量
+      - 驗證 Azure 註冊
+        [423] 驗證 Azure 註冊
+        - 檢視整備報表
+          [428] Azure Stack Hub 驗證報告
+      - 外部監視
+        [432] 整合外部監視解決方案與 Azure StackHub
+      - 外部稽核
+        - Syslog 轉送
+          [440] 
+        - 裝置稽核
+          [456] 整合實體裝置稽核與您的 Azure StackHub 資料中心
+  - 操作指南
+    - 管理 Azure Stack Hub
+      - 管理基本概念
+        [458] Azure Stack Hub 系統管理基本資料
+      - 從入口網站清除使用者資料
+        [464] 從 Azure Stack Hub 清除入口網站的使用者資料
+      - 設定遙測資料收集
+        [469] 設定 Azure Stack Hub 遙測
+      - 註冊 Azure Stack Hub
+        [475] 向 Azure 註冊 Azure Stack Hub
+      - 區域管理
+        [490] Azure Stack Hub 中的區域管理
+      - 使用 ExpressRoute 連線至 Azure
+        [492] 使用 Azure ExpressRoute 將 Azure StackHub 連線至 Azure
+      - 啟用使用者適用的 CLI
+        [510] 為 Azure Stack Hub 使用者啟用 AzureCLI
+      - VPN 快速路徑
+        [512] 適用於操作員的 Azure Stack Hub VPN 快速路徑
+      - 設定管理環境
+        - 安裝 PowerShell Az
+          [518] 安裝適用於 Azure Stack Hub 的PowerShell Az 和 Azure Stack 模組
+        - 安裝 PowerShell AzureRM
+          [528] 安裝適用於 Azure Stack Hub 的PowerShell AzureRM 模組
+        - 將 PowerShell AzureRM 遷移至 Az
+          [536] 在 Azure Stack Hub 中從 AzureRM 移轉至 Azure PowerShell Az
+        - 下載工具
+          [548] 從 GitHub 下載 Azure Stack Hub 工具
+        - 使用 PowerShell 連線
+          [551] 使用 PowerShell 連線到 Azure Stack Hub
+      - 存取具有特殊權限的端點
+        [554] 使用 Azure Stack Hub 中具有特殊權限的端點
+      - 監視健康情況和警示
+        [563] 在 Azure Stack Hub 中監視健康情況和警示
+      - 監視硬體元件
+        [570] 監視 Azure Stack Hub 硬體元件
+      - 管理網路資源
+        [572] 在 Azure Stack Hub 中管理網路資源
+      - 變更使用者訂用帳戶擁有者
+        [576] 變更 Azure Stack Hub 使用者訂用帳戶的計費擁有者
+      - 啟動及停止 Azure Stack Hub
+        [578] 啟動及停止 Azure Stack Hub
+      - 解除委任 Azure Stack Hub 系統
+        [581] 解除委任 Azure Stack Hub 系統
+      - Azure Site Recovery 工具
+        [584] Azure Site Recovery 容錯回復工具
+      - 管理容量
+        - 管理儲存體資源
+          [589] 管理 Azure Stack Hub 儲存體帳戶
+        - 管理儲存體容量
+          [596] 管理 Azure Stack Hub 的儲存體容量
+        - 管理儲存體基礎結構
+          [614] 管理 Azure Stack Hub 的儲存體基礎結構
+        - 管理實際記憶體容量
+          [621] 在 Azure Stack Hub 中管理實體記憶體容量
+        - 管理 GPU 容量
+          [623] 管理 GPU 容量
+        - 新增縮放單位節點
+          [626] 在 Azure Stack Hub 中新增縮放單位節點
+        - 新增公用 IP 位址
+          [631] 新增公用 IP 位址
+      - 更換硬體
+        - 節點動作
+          [634] Azure Stack Hub 中的縮放單位節點動作
+        - 更換節點
+          [641] 更換 Azure Stack Hub 整合系統上的縮放單位節點
+        - 更換磁碟
+          [645] 更換 Azure Stack Hub 中的實體磁碟
+        - 更換元件
+          [649] 取代 Azure Stack Hub 縮放單位節點上的硬體元件
+    - 安全性、合規性和身分識別
+      - 安全性概觀
+        [653] Azure Stack Hub 基礎結構的安全性控制措施
+      - 設定安全性
+        [659] 設定 Azure Stack Hub 安全性控制措施
+      - 身分識別
+        - 身分識別概觀
+          [663] Azure Stack Hub 的識別提供者概觀
+        - 身分識別架構
+          [672] Azure Stack Hub 的身分識別架構
+        - 管理 RBAC
+          [676] 發行項• 2024/03/29
+        - 新增 Microsoft Entra ID的使用者
+          [678] 在 Microsoft Entra ID 中新增 Azure StackHub 用戶帳戶
+        - 為 AD FS 新增使用者
+          [682] 在 Active Directory 同盟服務 (AD FS) 中新增新的 Azure Stack Hub 使用者帳戶
+        - 授與應用程式資源的存取權
+          [683] 
+        - 啟用多租用戶
+          [696] 在 Azure Stack Hub 中設定多重租用
+      - 待用資料加密
+        [706] Azure Stack Hub 中的待用資料加密
+      - 旋轉祕密
+        [708] 在 Azure Stack Hub 中輪替使用祕密
+      - 更新防毒軟體
+        [720] 更新 Azure Stack Hub 上的 MicrosoftDefender 防毒軟體
+      - 記錄收集和資料處理
+        [725] Azure Stack Hub 記錄和客戶資料處理
+    - 植入 Marketplace
+      - Marketplace 概觀
+        [727] Azure Stack Hub Marketplace 概觀
+      - Marketplace 變更
+        [729] Azure Stack Hub Marketplace 變更
+      - 適用於 Azure Stack Hub 的 Azure Marketplace 項目
+        [743] Azure Stack Hub 可用的 AzureMarketplace 項目
+      - 下載 Marketplace 項目
+        [751] 將 Marketplace 項目下載到 Azure StackHub
+      - 更新 Marketplace 項目
+        [755] 
+      - 新增自訂虛擬機器映像
+        [758] 在 Azure Stack Hub 中新增及移除自訂VM 映像
+      - 建立及發佈 Marketplace 項目
+        [762] 建立和發佈自訂 Azure Stack HubMarketplace 項目
+      - 更新 CreateUiDefinition 變更的解決方案範本
+        [774] 更新解決方案範本，以使用CreateUiDefinition 新變更
+      - 適用於 Azure Stack Hub 的支援客體作業系統
+        [780] Azure Stack Hub 上支援的客體作業系統
+      - 提供虛擬機器擴展集
+        [784] 在 Azure Stack Hub 中提供虛擬機器擴展集
+      - Azure Stack Hub Marketplace 常見問題集
+        [788] 如有 Azure Stack Hub Marketplace 項目的支援問題，應該與誰連絡？
+我如何更新至較新的 Windows 映像？
+適用於 Azure Stack Hub Marketplace 上Windows Server 映像的授權選項為何？
+      - 提供 Linux 虛擬機器
+        [793] 將 Linux 映像新增至 Azure Stack HubMarketplace
+      - 新增 Red Hat 虛擬機器
+        [797] 提供適用於 Azure Stack Hub 的 Red Hat型虛擬機器
+      - 提供 Commvault 市集項目
+        [799] 將 Commvault 新增至 Azure Stack HubMarketplace
+    - 供應項目服務
+      - 服務、方案、供應項目和訂用帳戶概觀
+        [801] Azure Stack Hub 服務、方案、供應項目、訂用帳戶概觀
+      - 建立方案
+        [806] 在 Azure Stack Hub 中建立方案
+      - 建立供應項目
+        [815] 在 Azure Stack Hub 中建立供應項目
+      - 建立附加方案
+        [823] 在 Azure Stack Hub 中建立附加方案
+      - 訂閱供應項目
+        [827] 在 Azure Stack Hub 中建立供應項目的訂用帳戶
+      - 刪除供應項目
+        [831] 刪除配額、方案、供應項目和訂用帳戶
+      - 在 Azure Stack Hub 中委派供應項目
+        [835] 在 Azure Stack Hub 中委派供應項目
+      - 配額類型
+        [842] Azure Stack Hub 中的配額類型
+      - 使用 PowerShell 管理方案和供應項目
+        [847] 在 Azure Stack Hub 中使用 PowerShell來管理訂用帳戶、方案和供應項目
+    - 提供網路解決方案
+      [851] 以 Fortinet FortiGate 在 Azure StackHub 中提供網路解決方案
+    - 管理加值資源提供者
+      - Azure Stack Hub 上的 App Service
+        - 概觀
+          [853] Azure Stack Hub 上的 Azure App Service和 Azure Functions 概觀
+        - App Service 容量規劃
+          [856] Azure Stack Hub 中的 App Service 伺服器角色容量規劃
+        - App Service 帳單常見問題集
+          [860] 
+        - Prerequisites
+          [864] 
+        - 部署 App Service
+          [876] 在 Azure Stack Hub 中部署 App Service
+        - 生命週期管理
+          - 更新 App Service
+            [890] 更新 Azure Stack Hub 上的 Azure AppService
+          - 新增 App Service 基礎結構角色
+            [896] 在 Azure Stack Hub 上的 Azure AppService 中新增背景工作角色和基礎結構
+          - 設定部署來源
+            [901] 為 App Services on Azure Stack Hub 設定部署來源
+          - 輪替 App Service 秘密和憑證
+            [910] 輪替 Azure Stack Hub 上 App Service 的祕密和憑證
+          - 備份 App Service
+            [915] 備份 App Service on Azure Stack Hub
+          - 復原 App Service
+            [919] 在 Azure Stack Hub 上復原 App Service
+          - 移除 App Service
+            [923] 從 Azure Stack Hub 移除中 Azure AppService
+          - 移轉檔案伺服器
+            [925] 移轉檔案共用
+          - 將 SQL Server 遷移
+            [930] 移轉 SQL Server
+        - 版本資訊
+          - 2302 版本資訊 [2023 年 2 月]
+            [934] Azure Stack Hub 2302 版本資訊上的App Service
+          - 2022 H1 版本資訊 [2022 年 10 月]
+            [943] Azure Stack Hub 2022 H1 版本資訊上的App Service
+          - 2021 Q3 版本資訊 [2021 年 12 月]
+            [953] Azure Stack Hub 上的 App Service 2021Q3 版本資訊
+          - 2021 Q1 版本資訊 [2021 年 6 月]
+            [960] Azure Stack Hub 上的 App Service 2021Q1 版本資訊
+      - Azure Container Registry
+        - 概觀
+          [966] Azure Stack Hub 上的 Azure ContainerRegistry 概觀
+        - 安裝 Azure Container Registry
+          [968] 在 Azure Stack Hub 上安裝 AzureContainer Registry
+        - 管理 Azure Container Registry
+          [972] 在 Azure Stack Hub 上管理 AzureContainer Registry 容量和配額
+        - 疑難排解
+          [974] 雲端操作員針對 Azure Stack Hub 上的Azure Container Registry 進行疑難排解
+      - Azure Kubernetes Service
+        [977] 在 Azure Stack Hub 上安裝和提供 AzureKubernetes Service
+      - Azure Site Recovery
+        - 概觀
+          [983] Azure Site Recovery 概觀
+        - 部署
+          - 部署概觀
+            [987] 部署概觀
+          - 部署來源環境
+            [991] 針對來源環境部署
+          - 部署目標環境
+            [995] 部署目標環境
+          - 啟用多租使用者
+            [1002] 啟用 Azure Site Recovery 的多租使用者案例
+        - 保護虛擬機
+          [1008] 在 Azure Site Recovery 中啟用 VM 保護
+        - 容量規劃
+          [1019] 使用 Azure Site Recovery 的容量規劃
+        - 已知問題
+          [1027] 已知問題 - Azure Stack Hub 上的 AzureSite Recovery
+      - Azure Stack Hub 上的事件中樞
+        - 概觀
+          [1036] Azure Stack Hub 操作員上事件中樞的概觀
+        - 容量規劃
+          [1037] 如何在 Azure Stack Hub 上規劃事件中樞的容量
+        - 必要條件
+          [1040] 在 Azure Stack Hub 上安裝事件中樞的必要條件
+        - 安裝
+          [1043] 如何在 Azure Stack Hub 安裝事件中樞
+        - 生命週期管理
+          - 套用更新
+            [1050] 如何更新 Azure Stack Hub 資源提供者
+          - 備份及還原
+            [1053] 從系統管理員入口網站啟用 Azure StackHub 的備份
+          - 收集記錄
+            [1059] 診斷記錄集合
+          - 健康狀態&警示
+            [1067] 在 Azure Stack Hub 中監視健康情況和警示
+          - 管理
+            [1074] 如何管理 Azure Stack Hub 上的事件中樞
+          - 旋轉祕密
+            [1079] 如何在 Azure Stack Hub 上輪替事件中樞的祕密
+          - 服務更新通知
+        - 版本資訊
+          - 1.2102.5.0 版本資訊 [2024 年 3 月]
+            [1085] Azure Stack Hub 1.2102.5.0 上的事件中樞版本資訊
+          - 1.2102.4.0 版本資訊 [2023 年 10 月]
+            [1088] Azure Stack Hub 1.2102.4.0 上的事件中樞版本資訊
+          - 1.2102.3.0 版本資訊 [2023 年 1 月]
+            [1091] Azure Stack Hub 1.2102.3.0 上的事件中樞版本資訊
+          - 1.2102.2.0 版本資訊 [2022 年 3 月]
+            [1094] Azure Stack Hub 1.2102.2.0 版本資訊上的事件中樞
+          - 1.2102.1.0 版本資訊 [2021 年 10 月]
+            [1097] Azure Stack Hub 1.2102.1.0 版本資訊上的事件中樞
+          - 1.2102.0.0 版本資訊 [2021 年 7 月]
+            [1100] Azure Stack Hub 1.2102.0.0 上的事件中樞版本資訊
+          - 1.2012.2.0 版本資訊 [2021 年 5 月]
+            [1103] Azure Stack Hub 1.2012.2.0 版本資訊上的事件中樞
+          - 1.2012.1.0 版本資訊 [2021 年 2 月]
+            [1106] Azure Stack Hub 1.2012.1.0 上的事件中樞版本資訊
+        - 移除
+          [1109] 如何解除安裝 Azure Stack Hub 事件中樞資源
+      - Azure Stack Hub 上的 IoT 中樞
+        - 移除
+          [1112] 如何在 Azure Stack Hub 上移除 IoT 中樞
+      - Kubernetes
+        - 提供 AKS 引擎
+          [1114] 將 Azure Kubernetes Services (AKS) 引擎先決條件新增到 Azure Stack HubMarketplace
+        - 提供 Kubernetes 市集項目
+          [1117] 將 Kubernetes 新增至 Azure Stack HubMarketplace
+      - Azure Stack Hub 上的 MySQL
+        - 概觀
+          [1122] 在 Microsoft Azure Stack Hub 上使用MySQL 資料庫
+        - 部署 MySQL Server 資源提供者
+          [1124] 在 Azure Stack Hub 上部署 MySQL 資源提供者
+        - 新增 MySQL 主機伺服器
+          [1142] 在 Azure Stack Hub 中新增 MySQL 主控伺服器
+        - 建立 MySQL 資料庫
+          [1153] 在 Azure Stack Hub 中建立 MySQL 資料庫
+        - 部署高可用性 MySQL 資料庫
+          [1159] 建立高可用性 MySQL 資料庫
+        - 更新 MySQL Server 資源提供者
+          [1171] 在 Azure Stack Hub 中更新 MySQL 資源提供者
+        - 維護 MySQL Server 資源提供者
+          [1180] Azure Stack Hub 中的 MySQL 資源提供者維護作業
+        - 移除 MySQL Server 資源提供者
+          [1186] 在 Azure Stack Hub 中移除 MySQL 資源提供者
+        - MySQL 資源提供者版本資訊
+          - MySQL 資源提供者 2.0.13.0 版本資訊
+            [1190] MySQL 資源提供者 2.0.13.x 版本資訊
+          - MySQL 資源提供者 2.0.00.0 版本資訊
+            [1192] MySQL 資源提供者 2.0.6.x 版本資訊
+      - Azure Stack Hub 上的 SQL
+        - 概觀
+          [1194] 在 Azure Stack Hub 上使用 SQL 資料庫
+        - 部署 SQL Server 資源提供者
+          [1196] 在 Azure Stack Hub 上部署 SQL Server資源提供者
+        - 新增 SQL 主機伺服器
+          [1210] 為 SQL 資源提供者新增主控伺服器
+        - 建立 SQL 資料庫
+          [1220] 建立 SQL 資料庫
+        - 部署高可用性 SQL 資料庫
+          [1226] 使用 Azure Stack Hub 建立高可用性 SQL資料庫
+        - 更新 SQL Server 資源提供者
+          [1237] 更新 SQL 資源提供者
+        - 維護 SQL Server 資源提供者
+          [1245] SQL 資源提供者維護作業
+        - 移除 SQL Server 資源提供者
+          [1251] 移除 SQL 資源提供者
+        - SQL 資源提供者版本資訊
+          - SQL 資源提供者 2.0.13.0 版本資訊
+            [1255] SQL 資源提供者 2.0.13.x 版本資訊
+          - SQL 資源提供者 2.0.00.0 版本資訊
+            [1257] SQL 資源提供者 2.0.6.x 版本資訊
+    - 使用量與計費
+      [1259] Azure Stack Hub 中的使用量與計費
+      - 透過 CSP 管理使用量和帳單
+        [1262] 以雲端解決方案提供者身分管理 AzureStack Hub 的使用量和帳單
+        - 新增租用戶使用方式與帳單
+          [1265] 將用於使用量與帳單的租用戶新增至Azure Stack Hub
+        - 管理租用戶註冊
+          [1269] 註冊租用戶以追蹤 Azure Stack Hub 中的使用量
+      - 使用方式與帳單參考
+        - 使用量資料報告
+          [1274] 向 Azure 回報 Azure Stack Hub 使用量資料
+        - 使用量報告基礎結構
+          [1280] 適用於雲端解決方案提供者的使用量報告基礎結構
+        - 提供者使用量 API
+          [1282] 
+        - 租用戶使用量 API
+          [1287] 租用戶資源使用狀況 API 參考
+        - 使用狀況常見問題集
+          [1290] 我可以看到哪個計量識別碼？
+        - 對使用量問題進行疑難排解
+          - 使用量連線能力錯誤
+            [1301] 使用量連線能力錯誤
+          - 使用量註冊錯誤碼
+            [1305] 使用量與計費註冊錯誤碼
+    - 備份 Azure Stack Hub
+      - 從管理主控台啟用 Azure Stack Hub 備份
+        [1308] 從系統管理員入口網站啟用 Azure StackHub 的備份
+      - 使用 PowerShell 啟用 Azure Stack Hub 備份
+        [1314] 使用 PowerShell 啟用 Azure Stack Hub備份
+      - 備份 Azure Stack Hub
+        [1318] 備份 Azure Stack Hub
+      - 使用備份服務復原資料
+        [1321] 使用基礎結構備份服務來復原 AzureStack Hub 中的資料
+      - 備份 Azure Stack Hub 上的檔案和應用程式
+        [1323] 備份 Azure Stack 上的檔案和應用程式
+      - 將 Azure Stack Hub VM 複寫至 Azure
+        [1331] 
+      - 從重大資料遺失的情況下復原
+        [1351] 從重大資料遺失的情況下復原
+      - 備份最佳做法
+        [1354] 基礎結構備份服務的最佳做法
+      - 備份參考
+        [1358] 基礎結構備份服務的參考
+    - 取得支援
+      - 操作員存取工作站
+        [1363] Azure Stack Hub 操作員存取工作站
+      - 說明及支援入口網站
+        - 概觀
+          [1374] Azure Stack Hub 的說明和支援
+        - 尋找您的雲端識別碼
+          [1378] 尋找您的雲端識別碼
+        - 診斷記錄集合
+          [1381] 診斷記錄集合
+        - 遠端支援
+          [1389] Azure Stack Hub 的遠端支援
+        - Get-AzureStackLog (PEP)
+          [1398] 使用具有特殊權限的端點 (PEP) 來傳送Azure Stack Hub 診斷記錄
+      - Azure Stack Hub 驗證
+        [1409] 驗證 Azure Stack Hub 系統狀態
+      - 疑難排解
+        [1417] 針對 Azure Stack Hub 中的問題進行疑難排解
+  - 參考
+    - Azure Stack Hub PowerShell
+      [1424] Azure Stack Hub Module 2.2.0
+    - Azure Stack Hub 中具有特殊權限的端點
+      [1426] Azure Stack Hub 特殊權限端點參考
+    - Azure Stack Hub 管理員 REST API
+      [1429] Azure Stack 管理員 API 參考
+    - Azure CLI
+      [1432] az
+  - 相關參考
+    - Azure Stack Hub 使用者文件
+      [1470] Azure Stack Hub 使用者文件
+    - ASDK 文件
+      [1472] Azure Stack 開發套件文件
+    - Azure 混合式雲端文件
+      [1473] 
+  - 資源
+    - 版本資訊封存
+      - 版本資訊
+        [1478] Azure Stack Hub 封存的版本資訊
+      - 已知問題
+        [1479] Azure Stack Hub 封存的已知問題
+    - 訓練與憑證
+      [1480] Azure Stack Hub 訓練與認證
+    - Azure Stack Hub 道路地圖
+    - Azure Stack Hub Microsoft Q & A
+    - Azure Stack Hub 文件意見反應
+    - 定價資訊
+    - Stack Overflow

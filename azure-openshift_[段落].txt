@@ -1,0 +1,136 @@
+- ---< azure-openshift.pdf >---
+  - Azure Red Hat OpenShift
+    [1] Azure Red Hat OpenShift 文件
+  - 概觀
+    - 關於 Azure Red Hat OpenShift
+      [3] Azure Red Hat OpenShift
+    - Azure Red Hat OpenShift 的新功能？
+      [5] Azure Red Hat OpenShift 的新功能？
+  - 教學課程
+    - 1 - 建立 Azure Red Hat OpenShift 叢集
+      [7] 教學課程：建立 Azure Red HatOpenShift 4 叢集
+    - 2 - 連線 至 Azure Red Hat OpenShift 叢集
+      [14] 教學課程：連線至 Azure Red HatOpenShift 4 叢集
+    - 3 - 刪除 Azure Red Hat OpenShift 叢集
+      [18] 教學課程：刪除 Azure Red HatOpenShift 4 叢集
+  - 快速入門
+    - 使用 Azure 入口網站 部署 Azure Red Hat OpenShift 叢集
+      [20] 快速入門：使用 Azure 入口網站部署Azure Red Hat OpenShift 叢集
+    - 使用ARM樣本或 Bicep 部署 Azure Red Hat OpenShift 叢集
+      [26] 快速入門：使用 Azure ResourceManager 範本或 Bicep 檔案部署 AzureRed Hat OpenShift 叢集
+  - 操作指南
+    - 常見問題集
+      [41] 安裝和升級
+    - 叢集作業
+      - 升級 Azure Red Hat OpenShift 叢集
+        [48] 升級 Azure Red Hat OpenShift 叢集
+      - 使用現成節點
+        [51] 在 Azure Red Hat OpenShift （ARO） 叢集中使用 Azure Spot 虛擬機器
+      - 部署基礎結構節點
+        [56] 在 Azure Red Hat OpenShift （ARO） 叢集中部署基礎結構節點
+      - 使用 GPU 工作負載
+        [66] 搭配 Azure Red Hat OpenShift 使用 GPU工作負載
+      - 將背景工作節點隔離成子網
+        [83] 使用 Azure Red Hat OpenShift 將背景工作節點隔離到不同的子網
+      - 使用 Azure 原則標記 ARO 資源
+        [89] 使用 Azure 原則 標記 Azure Red HatOpenShift 資源
+      - 手動更新叢集憑證
+        [100] 更新 Azure Red Hat OpenShift 叢集憑證
+      - 使用 管理員 Kubeconfig
+        [101] 使用 管理員 Kubeconfig 存取 Azure RedHat OpenShift （ARO） 叢集
+    - 網路
+      - 建立私人 Azure Red Hat OpenShift 叢集
+        [103] 建立 Azure Red Hat OpenShift 4 私人叢集
+      - 為每個叢集負載平衡器設定多個IP
+        [112] 為每個 ARO 叢集負載平衡器設定多個 IP位址 （預覽）
+      - 設定自訂 DNS
+        [114] 為 Azure Red Hat OpenShift （ARO） 叢集設定自訂 DNS 解析程式
+      - 設定 DNS 轉送
+        [122] 在 Azure Red Hat OpenShift 4 叢集上設定 DNS 轉送
+      - 限制輸出流量
+        [123] 控制 Azure Red Hat OpenShift （ARO）叢集的輸出流量
+    - 儲存體
+      - 使用客戶管理的金鑰加密叢集數據
+        [126] 在 Azure Red Hat OpenShift 上使用客戶管理的金鑰加密 OS 磁片
+      - 建立 Azure 檔案儲存體 儲存體 類別
+        [130] 在 Azure Red Hat OpenShift 4 上建立Azure 檔案儲存體 儲存體Class
+      - 使用內建容器登錄
+        [135] 設定 Azure Red Hat OpenShift 4 的內建容器登錄
+      - 使用 Azure Container Registry
+        [138] 搭配 Azure Red Hat OpenShift 使用Azure Container Registry （ARO）
+    - 安全性和驗證
+      - 使用 Azure Front Door 保護 OpenShift
+        [141] 使用 Azure Front Door 保護 Azure RedHat OpenShift 的存取
+      - 建立和使用服務主體
+        [148] 建立和使用服務主體來部署 Azure RedHat OpenShift 叢集
+      - 設定 Microsoft Entra 驗證 （入口網站）
+        [150] 設定 Azure Red Hat OpenShift 4 叢集的Microsoft Entra 驗證 （入口網站）
+      - 設定 Microsoft Entra 驗證 （CLI）
+        [157] 設定 Azure Red Hat OpenShift 4 叢集的Microsoft Entra 驗證 （CLI）
+      - 更新 Azure Red Hat OpenShift 叢集的提取密碼
+        [163] 在 Azure Red Hat OpenShift 4 叢集上新增或更新您的 Red Hat 提取密碼
+      - 輪替 Azure Red Hat OpenShift 叢集的服務主體認證
+        [169] 輪替 Azure Red Hat OpenShift (ARO) 叢集的服務主體認證
+      - 在叢集上啟用 FIPS
+        [173] 對 Azure Red Hat OpenShift 叢集啟用FIPS
+      - 啟用網路安全性群組流量記錄
+        [174] 開啟網路安全組流量記錄 （預覽）
+      - 自備網路安全組
+        [177] 將您自己的網路安全組 （NSG） 帶到Azure Red Hat OpenShift （ARO） 叢集
+      - 管理客戶數據存取要求
+        [181] 使用 Azure Lockbox 授權叢集存取的支援要求
+      - 使用 Azure Key Vault 密碼
+        [183] 在 Azure Red Hat OpenShift 上使用適用于秘密存放區 CSI 驅動程式的 Azure 金鑰保存庫 提供者
+    - 備份及還原
+      - 使用 Velero 建立叢集應用程式的備份
+        [191] 建立 Azure Red Hat OpenShift 4 叢集應用程式的備份
+      - 使用 Velero 建立叢集應用程式的還原
+        [195] 建立 Azure Red Hat OpenShift 4 叢集應用程式還原
+    - 監視與記錄
+      - 適用於容器的 Azure 監視器
+        - 設定 資源健康狀態 警示
+          [197] 設定 Azure Red Hat OpenShift （ARO）叢集的 Azure 資源健康狀態 警示
+        - 設定 Azure Red Hat OpenShift 4 的 Azure 監視器容器深入解析
+          [199] 啟用 Kubernetes 叢集的監視
+        - 在 Azure Red Hat OpenShift 4 中停用 Azure 監視器容器深入解析
+          [217] 啟用 Kubernetes 叢集的監視
+        - 設定 Prometheus 遠端寫入的 Azure 監視器受控服務
+          [235] 從您的 Prometheus 伺服器將數據傳送至Azure 監視器工作區
+    - 開發及執行應用程式
+      - 從原始碼部署應用程式
+        [239] 將應用程式從原始程式碼部署至 AzureRed Hat OpenShift
+      - 使用 OpenShift 無伺服器部署應用程式
+        [250] 使用 OpenShift 無伺服器將應用程式部署至 Azure Red Hat OpenShift
+      - 部署 Open Liberty/WebSphere Liberty Java 應用程式
+        [266] 在 Azure Red Hat OpenShift 上部署 IBMWebSphere Liberty 和 Open Liberty
+      - 部署 JBoss EAP Java 應用程式
+        [283] 快速入門：使用 Azure 入口網站 在 AzureRed Hat OpenShift 上部署 JBoss EAP
+  - 概念
+    - 網路
+      [300] Azure Red Hat OpenShift 的網路概念
+      - 輸出鎖定概觀
+        [304] Azure Red Hat OpenShift 輸出鎖定概觀
+      - OVN-Kubernetes 概觀
+        [306] 適用于 Azure Red Hat OpenShift 叢集的OVN-Kubernetes 網路提供者
+  - 參考
+    - Azure Red Hat OpenShift CLI
+      [307] az aro
+    - Azure Red Hat OpenShift REST API
+      [330] Azure Red Hat OpenShift REST API 參考
+    - Azure CLI
+      [331] Azure Red Hat OpenShift 文件
+  - 資源
+    - Azure Red Hat OpenShift 服務定義
+      [333] Azure Red Hat OpenShift 服務定義
+    - 疑難排解
+      [342] Azure Red Hat OpenShift 的疑難排解
+    - Azure Red Hat OpenShift 4 的支持原則
+      [344] Azure Red Hat OpenShift 4.0 支持原則
+    - Azure Red Hat OpenShift 4 的支援生命週期
+      [354] Azure Red Hat OpenShift 4 的支援生命週期
+    - 責任矩陣
+      [359] Azure Red Hat OpenShift 責任概觀
+    - 區域可用性
+    - Red Hat OpenShift 4 檔
+    - Azure 藍圖
+    - ARO 藍圖

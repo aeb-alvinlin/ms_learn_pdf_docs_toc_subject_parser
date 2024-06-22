@@ -1,0 +1,59 @@
+- ---< azure-storage-elastic-san.pdf >---
+  - Azure 彈性 SAN 文件
+    [1] Azure 彈性 SAN 文件
+  - 概觀
+    - 什麼是 Azure 彈性 SAN？
+      [2] 什麼是 Azure 彈性 SAN？
+    - 比較核心儲存體服務
+      [5] Azure 儲存體簡介
+  - 概念
+    - 規劃
+      [14] 規劃彈性 SAN 的部署
+    - 網路
+      [18] 了解彈性 SAN 的網路設定
+    - 規模目標
+      [21] 調整彈性 SAN 的目標
+    - 最佳作法
+      [25] 將彈性 SAN 的效能最佳化
+    - 效能
+      [31] 當虛擬機器連線到彈性 SAN 磁碟區時的效能運作方式
+    - 叢集應用程式
+      [36] 在 Azure Elastic SAN 上使用叢集應用程式
+    - 加密
+      [40] 瞭解 Azure 彈性 SAN 加密
+    - 計量
+      [42] 彈性 SAN 計量
+    - 可靠性
+      [43] 彈性 SAN 中的可靠性
+  - 如何
+    - 部署彈性 SAN
+      [46] 部署彈性 SAN
+    - 設定網路
+      [50] 設定 Azure 彈性 SAN 的網路存取
+    - 連線到彈性 SAN 磁碟區 - Windows
+      [56] 連線 至彈性 SAN 磁碟區 - Windows
+    - 連線到彈性 SAN 磁碟區 - Linux
+      [59] 連線到彈性 SAN 磁碟區 - Linux
+    - 連線 至 AKS
+      - 搭配 AKS 使用彈性 SAN 的選項
+        [62] 搭配 Azure Kubernetes Service 使用Azure Elastic SAN
+      - 使用 Azure Container 儲存體
+        [63] 使用 Azure 容器儲存體預覽搭配 Azure 彈性 SAN
+      - 使用 Kubernetes iSCSI CSI 驅動程式
+        [71] 連線 Azure Elastic SAN 磁碟區至 AzureKubernetes Service 叢集
+    - 調整彈性 SAN 的大小
+      [76] 調整 Azure 彈性 SAN 的大小
+    - 使用磁碟區快照集
+      [77] 快照集 Azure 彈性 SAN 磁碟區 (預覽)
+    - 刪除彈性 SAN
+      [80] 刪除彈性 SAN
+    - 連線到 Azure VMware 解決方案
+      [83] 搭配 Azure Elastic SAN 預覽版使用Azure VMware 解決方案
+    - 管理加密
+      - 使用 Key Vault 設定客戶自控金鑰
+        [87] 設定 Azure 彈性 SAN 的客戶自控金鑰
+      - 管理客戶金鑰
+        [97] 管理 Azure 彈性 SAN 的客戶自控金鑰
+  - 範例
+    - 在批次中建立彈性 SAN 磁碟區
+      [102] 在批次中建立多個彈性 SAN 磁碟區
