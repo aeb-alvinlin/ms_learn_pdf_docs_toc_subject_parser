@@ -1,3 +1,6 @@
+# authoer: alvin.lin@outlook.com
+# date: 2024/5/31, time: 11:34am
+
 import os
 import fitz
 import json
@@ -5,7 +8,8 @@ import base64
 import pickle
 
 
-src_pdf = 'azure-ai-services-openai (中文).pdf'
+src_pdfs = ['azure-cloud-adoption-framework (中文).pdf', 'azure-cloud-adoption-framework (英文).pdf', 'azure-role-based-access-control.pdf', 'azure-developer-python.pdf'] # 'semantic-kernel (英文).pdf', 'azure-static-web-apps.pdf', 'azure-app-service.pdf', 'entra-identity-platform.pdf', 'entra-id-governance.pdf', 'azure-container-apps.pdf', 'entra-permissions-management.pdf', 'azure-active-directory-b2c.pdf', 'azure-architecture-web-apps (英文).pdf'] #['azure-ai-services-openai.pdf']
+#src_pdfs = os.listdir(r'.\.pdf_analyze_files\.pdf_source_files')
 
 class MSPDFParserAnalyzer:
 
@@ -42,6 +46,7 @@ class MSPDFParserAnalyzer:
 
 
     def __init__(self, src_pdf, proj_src='./.pdf_analyze_files', src_pdf_path='.pdf_source_files'):
+        self.force_overwrite = False
         self.src_pdf = src_pdf
         self.proj_src = proj_src
         self.src_pdf_path = src_pdf_path
@@ -51,7 +56,8 @@ class MSPDFParserAnalyzer:
         self.base_name = os.path.basename(self.absolute_pdf)
         self.pdf_name, self.pdf_ext = os.path.splitext(self.base_name)
         self.tar_path = os.path.join(self.proj_src, f'{self.pdf_name}_[分析]')
-        self.paragraphs_pickle = os.path.join(self.tar_path, f'__temp__{self.base_name}.pickle')
+        self.paragraphs_pickle = os.path.join(self.tar_path, f'__temp__{self.base_name}_paragraphs.pickle')
+        self.titles_pickle = os.path.join(self.tar_path, f'__temp__{self.base_name}_titles.pickle')
         self.output_file_path = os.path.join(self.tar_path, f'{self.pdf_name}_[段落].txt')
         self.doc = fitz.open(self.absolute_pdf)
         self.total_page_count = self.doc.page_count
@@ -68,17 +74,20 @@ class MSPDFParserAnalyzer:
 
 
     def load_analyze_pages(self):
-        if os.path.isfile(self.paragraphs_pickle):
-            print(f'\n讀取已分析過的 {self.absolute_pdf} 段落...')
-            with open(self.paragraphs_pickle, 'rb') as paragraphs_f:
-                self.paragraphs = pickle.load(paragraphs_f)
-        else:
-            print(f'\n開始分析 {self.absolute_pdf} 段落...')
+        if not self.force_overwrite:
+            if os.path.isfile(self.paragraphs_pickle):
+                print(f'\n讀取已分析過的 {self.paragraphs_pickle} 段落...')
+                with open(self.paragraphs_pickle, 'rb') as paragraphs_f:
+                    self.paragraphs = pickle.load(paragraphs_f)
+            else:
+                self.force_overwrite = True
+        if self.force_overwrite:
+            print(f'\n開始分析 {self.paragraphs_pickle} 段落...')
             for page_number in range(self.total_page_count):
-                if page_number % 10 == 0:
+                if page_number % 100 == 0:
                     print('\npage:', page_number + 1, end='')
                 else:
-                    print('-', end='')
+                    print('.', end='')
 
                 try:
                     data = self.doc[page_number].get_text('dict')
@@ -88,10 +97,9 @@ class MSPDFParserAnalyzer:
 
                 self.process_page(page_number, data)
 
-            print(f' 已完成 {self.absolute_pdf} 段落分析！')
-            print(f'儲存已分析的 {self.absolute_pdf} 段落。')
             with open(self.paragraphs_pickle, 'wb') as paragraphs_f:
                 pickle.dump(self.paragraphs, paragraphs_f)
+            print(f'\n已完成段落分析並暫儲已分析的段落 {self.paragraphs_pickle} 檔案。')
 
 
     def process_page(self, page_number, data):
@@ -123,20 +131,32 @@ class MSPDFParserAnalyzer:
 
 
     def extract_titles(self):
-        for page_number, block_numbers in self.paragraphs.items():
-            self.titles[page_number + 1] = ''
-            try:
-                block_data = self.doc[page_number].get_text('blocks')
-            except Exception as e:
-                print(f'{page_number} 頁, block_data 錯誤 {e}')
-                continue
+        if os.path.isfile(self.titles_pickle):
+            print(f'\n讀取已擷取過的 {self.titles_pickle} 標題...')
+            with open(self.titles_pickle, 'rb') as titles_f:
+                self.titles = pickle.load(titles_f)
+        else:
+            print(f'\n開始擷取 {self.titles_pickle} 標題...')
 
-            for block_number in block_numbers:
+            for page_number, block_numbers in self.paragraphs.items():
+                self.titles[page_number + 1] = ''
                 try:
-                    self.titles[page_number + 1] += block_data[block_number][4].replace('\n', '') + '\n'
+                    block_data = self.doc[page_number].get_text('blocks')
                 except Exception as e:
-                    print(f'{page_number + 1} 頁, extract_titles 錯誤 {e}')
+                    print(f'{page_number} 頁, block_data 錯誤 {e}')
                     continue
+
+                for block_number in block_numbers:
+                    try:
+                        self.titles[page_number + 1] += block_data[block_number][4].replace('\n', '') + '\n'
+                    except Exception as e:
+                        print(f'{page_number + 1} 頁, extract_titles 錯誤 {e}')
+                        continue
+
+        with open(self.titles_pickle, 'wb') as paragraphs_f:
+            pickle.dump(self.paragraphs, paragraphs_f)
+        print(f'已完成並暫儲已分析的標題 {self.titles_pickle} 檔案。')
+
 
     def build_tree(self):
         root = self.TreeNode(0, f"---< {self.pdf_name}{self.pdf_ext} >---", -1, self.titles)
@@ -163,13 +183,16 @@ class MSPDFParserAnalyzer:
 
 
     def parse_analyze(self):
-        self.load_analyze_pages()
-        self.extract_titles()
-        self.print_tree()
+        if self.src_pdf.endswith('.pdf'):
+            if not self.force_overwrite:
+                if os.path.isfile(self.output_file_path):
+                    return
+            self.load_analyze_pages()
+            self.extract_titles()
+            self.print_tree()
 
 
 if __name__ == "__main__":
-    #src_pdfs = os.listdir(r'E:\.ongoing_projects\.microsoft_pdf_analyze_files\.pdf_analyze_files\.pdf_source_files')
-    #for src_pdf in src_pdfs:
-    analyzer = MSPDFParserAnalyzer(src_pdf)
-    analyzer.parse_analyze()
+    for src_pdf in src_pdfs:
+        analyzer = MSPDFParserAnalyzer(src_pdf)
+        analyzer.parse_analyze()

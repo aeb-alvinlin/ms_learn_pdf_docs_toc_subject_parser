@@ -1,0 +1,770 @@
+D:.
+│  .translatePdf_en_tw.rar
+│  breadcrumb_items.py
+│  hierarchy_tree_lines.py
+│  parse_pdf_bulletpt.py
+│  requirements.txt
+│  t.txt
+│  text.py
+│  
+├─.microsoft_pdf_analyze_files
+│      .microsoft_pdf_analyze_files.rar
+│      .pdf_analyze_files.rar
+│      breadcrumb_items.py
+│      clear_metadata.py
+│      convert_pdf_docx.py
+│      Copy_Certain_Pages_In_Pdf.py
+│      hierarchy_tree_lines.py
+│      Parse_Microsoft_Pdf_Content.py
+│      parse_pdf_bulletpt.py
+│      Table_of_Content_Pdf.py
+│      
+├─.original_pyfiles
+│      .original_pyfiles.rar
+│      .translatePdf_en_tw.rar
+│      1-0convert_pdf_into_type_pages.py
+│      1-1work_with_dict_analyze.py
+│      1-2work_with_dict_format_after.py
+│      1-3work_with_dict_format_after-1.py
+│      1-3work_with_dict_format_after-2.py
+│      Parse_Microsoft_Pdf_Content.py
+│      req.txt
+│      
+└─.pdf_analyze_files
+    ├─.pdf_source_files
+    │      ai-builder (英文).pdf
+    │      ai-builder.pdf
+    │      azure-active-directory-b2c.pdf
+    │      azure-advisor.pdf
+    │      azure-ai-services-computer-vision.pdf
+    │      azure-ai-services-content-safety.pdf
+    │      azure-ai-services-custom-vision-service.pdf
+    │      azure-ai-services-document-intelligence-doc-intel-4.0.0 (中文).pdf
+    │      azure-ai-services-document-intelligence-doc-intel-4.0.0.pdf
+    │      azure-ai-services-immersive-reader.pdf
+    │      azure-ai-services-language-service.pdf
+    │      azure-ai-services-openai.pdf
+    │      azure-ai-services-speech-service.pdf
+    │      azure-ai-services-translator.pdf
+    │      azure-aks-hybrid.pdf
+    │      azure-aks.pdf
+    │      azure-analysis-services.pdf
+    │      azure-api-management.pdf
+    │      azure-app-service-environment.pdf
+    │      azure-app-service.pdf
+    │      azure-application-gateway.pdf
+    │      azure-architecture (2).pdf
+    │      azure-architecture-web-apps (中文).pdf
+    │      azure-architecture-web-apps (中文-1).pdf
+    │      azure-architecture-web-apps (英文).pdf
+    │      azure-architecture-web-apps (英文-1).pdf
+    │      azure-architecture.pdf
+    │      azure-automation.pdf
+    │      azure-avere-vfxt.pdf
+    │      azure-azure-app-configuration.pdf
+    │      azure-azure-arc.pdf
+    │      azure-azure-cache-for-redis.pdf
+    │      azure-azure-fluid-relay.pdf
+    │      azure-azure-functions (中文).pdf
+    │      azure-azure-functions.pdf
+    │      azure-azure-managed-lustre.pdf
+    │      azure-azure-maps.pdf
+    │      azure-azure-monitor.pdf
+    │      azure-azure-netapp-files.pdf
+    │      azure-azure-portal.pdf
+    │      azure-azure-resource-manager-managed-applications.pdf
+    │      azure-azure-resource-manager-management.pdf
+    │      azure-azure-resource-manager-templates.pdf
+    │      azure-azure-signalr.pdf
+    │      azure-azure-sql-azuresql.pdf
+    │      azure-azure-sql-edge.pdf
+    │      azure-azure-video-indexer (中文).pdf
+    │      azure-azure-video-indexer.pdf
+    │      azure-azure-web-pubsub.pdf
+    │      azure-backup.pdf
+    │      azure-batch.pdf
+    │      azure-bot-service-azure-bot-service-4.0 (中文).pdf
+    │      azure-bot-service-azure-bot-service-4.0.pdf
+    │      azure-chaos-studio.pdf
+    │      azure-cloud-adoption-framework (中文).pdf
+    │      azure-cloud-adoption-framework (英文).pdf
+    │      azure-cloud-services-extended-support.pdf
+    │      azure-cloud-shell.pdf
+    │      azure-communication-services.pdf
+    │      azure-communications-gateway.pdf
+    │      azure-confidential-ledger.pdf
+    │      azure-container-apps.pdf
+    │      azure-container-instances.pdf
+    │      azure-container-registry.pdf
+    │      azure-cosmos-db.pdf
+    │      azure-cyclecloud-cyclecloud-8.pdf
+    │      azure-data-api-builder.pdf
+    │      azure-data-catalog.pdf
+    │      azure-data-explorer.pdf
+    │      azure-data-factory.pdf
+    │      azure-data-share.pdf
+    │      azure-data-studio.pdf
+    │      azure-databox-online.pdf
+    │      azure-databox.pdf
+    │      azure-databricks.pdf
+    │      azure-ddos-protection.pdf
+    │      azure-dedicated-hsm.pdf
+    │      azure-defender-for-cloud.pdf
+    │      azure-deployment-environments.pdf
+    │      azure-dev-box.pdf
+    │      azure-developer-github.pdf
+    │      azure-developer-python.pdf
+    │      azure-devops-artifacts-azure-devops.pdf
+    │      azure-devops-pipelines-azure-devops.pdf
+    │      azure-devops-release-notes.pdf
+    │      azure-devops-repos-azure-devops (1).pdf
+    │      azure-devops-repos-azure-devops.pdf
+    │      azure-devops-test-azure-devops.pdf
+    │      azure-devtest-labs.pdf
+    │      azure-digital-twins.pdf
+    │      azure-dms.pdf
+    │      azure-dns.pdf
+    │      azure-energy-data-services.pdf
+    │      azure-event-grid.pdf
+    │      azure-event-hubs.pdf
+    │      azure-expressroute.pdf
+    │      azure-external-attack-surface-management.pdf
+    │      azure-firewall.pdf
+    │      azure-frontdoor.pdf
+    │      azure-fxt-edge-filer.pdf
+    │      azure-genomics.pdf
+    │      azure-governance-blueprints.pdf
+    │      azure-hdinsight.pdf
+    │      azure-health-bot.pdf
+    │      azure-healthcare-apis-azure-api-for-fhir.pdf
+    │      azure-hpc-cache.pdf
+    │      azure-information-protection.pdf
+    │      azure-iot-central.pdf
+    │      azure-iot-edge-iotedge-1.5.pdf
+    │      azure-iot-hub.pdf
+    │      azure-kinect-dk.pdf
+    │      azure-kubernetes-fleet.pdf
+    │      azure-lab-services.pdf
+    │      azure-lighthouse.pdf
+    │      azure-load-balancer.pdf
+    │      azure-load-testing.pdf
+    │      azure-logic-apps.pdf
+    │      azure-machine-learning-azureml-api-2 (中文).pdf
+    │      azure-machine-learning-azureml-api-2.pdf
+    │      azure-machine-learning-data-science-virtual-machine-azureml-api-2.pdf
+    │      azure-managed-grafana.pdf
+    │      azure-managed-instance-apache-cassandra.pdf
+    │      azure-mariadb.pdf
+    │      azure-media-services-latest.pdf
+    │      azure-migrate.pdf
+    │      azure-mysql.pdf
+    │      azure-nat-gateway.pdf
+    │      azure-network-function-manager.pdf
+    │      azure-notification-hubs.pdf
+    │      azure-object-anchors.pdf
+    │      azure-open-datasets.pdf
+    │      azure-openshift.pdf
+    │      azure-operator-nexus.pdf
+    │      azure-operator-service-manager.pdf
+    │      azure-orbital.pdf
+    │      azure-playwright-testing.pdf
+    │      azure-postgresql.pdf
+    │      azure-private-5g-core.pdf
+    │      azure-private-link.pdf
+    │      azure-quantum.pdf
+    │      azure-remote-rendering.pdf
+    │      azure-resource-mover.pdf
+    │      azure-role-based-access-control.pdf
+    │      azure-search (中文).pdf
+    │      azure-search.pdf
+    │      azure-sentinel.pdf
+    │      azure-service-bus-messaging.pdf
+    │      azure-service-fabric.pdf
+    │      azure-service-health.pdf
+    │      azure-site-recovery.pdf
+    │      azure-spatial-anchors.pdf
+    │      azure-sphere-azure-sphere-integrated.pdf
+    │      azure-stack-hci.pdf
+    │      azure-stack-operator-azs-2311.pdf
+    │      azure-static-web-apps.pdf
+    │      azure-storage-blobs.pdf
+    │      azure-storage-container-storage.pdf
+    │      azure-storage-elastic-san.pdf
+    │      azure-storage-files.pdf
+    │      azure-storage-queues.pdf
+    │      azure-storsimple.pdf
+    │      azure-stream-analytics.pdf
+    │      azure-synapse-analytics.pdf
+    │      azure-time-series-insights.pdf
+    │      azure-update-manager.pdf
+    │      azure-virtual-desktop.pdf
+    │      azure-virtual-machine-scale-sets.pdf
+    │      azure-virtual-machines.pdf
+    │      azure-virtual-network (英文).pdf
+    │      azure-virtual-network.pdf
+    │      azure-virtual-wan.pdf
+    │      azure-vpn-gateway.pdf
+    │      azure-web-application-firewall.pdf
+    │      entra-external-id.pdf
+    │      entra-fundamentals.pdf
+    │      entra-id-governance.pdf
+    │      entra-id-protection.pdf
+    │      entra-identity-authentication.pdf
+    │      entra-identity-domain-services.pdf
+    │      entra-identity-hybrid (英文).pdf
+    │      entra-identity-hybrid.pdf
+    │      entra-identity-managed-identities-azure-resources.pdf
+    │      entra-identity-platform.pdf
+    │      entra-permissions-management.pdf
+    │      Microsoft Azure Compliance Offerings March 2023.pdf
+    │      microsoft-copilot-studio.pdf
+    │      power-bi-developer-embedded.pdf
+    │      semantic-kernel (英文).pdf
+    │      
+    ├─ai-builder_[分析]
+    │      ai-builder_[段落].txt
+    │      
+    ├─azure-active-directory-b2c_[分析]
+    │      azure-active-directory-b2c_[段落].txt
+    │      
+    ├─azure-advisor_[分析]
+    │      azure-advisor_[段落].txt
+    │      
+    ├─azure-ai-services-computer-vision_[分析]
+    │      azure-ai-services-computer-vision_[段落].txt
+    │      
+    ├─azure-ai-services-content-safety_[分析]
+    │      azure-ai-services-content-safety_[段落].txt
+    │      
+    ├─azure-ai-services-custom-vision-service_[分析]
+    │      azure-ai-services-custom-vision-service_[段落].txt
+    │      
+    ├─azure-ai-services-document-intelligence-doc-intel-4.0.0 (中文)_[分析]
+    │      azure-ai-services-document-intelligence-doc-intel-4.0.0 (中文)_[段落].txt
+    │      
+    ├─azure-ai-services-document-intelligence-doc-intel-4.0.0_[分析]
+    │      azure-ai-services-document-intelligence-doc-intel-4.0.0_[段落].txt
+    │      
+    ├─azure-ai-services-immersive-reader_[分析]
+    │      azure-ai-services-immersive-reader_[段落].txt
+    │      
+    ├─azure-ai-services-openai_[分析]
+    │      azure-ai-services-openai_1-826.txt
+    │      azure-ai-services-openai_[段落].txt
+    │      
+    ├─azure-ai-services-translator_[分析]
+    │      azure-ai-services-translator_[段落].txt
+    │      
+    ├─azure-aks-hybrid_[分析]
+    │      azure-aks-hybrid_[段落].txt
+    │      
+    ├─azure-aks_[分析]
+    │      azure-aks_[段落].txt
+    │      
+    ├─azure-analysis-services_[分析]
+    │      azure-analysis-services_[段落].txt
+    │      
+    ├─azure-api-management_[分析]
+    │      azure-api-management_[段落].txt
+    │      
+    ├─azure-app-service_[分析]
+    │      azure-app-service_[段落].txt
+    │      
+    ├─azure-application-gateway_[分析]
+    │      azure-application-gateway_[段落].txt
+    │      
+    ├─azure-architecture (2)_[分析]
+    │      azure-architecture (2)_[段落].txt
+    │      
+    ├─azure-architecture-web-apps (中文-1)_[分析]
+    │      azure-architecture-web-apps (中文-1)_[段落].txt
+    │      
+    ├─azure-architecture-web-apps (英文)_[分析]
+    │      azure-architecture-web-apps (英文)_[段落].txt
+    │      
+    ├─azure-architecture-web-apps (英文-1)_[分析]
+    │      azure-architecture-web-apps (英文-1)_[段落].txt
+    │      
+    ├─azure-architecture-web-apps_[分析]
+    │      azure-architecture-web-apps_[段落].txt
+    │      
+    ├─azure-automation_[分析]
+    │      azure-automation_[段落].txt
+    │      
+    ├─azure-avere-vfxt_[分析]
+    │      azure-avere-vfxt_[段落].txt
+    │      
+    ├─azure-azure-app-configuration_[分析]
+    │      azure-azure-app-configuration_[段落].txt
+    │      
+    ├─azure-azure-arc_[分析]
+    │      azure-azure-arc_[段落].txt
+    │      
+    ├─azure-azure-cache-for-redis_[分析]
+    │      azure-azure-cache-for-redis_[段落].txt
+    │      
+    ├─azure-azure-fluid-relay_[分析]
+    │      azure-azure-fluid-relay_[段落].txt
+    │      
+    ├─azure-azure-functions (中文)_[分析]
+    │      azure-azure-functions (中文)_1-2500.txt
+    │      azure-azure-functions (中文)_[段落].txt
+    │      
+    ├─azure-azure-functions_[分析]
+    │      azure-azure-functions_1-2690.txt
+    │      azure-azure-functions_[段落].txt
+    │      
+    ├─azure-azure-managed-lustre_[分析]
+    │      azure-azure-managed-lustre_[段落].txt
+    │      
+    ├─azure-azure-maps_[分析]
+    │      azure-azure-maps_[段落].txt
+    │      
+    ├─azure-azure-monitor_[分析]
+    │      azure-azure-monitor_[段落].txt
+    │      
+    ├─azure-azure-netapp-files_[分析]
+    │      azure-azure-netapp-files_[段落].txt
+    │      
+    ├─azure-azure-portal_[分析]
+    │      azure-azure-portal_[段落].txt
+    │      
+    ├─azure-azure-resource-manager-managed-applications_[分析]
+    │      azure-azure-resource-manager-managed-applications_[段落].txt
+    │      
+    ├─azure-azure-resource-manager-templates_[分析]
+    │      azure-azure-resource-manager-templates_[段落].txt
+    │      
+    ├─azure-azure-signalr_[分析]
+    │      azure-azure-signalr_[段落].txt
+    │      
+    ├─azure-azure-sql-azuresql_[分析]
+    │      azure-azure-sql-azuresql_[段落].txt
+    │      
+    ├─azure-azure-sql-edge_[分析]
+    │      azure-azure-sql-edge_[段落].txt
+    │      
+    ├─azure-azure-video-indexer (中文)_[分析]
+    │      azure-azure-video-indexer (中文)_1-482.txt
+    │      azure-azure-video-indexer (中文)_[段落].txt
+    │      
+    ├─azure-azure-video-indexer_[分析]
+    │      azure-azure-video-indexer_[段落].txt
+    │      
+    ├─azure-azure-video-indexer_[擷取]
+    │      [azure-azure-video-indexer](54-54). zh.pdf
+    │      [azure-azure-video-indexer](54-54). zh_clear.docx
+    │      [azure-azure-video-indexer](54-54). zh_clear.pdf
+    │      [azure-azure-video-indexer](54-54)..pdf
+    │      [azure-azure-video-indexer](54-54).zh-tw.pdf
+    │      
+    ├─azure-azure-web-pubsub_[分析]
+    │      azure-azure-web-pubsub_[段落].txt
+    │      
+    ├─azure-backup_[分析]
+    │      azure-backup_[段落].txt
+    │      
+    ├─azure-batch_[分析]
+    │      azure-batch_[段落].txt
+    │      
+    ├─azure-bot-service-azure-bot-service-4.0 (中文)_[分析]
+    │      azure-bot-service-azure-bot-service-4.0 (中文)_1-1193.txt
+    │      azure-bot-service-azure-bot-service-4.0 (中文)_[段落].txt
+    │      
+    ├─azure-bot-service-azure-bot-service-4.0_[分析]
+    │      azure-bot-service-azure-bot-service-4.0_[段落].txt
+    │      
+    ├─azure-chaos-studio_[分析]
+    │      azure-chaos-studio_[段落].txt
+    │      
+    ├─azure-cloud-adoption-framework (中文)_[分析]
+    │      azure-cloud-adoption-framework (中文)_[段落].txt
+    │      
+    ├─azure-cloud-adoption-framework (英文)_[分析]
+    │      azure-cloud-adoption-framework (英文)_[段落].txt
+    │      
+    ├─azure-cloud-services-extended-support_[分析]
+    │      azure-cloud-services-extended-support_[段落].txt
+    │      
+    ├─azure-cloud-shell_[分析]
+    │      azure-cloud-shell_[段落].txt
+    │      
+    ├─azure-communication-services_[分析]
+    │      azure-communication-services_[段落].txt
+    │      
+    ├─azure-communications-gateway_[分析]
+    │      azure-communications-gateway_[段落].txt
+    │      
+    ├─azure-confidential-ledger_[分析]
+    │      azure-confidential-ledger_[段落].txt
+    │      
+    ├─azure-container-apps_[分析]
+    │      azure-container-apps_[段落].txt
+    │      
+    ├─azure-container-instances_[分析]
+    │      azure-container-instances_[段落].txt
+    │      
+    ├─azure-container-registry_[分析]
+    │      azure-container-registry_[段落].txt
+    │      
+    ├─azure-cosmos-db_[分析]
+    │      azure-cosmos-db_[段落].txt
+    │      
+    ├─azure-cyclecloud-cyclecloud-8_[分析]
+    │      azure-cyclecloud-cyclecloud-8_[段落].txt
+    │      
+    ├─azure-data-api-builder_[分析]
+    │      azure-data-api-builder_[段落].txt
+    │      
+    ├─azure-data-catalog_[分析]
+    │      azure-data-catalog_[段落].txt
+    │      
+    ├─azure-data-explorer_[分析]
+    │      azure-data-explorer_[段落].txt
+    │      
+    ├─azure-data-factory_[分析]
+    │      azure-data-factory_[段落].txt
+    │      
+    ├─azure-data-share_[分析]
+    │      azure-data-share_[段落].txt
+    │      
+    ├─azure-data-studio_[分析]
+    │      azure-data-studio_[段落].txt
+    │      
+    ├─azure-databox-online_[分析]
+    │      azure-databox-online_[段落].txt
+    │      
+    ├─azure-databox_[分析]
+    │      azure-databox_[段落].txt
+    │      
+    ├─azure-databricks_[分析]
+    │      azure-databricks_[段落].txt
+    │      
+    ├─azure-ddos-protection_[分析]
+    │      azure-ddos-protection_[段落].txt
+    │      
+    ├─azure-dedicated-hsm_[分析]
+    │      azure-dedicated-hsm_[段落].txt
+    │      
+    ├─azure-defender-for-cloud_[分析]
+    │      azure-defender-for-cloud_[段落].txt
+    │      
+    ├─azure-deployment-environments_[分析]
+    │      azure-deployment-environments_[段落].txt
+    │      
+    ├─azure-dev-box_[分析]
+    │      azure-dev-box_[段落].txt
+    │      
+    ├─azure-developer-github_[分析]
+    │      azure-developer-github_[段落].txt
+    │      
+    ├─azure-developer-python_[分析]
+    │      azure-developer-python_[段落].txt
+    │      
+    ├─azure-devops-artifacts-azure-devops_[分析]
+    │      azure-devops-artifacts-azure-devops_[段落].txt
+    │      
+    ├─azure-devops-pipelines-azure-devops_[分析]
+    │      azure-devops-pipelines-azure-devops_[段落].txt
+    │      
+    ├─azure-devops-repos-azure-devops (1)_[分析]
+    │      azure-devops-repos-azure-devops (1)_[段落].txt
+    │      
+    ├─azure-devops-repos-azure-devops_[分析]
+    │      azure-devops-repos-azure-devops_[段落].txt
+    │      
+    ├─azure-devops-test-azure-devops_[分析]
+    │      azure-devops-test-azure-devops_[段落].txt
+    │      
+    ├─azure-devtest-labs_[分析]
+    │      azure-devtest-labs_[段落].txt
+    │      
+    ├─azure-digital-twins.pdf_[分析]
+    │      azure-digital-twins.pdf_[段落].txt
+    │      
+    ├─azure-digital-twins_[分析]
+    │      azure-digital-twins_[段落].txt
+    │      
+    ├─azure-dms_[分析]
+    │      azure-dms_[段落].txt
+    │      
+    ├─azure-dns_[分析]
+    │      azure-dns_[段落].txt
+    │      
+    ├─azure-energy-data-services_[分析]
+    │      azure-energy-data-services_[段落].txt
+    │      
+    ├─azure-event-grid_[分析]
+    │      azure-event-grid_[段落].txt
+    │      
+    ├─azure-event-hubs_[分析]
+    │      azure-event-hubs_[段落].txt
+    │      
+    ├─azure-expressroute_[分析]
+    │      azure-expressroute_[段落].txt
+    │      
+    ├─azure-external-attack-surface-management_[分析]
+    │      azure-external-attack-surface-management_[段落].txt
+    │      
+    ├─azure-firewall_[分析]
+    │      azure-firewall_[段落].txt
+    │      
+    ├─azure-frontdoor_[分析]
+    │      azure-frontdoor_[段落].txt
+    │      
+    ├─azure-fxt-edge-filer_[分析]
+    │      azure-fxt-edge-filer_[段落].txt
+    │      
+    ├─azure-genomics_[分析]
+    │      azure-genomics_[段落].txt
+    │      
+    ├─azure-governance-blueprints_[分析]
+    │      azure-governance-blueprints_[段落].txt
+    │      
+    ├─azure-health-bot_[分析]
+    │      azure-health-bot_[段落].txt
+    │      
+    ├─azure-healthcare-apis-azure-api-for-fhir_[分析]
+    │      azure-healthcare-apis-azure-api-for-fhir_[段落].txt
+    │      
+    ├─azure-hpc-cache_[分析]
+    │      azure-hpc-cache_[段落].txt
+    │      
+    ├─azure-information-protection_[分析]
+    │      azure-information-protection_[段落].txt
+    │      
+    ├─azure-iot-central_[分析]
+    │      azure-iot-central_[段落].txt
+    │      
+    ├─azure-iot-edge-iotedge-1.5_[分析]
+    │      azure-iot-edge-iotedge-1.5_[段落].txt
+    │      
+    ├─azure-iot-hub_[分析]
+    │      azure-iot-hub_[段落].txt
+    │      
+    ├─azure-kinect-dk_[分析]
+    │      azure-kinect-dk_[段落].txt
+    │      
+    ├─azure-kubernetes-fleet_[分析]
+    │      azure-kubernetes-fleet_[段落].txt
+    │      
+    ├─azure-lab-services_[分析]
+    │      azure-lab-services_[段落].txt
+    │      
+    ├─azure-lighthouse_[分析]
+    │      azure-lighthouse_[段落].txt
+    │      
+    ├─azure-load-balancer_[分析]
+    │      azure-load-balancer_[段落].txt
+    │      
+    ├─azure-load-testing_[分析]
+    │      azure-load-testing_[段落].txt
+    │      
+    ├─azure-logic-apps_[分析]
+    │      azure-logic-apps_[段落].txt
+    │      
+    ├─azure-machine-learning-azureml-api-2 (中文)_[分析]
+    │      azure-machine-learning-azureml-api-2 (中文)_[段落].txt
+    │      
+    ├─azure-machine-learning-azureml-api-2_[分析]
+    │      azure-machine-learning-azureml-api-2_[段落].txt
+    │      
+    ├─azure-machine-learning-data-science-virtual-machine-azureml-api-2_[分析]
+    │      azure-machine-learning-data-science-virtual-machine-azureml-api-2_[段落].txt
+    │      
+    ├─azure-managed-grafana_[分析]
+    │      azure-managed-grafana_[段落].txt
+    │      
+    ├─azure-managed-instance-apache-cassandra_[分析]
+    │      azure-managed-instance-apache-cassandra_[段落].txt
+    │      
+    ├─azure-mariadb_[分析]
+    │      azure-mariadb_[段落].txt
+    │      
+    ├─azure-media-services-latest_[分析]
+    │      azure-media-services-latest_[段落].txt
+    │      
+    ├─azure-migrate_[分析]
+    │      azure-migrate_[段落].txt
+    │      
+    ├─azure-mysql_[分析]
+    │      azure-mysql_[段落].txt
+    │      
+    ├─azure-nat-gateway_[分析]
+    │      azure-nat-gateway_[段落].txt
+    │      
+    ├─azure-network-function-manager_[分析]
+    │      azure-network-function-manager_[段落].txt
+    │      
+    ├─azure-notification-hubs_[分析]
+    │      azure-notification-hubs_[段落].txt
+    │      
+    ├─azure-object-anchors_[分析]
+    │      azure-object-anchors_[段落].txt
+    │      
+    ├─azure-open-datasets_[分析]
+    │      azure-open-datasets_[段落].txt
+    │      
+    ├─azure-openshift_[分析]
+    │      azure-openshift_[段落].txt
+    │      
+    ├─azure-operator-nexus_[分析]
+    │      azure-operator-nexus_[段落].txt
+    │      
+    ├─azure-operator-service-manager_[分析]
+    │      azure-operator-service-manager_[段落].txt
+    │      
+    ├─azure-orbital_[分析]
+    │      azure-orbital_[段落].txt
+    │      
+    ├─azure-playwright-testing_[分析]
+    │      azure-playwright-testing_[段落].txt
+    │      
+    ├─azure-postgresql_[分析]
+    │      azure-postgresql_[段落].txt
+    │      
+    ├─azure-private-5g-core_[分析]
+    │      azure-private-5g-core_[段落].txt
+    │      
+    ├─azure-private-link_[分析]
+    │      azure-private-link_[段落].txt
+    │      
+    ├─azure-quantum_[分析]
+    │      azure-quantum_[段落].txt
+    │      
+    ├─azure-remote-rendering_[分析]
+    │      azure-remote-rendering_[段落].txt
+    │      
+    ├─azure-resource-mover_[分析]
+    │      azure-resource-mover_[段落].txt
+    │      
+    ├─azure-role-based-access-control_[分析]
+    │      azure-role-based-access-control_[段落].txt
+    │      
+    ├─azure-search (中文)_[分析]
+    │      azure-search (中文)_1-1907.txt
+    │      azure-search (中文)_[段落].txt
+    │      
+    ├─azure-search_[分析]
+    │      azure-search_[段落].txt
+    │      
+    ├─azure-sentinel_[分析]
+    │      azure-sentinel_[段落].txt
+    │      
+    ├─azure-service-bus-messaging_[分析]
+    │      azure-service-bus-messaging_[段落].txt
+    │      
+    ├─azure-service-fabric_[分析]
+    │      azure-service-fabric_[段落].txt
+    │      
+    ├─azure-service-health_[分析]
+    │      azure-service-health_[段落].txt
+    │      
+    ├─azure-site-recovery_[分析]
+    │      azure-site-recovery_[段落].txt
+    │      
+    ├─azure-spatial-anchors_[分析]
+    │      azure-spatial-anchors_[段落].txt
+    │      
+    ├─azure-sphere-azure-sphere-integrated_[分析]
+    │      azure-sphere-azure-sphere-integrated_[段落].txt
+    │      
+    ├─azure-stack-hci_[分析]
+    │      azure-stack-hci_[段落].txt
+    │      
+    ├─azure-stack-operator-azs-2311_[分析]
+    │      azure-stack-operator-azs-2311_[段落].txt
+    │      
+    ├─azure-static-web-apps_[分析]
+    │      azure-static-web-apps_[段落].txt
+    │      
+    ├─azure-storage-blobs_[分析]
+    │      azure-storage-blobs_[段落].txt
+    │      
+    ├─azure-storage-container-storage_[分析]
+    │      azure-storage-container-storage_[段落].txt
+    │      
+    ├─azure-storage-elastic-san_[分析]
+    │      azure-storage-elastic-san_[段落].txt
+    │      
+    ├─azure-storage-files_[分析]
+    │      azure-storage-files_[段落].txt
+    │      
+    ├─azure-storage-queues_[分析]
+    │      azure-storage-queues_[段落].txt
+    │      
+    ├─azure-storsimple_[分析]
+    │      azure-storsimple_[段落].txt
+    │      
+    ├─azure-stream-analytics_[分析]
+    │      azure-stream-analytics_[段落].txt
+    │      
+    ├─azure-synapse-analytics_[分析]
+    │      azure-synapse-analytics_[段落].txt
+    │      
+    ├─azure-time-series-insights_[分析]
+    │      azure-time-series-insights_[段落].txt
+    │      
+    ├─azure-update-manager_[分析]
+    │      azure-update-manager_[段落].txt
+    │      
+    ├─azure-virtual-desktop_[分析]
+    │      azure-virtual-desktop_[段落].txt
+    │      
+    ├─azure-virtual-machine-scale-sets_[分析]
+    │      azure-virtual-machine-scale-sets_[段落].txt
+    │      
+    ├─azure-virtual-machines_[分析]
+    │      azure-virtual-machines_[段落].txt
+    │      
+    ├─azure-virtual-network_[分析]
+    │      azure-virtual-network_[段落].txt
+    │      
+    ├─azure-virtual-wan_[分析]
+    │      azure-virtual-wan_[段落].txt
+    │      
+    ├─azure-vpn-gateway_[分析]
+    │      azure-vpn-gateway_[段落].txt
+    │      
+    ├─azure-web-application-firewall_[分析]
+    │      azure-web-application-firewall_[段落].txt
+    │      
+    ├─entra-external-id_[分析]
+    │      entra-external-id_[段落].txt
+    │      
+    ├─entra-fundamentals_[分析]
+    │      entra-fundamentals_[段落].txt
+    │      
+    ├─entra-id-governance_[分析]
+    │      entra-id-governance_[段落].txt
+    │      
+    ├─entra-id-protection_[分析]
+    │      entra-id-protection_[段落].txt
+    │      
+    ├─entra-identity-domain-services_[分析]
+    │      entra-identity-domain-services_[段落].txt
+    │      
+    ├─entra-identity-hybrid_[分析]
+    │      entra-identity-hybrid_[段落].txt
+    │      
+    ├─entra-identity-managed-identities-azure-resources_[分析]
+    │      entra-identity-managed-identities-azure-resources_[段落].txt
+    │      
+    ├─entra-identity-platform_[分析]
+    │      entra-identity-platform_[段落].txt
+    │      
+    ├─entra-permissions-management_[分析]
+    │      entra-permissions-management_[段落].txt
+    │      
+    ├─Microsoft Azure Compliance Offerings March 2023_[分析]
+    │      Microsoft Azure Compliance Offerings March 2023_[段落].txt
+    │      
+    ├─microsoft-copilot-studio_[分析]
+    │      microsoft-copilot-studio_[段落].txt
+    │      
+    ├─power-bi-developer-embedded_[分析]
+    │      power-bi-developer-embedded_[段落].txt
+    │      
+    └─semantic-kernel (英文)_[分析]
+            semantic-kernel (英文)_[段落].txt
+            
