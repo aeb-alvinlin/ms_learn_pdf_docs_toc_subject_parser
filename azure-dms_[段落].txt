@@ -1,0 +1,193 @@
+- ---< azure-dms.pdf >---
+  - 資料庫移轉服務文件
+    [1] Azure 資料庫移轉服務文件
+  - 概觀
+    - 何謂 Azure 資料庫移轉服務？ (機器翻譯)
+      [4] 何謂 Azure 資料庫移轉服務？ (機器翻譯)
+  - 快速入門
+    - 建立服務
+      - DMS (傳統)
+        - 入口網站
+          [8] 快速入門：使用 Azure 入口網站建立Azure 資料庫移轉服務的執行個體
+        - Bicep
+          [14] 快速入門：使用 Bicep 建立Azure 資料移轉服務實例
+        - ARM 範本
+          [17] 快速入門：使用ARM範本建立 Azure 資料移轉服務 實例
+        - 在混合模式中 (入口網站)
+          [21] 快速入門：使用 Azure 入口網站和 Azure資料庫移轉服務建立混合模式執行個體
+  - 概念
+    - 使用 Azure Data Studio 進行移轉
+      [32] 使用適用於 Azure Data Studio 的 AzureSQL 移轉延伸模組來遷移資料庫
+    - 使用 Azure Data Studio 取得移轉的 Azure 建議
+      [41] 取得 Azure 建議以移轉 SQL Server 資料庫
+    - 使用自動化作業大規模移轉資料庫
+      [51] 使用自動化大規模移轉資料庫 （預覽）
+    - 資料庫移轉案例狀態
+      [57] Azure 資料移轉服務支援的案例
+    - 移轉至 Azure SQL 受控執行個體
+      - 使用 Azure Data Studio Azure SQL 移轉延伸模組並將 SQL 受控執行個體作為目標的自訂角色
+        [61] 使用 ADS 進行 SQL Server 至 Azure SQL受控執行個體移轉的自訂角色
+    - 移轉至 Azure 虛擬機器上的 SQL Server
+      - 使用 Azure Data Studio Azure SQL 移轉延伸模組並將虛擬機器作為目標的自訂角色
+        [66] 使用 ADS 進行 SQL Server 至 Azure 虛擬機器移轉的自訂角色
+    - 移轉至 Azure SQL Database
+      - 使用 Azure Data Studio Azure SQL 移轉延伸模組並將 Azure SQL Database 作為目標的自訂角色
+        [71] SQL Server在 Azure Data Studio 中AzureSQL資料庫移轉的自訂角色
+    - 移轉至適用於 MySQL 的 Azure 資料庫
+      - MySQL 一致快照集
+        [75] MySQL 至適用於 MySQL 的 Azure 資料庫資料移轉 - MySQL 一致備份 (預覽)
+      - MySQL 自定義角色
+        [81] 使用 資料移轉服務 將 MySQL 自訂角色適用於 MySQL 的 Azure 資料庫移轉
+      - MySQL 架構移轉
+        [83] 將 MySQL 移轉至適用於 MySQL 的Azure 資料庫資料 - MySQL 架構移轉
+      - MySQL 登入移轉
+        [87] MySQL 適用於 MySQL 的 Azure 資料庫資料移轉 - MySQL 登入移轉
+      - MySQL 複寫變更
+        [89] MySQL 至 適用於 MySQL 的 Azure 資料庫 數據遷移 - MySQL 複寫變更
+    - 安全性
+      - 安全性基準
+        [92] 適用于Azure 資料移轉服務的 Azure 安全性基準
+    - DMS (傳統)
+      - 必要條件
+        [101] 使用 Azure 資料庫移轉服務的必要條件概觀
+      - 移轉至 Azure SQL 受控執行個體
+        - 網路拓撲
+          [106] 使用 Azure 資料庫移轉服務進行 AzureSQL 受控執行個體移轉的網路拓撲
+        - 自訂角色
+          [111] SQL Server Azure SQL 受控執行個體線上移轉的自訂角色
+  - 教學課程
+    - 將 SQL Server 遷移
+      - 至 Azure SQL Database (離線)
+        [115] 教學課程：將 SQL Server 遷移至 AzureSQL 資料庫 （脫機）
+      - 至 Azure Data Studio 中的 Azure SQL 受控執行個體 (線上)
+        [136] 教學課程：在 Azure Data Studio 中將SQL Server 遷移至線上Azure SQL 受控執行個體
+      - 至 Azure Data Studio 中的 Azure SQL 受控執行個體 (離線)
+        [150] 教學課程：使用 Azure Data Studio 將SQL Server 離線移轉至 Azure SQL 受控執行個體
+      - 至 Azure Data Studio 中適用於 Azure 虛擬機的 SQL Server (線上)
+        [165] 教學課程：在 Azure Data Studio 中線上將 SQL Server 遷移至 Azure 虛擬機器上的 SQL Server
+      - 至 Azure Data Studio 中適用於 Azure 虛擬機的 SQL Server (離線)
+        [180] 教學課程：在 Azure Data Studio 中離線將 SQL Server 遷移至 Azure 上的 SQLServer 虛擬機器
+      - 登入移轉
+        [194] 教學課程：在 Azure Data Studio 中將SQL Server 登入移轉至 Azure SQL
+      - 已啟用 TDE 的資料庫至 Azure SQL
+        [205] 教學課程：在 Azure Data Studio 中將已啟用 TDE 的資料庫移轉至 Azure SQL
+      - 已知問題與疑難排解
+        [217] 已知問題、限制和疑難解答
+      - DMS (傳統)
+        - 移轉到 Azure SQL Database
+          [233] 教學課程：使用 DMS 將 SQL Server 遷移至 Azure SQL 資料庫 （傳統）
+        - 至 Azure SQL 受控執行個體 (離線)
+          [255] 教學課程：使用 DMS 將 SQL Server 遷移至離線 Azure SQL 受控執行個體 （傳統）
+        - 至 Azure SQL 受控執行個體 (連線)
+          [272] 教學課程：使用 DMS 將 SQL Server 遷移至在線 Azure SQL 受控執行個體 （傳統）
+    - 將 MySQL 遷移
+      - 至適用於 MySQL 的 Azure DB (離線)
+        [290] 教學課程：使用 DMS 將 MySQL 遷移至離線 適用於 MySQL 的 Azure 資料庫
+      - 至適用於 MySQL 的 Azure 資料庫 (線上)
+        [306] 教學課程：從 MySQL 遷移至 適用於MySQL 的 Azure 資料庫 - 透過 Azure 入口網站 使用 DMS 在線彈性伺服器
+      - 至適用於 MySQL 的 Azure 資料庫 (複寫變更)
+        [328] 教學課程：使用 DMS 複寫變更案例從MySQL 遷移至 適用於 MySQL 的 Azure資料庫 - 彈性伺服器在線
+    - 遷移適用於 MySQL 的 Azure DB - 單一伺服器
+      - 至適用於 MySQL 的 Azure DB 彈性伺服器 (線上)
+        [337] 教學課程：透過 Azure 入口網站，使用DMS 將「適用於 MySQL 的 Azure 資料庫 - 單一伺服器」線上移轉至彈性伺服器
+      - 至適用於 MySQL 的 Azure DB 彈性伺服器 (離線)
+        [359] 教學課程：透過 Azure 入口網站 將 適用於 MySQL 的 Azure 資料庫 移轉至離線使用 DMS 的彈性伺服器
+      - 常見問題集
+        [379] 常見問題集 (FAQ)
+    - 將 RDS MySQL 遷移
+      - 至適用於 MySQL 的 Azure 資料庫
+        [381] 教學課程：使用 DMS 將 MySQL 遷移至離線 適用於 MySQL 的 Azure 資料庫
+    - 將 PostgreSQL 遷移
+      - 至適用於 PostgreSQL 的 Azure DB (入口網站)
+        [397] 教學課程：透過 Azure 入口網站，使用DMS (傳統) 將 PostgreSQL 移轉至線上適用於 PostgreSQL 的 Azure 資料庫
+      - 至適用於 PostgreSQL 的 Azure DB (Az CLI)
+        [413] 教學課程：透過 Azure CLI 使用 DMS 將PostgreSQL 遷移至在線 適用於PostgreSQL 的 Azure 資料庫
+    - 遷移適用於 PostgreSQL 的 Azure DB - 單一伺服器
+      - 至適用於 PostgreSQL 的 Azure DB (入口網站)
+        [427] 教學課程：使用 DMS 透過 Azure 入口網站 將 適用於 PostgreSQL 的 Azure 資料庫單一伺服器移轉至 適用於 PostgreSQL的 Azure 資料庫 - 線上單一伺服器
+    - 將 RDS PostgreSQL 遷移
+      - 至適用於 PostgreSQL 的 Azure DB
+        [443] 教學課程：使用 DMS 將 RDSPostgreSQL 線上遷移至適用於PostgreSQL 的 Azure DB
+    - 將 MongoDB 遷移
+      - 至 Azure Cosmos DB for MongoDB (離線)
+        [458] 教學課程：使用 Azure 資料移轉服務 脫機將 MongoDB 遷移至適用於 MongoDB的 Azure Cosmos DB RU
+      - 至 Azure Cosmos DB for MongoDB (線上)
+        [477] 教學課程：使用 Azure 資料移轉服務 將MongoDB 在線遷移至適用於 MongoDB的 Azure Cosmos DB RU
+  - 操作指南
+    - DMS (傳統)
+      - 監視移轉活動
+        [495] 使用 Azure 資料庫移轉服務來監視移轉活動
+      - 使用 PowerShell 來遷移
+        - SQL Server 至 SQL Database
+          [499] 使用 Azure PowerShell 將 SQL Server 資料庫遷移至 Azure SQL Database
+        - SQL Server 至 SQL MI (連線)
+          [506] 使用 PowerShell 和 Azure 資料移轉服務將 SQL Server 遷移至在線 SQL 受管理執行個體
+        - SQL Server至 SQL MI (連線)
+          [515] 使用 PowerShell 和 Azure 資料移轉服務將 SQL Server 遷移至離線 SQL 受管理執行個體
+        - MySQL 至適用於 MySQL 的 Azure DB (離線)
+          [525] 使用 PowerShell 和 Azure 資料移轉服務將 MySQL 遷移至離線 適用於 MySQL 的Azure 資料庫
+      - 將 SSIS 套件重新部署至
+        - Azure SQL Database
+          [543] 使用 Azure 資料庫移轉服務，將 SSIS 套件重新部署至 Azure SQL Database
+        - Azure SQL 受控執行個體
+          [551] 將 SQL Server Integration Services 套件遷移至 Azure SQL 受控執行個體
+  - 參考
+    - PowerShell
+      [562] Az.DataMigration
+    - Azure CLI
+      [566] az datamigration
+  - 資源
+    - 常見問題集
+      [588] 概觀
+    - Feedback
+    - 定價
+    - 服務更新
+    - 工具和指引
+      - 資料移轉案例可用的服務和工具
+        [598] 適用于資料移轉案例的服務與工具
+      - Azure 資料庫移轉指南
+        [605] 
+      - 適用於 Azure Data Studio 的 Azure SQL 移轉擴充功能
+        [608] 適用於 Azure Data Studio 的 Azure SQL移轉延伸模組
+      - Azure Migrate
+        [615] 關於 Azure Migrate
+      - SQL Database 專案
+        [620] SQL Database Projects 延伸模組
+      - 資料庫結構描述轉換工具組 (Oracle 至 Microsoft SQL)
+        [625] 資料庫結構描述轉換工具組 (DSCT)
+      - 適用於 Oracle 的 Database Migration Assessment
+        [626] 適用於 Oracle 的資料庫移轉評定延伸模組
+      - SQL Server 移轉小幫手
+        [644] SQL Server 移轉小幫手
+      - 舊版工具
+        - Data Migration Assistant
+          [647] Data Migration Assistant 概觀 (機器翻譯)
+        - 資料庫測試助理
+          [651] 資料庫測試助理概觀 \(部分機器翻譯\)
+        - 資料存取移轉工具組
+    - 疑難排解和已知問題
+      - Database Migration Service
+        - 疑難排解
+          - 常見錯誤
+            [655] 針對常見的 Azure 資料庫移轉服務問題和錯誤進行疑難排解
+          - 來源資料庫連線
+            [660] 針對連線到來源資料庫時發生的 DMS 錯誤進行疑難排解
+        - 已知問題
+          - 使用混合模式
+            [665] 使用混合模式的已知問題/移轉限制
+        - 潛在的移轉問題
+          - SQL 受控執行個體
+            [668] 線上移轉到 Azure SQL 受控執行個體的已知問題/移轉限制
+          - PostgreSQL 至適用於 PostgreSQL 的 Azure DB
+            [671] 從 PostgreSQL 線上移轉到適用於PostgreSQL 的 Azure 資料庫的已知問題/限制
+          - MongoDB 至適用於 MongoDB 的 Azure Cosmos DB
+            [675] 從 MongoDB 移轉到 Azure Cosmos DB的已知問題
+          - MySQL DB 至適用於 MySQL 的 Azure DB
+            [677] 移轉至 適用於 MySQL 的 Azure 資料庫的已知問題
+    - 影片
+      - 如何使用 Azure Data Studio 將 SQL Server 遷移至 Azure SQL Database (離線)
+      - 使用 Azure Data Studio 評估、取得建議，以及將 SQL Server 遷移至 Azure
+      - Azure 資料移轉服務簡介
+      - 移轉旅程中的雲端移轉策略和階段
+      - 探索及評估遷移至 Azure SQL 的 SQL Server 資料資產
+      - 開始使用新的資料庫移轉指南將資料庫遷移至 Azure

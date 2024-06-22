@@ -1,0 +1,3338 @@
+- ---< azure-cosmos-db.pdf >---
+  - Azure Cosmos DB 文件
+    [1] 
+  - 概觀
+    - 歡迎使用 Azure Cosmos DB
+      [4] Azure Cosmos DB - 適用於 AI 時代的資料庫
+    - 常見問題集
+      [9] 一般
+    - 免費試用 Azure Cosmos DB
+      [15] 免費試用 Azure Cosmos DB
+    - Azure AI 優勢免費試用
+      [24] 透過 Azure AI Advantage 免費試用Azure Cosmos DB
+    - 選擇 API
+      [26] 選擇 Azure Cosmos DB 中的 API
+    - 分散式 NoSQL
+      [31] 了解分散式 NoSQL 資料庫
+    - 分散式關聯式
+      [33] 了解分散式關聯式資料庫
+    - 向量資料庫
+      [35] 向量資料庫
+  - NoSQL
+    - NoSQL 文件
+      [41] Azure Cosmos DB for NoSQL 文件
+    - 概觀
+      - 常見問題集
+        [44] 如何開始針對 Azure Cosmos DB forNoSQL 進行開發？
+          是否有 Azure Cosmos DB for NoSQL 範例可以開始使用？
+          Azure Cosmos DB for NoSQL 是否支援無結構描述資料？
+          Azure Cosmos DB for NoSQL 是否支援ACID (不可部分完成性、一致性、隔離、
+    - 快速入門
+      - .NET
+        [49] 快速入門：適用於 NET 的 Azure CosmosDB for NoSQL 程式庫
+      - Python
+        [56] 快速入門：適用於 Python 的 AzureCosmos DB for NoSQL 程式庫
+      - Node.js
+        [63] 快速入門：適用於 Node.js 的 AzureCosmos DB for NoSQL 程式庫
+      - Java
+        [70] 快速入門：適用於 Java 的 Azure CosmosDB for NoSQL 程式庫
+      - Go
+        [77] 快速入門：適用於 Go 的 Azure CosmosDB for NoSQL 程式庫
+      - 入口網站
+        [85] 快速入門：從 Azure 入口網站建立 AzureCosmos DB 帳戶、資料庫、容器和項目
+      - Bicep
+        [94] 快速入門：使用 Bicep 來建立 AzureCosmos DB 和容器
+      - ARM 範本
+        [100] 快速入門：使用 ARM 範本建立 AzureCosmos DB 和容器
+      - Terraform
+        [109] 快速入門 - 使用 Terraform 來建立 AzureCosmos DB 資料庫與容器
+    - 教學課程
+      - 建置 Web 應用程式
+        - .NET
+          [114] 教學課程：透過 Azure Cosmos DB forNoSQL 開發 ASP.NET Web 應用程式
+        - Java
+          [131] 教學課程：使用 Azure Cosmos DB 和API for NoSQL 來建置 Java Web 應用程式
+        - Node.js
+          [162] 教學課程：使用 JavaScript SDK 建置Node.js Web 應用程式來管理 AzureCosmos DB 中的 API for NoSQL 帳戶
+      - 建置主控台應用程式
+        - .NET
+          [179] 教學課程：使用 Azure Cosmos DB forNoSQL 開發 .NET 主控台應用程式
+        - Java
+          [198] 快速入門：適用於 Java 的 Azure CosmosDB for NoSQL 程式庫
+        - 非同步 Java
+          [205] 快速入門：適用於 Java 的 Azure CosmosDB for NoSQL 程式庫
+        - Node.js
+          [212] 快速入門：適用於 Node.js 的 AzureCosmos DB for NoSQL 程式庫
+      - 查詢資料
+        [219] 教學課程：在 Azure Cosmos DB forNoSQL 中查詢資料
+      - Azure Kubernetes Service 上的 Spring Boot 應用程式
+        [222] 教學課程 - Spring Boot 應用程式搭配Azure Cosmos DB for NoSQL 和 AzureKubernetes Service
+      - Jupyter 筆記本
+        - 建立筆記本 (Visual Studio Code)
+          [233] 教學課程：使用 Visual Studio CodeJupyter 筆記本建立 Jupyter Notebook 來分析 Azure Cosmos DB for NoSQL 帳戶中的資料
+        - 建立筆記本 (Azure 入口網站)
+          [238] 教學課程：在 Azure Cosmos DB forNoSQL 中建立 Jupyter 筆記本，以分析資料並將資料視覺化 (預覽)
+        - 從 GitHub 匯入筆記本
+          [245] 教學課程：將 Jupyter 筆記本從 GitHub匯入至 Azure Cosmos DB for NoSQL (預覽)
+      - 使用 Bicep 在 Azure Kubernetes Service (AKS) 叢集上部署應用程式
+        [251] 教學課程：使用 Azure Cosmos DB forNoSQL、受控識別和透過 AKS 的 Bicep來部署 ASP.NET Web 應用程式
+      - Kusto 查詢語言 (KQL) 轉換
+        [262] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+      - 使用 Spark 進行連線
+        [268] 教學課程：使用 Spark 連線至 AzureCosmos DB for NoSQL
+      - 鏡像資料庫至 Microsoft Fabric
+        [276] 教學課程：從 Azure Cosmos DB 設定Microsoft Fabric 鏡像資料庫 （預覽）
+    - 範例
+      - 解決方案加速器
+        [283] Best practices and solutions using AIand Azure Cosmos DB
+      - .NET
+        [287] 適用於 .NET 的 Azure Cosmos DB forNoSQL SDK 範例
+      - Java
+        [289] Azure Cosmos DB for NoSQL：Java SDKv4 範例
+      - Spring Data
+        [297] Azure Cosmos DB for NoSQL：SpringData Azure Cosmos DB v5 範例
+      - Node.js
+        [301] 適用於 JS 的 Azure Cosmos DB forNoSQL 範例
+      - Python
+        [305] 適用於 Python 的 Azure Cosmos DB forNoSQL 範例
+      - Go
+        [309] Azure Cosmos DB Go 範例
+      - PowerShell
+        [311] Azure Cosmos DB for NoSQL 的 AzurePowerShell 範例
+      - Azure CLI
+        - 概觀
+          [313] 適用於 Azure Cosmos DB for NoSQL 的Azure CLI 範例
+        - 建立帳戶、資料庫和容器
+          [315] 使用 Azure CLI 建立 Azure Cosmos DBfor NoSQL 帳戶、資料庫及容器
+        - 建立無伺服器
+          [319] 使用 Azure CLI 建立 Azure Cosmos DBfor NoSQL 無伺服器帳戶、資料庫及容器
+        - 使用自動調整建立
+          [322] 建立 Azure Cosmos DB for NoSQL 帳戶、資料庫，以及具有自動調整功能的容器
+        - 執行輸送量作業
+          [325] 針對 Azure Cosmos DB for NoSQL 的資料庫或容器使用 Azure CLI 執行的輸送量(RU/秒) 作業
+        - 鎖定資源避免刪除
+          [330] 使用 Azure CLI 建立 Azure Cosmos DBfor NoSQL 資料庫與容器的資源鎖定
+        - 新增或容錯移轉區域
+          [334] 使用 Azure CLI 針對 Azure Cosmos DB帳戶新增區域、變更容錯移轉優先順序、觸發容錯移轉
+        - 執行帳戶金鑰作業
+          [338] 透過 Azure CLI 使用 Azure Cosmos DB帳戶的帳戶金鑰和連接字串
+        - 使用 IP 防火牆保護安全
+          [342] 使用 Azure CLI 建立具有 IP 防火牆的Azure Cosmos DB 帳戶
+        - 使用服務端點保護新的帳戶
+          [345] 使用 Azure CLI 建立具有虛擬網路服務端點的 Azure Cosmos DB 帳戶
+        - 使用服務端點保護現有帳戶
+          [349] 使用 Azure CLI 連線現有 Azure CosmosDB 帳戶與虛擬網路服務端點
+        - 尋找現有的免費層帳戶
+          [353] 使用 Azure CLI 在訂用帳戶中尋找現有的Azure Cosmos DB 免費層帳戶
+      - Azure PowerShell
+        - 概觀
+          [356] Azure Cosmos DB for NoSQL 的 AzurePowerShell 範例
+        - 建立帳戶、資料庫和容器
+          [358] 建立 Azure Cosmos DB 資料庫和容器 -API for NoSQL
+        - 使用自動調整建立
+          [362] 針對 Azure Cosmos DB 建立資料庫和具有自動調整功能的容器 - API for NoSQL
+        - 執行輸送量作業
+          [365] 使用 PowerShell 對 Azure Cosmos DBfor NoSQL 的資料庫或容器執行輸送量(RU/秒) 作業
+        - 鎖定資源避免刪除
+          [369] 使用 Azure PowerShell 建立 AzureCosmos DB for NoSQL 資料庫與容器的資源鎖定
+        - 列出和取得資料庫和容器
+          [372] 列出及取得 Azure Cosmos DB 資料庫和容器 - API for NoSQL
+        - 建立已關閉索引編製的容器
+          [375] 在 Azure Cosmos DB 帳戶中使用PowerShell 建立已關閉索引編製功能的容器
+        - 使用大型分割區索引鍵建立容器
+          [378] 在 Azure Cosmos DB 帳戶中使用PowerShell 建立具有大型分割區索引鍵的容器
+        - 帳戶金鑰或連接字串
+          [381] 使用 PowerShell 的 Azure Cosmos DB 帳戶連接字串和帳戶金鑰作業
+        - 變更容錯移轉優先順序或觸發容錯移轉
+          [383] 使用 PowerShell 對具有單一寫入區域的Azure Cosmos DB 帳戶變更容錯移轉優先順序或觸發容錯移轉
+        - 建立具有 IP 防火牆的帳戶
+          [386] 建立具有 IP 防火牆的 Azure Cosmos DB帳戶
+        - 更新帳戶
+          [389] 使用 PowerShell 更新 Azure Cosmos DB帳戶的一致性層級
+        - 更新帳戶的區域
+          [392] 使用 PowerShell 更新 Azure Cosmos DB帳戶的區域
+      - 範本
+        - JSON 語法範本
+          [395] 適用於 Azure Cosmos DB 的 AzureResource Manager 範本
+        - Bicep 語法範本
+          [397] 適用於 Azure Cosmos DB 的 Bicep
+        - Terraform 語法範本
+          [398] Azure Cosmos DB for NoSQL 的Terraform 範例
+      - Azure Resource Graph 查詢
+        [399] Azure Cosmos DB 的 Azure ResourceGraph 查詢範例
+    - 概念
+      - Azure Cosmos DB 資源模型
+        [401] Azure Cosmos DB 中的資料庫、容器和專案
+      - 模型化和資料分割
+        - 模型文件資料
+          [410] Azure Cosmos DB 中的資料模型化
+        - 模型化和資料分割 - 實際範例
+          [427] 如何使用真實範例在 Azure Cosmos DB上將資料模型化和分割
+        - 綜合磁碟分割索引鍵
+          [449] 建立綜合分割區索引鍵
+      - 資料分割與水平放大
+        - 資料分割概觀
+          [451] Azure Cosmos DB 中的資料分割和水平調整
+        - 階層式分割區索引鍵
+          - 階層式分割區索引鍵概觀
+            [457] Azure Cosmos DB 中的階層式分割區索引鍵
+          - 階層式分割區索引鍵常見問題
+            [470] 是否可以將階層式分割區索引鍵新增至現有容器？
+邏輯分割區索引鍵的大小是否有儲存體限制？
+實體分割區的儲存體和 RU/秒限制是否有任何變更？
+      - 輸送量 (要求單位)
+        - 要求單位
+          [473] Azure Cosmos DB 中的要求單位
+        - 免費層
+          [476] Azure Cosmos DB 存留期免費層
+        - 限制帳戶總輸送量
+          [480] 限制 Azure Cosmos DB 帳戶上佈建的總輸送量
+        - 將虛擬核心轉換為要求單位
+          [484] 將非關聯式資料庫中的虛擬核心或 vCPU數目轉換為 Azure Cosmos DB RU/s
+        - 佈建的輸送量
+          [490] Azure Cosmos DB 中的佈建輸送量簡介
+        - 自動調整輸送量
+          - 自動調整簡介
+            [498] 使用自動調整輸送量來建立 AzureCosmos DB 容器和資料庫
+          - 按分割區/區域自動調整
+            [502] 個別區域與個別分割區自動調整 (預覽)
+          - 自動調整常見問題集
+            [505] Azure Cosmos DB 中的自動調整和自動試驗之間有何差異？
+在先前的自動試驗階層模型中建立的資料庫或容器會發生什麼事？
+自動調整的進入點 RU/秒為何？
+        - 無伺服器
+          - 無伺服器概觀
+            [513] Azure Cosmos DB 無伺服器帳戶類型
+          - 無伺服器效能
+            [516] Azure Cosmos DB 無伺服器帳戶效能
+        - 在自動調整和標準 (手動) 輸送量之間進行選擇
+          [518] 如何在標準 (手動) 和自動調整佈建輸送量之間進行選擇
+        - 在佈建的輸送量和無伺服器之間選擇
+          [525] 如何在佈建的輸送量與無伺服器之間進行選擇
+        - 調整佈建輸送量的最佳做法
+          [527] 調整佈建輸送量 (RU/秒) 的最佳做法
+        - 高載容量
+          - 高載容量概觀
+            [534] Azure Cosmos DB 的高載容量
+          - 高載容量常見問題
+            [536] 使用高載容量需要多少費用？
+高載容量如何與自動調整搭配使用？
+什麼資源可以使用高載容量？
+如何監視高載容量？
+        - 合併 (預覽)
+          [538] Azure Cosmos DB 中的合併分割區 (預覽)
+        - 分配各分割區輸送量 (預覽) - 容器
+          - 分配各分割區輸送量概觀
+            [547] 跨分割區轉散發輸送量 (預覽)
+          - 分配各分割區輸送量常見問題
+            [555] 我可以使用此功能的資源為何？
+如何在預覽版功能中進行註冊？
+Azure PowerShell 和 Azure CLI 中的哪個Azure Cosmos DB 功能版本支援此功能？
+我可以在一個要求中變更的實體分割區數目上限為何？
+        - 優先順序型執行 (預覽)
+          - 優先順序型執行概觀
+            [559] Azure Cosmos DB 中的優先順序型執行
+          - 優先順序型執行常見問題
+            [563] 優先順序型執行支援多少優先順序層級？
+要求的預設優先順序為何？
+是否可以變更 Azure Cosmos DB 帳戶中的要求預設優先順序層級？
+啟用優先順序型執行是否表示針對高優先順序要求保留 RU/秒的一小部分？
+與此功能相關聯的價格變更為何？
+      - 容器和項目
+        - 開始使用 SQL 查詢
+          [565] Azure Cosmos DB for NoSQL 中的查詢
+        - 編製索引概觀
+          [567] 在 Azure Cosmos DB 中編製索引的概觀
+        - 存留時間
+          [579] Azure Cosmos DB 中的存留時間 (TTL)
+        - 唯一金鑰條件約束
+          [582] Azure Cosmos DB 中的唯一索引鍵限制式
+        - 交易和開放式並行存取控制
+          [585] 交易和開放式並行存取控制
+        - 附件
+          [588] Azure Cosmos DB 附件
+      - 變更摘要
+        - 變更摘要概觀
+          [593] Azure Cosmos DB 中的變更摘要 \(部分機器翻譯\)
+        - 變更摘要設計模式
+          [597] 變更 Azure Cosmos DB 中的摘要設計模式
+        - 變更摘要模式
+          [602] Azure Cosmos DB 中的變更摘要模式
+        - 讀取變更摘要
+          [605] 讀取 Azure Cosmos DB 變更摘要
+        - 變更摘要處理器
+          [608] Azure Cosmos DB 中的變更摘要處理器
+        - 觸發 Azure Functions
+          [617] 無伺服器事件型架構搭配 Azure CosmosDB 和 Azure Functions
+        - 變更摘要 (提取模型)
+          [619] Azure Cosmos DB 中的變更摘要提取模型
+      - 整合式快取
+        - 專用閘道概觀
+          [627] Azure Cosmos DB 專用閘道 - 概觀
+        - 整合式快取概觀
+          [632] Azure Cosmos DB 整合式快取 - 概觀
+        - 整合式快取常見問題
+          [640] Azure Cosmos DB 整合式快取常見問題集
+      - 使用 Azure Synapse Link 進行分析
+        - 適用於 Azure Cosmos DB 的 Azure Synapse Link
+          [643] 什麼是適用於 Azure Cosmos DB 的Azure Synapse Link
+        - Azure Synapse Link 支援的功能
+          [649] 適用於 Azure Cosmos DB 的 AzureSynapse Link 支援的功能
+        - Azure Synapse Link 使用案例
+          [651] 適用於 Azure Cosmos DB 的 AzureSynapse Link：近乎即時的分析使用案例(機器翻譯)
+        - 自訂資料分割 - 概觀
+          [658] 適用於 Azure Cosmos DB 的 AzureSynapse Link 中的自訂資料分割
+        - Azure Synapse Link 常見問題集
+          [664] 一般常見問題集
+        - 分析儲存 - 概觀
+          [673] 什麼是 Azure Cosmos DB 分析存放區？
+        - 異動資料擷取 (CDC)
+          [696] Azure Cosmos DB 分析存放區的異動資料擷取功能
+        - 時間移動 (預覽)
+          [700] 
+      - 備份及還原
+        - 備份與還原簡介
+          [703] 在 Azure Cosmos DB 中進行線上備份及隨選資料還原
+        - 連續備份
+          - 連續備份 - 簡介
+            [706] Azure Cosmos DB 中具有時間點還原的持續備份
+          - 還原
+            - 還原至新帳戶
+              - 連續備份 - 資源模型
+                [713] Azure Cosmos DB 時間點還原功能的資源模型
+              - 連續備份 - 常見問題
+                [724] 還原需要多少時間？
+是否可以提交本機時間表示的還原時間？
+如何追蹤帳戶的還原？
+              - 最新可還原時間戳記
+                [727] 具有連續備份模式的 Azure Cosmos DB帳戶的最新可還原時間戳記
+              - 使用連續備份稽核還原動作
+                [730] 以連續備份模式稽核 Azure Cosmos DB的還原時間點動作
+            - 在相同的帳戶中還原
+              - 簡介
+                [733] 使用連續備份，在相同帳戶中還原已刪除的資料庫或容器
+              - 資源模型
+                [736] 在 Azure Cosmos DB 的相同帳戶中還原的資源模型
+              - 常見問題集
+                [738] 是否可以在還原進行時讀取或更新其他資源？
+您可以在帳戶上執行多少相同的帳戶還原動作？
+我可以還原至相同帳戶的資源細微性為何？
+是否可以將特定容器或資料庫多次還原至不同的還原時間戳記？
+        - 定期備份
+          - 簡介
+            [741] Azure Cosmos DB 中的定期備份和還原
+          - 儲存體備援
+            [745] Azure Cosmos DB 中的定期備份儲存體備援
+          - 要求資料還原
+            [747] 從 Azure Cosmos DB 備份要求資料還原
+      - 全域散發
+        - 全球發佈概觀
+          [751] 使用 Azure Cosmos DB 來全域散發資料
+        - 一致性層級
+          [754] Azure Cosmos DB 中的一致性層級
+        - 高可用性
+          - 高可用性和可靠性
+            [765] 適用於 NoSQL 的 Azure Cosmos DB 中的高可用性 （可靠性）
+          - 主動式復原
+            [777] 適用於 NoSQL 的 Azure Cosmos DB 復原建議
+          - 多重區域寫入
+            - 瞭解多區域寫入
+              [782] 瞭解 Azure Cosmos DB 中的多區域寫入
+            - 衝突解決功能
+              [784] 使用多個寫入區域時的衝突類型和解決原則
+        - 全域散發 - 運作原理
+          [786] 透過 Azure Cosmos DB 全域資料散發 -運作原理
+      - 安全性
+        - 安全性概觀
+          [792] Azure Cosmos DB 虛擬核心中的資料庫安全性概觀
+        - 安全存取資料
+          [801] 安全存取 Azure Cosmos DB 中的資料
+        - 資料加密
+          [810] Azure Cosmos DB 中的資料加密
+        - 服務標籤
+          [814] 虛擬網路服務標籤
+        - Azure 角色型存取控制
+          [829] Azure Cosmos DB 中的角色型存取控制
+        - Azure 原則支援
+          [834] 使用 Azure 原則來實作 Azure CosmosDB 資源的治理和控制
+        - Azure 原則的安全性控制
+          [839] 適用於 Azure Cosmos DB 的 Azure 原則法規合規性控制
+        - 安全性基準
+          [850] 適用於 Azure Cosmos DB 的安全性基準
+        - 威脅防護搭配適用於雲端的 Microsoft Defender
+          [863] 適用於 Azure Cosmos DB 的 MicrosoftDefender
+      - 企業整備
+        - 服務配額
+          [865] Azure Cosmos DB 服務配額
+        - 申請加大配額
+          [878] 如何要求增加 Azure Cosmos DB 資源的配額
+        - 自動建議
+          [880] Azure Cosmos DB 的自動化建議
+        - 法規遵循
+          [884] Azure Cosmos DB 中的合規性
+        - 資料落地
+          [886] 如何符合 Azure Cosmos DB 中的資料落地需求
+      - 最佳化 Azure Cosmos DB 成本
+        [888] 最佳化 Azure Cosmos DB 成本
+      - Jupyter 筆記本
+        - 概觀
+          [890] Azure Cosmos DB 中的 JupyterNotebook (預覽)
+        - 常見問題集
+          [894] 
+      - 模擬器
+        [898] 
+      - 網路頻寬
+        [900] Azure Cosmos DB 網路頻寬
+    - 如何
+      - 存取預覽功能
+        [903] 存取 Azure Cosmos DB 預覽功能
+      - 開發應用程式
+        - 建立帳戶
+          [905] 建立 Azure Cosmos DB for NoSQL 帳戶
+        - .NET
+          - 開始使用
+            [907] 開始使用 Azure Cosmos DB for NoSQL和 .NET
+          - 使用資料庫
+            - 建立資料庫
+              [916] 使用 .NET 在 Azure Cosmos DB forNoSQL 中建立資料庫
+          - 使用容器工作
+            - 建立容器
+              [919] 使用 .NET 在 Azure Cosmos DB forNoSQL 中建立容器
+          - 使用項目
+            - 建立項目
+              [922] 使用 .NET 在 Azure Cosmos DB forNoSQL 中建立項目
+            - 讀取項目
+              [925] 使用 .NET 在 Azure Cosmos DB forNoSQL 中讀取項目
+            - 查詢項目
+              [929] 使用 .NET 查詢 Azure Cosmos DB forNoSQL 中的項目
+        - JavaScript
+          - 開始使用
+            [933] 開始搭配使用 Azure Cosmos DB forNoSQL 與 JavaScript
+          - 使用資料庫
+            - 建立資料庫
+              [942] 使用 JavaScript 在 Azure Cosmos DB forNoSQL 中建立資料庫
+          - 使用容器工作
+            - 建立容器
+              [945] 使用 JavaScript 在 Azure Cosmos DB forNoSQL 中建立容器
+          - 使用項目
+            - 建立項目
+              [948] 使用 JavaScript 在 Azure Cosmos DB forNoSQL 中建立項目
+            - 查詢項目
+              [951] 使用 JavaScript 在 Azure Cosmos DB forNoSQL 中查詢項目
+        - Python
+          - 開始使用
+            [953] 開始使用 Azure Cosmos DB for NoSQL和 Python
+          - 使用資料庫
+            - 建立資料庫
+              [962] 使用 Python 在 Azure Cosmos DB forNoSQL 中建立資料庫
+          - 使用容器工作
+            - 建立容器
+              [965] 使用 Python 在 Azure Cosmos DB forNoSQL 中建立容器
+        - 設計復原應用程式
+          [968] 使用 Azure Cosmos DB SDK 設計復原應用程式
+        - 連線模式
+          [973] Azure Cosmos DB SQL SDK 連線模式
+      - 容器和項目上的作業
+        - 建立容器
+          [978] 在 Azure Cosmos DB for NoSQL 中建立容器
+        - 使用大型分割區索引鍵建立容器
+          [981] 建立具有大型分割區索引鍵的容器
+        - 查詢容器
+          [985] 查詢 Azure Cosmos DB 容器
+        - 遷移至資料分割容器
+          [989] 將未分割的容器移轉至已分割的容器
+        - 設定存留時間
+          [993] 在 Azure Cosmos DB 中設定存留時間
+        - 定義唯一索引鍵
+          [999] 定義 Azure Cosmos DB 容器的唯一索引鍵
+        - 執行交易式批次作業
+          [1004] Azure Cosmos DB 中的交易式批次作業
+        - 依分割區索引鍵刪除項目 (預覽)
+          [1007] 依分割區索引鍵值刪除項目 - API forNoSQL (預覽)
+        - 尋找要求單位費用
+          [1012] 尋找 Azure Cosmos DB for NoSQL 作業的要求單位費用
+        - 在容器之間移動資料
+          [1017] Azure Cosmos DB (預覽) 中的容器複製作業
+        - 部分文件更新
+          - 部分文件更新概觀
+            [1023] Azure Cosmos DB 中的部分文件更新
+          - 開始使用部分文件更新
+            [1030] 開始使用 Azure Cosmos DB 部分文件更新
+          - 部分文件更新 FAQ
+            [1036] 這是 JSON Patch RFC 6902 的實作嗎？
+部分文件更新是否與無伺服器、佈建輸送量和自動調整的計費模式相容？
+如何計算 RU/秒價格？
+部分文件更新作業的數目是否有限制？
+系統產生的屬性是否支援部分文件更新？
+可以修補存留時間 (TTL) 嗎？
+      - 變更摘要
+        - Azure Cosmos DB 觸發程序進階組態
+          [1038] 如何使用適用於 Azure Cosmos DB 的Azure Functions 觸發程序來設定記錄和連線
+        - 多個 Azure Cosmos DB 觸發程序
+          [1042] 建立多個適用於 Azure Cosmos DB 的Azure Functions 觸發程序
+        - 針對 Azure Cosmos DB 觸發程序進行疑難排解
+          [1046] 診斷和疑難排解適用於 Azure Cosmos DB的 Azure Functions 觸發程序問題
+        - 使用變更摘要估算器
+          [1052] 使用變更摘要估算器
+        - 從變更摘要處理器程式庫遷移
+          [1056] 從變更摘要處理器程式庫移轉到 AzureCosmos DB .NET V3 SDK
+        - 具有變更摘要的非同步 Java 範例
+          [1060] 如何建立 Java 應用程式，以使用 AzureCosmos DB for NoSQL 和變更摘要處理器
+      - NoSQL 查詢
+        - NoSQL 查詢文件
+          [1064] Azure Cosmos DB for NoSQL 中的查詢
+        - Cosmos DB 中的 Microsoft Copilot for Azure (預覽)
+          - 使用 Copilot (預覽)
+            [1066] 使用 Cosmos DB 中的 Microsoft Copilotfor Azure 產生 NoSQL 查詢 (預覽版)
+          - Copilot 透明度常見問題
+            [1071] 一般
+透明
+        - 子句
+          - SELECT
+            [1075] SELECT 子句 (NoSQL 查詢)
+          - FROM
+            [1080] FROM 子句 (NoSQL 查詢)
+          - WHERE
+            [1084] WHERE 子句 （NoSQL 查詢）
+          - 排序依據
+            [1088] ORDER BY (NoSQL 查詢)
+          - GROUP BY
+            [1092] GROUP BY (NoSQL 查詢)
+          - 位移限制
+            [1097] OFFSET LIMIT (NoSQL 查詢)
+        - 使用 JSON
+          [1100] 在 Azure Cosmos DB for NoSQL 中使用JSON
+        - 子查詢
+          [1108] 適用于 NoSQL 的 Azure Cosmos DB 中的子查詢
+        - 聯結
+          [1124] 適用于 NoSQL 的 Azure Cosmos DB 中的自我聯結
+        - 陣列和物件
+          [1132] 在適用于 NoSQL 的 Azure Cosmos DB 中使用陣列和物件
+        - 關鍵字
+          [1136] 適用于 NoSQL 的 Azure Cosmos DB 關鍵字
+        - 常數
+          [1142] 適用于 NoSQL 的 Azure Cosmos DB 常數
+        - 純量運算式
+          [1145] 適用于 NoSQL 的 Azure Cosmos DB 中的純量運算式
+        - 計算屬性
+          [1148] 適用於 NoSQL 的 Azure Cosmos DB 中的計算屬性 （預覽）
+        - 操作員
+          - 相等和比較運算子
+            [1158] 適用于 NoSQL 的 Azure Cosmos DB 中的相等和比較運算子
+          - 邏輯運算子
+            [1160] 適用于 NoSQL 的 Azure Cosmos DB 中的邏輯運算子
+          - 三元和聯合運算子
+            [1162] 適用于 NoSQL 的 Azure Cosmos DB 中三元和聯合運算子
+          - 位元運算子
+            [1166] 適用于 NoSQL 的 Azure Cosmos DB 中的位運算子
+        - 彙總函數
+          - 平均
+            [1168] AVG (NoSQL 查詢)
+          - COUNT
+            [1170] COUNT (NoSQL 查詢)
+          - 最大值
+            [1173] Max (NoSQL 查詢)
+          - 最小值
+            [1175] MIN (NoSQL 查詢)
+          - SUM
+            [1177] SUM (NoSQL 查詢)
+        - 系統函式
+          - 系統函式
+            [1179] 
+          - 陣列函數
+            - ARRAY_CONCAT
+              [1181] ARRAY_CONCAT (NoSQL 查詢)
+            - ARRAY_CONTAINS
+              [1183] ARRAY_CONTAINS (NoSQL 查詢)
+            - ARRAY_LENGTH
+              [1185] ARRAY_LENGTH (NoSQL 查詢)
+            - ARRAY_SLICE
+              [1187] ARRAY_SLICE （NoSQL 查詢）
+            - CHOOSE
+              [1189] CHOOSE (NoSQL 查詢)
+            - ObjectToArray
+              [1192] ObjectToArray (NoSQL 查詢)
+            - SetIntersect
+              [1196] SetIntersect (NoSQL 查詢)
+            - SetUnion
+              [1199] SetUnion (NoSQL 查詢)
+          - 條件式函式
+            - IIF
+              [1202] IIF (NoSQL 查詢)
+          - 日期和時間函式
+            - DateTimeAdd
+              [1205] DateTimeAdd (NoSQL 查詢)
+            - DateTimeBin
+              [1208] DateTimeBin (NoSQL 查詢)
+            - DateTimeDiff
+              [1211] DateTimeDiff (NoSQL 查詢)
+            - DateTimeFromParts
+              [1214] DateTimeFromParts (NoSQL 查詢)
+            - DateTimePart
+              [1216] DateTimePart (NoSQL 查詢)
+            - DateTimeToTicks
+              [1218] DateTimeToTicks (NoSQL 查詢)
+            - DateTimeToTimestamp
+              [1220] DateTimeToTimestamp (NoSQL 查詢)
+            - GetCurrentDateTime
+              [1222] GetCurrentDateTime (NoSQL 查詢)
+            - GetCurrentDateTimeStatic
+              [1224] GetCurrentDateTimeStatic (NoSQL 查詢)
+            - GetCurrentTicks
+              [1227] GetCurrentTicks (NoSQL 查詢)
+            - GetCurrentTicksStatic
+              [1229] GetCurrentTicksStatic (NoSQL 查詢)
+            - GetCurrentTimestamp
+              [1232] GetCurrentTimestamp (NoSQL 查詢)
+            - GetCurrentTimestampStatic
+              [1234] GetCurrentTimestampStatic (NoSQL 查詢)
+            - TicksToDateTime
+              [1237] TicksToDateTime (NoSQL 查詢)
+            - TimestampToDateTime
+              [1239] TimestampToDateTime (NoSQL 查詢)
+          - Item 函式
+            - DocumentId
+              [1241] DocumentId (NoSQL 查詢)
+          - 數學函式
+            - ABS
+              [1244] ABS (NoSQL 查詢)
+            - ACOS
+              [1246] ACOS (NoSQL 查詢)
+            - ASIN
+              [1248] ASIN (NoSQL 查詢)
+            - ATAN
+              [1250] ATAN (NoSQL 查詢)
+            - ATN2
+              [1252] ATN2 (NoSQL 查詢)
+            - CEILING
+              [1254] CEILING (NoSQL 查詢)
+            - COS
+              [1256] COS (NoSQL 查詢)
+            - COT
+              [1258] COT (NoSQL 查詢)
+            - DEGREES
+              [1260] DEGREES （NoSQL 查詢）
+            - EXP
+              [1262] EXP (NoSQL 查詢)
+            - FLOOR
+              [1264] FLOOR (NoSQL 查詢)
+            - IntAdd
+              [1266] IntAdd (NoSQL 查詢)
+            - IntBitAnd
+              [1268] IntBitAnd (NoSQL 查詢)
+            - IntBitLeftShift
+              [1270] IntBitLeftShift (NoSQL 查詢)
+            - IntBitNot
+              [1272] IntBitNot (NoSQL 查詢)
+            - IntBitOr
+              [1274] IntBitOr (NoSQL 查詢)
+            - IntBitRightShift
+              [1276] IntBitRightShift (NoSQL 查詢)
+            - IntBitXor
+              [1278] IntBitXor (NoSQL 查詢)
+            - IntDiv
+              [1280] IntDiv (NoSQL 查詢)
+            - IntMod
+              [1282] IntMod (NoSQL 查詢)
+            - IntMul
+              [1284] IntMul (NoSQL 查詢)
+            - IntSub
+              [1286] IntSub (NoSQL 查詢)
+            - LOG
+              [1288] LOG (NoSQL 查詢)
+            - LOG10
+              [1290] LOG10 (NoSQL 查詢)
+            - NumberBin
+              [1292] NumberBin (NoSQL 查詢)
+            - PI
+              [1295] PI (NoSQL 查詢)
+            - POWER
+              [1296] POWER (NoSQL 查詢)
+            - RADIANS
+              [1298] RADIANS (NoSQL 查詢)
+            - RAND
+              [1300] RAND (NoSQL 查詢)
+            - ROUND
+              [1302] ROUND (NoSQL 查詢)
+            - SIGN
+              [1304] SIGN (NoSQL 查詢)
+            - SIN
+              [1306] SIN (NoSQL 查詢)
+            - SQRT
+              [1308] SQRT (NoSQL 查詢)
+            - SQUARE
+              [1310] SQUARE (NoSQL 查詢)
+            - TAN
+              [1312] TAN (NoSQL 查詢)
+            - TRUNC
+              [1314] TRUNC (NoSQL 查詢)
+          - 空間函數
+            - ST_AREA
+              [1316] ST_AREA (NoSQL 查詢)
+            - ST_DISTANCE
+              [1318] ST_DISTANCE (NoSQL 查詢)
+            - ST_WITHIN
+              [1321] ST_WITHIN (NoSQL 查詢)
+            - ST_INTERSECTS
+              [1324] ST_INTERSECTS (NoSQL 查詢)
+            - ST_ISVALID
+              [1327] ST_ISVALID (NoSQL 查詢)
+            - ST_ISVALIDDETAILED
+              [1329] ST_ISVALIDDETAILED (NoSQL 查詢)
+          - 字串函數
+            - CONCAT
+              [1331] CONCAT (NoSQL 查詢)
+            - CONTAINS
+              [1334] CONTAINS (NoSQL 查詢)
+            - ENDSWITH
+              [1336] ENDWITH (NoSQL 查詢)
+            - INDEX_OF
+              [1338] INDEX_OF (NoSQL 查詢)
+            - LEFT
+              [1340] LEFT (NoSQL 查詢)
+            - LENGTH
+              [1342] LENGTH (NoSQL 查詢)
+            - LOWER
+              [1344] LOWER (NoSQL 查詢)
+            - LTRIM
+              [1346] LTRIM (NoSQL 查詢)
+            - REGEXMATCH
+              [1348] RegexMatch (NoSQL 查詢)
+            - REPLACE
+              [1351] REPLACE (NoSQL 查詢)
+            - REPLICATE
+              [1353] 複寫 (NoSQL 查詢)
+            - REVERSE
+              [1355] REVERSE (NoSQL 查詢)
+            - RIGHT
+              [1357] RIGHT (NoSQL 查詢)
+            - RTRIM
+              [1359] RTRIM (NoSQL 查詢)
+            - STARTSWITH
+              [1361] STARTSWITH (NoSQL 查詢)
+            - STRINGEQUALS
+              [1363] StringEquals (NoSQL 查詢)
+            - StringToArray
+              [1365] StringToArray (NoSQL 查詢)
+            - StringToBoolean
+              [1367] StringToBoolean (NoSQL 查詢)
+            - StringToNull
+              [1369] StringToNull (NoSQL 查詢)
+            - StringToNumber
+              [1371] StringToNumber (NoSQL 查詢)
+            - StringToObject
+              [1373] StringToObject (NoSQL 查詢)
+            - SUBSTRING
+              [1375] SUBSTRING (NoSQL 查詢)
+            - ToString
+              [1377] ToString (NoSQL 查詢)
+            - TRIM
+              [1379] TRIM (NoSQL 查詢)
+            - UPPER
+              [1381] UPPER (NoSQL 查詢)
+          - 類型檢查函數
+            - IS_ARRAY
+              [1383] IS_ARRAY (NoSQL 查詢)
+            - IS_BOOL
+              [1385] IS_BOOL (NoSQL 查詢)
+            - IS_DEFINED
+              [1387] IS_DEFINED （NoSQL 查詢）
+            - IS_FINITE_NUMBER
+              [1389] IS_FINITE_NUMBER (NoSQL 查詢)
+            - IS_INTEGER
+              [1391] IS_INTEGER (NoSQL 查詢)
+            - IS_NULL
+              [1393] IS_Null (NoSQL 查詢)
+            - IS_NUMBER
+              [1395] IS_NUMBER (NoSQL 查詢)
+            - IS_OBJECT
+              [1397] IS_OBJECT (NoSQL 查詢)
+            - IS_PRIMITIVE
+              [1399] IS_PRIMITIVE (NoSQL 查詢)
+            - IS_STRING
+              [1401] IS_STRING (NoSQL 查詢)
+        - 地理空間資料
+          [1403] 適用于 NoSQL 的 Azure Cosmos DB 中的地理空間和 GeoJSON 位置資料
+        - Datetime
+          [1408] 在適用于 NoSQL 的 Azure Cosmos DB 中使用日期
+        - 參數化查詢
+          [1411] Azure Cosmos DB for NoSQL 中的參數化查詢
+        - 分頁
+          [1413] 適用于 NoSQL 的 Azure Cosmos DB 編頁
+        - LINQ to NoSQL
+          [1415] 適用于 NoSQL 的 Azure Cosmos DB 中的LINQ to NoSQL 翻譯
+      - 具體化檢視 (預覽)
+        [1424] Azure Cosmos DB for NoSQL (預覽) 的具體化檢視
+      - 對地理空間資料進行索引編製和查詢
+        [1431] 在 Azure Cosmos DB for NoSQL 中為GeoJSON 位置資料編製索引和加以查詢
+      - 變更分割區索引鍵
+        [1444] 變更 Azure Cosmos DB 中的數據分割索引鍵 （預覽）
+      - 輸送量 (要求單位)
+        - 佈建的輸送量
+          - 使用標準 (手動) 輸送量 - 容器
+            [1447] 在 Azure Cosmos DB 容器上佈建標準 (手動) 輸送量 - 適用於 NoSQL 的 API
+          - 使用標準 (手動) 輸送量 - 資料庫
+            [1451] 在 Azure Cosmos DB 中的資料庫上佈建標準 (手動) 輸送量 - API for NoSQL
+          - 使用自動調整輸送量 - 資料庫或容器
+            [1454] 在 Azure Cosmos DB - API for NoSQL 中的資料庫或容器上佈建自動調整輸送量
+          - 分配各分割區輸送量 (預覽) - 容器
+            - 分配各分割區輸送量概觀
+              [1461] 跨分割區轉散發輸送量 (預覽)
+            - 分配各分割區輸送量常見問題
+              [1469] 我可以使用此功能的資源為何？
+如何在預覽版功能中進行註冊？
+Azure PowerShell 和 Azure CLI 中的哪個Azure Cosmos DB 功能版本支援此功能？
+我可以在一個要求中變更的實體分割區數目上限為何？
+          - 使用容量規劃工具來估計每秒要求單位
+            [1473] 使用 Azure Cosmos DB 容量規劃工具估計 RU/秒 - Azure Cosmos DB for NoSQL
+          - 使用 Azure Functions 計時器進行調整
+            [1478] 使用 Azure Functions 計時器觸發程序來縮放 Azure Cosmos DB 輸送量
+        - 尋找要求單位費用
+          [1479] 尋找 Azure Cosmos DB for NoSQL 作業的要求單位費用
+      - 使用模擬器進行開發
+        [1484] 使用 Azure Cosmos DB 模擬器在本機開發
+      - 工具、軟體開發套件 (SDK) 和提供者
+        - Kafka Connect
+          - Kafka Connect 概觀
+            [1490] 適用於 Azure Cosmos DB 的 KafkaConnect
+          - Kafka Connect - 來源
+            [1496] 
+          - Kafka Connect - 接收
+            [1502] 
+        - Spark 連接器
+          - Spark 3.x 線上交易處理 (OLTP) 連接器
+            [1512] 教學課程：使用 Spark 連線至 AzureCosmos DB for NoSQL
+          - 搭配 OLTP Spark 3 連接器使用服務主體
+            [1520] 搭配適用於 NoSQL 的 Azure Cosmos DB的 Spark 3 連接器使用服務主體
+          - 輸送量控制
+            [1526] Azure Cosmos DB Spark 連接器 - 輸送量控制
+        - ASP.NET 工作階段狀態和快取提供者
+          [1530] 使用 Azure Cosmos DB 作為 ASP.NET 工
+作階段狀態和快取提供者
+        - 大量執行程式文件庫
+          - 概觀
+            [1534] Azure Cosmos DB 大量執行程式程式庫概觀
+          - 大量執行程式 - .NET 程式庫
+            [1538] 在 Azure Cosmos DB 中使用大量執行程式 .NET 程式庫來執行大量作業
+          - 從大量執行程式遷移至 .NET SDK
+            [1545] 從大量執行程式程式庫移轉至 AzureCosmos DB .NET 第 3 版 SDK 的大量支援
+          - 大量執行程式 - Java 程式庫
+            [1551] 在 Azure Cosmos DB 資料上執行大量作業
+          - 從大量執行程式移轉至 Java SDK
+            [1558] 從大量執行工具程式庫移轉至 AzureCosmos DB Java V4 SDK 的大量支援
+        - 遷移至較新的 SDK
+          - 遷移至 JAVA V4 SDK
+            [1562] 
+          - 遷移至 .NET V3 SDK
+            [1571] 
+          - 遷移至 .NET V2 SDK
+            [1586] 移轉應用程式以使用 Azure Cosmos DB.NET SDK v2
+        - 設定配有 Azure Pipelines 的 CI/CD
+          [1589] 使用 Azure Cosmos DB 模擬器組建工作，在 Azure DevOps 中設定 CI/CD 管道
+        - Azure Cosmos DB 總管
+          - 使用總管
+            [1592] 使用 Azure Cosmos DB 總管來管理資料
+          - 鍵盤 shorcuts
+            [1596] Azure Cosmos DB 數據總管快捷方式
+        - SDK 可檢視性
+          [1601] Azure Cosmos DB SDK 可檢視性
+      - 效能
+        - 查詢
+          - 取得查詢執行計量
+            [1606] 使用 .NET SDK 取得 SQL 查詢執行計量和分析查詢效能
+          - 調整查詢效能
+            [1612] 使用 Azure Cosmos DB 調整查詢效能
+          - 使用 SDK 時最佳化查詢效能
+            [1618] Azure Cosmos DB Java SDK 的效能秘訣
+        - 編製索引
+          - 編製索引原則
+            [1625] Azure Cosmos DB 中的索引編製原則
+          - 管理編製索引原則
+            [1637] 管理 Azure Cosmos DB 中的索引編製原則
+          - 索引計量
+            [1652] Azure Cosmos DB 中的索引計量
+        - .NET
+          - .NET SDK 的最佳做法
+            [1656] Azure Cosmos DB .NET SDK 的最佳做法
+          - .NET SDK v3 的效能秘訣
+            [1663] Azure Cosmos DB 和 .NET 的效能秘訣
+          - .NET SDK v2 的效能秘訣
+            [1672] Azure Cosmos DB 和 .NET SDK v2 的效能秘訣
+          - 調整 Azure Cosmos DB .NET SDK v3 的連線設定
+            [1681] 
+        - Java
+          - JAVA SDK 的最佳做法
+            [1683] Azure Cosmos DB Java SDK 的最佳做法
+          - Java SDK v4 的效能秘訣
+            [1687] Azure Cosmos DB Java SDK v4 的效能秘訣
+          - Java SDK v4 的連線設定
+            [1697] 調整 Azure Cosmos DB JAVA SDK v4 的連線設定
+          - 非同步 Java SDK v2
+            [1703] Azure Cosmos DB 非同步 Java SDK v2 的效能祕訣
+          - 同步處理 Java SDK v2
+            [1715] Azure Cosmos DB 同步 Java SDK v2 的效能提示
+        - Python
+          - Python SDK 的最佳做法
+            [1723] 適用於 NoSQL 的 Azure Cosmos DB 中的Python SDK 最佳做法
+          - Python SDK 的效能秘訣
+            [1725] Azure Cosmos DB Python SDK 的效能秘訣
+        - JavaScript
+          - JavaScript SDK 的最佳做法
+            [1731] Azure Cosmos DB for NoSQL 中JavaScript SDK 的最佳做法
+        - 設定整合式快取
+          [1733] 如何設定 Azure Cosmos DB 整合式快取
+        - 效能評定架構
+          [1739] 使用效能評定架構測量 Azure Cosmos DBfor NoSQL 效能
+        - 符合成本效益的讀取和寫入
+          [1746] Azure Cosmos DB 做為金鑰值存放區 – 成本概觀
+      - 疑難排解
+        - 常見錯誤
+          - 針對查詢效能進行疑難排解
+            [1748] 針對使用 Azure Cosmos DB 時發生的查詢問題進行疑難排解
+          - 針對服務要求逾時進行疑難排解
+            [1763] 針對 Azure Cosmos DB 要求逾時例外狀況進行診斷和疑難排解
+          - 針對要求率太大進行疑難排解
+            [1765] 診斷和疑難排解 Azure Cosmos DB 要求率太大 (429) 例外狀況
+          - 針對找不到問題進行疑難排解
+            [1775] 針對 Azure Cosmos DB 找不到例外狀況進行診斷和疑難排解
+          - 針對未經授權進行疑難排解
+            [1779] Azure Cosmos DB 未授權例外狀況的診斷和疑難排解
+          - 針對禁止進行疑難排解
+            [1781] 針對 Azure Cosmos DB 禁止的例外狀況進行診斷和疑難排解
+          - 針對不正確的要求進行疑難排解
+            [1784] 在 Azure Cosmos DB 中診斷錯誤的要求例外狀況並進行疑難排解
+          - 在多區域環境中的可用性問題
+            [1786] 針對 Azure Cosmos DB SDK 在多重區域環境下的可用性，進行診斷及疑難排解
+        - .NET
+          - 針對一般 .NET SDK 進行疑難排解
+            [1790] 診斷在使用 Azure Cosmos DB .NET SDK時的問題並進行疑難排解
+          - 針對要求標頭太大進行疑難排解
+            [1794] 在 Azure Cosmos DB SDK for .NET 中診斷和疑難排解「要求標頭過大」或「不正確的要求」訊息
+          - 針對要求逾時進行疑難排解
+            [1796] 診斷和排解 Azure Cosmos DB .NET SDK要求逾時例外狀況
+          - 針對慢速要求進行疑難排解
+            [1802] 診斷 Azure Cosmos DB .NET SDK 中的緩慢要求並進行疑難排解
+          - 針對服務無法使用進行疑難排解
+            [1811] 針對 Azure Cosmos DB 服務無法使用的例外狀況，進行診斷和疑難排解
+        - Java
+          - 針對 Java SDK v4 進行疑難排解
+            [1813] 針對搭配使用 Azure Cosmos DB JavaSDK v4 和 API for NoSQL 帳戶時所發生的問題進行疑難排解
+          - 針對要求逾時進行疑難排解
+            [1825] 診斷和疑難排解 Azure Cosmos DB Javav4 SDK 要求逾時例外狀況
+          - 針對服務無法使用進行疑難排解
+            [1829] 針對 Azure Cosmos DB JAVA v4 SDK 服務無法使用的例外狀況，進行診斷和疑難排解
+          - 疑難排解 - 非同步 Java SDK v2
+            [1831] 針對搭配使用 Azure Cosmos DB AsyncJava SDK v2 和適用於 NoSQL 的 API 帳戶時所發生的問題進行疑難排解
+        - Python
+          - 針對 Python SDK 進行疑難解答
+            [1839] 針對搭配適用於 NoSQL 帳戶的 API 使用Azure Cosmos DB Python SDK 時的問題進行疑難解答
+      - 具有 Azure Synapse Link 的 Analytics 和 BI
+        - 設定 Azure Synapse Link
+          [1844] 設定及使用適用於 Azure Cosmos DB 的Azure Synapse Link
+        - 連線到 Azure Synapse Link
+          [1854] 連線至適用於 Azure Cosmos DB 的Azure Synapse Link
+        - Azure Synapse Link 和整合式 Power BI
+          [1856] 啟用 Synapse Link 帳戶的 Azure CosmosDB 入口網站中的整合式 Power BI 體驗
+        - 分析存放區和私人端點
+          [1861] 為 Azure Cosmos DB 分析存放區設定Azure Private Link
+        - 使用 Azure Synapse Spark 3 進行查詢
+          [1869] 使用 Azure Synapse Link 中的 ApacheSpark 3 與 Azure Cosmos DB 互動
+        - 使用 Azure Synapse Spark 2 進行查詢
+          [1875] 使用 Azure Synapse Link 中的 ApacheSpark 2 與 Azure Cosmos DB 互動
+        - 使用無伺服器 SQL 集區進行查詢
+          [1882] 
+        - Power BI
+          - 使用 Power BI
+            [1891] 使用 Power BI 將 Azure Cosmos DB 資料視覺化
+          - 搭配使用 Power BI 與 Azure Synapse Link
+            [1899] 運用 Synapse Link，使用 Power BI 和無伺服器 Synapse SQL 集區來分析 AzureCosmos DB 資料
+        - 設定自訂資料分割
+          [1904] 設定自訂資料分割以分割分析存放區資料
+        - 開始使用異動資料擷取
+          [1908] 開始使用 Azure Cosmos DB 分析存放區中的異動資料擷取
+      - 管理 Azure Cosmos DB 資源
+        - 管理 Azure Cosmos DB 帳戶
+        - 使用 PowerShell
+          [1922] 使用 PowerShell 來管理 Azure CosmosDB for NoSQL 資源
+        - 使用 Azure CLI
+          [1942] 使用 Azure CLI 管理 Azure Cosmos DBfor NoSQL 資源
+        - 使用 Bicep
+          [1956] 使用 Bicep 管理 Azure Cosmos DB forNoSQL 資源
+        - 使用 Resource Manager 範本
+          [1973] 使用 Azure Resource Manager 範本管理適用於 NoSQL 資源的 Azure Cosmos DB
+        - 使用 Terraform
+          [1998] 使用 Terraform 管理 Azure Cosmos DBfor NoSQL 資源
+        - 在區域間移動
+          [2017] 將 Azure Cosmos DB 帳戶移至另一個區域
+        - 防止變更或刪除
+          [2020] 使用鎖定來保護 Azure Cosmos DB 資源
+      - 全域散發
+        - 全域散發資料教學課程
+          [2023] 教學課程：使用 API for NoSQL 來設定Azure Cosmos DB 全域散發
+        - 設定多重區域寫入
+          [2031] 在使用 Azure Cosmos DB 的應用程式中設定多重區域寫入
+        - 管理一致性層級
+          [2036] 管理 Azure Cosmos DB 中的一致性層級
+        - 設定衝突解決原則
+          [2043] 在 Azure Cosmos DB 中管理衝突解決方案原則
+        - 轉換工作階段權杖格式
+          [2054] 在 .NET SDK 中轉換工作階段權杖格式
+      - 備份及還原
+        - 連續備份
+          - 權限和角色 - 連續備份
+            [2057] 
+          - 建立帳戶 - 連續備份
+            [2061] 佈建具有連續備份和時間點還原功能的Azure Cosmos DB 帳戶
+          - 遷移至連續備份
+            [2067] 將 Azure Cosmos DB 帳戶從定期遷移至連續備份模式
+          - 還原
+            - 還原至不同帳戶
+              [2077] 將使用連續備份模式的 Azure Cosmos DB帳戶還原
+            - 在相同的帳戶中還原
+              [2102] 將已刪除的容器或資料庫還原至相同的Azure Cosmos DB 帳戶
+            - 取得最新可還原時間戳記
+              [2106] 取得連續備份帳戶的最新可還原時間戳記
+        - 定期備份
+          - 更新儲存體備援
+            [2121] 更新 Azure Cosmos DB 定期備份儲存體備援
+          - 修改間隔保留期
+            [2124] 在 Azure Cosmos DB 帳戶修改定期備份的間隔與保留期間
+      - 安全性
+        - 網路
+          - 設定 IP 防火牆
+            [2127] 在 Azure Cosmos DB 中設定 IP 防火牆
+          - 從虛擬網路設定
+            [2139] 設定從虛擬網路 (VNet) 存取 AzureCosmos DB
+          - 設定來自私人端點的存取
+            [2151] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+          - 私下連線至 Azure Cosmos DB 帳戶
+            [2171] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+        - 加密
+          - 使用 Always Encrypted
+            [2191] 針對 Azure Cosmos DB，用戶端加密與Always Encrypted 一起使用
+          - 自助式最低傳輸層安全性 (SSL/TLS) 版本強制執行
+            [2200] Azure Cosmos DB 中的自助式最低 TLS版本強制執行
+          - 使用 Azure Key Vault 設定客戶自控金鑰
+            [2208] 使用 Azure Key Vault，為 Azure CosmosDB 帳戶設定客戶自控金鑰
+          - 使用 Azure Key Vault 在現有的帳戶上設定客戶自控金鑰
+            [2224] 使用 Azure 金鑰保存庫 為現有的 AzureCosmos DB 帳戶設定客戶管理的密鑰
+          - 客戶自控金鑰 (CMK) 疑難排解指南
+            [2229] 針對客戶自控金鑰設定 Azure Cosmos DB帳戶的撤銷案例進行疑難排解
+          - 使用 Azure 受控硬體安全性模組 (HSM) 金鑰保存庫設定客戶自控金鑰
+            [2233] 使用 Azure 受控 HSM Key Vault，為Azure Cosmos DB 帳戶設定客戶自控金鑰
+          - 設定跨租用戶的客戶自控金鑰
+            [2237] 使用 Azure Key Vault 為 Azure CosmosDB 帳戶設定跨租用戶客戶自控金鑰
+          - 跨租用戶 CMK 疑難排解指南
+            [2250] 跨租用戶 CMK 疑難排解指南
+          - 使用受控識別存取 Azure Key Vault
+            [2271] 使用受控識別從 Azure Cosmos DB 存取Azure Key Vault
+        - 搭配使用受控識別與 Azure 服務
+          [2274] 使用 Microsoft Entra ID 為您的 AzureCosmos DB 帳戶設定受控識別
+        - 使用受控識別來存取資料
+        - 移轉至無密碼驗證
+          [2282] 移轉應用程式以搭配使用無密碼連線與Azure Cosmos DB for NoSQL
+        - 角色型存取控制
+          - 設定角色型存取控制到資料
+            [2289] 
+          - 限制使用者只能存取資料作業
+            [2305] 以 Azure Cosmos DB 限制使用者對資料作業的存取
+        - 設定跨原始來源資源共用 (CORS)
+          [2308] 設定跨原始來源資源共用 (CORS)
+        - 使用 Azure Key Vault 儲存金鑰
+          [2311] 教學課程：透過 Azure Key Vault 儲存和使用 Azure Cosmos DB 認證
+      - 監視器
+        - 監視器
+          [2322] 監視 Azure Cosmos DB
+        - 使用 Azure 監視器計量
+          - Azure Cosmos DB 深入解析
+            [2332] 探索 Azure Monitor Azure Cosmos DB深入解析
+          - 要監視的案例
+            [2341] 使用 Azure Cosmos DB 的深入解析監視和偵錯
+          - 監視伺服器端延遲
+            [2348] 如何監視 Azure Cosmos DB 容器或帳戶中作業的伺服器端延遲
+          - 監視要求單位使用量
+            [2352] 如何在 Azure Cosmos DB 中監視作業的輸送量或要求單位使用量
+          - 監視金鑰更新
+            [2356] 監視您的 Azure Cosmos DB 帳戶是否有更新金鑰和金鑰重新產生
+          - 監視正規化要求單位使用量
+            [2361] 如何監視 Azure Cosmos DB 容器或帳戶的標準化 RU/秒
+        - 使用 Azure 監視器記錄
+          - 使用診斷記錄進行監視
+            [2369] 
+          - 針對基本查詢的使用問題進行疑難排解
+            [2374] 診斷查詢相關問題的疑難排解
+          - 稽核控制平面記錄
+            [2381] 如何稽核 Azure Cosmos DB 控制平面作業
+          - 使用進階診斷查詢對問題進行疑難排解
+            [2390] 針對 Azure Cosmos DB for NoSQL 的進階診斷查詢問題進行疑難排解
+          - 新增工作區資料的轉換
+            [2393] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+        - 使用適用於 Java 的 Micrometer 用戶端計量
+          [2399] 適用於 Java 的 Micrometer 計量
+        - 設定警示
+          - 建立計量警示
+            [2402] 使用 Azure 監視器建立 Azure CosmosDB 的警示
+          - 建立邏輯分割區索引鍵大小的警示
+            [2407] 建立警示，以便監視邏輯分割區索引鍵的儲存體是否接近 20 GB
+        - 監視資料參考
+          [2414] 
+        - 監視解決方案
+          [2438] 使用協力廠商解決方案監視 AzureCosmos DB
+      - 伺服器端程式設計
+        - 預存程序、觸發程序和使用者定義函式 (UDF)
+          [2441] 預存程序、觸發程序和使用者定義函式
+        - JavaScript 查詢 API
+          [2446] Azure Cosmos DB 中的 JavaScript 查詢API
+        - 寫入預存程序、觸發程序和 UDF
+          [2450] 如何在 Azure Cosmos DB 中撰寫預存程序、觸發程序和使用者定義函式
+        - 使用 JavaScript 查詢 API 寫入預存程序和觸發程序
+          [2461] 如何使用 JavaScript 查詢 API 在 AzureCosmos DB 中撰寫預存程序和觸發程序
+        - 使用預存程序、觸發程序和 UDF
+          [2464] 如何在 Azure Cosmos DB 中註冊和使用預存程序、觸發程序和使用者定義函式
+      - 顯現資料
+        - 使用 Power BI
+          [2469] 使用 Power BI 將 Azure Cosmos DB 資料視覺化
+        - 搭配使用 Power BI 與 Azure Synapse Link
+          [2477] 運用 Synapse Link，使用 Power BI 和無伺服器 Synapse SQL 集區來分析 AzureCosmos DB 資料
+        - 使用 Qlik Sense
+          [2482] 將 Qlik Sense 連線到 Azure Cosmos DB並將資料視覺化
+      - 移轉資料
+        - 桌面資料移轉工具
+          [2486] 使用桌面資料移轉工具將資料遷移至Azure Cosmos DB
+        - 使用 .NET 大量支援
+          [2491] 使用 .NET SDK 將資料大量匯入 AzureCosmos DB for NoSQL 帳戶
+        - 將數百 TB 的資料遷移至 Azure Cosmos DB
+          [2498] 將數百 TB 的資料遷移至 Azure CosmosDB
+        - 使用 Striim 移轉至 API for NoSQL
+          [2504] 使用 Striim 將資料移轉至 Azure CosmosDB for NoSQL 帳戶
+        - 遷移一對多關聯式資料
+          [2517] 將一對少關聯式資料移轉至 AzureCosmos DB for NoSQL 帳戶
+        - 移轉 - Couchbase 到 API for NoSQL
+          [2531] 從 CouchBase 遷移至 Azure Cosmos DBfor NoSQL
+        - 移轉 - DynamoDB 到 API for NoSQL
+          [2542] 將您的應用程式從 Amazon DynamoDB遷移至 Azure Cosmos DB
+        - 移轉 - HBase 到 API for NoSQL
+          [2555] 將資料從 Apache HBase 移轉至 AzureCosmos DB for NoSQL 帳戶
+      - 與其他 Azure 服務整合
+        - RAG 與 Azure OpenAI
+          [2586] 
+        - 變更摘要電子商務解決方案
+          [2590] 使用 Azure Cosmos DB 變更摘要以視覺方式呈現即時資料分析
+        - Azure App Service
+          [2604] 使用 Azure Resource Manager 範本將Azure Cosmos DB 和 Azure App Service連同 GitHub 中的 Web 應用程式一起部署
+        - Azure AI 搜尋服務索引子
+          [2611] 在 Azure AI 搜尋中針對查詢編制來自NoSQL 的 Azure Cosmos DB 索引數據
+        - Azure Functions
+          - 無伺服器運算
+            [2621] 使用 Azure Cosmos DB 和 AzureFunctions 的無伺服器資料庫計算
+          - Azure Functions 繫結
+            [2628] 適用於 Azure Functions 1.x 的 AzureCosmos DB 繫結
+        - Azure Data Factory
+          [2645] 使用 Azure Data Factory 複製和轉換Azure Cosmos DB for NoSQL 中的資料
+        - Azure 串流分析
+          [2664] Azure 串流分析輸出至 Azure Cosmos DB
+        - Azure 資料總管
+        - Azure 事件中樞與 Azure 儲存體
+        - 使用 Spring Boot Starter
+          [2671] 使用 Azure Cosmos DB NoSQL API 存取數據
+        - Spring Data 開發人員指南
+          [2682] Azure Cosmos DB 開發人員指南
+        - 開放式資料庫連接 (ODBC) 驅動程式
+          [2688] 使用 Azure Cosmos DB ODBC 驅動程式來連線至 BI 和資料分析工具
+        - Vercel
+          [2702] Vercel 與 Azure Cosmos DB 整合
+    - 參考
+      - .NET SDK
+        - .NET SDK v3
+          [2713] 適用於 NoSQL 的 Azure Cosmos DB .NETSDK v3 for API：下載和版本資訊
+        - .NET SDK 第 2 版 (舊版)
+          [2715] 適用於 NoSQL 的 Azure Cosmos DB .NETSDK v2 for API：下載和版本資訊 （舊版）
+        - .NET Core SDK第 2 版 (舊版)
+          [2718] 適用於 NoSQL 的 Azure Cosmos DB .NETCore SDK v2：版本資訊和資源 （舊版）
+        - .NET 變更摘要程式庫第 2 版 (舊版)
+          [2721] 
+        - .NET 大量執行工具程式庫第 2 版 (舊版)
+          [2730] .NET 大量執行程式連結庫：下載資訊（舊版）
+      - Java SDK 和連接器
+        - Java SDK v4
+          [2735] 適用於 NoSQL 的 Azure Cosmos DB JavaSDK v4 for API：版本資訊和資源
+        - 同步 Java SDK v2 (舊版)
+          [2738] 適用於 NoSQL Java SDK 的 AzureCosmos DB （舊版）：版本資訊和資源
+        - 非同步 Java SDK v2 (舊版)
+          [2750] 適用於 NoSQL 的 Azure Cosmos DB 異步Java SDK（舊版）：版本資訊和資源
+        - Spring Data 連接器 v2 (舊版)
+          [2753] 適用於 NoSQL 之 API 的 Spring DataAzure Cosmos DB v2 （舊版）：版本資訊和資源
+        - Spring Data 連接器 v3
+          [2761] 適用於 NoSQL 之 API 的 Spring DataAzure Cosmos DB v3：版本資訊和資源
+        - Spring Data 連接器 v5
+          [2765] 適用於 NoSQL 的 Spring Data AzureCosmos DB v5：版本資訊和資源
+        - Java 大量執行工具程式庫 v2 (舊版)
+          [2769] Java 大量執行程式連結庫：下載資訊
+      - Azure CLI
+        [2772] Database for Cosmos DB
+      - Node.js
+        [2773] 適用於 NoSQL 的 Azure Cosmos DBNode.js SDK：版本資訊和資源
+      - Python
+        [2780] 適用於 NoSQL 的 Azure Cosmos DBPython SDK for API：版本資訊和資源
+      - Go
+        [2784] 適用於 NoSQL 的 Azure Cosmos DB GoSDK for API：下載和版本資訊
+      - REST (資料平面)
+        [2786] Azure Cosmos DB：REST API 參考
+      - REST (管理平面)
+        [2788] Sql Resources
+      - PowerShell
+        [2790] Az.CosmosDB
+      - Azure Resource Manager 範本
+        [2802] Microsoft.DocumentDB (Cosmos DB) 資源類型
+      - Azure 原則內建
+        [2828] 
+      - 模擬器
+        - 版本資訊
+          [2831] Azure Cosmos DB Windows (本機) 模擬器的發行備註
+        - Windows 命令列引數
+          [2837] 
+    - 資源
+      - 透過 Microsoft Learn 訓練增進您的技巧
+      - 白皮書
+        [2846] Azure Cosmos DB 概念白皮書
+      - 合作夥伴
+        [2847] Azure Cosmos DB NoSQL 移轉和應用程式開發合作夥伴
+      - Microsoft 問題與解答
+      - 影片
+      - Azure 藍圖
+      - 免費試用 Azure Cosmos DB
+      - 定價
+      - 使用案例
+        - 常見使用案例
+          [2850] 一般 Azure Cosmos DB 使用案例
+        - 社交媒體應用程式
+          [2857] 使用 Azure Cosmos DB 跨足社交
+  - MongoDB
+    - 什麼是 Azure Cosmos DB for MongoDB？
+      [2867] 什麼是 Azure Cosmos DB forMongoDB？
+    - 您的 MongoDB 應用程式重新製作映像
+      [2870] 您的 MongoDB 應用程式重新製作映像
+    - 選擇您的模型
+      [2873] 什麼是 RU 型和虛擬核心型的 AzureCosmos DB for MongoDB？
+    - 比較 MongoDB Atlas
+      [2876] 比較 MongoDB Atlas 和 Azure CosmosDB for MongoDB
+    - 俄羅斯
+      - MongoDB （RU） 檔
+        [2880] Azure Cosmos DB for MongoDB 文件
+      - 概觀
+        - 什麼是適用於 MongoDB 的 Azure Cosmos DB （RU）？
+          [2883] 什麼是適用於 MongoDB 的 AzureCosmos DB（要求單位架構）？
+        - API 版本
+          - API 6.0 版
+            [2887] 適用於 MongoDB 的 Azure Cosmos DB（6.0 伺服器版本）：支援的功能和語法
+          - API 5.0 版
+            [2911] 適用於 MongoDB 的 Azure Cosmos DB（5.0 伺服器版本）：支援的功能和語法
+          - API 4.2 版
+            [2935] Azure Cosmos DB for MongoDB (4.2 伺服器版本)：支援的功能和語法
+          - API 4.0 版
+            [2959] Azure Cosmos DB for MongoDB (4.0 伺服器版本)：支援的功能和語法
+          - API 3.6 版
+            [2981] Azure Cosmos DB for MongoDB (3.6版)：支援的功能和語法
+          - API 3.2 版
+            [3001] Azure Cosmos DB for MongoDB (3.2版)：支援的功能和語法
+          - 升級 API 版本
+            [3012] 為適用於 MongoDB 的 Azure CosmosDB for MongoDB 帳戶升級 API 版本
+        - 常見問題集
+          [3017] 適用於 MongoDB 的 Azure Cosmos DB（RU） 是否支援我的數據落地需求？
+適用於 MongoDB 的 Azure Cosmos DB（RU） 是否支援大於 2 MB 的檔？
+適用於 MongoDB 的 Azure Cosmos DB（RU） 是否支援多欄位排序？
+適用於 MongoDB 的 Azure Cosmos DB（RU） 會以線性方式調整嗎？
+如何加密適用於 MongoDB 的 AzureCosmos DB （RU） 數據，以及如何在字
+        - 變更記錄檔
+          [3020] Azure Cosmos DB for MongoDB 的變更記錄
+      - 快速入門
+        - 開發應用程式 - Node.js
+          [3023] 快速入門：適用於 Node.js 的 AzureCosmos DB for MongoDB 驅動程式
+        - 開發應用程式 - Python
+          [3032] 快速入門：適用於 Python 的 AzureCosmos DB for MongoDB 與 MongoDB驅動程式
+        - 開發應用程式 - Java
+          [3042] 快速入門：在 Azure Cosmos DB 中使用Java 和 API for MongoDB 建立主控台應用程式
+        - 開發應用程式 - .NET
+          [3052] 快速入門：適用於 .NET 的 Azure CosmosDB for MongoDB 與 MongoDB 驅動程式
+        - 開發應用程式 - Golang
+          [3060] 快速入門：將 Go 應用程式 連線 至適用於 MongoDB 的 Azure Cosmos DB
+      - 教學課程
+        - 建立和管理資料
+          - Node.js 主控台應用程式
+            [3073] 使用 Node.js 和 Azure Cosmos DB 適用於 MongoDB 的 API 建置應用程式
+          - Node.js 和 Angular 應用程式
+            - 第 1 部分 - 簡介
+              [3077] 使用 Azure Cosmos DB 適用於MongoDB 的 API 建立 Angular 應用程式
+            - 第 2 部份 - 建立節點應用程式
+              [3079] 使用適用於 MongoDB 的 Azure CosmosDB API 建立 Angular 應用程式 - 建立Node.js Express 應用程式
+            - 第 3 部份 - 使用 Angular 新增 UI
+              [3084] 使用適用於 MongoDB 的 Azure CosmosDB API 建立 Angular 應用程式 - 使用Angular 建置 UI
+            - 第 4 部份 - 建立帳戶
+              [3097] 使用適用於 MongoDB 的 Azure CosmosDB API 建立 Angular 應用程式 - 建立Azure Cosmos DB 帳戶
+            - 第 5 部份 - 連線到 Azure Cosmos DB
+              [3102] 使用 Azure Cosmos DB 適用於MongoDB 的 API 建立 Angular 應用程式- 使用 Mongoose 連線至 Azure CosmosDB
+            - 第 6 部份 - 執行 CRUD 作業
+              [3109] 使用 Azure Cosmos DB 適用於MongoDB 的 API 建立 Angular 應用程式- 將 CRUD 函式新增至應用程式
+          - Node.js 和 React 應用程式
+            [3116] 使用 React 和 Azure Cosmos DB 建立MongoDB 應用程式
+        - 查詢資料
+          [3119] 使用 Azure Cosmos DB for MongoDB 查詢資料
+        - 全域散發資料
+          [3126] 使用適用於 MongoDB 的 Azure CosmosDB API 來設定全域散發的資料庫
+        - 彙總管線
+          [3131] 開始使用彙總管線
+        - 插入資料
+          [3134] 將資料插入 Cosmos DB for MongoDB 中
+        - 更新資料
+          [3136] 更新 Cosmos DB for MongoDB 中的資料
+        - 刪除資料
+          [3138] 在 Cosmos DB for MongoDB 中刪除資料
+        - 建立 Jupyter Notebook
+          [3140] 教學課程：在 Azure Cosmos DB forNoSQL 中建立 Jupyter 筆記本，以分析資料並將資料視覺化 (預覽)
+        - Kusto 查詢語言 (KQL) 轉換
+          [3147] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+      - 範例
+        - Azure CLI
+          - 概觀
+            [3153] 適用於 Azure Cosmos DB for MongoDB的 Azure CLI 範例
+          - 建立資料庫和集合
+            [3155] 使用 Azure CLI 建立適用於 AzureCosmos DB 的 API for MongoDB 資料庫和集合
+          - 建立無伺服器
+            [3159] 使用 Azure CLI 建立 Azure Cosmos DB的無伺服器資料庫和集合 (適用於 API forMongoDB)
+          - 使用自動調整建立
+            [3163] 使用 Azure CLI，針對適用於 AzureCosmos DB 的 MongoDB 的 API，建立具有自動調整和共用集合的資料庫
+          - 執行輸送量作業
+            [3167] 使用 Azure CLI 針對 Azure Cosmos DBfor MongoDB 的資料庫或圖表執行輸送量 (RU/秒) 作業
+          - 鎖定資源避免刪除
+            [3172] 使用 Azure CLI 為 Azure Cosmos DB 的MongoDB API 建立資源鎖定
+          - 新增或容錯移轉區域
+            [3176] 使用 Azure CLI 針對 Azure Cosmos DB帳戶新增區域、變更容錯移轉優先順序、觸發容錯移轉
+          - 執行帳戶金鑰作業
+            [3180] 透過 Azure CLI 使用 Azure Cosmos DB帳戶的帳戶金鑰和連接字串
+          - 使用 IP 防火牆保護安全
+            [3184] 使用 Azure CLI 建立具有 IP 防火牆的Azure Cosmos DB 帳戶
+          - 使用服務端點保護新的帳戶
+            [3187] 使用 Azure CLI 建立具有虛擬網路服務端點的 Azure Cosmos DB 帳戶
+          - 使用服務端點保護現有帳戶
+            [3191] 使用 Azure CLI 連線現有 Azure CosmosDB 帳戶與虛擬網路服務端點
+          - 尋找現有的免費層帳戶
+            [3195] 使用 Azure CLI 在訂用帳戶中尋找現有的Azure Cosmos DB 免費層帳戶
+        - Azure PowerShell
+          - 概觀
+            [3198] Azure Cosmos DB for MongoDB 的Azure PowerShell 範例
+          - 建立資料庫和集合
+            [3200] 建立 Azure Cosmos DB - API forMongoDB 的資料庫和集合
+          - 使用自動調整建立
+            [3203] 針對適用於 MongoDB 的 Azure CosmosDB API 建立具有自動調整功能的資料庫和集合
+          - 執行輸送量作業
+            [3206] 使用 PowerShell 對 Azure Cosmos DBfor MongoDB 的資料庫或集合執行輸送量 (RU/秒) 作業
+          - 鎖定資源避免刪除
+            [3210] 使用 Azure PowerShell 建立 AzureCosmos DB MongoDB API 資料庫和集合的資源鎖定
+          - 列出和取得資料庫和容器
+            [3213] 列出及取得 Azure Cosmos DB 資料庫和圖表 - API for MongoDB
+          - 帳戶金鑰或連接字串
+            [3216] 使用 PowerShell 的 Azure Cosmos DB 帳戶連接字串和帳戶金鑰作業
+          - 變更容錯移轉優先順序或觸發容錯移轉
+            [3218] 使用 PowerShell 對具有單一寫入區域的Azure Cosmos DB 帳戶變更容錯移轉優先順序或觸發容錯移轉
+          - 建立具有 IP 防火牆的帳戶
+            [3221] 建立具有 IP 防火牆的 Azure Cosmos DB帳戶
+          - 更新帳戶
+            [3224] 使用 PowerShell 更新 Azure Cosmos DB帳戶的一致性層級
+          - 更新帳戶的區域
+            [3227] 使用 PowerShell 更新 Azure Cosmos DB帳戶的區域
+        - 範本
+          - JSON 語法範本
+            [3230] 使用 Azure Resource Manager 範本管理Azure Cosmos DB for MongoDB 資源
+          - Bicep 語法範本
+            [3243] 使用 Bicep 管理 Azure Cosmos DB forMongoDB 資源
+        - Azure Resource Graph 查詢
+          [3253] Azure Cosmos DB 的 Azure ResourceGraph 查詢範例
+      - 概念
+        - Azure Cosmos DB 資源模型
+          [3255] Azure Cosmos DB 中的資料庫、容器和專案
+        - 編製索引
+          [3264] 在適用於 MongoDB 的 Azure CosmosDB 中管理索引編制
+        - 資料分割 (分區化)
+          - 資料分割概觀
+            [3278] Azure Cosmos DB 中的資料分割和水平調整
+        - 輸送量 (RU/秒)
+          - 要求單位
+            [3284] Azure Cosmos DB 中的要求單位
+          - 將虛擬核心轉換為要求單位
+            [3287] 將非關聯式資料庫中的虛擬核心或 vCPU數目轉換為 Azure Cosmos DB RU/s
+          - 使用容量規劃工具來估計每秒要求單位
+            [3293] 使用 Azure Cosmos DB 容量規劃工具估計 RU/秒 - 適用於 MongoDB 的 AzureCosmos DB for MongoDB
+          - 佈建的輸送量
+            [3299] Azure Cosmos DB 中的佈建輸送量簡介
+          - 自動調整輸送量
+            - 自動調整簡介
+              [3307] 使用自動調整輸送量來建立 AzureCosmos DB 容器和資料庫
+            - 按分割區/區域自動調整
+              [3311] 個別區域與個別分割區自動調整 (預覽)
+            - 自動調整常見問題集
+              [3314] Azure Cosmos DB 中的自動調整和自動試驗之間有何差異？
+在先前的自動試驗階層模型中建立的資料庫或容器會發生什麼事？
+自動調整的進入點 RU/秒為何？
+          - 無伺服器
+            [3322] Azure Cosmos DB 無伺服器帳戶類型
+          - 在自動調整和標準 (手動) 輸送量之間進行選擇
+            [3325] 如何在標準 (手動) 和自動調整佈建輸送量之間進行選擇
+          - 在佈建的輸送量和無伺服器之間選擇
+            [3332] 如何在佈建的輸送量與無伺服器之間進行選擇
+          - 調整佈建輸送量的最佳做法
+            [3334] 調整佈建輸送量 (RU/秒) 的最佳做法
+          - 高載容量 (預覽)
+            - 高載容量概觀
+              [3341] Azure Cosmos DB 的高載容量
+            - 高載容量常見問題
+              [3343] 使用高載容量需要多少費用？
+高載容量如何與自動調整搭配使用？
+什麼資源可以使用高載容量？
+如何監視高載容量？
+          - 分配各分割區輸送量 (預覽) - 容器
+            - 跨分割區分散輸送量
+              [3345] 在分割區之間轉散發輸送量
+        - 使用 Azure Synapse Link 進行分析
+          - 適用於 Azure Cosmos DB 的 Azure Synapse Link
+            [3353] 什麼是適用於 Azure Cosmos DB 的Azure Synapse Link
+          - Azure Synapse Link 支援的功能
+            [3359] 適用於 Azure Cosmos DB 的 AzureSynapse Link 支援的功能
+          - Azure Synapse Link 使用案例
+            [3361] 適用於 Azure Cosmos DB 的 AzureSynapse Link：近乎即時的分析使用案例(機器翻譯)
+          - Azure Synapse Link 常見問題集
+            [3368] 一般常見問題集
+          - 分析存放區 - 概觀
+            [3377] 什麼是 Azure Cosmos DB 分析存放區？
+          - 異動資料擷取 (CDC)
+            [3400] Azure Cosmos DB 分析存放區的異動資料擷取功能
+          - 時間移動 (預覽)
+            [3404] 
+        - 備份及還原
+          - 備份與還原簡介
+            [3407] 在 Azure Cosmos DB 中進行線上備份及隨選資料還原
+          - 連續備份
+            - 連續備份 - 簡介
+              [3410] Azure Cosmos DB 中具有時間點還原的持續備份
+            - 還原
+              - 還原至新帳戶
+                - 連續備份 - 資源模型
+                  [3417] Azure Cosmos DB 時間點還原功能的資源模型
+                - 連續備份 - 常見問題
+                  [3428] 還原需要多少時間？
+是否可以提交本機時間表示的還原時間？
+如何追蹤帳戶的還原？
+                - 最新可還原時間戳記
+                  [3431] 具有連續備份模式的 Azure Cosmos DB帳戶的最新可還原時間戳記
+                - 使用連續備份稽核還原動作
+                  [3434] 以連續備份模式稽核 Azure Cosmos DB的還原時間點動作
+              - 在相同的帳戶中還原
+                - 簡介
+                  [3437] 使用連續備份，在相同帳戶中還原已刪除的資料庫或容器
+                - 資源模型
+                  [3440] 在 Azure Cosmos DB 的相同帳戶中還原的資源模型
+                - 常見問題集
+                  [3442] 是否可以在還原進行時讀取或更新其他資源？
+您可以在帳戶上執行多少相同的帳戶還原動作？
+我可以還原至相同帳戶的資源細微性為何？
+是否可以將特定容器或資料庫多次還原至不同的還原時間戳記？
+          - 定期備份
+            - 簡介
+              [3445] Azure Cosmos DB 中的定期備份和還原
+            - 儲存體備援
+              [3449] Azure Cosmos DB 中的定期備份儲存體備援
+            - 要求資料還原
+              [3451] 從 Azure Cosmos DB 備份要求資料還原
+        - 全域散發
+          - 全球發佈概觀
+            [3455] 使用 Azure Cosmos DB 來全域散發資料
+          - 一致性層級
+            [3458] Azure Cosmos DB 中的一致性層級
+          - 對應 MongoDB 一致性層級
+            [3469] Azure Cosmos DB 和 API for MongoDB的一致性層級
+          - 高可用性
+            - 高可用性概觀
+            - 多重區域寫入
+              - 瞭解多區域寫入
+                [3471] 瞭解 Azure Cosmos DB 中的多區域寫入
+              - 衝突解決功能
+                [3473] 使用多個寫入區域時的衝突類型和解決原則
+          - 全域散發 - 運作原理
+            [3475] 透過 Azure Cosmos DB 全域資料散發 -運作原理
+        - 安全性
+          - 安全性概觀
+            [3481] Azure Cosmos DB 虛擬核心中的資料庫安全性概觀
+          - Azure 角色型存取控制
+            [3490] Azure Cosmos DB 中的角色型存取控制
+          - 設定 API for MongoDB 的角色型存取控制
+            [3495] 在 Azure Cosmos DB for MongoDB 中設定角色型存取控制
+          - 資料加密
+            [3505] Azure Cosmos DB 中的資料加密
+          - 服務標籤
+            [3509] 虛擬網路服務標籤
+          - Azure 原則支援
+            [3524] 使用 Azure 原則來實作 Azure CosmosDB 資源的治理和控制
+          - Azure 原則的安全性控制
+            [3529] 適用於 Azure Cosmos DB 的 Azure 原則法規合規性控制
+          - 安全性基準
+            [3540] 適用於 Azure Cosmos DB 的安全性基準
+        - 最佳化 Azure Cosmos DB 成本
+          [3553] 最佳化 Azure Cosmos DB 成本
+        - 企業整備
+          - 服務配額
+            [3555] Azure Cosmos DB 服務配額
+          - 自動建議
+            [3568] Azure Cosmos DB 的自動化建議
+          - 法規遵循
+            [3572] Azure Cosmos DB 中的合規性
+          - 資料落地
+            [3574] 如何符合 Azure Cosmos DB 中的資料落地需求
+        - Jupyter 筆記本
+          - 概觀
+            [3576] Azure Cosmos DB 中的 JupyterNotebook (預覽)
+          - 常見問題集
+            [3580] 
+        - 模擬器
+          [3584] 
+        - 網路頻寬
+          [3586] Azure Cosmos DB 網路頻寬
+      - 如何
+        - 使用模擬器進行開發
+          [3589] 使用 Azure Cosmos DB 模擬器在本機開發
+        - 使用開發人員工具
+          - MongoDB 擴充功能命令
+            [3594] 使用 MongoDB 延伸模組命令，管理Azure Cosmos DB for MongoDB 中儲存的資料
+          - 取得連接字串
+          - 社群工具
+            - 使用 Studio 3T 連線
+              [3609] 使用 Studio 3T 連線至 Azure Cosmos DB帳戶
+            - 使用 Compass 連線
+              [3617] 使用 MongoDB Compass 連線至 AzureCosmos DB 的 MongoDB 版 API
+            - 使用 Robo 3T 連線
+              [3621] 使用 Robo 3T 搭配 Azure Cosmos DB 適用於 MongoDB 的 API
+            - 使用 Mongoose 連線
+              [3624] 將 Node.js Mongoose 應用程式連線至Azure Cosmos DB
+          - 設定配有 Azure Pipelines 的 CI/CD
+            [3638] 使用 Azure Cosmos DB 模擬器組建工作，在 Azure DevOps 中設定 CI/CD 管道
+          - Azure Cosmos DB 總管
+            - 使用總管
+              [3641] 使用 Azure Cosmos DB 總管來管理資料
+            - 鍵盤 shorcuts
+              [3645] Azure Cosmos DB 數據總管快捷方式
+        - 開發應用程式
+          - JavaScript
+            - 開始使用
+              [3650] 開始搭配 Azure Cosmos DB forMongoDB 使用 JavaScript
+            - 管理資料庫
+              [3656] 使用 JavaScript 管理 MongoDB 資料庫
+            - 管理集合
+              [3661] 使用 JavaScript 在 Azure Cosmos DB forMongoDB 中管理集合
+            - 管理文件
+              [3664] 使用 JavaScript 在 Azure Cosmos DB forMongoDB 中管理文件
+            - 管理查詢
+              [3670] 使用 JavaScript 在 Azure Cosmos DB forMongoDB 中查詢資料
+          - Python
+            - 開始使用
+              [3681] 開始使用 Azure Cosmos DB forMongoDB 和 Python
+            - 管理資料庫
+              [3687] 使用 Python 管理 MongoDB 資料庫
+          - .NET
+            - 開始使用
+              [3692] 開始搭配 Azure Cosmos DB forMongoDB 使用 .NET
+            - 管理資料庫
+              [3697] 使用 .NET 管理 MongoDB 資料庫
+            - 管理集合
+              [3700] 使用 .NET 在 Azure Cosmos DB forMongoDB 中管理集合
+            - 管理文件
+              [3703] 使用 .NET 在 Azure Cosmos DB forMongoDB 中管理文件
+            - 管理查詢
+              [3706] 使用 .NET 在 Azure Cosmos DB forMongoDB 中查詢文件
+          - Spring Data
+            - 儲存和管理 Spring 資料
+              [3709] 搭配適用於 MongoDB 的 Azure CosmosDB API 使用 Spring Data
+          - 尋找要求單位費用
+            [3714] 尋找在 Azure Cosmos DB for MongoDB中執行作業的要求單位費用
+          - 變更資料流
+            [3717] Azure Cosmos DB 適用於 MongoDB 的API 中的變更資料流
+          - 存留時間
+            [3720] 使用 Azure Cosmos DB 適用於MongoDB 的 API 讓資料過期
+          - 使用多文件交易
+            [3723] 在 Azure Cosmos DB for MongoDB 中使用多文件交易
+          - 存取預覽功能
+            [3725] 存取 Azure Cosmos DB 預覽功能
+          - 與 Azure 服務整合
+            [3727] 整合 Azure Cosmos DB for MongoDB 與其他 Azure 服務
+          - RAG 與 Azure OpenAI
+            [3733] 
+          - Vercel
+            [3737] Vercel 與 Azure Cosmos DB 整合
+        - 將資料遷移到 Azure Cosmos DB
+          - 桌面資料移轉工具
+            [3748] 使用桌面資料移轉工具將資料遷移至Azure Cosmos DB
+          - 使用容量規劃工具來估計每秒要求單位
+            [3753] 使用 Azure Cosmos DB 容量規劃工具估計 RU/秒 - 適用於 MongoDB 的 AzureCosmos DB for MongoDB
+          - 移轉至 API for MongoDB
+            - 免費層
+              [3759] Azure Cosmos DB 存留期免費層
+            - 預先移轉指南
+              [3763] 將資料從 MongoDB 移轉至 AzureCosmos DB for MongoDB 的預先移轉步驟
+            - 程式設計資料庫移轉小幫手 (舊版)
+              [3773] 資料庫移轉小幫手公用程式 (舊版)
+            - MongoDB 原生工具 (離線)
+              [3775] 教學課程：使用 MongoDB 原生工具，離線將 MongoDB 遷移至適用於 MongoDB的 Azure Cosmos DB API (部分機器翻譯)
+            - 資料庫移轉服務 (上線)
+              [3784] 教學課程：使用 Azure 資料移轉服務 將MongoDB 在線遷移至適用於 MongoDB的 Azure Cosmos DB RU
+            - 資料庫移轉服務 (上線)
+              [3802] 教學課程：使用 Azure 資料移轉服務 脫機將 MongoDB 遷移至適用於 MongoDB的 Azure Cosmos DB RU
+            - Azure Databricks 和 Spark (離線)
+              [3821] 使用 Azure Databricks 將資料從MongoDB 移轉至 Azure Cosmos DB forMongoDB 帳戶
+            - 後續移轉指南
+              [3827] 使用適用於 MongoDB 的 Azure CosmosDB API 時的移轉後最佳化步驟
+        - 管理 Cosmos DB for MongoDB 資源
+          - 建立集合
+            [3832] 在 Azure Cosmos DB for MongoDB 中建立集合
+          - 配置輸送量
+            [3835] 在適用於 MongoDB 的 Azure CosmosDB for MongoDB 資源上佈建資料庫、容器或自動調整輸送量
+          - 設定多重區域寫入
+            [3838] 在 Azure Cosmos DB for MongoDB 中設定多重區域寫入
+          - 限制帳戶總輸送量
+            [3840] 限制 Azure Cosmos DB 帳戶上佈建的總輸送量
+          - 全域散發讀取
+            [3844] 如何使用 Azure Cosmos DB 適用於MongoDB 的 API 來設定全域散發讀取
+          - 申請加大配額
+            [3849] 如何要求增加 Azure Cosmos DB 資源的配額
+          - 設定帳戶功能
+            [3851] 設定 Azure Cosmos DB for MongoDB 帳戶功能
+        - 疑難排解和效能
+          - 將寫入效能最佳化
+            [3856] 最佳化 Azure Cosmos DB for MongoDB中的寫入效能
+          - 常見問題疑難排解
+            [3858] 針對適用於 MongoDB 的 Azure CosmosDB API 常見問題進行疑難排解
+          - 針對查詢效能進行疑難排解
+            [3863] 針對使用 Azure Cosmos DB forMongoDB 時發生的查詢問題進行疑難排解
+          - 防止速率限制錯誤
+            [3872] 避免 Azure Cosmos DB for MongoDB 作業的速率限制錯誤
+          - 在升級時最佳化查詢和儲存體成本
+            [3875] 升級至適用於 MongoDB 的 AzureCosmos DB API 4.0+ 時改善效能及最佳化成本
+        - 具有 Azure Synapse Link 的 Analytics 和 BI
+          - 設定 Azure Synapse Link
+            [3877] 設定及使用適用於 Azure Cosmos DB 的Azure Synapse Link
+          - 連線到 Azure Synapse Link
+            [3887] 連線至適用於 Azure Cosmos DB 的Azure Synapse Link
+          - Azure Synapse Link 和整合式 Power BI
+            [3889] 啟用 Synapse Link 帳戶的 Azure CosmosDB 入口網站中的整合式 Power BI 體驗
+          - 分析存放區和私人端點
+            [3894] 為 Azure Cosmos DB 分析存放區設定Azure Private Link
+          - 使用 Azure Synapse Spark 3 進行查詢
+            [3902] 使用 Azure Synapse Link 中的 ApacheSpark 3 與 Azure Cosmos DB 互動
+          - 使用 Azure Synapse Spark 2 進行查詢
+            [3908] 使用 Azure Synapse Link 中的 ApacheSpark 2 與 Azure Cosmos DB 互動
+          - 使用無伺服器 SQL 集區進行查詢
+            [3915] 
+          - 搭配使用 Power BI 與 Azure Synapse Link
+            [3924] 運用 Synapse Link，使用 Power BI 和無伺服器 Synapse SQL 集區來分析 AzureCosmos DB 資料
+          - 設定自訂資料分割
+            [3929] 設定自訂資料分割以分割分析存放區資料
+          - 開始使用異動資料擷取
+            [3933] 開始使用 Azure Cosmos DB 分析存放區中的異動資料擷取
+        - 備份及還原
+          - 連續備份
+            - 權限和角色 - 連續備份
+              [3947] 
+            - 建立帳戶 - 連續備份
+              [3951] 佈建具有連續備份和時間點還原功能的Azure Cosmos DB 帳戶
+            - 遷移至連續備份
+              [3957] 將 Azure Cosmos DB 帳戶從定期遷移至連續備份模式
+            - 還原
+              - 還原至不同帳戶
+                [3967] 將使用連續備份模式的 Azure Cosmos DB帳戶還原
+              - 在相同的帳戶中還原
+                [3992] 將已刪除的容器或資料庫還原至相同的Azure Cosmos DB 帳戶
+              - 取得最新可還原時間戳記
+                [3996] 取得連續備份帳戶的最新可還原時間戳記
+          - 定期備份
+            - 更新儲存體備援
+              [4011] 更新 Azure Cosmos DB 定期備份儲存體備援
+            - 修改間隔保留期
+              [4014] 在 Azure Cosmos DB 帳戶修改定期備份的間隔與保留期間
+        - 安全性
+          - 設定 API for MongoDB 的角色型存取控制
+            [4017] 在 Azure Cosmos DB for MongoDB 中設定角色型存取控制
+          - 設定 IP 防火牆
+            [4027] 在 Azure Cosmos DB 中設定 IP 防火牆
+          - 從虛擬網路設定
+            [4039] 設定從虛擬網路 (VNet) 存取 AzureCosmos DB
+          - 設定來自私人端點的存取
+            [4051] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+          - 私下連線至 Azure Cosmos DB 帳戶
+            [4071] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+          - 在 Azure Key Vault 中儲存認證
+            [4091] 教學課程：透過 Azure Key Vault 儲存和使用 Azure Cosmos DB 認證
+          - 使用受控識別存取 Azure Key Vault
+            [4102] 使用受控識別從 Azure Cosmos DB 存取Azure Key Vault
+          - 限制使用者只能存取資料作業
+            [4105] 以 Azure Cosmos DB 限制使用者對資料作業的存取
+          - 設定客戶管理的金鑰
+            [4108] 使用 Azure Key Vault，為 Azure CosmosDB 帳戶設定客戶自控金鑰
+          - 設定跨租用戶的客戶自控金鑰
+            [4124] 使用 Azure Key Vault 為 Azure CosmosDB 帳戶設定跨租用戶客戶自控金鑰
+          - 搭配使用受控識別與 Azure 服務
+            [4137] 使用 Microsoft Entra ID 為您的 AzureCosmos DB 帳戶設定受控識別
+        - 監視器
+          - 監視器
+            [4145] 監視 Azure Cosmos DB
+          - 使用 Azure 監視器計量
+            - 適用於 Azure Cosmos DB 的 Azure 監視器
+              [4155] 探索 Azure Monitor Azure Cosmos DB深入解析
+            - 要監視的案例
+              [4164] 使用 Azure Cosmos DB 的深入解析監視和偵錯
+            - 監視伺服器端延遲
+              [4171] 如何監視 Azure Cosmos DB 容器或帳戶中作業的伺服器端延遲
+            - 監視要求單位使用量
+              [4175] 如何在 Azure Cosmos DB 中監視作業的輸送量或要求單位使用量
+            - 監視金鑰更新
+              [4179] 監視您的 Azure Cosmos DB 帳戶是否有更新金鑰和金鑰重新產生
+            - 監視正規化要求單位使用量
+              [4184] 如何監視 Azure Cosmos DB 容器或帳戶的標準化 RU/秒
+          - 使用 Azure 監視器記錄
+            - 使用診斷記錄進行監視
+              [4192] 
+            - 針對基本查詢的使用問題進行疑難排解
+              [4197] 診斷查詢相關問題的疑難排解
+            - 稽核控制平面記錄
+              [4204] 如何稽核 Azure Cosmos DB 控制平面作業
+            - 使用進階診斷查詢對問題進行疑難排解
+              [4213] 針對 Azure Cosmos DB for MongoDB 的進階診斷查詢問題進行疑難排解
+            - 新增工作區資料的轉換
+              [4216] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+          - 設定警示
+            - 建立計量警示
+              [4222] 使用 Azure 監視器建立 Azure CosmosDB 的警示
+            - 建立邏輯分割區索引鍵大小的警示
+              [4227] 建立警示，以便監視邏輯分割區索引鍵的儲存體是否接近 20 GB
+          - 監視資料參考
+            [4234] 
+          - 合作夥伴監視解決方案
+            [4258] 使用協力廠商解決方案監視 AzureCosmos DB
+      - 參考
+        - REST 資源提供者
+          [4261] Mongo DB Resources
+        - PowerShell
+          [4263] Az.CosmosDB
+        - Azure Resource Manager 範本
+          [4275] Microsoft.DocumentDB (Cosmos DB) 資源類型
+        - Azure CLI
+          [4301] Database for Cosmos DB
+        - 模擬器
+          - 版本資訊
+            [4302] Azure Cosmos DB Windows (本機) 模擬器的發行備註
+          - Windows 命令列引數
+            [4308] 
+      - 資源
+        - 透過 Microsoft Learn 訓練增進您的技巧
+        - 常見問題集
+          [4317] 一般
+        - 白皮書
+          [4323] Azure Cosmos DB 概念白皮書
+        - 合作夥伴
+          [4324] Azure Cosmos DB NoSQL 移轉和應用程式開發合作夥伴
+        - Microsoft 問題與解答
+        - 影片
+        - Azure 藍圖
+        - 免費試用 Azure Cosmos DB
+        - 定價
+        - 使用案例
+          - 常見使用案例
+            [4327] 一般 Azure Cosmos DB 使用案例
+          - 社交媒體應用程式
+            [4334] 使用 Azure Cosmos DB 跨足社交
+    - 虛擬核心
+      - MongoDB （虛擬核心） 檔
+        [4344] 適用於 MongoDB 的 Azure Cosmos DB（虛擬核心） 檔
+      - 概觀
+        - 什麼是適用於 MongoDB 的 Azure Cosmos DB （虛擬核心）？
+          [4347] 什麼是適用於 MongoDB 的 AzureCosmos DB （虛擬核心架構）？
+        - 常見問題集
+          [4349] Azure Cosmos DB 為 MongoDB 使用者提供了哪些選項？
+如何? 選擇適用於 MongoDB 的 AzureCosmos DB （RU） 和適用於 MongoDB的 Azure Cosmos DB （虛擬核心）？
+      - 快速入門
+        - 建立資源 - Azure 入口網站
+          [4351] 快速入門：使用 Azure 入口網站建立Azure Cosmos DB for MongoDB 虛擬核心叢集
+        - 建立資源 - Bicep 範本
+          [4359] 快速入門：使用 Bicep 範本建立適用於MongoDB 的 Azure Cosmos DB 虛擬核心叢集
+        - 建立資源 - Terraform
+          [4364] 適用於 MongoDB 的 Azure Cosmos DB（虛擬核心） 與 Terraform
+      - 教學課程
+        - 建置 Web 應用程式
+          - Node.js
+            [4367] 教學課程：使用適用於 MongoDB 的Azure Cosmos DB 連線 Node.js Web 應用程式（虛擬核心）
+      - 概念
+        - 免費層
+          [4381] 使用適用於 MongoDB 的 Azure CosmosDB 免費組建應用程式（虛擬核心） 免費層
+        - 可高載階層
+          [4383] 適用於 MongoDB 的虛擬核心型 AzureCosmos DB 上的高載層 （M25）
+        - Multicloud 解決方案
+          [4385] Azure Cosmos DB for MongoDB 虛擬核心：您的多重雲端解決方案
+        - 整合向量資料庫
+          - 整合向量資料庫概觀
+            [4387] 適用於 MongoDB 的 Azure Cosmos DB虛擬核心中的向量資料庫
+          - 開放原始碼向量資料庫
+            [4401] 開放原始碼向量資料庫
+        - MongoDB 功能支援
+          [4404] Azure Cosmos DB for MongoDB 虛擬核心提供 MongoDB 相容性和功能支援
+        - 可靠性
+          [4426] 適用於 MongoDB 的 Azure Cosmos DB虛擬核心中的可靠性
+        - 移轉選項
+          [4429] 哪些選項可將資料從 MongoDB 移轉至Azure Cosmos DB for MongoDB 虛擬核心？
+        - 安全性
+          - 安全性概觀
+            [4432] Azure Cosmos DB for MongoDB 虛擬核心中的資料庫安全性概觀
+          - 資料加密
+            [4438] 適用於 MongoDB 的 Azure Cosmos DB虛擬核心中的數據加密
+      - 如何
+        - 使用社群工具
+          - 使用 Studio 3T 連線
+            [4441] 使用 Studio 3T 連線到 Azure Cosmos DBfor MongoDB 虛擬核心
+        - 移轉資料
+          - 預先移轉評估
+            [4444] 評估 MongoDB 安裝和規劃移轉至 AzureCosmos DB for MongoDB vCore
+          - 原生工具
+            [4446] 使用 MongoDB 原生工具將 MongoDB 離線移轉至 Azure Cosmos DB forMongoDB 虛擬核心
+          - Azure Data Studio
+            [4449] 適用於 MongoDB 的 Azure Cosmos DB虛擬核心移轉延伸模組適用於 Azure DataStudio （預覽）
+        - 開發應用程式
+          - 建立交易
+            [4464] 將多個作業分組到 Azure Cosmos DB forMongoDB 虛擬核心中的交易
+          - 從 Azure Databricks 使用 Spark 連接器 連線
+            [4467] 從 Azure Databricks 連線 至適用於MongoDB 的 Azure Cosmos DB 虛擬核心
+        - 調整叢集
+          [4475] 調整及設定 Azure Cosmos DB forMongoDB 虛擬核心叢集
+        - 還原叢集
+          [4479] 在適用於 MongoDB 的 Azure CosmosDB 虛擬核心中還原叢集
+        - 搜尋和查詢文字
+          [4481] 在 Azure Cosmos DB for MongoDB 虛擬核心中文字索引進行搜尋和查詢
+        - 監視診斷記錄
+          [4485] 使用 Azure 監視器監視 Azure CosmosDB for MongoDB 虛擬核心診斷記錄
+        - 使用 Azure Private Link
+          [4491] 在適用於 MongoDB 的 Azure CosmosDB 虛擬核心中啟用私人存取
+        - 最佳化索引建立
+          [4496] 在 Azure Cosmos DB for MongoDB 虛擬核心中最佳化索引建立
+      - 參考
+        - 版本資訊
+          [4498] 適用於 MongoDB 的 Azure Cosmos DB虛擬核心版本資訊
+        - 常見問題疑難排解
+          [4500] 針對 Azure Cosmos DB for MongoDB 虛擬核心常見問題進行疑難排解
+      - 範例
+        - 解決方案加速器
+          [4502] 
+        - AI 增強型廣告產生
+          [4503] 使用適用於 MongoDB 的 Azure CosmosDB 虛擬核心產生 AI 增強型廣告
+  - PostgreSQL
+    - PostgreSQL 文件
+      [4515] Azure Cosmos DB for PostgreSQL 文件
+    - 什麼是 Azure Cosmos DB for PostgreSQL？
+      [4518] 什麼是 Azure Cosmos DB forPostgreSQL？
+    - 產品更新
+      [4521] Azure Cosmos DB for PostgreSQL 的產品更新
+    - 快速入門
+      - 建立叢集
+        - Azure 入口網站
+          [4527] 在 Azure 入口網站中建立 Azure CosmosDB for PostgreSQL 叢集
+        - Bicep
+          [4530] 使用 Bicep 檔案布建適用于 PostgreSQL的 Azure Cosmos DB 叢集
+      - 連線
+        [4533] 使用 psql 連線至叢集 - 適用於PostgreSQL 的 Azure Cosmos DB
+      - 散發資料表
+        [4536] 在 Azure Cosmos DB for PostgreSQL 中建立和散發資料表
+      - 執行查詢
+        [4540] 在 Azure Cosmos DB for PostgreSQL 中執行查詢
+      - 建置可調整應用程式
+        - 資料模型
+          - 概觀
+            [4543] Azure Cosmos DB for PostgreSQL 中建置可調整的應用程式
+          - 概念
+            [4544] Azure Cosmos DB for PostgreSQL 中調整的基本概念
+          - 分類工作負載
+            [4547] Azure Cosmos DB for PostgreSQL 中分類應用程式工作負載
+          - 工作負載
+            - 多租用戶應用程式
+              [4549] 在 Azure Cosmos DB for PostgreSQL 中建立多租用戶 SaaS 應用程式的模型
+            - 即時應用程式
+              [4554] 在 Azure Cosmos DB for PostgreSQL 中建立即時分析應用程式模型
+            - 高輸送量應用程式
+              [4557] Azure Cosmos DB for PostgreSQL 中建立高輸送量交易應用程式的模型
+        - 應用程式堆疊
+          - 概觀
+            [4560] 從您的應用程式堆疊查詢 Azure CosmosDB for PostgreSQL
+          - Python
+            [4561] 使用 Python 在 Azure Cosmos DB forPostgreSQL 上連線和執行 SQL 命令
+          - Node.js
+            [4567] 使用 Node.js 在 Azure Cosmos DB forPostgreSQL 上連線及執行 SQL 命令
+          - C#
+            [4576] 使用 C# 在 Azure Cosmos DB forPostgreSQL 上連線和執行 SQL 命令
+          - Java
+            [4587] 用以在 Azure Cosmos DB forPostgreSQL 上連線和執行 SQL 命令的Java 應用程式
+          - Ruby
+            [4604] 使用 Ruby 在 Azure Cosmos DB forPostgreSQL 上連線及執行 SQL 命令
+    - 教學課程
+      - 模型資料
+        - 背景工作角色節點上的分區資料
+          [4611] 教學課程：適用於 PostgreSQL 的 AzureCosmos DB 中背景工作角色節點上的分區資料
+        - 設計多租用戶資料庫
+          [4620] 使用 Azure Cosmos DB for PostgreSQL設計多租用戶資料庫
+        - 設計即時儀表板
+          [4629] 教學課程：使用 Azure Cosmos DB forPostgreSQL 來設計即時分析儀表板
+        - 微服務的設計
+          [4637] 微服務
+      - 管理
+        - 設定私人存取
+          [4647] 在 Azure Cosmos DB for PostgreSQL 中使用私人存取來連線至叢集
+    - 概念
+      - 叢集
+        [4651] Azure Cosmos DB for PostgreSQL 中的叢集
+      - 分區化模型
+        [4653] 分區化模型
+      - 分散式資料
+        - 節點和資料表
+          [4656] Azure Cosmos DB for PostgreSQL 中的節點和資料表
+        - 資料表共置
+          [4660] Azure Cosmos DB for PostgreSQL 中的資料表共置
+        - 決定應用程式類型
+          [4665] 判斷適用于 PostgreSQL 的 AzureCosmos DB 應用程式類型
+        - 決定資料表大小
+          [4667] 判斷 Azure Cosmos DB for PostgreSQL裡的資料表與關聯大小
+        - 選擇散發資料行
+          [4669] 在 Azure Cosmos DB for PostgreSQL 中選擇散發資料行
+        - 散發和修改資料表
+          [4674] 在適用于 PostgreSQL 的 Azure CosmosDB 中散發和修改資料表
+      - 安全性和資料存取
+        - 概觀
+          [4685] Azure Cosmos DB for PostgreSQL 中的安全性
+        - 公用存取
+          [4687] Azure Cosmos DB for PostgreSQL 中的公用存取
+        - 私人存取
+          [4690] Azure Cosmos DB for PostgreSQL 中的私人存取
+        - Microsoft Entra ID 和 Postgres 驗證
+          [4693] 使用 Azure Cosmos DB for PostgreSQL進行 Microsoft Entra ID 和 PostgreSQL驗證
+        - 節點 DNS 名稱
+          [4696] Azure Cosmos DB for PostgreSQL 中的節點 DNS 名稱
+        - 客戶管理的金鑰
+          [4698] 使用客戶自控金鑰進行資料加密
+        - 資料列層級安全性
+          [4701] Azure Cosmos DB for PostgreSQL 中的資料列層級安全性
+        - 安全性基準
+          [4704] 適用于 PostgreSQL 的 Azure Cosmos DB的 Azure 安全性基準
+      - 系統管理
+        - 排程維護
+          [4716] Azure Cosmos DB for PostgreSQL 中的排程維護
+        - 可高載計算
+          [4718] Azure Cosmos DB for PostgreSQL 中的高載計算
+        - 啟動和停止叢集計算
+          [4719] 在叢集節點上啟動和停止計算
+        - 升級
+          [4720] Azure Cosmos DB for PostgreSQL 中叢集升級
+      - 業務持續性
+        - 備份及還原
+          [4721] Azure Cosmos DB for PostgreSQL 中的備份和還原
+        - 高可用性
+          [4724] Azure Cosmos DB for PostgreSQL 中的高可用性
+        - 可用性區域
+          [4726] 適用於 Azure Cosmos DB forPostgreSQL 中可用性區域中斷復原
+      - 複寫
+        [4728] Azure Cosmos DB for PostgreSQL 中的讀取複本
+      - 連線集區 (PgBouncer)
+        [4731] Azure Cosmos DB for PostgreSQL 裡的連線集區
+      - 監視與微調
+        - 監視
+          [4732] 監視和調整 Azure Cosmos DB forPostgreSQL
+        - 效能微調
+          [4735] Azure Cosmos DB for PostgreSQL 中的效能微調
+      - 多租用戶監視
+        - 租用戶監視基礎
+          [4743] 多租用戶監視
+        - 租用戶監視基本用法
+          [4749] 如何在適用於 PostgreSQL 的 AzureCosmos DB 中使用多租用戶監視來檢閱租用戶統計數據
+      - 分欄儲存
+        [4753] 在 Azure Cosmos DB for PostgreSQL 中使用分欄資料表壓縮資料
+    - 操作指南
+      - 連線和查詢
+        [4758] 連線至 Azure Cosmos DB forPostgreSQL 叢集
+      - 內嵌資料
+        - Pg_azure_storage 延伸模組
+          [4762] 如何在 Azure Cosmos DB forPostgreSQL 中使用 pg_azure_storage 來內嵌資料
+        - Azure 串流分析 (ASA)
+          [4771] 如何在適用于 PostgreSQL 的 AzureCosmos DB 中使用 Azure 串流分析擷取資料
+        - Azure Data Factory (ADF)
+          [4778] 如何在 Azure Cosmos DB forPostgreSQL 中使用 Azure Data Factory來內嵌資料
+      - 管理
+        - 管理 Microsoft Entra ID 和 Postgres 驗證
+          [4786] 使用 Microsoft Entra ID 和原生PostgreSQL 角色對 Azure Cosmos DBfor PostgreSQL 進行驗證
+        - 排程維護
+          [4793] 管理 Azure Cosmos DB for PostgreSQL的排程維護設定
+        - 啟動和停止叢集計算
+          [4794] 啟動和停止叢集上的計算
+        - 重新啟動叢集
+          [4795] 重新啟動 Azure Cosmos DB forPostgreSQL
+        - 升級叢集
+          [4796] Azure Cosmos DB for PostgreSQL 中的升級叢集
+      - 監視器
+        - 檢視計量
+          [4798] 如何在 Azure Cosmos DB forPostgreSQL 中檢視計量
+        - 建立計量警示
+          [4801] 使用 Azure 入口網站來設定適用於 AzureCosmos DB for PostgreSQL 之計量的警示
+        - 存取資料庫記錄
+          [4807] Azure Cosmos DB for PostgreSQL 中的記錄
+        - 稽核記錄
+          [4811] 在 Azure Cosmos DB for PostgreSQL 中稽核記錄
+        - 有用的診斷查詢
+          [4815] Azure Cosmos DB for PostgreSQL 中的實用診斷查詢
+      - 調整
+        - 叢集大小
+          - 挑選初始大小
+            [4825] 挑選 Azure Cosmos DB for PostgreSQL中叢集的初始大小
+          - 調整叢集
+            [4827] 在 Azure Cosmos DB for PostgreSQL 中調整叢集
+        - 選擇分區計數
+          [4830] 在 Azure Cosmos DB for PostgreSQL 選擇分區計數
+        - 重新平衡分區
+          [4831] 在 Azure Cosmos DB for PostgreSQL 叢集中重新平衡分區
+        - 變更計算配額
+          [4833] 適用於 PostgreSQL 的 Azure Cosmos DB中的變更計算配額
+        - 使用讀取複本進行調整
+          [4835] 在 Azure Cosmos DB for PostgreSQL 中建立和管理讀取複本
+      - 可用性和復原能力
+        - 設定高可用性
+          [4838] 設定 Azure Cosmos DB for PostgreSQL中的高可用性
+        - 使用可用性區域
+          [4839] 使用 Azure Cosmos DB for PostgreSQL中的可用性區域
+        - 建立讀取複本
+          [4841] 在 Azure Cosmos DB for PostgreSQL 中建立和管理讀取複本
+        - 還原叢集
+          [4844] Azure Cosmos DB for PostgreSQL 中叢集的備份與時間點還原
+      - 安全性和資料存取
+        - 管理公用存取
+          [4847] 管理 Azure Cosmos DB for PostgreSQL的公用存取
+        - 管理私人存取
+          [4851] 在 Azure Cosmos DB for PostgreSQL 中啟用私人存取
+        - 管理 Microsoft Entra ID 和 Postgres 使用者
+          [4854] 使用 Microsoft Entra ID 和原生PostgreSQL 角色對 Azure Cosmos DBfor PostgreSQL 進行驗證
+        - 客戶管理的金鑰
+          [4861] 在 Azure Cosmos DB for PostgreSQL 中使用客戶自控金鑰啟用資料加密
+        - 設定 TLS/SSL
+          [4869] 在 Azure Cosmos DB for PostgreSQL 中設定 TLS
+      - 使用向量和內嵌
+        - pgvector 的基本概念
+          [4871] 如何啟用和使用 Azure Cosmos DB forPostgreSQL 上的 pgvector
+        - 使用 pgvector 時將效能最佳化
+          [4879] 如何在 Azure Cosmos DB forPostgreSQL 上使用 Pgvector 時最佳化效能
+      - 疑難排解
+        - 針對連線錯誤進行疑難排解
+          [4891] 針對 Azure Cosmos DB for PostgreSQL的連線問題進行疑難排解
+        - 針對唯讀存取進行疑難排解
+          [4893] 針對 Azure Cosmos DB for PostgreSQL的唯讀存取進行疑難排解
+        - 有用的診斷查詢
+          [4895] Azure Cosmos DB for PostgreSQL 中的實用診斷查詢
+    - 參考
+      - PostgreSQL 版本
+        [4905] Azure Cosmos DB for PostgreSQL 中支援的資料庫版本
+      - PostgreSQL 擴充功能
+        - 支援的擴充功能
+          [4909] Azure Cosmos DB for PostgreSQL 中的PostgreSQL 延伸模組
+        - pg_azure_storage 延伸模組
+          [4920] pg_azure_storage擴充功能
+      - COPY 命令支援
+        [4938] 適用于 PostgreSQL 的 Azure Cosmos DB上的 COPY 命令
+      - 限制
+        [4940] Azure Cosmos DB for PostgreSQL 限制
+      - 分散式 SQL API
+        - 概觀
+          [4944] 適用于 PostgreSQL 的 Azure Cosmos DB分散式 SQL API
+        - SQL 函式
+          [4950] 適用于 PostgreSQL 的 Azure Cosmos DB函式
+        - 伺服器參數
+          [4976] Azure Cosmos DB for PostgreSQL 伺服器參數
+        - 系統資料表
+          [4995] 適用于 PostgreSQL 系統資料表和檢視的Azure Cosmos DB
+      - REST API
+        [5013] 適用於 PostgreSQL REST API 的 CosmosDB
+      - Terraform 支援
+        [5017] Azure Cosmos DB for PostgreSQL 的Terraform 支援
+      - ARM 範本
+        [5018] Microsoft.DBforPostgreSQLserverGroupsv2
+      - Bicep
+        [5022] Microsoft.DBforPostgreSQLserverGroupsv2
+      - Azure CLI
+        [5026] az cosmosdb postgres
+      - Azure SDK
+        - .NET SDK
+        - Go SDK
+        - Java SDK
+        - JavaScript SDK
+        - Python SDK
+    - 資源
+      - 學習路徑 - Azure Cosmos DB for PostgreSQL
+        [5031] Azure Cosmos DB for PostgreSQL 文件
+      - 定價
+        [5034] Azure Cosmos DB for PostgreSQL 的定價
+      - 區域可用性
+        [5038] 適用於 Azure Cosmos DB forPostgreSQL 的區域可用性
+      - 計算和儲存
+        [5040] Azure Cosmos DB for PostgreSQL 計算和儲存體
+  - Apache Cassandra
+    - 選擇您的模型
+      [5045] Azure Managed Instance for ApacheCassandra 與 Azure Cosmos DB forApache Cassandra 之間的差異
+    - 俄羅斯
+      - Apache Cassandra RU 文件
+        [5048] Azure Cosmos DB for Apache Cassandra文件
+      - 概觀
+        - 什麼是 Azure Cosmos DB for Apache Cassandra？
+          [5050] 什麼是 Azure Cosmos DB for ApacheCassandra？
+        - 連線通訊協定支援
+          [5053] Azure Cosmos DB for Apache Cassandra支援的 Apache Cassandra 功能
+        - 權杖和 Token 函式
+          [5065] Azure Cosmos DB for Apache Cassandra中的權杖和 Token 函式
+        - 常見問題集
+          [5068] Azure Cosmos DB for Cassandra 和Apache Cassandra 之間的主要差異為何？支
+      - 快速入門
+        - Java v4
+          [5076] 快速入門：建置 Java 應用程式來管理Azure Cosmos DB for Apache Cassandra資料 (v4 驅動程式)
+        - Java v3
+          [5087] 快速入門：建置 Java 應用程式來管理Azure Cosmos DB for Apache Cassandra資料 (v3 驅動程式)
+        - Python
+          [5098] 快速入門：使用 Python SDK 和 AzureCosmos DB 組建 Cassandra 應用程式
+        - Golang
+          [5108] 快速入門：組建具有 gocql  用戶端的 Go應用程式來管理 Azure Cosmos DB forApache Cassandra 資料
+        - CQLSH
+          [5119] 快速入門：使用 CQLSH 和 AzureCosmos DB 建置 Cassandra 應用程式
+        - Node.js
+          [5127] 快速入門：使用 Node.js SDK 和 AzureCosmos DB 建置 Cassandra 應用程式
+        - .NET Core
+          [5138] 快速入門：使用 .NET Core 和 AzureCosmos DB 建置 Cassandra 應用程式
+        - .NET
+          [5148] 快速入門：使用 .NET SDK 和 AzureCosmos DB 建置 Apache Cassandra 應用程式
+      - 教學課程
+        - 建立和管理資料
+          [5158] 教學課程：使用 Java 應用程式，在 AzureCosmos DB 中建立 API for Cassandra 帳戶來儲存金鑰/值資料
+        - 載入資料
+          [5166] 教學課程：將範例資料載入至 AzureCosmos DB 中的 API for Cassandra 資料表
+        - 查詢資料
+          [5169] 教學課程：從 Azure Cosmos DB 中的Cassandra API 帳戶查詢資料
+        - 移轉資料
+          [5172] 教學課程：將資料移轉至 API forCassandra 帳戶
+        - 建立 Jupyter Notebook
+          [5177] 教學課程：在 Azure Cosmos DB forNoSQL 中建立 Jupyter 筆記本，以分析資料並將資料視覺化 (預覽)
+        - Kusto 查詢語言 (KQL) 轉換
+          [5184] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+      - 範例
+        - Azure CLI
+          - 概觀
+            [5190] 適用於 Azure Cosmos DB for ApacheCassandra 的 Azure CLI 樣本
+          - 建立帳戶、keyspace 和資料表
+            [5192] 使用 Azure CLI 建立 Azure Cosmos DBCassandra API 帳戶、Keyspace 和資料表
+          - 建立無伺服器
+            [5196] 使用 Azure CLI 建立 Azure Cosmos DBCassandra API 無伺服器帳戶、Keyspace和資料表
+          - 使用自動調整建立
+            [5200] 使用 Azure CLI 建立 API for Cassandra帳戶、Keyspace 和具有自動調整功能的資料表
+          - 執行輸送量作業
+            [5203] 使用 Azure CLI 對 Azure Cosmos DB -API for Cassandra 的 Keyspace 或資料表執行輸送量 (RU/秒) 作業
+          - 鎖定資源避免刪除
+            [5209] 使用 Azure CLI 為 Azure Cosmos DBCassandra API Keyspace 和資料表建立資源鎖定
+          - 新增或容錯移轉區域
+            [5213] 使用 Azure CLI 針對 Azure Cosmos DB帳戶新增區域、變更容錯移轉優先順序、觸發容錯移轉
+          - 執行帳戶金鑰作業
+            [5217] 透過 Azure CLI 使用 Azure Cosmos DB帳戶的帳戶金鑰和連接字串
+          - 使用 IP 防火牆保護安全
+            [5221] 使用 Azure CLI 建立具有 IP 防火牆的Azure Cosmos DB 帳戶
+          - 使用服務端點保護新的帳戶
+            [5224] 使用 Azure CLI 建立具有虛擬網路服務端點的 Azure Cosmos DB 帳戶
+          - 使用服務端點保護現有帳戶
+            [5228] 使用 Azure CLI 連線現有 Azure CosmosDB 帳戶與虛擬網路服務端點
+          - 尋找現有的免費層帳戶
+            [5232] 使用 Azure CLI 在訂用帳戶中尋找現有的Azure Cosmos DB 免費層帳戶
+        - Azure PowerShell
+          - 概觀
+            [5235] Azure Cosmos DB for Apache Cassandra的 Azure PowerShell 範例
+          - 建立帳戶、keyspace 和資料表
+            [5237] 建立 Azure Cosmos DB 的 Kyspace 和資料表 - API for Cassandra
+          - 使用自動調整建立
+            [5240] 針對 Azure Cosmos DB，建立具有自動調整的 Keyspace 和資料表 - API forCassandra
+          - 執行輸送量作業
+            [5243] 使用 PowerShell 對 Azure Cosmos DB -API for Cassandra 的 keyspace 或資料表執行輸送量 (RU/秒) 作業
+          - 鎖定資源避免刪除
+            [5247] 使用 Azure PowerShell 以針對 AzureCosmos DB Cassandra API Keyspace 和資料表建立資源鎖定
+          - 列出並取得 keyspace 和資料表
+            [5250] Azure Cosmos DB 的列出和取得Keyspace 和資料表 - API for Cassandra
+          - 帳戶金鑰或連接字串
+            [5253] 使用 PowerShell 的 Azure Cosmos DB 帳戶連接字串和帳戶金鑰作業
+          - 變更容錯移轉優先順序或觸發容錯移轉
+            [5255] 使用 PowerShell 對具有單一寫入區域的Azure Cosmos DB 帳戶變更容錯移轉優先順序或觸發容錯移轉
+          - 建立具有 IP 防火牆的帳戶
+            [5258] 建立具有 IP 防火牆的 Azure Cosmos DB帳戶
+          - 更新帳戶
+            [5261] 使用 PowerShell 更新 Azure Cosmos DB帳戶的一致性層級
+          - 更新帳戶的區域
+            [5264] 使用 PowerShell 更新 Azure Cosmos DB帳戶的區域
+        - 範本
+          - JSON 語法範本
+            [5267] 使用 Azure Resource Manager 範本管理Azure Cosmos DB for Apache Cassandra資源
+          - Bicep 語法範本
+            [5278] 使用 Bicep 管理 Azure Cosmos DB forApache Cassandra 資源
+        - Azure Resource Graph 查詢
+          [5286] Azure Cosmos DB 的 Azure ResourceGraph 查詢範例
+      - 概念
+        - Azure Cosmos DB 資源模型
+          [5288] Azure Cosmos DB 中的資料庫、容器和專案
+        - 資料分割
+          - 資料分割概觀
+            [5297] Azure Cosmos DB 中的資料分割和水平調整
+          - API for Apache Cassandra 的資料分割
+            [5303] Azure Cosmos DB for Apache Cassandra中的資料分割
+        - 輸送量 (RU/秒)
+          - 要求單位
+            [5309] Azure Cosmos DB 中的要求單位
+          - 調整 API for Apache Cassandra 帳戶
+            [5312] 彈性調整 Azure Cosmos DB for ApacheCassandra 帳戶
+          - 使用容量規劃工具來估計每秒要求單位
+            [5315] 使用 Azure Cosmos DB 容量規劃工具估計 RU/秒 - 適用於 MongoDB 的 AzureCosmos DB for MongoDB
+          - 佈建的輸送量
+            [5321] Azure Cosmos DB 中的佈建輸送量簡介
+          - 自動調整輸送量
+            - 自動調整簡介
+              [5329] 使用自動調整輸送量來建立 AzureCosmos DB 容器和資料庫
+            - 按分割區/區域自動調整
+              [5333] 個別區域與個別分割區自動調整 (預覽)
+            - 自動調整常見問題集
+              [5336] Azure Cosmos DB 中的自動調整和自動試驗之間有何差異？
+在先前的自動試驗階層模型中建立的資料庫或容器會發生什麼事？
+自動調整的進入點 RU/秒為何？
+          - 無伺服器
+            [5344] Azure Cosmos DB 無伺服器帳戶類型
+          - 在自動調整和標準 (手動) 輸送量之間進行選擇
+            [5347] 如何在標準 (手動) 和自動調整佈建輸送量之間進行選擇
+          - 在佈建的輸送量和無伺服器之間選擇
+            [5354] 如何在佈建的輸送量與無伺服器之間進行選擇
+          - 調整佈建輸送量的最佳做法
+            [5356] 調整佈建輸送量 (RU/秒) 的最佳做法
+          - 高載容量 (預覽)
+            - 高載容量概觀
+              [5363] Azure Cosmos DB 的高載容量
+            - 高載容量常見問題
+              [5365] 使用高載容量需要多少費用？
+高載容量如何與自動調整搭配使用？
+什麼資源可以使用高載容量？
+如何監視高載容量？
+        - 備份及還原
+          - 備份與還原簡介
+            [5367] 在 Azure Cosmos DB 中進行線上備份及隨選資料還原
+          - 定期備份
+            - 簡介
+              [5370] Azure Cosmos DB 中的定期備份和還原
+            - 儲存體備援
+              [5374] Azure Cosmos DB 中的定期備份儲存體備援
+            - 要求資料還原
+              [5376] 從 Azure Cosmos DB 備份要求資料還原
+        - 全域散發
+          - 全球發佈概觀
+            [5380] 使用 Azure Cosmos DB 來全域散發資料
+          - 一致性層級
+            [5383] Azure Cosmos DB 中的一致性層級
+          - 對應 Cassandra 一致性層級
+            [5394] Apache Cassandra 與 Azure Cosmos DBfor Apache Cassandra 一致性層級
+          - 高可用性
+            - 高可用性概觀
+            - 多重區域寫入
+              - 瞭解多區域寫入
+                [5408] 瞭解 Azure Cosmos DB 中的多區域寫入
+              - 衝突解決功能
+                [5410] 使用多個寫入區域時的衝突類型和解決原則
+          - 全域散發 - 運作原理
+            [5412] 透過 Azure Cosmos DB 全域資料散發 -運作原理
+        - 安全性
+          - 安全性概觀
+            [5418] Azure Cosmos DB 虛擬核心中的資料庫安全性概觀
+          - 資料加密
+            [5427] Azure Cosmos DB 中的資料加密
+          - 服務標籤
+            [5431] 虛擬網路服務標籤
+          - Azure 角色型存取控制
+            [5446] Azure Cosmos DB 中的角色型存取控制
+          - Azure 原則支援
+            [5451] 使用 Azure 原則來實作 Azure CosmosDB 資源的治理和控制
+          - Azure 原則的安全性控制
+            [5456] 適用於 Azure Cosmos DB 的 Azure 原則法規合規性控制
+          - 安全性基準
+            [5467] 適用於 Azure Cosmos DB 的安全性基準
+        - 最佳化 Azure Cosmos DB 成本
+          [5480] 最佳化 Azure Cosmos DB 成本
+        - 企業整備
+          - 服務配額
+            [5482] Azure Cosmos DB 服務配額
+          - 自動建議
+            [5495] Azure Cosmos DB 的自動化建議
+          - 法規遵循
+            [5499] Azure Cosmos DB 中的合規性
+          - 資料落地
+            [5501] 如何符合 Azure Cosmos DB 中的資料落地需求
+        - Jupyter 筆記本
+          - 概觀
+            [5503] Azure Cosmos DB 中的 JupyterNotebook (預覽)
+          - 常見問題集
+            [5507] 
+        - 網路頻寬
+          [5511] Azure Cosmos DB 網路頻寬
+      - 如何
+        - 開發應用程式
+          - API for Apache Cassandra 延伸模組概觀
+            [5514] Azure Cosmos DB for Apache Cassandra驅動程式延伸模組
+          - 建立表格
+            [5518] 在 Azure Cosmos DB for ApacheCassandra 中建立容器
+          - 配置輸送量
+            [5521] 在 Azure Cosmos DB for ApacheCassandra 資源上佈建資料庫、容器或自動調整輸送量
+          - 對應 Cassandra 一致性層級
+            [5524] Apache Cassandra 與 Azure Cosmos DBfor Apache Cassandra 一致性層級
+          - 次要索引
+            [5538] Azure Cosmos DB for Apache Cassandra中的次要索引編制
+          - 尋找要求單位費用
+            [5541] 尋找在 Azure Cosmos DB for ApacheCassandra 中執行之作業的要求單位費用
+          - 防止速率限制錯誤
+            [5543] 防止 Azure Cosmos DB for ApacheCassandra 作業發生速率限制錯誤
+          - 具體化檢視 (預覽)
+            - 概觀
+              [5547] Azure Cosmos DB for Apache Cassandra中的具體化檢視 (預覽)
+            - 常見問題集
+              [5553] Azure Cosmos DB for Apache Cassandra中的具體化檢視支援哪些轉換/動作？
+Azure Cosmos DB for Apache Cassandra中的具體化檢視將支援哪些一致性層級？
+Azure Cosmos DB for Apache Cassandra中具體化檢視建立器執行個體是否有自動調整層？
+          - API for Apache Cassandra 中的輕量型交易
+            [5558] Azure Cosmos DB for Apache Cassandra中具有條件的輕量型交易
+          - API for Apache Cassandra 的變更摘要
+            [5562] Azure Cosmos DB for Apache Cassandra變更摘要
+          - 儲存和管理 Spring 資料
+            [5565] 如何搭配 Azure Cosmos DB for ApacheCassandra 使用適用於 ApacheCassandra 的 Spring Data API
+          - 在資料表之間複製資料
+            [5573] 建立和管理 Azure Cosmos DB (預覽版)中的容器複製作業
+        - 容器和項目上的作業
+          - 在容器之間移動資料
+            [5580] Azure Cosmos DB (預覽) 中的容器複製作業
+        - Cassandra 和 Spark
+          - 簡介
+            [5586] 從 Spark 連線至 Azure Cosmos DB forApache Cassandra
+          - 使用 Databrickss 連線
+            [5593] 從 Azure Databricks 存取 Azure CosmosDB for Apache Cassandra
+          - 在 YARN 上從 Spark 連線
+            [5596] 透過 HDInsight 從 Spark on YARN 存取Azure Cosmos DB for Apache Cassandra
+          - 建立 Keyspace 和資料表
+            [5600] 從 Spark 在 Azure Cosmos DB forApache Cassandra 中執行的 DDL 作業
+          - 插入資料
+            [5605] 從 Spark 建立資料/將資料插入至 AzureCosmos DB for Apache Cassandra
+          - 讀取資料
+            [5609] 使用 Spark 從 Azure Cosmos DB forApache Cassandra 資料表中讀取資料
+          - Upsert 資料
+            [5613] 從 Spark 更新插入 Azure Cosmos DB forApache Cassandra
+          - 刪除資料
+            [5616] 從 Spark 刪除 Azure Cosmos DB forApache Cassandra 資料表中的資料
+          - 彙總運算
+            [5625] 從 Spark 對 Azure Cosmos DB forApache Cassandra 資料表進行的彙總作業
+          - 複製資料表資料
+            [5635] 從 Spark 在 Azure Cosmos DB forApache Cassandra 上執行資料表複製作業
+        - 移轉至 API for Apache Cassandra
+          - API for Apache Cassandra 與 Apache Cassandra 之間的差異
+            [5639] 來自 Apache Cassandra 的您如何適應Azure Cosmos DB for Apache Cassandra
+          - 使用 Kafka Connect 移轉至 API for Apache Cassandra
+            [5644] 使用 Kafka Connect 將資料從 ApacheKafka 擷取至 Azure Cosmos DB forApache Cassandra
+          - 移轉 - 使用 Arcion 將 Apache Cassandra 移轉至 API for Apache Cassandra
+            [5651] 使用 Arcion 將資料從 Cassandra 移轉至Azure Cosmos DB for Apache Cassandra帳戶
+          - 移轉 - 使用雙重寫入 Proxy 將 Apache Cassandra 移轉至 API for Apache Cassandra
+            [5658] 使用雙重寫入 Proxy 和 Apache Spark，將資料從 Apache Cassandra 即時移轉至Azure Cosmos DB for Apache Cassandra
+          - 移轉 - 使用 Databricks 將 Apache Cassandra 移轉至 API for Apache Cassandra
+            [5669] 使用 Azure Databricks 將資料從Cassandra 移轉至 Azure Cosmos DB forApache Cassandra 帳戶
+          - 移轉 - 使用 Apache Kafka 將 PostgreSQL 移轉至 API for Apache Cassandra
+            [5674] 使用 Apache Kafka 將資料從 PostgreSQL移轉至 Azure Cosmos DB for ApacheCassandra 帳戶
+          - 移轉 - 使用 Striim 將 Oracle Database 移轉至 API for Apache Cassandra
+            [5682] 使用 Striim 將資料移轉至 Azure CosmosDB for Apache Cassandra 帳戶
+          - 移轉 - 使用 Arcion 將 Oracle Database 移轉至 API for Apache Cassandra
+            [5694] 使用 Arcion 將資料從 Oracle 移轉至Azure Cosmos DB for Apache Cassandra帳戶
+        - 使用模擬器進行開發
+          [5701] 使用 Azure Cosmos DB 模擬器在本機開發
+        - 使用開發人員工具
+          - 設定配有 Azure Pipelines 的 CI/CD
+            [5707] 使用 Azure Cosmos DB 模擬器組建工作，在 Azure DevOps 中設定 CI/CD 管道
+          - Azure Cosmos DB 總管
+            - 使用總管
+              [5710] 使用 Azure Cosmos DB 總管來管理資料
+            - 鍵盤 shorcuts
+              [5714] Azure Cosmos DB 數據總管快捷方式
+        - 疑難排解和效能
+          - 常見問題疑難排解
+            [5719] 對 Azure Cosmos DB for ApacheCassandra 中的常見問題進行疑難排解
+          - 針對 NoHostAvailableException 進行疑難排解
+            [5725] 針對 NoHostAvailableException 和NoNodeAvailableException 進行疑難排解
+          - 使用 API for Apache Cassandra 的 Glowroot 應用程式效能監視 (APM)
+            [5731] 在 Azure Cosmos DB for ApacheCassandra 上執行 Glowroot
+          - 了解 API for Apache Cassandra 錯誤碼
+            [5733] Azure Cosmos DB for Apache Cassandra的伺服器診斷
+          - 在 API for Apache Cassandra 中使用深入解析進行監視和偵錯
+            [5736] 在 Azure Cosmos DB for ApacheCassandra 中使用深入解析進行監視和偵錯
+        - 管理 Azure Cosmos DB 資源
+          - 管理 Azure Cosmos DB 帳戶
+          - 使用 Powershell 進行管理
+            [5743] Azure Cosmos DB for Apache Cassandra的 Azure PowerShell 範例
+          - 使用 Azure CLI 管理
+            [5745] 適用於 Azure Cosmos DB for ApacheCassandra 的 Azure CLI 樣本
+          - 使用 Bicep 進行管理
+            [5747] 使用 Bicep 管理 Azure Cosmos DB forApache Cassandra 資源
+          - 使用 Resource Manager 範本進行管理
+            [5755] 使用 Azure Resource Manager 範本管理Azure Cosmos DB for Apache Cassandra資源
+          - 限制帳戶總輸送量
+            [5766] 限制 Azure Cosmos DB 帳戶上佈建的總輸送量
+          - 在區域間移動
+            [5770] 將 Azure Cosmos DB 帳戶移至另一個區域
+          - 防止變更或刪除
+            [5773] 使用鎖定來保護 Azure Cosmos DB 資源
+          - 申請加大配額
+            [5776] 如何要求增加 Azure Cosmos DB 資源的配額
+          - 存取預覽功能
+            [5778] 存取 Azure Cosmos DB 預覽功能
+        - 備份及還原
+          - 定期備份
+            - 更新儲存體備援
+              [5780] 更新 Azure Cosmos DB 定期備份儲存體備援
+            - 修改間隔保留期
+              [5783] 在 Azure Cosmos DB 帳戶修改定期備份的間隔與保留期間
+        - 安全性
+          - 設定 IP 防火牆
+            [5786] 在 Azure Cosmos DB 中設定 IP 防火牆
+          - 從虛擬網路設定
+            [5798] 設定從虛擬網路 (VNet) 存取 AzureCosmos DB
+          - 設定來自私人端點的存取
+            [5810] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+          - 私下連線至 Azure Cosmos DB 帳戶
+            [5830] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+          - 在 Azure Key Vault 中儲存認證
+            [5850] 教學課程：透過 Azure Key Vault 儲存和使用 Azure Cosmos DB 認證
+          - 使用受控識別存取 Azure Key Vault
+            [5861] 使用受控識別從 Azure Cosmos DB 存取Azure Key Vault
+          - 限制使用者只能存取資料作業
+            [5864] 以 Azure Cosmos DB 限制使用者對資料作業的存取
+          - 設定客戶管理的金鑰
+            [5867] 使用 Azure Key Vault，為 Azure CosmosDB 帳戶設定客戶自控金鑰
+          - 設定跨租用戶的客戶自控金鑰
+            [5883] 使用 Azure Key Vault 為 Azure CosmosDB 帳戶設定跨租用戶客戶自控金鑰
+          - 搭配使用受控識別與 Azure 服務
+            [5896] 使用 Microsoft Entra ID 為您的 AzureCosmos DB 帳戶設定受控識別
+        - 監視器
+          - 監視器
+            [5904] 監視 Azure Cosmos DB
+          - 使用 Azure 監視器計量
+            - 適用於 Azure Cosmos DB 的 Azure 監視器
+              [5914] 探索 Azure Monitor Azure Cosmos DB深入解析
+            - 要監視的案例
+              [5923] 使用 Azure Cosmos DB 的深入解析監視和偵錯
+            - 監視伺服器端延遲
+              [5930] 如何監視 Azure Cosmos DB 容器或帳戶中作業的伺服器端延遲
+            - 監視要求單位使用量
+              [5934] 如何在 Azure Cosmos DB 中監視作業的輸送量或要求單位使用量
+            - 監視金鑰更新
+              [5938] 監視您的 Azure Cosmos DB 帳戶是否有更新金鑰和金鑰重新產生
+            - 監視正規化要求單位使用量
+              [5943] 如何監視 Azure Cosmos DB 容器或帳戶的標準化 RU/秒
+          - 使用 Azure 監視器記錄
+            - 使用診斷記錄進行監視
+              [5951] 
+            - 針對基本查詢的使用問題進行疑難排解
+              [5956] 診斷查詢相關問題的疑難排解
+            - 稽核控制平面記錄
+              [5963] 如何稽核 Azure Cosmos DB 控制平面作業
+            - 使用進階診斷查詢對問題進行疑難排解
+              [5972] 針對 Azure Cosmos DB for ApacheCassandra 的進階診斷查詢問題進行疑難排解
+            - 新增工作區資料的轉換
+              [5978] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+          - 設定警示
+            - 建立計量警示
+              [5984] 使用 Azure 監視器建立 Azure CosmosDB 的警示
+            - 建立邏輯分割區索引鍵大小的警示
+              [5989] 建立警示，以便監視邏輯分割區索引鍵的儲存體是否接近 20 GB
+          - 監視資料參考
+            [5996] 
+          - 合作夥伴監視解決方案
+            [6020] 使用協力廠商解決方案監視 AzureCosmos DB
+      - 參考
+        - REST 資源提供者
+          [6023] Cassandra Resources
+        - PowerShell
+          [6025] Az.CosmosDB
+        - Resource Manager 範本
+          [6037] Microsoft.DocumentDB (Cosmos DB) 資源類型
+        - Azure CLI
+          [6063] Database for Cosmos DB
+        - 模擬器
+          - 版本資訊
+            [6064] Azure Cosmos DB Windows (本機) 模擬器的發行備註
+          - Windows 命令列引數
+            [6070] 
+      - 資源
+        - 透過 Microsoft Learn 訓練增進您的技巧
+        - 常見問題集
+          [6079] 一般
+        - 白皮書
+          [6085] Azure Cosmos DB 概念白皮書
+        - 合作夥伴
+          [6086] Azure Cosmos DB NoSQL 移轉和應用程式開發合作夥伴
+        - Microsoft 問題與解答
+        - 影片
+        - Azure 藍圖
+        - 免費試用 Azure Cosmos DB
+        - 定價
+        - 使用案例
+          - 常見使用案例
+            [6089] 一般 Azure Cosmos DB 使用案例
+          - 社交媒體應用程式
+            [6096] 使用 Azure Cosmos DB 跨足社交
+    - 適用於 Apache Cassandra 的 Azure 受控執行個體
+      - 適用於 Apache Cassandra 的 Azure 受控執行個體文件
+        [6106] 適用於 Apache Cassandra 的 Azure 受控執行個體文件
+      - 概觀
+        - 什麼是 Azure Managed Instance for Apache Cassandra？
+          [6108] 什麼是適用於 Apache Cassandra 的Azure 受控執行個體？
+        - 管理作業
+          [6110] 適用於 Apache Cassandra 的 Azure 受控執行個體 管理作業
+      - 快速入門
+        - 建立叢集 - 入口網站
+          [6115] 快速入門：從 Azure 入口網站 建立適用於 Apache Cassandra 叢集的 Azure 受控執行個體
+        - 建立叢集 -CLI
+          [6136] 快速入門：使用 Azure CLI 建立適用於Apache Cassandra 叢集的 Azure 受控執行個體
+        - 建立多區域叢集 - CLI
+          [6144] 快速入門：使用適用於Apache Cassandra的 Azure 受控執行個體 建立多區域叢集
+        - 設定混合式叢集
+          [6152] 快速入門：使用 Client Configurator 為Apache Cassandra 設定具有 Azure 受控執行個體 的混合式叢集
+        - 使用 Databricks 來部署 Spark 叢集
+          [6157] 快速入門：使用 Azure Databricks 部署受控 Apache Spark 叢集
+        - 使用 Lucene 索引進行搜尋
+          [6163] 快速入門：使用 Lucene Index (Preview)搜尋適用于 Apache Cassandra 的 Azure受控執行個體
+      - 教學課程
+        - 遷移
+          - 使用雙重寫入 Proxy - 即時
+            [6168] 使用雙寫入 Proxy 即時移轉至適用于Apache Cassandra 的 Azure 受控執行個體
+          - 使用 Apache Spark - 離線
+            [6177] 使用 Apache Spark 遷移至適用于Apache Cassandra 的 Azure 受控執行個體
+      - 概念
+        - 安全性概觀
+          [6181] Azure Managed Instance for ApacheCassandra 中的安全性 - 概觀
+        - 建置彈性應用程式
+          [6183] 高可用性和災害復原的最佳做法
+        - 常見問題集
+          [6187] 適用於 Apache Cassandra 的 Azure 受控執行個體 常見問題
+      - 操作指南
+        - 獲得最佳效能的最佳做法
+          [6191] 最佳效能的最佳做法
+        - 新增用於部署的服務主體
+          [6199] 使用 Azure 入口網站新增 Azure CosmosDB 服務主體
+        - 設定客戶自控金鑰
+          [6202] 適用於 Apache Cassandra 的 Azure 受控執行個體 中客戶管理的金鑰
+        - 啟用輕量型目錄存取通訊協定 (LDAP) 驗證
+          [6208] 如何在適用于 Apache Cassandra 的Azure 受控執行個體中啟用 LDAP 驗證
+        - 監視器
+          [6213] 
+        - 使用 Azure CLI 管理
+          [6219] 使用 Azure CLI 管理 Apache Cassandra資源的 Azure 受控執行個體
+        - 必要的輸出網路規則
+          [6228] 必要的輸出網路規則
+        - 使用 Grafana 將 Prometheus 中的計量視覺化
+          [6232] 設定 Grafana 以視覺化從受控執行個體叢集發出的計量
+        - 啟用具體化檢視
+          [6238] 適用於 Apache Cassandra 的 Azure 受控執行個體 具體化檢視
+        - 使用本機磁碟來改善讀取效能
+          [6240] 適用於 Apache Cassandra 的 Azure 受控執行個體 中的寫入快取
+        - 使用 Azure Managed Instance for Apache Cassandra 來執行 Jaeger
+          [6246] 使用適用於 Apache Cassandra 的 Azure受控執行個體 執行 Jaeger
+        - 搭配使用 VPN 與 Azure Managed Instance for Apache Cassandra
+          [6249] 搭配 Azure 受控執行個體 for ApacheCassandra 使用 VPN
+        - 疑難排解節點
+          [6252] 適用於 Apache Cassandra 的 Azure 受控執行個體 DBA 命令
+      - 參考
+        - REST API
+          - Cassandra 叢集
+            [6259] Cassandra Clusters
+          - Cassandra 資料中心
+            [6260] Cassandra Data Centers
+        - Azure CLI
+          [6261] az managed-cassandra
+  - Apache Gremlin
+    - Apache Gremlin 文件
+      [6264] Azure Cosmos DB for Gremlin 文件
+    - 概觀
+      - 什麼是 Azure Cosmos DB for Apache Gremlin？
+        [6266] Azure Cosmos DB for Apache Gremlin是什麼？
+      - 連線通訊協定支援
+        [6272] 
+      - 常見問題集
+        [6279] Gremlin 查詢
+其他常見問題
+    - 快速入門
+      - 主控台
+        [6282] 快速入門：使用 Gremlin 控制台和 AzureCosmos DB for Apache Gremlin 周遊頂點和邊緣
+      - Python
+        [6290] 快速入門：適用於 Python 的適用於Apache Gremlin 的 Azure Cosmos DB 連結庫
+      - Node.js
+        [6301] 快速入門：適用於 Apache Gremlin 的Azure Cosmos DB 連結庫，適用於Node.js
+      - .NET
+        [6312] 快速入門：適用於 .NET 的適用於 ApacheGremlin 的 Azure Cosmos DB 連結庫
+    - 教學課程
+      - 使用 Gremlin 查詢資料
+        [6323] 教學課程：使用 Gremlin 查詢 AzureCosmos DB for Gremlin
+      - 建立 Jupyter Notebook
+        [6325] 教學課程：在 Azure Cosmos DB forNoSQL 中建立 Jupyter 筆記本，以分析資料並將資料視覺化 (預覽)
+      - Kusto 查詢語言 (KQL) 轉換
+        [6332] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+    - 範例
+      - Azure CLI
+        - 概觀
+          [6338] 適用於 Azure Cosmos DB for Gremlin 的Azure CLI 範例
+        - 建立帳戶、資料庫和圖表
+          [6340] 使用 Azure CLI 建立 Azure Cosmos DBfor Gremlin 帳戶、資料庫及圖表
+        - 建立無伺服器
+          [6344] 使用 Azure CLI 建立 Gremlin 無伺服器帳戶、資料庫和圖形
+        - 使用自動調整建立
+          [6346] 使用 Azure CLI 來建立 API for Gremlin 帳戶、資料庫及具有自動調整功能的圖表
+        - 執行輸送量作業
+          [6348] 使用 Azure CLI 對 Azure Cosmos DB -API for Gremlin 的資料庫或圖形執行輸送量 (RU/秒) 作業
+        - 鎖定資源避免刪除
+          [6353] 使用 Azure CLI 建立適用於 Gremlin 的Azure Cosmos DB 資料庫與圖表的資源鎖定
+        - 新增或容錯移轉區域
+          [6357] 使用 Azure CLI 針對 Azure Cosmos DB帳戶新增區域、變更容錯移轉優先順序、觸發容錯移轉
+        - 執行帳戶金鑰作業
+          [6361] 透過 Azure CLI 使用 Azure Cosmos DB帳戶的帳戶金鑰和連接字串
+        - 使用 IP 防火牆保護安全
+          [6365] 使用 Azure CLI 建立具有 IP 防火牆的Azure Cosmos DB 帳戶
+        - 使用服務端點保護新的帳戶
+          [6368] 使用 Azure CLI 建立具有虛擬網路服務端點的 Azure Cosmos DB 帳戶
+        - 使用服務端點保護現有帳戶
+          [6372] 使用 Azure CLI 連線現有 Azure CosmosDB 帳戶與虛擬網路服務端點
+        - 尋找現有的免費層帳戶
+          [6376] 使用 Azure CLI 在訂用帳戶中尋找現有的Azure Cosmos DB 免費層帳戶
+      - Azure PowerShell
+        - 概觀
+          [6379] Azure Cosmos DB for Gremlin 的 AzurePowerShell 範例
+        - 建立帳戶、資料庫和圖表
+          [6381] 建立 Azure Cosmos DB 資料庫和圖形 -API for Gremlin
+        - 使用自動調整建立
+          [6384] 針對 Azure Cosmos DB，建立具有自動調整功能的資料庫和圖形 - API for Gremlin
+        - 執行輸送量作業
+          [6387] 使用 PowerShell 對 Azure Cosmos DB -Gremlin API 的資料庫或圖表執行輸送量(RU/秒) 作業
+        - 鎖定資源避免刪除
+          [6391] 使用 Azure CLI 建立適用於 Gremlin 的Azure Cosmos PowerShell 資料庫與圖表的資源鎖定
+        - 列出和取得資料庫和圖表
+          [6394] 列出或取得 Azure Cosmos DB forGremlin 資料庫和圖形的 PowerShell 指令碼
+        - 帳戶金鑰或連接字串
+          [6396] 使用 PowerShell 的 Azure Cosmos DB 帳戶連接字串和帳戶金鑰作業
+        - 變更容錯移轉優先順序或觸發容錯移轉
+          [6398] 使用 PowerShell 對具有單一寫入區域的Azure Cosmos DB 帳戶變更容錯移轉優先順序或觸發容錯移轉
+        - 建立具有 IP 防火牆的帳戶
+          [6401] 建立具有 IP 防火牆的 Azure Cosmos DB帳戶
+        - 更新帳戶
+          [6404] 使用 PowerShell 更新 Azure Cosmos DB帳戶的一致性層級
+        - 更新帳戶的區域
+          [6407] 使用 PowerShell 更新 Azure Cosmos DB帳戶的區域
+      - 使用 Bicep 進行管理
+        [6410] 使用 Bicep 管理適用於 Gremlin 的 AzureCosmos DB 資源
+      - 使用 Resource Manager 範本進行管理
+        [6417] 使用 Azure Resource Manager 範本管理Azure Cosmos DB for Gremlin 資源
+      - Azure Resource Graph 查詢
+        [6423] Azure Cosmos DB 的 Azure ResourceGraph 查詢範例
+    - 概念
+      - Azure Cosmos DB 資源模型
+        [6425] Azure Cosmos DB 中的資料庫、容器和專案
+      - 模型化和資料分割
+        - 資料分割概觀
+          [6434] Azure Cosmos DB 中的資料分割和水平調整
+        - 圖表資料模型
+          [6440] 使用 Azure Cosmos DB for ApacheGremlin 進行圖形資料模型化
+        - 為資料分割圖形資料進行設計
+          [6445] 使用 Azure Cosmos DB 中的資料分割圖表
+      - 輸送量 (RU/秒)
+        - 要求單位
+          [6448] Azure Cosmos DB 中的要求單位
+        - 佈建的輸送量
+          [6451] Azure Cosmos DB 中的佈建輸送量簡介
+        - 自動調整輸送量
+          - 自動調整簡介
+            [6459] 使用自動調整輸送量來建立 AzureCosmos DB 容器和資料庫
+          - 按分割區/區域自動調整
+            [6463] 個別區域與個別分割區自動調整 (預覽)
+          - 自動調整常見問題集
+            [6466] Azure Cosmos DB 中的自動調整和自動試驗之間有何差異？
+在先前的自動試驗階層模型中建立的資料庫或容器會發生什麼事？
+自動調整的進入點 RU/秒為何？
+        - 無伺服器
+          [6474] Azure Cosmos DB 無伺服器帳戶類型
+        - 在自動調整和標準 (手動) 輸送量之間進行選擇
+          [6477] 如何在標準 (手動) 和自動調整佈建輸送量之間進行選擇
+        - 在佈建的輸送量和無伺服器之間選擇
+          [6484] 如何在佈建的輸送量與無伺服器之間進行選擇
+        - 調整佈建輸送量的最佳做法
+          [6486] 調整佈建輸送量 (RU/秒) 的最佳做法
+        - 高載容量 (預覽)
+          - 高載容量概觀
+            [6493] Azure Cosmos DB 的高載容量
+          - 高載容量常見問題
+            [6495] 使用高載容量需要多少費用？
+高載容量如何與自動調整搭配使用？
+什麼資源可以使用高載容量？
+如何監視高載容量？
+      - 使用 Azure Synapse Link 進行分析
+        - 適用於 Azure Cosmos DB 的 Azure Synapse Link
+          [6497] 什麼是適用於 Azure Cosmos DB 的Azure Synapse Link
+        - Azure Synapse Link 支援的功能
+          [6503] 適用於 Azure Cosmos DB 的 AzureSynapse Link 支援的功能
+        - Azure Synapse Link 使用案例
+          [6505] 適用於 Azure Cosmos DB 的 AzureSynapse Link：近乎即時的分析使用案例(機器翻譯)
+        - Azure Synapse Link 常見問題集
+          [6512] 一般常見問題集
+        - 分析存放區 - 概觀
+          [6521] 什麼是 Azure Cosmos DB 分析存放區？
+      - 備份及還原
+        - 備份與還原簡介
+          [6544] 在 Azure Cosmos DB 中進行線上備份及隨選資料還原
+        - 連續備份
+          - 連續備份 - 簡介
+            [6547] Azure Cosmos DB 中具有時間點還原的持續備份
+          - 還原
+            - 還原至新帳戶
+              - 連續備份 - 資源模型
+                [6554] Azure Cosmos DB 時間點還原功能的資源模型
+              - 連續備份 - 常見問題
+                [6565] 還原需要多少時間？
+是否可以提交本機時間表示的還原時間？
+如何追蹤帳戶的還原？
+              - 最新可還原時間戳記
+                [6568] 具有連續備份模式的 Azure Cosmos DB帳戶的最新可還原時間戳記
+              - 使用連續備份稽核還原動作
+                [6571] 以連續備份模式稽核 Azure Cosmos DB的還原時間點動作
+            - 在相同的帳戶中還原
+              - 簡介
+                [6574] 使用連續備份，在相同帳戶中還原已刪除的資料庫或容器
+              - 資源模型
+                [6577] 在 Azure Cosmos DB 的相同帳戶中還原的資源模型
+              - 常見問題集
+                [6579] 是否可以在還原進行時讀取或更新其他資源？
+您可以在帳戶上執行多少相同的帳戶還原動作？
+我可以還原至相同帳戶的資源細微性為何？
+是否可以將特定容器或資料庫多次還原至不同的還原時間戳記？
+        - 定期備份
+          - 簡介
+            [6582] Azure Cosmos DB 中的定期備份和還原
+          - 儲存體備援
+            [6586] Azure Cosmos DB 中的定期備份儲存體備援
+          - 要求資料還原
+            [6588] 從 Azure Cosmos DB 備份要求資料還原
+      - 全域散發
+        - 全球發佈概觀
+          [6592] 使用 Azure Cosmos DB 來全域散發資料
+        - 一致性層級
+          [6595] Azure Cosmos DB 中的一致性層級
+        - 高可用性
+          - 高可用性概觀
+          - 多重區域寫入
+            - 瞭解多區域寫入
+              [6606] 瞭解 Azure Cosmos DB 中的多區域寫入
+            - 衝突解決功能
+              [6608] 使用多個寫入區域時的衝突類型和解決原則
+        - 全域散發 - 運作原理
+          [6610] 透過 Azure Cosmos DB 全域資料散發 -運作原理
+      - 安全性
+        - 安全性概觀
+          [6616] Azure Cosmos DB 虛擬核心中的資料庫安全性概觀
+        - Azure 角色型存取控制
+          [6625] Azure Cosmos DB 中的角色型存取控制
+        - 資料加密
+          [6630] Azure Cosmos DB 中的資料加密
+        - 服務標籤
+          [6634] 虛擬網路服務標籤
+        - Azure 原則支援
+          [6649] 使用 Azure 原則來實作 Azure CosmosDB 資源的治理和控制
+        - Azure 原則的安全性控制
+          [6654] 適用於 Azure Cosmos DB 的 Azure 原則法規合規性控制
+        - 安全性基準
+          [6665] 適用於 Azure Cosmos DB 的安全性基準
+      - 最佳化 Azure Cosmos DB 成本
+        [6678] 最佳化 Azure Cosmos DB 成本
+      - 企業整備
+        - 服務配額
+          [6680] Azure Cosmos DB 服務配額
+        - 自動建議
+          [6693] Azure Cosmos DB 的自動化建議
+        - 法規遵循
+          [6697] Azure Cosmos DB 中的合規性
+        - 資料落地
+          [6699] 如何符合 Azure Cosmos DB 中的資料落地需求
+      - Jupyter 筆記本
+        - 概觀
+          [6701] Azure Cosmos DB 中的 JupyterNotebook (預覽)
+        - 常見問題集
+          [6705] 
+      - 模擬器
+        [6709] 
+      - 網路頻寬
+        [6711] Azure Cosmos DB 網路頻寬
+    - 如何
+      - 開發應用程式
+        - 圖表資料模型
+          [6714] 使用 Azure Cosmos DB for ApacheGremlin 進行圖形資料模型化
+        - 為資料分割圖形資料進行設計
+          [6719] 使用 Azure Cosmos DB 中的資料分割圖表
+        - 建立容器 - API for Apache Gremlin
+          [6722] 在適用於 Gremlin 的 Azure Cosmos DB中建立容器
+        - 配置輸送量 - API for Apache Gremlin
+          [6725] 在適用於 Gremlin 的 Azure Cosmos DB資源上佈建資料庫、容器或自動調整輸送量
+        - 尋找要求單位費用
+          [6728] 尋找在適用於 Gremlin 的 Azure CosmosDB 中執行作業的要求單位費用
+        - 最佳化 Gremlin 查詢
+          [6731] 如何使用執行設定檔步驟來評估您的Gremlin 查詢
+        - 使用區域端點
+          [6740] Azure Cosmos DB 圖形帳戶的區域端點
+        - 存取系統文件內容
+          [6744] 使用 Azure Cosmos DB for ApacheGremlin 存取系統文件屬性
+        - 回應標頭
+          [6746] 適用於 Gremlin 的 Azure Cosmos DB 伺服器回應標頭
+        - 限制
+          [6751] 適用於 Gremlin 的 Azure Cosmos DB 限制
+      - 使用模擬器進行開發
+        [6753] 使用 Azure Cosmos DB 模擬器在本機開發
+      - 使用開發人員工具
+        - 設定配有 Azure Pipelines 的 CI/CD
+          [6759] 使用 Azure Cosmos DB 模擬器組建工作，在 Azure DevOps 中設定 CI/CD 管道
+        - Azure Cosmos DB 總管
+          - 使用總管
+            [6762] 使用 Azure Cosmos DB 總管來管理資料
+          - 鍵盤 shorcuts
+            [6766] Azure Cosmos DB 數據總管快捷方式
+      - 具有 Azure Synapse Link 的 Analytics 和 BI
+        - 設定 Azure Synapse Link
+          [6771] 設定及使用適用於 Azure Cosmos DB 的Azure Synapse Link
+        - 連線到 Azure Synapse Link
+          [6781] 連線至適用於 Azure Cosmos DB 的Azure Synapse Link
+        - 分析存放區和私人端點
+          [6783] 為 Azure Cosmos DB 分析存放區設定Azure Private Link
+        - 使用 Azure Synapse Spark 3 進行查詢
+          [6791] 使用 Azure Synapse Link 中的 ApacheSpark 3 與 Azure Cosmos DB 互動
+        - 使用 Azure Synapse Spark 2 進行查詢
+          [6797] 使用 Azure Synapse Link 中的 ApacheSpark 2 與 Azure Cosmos DB 互動
+        - 使用無伺服器 SQL 集區進行查詢
+          [6804] 
+        - 搭配使用 Power BI 與 Azure Synapse Link
+          [6813] 運用 Synapse Link，使用 Power BI 和無伺服器 Synapse SQL 集區來分析 AzureCosmos DB 資料
+        - 設定自訂資料分割
+          [6818] 設定自訂資料分割以分割分析存放區資料
+      - 備份及還原
+        - 連續備份
+          - 權限和角色 - 連續備份
+            [6822] 
+          - 遷移至連續備份
+            [6826] 將 Azure Cosmos DB 帳戶從定期遷移至連續備份模式
+          - 還原
+            - 還原至不同帳戶
+              [6836] 將使用連續備份模式的 Azure Cosmos DB帳戶還原
+            - 在相同的帳戶中還原
+              [6861] 將已刪除的容器或資料庫還原至相同的Azure Cosmos DB 帳戶
+            - 取得最新可還原時間戳記
+              [6865] 取得連續備份帳戶的最新可還原時間戳記
+        - 定期備份
+          - 更新儲存體備援
+            [6880] 更新 Azure Cosmos DB 定期備份儲存體備援
+          - 修改間隔保留期
+            [6883] 在 Azure Cosmos DB 帳戶修改定期備份的間隔與保留期間
+      - 安全性
+        - 設定 IP 防火牆
+          [6886] 在 Azure Cosmos DB 中設定 IP 防火牆
+        - 從虛擬網路設定
+          [6898] 設定從虛擬網路 (VNet) 存取 AzureCosmos DB
+        - 設定來自私人端點的存取
+          [6910] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+        - 私下連線至 Azure Cosmos DB 帳戶
+          [6930] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+        - 在 Azure Key Vault 中儲存認證
+          [6950] 教學課程：透過 Azure Key Vault 儲存和使用 Azure Cosmos DB 認證
+        - 使用受控識別存取 Azure Key Vault
+          [6961] 使用受控識別從 Azure Cosmos DB 存取Azure Key Vault
+        - 限制使用者只能存取資料作業
+          [6964] 以 Azure Cosmos DB 限制使用者對資料作業的存取
+        - 設定客戶管理的金鑰
+          [6967] 使用 Azure Key Vault，為 Azure CosmosDB 帳戶設定客戶自控金鑰
+        - 設定跨租用戶的客戶自控金鑰
+          [6983] 使用 Azure Key Vault 為 Azure CosmosDB 帳戶設定跨租用戶客戶自控金鑰
+        - 搭配使用受控識別與 Azure 服務
+          [6996] 使用 Microsoft Entra ID 為您的 AzureCosmos DB 帳戶設定受控識別
+      - 管理 Azure Cosmos DB 資源
+        - 管理 Azure Cosmos DB 帳戶
+        - 使用 Powershell 進行管理
+          [7004] Azure Cosmos DB for Gremlin 的 AzurePowerShell 範例
+        - 使用 Azure CLI 管理
+          [7006] 適用於 Azure Cosmos DB for Gremlin 的Azure CLI 範例
+        - 在區域間移動
+          [7008] 將 Azure Cosmos DB 帳戶移至另一個區域
+        - 防止變更或刪除
+          [7011] 使用鎖定來保護 Azure Cosmos DB 資源
+        - 申請加大配額
+          [7014] 如何要求增加 Azure Cosmos DB 資源的配額
+      - 監視器
+        - 監視器
+          [7016] 監視 Azure Cosmos DB
+        - 使用 Azure 監視器計量
+          - 適用於 Azure Cosmos DB 的 Azure 監視器
+            [7026] 探索 Azure Monitor Azure Cosmos DB深入解析
+          - 要監視的案例
+            [7035] 使用 Azure Cosmos DB 的深入解析監視和偵錯
+          - 監視伺服器端延遲
+            [7042] 如何監視 Azure Cosmos DB 容器或帳戶中作業的伺服器端延遲
+          - 監視要求單位使用量
+            [7046] 如何在 Azure Cosmos DB 中監視作業的輸送量或要求單位使用量
+          - 監視金鑰更新
+            [7050] 監視您的 Azure Cosmos DB 帳戶是否有更新金鑰和金鑰重新產生
+          - 監視正規化要求單位使用量
+            [7055] 如何監視 Azure Cosmos DB 容器或帳戶的標準化 RU/秒
+        - 使用 Azure 監視器記錄
+          - 使用診斷記錄進行監視
+            [7063] 
+          - 針對基本查詢的使用問題進行疑難排解
+            [7068] 診斷查詢相關問題的疑難排解
+          - 稽核控制平面記錄
+            [7075] 如何稽核 Azure Cosmos DB 控制平面作業
+          - 使用進階診斷查詢對問題進行疑難排解
+            [7084] 針對 Azure Cosmos DB for ApacheGremlin 的進階診斷查詢問題進行疑難排解
+          - 新增工作區資料的轉換
+            [7087] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+        - 設定警示
+          - 建立計量警示
+            [7093] 使用 Azure 監視器建立 Azure CosmosDB 的警示
+          - 建立邏輯分割區索引鍵大小的警示
+            [7098] 建立警示，以便監視邏輯分割區索引鍵的儲存體是否接近 20 GB
+        - 監視資料參考
+          [7105] 
+        - 合作夥伴監視解決方案
+          [7129] 使用協力廠商解決方案監視 AzureCosmos DB
+      - 將資料移轉至 API for Apache Gremlin
+        - 使用圖表大量執行工具匯入
+          [7132] 使用大量執行工具程式庫在 AzureCosmos DB for Gremlin 中內嵌資料
+      - Gremlin 合作夥伴解決方案
+        - 視覺效果解決方案
+          [7139] 使用資料視覺效果解決方案將儲存在Azure Cosmos DB for Gremlin 中的圖形資料視覺化
+        - 模型化解決方案
+          [7150] 適用於 Azure Cosmos DB 圖形資料的協力廠商資料模型化工具
+        - 供應鏈追蹤性解決方案
+          [7153] 使用 Azure Cosmos DB for Gremlin 的供應鏈追蹤解決方案
+    - 參考
+      - 回應標頭
+        [7158] 適用於 Gremlin 的 Azure Cosmos DB 伺服器回應標頭
+      - PowerShell
+        [7163] Az.CosmosDB
+      - REST 資源提供者
+        [7175] Gremlin Resources
+      - Resource Manager 範本
+        [7177] Microsoft.DocumentDB (Cosmos DB) 資源類型
+      - Azure CLI
+        [7203] Database for Cosmos DB
+      - 模擬器
+        - 版本資訊
+          [7204] Azure Cosmos DB Windows (本機) 模擬器的發行備註
+        - Windows 命令列引數
+          [7210] 
+    - 資源
+      - 透過 Microsoft Learn 訓練增進您的技巧
+      - 常見問題集
+        [7219] 一般
+      - 白皮書
+        [7225] Azure Cosmos DB 概念白皮書
+      - 合作夥伴
+        [7226] Azure Cosmos DB NoSQL 移轉和應用程式開發合作夥伴
+      - Microsoft 問題與解答
+      - 影片
+      - Azure 藍圖
+      - 免費試用 Azure Cosmos DB
+      - 定價
+      - 使用案例
+        - 常見使用案例
+          [7229] 一般 Azure Cosmos DB 使用案例
+        - 社交媒體應用程式
+          [7236] 使用 Azure Cosmos DB 跨足社交
+  - Table
+    - 資料表文件
+      [7246] Azure Cosmos DB for Table 文件
+    - 概觀
+      - 什麼是 Azure Cosmos DB for Gremlin？
+        [7247] 什麼是 Azure Cosmos DB for Table？
+      - 常見問題集
+        [7249] 比較 Azure Cosmos DB for Table 和Azure 表格儲存體
+    - 快速入門
+      - .NET
+        [7261] 快速入門：適用於 .NET 的 Azure CosmosDB for Table
+      - Java
+        [7269] 快速入門：使用 Java SDK 與 AzureCosmos DB 建置資料表 API 應用程式
+      - Node.js
+        [7288] 快速入門：使用 Node.js 與 AzureCosmos DB 建置資料表 API 應用程式
+      - Python
+        [7299] 快速入門：使用 Python SDK 與 AzureCosmos DB 建置 API for Table 應用程式
+    - 教學課程
+      - 查詢資料
+        [7312] 教學課程：使用資料表 API 查詢 AzureCosmos DB
+      - 全域散發資料
+        [7315] 使用適用於資料表的 API 來設定 AzureCosmos DB 全域散發
+      - 建立 Jupyter Notebook
+        [7318] 教學課程：在 Azure Cosmos DB forNoSQL 中建立 Jupyter 筆記本，以分析資料並將資料視覺化 (預覽)
+      - Kusto 查詢語言 (KQL) 轉換
+        [7325] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+    - 範例
+      - .NET
+        [7331] 適用於 .NET 的 Azure Cosmos DB forTable SDK 範例
+      - Java
+        [7333] 如何使用適用於 Java 的 Azure 資料表用戶端連結庫
+      - Node.js
+        [7347] 如何使用 Azure 資料表記憶體或 AzureCosmos DB for Table from Node.js
+      - Python
+        [7357] 快速入門：使用 Python SDK 與 AzureCosmos DB 建置 API for Table 應用程式
+      - Go
+        [7370] 如何搭配使用 Azure SDK for Go 與 Azure資料表
+      - C++
+        [7379] 如何搭配 C++ 使用 Azure 資料表記憶體和適用於資料表的 Azure Cosmos DB
+      - F#
+        [7394] 以 F# 開始使用 Azure 資料表儲存體和Azure Cosmos DB 資料表 API
+      - Azure CLI
+        - 概觀
+          [7402] 適用於 Azure Cosmos DB for Table 的Azure CLI 範例
+        - 建立帳戶和資料表
+          [7404] 使用 Azure CLI 建立 Azure Cosmos DB資料表 API 帳戶和資料表
+        - 建立無伺服器
+          [7407] 使用 Azure CLI 建立適用於無伺服器數據表帳戶和數據表的 Azure Cosmos DB
+        - 使用自動調整建立
+          [7410] 使用 Azure CLI 建立具有自動調整功能的Azure Cosmos DB for Table 帳戶和資料表
+        - 執行輸送量作業
+          [7413] 使用 Azure CLI 針對 Azure Cosmos DBfor Table 的資料表執行輸送量 (RU/秒) 作業
+        - 鎖定資源避免刪除
+          [7417] 針對數據表數據表使用 Azure Cosmos DB上的資源鎖定作業使用 Azure CLI
+        - 新增或容錯移轉區域
+          [7420] 使用 Azure CLI 針對 Azure Cosmos DB帳戶新增區域、變更容錯移轉優先順序、觸發容錯移轉
+        - 執行帳戶金鑰作業
+          [7424] 透過 Azure CLI 使用 Azure Cosmos DB帳戶的帳戶金鑰和連接字串
+        - 使用 IP 防火牆保護安全
+          [7428] 使用 Azure CLI 建立具有 IP 防火牆的Azure Cosmos DB 帳戶
+        - 使用服務端點保護新的帳戶
+          [7431] 使用 Azure CLI 建立具有虛擬網路服務端點的 Azure Cosmos DB 帳戶
+        - 使用服務端點保護現有帳戶
+          [7435] 使用 Azure CLI 連線現有 Azure CosmosDB 帳戶與虛擬網路服務端點
+        - 尋找現有的免費層帳戶
+          [7439] 使用 Azure CLI 在訂用帳戶中尋找現有的Azure Cosmos DB 免費層帳戶
+      - Azure PowerShell
+        - 概觀
+          [7442] 適用于資料表的 Azure Cosmos DB AzurePowerShell範例
+        - 建立帳戶和資料表
+          [7444] 建立 Azure Cosmos DB for Table API 的資料表
+        - 使用自動調整建立
+          [7447] 建立具有 Azure Cosmos DB 自動調整的資料表 - 適用於資料表的 API
+        - 執行輸送量作業
+          [7449] 使用 PowerShell 對 Azure Cosmos DB -API for Table 的資料表執行輸送量 (RU/秒) 作業
+        - 鎖定資源避免刪除
+          [7453] 使用 Azure PowerShell 建立 AzureCosmos DB Table API 資料表的資源鎖定
+        - 列出和取得資料表
+          [7456] 列出及取得 Azure Cosmos DB 資料表 -API for Table
+        - 帳戶金鑰或連接字串
+          [7458] 使用 PowerShell 的 Azure Cosmos DB 帳戶連接字串和帳戶金鑰作業
+        - 變更容錯移轉優先順序或觸發容錯移轉
+          [7460] 使用 PowerShell 對具有單一寫入區域的Azure Cosmos DB 帳戶變更容錯移轉優先順序或觸發容錯移轉
+        - 建立具有 IP 防火牆的帳戶
+          [7463] 建立具有 IP 防火牆的 Azure Cosmos DB帳戶
+        - 更新帳戶
+          [7466] 使用 PowerShell 更新 Azure Cosmos DB帳戶的一致性層級
+        - 更新帳戶的區域
+          [7469] 使用 PowerShell 更新 Azure Cosmos DB帳戶的區域
+      - 範本
+        - JSON 語法範本
+          [7472] 使用 Azure Resource Manager 範本管理數據表資源的 Azure Cosmos DB
+        - Bicep 語法範本
+          [7480] 使用 Bicep 管理 Azure Cosmos DB forTable 資源
+      - Azure Resource Graph 查詢
+        [7486] Azure Cosmos DB 的 Azure ResourceGraph 查詢範例
+    - 概念
+      - Azure Cosmos DB 資源模型
+        [7488] Azure Cosmos DB 中的資料庫、容器和專案
+      - 資料分割
+        - 資料分割概觀
+          [7497] Azure Cosmos DB 中的資料分割和水平調整
+      - 輸送量 (RU/秒)
+        - 要求單位
+          [7503] Azure Cosmos DB 中的要求單位
+        - 免費層
+          [7506] Azure Cosmos DB 存留期免費層
+        - 限制帳戶總輸送量
+        - 佈建的輸送量
+          [7510] Azure Cosmos DB 中的佈建輸送量簡介
+        - 自動調整輸送量
+          - 自動調整簡介
+            [7518] 使用自動調整輸送量來建立 AzureCosmos DB 容器和資料庫
+          - 按分割區/區域自動調整
+            [7522] 個別區域與個別分割區自動調整 (預覽)
+          - 自動調整常見問題集
+            [7525] Azure Cosmos DB 中的自動調整和自動試驗之間有何差異？
+在先前的自動試驗階層模型中建立的資料庫或容器會發生什麼事？
+自動調整的進入點 RU/秒為何？
+        - 無伺服器
+          [7533] Azure Cosmos DB 無伺服器帳戶類型
+        - 在自動調整和標準 (手動) 輸送量之間進行選擇
+          [7536] 如何在標準 (手動) 和自動調整佈建輸送量之間進行選擇
+        - 在佈建的輸送量和無伺服器之間選擇
+          [7543] 如何在佈建的輸送量與無伺服器之間進行選擇
+        - 調整佈建輸送量的最佳做法
+          [7545] 調整佈建輸送量 (RU/秒) 的最佳做法
+        - 高載容量 (預覽)
+          - 高載容量概觀
+            [7552] Azure Cosmos DB 的高載容量
+          - 高載容量常見問題
+            [7554] 使用高載容量需要多少費用？
+高載容量如何與自動調整搭配使用？
+什麼資源可以使用高載容量？
+如何監視高載容量？
+      - 備份及還原
+        - 備份與還原簡介
+          [7556] 在 Azure Cosmos DB 中進行線上備份及隨選資料還原
+        - 連續備份
+          - 連續備份 - 簡介
+            [7559] Azure Cosmos DB 中具有時間點還原的持續備份
+          - 還原
+            - 還原至新帳戶
+              - 連續備份 - 資源模型
+                [7566] Azure Cosmos DB 時間點還原功能的資源模型
+              - 連續備份 - 常見問題
+                [7577] 還原需要多少時間？
+是否可以提交本機時間表示的還原時間？
+如何追蹤帳戶的還原？
+              - 最新可還原時間戳記
+                [7580] 具有連續備份模式的 Azure Cosmos DB帳戶的最新可還原時間戳記
+              - 使用連續備份稽核還原動作
+                [7583] 以連續備份模式稽核 Azure Cosmos DB的還原時間點動作
+            - 在相同的帳戶中還原
+              - 簡介
+                [7586] 使用連續備份，在相同帳戶中還原已刪除的資料庫或容器
+              - 資源模型
+                [7589] 在 Azure Cosmos DB 的相同帳戶中還原的資源模型
+              - 常見問題集
+                [7591] 是否可以在還原進行時讀取或更新其他資源？
+您可以在帳戶上執行多少相同的帳戶還原動作？
+我可以還原至相同帳戶的資源細微性為何？
+是否可以將特定容器或資料庫多次還原至不同的還原時間戳記？
+        - 定期備份
+          - 簡介
+            [7594] Azure Cosmos DB 中的定期備份和還原
+          - 儲存體備援
+            [7598] Azure Cosmos DB 中的定期備份儲存體備援
+          - 要求資料還原
+            [7600] 從 Azure Cosmos DB 備份要求資料還原
+      - 全域散發
+        - 全球發佈概觀
+          [7604] 使用 Azure Cosmos DB 來全域散發資料
+        - 一致性層級
+          [7607] Azure Cosmos DB 中的一致性層級
+        - 高可用性
+          - 高可用性概觀
+          - 多重區域寫入
+            - 瞭解多區域寫入
+              [7618] 瞭解 Azure Cosmos DB 中的多區域寫入
+            - 衝突解決功能
+              [7620] 使用多個寫入區域時的衝突類型和解決原則
+        - 全域散發 - 運作原理
+          [7622] 透過 Azure Cosmos DB 全域資料散發 -運作原理
+      - 安全性
+        - 安全性概觀
+          [7628] Azure Cosmos DB 虛擬核心中的資料庫安全性概觀
+        - Azure 角色型存取控制
+          [7637] Azure Cosmos DB 中的角色型存取控制
+        - 資料加密
+          [7642] Azure Cosmos DB 中的資料加密
+        - 服務標籤
+          [7646] 虛擬網路服務標籤
+        - Azure 原則支援
+          [7661] 使用 Azure 原則來實作 Azure CosmosDB 資源的治理和控制
+        - Azure 原則的安全性控制
+          [7666] 適用於 Azure Cosmos DB 的 Azure 原則法規合規性控制
+        - 安全性基準
+          [7677] 適用於 Azure Cosmos DB 的安全性基準
+      - 最佳化 Azure Cosmos DB 成本
+        [7690] 最佳化 Azure Cosmos DB 成本
+      - 企業整備
+        - 服務配額
+          [7692] Azure Cosmos DB 服務配額
+        - 自動建議
+          [7705] Azure Cosmos DB 的自動化建議
+        - 法規遵循
+          [7709] Azure Cosmos DB 中的合規性
+        - 資料落地
+          [7711] 如何符合 Azure Cosmos DB 中的資料落地需求
+      - Jupyter 筆記本
+        - 概觀
+          [7713] Azure Cosmos DB 中的 JupyterNotebook (預覽)
+        - 常見問題集
+          [7717] 
+      - 模擬器
+        [7721] 
+      - 網路頻寬
+        [7723] Azure Cosmos DB 網路頻寬
+    - 如何
+      - 開發應用程式
+        - .NET
+          - 開始使用
+            [7726] 開始使用 Azure Cosmos DB for Table 搭配 .NET
+          - 使用表格
+            - 建立表格
+              [7731] 使用 .NET 在 Azure Cosmos DB for Table中建立資料表
+          - 使用項目
+            - 建立項目
+              [7733] 使用 .NET 在 Azure Cosmos DB for Table中建立項目
+            - 讀取項目
+              [7736] 使用 .NET 在 Azure Cosmos DB for Table中讀取項目
+        - 使用 API for Table 建置應用程式
+          [7739] 使用 Azure Cosmos DB for Table 和Azure 資料表儲存體進行開發
+        - 建立資料表 - API for Table
+          [7742] 在 Azure Cosmos DB for Table 中建立容器
+        - 尋找要求單位費用
+          [7744] 尋找在 Azure Cosmos DB for Table 中執行作業的要求單位費用
+      - 使用模擬器進行開發
+        [7746] 使用 Azure Cosmos DB 模擬器在本機開發
+      - 使用開發人員工具
+        - 設定配有 Azure Pipelines 的 CI/CD
+          [7752] 使用 Azure Cosmos DB 模擬器組建工作，在 Azure DevOps 中設定 CI/CD 管道
+        - Azure Cosmos DB 總管
+          - 使用總管
+            [7755] 使用 Azure Cosmos DB 總管來管理資料
+          - 鍵盤 shorcuts
+            [7759] Azure Cosmos DB 數據總管快捷方式
+      - 移轉資料
+        - 桌面資料移轉工具
+          [7764] 使用桌面資料移轉工具將資料遷移至Azure Cosmos DB
+      - 管理 Azure Cosmos DB 資源
+        - 管理 Azure Cosmos DB 帳戶
+        - 使用 Powershell 進行管理
+          [7769] 適用于資料表的 Azure Cosmos DB AzurePowerShell範例
+        - 使用 Azure CLI 管理
+          [7771] 適用於 Azure Cosmos DB for Table 的Azure CLI 範例
+        - 使用 Bicep 進行管理
+          [7773] 使用 Bicep 管理 Azure Cosmos DB forTable 資源
+        - 使用 Resource Manager 範本進行管理
+          [7779] 使用 Azure Resource Manager 範本管理數據表資源的 Azure Cosmos DB
+        - 在區域間移動
+          [7787] 將 Azure Cosmos DB 帳戶移至另一個區域
+        - 防止變更或刪除
+          [7790] 使用鎖定來保護 Azure Cosmos DB 資源
+        - 申請加大配額
+          [7793] 如何要求增加 Azure Cosmos DB 資源的配額
+      - 備份及還原
+        - 管理連續備份
+          - 權限和角色 - 連續備份
+            [7795] 
+          - 遷移至連續備份
+            [7799] 將 Azure Cosmos DB 帳戶從定期遷移至連續備份模式
+          - 還原
+            - 還原至不同帳戶
+              [7809] 將使用連續備份模式的 Azure Cosmos DB帳戶還原
+            - 在相同的帳戶中還原
+              [7834] 將已刪除的容器或資料庫還原至相同的Azure Cosmos DB 帳戶
+            - 取得最新可還原時間戳記
+              [7838] 取得連續備份帳戶的最新可還原時間戳記
+        - 定期備份
+          - 更新儲存體備援
+            [7853] 更新 Azure Cosmos DB 定期備份儲存體備援
+          - 修改間隔保留期
+            [7856] 在 Azure Cosmos DB 帳戶修改定期備份的間隔與保留期間
+      - 安全性
+        - 設定 IP 防火牆
+          [7859] 在 Azure Cosmos DB 中設定 IP 防火牆
+        - 從虛擬網路設定
+          [7871] 設定從虛擬網路 (VNet) 存取 AzureCosmos DB
+        - 設定來自私人端點的存取
+          [7883] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+        - 私下連線至 Azure Cosmos DB 帳戶
+          [7903] 設定 Azure Cosmos DB 帳戶的 AzurePrivate Link
+        - 在 Azure Key Vault 中儲存認證
+          [7923] 教學課程：透過 Azure Key Vault 儲存和使用 Azure Cosmos DB 認證
+        - 使用受控識別存取 Azure Key Vault
+          [7934] 使用受控識別從 Azure Cosmos DB 存取Azure Key Vault
+        - 限制使用者只能存取資料作業
+          [7937] 以 Azure Cosmos DB 限制使用者對資料作業的存取
+        - 設定客戶管理的金鑰
+          [7940] 使用 Azure Key Vault，為 Azure CosmosDB 帳戶設定客戶自控金鑰
+        - 設定跨租用戶的客戶自控金鑰
+          [7956] 使用 Azure Key Vault 為 Azure CosmosDB 帳戶設定跨租用戶客戶自控金鑰
+        - 搭配使用受控識別與 Azure 服務
+          [7969] 使用 Microsoft Entra ID 為您的 AzureCosmos DB 帳戶設定受控識別
+      - 企業整備
+        - 申請加大配額
+          [7977] 如何要求增加 Azure Cosmos DB 資源的配額
+        - 存取預覽功能
+          [7979] 存取 Azure Cosmos DB 預覽功能
+      - 監視器
+        - 監視器
+          [7981] 監視 Azure Cosmos DB
+        - 使用 Azure 監視器計量
+          - 適用於 Azure Cosmos DB 的 Azure 監視器
+            [7991] 探索 Azure Monitor Azure Cosmos DB深入解析
+          - 要監視的案例
+            [8000] 使用 Azure Cosmos DB 的深入解析監視和偵錯
+          - 監視伺服器端延遲
+            [8007] 如何監視 Azure Cosmos DB 容器或帳戶中作業的伺服器端延遲
+          - 監視要求單位使用量
+            [8011] 如何在 Azure Cosmos DB 中監視作業的輸送量或要求單位使用量
+          - 監視金鑰更新
+            [8015] 監視您的 Azure Cosmos DB 帳戶是否有更新金鑰和金鑰重新產生
+          - 監視正規化要求單位使用量
+            [8020] 如何監視 Azure Cosmos DB 容器或帳戶的標準化 RU/秒
+        - 使用 Azure 監視器記錄
+          - 使用診斷記錄進行監視
+            [8028] 
+          - 針對基本查詢的使用問題進行疑難排解
+            [8033] 診斷查詢相關問題的疑難排解
+          - 稽核控制平面記錄
+            [8040] 如何稽核 Azure Cosmos DB 控制平面作業
+          - 新增工作區資料的轉換
+            [8049] 教學課程：使用 Azure 入口網站新增Azure Cosmos DB 工作區資料的轉換
+        - 設定警示
+          - 建立計量警示
+            [8055] 使用 Azure 監視器建立 Azure CosmosDB 的警示
+          - 建立邏輯分割區索引鍵大小的警示
+            [8060] 建立警示，以便監視邏輯分割區索引鍵的儲存體是否接近 20 GB
+        - 監視資料參考
+          [8067] 
+        - 合作夥伴監視解決方案
+          [8091] 使用協力廠商解決方案監視 AzureCosmos DB
+    - 參考
+      - .NET
+        [8094] Azure Tables client library for .NET -version 12.8.3
+      - Java
+        [8102] Azure Tables client library for Java -version 12.4.0
+      - Node.js
+        [8114] 適用于 JavaScript 的 Azure 資料表用戶端程式庫 - 13.2.2 版
+      - Python
+        [8127] tables 套件
+      - PowerShell
+        [8133] Az.CosmosDB
+      - 表格儲存體 REST API
+        [8145] 資料表儲存體 REST API
+      - Azure CLI
+        [8147] Database for Cosmos DB
+      - 模擬器
+        - 版本資訊
+          [8148] Azure Cosmos DB Windows (本機) 模擬器的發行備註
+        - Windows 命令列引數
+          [8154] 
+    - 資源
+      - 透過 Microsoft Learn 訓練增進您的技巧
+      - 常見問題集
+        [8163] 一般
+      - 白皮書
+        [8169] Azure Cosmos DB 概念白皮書
+      - 合作夥伴
+        [8170] Azure Cosmos DB NoSQL 移轉和應用程式開發合作夥伴
+      - Microsoft 問題與解答
+      - 影片
+      - Azure 藍圖
+      - 免費試用 Azure Cosmos DB
+      - 定價
+      - 使用案例
+        - 常見使用案例
+          [8173] 一般 Azure Cosmos DB 使用案例
+        - 社交媒體應用程式
+          [8180] 使用 Azure Cosmos DB 跨足社交

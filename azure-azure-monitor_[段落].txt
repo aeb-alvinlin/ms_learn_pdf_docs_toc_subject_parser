@@ -1,0 +1,1318 @@
+- ---< azure-azure-monitor.pdf >---
+  - Azure 監視器文件
+    [1] Azure 監視器文件
+  - 概觀
+    - Azure 監視器概觀
+      [4] Azure 監視器概觀
+    - 深入解析和策展的視覺效果
+      [18] Azure 監視器深入解析概觀
+    - 多重雲端監視
+      [22] 使用 Azure 監視器進行多重雲端監視
+    - AIOps 和機器學習
+      [25] 在 Azure 監視器中使用 AIOps 和機器學習偵測並減輕潛在問題
+    - 新功能
+      [31] Azure 監視器文件的最新動向
+  - 開始使用
+    - 開始使用 Azure 監視器
+      [38] 開始使用 Azure 監視器
+    - 計劃您的實作
+      [40] 計畫 Azure 監視器實作
+    - 設定資料收集
+      [43] Azure 監視器最佳做法：設定資料收集
+    - 了解分析和視覺效果工具
+      [49] 分析及視覺化監視資料
+    - 規劃警示和自動化動作
+      [55] 規劃警示和自動化動作
+    - 最佳化成本
+      [57] Azure 監視器中的成本最佳化
+  - 監視情境
+    - 監視 Azure 資源
+      - 使用 Azure 監視器來監視 Azure 資源
+        [65] 使用 Azure 監視器來監視 Azure 資源
+      - 分析計量資料
+        [71] 分析 Azure 資源的計量
+      - 收集和檢視資源記錄
+        [76] 從 Azure 資源收集資源記錄並加以分析
+      - 使用活動記錄深入解析監視資源
+        [81] 使用 Azure 監視器活動記錄深入解析監視資源和資源群組的變更
+      - 建立警示
+        [85] 建立 Azure 資源的警示規則
+    - 使用 Application Insights 監視應用程式
+      - Application Insights 概觀
+        [87] Application Insights 概觀
+      - 啟用 Application Insights
+        - 資料收集基本概念
+          [95] Azure 監視器 Application Insights 的資料收集基本概念
+        - 自動檢測
+          - 自動檢測支援的案例
+            [100] 什麼是 Azure 監視器 ApplicationInsights 的自動結構？
+          - Azure 虛擬機器和虛擬機器擴展集
+            [103] 適用於 Azure VM 和虛擬機擴展集的Application Insights
+          - Azure App Service
+            - 概觀
+              [110] 應用程式監視 Azure App 服務 概觀
+            - ASP.NET Core
+              [116] 
+            - ASP.NET
+              [129] 
+            - Java
+              [143] Azure App 服務和 Java 的應用程式監視
+            - Node.js
+              [155] Azure App 服務和Node.js的應用程式監視
+            - Python
+              [167] Azure App 服務 和 Python 的應用程式監視 （預覽）
+          - Azure Functions
+            [180] 使用 Azure 監視器 Application Insights監視 Azure Functions
+          - Azure Kubernetes Service
+            [186] Kubernetes 的零檢測設備應用程式監視 -Azure Monitor Application Insights
+          - ASP.NET 內部部署代理程式
+            [188] 為內部部署伺服器部署 Azure 監視器Application Insights 代理程式
+        - OpenTelemetry 發行版本
+          - 開始使用 OpenTelemetry (.NET、Node.js、Python 和 Java)
+            [193] 啟用適用於 .NET、Node.js、Python 和Java 應用程式的 Azure 監視器OpenTelemetry (部分機器翻譯)
+          - 設定 OpenTelemetry
+            [203] 設定 Azure 監視器 OpenTelemetry
+          - 新增和修改 OpenTelemetry
+            [216] 新增、修改和篩選 OpenTelemetry
+          - Java (補充)
+            - Spring Boot
+              [237] 使用 Azure Monitor Application Insights搭配 Spring Boot
+            - 分析工具
+              [241] 適用於 Azure 監視器 ApplicationInsights 的 Java Profiler
+            - 開始使用 (補充)
+              [251] 開始使用 (補充)
+            - 組態
+              - 一般
+                [258] 設定選項：適用於 Java 的 Azure 監視器Application Insights
+              - JMX 計量
+                [281] 設定 JMX 計量
+              - 取樣覆寫
+                [284] 取樣覆寫 - 適用於 Java 的 Azure 監視器Application Insights
+              - 遙測處理器
+                - 概觀
+                  [289] 遙測處理器 （預覽） - 適用於 Java 的Azure 監視器 Application Insights
+                - 範例
+                  [307] 遙測處理器範例 - 適用於 Java 的 Azure監視器 Application Insights
+            - 從 2.x 升級
+              [322] 從 Application Insights Java 2.x SDK 升級
+          - Node.js（補充）
+            - 從 SDK 2.X 升級
+              [327] 從 Node.js Application Insights SDK 2.X移轉至 Azure 監視器 OpenTelemetry
+          - Python (補充)
+            - 從 Opencensus 移轉
+              [330] 從 OpenCensus Python SDK 和適用於Python 的 Azure 監視器 OpenCensus 匯出工具移轉至 Azure 監視器OpenTelemetry Python 發行版本
+          - 常見問題集
+            [339] 
+        - 用戶端 JavaScript SDK
+          - 開始使用 JavaScript SDK
+            [345] 啟用 Azure 監視器 Application Insights實際使用者監視
+          - 設定 JavaScript SDK
+            [355] Microsoft Azure 監視器 ApplicationInsights JavaScript SDK 設定
+          - 啟用 React、React Native、Angular
+            [376] 啟用 Application Insights JavaScript SDK的架構延伸模組
+          - 啟用 Click Analytics
+            [386] 啟用 Click Analytics 自動收集外掛程式
+          - 升級
+            [404] 從舊版 Application Insights JavaScriptSDK 升級
+          - 疑難排解
+            [406] Application Insights JavaScript SDK 疑難解答
+        - Application Insights SDK (傳統 API)
+          - .NET
+            - ASP.NET Core 應用程式監視
+              [416] 
+            - ILogger
+              [431] 透過 .NET 使用 Application Insights 記錄功能
+            - ASP.NET 應用程式監視
+              [438] 設定 ASP.NET 網站的 Application
+Insights
+            - 非 HTTP、主控台和背景應用程式
+              [453] 適用於背景工作服務 (非 HTTP 應用程式)的 Application Insights 應用程式
+            - 進階 ASP.NET SDK 主題
+              - GetMetric
+                [471] .NET 和 .NET Core 中的自訂計量集合
+              - EventCounters
+                [482] EventCounter 簡介
+              - ApplicationInsights.config
+                [488] 使用 ApplicationInsights.config 或 .xml設定 Application Insights SDK
+              - TelemetryChannels
+                [498] Application Insights 中的遙測通道
+              - 在 .NET SDK 之中追蹤自訂作業
+                [505] 使用 Application Insights .NET SDK 追蹤自訂作業
+              - 效能計數器
+                [517] Application Insights 中的系統效能計數器
+              - 例外狀況
+                [525] 使用 Application Insights 診斷 Web 應用程式中的例外狀況
+              - ASP.NET 相依性
+                [541] Application Insights 中的相依性追蹤
+          - Node.js
+            [552] 使用 Application Insights 監視 Node.js服務和應用程式
+          - Python OpenCensus (已被取代)
+          - 進階 SDK 主題
+            - 連接字串
+              [566] 連接字串
+            - 取樣
+              [572] Application Insights 中的取樣
+            - Application Insights API 摘要
+              [591] 自訂事件和計量的 Application InsightsAPI
+            - 記錄追蹤
+              [623] 在 Application Insights 中探索.NET/.NET Core 和 Python 追蹤記錄
+            - TelemetryProcessors
+              [631] 在 Application Insights SDK 中篩選及前置處理遙測
+            - 分散式追蹤和遙測相互關聯
+              [646] 什麼是分散式追蹤和遙測相互關聯？
+            - 記錄檔型與預先彙總的計量
+              [659] Application Insights 中記錄型和預先彙總的計量
+            - IP 位址集合
+              [665] 地理位置和 IP 位址處理
+          - SDK 支援原則
+            [673] Application Insights SDK 支援指導
+        - 建立資源
+          [675] 工作區型 Application Insights 資源
+        - 從傳統資源和 iKey 升級
+          - 移轉至工作區型資源
+            [687] 移轉至工作區型 Application Insights 資源
+          - 移轉至連接字串
+            [719] 從 Application Insights 檢測金鑰移轉至連接字串
+      - 體驗
+        - 應用程式儀表板
+          [723] Application Insights 概觀儀表板
+        - 應用程式對應
+          [732] 應用程式對應：分級分散式應用程式
+        - 失敗與效能檢視
+          [753] 失敗與效能檢視
+        - 可用性
+          - 概觀
+            [755] Application Insights 可用性測試
+          - 標準測試
+            [758] 標準測試
+          - 在防火牆後方進行測試
+            [766] 在防火牆後方進行測試
+          - TrackAvailability()
+            [771] 檢閱 TrackAvailability（） 測試結果
+          - 可用性警示
+            [779] 可用性警示
+          - SLA 報告
+            [784] 停機時間、SLA 和中斷活頁簿
+          - 從 URL Ping 測試移轉
+            [789] 移轉可用性測試
+        - 即時計量串流
+          [792] 即時計量：延遲一秒的監視和診斷
+        - 使用量 (使用者行為分析)
+          - 概觀
+            [806] 使用 Application Insights 進行使用量分析
+          - 使用者、工作階段、事件
+            [813] Application Insights 中的使用者、工作階段與事件分析
+          - 漏斗圖
+            [816] 使用 Application Insights 漏斗圖來探索客戶如何使用您的應用程式
+          - Cohorts
+            [818] Application Insights 世代
+          - 影響
+            [823] 使用 Application Insights 進行影響分析
+          - 保留期
+            [828] 使用 Application Insights 進行 Web 應用程式的使用者保留期分析
+          - 使用者流程
+            [831] 在 Application Insights 中使用使用者流程分析使用者瀏覽模式
+          - HEART 架構
+            [836] 使用 HEART 分析產品使用量
+        - 發行版本和工作項目深入解析
+          [846] 發行版本和工作項目深入解析
+        - 交易搜尋和診斷
+          [851] 交易搜尋和診斷
+      - 程式碼分析
+        - 分析工具
+          - 概觀
+            [859] 使用 Application Insights Profiler 來分析Azure 中的生產應用程式
+          - 啟用分析工具
+            - Azure App Service
+              [861] 
+            - Azure 函數應用程式
+              [868] 使用 Application Insights 來分析即時Azure Functions 應用程式
+            - Azure 雲端服務
+              [872] 針對 Azure 雲端服務啟用 Profiler
+            - Azure Service Fabric 應用程式
+              [875] 針對 Azure Service Fabric 應用程式啟用Profiler
+            - Azure 虛擬機器
+              [878] 為 Azure 虛擬機器上的 Web 應用程式啟用 Profiler
+            - 在 Linux 上的 App Service 中裝載的 ASP.NET Core 應用程式
+              [882] 針對在 Linux 中裝載的 ASP.NET Core
+Web 應用程式啟用 Profiler
+            - 容器中執行的 ASP.NET Core 應用程式
+              [889] 使用 Application Insights 來分析即時Azure 容器
+          - 檢視 Profiler 資料
+            [895] 檢視 Application Insights Profiler 資料
+          - 設定
+            - 設定分析工具
+              [901] 設定 Application Insights Profiler
+            - 設定 BYOS (自備儲存體)
+              [907] 為 Application Insights Profiler 和快照偵錯工具設定 BYOS
+          - 追蹤要求
+            [915] 使用 Application Insights 撰寫程式碼來追蹤要求
+          - 疑難排解
+            [918] 
+        - 程式碼最佳化
+          - 概觀
+            [927] 使用程式碼最佳化監視和分析執行階段行為 (預覽)
+          - 設定程式代碼優化
+            [929] 設定程式代碼優化 （預覽）
+          - 檢視深入解析
+            [932] 檢視程式代碼優化結果 （預覽）
+          - 疑難排解
+            [937] 針對程式代碼優化 (預覽) 進行疑難解答
+        - 快照集偵錯工具
+          - 概觀
+            [940] 使用快照偵錯工具對 .NET 應用程式中的例外狀況進行偵錯
+          - 檢視快照集
+            [954] 檢視 Application Insights 快照偵錯工具資料
+          - 啟用快照偵錯工具
+            - 啟用 App Service 的快照偵錯工具
+              [957] 在 Azure App Service 中啟用適用於 .NET應用程式的快照偵錯工具
+            - 啟用函式應用程式的快照偵錯工具
+              [963] 在 Azure Functions 中啟用適用於 .NET和 .NET Core 應用程式的快照偵錯工具
+            - 啟用其他環境的快照偵錯工具
+              [967] 在 Azure Service Fabric、雲端服務 和 虛擬機器 中啟用 .NET 應用程式的快照調試程式
+          - 升級快照偵錯工具
+            [973] 升級快照偵錯工具
+          - 設定 BYOS (自備儲存體)
+            [977] 為 Application Insights Profiler 和快照偵錯工具設定 BYOS
+          - 快照偵錯工具的疑難排解
+            [985] 針對啟用 Application Insights 快照偵錯工具或檢視快照集的問題進行疑難排解
+        - 智慧偵測
+          [999] Application Insights 中的智慧偵測
+          - 升級至警示
+            [1003] 將 Azure 監視器 Application Insights 智慧偵測遷移至警示 (預覽版)
+          - 失敗的異常
+            [1015] 智慧型偵測 - 失敗異常
+          - 效能異常
+            [1030] 智慧偵測 - 效能異常
+          - 追蹤轉化
+            [1039] 追蹤嚴重性比率降低 (預覽)
+          - 例外狀況磁碟區
+            [1041] 磁碟區例外狀況異常升高 (預覽)
+          - 記憶體流失
+            [1043] 記憶體流失偵測 (預覽)
+          - 安全性偵測
+            [1045] 應用程式安全性偵測套件 (預覽)
+          - 管理智慧偵測規則
+            [1047] 使用 Azure Resource Manager 範本，管理 Application Insights 智慧偵測規則
+          - 電子郵件通知
+            [1052] 智慧偵測電子郵件通知變更
+      - 管理與安全性
+        - 管理 Application Insights
+          [1054] 使用 PowerShell 管理 ApplicationInsights 資源
+        - 存取控制
+          [1068] Application Insights 中的資源、角色及存取控制
+      - 說明與支援 
+        - 建立 Azure 支援票證
+        - Q&A 論壇 (一般問題)
+        - Stack Overflow (編碼問題)
+        - Application Insights 產品意見反應
+        - 疑難排解文章
+          [1073] Azure 監視器疑難解答檔
+    - 監視虛擬機器
+      - 最佳作法
+        [1074] 在 Azure 監視器中監視虛擬機的最佳做法
+      - 部署指南
+        - 概觀
+          [1079] 使用 Azure 監視器監視虛擬機器
+        - 部署代理程式
+          [1083] 使用 Azure 監視器監視虛擬機器：部署代理程式
+        - 收集資料
+          [1087] 使用 Azure 監視器監視虛擬機器：收集資料
+        - 分析資料
+          [1099] 使用 Azure 監視器監視虛擬機器：分析監視資料
+        - 建立警示
+          [1109] 使用 Azure 監視器監視虛擬機器：警示
+        - 針對 VM 效能問題進行疑難排解
+          [1121] Azure 虛擬機的效能診斷
+      - VM 深入解析
+        - 概觀
+          [1132] VM 深入解析概觀
+        - 啟用及設定
+          - 概觀
+            [1134] 啟用 VM 深入解析的概觀
+          - Azure 入口網站
+            [1139] 在 Azure 入口網站 中啟用 VM 深入解析
+          - Azure PowerShell
+            [1145] 使用 PowerShell 啟用 VM 深入解析
+          - ARM 範本
+            [1150] 使用 Resource Manager 範本啟用 VM 深入解析
+          - Azure 原則
+            [1154] 使用 Azure 原則 啟用 VM 深入解析
+          - Windows 用戶端機器
+            [1162] 在 Windows 用戶端機器上啟用 VM 深入解析
+          - Dependency Agent
+            [1165] Dependency Agent
+          - 從已取代的 VM 深入解析原則移轉
+            [1171] 從已取代的 VM 深入解析原則移轉
+        - 對應相依性
+          [1173] 使用 VM 深入解析的對應功能來瞭解應用程式元件
+        - 監視效能
+          [1185] 使用 VM 深入解析繪製效能圖表
+        - 使用日誌查詢分析資料
+          [1193] 如何查詢 VM 深入解析的記錄
+        - 監視變更
+          [1210] VM 深入解析中的變更分析
+        - 使用活頁簿將資料視覺化
+          [1212] 使用 VM 見解活頁簿建立互動式報告
+        - 停用監視
+          [1227] 在 VM 深入解析中停用 VM 的監視
+        - 疑難排解
+          [1229] 針對 VM 深入解析進行疑難排解
+      - System Center
+        - 從 Operations Manager 遷移
+          [1233] 從 System Center Operations Manager(SCOM) 遷移至 Azure 監視器
+        - Azure 監視器 SCOM 受控執行個體
+          [1238] Azure 監視器 SCOM 受控執行個體
+        - 存取 Operations Manager
+          [1240] 使用 System Center OperationsManager 健康情況檢查 (預覽) 解決方案進行環境最佳化
+      - 教學課程
+        - 為 VM 啟用建議的警示
+          [1251] 教學課程: 啟用 Azure 虛擬機器的建議警示規則
+        - 為 VM 建立可用性警示
+          [1256] 教學課程：建立多個 Azure 虛擬機的可用性警示規則 (預覽)
+        - 啟用 VM 深入解析
+          [1262] 教學課程: 透過 VM Insights 啟用對 Azure虛擬機器的監控
+        - 收集 VM 客體記錄和計量
+          [1266] 教學課程：從 Azure 虛擬機器收集客體記錄和計量
+    - 監視容器
+      - Azure 監視器功能
+        [1274] 適用於 Kubernetes 監視的 Azure 監視器功能
+      - 完整堆疊監視
+        [1278] 使用 Azure 服務和雲端原生工具監視Kubernetes 叢集
+      - 最佳作法
+        [1291] 使用 Azure 監視器監視 Kubernetes 的最佳做法
+      - 啟用容器深入解析和受控 Prometheus
+        - 將叢集上線
+          [1297] 啟用 Kubernetes 叢集的監視
+        - 將混合式叢集上線
+          [1315] 使用容器深入解析設定混合式Kubernetes 叢集
+        - 防火牆需求
+          [1326] 監視 Kubernetes 叢集的網路防火牆需求
+        - 代理程式管理
+          [1328] 管理容器深入解析代理程式
+        - 舊版驗證
+          [1333] 容器深入解析的舊版驗證
+        - 支援的區域對應
+          [1335] 容器深入解析支持的區域
+        - 從容器監視解決方案轉換
+          [1337] 從容器監視解決方案轉換成使用容器深入解析
+      - 設定容器深入解析 (記錄)
+        - 設定資料收集
+          - 使用 ConfigMap 進行設定
+            [1339] 使用 ConfigMap 在容器深入解析中設定數據收集
+          - 使用資料收集規則進行設定
+            [1345] 使用數據收集規則在容器深入解析中設定數據收集和成本優化
+        - 記錄檔結構描述
+          [1353] 容器深入解析記錄結構描述
+        - 資料轉換
+          [1357] 容器深入解析中的資料轉換
+        - 驗證
+          [1362] 容器深入解析的舊版驗證
+      - 設定 Prometheus (計量)
+        - 自訂資料收集
+          - 預設的組態
+            [1364] Azure 監視器中的預設 Prometheus 計量設定
+          - 自訂設定
+            [1374] 在適用於 Prometheus 的 Azure 監視器受管理服務中自訂抓取 Prometheus 計量
+          - 使用服務與 Pod 監控器自訂資源設定集合 （預覽）
+            [1386] 使用 CRD 自訂集合 （服務和 Pod 監視器）
+          - 建立並驗證自訂抓取設定
+            [1390] 在 Azure 監視器中建立及驗證Prometheus 計量的自訂設定檔
+          - 最小內嵌設定檔
+            [1395] Azure 監視器中 Prometheus 計量的最小擷取設定檔
+          - 高延展性
+            [1406] 在 Azure 監視器中大規模抓取Prometheus 計量
+        - 整合
+          - 監視Argo CD
+            [1409] Argo CD
+          - 監視彈性搜尋
+            [1412] Elasticsearch
+          - 監視 Apache Kafka
+            [1415] Apache Kafka
+          - 根據 Prometheus 計量使用 KEDA 進行調整
+            [1420] 整合 KEDA 與您的 Azure KubernetesService 叢集
+        - 傳送到多個計量工作區
+          [1428] 將 Prometheus 計量傳送至多個 Azure 監視器工作區
+        - 將 Prometheus 計量傳送至記錄
+          [1434] 使用容器深入解析將 Prometheus 計量傳送至 Log Analytics 工作區
+      - 使用 Prometheus 進行遠端寫入
+        - Prometheus 遠端寫入
+          [1440] 適用於 Prometheus 遠端寫入的 Azure 監視器受控服務
+        - Microsoft Entra 授權 Proxy
+          [1443] 
+        - 受控識別驗證
+          [1451] 使用受控識別驗證將 Prometheus 資料傳送至 Azure 監視器
+        - Microsoft Entra 驗證
+          [1459] 使用 Microsoft Entra 驗證將 Prometheus資料傳送至 Azure 監視器
+        - Microsoft Entra Pod 受控識別驗證
+          [1468] 使用 Microsoft Entra Pod 受控識別 (預覽版) 驗證將 Prometheus 資料傳送至Azure 監視器
+        - Microsoft Entra 工作負載識別碼 (預覽版) 驗證
+          [1473] 使用 Microsoft Entra 工作負載識別碼 (預覽版) 驗證將 Prometheus 資料傳送至Azure 監視器
+        - 針對遠端寫入進行疑難解答
+          [1479] 針對遠端寫入進行疑難排解
+      - 私人連結
+        - 容器深入解析的私人連結
+          [1481] 使用容器深入解析啟用私人連結
+      - 監視器
+        - 監視效能
+          [1484] 使用容器深入解析監視 Kubernetes 叢集效能
+        - 監視 GPU 效能
+          [1500] 使用容器深入解析來設定 GPU 監視
+        - 監視網路組態
+          [1504] 
+        - 監視部署和 HPA
+          [1515] 使用容器深入解析部署與 HPA 計量
+        - 監視永久性磁碟區 (PV)
+          [1518] 
+        - 使用 Syslog 監視安全性
+          [1521] 使用容器深入解析收集 Syslog
+        - 報表索引標籤
+          [1531] 容器深入解析中的報表
+        - 自訂計量
+          [1536] 容器深入解析收集的計量
+        - 記錄查詢
+          [1541] 從容器深入解析查詢記錄
+      - 檢視即時資料
+        - 即時資料概觀
+          [1562] 即時檢視 Kubernetes 記錄、事件和 pod計量
+        - 設定
+          [1571] 在容器深入解析中設定即時資料
+        - 檢視叢集計量
+          [1576] 即時檢視計量
+      - 警示
+        - 計量警示規則
+          [1581] Kubernetes 叢集的建議警示規則
+        - 記錄警示規則
+          [1589] 從容器深入解析建立記錄搜尋警示
+      - 管理成本和使用量
+        [1598] 了解容器深入解析的監視成本
+      - 停用監視
+        [1606] 停用 Kubernetes 叢集的監視
+      - 疑難排解
+        - Prometheus
+          [1610] 針對 Azure 監視器中的 Prometheus 計量集合進行疑難解答
+        - 容器深入解析
+          [1620] 進行容器深入解析的疑難排解
+    - 監視網路
+      - 網路監看員
+        [1629] 什麼是 Azure 網路監看員？
+      - 網路深入解析
+        - 概觀
+          [1635] 網路見解
+        - 拓撲
+          [1644] 檢視拓撲
+        - 疑難排解
+          [1656] 針對網路深入解析進行疑難排解
+    - 監視 Azure 監視器
+      [1658] 監視 Azure 監視器
+  - 資料集合
+    - 資料來源
+      [1664] Azure 監視器數據源和數據收集方法
+    - 數據收集方法
+      - Azure 監視器管線
+        - 概觀
+          [1669] Azure 監視器管線概觀
+        - 資料收集規則
+          - 概觀
+            [1672] Azure 監視器中的資料收集規則
+          - 最佳作法
+            [1675] 在 Azure 監視器中建立和管理資料收集規則的最佳做法
+          - 建立和編輯
+            - 建立​​
+              [1678] 建立和編輯 Azure 監視器中的資料收集規則 (DCR)。
+            - 編輯教學課程
+              [1681] 教學課程：資料收集規則 (DCR)
+            - 結構
+              [1686] Azure 監視器中資料收集規則的結構
+        - 轉換
+          - 概觀
+            [1690] Azure 監視器中的數據收集轉換
+          - 結構
+            [1700] Azure 監視器中的轉換結構
+          - 教學課程
+            [1709] 教學課程：在 Azure 監視器記錄中擷取期間轉換文字記錄
+          - 工作區轉換
+            - 概觀
+              [1713] Azure 監控器中的工作區轉換資料收集規則 （DCR）
+            - 在 Azure 入口網站中建立
+              [1715] 教學課程：使用 Azure 入口網站在工作區資料收集規則中新增轉換
+            - 使用ARM範本建立
+              [1721] 教學課程：使用 Resource Manager 範本將工作區數據收集規則中的轉換新增至Azure 監視器
+        - 監視器
+          [1733] 在 Azure 監視器中監視 DCR 資料收集並進行疑難解答
+        - 範例
+          [1738] Azure 監視器中的數據收集規則範例
+        - 資料收集端點
+          [1749] 
+        - Edge 管線設定
+          [1751] 設定 Azure 監視器邊緣管線
+      - 診斷設定
+        - 概觀
+          [1761] Azure 監視器中的診斷設定
+        - 在 Azure 監視器中建立診斷設定
+          [1767] 在 Azure 監視器中建立診斷設定
+        - 使用 Azure 原則建立診斷設定
+          [1774] 使用 Azure 原則和計劃大規模建立診斷設定
+        - 使用內建原則啟用診斷設定。
+          [1781] 適用於 Azure 監視器的內建原則
+        - 將保留期移轉至 Azure 儲存體生命週期
+          [1791] 從診斷設定儲存體保留移轉至 Azure 儲存體生命週期管理
+      - Azure 監視器代理程式
+        - 概觀
+          [1796] Azure 監視器代理程式概觀
+        - 安裝 Azure 監視器代理程式
+          - 在虛擬機和伺服器上
+            [1808] 
+          - 在 Windows 用戶端機器上
+            [1816] 
+          - 檢視健全狀況
+            [1832] Azure 監視器代理程式健全狀況 (預覽)
+        - 設定資料收集
+          - 收集事件和效能
+            [1833] 使用 Azure 監視器代理程式從虛擬機器收集事件和效能計數器
+          - 收集 IIS 記錄
+            [1841] 使用 Azure 監視器代理程式收集 IIS 記錄
+          - 從文字或 JSON 檔案收集記錄
+            [1850] 使用 Azure 監視器代理程式收集文字或JSON 檔案中的記錄
+          - 收集 SNMP 陷阱
+            [1860] 使用 Azure 監視器代理程式收集 SNMP陷阱資料
+          - 收集 syslog 資料
+            [1864] 使用 Azure 監視器代理程式收集 Syslog事件
+          - 設定 syslog 轉寄站
+            [1874] 教學課程：使用 Azure 監視器代理程式，使用 Microsoft Sentinel 將 Syslog 資料轉送到 Log Analytics 工作區
+          - Log Analytics 網路閘道
+            [1878] 使用 Azure 監視器中的 Log Analytics 閘道，在沒有網際網路存取的情況下連線電腦
+          - 將資料傳送至事件中樞和儲存體
+            [1898] 將資料傳送至事件中樞和儲存體 (預覽)
+        - 定義網路設定
+          [1909] 
+        - 設定 Azure 監視器代理程式的 Private Link
+          [1913] 使用 Private Link 來啟用 Azure 監視器代理程式的網路隔離
+        - 從 Log Analytics 代理程式遷移
+          - 移轉指引
+            [1915] 從 Log Analytics 代理程式移轉至 Azure監視器代理程式
+          - 移轉工具
+            [1921] 從 Log Analytics 代理程式移轉至 Azure監視器代理程式的工具
+          - MMA 移除工具
+            [1926] MMA 探索和移除公用程式
+          - 移轉自訂文字記錄資料表
+            [1931] 從 MMA 自訂文字記錄移轉至 AMA DCR型自訂文字記錄
+        - 效能
+          [1933] Azure 監視器代理程式效能基準
+        - 常見問題集
+          [1945] 
+        - 舊版代理程式
+          - Log Analytics 代理程式
+            - 概觀
+              [1948] Log Analytics 代理程式概觀
+            - Windows 代理程式
+              [1954] 
+            - Linux 代理程式
+              [1961] 在 Linux 電腦上安裝 Log Analytics 代理程式
+            - Windows 的 VM 延伸模組
+              [1970] 
+            - Linux 的 VM 延伸模組
+              [1976] 
+            - LA 代理程式管理
+              [1983] 管理和維護適用於 Windows 和 Linux 的Log Analytics 代理程式
+            - LA 代理程式健全狀況
+              [1994] Azure 監視器中的代理程式健全狀況解決方案
+            - LA 代理程式資料來源
+              - 概觀
+                [1999] Azure 監視器中的 Log Analytics 代理程式資料來源
+              - Windows 事件
+                [2003] 使用 Log Analytics 代理程式收集Windows 事件記錄資料來源
+              - 自訂 JSON 資料
+                [2007] 在 Azure 監視器中使用 Log AnalyticsLinux 代理程式收集自訂 JSON 資料來源
+              - CollectD 效能資料
+                [2010] 在 Azure 監視器中，從 Linux 代理程式上的 CollectD 收集資料
+              - Syslog
+                [2015] 利用記錄分析代理程式來收集 Syslog 資料來源
+              - 效能計數器
+                [2023] 使用 Log Analytics 代理程式收集Windows 和 Linux 效能資料來源
+              - Linux 應用程式的效能
+                [2032] 在 Azure 監視器中收集 Linux 應用程式的效能計數器
+              - IIS 記錄
+                [2038] 在 Azure 監視器中使用 Log Analytics 代理程式，收集 IIS 記錄
+              - Windows 資料的事件追蹤
+                [2041] 收集 Windows 事件追蹤 (ETW) 以分析Azure 監視器記錄
+              - 文字記錄
+                [2044] 在 Azure 監視器中使用 Log Analytics 代理程式收集文字記錄
+              - 自訂欄位
+                [2052] 在 Azure 監視器的 Log Analytics 工作區中建立自訂欄位 (預覽版)
+              - 從自訂欄位移轉
+                [2060] 教學課程：將Log Analytics工作區中的自定義欄位取代為以 KQL 為基礎的自訂數據行
+          - Azure 診斷擴充功能
+            - 概觀
+              [2065] Azure 診斷延伸模組概觀
+            - Windows
+              - 安裝及設定
+                - 安裝選項
+                  [2069] 安裝和設定適用於 Windows 的 Azure 診斷延伸模組 (WAD)
+                - PowerShell
+                  [2078] 使用 PowerShell 在執行 Windows 的虛擬機器中啟用 Azure 診斷
+                - Resource Manager 範本
+                  [2085] 使用 Windows VM 和 Azure ResourceManager 範本的監視和診斷
+              - 傳送至 Azure 監視器計量
+                - 虛擬機器
+                  [2092] 使用 Windows VM 的 ARM 範本，將客體OS 計量傳送至 Azure 監視器計量存放區
+                - 虛擬機器擴展集
+                  [2100] 使用 Windows 虛擬機器擴展集的 AzureResource Manager 範本將客體作業系統計量傳送至 Azure 監視器計量存放區
+                - VM 傳統
+                  [2109] 將來賓 OS 計量傳送到 Windows 虛擬機器 (傳統) 的 Azure 監視器計量資料庫
+                - 雲端服務
+                  [2117] 將客體作業系統計量傳送至 Azure 監視器計量存放區的傳統雲端服務
+              - 傳送至事件中樞
+                [2124] 將資料從 Windows Azure 診斷延伸模組傳送至 Azure 事件中樞
+              - 傳送至記錄
+                [2129] 從 Azure 診斷延伸模組傳送資料至 Azure監視器記錄
+              - 傳送至 Application Insights
+                [2132] 將雲端服務、虛擬機器或 Service Fabric診斷資料傳送至 Application Insights
+              - 版本歷程記錄
+                [2139] Windows Azure 診斷延伸模組 (WAD) 的設定結構描述版本和歷程記錄
+              - 疑難排解
+                [2146] 
+            - Linux
+              - 4.0 版
+                [2153] 
+              - 3.0 版
+                [2175] 
+              - 使用 Telegraf 收集計量
+                [2197] 使用 InfluxData Telegraf 代理程式收集Linux VM 的自定義計量
+      - 使用 REST 擷取自訂計量
+        [2202] 使用 REST API 將 Azure 資源的自訂計量傳送至 Azure 監視器計量存放區
+      - 記錄擷取 API
+        - 概觀
+          [2209] 記錄 Azure 監視器中的擷取 API
+        - 使用 PowerShell 設定
+          [2216] 設定需要使用記錄擷取 API 將資料傳送至Azure 監視器記錄的資源
+        - 從資料收集器 API 移轉
+          [2229] 從 HTTP 資料收集器 API 遷移至記錄擷取API，以將數據傳送至 Azure 監視器記錄
+        - 教學課程
+          - 使用 Azure 入口網站進行設定
+            [2233] 教學課程：使用記錄擷取 API 將數據傳送至 Azure 監視器記錄 （Azure 入口網站）
+          - 使用 ARM 範本進行設定
+            [2292] 教學課程：使用記錄擷取 API 將數據傳送至 Azure 監視器（Resource Manager 範本）
+          - 範例指令碼
+            [2306] 使用記錄擷取 API 將數據傳送至 Azure 監視器的範例程式代碼
+        - 資料收集器 API
+          [2310] 使用 HTTP 資料收集器 API 將記錄資料傳送至 Azure 監視器 (已淘汰)
+    - 私人連結網路
+      - Private Link 概觀
+        [2321] 使用 Azure Private Link 將網路連線到Azure 監視器
+      - Private Link 設計
+        [2326] 設計您的 Azure Private Link 設定
+      - Private Link 設定
+        [2338] 設定您的私人連結
+    - 從事件中樞收集記錄
+      [2354] 教學課程：將事件從 Azure 事件中樞擷取至 Azure 監視器記錄 (公開預覽)
+    - 傳送數據
+      - 傳送資源記錄數據
+        [2370] Azure 資源記錄
+      - 傳送活動記錄數據
+        [2378] 傳送 Azure 監視器活動記錄數據
+      - 將監視數據串流至事件中樞
+        [2388] 將 Azure 監視資料串流至事件中樞或外部合作夥伴
+    - 使用 Microsoft Entra 驗證
+      [2393] Azure 監視器記錄的 Microsoft Entra 驗證
+    - 疑難排解
+      - 資料集合
+        [2396] 針對 Azure 監視器不再收集資料的原因進行疑難排解
+      - Windows AMA 疑難排解員
+        [2398] 如何使用 Windows 作業系統 (OS) Azure監視器代理程式疑難排解程式
+      - Linux AMA 疑難排解員
+        [2401] 如何使用 Linux 作業系統 (OS) Azure 監視器代理程式疑難排解
+      - Linux VM
+        [2405] 針對 Linux 虛擬機器和擴展集上 Azure 監視器代理程式的疑難排解指引
+      - Linux Syslog 問題
+        [2410] Linux 的 Azure 監視器的 Syslog 疑難排解指南
+      - Windows VM
+        [2415] 針對 Windows 虛擬機器和擴展集上Azure 監視器代理程式的疑難排解指引
+      - 已啟用 Windows Arc 的伺服器
+        [2420] 已啟用 Windows Arc 的伺服器上的Azure 監視器代理程式的疑難排解指引
+      - 針對舊版代理程式進行疑難排解
+        - Log Analytics VM 延伸模組
+          [2426] 針對 Azure 監視器中的 Log Analytics VM延伸模組進行疑難排解
+        - Log Analytics Windows 代理程式
+          [2429] 
+        - Log Analytics Linux 代理程式
+          [2441] 對 Log Analytics Linux 代理程式的問題進行疑難排解
+  - 資料平台
+    - 概觀
+      [2458] Azure 監視器資料平台
+    - 計量
+      - Azure 監視器計量概觀
+        [2462] Azure 監視器計量概觀
+      - 自訂計量
+        [2469] Azure 監視器中的自訂計量 (預覽)
+      - Prometheus 計量
+        - 概觀
+          [2474] 適用於 Prometheus 的 Azure 監視器受管理服務
+        - 常見問題集
+          [2482] 
+        - 從虛擬機遠端寫入 Prometheus
+          [2484] 將 Prometheus 計量從 虛擬機器 傳送至Azure 監視器工作區
+        - Azure 監視器工作區
+          [2491] 私下 連線 數據源
+          - 概觀
+            [2497] Azure 監視器工作區
+          - 管理
+            [2501] 管理 Azure 監視器工作區
+          - Azure 監視器工作區的私人端點
+            [2504] 針對受控 Prometheus 和 Azure 監視器工作區使用私人端點
+          - Prometheus 資料擷取的私人連結
+            [2509] 用於受控 Prometheus 和 Azure 監視器工作區資料擷取的 Private Link
+          - Prometheus 計量的私人連結資料查詢
+        - 警示和規則群組
+          [2512] Azure 監視器適用於 Prometheus 的受管理服務規則群組
+        - 查詢 Prometheus 計量
+          - 使用 Grafana 進行查詢
+            - 使用受控系統識別設定 Grafana
+              [2529] 使用適用於 Prometheus 的 Azure 監視器受控服務作為使用受控系統身分識別的Grafana 資料來源
+            - 使用 Microsoft Entra ID 設定 Grafana
+              [2536] 設定自我管理 Grafana，以搭配Microsoft Entra ID 使用適用於Prometheus 的 Azure 監視器受管理服務。
+          - 使用 Azure 活頁簿進行查詢
+            [2544] 使用 Azure 活頁簿查詢 Prometheus 計量
+          - 使用 API 和 PromQL 進行查詢
+            [2550] 使用 API 和 PromQL 查詢 Prometheus 計量
+    - 記錄
+      - 概觀
+        [2559] Azure 監視器記錄概觀 (機器翻譯)
+      - 最佳作法
+        [2564] Azure 監視器記錄的最佳做法
+      - 成本詳細資料
+        [2573] Azure 監視器記錄成本計算和選項
+      - Log Analytics 工作區
+        - 概觀
+          [2585] Log Analytics 工作區概觀
+        - 管理 Log Analytics 工作區
+          - 建立 Log Analytics 工作區
+            [2588] 建立 Log Analytics 工作區
+          - 移動、刪除或復原 Log Analytics 工作區
+            - 移動工作區
+              [2591] 將 Log Analytics 工作區移至不同的訂用帳戶或資源群組
+            - 跨區域移動工作區
+              [2596] 將 Azure 監視器 - Log Analytics 工作區重新放置到另一個區域
+            - 刪除並復原工作區
+              [2606] 刪除和復原 Azure Log Analytics 工作區
+          - 管理存取
+            [2613] 
+          - 變更定價層
+            [2627] 變更 Log Analytics 工作區的定價層
+          - 設定每日上限
+            [2629] 在 Log Analytics 工作區上設定每日上限
+        - 管理資料表
+          - 檢視和管理資料表屬性
+            [2636] 管理 Log Analytics 工作區中的資料表
+          - 新增或刪除資料表和資料行
+            [2639] 在 Azure 監視器記錄中新增或刪除資料表和資料行
+          - 設定基本或分析記錄資料方案
+            [2647] 將資料表的記錄資料方案設定為基本或分析
+        - 封存與還原
+          - 資料保留和封存
+            [2654] Azure 監視器記錄中的數據保留和封存
+          - 執行搜尋作業
+            [2661] 在 Azure 監視器中執行搜尋工作
+          - 還原記錄
+            [2669] 還原 Azure 監視器中的記錄
+        - 設計
+          - 設計工作區架構
+            [2674] 設計 Log Analytics 工作區架構
+          - 專用叢集
+            [2682] 在 Azure 監視器記錄中建立和管理專用叢集
+          - 使用可用性區域增強復原能力
+            [2693] 透過可用性區域，增強 Azure 監視器記錄中的資料和服務恢復能力
+        - 監視器
+          - Log Analytics 工作區深入解析
+            [2696] Log Analytics 工作區深入解析
+          - 監視 Log Analytics 工作區健康情況
+            [2704] 監視 Log Analytics 工作區健康情況
+          - 監視作業問題
+            [2709] 監視 Azure 監視器 Log Analytics 工作區中的作業問題
+          - 記錄檔資料擷取時間
+            [2715] Azure 監視器中的記錄資料擷取時間
+          - 分析使用量與成本
+            [2722] 分析 Log Analytics 工作區中的使用量
+      - 資料安全性
+        - 角色權限與安全性
+          [2736] Azure 監視器中的角色、權限與安全性
+        - 記錄資料
+          [2742] Azure 監視器記錄資料安全性
+        - 客戶管理的金鑰
+          [2751] Azure 監視器客戶管理的金鑰
+        - 私人儲存體
+          [2764] 在 Azure 監視器記錄中使用客戶管理的記憶體帳戶
+        - 個人記錄檔資料處理
+          [2770] 在 Azure 監視器記錄和 ApplicationInsights 中管理個人資料
+      - 與 Azure Logic Apps 整合
+        - Azure 監視器記錄連接器
+          [2775] 從 Azure Logic Apps 中的工作流程連線到 Log Analytics 或 Application Insights
+        - Application Insights 連接器
+          [2782] 從 Azure Logic Apps 中的工作流程連線到 Azure Application Insights
+      - 資料匯出
+        - 工作區資料匯出
+          [2783] Azure 監視器中的 Log Analytics 工作區資料匯出
+        - 使用 Logic Apps 匯出
+          [2818] 使用邏輯應用程式從 Log Analytics 工作區將資料匯出至儲存體帳戶
+        - 傳送至 Excel
+          [2835] 整合 Log Analytics 與 Excel
+      - 從 Splunk 移轉到 Azure 監視器記錄
+        [2842] 從 Splunk 移轉到 Azure 監視器記錄
+  - 視覺化
+    - 活頁簿
+      - 概觀
+        [2850] Azure 活頁簿
+      - 建立或編輯 Azure 活頁簿
+        [2855] 建立或編輯 Azure 活頁簿
+      - 使用 Azure 活頁簿範本
+        [2878] Azure 活頁簿範本
+      - 製作互動式報表
+        [2881] 使用 Azure 監視器活頁簿建立互動式報告
+      - 管理 Azure 活頁簿
+        - 管理 Azure 活頁簿
+          [2900] 管理 Azure 監視器活頁簿
+        - 使用 Azure Resource Manager 進行部署
+          [2907] 以程式設計方式管理活頁簿
+        - 使用自己的儲存體
+          [2916] 自備儲存體以儲存活頁簿
+        - 使用 JSONPath 轉換 JSON 資料
+          [2918] 使用 JSONPath 轉換活頁簿中的 JSON 資料
+        - 將活頁簿移至另一個區域
+          [2922] 將 Azure 活頁簿移至另一個區域
+        - 將活頁簿範本移至另一個區域
+          [2924] 將 Azure 活頁簿範本移至另一個區域
+      - Azure 活頁簿元件
+        - 資料來源
+          [2926] Azure 活頁簿資料來源
+        - 視覺效果
+          - 概觀
+            [2935] 活頁簿視覺效果
+          - Text
+            [2940] 文字視覺效果
+          - 圖表
+            [2943] 圖表視覺效果
+          - 方格
+            [2956] 格線視覺效果
+          - 圖標
+            [2967] 磚視覺效果
+          - 樹狀結構
+            [2972] 樹狀結構視覺效果
+          - 圖表
+            [2976] 圖表視覺效果
+          - 地圖
+            [2982] 地圖視覺效果
+          - 蜂巢
+            [2990] 蜂巢視覺效果
+          - 複合列
+            [2994] 複合列轉譯器
+          - 轉譯器
+            [3005] 轉譯選項
+          - 連結動作
+            [3011] 連結動作
+          - 時間範圍選取
+            [3031] 時間範圍刷除
+          - 視覺指標和圖示
+            [3033] 視覺指示器和圖示
+        - 參數
+          - 活頁簿參數
+            [3036] 活頁簿參數
+          - 時間參數
+            [3046] 活頁簿時間參數
+          - 下拉式參數
+            [3049] 活頁簿下拉式清單參數
+          - 選項群組參數
+            [3057] 選項群組參數
+          - 文字參數
+            [3059] 活頁簿文字參數
+          - 準則
+            [3065] 文字參數準則
+          - 資源參數
+            [3075] 活頁簿資源參數
+          - 多重值參數
+            [3080] 多重值參數
+        - 活頁簿結果限制
+          [3084] 活頁簿結果限制
+      - 存取疑難排解指南
+        [3086] 存取 Azure 活頁簿中已淘汰的疑難排解指南
+      - 活頁簿樣本
+        [3090] Azure 活頁簿範例
+      - 疑難排解深入解析
+        [3099] 針對以活頁簿為基礎的深入解析進行疑難排解
+    - Grafana
+      [3103] 在 Grafana 中監視 Azure 服務
+    - 儀表板​​
+      - 使用記錄資料的儀表板
+        [3114] 建立和共用 Log Analytics 資料的儀表板
+    - Power BI
+      [3120] 整合 Log Analytics 與 Power BI
+  - 分析
+    - 計量瀏覽器
+      - 分析計量
+        [3123] 使用 Azure 監視器計量瀏覽器分析計量
+      - 使用 PromQL 的計量總管
+        [3149] 使用 PromQL 的 Azure 監視器計量總管（預覽）
+      - 了解計量彙總
+        [3154] Azure 監視器計量彙總與顯示的說明
+      - 計量圖表範例
+        [3168] 計量圖表範例
+      - 針對計量圖表進行疑難排解
+        [3172] 對計量圖表進行疑難排解
+    - 計量的 REST API
+      - 計量 REST API 逐步解說
+        [3181] Azure 監視 REST API 逐步解說
+      - 移轉至計量 getBatch API
+        [3196] 如何從計量 API 遷移至 getBatch API
+    - Log Analytics
+      - 概觀
+        [3206] Azure 監視器中的 Log Analytics 概觀
+      - 查詢範圍
+        [3212] Azure 監視器 Log Analytics 中的記錄查詢範圍和時間範圍
+      - 儲存查詢
+        [3217] 在 Azure 監視器 Log Analytics 中儲存查詢
+      - 使用查詢
+        [3220] 在 Log Analytics 中使用查詢
+      - 查詢套件
+        [3226] Azure 監視器記錄中的查詢套件
+      - 教學課程
+        [3231] Log Analytics 教學課程
+    - 記錄查詢
+      - 概觀
+        [3241] Azure 監視器中的記錄查詢
+      - 開始使用
+        [3244] 開始使用 Azure 監視器中的查詢
+      - KQL 參考
+        [3255] Kusto 查詢語言 (KQL) 概觀
+      - 偵測和分析記錄資料中的異常狀況
+        [3258] 教學課程：在 Azure 監視器中使用 KQL機器學習功能來偵測和分析異常
+      - 使用筆記本分析 Azure 監視器記錄中的資料
+        [3266] 教學課程：使用筆記本分析 Azure 監視器記錄中的資料
+      - 標準資料行
+        [3274] Azure 監視器記錄中的標準資料行
+      - 查詢基本記錄
+        [3282] Azure 監視器的查詢基本記錄
+      - 稽核查詢
+        [3287] 稽核 Azure 監視器記錄中的查詢
+      - 最佳化查詢
+        [3292] 將 Azure 監視器中的記錄查詢最佳化
+      - 函式
+        [3307] Azure 監視器記錄查詢中的函式
+      - 剖析文字資料
+        [3315] 剖析 Azure 監視器記錄中的文字資料
+      - 傳送至 Excel
+        [3321] 整合 Log Analytics 與 Excel
+      - 電腦群組
+        [3328] Azure 監視器記錄查詢中的電腦群組
+      - 跨服務和跨資源查詢
+        - 跨工作區和資源查詢資料
+          [3332] 
+        - 在 Azure 資料總管或 Resource Graph 中查詢資料
+          [3338] 將 Azure 數據總管和 Azure ResourceGraph 中的數據與 Log Analytics 工作區中的數據相互關聯
+      - API
+        - 概觀
+          [3344] Azure 監視器 Log Analytics API 概觀
+        - 使用 API
+          - API 存取、驗證和授權
+            [3346] 存取 Azure 監視器 Log Analytics API
+          - 使用 Microsoft Entra ID 存取 Application Insights API
+            [3356] 使用 Microsoft Entra 驗證的 ApplicationInsights API 存取
+          - 註冊應用程式以存取 API
+            [3366] 註冊應用程式以要求授權權杖並使用 API
+          - 要求格式
+            [3369] Azure 監視器 Log Analytics API 要求格式
+          - 回應格式
+            [3371] Azure 監視器 Log Analytics API 回應格式
+          - 批次查詢
+            [3373] 批次查詢
+          - 跨資源查詢
+            [3379] 跨工作區查詢
+          - Azure 資源查詢
+            [3382] 查詢 Azure 資源的記錄
+          - 回應快取
+            [3387] 快取
+          - 伺服器逾時
+            [3389] 逾時
+          - 優先使用標頭
+            [3390] 偏好選項
+          - 錯誤
+            [3392] Azure 監視器 Log Analytics API 錯誤
+    - 使用 REST API 取得活動記錄
+      [3396] 使用 Azure 監視器 REST API 擷取活動記錄數據
+    - 變更分析
+      - 概觀
+        [3399] 在 Azure 監視器中使用變更分析
+      - 啟用變更分析
+        [3405] 啟用變更分析
+      - 視覺效果
+        [3409] 在 Azure 監視器中檢視和使用變更分析
+      - 使用變更分析追蹤 Web 中斷
+        [3425] 教學課程：使用變更分析追蹤 Web 應用程式中斷
+      - 疑難排解
+        [3431] 針對 Azure 監視器的變更分析進行疑難排解
+  - 回應
+    - 警示
+      - 概觀
+        [3436] 什麼是 Azure 監視器警示？
+      - 選擇警示規則的類型
+        [3442] 選擇正確的警示規則類型
+      - 最佳作法
+        [3451] Azure 監視器警示的最佳做法
+      - 設定警示
+        - 設定警示規則
+          - 計量警示規則
+          - 記錄搜尋警示規則
+            [3455] 建立或編輯記錄搜尋警示規則
+          - 活動記錄、服務健康狀態或資源健康狀態警示規則
+            [3470] 建立或編輯活動記錄、服務健康狀態或資源健康狀態警示規則
+          - Prometheus 警示規則 (英文)
+            [3478] Azure 監視器中的 Prometheus 警示
+          - 具有動態閾值的計量警示規則
+            [3481] 
+          - Azure 監視器記錄上的計量警示
+            [3487] 在 Azure 監視器記錄中建立計量警示
+          - 為多個時間序列建立一個警示規則
+            [3503] 在單一計量警示規則中監視多個時間序列
+          - 使用 CLI、PowerShell 或 ARM 範本建立警示規則
+            [3511] 使用 CLI、PowerShell 或 ARM 範本建立新的警示規則
+          - 將記錄搜尋警示查詢最佳化
+            [3514] 將記錄搜尋警示查詢最佳化
+        - 設定動作群組
+          [3520] 動作群組
+        - 設定警示處理規則
+          [3550] 警示處理規則
+        - 設定警示整合
+          - 警示通用結構描述
+            [3558] 一般警示結構描述
+          - 非通用警示結構描述
+            [3580] 非常見的警示結構描述定義
+          - 與 Logic Apps 整合
+            [3591] 透過使用 Logic Apps 自訂警示通知
+          - 與 Webhook 整合
+            [3603] 設定 Webhook 以取得活動記錄警示
+          - 與 ITSM 提供者整合
+            - ITSM 概觀
+              [3612] IT 服務管理整合
+            - 使用安全 Webhook 動作連線
+              - 概觀
+                [3614] 使用安全 Webhook，將 Azure 連線到ITSM 工具
+              - 設定適用於安全 Webhook 的 Azure
+                [3616] 設定 Azure 以使用 Secure Webhook 連線ITSM 工具
+              - ITSM 連接器合作夥伴設定
+                - BMC Helix
+                  [3619] 將 BMC Helix 連線至 Azure 監視器
+                - ServiceNow ITOM
+                  [3621] 連線 ServiceNow 至 Azure 監視器
+            - 使用 ITSM 動作連線
+              - 使用 ITSM 連接器連線 ServiceNow
+                [3622] 將 ServiceNow 與 IT 服務管理連接器連線
+              - 設定 ITSM 連接器的 Azure
+                [3629] 使用 IT 服務管理將 Azure 連線到 ITSM工具
+              - 從 ITSM 產品同步的資料
+                [3639] 從 ITSM 產品同步的資料
+              - 將 ITSM ServiceNow 動作轉換為安全的 Webhook 動作
+                [3643] 將傳送事件至 ServiceNow 的 ITSM 動作轉換為安全 Webhook 動作
+              - 針對 ITSM 連接器中的問題進行疑難排解
+                - 概觀
+                  [3674] 針對 IT 服務管理連接器的問題進行疑難排解
+                - 儀表板調查
+                  [3678] 使用 ITSMC 儀表板調查錯誤
+                - 常見錯誤
+                  [3682] ITSMC 儀表板中的連接器狀態錯誤
+                - Sync ITSM 連接器
+                  [3685] 如何手動修正同步問題
+                - 連接器刪除
+                  [3687] 刪除未使用的 ITSM 連接器
+      - 管理警示
+        - 管理警示規則
+          [3691] 管理警示規則
+        - 監視記錄搜尋警示規則的健康情況
+          [3701] 監視記錄搜尋警示規則的健康情況
+        - 管理警示執行個體
+          [3706] 管理警示執行個體
+        - 更新區域移動的警示
+          [3712] 當警示規則或警示處理規則的目標資源移至其他 Azure 區域後，對這些規則進行更新
+        - 使用ARG查詢警示
+          [3716] 使用ARG查詢來取得警示摘要
+      - 教學課程
+        - 建立計量警示
+          [3719] 教學課程：建立 Azure 資源的計量查詢警示
+        - 建立記錄搜尋警示
+          [3728] 教學課程：為 Azure 資源建立記錄搜尋警示
+      - 疑難排解
+        - 疑難排解警示
+          [3738] 針對 Azure 監視器警示中的問題進行疑難排解
+        - 計量警示疑難排解
+          [3749] 對 Azure 監視器計量警示進行疑難排解
+        - 針對記錄搜尋警示進行疑難排解
+          [3757] 針對 Azure 監視器中的記錄搜尋警示進行疑難解答
+        - 測試通知疑難排解指南
+          [3764] 測試通知疑難排解指南。
+      - 舊版警示
+        - 從舊版 Log Analytics 警示 API 升級
+          [3768] 從舊版 Log Analytics 警示 API 升級至排程查詢規則 API
+        - 編輯在舊版中建立的記錄搜尋警示
+          [3772] 管理在舊版中建立的警示規則
+    - 自動調整
+      - 概觀
+        [3780] Azure 中的自動調整概觀
+      - 逐步解說
+        [3786] 開始在 Azure 中自動調整規模
+      - 組態設定
+        [3796] 瞭解自動調整設定
+      - 預測自動調整
+        [3804] 使用預測自動調整，在虛擬機器擴展集的負載需求之前進行擴增
+      - 最佳作法
+        [3817] 自動調整的最佳做法
+      - 自動調整中的 Flapping
+        [3821] 自動調整中的擺盪
+      - 一般計量
+        [3828] Azure 監視器自動調整的常用度量
+      - 使用多個設定檔進行自動調整
+        [3835] 使用多個設定檔進行自動調整
+      - 常見模式
+        [3841] 常見自動調整模式概觀
+      - 依自訂計量縮放
+        [3848] 使用自訂計量自動調整 Web 應用程式
+      - 使用 PowerShell 自動調整虛擬機器擴展集
+        [3859] 透過 PowerShell 設定自動調整
+      - 使用 CLI 調整虛擬機器擴展集
+        [3868] 教學課程：使用 Azure CLI 自動調整虛擬機器擴展集
+      - 使用 Webhook 與電子郵件通知
+        [3874] 使用自動調整動作在 Azure 監視器中傳送電子郵件和 Webhook 警示通知
+      - 自動調整診斷
+        [3878] 自動縮放中的診斷設定
+      - 疑難排解
+        [3892] 針對 Azure 監視器自動調整進行疑難排解
+  - 範例
+    - Resource Manager 範本
+      - 概觀
+        [3901] Azure 監視器的 Resource Manager 範本範例
+      - 警示
+        - 記錄搜尋警示規則
+          [3903] Azure 監視器中記錄搜尋警示規則的Resource Manager 範例
+        - 計量警示規則
+          [3912] 在 Azure 監視器中建立計量警示規則的Resource Manager 範本範例
+        - 活動記錄警示規則
+          [3969] Azure 監視器活動記錄警示規則的Resource Manager 範例（管理員 原則類別）
+        - 服務健康狀態警示規則
+          [3972] Azure 監視器服務健康情況警示規則的Resource Manager 範例
+        - 資源健康狀態警示規則
+          [3975] 在 Azure 監視器中資源健康狀態警示規則的 Resource Manager 範本範例
+        - 動作群組
+          [3980] Azure 監視器中的動作群組適用的Resource Manager 範本範例
+      - 診斷設定
+        [3983] Azure 監視器中的診斷設定適用的Resource Manager 範本範例
+      - Log Analytics 工作區
+        [4008] Azure 監視器中 Log Analytics 工作區的Resource Manager 範本範例
+      - Log Analytics 叢集
+        [4012] Azure 監視器中適用於 Log Analytics 叢集的 Resource Manager 範本範例
+      - 記錄查詢
+        [4016] Azure 監視器中記錄查詢適用的 ResourceManager 範本範例
+      - SQL 深入解析 (預覽)
+        [4021] 適用於 SQL 深入解析 (預覽) 的 ResourceManager 範本範例
+      - 活頁簿
+        [4023] Azure 監視器活頁簿適用的 ResourceManager 範本範例
+      - VM 深入解析
+        [4025] VM 深入解析的 Resource Manager 範本範例
+    - 警示
+      - 警示承載
+        [4032] 範例警示承載
+      - 使用 ADX 和 ARG 的記錄搜尋警示規則查詢
+        [4066] 包含 ADX 和 ARG 的記錄搜尋警示查詢範例
+      - 使用 Webhook 的記錄搜尋警示承載
+        [4069] 使用 Webhook 動作記錄搜尋警示的範例承載
+    - 監視 Azure CLI 中的記錄
+      [4078] 在 Azure CLI 中管理 Azure 監視器記錄
+    - 使用 PowerShell 設定工作區
+      [4085] 
+    - Azure Resource Graph 查詢
+      [4088] Azure 監視器的 Azure Resource Graph範例查詢
+    - Azure CLI 計量警示
+      [4093] 在 Azure CLI 中建立計量警示
+  - 參考
+    - IP 位址、連接埠和防火牆設定
+      [4097] Azure 監視器所使用的 IP 位址
+    - 服務限制
+      [4108] Azure 監視器服務限制
+    - 安全性
+      - 安全性基準
+        [4123] 適用於 Azure 監視器的 Azure 安全性基準
+      - Azure 原則的安全性控制
+        [4135] 適用於 Azure 監視器的 Azure 原則 法規合規性控制
+    - 記錄資料表參考
+      [4176] Azure 監視器資料參考
+    - 自我監視資料參考
+      [4177] 
+    - 支援的計量
+      - 資源計量
+        [4194] 
+      - 警示中的計量
+        [4203] Azure 監視器計量警示所支援的資源
+    - 記錄來源
+      - 支援的資源記錄類別
+        [4212] 
+      - 資源記錄結構描述
+        [4220] Azure 資源記錄的常見和服務特定架構
+      - 活動記錄結構描述
+        [4226] Azure 活動記錄事件架構
+    - Azure 監視器記錄儲存區
+      - 轉換的支援資料表
+        [4254] 支援 Azure 監視器記錄中轉換的數據表
+    - Windows 診斷延伸模組結構描述
+      [4269] 
+    - Azure 監視器代理程式擴充功能版本
+      [4288] Azure 監視器代理程序擴充功能版本
+    - Application Insights
+      - Microsoft Entra 驗證
+        [4298] 適用於 Application Insights 的 MicrosoftEntra 驗證
+      - Application Insights 資料模型
+        [4307] Application Insights 遙測資料模型
+      - Statsbeat
+        [4325] Application Insights 中的 Statsbeat
+      - 計量
+        - 記錄型計量定義
+          [4329] Application Insights 記錄型計量
+        - 標準計量
+          [4343] Application Insights 標準計量
+    - Azure PowerShell
+      - Azure 監視器
+        [4352] Az.Monitor
+      - Azure 監視器記錄
+        [4359] Az.OperationalInsights
+      - Application Insights
+        [4364] Az.ApplicationInsights
+      - 變更分析
+        [4367] Az.ChangeAnalysis
+    - Azure CLI
+      - Azure 監視器
+        [4368] Monitor
+      - Application Insights
+        [4369] az monitor app-insights
+      - 活動記錄
+        [4379] az monitor activity-log
+      - Log Analytics
+        [4385] az monitor log-analytics
+    - REST API
+      - Azure 監視器 REST API 索引
+        [4394] Azure 監視器 REST API 索引
+    - 適用於 Python 的 Azure 警示管理 SDK
+      [4399] MonitorManagementClient 類別
+    - Resource Manager 範本
+      - Azure 監視器
+        [4411] Microsoft.Insights (監視) 資源類型
+      - Azure 監視器記錄
+        [4414] Microsoft.OperationalInsights 資源類型
+    - Azure 原則內建
+      [4416] 
+    - 封存文件
+  - 資源
+    - Azure 更新
+    - 定價
+      - 分析使用量與成本
+        [4455] Azure 監視器成本和使用量
+      - 計費計量
+        [4464] Azure 監視器計費計量名稱
+      - 估計成本
+        [4468] 評估 Azure 監視器成本
+      - Azure 監視器定價頁面
+      - 定價計算機
+    - 區域可用性

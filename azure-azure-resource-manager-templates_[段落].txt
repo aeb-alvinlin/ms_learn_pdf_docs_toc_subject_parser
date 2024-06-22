@@ -1,0 +1,450 @@
+- ---< azure-azure-resource-manager-templates.pdf >---
+  - ARM 範本文件
+    [1] ARM 範本文件
+  - 概觀
+    - 什麼是 ARM 範本？
+      [5] 什麼是 ARM 範本？
+  - 快速入門
+    - 建立 JSON 範本 - VS Code
+      [11] 快速入門：使用 Visual Studio Code 建立ARM 範本
+    - 建立 JSON 範本 - 入口網站
+      [20] 快速入門：使用 Azure 入口網站建立及部署 ARM 範本
+    - 建立範本規格
+      [31] 快速入門：建立和部署範本規格
+  - 教學課程
+    - 初學者 JSON 範本
+      - 1 - 建立第一個範本
+        [38] 教學課程：建立及部署您的第一個 ARM範本
+      - 2 - 新增資源
+        [45] 教學課程：將資源新增至 ARM 範本
+      - 3 - 新增參數
+        [49] 教學課程：將參數新增至 ARM 範本
+      - 4 - 新增範本函式
+        [55] 教學課程：將範本函式新增至 ARM 範本
+      - 5 - 新增變數
+        [59] 教學課程：將變數新增至 ARM 範本
+      - 6 - 新增輸出
+        [64] 教學課程：將輸出新增至 ARM 範本
+      - 7 - 使用匯出的範本
+        [71] 教學課程：從 Azure 入口網站使用匯出的範本
+      - 8 - 使用快速入門範本
+        [79] 教學課程：使用 Azure 快速入門範本
+      - 9 - 標籤標記
+        [86] 教學課程：在 ARM 範本中新增標記
+      - 10 - 使用參數檔案
+        [93] 教學課程：使用參數檔案部署您的 ARM範本
+    - 部署
+      - 1 - 部署本機範本
+        [100] 教學課程：部署本機 ARM 範本
+      - 2 - 部署連結的範本
+        [106] 教學課程：部署連結的範本
+      - 3 - 建立管線
+        [116] 教學課程：透過 Azure Pipelines 持續整合 ARM 範本
+    - 範本規格
+      - 使用連結的範本來建立
+        [128] 教學課程：使用連結的範本建立範本規格
+      - 部署為連結的範本
+        [133] 教學課程：將範本規格部署為連結的範本
+      - 建立入口網站表單
+        [137] 教學課程：為範本規格建立 Azure 入口網站表單
+    - 進階範本
+      - 使用範本參考
+        [159] 教學課程：利用 ARM 範本參考
+      - 建立多個執行個體
+        [165] 教學課程：使用 ARM 範本建立多個資源執行個體
+      - 設定資源部署順序
+        [171] 教學課程：建立具有相依資源的 ARM 範本
+      - 使用部署指令碼
+        [179] 教學課程：使用部署指令碼建立自我簽署憑證
+      - 使用條件
+        [189] 教學課程：在 ARM 範本中使用條件
+      - 整合 Key Vault
+        [196] 教學課程：在 ARM 範本部署中整合Azure Key Vault
+      - 部署 VM 延伸模組
+        [204] 教學課程：使用 ARM 範本部署虛擬機器延伸模組
+      - 部署 SQL 延伸模組
+        [209] 教學課程：使用 ARM 範本匯入 SQLBACPAC 檔案
+    - 範本的學習路徑
+  - 範例 - Azure 服務
+    - Advisor
+      - 警示
+        [219] 快速入門：使用ARM範本在新的建議上建立 Azure Advisor 警示
+    - AI+Machine Learning
+      - 認知搜尋
+        [224] 快速入門：使用 Azure ResourceManager 範本部署 Azure AI 搜尋
+      - Azure AI 服務
+        [229] 快速入門：使用ARM範本建立 Azure AI服務資源
+      - 資料科學虛擬機器
+        [236] 快速入門：使用 ARM 範本來建立Ubuntu 資料科學虛擬機器
+      - Machine Learning
+        [246] 使用 Azure Resource Manager 範本建立Azure Machine Learning 的工作區
+    - 分析
+      - Analysis Services
+        [261] 快速入門：建立伺服器 - ARM 範本
+      - Data Factory
+        [266] 快速入門：使用ARM範本建立 AzureData Factory
+      - Databricks
+        [278] 開始使用：帳戶和工作區設定
+      - 事件中樞
+        [281] 快速入門：使用ARM範本建立事件中樞
+      - HDInsight - Hadoop
+        [286] 快速入門：使用 ARM 範本在 AzureHDInsight 中建立 Apache Hadoop 叢集
+      - HDInsight - HBase
+        [294] 快速入門：使用ARM樣本在 AzureHDInsight 中建立Apache HBase 叢集
+      - HDInsight - Interactive Query
+        [302] 快速入門：使用ARM範本在 AzureHDInsight 中建立互動式查詢叢集
+      - HDInsight - Kafka
+        [310] 快速入門：使用ARM樣本在 AzureHDInsight 中建立Apache Kafka 叢集
+      - HDInsight - Spark
+        [323] 快速入門：使用ARM樣本在 AzureHDInsight 中建立Apache Spark 叢集
+      - 串流分析
+        [335] 快速入門：使用 ARM 範本建立 Azure 串流分析作業
+      - 專用 SQL 集區 (先前稱為 SQL DW)
+        [340] 快速入門：使用 ARM 範本建立 AzureSynapse Analytics 專用 SQL 集區 （先前稱為 SQL DW）
+    - 計算
+      - Batch
+        [345] 快速入門：使用ARM範本建立 Batch 帳戶
+      - 函式
+        [350] 快速入門：從ARM範本建立及部署 AzureFunctions 資源
+      - Linux 虛擬機器
+        [356] 快速入門：透過使用 ARM 範本建立Ubuntu Linux 虛擬機器
+      - 虛擬機器擴展集 - Linux
+        [365] 快速入門：使用ARM範本建立Linux虛擬機擴展集
+      - 虛擬機器擴展集 - Windows
+        [370] 快速入門：使用ARM範本建立 Windows虛擬機擴展集
+      - Windows 虛擬機器
+        [383] 快速入門：使用範本建立 Windows 虛擬機
+    - 容器
+      - AKS
+        [392] 快速入門：使用ARM範本部署 AzureKubernetes Service （AKS） 叢集
+      - 容器執行個體
+        [406] 快速入門：使用ARM範本在 Azure 中部署容器實例
+      - Container Registry
+        [413] 快速入門：使用ARM範本建立異地複寫的容器登錄
+      - Service Fabric
+        [420] 快速入門：使用ARM樣本建立 ServiceFabric 叢集
+    - 資料庫
+      - Cache for Redis
+        [426] 快速入門：使用 ARM 範本建立 AzureCache for Redis
+      - Azure Cosmos DB
+        [433] 快速入門：使用 ARM 範本建立 AzureCosmos DB 和容器
+      - 適用於 MariaDB 的資料庫
+        [443] 快速入門：使用ARM範本建立 適用於MariaDB 的 Azure 資料庫 伺服器
+      - 適用於 MySQL 的資料庫
+        [452] 快速入門：使用ARM範本建立 適用於MySQL 的 Azure 資料庫 伺服器
+      - 適用於 MySQL 的資料庫 - 彈性伺服器
+        [462] 快速入門：使用 Azure ResourceManager 建立 適用於 MySQL 的 Azure資料庫 - 彈性伺服器實例
+      - 適用於 PostgreSQL 的資料庫
+        [474] 快速入門：使用ARM範本建立 適用於PostgreSQL 的 Azure 資料庫 - 單一伺服器
+      - 適用於 PostgreSQL 的資料庫 - 彈性伺服器
+        [485] 快速入門：使用ARM範本建立 適用於PostgreSQL 的 Azure 資料庫 - 彈性伺服器實例
+      - Database Migration Service
+        [490] 快速入門：使用ARM範本建立 Azure 資料移轉服務 實例
+      - SQL Database
+        [494] 快速入門：使用 ARM 範本在 Azure SQL資料庫中建立單一資料庫
+      - SQL 受控執行個體
+        [498] 快速入門：使用 ARM 範本建立 AzureSQL 受控執行個體
+      - 虛擬機器上的 SQL Server
+        [506] 快速入門：使用 ARM 範本建立 SQLServer VM
+    - DevOps
+      - 應用程式設定
+        [517] 快速入門：使用ARM範本建立 Azure 應用程式組態存放區
+      - DevTest Labs
+        [523] 快速入門：使用 ARM 範本在 DevTest 實驗室中建立實驗室
+      - Pipelines
+        [531] 快速入門：使用 ARM 範本將 Linux Web應用程式部署至 Azure
+    - 整合
+      - API for FHIR
+        [538] 在 Azure Health Data Services 內部署FHIR 服務 - 使用 ARM 範本
+      - 事件方格
+        [544] 快速入門：使用ARM範本將 Blob 記憶體事件路由至 Web 端點
+      - Logic Apps
+        [550] 快速入門：使用ARM範本在多租使用者Azure Logic Apps 中建立和部署取用邏輯應用程式工作流程
+      - 服務匯流排
+        [555] 快速入門：使用ARM範本建立 服務匯流排 命名空間和佇列
+    - 物聯網
+      - IoT Edge
+        [560] 在 Ubuntu 虛擬機器 上執行 Azure IoTEdge
+      - IoT 中樞
+        [566] 快速入門：使用ARM範本部署 Azure IoT中樞和記憶體帳戶
+      - IoT 中樞裝置佈建服務
+        [574] 快速入門：使用 ARM 樣本設定 IoT 中樞裝置佈建服務 （DPS）
+    - 管理及治理
+      - Advisor
+        [583] 快速入門：使用ARM範本在新的建議上建立 Azure Advisor 警示
+      - 自動化
+        [588] 使用 Resource Manager 範本建立 Azure自動化帳戶
+      - Backup
+        [597] 使用 ARM 範本在 Azure 中備份虛擬機器
+      - 成本管理 + 帳單
+        [605] 快速入門：使用ARM範本建立預算
+      - 受控應用程式
+        [613] 快速入門：建立和發佈 Azure 受控應用程式定義
+      - 監視器
+        [623] Azure 監視器中的診斷設定適用的Resource Manager 範本範例
+      - 原則
+        [648] 快速入門：使用ARM範本建立原則指派，以識別不符合規範的資源
+      - 入口網站
+        [655] 快速入門：使用ARM範本在 Azure 入口網站 中建立儀錶板
+      - Resource Graph
+        [660] 快速入門：使用ARM範本建立共享查詢
+      - 角色型存取控制 - 自訂角色
+        [664] 使用ARM樣本建立或更新 Azure 自定義角色
+      - 角色型存取控制 - 角色指派
+        [671] 快速入門：使用ARM範本指派 Azure 角色
+      - 服務健康狀態
+        [677] 快速入門：使用ARM範本在服務通知上建立活動記錄警示
+      - Site Recovery
+        [681] 快速入門：使用ARM範本建立復原服務保存庫
+    - 網路
+      - 應用程式閘道
+        [687] 快速入門：使用 Azure 應用程式閘道 引導 Web 流量 - ARM 範本
+      - 內容傳遞網路
+        [698] 快速入門：建立 Azure 內容傳遞網路 配置檔和端點 - ARM 範本
+      - DDoS 保護
+        [704] 快速入門：使用ARM範本建立及設定Azure DDoS 網路保護
+      - DNS
+        [710] 快速入門：使用ARM範本建立 AzureDNS 區域和記錄
+      - ExpressRoute
+        [716] 快速入門：使用ARM範本建立具有私人對等互連的ExpressRoute線路
+      - 防火牆 - 可用性區域
+        [727] 快速入門：使用 可用性區域 部署 Azure防火牆 - ARM 範本
+      - 防火牆 - IP 群組
+        [739] 快速入門：建立 Azure 防火牆 和IP群組 -ARM 樣本
+      - 防火牆 - 多個地址
+        [753] 快速入門：建立具有多個公用IP位址的Azure 防火牆 - ARM 範本
+      - 防火牆管理員 - 原則
+        [764] 快速入門：建立 Azure 防火牆 和防火牆原則 - ARM 範本
+      - 防火牆管理員 - 虛擬中樞
+        [773] 快速入門：使用 Azure 防火牆 管理員保護虛擬中樞 - ARM 範本
+      - Front Door
+        [785] 快速入門：使用ARM範本建立 FrontDoor
+      - Front Door - 標準/進階
+        [791] 快速入門：使用ARM範本建立 FrontDoor Standard/進階版
+      - Load Balancer - 內部
+        [799] 快速入門：使用ARM範本建立內部負載平衡器以負載平衡 VM
+      - Load Balancer - 公用
+        [808] 快速入門：使用 ARM 範本來建立公用負載平衡器以平衡 VM 的負載
+      - NAT 閘道
+        [823] 快速入門：建立 NAT 閘道 - ARM 範本
+      - 私人端點
+        [833] 快速入門：使用ARM範本建立私人端點
+      - Private Link 服務
+        [843] 快速入門：使用ARM範本建立私人連結服務
+      - 流量管理員
+        [856] 快速入門：使用ARM範本建立 流量管理員 配置檔
+      - Web 應用程式防火牆
+        [861] 快速入門：使用ARM範本建立 AzureWeb 應用程式防火牆 v2
+    - 安全性
+      - 證明
+        [873] 快速入門：使用ARM範本建立 Azure 證明提供者
+      - Defender for Cloud
+        [877] 快速入門：使用ARM範本或Bicep建立特定安全性警示的自動回應
+      - Key Vault - 金鑰
+        [886] 快速入門：使用 ARM 範本建立 Azure 金鑰保存庫和金鑰
+      - Key Vault - 秘密
+        [892] 快速入門：使用ARM樣本從 Azure 金鑰保存庫 設定和擷取秘密
+    - 儲存體
+      - Data Share
+        [900] 快速入門：使用 Azure Data Share 和ARM 範本共享數據
+      - 儲存體帳戶
+        [907] 建立儲存體帳戶
+    - Web
+      - API 管理
+        [924] 快速入門：使用 ARM 範本建立新的Azure APIM 服務執行個體
+      - 應用程式服務
+        [930] 快速入門：使用ARM範本建立AppService 應用程式
+      - 通知中樞
+        [937] 快速入門：使用 Resource Manager 範本建立通知中樞
+      - Redis Web 應用程式
+        [941] 使用範本建立 Web 應用程式加上 AzureCache for Redis
+      - SignalR Service
+        [950] 快速入門：使用ARM範本部署 AzureSignalR 服務
+  - 概念
+    - 範本最佳做法
+      [957] ARM 範本最佳做法
+    - 資料類型
+      [966] ARM 範本中的資料類型
+    - 常見問題集
+      [971] 開始使用
+Build 2020
+    - 雲端一致性範本
+      [977] 開發適用於雲端一致性的 ARM 範本
+    - 部署模式
+      [997] Azure Resource Manager 部署模型
+    - 部署歷程記錄刪除
+      [1001] 從部署歷程記錄中自動刪除
+    - 部署完成模式刪除
+      [1004] 刪除 Azure 資源以進行完整模式部署
+  - 如何
+    - 建立範本
+      - JSON 結構
+        [1124] 了解 ARM 範本的結構和語法 \(部分機器翻譯\)
+      - 撰寫範本運算式
+        [1141] ARM 範本中的語法和運算式
+      - 定義
+        [1148] ARM 範本中的類型定義
+      - 參數
+        [1158] ARM 範本中的參數
+      - 變數
+        [1171] ARM 範本中的變數
+      - 使用者自訂函數
+        [1177] ARM 範本中的使用者定義函式
+      - 資源
+        - 資源宣告
+          [1180] ARM 範本中的資源宣告
+        - 子資源名稱與類型
+          [1186] 設定子資源的名稱和類型
+        - 條件式部署
+          [1190] ARM 範本中的條件式部署 \(部分機器翻譯\)
+        - 設定資源相依性
+          [1193] 定義在 ARM 範本中部署資源的順序 \(部分機器翻譯\)
+        - 設定資源位置
+          [1201] 在 ARM 範本中設定資源位置
+        - 使用範本擴充功能
+          [1203] 使用延伸模組以提供部署後的設定
+      - 輸出
+        [1204] ARM 範本中的輸出
+      - 部署指令碼
+        [1209] 
+      - 建立部署指令碼開發環境
+        [1229] 在 ARM 範本中設定部署指令碼的開發環境
+      - 重複使用範本
+        - 將範本模組化
+          [1242] 部署 Azure 資源時使用連結和巢狀的範本
+      - 建立多個執行個體
+        - 資源
+          [1269] ARM 範本中的資源反覆運算
+        - 屬性
+          [1277] ARM 範本中的屬性反覆運用
+        - 變數
+          [1283] ARM 範本中的變數反覆運算
+        - 輸出
+          [1290] ARM 範本中的輸出反覆運算
+    - 部署範本
+      - 部署作業
+        - 部署 - 入口網站
+          [1294] 使用 ARM 範本和 Azure 入口網站部署資源
+        - 部署 - CLI
+          [1303] 如何使用 Azure Resource Manager(ARM) 部署範本搭配 Azure CLI
+        - 部署 - PowerShell
+          [1313] 使用 ARM 範本與 Azure PowerShell 來部署資源
+        - 部署 - Python
+          [1321] 使用 ARM 範本與 Python 來部署資源
+        - 部署 - REST API
+          [1330] 使用 ARM 範本和 Azure ResourceManager REST API 部署資源
+        - 部署 - Cloud Shell
+          [1337] 從 Azure Cloud Shell 部署 ARM 範本
+        - 部署至 Azure 按鈕
+          [1340] 使用部署按鈕來部署遠端範本
+      - 範圍
+        - 資源群組
+          [1346] 使用 ARM 範本來部署資源群組
+        - 訂用帳戶
+          [1358] 使用 ARM 範本進行訂用帳戶部署
+        - 管理群組
+          [1376] 使用 ARM 範本進行管理群組部署
+        - 租用戶
+          [1388] 使用 ARM 範本進行租用戶部署
+        - 延伸模組資源
+          [1396] 在 ARM 範本中設定延伸模組資源的範圍
+        - 跨範圍的函式
+          [1401] 部署範圍中的 ARM 範本函數
+      - 假設部署
+        [1406] ARM 範本部署 what-if 作業 \(部分機器翻譯\)
+      - 發生錯誤時重新部署
+        [1417] 在錯誤發生時，復原至成功的部署
+      - 使用 SAS 權杖保護範本
+        [1421] 如何部署具有 SAS 權杖的私人 ARM 範本
+      - 檢視部署歷程記錄
+        [1424] 使用 Azure Resource Manager 來檢視部署歷程記錄
+    - 提供參數
+      - 建立參數檔案
+        [1432] 建立 Resource Manager 參數檔案
+      - 傳遞敏感值
+        [1439] 使用 Azure Key Vault 在部署期間傳遞安全的參數值
+    - 匯出範本
+      - 入口網站
+        [1447] 使用 Azure 入口網站匯出範本
+      - Azure CLI
+        [1454] 使用 Azure CLI 匯出範本
+      - PowerShell
+        [1459] 使用 Azure PowerShell 匯出範本
+    - 測試範本
+      - 測試工具組
+        [1464] 使用 ARM 範本測試工具組
+      - 範本測試案例
+        [1475] ARM 範本的測試案例
+      - 參數檔案測試案例
+        [1502] 參數檔案的測試案例
+      - CreateUiDefinition 測試案例
+        [1506] createUiDefinition.json 的測試案例
+      - 所有檔案測試案例
+        [1532] 所有檔案的測試案例
+    - 範本規格
+      - 建立和部署範本規格
+        [1536] Azure Resource Manager 範本規格 \(部分機器翻譯\)
+      - 轉換入口網站範本資源庫
+        [1547] 將入口網站中的範本資源庫轉換為範本規格
+    - 持續整合與持續傳遞
+      - 具有管線的 ARM 範本
+        [1549] 整合 ARM 範本與 Azure Pipelines
+      - 部署 - GitHub 動作
+        [1558] 使用 GitHub Actions 部署 ARM 範本
+    - 使用撰寫工具
+      - Visual Studio
+        [1563] 透過 Visual Studio 建立與部署 Azure 資源群組
+      - 將 VS 部署指令碼更新為 Az 模組
+        [1583] 更新 Visual Studio 的範本部署指令碼以使用 Az Powershell 模組
+      - IntelliJ IDEA
+        [1584] 使用 IntelliJ IDEA 建立及部署 ARM 範本
+  - 參考
+    - 範本參考
+      [1589] 使用 Bicep、ARM 範本和 TerraformAzAPI 提供者定義資源
+    - 範本功能
+      - 所有函式
+        [1593] ARM 範本函式
+      - 陣列函數
+        [1599] ARM 範本的陣列函式
+      - CIDR 函式
+        [1631] ARM 範本的 CIDR 函式
+      - 比較函式
+        [1638] ARM 範本的比較函式
+      - 日期函式
+        [1650] ARM 範本的日期函式
+      - 部署函式
+        [1663] ARM 範本的部署函式
+      - Lambda 函數
+        [1675] ARM 範本的 Lambda 函式
+      - 邏輯函式
+        [1689] ARM 範本的邏輯函式
+      - 數值函數
+        [1701] ARM 範本的數值函式
+      - 物件函式
+        [1716] ARM 範本的物件函式
+      - 資源函式
+        [1736] 
+      - 範圍函式
+        [1764] ARM 範本的範圍函式
+      - 字串函數
+        [1771] ARM 範本的字串函式
+    - REST
+      [1826] Azure Resource Manager
+    - Azure PowerShell
+      [1827] 
+    - Azure CLI
+      [1834] az resource
+    - .NET
+      [1867] Microsoft.Azure.Management.ResourceManager Namespace
+    - Java
+      [1873] com.microsoft.azure.management.resources
+    - Python
+      [1883] 適用於 Python 的 Azure 資源庫
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure 快速入門範本
+    - Azure 藍圖
+    - 定價計算機
+    - 服務更新
+    - Stack Overflow
+    - 影片

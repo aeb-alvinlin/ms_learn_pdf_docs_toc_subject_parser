@@ -1,0 +1,133 @@
+- ---< azure-azure-sql-edge.pdf >---
+  - SQL Edge 文件
+    [1] Azure SQL Edge 文件
+  - 概觀
+    - 什麼是 SQL Edge？
+      [3] 什麼是 Azure SQL Edge？
+    - 支援的版本和功能
+      [6] Azure SQL Edge 支援的功能
+    - 版本資訊
+      [11] Azure SQL Edge 版本資訊
+    - 使用方式和診斷資料集合
+      [18] Azure SQL Edge 使用量和診斷資料組態設定
+  - 快速入門
+    - 部署 SQL Edge
+      [22] 部署 Azure SQL Edge
+    - 使用 Docker 進行部署
+      [30] 使用 Docker 部署 Azure SQL Edge
+    - 在 SQL Edge 上部署 ONNX 模型
+      [37] 使用 ONNX 模型和 SQL 機器學習來部署和進行預測
+  - 教學課程
+    - 在 Kubernetes 中部署
+      [46] 在 Kubernetes 中部署 Azure SQL Edge容器
+    - 使用 Azure Data Factory 來同步資料
+      [57] 教學課程：使用 Azure Data Factory 從SQL Edge 同步資料至 Azure Blob 儲存體
+    - 使用 SQL 資料同步來同步資料
+      [65] 教學課程：使用 SQL 資料同步，將 SQLEdge 中的資料同步至 Azure SQLDatabase
+  - 概念
+    - 部署
+      - 使用 Azure 入口網站部署
+        [67] 部署 Azure SQL Edge
+      - 使用 Docker 進行部署
+        [75] 使用 Docker 部署 Azure SQL Edge
+      - 在 Kubernetes 中部署
+        [82] 在 Kubernetes 中部署 Azure SQL Edge容器
+      - 使用 Azure Data Studio 進行部署
+        [93] 使用 Azure Data Studio 部署 Azure SQLEdge (預覽)
+    - 機器學習服務
+      - 採用 ONNX 的機器學習和 AI
+        [96] SQL Edge 中採用 ONNX 格式的機器學習和 AI
+      - 部署 ONNX 模型
+        [98] 使用 ONNX 模型和 SQL 機器學習來部署和進行預測
+    - 效能
+      - 效能指導方針
+        [107] 效能最佳作法和設定方針
+    - 設定商務持續性
+      - 備份與還原
+        [109] 在 Azure SQL Edge 中備份和還原資料庫
+      - 容器的高可用性
+        [115] Azure SQL Edge 容器的高可用性
+    - 資料串流
+      - 串流資料
+        [118] Azure SQL Edge 中的資料串流
+      - 建立和管理串流作業
+        [120] 在 Azure SQL Edge 中建立資料串流工作
+      - 建立外部串流 (Transact-SQL)
+        [127] CREATE EXTERNAL STREAM (Transact-SQL)
+      - 置放外部串流 (Transact-SQL)
+        [134] DROP EXTERNAL STREAM (Transact-SQL)
+      - 串流檢視和 DMV
+        - 串流檢視和 DMV
+          [135] 串流目錄檢視 （Transact-SQL）
+        - sys.external_job_streams (Transact-SQL)
+          [136] sys.external_job_streams （Transact-SQL）
+        - sys.external_streaming_jobs (Transact-SQL)
+          [138] sys.external_streaming_jobs （Transact-SQL）
+        - sys.external_streams (Transact-SQL)
+          [140] sys.external_streams （Transact-SQL）
+    - 處理時間序列資料
+      - 時間間隔和遺漏值
+        [142] 填滿時間間距並插補遺漏值
+      - DATE_BUCKET (Transact-SQL)
+        [148] DATE_BUCKET (Transact-SQL)
+      - FIRST_VALUE (Transact-SQL)
+        [157] FIRST_VALUE (Transact-SQL)
+      - LAST_VALUE (Transact-SQL)
+        [161] LAST_VALUE (Transact-SQL)
+      - 資料保留和清除
+        - 資料保留概觀
+          [167] 資料保留概觀
+        - 啟用或停用資料保留
+          [169] 啟用及停用資料保留原則
+        - 資料保留清除
+          [173] 使用保留原則管理歷程記錄資料
+        - sys.sp_cleanup_data_retention (Transact-SQL)
+          [176] sys.sp_cleanup_data_retention（Transact-SQL）
+    - 安全性
+      - 安全性概觀
+        [178] 保護 Azure SQL Edge
+      - 安全性功能
+        [182] Linux 上的 SQL Server 安全性功能逐步解說
+      - 為連線加密
+        [190] 加密 Linux 上的 SQL Server 的連線
+      - 適用於 IoT 的 Microsoft Defender
+        [195] 歡迎使用適用於IoT的 MicrosoftDefender 組織
+  - 如何
+    - 設定 SQL Edge
+      - 使用環境變數進行設定
+        [198] 設定 Azure SQL Edge
+      - 使用 mssql.conf 檔案進行設定
+        [208] 
+      - 以非根使用者身分執行
+        [218] 
+      - 保存資料
+        [227] 
+      - 設定複寫
+        [230] 設定複寫至 Azure SQL Edge
+    - 連線到 SQL Edge
+      [233] 連線並查詢 Azure SQL Edge
+    - 部署 DAC 封裝
+      [237] SQL Edge 中的 SQL Database DACPAC和 BACPAC 套件
+    - 追蹤資料變更
+      [240] 在 Azure SQL Edge 中追蹤資料變更
+    - 管理 T-SQL 串流作業
+      [242] 在 Azure SQL Edge 中建立資料串流工作
+    - 為部署問題進行疑難排解
+      [249] 針對 Azure SQL Edge 部署進行疑難排解
+  - 範例
+    - Iron Ore Silica 預測
+      - 設定 Azure 資源
+        [254] 安裝軟體並設定教學課程的資源
+      - Azure IoT Edge 模組
+        [262] 設定 IoT Edge 模組和連線
+      - 將模型部署到 SQL Edge
+        [268] 使用 ONNX 在 Azure SQL Edge 上部署ML 模型
+    - 可續訂能源 - 風力渦輪機分析
+      [270] 使用 Azure SQL Edge 建置更聰明的可續用資源
+  - 參考
+    - Transact-SQL (T-SQL) 參考
+      [271] Transact-SQL 參考 (資料庫引擎)
+  - 資源
+    - 合作夥伴
+      - 安全性
+        [274] Azure SQL Edge 安全性合作夥伴

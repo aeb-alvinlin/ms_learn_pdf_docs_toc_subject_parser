@@ -1,0 +1,805 @@
+- ---< azure-defender-for-cloud.pdf >---
+  - 適用於雲端的 Microsoft Defender 文件
+    [1] 適用於雲端的 Microsoft Defender 文件
+  - 概觀
+    - 什麼是適用於雲端的 Microsoft Defender？
+      [3] 什麼是適用於雲端的 MicrosoftDefender？
+    - 新功能
+      [8] 適用於雲端的 Microsoft Defender 中的新功能？
+    - 即將推出的重要變更
+      [44] 即將推出之適用於雲端的 MicrosoftDefender 重要變更
+      - 準備淘汰 Log Analytics 代理程式
+        [61] 準備淘汰 Log Analytics 代理程式
+    - 常見問題
+      - 適用於雲端的 Defender 常見問題
+        [70] 什麼是適用於雲端的 MicrosoftDefender？
+如何? 適用於雲端的 MicrosoftDefender？
+是否有試用版 適用於雲端的 Defender？
+適用於雲端的 Microsoft Defender 會監視哪些 Azure 資源？
+      - 權限的常見問題
+        [84] 許可權如何在 適用於雲端的 MicrosoftDefender 運作？
+神秘 可以修改安全策略嗎？
+無代理程序掃描會使用哪些許可權？
+      - 資料收集、代理程式、無代理程式和工作區的常見問題
+        [89] 資料集合
+客服專員
+      - 法規合規性的常見問題
+        [102] 如何知道要使用哪個基準或標準？
+合規性儀表板支援哪些標準？
+      - 請參閱適用於容器的 Defender 常見問題
+        [106] 大規模啟用新計劃的選項有哪些？
+適用於容器的 Microsoft Defender 是否支援具有虛擬機器擴展集的 AKS 叢集？
+適用於容器的 Microsoft Defender 是否支援沒有擴展集的 AKS (預設)？
+我需要在 AKS 節點上安裝 Log AnalyticsVM 擴充功能以實現安全性保護嗎？
+如何使用現有的 Log Analytics 工作區？
+我可以刪除 適用於雲端的 Defender 所建立的預設工作區嗎？
+  - 部署
+    - 連線環境並啟用所有方案
+      - 連線您的 Azure 訂用帳戶
+        [112] 連線 您的 Azure 訂用帳戶
+      - 連接您的 AWS 帳戶
+        [118] 將 AWS 帳戶連線至適用於雲端的Microsoft Defender
+      - 連接 GCP 專案
+        [131] 連線 GCP 專案與適用於雲端的 MicrosoftDefender
+      - 連線個別非 Azure 機器
+        - 使用適用於端點的 Defender 連線機器
+          [150] 使用適用於端點的 Defender 將您的非Azure 機器連線至適用於雲端的Microsoft Defender
+        - 使用 Azure Arc 連線機器
+          [154] 將非 Azure 機器連線至適用於雲端的Microsoft Defender
+    - 啟用特定的 Defender 方案
+      - 使用 Defender CSPM 保護您的資源
+        [160] 使用 Defender CSPM 保護您的資源
+      - 部署適用於伺服器的 Defender
+        [163] 部署適用於伺服器的 Defender
+      - 使用適用於 App Service 的 Defender 保護應用程式
+        [169] 使用適用於 App Service 的 Defender 保護應用程式
+      - 使用適用於資料庫的 Defender 保護您的資料庫
+        [172] 使用適用於資料庫的 Defender 保護資料庫
+      - 使用適用於儲存體的 Defender 保護您的儲存體帳戶
+        [176] 部署適用於儲存體的 Microsoft Defender
+      - 使用適用於容器的 Defender 保護容器
+        - 保護您的 Azure 容器
+          [179] 使用適用於容器的 Defender 保護您的Azure 容器
+        - 保護您的內部部署和 IaaS Kubernetes 叢集
+          [182] 使用適用於容器的 Defender 保護您的內部部署 Kubernetes 叢集
+        - 保護您的 Amazon Web Service (AWS) 帳戶容器
+          [185] 使用適用於容器的 Defender 保護您的Amazon Web Service （AWS） 容器
+        - 保護您的 Google Cloud Platform (GCP) 專案容器
+          [189] 使用適用於容器的 Defender 保護您的Google Cloud Platform （GCP） 容器
+        - 設定適用於容器的 Defender 元件
+          [196] 設定適用於容器的 Microsoft Defender元件
+      - 使用適用於 Key Vault 的 Defender 保護您的金鑰保存庫
+        [208] 使用適用於 Key Vault 的 Defender 保護您的金鑰保存庫
+      - 使用適用於 Resource Manager 的 Defender 保護您的資源
+        [210] 使用適用於 Resource Manager 的Defender 保護您的資源
+      - 使用適用於 API 的 Defender 來保護您的 API
+        [212] 使用適用於 API 的 Defender 保護您的API
+  - 教學課程
+    - 規劃與操作指南
+      [218] 規劃與操作指南
+    - 保護 VM
+      [228] 使用適用於伺服器的 Microsoft Defender保護您的虛擬機器 (VM)
+    - 調查資源的健康情況
+      [230] 教學課程：調查資源的健康情況
+    - 設定電子郵件通知
+      [235] 快速入門：設定安全性警示的電子郵件通知
+    - 使用 ARM 範本或 Bicep 建立警示的自動回應
+      [238] 快速入門：使用ARM範本或Bicep建立特定安全性警示的自動回應
+  - 範例
+    - Azure Resource Graph 查詢
+      [247] 適用於 適用於雲端的 MicrosoftDefender的 Azure Resource Graph 範例查詢
+  - 概念
+    - 互通性與權限
+      - 使用者角色和權限
+        [259] 使用者角色和權限
+      - 適用於雲端的 Defender 支援矩陣
+        [262] 適用於雲端的 Defender 支援矩陣
+      - 適用於雲端的 Defender 雲端支援
+        [265] 適用於雲端的 Defender Azure 商業/其他雲端的支援
+      - 適用於伺服器的 Defender 支援矩陣
+        [268] 適用於伺服器的 Defender 支援
+      - 支援容器的矩陣
+        [275] 
+    - 保護多雲端資源
+      - 適用於雲端的 Defender 多雲端解決方案
+        [291] 適用於多重雲端環境的 Defender
+      - 零信任基礎結構和整合
+        [293] 零信任 基礎結構和整合
+      - 規劃多雲端安全性
+        - 開始使用
+          [299] 開始使用
+        - 判斷商務需求
+          [301] 判斷商務需求
+        - 定義採用策略
+          [303] 定義採用策略
+        - 判斷資料落地需求
+          [304] 判斷方案和代理程式需求
+        - 判斷合規性需求
+          [307] 判斷合規性需求
+        - 判斷擁有權需求
+          [308] 判斷擁有權需求
+        - 判斷存取控制需求
+          [311] 判斷存取控制需求
+        - 判斷多雲端相依性
+          [312] 判斷多重雲端相依性
+        - 自動化連接器部署
+          [317] 自動化連接器部署
+    - 改進您的雲端安全性態勢
+      - 雲端安全性態勢管理 (CSPM)
+        [319] 雲端安全性態勢管理 (CSPM)
+      - 安全性原則
+        [324] 適用於雲端的 Defender 中的安全性原則
+      - 風險優先順序
+        [327] 風險優先順序
+      - 安全分數
+        [331] 適用於雲端的 Defender 中的安全分數
+      - 法規合規性標準
+        [340] 適用於雲端的 Microsoft Defender 的法規合規性標準
+      - Microsoft 雲端安全性基準 (MCSB)
+        [344] 適用於雲端的 Defender 中的 Microsoft雲端安全性基準
+      - 使用安全性總管/攻擊路徑調查風險
+        [346] 使用安全性總管/攻擊路徑調查風險
+      - 與 Defender EASM 整合
+        [349] 與 Defender EASM 整合
+      - 重要資產保護
+        [350] 適用於雲端的 Microsoft Defender 中的重要資產保護（預覽版）
+      - 權限管理 （CIEM）
+        [359] 權限管理
+      - 無代理程式機器掃描
+        [362] 無代理程式機器掃描
+      - 秘密保護
+        - 概觀
+          [365] 保護 適用於雲端的 Defender 中的秘密
+        - 保護 VM 秘密
+          [370] 保護 VM 秘密
+        - 保護雲端部署秘密
+          [373] 保護雲端部署秘密
+      - 整合
+        - ServiceNow
+          - ServiceNow 與 適用於雲端的 Defender 整合
+            [376] ServiceNow 與 適用於雲端的 Defender整合
+          - 連線 ServiceNow 至 適用於雲端的 Defender
+            [378] 連線 ServiceNow 至 適用於雲端的Defender
+          - 在 適用於雲端的 Defender 中建立票證
+            [381] 在 適用於雲端的 Defender 中建立票證
+          - 使用治理規則建立自動票證
+            [385] 使用治理規則建立自動票證
+      - 常見問題
+        [387] 如果我在安全性控件中只處理四個建議中的三個，我的安全分數是否會變更？
+如果安全性控件提供我安全分數的零分，我應該忽略它嗎？
+掃描如何影響實例？
+掃描如何影響帳戶/訂用帳戶？
+    - 改進您的資料安全性態勢
+      - 關於資料感知安全性態勢
+        [389] 關於資料感知安全性態勢
+      - 支援和必要條件
+        [392] 
+      - 資料安全性儀表板
+        [397] 資料安全性儀表板 （預覽）
+      - 支援的敏感性資料資訊類型
+        [401] 適用於雲端的 Microsoft Defender 支援的敏感性信息類型
+    - 使用 Defender CSPM 改進您的容器安全性態勢
+      - Defender CSPM 中的無代理程式容器態勢
+        [410] Defender CSPM 中的無代理程式容器狀態
+    - 改善 AI 安全性狀態管理
+      - AI 安全性狀態管理
+        [412] AI 安全性狀態管理
+    - 安全性建議
+      - Azure 建議參考清單
+        [415] 安全性建議
+      - AWS 建議參考清單
+        [480] Amazon Web Services （AWS） 資源的安全性建議
+      - GCP 建議參考清單
+        [523] Google Cloud Platform （GCP） 資源的安全性建議
+      - DevOps 建議參考清單
+        [561] DevOps 資源的安全性建議
+      - 端點偵測和回應解決方案的評量檢查
+        [569] 端點偵測及回應 解決方案的評估檢查（MMA）
+    - 安全性警示和事件
+      - 關於安全性警示和事件
+        [575] 安全性警示和事件
+      - Microsoft Defender XDR 中的警示和事件
+        [580] Microsoft Defender 全面偵測回應 中的警示和事件
+      - 安全性警訊
+        - 安全性警示參考清單
+          [583] 
+      - 事故
+        - 事件參考清單
+          [710] 事件 - 參考指南
+      - 使用連續匯出導出警示和建議
+        [716] 使用連續匯出導出警示和建議
+  - 操作指南
+    - 使用 Azure 監視器活頁簿建置互動式報表
+      [719] 使用活頁簿建立「適用於雲端的Defender」資料的豐富互動式報告
+    - 雲端安全性狀態
+      - 檢閱雲端安全性態勢
+        [737] 檢閱雲端安全性態勢
+      - 檢閱工作負載保護
+        [739] 檢閱工作負載保護
+      - 追蹤安全分數
+        [741] 追蹤安全分數
+      - 整合安全性解決方案
+        [747] 整合適用於雲端的 Defender 中的安全性解決方案
+      - 開啟權限管理 （CIEM）
+        [751] 啟用許可權管理
+    - AI 安全性狀態
+      - 探索產生的 AI 工作負載
+        [756] 探索產生的 AI 工作負載
+      - 探索預先部署產生的 AI 成品的風險
+        [759] 探索預先部署產生的 AI 成品的風險
+    - 資料感知安全性態勢
+      - 啟用資料感知安全性態勢
+        [764] 啟用資料感知安全性態勢
+      - 探索敏感性資料的風險
+        [767] 探索敏感性資料的風險
+      - 自訂敏感性設定
+        [772] 自訂資料敏感度設定
+    - 容器安全性態勢
+      - 將 CSPM 的無代理程式容器上線
+        [776] 在 Defender CSPM 中將無代理程式容器狀態上線
+      - 容器的攻擊路徑分析和增強的風險搜捕
+        [778] 容器的攻擊路徑分析和增強的風險搜捕
+    - 秘密安全性狀態
+      - 補救 VM 秘密的問題
+        [785] 補救 VM 秘密問題
+      - 補救雲端部署秘密
+        [789] 補救雲端部署秘密的問題
+    - 管理安全性標準和建議
+      - 選擇合規性儀表板的標準
+      - 建立自定義標準/建議
+        [792] 在 適用於雲端的 Microsoft Defender 中建立自定義安全性標準和建議
+      - 管理 MCSB 建議
+        [800] 在適用於雲端的 Defender 中管理 MCSB建議
+      - 豁免建議的資源
+        [804] 將資源從建議中豁免
+    - 調查及補救安全性態勢
+      - 調查安全性建議
+        - 檢閱安全性建議
+          [808] 檢閱安全性建議
+        - 檢閱豁免建議的資源
+          [816] 檢閱豁免建議的資源
+        - 修復建議
+          [819] 修復建議
+        - 使用治理規則推動補救
+          [823] 使用治理規則推動補救
+        - 自動化補救回應
+        - 在 Windows Admin Center 中檢視建議和警示
+          [828] 使用適用於雲端的 Microsoft Defender保護 Windows Admin Center資源
+      - 改善法規合規性
+        [833] 改善法規合規性
+      - 使用安全性總管和攻擊路徑進行調查
+        - 識別及補救攻擊路徑
+          [844] 識別及補救攻擊路徑
+        - 使用 API 擷取攻擊路徑數據
+          [849] Retrieve attack path data with API
+        - 使用雲端安全性總管建置查詢
+          [851] 使用雲端安全性總管建置查詢
+    - 內建安全性保護
+      - 使用 Purview 來保護敏感性資料
+        [857] 利用 Purview 目錄來保護敏感性資料 (預覽)
+      - 降低資產庫存中特定資源的風險
+        [862] 使用資產清查來管理資源的安全性態勢
+      - 維持網路安全性最佳做法
+        [870] 保護網路資源
+      - 使用多重要素驗證鎖定登入
+        [875] 管理訂用帳戶上的多重要素驗證 (MFA)
+      - 其他威脅防護
+        [878] 適用於雲端的 Microsoft Defender 中的其他威脅防護
+    - 依訂用帳戶、使用者和權限管理安全性
+      - 組織管理群組和訂用帳戶
+        [881] 將訂用帳戶組織成管理群組，並將角色指派給使用者
+      - 授與和要求全租用戶的權限
+        [887] 授與和要求全租用戶可見度
+      - 為管理群組啟用適用於雲端的 Defender
+        [892] 在管理群組中的所有訂用帳戶上啟用適用於雲端的 Defender
+      - 設定跨租用戶管理
+        [895] 在適用於雲端的 Defender 中進行跨租用戶管理
+      - 使用 PowerShell 進行自動上線
+        [897] 使用 PowerShell 將適用於雲端的Microsoft Defender 自動上線
+    - 警示、事件和威脅報表
+      - 管理和回應安全性警示
+      - 建立和管理警示歸併規則
+        [901] 隱藏適用於雲端的 Microsoft Defender警示
+      - 匯出警示和建議
+        - 將警示串流至監視解決方案
+          [905] 將警示串流至監視解決方案
+        - 準備要匯出至 Splunk 和 QRadar 的 Azure 資源
+          [911] 準備要匯出至 Splunk 和 QRadar 的Azure 資源
+        - 連續匯出
+          - 在 Azure 入口網站 中設定連續匯出
+            [919] 在 Azure 入口網站 中設定連續匯出
+          - 使用 REST API 設定連續匯出
+            [924] 使用 REST API 設定連續匯出
+          - 使用 Azure 原則設定連續匯出
+            [926] 使用 Azure 原則 設定連續匯出
+          - 持續匯出至防火牆後方的事件中樞
+            [928] 設定持續匯出至防火牆後方的事件中樞
+          - 在 Azure 監視器中檢視導出的數據
+            [931] 在 Azure 監視器中檢視導出的數據
+        - 下載 CSV 報告
+          [933] 下載 CSV 報告
+      - 警示結構描述
+        [935] 警示結構描述
+      - 管理安全性事件
+        [938] 管理適用於雲端的 Microsoft Defender中的安全性事件
+      - 產生威脅情報報告
+        [942] 適用於雲端的 Microsoft Defender 威脅情報報告
+      - 驗證警示設定
+        [945] 適用於雲端的 Microsoft Defender 中的警示驗證
+      - 自動回應警示
+  - 保護工作負載
+    - 設定與監視
+      - 概觀
+        [953] 適用於雲端的 Defender 如何收集數據？
+      - 部署 Azure 監視器代理程式
+        [960] 適用於雲端的 Defender 中的 Azure 監視器代理程式
+      - 使用 Log Analytics 代理程式
+        [964] 
+    - 適用於 API 的 Defender
+      - 關於適用於 API 的 Defender
+        [970] 關於適用於 API 的 Microsoft Defender
+      - 支援和必要條件
+        [974] 適用於 API 的 Defender 部署的支援和必要條件
+      - 使用適用於 API 的 Defender 來保護您的 API
+        [976] 使用適用於 API 的 Defender 保護您的API
+      - 驗證 API 警示
+        [982] 驗證適用於 API 的 Microsoft Defender警示
+      - 調查結果、建議、警示
+        [986] 調查 API 結果、建議和警示
+      - 管理適用於 API 的 Defender
+        [989] 管理適用於 API 的 Defender 部署
+      - 適用於 API 的 Defender 常見問題
+        [992] 可用性和上線
+      - 分類具有敏感性資料暴露的 API
+        [996] 分類具有敏感性資料暴露的 API
+      - 合作夥伴
+        - 合作夥伴應用程式
+          [999] 「適用於雲端的 Microsoft Defender」中的合作夥伴應用程式的 API 安全性測試(預覽版)
+        - 上線 42Crunch (預覽)
+          [1001] 42Crunch 技術入門訓練指南
+        - 上架 StackHawk （預覽）
+          [1009] StackHawk 技術上線指南
+        - 上線 Bright Security （預覽版）
+          [1016] Bright Security 技術上線指南
+    - 適用於伺服器的 Defender
+      - 部署
+        - 部署適用於伺服器的 Defender
+          [1020] 部署適用於伺服器的 Defender
+        - 設定適用於伺服器的 Microsoft Defender 功能
+          [1026] 設定適用於伺服器的 Microsoft Defender功能
+        - 規劃「適用於伺服器的 Microsoft Defender」部署
+          - 開始使用
+            [1033] 規劃適用於伺服器的 Defender 部署
+          - 檢閱資料落地和工作區設計
+            [1036] 針對適用於伺服器的 Defender 規劃資料落地和工作區
+          - 判斷角色和存取權
+            [1039] 規劃適用於伺服器的 Defender 的角色和權限
+          - 選取方案
+            [1041] 選取適用於伺服器的 Defender 方案
+          - 檢閱代理程式和延伸模組
+            [1046] 規劃適用於伺服器的代理程序、擴充功能和適用於Defender的 Azure Arc
+          - 調整適用於伺服器的 Defender 部署
+            [1052] 調整適用於伺服器的 Defender 部署
+      - 無代理程式掃描
+        - 無代理程式機器掃描
+          [1055] 無代理程式機器掃描
+        - 保護秘密
+          - 概觀
+            [1058] 保護 VM 秘密
+          - 補救 VM 秘密
+            [1061] 補救 VM 秘密問題
+        - 使用無代理程式惡意代碼掃描保護伺服器
+          [1065] 使用無代理程式惡意程式碼掃描保護伺服器
+        - 啟用 VM 的無代理程式掃描
+          [1067] 啟用 VM 的無代理程式掃描
+      - 弱點掃描
+        - 使用 Microsoft Defender 弱點管理來啟用弱點掃描
+          [1077] 使用 Microsoft Defender 弱點管理來啟用弱點掃描
+        - 使用自備授權 (BYOL) 解決方案啟用弱點掃描
+          [1080] 使用自備授權 (BYOL) 解決方案啟用弱點掃描
+        - 自動啟用弱點評量解決方案
+          [1085] 為您的機器自動設定弱點評定
+        - 轉換至伺服器的 Microsoft Defender 弱點管理
+        - 常見問題
+          [1087] 在適用於雲端的 Defender 上擁有由Microsoft Defender 弱點管理 (MDVM)支援的合併 VA 解決方案有哪些優點？
+如何檢視 MDVM 所產生，以 CVE 識別碼為重點的 VA 結果？
+        - 使用整合式 Qualys 掃描器 (已過時) 啟用弱點掃描
+          [1090] 使用整合式 Qualys 掃描器啟用弱點掃描（已淘汰）
+      - 檔案完整性監視
+        - 了解檔案完整性監視
+          [1097] 
+        - 啟用檔案完整性監視 (AMA)
+          [1099] 
+        - 啟用檔案完整性監視 (Log Analytics)
+          [1102] 使用 Log Analytics 代理程式進行檔案完整性監視
+      - Just-In-Time 存取
+        - 了解 Just-In-Time VM 存取
+          [1116] 了解 Just-In-Time VM (JIT) 存取
+        - 在 VM 上啟用 Just-In-Time 存取
+      - 端點偵測及回應
+        - 了解端點偵測和回應
+          [1120] 瞭解 端點偵測及回應
+        - 啟用適用於端點的 Defender 整合
+          [1123] 啟用適用於端點的Defender整合
+        - 端點偵測及回應 解決方案的評估檢查 （MMA）
+          [1137] 端點偵測及回應 解決方案的評估檢查（MMA）
+        - 檢閱並補救 端點偵測及回應 建議 （無代理程式）
+          [1143] 檢閱並補救 端點偵測及回應 建議 （無代理程式）
+      - 自適性應用程式控制
+        - 了解自適性應用程式控制
+          [1155] 了解自適性應用程式控制
+        - 啟用及管理自適性應用程式控制
+          [1157] 啟用及管理自適性應用程式控制
+      - 檢閱伺服器保護
+        - 檢閱強化建議
+          [1165] 檢閱強化建議
+        - 檢閱 Docker 主機強化建議
+          [1169] 檢閱 Docker 主機強化建議
+        - 檢閱和修復弱點
+          [1172] 從 VM 上的弱點評估解決方案檢視並補救結果
+        - 停用特定的弱點結果
+          [1179] 
+        - 使用檔案完整性監視來比較基準
+          [1182] 使用 Log Analytics 代理程式進行檔案完整性監視
+        - 改進您的網路安全性態勢
+          [1196] 透過自適性網路強化來改善網路安全性狀況
+        - 檢閱電腦上安裝的應用程式和軟體
+          [1209] 
+      - 常見問題 (FAQ)
+        - 適用於伺服器的 Defender 常見問題
+          [1212] 如果我已經有 適用於端點的 MicrosoftDefender 授權，可以取得折扣嗎？
+        - Azure 虛擬機器的常見問題
+          [1229] 支援哪些類型的虛擬機器？
+為什麼適用於雲端的 Defender 無法辨識我的 Azure VM 上所執行的反惡意程式碼軟體解決方案？
+為什麼我會從 VM 收到「遺失掃描資料」訊息？
+適用於雲端的 Defender 多久掃描作業系統弱點、系統更新和端點保護問題一次？
+        - 弱點評估的常見問題
+          [1231] Qualys 授權是否需要任何額外費用？
+安裝 Qualys 擴充功能需要哪些必要條件和權限？
+我可以移除「適用於雲端的 Defender」的 Qualys 擴充功能嗎？
+    - 適用於容器的 Defender
+      - 概觀
+        [1234] 適用於容器的 Microsoft Defender 中的容器安全性概觀
+      - 適用於容器的 Defender 的運作方式為何?
+        [1239] 適用於容器的 Defender 架構
+      - 由 Microsoft Defender 弱點管理提供的弱點評量
+        - Azure 的弱點評估
+          [1243] 具有 Microsoft Defender 弱點管理 的Azure 弱點評估
+        - AWS 的弱點評估
+          [1247] 使用 Microsoft Defender 弱點管理 的AWS 弱點評估
+        - GCP 的弱點評估
+          [1251] 具有 Microsoft Defender 弱點管理 的GCP 弱點評估
+        - 啟用弱點評量
+          [1255] 啟用 Microsoft Defender 弱點管理 所提供的弱點評估
+        - 檢視和補救登錄映像的弱點（風險型）
+          [1257] 檢視和補救登錄映像的弱點（風險型）
+        - 檢視及補救執行中容器的弱點（風險型）
+          [1260] 檢視和補救 Kubernetes 叢集上執行的容器弱點（風險型）
+        - 停用映像上的弱點（風險型）
+          [1263] 在容器登錄映像和執行映射上建立豁免並停用弱點評估結果
+        - 檢視和補救登錄映像的弱點 （安全分數）
+          [1267] 檢視和補救登錄映像的弱點 （安全分數）
+        - 檢視並補救執行映像的弱點 （安全分數）
+          [1272] 檢視和補救 Kubernetes 叢集上執行的映像弱點 （安全分數）
+        - 停用映像上的弱點 （安全分數）
+          [1277] 在容器登入映像和執行映像上建立豁免並停用弱點評估結果 （安全分數）
+        - REST API （安全分數）
+          [1281] 容器弱點評估 REST API
+        - 轉換至 Defender 弱點管理
+          [1300] 轉換至 Microsoft Defender 弱點管理
+        - 常見問題
+          [1312] Microsoft Defender 弱點管理 解決方案的常見問題
+      - Kubernetes 資料平面強化
+        [1314] 保護您的 Kubernetes 資料平面強化
+      - 由 Qualys 提供的 Azure 弱點評量 (已過時)
+        [1324] 具有 Microsoft Defender 弱點管理 的Azure 弱點評估
+      - 適用於 Kubernetes 的 Defender (已淘汰)
+        [1328] 適用於 Kubernetes 的 MicrosoftDefender (取代) 簡介
+      - 適用於容器登錄的 Microsoft Defender (已淘汰)
+        [1331] 適用於容器登錄的 Microsoft Defender簡介（已淘汰）
+    - 資料庫保護
+      - 使用適用於資料庫的 Defender 保護您的資料庫
+        [1336] 使用適用於資料庫的 Defender 保護資料庫
+      - 適用於 Azure SQL Databases 的 Defender
+        - 開始使用
+          [1340] 適用於 Azure SQL 的 Microsoft Defender概觀
+        - 弱點評估
+          - 概觀
+            [1342] SQL 弱點評定可協助您識別資料庫弱點
+          - 啟用弱點評定
+            [1345] 在您的 Azure SQL 資料庫上啟用弱點評量
+          - 管理弱點評量
+            - 管理 Azure SQL 資料庫中的結果
+              [1351] 管理 Azure SQL 資料庫中的弱點結果
+            - PowerShell 範例
+              - 使用快速設定在 Azure SQL 資料庫上啟用弱點評量
+                [1364] 使用快速設定在 Azure SQL 資料庫上啟用弱點評量
+              - 在 Azure SQL 資料庫上設定弱點評估的基準
+                [1381] 在 Azure SQL 資料庫設定弱點評量基準
+              - 快速設定 PowerShell 包裝函式模組
+                [1385] Express 設定 PowerShell 包裝函式模組
+              - 範例 - 快速設定
+                [1404] 快速設定 PowerShell 命令參考
+            - Azure CLI 範例
+              [1417] 快速設定 Azure 命令列介面 (CLI) 命令參考
+            - 尋找並補救弱點
+              [1444] 尋找並補救 Azure SQL 資料庫中的弱點
+          - 弱點評估規則
+            [1449] SQL 弱點評估規則參考指南
+          - 弱點評估規則變更記錄
+            [1471] SQL 弱點評估規則變更記錄
+          - 在儲存體中儲存弱點掃描
+            [1475] 將弱點評估掃描結果儲存至可透過防火牆和 VNet 存取的儲存體帳戶
+          - 取用和匯出掃描結果
+            [1486] 如何取用和匯出掃描結果
+        - 調查威脅
+          - 概觀
+            [1492] SQL 進階威脅防護
+          - 設定威脅偵測
+            [1498] 設定 Azure SQL 資料庫 的進階威脅防護
+      - 電腦上的適用於 SQL 的 Defender 伺服器
+        - 在電腦上啟用適用於 SQL 伺服器的 Defender
+          [1501] 啟用機器上適用於 SQL 伺服器的Microsoft Defender
+        - 移轉至 SQL Server 目標 Azure 監視器代理程式的自動佈建程序
+          [1505] 移轉至以 SQL 伺服器為目標的 AzureMonitoring Agent (AMA) 的自動佈建程序
+        - 掃描您的 SQL 資源是否有弱點
+          [1508] 掃描您的 SQL 伺服器是否有弱點
+      - 適用於開放原始碼關聯式資料庫的 Defender
+        - 概觀
+          [1515] 什麼是適用於開放原始碼關係資料庫的Microsoft Defender
+        - 在 Azure 上啟用
+          [1518] 在 Azure 上啟用適用於開放原始碼關係資料庫的 Defender
+        - 在 AWS 上開啟 （預覽）
+          [1520] 在 AWS 上啟用適用於開放原始碼關係資料庫的 Defender （預覽）
+        - 回應 Defender 開放原始碼資料庫警示
+          [1526] 回應 Defender 開放原始碼資料庫警示
+      - 適用於 Azure Cosmos DB 的 Defender
+        - 概觀
+          [1529] 適用於 Azure Cosmos DB 的 MicrosoftDefender 概觀
+        - 啟用適用於 Azure Cosmos DB 的 Microsoft Defender
+          [1532] 啟用適用於 Azure Cosmos DB 的Microsoft Defender
+      - 適用於資料庫的 Defender 常見問題
+        [1537] 如果我在訂閱上啟用此 MicrosoftDefender 方案，訂閱上的所有 SQLServer 是否都會受到保護？
+在機器上部署適用於 Azure SQL 的Microsoft Defender 會影響效能嗎？
+    - 適用於 App Service 的 Defender
+      - 概觀
+        [1540] 適用於 App Service 的 Defender 概觀，以保護您的 Azure App 服務 Web 應用程式和 API
+      - 使用適用於 App Service 的 Defender 保護應用程式
+        [1544] 使用適用於 App Service 的 Defender 保護應用程式
+    - 適用於儲存體的 Defender
+      - 概觀
+        [1547] 適用於 儲存體 的 Microsoft Defender 概觀
+      - 惡意程式碼掃描
+        [1554] 適用於儲存體的 Defender 中的惡意程式碼掃描
+      - 敏感性資料威脅偵測
+        [1564] 偵測敏感性資料的威脅
+      - 啟用和設定適用於儲存體的 Defender
+        - 使用適用於儲存體的 Defender 保護您的儲存體
+          [1567] 部署適用於儲存體的 Microsoft Defender
+        - 所需的權限
+          [1570] 啟用適用于儲存體的 Defender 及其功能的必要許可權
+        - 啟用選項
+          - 使用 Azure 原則啟用 (建議)
+            [1572] 使用 Azure 內建原則大規模啟用和設定
+          - 使用基礎結構即程式碼啟用
+            [1574] 使用基礎結構即程式代碼範本啟用和設定
+          - 使用 REST API 啟用
+            [1578] 使用 REST API 啟用和設定
+          - 使用 Azure 入口網站啟用
+            [1580] 使用 Azure 入口網站 啟用和設定
+        - 惡意程式碼掃描的進階設定
+          [1582] 惡意程式碼掃描的進階設定
+        - 設定惡意程式碼掃描的回應
+          [1589] 設定惡意程式碼掃描的回應
+        - 測試並執行概念證明
+          [1596] 測試適用於儲存體的 Defender 資料安全性功能
+        - 了解惡意程式碼掃描結果
+          [1603] 瞭解惡意代碼掃描結果
+      - 安全性威脅和安全性警示的清單
+        [1607] 安全性威脅和安全性警示的清單
+      - 適用於儲存體的 Defender 常見問題
+        [1611] 惡意程式碼掃描是否包含在適用於雲端的Defender 免費試用版內？
+是否可在資源層級啟用適用於儲存體的Defender？
+我是否可將特定儲存體帳戶排除於保護外？
+訂用帳戶層級啟用需要多久才會生效？
+新版與適用於儲存體的 Defender (傳統)的功能有何差異？
+      - 適用於儲存體的 Defender (傳統)
+        - 概觀 (傳統)
+          [1613] 適用於儲存體的 Microsoft Defender (傳統) 概觀
+        - 啟用和設定適用於儲存體的 Defender (傳統)
+          [1618] 啟用適用於儲存體的 Microsoft Defender(傳統版)
+        - 移轉至新方案
+          [1631] 從適用於 儲存體的Defender移轉至新方案
+        - 適用於儲存體的 Defender 常見問題 (傳統)
+          [1634] 新版適用於儲存體的 Defender 方案與先前傳統版適用於儲存體的 Defender 方案之間的功能有什麼差異？
+如何在帳戶等級預估費用？
+我可以將特定 Azure 儲存體帳戶從受保護的訂用帳戶中排除嗎？
+我可以從適用於儲存體的 Defender (傳統) 中，將每筆交易定價切換為全新適用於儲存體的 Defender 方案嗎？用
+    - 適用於 Key Vault 的 Defender
+      - 概觀
+        [1637] 適用於 Key Vault 的 Microsoft Defender概觀
+      - 使用適用於 Key Vault 的 Defender 保護您的金鑰保存庫
+        [1641] 使用適用於 Key Vault 的 Defender 保護您的金鑰保存庫
+      - 處理適用於 Key Vault 的 Defender 警示
+        [1644] 
+    - 適用於 Resource Manager 的 Defender
+      - 概觀
+        [1647] 適用於 Resource Manager 的 MicrosoftDefender 概觀
+      - 使用適用於 Resource Manager 的 Defender 保護您的資源
+        [1649] 使用適用於 Resource Manager 的Defender 保護您的資源
+      - 處理適用於 Resource Manager 的 Defender 警示
+        [1651] 回應適用於 Resource Manager 的Microsoft Defender 警示
+    - 適用於 DNS 的 Defender
+      - 概觀
+        [1654] 適用於 DNS 的 Microsoft Defender 概觀
+      - 回應適用於 DNS 的 Microsoft Defender 警示
+        [1656] 回應適用於 DNS 的 Microsoft Defender警示
+    - DevOps 安全性
+      - DevOps 安全性概觀
+        [1658] 適用於雲端的 Microsoft DefenderDevOps 安全性概觀
+      - 支援和必要條件
+        [1662] 支援和必要條件：DevOps 安全性
+      - DevOps 環境安全性態勢
+        [1666] 改善 DevOps 環境安全性態勢
+      - Cloud for DevOps 安全性的可靠性
+        [1668] 適用於雲端的 Microsoft DefenderDevOps 安全性中的可靠性
+      - 上線
+        - 連線您的 Azure DevOps 環境
+          [1671] 快速入門：將您的 Azure DevOps 環境存放庫連接至適用於雲端的 MicrosoftDefender
+        - 連線 GitHub 環境
+          [1675] 快速入門：將您的 GitHub 環境連線至適用於雲端的 Microsoft Defender
+        - 連線 GitLab 環境
+          [1679] 快速入門：將您的 GitLab 環境連線至適用於雲端的 Microsoft Defender
+        - 設定 Microsoft 安全性 DevOps Azure DevOps 延伸模組
+        - 設定 Microsoft 安全性 DevOps GitHub 動作
+          [1683] 設定 Microsoft 安全性 DevOps GitHub動作
+        - 設定提取要求註釋
+          [1689] 在 GitHub 和 Azure DevOps 中啟用提取要求批注
+        - 將 IaC 範本從程式碼對應至雲端
+          [1698] 將基礎結構即程式碼範本對應至雲端資源
+        - 將容器映像從程式碼對應至雲端
+          [1701] 將容器映像從程式碼對應至雲端
+        - 編輯 DevOps 連接器
+          [1705] 編輯適用於雲端的 Microsoft Defender的 DevOps 連接器
+      - 調查和補救
+        - 探索 IaC 設定錯誤
+          [1707] 掃描已連線的 GitHub 存放庫或 AzureDevOps 專案
+        - 檢閱提取要求註釋
+          [1715] 在 GitHub 和 Azure DevOps 中檢閱提取要求註釋
+      - DevOps 安全性的常見問題
+        [1718] 為何會在嘗試連線時收到錯誤？
+為什麼找不到我的 Azure DevOps 存放庫？
+為什麼我在選擇卸除該檔案的路徑中看不到產生的 SARIF 檔案？
+為什麼我在 適用於雲端的 MicrosoftDefender 中看不到 Azure DevOpsProjects 的結果？
+    - AI 工作負載的威脅防護 （預覽）
+      - 概觀
+        [1724] 概觀 - AI 威脅防護
+      - 開啟 AI 工作負載的威脅防護 （預覽）
+        [1726] 開啟 AI 工作負載的威脅防護 （預覽）
+  - 參考
+    - 封存的版本資訊 (超過六個月)
+      [1728] 
+    - Microsoft 如何保護客戶資料
+      [1895] 適用於雲端的 Microsoft Defender 資料安全性
+    - REST API 文件
+      [1899] Resource Manager
+    - 安全性基準
+      [1900] 適用于雲端Microsoft Defender的 Azure安全性基準
+    - Azure 原則內建
+      [1910] 
+    - Azure 更新部落格
+    - Azure CLI
+      [1949] az security
+    - Azure PowerShell
+      [1963] Az.Security
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - 適用於雲端的 Defender 詞彙解釋
+      [1972] 適用於雲端的 Defender 詞彙
+    - 欄位中適用於雲端的 Microsoft Defender
+      - 新的 AWS 連接器
+        [1983] 適用於雲端的 Microsoft Defender 中的新 AWS 連接器
+      - 與 Azure Purview 整合
+        [1984] 整合 Microsoft Purview 與適用於雲端的Microsoft Defender
+      - 適用於容器的 Microsoft Defender
+        [1986] 適用於容器的 Microsoft Defender
+      - 安全性態勢管理改善
+        [1987] 適用於雲端的 Microsoft Defender 的安全性狀態管理改善
+      - 適用於伺服器的 Microsoft Defender
+        [1988] 適用於伺服器的 Microsoft Defender
+      - 從欄位學習的課程
+        [1990] 從適用於雲端的 Defender 現場學習到的課程
+      - 新的 GCP 連接器
+        [1992] 適用於雲端的 Microsoft Defender 中的新 GCP 連接器
+      - 適用於 IoT 的 Microsoft Defender
+        [1993] 適用於 IoT 的 Microsoft Defender
+      - 多雲端環境中適用於容器的 Microsoft Defender
+        [1995] 多雲端環境中適用於容器的 MicrosoftDefender
+      - 使用適用於容器的 Defender 保護 GCP 中的容器
+        [1997] 使用適用於容器的 Defender 保護 GCP 中的容器
+      - 容器的威脅環境
+        [1999] 適用於容器的 Defender 的威脅環境
+      - 適用於伺服器的 Defender 中的增強工作負載保護功能
+        [2001] 適用於伺服器的 Defender 中的增強工作負載保護功能
+      - 適用於儲存體的 Defender
+        [2003] 適用於儲存體的 Defender
+      - AWS 和 GCP 中適用於伺服器部署的 Defender
+        [2004] AWS 和 GCP 中適用於伺服器部署的Defender
+      - 使用治理修復安全性建議
+        [2006] 使用治理修復安全性建議
+      - 適用於伺服器的 Defender 與適用於端點的 Microsoft Defender 整合
+        [2008] 適用於伺服器的 Defender 與 適用於端點的 Microsoft Defender
+      - 適用於伺服器的 Defender 與 Microsoft Entra 整合
+        [2009] 適用於雲端的 Defender 與 MicrosoftEntra 整合 |欄位中的 適用於雲端的Defender
+      - 適用於 Azure Cosmos DB 的 Defender
+        [2010] 適用於 Azure Cosmos DB 的 Defender |適用於雲端的 Defender 現場
+      - 適用於雲端的 Defender 中的 DevOps 安全性
+        [2012] 適用於 DevOps 的 Defender |欄位中的適用於雲端的 Defender
+      - 雲端安全性總管和攻擊路徑分析
+        [2014] 雲端安全性總管和攻擊路徑分析 | 適用於雲端的 Defender 實務
+      - 法規合規性儀表板的最新更新
+        [2016] 法規合規性儀表板中的最新更新 |欄位的適用于雲端的 Defender
+      - Defender EASM
+        [2017] Defender EASM |欄位中適用于雲端的Defender
+      - Defender 威脅情報 (Defender TI)
+        [2019] Defender 威脅情報 |欄位的適用于雲端的Defender
+      - Defender 中 SQL 弱點評量的增強功能
+        [2021] 適用于 SQL 弱點評估的 Defender 中的增強功能 |欄位中的適用于雲端的 Defender
+      - 適用於容器的 Defender 中的 AWS ECR 涵蓋範圍
+        [2022] 適用于容器的 Defender 中的 AWS ECR涵蓋範圍|欄位中的 Defender for Cloud
+      - 適用於雲端的 Defender 中的治理功能改善項目
+        [2024] 適用于雲端的 Defender 中的治理功能改善 |欄位中的 Defender for Cloud
+      - 解除保護適用於伺服器的 Defender
+        [2025] 解除保護適用于伺服器的 Defender |欄位中的 Defender for Cloud
+      - 零信任和適用於雲端的 Defender
+        [2027] 零信任和適用于雲端的 Defender |欄位中的適用于雲端的 Defender
+      - 適用於雲端的 Defender 中的安全性原則增強功能
+        [2028] 適用于雲端的 Defender 中的安全性原則增強功能
+      - 適用於雲端的 Defender 中 AWS 和 GCP 的新自訂建議
+        [2030] 適用于雲端的 Defender 中 AWS 和 GCP的新自訂建議
+      - 了解資料感知安全性態勢功能
+        [2031] 瞭解資料感知安全性狀態功能
+      - 使用適用於 API 的 Defender 的 API 安全性
+        [2033] 適用于 API 的 Defender 的 API 安全性
+      - 無代理程式容器態勢管理
+        [2035] 無代理程式容器狀態管理
+      - 了解 DevOps 威脅矩陣
+        [2037] 瞭解DevOps威脅矩陣
+      - 安全性警示相互關聯
+        [2038] 安全性警示相互關聯
+      - 適用於 GCP 的 Defender CSPM 支援和其他更新
+        [2039] 適用於 GCP 的 Defender CSPM 支援和其他更新
+      - 對抗身分識別型供應鏈攻擊的功能
+        [2040] 對抗身分識別型供應鏈攻擊的功能
+      - 資料安全性儀表板
+        [2041] 適用於雲端的 Defender 中的資料安全性儀表板
+      - 適用於 API 的 Defender 正式發行
+        [2042] 適用于 API 的 Defender 到達 GA
+      - Live from Microsoft Ignite 2023
+        [2043] Live from Microsoft Ignite 2023
+      - 與 ServiceNow 原生整合
+        [2044] 原生與 ServiceNow 整合
+      - 虛擬機器的無代理程式秘密掃描
+        [2045] 虛擬機的無代理程式秘密掃描
+      - 來自 Microsoft Entra 權限管理的整合見解
+        [2046] 來自 Microsoft Entra 許可權管理的整合見解
+      - 無代理程式惡意程式碼偵測
+        [2047] 無代理程式惡意代碼偵測
+      - 風險優先順序
+        [2048] 適用於雲端的 Defender 中的風險優先順序
+      - Defender CSPM 中的DevOps安全性功能
+        [2049] Defender CSPM 中的DevOps安全性功能
+      - Defender CSPM 中的弱點管理
+        [2050] Defender CSPM 中的弱點管理
+    - 管理使用者資料
+      [2051] 在適用於雲端的 Microsoft Defender 中管理使用者資料
+    - 適用於 IoT 的 Microsoft Defender 文件 (部分機器翻譯)
+      [2055] 
+    - Azure 安全性文件
+      [2056] 
+    - 適用於雲端的 Microsoft Defender 技術社群部落格
+    - Stack Overflow 上適用於雲端的 Microsoft Defender
+    - 定價
+    - 區域可用性
+    - 疑難排解指南
+      [2059] 適用於雲端的 Microsoft Defender 疑難排解指南

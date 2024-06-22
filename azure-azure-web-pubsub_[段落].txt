@@ -1,0 +1,231 @@
+- ---< azure-azure-web-pubsub.pdf >---
+  - Web PubSub 文件
+    [1] Azure Web PubSub 服務文件
+  - 總覽
+    - 關於 Web PubSub
+      [4] 什麼是 Azure Web PubSub 服務？
+    - 關於中樞、群組和連線
+      [7] Azure Web PubSub 基本概念
+    - 定價
+    - 區域可用性
+    - 新功能
+      [10] Azure Web PubSub 的新功能
+  - 快速入門
+    - 建立資源
+      [11] 建立 Web PubSub 資源
+    - 在用戶端之間 PubSub
+      [14] 在用戶端之間發佈/訂閱
+    - 從伺服器推送訊息
+      [18] 從伺服器推送訊息
+    - 來自用戶端的事件通知
+      [24] 來自用戶端的事件通知
+  - 教學課程
+    - 發佈和訂閱訊息
+      [33] 教學課程：使用 WebSocket API 和 AzureWeb PubSub 服務 SDK 發佈和訂閱訊息
+    - 建置聊天應用程式
+      [40] 教學課程：使用 Azure Web PubSub 服務建立聊天應用程式
+    - 使用 Visual Studio Code 進行開發
+      [53] 快速入門：使用Visual StudioCode擴充功能進行開發
+    - 使用服務支援的子通訊協定進行用戶端串流
+      [57] 教學課程：使用子通訊協定在 WebSocket用戶端之間發佈和訂閱訊息
+    - 驗證和權限
+      [67] 教學課程：在使用 Azure Web PubSub時，將驗證和權限新增至您的應用程式
+    - 使用 Azure Functions 建置無伺服器聊天應用程式
+      [75] 教學課程：使用 Azure Functions 和Azure Web PubSub 服務建立無伺服器即時聊天應用程式
+  - 操作指南
+    - 開發
+      - 建立 WebSocket 用戶端
+        [88] 啟動與 Azure Web PubSub 的WebSocket 連線
+      - 建立可靠的 Websocket 用戶端
+        [91] 使用 subprotocol 建立可靠的 Websocket
+      - 產生用戶端存取 URL
+        [96] 如何產生用戶端的用戶端存取 URL
+      - 設定事件處理常式
+        [99] Azure Web PubSub 服務中的事件處理常式
+      - 使用本機通道工具進行開發
+        [103] Azure Web PubSub 本機通道工具
+      - 將用戶端事件傳送至事件中樞
+        [108] 將用戶端事件傳送至事件中樞
+      - 搭配 Azure 身分識別使用伺服器 SDK
+        - 搭配 Azure 身分識別和 .NET 使用伺服器 SDK
+          [113] 如何使用 .NET 和 Azure 身分識別建立
+        - 搭配 Azure 身分識別和 Java 使用伺服器 SDK
+          [116] 如何使用 Java 和 Azure 身分識別建立
+        - 搭配 Azure 身分識別和 JavaScript 使用伺服器 SDK
+          [119] 如何使用 JavaScript 和 Azure 身分識別建立 WebPubSubServiceClient
+        - 搭配 Azure 身分識別和 Python 使用伺服器 SDK
+          [121] 如何使用 Python 和 Azure 身分識別建立
+    - 監視器
+      - 使用 Azure 原則來稽核合規性
+        [123] 使用 Azure 原則 稽核 Azure WebPubSub 服務資源的合規性
+      - 監視 Azure Web PubSub
+        [128] 監視 Azure Web PubSub
+      - 監視 Azure Web PubSub 資料參考
+        [135] 監視 Azure Web PubSub 資料參考
+    - 安全
+      - 保護存取金鑰
+        [139] 如何輪替 Azure Web PubSub 服務的存取金鑰
+      - 使用 Azure 服務標記
+        [141] 使用 Azure Web PubSub 服務的服務標籤
+      - 使用 Azure 私人端點
+        [146] 針對 Azure Web PubSub 服務使用私人端點
+      - 管理網路存取控制
+        [151] 設定 Azure Web PubSub 服務的網路存取控制
+      - 透過共用私人端點保護輸出流量
+        [154] 透過共用私人端點保護 Azure WebPubSub 輸出流量
+      - 透過共用私人端點存取 Key Vault
+        [159] 透過共用私人端點存取私人網路中的 KeyVault
+      - 建立受控識別
+        [164] Azure Web PubSub 服務的受控識別
+      - 設定 Microsoft Entra 授權
+        - 從 Azure 應用程式授權
+          [170] 使用 Microsoft Entra ID 授權從 Azure 應用程式要求 Web PubSub 資源
+        - 從受控識別授權
+          [178] 使用 Microsoft Entra ID 授權從受控身分識別要求 Web PubSub 資源
+        - 停用本機驗證
+          [183] 使用 Azure Web PubSub 服務停用本機(存取金鑰) 驗證
+      - 設定用戶端憑證驗證
+        [186] 啟用 Azure Web PubSub 服務的用戶端憑證驗證 (預覽)
+      - 自訂網域
+        [191] 設定 Azure Web PubSub 服務的自訂網域
+    - 縮放和異地複寫
+      - 手動縮放
+        [201] 如何調整 Azure Web PubSub 服務執行個體？
+      - Autoscale
+        [204] 自動調整 Azure WebPubSub 服務的縮放單位
+      - 異地複寫
+        [212] Azure Web PubSub 中的異地複寫
+    - 整合
+      - App Service
+        [220] 操作說明：使用 Azure Web PubSub 建置即時共同作業白板，並將其部署至 AzureApp Service
+      - Azure Functions
+        [230] 教學課程：使用 Azure Functions 和Azure Web PubSub 服務建立無伺服器通知應用程式
+      - Static Web Apps
+        [240] 教學課程：使用 Azure Web PubSub 服務和 Azure Static Web Apps 建立無伺服器聊天應用程式
+      - Azure IoT 中樞
+        [246] 教學課程：使用 Azure Web PubSub 服務和 Azure Functions 將 IoT 中樞的 IoT 裝置資料視覺化
+    - 監視與管理
+      - 使用 Azure 原則來稽核合規性
+        [259] 使用 Azure 原則 稽核 Azure WebPubSub 服務資源的合規性
+      - 跨區域移動資源
+        [264] 將 Azure Web PubSub 資源移至另一個區域
+    - 疑難排解
+      - 偵錯事件處理程式
+        [269] 如何針對 Azure Web PubSub 事件處理程式進行疑難解答和偵錯
+      - 收集網路追蹤
+        [272] 如何收集網路追蹤
+      - 擷取資源記錄
+        [276] 如何使用資源記錄進行疑難排解
+      - 常見問題
+        [288] 常見問題的疑難排解指南
+    - 跨區域移動
+      [292] 將 Azure Web PubSub 資源移至另一個區域
+  - Socket.IO
+    - 概觀
+      [297] Azure 上的概觀 Socket.IO
+    - Socket.IO 使用者的快速入門
+      [300] 快速入門：將適用於 Socket.IO 的 WebPubSub 納入您的應用程式中
+    - 教學課程
+      - 建置即時程式碼串流應用程式
+        [305] 使用 Socket.IO 建置即時程序碼串流應用程式，並將其裝載於 Azure
+    - 操作指南
+      - 輕鬆地移轉自我裝載的 Socket.IO 應用程式
+        [316] 將自我裝載 Socket.IO 應用程式遷移至Azure 上進行完全管理
+      - 與 Azure App Service 整合
+        [319] 操作說明：使用 Web PubSub forSocket.IO 建置即時共同作業白板，並將其部署至 Azure App Service
+      - 與 API 管理整合
+        [323] 操作說明: 搭配 Azure APIM 使用 WebPubSub for Socket.IO
+      - 驗證
+        [326] 如何在適用於 Socket.IO 的 Web PubSub進行驗證
+      - 疑難排解
+        - 常見問題
+          [331] 針對 Socket.IO 常見問題進行疑難排解
+        - 收集記錄
+          [336] 在 Web PubSub for Socket.IO 中收集記錄
+    - 概念
+      - Web PubSub 如何支援 Socket.IO 程式庫
+        [339] Azure Web PubSub 如何支援 Socket.IO程式庫？
+      - 支援的 Socket.IO 伺服器 API
+        [342] Socket.IO 支援的伺服器 API
+  - 範例
+    - 驗證和連線
+      [343] Azure Web PubSub 範例 - 驗證和連線
+    - 應用程式案例
+      [344] Azure Web PubSub 範例 - 應用程式案例
+    - 平台和架構
+      [345] Azure Web PubSub 範例 - 平台和架構
+  - 概念
+    - 服務內部項目
+      [346] Azure Web PubSub 服務的本質
+    - 用戶端通訊協定概觀
+      [360] 適用于 Azure Web PubSub 的WebSocket 用戶端通訊協定
+    - 高可用性
+      - 復原和災害復原
+        [366] Azure Web PubSub 服務中的復原和災害復原
+      - 可用性區域
+        [372] Azure Web PubSub 服務中的可用性區域支援
+    - 效能考量
+      [373] Azure Web PubSub 服務的效能指南
+    - 計費模型
+      [381] Azure Web PubSub 服務的計費模型
+    - Microsoft Entra 授權
+      [384] 使用 Microsoft Entra 識別碼授權 WebPubSub 資源的存取權
+    - 計量
+      [387] Azure Web PubSub 服務中的計量
+    - 安全性
+      - 安全性基準
+        [389] Azure Web PubSub 的 Azure 安全性基準
+  - 參考
+    - 用戶端 API
+      - 用戶端 SDK - JavaScript
+        [399] 適用於 JavaScript 的 Web PubSub 用戶端 SDK
+      - 用戶端 SDK - C#
+        [406] 適用於 .NET 的 Azure Web PubSub 用戶端程式庫
+      - 用戶端 SDK - Python
+        [412] 適用於 Python 的 Azure Web PubSub 用戶端連結庫
+      - 用戶端 SDK - Java
+        [417] 適用於 JAVA 的 WebPubSub 用戶端程式庫
+    - 伺服器端 API
+      - REST API
+        [422] Azure Web PubSub 服務資料平面 RESTAPI 參考
+      - 伺服器 SDK - C#
+        [424] 適用於 .NET 的 Azure Web PubSub 服務用戶端程式庫
+      - 伺服器 SDK - Java
+        [427] 用於 Java 的 Azure Web PubSub 服務用戶端程式庫
+      - 伺服器 SDK - JavaScript
+        [431] 適用於 Azure Web PubSub 的 JavaScriptSDK
+      - 伺服器 SDK - Python
+        [441] 適用於 Python 的 Azure Web PubSub 服務用戶端程式庫
+      - OData 篩選語法參考
+        [446] Azure Web PubSub 服務中的 OData 篩選語法
+    - 資源管理的 API
+      [454] Azure Web PubSub
+    - Azure CLI Webpubsub 延伸模組
+      [455] az webpubsub
+    - WebSocket 子通訊協定
+      - JSON WebSocket 子通訊協定
+        [473] Azure Web PubSub 支援的 JSONWebSocket 副程式
+      - Protobuf WebSocket 子通訊協定
+        [484] Azure Web PubSub 支援的 protobufWebSocket subprotocol
+      - 可靠的 JSON WebSocket 子通訊協定
+        [495] Azure Web PubSub 可靠 JSONWebSocket 子通訊協定
+      - 可靠的 Protobuf WebSocket 子通訊協定
+        [507] Azure Web PubSub 支援的可靠 ProtobufWebSocket 子通訊協定
+    - 事件處理常式的 CloudEvents HTTP 延伸模組
+      [519] 使用 HTTP 通訊協定的 Azure WebPubSub 事件處理程式 CloudEvents 擴充功能
+    - 事件中樞接聽程式的 CloudEvents AMQP 延伸模組
+      [531] 使用 AMQP 通訊協定的 Azure WebPubSub 事件接聽程式 CloudEvents 延伸模組
+    - 函式觸發程序和繫結
+      [536] 適用於 Azure Functions 的 Azure WebPubSub 觸發程序與繫結
+    - Azure 原則定義
+      [552] Azure 原則 Azure Web PubSub 的內建定義
+    - Azure Web PubSub 用戶端規格
+      [555] Azure Web PubSub 用戶端規格
+  - 資源
+    - 範例
+    - 方案
+      [556] 
+    - 常見問題集
+      [561] Azure Web PubSub 服務常見問題
+    - Microsoft 問 & 答
+    - StackOverflow

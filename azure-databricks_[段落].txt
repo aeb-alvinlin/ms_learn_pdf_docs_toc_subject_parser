@@ -1,0 +1,4776 @@
+- ---< azure-databricks.pdf >---
+  - Azure Databricks 文件
+    [1] Azure Databricks 檔
+  - 開始使用
+    - 免費試用和設定
+      [5] 開始使用：帳戶和工作區設定
+    - 工作區簡介
+      - 流覽工作區
+        [8] 流覽工作區
+      - 工作區瀏覽器
+        [15] 工作區瀏覽器
+      - 工作區資產
+        [17] 工作區對象的簡介
+      - 搜尋工作區資產
+        [23] 搜尋工作區物件
+      - 使用工作區物件
+        [27] 將工作區對象組織成資料夾
+      - 取得工作區、叢集、筆記本和作業標識符
+        [33] 取得工作區對象的標識碼
+      - 針對工作區建立進行疑難排解
+        [38] 針對 Azure Databricks 工作區建立進行疑難解答
+    - 從筆記本查詢和可視化數據
+      [39] 開始使用：從筆記本查詢數據並將其可視化
+    - 建立表格
+      [42] 教學課程：建立您的第一個數據表並授與許可權
+    - 從筆記本匯入 CSV 數據並將其可視化
+      [45] 開始使用：從筆記本匯入和可視化 CSV 數據
+    - 擷取和插入其他數據
+      [54] 開始使用：擷取並插入其他數據
+    - 建置基本 ETL 管線
+      [61] 在 Azure Databricks 上執行您的第一個ETL 工作負載
+    - 建置端對端數據管線
+      [66] 在 Databricks 中建置端對端數據管線
+    - 探索源數據
+      [74] 探索數據管線的源數據
+    - 建置簡單的 Lakehouse 分析管線
+      [78] 教學課程：執行端對端 Lakehouse 分析管線
+    - 連線 至 Azure Data Lake 儲存體 Gen2
+      [85] 
+    - 免費訓練
+      [92] 取得免費的 Databricks 訓練
+    - 最佳做法文章
+      - Databricks 最佳做法文章
+        [93] 最佳做法文章
+      - 平臺管理速查表
+        [94] 平臺管理速查表
+      - 計算建立速查表
+        [96] 計算建立速查表
+      - 生產作業排程速查表
+        [97] 生產作業排程速查表
+  - 簡介
+    - 什麼是 Azure Databricks？(機器翻譯)
+      [98] 什麼是 Azure Databricks？(機器翻譯)
+    - Lakehouse 簡介
+      - 湖屋是什麼？
+        [103] 什麼是 Data Lakehouse？
+      - ACID 交易
+        [106] Azure Databricks 上的 ACID 保證為何？
+      - Medallion 架構
+        [109] 什麼是獎章湖屋建築？
+      - 湖屋的共同作業
+        [111] Lakehouse 中的資料探索和共同作業
+      - 單一真理來源
+        [113] 建立單一真理來源意味著什麼？
+      - 數據物件
+        [115] Databricks Lakehouse 中的資料物件
+    - 什麼是 Delta？
+      [121] Azure Databricks 中的所有 Delta 項目為何？
+    - 概念
+      [124] Azure Databricks 概念
+    - Databricks 架構
+      - Databricks 架構概觀
+        [131] Azure Databricks 架構概觀
+  - DatabricksIQ
+    - DatabricksIQ 支援的功能
+      [133] DatabricksIQ 支援的功能
+    - DatabricksIQ 信任和安全性
+      [135] DatabricksIQ 信任和安全性
+    - Databricks 助理常見問題
+      [136] 什麼是 Databricks Assistant？
+    - 使用 Databricks Assistant
+      [141] 使用 Databricks Assistant
+  - 版本資訊
+    - 版本資訊概觀
+      [151] Azure Databricks 版本資訊
+    - 平台
+      - 平台版本資訊
+        [152] Azure Databricks 平臺版本資訊
+      - 平台發行程式
+        [182] 平臺發行程式
+      - 2024 年 5 月
+        [183] 2024 年 5 月
+      - 2024 年 4 月
+        [186] 2024 年 4 月
+      - 2024 年 3 月
+        [190] 2024 年 3 月
+      - 2024 年 2 月
+        [196] 2024 年 2 月
+      - 2024 年一月
+        [201] 2024 年一月
+      - 2023 年 12 月
+        [207] 2023 年 12 月
+      - 2023 年 11 月
+        [211] 2023 年 11 月
+      - 2023 年 10 月
+        [216] 2023 年 10 月
+      - 2023 年 9 月
+        [224] 2023 年 9 月
+      - 2023 年 8 月
+        [235] 2023 年 8 月
+      - 2023 年 7 月
+        [247] 2023 年 7 月
+      - 2023 年 6 月
+        [255] 2023 年 6 月
+      - 2023 年 5 月
+        [263] 2023 年 5 月
+      - 2023 年 4 月
+        [270] 2023 年 4 月
+      - 2023 年 3 月
+        [275] 2023 年 3 月
+      - 2023 年 2 月
+        [281] 2023 年 2 月
+      - 2023 年 1 月
+        [285] 2023 年 1 月
+      - 2022 年 12 月
+        [289] 2022 年 12 月
+      - 2022 年 11 月
+        [293] 2022 年 11 月
+      - 2022 年 10 月
+        [297] 2022 年 10 月
+      - 2022 年 9 月
+        [303] 2022 年 9 月
+      - 2022 年 8 月
+        [307] 2022 年 8 月
+      - 2022 年 7 月
+        [316] 2022 年 7 月
+      - 2022 年 6 月
+        [319] 2022 年 6 月
+      - 2022 年 5 月
+        [323] 2022 年 5 月
+      - 2022 年 4 月
+        [327] 2022 年 4 月
+      - 2022 年 3 月
+        [331] 2022 年 3 月
+      - 2022 年 2 月
+        [336] 2022 年 2 月
+      - 2022 年 1 月
+        [342] 2022 年 1 月
+      - 2021 年 12 月
+        [347] 2021 年 12 月
+      - 2021 年 11 月
+        [352] 2021 年 11 月
+      - 2021 年 10 月
+        [358] 2021 年 10 月
+      - 2021 年 9 月
+        [362] 2021 年 9 月
+      - 2021 年 8 月
+        [367] 2021 年 8 月
+      - 2021 年 7 月
+        [372] 2021 年 7 月
+      - 2021 年 6 月
+        [378] 2021 年 6 月
+      - 2021 年 5 月
+        [384] 2021 年 5 月
+      - 2021 年 4 月
+        [388] 2021 年 4 月
+      - 2021 年 3 月
+        [392] 2021 年 3 月
+      - 2021 年 2 月
+        [397] 2021 年 2 月
+      - 2021 年一月
+        [402] 2021 年一月
+      - 2020 年 12 月
+        [405] 2020 年 12 月
+      - 2020 年 11 月
+        [409] 2020 年 11 月
+      - 2020 年 10 月
+        [413] 2020 年 10 月
+      - 2020 年 9 月
+        [418] 2020 年 9 月
+      - 2020 年 8 月
+        [425] 2020 年 8 月
+      - 2020 年 7 月
+        [429] 2020 年 7 月
+      - 2020 年 6 月
+        [438] 2020 年 6 月
+      - 2020 年 5 月
+        [442] 2020 年 5 月
+      - 2020 年 4 月
+        [447] 2020 年 4 月
+      - 2020 年 3 月
+        [450] 2020 年 3 月
+      - 2020 年 2 月
+        [453] 2020 年 2 月
+      - 2020 年 1 月
+        [457] 2020 年 1 月
+      - 2019 年 12 月
+        [460] 2019 年 12 月
+      - 2019 年 11 月
+        [463] 2019 年 11 月
+      - 2019 年 10 月
+        [465] 2019 年 10 月
+      - 2019 年 9 月
+        [471] 2019 年 9 月
+      - 2019 年 8 月
+        [474] 2019 年 8 月
+      - 2019 年 7 月
+        [477] 2019 年 7 月
+      - 2019 年 6 月
+        [483] 2019 年 6 月
+      - 2019 年 5 月
+        [486] 2019 年 5 月
+      - 2019 年 4 月
+        [488] 2019 年 4 月
+      - 2019 年 3 月
+        [491] 2019 年 3 月
+      - 2019 年 2 月
+        [493] 2019 年 2 月
+      - 2019 年 1 月
+        [496] 2019 年 1 月
+      - 2018 年 12 月
+        [502] 2018 年 12 月
+      - 2018 年 11 月
+        [504] 2018 年 11 月
+      - 2018 年 10 月
+        [507] 2018 年 10 月
+      - 2018 年 9 月
+        [509] 發行項• 2024/05/03
+      - 2018 年 8 月
+        [511] 2018 年 8 月
+      - 2018 年 7 月
+        [514] 2018 年 7 月
+      - 2018 年 6 月
+        [518] 2018 年 6 月
+      - 2018 年 5 月
+        [521] 2018 年 5 月
+      - 2018 年 4 月
+        [527] 2018 年 4 月
+      - 2018 年 3 月
+        [530] 2018 年 3 月
+      - 2018 年 2 月
+        [533] 2018 年 2 月
+      - 2018 年 1 月
+        [538] 2018 年 1 月
+    - Databricks 執行階段
+      - 運行時間版本
+        - 運行時間版本概觀
+          [540] Databricks Runtime 版本資訊版本和相容性
+        - Databricks Runtime 15.2 （Beta）
+          [545] Databricks Runtime 15.2 （Beta）
+        - Databricks Runtime 15.2 ML （Beta）
+          [579] 
+        - Databricks Runtime 15.1
+          [593] Databricks Runtime 15.1
+        - Databricks Runtime 15.1 ML
+          [628] databricks Runtime 15.1 for 機器學習
+        - Databricks Runtime 15.0
+          [642] Databricks Runtime 15.0
+        - Databricks Runtime 15.0 ML
+          [676] databricks Runtime 15.0 for 機器學習
+        - Databricks Runtime 14.3 LTS
+          [690] Databricks Runtime 14.3 LTS
+        - Databricks Runtime 14.3 LTS ML
+          [728] Databricks Runtime 14.3 LTS for 機器學習
+        - Databricks Runtime 14.2
+          [741] Databricks Runtime 14.2
+        - Databricks Runtime 14.2 ML
+          [772] databricks Runtime 14.2 for 機器學習
+        - Databricks Runtime 14.1
+          [785] Databricks Runtime 14.1
+        - Databricks Runtime 14.1 ML
+          [816] databricks Runtime 14.1 for 機器學習
+        - Databricks Runtime 13.3 LTS
+          [829] Databricks Runtime 13.3 LTS
+        - Databricks Runtime 13.3 LTS ML
+          [862] Databricks Runtime 13.3 LTS for 機器學習
+        - Databricks Runtime 12.2 LTS
+          [875] Databricks Runtime 12.2 LTS
+        - Databricks Runtime 12.2 LTS ML
+          [905] Databricks Runtime 12.2 LTS for 機器學習
+        - Databricks Runtime 11.3 LTS
+          [916] Databricks Runtime 11.3 LTS
+        - Databricks Runtime 11.3 LTS ML
+          [944] Databricks Runtime 11.3 LTS for 機器學習
+        - Databricks Runtime 10.4 LTS
+          [955] Databricks Runtime 10.4 LTS
+        - Databricks Runtime 10.4 LTS ML
+          [980] 
+        - Databricks Runtime 9.1 LTS
+          [991] Databricks Runtime 9.1 LTS
+        - Databricks Runtime 9.1 LTS ML
+          [1014] 
+      - 運行時間維護更新
+        [1026] Databricks 運行時間維護更新
+      - 運行時間支援生命週期
+        [1065] Databricks Runtime 支援生命週期
+    - 無伺服器計算版本資訊
+      [1067] 無伺服器計算版本資訊
+    - SQL 版本資訊
+      [1075] Databricks SQL 版本資訊
+    - Databricks 開發人員工具
+      [1130] Azure Databricks 開發人員工具和 SDK 版本資訊
+    - Databricks Connect
+      [1136] Databricks 連線 版本資訊
+    - 差異即時資料表版本資訊
+      - DLT 版本資訊
+        [1179] Delta Live Tables 版本資訊和發行升級程式
+      - 版本 2024.13
+        [1183] Delta Live Tables 2024.13 版
+      - 版本 2024.11
+        [1184] Delta Live Tables 2024.11 版
+      - 版本 2024.09
+        [1185] Delta Live Tables 2024.09 版
+      - 版本 2024.05
+        [1186] Delta Live Tables 2024.05 版
+      - 版本 2024.02
+        [1187] Delta Live Tables 2024.02 版
+      - 2023.50 版
+        [1188] Delta Live Tables 2023.50 版
+      - 版本 2023.48
+        [1189] Delta Live Tables 2023.48 版
+      - 版本 2023.45
+        [1190] Delta Live Tables 2023.45 版
+      - 版本 2023.43
+        [1191] Delta Live Tables 2023.43 版
+      - 版本 2023.41
+        [1193] Delta Live Tables 2023.41 版
+      - 版本 2023.37
+        [1194] Delta Live Tables 2023.37 版
+      - 版本 2023.35
+        [1195] Delta Live Tables 2023.35 版
+      - 版本 2023.30
+        [1196] Delta Live Tables 2023.30 版
+      - 版本 2023.27
+        [1197] Delta Live Tables 2023.27 版
+      - 版本 2023.23
+        [1198] Delta Live Tables 2023.23 版
+      - 版本 2023.21
+        [1199] Delta Live Tables 2023.21 版
+      - 2023.19 版
+        [1200] Delta Live Tables 2023.19 版
+      - 版本 2023.17
+        [1201] Delta Live Tables 2023.17 版
+      - 版本 2023.16
+        [1202] Delta Live Tables 2023.16 版
+      - 版本 2023.13
+        [1203] Delta Live Tables 2023.13 版
+      - 版本 2023.11
+        [1204] Delta Live Tables 2023.11 版
+      - 2023.06 版
+        [1205] Delta Live Tables 2023.06 版
+      - 版本 2023.03
+        [1206] Delta Live Tables 2023.03 版
+      - 版本 2023.01
+        [1207] Delta Live Tables 2023.01 版
+      - 版本 2022.49
+        [1208] Delta Live Tables 2022.49 版
+      - 版本 2022.46
+        [1210] Delta Live Tables 2022.46 版
+      - 版本 2022.44
+        [1211] Delta Live Tables 2022.44 版
+      - 版本 2022.42
+        [1212] Delta Live Tables 2022.42 版
+      - 版本 2022.40
+        [1213] Delta Live Tables 2022.40 版
+      - 版本 2022.37
+        [1215] Delta Live Tables 2022.37 版
+    - Databricks 預覽版本
+      [1217] Azure Databricks 預覽版支持和詳細數據
+  - 連線到資料來源
+    - 概觀
+      [1219] 連線到資料來源
+    - Unity 目錄記憶體
+      - 概觀
+        [1222] 使用 Unity 目錄將 連線 至雲端物件記憶體
+      - 設定 ALDS2 的記憶體認證
+        [1225] 建立記憶體認證以連線到 Azure DataLake 儲存體 Gen2
+      - 設定 Cloudflare R2 的記憶體認證
+        [1228] 建立用來連線到 Cloudflare R2 的記憶體認證
+      - 設定外部位置
+        [1231] 建立外部位置以將雲端記憶體連線到Azure Databricks
+      - 設定受控記憶體
+        [1234] 在 Unity 目錄中指定受控儲存位置
+      - 建立磁碟區
+        [1237] 建立和使用磁碟區
+      - 管理記憶體認證
+        [1245] 管理記憶體認證
+      - 管理外部位置
+        [1250] 管理外部位置
+    - Lakehouse 同盟
+      - 設定 Lakehouse 同盟
+        [1255] 什麼是 Lakehouse 同盟
+      - PostgreSQL
+        [1261] 在 PostgreSQL 上執行同盟查詢
+      - MySQL
+        [1266] 在 MySQL 上執行同盟查詢
+      - Synapse （SQL 數據倉儲）
+        [1271] 在 Microsoft Azure Synapse 上執行同盟查詢
+      - BigQuery
+        [1276] 在Google BigQuery上執行同盟查詢
+      - Snowflake
+        [1281] 在 Snowflake 上執行同盟查詢
+      - SQL Server
+        [1286] 在 Microsoft SQL Server 上執行同盟查詢
+      - Databricks
+        [1291] 在另一個 Databricks 工作區上執行同盟查詢
+      - Redshift
+        [1296] 在 Amazon Redshift 上執行同盟查詢
+      - 管理連線
+        [1301] 管理 Lakehouse Federation 的連線 (英文)
+      - 管理外部目錄
+        [1305] 管理及使用外部目錄 (英文)
+      - 遷移至 Lakehouse 同盟
+        [1306] Lakehouse 同盟：移轉舊版查詢同盟連線
+      - 網路功能的建議
+        [1308] Lakehouse Federation 的網路建議 (英文)
+      - 舊版查詢同盟
+        - 什麼是舊版查詢同盟？
+          [1310] 設定非 Unity 目錄工作區的查詢同盟
+        - PostgreSQL （旧版）
+          [1311] Databricks SQL 中 PostgreSQL 的查詢同盟 (實驗性)
+        - MySQL （舊版）
+          [1312] 在 Databricks SQL 中查詢 MySQL 的同盟，而不需 Unity 目錄 (實驗性)
+        - Synapse （舊版）
+          [1313] Databricks SQL 中 Azure Synapse 的查詢同盟 （實驗性）
+        - 雪花 （遺產）
+          [1314] Databricks SQL 中 Snowflake 的查詢同盟(實驗性)
+        - SQL Server （舊版）
+          [1315] Databricks SQL (實驗性) 中 MicrosoftSQL Server的查詢同盟
+    - 串流數據連接器
+      - 設定串流數據源
+        [1316] 設定串流數據源
+      - 使用 Apache Kafka 進行串流處理
+        [1317] 使用 Apache Kafka 和 Azure Databricks進行串流處理
+      - Pub/Sub
+        [1329] 訂閱Google Pub/Sub
+      - Pulsar
+        [1333] 從 Apache Pulsar 串流
+    - 外部系統
+      - 設定外部系統
+        [1338] 連線 至外部系統
+      - 使用 JDBC 查詢資料庫
+        - 使用 JDBC 查詢資料庫
+          [1340] 使用 JDBC 查詢資料庫
+        - 查詢 PostgreSQL
+          [1352] 使用 Azure Databricks 查詢 PostgreSQL
+        - 查詢 MySQL
+          [1355] 使用 Azure Databricks 查詢 MySQL
+        - 查詢 MariaDB
+          [1358] 使用 Azure Databricks 查詢 MariaDB
+        - 查詢 SQL Server
+          [1360] 使用 Azure Databricks 查詢 SQL Server
+      - MongoDB
+        [1363] MongoDB
+      - Cassandra
+        [1364] Cassandra
+      - Couchbase
+        [1365] Couchbase
+      - 連線 至 Databricks 工作區
+        [1366] 使用 Databricks 連接器連線至另一個Databricks 工作區
+      - ElasticSearch
+        [1368] ElasticSearch
+      - 從 Snowflake 讀取和寫入數據
+        [1369] 從 Snowflake 讀取和寫入數據
+      - BigQuery
+        [1373] Google BigQuery
+      - 查詢 Azure Synapse Analytics 中的資料
+        [1384] 
+      - 在 Redshift 中查詢數據
+        [1397] 使用 Azure Databricks 查詢 AmazonRedshift
+    - 雲端物件儲存體
+      - 概觀
+        [1416] 設定 Azure Databricks 雲端物件記憶體的存取權
+      - 連線至 Azure Data Lake Storage Gen2 和 Blob 儲存體
+        [1417] 連線至 Azure Data Lake Storage Gen2 和Blob 儲存體
+      - 使用 Azure Active Directory 存取儲存體
+        [1423] 使用服務主體存取具有 Microsoft EntraID 的儲存體 (先前稱為 Azure ActiveDirectory)
+      - 連線 至Google Cloud 儲存體
+        [1425] 連線 Google Cloud 儲存體
+      - 連線 至 Amazon S3
+        [1431] 連線 至 Amazon S3
+  - 要計算的 連線
+    - 計算簡介
+      [1434] 計算
+    - 全用途計算
+      - 使用計算
+        [1436] 使用計算
+      - 筆記本的無伺服器計算
+        [1439] 筆記本的無伺服器計算
+      - 計算組態參考
+        [1441] 計算組態參考
+      - 管理計算
+        [1453] 管理計算
+      - 存取模式限制
+        [1465] Unity 目錄的計算存取模式限制
+      - 計算組態的最佳做法
+        [1469] 計算組態最佳做法
+      - 檢視即時和歷程記錄計算計量
+        [1473] 檢視計算計量
+      - 自訂容器
+        [1477] 使用 Databricks Container Service 自定義容器
+      - 已啟用 GPU 的計算
+        [1484] 已啟用 GPU 的計算
+      - Web 終端機
+        [1487] 在 Azure Databricks Web 終端機中執行殼層命令
+      - 針對計算進行疑難解答
+        - 針對計算問題進行疑難解答
+          [1489] 針對計算問題進行疑難解答
+        - 使用 Apache Spark UI 進行偵錯
+          [1492] 使用 Apache Spark UI 進行偵錯
+        - 處理互動式工作流程中的大型查詢
+          [1496] 處理互動式工作流程中的大型查詢
+    - SQL 倉儲
+      - 什麼是 SQL 倉儲？
+        [1500] 什麼是 SQL 倉儲？
+      - 建立 SQL 倉儲
+        [1503] 建立 SQL 倉儲
+      - 監視 SQL 倉儲
+        [1507] 監視 SQL 倉儲
+      - SQL 倉儲行為
+        [1510] SQL 倉儲大小調整、縮放和佇列行為
+    - 集區
+      - 什麼是集區？
+        [1514] 什麼是 Azure Databricks 集區？
+      - 集區組態參考
+        [1517] 集區組態參考
+      - 集區最佳做法
+        [1520] 集區最佳做法
+    - 什麼是 Photon？
+      [1522] 什麼是 Photon？
+  - 探索數據
+    - 概觀
+      [1525] 探索資料
+    - 探索記憶體並尋找資料檔
+      [1527] 探索儲存體並尋找資料檔案
+    - 探索資料庫物件
+      [1532] 探索資料庫物件
+    - 檢視數據表的頻繁查詢和使用者
+      [1539] 檢視數據表的頻繁查詢和使用者
+    - 範例資料集
+      [1542] 範例資料集
+  - 查詢資料
+    - 概觀
+      [1547] 查詢資料
+    - 數據格式選項
+      - 概觀
+        [1553] 數據格式選項
+      - 差異共用共享數據表
+        [1554] 使用 Apache Spark DataFrame 讀取差異共用的共用資料表
+      - Parquet 檔案
+        [1556] 使用 Azure Databricks 讀取 Parquet 檔案
+      - ORC 檔案
+        [1557] ORC 檔案
+      - JSON 檔案
+        [1558] JSON 檔案
+      - CSV 檔案
+        [1562] 讀取和寫入 CSV 檔案
+      - Avro 檔案
+        [1566] Avro 檔案
+      - 文字檔
+        [1572] 文字檔
+      - 映像檔案
+        [1573] 映像
+      - 二進位檔
+        [1576] 二進位檔案
+      - Hive 數據表
+        [1579] Hive 資料表
+      - XML 檔案
+        [1581] 讀取和寫入 XML 檔案
+      - MLflow 實驗
+        [1594] MLflow 實驗
+      - LZO 壓縮檔案
+        [1597] LZO 壓縮檔案
+  - 載入資料
+    - 載入數據概觀
+      [1598] 將數據內嵌至 Databricks Lakehouse
+    - 將數據上線至 Databricks
+      [1601] 從 Azure Data Lake 儲存體 Gen2 上線數據
+    - 連線到資料來源
+      [1606] 從 Azure Databricks 將數據源 連線
+    - 新增數據UI
+      - 新增數據UI概觀
+        [1608] 使用新增數據 UI 載入資料
+      - 將檔案上傳至磁碟區
+        [1609] 將檔案上傳至 Unity 目錄磁碟區
+      - 使用 Unity 目錄磁碟區或外部位置
+        [1611] 使用 Unity 目錄外部位置載入資料
+      - 從檔案上傳建立或修改數據表
+        [1615] 使用檔案上傳建立或修改數據表
+    - COPY INTO
+      - COPY INTO 概觀
+        [1620] 開始使用 COPY INTO 載入數據
+      - 設定雲端物件記憶體的存取權
+        [1627] 設定擷取的數據存取
+      - 使用 Unity 目錄複製 INTO
+        [1630] 使用 COPY INTO 搭配 Unity 目錄磁碟區或外部位置載入資料
+      - 使用暫存認證搭配 COPY INTO 載入數據
+        [1633] 使用 COPY INTO 搭配暫存認證載入數據
+      - 使用 COPY INTO 的常見數據載入模式
+        [1635] 使用 COPY INTO 的常見數據載入模式
+      - COPY INTO Notebook 教學課程
+        [1639] 教學課程：使用 Spark SQL 複製 INTO
+      - 使用 COPY INTO 從 ADLS Gen2 載入資料 （SQL）
+        [1643] 使用 COPY INTO 搭配服務主體載入資料
+    - 自動載入器
+      - 自動載入器概觀
+        [1647] 什麼是自動載入器？
+      - 使用 Unity 目錄自動載入器
+        [1650] 搭配 Unity 目錄使用自動載入器
+      - 結構描述推斷和演進
+        [1652] 在自動載入器中設定結構描述推斷和演進
+      - 檔案偵測模式
+        - 在檔案通知與目錄清單模式之間選擇
+          [1660] 比較自動載入器檔案偵測模式
+        - 目錄清單模式
+          [1662] 什麼是自動載入器目錄清單模式？
+        - 檔案通知模式
+          [1665] 什麼是自動載入器檔案通知模式？
+      - 設定生產環境
+        [1678] 設定生產工作負載的自動載入器
+      - 選項。
+        [1682] 自動載入器選項
+      - 常見的數據載入模式
+        [1712] 常見的資料載入模式
+      - 常見問題集
+        [1723] 自動載入器常見問題
+    - 外部資料
+      - 讀取和寫入串流 Avro 數據
+        [1726] 讀取和寫入串流 Avro 數據
+      - 讀取和寫入通訊協議緩衝區
+        [1736] 讀取和寫入通訊協議緩衝區
+      - 結構化串流寫入 Azure Synapse
+        [1746] 結構化串流寫入 Azure Synapse
+  - 探索資料
+    - 探勘資料分析 (EDA)
+      [1750] 發行項• 2024/04/19
+    - Databricks SQL 中的視覺效果
+      [1752] Databricks SQL 中的視覺效果
+    - Databricks 筆記本中的視覺效果
+      [1759] Databricks 筆記本中的視覺效果
+    - 視覺效果類型
+      - 視覺效果類型
+        [1764] 視覺效果類型
+      - Boxplot 視覺效果
+        [1785] Box options
+      - 圖表視覺效果
+        [1787] 圖表選項
+      - 世代視覺效果
+        [1791] Cohort options
+      - 熱度圖視覺效果
+        [1793] Heatmap options
+      - 直方圖視覺效果
+        [1795] Histogram options
+      - 地圖視覺效果
+        [1797] 地圖選項
+      - 數據表視覺效果
+        [1808] Table options
+      - 格式化數值視覺效果
+        [1812] 在視覺效果中格式化數值類型
+    - 預覽圖表視覺效果
+      [1815] Databricks 中的新圖表視覺效果
+    - 舊版視覺效果
+      [1818] 舊版視覺效果
+    - 移轉舊版圖表
+      [1836] Migrate legacy line charts
+  - 轉換資料
+    - 概觀
+      [1838] 轉換資料
+    - 清除和驗證
+      [1841] 轉換資料
+    - 聯結
+      [1844] 在 Azure Databricks 上使用聯結
+    - 彙總
+      [1847] 匯總 Azure Databricks 上的數據
+    - 資料模型
+      [1849] 資料模型
+    - 半結構化資料
+      [1851] 模型半結構化數據
+  - 監視數據和 AI 資產
+    - Databricks Lakehouse 監視
+      [1854] Databricks Lakehouse 監視簡介
+    - 使用 Databricks UI 建立監視器
+      [1859] 使用 Databricks UI 建立監視器
+    - 使用 API 建立監視器
+      [1863] 使用 API 建立監視器
+    - 監視計量數據表
+      [1870] 監視計量數據表
+    - 使用監視儀錶板
+      [1878] 使用產生的 SQL 儀錶板
+    - 監視警示
+      [1880] 監視警示
+    - 使用自訂計量
+      [1881] 搭配 Databricks Lakehouse 監視使用自訂計量
+    - 監視分類模型的公平性和偏差
+      [1885] 監視分類模型的公平性和偏差
+  - 共用資料 （差異共用）
+    - 差異共用概觀
+      [1887] 使用差異共用安全地共享數據和 AI 資產
+    - 設定差異共用
+      [1898] 為您的帳戶設定差異共用 （適用於提供者）
+    - Databricks-to-Databricks 共用
+      [1903] 使用 Delta Sharing Databricks-to-Databricks 通訊協議共享數據（適用於提供者）
+    - 開啟共用
+      [1905] 使用 Delta Sharing 開啟共享通訊協定共享資料 （適用於提供者）
+    - 建立和管理收件者
+      [1908] 建立和管理差異共享的數據收件者
+    - 建立和管理共用
+      [1927] 建立和管理 Delta 共用的共用
+    - 授與共用的存取權
+      [1954] 管理對 Delta Sharing 資料共享的存取權（適用於提供者）
+    - 存取與您共享的數據
+      [1960] 使用差異共用存取與您共享的資料（適用於收件者）
+    - 讀取共享數據 （Databricks-to-Databricks）
+      [1964] 使用 Databricks-to-Databricks DeltaSharing 讀取共享的數據（適用於收件者）
+    - 讀取共享資料 （開啟共享）
+      [1974] 讀取使用 Delta Sharing 開啟共享共享的數據（適用於收件者）
+    - 稽核數據共用
+      [1988] 稽核和監視資料共用
+    - 管理提供者
+      [1993] 管理差異共用提供者 （適用于資料收件者）
+    - 管理輸出成本
+      [1999] 監控與管理差異共享輸出成本（適用於提供者 ）
+    - 使用IP存取清單限制存取
+      [2003] 使用 IP 存取清單限制差異共用收件者存取權 （開啟共用）
+    - 針對差異共享問題進行疑難解答
+      [2007] 差異共用中常見共用問題的疑難排解
+  - Databricks Marketplace
+    - 概觀
+      [2009] 什麼是 Databricks Marketplace？
+    - 要求與存取資料產品（取用者）
+      [2012] 存取 Databricks Marketplace 中的數據產品（已啟用 Unity 目錄的工作區）
+    - 管理要求與已安裝的產品（取用者）
+      [2021] 管理與您共用的 Databricks Marketplace數據產品
+    - 列出資料產品（提供者）
+      [2024] 在 Databricks Marketplace 中列出您的數據產品
+    - 管理清單 （提供者）
+      [2035] Manage existing DatabricksMarketplace listings
+    - 管理取用者要求 （提供者）
+      [2037] 在 Databricks Marketplace 中管理數據產品的要求
+    - 建立私人交換（提供者）
+      [2039] 在 Databricks Marketplace 中建立和管理私人交換
+    - 提供者原則
+      [2042] Databricks Marketplace 提供者原則
+  - 資料工程
+    - 概觀
+      [2045] Databricks 數據工程
+    - 教學課程
+      - 查詢虛擬網路中的 SQL Server Linux Docker 容器
+        [2047] 教學課程：從 Azure Databricks 筆記本查詢虛擬網路中的 SQL Server LinuxDocker 容器
+      - 使用 Azure Cosmos DB 端點實作 Azure Databricks
+        [2058] 教學課程：使用 Azure Cosmos DB 端點實作 Azure Databricks
+      - 擷取、轉換和載入數據
+        [2070] 教學課程：使用 Azure Databricks 擷取、轉換及載入數據
+    - Delta Live Tables （DLT）
+      - 概觀
+        [2085] 什麼是差異即時資料表？
+      - 教學課程
+        - 概觀
+          [2090] 教學課程：使用 Delta 實時數據表實作ETL 工作流程
+        - 建立新管線
+          [2092] 教學課程：執行您的第一個 Delta LiveTables 管線
+        - 以程序設計方式建立數據表
+          [2102] 以程式設計方式建立多個資料表
+      - 開發管線
+        - 開發管線概觀
+          [2105] 開發 Delta Live Tables 管線
+        - 筆記本開發人員體驗
+          [2107] 在筆記本中開發和偵錯 Delta Live Tables管線
+        - 開發和測試管線的常見模式
+          [2112] 用於開發和測試 Delta Live Tables 管線的提示、建議和功能
+        - 管線的 CI/CD
+          [2116] 使用 Databricks 資產組合開發 Delta LiveTables 管線
+        - 在本機開發管線
+          [2131] 在您的本機開發環境中開發 Delta LiveTables 管線程序代碼
+      - 執行和排程管線更新
+        - 概觀
+          [2134] 執行 Delta Live Tables 管線
+        - 在UI中執行更新
+          [2135] 在 Delta Live Tables 管線上執行更新
+        - 排程管線
+          [2141] 在工作流程中執行 Delta Live Tables 管線
+      - 載入和轉換資料
+        - 概觀
+          [2144] 使用 Delta 實時數據表載入和轉換資料
+        - 載入資料
+          [2146] 使用 Delta Live Tables 載入資料
+        - DLT 的事件中樞數據源
+          [2152] 使用 Azure 事件中樞 做為 Delta LiveTables 數據源
+        - 累加式數據載入和轉換
+          [2157] 使用 Delta Live Tables 流程以累加方式載入和處理數據
+        - 異動資料擷取 (CDC)
+          [2164] 套用變更 API：簡化差異實時數據表中的異動數據擷取
+        - 轉換資料
+          [2173] 使用 Delta Live Tables 轉換數據
+        - 具狀態數據流處理
+          [2180] 使用浮浮浮水印優化 Delta 即時數據表中的具狀態處理
+      - 發佈數據
+        - 概觀
+          [2185] 在 Delta Live Tables 管線中讀取和寫入數據
+        - 將數據發佈至 Unity 目錄
+          [2186] 使用 Unity 目錄搭配差異即時資料表管線
+        - 將數據發佈至Hive中繼存放區
+          [2194] 將數據從 Delta Live Tables 發佈至 Hive中繼存放區
+      - 資料品質
+        [2196] 使用 Delta Live Tables 管理數據品質
+      - 修改管線設定
+        - 概觀
+          [2206] 管理 Delta Live Tables 管線的設定
+        - 設定
+          [2208] 設定 Delta Live Tables 的管線設定
+        - Delta Live Tables 屬性參考
+          [2219] Delta Live Tables 屬性參考
+        - 管線相依性
+          [2226] 管理 Delta Live Tables 管線的 Python 相依性
+        - 從工作區檔案匯入模組
+          [2228] 從 Git 資料夾或工作區檔案匯入 Python模組
+        - 什麼是增強型自動調整？
+          [2232] 使用增強式自動調整優化差異實時數據表管線的叢集使用率
+      - 監視管線
+        - 概觀
+          [2235] Delta Live Tables 管線的監視和可觀察性選項
+        - 使用UI和記錄進行監視
+          [2237] 監視差異即時資料表管線
+        - 使用事件攔截進行自定義監視
+          [2247] 使用事件攔截定義 Delta Live Tables 管線的自定義監視
+      - 語言參考
+        - 概觀
+          [2251] Delta Live Tables 語言參考
+        - SQL 參考
+          [2252] Delta Live Tables SQL 語言參考
+        - Python 參考
+          [2261] Delta Live Tables Python 語言參考
+    - 結構化串流
+      - 結構化串流概觀
+        [2276] Azure Databricks 上的串流
+      - 教學課程
+        [2278] 執行您的第一個結構化串流工作負載
+      - Unity 目錄整合
+        [2284] 搭配結構化串流使用 Unity 目錄
+      - 生產環境中結構化串流
+        - 生產考量
+          [2285] 結構化串流的生產考量
+        - 串流中的浮水印
+          [2287] 套用水印來控制數據處理閾值
+        - 從查詢失敗復原
+          [2291] 使用工作流程從結構化串流查詢失敗中復原
+        - 監視結構化串流查詢
+          [2295] 監視 Azure Databricks 上的結構化串流查詢
+        - 對叢集執行多個數據流
+          [2312] 針對多個串流工作負載使用排程器集區
+        - 結構化串流批次大小
+          [2313] 在 Azure Databricks 上設定結構化串流批次大小
+        - 設定觸發程式間隔
+          [2314] 設定結構化串流觸發程式間隔
+        - 具狀態串流
+          [2316] 優化具狀態結構化串流查詢
+        - 讀取狀態資訊
+          [2322] 讀取結構化串流狀態資訊
+        - 使用 RocksDB 狀態存放區
+          [2325] 在 Azure Databricks 上設定 RocksDB 狀態存放區
+        - 使用異步檢查點
+          [2329] 具狀態查詢的異步狀態檢查點
+      - 使用 Delta Lake 串流
+        [2332] 差異數據表串流讀取和寫入
+      - 串流筆記本範例
+        [2347] Azure Databricks 上的結構化串流模式
+      - 使用 foreach（） 和 foreachBatch（）
+        [2349] 使用 foreachBatch 寫入任意數據接收器
+      - 異步進度追蹤
+        [2352] 什麼是非同步進度追蹤？
+      - 從檢視串流
+        [2355] 從 Unity 目錄檢視串流
+    - Apache Spark
+      - Databricks 上的 Apache Spark
+        [2358] Azure Databricks 上的 Apache Spark
+      - 教學課程：DataFrames
+        [2360] 教學課程：使用Apache SparkDataFrame載入和轉換數據
+    - Notebooks
+      - 筆記本概觀
+        [2378] Databricks 筆記本簡介
+      - 管理筆記本
+        [2381] 管理筆記本
+      - 在筆記本中開發程序代碼
+        [2383] 在 Databricks 筆記本中開發程式代碼
+      - 筆記本介面和控件
+        [2397] Databricks 筆記本介面和控件
+      - 排程筆記本
+        [2412] 建立和管理排程的筆記本作業
+      - 匯出和匯入筆記本
+        [2415] 匯出和匯入 Databricks 筆記本
+      - 輸出和結果
+        [2418] 筆記本輸出和結果
+      - 使用筆記本共同作業
+        [2424] 使用 Databricks 筆記本共同作業
+      - 執行筆記本
+        [2427] 執行 Databricks 筆記本
+      - 在筆記本之間共享程序代碼
+        [2430] 在 Databricks 筆記本之間共用程式碼
+      - 開啟或執行 Delta Live Table 管線
+        [2433] 從筆記本開啟或執行 Delta Live Tables 管線
+      - 儀表板​​
+        [2434] 筆記本中的儀表板
+      - ipywidgets
+        [2437] ipywidgets
+      - Databricks 小工具
+        [2441] Databricks 小工具
+      - 筆記本編輯器
+        [2451] 使用 Databricks 筆記本和檔案編輯器
+      - 從另一個筆記本執行筆記本
+        [2457] 從另一個筆記本執行 Databricks 筆記本
+      - 封裝儲存格
+        [2466] 封裝儲存格
+      - IPython 核心
+        [2467] IPython 核心
+      - 筆記本的最佳做法
+        [2468] 筆記本的軟體工程最佳做法
+      - 單元測試
+        [2487] 筆記本的單元測試
+      - 測試筆記本
+        [2504] 測試 Databricks 筆記本
+    - 工作流程
+      - 工作流程概觀
+        [2511] Azure Databricks 工作流程簡介
+      - 快速入門
+        [2516] 使用 Azure Databricks 作業建立您的第一個工作流程
+      - 建立和執行作業
+        [2520] 建立和執行 Azure Databricks 作業
+      - 執行無伺服器作業
+        [2531] 使用適用於工作流程的無伺服器計算執行Azure Databricks 作業
+      - 編輯作業設定
+        [2537] 設定 Azure Databricks 作業的設定
+      - 監視作業執行
+        [2544] 檢視和管理作業執行
+      - 在作業工作之間共享內容
+        [2549] 在 Azure Databricks 作業中共用工作之間的資訊
+      - 將作業執行內容傳遞至作業工作
+        [2552] 將有關作業的內容傳遞至作業工作
+      - 有條件地執行工作
+        [2556] 在 Azure Databricks 作業中有條件地執行工作
+      - 疑難解答和修正失敗的工作
+        [2559] 疑難排解和修復作業失敗
+      - 取得作業執行通知
+        [2562] 新增工作事件的電子郵件和系統通知
+      - 依排程或持續執行作業
+        [2566] 依排程或持續執行作業
+      - 新檔案抵達觸發程序作業
+        [2569] 新檔案抵達觸發程序作業
+      - 搭配作業使用計算
+        [2571] 搭配您的作業使用 Azure Databricks 計算
+      - 作業 API 2.0
+        [2573] 作業 API 2.0
+      - 從作業 API 2.0 更新至 2.1
+        [2633] 從作業 API 2.0 更新至 2.1
+      - 作業操作說明
+        - 概觀
+          [2645] 使用作業實作數據處理和分析工作流程
+        - 轉換、分析和可視化數據
+          [2647] 在 Azure Databricks 作業中使用Databricks SQL
+        - 使用 dbt
+          [2659] 在 Azure Databricks 作業中使用 dbt 轉換
+        - 使用 Python 套件
+          [2667] 在 Azure Databricks 作業中使用 Python轉輪檔案
+        - 使用 JAR
+          [2671] 在 Azure Databricks 作業中使用 JAR
+        - 使用 Apache Airflow 協調作業
+          [2679] 使用 Apache Airflow 協調 AzureDatabricks 作業
+        - 使用版本控制的原始程式碼
+          [2687] 在 Azure Databricks 作業中使用版本控制的原始程式碼
+        - 以服務主體身分執行作業
+          [2692] 使用 Microsoft Entra ID 服務主體執行作業
+        - 作業的 CI/CD
+          [2702] 使用 Databricks 資產組合在 AzureDatabricks 上開發作業
+    - 程式庫
+      - 連結庫概觀
+        [2719] 程式庫
+      - 叢集程式庫
+        [2726] 叢集程式庫
+      - 筆記本範圍的 Python 程式庫
+        [2730] 筆記本範圍的 Python 程式庫
+      - 筆記本範圍的 R 程式庫
+        [2736] 筆記本範圍的 R 程式庫
+      - 套件存放庫
+        [2740] 從套件存放庫安裝連結庫
+      - 物件記憶體中的連結庫
+        [2743] 從物件儲存體安裝程式庫
+      - 工作區檔案中的連結庫
+        [2746] 從工作區檔案安裝連結庫
+      - 磁碟區中的連結庫
+        [2748] 從磁碟區安裝程式庫
+      - 重新啟動 Python 程式
+        [2751] 在 Azure Databricks 上重新開機 Python程式
+    - Init 指令碼
+      - init 腳本簡介
+        [2752] 什麼是 init 指令碼？
+      - 叢集範圍的 Init 指令碼
+        [2755] 使用叢集範圍的 init 腳本
+      - 全域 Init 指令碼
+        [2758] 使用全域 init 腳本
+      - Init 腳本環境變數
+        [2760] 設定及使用環境變數與 init 腳本
+      - Init 指令碼記錄
+        [2761] Init 腳本記錄
+      - 參考檔案
+        [2764] 我可以在 init 腳本中參考哪些檔案？
+    - Git 資料夾
+      - Git 資料夾概觀
+        [2766] Git 與 Databricks Git 資料夾整合
+      - Repos 發生什麼事？
+        [2769] Databricks Repos 發生了什麼事？
+      - 設定 Git 資料夾
+        - 設定 Git 資料夾
+          [2772] 設定 Databricks Git 資料夾 （Repos）
+        - 設定並連線至 Git
+          [2780] 設定 Git 認證， 並將遠端存放庫連線至Azure Databricks
+        - 啟用或停用 Git 資料夾
+          [2789] 啟用或停用 Databricks Git 資料夾功能
+        - 設定私人 Git 連線能力
+          [2790] 設定 Databricks Git 資料夾的私人 Git 連線能力 （Repos）
+      - Git 作業
+        [2799] 在 Databricks Git 資料夾上執行 Git 作業（Repos）
+      - 管理 Git 資料夾中的資產
+        [2815] 管理 Databricks Git 資料夾中的檔案資產
+      - 使用 Git 資料夾的 CI/CD 技術
+        [2822] 使用 Git 和 Databricks Git 資料夾的CI/CD 技術 （Repos）
+      - 限制和常見問題
+        [2830] Git 與 Databricks Git 資料夾整合的限制和常見問題
+      - 錯誤和疑難排解
+        [2837] Databricks Git 資料夾的錯誤和疑難解答
+    - Databricks 文件系統 （DBFS）
+      - 什麼是 DBFS？
+        [2842] 什麼是 Databricks 檔案系統 (DBFS)？
+      - 最佳做法：DBFS 和 Unity 目錄
+        [2845] DBFS 和 Unity 目錄的最佳做法
+      - DBFS 根目錄
+        [2848] 使用 DBFS 根的建議
+      - 預設位置
+        [2850] 根據預設，DBFS 根目錄中有哪些目錄？
+      - FileStore
+        [2852] FileStore
+      - 掛接物件記憶體
+        [2856] 在 Azure Databricks 上掛接雲端物件儲存體
+      - 檔案瀏覽器
+        [2860] 瀏覽 DBFS 中的檔案
+    - 使用檔案
+      - Databricks 上的檔案概觀
+        [2861] 使用 Azure Databricks 上的檔案
+      - 什麼是工作區檔案？
+        [2869] 什麼是工作區檔案？
+      - 工作區檔案基本使用方式
+        [2872] 發行項• 2024/04/12
+      - 工作區檔案中的 Init 腳本
+        [2874] 將 init 腳本儲存在工作區檔案中
+      - 從工作區檔案匯入模組
+        [2876] 使用 Python 和 R 模組
+      - 讀取和寫入工作區檔案
+        [2880] 以程序設計方式與工作區檔案互動
+      - 寫入資料
+        [2883] Azure Databricks 在何處寫入數據？
+      - 磁碟區和工作區檔案中檔案的 建議
+        [2887] 磁碟區和工作區檔案中的檔案 建議
+      - 從因特網下載檔
+        [2890] 從因特網下載數據
+      - 解壓縮壓縮檔案
+        [2894] 展開並讀取 Zip 壓縮檔案
+      - 筆記本的 CWD
+        [2896] 預設目前的工作目錄為何？
+    - 遷移
+      - 將數據應用程式移轉至 Databricks
+        [2898] 將數據應用程式遷移至 Azure Databricks
+      - 移轉 Spark 程式代碼
+        [2900] 調整 Azure Databricks 的 Apache Spark程式代碼
+      - 將 Parquet 遷移至 Delta Lake
+        [2902] 將 Parquet 數據湖遷移至 Delta Lake
+      - 將數據倉儲遷移至 Lakehouse
+        [2906] 將您的數據倉儲遷移至 DatabricksLakehouse
+      - 將 ETL 管線遷移至 Databricks
+        [2908] 將 ETL 管線遷移至 Azure Databricks
+    - 優化和效能
+      - 優化和效能概觀
+        [2911] Azure Databricks 的優化建議
+      - Delta Lake 的預測優化
+        [2913] Delta Lake 的預測優化
+      - 透過快取最佳化效能
+        [2917] 使用 Azure Databricks 上的快取將效能優化
+      - 加速更新
+        [2920] Photon 加速更新
+      - 差異封存支援
+        [2922] Azure Databricks 中的封存支援
+      - 動態檔案剪除
+        [2926] 動態檔案剪除
+      - 低隨機合併
+        [2927] Azure Databricks 上的低隨機合併
+      - 彈性查詢執行
+        [2929] 彈性查詢執行
+      - 預測性 IO
+        [2940] 什麼是預測性 I/O？
+      - 以成本為基礎的優化器
+        [2943] 以成本為基礎的優化器
+      - 較高順序的函式
+        [2946] 較高順序的函式
+      - 查詢半結構化數據
+        [2947] 查詢 Azure Databricks 中的半結構化資料
+      - 轉換複雜的資料類型
+        [2955] 轉換複雜資料類型
+      - 範圍聯結優化
+        [2956] 範圍聯結優化
+      - 隔離等級
+        [2961] Azure Databricks 上的隔離等級和寫入衝突
+      - 資料行對應
+        [2970] 使用 Delta Lake 數據行對應重新命名和卸除數據行
+      - Bloom 篩選索引
+        [2973] Bloom 篩選索引
+      - 刪除向量
+        [2975] 什麼是刪除向量？
+      - 使用 Spark UI 診斷問題
+        - Spark UI 指南概觀
+          [2978] 發行項• 2024/04/19
+        - 作業事件時間軸
+          [2980] 作業時程表
+        - 執行中的間距
+          [2984] Spark 作業之間的間距
+        - 長工作
+          [2989] 在Spark中診斷長階段
+        - 驅動程式多載間距
+          [2991] Spark 驅動程式多載
+        - 長階段 I/O
+          [2992] Spark 階段高 I/O
+        - 長 Spark 階段頁面
+          [2994] 扭曲和溢出
+        - 長Spark階段
+          [2996] 在Spark中診斷長階段
+        - 許多小型作業
+          [2998] 許多小型Spark作業
+        - 拿掉失敗的作業或執行程式
+          [2999] 拿掉失敗的作業或執行程式
+        - 遺失現成實例
+          [3002] 遺失現成實例
+        - 記憶體問題
+          [3003] Spark 記憶體問題
+        - 一個Spark工作
+          [3005] 一個Spark工作
+        - 識別昂貴的讀取
+          [3006] 識別 Spark DAG 中的昂貴讀取
+        - 慢速階段 I/O
+          [3009] 具有小 I/O 的慢速 Spark 階段
+        - Spark 重寫數據
+          [3014] 如何判斷 Spark 是否正在重寫數據
+  - Generative AI & LLM
+    - 生成式 AI
+      [3016] Azure Databricks 上的 Generative AI 和大型語言模型 （LLM）
+    - AI 遊樂場
+      [3018] 使用 AI 遊樂場與支援的 LLM 聊天
+    - 使用 LLM
+      [3020] Databricks 上的大型語言模型 （LLM）
+      - 擁抱臉
+        - 擁抱臉部轉換器概觀
+          [3022] 什麼是擁抱臉部轉換器？
+        - 準備微調模型的數據
+          [3024] 準備數據以微調擁抱臉部模型
+        - 使用擁抱臉部微調模型
+          [3028] 微調單一 GPU 的擁抱臉部模型
+        - NLP 的模型推斷
+          [3034] 使用適用於 NLP 的擁抱臉部轉換器進行模型推斷
+      - LangChain
+        [3039] Azure Databricks 上的 LangChain 以進行LLM 開發
+      - AI 函式
+        - AI 函式概觀
+          [3044] Azure Databricks 上的 AI Functions
+        - 使用 AI 函式分析客戶評論
+          [3046] 使用 AI Functions 分析客戶評論
+        - 使用ai_query查詢服務模型（）
+          [3050] 使用查詢服務模型 ai_query()
+        - 使用ai_query查詢外部模型（）
+          [3053] 使用ai_query查詢外部模型（）
+    - 使用 MLflow 評估 LLM
+      [3056] 使用 MLflow 評估大型語言模型
+    - 提供 LLM
+      [3065] 開始在 Databricks 上查詢 LLM
+    - Databricks 向量搜尋
+      - Databricks 向量搜尋概觀
+        [3068] Databricks 向量搜尋
+      - 建立和查詢向量搜尋索引
+        [3074] 如何建立和查詢向量搜尋索引
+    - 檢索增強生成
+      [3084] Azure Databricks 上的擷取擴增世代（RAG）
+  - Machine Learning
+    - 機器學習 簡介
+      [3091] Databricks 上的 AI 和 機器學習
+    - Databricks 機器學習 10 分鐘的教學課程
+      [3096] 教學課程：開始使用ML
+    - Databricks 上的逐步 AI 和 ML
+      [3098] 逐步解說：Databricks 上的 AI 和 機器學習
+    - 準備數據和環境
+      - 載入資料
+        - 載入數據概觀
+          [3100] 載入機器學習和深度學習的數據
+        - 準備 ML 和 DL
+          [3101] 準備 ML 和 DL 的數據和環境
+        - 準備分散式定型的數據
+          [3103] 準備分散式定型的資料
+        - 使用 Petastorm 載入數據
+          [3104] 使用 Petastorm 載入資料
+        - 將 DataFrame 儲存至 TFRecord 檔案，並使用 TensorFlow 載入
+          [3107] 將 Apache Spark DataFrame 儲存為TFRecord 檔案
+      - 預先處理資料
+        - 前置處理數據概觀
+          [3109] 預先處理機器學習和深度學習的資料
+        - 使用 scikit-learn 進行特徵工程
+          [3110] 使用 scikit-learn 進行特徵工程
+        - 使用Spark MLlib進行特徵工程
+          [3111] 使用 MLlib 進行特徵工程
+        - 轉移學習特徵化
+          [3112] 轉移學習特徵化
+    - 功能工程
+      - 功能存放區概觀
+        [3113] 什麼是功能存放區？
+      - 功能存放區概念
+        [3117] 概念
+      - 功能存放區 Python API
+        [3120] Python API
+      - 功能存放區範例筆記本
+        [3125] 功能工程和工作區功能存放區筆記本
+      - Unity 目錄中的功能工程
+        - Unity 目錄中的功能工程
+          [3127] Unity 目錄中的功能工程
+        - 探索 Unity 目錄中的功能
+          [3139] 探索 Unity 目錄中的功能
+      - 隨選計算功能
+        [3141] 使用 Python 使用者定義函式隨選計算功能
+      - 使用功能來定型模型
+        [3147] 使用功能來定型模型
+      - Databricks 功能與函式服務
+        [3164] 什麼是 Databricks 功能服務？
+      - 使用時間序列功能數據表
+        [3176] 搭配時間點支援使用時間序列功能數據表
+      - Databricks 在線數據表
+        [3185] 使用在線數據表提供即時功能
+      - 第三方在線商店
+        - 第三方在線商店
+          [3199] 協力廠商線上商店
+        - 使用線上功能存放區的驗證
+          [3201] 使用線上商店的驗證
+        - 將功能發佈至在線功能存放區
+          [3203] 將功能發佈至線上商店
+        - 使用 MLflow 模型的自動功能查閱
+          [3208] 在 Databricks 上使用 MLflow 模型的自動功能查閱
+      - 在工作區功能存放區中使用功能數據表
+        - 在工作區功能存放區中使用功能數據表
+          [3210] 使用工作區功能存放區中的功能
+        - 工作區功能存放區 UI
+          [3223] 探索功能和追蹤特徵譜系
+        - 控制功能數據表的存取
+          [3226] 控制功能數據表的存取
+      - 功能存放區限制和疑難解答
+        [3229] 疑難排解和限制
+    - 將機器學習模型定型
+      - 定型模型概觀
+        [3231] 模型定型範例
+      - 定型 scikit-learn 模型
+        [3233] 使用 MLflow 追蹤 scikit-learn 模型定型
+      - 在 Azure Databricks 上使用 scikit-learn
+        [3234] 在 Azure Databricks 上使用 scikit-learn
+      - XGBoost
+        - 使用 XGBoost
+          [3236] 在 Azure Databricks 上使用 XGBoost
+        - 使用 xgboost.spark 的 XGBoost 模型分散式定型
+          [3238] 使用的 XGBoost 模型的分散式定型
+        - 使用sparkdl.xgboost的 XGBoost 模型分散式定型
+          [3243] 使用的 XGBoost 模型的分散式定型
+        - 使用 Scala 的 XGBoost 模型的分散式定型
+          [3246] 使用 Scala 的 XGBoost 模型分散式定型
+      - Spark MLlib
+        [3247] 在 Azure Databricks 上使用 ApacheSpark MLlib
+      - 超參數微調
+        - 超參數調整概觀
+          [3249] 超參數微調
+        - 使用 Hyperopt 進行超參數微調
+          - 平行處理超參數微調
+            [3251] 使用 scikit-learn 和 MLflow 平行處理超參數微調
+          - 比較多個模型類型
+            [3252] 比較模型類型與 Hyperopt 和 MLflow
+          - Hyperopt 概念
+            [3253] Hyperopt 概念
+          - 使用 Hyperopt 的分散式定型演算法
+            [3256] 搭配 Hyperopt 使用分散式定型演算法
+          - Hyperopt 最佳做法和疑難解答
+            [3258] 最佳做法：使用 Hyperopt 進行超參數微調
+          - 自動化 MLflow 追蹤
+            [3260] Apache Spark MLlib 和自動化 MLflow 追蹤
+    - 定型深度學習模型
+      - 深度學習概觀
+        [3262] 深度學習
+      - 深度學習最佳做法
+        [3263] Azure Databricks 上深度學習的最佳做法
+      - PyTorch
+        - PyTorch 概觀
+          [3268] PyTorch
+        - 使用 MLflow 定型 PyTorch 模型
+          [3271] 訓練 PyTorch 模型
+      - TensorFlow
+        [3272] TensorFlow
+      - TensorBoard
+        [3273] TensorBoard
+      - 分散式訓練
+        - 分散式定型概觀
+          [3276] 分散式訓練
+        - 使用 Horovod 的分散式深度學習
+          [3280] HorovodRunner：使用 Horovod 分散式深度學習
+        - HorovodRunner 範例
+          [3286] HorovodRunner 範例
+        - 使用 horovod.spark 的分散式深度學習
+          [3287] horovod.spark ：使用 Horovod 分散式深
+度學習
+        - 使用 TensorFlow 2 的分散型訓練
+          [3289] 使用 TensorFlow 2 的分散式訓練
+        - 使用 TorchDistributor 的分散式訓練
+          [3290] 使用 TorchDistributor 的分散式訓練
+        - 使用 DeepSpeed 散發者的分散式定型
+          [3294] 使用 DeepSpeed 散發者進行分散式訓練
+        - Spark ML 模型的分散式定型
+          [3295] 使用 將 Databricks 上的 Spark ML 模型定型連線pyspark.ml.connect
+        - 分散式深度學習的單一節點 PyTorch
+          [3297] 將單一節點 PyTorch 調整為分散式深度學習
+        - 使用 TensorFlow 搭配 HorovodRunner 的深度學習
+          [3298] 使用 TensorFlow 搭配 HorovodRunner進行 MNIST 的深度學習
+    - Databricks AutoML
+      - Databricks AutoML 概觀
+        [3299] 什麼是 AutoML？
+      - Databricks AutoML 的運作方式
+        [3300] Azure Databricks AutoML 的運作方式
+      - 使用 AutoML UI 定型 ML 模型
+        [3307] 使用 Azure Databricks AutoML UI 定型ML 模型
+      - 使用 AutoML API 定型 ML 模型
+        [3314] 使用 Azure Databricks AutoML PythonAPI 定型 ML 模型
+    - 在 Azure Databricks 上使用 Ray
+      [3327] 在 Azure Databricks 上使用 Ray
+    - ML 生命週期管理
+      - 使用 MLflow 的 ML 生命週期管理
+        [3340] 使用 MLflow 的 ML 生命週期管理
+      - 開始使用 MLflow
+        - 開始使用 MLflow
+          [3343] 開始使用 MLflow 實驗
+        - 開始使用 MLflow JAVA 和 Scala
+          [3345] 快速入門 JAVA 和 Scala
+        - 開始使用 MLflow Python
+          [3347] 快速入門 Python
+        - 開始使用 MLflow R
+          [3352] 快速入門 R
+        - 端對端範例筆記本
+          [3353] 教學課程：Azure Databricks 上的端對端ML 模型
+      - MLflow 實驗追蹤
+        - 追蹤模型開發
+          [3354] 使用 MLflow 追蹤模型開發
+        - 追蹤機器學習訓練回合
+          [3356] 追蹤 ML 和深度學習訓練執行
+        - 使用實驗組織訓練回合
+          [3360] 使用 MLflow 實驗組織訓練回合
+        - 使用執行管理機器學習訓練
+          [3366] 使用 MLflow 執行管理定型程式代碼
+        - 使用 Delta Lake 追蹤 ML 模型定型數據
+          [3378] 使用 Delta Lake 追蹤 ML 模型定型資料
+        - 外部存取追蹤
+          [3379] 從 Azure Databricks 外部存取 MLflow 追蹤伺服器
+      - 模型生命週期管理
+        - 在 Unity 目錄中管理模型生命週期
+          [3381] 在 Unity 目錄中管理模型生命週期
+        - Unity 目錄範例中的模型
+          [3394] Unity 目錄範例中的模型
+        - 使用工作區模型登錄管理模型生命週期
+          [3404] 使用工作區模型登錄管理模型生命週期（舊版）
+        - 跨工作區共用模型
+          [3428] 跨工作區共用模型
+        - 工作區模型登錄範例
+          [3433] 工作區模型登錄範例
+        - 儲存、載入及部署模型
+          [3451] 記錄、載入、註冊及部署 MLflow 模型
+        - Databricks 自動記錄
+          [3457] Databricks 自動記錄
+        - 記錄模型相依性
+          [3462] 記錄模型相依性
+        - Azure 上的 scikit-learn 模型部署
+          [3467] Azure ML 上的 scikit-learn 模型部署
+      - MLflow 模型登錄 Webhook
+        [3468] Azure Databricks 上的 MLflow 模型登錄Webhook
+      - 使用 MLflow 專案重現執行
+        [3481] 在 Azure Databricks 上執行 MLflow 專案
+      - 在工作區之間複製 MLflow 物件
+        [3487] 在工作區之間複製 MLflow 物件
+      - 使用 MLflow 搜尋 API 建置儀錶板
+        [3488] 使用 MLflow 搜尋 API 建置儀表板
+    - 生產最佳做法
+      - 參考解決方案
+        - 參考解決方案概觀
+          [3489] 參考解決方案
+        - ETL 和影像處理
+          [3490] 映射應用程式的參考解決方案
+        - 推薦系統中的寬深度模型
+          [3492] 在推薦系統中建置廣深度模型
+        - 使用 Spark NLP 處理自然語言
+          [3495] 自然語言處理
+        - 資料標記
+          [3498] 資料標記
+      - 批次推斷
+        - 部署用於推斷的模型
+          [3499] 部署批次推斷和預測的模型
+        - MLflow 模型推斷範例
+          [3501] 模型推斷範例
+        - 深度學習模型推斷
+          - 深度學習模型推斷工作流程
+            [3502] 深度學習模型推斷工作流程
+          - 使用 TensorFlow Keras API 的模型推斷
+            [3504] 使用 TensorFlow Keras API 的模型推斷
+          - 使用 TensorFlow 和 TensorRT 的模型推斷
+            [3505] 使用 TensorFlow 和 TensorRT 的模型推斷
+          - 使用 PyTorch 的模型推斷
+            [3506] 使用 PyTorch 的模型推斷
+        - 深度學習模型推斷效能微調
+          [3507] 深度學習模型推斷效能微調指南
+      - MLOps
+        - MLOps 工作流程
+          [3509] Azure Databricks 上的 MLOps 工作流程
+        - 模型部署模式
+          [3520] 模型部署模式
+        - MLOps 堆疊
+          [3523] 什麼是MLOps Stack？
+      - GraphFrames
+        - GraphFrames 概觀
+          [3526] GraphFrames
+        - 使用 GraphFrame 的圖表分析教學課程
+          [3527] 使用 GraphFrame 的圖表分析教學課程
+        - GraphFrames - Python
+          [3528] GraphFrames 使用者指南 - Python
+        - GraphFrames - Scala
+          [3529] GraphFrames 使用者指南 - Scala
+  - 模型服務
+    - 模型服務概觀
+      [3537] 透過 Azure Databricks 提供的模型服務
+    - 提供自定義模型
+      - 部署自定義模型
+        [3540] 教學課程：部署和查詢自定義模型
+      - 自定義模型服務教學課程
+        [3544] 教學課程：部署和查詢自定義模型
+      - 建立提供端點的自定義模型
+        [3548] 建立提供端點的自定義模型
+      - 查詢提供端點的自定義模型
+        [3557] 查詢提供自定義模型的端點
+      - 搭配模型服務端點使用自定義連結庫
+        [3565] 搭配模型服務使用自定義 Python 連結庫
+      - 使用模型服務端點封裝自定義成品
+        [3568] Package custom artifacts for ModelServing
+      - 使用模型服務部署 Python 程式代碼
+        [3570] 使用模型服務部署 Python 程式代碼
+      - 將多個模型服務至模型服務端點
+        [3572] 將多個模型服務至模型服務端點
+      - 設定從服務端點的模型存取資源
+        [3575] 設定從服務端點的模型存取資源
+    - 提供基礎模型
+      - 部署基礎模型
+        [3581] 部署產生的 AI 基礎模型
+      - 建立服務端點的基礎模型
+        [3583] 建立服務端點的基礎模型
+      - 提供端點的查詢基礎模型
+        [3590] 查詢基礎模型
+      - 基礎模型 API
+        - 基礎模型 API 概觀
+          [3607] Databricks Foundation 模型 API
+        - 使用布建的輸送量部署基礎模型 API
+          [3611] 布建的輸送量基礎模型 API
+        - 布建的輸送量基準檢驗
+          [3619] 布建輸送量中的令牌每秒範圍代表什麼意思？
+        - 布建的輸送量會執行您自己的基準檢驗
+          [3621] 進行您自己的 LLM 端點基準檢驗
+        - 使用基礎模型 API 布建輸送量的批次推斷
+          [3623] 使用基礎模型 API 進行批次推斷
+        - 基礎模型 API 支援的模型
+          [3625] 支援按令牌付費的模型
+        - 按令牌付費模型維護原則
+          [3629] 基礎模型 API 模型維護原則
+        - 基礎模型 API 參考
+          [3630] 基礎模型 REST API 參考
+      - 外部模型端點
+        - 外部模型端點概觀
+          [3637] Databricks 模型服務中的外部模型
+        - 建立和查詢外部模型端點教學課程
+          [3649] 教學課程：建立外部模型端點以查詢OpenAI 模型
+    - 使用 REST API 管理服務端點
+      [3655] 管理服務端點的模型
+    - 監視和偵錯端點
+      - 用於監視和偵錯模型的推斷數據表
+        [3663] 用於監視和偵錯模型的推斷數據表
+      - 在提供端點的模型上啟用推斷數據表
+        [3670] 使用 API 在提供端點的模型上啟用推斷數據表
+      - 將端點健康情況計量導出至 Prometheus 和 Datadog
+        [3676] 追蹤和導出端點健康情況計量至Prometheus 和 Datadog
+    - 限制和區域可用性
+      [3681] 模型服務限制和區域
+    - 遷移至模型服務
+      - 遷移至模型服務
+        [3686] 遷移至模型服務
+      - 將優化的 LLM 端點遷移至布建的輸送量
+        [3690] 將優化的 LLM 服務端點遷移至布建的輸送量
+  - 資料倉儲
+    - 什麼是 Azure Databricks 上的資料倉儲？
+      [3691] 什麼是 Azure Databricks 上的資料倉儲？
+    - 開始使用
+      - Databricks SQL 概念
+        [3694] Databricks SQL 概念
+      - Databricks SQL 教學課程
+        [3696] 使用 Databricks SQL 開始使用數據倉儲
+      - 範例儀表板
+        [3698] 教學課程：使用範例儀錶板
+      - 查詢和數據視覺效果
+        [3704] 將查詢可視化並建立舊版儀錶板
+    - SQL 編輯器
+      - SQL 編輯器簡介
+        [3718] 在 SQL 編輯器中撰寫查詢並探索數據
+    - 查詢
+      - 查詢概觀
+        [3730] 存取和管理已儲存的查詢
+      - 查詢篩選
+        [3733] 查詢篩選條件
+      - 查詢參數
+        [3735] 查詢參數
+      - 查詢代碼段
+        [3742] 查詢代碼段
+      - 排程查詢
+        [3746] 排程查詢
+      - 查詢歷史記錄
+        [3748] 查詢歷史記錄
+      - 查詢配置檔
+        [3751] 查詢配置檔
+      - 查詢快取
+        [3756] 查詢快取
+      - 使用條件約束進行查詢優化
+        [3759] 使用主鍵條件約束進行查詢優化
+    - 視覺效果概觀
+      [3762] Databricks SQL 中的視覺效果
+    - 儀表板​​
+      - 儀表板概觀
+        [3769] 儀表板
+      - 教學課程
+        [3784] 儀錶板教學課程
+      - 視覺效果類型
+        [3786] 儀錶板視覺效果類型
+      - 將舊版儀錶板複製到 Lakeview 儀錶板
+        [3800] 將舊版儀錶板複製到 Lakeview 儀錶板
+    - Databricks SQL 儀錶板
+      - 舊版儀錶板概觀
+        [3805] 舊版儀錶板
+    - 警示
+      - 警示概觀
+        [3824] 什麼是 Databricks SQL 警示？
+    - 使用具體化檢視
+      [3833] 在 Databricks SQL 中使用具體化檢視
+    - 具體化檢視的重新整理作業
+      [3843] 具體化檢視的重新整理作業
+    - 在 Databricks SQL 中載入數據
+      [3846] 在 Databricks SQL 中使用串流數據表載入數據
+  - Delta Lake
+    - Delta Lake 概觀
+      [3851] 什麼是 Delta Lake？
+    - 啟用Delta Lake
+      [3855] 教學課程：Delta Lake
+    - 擷取數據表歷程記錄
+      [3868] 使用 Delta Lake 數據表歷程記錄
+    - 檢視數據表詳細數據
+      [3880] 使用描述詳細數據檢閱 Delta Lake 數據表詳細數據
+    - 清理未使用的數據檔
+      [3883] 使用 vacuum 移除未使用的資料檔案
+    - 液體群集
+      [3887] 使用差異數據表的液體叢集
+    - 優化數據表
+      [3895] 在 Delta Lake 上使用 Optimize 壓縮資料檔案
+    - 數據略過
+      [3899] Delta Lake 的數據略過
+    - 變更數據摘要
+      [3902] 在 Azure Databricks 上使用 Delta Lake變更數據摘要
+    - 資料表條件約束
+      [3910] Azure Databricks 的條件約束
+    - 差異最佳做法
+      [3913] 最佳做法：Delta Lake
+    - 管理功能相容性
+      [3919] Azure Databricks 如何管理 Delta Lake 功能兼容性？
+    - 卸除數據表功能
+      [3925] 卸除差異數據表功能
+    - 搭配合併的Upsert
+      [3928] 使用合併將Upsert插入 Delta Lake 資料表
+    - 差異數據表屬性參考
+      [3940] 差異數據表屬性參考
+    - 自訂元數據
+      [3947] 使用自定義元數據擴充 Delta Lake 數據表
+    - 產生的數據行
+      [3949] Delta Lake 產生的數據行
+    - 強制執行結構描述
+      [3955] 強制執行結構描述
+    - 調整檔案大小
+      [3957] 設定 Delta Lake 來控制數據檔大小
+    - 選擇性覆寫
+      [3964] 選擇性地使用 Delta Lake 覆寫數據
+    - 卸除或取代數據表
+      [3969] 卸除或取代 Delta 數據表
+    - 更新架構
+      [3972] 更新 Delta Lake 資料表結構描述
+    - 類型擴大
+      [3983] 類型擴大
+    - 數據分割數據表
+      [3986] 在 Azure Databricks 上分割數據表的時機
+    - 複製差異數據表
+      [3989] 在 Azure Databricks 上複製數據表
+    - 在 Unity 目錄上複製
+      [3995] Unity 目錄數據表的淺層複製
+    - 複製 Parquet 和 Iceberg 資料表
+      [3999] 以累加方式將 Parquet 和 Iceberg 數據表複製到 Delta Lake
+    - 轉換為 Delta
+      [4002] 轉換為 Delta Lake
+    - 通用格式
+      [4005] 使用 UniForm 讀取 Delta 資料表與Iceberg 用戶端
+  - 開發人員
+    - 概觀
+      [4012] 在 Databricks 上開發
+    - Python
+      - Python 概觀
+        [4014] 適用於 Python 開發人員的 AzureDatabricks
+        - PySpark
+          [4020] Azure Databricks 上的 PySpark
+          - PySpark DataSources
+            [4022] 什麼是 PySpark DataSource？
+        - Spark 上的 Pandas API
+          - Spark 上的 Pandas API
+            [4026] Spark 上的 Pandas API
+          - Pandas 概觀
+            [4028] 您可以在 Azure Databricks 上使用Pandas 嗎?
+          - pandas 到 PySpark 轉換
+            [4031] 在 PySpark 與 pandas DataFrame 之間轉換
+          - pandas 函式 API
+            [4033] pandas 函式 API
+        - 從 Python 或 R 連線
+          [4037] 從 Python 或 R 連線至 Azure Databricks
+    - R
+      - R 概觀
+        [4045] 適用於 R 開發人員的 Azure Databricks
+      - R 開發人員指南
+        [4052] 互動式 R 開發
+      - SparkR 概觀
+        [4059] SparkR 概觀
+      - SparkR ML 教學課程
+        [4065] 教學課程：使用 glm 分析資料
+      - sparklyr
+        [4068] sparklyr
+      - SparkR 與 sparklyr
+        [4071] 比較 SparkR 和 sparklyr
+      - DataFrame 和數據表
+        [4075] 在 R 中使用 DataFrame 和資料表
+      - Azure Databricks 上的 RStudio
+        [4087] Azure Databricks 上的 RStudio
+      - Azure Databricks 上的 Shiny
+        [4102] Azure Databricks 上的 Shiny
+      - Azure Databricks 上的 renv
+        [4112] renv  在 Azure Databricks 上
+    - Scala
+      [4115] 適用於 Scala 開發人員的 AzureDatabricks
+    - UDF
+      - 什麼是UDF？
+        [4119] 什麼是使用者定義函式 （UDF）？
+      - Unity 目錄上的 UDF
+        [4123] Unity 目錄中的使用者定義函式 （UDF）
+      - pandas UDF
+        [4127] pandas 用戶定義函式
+      - Python UDF
+        [4133] 用戶定義的純量函式 - Python
+      - Scala UDF
+        [4136] 用戶定義的純量函式 - Scala
+      - Scala UDAF
+        [4138] 使用者定義彙總函式 - Scala
+    - 工具
+      - 工具概觀
+        [4140] 開發人員工具 和指引
+      - 驗證
+        - 概觀
+          [4142] 
+        - 個人存取權杖驗證
+          [4158] Azure Databricks 個人存取權杖驗證
+        - OAuth 機器對機器 (M2M) 驗證
+          [4167] OAuth 機器對機器 (M2M) 驗證
+        - OAuth 使用者對電腦 （U2M） 驗證
+          [4184] OAuth 使用者對電腦 （U2M） 驗證
+        - Azure 受控識別驗證概觀
+          [4201] Azure 受控識別驗證
+        - Azure 受控識別驗證逐步解說
+          [4208] 設定及使用 Azure Databricks 自動化的Azure 受控識別驗證
+        - Microsoft Entra ID 服務主體驗證
+          [4220] Microsoft Entra ID 服務主體驗證
+        - Azure CLI 驗證概觀
+          [4230] Azure CLI 驗證
+        - 使用 Azure CLI 登入使用者
+          [4238] 使用 Azure Databricks 使用者帳戶登入Azure CLI
+        - 使用 Azure CLI 登入服務主體
+          [4240] 使用 Microsoft Entra ID 服務主體的Azure CLI 登入
+        - 使用 CLI 取得使用者的 Microsoft Entra 識別碼 （先前稱為 Azure AD） 令牌
+          [4243] 使用 Azure CLI 取得使用者的 MicrosoftEntra 識別碼 （先前稱為 Azure ActiveDirectory） 令牌
+        - 使用 CLI 取得服務主體的 Microsoft Entra ID （先前稱為 Azure AD） 令牌
+          [4246] 使用 Azure CLI 取得 Microsoft Entra ID（先前稱為 Azure Active Directory） 令牌的 Microsoft Entra ID 服務主體
+        - 取得服務主體的 Microsoft Entra 識別碼 （先前稱為 Azure AD） 令牌
+          [4250] 取得服務主體的 Microsoft Entra ID (先前稱為 Azure Active Directory) 權杖
+        - 使用 MSAL 取得 Microsoft Entra ID （先前稱為 Azure AD） 令牌
+          [4263] 使用 MSAL 為使用者取得 MicrosoftEntra ID （先前稱為 Azure ActiveDirectory） 令牌
+        - 針對 Microsoft Entra ID （先前稱為 Azure AD） 令牌進行疑難解答
+          [4279] 針對 Microsoft Entra 識別碼 （先前稱為Azure Active Directory） 存取令牌進行疑難解答
+        - 使用 PowerShell 登入使用者
+          [4283] 使用 Azure Databricks 使用者帳戶登入PowerShell
+        - 使用 PowerShell 登入服務主體
+          [4285] 使用 Microsoft Entra ID 服務主體的PowerShell 登入
+        - 使用 curl、Postman、Terraform 布建服務主體
+          [4288] 使用 Terraform 布建服務主體
+      - Databricks Connect
+        - 概觀
+          [4295] 什麼是 Databricks 連線？
+        - 叢集組態和設定
+          [4298] Databricks 連線 的叢集組態
+        - Python
+          - 概觀
+            [4300] 適用於 Python 的 Databricks 連線
+          - 安裝
+            [4309] 安裝適用於 Python 的 Databricks 連線
+          - JupyterLab
+            [4322] 使用 JupyterLab 搭配適用于 Python 的Databricks 連線
+          - 傳統 Jupyter Notebook
+            [4324] 使用傳統 Jupyter Notebook 搭配適用于Python 的 Databricks 連線
+          - PyCharm
+            [4326] 搭配適用於 Python 的 Databricks 連線 使用 PyCharm
+          - Visual Studio Code
+            [4329] 使用 Visual Studio Code 搭配適用于Python 的 Databricks 連線
+          - Eclipse with PyDev
+            [4331] 使用 Eclipse 搭配適用于 Python 的PyDev 和 Databricks 連線
+          - Spark 殼層
+            [4333] 搭配適用于 Python 的 Databricks 連線使用 Spark 殼層
+          - 程式碼範例
+            [4335] 適用於 Python 的 Databricks 連線 程式代碼範例
+          - Databricks 公用程式
+            [4339] 適用於 Python 的 Databricks 公用程式與Databricks 連線
+          - 從舊版移轉
+            [4342] 遷移至適用于 Python 的 Databricks 連線
+          - 使用者自訂函數
+            [4344] 適用於 Python 的 Databricks 連線 中使用者定義的函式
+          - 異步查詢和中斷
+            [4346] 使用適用于 Python 的 Databricks 連線進行非同步查詢和中斷
+          - 進階使用方式
+            [4348] 適用於 Python 的 Databricks 連線 進階使用方式
+          - 疑難排解
+            [4350] 針對適用于 Python 的 Databricks 連線進行疑難排解
+          - 限制
+            [4352] 適用于 Python 的 Databricks 連線限制
+        - R
+          - 概觀
+            [4354] 適用於 R 的 Databricks 連線
+        - Scala
+          - 概觀
+            [4362] 適用於 Scala 的 Databricks 連線
+          - 安裝
+            [4372] 安裝適用於 Scala 的 Databricks 連線
+          - IntelliJ IDEA
+            [4381] 搭配適用於 Scala 的 Databricks 連線 使用 IntelliJ IDEA
+          - Visual Studio Code
+            [4385] 搭配使用 Visual Studio Code 搭配適用於Scala 的 Databricks 連線
+          - 程式碼範例
+            [4388] 適用於 Scala 的 Databricks 連線 程式代碼範例
+          - Databricks 公用程式
+            [4392] Databricks 公用程序與適用於 Scala 的Databricks 連線
+          - 從舊版移轉
+            [4394] 遷移至 Scala 的 Databricks 連線
+          - 使用者自訂函數
+            [4396] 適用於 Scala 的 Databricks 連線 中使用者定義的函式
+          - 異步查詢和中斷
+            [4399] 使用適用於 Scala 的 Databricks 連線 進行異步查詢和中斷
+          - 進階使用方式
+            [4401] 適用於 Scala 的 Databricks 連線 進階使用方式
+          - 疑難排解
+            [4402] 針對 Scala 的 Databricks 連線 進行疑難解答
+          - 限制
+            [4404] 適用於 Scala 的 Databricks 連線 限制
+        - 舊版
+          [4405] Databricks 連線 Databricks Runtime 12.2LTS 和以下版本
+      - Visual Studio Code 概觀
+        [4442] 如何搭配 Azure Databricks 使用 VisualStudio Code？
+      - 適用於 Visual Studio Code 的 Databricks 擴充功能
+        - 概觀
+          [4444] 什麼是適用於Visual Studio Code 的Databricks 延伸模組？
+        - 教學課程
+          [4446] Databricks 的 VSCode 延伸模塊教學課程：在叢集上執行 Python，並以作業身分執行
+        - 安裝
+          [4452] 安裝適用於 Visual Studio Code 的Databricks 擴充功能
+        - 驗證
+          [4454] VS Code Databricks 延伸模組的驗證設定
+        - 選取叢集
+          [4460] 為 Visual Studio Code 選取 Databricks延伸模組的叢集
+        - 選取工作區目錄
+          [4464] 為 Visual Studio Code 的 Databricks 延伸模組選取工作區目錄
+        - 完成開發工作
+          - 概觀
+            [4468] 適用於 Visual Studio Code 的 Databricks擴充功能開發工作
+          - 啟用 PySpark 和 Databricks 公用程式代碼完成
+            [4469] 為 Visual Studio Code 的 Databricks 延伸模組啟用 PySpark 和 Databricks 公用程式代碼完成
+          - 使用 Databricks 連線 整合對程式代碼進行偵錯
+            [4470] 針對適用於Visual Studio Code 的Databricks 擴充功能使用 Databricks 連線 偵錯程序代碼
+          - 搭配 Databricks 連線 使用筆記本
+            [4477] 搭配 Databricks 連線 使用筆記本
+          - 在叢集上執行 Python 檔案
+            [4480] 使用適用于 Visual Studio Code 的Databricks 擴充功能在叢集上執行Python 檔案
+          - 以作業身分執行 Python 檔案
+            [4482] 使用 Visual Studio Code 的 Databricks擴充功能，以作業身分執行 Python 檔案
+          - 以作業身分執行 Python 筆記本
+            [4484] 使用適用于 Visual Studio Code 的Databricks 擴充功能，以作業身分執行Python 筆記本
+          - 以作業身分執行 R、Scala 或 SQL 筆記本
+            [4486] 使用 Visual Studio Code 的 Databricks擴充功能，以作業形式執行 R、Scala 或SQL 筆記本
+          - 使用 pytest 執行測試
+            [4488] 使用適用于 Visual Studio Code 的Databricks 擴充功能的 pytest 執行測試
+          - 使用環境變數
+            [4492] 針對 Visual Studio Code 的 Databricks擴充功能使用環境變數
+          - 建立自定義執行組態
+            [4493] 為 Visual Studio Code 的 Databricks 擴充功能建立自訂執行組態
+        - 疑難排解
+          [4494] 針對 Visual Studio Code 的 Databricks擴充功能進行疑難解答
+        - 命令選擇區命令
+          [4496] 適用於 Visual Studio Code 之 Databricks擴充功能的命令選擇區命令
+        - 設定
+          [4498] 適用於 Visual Studio Code 的 Databricks擴充功能 設定
+        - 常見問題集
+          [4500] Visual Studio Code Databricks 延伸模組的常見問題
+      - PyCharm 概觀
+        [4502] 如何搭配 Azure Databricks 使用PyCharm？
+      - IntelliJ IDEA 概觀
+        [4503] 如何搭配 Azure Databricks 使用 IntelliJIDEA？
+      - Eclipse 概觀
+        [4504] 如何搭配 Azure Databricks 使用Eclipse？
+      - RStudio Desktop 概觀
+        [4505] 如何搭配 Azure Databricks 使用 RStudioDesktop？
+      - SDK
+        - 概觀
+          [4506] 搭配 Azure Databricks 使用 SDK
+        - 適用於 Python 的 Databricks SDK
+          [4507] 適用於 Python 的 Databricks SDK
+        - 適用於 Java 的 Databricks SDK
+          [4524] 適用於 Java 的 Databricks SDK
+        - Databricks SDK for Go
+          [4539] Databricks SDK for Go
+        - Databricks SDK for R
+          [4549] Databricks SDK for R
+      - SQL 連接器和驅動程式
+        - 概觀
+          [4558] 使用 SQL 連接器、驅動程式或 API
+        - 適用於 Python 的 Databricks SQL 連線 or
+          [4559] 適用於 Python 的 Databricks SQL 連線or
+        - Databricks 的 SQLAlchemy 方言
+          [4584] 搭配 Azure Databricks 使用 SQLAlchemy
+        - Databricks SQL Driver for Go
+          [4587] Databricks SQL Driver for Go
+        - pyodbc
+          [4606] 連線 Python 和 pyodbc 至 AzureDatabricks
+        - Databricks SQL Driver for Node.js
+          [4611] Databricks SQL Driver for Node.js
+        - 使用 REST API 執行 SQL 語句
+          [4633] 語句執行 API：在倉儲上執行 SQL
+      - SQL 工具
+        - 概觀
+          [4653] 使用 SQL 資料庫工具
+        - Databricks SQL CLI
+          [4654] Databricks SQL CLI
+        - Databricks Driver for VS Code
+          [4664] Databricks Driver for SQLTools for VisualStudio Code
+        - DataGrip
+          [4673] DataGrip 與 Azure Databricks 整合
+        - DBeaver
+          [4677] DBeaver 與 Azure Databricks 整合
+      - Databricks CLI
+        - 概觀
+          [4681] 什麼是 Databricks CLI？
+        - 從 Azure Cloud Shell 使用 Databricks CLI
+          [4683] 從 Azure Cloud Shell使用 Databricks CLI
+        - 教學課程
+          [4686] Databricks CLI 教學課程
+        - 安裝或更新
+          [4690] 安裝或更新 Databricks CLI
+        - 驗證
+          [4703] Databricks CLI 的驗證
+        - 設定檔
+          [4714] Databricks CLI 的組態設定檔
+        - 基本使用方式
+          [4718] Databricks CLI 的基本用法
+        - 命令
+          - 概觀
+            [4722] Databricks CLI 命令
+          - 驗證命令群組
+            [4726] auth  命令群組
+          - bundle 命令群組
+            [4732] bundle  命令群組
+          - 完成命令群組
+            [4738] completion  命令群組
+          - 設定命令群組
+            [4740] configure  命令群組
+          - fs 命令群組
+            [4743] fs  命令群組
+          - sync 命令群組
+            [4747] sync  命令群組
+          - api 命令群組
+            [4750] api  命令群組
+        - 疑難排解
+          [4753] 針對 Databricks CLI 進行疑難解答
+        - 移轉
+          [4755] Databricks CLI 移轉
+      - 公用程式
+        [4768] Databricks 公用程式 （dbutils ） 參考
+      - IaC
+        - 概觀
+          [4804] 布建基礎結構
+        - Databricks Terraform 提供者
+          [4805] Databricks Terraform 提供者
+        - 教學課程：使用 Terraform 建立工作區
+          [4815] 使用 Terraform 部署 Azure Databricks 工作區
+        - 使用 Terraform 建立基本資源
+          [4817] 使用 Terraform 建立叢集、筆記本和作業
+        - 使用 Terraform 管理資源
+          [4827] 使用 Terraform 管理 Databricks 工作區
+        - Terraform CDK Databricks 提供者
+          [4832] Terraform CDK Databricks 提供者
+        - Pulumi Databricks 資源提供者
+          [4841] Pulumi Databricks 資源提供者
+      - 持續整合與持續傳遞
+        - 概觀
+          [4855] 什麼是 Azure Databricks 上的 CI/CD？
+        - Databricks 資產套件組合
+          - 概觀
+            [4858] 什麼是 Databricks 資產套件組合？
+          - 套件組合開發工作流程
+            [4865] Databricks 資產組合開發工作流程
+          - 空中套用環境中的套件組合
+            [4871] 設定 Databricks 資產套件組合以在空中套用環境中運作
+          - 套件組合配置檔語法
+            [4873] Databricks 資產配套組態
+          - 套件組合驗證
+            [4899] Databricks 資產套件組合的驗證
+          - 配套部署模式
+            [4902] Databricks 資產組合部署模式
+          - 套件組合執行身分識別
+            [4905] 指定 Databricks 資產套件組合工作流程的執行身分識別
+          - 資源權限
+            [4908] 在 Databricks 資產套件組合中設定資源的許可權
+          - 動態成品設定
+            [4912] 在 Databricks 資產組合中動態定義成品設定
+          - CI/CD 和 GitHub Actions
+            [4915] 使用 Databricks 資產套件組合和 GitHubActions 執行 CI/CD 工作流程
+          - 覆寫新的作業叢集設定
+            [4919] 覆寫 Databricks 資產組合中的叢集設定
+          - 工作工作類型設定
+            [4926] 將工作新增至 Databricks 資產組合中的作業
+          - 覆寫作業工作設定
+            [4932] 覆寫 Databricks 資產組合中的作業工作設定
+          - 套件組合連結庫相依性
+            [4936] Databricks 資產組合連結庫相依性
+          - 套件組合範本
+            [4940] Databricks Asset Bundle 範本
+          - 自定義套件組合範本
+            [4947] 教學課程：建立您的第一個自定義Databricks 資產組合範本
+          - MLOps Stack 教學課程
+            [4952] MLOps Stack 的 Databricks 資產套件組合
+          - Python 轉輪建置教學課程
+            [4957] 使用 Databricks 資產套件組合開發Python 轉輪檔案
+        - Azure DevOps
+          [4975] 使用 Azure DevOps 在 Azure Databricks上進行持續整合和傳遞
+        - GitHub 動作
+          [4999] 使用 GitHub Actions 持續整合和傳遞
+        - Jenkins
+          [5000] 在 Azure Databricks 上使用 Jenkins 的CI/CD
+        - CI/CD 的服務主體
+          [5018] CI/CD 的服務主體
+  - 技術合作夥伴
+    - 技術合作夥伴概觀
+      [5024] 技術合作夥伴
+    - ODBC 和 JDBC 驅動程式
+      - 概觀
+        [5028] Databricks ODBC 和 JDBC 驅動程式
+      - ODBC 驅動程式
+        - 概觀
+          [5029] Databricks ODBC 驅動程式
+        - 下載並安裝
+          [5031] 下載並安裝 Databricks ODBC 驅動程式
+        - 計算設定
+          [5033] Databricks ODBC 驅動程式的計算設定
+        - 驗證設定
+          [5036] Databricks ODBC 驅動程式的驗證設定
+        - 驅動程式功能設定
+          [5047] Databricks ODBC 驅動程式的驅動程式功能設定
+        - 建立 DSN
+          [5050] 建立 Databricks ODBC Driver 的 ODBCDSN
+        - 建立無 DSN 連接字串
+          [5053] 為 Databricks ODBC 驅動程式建立無ODBC DSN 連接字串
+        - 測試
+          [5054] 測試 Databricks ODBC 驅動程式
+      - JDBC 驅動程式
+        - 概觀
+          [5059] Databricks JDBC Driver
+        - 下載和參考
+          [5061] 下載並參考 Databricks JDBC 驅動程式
+        - 計算設定
+          [5063] Databricks JDBC 驅動程式的計算設定
+        - 驗證設定
+          [5066] Databricks JDBC 驅動程式的驗證設定
+        - 驅動程式功能設定
+          [5075] Databricks JDBC 驅動程式的驅動程式功能設定
+        - 舊版驅動程序設定
+          [5077] 舊版 Databricks JDBC 驅動程式
+        - Unity 目錄磁碟區中的檔案
+          [5080] 使用 Databricks JDBC 驅動程式管理Unity 目錄磁碟區中的檔案
+        - 測試
+          [5082] 測試 Databricks JDBC 驅動程式
+    - 來自合作夥伴解決方案的 Databricks 登入
+      - 合作夥伴解決方案的 Databricks 登入簡介
+        [5085] 來自合作夥伴解決方案的 AzureDatabricks 登入
+      - 啟用或停用合作夥伴 OAuth 應用程式
+        [5086] 啟用或停用合作夥伴 OAuth 應用程式
+      - 從 Tableau Server 設定 Databricks 登入
+        [5091] 從 Tableau Server 設定 Azure Databricks登入
+      - 使用 Microsoft Entra ID 從 dbt Core 設定 Databricks 登入
+        [5094] 使用 Microsoft Entra ID 從 dbt Core 設定Azure Databricks 登入
+      - 覆寫合作夥伴 OAuth 令牌存留期原則
+        [5099] 覆寫合作夥伴 OAuth 令牌存留期原則
+    - 合作夥伴 連線
+      - 什麼是合作夥伴 連線？
+        [5101] 什麼是 Databricks 合作夥伴 連線？
+      - 連線 至 Fivetran 逐步解說
+        [5105] 逐步解說：使用合作夥伴 連線 連線 至Fivetran
+      - 以系統管理員身分管理連線
+        [5110] 管理合作夥伴 連線 中的連線
+      - 對連接進行疑難排解
+        [5115] 針對合作夥伴 連線 進行疑難解答
+    - 擷取
+      - 連線 數據擷取夥伴
+        [5120] 使用合作夥伴 連線 擷取合作夥伴 連線
+      - Fivetran
+        [5122] 連線 到 Fivetran
+      - Hevo Data
+        [5127] 連線 Hevo 數據
+      - InfoWorks
+        [5129] 連線 Infoworks
+      - Qlik 複寫
+        [5132] 連線 至 Qlik Replicate
+      - 里弗利
+        [5135] 連線 到里維
+      - RudderStack
+        [5138] 連線至 RuderStack
+      - Snowplow
+        [5139] 連線到斯諾普洛
+      - StreamSets
+        [5140] 連線 至 StreamSets
+      - Syncsort
+        [5143] 連線 至 Syncsort
+    - 數據準備和轉換
+      - 連線 數據準備合作夥伴
+        [5145] 使用合作夥伴 連線將數據準備合作夥伴連線
+      - dbt Cloud
+        [5147] 連線 至 dbt Cloud
+      - dbt Core
+        [5168] 連線 至 dbt Core
+      - 馬蒂利翁
+        [5175] 連線 到馬蒂利翁
+      - 預言
+        [5179] 連線 至預言
+    - 機器學習服務
+      - 連線 機器學習合作夥伴
+        [5182] 使用合作夥伴 連線 向 ML 合作夥伴 連線
+      - Dataiku
+        [5184] 連線 至 Dataiku
+      - John Snow Labs
+        [5188] 連線 約翰·斯諾實驗室
+      - Labelbox
+        [5192] 連線 至 Labelbox
+    - BI 和視覺效果
+      - 連線 BI 和視覺效果合作夥伴
+        [5195] 使用合作夥伴連線連線到 BI 合作夥伴
+      - Hex
+        [5198] 連線 至十六進位
+      - Looker
+        [5200] 連線 至 Looker
+      - Looker Studio
+        [5205] 連線 至 Looker Studio
+      - MicroStrategy
+        [5209] 連線到 MicroStrategy
+      - 模式
+        [5212] 連線 至模式
+      - Power BI
+        [5214] 將 Power BI 連線至 Azure Databricks
+      - 預先設定
+        [5222] 連線 為 Preset
+      - Qlik Sense
+        [5227] 連線到 Qlik Sense
+      - 西格瑪
+        [5231] 連線 至西格瑪
+      - SQL Workbench/J
+        [5234] 連線 至 SQL Workbench/J
+      - Tableau
+        [5237] 連線 Tableau 至 Azure Databricks
+      - ThoughtSpot
+        [5247] Connect to ThoughtSpot
+      - TIBCO Spotfire
+        [5248] 連線 TIBCO Spotfire 分析師
+    - 反向 ETL
+      - 連線 反向 ETL 合作夥伴
+        [5252] 使用合作夥伴 連線 反轉 ETL 合作夥伴 連線
+      - 人口普查
+        [5255] 連線 到人口普查
+      - Hightouch
+        [5258] 連線 至 Hightouch
+    - 語意層
+      - 連線 語意層夥伴
+        [5261] 使用合作夥伴 連線 連線 語意層合作夥伴
+      - AtScale
+        [5264] 連線 至 AtScale
+      - Stardog
+        [5267] 連線 至 Stardog
+    - 資料控管
+      - 連線 至數據控管合作夥伴
+        [5271] 使用合作夥伴 連線 將數據控管合作夥伴連線
+      - Alation
+        [5273] Connect Azure Databricks to Alation
+      - Anomalo
+        [5274] 連線 至 Anomalo
+      - erwin 數據模型器
+        [5277] 連線 至 erwin Data Modeler by Quest
+      - Lightup
+        [5279] 連線 至 Lightup
+      - 蒙特卡羅
+        [5280] 連線 Azure Databricks 至 Monte Carlo
+    - 資料安全性
+      - 連線 給安全性合作夥伴
+        [5281] 使用合作夥伴 連線 向安全性合作夥伴 連線
+      - Privacera
+        [5283] 連線到 Privacera
+    - 從 Excel 連線 至 Databricks
+      [5284] 從 Microsoft Excel 連線 至 AzureDatabricks
+  - 帳戶和工作區管理
+    - 管理概觀
+      [5292] Azure Databricks 系統管理簡介
+    - 以系統管理員身分開始使用
+      [5298] 開始使用 Azure Databricks 系統管理
+    - 管理您的 Azure Databricks 帳戶
+      - 帳戶管理概觀
+        [5300] 管理您的 Azure Databricks 帳戶
+      - 管理您的訂閱
+        [5303] 管理您的訂閱
+      - 在您的帳戶上啟用「無隔離共用」叢集的系統管理保護
+        [5306] 在您的帳戶上啟用「無隔離共用」叢集的系統管理保護
+      - 自動叢集更新
+        [5309] 自動叢集更新
+      - 無伺服器配額
+        [5311] 無伺服器配額
+    - 建立 Azure Databricks 工作區
+      - 管理工作區概觀
+        [5314] 發行項• 2024/05/04
+      - 使用ARM範本建立工作區
+        [5316] 使用ARM範本部署工作區
+      - 使用 Azure CLI 建立工作區
+        [5320] 使用 Azure CLI 部署工作區
+      - 使用 Bicep 建立工作區
+        [5322] 使用 Bicep 部署工作區
+      - 使用 PowerShell 建立工作區
+        [5325] 使用PowerShell部署工作區
+    - 管理工作區設定
+      - 管理工作區設定概觀
+        [5328] 管理工作區
+      - 啟用無伺服器計算公開預覽
+        [5329] 啟用無伺服器計算公開預覽
+      - 管理 Databricks 預覽
+        [5331] 管理 Azure Databricks 預覽版
+      - 工作區外觀設定
+        [5334] 管理工作區外觀設定
+      - 工作區電子郵件設置
+        [5335] 管理工作區電子郵件設置
+      - 管理通知目的地
+        [5336] 管理通知目的地
+      - 啟用 Web 終端機
+        [5338] 啟用 Web 終端機
+      - 變更工作區記憶體備援
+        [5340] 變更工作區記憶體備援選項
+      - 清除工作區記憶體
+        [5343] 清除工作區記憶體
+      - 設定筆記本結果儲存位置
+        [5345] 設定筆記本結果儲存位置
+      - 變更工作區記憶體備援
+        [5348] 變更工作區記憶體備援選項
+      - 管理筆記本功能的存取權
+        [5351] 管理筆記本功能的存取權
+      - 管理檔案上傳介面的存取權
+        [5353] 停用上傳數據 UI
+      - 管理 DBFS 瀏覽器的存取權
+        [5354] 管理 DBFS 檔案瀏覽器
+      - 在工作區上強制執行用戶隔離叢集類型
+        [5355] 在工作區上強制執行用戶隔離叢集類型
+      - 限制工作區管理員
+        [5356] 限制工作區管理員
+      - Databricks 存取客戶工作區
+        [5357] Azure Databricks 人員的工作區存取權
+    - Databricks SQL 系統管理員設定
+      - SQL 倉儲管理員設定
+        [5358] SQL 倉儲管理員設定
+      - SQL 倉儲類型
+        [5361] SQL 倉儲類型
+      - 啟用無伺服器 SQL 倉儲
+        [5365] 發行項• 2024/05/02
+      - 資料存取設定
+        [5367] 啟用資料存取設定
+    - 管理使用者、服務主體和群組
+      - 使用者和群組概觀
+        [5371] 管理使用者、服務主體和群組
+      - 最佳作法
+        [5376] 身分識別最佳做法
+      - 管理使用者
+        [5382] 管理使用者
+      - 管理服務主體
+        - 管理服務主體概觀
+          [5391] 管理服務主體
+        - 管理服務主體的存取權
+          [5403] 管理服務主體的角色
+      - 管理群組
+        [5410] 管理群組
+      - 管理工作區本地組
+        [5420] 管理工作區本地群組 （舊版）
+      - 使用 SCIM 佈建使用者和群組
+        [5425] 從 Microsoft Entra ID 同步使用者和群組
+      - 設定 Microsoft Entra ID 的 SCIM 布建 （先前稱為 Azure AD）
+        [5430] 使用 Microsoft Entra ID 設定 SCIM 布建（Azure Active Directory）
+      - 管理客戶工作區的存取權
+        [5438] Azure Databricks 人員的工作區存取權
+    - 使用系統數據表監視使用量
+      - 系統資料表概觀
+        [5439] 使用系統數據表監視使用量
+      - 稽核記錄系統資料表
+        [5445] 稽核記錄系統數據表參考
+      - 計費系統數據表
+        - 計費使用量系統數據表
+          [5450] 計費使用量系統數據表參考
+        - 定價系統數據表
+          [5458] 定價系統數據表參考
+        - 監視無伺服器計費
+          [5461] 監視無伺服器計算的成本
+      - 數據譜系系統數據表
+        [5467] 
+      - Marketplace 系統數據表
+        [5471] Marketplace 系統數據表參考
+      - 計算系統數據表
+        [5476] 計算系統數據表參考
+      - SQL 倉儲事件系統數據表
+        [5483] 倉儲事件系統數據表參考
+      - 預測優化系統數據表
+        [5491] 
+    - 診斷記錄
+      - 診斷記錄參考指南
+        [5494] 
+      - 設定診斷記錄傳遞
+        [5553] 設定診斷記錄傳遞
+      - 啟用詳細信息記錄
+        [5560] 啟用詳細資訊稽核記錄
+      - 使用標籤監視使用量
+        [5562] 使用標籤監視使用量
+    - 計算原則
+      - 建立和管理計算原則
+        [5566] 建立和管理計算原則
+      - 計算原則參考
+        [5571] 計算原則參考
+      - 默認原則與原則系列
+        [5588] 默認原則與原則系列
+      - 管理個人計算叢集原則
+        [5591] 管理個人計算原則
+    - 災害復原
+      - 災害復原概觀
+        [5594] 災害復原
+      - 叢集的區域災害復原
+        [5610] Azure Databricks 叢集的區域災害復原
+  - 安全性與合規性
+    - 安全性與合規性概觀
+      [5620] 安全性指南
+    - 安全性基準
+      [5623] 適用於 Azure Databricks 的 Azure 安全性基準
+    - 驗證和存取控制
+      - 驗證和訪問控制概觀
+        [5636] 驗證和存取控制
+      - 管理個人存取權杖
+        [5639] 監視和管理個人存取令牌
+      - 條件式存取
+        [5642] 條件式存取
+      - 存取控制
+        - 存取控制概觀
+          [5644] 存取控制清單
+    - 網路
+      - 網路連線概觀
+        [5654] 網路
+      - 使用者對 Azure Databricks 網路
+        - Azure Databricks 網路功能的使用者概觀
+          [5656] 使用者到 Azure Databricks 網路
+        - 設定 Azure Databricks 的私人連線
+          [5658] 設定 Azure Databricks 的私人連線
+        - IP 存取清單
+          - IP 存取清單概觀
+            [5660] 管理 IP 存取清單
+          - 工作區的IP存取清單
+            [5662] 設定工作區的IP存取清單
+          - 帳戶主控台的IP存取清單
+            [5665] 設定帳戶主控台的 IP 存取清單
+      - 無伺服器計算平面網路
+        - 無伺服器計算平面網路概觀
+          [5668] 無伺服器計算平面網路
+        - 設定無伺服器計算存取的 Azure 儲存體 防火牆
+          [5670] 設定無伺服器計算存取的防火牆
+        - 從無伺服器計算設定私人連線能力
+          [5675] 從無伺服器計算設定私人連線能力
+        - 管理私人端點規則
+          [5679] 管理私人端點規則
+      - 傳統計算平面網路
+        - 傳統計算平面網路概觀
+          [5681] 傳統計算平面網路
+        - 對等虛擬網路
+          [5683] 對等虛擬網路
+        - 在 VNet 中部署 Azure Databricks
+          [5685] 在 Azure 虛擬網路中部署 AzureDatabricks (VNet 插入)
+        - 將工作區 連線 至內部部署網路
+          [5695] 將您的 Azure Databricks 工作區連線到內部部署網路
+        - 用戶定義的路由設定
+          [5700] Azure Databricks 的使用者定義路由設定
+        - 保護叢集連線能力
+          [5703] 保護叢集連線能力
+        - 啟用 Private Link
+          - Private Link 概觀
+            [5713] 啟用 Azure Private Link 後端和前端連線
+          - 啟用 Azure Private Link 做為標準部署
+            [5723] 啟用 Azure Private Link 做為標準部署
+          - 啟用 Azure Private Link 做為簡化部署
+            [5746] 啟用 Azure Private Link 做為簡化部署
+      - 工作區記憶體帳戶的防火牆支援
+        - 啟用工作區記憶體帳戶的防火牆支援
+          [5767] 啟用工作區記憶體帳戶的防火牆支援
+        - 防火牆支援的ARM範本
+          [5771] 工作區記憶體帳戶防火牆支援的ARM範本
+    - 數據安全性與加密
+      - 概觀
+        [5781] 資料安全性與加密
+      - 客戶管理的金鑰概觀
+        [5784] 適用於加密的客戶自控金鑰
+      - 為受控磁碟啟用客戶自控金鑰
+        - 受控磁碟的客戶管理密鑰概觀
+          [5787] Azure 受控磁碟的客戶自控金鑰：
+        - 為受控磁碟啟用客戶自控金鑰
+          [5788] 設定 Azure 受控磁碟的客戶自控金鑰
+        - 啟用受控磁碟的 HSM 客戶自控金鑰
+          [5808] 設定 Azure 受控磁碟的 HSM 客戶自控密鑰
+      - 啟用受控服務的客戶自控金鑰
+        - 受控服務的客戶自控密鑰概觀
+          [5815] 受控服務的客戶自控金鑰
+        - 啟用受控服務的客戶自控金鑰
+          [5817] 啟用受控服務的客戶自控金鑰
+        - 為受控服務啟用 HSM 客戶管理的金鑰
+          [5832] 為受控服務啟用 HSM 客戶管理的金鑰
+      - 為 DBFS 根目錄啟用客戶管理的金鑰
+        - DBFS 的客戶自控密鑰概觀
+          [5838] DBFS 根目錄的客戶自控金鑰
+        - 使用 Azure 入口網站 為 DBFS 啟用客戶管理的金鑰
+          [5840] 使用 Azure 入口網站 為 DBFS 設定客戶管理的金鑰
+        - 使用 Azure CLI 啟用客戶管理的金鑰
+          [5843] 使用 Azure CLI 為 DBFS 設定客戶管理的金鑰
+        - 使用 PowerShell 啟用客戶管理的金鑰
+          [5847] 使用 PowerShell 為 DBFS 設定客戶管理的金鑰
+        - 使用 Azure 入口網站 為 DBFS 啟用 HSM 客戶管理的金鑰
+          [5850] 使用 Azure 入口網站 為 DBFS 設定 HSM客戶管理的金鑰
+        - 使用 Azure CLI 啟用 HSM 客戶管理的金鑰
+          [5853] 使用 Azure CLI 為 DBFS 設定 HSM 客戶管理的密鑰
+        - 使用 PowerShell 啟用 HSM 客戶管理的金鑰
+          [5856] 使用 PowerShell 為 DBFS 設定 HSM 客戶管理的密鑰
+      - 加密叢集背景工作節點之間的流量
+        [5859] 加密叢集背景工作節點之間的流量
+      - 設定 DBFS 根目錄的雙重加密
+        [5863] 設定 DBFS 根目錄的雙重加密
+      - 加密查詢
+        [5867] 加密查詢、查詢歷史記錄和查詢結果
+    - 秘密管理
+      - 使用秘密保護數據安全
+        [5868] 秘密管理
+      - 秘密範圍
+        [5869] 秘密範圍
+      - 密碼
+        [5875] 密碼
+      - 秘密修訂
+        [5882] 秘密修訂
+      - 秘密工作流程範例
+        [5883] 秘密工作流程範例
+    - 稽核、隱私權與合規性
+      - 稽核、隱私權與合規性概觀
+        [5886] 發行項• 2024/05/02
+      - 合規性安全性配置檔
+        - 合規性安全性配置檔概觀
+          [5888] 合規性安全性配置檔
+        - HIPAA 合規性功能
+          [5892] HIPAA 合規性功能
+        - PCI-DSS 合規性功能
+          [5896] PCI-DSS 合規性控制
+      - 設定增強的安全性與合規性設定
+        [5898] 設定增強的安全性與合規性設定
+      - 增強的安全性監視
+        [5903] 增強的安全性監視
+      - GDPR 和 CCPA 與 Delta Lake 的合規性
+        [5907] 符合 Delta Lake 的 GDPR 和 CCPA 合規性
+  - 資料控管 （Unity 目錄）
+    - 概觀
+      [5908] 使用 Unity 目錄進行數據控管
+    - Unity 目錄
+      - 什麼是 Unity 目錄？
+        [5910] 什麼是 Unity 目錄？
+      - Unity 目錄最佳做法
+        [5923] Unity 目錄最佳做法
+      - 設定 Unity 目錄
+        [5938] 設定和管理 Unity 目錄
+      - 使用受控識別存取記憶體
+        [5948] 使用 Unity 目錄中的 Azure 受控識別來存取記憶體
+      - 建立中繼存放區
+        [5959] 建立 Unity 目錄中繼存放區
+      - 啟用 Unity 目錄的工作區
+        [5966] 啟用 Unity 目錄的工作區
+      - Allowlist JAR 和 init 腳本
+        [5970] 共享計算上的Allowlist連結庫和init腳本
+      - 管理許可權
+        - 關於 Unity 目錄中的許可權管理
+          [5974] 管理 Unity 目錄中的權限 \(部分機器翻譯\)
+        - 許可權和安全性實體物件
+          [5981] Unity 目錄許可權和安全性實體物件
+        - 對象擁有權
+          [5993] 管理 Unity 目錄對象擁有權
+        - 管理員 istrator 許可權
+          [5996] Unity 目錄中 管理員 許可權
+        - 升級至許可權繼承
+          [6000] 升級至許可權繼承
+      - 建立和管理目錄
+        [6002] 建立和管理目錄
+      - 建立和管理架構
+        [6012] 建立與管理架構 （資料庫）
+      - 建立表格
+        [6015] 在 Unity 目錄中建立資料表
+      - 建立檢視
+        [6032] 建立檢視
+      - 使用數據列篩選和數據行遮罩來篩選敏感數據
+        [6042] 使用數據列篩選和數據行遮罩來篩選敏感數據
+      - 套用標記
+        [6051] 套用標記
+      - 擷取和檢視譜系
+        [6053] 使用 Unity 目錄擷取和檢視數據譜系
+      - Unity 目錄數據的路徑
+        [6063] 路徑如何適用於 Unity 目錄所管理的數據？
+      - 連線 至 BI 工具
+        [6067] 將 BI 工具連線至 Unity 目錄
+      - 稽核 Unity 目錄資源的存取和活動
+        [6068] 稽核 Unity 目錄事件
+      - 設定 CORS 的 Unity 目錄記憶體帳戶
+        [6070] 設定 CORS 的 Unity 目錄存放器帳戶
+      - 使用Hive中繼存放區
+        [6071] 使用 Unity 目錄和舊版 Hive 中繼存放區
+      - 將 Hive 資料表和檢視升級至 Unity 目錄
+        [6077] 將 Hive 資料表和檢視升級至 Unity 目錄
+      - 使用UCX將您的工作區移轉至 Unity 目錄
+        [6095] 使用UCX公用程式將您的工作區升級至Unity 目錄
+      - 使用 Terraform 將 Unity 目錄設定自動化
+        [6102] 使用 Terraform 將 Unity 目錄設定自動化
+    - 目錄總管
+      - 概觀
+        [6105] 什麼是目錄總管？
+      - 管理磁碟區中的檔案
+        [6107] Unity 目錄磁碟區的檔案管理作業
+      - 使用 Markdown 批注記錄數據
+        [6109] 使用 Markdown 批注在目錄總管中記載數據
+      - 檢視實體關聯性圖表
+        [6112] 檢視實體關聯性圖表
+    - 數據表訪問控制
+      - 數據表訪問控制概觀
+        [6114] Hive 中繼存放區資料表存取控制 （舊版）
+      - 啟用叢集的資料表存取控制
+        [6115] 在叢集上啟用 Hive 中繼存放區資料表存取控制（舊版）
+      - 設定資料物件的許可權
+        [6118] Hive 中繼存放區權限和安全性實體物件（舊版）
+      - ANY FILE 許可權
+        [6124] 什麼是 ANY FILE  安全性實體？
+  - Lakehouse 架構
+    - 簡介：結構完善的 Lakehouse
+      [6126] 妥善架構的 Data Lakehouse 簡介
+    - 湖屋的範圍
+      [6127] Lakehouse 平臺的範圍
+    - 湖屋的指導原則
+      [6132] 湖屋的指導原則
+    - 可下載的參考架構
+      [6137] 下載 Lakehouse 參考架構
+    - 設計完善的湖屋元素
+      [6146] Data Lakehouse 架構：Databricks 架構完善的架構
+    - 依柱狀元素
+      - 數據控管原則
+        [6149] Data governance for the data lakehouse
+      - 數據控管最佳做法
+        [6151] 數據控管的最佳做法
+      - 互操作性和可用性原則
+        [6155] Data Lakehouse 的互操作性和可用性
+      - 互操作性和可用性最佳做法
+        [6157] 互操作性和可用性的最佳做法
+      - 卓越營運原則
+        [6161] Data Lakehouse 的卓越營運
+      - 卓越營運最佳做法
+        [6163] 卓越營運的最佳做法
+      - 安全性、合規性和隱私權原則
+        [6170] Data Lakehouse 的安全性、合規性和隱私權
+      - 安全性、合規性和隱私權最佳做法
+        [6172] 安全性、合規性和隱私權的最佳做法
+      - 可靠性原則
+        [6174] Data Lakehouse 的可靠性
+      - 可靠性最佳做法
+        [6176] 可靠性的最佳做法
+      - 效能效率原則
+        [6182] Performance efficiency for the datalakehouse
+      - 效能效率最佳做法
+        [6184] 效能效率的最佳做法
+      - 成本優化原則
+        [6192] Cost optimization for the datalakehouse
+      - 成本優化最佳做法
+        [6194] 成本優化的最佳作法
+  - 參考
+    - Databricks 參考檔
+      [6200] Azure Databricks 參考檔
+    - Resource Manager 範本
+      [6202] Microsoft.Databricks 工作區
+    - REST API 參考
+    - MLflow API
+      [6212] MLflow API 參考
+    - 功能存放區 Python API
+      [6213] Python API
+    - Apache Spark API
+      [6218] Apache Spark API 的參考
+    - Delta Lake API
+      [6220] Delta Lake API 參考
+    - Delta Live Tables API 2.0
+      [6221] Delta Live Tables API 指南
+    - SQL 語言參考
+      - SQL 參考概觀
+        [6251] SQL 語言參考
+      - 「適用於」標籤
+        [6258] 「適用於」標籤
+      - 如何讀取語法圖表
+        [6259] 如何讀取語法圖表
+      - 如何將批註新增至 SQL 語句
+        [6262] 將批註新增至 SQL 語句
+      - 設定參數
+        - 組態參數概觀
+          [6265] 設定參數
+        - ANSI_MODE
+          [6267] ANSI_MODE
+        - ENABLE_PHOTON
+          [6274] ENABLE_PHOTON
+        - LEGACY_TIME_PARSER_POLICY
+          [6275] LEGACY_TIME_PARSER_POLICY
+        - MAX_PARTITION_BYTES
+          [6277] MAX_FILE_PARTITION_BYTES
+        - READ_ONLY_EXTERNAL_METASTORE
+          [6278] READ_ONLY_EXTERNAL_METASTORE
+        - 時區
+          [6279] 時區
+        - STATEMENT_TIMEOUT
+          [6281] STATEMENT_TIMEOUT
+        - USE_CACHED_RESULT
+          [6283] USE_CACHED_RESULT
+      - 資料類型
+        - 數據類型概觀
+          [6284] 資料類型
+        - ARRAY 類型
+          [6293] ARRAY  類型
+        - BIGINT 類型
+          [6295] BIGINT  類型
+        - BINARY 類型
+          [6297] BINARY  類型
+        - BOOLEAN 類型
+          [6299] BOOLEAN  類型
+        - DATE 類型
+          [6301] DATE  類型
+        - DECIMAL 類型
+          [6303] DECIMAL  類型
+        - DOUBLE 類型
+          [6305] DOUBLE  類型
+        - FLOAT 類型
+          [6307] FLOAT  類型
+        - INT 類型
+          [6309] INT  類型
+        - INTERVAL 類型
+          [6311] INTERVAL  類型
+        - MAP 類型
+          [6314] MAP  類型
+        - SMALLINT 類型
+          [6316] SMALLINT  類型
+        - 特殊浮點值
+          [6318] 特殊浮點值
+        - STRING 類型
+          [6320] STRING  類型
+        - STRUCT 類型
+          [6322] STRUCT  類型
+        - TIMESTAMP 類型
+          [6324] TIMESTAMP  類型
+        - TIMESTAMP_NTZ類型
+          [6327] TIMESTAMP_NTZ  類型
+        - TINYINT 類型
+          [6330] TINYINT  類型
+        - VOID 類型
+          [6332] VOID  類型
+      - 數據類型規則
+        [6334] SQL 資料類型規則
+      - 日期時間模式
+        [6341] 日期時間模式
+      - H3 地理空間函式
+        - H3 地理空間函式
+          [6346] H3 地理空間函式
+        - H3 快速入門 （Databricks SQL）
+          [6352] H3 快速入門 （Databricks SQL）
+        - H3 範例：偵測航班持有模式 （Databricks SQL）
+          [6358] H3 地理空間函式範例
+        - H3 地理空間函式的字母清單
+          [6359] H3 地理空間函式的字母清單
+      - 運算式
+        [6362] SQL 運算式
+      - 參數標記
+        [6366] 參數標記
+      - 變數
+        [6372] 變數
+      - JSON 路徑表達式
+        [6374] JSON 路徑運算式
+      - 資料分割
+        [6379] 分區
+      - ANSI 合規性
+        [6382] Databricks Runtime 中的 ANSI 合規性
+      - Apache Hive 相容性
+        [6401] Apache Hive 相容性
+      - Principals
+        [6404] 主體
+      - UC 中的許可權和安全性實體物件
+        [6406] Unity 目錄中的許可權和安全性實體物件
+      - 許可權和安全性實體物件 - Hive 中繼存放區
+        [6409] Hive 中繼存放區中的許可權和安全性實體物件
+      - 外部位置
+        [6413] 外部位置
+      - 儲存體 認證
+        [6418] 儲存體 認證
+      - 外部表格
+        [6421] 外部資料表
+      - 磁碟區
+        [6425] 磁碟區
+      - 差異共用
+        [6428] 差異共用
+      - 同盟查詢
+        [6432] 同盟查詢 （Lakehouse 同盟）
+      - 保留字
+        [6434] 保留字和架構
+      - 函式
+        - 函式概觀
+          [6439] 功能
+        - 內建函式
+          [6440] 內建函式
+        - 函式解析和調用
+          [6470] 函式引動過程
+        - 內建函式的字母清單
+          - 依字母順序排列的函式清單
+            [6474] 內建函式的字母清單
+          - abs 函式
+            [6488] abs  函式
+          - acos 函式
+            [6490] acos  功能
+          - acosh 函式
+            [6491] acosh  功能
+          - add_months函式
+            [6492] add_months  功能
+          - aes_decrypt 函式
+            [6494] aes_decrypt  函式
+          - aes_encrypt函式
+            [6497] aes_encrypt  函式
+          - 彙總函式
+            [6500] aggregate  功能
+          - ai_analyze_sentiment函式
+            [6502] ai_analyze_sentiment  函式
+          - ai_classify函式
+            [6504] ai_classify  函式
+          - ai_extract函式
+            [6506] ai_extract  函式
+          - ai_fix_grammar函式
+            [6508] ai_fix_grammar  函式
+          - ai_gen 函式
+            [6510] ai_gen  函式
+          - ai_generate_text 函式
+            [6512] ai_generate_text  函式
+          - ai_mask函式
+            [6515] ai_mask  函式
+          - ai_query函式
+            [6517] ai_query  函式
+          - ai_similarity函式
+            [6520] ai_similarity  函式
+          - ai_summarize函式
+            [6522] ai_summarize  函式
+          - ai_translate函式
+            [6524] ai_translate  函式
+          - ampersand sign 運算符
+            [6526] &  (ampersand sign) 運算子
+          - and 運算元
+            [6527] and  謂詞
+          - any 函式
+            [6529] any  彙總函式
+          - any_value函式
+            [6531] any_value  聚合函數
+          - approx_count_distinct函式
+            [6533] approx_count_distinct  彙總函式
+          - approx_percentile函式
+            [6535] approx_percentile  彙總函式
+          - approx_top_k函式
+            [6537] approx_top_k  聚合函數
+          - array 函式
+            [6539] array  函式
+          - array_agg函式
+            [6541] array_agg  聚合函數
+          - array_append 函式
+            [6543] array_append  函式
+          - array_compact函式
+            [6545] array_compact  函式
+          - array_contains函式
+            [6547] array_contains  功能
+          - array_distinct函式
+            [6549] array_distinct  功能
+          - array_except 函式
+            [6550] array_except  功能
+          - array_insert函式
+            [6552] array_insert  函式
+          - array_intersect函式
+            [6554] array_intersect  功能
+          - array_join函式
+            [6556] array_join  函式
+          - array_max函式
+            [6558] array_max  功能
+          - array_min 函式
+            [6559] array_min  功能
+          - array_position函式
+            [6560] array_position  功能
+          - array_prepend函式
+            [6562] array_prepend  函式
+          - array_remove函式
+            [6564] array_remove  功能
+          - array_repeat函式
+            [6565] array_repeat  功能
+          - array_size函式
+            [6566] array_size  功能
+          - array_sort 函式
+            [6567] array_sort  功能
+          - array_union 函式
+            [6569] array_union  功能
+          - arrays_overlap函式
+            [6571] arrays_overlap  功能
+          - arrays_zip函式
+            [6573] arrays_zip  功能
+          - ascii 函式
+            [6575] ascii  功能
+          - asin 函式
+            [6576] asin  功能
+          - asinh 函式
+            [6578] asinh  功能
+          - assert_true函式
+            [6579] assert_true  函式
+          - asterisksign 運算符
+            [6581] *  (星號符號) 運算子
+          - atan 函式
+            [6583] atan  功能
+          - atan2 函式
+            [6584] atan2  功能
+          - atanh 函式
+            [6585] atanh  功能
+          - avg 函式
+            [6587] avg  彙總函式
+          - bangeqsign 運算符
+            [6589] !=  () 運算子
+          - bangsign 運算符
+            [6591] !  () 運算子
+          - base64 函式
+            [6592] base64  功能
+          - 介於運算符之間
+            [6593] between  謂詞
+          - bigint 函式
+            [6595] bigint  功能
+          - bin 函式
+            [6596] bin  功能
+          - binary 函式
+            [6597] binary  功能
+          - bit_and 函式
+            [6598] bit_and  彙總函式
+          - bit_count函式
+            [6600] bit_count  函式
+          - bit_length 函式
+            [6602] bit_length  功能
+          - bit_or函式
+            [6603] bit_or  彙總函式
+          - bit_xor函式
+            [6605] bit_xor  彙總函式
+          - bitmap_bit_position函式
+            [6607] bitmap_bit_position  函式
+          - bitmap_bucket_number函式
+            [6609] bitmap_bucket_number  函式
+          - bitmap_construct_agg函式
+            [6611] bitmap_construct_agg  聚合函數
+          - bitmap_count 函式
+            [6613] bitmap_count  函式
+          - bitmap_or_agg函式
+            [6615] bitmap_or_agg  聚合函數
+          - bool_and 函式
+            [6617] bool_and  彙總函式
+          - bool_or函式
+            [6619] bool_or  彙總函式
+          - 布爾函數
+            [6621] boolean  功能
+          - bround 函式
+            [6622] bround  函式
+          - 基數函式
+            [6624] cardinality  功能
+          - caretsign 運算符
+            [6625] ^  （插入號） 運算子
+          - case 函式
+            [6626] case  運算式
+          - cast 函式
+            [6628] 
+          - cbrt 函式
+            [6643] cbrt  功能
+          - ceil 函式
+            [6644] ceil  函式
+          - ceiling 函式
+            [6647] ceiling  函式
+          - char 函式
+            [6650] char  功能
+          - char_length 函式
+            [6651] char_length  功能
+          - character_length函式
+            [6652] character_length  功能
+          - chr 函式
+            [6653] chr  功能
+          - cloud_files_state函式
+            [6654] cloud_files_state  table-valued 函式
+          - coalesce 函式
+            [6657] coalesce  功能
+          - collect_list函式
+            [6659] collect_list  彙總函式
+          - collect_set 函式
+            [6661] collect_set  聚合函數
+          - coloncolonsign 運算符
+            [6663] ::  (冒號冒號) 運算子
+          - concat 函式
+            [6664] concat  功能
+          - concat_ws函式
+            [6666] concat_ws  功能
+          - contains 函式
+            [6668] contains  函式
+          - conv 函式
+            [6670] conv  函式
+          - convert_timezone函式
+            [6672] convert_timezone  函式
+          - corr 函式
+            [6674] corr  彙總函式
+          - cos 函式
+            [6676] cos  功能
+          - cosh 函式
+            [6677] cosh  功能
+          - cot 函式
+            [6678] cot  功能
+          - count 函式
+            [6679] count  聚合函數
+          - count_if 函式
+            [6681] count_if  聚合函數
+          - count_min_sketch函式
+            [6683] count_min_sketch  聚合函數
+          - covar_pop函式
+            [6685] covar_pop  彙總函式
+          - covar_samp函式
+            [6687] covar_samp  彙總函式
+          - crc32 函式
+            [6689] crc32  功能
+          - csc 函式
+            [6690] csc  函式
+          - Cube 函式
+            [6692] cube  功能
+          - cume_dist函式
+            [6694] cume_dist  分析視窗函式
+          - curdate 函式
+            [6696] curdate  函式
+          - current_catalog函式
+            [6697] current_catalog  功能
+          - current_database函式
+            [6698] current_database  功能
+          - current_date函式
+            [6699] current_date  功能
+          - current_metastore 函式
+            [6700] current_metastore  函式
+          - current_recipient函式
+            [6701] current_recipient  函式
+          - current_schema 函式
+            [6703] current_schema  函式
+          - current_timestamp 函式
+            [6704] current_timestamp  功能
+          - current_timezone函式
+            [6705] current_timezone  功能
+          - current_user函式
+            [6706] current_user  函式
+          - current_version函式
+            [6708] current_version  函式
+          - date 函式
+            [6710] date  功能
+          - date_add 函式
+            [6711] date_add  函式
+          - date_add （天） 函式
+            [6713] date_add ) 函式 (天
+          - date_diff函式
+            [6715] date_diff  函式
+          - date_format 函式
+            [6717] date_format  功能
+          - date_from_unix_date函式
+            [6718] date_from_unix_date  功能
+          - date_part函式
+            [6719] date_part  功能
+          - date_sub函式
+            [6722] date_sub  功能
+          - date_trunc函式
+            [6724] date_trunc  功能
+          - dateadd 函式
+            [6726] dateadd  函式
+          - dateadd2 函式
+            [6728] dateadd  （天） 函式
+          - datediff 函式
+            [6730] datediff  函式
+          - datediff （timestamp） 函式
+            [6732] datediff  （timestamp） 函式
+          - day 函式
+            [6734] day  功能
+          - dayofmonth 函式
+            [6735] dayofmonth  功能
+          - dayofweek 函式
+            [6736] dayofweek  功能
+          - dayofyear 函式
+            [6738] dayofyear  功能
+          - decimal 函式
+            [6740] decimal  功能
+          - 譯碼函式
+            [6741] decode  （key） 函式
+          - 譯碼 （字元集） 函式
+            [6743] decode  （字元集） 函式
+          - degrees 函式
+            [6745] degrees  功能
+          - dense_rank 函式
+            [6746] dense_rank  排名視窗函式
+          - div 運算子
+            [6748] div  運算元
+          - double 函式
+            [6750] double  功能
+          - e 函式
+            [6751] e  功能
+          - element_at函式
+            [6752] element_at  功能
+          - elt 函式
+            [6754] elt  功能
+          - encode 函式
+            [6756] encode  函式
+          - endswith 函式
+            [6758] endswith  函式
+          - eqeqsign 運算符
+            [6760] ==  (eq eq 符號) 運算子
+          - eqsign 運算符
+            [6762] =  (eq 符號) 運算子
+          - equal_null函式
+            [6764] equal_null  函式
+          - event_log 函式
+            [6766] event_log  table-valued 函式
+          - 每個函式
+            [6769] every  彙總函式
+          - exists 函式
+            [6771] exists  功能
+          - exp 函式
+            [6773] exp  功能
+          - 爆炸函式
+            [6774] explode  數據表值產生器函式
+          - explode_outer函式
+            [6777] explode_outer  數據表值產生器函式
+          - expm1 函式
+            [6780] expm1  功能
+          - extract 函式
+            [6781] extract  功能
+          - factorial 函式
+            [6783] factorial  功能
+          - filter 函式
+            [6785] filter  功能
+          - find_in_set 函式
+            [6787] find_in_set  功能
+          - first 函式
+            [6788] first  彙總函式
+          - first_value函式
+            [6790] first_value  彙總函式
+          - flatten 函式
+            [6792] flatten  功能
+          - float 函式
+            [6793] float  功能
+          - floor 函式
+            [6794] floor  函式
+          - forall 函式
+            [6796] forall  功能
+          - format_number函式
+            [6798] format_number  功能
+          - format_string函式
+            [6800] format_string  功能
+          - from_csv函式
+            [6801] from_csv  功能
+          - from_json函式
+            [6805] from_json  函式
+          - from_unixtime函式
+            [6808] from_unixtime  功能
+          - from_utc_timestamp函式
+            [6810] from_utc_timestamp  功能
+          - from_xml函式
+            [6811] from_xml  函式
+          - get 函式
+            [6814] get  函式
+          - get_json_object函式
+            [6816] get_json_object  功能
+          - getdate 函式
+            [6817] getdate  函式
+          - greatest 函式
+            [6819] greatest  功能
+          - grouping 函式
+            [6820] grouping  功能
+          - grouping_id函式
+            [6821] grouping_id  功能
+          - gteqsign 運算符
+            [6823] >=  (gt eq 符號) 運算子
+          - gtsign 運算符
+            [6825] >  (gt sign) 運算子
+          - h3_coverash3函式
+            [6827] h3_coverash3  函式
+          - h3_coverash3string函式
+            [6830] h3_coverash3string  函式
+          - h3_boundaryasgeojson函式
+            [6833] h3_boundaryasgeojson  函式
+          - h3_boundaryaswkb函式
+            [6835] h3_boundaryaswkb  函式
+          - h3_boundaryaswkt函式
+            [6837] h3_boundaryaswkt  函式
+          - h3_centerasgeojson函式
+            [6839] h3_centerasgeojson  函式
+          - h3_centeraswkb函式
+            [6841] h3_centeraswkb  函式
+          - h3_centeraswkt 函式
+            [6843] h3_centeraswkt  函式
+          - h3_compact函式
+            [6845] h3_compact  函式
+          - h3_distance 函式
+            [6847] h3_distance  函式
+          - h3_h3tostring 函式
+            [6849] h3_h3tostring  函式
+          - h3_hexring函式
+            [6851] h3_hexring  函式
+          - h3_ischildof 函式
+            [6853] h3_ischildof  函式
+          - h3_ispentagon函式
+            [6855] h3_ispentagon  函式
+          - h3_isvalid函式
+            [6857] h3_isvalid  函式
+          - h3_kring函式
+            [6859] h3_kring  函式
+          - h3_kringdistances 函式
+            [6861] h3_kringdistances  函式
+          - h3_longlatash3函式
+            [6863] h3_longlatash3  函式
+          - h3_longlatash3string函式
+            [6865] h3_longlatash3string  函式
+          - h3_polyfillash3函式
+            [6867] h3_polyfillash3  函式
+          - h3_polyfillash3string函式
+            [6870] h3_polyfillash3string  函式
+          - h3_resolution函式
+            [6873] h3_resolution  函式
+          - h3_stringtoh3函式
+            [6875] h3_stringtoh3  函式
+          - h3_tessellateaswkb 函式
+            [6877] h3_tessellateaswkb  函式
+          - h3_tochildren函式
+            [6880] h3_tochildren  函式
+          - h3_toparent 函式
+            [6882] h3_toparent  函式
+          - h3_try_distance 函式
+            [6884] h3_try_distance  函式
+          - h3_try_polyfillash3 函式
+            [6886] h3_try_polyfillash3  函式
+          - h3_try_polyfillash3string函式
+            [6888] h3_try_polyfillash3string  函式
+          - h3_try_validate 函式
+            [6890] h3_try_validate  函式
+          - h3_uncompact函式
+            [6892] h3_uncompact  函式
+          - h3_validate函式
+            [6894] h3_validate  函式
+          - hash 函式
+            [6896] hash  功能
+          - 十六進位函數
+            [6897] hex  功能
+          - hll_sketch_agg函式
+            [6898] hll_sketch_agg  聚合函數
+          - hll_sketch_estimate函式
+            [6900] hll_sketch_estimate  函式
+          - hll_union函式
+            [6902] hll_union  函式
+          - hll_union_agg函式
+            [6904] hll_union_agg  函式
+          - hour 函式
+            [6906] hour  功能
+          - hypot 函式
+            [6907] hypot  功能
+          - if 函式
+            [6908] if  函式
+          - ifnull 函式
+            [6909] ifnull  函式
+          - in 函式
+            [6910] in  謂詞
+          - initcap 函式
+            [6912] initcap  功能
+          - 內嵌函式
+            [6913] inline  數據表值產生器函式
+          - inline_outer函式
+            [6915] inline_outer  數據表值產生器函式
+          - input_file_block_length函式
+            [6917] input_file_block_length  函式
+          - input_file_block_start函式
+            [6919] input_file_block_start  函式
+          - input_file_name 函式
+            [6921] input_file_name  函式
+          - instr 函式
+            [6923] instr  功能
+          - int 函式
+            [6924] int  功能
+          - is_member函式
+            [6925] is_member  功能
+          - is_account_group_member函式
+            [6927] is_account_group_member  函式
+          - isdistinct 運算符
+            [6928] is distinct  運算元
+          - isfalse 運算符
+            [6930] is false  運算元
+          - isnan 函式
+            [6932] isnan  功能
+          - isnotnull 函式
+            [6933] isnotnull  功能
+          - isnull 函式
+            [6934] isnull  功能
+          - isnullop 運算符
+            [6935] is null  運算元
+          - istrue 運算符
+            [6937] is true  運算元
+          - java_method函式
+            [6939] java_method  功能
+          - json_array_length函式
+            [6941] json_array_length  函式
+          - json_object_keys函式
+            [6943] json_object_keys  功能
+          - json_tuple函式
+            [6945] json_tuple  數據表值產生器函式
+          - kurtosis 函式
+            [6947] kurtosis  彙總函式
+          - lag 函式
+            [6949] lag  分析視窗函式
+          - last 函式
+            [6951] last  彙總函式
+          - last_day函式
+            [6953] last_day  功能
+          - last_value函式
+            [6954] last_value  彙總函式
+          - lcase 函式
+            [6956] lcase  功能
+          - lead 函式
+            [6957] lead  分析視窗函式
+          - least 函式
+            [6959] least  功能
+          - left 函式
+            [6960] left  功能
+          - len 函式
+            [6961] len  函式
+          - length 函式
+            [6962] length  功能
+          - levenshtein 函式
+            [6963] levenshtein  函式
+          - like 運算子
+            [6965] like  算子
+          - list_secrets數據表函式
+            [6967] list_secrets  table 函式
+          - ln 函式
+            [6969] ln  功能
+          - 尋找函式
+            [6971] locate  功能
+          - log 函式
+            [6973] log  功能
+          - log10 函式
+            [6975] log10  功能
+          - log1p 函式
+            [6976] log1p  功能
+          - log2 函式
+            [6978] log2  功能
+          - lower 函式
+            [6979] lower  功能
+          - lpad 函式
+            [6980] lpad  功能
+          - lteqgtsign 運算符
+            [6982] <=>  (lt eq gt sign) 運算子
+          - lteqsign 運算符
+            [6984] <=  (lt eq sign) 運算子
+          - ltgtsign 運算符
+            [6986] <>  (lt gt sign) 運算子
+          - ltrim 函式
+            [6988] ltrim  功能
+          - ltsign 運算符
+            [6990] <  (lt sign) 運算子
+          - make_date函式
+            [6992] make_date  功能
+          - make_interval 函式
+            [6994] make_interval  功能
+          - make_timestamp 函式
+            [6996] make_timestamp  功能
+          - map 函式
+            [6998] map  功能
+          - map_concat函式
+            [7000] map_concat  功能
+          - map_contains_key函式
+            [7002] map_contains_key  函式
+          - map_entries函式
+            [7004] map_entries  功能
+          - map_filter函式
+            [7006] map_filter  功能
+          - map_from_arrays函式
+            [7008] map_from_arrays  功能
+          - map_from_entries函式
+            [7010] map_from_entries  功能
+          - map_keys 函式
+            [7012] map_keys  功能
+          - map_values函式
+            [7014] map_values  功能
+          - map_zip_with函式
+            [7016] map_zip_with  功能
+          - mask 函式
+            [7018] mask  函式
+          - max 函式
+            [7020] max  彙總函式
+          - max_by 函式
+            [7022] max_by  彙總函式
+          - md5 函式
+            [7024] md5  功能
+          - mean 函式
+            [7025] mean  彙總函式
+          - median 函式
+            [7027] median  聚合函數
+          - min 函式
+            [7029] min  彙總函式
+          - min_by 函式
+            [7031] min_by  彙總函式
+          - minussign 運算符
+            [7033] -  (減號) 運算子
+          - 減號一元運算符
+            [7035] -  (減號) 一元運算子
+          - minute 函式
+            [7037] minute  功能
+          - mod 函式
+            [7038] mod  功能
+          - mode 函式
+            [7040] mode  聚合函數
+          - monotonically_increasing_id 函式
+            [7042] monotonically_increasing_id  功能
+          - month 函式
+            [7043] month  功能
+          - months_between函式
+            [7044] months_between  功能
+          - named_struct函式
+            [7046] named_struct  功能
+          - nanvl 函式
+            [7047] nanvl  功能
+          - negative 函式
+            [7048] negative  功能
+          - next_day函式
+            [7050] next_day  功能
+          - not 運算符
+            [7052] not  算子
+          - now 函式
+            [7053] now  功能
+          - nth_value 函式
+            [7054] nth_value  分析視窗函式
+          - ntile 函式
+            [7056] ntile  排名視窗函式
+          - nullif 函式
+            [7058] nullif  函式
+          - nvl 函式
+            [7059] nvl  函式
+          - nvl2 函式
+            [7061] nvl2  功能
+          - octet_length函式
+            [7063] octet_length  功能
+          - 或運算子
+            [7064] or  運算元
+          - overlay 函式
+            [7066] overlay  功能
+          - parse_url函式
+            [7068] parse_url  功能
+          - percent_rank函式
+            [7070] percent_rank  排名視窗函式
+          - percentile 函式
+            [7072] percentile  彙總函式
+          - percentile_approx函式
+            [7074] percentile_approx  彙總函式
+          - percentile_cont 函式
+            [7076] percentile_cont  聚合函數
+          - percentile_disc函式
+            [7078] percentile_disc  聚合函數
+          - percentsign 運算符
+            [7080] %  (百分比符號) 運算子
+          - pi 函式
+            [7082] pi  功能
+          - pipepipesign 運算符
+            [7083] ||  (管道管線符號) 運算子
+          - pipesign 運算符
+            [7084] |  （管道符號） 運算符號
+          - plussign 運算符
+            [7085] +  (加號) 運算子
+          - plussignunary 一元運算符
+            [7087] +  (加號) 一元運算子
+          - pmod 函式
+            [7089] pmod  函式
+          - posexplode 函式
+            [7091] posexplode  數據表值產生器函式
+          - posexplode_outer 函式
+            [7093] posexplode_outer  數據表值產生器函式
+          - position 函式
+            [7095] position  功能
+          - 正函式
+            [7097] positive  功能
+          - pow 函式
+            [7099] pow  功能
+          - power 函式
+            [7100] power  功能
+          - printf 函式
+            [7101] printf  功能
+          - quarter 函式
+            [7102] quarter  功能
+          - radians 函式
+            [7103] radians  函式
+          - raise_error函式
+            [7104] raise_error  函式
+          - rand 函式
+            [7106] rand  函式
+          - randn 函式
+            [7108] randn  函式
+          - random 函式
+            [7110] random  函式
+          - range 函式
+            [7112] range  table-valued 函式
+          - rank 函式
+            [7114] rank  排名視窗函式
+          - read_files函式
+            [7116] read_files  table-valued 函式
+          - read_kafka函式
+            [7142] read_kafka  table-valued 函式
+          - read_kinesis函式
+            [7148] read_kinesis  串流數據表值函式
+          - read_pubsub函式
+            [7152] read_pubsub  串流數據表值函式
+          - read_pulsar 函式
+            [7156] read_pulsar  串流數據表值函式
+          - read_state_metadata函式
+            [7160] read_state_metadata  table-valued 函式
+          - read_statestore函式
+            [7162] read_statestore  table-valued 函式
+          - reflect 函式
+            [7165] reflect  函式
+          - regexp 運算符
+            [7167] regexp  算子
+          - regexp_count函式
+            [7169] regexp_count  函式
+          - regexp_extract 函式
+            [7171] regexp_extract  函式
+          - regexp_extract_all函式
+            [7173] regexp_extract_all  函式
+          - regexp_instr函式
+            [7175] regexp_instr  函式
+          - regexp_replace函式
+            [7177] regexp_replace  函式
+          - regexp_substr函式
+            [7179] regexp_substr  函式
+          - regr_avgx函式
+            [7181] regr_avgx  聚合函數
+          - regr_avgy函式
+            [7183] regr_avgy  聚合函數
+          - regr_count函式
+            [7185] regr_count  聚合函數
+          - regr_intercept 函式
+            [7187] regr_intercept  聚合函數
+          - regr_r2函式
+            [7189] regr_r2  聚合函數
+          - regr_slope函式
+            [7191] regr_slope  聚合函數
+          - regr_sxx函式
+            [7193] regr_sxx  聚合函數
+          - regr_sxy 函式
+            [7195] regr_sxy  聚合函數
+          - regr_syy函式
+            [7197] regr_syy  聚合函數
+          - repeat 函式
+            [7199] repeat  函式
+          - replace 函式
+            [7200] replace  函式
+          - reverse 函式
+            [7202] reverse  函式
+          - right 函式
+            [7203] right  函式
+          - rint 函式
+            [7204] rint  函式
+          - rlike 運算子
+            [7205] rlike  算子
+          - round 函式
+            [7207] round  函式
+          - row_number函式
+            [7209] row_number  排名視窗函式
+          - rpad 函式
+            [7211] rpad  函式
+          - rtrim 函式
+            [7213] rtrim  函式
+          - schema_of_csv函式
+            [7215] schema_of_csv  函式
+          - schema_of_json 函式
+            [7216] schema_of_json  函式
+          - schema_of_json_agg函式
+            [7218] schema_of_json_agg  聚合函數
+          - schema_of_xml函式
+            [7220] schema_of_xml  函式
+          - sec 函式
+            [7222] sec  函式
+          - second 函式
+            [7224] second  函式
+          - secret 函式
+            [7225] secret  函式
+          - sentences 函式
+            [7227] sentences  函式
+          - sequence 函式
+            [7229] sequence  函式
+          - session_user函式
+            [7231] session_user  函式
+          - session_window 函式
+            [7233] session_window  群組表達式
+          - sha 函式
+            [7235] sha  函式
+          - sha1 函式
+            [7236] sha1  函式
+          - sha2 函式
+            [7237] sha2  函式
+          - shiftleft 函式
+            [7239] shiftleft  函式
+          - shiftright 函式
+            [7240] shiftright  函式
+          - shiftrightunsigned 函式
+            [7242] shiftrightunsigned  函式
+          - 隨機函式
+            [7243] shuffle  函式
+          - sign 函式
+            [7244] sign  函式
+          - signum 函式
+            [7246] signum  函式
+          - sin 函式
+            [7248] sin  函式
+          - sinh 函式
+            [7249] sinh  函式
+          - size 函式
+            [7250] size  函式
+          - 扭曲函式
+            [7252] skewness  彙總函式
+          - slashsign 運算符
+            [7254] /  （斜線符號） 運算子
+          - slice 函式
+            [7256] slice  函式
+          - smallint 函式
+            [7258] smallint  函式
+          - 某些函式
+            [7259] some  彙總函式
+          - sort_array 函式
+            [7261] sort_array  函式
+          - soundex 函式
+            [7262] soundex  函式
+          - space 函式
+            [7263] space  函式
+          - spark_partition函式
+            [7264] spark_partition_id  函式
+          - split 函式
+            [7265] split  函式
+          - split_part 函式
+            [7267] split_part  函式
+          - sqrt 函式
+            [7269] sqrt  函式
+          - sql_keywords函式
+            [7270] sql_keywords  函式
+          - stack 函式
+            [7271] stack  數據表值產生器函式
+          - startswith 函式
+            [7274] startswith  函式
+          - std 函式
+            [7276] std  彙總函式
+          - stddev 函式
+            [7278] stddev  彙總函式
+          - stddev_pop函式
+            [7280] stddev_pop  彙總函式
+          - stddev_samp函式
+            [7282] stddev_samp  彙總函式
+          - str_to_map 函式
+            [7284] str_to_map  函式
+          - string 函式
+            [7286] string  函式
+          - 結構函式
+            [7287] struct  函式
+          - substr 函式
+            [7289] substr  函式
+          - substring 函式
+            [7291] substring  函式
+          - substring_index函式
+            [7293] substring_index  函式
+          - sum 函數
+            [7295] sum  彙總函式
+          - table_changes函式
+            [7297] table_changes  資料表值函式
+          - tan 函式
+            [7300] tan  功能
+          - tanh 函式
+            [7301] tanh  功能
+          - tildesign 運算符
+            [7302] ~  （圖格符號） 運算符號
+          - timediff 函式
+            [7303] timediff  函式
+          - timestamp 函式
+            [7305] timestamp  功能
+          - timestamp_micros函式
+            [7306] timestamp_micros  功能
+          - timestamp_millis函式
+            [7307] timestamp_millis  功能
+          - timestamp_seconds函式
+            [7308] timestamp_seconds  功能
+          - timestampadd 函式
+            [7309] timestampadd  函式
+          - timestampdiff 函式
+            [7311] timestampdiff  函式
+          - tinyint 函式
+            [7313] tinyint  功能
+          - to_binary函式
+            [7314] to_binary  函式
+          - to_char函式
+            [7316] to_char  函式
+          - to_csv函式
+            [7320] to_csv  函式
+          - to_date函式
+            [7322] to_date  功能
+          - to_json 函式
+            [7324] to_json  函式
+          - to_number 函式
+            [7326] to_number  函式
+          - to_timestamp函式
+            [7329] to_timestamp  功能
+          - to_unix_timestamp函式
+            [7331] to_unix_timestamp  功能
+          - to_utc_timestamp函式
+            [7333] to_utc_timestamp  功能
+          - to_varchar函式
+            [7334] to_varchar  函式
+          - transform 函式
+            [7338] transform  功能
+          - transform_keys函式
+            [7340] transform_keys  功能
+          - transform_values 函式
+            [7342] transform_values  功能
+          - translate 函式
+            [7344] translate  功能
+          - trim 函式
+            [7346] trim  功能
+          - trunc 函式
+            [7348] trunc  功能
+          - try_add函式
+            [7350] try_add  函式
+          - try_aes_decrypt函式
+            [7352] try_aes_decrypt  函式
+          - try_avg函式
+            [7355] try_avg  聚合函數
+          - try_cast 函式
+            [7357] try_cast  函式
+          - try_divide函式
+            [7359] try_divide  函式
+          - try_element_at函式
+            [7361] try_element_at  函式
+          - try_multiply函式
+            [7363] try_multiply  函式
+          - try_reflect函式
+            [7365] try_reflect  函式
+          - try_subtract函式
+            [7367] try_subtract  函式
+          - try_sum函式
+            [7369] try_sum  聚合函數
+          - try_to_binary 函式
+            [7371] try_to_binary  函式
+          - try_to_number函式
+            [7373] try_to_number  函式
+          - try_to_timestamp 函式
+            [7376] try_to_timestamp  函式
+          - typeof 函式
+            [7378] typeof  功能
+          - ucase 函式
+            [7379] ucase  功能
+          - unbase64 函式
+            [7380] unbase64  功能
+          - unhex 函式
+            [7381] unhex  功能
+          - unix_date函式
+            [7382] unix_date  功能
+          - unix_micros函式
+            [7383] unix_micros  功能
+          - unix_millis函式
+            [7384] unix_millis  功能
+          - unix_seconds 函式
+            [7385] unix_seconds  功能
+          - unix_timestamp函式
+            [7386] unix_timestamp  功能
+          - upper 函式
+            [7388] upper  功能
+          - url_decode函式
+            [7389] url_decode  函式
+          - url_encode函式
+            [7391] url_encode  函式
+          - user 函式
+            [7393] user  函式
+          - uuid 函式
+            [7395] uuid  功能
+          - var_pop 函式
+            [7396] var_pop  彙總函式
+          - var_samp函式
+            [7398] var_samp  彙總函式
+          - 變異數函式
+            [7400] variance  彙總函式
+          - version 函式
+            [7402] version  功能
+          - weekday 函式
+            [7403] weekday  功能
+          - weekofyear 函式
+            [7404] weekofyear  功能
+          - width_bucket函式
+            [7406] width_bucket  功能
+          - window 函式
+            [7408] window  群組運算式
+          - window_time函式
+            [7410] window_time  函式
+          - xpath 函式
+            [7412] xpath  功能
+          - xpath_boolean 函式
+            [7414] xpath_boolean  功能
+          - xpath_double函式
+            [7416] xpath_double  功能
+          - xpath_float函式
+            [7418] xpath_float  功能
+          - xpath_int函式
+            [7420] xpath_int  功能
+          - xpath_long函式
+            [7422] xpath_long  功能
+          - xpath_number 函式
+            [7424] xpath_number  功能
+          - xpath_short函式
+            [7426] xpath_short  功能
+          - xpath_string函式
+            [7428] xpath_string  功能
+          - xxhash64 函式
+            [7430] xxhash64  功能
+          - year 函式
+            [7431] year  功能
+          - zip_with 函式
+            [7432] zip_with  功能
+        - 使用者定義的聚合函數 （UDAF）
+          [7434] 使用者定義彙總函式 (UDAFs)
+        - 與 Hive UDF、UDAF 和 UDDF 整合
+          [7440] 與 Hive UDF、UDAFs 和 UDDF 整合
+        - 使用者定義的純量函式 （UDF）
+          [7442] 外部使用者定義的純量函式 (UDF)
+      - Lambda 函數
+        [7446] Lambda 函式
+      - 視窗函數
+        [7448] 視窗函式
+      - 資料類型
+        - 陣列型別
+          [7452] ARRAY  類型
+        - Bigint 類型
+          [7454] BIGINT  類型
+        - 二進位類型
+          [7456] BINARY  類型
+        - 布林值類型
+          [7458] BOOLEAN  類型
+        - 日期類型
+          [7460] DATE  類型
+        - 十進位類型
+          [7462] DECIMAL  類型
+        - Double 型別
+          [7464] DOUBLE  類型
+        - 浮點數類型
+          [7466] FLOAT  類型
+        - Int 類型
+          [7468] INT  類型
+        - 間隔類型
+          [7470] INTERVAL  類型
+        - 對應類型
+          [7473] MAP  類型
+        - Void 類型
+          [7475] VOID  類型
+        - Smallint 類型
+          [7477] SMALLINT  類型
+        - 字串類型
+          [7479] STRING  類型
+        - 結構類型
+          [7481] STRUCT  類型
+        - 時間戳類型
+          [7483] TIMESTAMP  類型
+        - TIMESTAMP_NTZ類型
+          [7486] TIMESTAMP_NTZ  類型
+        - Tinyint 類型
+          [7489] TINYINT  類型
+        - 特殊浮點值
+          [7491] 特殊浮點值
+      - 識別碼
+        [7493] 識別碼
+      - 名稱
+        [7496] 名稱
+      - 名稱解析
+        [7513] 名稱解析
+      - IDENTIFIER 子句
+        [7522] IDENTIFIER 子句
+      - Null 語意
+        [7525] Null 語意
+      - 信息架構
+        [7537] 信息架構
+      - INFORMATION_SCHEMA
+        - CATALOG_PRIVILEGES
+          [7543] CATALOG_PRIVILEGES
+        - CATALOG_PROVIDER_SHARE_USAGE
+          [7545] CATALOG_PROVIDER_SHARE_USAGE
+        - CATALOG_TAGS
+          [7547] CATALOG_TAGS
+        - 目錄
+          [7549] 目錄
+        - CHECK_CONSTRAINTS
+          [7551] 
+        - COLUMN_MASKS
+          [7553] COLUMN_MASKS
+        - COLUMN_TAGS
+          [7555] COLUMN_TAGS
+        - COLUMNS
+          [7557] COLUMNS
+        - CONSTRAINT_COLUMN_USAGE
+          [7561] CONSTRAINT_COLUMN_USAGE
+        - CONNECTION_PRIVILEGES
+          [7563] CONNECTION_PRIVILEGES
+        - 連線
+          [7565] 連線
+        - CONSTRAINT_TABLE_USAGE
+          [7567] CONSTRAINT_TABLE_USAGE
+        - EXTERNAL_LOCATION_PRIVILEGES
+          [7569] EXTERNAL_LOCATION_PRIVILEGES
+        - EXTERNAL_LOCATIONS
+          [7571] EXTERNAL_LOCATIONS
+        - INFORMATION_SCHEMA_CATALOG_NAME
+          [7573] INFORMATION_SCHEMA_CATALOG_NAME
+        - KEY_COLUMN_USAGE
+          [7575] KEY_COLUMN_USAGE
+        - METASTORE_PRIVILEGES
+          [7578] METASTORE_PRIVILEGES
+        - METASTORES
+          [7580] METASTORES
+        - PARAMETERS
+          [7583] PARAMETERS
+        - PROVIDERS
+          [7586] PROVIDERS
+        - RECIPIENT_ALLOWED_IP_RANGES
+          [7588] RECIPIENT_ALLOWED_IP_RANGES
+        - RECIPIENT_TOKENS
+          [7590] RECIPIENT_TOKENS
+        - 收件者
+          [7592] 收件者
+        - REFERENTIAL_CONSTRAINTS
+          [7594] 
+        - ROUTINE_COLUMNS
+          [7596] ROUTINE_COLUMNS
+        - ROUTINE_PRIVILEGES
+          [7599] ROUTINE_PRIVILEGES
+        - ROUTINES
+          [7601] ROUTINES
+        - ROW_FILTERS
+          [7605] ROW_FILTERS
+        - SCHEMA_PRIVILEGES
+          [7607] SCHEMA_PRIVILEGES
+        - SCHEMA_SHARE_USAGE
+          [7609] SCHEMA_SHARE_USAGE
+        - SCHEMA_TAGS
+          [7611] SCHEMA_TAGS
+        - SCHEMATA
+          [7613] SCHEMATA
+        - SHARE_RECIPIENT_PRIVILEGES
+          [7615] SHARE_RECIPIENT_PRIVILEGES
+        - 共用
+          [7617] 共用
+        - STORAGE_CREDENTIAL_PRIVILEGES
+          [7619] STORAGE_CREDENTIAL_PRIVILEGES
+        - STORAGE_CREDENTIALS
+          [7621] STORAGE_CREDENTIALS
+        - TABLE_CONSTRAINTS
+          [7623] TABLE_CONSTRAINTS
+        - TABLE_PRIVILEGES
+          [7625] TABLE_PRIVILEGES
+        - TABLE_SHARE_USAGE
+          [7627] TABLE_SHARE_USAGE
+        - TABLE_TAGS
+          [7629] TABLE_TAGS
+        - TABLES
+          [7631] TABLES
+        - VIEWS
+          [7633] VIEWS
+        - 卷
+          [7635] 卷
+        - VOLUME_PRIVILEGES
+          [7637] VOLUME_PRIVILEGES
+        - VOLUME_TAGS
+          [7639] VOLUME_TAGS
+      - ALTER CATALOG
+        [7641] ALTER CATALOG
+      - ALTER CONNECTION
+        [7644] ALTER CONNECTION
+      - ALTER CREDENTIAL
+        [7646] ALTER STORAGE CREDENTIAL
+      - ALTER DATABASE
+        [7648] ALTER DATABASE
+      - ALTER LOCATION
+        [7649] ALTER EXTERNAL LOCATION
+      - ALTER PROVIDER
+        [7651] ALTER PROVIDER
+      - ALTER RECIPIENT
+        [7653] ALTER RECIPIENT
+      - ALTER SCHEMA
+        [7656] ALTER SCHEMA
+      - ALTER SHARE
+        [7659] ALTER SHARE
+      - ALTER STREAMING TABLE
+        [7667] ALTER STREAMING TABLE
+      - ALTER TABLE
+        [7669] ALTER TABLE
+      - ALTER TABLE ADD CONSTRAINT
+        [7680] ADD CONSTRAINT 子句
+      - ALTER TABLE DROP CONSTRAINT
+        [7685] DROP CONSTRAINT 子句
+      - ALTER TABLE 或 CREATE TABLE .. CLUSTER BY 子句
+        [7687] CLUSTER BY  子句 （TABLE）
+      - ALTER TABLE manage COLUMN
+        [7689] ALTER TABLE COLUMN 子句
+      - ALTER TABLE 管理 PARTITION
+        [7697] ALTER TABLE PARTITION
+      - ALTER TABLE 或 CREATE TABLE .. MASK 子句
+        [7701] Column mask  子句
+      - ALTER TABLE 或 CREATE TABLE .. ROW FILTER 子句
+        [7703] ROW FILTER  子句
+      - ALTER VIEW
+        [7705] ALTER VIEW
+      - ALTER VOLUME
+        [7710] ALTER VOLUME
+      - COMMENT ON
+        [7712] COMMENT ON
+      - CREATE CATALOG
+        [7716] CREATE CATALOG
+      - CREATE CONNECTION
+        [7719] CREATE CONNECTION
+      - CREATE DATABASE
+        [7722] CREATE DATABASE
+      - CREATE FUNCTION （SQL）
+        [7723] CREATE FUNCTION （SQL 和 Python）
+      - CREATE FUNCTION （外部）
+        [7734] CREATE FUNCTION （外部）
+      - CREATE LOCATION
+        [7738] CREATE EXTERNAL LOCATION
+      - 建立具體化檢視 VIEW
+        [7740] 建立具體化檢視 VIEW
+      - 建立收件者
+        [7745] 建立收件者
+      - CREATE SCHEMA
+        [7748] CREATE SCHEMA
+      - CREATE SERVER
+        [7751] CREATE SERVER
+      - CREATE SHARE
+        [7752] CREATE SHARE
+      - CREATE STREAMING TABLE
+        [7754] CREATE STREAMING TABLE
+      - 建立資料表
+        [7761] 建立資料表
+      - 數據表屬性和數據表選項
+        [7763] 數據表屬性和數據表選項
+      - 具有Hive格式的 CREATE TABLE
+        [7769] 具有 Hive 格式的 CREATE TABLE
+      - CREATE TABLE CONSTRAINT
+        [7774] CONSTRAINT 子句
+      - CREATE TABLE USING
+        [7779] CREATE TABLE [USING]
+      - CREATE TABLE LIKE
+        [7788] CREATE TABLE LIKE
+      - 建立檢視
+        [7793] 建立檢視
+      - CREATE VOLUME
+        [7796] CREATE VOLUME
+      - DECLARE VARIABLE
+        [7798] DECLARE VARIABLE
+      - DROP CATALOG
+        [7800] DROP CATALOG
+      - DROP CONNECTION
+        [7802] DROP CONNECTION
+      - DROP CREDENTIAL
+        [7803] DROP STORAGE CREDENTIAL
+      - DROP DATABASE
+        [7804] DROP DATABASE
+      - DROP 函式
+        [7805] DROP 函式
+      - DROP LOCATION
+        [7807] DROP EXTERNAL LOCATION
+      - DROP PROVIDER
+        [7808] DROP PROVIDER
+      - DROP RECIPIENT
+        [7810] DROP RECIPIENT
+      - DROP SCHEMA
+        [7812] DROP SCHEMA
+      - DROP SHARE
+        [7814] DROP SHARE
+      - DROP TABLE
+        [7816] DROP TABLE
+      - DROP VARIABLE
+        [7818] DROP VARIABLE
+      - DROP VIEW
+        [7819] DROP VIEW
+      - DROP VOLUME
+        [7821] DROP VOLUME
+      - 重新整理 FOREIGN （CATALOG、SCHEMA 或 TABLE）
+        [7823] 重新整理 FOREIGN （CATALOG、SCHEMA 和 TABLE）
+      - REFRESH （MATERIALIXED VIEW 或 STREAMING TABLE）
+        [7825] 重新整理 （具體化檢視和串流資料表）
+      - 修復資料表
+        [7827] REPAIR TABLE
+      - TRUNCATE TABLE
+        [7830] TRUNCATE TABLE
+      - UNDROP TABLE
+        [7832] UNDROP TABLE
+      - USE CATALOG
+        [7835] USE CATALOG
+      - USE DATABASE
+        [7837] USE DATABASE
+      - USE SCHEMA
+        [7838] USE SCHEMA
+      - 新增封存
+        [7840] 新增封存
+      - ADD FILE
+        [7842] ADD FILE
+      - 新增 JAR
+        [7844] ADD JAR
+      - 清單封存
+        [7845] 清單封存
+      - LIST FILE
+        [7846] LIST FILE
+      - 列出 JAR
+        [7847] 列出 JAR
+      - INSERT INTO
+        [7848] INSERT
+      - INSERT OVERWRITE DIRECTORY
+        [7857] INSERT OVERWRITE DIRECTORY
+      - 使用Hive格式插入OVERWRITE DIRECTORY
+        [7859] 使用 Hive 格式插入 OVERWRITEDIRECTORY
+      - 載入數據
+        [7861] 載入資料
+      - EXPLAIN
+        [7864] 解釋
+      - CLUSTER BY 子句
+        [7867] CLUSTER BY 子句 （SELECT）
+      - 通用數據表表達式
+        [7869] CTE) (通用資料表運算式
+      - DISTRIBUTE BY 子句
+        [7871] DISTRIBUTE BY 子句
+      - GROUP BY 子句
+        [7873] GROUP BY 子句
+      - HAVING 子句
+        [7881] HAVING 子句
+      - QUALIFY 子句
+        [7883] QUALIFY 子句
+      - 提示
+        [7885] 提示
+      - VALUES 子句
+        [7890] VALUES 子句
+      - JOIN
+        [7892] 加入
+      - 橫向 VIEW 子句
+        [7897] 橫向檢視子句
+      - LIMIT 子句
+        [7900] LIMIT 子句
+      - OFFSET 子句
+        [7902] OFFSET 子句
+      - ORDER BY 子句
+        [7904] ORDER BY 子句
+      - PIVOT 子句
+        [7907] PIVOT 子句
+      - 查詢
+        [7912] 查詢
+      - 取樣查詢
+        [7915] TABLESAMPLE 子句
+      - SELECT
+        [7918] SELECT
+      - 集作業
+        [7923] Set 運算子
+      - SORT BY 子句
+        [7926] SORT BY 子句
+      - Star 子句
+        [7929] * （star） 子句
+      - 資料表值函式
+        [7931] 數據表值函式 （TVF） 調用
+      - 數據表參考
+        [7934] 數據表參考
+      - UNPIVOT 子句
+        [7939] UNPIVOT 子句
+      - WATERMARK 子句
+        [7943] WATERMARK 子句
+      - WHERE 子句
+        [7945] WHERE 子句
+      - WINDOW 子句
+        [7947] WINDOW 子句
+      - WINDOW 框架子句
+        [7949] 視窗框架子句
+      - 分析資料表
+        [7952] 分析數據表
+      - CACHE TABLE
+        [7956] CACHE TABLE
+      - CLEAR CACHE
+        [7958] CLEAR CACHE
+      - REFRESH 函式
+        [7959] REFRESH 函式
+      - 重新整理數據表
+        [7961] 重新整理數據表
+      - REFRESH
+        [7963] 重新整理快取
+      - UNCACHE 數據表
+        [7965] 發行項• 2024/04/19
+      - 描述目錄
+        [7967] 描述目錄
+      - 描述連線
+        [7969] 描述連線
+      - DESCRIBE CREDENTIAL
+        [7971] 描述記憶體認證
+      - DESCRIBE DATABASE
+        [7973] 描述資料庫
+      - DESCRIBE 函式
+        [7974] DESCRIBE 函式
+      - 描述位置
+        [7976] 描述外部位置
+      - 描述提供者
+        [7978] 描述提供者
+      - 描述查詢
+        [7980] 描述查詢
+      - 描述收件者
+        [7982] 描述收件者
+      - 描述架構
+        [7984] 描述架構
+      - 描述共用
+        [7986] 描述共用
+      - DESCRIBE TABLE
+        [7988] DESCRIBE TABLE
+      - 描述磁碟區
+        [7992] 描述磁碟區
+      - 清單
+        [7994] 清單
+      - 全部在共享中顯示
+        [7996] 全部在共享中顯示
+      - 顯示目錄
+        [7998] 顯示目錄
+      - 顯示數據行
+        [8000] 顯示資料行
+      - 顯示連線
+        [8002] 顯示連線
+      - 顯示 CREATE 資料表
+        [8004] 顯示 CREATE TABLE
+      - 顯示認證
+        [8006] 顯示記憶體認證
+      - 顯示資料庫
+        [8007] 顯示資料庫
+      - SHOW FUNCTIONS
+        [8008] SHOW FUNCTIONS
+      - 顯示群組
+        [8011] 顯示群組
+      - 顯示位置
+        [8013] 顯示外部位置
+      - 顯示數據分割
+        [8015] 顯示資料分割
+      - 顯示提供者
+        [8017] 顯示提供者
+      - 顯示收件者
+        [8019] 顯示收件者
+      - 顯示架構
+        [8021] 顯示架構
+      - 顯示共用
+        [8023] 顯示共用
+      - 在提供者中顯示共用
+        [8025] 在提供者中顯示共用
+      - 顯示數據表擴充
+        [8027] 顯示資料表擴充
+      - 顯示數據表
+        [8031] 顯示資料表
+      - 顯示已卸除的數據表
+        [8033] 顯示已卸除的數據表
+      - SHOW TBLPROPERTIES
+        [8036] 顯示 TBLPROPERTIES
+      - 顯示使用者
+        [8038] 顯示使用者
+      - 顯示檢視
+        [8040] 顯示檢視
+      - 顯示磁碟區
+        [8042] 顯示磁碟區
+      - EXECUTE IMMEDIATE
+        [8044] EXECUTE IMMEDIATE
+      - RESET
+        [8047] 重 置
+      - SET
+        [8049] SET
+      - SET TIMEZONE
+        [8052] 設定時區
+      - SET VARIABLE
+        [8054] SET VARIABLE
+      - SYNC
+        [8057] 
+      - CACHE （Azure Databricks 上的 Delta Lake）
+        [8064] 發行項• 2024/04/19
+      - CLONE （Azure Databricks 上的 Delta Lake）
+        [8066] CREATE TABLE CLONE
+      - 轉換成 DELTA （Azure Databricks 上的 Delta Lake）
+        [8068] 轉換為 DELTA
+      - COPY INTO （Azure Databricks 上的 Delta Lake）
+        [8071] 
+      - CREATE BLOOMFILTER INDEX （Azure Databricks 上的 Delta Lake）
+        [8094] 建立 BLOOM 篩選索引
+      - DELETE FROM （Azure Databricks 上的 Delta Lake）
+        [8096] DELETE FROM
+      - 描述歷程記錄 （Azure Databricks 上的 Delta Lake）
+        [8098] 描述歷程記錄
+      - DROP BLOOMFILTER INDEX （Azure Databricks 上的 Delta Lake）
+        [8099] DROP BLOOM 篩選索引
+      - FSCK （Azure Databricks 上的 Delta Lake）
+        [8100] FSCK 修復資料表
+      - GENERATE （Azure Databricks 上的 Delta Lake）
+        [8102] GENERATE
+      - MERGE INTO （Azure Databricks 上的 Delta Lake）
+        [8103] MERGE INTO
+      - OPTIMIZE （Azure Databricks 上的 Delta Lake）
+        [8109] 最佳化
+      - REORG TABLE （Azure Databricks 上的 Delta Lake）
+        [8111] REORG TABLE
+      - RESTORE （Azure Databricks 上的 Delta Lake）
+        [8113] RESTORE
+      - UPDATE （Azure Databricks 上的 Delta Lake）
+        [8115] UPDATE
+      - VACUUM （Azure Databricks 上的 Delta Lake）
+        [8117] 真空
+      - ALTER GROUP
+        [8119] ALTER GROUP
+      - CREATE GROUP
+        [8121] CREATE GROUP
+      - DROP GROUP
+        [8123] 發行項• 2024/05/03
+      - 拒絕
+        [8125] 否認
+      - GRANT
+        [8127] 授予
+      - GRANT SHARE
+        [8129] GRANT ON SHARE
+      - REVOKE
+        [8130] 撤銷
+      - REVOKE SHARE
+        [8132] 撤銷共用
+      - SHOW GRANT
+        [8133] 顯示授與
+      - 在共享上顯示 GRANT
+        [8135] 在共享上顯示授與
+      - 顯示授與給收件者
+        [8137] 顯示授與給收件者
+      - MSCK
+        [8139] MSCK 修復許可權
+  - 資源
+    - Azure Databricks 資源
+      [8141] 資源
+    - Azure Databricks 辦公室時間
+      [8142] Databricks Office 時數
+    - Azure Databricks 狀態頁面
+      [8143] 狀態頁面
+    - 提交產品內意見反應
+      [8149] 提交產品意見反應
+    - Azure 藍圖
+    - 定價
+    - 限制
+      [8150] 資源限制
+    - 疑難排解常見問題集
+      [8159] 關於 Azure Databricks 的常見問題集
+    - 知識庫
+    - 支援的區域
+      [8164] Azure Databricks 區域
+    - 功能變數名防火牆規則
+      [8207] 設定功能變數名稱防火牆規則
+    - 支援的瀏覽器
+      [8209] 支援的瀏覽器
+    - 詢問問題 - Microsoft 問與答頁面
+    - Stack Overflow
+    - 支援選項
+    - 錯誤訊息
+      - 錯誤處理
+        [8210] Azure Databricks 中的錯誤處理
+      - 錯誤類別
+        [8216] 
+      - SQLSTATE 程式代碼
+        [8350] 
+      - ARITHMETIC_OVERFLOW錯誤
+        [8378] ARITHMETIC_OVERFLOW錯誤類別
+      - AS_OF_JOIN錯誤
+        [8381] AS_OF_JOIN錯誤類別
+      - CANNOT_CREATE_DATA_SOURCE_TABLE錯誤
+        [8382] CANNOT_CREATE_DATA_SOURCE_TABLE錯誤類別
+      - CANNOT_LOAD_STATE_STORE錯誤
+        [8383] CANNOT_LOAD_STATE_STORE錯誤類別
+      - CANNOT_READ_FILE錯誤
+        [8385] CANNOT_READ_FILE error class
+      - CANNOT_UPDATE_FIELD錯誤
+        [8386] CANNOT_UPDATE_FIELD錯誤類別
+      - CANNOT_WRITE_STATE_STORE錯誤
+        [8387] CANNOT_WRITE_STATE_STORE錯誤類別
+      - CAST_INVALID_INPUT錯誤
+        [8388] CAST_INVALID_INPUT錯誤類別
+      - COLLECTION_SIZE_LIMIT_EXCEEDED錯誤
+        [8393] COLLECTION_SIZE_LIMIT_EXCEEDED錯誤類別
+      - COLUMN_MASKS_FEATURE_NOT_SUPPORTED錯誤
+        [8394] COLUMN_MASKS_FEATURE_NOT_SUPPORTED錯誤類別
+      - CONNECT 錯誤
+        [8395] CONNECT 錯誤類別
+      - COPY_INTO_SYNTAX_ERROR錯誤
+        [8396] COPY_INTO_SYNTAX_ERROR錯誤類別
+      - CREATE_VIEW_COLUMN_ARITY_MISMATCH錯誤
+        [8397] CREATE_VIEW_COLUMN_ARITY_MISMATCH錯誤類別
+      - DC_SFDC_API_ERROR錯誤
+        [8398] DC_SFDC_API_ERROR錯誤類別
+      - DC_SQLSERVER_ERROR錯誤
+        [8400] DC_SQLSERVER_ERROR錯誤類別
+      - DC_UNSUPPORTED_ERROR錯誤
+        [8401] DC_UNSUPPORTED_ERROR錯誤類別
+      - DATATYPE_MISMATCH錯誤
+        [8402] 
+      - DELTA_ICEBERG_COMPAT_VIOLATION錯誤
+        [8409] DELTA_ICEBERG_COMPAT_VIOLATION錯誤類別
+      - DELTA_ICEBERG_COMPAT_V1_VIOLATION錯誤
+        [8412] DELTA_ICEBERG_COMPAT_V1_VIOLATION錯誤類別
+      - DELTA_VERSIONS_NOT_CONTIGUOUS錯誤
+        [8414] DELTA_VERSIONS_NOT_CONTIGUOUS錯誤類別
+      - DELTA_VIOLATE_TABLE_PROPERTY_VALIDATION_FAILED錯誤
+        [8415] 
+      - DIVIDE_BY_ZERO錯誤
+        [8416] DIVIDE_BY_ZERO錯誤類別
+      - DUPLICATE_ROUTINE_PARAMETER_ASSIGNMENT錯誤
+        [8419] DUPLICATE_ROUTINE_PARAMETER_ASSIGNMENT錯誤類別
+      - EXPECT_TABLE_NOT_VIEW錯誤
+        [8420] EXPECT_TABLE_NOT_VIEW錯誤類別
+      - EXPECT_VIEW_NOT_TABLE錯誤
+        [8421] EXPECT_VIEW_NOT_TABLE錯誤類別
+      - FAILED_JDBC錯誤
+        [8422] FAILED_JDBC錯誤類別
+      - FROM_JSON_INVALID_CONFIGURATION錯誤
+        [8424] FROM_JSON_INVALID_CONFIGURATION錯誤類別
+      - GEOJSON_PARSE_ERROR錯誤
+        [8425] GEOJSON_PARSE_ERROR錯誤類別
+      - GROUP_BY_AGGREGATE錯誤
+        [8427] GROUP_BY_AGGREGATE錯誤類別
+      - H3_INVALID_CELL_ID
+        [8429] H3_INVALID_CELL_ID錯誤類別
+      - H3_INVALID_GRID_DISTANCE_VALUE
+        [8431] H3_INVALID_GRID_DISTANCE_VALUE錯誤類別
+      - H3_INVALID_RESOLUTION_VALUE
+        [8432] H3_INVALID_RESOLUTION_VALUE錯誤類別
+      - H3_NOT_ENABLED
+        [8434] H3_NOT_ENABLED錯誤類別
+      - INCOMPATIBLE_DATA_FOR_TABLE錯誤
+        [8436] INCOMPATIBLE_DATA_FOR_TABLE錯誤類別
+      - INCOMPLETE_TYPE_DEFINITION錯誤
+        [8438] INCOMPLETE_TYPE_DEFINITION錯誤類別
+      - INCONSISTENT_BEHAVIOR_CROSS_VERSION錯誤
+        [8439] INCONSISTENT_BEHAVIOR_CROSS_VERSION錯誤類別
+      - INSERT_COLUMN_ARITY_MISMATCH_ERROR_CLASS錯誤
+        [8441] INSERT_COLUMN_ARITY_MISMATCH錯誤類別
+      - INSUFFICIENT_TABLE_PROPERTY錯誤
+        [8442] INSUFFICIENT_TABLE_PROPERTY錯誤類別
+      - INVALID_ARRAY_INDEX錯誤
+        [8443] INVALID_ARRAY_INDEX錯誤類別
+      - INVALID_ARRAY_INDEX_IN_ELEMENT_AT錯誤
+        [8446] INVALID_ARRAY_INDEX_IN_ELEMENT_AT錯誤類別
+      - INVALID_BOUNDARY錯誤
+        [8449] INVALID_BOUNDARY錯誤類別
+      - INVALID_CURSOR錯誤
+        [8450] INVALID_CURSOR錯誤類別
+      - INVALID_DEFAULT_VALUE錯誤
+        [8451] INVALID_DEFAULT_VALUE錯誤類別
+      - INVALID_FORMAT錯誤
+        [8452] INVALID_FORMAT錯誤類別
+      - INVALID_HANDLE錯誤
+        [8454] INVALID_HANDLE錯誤類別
+      - INVALID_INLINE_TABLE錯誤
+        [8456] INVALID_INLINE_TABLE錯誤類別
+      - INVALID_INVERSE_DISTRIBUTION_FUNCTION錯誤
+        [8457] INVALID_INVERSE_DISTRIBUTION_FUNCTION錯誤類別
+      - INVALID_LAMBDA_FUNCTION_CALL錯誤
+        [8458] INVALID_LAMBDA_FUNCTION_CALL錯誤類別
+      - INVALID_LIMIT_LIKE_EXPRESSION錯誤
+        [8459] INVALID_LIMIT_LIKE_EXPRESSION錯誤類別
+      - INVALID_OBSERVED_METRICS錯誤
+        [8460] 
+      - INVALID_OPTIONS錯誤
+        [8461] INVALID_OPTIONS錯誤類別
+      - INVALID_PARAMETER_MARKER_VALUE錯誤
+        [8462] INVALID_PARAMETER_MARKER_VALUE錯誤類別
+      - INVALID_PARAMETER_VALUE錯誤
+        [8463] INVALID_PARAMETER_VALUE錯誤類別
+      - INVALID_PARTITION_OPERATION錯誤
+        [8465] INVALID_PARTITION_OPERATION錯誤類別
+      - INVALID_SCHEMA錯誤
+        [8466] INVALID_SCHEMA錯誤類別
+      - INVALID_SECRET_LOOKUP錯誤
+        [8467] INVALID_SECRET_LOOKUP錯誤類別
+      - INVALID_SQL_SYNTAX錯誤
+        [8468] 
+      - INVALID_SUBQUERY_EXPRESSION錯誤
+        [8471] 
+      - INVALID_TIME_TRAVEL_TIMESTAMP_EXPR錯誤
+        [8472] INVALID_TIME_TRAVEL_TIMESTAMP_EXPR錯誤類別
+      - INVALID_WRITE_DISTRIBUTION錯誤
+        [8473] 
+      - MALFORMED_RECORD_IN_PARSING錯誤
+        [8474] MALFORMED_RECORD_IN_PARSING錯誤類別
+      - MATERIALIZED_VIEW_OPERATION_NOT_ALLOWED錯誤
+        [8475] MATERIALIZED_VIEW_OPERATION_NOT_ALLOWED 錯誤類別
+      - MISSING_AGGREGATION錯誤
+        [8476] MISSING_AGGREGATION錯誤類別
+      - MISSING_ATTRIBUTES錯誤
+        [8479] MISSING_ATTRIBUTES錯誤類別
+      - NOT_A_CONSTANT_STRING錯誤
+        [8480] NOT_A_CONSTANT_STRING錯誤類別
+      - NOT_ALLOWED_IN_FROM錯誤
+        [8481] NOT_ALLOWED_IN_FROM錯誤類別
+      - NOT_NULL_CONSTRAINT_VIOLATION錯誤
+        [8482] NOT_NULL_CONSTRAINT_VIOLATIONerror class
+      - NOT_SUPPORTED_IN_JDBC_CATALOG錯誤
+        [8483] NOT_SUPPORTED_IN_JDBC_CATALOG錯誤類別
+      - QUERIED_TABLE_INCOMPATIBLE_WITH_COLUMN_MASK_POLICY錯誤
+        [8484] QUERIED_TABLE_INCOMPATIBLE_WITH_COLUMN_MASK_POLICY錯誤類別
+      - QUERIED_TABLE_INCOMPATIBLE_WITH_ROW_LEVEL_SECURITY_POLICY錯誤
+        [8486] QUERIED_TABLE_INCOMPATIBLE_WITH_ROW_LEVEL_SECURITY_POLICY錯誤類別
+      - RESTRICTED_STREAMING_OPTION_PERMISSION_ENFORCED錯誤
+        [8488] RESTRICTED_STREAMING_OPTION_PERMISSION_ENFORCED錯誤類別
+      - ROW_COLUMN_ACCESS錯誤
+        [8489] 
+      - ROW_LEVEL_SECURITY_FEATURE_NOT_SUPPORTED錯誤
+        [8491] ROW_LEVEL_SECURITY_FEATURE_NOT_SUPPORTED錯誤類別
+      - STDS_INVALID_OPTION_VALUE錯誤
+        [8492] STDS_INVALID_OPTION_VALUE錯誤類別
+      - STREAMING_TABLE_OPERATION_NOT_ALLOWED錯誤
+        [8493] STREAMING_TABLE_OPERATION_NOT_ALLOWED錯誤類別
+      - TABLE_OR_VIEW_NOT_FOUND錯誤
+        [8495] TABLE_OR_VIEW_NOT_FOUND錯誤類別
+      - UC_COMMAND_NOT_SUPPORTED錯誤類別
+        [8498] UC_COMMAND_NOT_SUPPORTED錯誤類別
+      - UDF_ERROR錯誤類別
+        [8499] UDF_ERROR錯誤類別
+      - UDF_LIMITS錯誤類別
+        [8501] UDF_LIMITS錯誤類別
+      - UDF_USER_CODE_ERROR錯誤類別
+        [8502] UDF_USER_CODE_ERROR錯誤類別
+      - UDF_USER_CODE_ERROR錯誤類別
+        [8503] UDF_USER_CODE_ERROR錯誤類別
+      - UNKNOWN_FIELD_EXCEPTION錯誤
+        [8504] 
+      - UNRESOLVED_COLUMN錯誤
+        [8505] UNRESOLVED_COLUMN錯誤類別
+      - UNRESOLVED_FIELD錯誤
+        [8509] UNRESOLVED_FIELD錯誤類別
+      - UNRESOLVED_MAP_KEY錯誤
+        [8510] UNRESOLVED_MAP_KEY錯誤類別
+      - UNRESOLVED_ROUTINE錯誤
+        [8511] UNRESOLVED_ROUTINE error class
+      - UNSUPPORTED_ADD_FILE錯誤
+        [8515] UNSUPPORTED_ADD_FILE錯誤類別
+      - UNSUPPORTED_DEFAULT_VALUE錯誤
+        [8516] UNSUPPORTED_DEFAULT_VALUE錯誤類別
+      - UNSUPPORTED_DESERIALIZER錯誤
+        [8517] UNSUPPORTED_DESERIALIZER錯誤類別
+      - UNSUPPORTED_FEATURE錯誤
+        [8518] 
+      - UNSUPPORTED_GENERATOR錯誤
+        [8523] UNSUPPORTED_GENERATOR錯誤類別
+      - UNSUPPORTED_INSERT錯誤
+        [8524] UNSUPPORTED_INSERT錯誤類別
+      - UNSUPPORTED_MERGE_CONDITION錯誤
+        [8525] UNSUPPORTED_MERGE_CONDITION錯誤類別
+      - UNSUPPORTED_OVERWRITE錯誤
+        [8526] UNSUPPORTED_OVERWRITE錯誤類別
+      - UNSUPPORTED_SAVE_MODE錯誤
+        [8527] UNSUPPORTED_SAVE_MODE錯誤類別
+      - UNSUPPORTED_STREAMING_OPTIONS_FOR_VIEW錯誤
+        [8528] UNSUPPORTED_STREAMING_OPTIONS_FOR_VIEW錯誤類別
+      - UNSUPPORTED_SUBQUERY_EXPRESSION_CATEGORY錯誤
+        [8529] 
+      - UNSUPPORTED_TABLE_OPERATION錯誤
+        [8531] UNSUPPORTED_TABLE_OPERATION錯誤類別
+      - UNSUPPORTED_VIEW_OPERATION錯誤
+        [8532] UNSUPPORTED_VIEW_OPERATION錯誤類別
+      - UPGRADE_NOT_SUPPORTED錯誤
+        [8533] UPGRADE_NOT_SUPPORTED錯誤類別
+      - USER_DEFINED_FUNCTIONS錯誤
+        [8535] 
+      - WKB_PARSE_ERROR錯誤
+        [8536] WKB_PARSE_ERROR錯誤類別
+      - WKT_PARSE_ERROR錯誤
+        [8538] WKT_PARSE_ERROR錯誤類別
+      - WRONG_NUM_ARGS錯誤
+        [8540] WRONG_NUM_ARGS錯誤類別
+  - 會發生什麼？
+    [8541] 接下來會有什麼？
+  - 檔封存
+    - 封存檔
+      [8544] Azure Databricks 檔封存
+    - Azure 整合
+      - 搭配 Polybase 的 Synapse
+        [8547] 使用 PolyBase 連線 Azure Databricks 和Azure Synapse （舊版）
+      - 使用 AQS 串流
+        [8571] 
+      - Azure 事件中樞
+        [8574] Azure 事件中樞
+      - Azure Cosmos DB 連接器
+        [8579] Azure Cosmos DB
+    - 計算
+      - 建立叢集 UI （舊版）
+        [8580] 設定叢集
+      - 叢集 UI 變更和叢集存取模式
+        [8597] 叢集 UI 變更和叢集存取模式
+      - 叢集命名的 init 指令稿 （舊版）
+        [8601] 叢集命名的 init 指令稿 （舊版）
+      - 全域 init 腳稿 （舊版）
+        [8603] 全域 init 腳稿 （舊版）
+      - 使用 init 指令本安裝連結庫
+        [8605] 使用 init 文稿安裝連結庫 （舊版）
+      - 叢集原則的最佳做法
+        [8606] 最佳做法：計算原則
+    - 認證傳遞 （舊版）
+      - 認證傳遞 （舊版）
+        [8617] 認證傳遞 （舊版）
+      - 使用 Microsoft Entra ID 向 ADLS 進行驗證（先前稱為 Azure AD） 認證
+        [8618] 使用 Microsoft Entra ID (先前稱為 AzureActive Directory) 認證傳遞來存取 AzureData Lake Storage (舊版)
+    - 開發人員工具
+      - Databricks CLI （舊版）
+        - Databricks CLI 概觀
+          [8630] Databricks CLI （舊版）
+        - 叢集
+          [8640] 叢集 CLI （舊版）
+        - 叢集原則
+          [8651] 叢集原則 CLI （舊版）
+        - DBFS
+          [8655] DBFS CLI （舊版）
+        - 差異即時資料表
+          [8659] Delta Live Tables CLI （舊版）
+        - 群組
+          [8666] 群組 CLI （舊版）
+        - 執行個體集區
+          [8672] 實例集區 CLI （舊版）
+        - 工作
+          [8677] 作業 CLI （舊版）
+        - 程式庫
+          [8686] 程式庫 CLI （舊版）
+        - Repos
+          [8690] Repos CLI （舊版）
+        - 執行
+          [8696] 執行 CLI （舊版）
+        - 密碼
+          [8705] 秘密 CLI （舊版）
+        - Stack
+          [8713] Stack CLI （舊版）
+        - 語彙基元
+          [8722] 權杖 CLI （舊版）
+        - Unity 目錄
+          [8725] Unity 目錄 CLI （舊版）
+        - 工作區
+          [8761] 工作區 CLI （舊版）
+      - dbutils.library
+        [8767] 連結庫公用程式 （dbutils.library） （舊版）
+      - 舊版 UniForm IcebergCompatV1
+        [8773] 舊版 UniForm IcebergCompatV1
+      - dbx by Databricks Labs
+        - dbx 概觀
+          [8780] 什麼是 Databricks Labs 的 dbx？
+        - dbx 用戶入門
+          [8781] dbx by Databricks Labs
+        - dbx 與 Visual Studio Code
+          [8811] 搭配 Visual Studio Code 使用 dbx
+        - dbx 同步處理
+          [8825] 使用 dbx 即時同步本機檔案與遠端工作區
+        - 從 dbx 遷移至套件組合
+          [8832] 從 dbx 遷移至套件組合
+      - VS Code with Repos
+        [8840] 使用 Git 資料夾搭配適用於 Visual StudioCode 的 Databricks 擴充功能
+    - 治理
+      - 外部 Apache Hive 中繼存放區 （舊版）
+        [8844] 外部 Apache Hive 中繼存放區 （舊版）
+    - 機器學習服務和 AI
+      - 舊版模型服務
+        [8852] Azure Databricks 提供的舊版 MLflow 模型服務
+      - 沒有伺服器即時推斷 （預覽）
+        - 無伺服器即時推斷概觀
+          [8865] 使用無伺服器即時推斷提供模型
+        - 啟用無伺服器即時推斷
+          [8868] 遷移至無伺服器即時推斷
+        - 建立和管理無伺服器模型端點
+          [8871] 建立和管理無伺服器即時推斷端點
+      - 將 LLM 服務至優化的 LLM 服務端點
+        [8888] 優化的大型語言模型 （LLM） 服務
+      - 跨工作區共享功能資料表 （舊版）
+        [8895] 跨工作區共享功能資料表 （舊版）
+      - MLeap 模型導出
+        - MLeap ML 模型導出
+          [8901] MLeap ML 模型導出
+        - 將 PySpark 模型定型並以 MLeap 格式儲存
+          [8902] Train a PySpark model and save inMLeap format
+      - 設定ai_generate_text（）
+        [8903] 設定和考慮 ai_generate_text()
+      - ai_generate_text（） 範例
+        [8906] 使用 ai_generate_text()  和 OpenAI 分析客戶評論
+    - 版本資訊
+      - 將 Apache Spark 遷移至 3.x
+        - 將 Apache Spark 遷移至 3.x
+          [8912] 將 Apache Spark 遷移至 3.x
+        - 數據略過索引
+          [8913] 數據略過索引
+        - 日期和時間戳
+          [8916] 日期與時間戳記
+        - 深度學習管線移轉指南
+          [8930] 深度學習管線移轉指南
+      - Databricks Runtime 版本資訊（不支援）
+        - Databricks Runtime 14.0
+          [8932] Databricks Runtime 14.0 （不支援）
+        - Databricks Runtime 14.0 ML
+          [8979] databricks Runtime 14.0 for 機器學習（不支援）
+        - Databricks Runtime 13.2
+          [8992] Databricks Runtime 13.2 （不支援）
+        - Databricks Runtime 13.2 ML
+          [9022] databricks Runtime 13.2 for 機器學習（不支援）
+        - Databricks Runtime 13.1
+          [9035] Databricks Runtime 13.1 （不支援）
+        - Databricks Runtime 13.1 ML
+          [9070] databricks Runtime 13.1 for 機器學習（不支援）
+        - Databricks Runtime 13.0
+          [9083] Databricks Runtime 13.0 （不支援）
+        - Databricks Runtime 13.0 ML
+          [9121] databricks Runtime 13.0 for 機器學習（不支援）
+        - Databricks Runtime 12.1
+          [9133] Databricks Runtime 12.1 （不支援）
+        - Databricks Runtime 12.1 ML
+          [9167] databricks Runtime 12.1 for 機器學習（不支援）
+        - Databricks Runtime 12.0
+          [9178] Databricks Runtime 12.0 （不支援）
+        - Databricks Runtime 12.0 ML
+          [9209] databricks Runtime 12.0 for 機器學習（不支援）
+        - Databricks Runtime 11.2
+          [9220] Databricks Runtime 11.2 （不支援）
+        - Databricks Runtime 11.2 ML
+          [9249] databricks Runtime 11.2 for 機器學習（不支援）
+        - Databricks Runtime 11.1
+          [9260] Databricks Runtime 11.1 （不支援）
+        - Databricks Runtime 11.1 ML
+          [9290] 
+        - Databricks Runtime 11.0
+          [9301] Databricks Runtime 11.0 （不支援）
+        - Databricks Runtime 11.0 ML
+          [9336] 
+        - Databricks Runtime 10.5
+          [9346] Databricks Runtime 10.5 （不支援）
+        - Databricks Runtime 10.5 ML
+          [9370] 
+        - Databricks Runtime 10.3
+          [9380] Databricks Runtime 10.3 （不支援）
+        - Databricks Runtime 10.3 ML
+          [9405] 適用於 ML 的 Databricks Runtime 10.3（不支援）
+        - Databricks Runtime 10.2
+          [9417] Databricks Runtime 10.2 （不支援）
+        - Databricks Runtime 10.2 ML
+          [9441] 
+        - Databricks Runtime 10.1
+          [9453] Databricks Runtime 10.1 （不支援）
+        - Databricks Runtime 10.1 ML
+          [9479] 適用於 ML 的 Databricks Runtime 10.1（不支援）
+        - Databricks Runtime 10.0
+          [9492] Databricks Runtime 10.0 （不支援）
+        - Databricks Runtime 10.0 ML
+          [9519] 適用於 ML 的 Databricks Runtime 10.0（不支援）
+        - Databricks Runtime 9.0
+          [9530] Databricks Runtime 9.0 （不支援）
+        - Databricks Runtime 9.0 ML
+          [9561] 
+        - Databricks Runtime 8.4
+          [9571] Databricks Runtime 8.4 （不支援）
+        - Databricks Runtime 8.4 ML
+          [9595] 適用於 ML 的 Databricks Runtime 8.4（不支援）
+        - Databricks Runtime 8.3
+          [9609] Databricks Runtime 8.3 （不支援）
+        - Databricks Runtime 8.3 ML
+          [9631] 適用於 ML 的 Databricks Runtime 8.3（不支援）
+        - Databricks Runtime 8.2
+          [9645] Databricks Runtime 8.2 （不支援）
+        - Databricks Runtime 8.2 ML
+          [9665] 適用於 ML 的 Databricks Runtime 8.2（不支援）
+        - Databricks Runtime 8.1
+          [9678] Databricks Runtime 8.1 （不支援）
+        - Databricks Runtime 8.1 ML
+          [9699] 適用於 ML 的 Databricks Runtime 8.1（不支援）
+        - Databricks Runtime 8.0
+          [9713] Databricks Runtime 8.0 （不支援）
+        - Databricks Runtime 8.0 ML
+          [9740] 適用於 ML 的 Databricks Runtime 8.0（不支援）
+        - Databricks Runtime 7.6
+          [9748] Databricks Runtime 7.6 （不支援）
+        - Databricks Runtime 7.6 ML
+          [9769] databricks Runtime 7.6 for 機器學習（不支援）
+        - Databricks Runtime 7.5
+          [9783] Databricks Runtime 7.5 （不支援）
+        - Databricks Runtime 7.5 ML
+          [9806] 適用於 ML 的 Databricks Runtime 7.5（不支援）
+        - Databricks Runtime 7.4
+          [9817] Databricks Runtime 7.4 （不支援）
+        - Databricks Runtime 7.4 ML
+          [9840] 適用於 ML 的 Databricks Runtime 7.4（不支援）
+        - Databricks Runtime 7.3 LTS
+          [9851] Databricks Runtime 7.3 LTS （不支援）
+        - Databricks Runtime 7.3 LTS ML
+          [9873] Databricks Runtime 7.3 LTS for 機器學習（不支援）
+        - Databricks Runtime 7.3 LTS 移轉
+          [9884] Databricks Runtime 7.3 LTS （不支援）移轉指南
+        - Databricks Runtime 7.2
+          [9886] Databricks Runtime 7.2 （不支援）
+        - Databricks Runtime 7.2 ML
+          [9907] 適用於 ML 的 Databricks Runtime 7.2（不支援）
+        - Databricks Runtime 7.1
+          [9918] Databricks Runtime 7.1 （不支援）
+        - Databricks Runtime 7.1 ML
+          [9937] 適用於 ML 的 Databricks Runtime 7.1（不支援）
+        - Databricks Runtime 7.0
+          [9948] Databricks Runtime 7.0 （不支援）
+        - Databricks Runtime 7.0 ML
+          [9979] Databricks Runtime 7.0 ML （不支援）
+        - Databricks Runtime 7.x 移轉
+          [9991] Databricks Runtime 7.x 移轉指南 （不支援）
+        - Databricks Runtime 6.6
+          [10003] Databricks Runtime 6.6 （不支援）
+        - Databricks Runtime 6.6 ML
+          [10022] Databricks Runtime 6.6 ML （不支援）
+        - Databricks Runtime 6.5
+          [10032] Databricks Runtime 6.5 （不支援）
+        - Databricks Runtime 6.5 ML
+          [10053] 適用於 ML 的 Databricks Runtime 6.5（不支援）
+        - Databricks Runtime 6.4 擴充支援
+          [10064] Databricks Runtime 6.4 擴充支援 （不支援）
+        - Databricks Runtime 6.4
+          [10066] Databricks Runtime 6.4 （不支援）
+        - Databricks Runtime 6.4 ML
+          [10086] 適用於 ML 的 Databricks Runtime 6.4（不支援）
+        - Databricks Runtime 6.3
+          [10096] Databricks Runtime 6.3 （不支援）
+        - Databricks Runtime 6.3 ML
+          [10116] 適用於 ML 的 Databricks Runtime 6.3（不支援）
+        - Databricks Runtime 6.2
+          [10127] Databricks Runtime 6.2 （不支援）
+        - Databricks Runtime 6.2 ML
+          [10146] 適用於 ML 的 Databricks Runtime 6.2（不支援）
+        - Databricks Runtime 6.1
+          [10158] Databricks Runtime 6.1 （不支援）
+        - Databricks Runtime 6.1 ML
+          [10177] 適用於 ML 的 Databricks Runtime 6.1（不支援）
+        - Databricks Runtime 6.0
+          [10187] Databricks Runtime 6.0 （不支援）
+        - Databricks Runtime 6.0 ML
+          [10210] 適用於 ML 的 Databricks Runtime 6.0（不支援）
+        - Databricks Runtime 5.5 擴充支援
+          [10217] Databricks Runtime 5.5 擴充支援 （不支援）
+        - Databricks Runtime 5.5 ML 擴充支援
+          [10219] Databricks Runtime 5.5 ML 擴充支援（不支援）
+        - Databricks Runtime 5.5
+          [10221] Databricks Runtime 5.5 LTS （不支援）
+        - Databricks Runtime 5.5 ML
+          [10242] 適用於 ML 的 Databricks Runtime 5.5LTS （不支援）
+        - Databricks Runtime 5.4
+          [10261] Databricks Runtime 5.4 （不支援）
+        - Databricks Runtime 5.4 ML
+          [10282] 
+        - Databricks Runtime 5.3
+          [10287] Databricks Runtime 5.3 （不支援）
+        - Databricks Runtime 5.3 ML
+          [10309] Databricks Runtime 5.3 ML （不支援）
+        - Databricks Runtime 5.2
+          [10314] Databricks Runtime 5.2 （不支援）
+        - Databricks Runtime 5.1
+          [10335] Databricks Runtime 5.1 （不支援）
+        - Databricks Runtime 5.0
+          [10356] Databricks Runtime 5.0 （不支援）
+        - Databricks Runtime 4.3
+          [10379] Databricks Runtime 4.3 （不支援）
+        - Databricks Runtime 4.2
+          [10401] Databricks Runtime 4.2 （不支援）
+        - Databricks Runtime 4.1
+          [10424] Databricks Runtime 4.1 （不支援）
+        - Databricks Runtime 4.0
+          [10447] Databricks Runtime 4.0 （不支援）
+        - Databricks Runtime 3.5 LTS
+          [10470] Databricks Runtime 3.5 LTS （不支援）
+        - Databricks Runtime 3.4
+          [10504] Databricks Runtime 3.4 （不支援）
+        - Databricks Light 2.4 擴充支援 （不支援）
+          [10535] Databricks Light 2.4 擴充支援 （不支援）
+        - Databricks Light 2.4 （不支援）
+          [10537] Databricks Light 2.4 （不支援）
+        - Databricks Runtime 9.1 LTS 移轉
+          [10555] Databricks Runtime 9.1 LTS 移轉指南
+        - Databricks Runtime 10.x 移轉
+          [10557] Databricks Runtime 10.x 移轉指南
+        - Databricks Runtime 11.x 移轉
+          [10559] Databricks Runtime 11.x 移轉指南
+        - Databricks Runtime 12.x 移轉
+          [10561] Databricks Runtime 12.x 移轉指南
+        - Databricks Runtime 13.x 移轉
+          [10563] Databricks Runtime 13.x 移轉指南
+        - Databricks Runtime 14.x 移轉
+          [10565] Databricks Runtime 14.x 移轉指南
+      - Databricks Light
+        [10567] Databricks Light
+      - Unity 目錄 GA 版本資訊
+        [10569] Unity 目錄 GA 版本資訊
+    - 參考
+    - 安全性
+      - 使用服務主體建立中繼存放區
+        [10574] 使用服務主體建立 Unity 目錄受控記憶體（舊版）
+      - 設定差異記憶體認證
+        [10578] 設定差異記憶體認證
+      - 稽核安全性監視的記錄架構
+        [10580] 稽核安全性監視的記錄架構
+    - 儲存體
+      - 與 WASB Azure Blob 儲存體 （舊版）
+        [10589] 連線與 WASB Azure Blob 儲存體 （舊版）
+      - Azure Data Lake Storage Gen1
+        [10594] 從 Azure Databricks 存取 Azure DataLake 儲存體 Gen1
+      - 舊版
+        - 使用 DBIO 對雲端記憶體進行交易式寫入
+          [10599] 使用 DBIO 對雲端儲存體進行交易式寫入
+        - 扭曲聯結提示
+          [10601] 使用扭曲提示的扭曲聯結優化
+        - Koalas
+          [10604] Koalas
+        - Neo4j
+          [10606] Neo4j
+        - spark-xml 連結庫
+          [10608] 使用連結 spark-xml  庫讀取和寫入 XML數據
+        - conda magic 命令
+          [10616] 使用 %conda  指令管理連結庫 （舊版）
+        - 工作區連結庫
+          [10620] 工作區連結庫 （舊版）
+        - 將數據匯入 DBFS
+          [10626] 探索及建立 DBFS 中的數據表

@@ -1,0 +1,439 @@
+- ---< azure-bot-service-azure-bot-service-4.0.pdf >---
+  - Bot Framework SDK documentation
+    [1] Bot Framework SDK documentation
+  - Overview
+    - What is the Bot Framework SDK?
+      [4] What is the Bot Framework SDK?
+    - Choose the right chatbot solution
+      [9] Choose the right chatbot solution foryour use case
+    - What's new
+      [12] What's new for the Bot Framework SDKs
+  - Quickstart
+    - Create a basic bot
+      [13] Create a bot with the Bot FrameworkSDK
+    - Create an Azure Bot resource
+      [17] Use the Azure portal to Create an AzureBot resource
+  - Samples
+    - Bot Framework samples repo on GitHub
+  - Security
+    - Security baseline
+      [25] Azure security baseline for Azure BotService
+    - Bot Service encryption
+      [38] Azure AI Bot Service encryption for dataat rest
+    - Authentication basics
+      [45] Bot Framework authentication basics
+    - Authentication types
+      [48] Authentication types
+    - User authentication
+      - User authentication basics
+        [53] User authentication
+      - Identity providers
+        [58] Identity providers
+      - Identity providers proxy
+        [63] Identity providers proxy
+      - Single sign-on
+        [69] About single sign-on
+      - Add authentication to a bot
+        [72] Add authentication to a bot
+      - Add single sign-on to a bot
+        [93] Add single sign-on to a bot
+    - Enhanced authentication
+      [104] Direct Line enhanced authentication
+    - Security guidelines
+      [108] Bot Framework security guidelines
+  - Concepts
+    - Bot
+      - How bots work
+        [112] Basics of the Microsoft Bot Framework
+      - Managing state
+        [123] 
+      - Event-driven conversations
+        [129] Event-driven conversations using anactivity handler
+      - Dialogs library
+        [134] Dialogs library
+      - Waterfall dialogs
+        [140] About component and waterfall dialogs
+      - Middleware
+        [148] Middleware
+      - Natural language understanding
+        [154] Natural language understanding
+      - Understand the structure of an echo bot
+        [161] Understand the structure of an echo bot
+    - How bots for Microsoft Teams work
+      [168] 
+    - Regionalization in Azure AI Bot Service
+      [173] Regionalization in Azure AI Bot Service
+    - Monitor
+      [175] Monitor Azure AI Bot Service
+    - Skills
+      - About skills
+        [185] Skills overview
+      - About skill consumers
+        [192] About skill consumers
+    - Adaptive expressions
+      [196] Adaptive expressions
+    - Language Generation
+      [200] Language Generation
+  - How-To
+    - Design
+      - Principles of bot design
+        [202] Conversational user experience
+      - First interaction
+        [205] Design a bot's first user interaction
+      - Design bot elements
+        - Design and control conversation flow
+          [208] Design and control conversation flow
+        - Design bot navigation
+          [212] Design bot navigation
+        - Design the user experience
+          [218] Design the user experience
+      - Patterns
+        - Knowledge base
+          [224] Design knowledge bots
+        - Handoff to human
+          [229] Transition conversations from bot tohuman
+        - Bots in apps
+          [235] Embed a bot in an app
+        - Bots in websites
+          [238] Embed a bot in a website
+    - Develop
+      - Send and receive text messages
+        [240] Send and receive text messages
+      - Add media to messages
+        [243] Send media attachments with BotFramework SDK
+      - Add buttons to guide user action
+        [254] Use button for input
+      - Save user and conversation data
+        [256] Save user and conversation data
+      - Prompt users for input
+        [263] Create your own prompts to gather userinput
+      - Send welcome message to users
+        [273] Send welcome message to users
+      - Send proactive notifications to users
+        [283] Send proactive notifications to users
+      - Manage a long-running operation
+        [290] Manage a long-running operation
+      - Implement sequential conversation flow
+        [304] Implement sequential conversation flow
+      - Manage dialog complexity
+        [316] Manage dialog complexity
+      - Create advanced conversation flow using branches and loops
+        [322] Create advanced conversation flowusing branches and loops
+      - Handle user interruptions
+        [335] Handle user interruptions
+      - Expire a conversation
+        [344] Expire a conversation
+      - Language understanding
+        - Add natural language understanding to your bot
+          [351] Add natural language understanding toyour bot
+        - Answer questions with custom question answering
+          [360] Use question answering to answerquestions
+        - Answer user's questions using QnA Maker
+          [364] Use QnA Maker to answer questions
+        - Use Orchestrator for intent resolution
+          [370] Use multiple LUIS and QnA models withOrchestrator
+      - Write directly to storage
+        [380] Write directly to storage
+      - Implement custom storage for your bot
+        [405] Implement custom storage for your bot
+      - Skills
+        - Implement a skill
+          [421] Implement a skill
+        - Write a skill manifest
+          [432] 
+        - Use dialogs within a skill
+          [445] Use dialogs within a skill
+        - Implement a skill consumer
+          [459] Implement a skill consumer
+        - Use a dialog to consume a skill
+          [475] Use a dialog to consume a skill
+      - Add telemetry to your bot
+        [488] Add telemetry to your bot
+      - Add telemetry to your QnA bot
+        [499] Add telemetry to your QnA Maker bot
+      - Analyze your bot's telemetry data
+        [510] Analyze your bot's telemetry data
+      - Use Direct Line Speech in your bot
+        [529] Use Direct Line Speech in your bot
+    - Test
+      - Unit testing bots
+        [533] How to unit test bots
+      - Add trace activities to your bot
+        [550] Add trace activities to your bot
+    - Debug
+      - Debugging guidelines
+        [554] Debugging guidelines
+      - Debug a bot using IDE
+        [559] Debug an SDK-first bot
+      - Debug with the Bot Framework Emulator
+        [564] Test and debug with the Emulator
+      - Debug a bot from any channel using ngrok
+        [574] Debug a bot from any channel usingngrok
+      - Debug a skill or skill consumer
+        [578] Debug a skill or skill consumer
+      - Debug a bot with inspection middleware
+        [580] Debug a bot with inspectionmiddleware
+      - Debug your bot using transcript files
+        [589] Debug your bot using transcript files
+    - Deploy
+      - Deploy your bot to Azure
+        [594] Provision and publish a bot
+      - Provision an App Service resource
+        [605] Use Azure CLI to create an App Serviceresource
+      - Provision an Azure Bot resource
+        [610] Use Azure CLI to create or update anAzure Bot resource
+      - Configure an Azure Government bot
+        [615] Configure Bot Framework bots for USGovernment customers
+      - Set up continuous deployment
+        [619] Set up continuous deployment
+    - Manage
+      - Manage a bot
+        [622] Manage a bot
+      - Register a bot with Azure
+        [626] Register a bot with Azure
+      - Reliability guidance
+        [633] Reliability guidance for Azure AI BotService
+      - Configure bot settings
+        [634] Configure bot registration settings
+      - Channels
+        - Connect a bot to channels
+          [638] Configure a bot to run on one or morechannels
+        - Channel reference
+          [642] 
+        - Implement channel-specific functionality
+          [646] Implement channel-specificfunctionality
+        - Direct Line
+          - About Direct Line
+            [659] About Direct Line
+          - Connect to Direct Line
+            [661] Connect a bot to Direct Line
+          - Connect to Direct Line Speech
+            [667] Connect a bot to Direct Line Speech
+          - Direct Line App Service extension
+            - Direct Line App Service extension
+              [669] Direct Line App Service extension
+            - About network isolation
+              [671] Network isolation in Azure AI BotService
+            - Configure .NET bot for extension
+              [674] Configure .NET bot for extension
+            - Configure Node.js bot for extension
+              [679] Configure Node.js bot for extension
+            - Create .NET client with extension
+              [684] Create .NET Client to Connect to DirectLine App Service extension
+            - Use extension with Web Chat
+              [688] Use Web Chat with the Direct Line AppService extension
+            - Configure a virtual network
+              [691] Use Direct Line App Service extensionwithin a virtual network
+            - Configure network isolation
+              [693] Configure network isolation
+        - Alexa
+          [698] Connect a bot to Alexa
+        - Azure Communication Services Chat
+          [703] Connect a bot to Azure CommunicationServices Chat
+        - Email
+          [705] Connect a bot to email
+        - Facebook
+          [710] Connect a bot to Facebook
+        - GroupMe
+          [716] Connect a bot to GroupMe
+        - LINE
+          [718] Connect a bot to LINE
+        - Microsoft Teams
+          [722] Connect a bot to Microsoft Teams
+        - M365 (preview)
+          [725] Connect a Bot to Microsoft 365
+        - Omnichannel
+          [727] Connect a bot to the Omnichannelchannel
+        - Outlook (preview)
+          [729] Connect a bot to the Outlook channelfor Actionable Messages (Preview)
+        - Search (preview)
+          [732] Connect a bot to Search (preview)
+        - Skype
+          [743] Connect a bot to Skype
+        - Slack
+          [745] Connect a bot to Slack
+        - Telegram
+          [751] Connect a bot to Telegram
+        - Twilio (SMS)
+          [754] Connect a bot to Twilio (SMS)
+        - WeChat
+          [757] Connect a bot to WeChat
+        - Web Chat
+          [758] Connect a bot to Web Chat
+        - Additional channels
+          [764] Additional channels
+        - Connect to channels with Azure CLI
+          [766] Connect your bot to channels withAzure CLI
+  - Reference
+    - v4 SDK reference
+      - .NET SDK v4
+      - JavaScript SDK v4
+      - Java SDK v4
+      - Python SDK v4
+    - Monitoring data reference
+      [772] 
+    - REST API reference
+      - Bot Framework REST API
+        - Overview
+          [782] Bot Framework REST APIs
+        - Key concepts
+          [783] Key concepts in the Bot Connector API
+        - Create a bot with REST
+          [786] Create a bot with the Bot Connectorservice with the Bot Connector API
+        - API reference
+          [791] API reference for the Bot FrameworkConnector service
+      - Connector API
+        - Authentication
+          [825] Authentication with the Bot ConnectorAPI
+        - Activities overview
+        - Create messages
+          [839] Create messages with the Bot ConnectorAPI
+        - Send and receive messages
+          [842] Send and receive messages with the BotConnector API
+        - Add media attachments to messages
+          [847] Add media attachments to messageswith the Bot Connector API
+        - Add rich cards to messages
+          [852] Adding rich card attachments tomessages with the Bot Connector API
+        - Add speech to messages
+          [860] Add speech to messages with the BotConnector API
+        - Add input hints to messages
+          [862] Add input hints to messages with theBot Connector API
+        - Add suggested actions to messages
+          [866] Add suggested actions to messageswith the Bot Connector API
+        - Implement channel-specific functionality
+          [868] Implement channel-specificfunctionality with the Bot Connector API
+        - Manage state data
+          [875] Manage state data with the REST API
+      - Direct Line API 3.0
+        - Key concepts
+          [876] Key concepts in Direct Line API 3.0
+        - Authentication
+          [878] Authentication in Direct Line API 3.0
+        - Start a conversation
+          [887] Start a conversation in Direct Line API3.0
+        - Reconnect to a conversation
+          [890] Reconnect to a conversation in DirectLine API 3.0
+        - Send an activity to the bot
+          [892] Send an activity to the bot in Direct LineAPI 3.0
+        - Receive activities from the bot
+          [898] Receive activities from the bot in DirectLine API 3.0
+        - End a conversation
+          [903] End a conversation in Direct Line API 3.0
+        - API reference
+          [905] API reference - Direct Line API 3.0
+        - Swagger file
+      - Direct Line API 1.1
+        - Key concepts
+          [914] Key concepts in Direct Line API 1.1
+        - Authentication
+          [916] Authentication in Direct Line API 1.1
+        - Start a conversation
+          [921] Start a conversation in Direct Line API1.1
+        - Send a message to the bot
+          [923] Send a message to the bot in Direct LineAPI 1.1
+        - Receive messages from the bot
+          [928] Receive messages from the bot in DirectLine API 1.1
+        - API reference
+          [931] API reference - Direct Line API 1.1
+        - Swagger file
+    - Bot Framework CLI tool
+      [939] Bot Framework CLI tool
+    - Adaptive dialogs
+      - Events and triggers
+        [940] Events and triggers in adaptive dialogs
+      - Actions
+        [945] Actions in adaptive dialogs - referenceguide
+      - Inputs
+        [950] Inputs in adaptive dialogs - referenceguide
+      - Recognizers
+        [958] Recognizers in adaptive dialogs
+      - Memory scopes
+        [963] Managing state in adaptive dialogs -reference guide
+    - Adaptive expressions
+      - Prebuilt functions
+        [967] Adaptive expressions prebuilt functions
+      - API reference
+        [1105] API reference for Adaptive expressions
+    - LG
+      - API reference
+        [1106] API reference for language generation
+      - Structured response template
+        [1107] Structured response template
+      - Functions injected from LG
+        [1115] Functions injected from the languagegeneration library
+    - File formats
+      - .lg file format
+        [1121] .lg file format
+      - .lu file format
+        [1136] .lu file format
+      - .qna file format
+        [1158] .qna file format
+    - Entities and activity types
+      [1165] Entities and activity types
+    - OAuth URL support
+      [1169] 
+    - Azure Policy built-ins
+      [1171] Azure Policy built-in definitions forAzure AI Bot Service
+  - Resources
+    - Get support
+      [1173] Bot Framework additional resources
+    - App Insights keys
+      [1175] Application Insights keys
+    - Bot Service Compliance
+      [1179] Compliance in Azure Bot Service
+    - Bot review guidelines
+      [1181] Bot review guidelines
+    - Guide to identifiers
+      [1185] ID fields in the Bot Framework
+    - Implement a skill for Power Virtual Agents
+      [1190] Implement a skill for use in PowerVirtual Agents
+    - User-agent requests
+      [1193] Bot Framework User-Agent requests
+    - FAQ
+      - Index
+        [1194] Background and availability
+Bot Framework general
+Ecosystem
+      - Availability
+        [1197] Why did Microsoft develop the BotFramework?
+How can I migrate Azure AI Bot Servicefrom one region to another?
+How to run a bot offline?
+      - General
+        [1200] Why doesn't the Typing activity doanything?
+What is the difference between theConnector library and Builder library inthe SDK?
+How do user messages relate to HTTPSmethod calls?
+What is the difference between"proactive" and "reactive"?
+      - Ecosystem
+        [1204] How do I enable the Bot FrameworkEmulator to connect to localhost whilebehind a corporate proxy?
+When will you add more conversationexperiences to the Bot Framework?
+I have a communication channel I'd liketo be configurable with Bot Framework.Can I work with Microsoft to do that?
+      - Security
+        [1210] Do the bots registered with the BotFramework collect personalinformation? If yes, how can I be surethe data is safe and secure? What aboutprivacy?
+Can I host my bot on my own servers?
+How do you ban or remove bots fromthe service?
+      - Azure
+        [1216] 
+    - Troubleshoot
+      - Index
+        [1225] Troubleshoot index
+      - General
+        [1227] General troubleshooting for Azure BotService bots
+      - Configuration
+        [1238] Troubleshoot bot configuration issues
+      - HTTP 500 errors
+        [1241] Troubleshoot HTTP 500 Internal ServiceErrors
+      - Authentication
+        [1246] Troubleshooting Bot Frameworkauthentication
+    - Bot Framework schemas
+      - Activity schema
+      - Card schema
+      - Transcript schema
+    - Virtual Assistant
+      [1253] Virtual Assistant overview
+    - Web Chat
+      - Overview
+        [1254] Web Chat overview
+      - Customization
+        [1260] Web Chat customization
+      - Add single sign-on to Web Chat
+        [1271] Single sign with a Web Chat

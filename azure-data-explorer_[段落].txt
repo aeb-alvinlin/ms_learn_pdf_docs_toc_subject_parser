@@ -1,0 +1,2694 @@
+- ---< azure-data-explorer.pdf >---
+  - Azure 資料總管文件
+    [1] Azure 資料總管文件
+  - 總覽
+    - 什麼是 Azure 資料總管？
+      [6] 什麼是 Azure 資料總管？
+    - Azure 資料總管的運作方式
+      [11] Azure 資料總管的運作方式
+    - 免費開始使用
+      [14] 什麼是免費的 Azure Data Explorer 叢集？
+    - 新功能
+      [17] Azure Data Explorer 檔中的新功能
+  - 開始使用
+    - 計劃
+      - 解決方案架構
+        [29] 解決方案架構
+      - 多租用戶解決方案
+        [32] 如何使用 Azure Data Explorer 建構多租用戶解決方案
+      - POC 劇本：使用 Azure 數據總管進行巨量數據分析
+        [37] Azure Data Explorer POC 劇本：巨量數據分析
+    - 設定
+      - 建立叢集和資料庫
+        - 建立叢集和資料庫
+          [48] 快速入門：建立 Azure 資料總管叢集與資料庫
+        - 使用 SDK 建立叢集和資料庫
+          [53] 建立 Azure 資料總管叢集與資料庫
+        - 自動化布建
+          [57] Azure 資料總管中的自動化佈建
+        - 疑難排解
+          - 建立叢集
+            [65] 疑難排解： Azure 資料總管的叢集建立失敗
+          - 連線 至叢集
+            [66] 移難排解：無法在 Azure 資料總管中連線至叢集
+          - 使用資料庫和數據表
+            [67] 疑難排解：無法在 Azure 資料總管中建立或刪除資料庫或資料表
+      - 建立表格
+        - 建立資料表
+          [69] 在 Azure Data Explorer 中建立數據表
+        - 建立外部資料表
+          [72] 使用 Azure Data Explorer Web UI 精靈建立外部數據表
+        - 架構優化最佳做法
+          [83] 架構優化最佳做法
+      - 移轉
+        - 從 Elasticsearch 移轉
+          [85] 移轉指南：Elasticsearch 至 Azure DataExplorer
+        - 從 TSI 移轉
+          [92] 移轉至 Azure 資料總管
+    - 安全
+      - 安全性概觀
+        [95] Azure Data Explorer中的安全性
+      - 安全性基準
+        [99] 適用于 Azure Data Explorer 的 Azure 安全性基準
+      - Azure 原則的安全性控制
+        [112] 適用于 Azure Data Explorer 的Azure 原則法規合規性控制
+      - 存取控制
+        [114] 存取控制概觀
+        - 角色型存取控制
+          [117] Kusto 角色型存取控制
+        - 跨租用戶查詢和命令
+          [120] 允許跨租用戶查詢和命令
+      - 隔離的計算
+        [122] 在 Azure Data Explorer 叢集上啟用隔離的計算
+      - 網路隔離 （VNet）
+        - 網路安全性概觀
+          [124] Azure Data Explorer的網路安全性
+        - 私人端點
+          - 私人端點概觀
+            [128] Azure Data Explorer 的私人端點
+          - 建立私人端點
+            [134] 建立 Azure Data Explorer的私人端點
+          - 建立受控私人端點
+            [144] 建立適用于 Azure Data Explorer的受控私人端點
+          - 管理叢集的公用存取
+            [151] 管理 Azure Data Explorer 叢集的公用存取
+          - 針對私人端點進行疑難排解
+            [153] 針對私人端點進行疑難排解
+        - 虛擬網路插入
+          - 將 VNet 插入的叢集遷移至私人端點
+            [157] 將插入 虛擬網路 叢集移轉至私人端點
+          - 在 VNet 中建立叢集 - 入口網站
+            [162] 在虛擬網路中建立 Azure Data Explorer叢集
+          - 將叢集部署至 VNet
+            [163] 將 Azure Data Explorer 叢集部署到您的虛擬網路
+          - 建立數據連線所使用的資源的私人或服務端點
+            [179] 建立事件中樞和 Azure 儲存體的私人或服務端點
+          - 針對 VNet 叢集建立、連線和作業進行疑難解答
+            [184] 針對虛擬網路中 Azure Data Explorer叢集的存取、擷取和作業進行疑難排解
+        - 限制輸出要求
+          [189] 限制來自 Azure Data Explorer 叢集的輸出存取
+      - 加密
+        - 叢集加密概觀
+          [196] 在 Azure Data Explorer中使用加密保護您的叢集
+        - 啟用雙重加密
+          [198] 在 Azure Data Explorer中為您的叢集啟用雙重加密
+        - 啟用磁碟加密
+          [200] 在 Azure Data Explorer 中啟用叢集的磁片加密
+      - 受控識別
+        - 受控識別概觀
+          [202] 受控識別概觀
+        - 在叢集上設定受控識別
+          [205] 為您的 Azure 資料總管叢集設定受控識別
+        - 使用受控識別驗證外部數據表
+          [211] 使用受控識別驗證外部數據表
+        - 使用受控識別驗證內嵌數據
+          [215] 使用受控識別驗證來擷取的佇列 Blob
+      - 設定客戶管理的金鑰
+        [219] 設定客戶自控金鑰
+      - 建立 Microsoft Entra 應用程式
+        [224] 在 Azure Data Explorer 中建立 MicrosoftEntra 應用程式註冊
+      - 條件式存取
+        [231] 使用 Azure Data Explorer的條件式存取
+    - 取得
+資料
+      - 數據擷取概觀
+        [237] Azure 資料總管資料擷取概觀
+      - 在 Web UI 中取得數據
+        - 從本機檔案取得數據
+          [244] 從檔案取得數據
+        - 從 Azure 記憶體取得數據
+          [251] 從 Azure 記憶體取得數據
+        - 從 Amazon S3 取得數據
+          [258] 從 Amazon S3 取得數據
+      - 內嵌歷程記錄數據
+        [265] 如何將歷程記錄數據內嵌至 Azure DataExplorer
+      - 串流擷取
+        [274] 在 Azure 資料總管叢集上設定串流擷取
+      - 使用 LightIngest
+        [282] 使用 LightIngest 將資料內嵌至 AzureData Explorer
+      - 使用 SDK
+        - .NET SDK
+          [290] 使用 Kusto .NET SDK 擷取數據
+        - Python
+          [297] 使用 Azure 資料總管 Python 程式庫內嵌資料
+        - Node SDK
+          [303] 使用 Azure 資料總管 Node 程式庫擷取資料
+        - Go SDK
+          [309] 使用 Azure Data Explorer Go SDK 擷取資料
+        - Java SDK
+          [315] 使用 Kusto JAVA SDK 內嵌資料
+      - 事件中樞
+        - 事件中樞數據連線
+          [322] Azure 事件中樞資料連線
+        - 建立事件中樞數據連線
+          [331] 建立 Azure Data Explorer 的事件中樞數據連線
+        - 使用 SDK 建立事件中樞數據連線
+          [339] 使用 SDK 建立 Azure Data Explorer的事件中樞資料連線
+        - 管理免費叢集中的事件中樞
+          [343] 管理免費 Azure Data Explorer叢集中的事件中樞資料連線
+      - 事件方格
+        - 事件方格資料連線
+          [347] 事件方格資料連線
+        - 建立事件方格資料連線
+          [353] 建立 Azure Data Explorer 的事件方格數據連線
+        - 使用 SDK 建立事件方格數據連線
+          [361] 使用 SDK 建立 Azure Data Explorer 的事件方格數據連線
+        - 在 Azure 入口網站 中手動建立資源
+          [366] 手動建立事件方格擷取的資源
+      - IoT 中樞
+        - IoT 中樞資料連線
+          [371] IoT 中樞資料連線
+        - 建立 IoT 中樞 數據連線
+          [377] 建立 Azure Data Explorer的IoT 中樞資料連線
+        - 使用 SDK 建立 IoT 中樞 數據連線
+          [382] 使用 SDK 為 Azure Data Explorer建立IoT中樞資料連線
+      - Azure Cosmos DB
+        - Azure Cosmos DB 數據連線
+          [386] 將數據從 Azure Cosmos DB 擷取至Azure Data Explorer
+        - 取得最新的 Azure Cosmos DB 檔
+          [395] 取得最新版本的 Azure Cosmos DB 文件
+      - Azure Data Factory
+        - 與 Data Factory 整合
+          [398] 整合 Azure 資料總管與 Azure DataFactory
+        - 使用 Azure Data Factory 複製數據
+          [407] 使用 Azure Data Factory 將資料複製到Azure 資料總管
+        - 使用 Azure Data Factory 範本大量複製資料
+          [426] 使用 Azure Data Factory 範本從資料庫大量複製到 Azure Data Explorer
+        - 使用 Azure Data Factory 執行管理命令
+          [431] 使用 Azure Data Factory 命令活動來執行Azure Data Explorer 管理命令
+      - 使用資料連接器
+        - 數據整合概觀
+          [445] 數據整合概觀
+        - Apache Flink
+          [448] 使用 Apache Flink 將資料內嵌至 AzureData Explorer
+        - Apache Kafka
+          [454] 將數據從 Apache Kafka 內嵌到 AzureData Explorer
+        - Apache Log4J 2
+          [464] 使用 Apache log4J 2 連接器內嵌數據
+        - Apache Spark
+          [471] 適用于 Apache Spark 的 Azure DataExplorer 連接器
+        - Azure 串流分析
+          [481] 將數據從 Azure 串流分析內嵌至 AzureData Explorer
+        - Fluent Bit
+          [486] 使用 Fluent Bit 將資料內嵌至 Azure DataExplorer
+        - Logstash
+          [490] 將資料從 Logstash 擷取至 Azure 資料總管
+        - NLog
+          [495] 使用 NLog 接收將資料內嵌至 Azure DataExplorer
+        - OpenTelemetry
+          [501] 
+        - Serilog
+          [509] 使用 Serilog 接收將資料內嵌至 AzureData Explorer
+        - Splunk
+          [516] 將數據從Splunk內嵌至 Azure DataExplorer
+        - Splunk 通用轉寄站
+          [524] 將數據從 Splunk Universal Forwarder 擷取至 Azure Data Explorer
+        - Telegraf
+          [529] 將數據從Telegraf內嵌到 Azure DataExplorer
+      - 案例
+        - E2E 程式設計 Blob 擷取
+          [536] 端對端 Blob 擷取至 Azure Data Explorer
+        - 擷取和查詢監視數據
+          [548] 教學課程：在 Azure 資料總管中擷取和查詢監視資料
+      - 跨租用戶數據連線
+        [560] 跨租使用者資料連線
+      - JSON 格式化的數據
+        [565] 將 JSON 格式化的範例數據內嵌至 AzureData Explorer
+      - 數據擷取屬性
+        [571] Azure Data Explorer 數據擷取屬性
+      - 數據擷取的格式
+        [575] Azure Data Explorer 支援擷取的數據格式
+  - 查詢資料
+    - 查詢整合概觀
+      [578] 查詢整合概觀
+    - 查詢 Web UI 中的數據
+      - 在 Web UI 中查詢數據概觀
+        [580] Azure Data Explorer Web UI 查詢概觀
+      - 存取數據表的數據配置檔
+        [587] 存取數據表的數據配置檔
+      - 新增叢集連線
+        [592] 在 Azure Data Explorer Web UI 中新增叢集連線
+      - 新增查詢視覺效果
+        [595] 在 Web UI 中新增和修改查詢視覺效果
+      - 自訂 Web UI 中的設定
+        [602] 自訂 Azure Data Explorer Web UI 中的設定
+      - 探索範例資源庫
+        [609] 探索範例資源庫
+      - 探索結果方格
+        [615] Azure Data Explorer Web UI 結果方格
+      - 共用查詢
+        [629] 從 Azure Data Explorer Web UI 共用查詢
+      - 鍵盤快速鍵
+        [634] Azure Data Explorer Web UI 鍵盤快速鍵
+      - 撰寫 KQL 查詢
+        [637] 在 Azure Data Explorer Web UI 撰寫Kusto 查詢語言 查詢
+      - 查詢範例數據
+        [642] 快速入門：查詢範例資料
+    - 查詢 Azure 儲存體 外部數據表中的數據
+      [647] 發行項• 2024/01/17
+    - 查詢 Azure Data Lake 中的數據
+      [649] 使用 Azure 資料總管查詢 Azure DataLake 中的資料
+    - 在 Azure 監視器中查詢數據
+      - 在 Azure 監視器中查詢數據
+        [658] 
+      - 匯出和查詢 Azure 監視器數據
+        [663] 在 Azure Data Explorer 中查詢從 Azure監視器匯出的資料
+    - 在 MATLAB 中查詢數據
+      [668] 使用 MATLAB 查詢資料
+    - 使用 Power Apps 查詢數據
+      [673] 用來Power Apps查詢 Azure DataExplorer 中的數據
+    - 使用 Python 查詢數據
+      [681] 使用 Azure 資料總管 Python 程式庫查詢資料
+    - 對 KQL 內嵌 Python 進行偵錯
+      [684] 使用 VS Code 對 Kusto 查詢語言內嵌Python 進行偵錯
+    - 使用 T-SQL 查詢數據
+      [689] 使用 T-SQL 查詢數據
+    - 使用 SQL Server 模擬查詢數據
+      - SQL Server 模擬概觀
+        [694] 使用 SQL Server 模擬來查詢 Azure DataExplorer 中的資料
+      - 與 ODBC 連線
+        [697] 使用 ODBC 連線至 Azure 資料總管
+      - 使用 JDBC 連線
+        [703] 使用 JDBC 連線至 Azure 資料總管
+      - 從一般應用程式連線
+        [706] 從一般應用程式連線
+      - 執行 KQL 查詢和預存函式
+        [709] 使用 SQL Server 模擬執行 KQL 查詢和預存函式
+    - 針對高並行優化
+      [712] 使用 Azure 資料總管最佳化高並行
+    - 設定逾時限制
+      [716] 設定逾時限制
+    - 使用經常性存取窗口查詢冷數據
+      [721] 使用經常性窗口查詢冷數據
+    - 時間序列分析和機器學習
+      - Azure 數據總管 Python 連結庫
+        [724] 使用 Azure 資料總管 Python 程式庫查詢資料
+      - 對內嵌 Python Kusto 查詢語言 進行偵錯
+        [727] 使用 VS Code 對 Kusto 查詢語言內嵌Python 進行偵錯
+    - 圖表分析
+      - 圖表分析概觀
+        [732] Kusto 查詢語言 (KQL) 圖表語意概觀
+      - 圖表分析案例
+        [735] 使用 Kusto 查詢語言 (KQL) 圖表語意的常見案例 (預覽) 有哪些？
+      - 圖表分析的最佳做法
+        [740] Kusto 查詢語言 (KQL) 圖形語意的最佳做法， (Preview)
+  - 將資料視覺化
+    - 視覺效果整合概觀
+      [749] 視覺效果整合概觀
+    - 可視化 Web UI 中的儀錶板
+      - 使用儀表板
+        [752] 使用 Azure 資料總管儀表板視覺化資料
+      - 使用儀錶板參數
+        [766] 在 Azure Data Explorer 儀表板中使用參數
+      - 自定義儀錶板視覺效果
+        [782] 自訂 Azure 資料總管儀表板視覺效果
+      - 套用條件式格式設定
+        [788] 將條件式格式設定套用至 Azure DataExplorer 儀錶板視覺效果
+      - 建立儀錶板基底查詢
+        [794] 建立儀錶板基底查詢
+      - 儀錶板特定視覺效果
+        [798] 儀錶板特定的視覺效果
+      - 可視化範例數據儀錶板
+        [801] 快速入門：視覺化範例資料儀表板
+    - Power BI
+      - 在 Power BI 中使用數據
+        [805] 在 Power BI 中使用 Azure Data Explorer數據
+      - Power BI 的最佳做法
+        [809] 使用 Power BI 查詢和視覺化 Azure DataExplorer資料的最佳做法
+      - 動態 M 查詢參數
+        [811] 在 Power BI 中搭配 Azure Data Explorer使用動態 M 查詢參數
+      - 在 Power BI 中使用 SQL 進行查詢
+        [826] 在 Power BI 中使用 SQL 查詢從 Azure 資料總管將資料視覺化
+      - 連線 至 Power BI 服務
+        [834] 將私人端點後方的叢集連線至Power BI 服務
+    - Excel
+      [841] 使用 Excel 將數據從 Web UI 視覺化
+    - Grafana
+      [844] 在 Grafana 中從 Azure 資料總管將資料視覺化
+    - Tableau
+      [855] 在 Tableau 中將資料從 Azure DataExplorer視覺化
+    - Sisense
+      [860] 
+    - Redash
+      [866] 在 Redash 中將數據從 Azure DataExplorer 可視化
+    - Kibana （K2Bridge 連接器）
+      [882] 使用 K2Bridge 開放原始碼連接器將資料從 Kibana 中的 Azure Data Explorer視覺化
+  - Kusto 查詢語言
+    - Kusto 查詢語言概觀
+      [897] Kusto 查詢語言 (KQL) 概觀
+    - 語法慣例
+      [900] 參考文件的語法慣例
+    - Kusto 查詢語言 學習資源
+      [903] Kusto 查詢語言學習資源
+    - 在 KQL 中新增批注
+      [905] 在 KQL 中新增批注
+    - 開始使用 KQL
+      - 快速參考指南
+        [907] KQL 快速參考
+      - 1 - 了解常見運算符
+        [911] 教學課程：瞭解常見運算符
+      - 2 - 使用聚合函數
+        [920] 教學課程：使用聚合函數
+      - 3 - 從多個數據表聯結數據
+        [934] 教學課程：聯結多個數據表的數據
+      - 4 - 建立地理空間視覺效果
+        [939] 教學課程：建立地理空間視覺效果
+      - 訓練我
+        - Azure 資料總管簡介
+        - 用 Kusto 查询语言编写你的第一个查询
+        - 利用 Kusto 查詢語言，從您的資料中獲得見解
+        - 使用 Kusto 查詢語言 的多數據表查詢
+        - 使用 Azure Data Explorer 描繪不熟悉的資料集
+        - 在 Azure 資料總管中建立儀表板
+        - 學習路徑：使用 Kusto 查詢語言 在 Azure 數據總管中進行分析
+        - 學習路徑：使用 Kusto 查詢語言 建立 Microsoft Sentinel 的查詢
+    - KQL 查詢的最佳做法
+      - KQL 查詢的最佳做法
+        [949] Kusto 查詢語言 查詢的最佳做法
+      - 優化使用具名表達式的查詢
+        [954] 優化使用具名表達式的查詢
+    - 跨叢集和跨資料庫查詢
+      [957] 跨叢集和跨資料庫查詢
+    - 實體
+      - 實體類型
+        [962] 發行項• 2024/01/10
+      - 實體名稱
+        [964] 實體名稱
+      - 實體參考
+        [967] 發行項• 2023/08/30
+      - 資料庫
+        [969] 資料庫
+      - 資料表
+        [970] 資料表
+      - 資料行
+        [972] 資料行
+      - 預存函式
+        [974] 預存函式
+      - 檢視
+        [975] 檢視
+      - 外部表格
+        [977] 外部資料表
+      - 事實和維度數據表
+        [979] 事實和維度資料表
+    - 資料類型
+      - 純量數據類型
+        [981] 純量資料類型
+      - bool
+        [983] 布林值資料類型
+      - Datetime
+        [984] 日期時間資料類型
+      - decimal
+        [988] 十進位資料類型。
+      - dynamic
+        [989] 動態資料類型
+      - guid
+        [996] GUID 資料類型
+      - int
+        [997] int 資料類型
+      - long
+        [998] long 資料類型
+      - real
+        [999] 實際資料類型
+      - 字串
+        [1000] 字串資料類型
+      - 時間範圍
+        [1006] timespan 資料類型
+      - Null 值
+        [1009] Null 值
+    - 函式
+      - 函數類型
+        [1014] 函式類型
+      - 使用者定義的函式
+        [1015] 使用者定義的函式
+    - 查詢陳述式
+      - 查詢語句類型
+        [1026] 查詢陳述式類型
+      - Alias 語句
+        [1028] Alias 陳述式
+      - Let 陳述式
+        [1031] Let 陳述式
+      - Pattern 語句
+        [1039] Pattern 陳述式
+      - 查詢參數語句
+        [1045] 查詢參數宣告陳述式
+      - Restrict 語句
+        [1048] Restrict 陳述式
+      - Set 陳述式
+        [1052] Set 陳述式
+      - 表格式運算式陳述式
+        [1054] 表格式運算式陳述式
+      - 批次
+        [1057] 批次
+    - 表格式運算子
+      - 查詢運算子
+        [1059] 查詢運算子
+      - as 運算子
+        [1060] as 運算子
+      - 取用運算子
+        [1062] consume 運算子
+      - count 運算符
+        [1063] 發行項• 2024/01/23
+      - datatable 運算符
+        [1065] datatable 運算子
+      - distinct 運算符
+        [1067] distinct 運算子
+      - evaluate 運算符
+        [1069] evaluate 外掛程式運算子
+      - extend 運算符
+        [1072] extend 運算子
+      - externaldata 運算符
+        [1075] externaldata 運算子
+      - facet 運算符
+        [1079] facet 運算子
+      - find 運算符
+        [1082] 尋找運算子
+      - fork 運算符
+        [1091] fork 運算子
+      - 取得chema 運算符
+        [1094] getschema 運算子
+      - invoke 運算子
+        [1096] invoke 運算子
+      - join 運算子
+        - join 運算子
+          [1098] join 運算子
+        - 聯結口味
+          - innerunique
+            [1103] innerunique 聯結
+          - inner
+            [1109] inner join
+          - leftouter
+            [1112] leftouter join
+          - rightouter
+            [1115] rightouter join
+          - fullouter
+            [1118] fullouter join
+          - leftsemi
+            [1121] leftsemi join
+          - leftanti
+            [1124] leftanti join
+          - rightsemi
+            [1127] rightsemi join
+          - rightanti
+            [1130] rightanti join
+        - 跨叢集聯結
+          [1133] 跨叢集聯結
+        - 廣播聯結
+          [1137] 廣播聯結
+        - 時間範圍聯結
+          [1139] 時段聯結
+      - lookup 運算符
+        [1144] lookup 運算子
+      - mv-apply 運算符
+        [1148] mv-apply 運算子
+      - mv-expand 運算符
+        [1155] mv-expand 運算子
+      - sort 運算符
+        [1162] sort 運算子
+      - 項目運算元
+        [1165] project 運算子
+      - project-away 運算符
+        [1169] 
+      - project-keep 運算符
+        [1172] project-keep 運算子
+      - project-rename 運算符
+        [1175] project-rename 運算子
+      - project-reorder 運算符
+        [1177] project-reorder operator
+      - parse 運算符
+        [1180] parse 運算子
+      - parse-where 運算符
+        [1190] parse-where 運算子
+      - parse-kv 運算符
+        [1197] parse-kv 運算符
+      - partition 運算符
+        [1204] partition 運算子
+      - print 運算符
+        [1212] print 運算子
+      - range 運算子
+        [1214] range 運算子
+      - reduce 運算符
+        [1217] reduce 運算子
+      - render 運算符
+        - render 運算符
+          [1222] render 運算子
+        - 視覺效果
+          - anomalychart
+            [1228] 異常圖表
+          - areachart
+            [1231] 區域圖表
+          - barchart
+            [1234] 橫條圖
+          - 卡片
+            [1240] 卡片
+          - columnchart
+            [1242] 直條圖
+          - 階梯圖
+            [1247] 階梯圖
+          - 折線圖
+            [1251] 折線圖
+          - piechart
+            [1256] 圓形圖
+          - 樞紐分析圖
+            [1259] 樞紐分析圖
+          - Plotly
+            [1262] 繪圖 (預覽)
+          - 散佈圖
+            [1266] 散佈圖
+          - stackedareachart
+            [1269] 堆疊區域圖
+          - table
+            [1272] 資料表
+          - timechart
+            [1274] 時間圖表
+          - timepivot
+            [1279] 時間樞紐
+          - 樹狀圖
+            [1282] 樹狀結構圖
+      - sample 運算符
+        [1284] sample 運算子
+      - sample-distinct 運算符
+        [1287] sample-distinct 運算子
+      - scan 運算符
+        [1289] 掃描運算子
+      - 搜尋運算子
+        [1306] search 運算子
+      - serialize 運算符
+        [1311] serialize 運算子
+      - 隨機查詢
+        [1314] 隨機查詢
+      - summarize 運算符
+        - summarize 運算符概觀
+          [1324] 
+        - 使用 hll（） 和 tdigest（）
+          [1330] 使用 hll() 和 tdigest()
+      - take 運算子
+        [1338] take 運算子
+      - top 運算子
+        [1340] top 運算子
+      - top-nested 運算符
+        [1342] 
+      - top-hitters 運算符
+        [1350] top-hitters 運算子
+      - union 運算符
+        [1353] union 運算子
+      - where 運算符
+        [1358] where 運算子
+    - 特殊函式
+      - cluster()
+        [1361] cluster()
+      - database()
+        [1364] database()
+      - external_table（）
+        [1367] external_table()
+      - 具體化（）
+        [1369] materialize()
+      - materialized_view（）
+        [1374] materialized_view () 函式
+      - 查詢結果快取
+        [1376] 查詢結果快取
+      - stored_query_result（）
+        [1380] stored_query_result ()
+      - table（）
+        [1383] table()
+      - toscalar（）
+        [1387] toscalar()
+    - Scalar 運算子
+      - 運算子之間
+        - 介於運算符之間
+          [1391] between 運算子
+        - ！between 運算符
+          [1394] !between 運算子
+      - 位二進位運算元
+        [1397] 位元 (二元) 運算子
+      - Datetime/timespan 算術
+        [1398] Datetime/timespan 算術
+      - in 運算子
+        - in 運算子
+          [1401] in 運算子
+        - in~ 運算符
+          [1407] in~ 運算子
+        - ！in 運算符
+          [1412] !in 運算子
+        - ！in~ 運算符
+          [1417] !in~ 運算子
+      - 邏輯或二進位運算符
+        [1422] 邏輯 (二元) 運算子
+      - 數值運算子
+        [1426] 數值運算子
+      - 字串運算子
+        - 字串運算子概觀
+          [1429] 字串運算子
+        - contains 運算符
+          [1434] contains 運算子
+        - contains_cs 運算子
+          [1437] contains_cs 運算子
+        - ！contains 運算符
+          [1439] !contains 運算子
+        - ！contains_cs 運算符
+          [1442] !contains_cs 運算子
+        - endswith 運算符
+          [1445] endswith 運算子
+        - endswith_cs 運算符
+          [1447] endswith_cs 運算子
+        - ！endswith 運算符
+          [1450] !endswith 運算子
+        - ！endswith_cs 運算符
+          [1453] !endswith_cs operator
+        - == （equals） 運算符
+          [1456] == (equals) 運算子
+        - =~ （等於） 運算符
+          [1459] =~ (等於) 運算子
+        - ！= （不等於） 運算符
+          [1462] != (不等於) 運算子
+        - ！~ （不等於） 運算符
+          [1464] !~ (不等於) 運算子
+        - has 運算符
+          [1466] has 運算子
+        - has_cs 運算符
+          [1469] has_cs運算符
+        - ！has 運算符
+          [1472] !has 運算子
+        - ！has_cs 運算符
+          [1475] !has_cs 運算子
+        - hasprefix 運算符
+          [1477] hasprefix 運算子
+        - hasprefix_cs 運算符
+          [1480] hasprefix_cs 運算子
+        - ！hasprefix 運算符
+          [1483] !hasprefix 運算子
+        - ！hasprefix_cs 運算符
+          [1486] !hasprefix_cs 運算子
+        - hassuffix 運算符
+          [1489] hassuffix 運算子
+        - hassuffix_cs運算符
+          [1492] hassuffix_cs 運算子
+        - ！hassuffix 運算符
+          [1495] !hassuffix 運算子
+        - ！hassuffix_cs 運算符
+          [1498] !hassuffix_cs 運算子
+        - has_all 運算符
+          [1501] has_all 運算子
+        - has_any 運算子
+          [1504] has_any 運算子
+        - in 運算子
+          [1509] in 運算子
+        - in~ 運算符
+          [1515] in~ 運算子
+        - ！in 運算符
+          [1520] !in 運算子
+        - ！in~ 運算符
+          [1525] !in~ 運算子
+        - 符合 regex 運算符
+          [1530] 符合 regex 運算符
+        - startswith 運算符
+          [1532] startswith 運算子
+        - startswith_cs 運算符
+          [1534] startswith_cs 運算子
+        - ！startswith 運算符
+          [1536] !startswith 運算子
+        - ！startswith_cs 運算符
+          [1539] !startswith_cs 運算子
+    - 純量函式
+      - 純量函式類型
+        [1541] 純量函式類型一覽
+      - abs（）
+        [1558] 發行項• 2024/01/18
+      - acos（）
+        [1560] acos()
+      - ago（）
+        [1561] ago()
+      - 周圍（）
+        [1563] around()
+      - array_concat（）
+        [1565] array_concat()
+      - array_iff（）
+        [1567] array_iff ()
+      - array_index_of（）
+        [1570] array_index_of()
+      - array_length（）
+        [1572] array_length()
+      - array_reverse（）
+        [1574] array_reverse()
+      - array_rotate_left（）
+        [1576] array_rotate_left()
+      - array_rotate_right（）
+        [1578] array_rotate_right()
+      - array_shift_left（）
+        [1580] array_shift_left()
+      - array_shift_right（）
+        [1583] array_shift_right()
+      - array_slice（）
+        [1586] array_slice()
+      - array_sort_asc（）
+        [1589] array_sort_asc()
+      - array_sort_desc（）
+        [1594] array_sort_desc()
+      - array_split（）
+        [1599] array_split()
+      - array_sum（）
+        [1601] array_sum()
+      - asin（）
+        [1603] 發行項• 2024/01/18
+      - assert（）
+        [1605] assert()
+      - atan（）
+        [1608] 發行項• 2024/01/18
+      - atan2（）
+        [1610] atan2()
+      - bag_has_key（）
+        [1612] bag_has_key ()
+      - bag_keys（）
+        [1615] bag_keys()
+      - bag_merge（）
+        [1617] bag_merge()
+      - bag_pack（）
+        [1619] bag_pack ()
+      - bag_pack_columns（）
+        [1623] bag_pack_columns ()
+      - bag_remove_keys（）
+        [1625] bag_remove_keys()
+      - bag_set_key（）
+        [1628] bag_set_key ()
+      - bag_zip（）
+        [1631] bag_zip ()
+      - base64_decode_toarray（）
+        [1635] base64_decode_toarray()
+      - base64_decode_tostring（）
+        [1637] base64_decode_tostring()
+      - base64_decode_toguid（）
+        [1639] base64_decode_toguid()
+      - base64_encode_fromarray（）
+        [1641] base64_encode_fromarray()
+      - base64_encode_tostring（）
+        [1643] base64_encode_tostring()
+      - base64_encode_fromguid（）
+        [1645] base64_encode_fromguid()
+      - beta_cdf（）
+        [1647] beta_cdf()
+      - beta_inv（）
+        [1649] beta_inv()
+      - beta_pdf（）
+        [1651] beta_pdf()
+      - bin（）
+        [1653] bin()
+      - bin_at（）
+        [1657] bin_at（）
+      - bin_auto（）
+        [1661] bin_auto()
+      - binary_and()
+        [1663] binary_and()
+      - binary_not()
+        [1664] 發行項• 2024/01/23
+      - binary_or()
+        [1666] binary_or()
+      - binary_shift_left()
+        [1667] binary_shift_left()
+      - binary_shift_right()
+        [1669] binary_shift_right()
+      - binary_xor()
+        [1671] binary_xor()
+      - bitset_count_ones（）
+        [1673] bitset_count_ones()
+      - case（）
+        [1675] case()
+      - ceiling（）
+        [1677] 發行項• 2024/01/10
+      - coalesce（）
+        [1679] coalesce()
+      - column_ifexists（）
+        [1681] 發行項• 2024/01/18
+      - convert_angle（）
+        [1683] convert_angle
+      - convert_energy（）
+        [1685] convert_energy
+      - convert_force（）
+        [1688] convert_force
+      - convert_length（）
+        [1690] convert_length
+      - convert_mass（）
+        [1693] convert_mass
+      - convert_speed（）
+        [1695] convert_speed
+      - convert_temperature（）
+        [1698] convert_temperature
+      - convert_volume（）
+        [1700] convert_volume
+      - cos（）
+        [1703] 發行項• 2024/01/23
+      - 科特（）
+        [1705] 發行項• 2024/01/18
+      - countof（）
+        [1707] countof()
+      - current_cluster_endpoint（）
+        [1709] current_cluster_endpoint()
+      - current_database（）
+        [1710] current_database()
+      - current_principal()
+        [1711] current_principal()
+      - current_principal_details（）
+        [1712] current_principal_details()
+      - current_principal_is_member_of（）
+        [1714] current_principal_is_member_of()
+      - cursor_after()
+        [1716] cursor_after()
+      - cursor_before_or_at()
+        [1718] cursor_before_or_at()
+      - cursor_current（）
+        [1719] cursor_current()
+      - datetime_add（）
+        [1720] 
+      - datetime_diff（）
+        [1722] datetime_diff()
+      - datetime_local_to_utc（）
+        [1724] datetime_local_to_utc ()
+      - datetime_part（）
+        [1727] 
+      - datetime_utc_to_local（）
+        [1730] datetime_utc_to_local ()
+      - dayofmonth（）
+        [1732] 發行項• 2024/01/10
+      - dayofweek（）
+        [1734] dayofweek()
+      - dayofyear（）
+        [1737] 發行項• 2024/01/18
+      - dcount_hll（）
+        [1739] dcount_hll()
+      - degrees（）
+        [1742] degrees()
+      - dynamic_to_json（）
+        [1744] dynamic_to_json()
+      - endofday（）
+        [1746] endofday()
+      - endofmonth（）
+        [1748] endofmonth()
+      - endofweek（）
+        [1750] endofweek()
+      - endofyear（）
+        [1752] endofyear()
+      - erf（）
+        [1754] erf()
+      - erfc（）
+        [1756] erfc()
+      - estimate_data_size（）
+        [1758] estimate_data_size()
+      - exp（）
+        [1760] exp()
+      - exp10（）
+        [1761] exp10()
+      - exp2（）
+        [1762] exp2()
+      - extent_id()
+        [1763] extent_id()
+      - extent_tags()
+        [1764] extent_tags()
+      - extract（）
+        [1766] extract()
+      - extract_all（）
+        [1768] extract_all()
+      - extract_json（）
+        [1772] extract_json ()
+      - format_bytes（）
+        [1774] format_bytes()
+      - format_datetime（）
+        [1776] format_datetime()
+      - format_ipv4（）
+        [1781] format_ipv4()
+      - format_ipv4_mask（）
+        [1783] format_ipv4_mask()
+      - format_timespan（）
+        [1785] format_timespan()
+      - gamma（）
+        [1789] gamma()
+      - geo_info_from_ip_address（）
+        [1790] geo_info_from_ip_address ()
+      - gettype（）
+        [1793] gettype()
+      - getyear（）
+        [1795] 發行項• 2024/01/18
+      - gzip_compress_to_base64_string（）
+        [1797] gzip_compress_to_base64_string()
+      - gzip_decompress_from_base64_string（）
+        [1799] gzip_decompress_from_base64_string()
+      - has_any_index（）
+        [1801] has_any_index()
+      - has_any_ipv4（）
+        [1803] has_any_ipv4()
+      - has_ipv4（）
+        [1806] has_ipv4()
+      - has_any_ipv4_prefix（）
+        [1809] has_any_ipv4_prefix()
+      - has_ipv4_prefix（）
+        [1812] has_ipv4_prefix()
+      - hash（）
+        [1815] hash()
+      - hash_combine（）
+        [1818] hash_combine()
+      - hash_many（）
+        [1820] hash_many()
+      - hash_md5（）
+        [1822] hash_md5()
+      - hash_sha1（）
+        [1824] hash_sha1()
+      - hash_sha256（）
+        [1826] 
+      - hash_xxhash64（）
+        [1828] hash_xxhash64()
+      - hll_merge（）
+        [1830] hll_merge()
+      - hourofday（）
+        [1833] 發行項• 2024/01/18
+      - iff（）
+        [1835] iff()
+      - indexof（）
+        [1837] indexof()
+      - indexof_regex（）
+        [1839] indexof_regex()
+      - ingestion_time()
+        [1841] 發行項• 2024/01/10
+      - ipv4_compare（）
+        [1843] ipv4_compare()
+      - ipv4_is_in_range（）
+        [1846] ipv4_is_in_range()
+      - ipv4_is_in_any_range（）
+        [1848] ipv4_is_in_any_range ()
+      - ipv4_is_match（）
+        [1852] ipv4_is_match()
+      - ipv4_is_private（）
+        [1855] ipv4_is_private()
+      - ipv4_range_to_cidr_list（）
+        [1858] ipv4_range_to_cidr_list ()
+      - ipv4_netmask_suffix（）
+        [1860] ipv4_netmask_suffix()
+      - ipv6_compare（）
+        [1862] ipv6_compare()
+      - ipv6_is_in_range（）
+        [1866] ipv6_is_in_range ()
+      - ipv6_is_in_any_range（）
+        [1868] ipv6_is_in_any_range ()
+      - ipv6_is_match（）
+        [1871] ipv6_is_match()
+      - isascii（）
+        [1875] 發行項• 2024/01/23
+      - isempty（）
+        [1877] 發行項• 2024/01/23
+      - isfinite（）
+        [1879] isfinite()
+      - isinf（）
+        [1881] isinf()
+      - isnan（）
+        [1883] isnan()
+      - isnotempty（）
+        [1885] isnotempty()
+      - isnotnull（）
+        [1887] isnotnull()
+      - isnull（）
+        [1889] isnull()
+      - isutf8（）
+        [1891] isutf8()
+      - jaccard_index（）
+        [1892] jaccard_index ()
+      - log（）
+        [1894] log()
+      - log10（）
+        [1896] log10()
+      - log2（）
+        [1898] log2()
+      - loggamma（）
+        [1900] loggamma()
+      - make_datetime（）
+        [1902] make_datetime()
+      - make_timespan（）
+        [1905] make_timespan()
+      - max_of（）
+        [1907] max_of()
+      - merge_tdigest（）
+        [1909] merge_tdigest()
+      - min_of（）
+        [1911] min_of()
+      - monthofyear（）
+        [1913] monthofyear()
+      - new_guid（）
+        [1915] new_guid()
+      - not（）
+        [1916] not()
+      - now（）
+        [1918] now()
+      - pack_all（）
+        [1921] pack_all()
+      - pack_array（）
+        [1924] pack_array()
+      - parse_command_line（）
+        [1926] parse_command_line()
+      - parse_csv（）
+        [1928] parse_csv()
+      - parse_ipv4（）
+        [1931] parse_ipv4()
+      - parse_ipv4_mask（）
+        [1933] parse_ipv4_mask()
+      - parse_ipv6（）
+        [1935] parse_ipv6()
+      - parse_ipv6_mask（）
+        [1937] parse_ipv6_mask()
+      - parse_json（）
+        [1940] parse_json()
+      - parse_path（）
+        [1942] 
+      - parse_url（）
+        [1944] parse_url()
+      - parse_urlquery（）
+        [1946] parse_urlquery()
+      - parse_user_agent（）
+        [1948] parse_user_agent()
+      - parse_version（）
+        [1951] parse_version()
+      - parse_xml（）
+        [1954] parse_xml()
+      - percentile_tdigest（）
+        [1957] percentile_tdigest()
+      - percentile_array_tdigest（）
+        [1960] percentile_array_tdigest()
+      - percentrank_tdigest（）
+        [1962] percentrank_tdigest()
+      - pi（）
+        [1964] pi()
+      - pow()
+        [1965] pow()
+      - punycode_from_string（）
+        [1967] punycode_from_string ()
+      - punycode_to_string（）
+        [1969] punycode_to_string ()
+      - punycode_domain_from_string（）
+        [1971] punycode_domain_from_string ()
+      - punycode_domain_to_string（）
+        [1973] punycode_domain_to_string ()
+      - radians（）
+        [1975] radians()
+      - rand()
+        [1977] rand()
+      - range（）
+        [1978] range()
+      - rank_tdigest（）
+        [1982] rank_tdigest()
+      - regex_quote（）
+        [1985] 發行項• 2024/01/23
+      - repeat（）
+        [1987] repeat()
+      - replace_regex（）
+        [1989] replace_regex()
+      - replace_string（）
+        [1991] replace_string()
+      - replace_strings（）
+        [1993] replace_strings ()
+      - reverse（）
+        [1997] reverse()
+      - round（）
+        [1999] 發行項• 2024/01/18
+      - set_difference（）
+        [2001] set_difference()
+      - set_has_element（）
+        [2003] set_has_element()
+      - set_intersect（）
+        [2005] set_intersect()
+      - set_union（）
+        [2007] set_union()
+      - sign（）
+        [2010] 發行項• 2024/01/18
+      - sin（）
+        [2012] sin()
+      - split（）
+        [2014] split()
+      - sqrt（）
+        [2016] sqrt()
+      - startofday（）
+        [2017] startofday()
+      - startofmonth（）
+        [2019] startofmonth()
+      - startofweek（）
+        [2021] startofweek()
+      - startofyear（）
+        [2023] startofyear()
+      - strcat（）
+        [2025] strcat()
+      - strcat_array（）
+        [2027] strcat_array()
+      - strcat_delim（）
+        [2029] strcat_delim()
+      - strcmp（）
+        [2031] strcmp()
+      - string_size（）
+        [2033] string_size()
+      - strlen（）
+        [2035] strlen()
+      - strrep（）
+        [2038] strrep()
+      - substring（）
+        [2040] substring()
+      - tan（）
+        [2042] tan()
+      - tobool（）
+        [2043] 發行項• 2024/01/23
+      - todatetime（）
+        [2045] todatetime()
+      - todecimal（）
+        [2047] todecimal()
+      - toguid（）
+        [2049] toguid()
+      - tohex（）
+        [2051] tohex()
+      - toint（）
+        [2053] toint()
+      - tolong（）
+        [2055] tolong()
+      - tolower（）
+        [2057] tolower()
+      - toreal（）
+        [2058] toreal()
+      - tostring（）
+        [2060] tostring()
+      - totimespan（）
+        [2061] 發行項• 2024/01/23
+      - toupper（）
+        [2063] toupper()
+      - translate（）
+        [2064] 發行項• 2024/01/23
+      - treepath（）
+        [2066] treepath()
+      - trim（）
+        [2068] trim()
+      - trim_end（）
+        [2071] trim_end()
+      - trim_start（）
+        [2073] trim_start()
+      - unicode_codepoints_from_string（）
+        [2075] unicode_codepoints_from_string ()
+      - unicode_codepoints_to_string（）
+        [2077] unicode_codepoints_to_string ()
+      - unixtime_microseconds_todatetime（）
+        [2080] unixtime_microseconds_todatetime()
+      - unixtime_milliseconds_todatetime（）
+        [2082] unixtime_milliseconds_todatetime()
+      - unixtime_nanoseconds_todatetime（）
+        [2084] unixtime_nanoseconds_todatetime()
+      - unixtime_seconds_todatetime（）
+        [2086] unixtime_seconds_todatetime()
+      - url_decode（）
+        [2088] url_decode()
+      - url_encode（）
+        [2090] url_encode()
+      - url_encode_component（）
+        [2092] url_encode_component()
+      - week_of_year（）
+        [2094] week_of_year()
+      - welch_test（）
+        [2096] welch_test()
+      - zip（）
+        [2098] zip()
+      - zlib_compress_to_base64_string（）
+        [2100] zlib_compress_to_base64_string()
+      - zlib_decompress_from_base64_string（）
+        [2102] zlib_decompress_from_base64_string()
+    - 彙總函數
+      - 聚合函數類型
+        [2104] 彙總函式類型速覽
+      - arg_max（）
+        [2107] arg_max() (彙總函式)
+      - arg_min（）
+        [2111] arg_min() (彙總函式)
+      - avg（）
+        [2115] avg() (彙總函數)
+      - avgif（）
+        [2117] avgif() (彙總函數)
+      - binary_all_and
+        [2119] binary_all_and() (彙總函數)
+      - binary_all_or
+        [2121] binary_all_or() (彙總函式)
+      - binary_all_xor
+        [2123] binary_all_xor() (彙總函式)
+      - buildschema（）
+        [2125] buildschema() (彙總函數)
+      - count（）
+        [2128] count() (彙總函式)
+      - count_distinct（）
+        [2130] count_distinct () (聚合函數) - (預覽)
+      - count_distinctif（）
+        [2132] count_distinctif () (聚合函數) - (預覽)
+      - countif（）
+        [2134] countif() (彙總函式)
+      - dcount（）
+        [2137] dcount() (彙總函式)
+      - dcountif（）
+        [2141] dcountif() (彙總函式)
+      - hll（）
+        [2145] 
+      - hll_if（）
+        [2149] hll_if () (聚合函數)
+      - hll_merge（）
+        [2152] 
+      - make_bag（）
+        [2155] make_bag() (彙總函式)
+      - make_bag_if（）
+        [2158] make_bag_if() (彙總函式)
+      - make_list（）
+        [2161] make_list() (彙總函式)
+      - make_list_if（）
+        [2165] make_list_if() (彙總函式)
+      - make_list_with_nulls（）
+        [2167] make_list_with_nulls() (彙總函式)
+      - make_set（）
+        [2169] make_set() (彙總函式)
+      - make_set_if（）
+        [2173] make_set_if() (aggregation function)
+      - max（）
+        [2175] max() (彙總函數)
+      - maxif（）
+        [2177] maxif() (彙總函數)
+      - min（）
+        [2179] min() (彙總函式)
+      - minif（）
+        [2181] minif() (彙總函式)
+      - percentile（）， percentiles（）
+        [2183] 
+      - percentilew（）， percentilesw（）
+        [2188] percentilew () ， percentilesw () (聚合函數)
+      - stdev（）
+        [2193] stdev() (彙總函式)
+      - stdevif（）
+        [2195] stdevif() (彙總函式)
+      - stdevp（）
+        [2197] stdevp() (彙總函式)
+      - sum（）
+        [2199] sum() (彙總函式)
+      - sumif（）
+        [2201] sumif() (彙總函式)
+      - take_any（）
+        [2204] take_any() (彙總函式)
+      - take_anyif（）
+        [2207] take-anyif() (彙總函式)
+      - tdigest（）
+        [2209] 
+      - tdigest_merge（）， merge_tdigest（）
+        [2211] 
+      - 變異數（）
+        [2213] variance() (彙總函式)
+      - varianceif（）
+        [2215] varianceif () (彙總函式)
+      - variancep（）
+        [2217] variancep() (彙總函式)
+    - 圖形運算元
+      - 圖形運算子概觀
+        [2219] Graph 運算子 (Preview)
+      - make-graph
+        [2221] make-graph 運算符 (Preview)
+      - graph-match
+        [2224] (Preview) 圖表比對運算符
+      - graph-to-table
+        [2230] (Preview) 圖表對數據表運算元
+    - 地理空間
+      - 地理空間叢集概觀
+        [2236] 地理空間叢集
+      - 地理空間視覺效果
+        [2239] 地理空間視覺效果
+      - geo_angle（）
+        [2244] geo_angle ()
+      - geo_azimuth（）
+        [2247] geo_azimuth ()
+      - geo_distance_2points（）
+        [2251] geo_distance_2points()
+      - geo_distance_point_to_line（）
+        [2255] geo_distance_point_to_line()
+      - geo_distance_point_to_polygon（）
+        [2262] geo_distance_point_to_polygon()
+      - geo_intersects_2lines（）
+        [2270] geo_intersects_2lines()
+      - geo_intersects_2polygons（）
+        [2273] geo_intersects_2polygons()
+      - geo_intersects_line_with_polygon（）
+        [2277] geo_intersects_line_with_polygon()
+      - geo_intersection_2lines（）
+        [2282] geo_intersection_2lines ()
+      - geo_intersection_2polygons（）
+        [2286] geo_intersection_2polygons ()
+      - geo_intersection_line_with_polygon（）
+        [2291] geo_intersection_line_with_polygon ()
+      - geo_line_buffer（）
+        [2298] geo_line_buffer ()
+      - geo_line_centroid（）
+        [2301] geo_line_centroid()
+      - geo_line_densify（）
+        [2305] geo_line_densify()
+      - geo_line_length（）
+        [2309] geo_line_length()
+      - geo_line_simplify（）
+        [2312] geo_line_simplify ()
+      - geo_line_to_s2cells（）
+        [2317] geo_line_to_s2cells ()
+      - geo_polygon_area（）
+        [2320] geo_polygon_area()
+      - geo_polygon_buffer（）
+        [2324] geo_polygon_buffer ()
+      - geo_polygon_centroid（）
+        [2328] geo_polygon_centroid()
+      - geo_polygon_densify（）
+        [2333] geo_polygon_densify()
+      - geo_polygon_perimeter（）
+        [2337] geo_polygon_perimeter()
+      - geo_polygon_simplify（）
+        [2340] geo_polygon_simplify ()
+      - geo_polygon_to_s2cells（）
+        [2345] geo_polygon_to_s2cells()
+      - geo_polygon_to_h3cells（）
+        [2356] geo_polygon_to_h3cells ()
+      - geo_point_buffer（）
+        [2359] geo_point_buffer ()
+      - geo_point_in_circle（）
+        [2362] geo_point_in_circle()
+      - geo_point_in_polygon（）
+        [2367] geo_point_in_polygon()
+      - geo_point_to_geohash（）
+        [2382] geo_point_to_geohash()
+      - geo_point_to_h3cell（）
+        [2387] geo_point_to_h3cell()
+      - geo_point_to_s2cell（）
+        [2392] geo_point_to_s2cell()
+      - geo_geohash_to_central_point（）
+        [2398] geo_geohash_to_central_point()
+      - geo_geohash_neighbors（）
+        [2401] geo_geohash_neighbors ()
+      - geo_geohash_to_polygon（）
+        [2405] geo_geohash_to_polygon()
+      - geo_s2cell_to_central_point（）
+        [2408] geo_s2cell_to_central_point()
+      - geo_s2cell_neighbors（）
+        [2410] geo_s2cell_neighbors ()
+      - geo_s2cell_to_polygon（）
+        [2414] geo_s2cell_to_polygon()
+      - geo_h3cell_to_central_point（）
+        [2417] geo_h3cell_to_central_point()
+      - geo_h3cell_neighbors（）
+        [2420] geo_h3cell_neighbors ()
+      - geo_h3cell_to_polygon（）
+        [2424] geo_h3cell_to_polygon()
+      - geo_h3cell_parent（）
+        [2427] geo_h3cell_parent()
+      - geo_h3cell_children（）
+        [2431] geo_h3cell_children()
+      - geo_h3cell_level（）
+        [2435] geo_h3cell_level()
+      - geo_h3cell_rings（）
+        [2437] 
+      - geo_simplify_polygons_array（）
+        [2440] geo_simplify_polygons_array ()
+      - geo_union_lines_array（）
+        [2444] geo_union_lines_array ()
+      - geo_union_polygons_array（）
+        [2448] geo_union_polygons_array()
+    - 時間序列分析
+      - 範例使用案例
+        - 時間序列分析
+          [2452] 時間序列分析
+        - 異常偵測和預測
+          [2462] 異常偵測和預測
+        - 根本原因分析的異常診斷
+          [2467] 
+      - make-series 運算符
+        [2473] make-series 運算子
+      - series_abs（）
+        [2481] series_abs()
+      - series_acos（）
+        [2483] series_acos()
+      - series_add（）
+        [2485] series_add()
+      - series_asin（）
+        [2487] series_asin()
+      - series_atan（）
+        [2489] series_atan()
+      - series_ceiling（）
+        [2491] series_ceiling ()
+      - series_cos（）
+        [2493] series_cos()
+      - series_cosine_similarity（）
+        [2495] series_cosine_similarity ()
+      - series_decompose（）
+        [2497] series_decompose()
+      - series_decompose_anomalies（）
+        [2502] series_decompose_anomalies()
+      - series_decompose_forecast（）
+        [2507] series_decompose_forecast()
+      - series_divide（）
+        [2510] series_divide()
+      - series_dot_product（）
+        [2512] series_dot_product ()
+      - series_equals（）
+        [2515] series_equals()
+      - series_exp（）
+        [2517] series_exp()
+      - series_fft（）
+        [2519] series_fft()
+      - series_fill_backward（）
+        [2522] series_fill_backward()
+      - series_fill_const（）
+        [2524] 
+      - series_fill_forward（）
+        [2526] series_fill_forward()
+      - series_fill_linear（）
+        [2528] 
+      - series_fir（）
+        [2530] series_fir()
+      - series_fit_2lines（）
+        [2533] series_fit_2lines()
+      - series_fit_2lines_dynamic（）
+        [2536] series_fit_2lines_dynamic()
+      - series_fit_line（）
+        [2539] series_fit_line()
+      - series_fit_line_dynamic（）
+        [2541] series_fit_line_dynamic()
+      - series_fit_poly（）
+        [2543] series_fit_poly()
+      - series_floor（）
+        [2548] series_floor ()
+      - series_greater（）
+        [2550] series_greater()
+      - series_greater_equals（）
+        [2552] series_greater_equals()
+      - series_ifft（）
+        [2554] series_ifft()
+      - series_iir（）
+        [2556] series_iir()
+      - series_less（）
+        [2559] series_less()
+      - series_less_equals（）
+        [2561] series_less_equals()
+      - series_log（）
+        [2563] series_log ()
+      - series_magnitude（）
+        [2565] series_magnitude ()
+      - series_multiply（）
+        [2567] series_multiply()
+      - series_not_equals（）
+        [2569] series_not_equals()
+      - series_outliers（）
+        [2571] series_outliers()
+      - series_pearson_correlation（）
+        [2574] series_pearson_correlation()
+      - series_periods_detect（）
+        [2576] series_periods_detect()
+      - series_periods_validate（）
+        [2579] series_periods_validate()
+      - series_pow（）
+        [2582] series_pow()
+      - series_seasonal（）
+        [2584] 
+      - series_sign（）
+        [2586] series_sign()
+      - series_sin（）
+        [2588] series_sin()
+      - series_stats（）
+        [2590] 
+      - series_stats_dynamic（）
+        [2592] series_stats_dynamic()
+      - series_subtract（）
+        [2594] series_subtract()
+      - series_sum（）
+        [2596] series_sum ()
+      - series_tan（）
+        [2598] series_tan()
+    - 外掛程式
+      - 一般外掛程式
+        - dcount_intersect外掛程式
+          [2600] dcount_intersect 外掛程式
+        - infer_storage_schema外掛程式
+          [2602] infer_storage_schema 外掛程式
+        - ipv4_lookup外掛程式
+          [2605] 
+        - 預覽外掛程式
+          [2609] preview 外掛程式
+        - schema_merge外掛程式
+          [2611] schema_merge 外掛程式
+      - 數據重塑外掛程式
+        - bag_unpack外掛程式
+          [2614] bag_unpack 外掛程式
+        - 窄外掛程式
+          [2621] narrow 外掛程式
+        - pivot 外掛程式
+          [2624] pivot 外掛程式
+      - 語言外掛程式
+        - Python 外掛程式
+          [2630] Python 外掛程式
+        - R 外掛程式
+          [2638] R 外掛程式 (預覽)
+      - 機器學習外掛程式
+        - autocluster 外掛程式
+          [2645] autocluster 外掛程式
+        - 購物籃外掛程式
+          [2649] basket 外掛程式
+        - diffpatterns 外掛程式
+          [2653] 
+        - diffpatterns_text外掛程式
+          [2656] diffpatterns_text 外掛程式
+      - 查詢連線外掛程式
+        - azure_digital_twins_query_request外掛程式
+          [2659] azure_digital_twins_query_request 外掛程式
+        - cosmosdb_sql_request外掛程式
+          [2662] 
+        - http_request外掛程式
+          [2666] 
+        - http_request_post外掛程式
+          [2669] http_request_post外掛程式
+        - mysql_request外掛程式
+          [2672] mysql_request外掛程式
+        - postgresql_request外掛程式
+          [2677] postgresql_request外掛程式
+        - sql_request 外掛程式
+          [2682] sql_request 外掛程式
+      - 用戶和順序分析外掛程式
+        - 使用者分析外掛程式概觀
+          [2687] 使用者分析外掛程式
+        - active_users_count外掛程式
+          [2689] active_users_count 外掛程式
+        - activity_counts_metrics外掛程式
+          [2693] activity_counts_metrics plugin
+        - activity_engagement外掛程式
+          [2696] 
+        - activity_metrics外掛程式
+          [2700] 
+        - new_activity_metrics外掛程式
+          [2706] 
+        - funnel_sequence_completion外掛程式
+          [2711] funnel_sequence_completion plugin
+        - funnel_sequence外掛程式
+          [2714] funnel_sequence plugin
+        - rolling_percentile外掛程式
+          [2721] rolling_percentile() 外掛程式
+        - rows_near外掛程式
+          [2725] rows_near() 外掛程式
+        - sequence_detect外掛程式
+          [2727] sequence_detect 外掛程式
+        - session_count外掛程式
+          [2730] session_count plugin
+        - sliding_window_counts外掛程式
+          [2734] sliding_window_counts 外掛程式
+    - 視窗函數
+      - 視窗函式概觀
+        [2737] Window 函式概觀
+      - next（）
+        [2739] next()
+      - prev（）
+        [2743] prev()
+      - row_cumsum（）
+        [2747] row_cumsum()
+      - row_number（）
+        [2750] row_number()
+      - row_rank_dense（）
+        [2753] row_rank_dense ()
+      - row_rank_min（）
+        [2756] row_rank_min ()
+      - row_window_session（）
+        [2758] row_window_session()
+    - 限制和錯誤
+      - 查詢一致性
+        [2760] 查詢一致性
+      - 查詢限制
+        [2763] 查詢限制
+      - 部分查詢失敗
+        [2770] 部分查詢失敗
+        - 結果截斷
+          [2771] 查詢結果集已超過內部的...限制
+        - 失控查詢
+          [2772] 失控查詢
+        - 溢位
+          [2773] 溢出
+    - Kusto 查詢語言 的參考數據
+      - RE2 語法
+        [2774] RE2 語法
+      - JSONPath 語法
+        [2794] JSONPath 運算式
+      - SQL 對 Kusto 的功能提要
+        [2796] SQL 到 Kusto 查詢語言 速查表
+      - Splunk 至 Kusto 速查表
+        [2800] Splunk 至 Kusto 查詢語言對應
+      - 時區
+        [2807] 時區
+    - 查詢工具
+      - Kusto.Explorer
+        - Kusto.Explorer 安裝和用戶介面
+          [2831] Kusto. Explorer 安裝和使用者介面
+        - 使用 Kusto.Explorer
+          [2846] 使用 Kusto.Explorer
+        - Kusto.Explorer 選項
+          [2856] Kusto Explorer 選項
+        - 鍵盤快速鍵
+          [2862] Kusto.Explorer 鍵盤快速鍵 (熱鍵)
+        - Kusto.Explorer 程式代碼功能
+          [2870] Kusto.Explorer 程式代碼功能
+        - 針對 Kusto.Explorer 進行疑難解答
+          [2874] 疑難排解
+      - Kusto.Cli
+        [2880] Kusto CLI
+      - 適用於 Azure Data Studio >> 的 Kusto 擴充功能
+        [2887] 適用於 Azure Data Studio 的 Kusto (KQL)延伸模組 (預覽)
+  - 管理命令
+    - 管理命令概觀
+      [2893] 管理命令概觀
+    - 工作負載群組
+      - 工作負載群組概觀
+        [2895] 工作負載群組
+      - 工作負載群組命令
+        - .alter-merge workload_group 命令
+          [2899] .alter-merge workload_group 命令
+        - .create-or-alter workload_group 命令
+          [2905] .create-or-alter workload_group 命令
+        - .drop workload_group 命令
+          [2910] .drop workload_group 命令
+        - .show workload_group 命令
+          [2914] .show workload_group 命令
+      - 要求分類原則
+        - 要求分類原則
+          [2916] 要求分類原則
+        - .alter cluster policy request_classification 命令
+          [2920] 
+        - .alter-merge 叢集原則 request_classification 命令
+          [2923] 
+        - .delete 叢集原則 request_classification 命令
+          [2925] .delete 叢集原則request_classification命令
+        - .show 叢集原則request_classification命令
+          [2927] 
+      - 要求限制原則
+        [2929] 
+      - 要求速率限制原則
+        [2933] 
+      - 要求速率限制強制執行原則
+        [2938] 要求速率限制強制執行原則
+      - 要求佇列原則
+        [2941] 要求佇列原則 (預覽)
+      - 查詢一致性原則
+        [2942] 
+    - 結構描述
+      - 結構描述管理的最佳做法
+        [2944] 發行項• 2023/03/21
+      - 叢集
+        - .execute 叢集腳本命令
+          [2946] .execute 叢集腳本命令
+      - 資料庫
+        [2949] 管理資料庫
+        - .show databases 命令
+          [2950] .show databases 命令
+        - .show 資料庫命令
+          [2951] .show 資料庫命令
+        - .show 叢集資料庫命令
+          [2955] .show 叢集資料庫命令
+        - .alter database prettyname 命令
+          [2957] .alter database prettyname 命令
+        - .show 資料庫架構命令
+          [2959] 
+        - .show 資料庫架構違規
+          [2964] .show database schema violations
+        - .show databases entities 命令
+          [2966] 
+        - .execute 資料庫腳本命令
+          [2969] .execute 資料庫腳本命令
+      - 資料表
+        - 數據表管理
+          [2973] 資料表管理
+        - .alter-merge table 命令
+          [2975] .alter-merge table 命令
+        - .alter table 命令
+          [2977] .alter table 命令
+        - .alter table docstring 命令
+          [2980] 發行項• 2024/01/23
+        - .alter table folder 命令
+          [2982] .alter table folder 命令
+        - .alter 擷取對應命令
+          [2984] 
+        - .create ingestion mapping 命令
+          [2987] 
+        - .create-or-alter 擷取對應命令
+          [2989] .create-or-alter ingestion 對應命令
+        - .drop 擷取對應命令
+          [2992] .drop 擷取對應命令
+        - .show 擷取對應
+          [2994] 
+        - .create table 命令
+          [2996] .create table 命令
+        - .create table based-on 命令
+          [2998] .create table based-on 命令
+        - .create tables 命令
+          [3001] .create tables 命令
+        - .create-merge table 命令
+          [3003] .create-merge table 命令
+        - .create-merge tables 命令
+          [3005] .create-merge tables 命令
+        - .drop table 命令
+          [3007] .drop table 命令
+        - .rename table 命令
+          [3009] .rename table 命令
+        - .show tables 命令
+          [3012] .show tables 命令
+        - .undo drop table 命令
+          [3014] .undo drop table 命令
+        - .show 數據表詳細數據命令
+          [3017] 
+        - .show 數據表架構命令
+          [3019] .show 數據表架構命令
+        - .clear 數據表數據命令
+          [3021] .clear 數據表數據命令
+      - 外部表格
+        - Azure 儲存體 外部數據表
+          - 建立或改變 Azure Blob 儲存體/ADLS 外部數據表
+            [3023] 
+          - 建立或改變差異外部數據表
+            [3029] 在 Azure 記憶體上建立和改變差異外部數據表
+          - 管理外部數據表對應
+            - .alter external table mapping 命令
+              [3033] 發行項• 2023/08/02
+            - .create external table mapping 命令
+              [3035] 發行項• 2023/08/02
+            - .drop 外部數據表對應命令
+              [3037] .drop 外部資料表對應命令
+            - .show 外部數據表對應命令
+              [3038] 發行項• 2023/08/02
+          - .show external table artifacts 命令
+            [3040] 
+        - Azure SQL 外部數據表
+          - 建立和改變 Azure SQL 外部數據表
+            [3042] 建立和改變 Azure SQL 外部數據表
+          - 查詢 Azure SQL 外部數據表
+            [3048] 查詢 SQL 外部數據表
+          - 將數據列層級安全性套用至 Azure SQL 外部數據表
+            [3049] 在 Azure SQL 外部數據表上套用數據列層級安全性
+        - .drop 外部數據表命令
+          [3053] .drop 外部數據表命令
+        - .show external table 命令
+          [3055] .show 外部數據表命令
+        - .show 外部數據表架構命令
+          [3057] 
+      - 具體化檢視
+        - 具體化檢視概觀
+          [3059] 具體化檢視
+        - 具體化檢視限制
+          [3065] 具體化檢視限制和已知問題
+        - 具體化檢視原則
+          [3067] 具體化檢視原則
+        - 具體化檢視使用案例
+          [3070] 具體化檢視使用案例
+        - 具體化檢視數據清除
+          [3074] 具體化檢視資料清除
+        - 監視具體化檢視
+          [3076] 監視具體化檢視
+        - .alter materialized-view
+          [3079] 
+        - .alter materialized-view autoUpdateSchema
+          [3082] 
+        - .alter materialized-view docstring
+          [3084] 
+        - .alter materialized-view 資料夾
+          [3086] 
+        - .alter materialized-view lookback
+          [3088] 
+        - .clear 具體化檢視數據
+          [3090] .clear materialized-view data
+        - .create materialized-view
+          [3092] .create materialized-view
+        - .create-or-alter materialized-view
+          [3108] 
+        - .disable | .enable materialized-view
+          [3111] 
+        - .drop materialized-view
+          [3114] 
+        - .rename materialized-view
+          [3116] 
+        - .show materialized-view（s）
+          [3118] 
+        - .show 具體化檢視架構
+          [3120] .show materialized-view schema
+        - .show 具體化檢視範圍
+          [3123] 
+        - .show 具體化檢視失敗
+          [3125] .show materialized-view 失敗
+        - .show materialized-view（s） 詳細數據
+          [3127] 
+      - 預存查詢結果
+        - 預存查詢結果
+          [3129] 發行項• 2024/04/12
+        - .set 預存查詢結果命令
+          [3131] .set stored_query_result 命令
+        - .show stored_query_result 命令
+          [3134] 
+        - .drop stored_query_result 命令
+          [3136] 
+      - 資料行
+        - 數據行管理
+          [3138] 資料行管理
+        - .alter column 命令
+          [3139] .alter column 命令
+        - .drop column 命令
+          [3142] .drop column 命令
+        - .rename 資料行命令
+          [3145] .rename 資料行命令
+        - .alter table column-docstrings 命令
+          [3147] .alter table column-docstrings 命令
+        - .alter-merge table column-docstrings 命令
+          [3149] 發行項• 2024/01/23
+      - 擷取對應
+        - 擷取對應概觀
+          [3151] 擷取對應
+        - CSV 對應
+          [3156] CSV 對應
+        - JSON 對應
+          [3159] JSON 對應
+        - AVRO 對應
+          [3162] AVRO 對應
+        - Parquet 對應
+          [3165] PARQUET 對應
+        - ORC 對應
+          [3170] ORC 對應
+        - W3CLOGFILE對應
+          [3173] W3CLOGFILE 對應
+      - 函式
+        - 預存函式管理概觀
+          [3176] 預存函數管理概觀
+        - .alter 函式命令
+          [3177] .alter 函式命令
+        - .alter 函式 docstring 命令
+          [3179] .alter 函式 docstring 命令
+        - .alter function folder 命令
+          [3181] .alter function folder 命令
+        - .create 函式命令
+          [3183] .create 函式命令
+        - .create-or-alter 函式命令
+          [3186] .create-or-alter 函式命令
+        - .drop 函式命令
+          [3188] .drop 函式命令
+        - .show functions 命令
+          [3190] .show functions 命令
+    - 原則
+      - 原則概觀
+        [3193] Policies overview
+      - 自動刪除
+        - 自動刪除原則
+          [3195] 自動刪除原則
+        - .alter table policy auto_delete 命令
+          [3196] .alter 數據表原則auto_delete命令
+        - .delete 數據表原則auto_delete命令
+          [3198] .delete 數據表原則auto_delete命令
+        - .show 數據表原則auto_delete命令
+          [3200] .show 數據表原則auto_delete命令
+      - 快取
+        - 快取原則 （經常性快取和冷快取）
+          [3202] 快取原則 (經常性快取和冷快取)
+        - .alter cluster caching policy 命令
+          [3205] .alter 叢集快取原則命令
+        - .alter 資料庫原則快取命令
+          [3207] 
+        - .alter 具體化檢視原則快取命令
+          [3209] .alter 具體化檢視原則快取命令
+        - .alter table policy caching 命令
+          [3211] .alter table policy caching 命令
+        - .delete 資料庫原則快取命令
+          [3213] .delete 資料庫原則快取命令
+        - .delete 具體化檢視原則快取命令
+          [3215] .delete 具體化檢視原則快取命令
+        - .delete 數據表原則快取命令
+          [3216] .delete 數據表原則快取命令
+        - .show 資料庫原則快取命令
+          [3218] 發行項• 2024/01/23
+        - .show 具體化檢視原則快取命令
+          [3220] .show 具體化檢視原則快取命令
+        - .show 數據表原則快取命令
+          [3221] .show 數據表原則快取命令
+      - 圖說文字
+        - 註標原則
+          [3223] 註標原則
+        - .alter 叢集原則註標命令
+          [3226] .alter 叢集原則圖說文字命令
+        - .alter-merge 叢集原則註標命令
+          [3228] .alter-merge 叢集原則圖說文字命令
+        - .delete 叢集原則註標命令
+          [3230] .delete 叢集原則圖說文字命令
+        - .show 叢集原則註標命令
+          [3232] .show 叢集原則圖說文字命令
+      - Capacity
+        - 容量原則
+          [3234] 產能原則
+        - .alter cluster policy capacity 命令
+          [3241] .alter 叢集原則容量命令
+        - .alter-merge 叢集原則容量命令
+          [3244] .alter-merge 叢集原則容量命令
+        - .show 叢集原則容量命令
+          [3246] .show 叢集原則容量命令
+        - .show capacity 命令
+          [3247] .show capacity 命令
+      - 編碼原則
+        - 編碼原則
+          [3249] 編碼原則
+        - .alter 數據行原則編碼命令
+          [3250] .alter 數據行原則編碼命令
+        - .show 原則編碼命令
+          [3252] .show 原則編碼命令
+      - 範圍標籤保留
+        - 範圍卷標保留原則
+          [3254] 範圍標籤保留原則
+        - .alter database policy extent_tags_retention 命令
+          [3256] .alter 資料庫原則extent_tags_retention命令
+        - .alter table policy extent_tags_retention 命令
+          [3258] .alter 數據表原則extent_tags_retention命令
+        - .delete 範圍標籤保留原則命令
+          [3260] .delete 範圍標籤保留原則命令
+        - .show policy extent_tags_retention 命令
+          [3262] 發行項• 2024/01/18
+      - 擷取批處理
+        - 擷取批處理原則
+          [3264] 內嵌批次處理原則
+        - .alter 資料庫原則擷取batching 命令
+          [3267] .alter 資料庫原則 ingestionbatching 命令
+        - .alter-merge 資料庫原則擷取batching 命令
+          [3269] .alter-merge 資料庫原則ingestionbatching 命令
+        - .alter table policy ingestionbatching 命令
+          [3271] .alter 數據表原則擷取batching 命令
+        - .alter-merge 數據表原則擷取batching 命令
+          [3274] .alter-merge 數據表原則擷取batching 命令
+        - .delete 資料庫原則擷取batching 命令
+          [3276] .delete 資料庫原則擷取batching 命令
+        - .delete 數據表原則擷取batching 命令
+          [3278] .delete 數據表原則擷取batching 命令
+        - .show 資料庫原則擷取batching 命令
+          [3280] .show 資料庫原則擷取batching 命令
+        - .show 數據表原則擷取batching 命令
+          [3282] .show 數據表原則擷取batching 命令
+      - 擷取時間
+        - 擷取時間原則
+          [3284] IngestionTime 原則
+        - .alter table policy ingestiontime 命令
+          [3285] .alter 數據表原則擷取time 命令
+        - .delete 數據表原則擷取time 命令
+          [3287] .delete 數據表原則 ingestiontime 命令
+        - .show 數據表原則擷取time 命令
+          [3288] 發行項• 2024/01/23
+      - 受控識別
+        - 受控識別原則
+          [3290] 受控識別原則
+        - .alter policy managed_identity 命令
+          [3292] .alter policy managed_identity 命令
+        - .alter-merge policy managed_identity 命令
+          [3295] .alter-merge 原則managed_identity命令
+        - .delete policy managed_identity 命令
+          [3298] .delete policy managed_identity 命令
+        - .show policy managed_identity 命令
+          [3300] .show 原則managed_identity命令
+      - 合併
+        - 合併原則
+          [3302] 合併原則
+        - .alter 資料庫原則合併命令
+          [3305] .alter 資料庫原則合併命令
+        - .alter materialized-view policy merge 命令
+          [3307] .alter materialized-view policy merge 命令
+        - .alter table policy merge 命令
+          [3309] .alter 資料表原則合併命令
+        - .alter-merge 資料庫原則合併命令
+          [3311] .alter-merge 資料庫原則合併命令
+        - .alter-merge 數據表原則合併命令
+          [3313] 發行項• 2024/01/23
+        - .alter-merge 具體化檢視原則合併命令
+          [3315] .alter-merge materialized-view policymerge 命令
+        - .delete 資料庫原則合併命令
+          [3317] .delete 資料庫原則合併命令
+        - .delete 資料表原則合併命令
+          [3318] .delete 資料表原則合併命令
+        - .show 資料庫原則合併命令
+          [3319] 發行項• 2024/01/23
+        - .show 數據表原則合併命令
+          [3321] 發行項• 2024/01/23
+      - 資料分割
+        - 數據分割原則
+          [3323] 資料分割原則
+        - .alter materialized-view policy partitioning 命令
+          [3332] .alter materialized-view 原則數據分割命令
+        - .alter table policy partitioning 命令
+          [3334] .alter 數據表原則數據分割命令
+        - .alter-merge 具體化檢視分割原則命令
+          [3337] 發行項• 2024/01/23
+        - .alter-merge 數據表原則分割命令
+          [3339] .alter-merge 數據表原則數據分割命令
+        - .delete 具體化檢視原則分割命令
+          [3341] .delete 具體化檢視原則分割命令
+        - .delete 資料表原則分割命令
+          [3342] .delete 資料表原則分割命令
+        - .show 具體化檢視原則分割命令
+          [3343] .show materialized-view policypartitioning 命令
+        - .show 數據表原則分割命令
+          [3345] 發行項• 2024/01/23
+        - .show database extents partitioning statistics 命令
+          [3347] 發行項• 2024/01/23
+      - 查詢弱式一致性
+        - 查詢弱式一致性原則
+          [3349] 
+        - .alter cluster policy query_weak_consistency 命令
+          [3351] 
+        - .show 叢集原則query_weak_consistency命令
+          [3354] 
+      - 限制檢視存取
+        - 受限制的檢視存取原則
+          [3355] 受限的檢視存取原則
+        - .alter table policy restricted_view_access 命令
+          [3357] .alter table policy restricted_view_access命令
+        - .delete 數據表原則restricted_view_access命令
+          [3359] .delete 數據表原則restricted_view_access命令
+        - .show 數據表原則restricted_view_access命令
+          [3360] .show 數據表原則restricted_view_access命令
+      - 保留
+        - 保留原則
+          [3362] 保留原則
+        - .alter 資料庫原則保留命令
+          [3367] .alter 資料庫原則保留命令
+        - .alter materialized-view 原則保留命令
+          [3369] .alter materialized-view 原則保留命令
+        - .alter table policy retention 命令
+          [3371] .alter table retention policy 命令
+        - .alter-merge 資料庫原則保留命令
+          [3373] .alter-merge 資料庫原則保留命令
+        - .alter-merge 具體化檢視原則保留命令
+          [3375] 發行項• 2024/01/23
+        - .alter-merge 數據表原則保留命令
+          [3377] .alter-merge 數據表原則保留命令
+        - .delete 資料庫原則保留命令
+          [3379] .delete 資料庫原則保留命令
+        - .delete 具體化檢視原則保留命令
+          [3381] .delete 具體化檢視原則保留命令
+        - .delete 數據表原則保留命令
+          [3382] .delete 數據表原則保留命令
+        - .show 資料庫原則保留命令
+          [3384] .show 資料庫原則保留命令
+        - .show 具體化檢視原則保留命令
+          [3386] .show 具體化檢視原則保留命令
+        - .show 數據表原則保留命令
+          [3388] .show 數據表原則保留命令
+      - 資料列層級安全性
+        - 數據列層級安全策略
+          [3390] 資料列層級安全性
+        - .alter materialized-view policy row_level_security 命令
+          [3396] .alter materialized-view policyrow_level_security 命令
+        - .alter table policy row_level_security 命令
+          [3398] .alter table policy row_level_security 命令
+        - .delete 具體化檢視原則 row_level_security 命令
+          [3400] .delete 具體化檢視原則row_level_security命令
+        - .delete 數據表原則 row_level_security 命令
+          [3402] .delete 數據表原則row_level_security命令
+        - .show materialized-view policy row_level_security 命令
+          [3404] 發行項• 2024/01/23
+        - .show 數據表原則row_level_security命令
+          [3406] 發行項• 2024/01/18
+      - 數據列順序
+        - 數據列順序原則命令
+          [3408] 資料列順序原則
+        - .alter table policy roworder 命令
+          [3409] .alter table policy roworder 命令
+        - .alter-merge 數據表原則 roworder 命令
+          [3411] .alter-merge 數據表原則 roworder 命令
+        - .delete 數據表原則 roworder 命令
+          [3413] .delete 數據表原則 roworder 命令
+        - .show 數據表原則 roworder 命令
+          [3414] 發行項• 2024/01/23
+      - 沙箱
+        - 使用沙箱
+          [3416] 沙箱
+        - 在非新式 SKU 中使用沙盒
+          [3420] VM 大小的沙箱不支援巢狀虛擬化
+        - 沙箱原則
+          [3422] 沙箱原則
+        - .alter 叢集原則沙盒命令
+          [3424] .alter 叢集原則沙盒命令
+        - .delete 叢集原則沙盒命令
+          [3426] .delete 叢集原則沙箱命令
+        - .show 叢集原則沙盒命令
+          [3427] .show 叢集原則沙箱命令
+      - 分區化
+        - 分區化原則
+          [3428] 發行項• 2024/01/16
+        - .alter 資料庫原則分區化命令
+          [3430] .alter 資料庫原則分區化命令
+        - .alter table policy sharding 命令
+          [3432] .alter 數據表原則分區化命令
+        - .alter-merge 資料庫原則分區化
+          [3434] .alter-merge 資料庫原則分區化命令
+        - .alter-merge 數據表原則分區化命令
+          [3436] .alter-merge 數據表原則分區化命令
+        - .delete 資料庫原則分區化命令
+          [3438] .delete 資料庫原則分區化命令
+        - .delete 數據表原則分區化命令
+          [3440] .delete 數據表原則分區化命令
+        - .show 資料庫原則分區化命令
+          [3442] .show 資料庫原則分區化命令
+        - .show 數據表原則分區化命令
+          [3444] .show 數據表原則分區化命令
+      - 串流擷取
+        - 串流內嵌原則
+          [3446] 串流內嵌原則
+        - .alter 資料庫原則串流擷取命令
+          [3448] .alter 資料庫原則串流擷取命令
+        - .alter table policy streamingingestion 命令
+          [3450] .alter 數據表原則串流擷取命令
+        - .alter-merge 資料庫原則串流擷取命令
+          [3452] .alter-merge 資料庫原則串流擷取命令
+        - .alter-merge 數據表原則串流擷取命令
+          [3454] .alter-merge 數據表原則串流擷取命令
+        - .delete 資料庫原則串流擷取命令
+          [3456] .delete 資料庫原則串流擷取命令
+        - .delete 數據表原則串流擷取命令
+          [3458] .delete 數據表原則串流擷取命令
+        - .show 資料庫原則串流擷取命令
+          [3460] .show 資料庫原則串流擷取命令
+        - .show 數據表原則串流擷取命令
+          [3462] .show 數據表原則串流擷取命令
+      - 更新
+        - 更新原則
+          [3464] 更新原則概觀
+        - 更新原則案例
+          [3471] 使用數據表更新原則的常見案例為何
+        - 教學課程：使用數據表更新原則路由數據
+          [3474] 教學課程：使用數據表更新原則路由數據
+        - .alter table policy update 命令
+          [3479] .alter 數據表原則更新命令
+        - .alter-merge 數據表原則更新命令
+          [3481] .alter-merge 數據表原則更新命令
+        - .delete 資料表原則更新命令
+          [3483] .delete 資料表原則更新命令
+        - .show 數據表原則更新命令
+          [3485] .show 數據表原則更新命令
+        - 建立受控識別
+          [3487] 使用受控識別來執行更新原則
+    - 資訊安全角色
+      - 安全性角色概觀
+        [3490] 安全性角色概觀
+      - 管理資料庫角色
+        [3494] 管理資料庫安全性角色
+      - 管理數據表角色
+        - 管理數據表角色
+          [3499] 
+        - 管理數據表檢視存取
+          [3503] 發行項• 2024/01/10
+      - 管理外部數據表角色
+        [3505] 管理外部數據表角色
+      - 管理具體化檢視角色
+        [3509] 
+      - 管理函式角色
+        [3513] 
+      - 參考安全性主體
+        [3517] 參考安全性主體
+    - 資料擷取
+      - 從記憶體擷取
+        [3521] 從儲存體內嵌
+      - 從查詢擷取
+        - 從查詢擷取
+          [3529] 從查詢內嵌 (.set、.append、.set-or-append、.set-or-replace)
+        - cancel 作業命令
+          [3535] .cancel operation 命令
+      - 內嵌擷取
+        [3537] .ingest inline 命令 (推送)
+      - 串流擷取
+        - 串流內嵌和架構變更
+          [3540] 串流擷取和結構描述變更
+        - 清除用於串流內嵌的架構快取
+          [3542] 清除用於串流內嵌的架構快取
+      - .dup-next-ingest 命令
+        [3544] 
+      - .dup-next-failed-ingest 命令
+        [3546] 
+      - .show 擷取失敗命令
+        [3548] 
+      - .show 串流擷取失敗命令
+        [3550] 
+    - 資料匯出
+      [3552] 資料匯出
+      - 至雲端記憶體
+        [3554] 
+      - 外部數據表
+        [3560] 
+      - 至 SQL 數據表
+        [3564] 將資料匯出到 SQL
+      - 連續資料匯出
+        - 連續數據匯出概觀
+          [3568] 連續資料匯出概觀
+        - 建立或改變連續匯出
+          [3574] 
+        - 建立受控識別
+          [3577] 使用受控識別來執行連續匯出作業
+        - 停用或啟用連續匯出
+          [3581] 停用或啟用連續匯出
+        - 卸除連續匯出
+          [3583] 置放連續匯出
+        - 顯示連續匯出
+          [3584] 顯示連續匯出
+        - 顯示連續匯出成品
+          [3586] 
+        - 顯示連續匯出失敗
+          [3587] 顯示連續匯出失敗
+    - 資料庫數據指標
+      [3589] 資料庫指標
+    - 外掛程式命令
+      - .show plugins 命令
+        [3592] .show plugins 命令
+      - .enable plugin 命令
+        [3594] .enable plugin 命令
+      - .disable plugin 命令
+        [3596] .disable plugin 命令
+    - 查詢結果快取
+      [3598] 查詢結果快取命令
+      - .show 資料庫快取query_results命令
+        [3599] .show 資料庫快取query_results命令
+      - .clear 資料庫快取query_results命令
+        [3600] .clear 資料庫快取query_results命令
+    - 跨叢集架構
+      - .clear cache remote-schema 命令
+        [3602] 清除跨叢集查詢的架構快取
+    - 系統資訊
+      [3604] 系統資訊
+      - 估計數據表大小
+        [3605] 估計數據表大小
+      - 日誌
+        [3608] 
+      - Operations
+        - .show 作業
+          [3610] 
+        - .show 作業詳細數據
+          [3613] 
+      - 查詢和命令
+        - .cancel 查詢
+          [3615] 發行項• 2024/01/23
+        - .show 命令
+          [3617] 
+        - .show 命令和查詢
+          [3620] .show commands-and-queries 命令
+        - .show 查詢
+          [3622] .show 查詢命令
+      - 統計資料
+        - .show 串流擷取統計數據
+          [3626] 
+        - .show 數據表數據統計數據
+          [3628] 
+    - 進階數據管理
+      - 清除快取的外部成品
+        [3630] .clear 叢集快取外部成品命令
+      - 資料清除
+        [3632] 
+      - 資料虛刪除
+        - 虛刪除概觀
+          [3640] 虛刪除概觀
+        - 虛刪除命令
+          [3643] .delete 數據表記錄 - 虛刪除命令
+      - 範圍 （資料分區）
+        - 範圍概觀
+          [3647] 範圍 (資料分區)
+        - 範圍標籤
+          [3649] Extent tags
+        - 範圍命令
+          - .alter extent tags 命令
+            [3653] .alter extent tags 命令
+          - .drop extents 命令
+            [3657] .drop extents 命令
+          - .drop table extent tags 命令
+            [3662] .drop 數據表範圍標籤
+          - .move extents 命令
+            [3667] .move extents 命令
+          - .replace extents 命令
+            [3672] .replace extents 命令
+          - .show 範圍
+            [3677] .show extents
+      - 追蹤程式命令
+        [3683] 
+      - .update 數據表命令 （預覽）
+        [3696] (預覽) .update 數據表命令
+  - 管理
+    - 管理
+      - Cluster
+        - 使用 Advisor 建議將叢集優化
+          [3706] 使用 Azure Advisor 建議將 Azure DataExplorer 叢集優化
+        - 選取叢集 VM SKU
+          [3712] 選取 Azure Data Explorer 叢集的 SKU
+        - 非使用中叢集的自動停止
+          [3717] 自動停止非使用中的 Azure Data Explorer叢集
+        - 管理叢集許可權
+          [3721] 管理 Azure Data Explorer叢集許可權
+        - 管理叢集鎖定
+          [3724] 管理 Azure Data Explorer叢集鎖定，以防止意外刪除叢集中
+        - 管理叢集水平調整
+          [3726] 在 Azure Data Explorer中管理叢集水準調整 (向外延展) ，以因應變更的需求
+        - 管理叢集垂直調整
+          [3733] 在 Azure Data Explorer中管理叢集垂直調整 (相應增加) ，以因應變更的需求
+        - 移轉叢集以支援可用性區域
+          [3735] 移轉您的叢集以支援多個可用性區域 （預覽）
+        - 檢查叢集健康情況
+          [3741] 檢查 Azure 資料總管叢集的健康情況
+        - 新增叢集主體
+          [3744] 
+        - 管理叢集語言延伸模組
+          [3747] 管理 Azure Data Explorer 叢集中的語言延伸模組
+        - 刪除叢集
+          [3751] 刪除 Azure Data Explorer 叢集
+        - 檢視版本部署
+          [3753] 檢視叢集版本部署
+      - 免費叢集
+        - 管理免費叢集
+          [3756] 建立免費的 Azure Data Explorer叢集
+        - 升級免費叢集
+          [3760] 升級免費的 Azure Data Explorer 叢集
+      - Database
+        - 管理資料庫許可權
+          [3764] 管理Azure 入口網站中的 Azure DataExplorer資料庫許可權
+        - 使用 KQL 文稿設定資料庫
+          [3768] 使用 Kusto 查詢語言指令碼設定資料庫
+        - 新增資料庫主體
+          [3776] 
+        - 複製資料庫架構
+          [3778] 在 Azure Data Explorer中複製資料庫架構
+        - 以程序設計方式建立原則
+          [3781] 建立 Azure Data Explorer的資料庫和資料表原則
+        - 刪除資料庫
+          [3785] 刪除 Azure Data Explorer 中的資料庫
+      - Table
+        - 建立擷取批次處理資料表原則
+          [3786] 使用數據表批處理原則精靈建立數據表的擷取批處理原則
+        - 建立保留數據表原則
+          [3790] 使用數據表保留原則精靈建立數據表的保留和快取原則
+      - 資料
+        - 清除數據 - Azure 入口網站
+          [3794] 在 Azure Data Explorer 叢集上啟用資料清除
+        - 刪除資料
+          [3797] 從 Azure 資料總管刪除資料
+        - 處理重複的數據
+          [3800] 處理 Azure Data Explorer 中的重複資料
+    - 監視器
+      - 使用計量監視 Azure 數據總管
+        [3804] 使用計量監視 Azure Data Explorer 效能、健康情況和使用方式
+      - 使用診斷記錄來監視擷取、命令、查詢和數據表
+        [3814] 使用診斷記錄監視 Azure Data Explorer擷取、命令、查詢和數據表
+      - 使用資源健康狀態來監視叢集健康情況
+        [3819] 使用 資源健康狀態 (Preview) 監視 AzureData Explorer
+      - 使用 Azure 數據總管叢集深入解析
+        [3824] Azure Data Explorer Clusters Insights
+      - 使用計量監視佇列擷取
+        [3835] 使用計量監視佇列擷取
+    - 業務持續性
+      - 商務持續性概觀
+        [3848] 商務持續性和災害復原概觀
+      - 建立解決方案
+        [3854] 使用 Azure Data Explorer 建立商務持續性和災害復原解決方案
+    - 共用資料
+      - 使用 Azure Data Share
+        [3862] 使用 Azure Data Share 來與 Azure 資料總管共用資料
+      - 追蹤者資料庫
+        [3870] 使用追蹤程序資料庫
+  - 開發
+    - API 概觀
+      [3880] Azure 資料總管 API 概觀
+    - 用戶端程式庫
+      - 用戶端程式庫
+        [3883] Kusto 用戶端程式庫
+      - Kusto 資料庫
+        - Kusto 數據概觀
+          [3884] Kusto 資料庫概觀
+        - Kusto 數據的最佳做法
+          [3886] Best practices for the Kusto Data library
+        - ClientRequestProperties 類別
+          [3888] Kusto Data ClientRequestPropertiesclass
+      - Kusto 內嵌連結庫
+        - Kusto 內嵌概觀
+          [3891] Kusto 內嵌程式庫概觀
+        - Kusto 內嵌的最佳做法
+          [3893] Kusto 內嵌程式庫的最佳做法
+    - 範例應用程式產生器
+      [3896] 使用範例應用程式產生器精靈來建立程式代碼來擷取和查詢您的數據
+    - 使用 SDK 撰寫程式代碼
+      - 設定您的環境
+        [3901] 設定開發環境以使用 Kusto 用戶端程式庫
+      - 建立第一個應用程式
+        [3904] Hello Kusto：建立您的第一個應用程式
+      - 執行基本查詢
+        [3909] 建立應用程式以執行基本查詢
+      - 執行管理命令
+        [3917] 建立應用程式以執行管理命令
+      - 佇列擷取
+        [3924] Create an app to get data using queuedingestion
+    - 連接字串
+      - 連線 字串概觀
+        [3937] 連接字串概觀
+      - Kusto 連接字串 s
+        [3939] Kusto 連接字串
+      - 儲存體 連接字串
+        [3949] 
+      - SQL 外部數據表 連接字串
+        [3954] Azure SQL 外部數據表 連接字串
+      - 產生 SAS 權杖
+        [3957] 產生 SAS 權杖
+    - 在應用程式中整合查詢編輯器
+      - 整合概觀
+        [3960] 在應用程式概觀中整合 Azure DataExplorer功能
+      - 在 IFrame 中內嵌 Web UI
+        [3962] 
+      - 整合摩納哥編輯器與 Kusto 查詢支援
+        [3970] 在應用程式中整合Kusto 查詢語言支援與Kusto 查詢語言
+    - Kusto 模擬器
+      - Kusto 模擬器概觀
+        [3974] Azure Data Explorer Kusto 模擬器
+      - 安裝 Kusto 模擬器
+        [3977] 安裝 Azure Data Explorer Kusto 模擬器
+  - 整合
+    - 整合概觀
+      [3986] 整合概觀
+    - 協調
+      - Power Automate
+        - Power Automate 連接器
+          [3997] 適用於 Microsoft 的 Azure Data Explorer連接器Power Automate
+        - Power Automate 連接器使用範例
+          [4014] Azure Data Explorer 連接器的使用範例Power Automate
+      - Logic Apps
+        [4027] Microsoft Logic Apps 和 Azure DataExplorer
+      - Azure Pipelines
+        [4032] 適用于 Azure Data Explorer 的 AzureDevOps 工作
+      - 同步 Kusto
+        [4047] 同步 Kusto
+    - Notebooks
+      - 具有 Kqlmagic 的 Jupyter Notebook
+        [4048] 
+      - Azure Data Studio
+        - Kusto 擴充功能概觀
+          [4054] 適用於 Azure Data Studio 的 Kusto (KQL)延伸模組 (預覽)
+        - 使用 Kusto 擴充功能
+          [4060] 建立並執行 Kusto (KQL) 筆記本 (預覽)
+        - 使用 Kqlmagic
+          [4067] 使用 Kqlmagic 建立和執行筆記本
+    - Azure Functions
+      [4081] 使用 (預覽) 的輸入和輸出系結，將 AzureFunctions 與 Azure Data Explorer 整合
+    - 從 Azure Synapse Apache Spark 連線
+      [4086] 使用適用於 Azure Synapse Analytics 的Apache Spark 連線到 Azure 資料總管
+    - 連結的伺服器
+      [4092] Azure Data Explorer作為SQL Server的連結伺服器
+    - Microsoft Purview
+      [4094] 整合 Azure Data Explorer與 MicrosoftPurview
+  - 參考
+    - API
+      - REST API
+        - REST API 概觀
+          [4096] 發行項• 2023/12/08
+        - 透過 HTTP 進行驗證
+          [4098] 透過 HTTPS 驗證
+        - 查詢 HTTP 要求
+          [4101] 查詢/管理 HTTP 要求
+        - 查詢 HTTP 回應
+          [4106] 
+        - 查詢 v2 HTTP 回應
+          [4110] 查詢 V2 HTTP 回應
+        - 要求屬性
+          [4118] Request properties
+        - UI （深層連結）
+          [4124] UI 深層連結
+        - 串流內嵌
+          [4128] 串流擷取 HTTP 要求
+        - 使用 T-SQL 進行查詢
+          [4132] 透過 REST API 傳送 T-SQL 查詢
+        - 如何使用 REST API 內嵌數據
+          [4135] 如何使用 REST API 內嵌數據
+        - 如何在應用程式中使用 MSAL 進行驗證
+          [4144] 如何在應用程式中使用 Microsoft 驗證程式庫 (MSAL) 進行驗證
+      - .NET SDK
+        - 關於 SDK
+          [4151] 關於 Kusto .NET SDK
+        - 控制追蹤
+          [4152] 控制及隱藏 Kusto SDK 用戶端追蹤
+        - Kusto.Data
+          - 錯誤和例外狀況
+            [4155] 
+        - Kusto.Ingest
+          - 客戶端參考
+            [4160] Kusto.Ingest 用戶端介面和類別
+          - 錯誤和例外狀況
+            [4176] 
+          - 作業狀態
+            [4182] Kusto.Ingest 擷取狀態報告
+          - 程式碼範例
+            [4189] Kusto.Ingest 擷取程式碼範例
+        - Kusto.Language
+          - Kusto.Language 概觀
+            [4194] Kusto.Language 概觀
+          - 剖析查詢和命令
+            [4196] 使用 Kusto.Language 剖析查詢和命令
+          - 定義架構
+            [4199] 使用 Kusto.Language 定義語意分析的架構
+      - Python SDK
+        - azure-kusto-python
+          [4203] Kusto Python SDK
+      - R SDK
+        - azure-kusto-r
+          [4204] Kusto R SDK
+      - Java SDK
+        - azure-kusto-java
+          [4205] Kusto JAVA SDK
+      - Node SDK
+        - azure-kusto-node
+          [4206] Kusto Node SDK
+      - Go SDK
+        - azure-kusto-go
+          [4207] Kusto Golang SDK
+      - PowerShell
+        - 從 PowerShell 使用 Kusto .NET 用戶端連結庫
+          [4208] 
+    - Azure CLI Kusto
+      [4212] az kusto
+    - Azure 原則內建
+      [4222] 適用於 Azure Data Explorer 的內建定義Azure 原則
+    - Bicep 和 ARM 樣本資源類型
+      [4224] Microsoft.Kusto 資源類型
+    - 函式連結庫
+      - 函式清單
+        [4227] 函式程式庫
+      - bartlett_test_fl（）
+        [4231] bartlett_test_fl()
+      - binomial_test_fl（）
+        [4234] binomial_test_fl()
+      - comb_fl（）
+        [4238] comb_fl()
+      - factorial_fl（）
+        [4241] factorial_fl()
+      - geoip_fl（）
+        [4243] geoip_fl ()
+      - get_packages_version_fl（）
+        [4248] get_packages_version_fl ()
+      - kmeans_fl（）
+        [4252] 
+      - ks_test_fl（）
+        [4256] ks_test_fl()
+      - normality_test_fl（）
+        [4259] normality_test_fl()
+      - levene_test_fl（）
+        [4262] levene_test_fl()
+      - log_reduce_fl（）
+        [4265] log_reduce_fl ()
+      - log_reduce_full_fl（）
+        [4272] log_reduce_full_fl ()
+      - log_reduce_predict_fl（）
+        [4278] log_reduce_predict_fl ()
+      - log_reduce_predict_full_fl（）
+        [4282] log_reduce_predict_full_fl ()
+      - log_reduce_train_fl（）
+        [4287] log_reduce_train_fl ()
+      - 曼-惠特尼-u-test-fl（）
+        [4292] mann_whitney_u_test_fl()
+      - pair_probabilities_fl（）
+        [4296] pair_probabilities_fl()
+      - pairwise_dist_fl（）
+        [4301] pairwise_dist_fl()
+      - percentiles_linear_fl（）
+        [4307] percentiles_linear_fl ()
+      - perm_fl（）
+        [4310] perm_fl()
+      - plotly_anomaly_fl（）
+        [4313] plotly_anomaly_fl ()
+      - plotly_scatter3d_fl（）
+        [4319] plotly_scatter3d_fl ()
+      - predict_fl（）
+        [4324] predict_fl()
+      - predict_onnx_fl（）
+        [4329] predict_onnx_fl()
+      - quantize_fl（）
+        [4333] quantize_fl()
+      - series_clean_anomalies_fl（）
+        [4337] series_clean_anomalies_fl ()
+      - series_cosine_similarity_fl（）
+        [4340] series_cosine_similarity_fl ()
+      - series_dbl_exp_smoothing_fl（）
+        [4343] series_dbl_exp_smoothing_fl()
+      - series_dot_product_fl（）
+        [4346] series_dot_product_fl()
+      - series_downsample_fl（）
+        [4349] series_downsample_fl()
+      - series_exp_smoothing_fl（）
+        [4353] series_exp_smoothing_fl()
+      - series_fit_lowess_fl（）
+        [4356] series_fit_lowess_fl()
+      - series_fit_poly_fl（）
+        [4363] series_fit_poly_fl()
+      - series_fbprophet_forecast_fl（）
+        [4371] series_fbprophet_forecast_fl()
+      - series_metric_fl（）
+        [4376] series_metric_fl()
+      - series_lag_fl（）
+        [4381] series_lag_fl()
+      - series_monthly_decompose_anomalies_fl（）
+        [4384] series_monthly_decompose_anomalies_fl ()
+      - series_moving_avg_fl（）
+        [4388] series_moving_avg_fl()
+      - series_moving_var_fl（）
+        [4391] series_moving_var_fl ()
+      - series_mv_ee_anomalies_fl（）
+        [4394] series_mv_ee_anomalies_fl ()
+      - series_mv_if_anomalies_fl（）
+        [4399] series_mv_if_anomalies_fl ()
+      - series_mv_oc_anomalies_fl（）
+        [4404] series_mv_oc_anomalies_fl ()
+      - series_rate_fl（）
+        [4408] series_rate_fl()
+      - series_rolling_fl（）
+        [4413] series_rolling_fl()
+      - series_shapes_fl（）
+        [4420] series_shapes_fl ()
+      - series_uv_anomalies_fl（）
+        [4425] series_uv_anomalies_fl()
+      - series_uv_change_points_fl（）
+        [4432] series_uv_change_points_fl()
+      - time_weighted_avg_fl（）
+        [4437] time_weighted_avg_fl()
+      - time_window_rolling_avg_fl（）
+        [4441] time_window_rolling_avg_fl()
+      - two_sample_t_test_fl（）
+        [4445] two_sample_t_test_fl()
+      - wilcoxon_test_fl（）
+        [4449] wilcoxon_test_fl()
+    - PowerShell Az.Kusto
+      - 在 Azure PowerShell 中使用 Kusto Cmdlet
+        [4452] 在 Azure PowerShell 中使用 KustoCmdlet
+      - Az.Kusto Cmdlet
+        [4454] Az.Kusto
+    - Python 外掛程式套件
+      [4458] Python 外掛程式套件
+    - 資源提供者作業
+      [4465] Azure 許可權
+    - 針對擷取進行疑難解答
+      - 擷取錯誤碼
+        [4477] 擷取錯誤碼
+      - 無效資料的擷取行為
+        [4485] 無效資料的擷取行為
+      - 擷取常見問題
+        [4487] 已排入佇列的擷取和數據延遲
+  - 資源
+    - 論壇
+      - Stack Overflow
+      - Microsoft 技術社群
+      - Microsoft 問 & 答
+    - 產品意見反應
+    - 定價和計費
+      - 定價頁面
+      - 定價計算機
+        [4491] Azure Data Explorer 定價計算機
+      - 保留容量
+        [4497] 使用 Azure Data Explorer 保留容量預付Azure Data Explorer 標記單位
+    - 服務更新
+    - 尋找合作夥伴
+      [4500] 尋找 Azure Data Explorer 合作夥伴

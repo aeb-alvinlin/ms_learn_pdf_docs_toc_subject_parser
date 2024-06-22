@@ -1,0 +1,51 @@
+- ---< azure-external-attack-surface-management.pdf >---
+  - Concepts
+    - Defender EASM documentation
+      [1] Defender External Attack SurfaceManagement
+    - Overview
+      [3] Defender EASM Overview
+    - Understanding inventory assets
+      [7] Understanding inventory assets
+    - What is Discovery?
+      [10] What is Discovery?
+  - How-to
+    - Understanding asset details
+      [15] Understand asset details
+    - Understanding dashboards
+      [30] Understanding dashboards
+    - Using and managing discovery
+      [49] Use and manage discovery
+    - Modifying inventory assets
+      [59] Asset modification overview
+    - Understand billable assets
+      [74] Understand billable assets
+    - Leveraging data connections
+      [78] Use data connections
+    - Inventory filters
+      - Inventory filters overview
+        [87] Defender EASM inventory filtersoverview
+      - Domain asset filters
+        [98] Domain asset filters
+      - Host asset filters
+        [101] Host asset filters
+      - Page asset filters
+        [107] Page asset filters
+      - Contact asset filters
+        [115] Contact asset filters
+      - SSL certificate asset filters
+        [116] SSL certificate asset filters
+      - IP address asset filters
+        [120] IP address asset filters
+      - IP block asset filters
+        [125] IP block asset filters
+      - ASN asset filters
+        [128] ASN asset filters
+  - Quickstart
+    - Deploying the Defender EASM Azure resource
+      [130] Create a Defender EASM Azure resource
+  - Tutorials
+    - Discovering your attack surface
+      [134] Discovering your attack surface
+  - Integrations
+    - Security Copilot (preview) and Defender EASM
+      [141] Microsoft Copilot for Security andDefender EASM

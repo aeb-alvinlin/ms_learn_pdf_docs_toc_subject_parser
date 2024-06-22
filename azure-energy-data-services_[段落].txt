@@ -1,0 +1,106 @@
+- ---< azure-energy-data-services.pdf >---
+  - Microsoft Azure Data Manager for Energy 檔
+    [1] Microsoft Azure Data Manager forEnergy 檔
+  - 總覽
+    - 關於 Microsoft Azure Data Manager for Energy
+      [4] 什麼是適用於能源的 Azure 數據管理員？
+    - 關於網域 資料管理 服務 （DDMS）
+      [6] 網域資料管理服務 （DDMS）
+    - 新功能
+      - 版本資訊
+        [10] 適用於能源的 Azure Data Manager 版本資訊
+  - 快速入門
+    - 建立適用於能源的 Microsoft Azure Data Manager 實例
+      [17] 快速入門：建立適用於能源的 Azure 數據管理員實例
+  - 教學課程
+    - 擷取 CSV 數據
+      [24] 教學課程：執行 CSV 剖析器擷取
+    - 內嵌指令清單
+      [29] 教學課程：執行以指令清單為基礎的檔案擷取
+    - 使用 Seismic Store DDMS sdutil
+      [34] 教學課程：使用 sdutil 將數據載入地震存放區
+    - 使用 Seismic Store DDMS API
+      [44] 教學課程：使用 Seismic DDMS API 來處理地震數據
+    - 使用 Wellbore DDMS API
+      [50] 教學課程：使用 Wellbore DDMS API 處理良好的數據記錄
+    - 使用良好傳遞 DDMS API
+      [58] 教學課程：使用良好傳遞 DDMS API 來處理良好的數據記錄
+    - 使用 Petrel DDMS API
+      [66] 教學課程：使用 Petrel DDMS API 來處理Petrel 數據記錄
+  - 概念
+    - CSV 剖析器擷取
+      [77] CSV 剖析器擷取概念
+    - 指令清單擷取
+      [80] 以指令清單為基礎的擷取概念
+    - 編製索引和搜尋
+      [83] 適用於能源索引和搜尋工作流程的 Azure數據管理員
+    - 網域 資料管理 服務 （DDMS）
+      [86] 網域數據管理服務概念
+    - 驗證
+      [90] 適用於能源的 Azure Data Manager 中的驗證概念
+    - 權利
+      [91] 權利服務
+    - 可靠性
+      - 可靠性概觀
+        [95] 適用於能源產業的 Azure 資料管理員中的可靠性
+    - 階層詳細數據
+      [100] 適用於能源層的 Azure 數據管理員
+  - 操作指南
+    - 系統管理
+      - 管理使用者
+        [103] 在 Azure Data Manager for Energy 中管理使用者
+      - 管理 ACL
+        [110] 管理記錄的 ACL
+      - 管理法律標籤
+        [115] 如何管理法律標籤
+      - 管理數據分割
+        [119] 如何管理數據分割？
+      - 部署OSDU管理員UI
+        [123] 在適用於能源的 Azure Data Manager 上部署 OSDU 管理員 UI
+      - 如何開啟外部資料來源 （EDS）
+        [132] 如何啟用外部資料來源 （EDS） 預覽？
+      - 如何註冊外部資料來源 （EDS）
+        [136] 如何向 Azure Data Manager for Energy註冊外部數據源 （EDS？
+    - 監視
+      - Airflow 工作記錄與 Azure 監視器整合
+        [138] 整合 Airflow 記錄與 Azure 監視器
+      - 彈性記錄與 Azure 監視器整合
+        [144] 整合 elastic 記錄與 Azure 監視器
+      - 整合OSDU服務記錄與 Azure 監視器
+        [151] 整合OSDU服務記錄與 Azure 監視器
+    - 安全性
+      - 設定私人連結
+        [155] 建立適用於能源的 Azure Data Manager私人端點
+      - 設定客戶管理的加密金鑰 （CMEK）
+        [166] 適用于能源的 Azure 資料管理員中的資料安全性和加密
+      - 設定加密箱
+        [173] 使用適用於能源的 Azure Data Manager的客戶加密箱
+      - 設定受控識別
+        [175] 使用受控識別從其他 Azure 服務存取適用于能源的 Azure Data Manager
+      - 設定資源分享 （CORS）
+        [181] 在 Azure Data Manager for Energy 中使用 CORS 進行資源分享
+      - 設定稽核記錄
+        [186] 管理稽核記錄
+      - 將 Microsoft Azure Data Manager for Energy API 發佈至安全的 API 閘道
+        [190] 將 Microsoft Azure Data Manager forEnergy API 發佈至安全的 API 閘道
+    - 載入數據集
+    - 將 SEG-Y 轉換為 ZGY
+      [202] 如何將 SEG-Y 檔案轉換成 ZGY
+    - 將 SEG-Y 轉換為 oVDS
+      [215] 如何將 SEG-Y 檔案轉換成 oVDS
+    - 產生驗證令牌
+      [228] 產生驗證令牌
+    - 使用檔案服務上傳大型檔案
+      [238] 如何使用檔案服務在適用於能源的 AzureData Manager 中上傳檔案
+  - 參考資料
+    - REST API
+      - 資料平面
+  - 資源
+    - 常見問題集
+      [241] 一般
+存取
+外部資料來源
+    - 區域可用性
+    - 合作夥伴
+      [245] 適用於能源的 Azure 資料管理員合作夥伴
+    - 定價

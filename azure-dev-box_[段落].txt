@@ -1,0 +1,97 @@
+- ---< azure-dev-box.pdf >---
+  - Microsoft 開發箱文件
+    [1] Microsoft 開發箱文件
+  - 概觀
+    - 什麼是 Microsoft Dev Box？
+      [3] 什麼是 Microsoft Dev Box？
+  - 快速入門
+    - 設定開發箱服務 （Azure 入口網站）
+      [7] 快速入門：設定 Microsoft Dev Box
+    - 設定開發箱服務 （ARM 樣本）
+      [21] 快速入門：使用 ARM 範本設定Microsoft 開發箱
+    - 啟動新的開發方塊
+      [26] 快速入門：使用 Microsoft Dev Box 開發人員入口網站建立並連線到開發方塊
+  - 概念
+    - 架構概觀
+      [32] Microsoft Dev Box 架構概觀
+    - 網路需求
+      [37] Microsoft Dev Box 網路需求
+    - 重要概念
+      [46] Microsoft Dev Box 的重要概念
+  - 設定資源
+    - 管理開發人員中心
+      [50] 管理 Microsoft Dev Box 開發人員中心
+    - 管理網路連線
+      [58] 藉由設定網路連線，連線 開發方塊至資源
+    - 管理開發方塊專案
+      [66] 管理 Microsoft Dev Box 專案
+    - 管理開發方塊定義
+      [72] 管理開發方塊定義
+    - 管理開發方塊集區
+      [79] 在 Microsoft Dev Box 中管理開發方塊集區
+    - 限制每個項目的開發方塊數目
+      [86] 教學課程：藉由設定項目的開發方塊限制來控制成本
+    - 設定 Visual Studio 快取
+      [90] 在 Microsoft 開發箱上最佳化 VisualStudio 體驗
+    - 監視開發方塊
+      [93] 監視 Microsoft Dev Box
+  - 準備映像
+    - 設定 Azure 計算資源庫
+      [99] 設定適用於 Microsoft Dev Box 的 Azure計算資源庫
+    - 使用 Azure Image Builder 布建自定義映像
+      [108] 使用 Azure VM Image Builder 和Microsoft Dev Box 設定開發方塊
+  - 自定義開發方塊
+    - 建立可重複使用的自定義專案
+      [117] 建立可重複使用的開發方塊自定義
+  - 建立並連線至開發方塊
+    - 透過開發人員入口網站管理開發方塊
+      [125] 使用 Microsoft Dev Box 開發人員入口網站管理開發方塊
+    - 使用遠端桌面應用程式 連線
+      [132] 教學課程：使用遠端桌面用戶端連線到開發方塊
+    - 使用多個監視器
+      [141] Tutorial: Use multiple monitors on a devbox
+    - 針對開發方塊連線問題進行疑難解答
+      [145] 針對開發方塊遠端桌面連線問題進行疑難解答並加以解決
+  - 安全性
+    - 提供專案管理員的存取權
+      [149] 授與 Microsoft Dev Box 專案的系統管理存取權
+    - 提供開發人員方塊使用者的存取權
+      [152] 在 Microsoft Dev Box 中將專案的使用者層級存取權授與
+    - 設定條件式存取原則
+      [154] 在 Microsoft Intune 中使用條件式存取原則限制對開發方塊的存取
+    - 為開發方塊設定提高的許可權
+      [159] 設定開發方塊的 Microsoft Intune 端點權限管理
+    - 啟用開發方塊的單一登錄
+      [165] 啟用開發方塊的單一登錄
+  - 管理成本
+    - 要求增加配額限制
+      [171] 管理 Microsoft Dev Box 資源的配額
+    - 設定開發方塊休眠
+      [184] 在 Microsoft Dev Box 中設定休眠
+    - 休眠您的開發方塊
+      [191] 在 Microsoft Dev Box 中休眠開發方塊
+    - 設定自動停止排程
+      [193] 依排程自動停止您的開發方塊
+    - 略過或延遲自動關機
+      [200] 略過或延遲自動停止排程關機
+  - 參考
+    - 安裝 Azure CLI devcenter 擴充功能
+      [205] 使用 Azure CLI 從命令列設定 MicrosoftDev Box
+    - Azure CLI - az devcenter
+    - 向 REST API 進行驗證
+      [207] 向 Microsoft Dev Box REST API 進行驗證
+    - REST API
+      [209] 開發人員中心 REST API 參考
+    - 監視 Microsoft DevCenter 資料參考
+      [210] 
+  - 資源
+    - Azure 藍圖
+    - Dev Box 支援的 Azure 區域
+    - 常見問題集
+      [212] 為何需要25分鐘以上的時間來布建開發方塊？
+我應該在哪裡建立我的 開發人員中心、專案和集區，以獲得最佳效能？
+如何在 Microsoft Dev Box 中實作備份、高可用性和災害復原？
+    - 取得 Microsoft Dev Box 的支援
+      [215] 取得 Microsoft Dev Box 的支援
+    - 回報問題
+    - 建議功能

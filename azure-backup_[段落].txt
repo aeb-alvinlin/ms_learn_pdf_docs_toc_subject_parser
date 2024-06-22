@@ -1,0 +1,762 @@
+- ---< azure-backup.pdf >---
+  - Azure 備份文件
+    [1] Azure 備份服務文件
+  - 概觀
+    - Azure 備份概觀
+      [5] 什麼是 Azure 備份服務？
+    - Azure 備份的新功能
+      [8] Azure 備份的新功能
+    - 定價
+  - 快速入門
+    - 備份 VM - Azure 入口網站
+      [25] 快速入門：在 Azure 中備份虛擬機器
+    - 備份 VM - PowerShell
+      [38] 使用 PowerShell 在 Azure 中備份虛擬機器
+    - 備份 VM - CLI
+      [43] 使用 Azure CLI 在 Azure 中備份虛擬機器
+    - 備份 VM - ARM 範本
+      [48] 使用 ARM 範本在 Azure 中備份虛擬機器
+    - 備份 VM - Bicep 範本
+      [56] 使用 Bicep 範本在 Azure 中備份虛擬機器
+    - 備份 Azure PostgreSQL 資料庫
+      - 備份資料庫 - Azure 入口網站
+        [63] 在 Azure 中備份適用於 PostgreSQL 的Azure 資料庫伺服器
+      - 跨區域還原 PostgreSQL 資料庫
+        - 使用 Azure 入口網站
+          [73] 快速入門：了解如何使用 Azure 備份跨區域還原 PostgreSQL 資料庫
+        - 使用 Azure PowerShell
+          [75] 快速入門：使用 Azure 備份搭配PowerShell，跨區域還原適用於PostgreSQL 的 Azure 資料庫伺服器
+    - 設定 AKS 叢集備份
+      [79] 快速入門：設定 AKS 叢集的備份
+    - 在 AKS 叢集中安裝備份延伸模組
+      [85] 快速入門：在 AKS 叢集中安裝 Azure 備份延伸模組
+    - 啟用多使用者授權 (MUA)
+      [88] 快速入門：在 Azure 備份中使用多使用者授權啟用保護
+    - 備份 SAP HANA 系統複寫資料庫
+      - Backup
+        [90] 快速入門：使用 Azure CLI 在 Azure VM上備份 SAP HANA 系統複寫
+      - 還原
+        [94] 快速入門：使用 Azure CLI 在 Azure VM上還原 SAP HANA 系統複寫
+    - 將整個 SAP HANA 系統還原至快照集還原點
+      [97] 快速入門：將整個 SAP HANA 資料庫還原至快照集還原點
+    - 啟用增強式虛刪除
+      [104] 快速入門：在 Azure 備份中啟用增強的虛刪除
+  - 教學課程
+    - 備份多個 Azure VM
+      [107] 教學課程：使用 Azure 入口網站 備份多個虛擬機
+    - 使用 PowerShell 來備份 Azure VM
+      [118] 使用 PowerShell 來備份 Azure VM
+    - 使用 Azure CLI 來還原 VM
+      [122] 使用 Azure CLI 來還原 VM
+    - 還原個別檔案
+      [133] 在 Azure 中將檔案還原到虛擬機器
+    - 在 Azure VM 上備份 SQL Server
+      [140] 在 Azure VM 中備份 SQL Server 資料庫
+    - 將 SAP Hana 資料庫備份到 Azure VM
+      [154] 教學課程：備份 Azure VM 中的 SAPHANA 資料庫
+    - 備份 PostgreSQL 資料庫
+      - 備份資料庫
+        [172] 備份適用於 PostgreSQL 伺服器的 Azure資料庫
+      - 設定和執行跨區域還原
+        [185] 教學課程：使用 Azure 備份，為適用於PostgreSQL 的 Azure 資料庫設定和執行跨區域還原
+    - 設定 AKS 叢集的專案層級備份
+      [189] 教學課程：設定 Azure KubernetesService 叢集的項目層級備份
+    - 還原次要區域中 AKS 叢集的保存庫備份
+      [198] 教學課程: 使用 Azure 備份啟用 AKS 的保存庫層備份，以及跨區域還原 (預覽)
+    - 備份 Windows Server
+      [208] 將 Windows Server 備份到 Azure
+    - 將檔案還原到 Windows Server
+      [217] 教學課程：將檔案從 Azure 復原到Windows Server
+    - Azure VM 上的 SAP HANA 資料庫 - 使用 CLI
+      - 備份 SAP HANA 資料庫 - CLI
+        [222] 教學課程：使用 Azure CLI 在 Azure VM中備份 SAP HANA 資料庫
+      - 還原 SAP HANA 資料庫 - CLI
+        [229] 教學課程：使用 Azure CLI 在 Azure VM中還原 SAP HANA 資料庫
+      - 管理備份的 SAP HANA 資料庫 - CLI
+        [243] 教學課程：使用 Azure CLI 在 Azure VM中管理 SAP HANA 資料庫
+    - 設定 SAP HANA 資料庫執行個體快照集備份
+      [253] 教學課程：設定 SAP HANA 資料庫執行個體快照集備份
+    - 設定多使用者授權 (MUA)
+      [259] 教學課程：在 Azure 備份中建立資源防護並啟用多使用者授權
+    - 使用增強的虛刪除復原虛刪除項目
+      [263] 教學課程：使用 Azure 備份中增強的虛刪除來復原經過虛刪除的資料和復原點
+  - 概念
+    - 可靠性
+      - 可用性區域和災害復原
+        [268] Azure 備份的可靠性
+      - 移轉至可用性區域支援
+        [271] 將 Azure 復原服務保存庫移轉至可用性區域支援
+    - 支援矩陣
+      - Azure 備份支援矩陣
+        [273] Azure 備份的支援矩陣
+      - 備份中心支援矩陣
+        [283] 備份中心支援的矩陣
+      - Azure VM 支援矩陣
+        [290] Azure VM 備份的支援矩陣
+      - DPM/Azure 備份伺服器 (MABS) 支援矩陣
+        [308] 使用 Microsoft Azure 備份伺服器或System Center DPM 的備份支援矩陣
+      - MARS 代理程式支援矩陣
+        [320] 使用 Microsoft Azure 復原服務 (MARS)代理程式進行備份的支援矩陣
+      - SQL Server 備份支援矩陣
+        [331] Azure VM 中的 SQL Server 備份相關的支援矩陣
+      - SAP Hana 備份支援矩陣
+        [334] Azure VM 上 SAP Hana 資料庫 備份的支援矩陣
+      - 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器長期保留支援矩陣
+        [338] 適用於 MySQL 的 Azure 資料庫 的支援矩陣 - 使用 Azure 備份 彈性伺服器保護（預覽）
+      - Azure 檔案共用備份支援矩陣
+        [339] Azure 檔案共用備份的支援矩陣
+      - Azure 磁碟備份支援矩陣
+        [343] Azure 磁碟備份支援矩陣
+      - Azure Blobs 備份支援矩陣
+        [346] Azure Blob 備份的支援矩陣
+      - Active Directory 網域控制站
+        [348] 備份和還原 Active Directory 網域控制站
+      - Azure 原則支援的 VM SKU
+        [351] Azure 原則 支援的 VM SKU
+      - 適用於 PostgreSQL 的 Azure 資料庫備份支援矩陣
+        [357] 適用於 PostgreSQL 的 Azure 資料庫伺服器支援矩陣
+      - Azure Database for PostgreSQL- Flexible 伺服器備份支援矩陣
+        [358] Azure Database for PostgreSQL- Flexible伺服器的支援矩陣 (預覽)
+      - Azure Kubernetes Service 備份支援矩陣圖
+        [359] Azure Kubernetes Service 備份支援矩陣圖
+      - Azure 備份中的自動化
+        [362] 支援 Azure 備份中的自動化矩陣
+    - 常見問題集 (FAQ)
+      - 常見問題集 - 復原服務保存庫
+        [372] 復原服務保存庫
+      - 常見問題 - 備份中心
+        [383] 管理
+組態
+      - 常見問題集 - Azure VM 備份
+        [385] 
+      - 常見問題集 - MARS 代理程式
+        [398] 哪裡可以下載最新版本的 MARS 代理程式？
+      - 常見問題集 - 備份 Azure 檔案儲存體
+        [408] 設定 Azure 檔案服務的備份作業
+      - 常見問題集 - Azure 磁碟備份
+        [419] 如果使用 Azure 虛擬機器備份來備份相同磁碟，我是否可使用 Azure 磁碟備份解決方案來備份磁碟？
+如何尋找我用來設定磁碟備份的快照集資源群組？
+      - 常見問題集 - 將 SQL Server 資料庫備份到 Azure VM
+        [425] Backup
+      - 常見問題集 - 將 SAP Hana 資料庫備份到 Azure VM
+        [430] Backup
+      - 常見問題集 - 備份適用於 PostgreSQL 的 Azure 資料庫伺服器
+        [442] Backup
+還原
+      - 常見問題集 - Azure 備份伺服器和 DPM
+        [444] 一般問題
+      - 常見問題集 - Azure 備份監視警示
+        [447] 備份警示
+      - 常見問題集 - 針對勒索軟體的保護
+        [451] 設定和保護 Azure 備份，防止安全性和勒索軟體威脅的最佳做法是什麼？
+      - 常見問題集 - 虛刪除
+        [455] 我是否需要在每個保存庫上啟用虛刪除功能？
+是否能設定在完成刪除作業後，資料保持虛刪除狀態的天數？
+是否需要支付額外 14 天的保留費用？
+當我的資料處於虛刪除狀態時，是否可以執行還原作業？
+我的快照集是否會遵循保存庫中復原點的相同生命週期？
+如何針對虛刪除的資源再次觸發排程備份？
+    - 保存庫
+      - 復原服務保存庫
+        [457] 復原服務保存庫概觀 \(部分機器翻譯\)
+      - 備份保存庫
+        [460] 備份保存庫概觀
+    - 備份中心
+      [462] 關於 Azure 備份和 Azure Site Recovery的備份中心
+    - Azure VM 備份
+      - 概觀
+        [466] Azure VM 備份的概觀
+      - 無代理程式多磁碟損毀一致的 VM 備份
+        [474] 關於 Azure VM 的無代理程式多磁碟損毀一致備份 （預覽）
+    - Azure VM 備份上的 SAP Hana 資料庫
+      - 概觀
+        [476] 關於 Azure VM 上的 SAP Hana 資料庫備份
+      - 架構
+        [481] SAP HANA 備份的 Azure 備份架構
+    - 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器長期保留
+      [490] 適用於 MySQL 的 Azure 資料庫 的長期保留 - 使用 Azure 備份 彈性伺服器 （預覽）
+    - 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器備份
+      [492] 關於適用於 PostgreSQL 的 Azure 資料庫- 彈性伺服器備份 (預覽)
+    - Azure Kubernetes Service 備份
+      - 概觀
+        [494] 什麼是 Azure Kubernetes Service 備份？
+      - 必要條件
+        [501] 使用 Azure 備份進行 Azure KubernetesService 備份的必要條件
+    - Azure Blob 備份
+      [506] Azure Blob 備份概觀
+    - Azure 檔案共用備份
+      [509] 關於 Azure 檔案共享備份
+    - 使用 MARS 代理程式的 Windows 備份
+      - 概觀
+        [513] 關於適用於 Azure 備份的 MicrosoftAzure 復原服務 (MARS) 代理程式
+      - 還原
+        [518] 關於使用 Microsoft Azure 復原服務(MARS) 代理程式進行還原
+    - 監視和警示
+      [521] Azure 備份的監視和報告解決方案
+    - 安全性
+      - 增強式虛刪除
+        [523] 關於 Azure 備份的增強式虛刪除
+      - 多使用者授權
+        [528] 關於使用資源防護的多使用者授權
+      - 不可變保存庫
+        [532] Azure 備份的不可變的保存庫
+      - 私人端點
+        - V1 體驗
+          [534] Azure 備份的私人端點 (v1 體驗) 概觀和概念
+        - V2 體驗
+          [542] Azure 備份的私人端點 (v2 體驗) 概觀和概念
+    - 備份架構
+      [550] Azure 備份的結構與元件
+    - 指導方針和最佳做法
+      [562] 將雲端和內部部署工作負載備份到雲端
+    - 詞彙
+      [578] Azure 備份 字彙
+  - 操作指南
+    - 保存庫
+      - 復原服務保存庫
+        - 建立​​
+          [589] 建立並設定復原服務保存庫
+        - 刪除
+          [598] 刪除 Azure 備份復原服務保存庫
+        - 移動
+          [613] 跨 Azure 訂用帳戶和資源群組移動復原服務保存庫
+        - 管理
+          [625] 監視及管理復原服務保存庫
+      - 備份保存庫
+        - 建立及管理
+          [639] 建立和管理備份保存庫
+    - 備份中心
+      - 監視及運作
+        [655] 使用備份中心監視和操作備份以及災害復原
+      - 取得深入解析
+        [662] 使用備份中心取得深入解析
+      - 管理環境
+        [664] 使用備份中心管理您的備份資產
+      - 執行動作
+        [667] 使用備份中心執行動作
+    - Azure VM 備份
+      - Backup
+        - 使用 Azure 備份立即還原來備份與還原 Azure VM
+          [675] 使用 Azure 備份 立即還原功能取得改善的備份和還原效能
+        - 建立 Azure VM 時啟用備份
+          [681] 建立 Azure VM 時啟用備份
+        - 使用增強原則來備份 Azure VM
+          [687] 使用增強原則來備份 Azure VM
+        - 使用無代理程式多磁碟損毀一致備份來備份 Azure VM
+          [694] 使用無代理程式多磁碟損毀一致備份來備份 Azure VM （預覽）
+        - 從 VM 設定備份 Azure VM
+          [703] 從 VM 設定備份 Azure VM
+        - 設定保存庫並啟用 Azure VM 備份
+          [708] 備份復原服務保存庫中的 Azure VM
+        - 備份加密的 Azure VM
+          [721] 備份及還原加密的 Azure 虛擬機器
+        - 設定執行 Linux 的 Azure VM 進行應用程式一致性備份
+          [730] 使用 Azure 備份的 Azure Linux VM 應用程式一致備份
+        - 選擇性磁碟備份
+          [734] Azure 虛擬機器的選擇性磁碟備份和還原
+        - 針對資料庫一致快照集使用 Azure VM 備份
+          [748] 適用於資料庫一致性快照集的增強型前置-後置指令碼
+      - 還原
+        - 關於 Azure VM 還原
+          [753] 關於 Azure VM 還原
+        - 在 入口網站中還原 Azure VM
+          [756] 如何在 Azure 入口網站 中還原 Azure VM數據
+        - 從 Azure VM 備份中復原檔案
+          [785] 從 Azure 虛擬機器備份復原檔案
+        - 還原已加密的虛擬機器
+          [802] 還原加密的 Azure 虛擬機器
+        - 還原已加密 VM 的金鑰與祕密
+          [805] 使用 Azure 備份還原已加密 VM 的金鑰保存庫金鑰與密碼
+      - 管理
+        - 管理 Azure VM 備份
+          [810] 使用 Azure 備份服務來管理 Azure VM 備份
+        - 管理復原點
+          [821] 管理復原點
+        - 將備份從標準移轉至增強原則
+          [827] 將 Azure VM 備份從標準遷移至增強原則（預覽）
+        - 使用 Azure CLI 修改備份原則
+          [830] 使用 Azure CLI 來更新現有的 VM 備份原則
+    - Azure VM 備份上的 SQL Server 資料庫
+      - 概觀
+        [833] 關於 Azure VM 中的 SQL Server 備份
+      - 從 Azure 入口網站
+        - Backup
+          - 從保存庫備份多個 SQL Server VM
+            [845] 從復原服務保存庫備份多個 SQL ServerVM
+          - 備份 SQL Server 可用性群組
+            [864] 備份 SQL Server Always On 可用性群組
+          - 從 VM 窗格備份 SQL Server VM
+            [872] 從 VM 窗格備份 SQL Server
+        - 還原
+          [877] 在 Azure VM 上還原 SQL Server 資料庫
+        - 管理
+          [893] 管理和監視備份的 SQL Server 資料庫
+      - 透過 CLI
+        - Backup
+          [905] 使用 Azure CLI 在 Azure VM 中備份 SQL資料庫
+        - 還原
+          [911] 使用 Azure CLI 在 Azure VM 中還原 SQL資料庫
+        - 管理
+          [922] 使用 Azure CLI 在 Azure VM 中管理 SQL資料庫
+      - 使用 REST API
+        - Backup
+          [932] 使用 Azure 備份透過 REST API 來備份Azure VM 中的 SQL Server 資料庫
+        - 還原
+          [948] 使用 REST API 還原 Azure VM 中的 SQLServer 資料庫
+        - 管理
+          [962] 使用 REST API 管理 Azure VM 中的 SQLServer 資料庫
+    - 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器備份保留
+      - Backup
+        [968] 使用 Azure 備份 備份 適用於 MySQL 的Azure 資料庫 - 彈性伺服器 （預覽）
+      - 還原
+        [977] 還原 適用於 MySQL 的 Azure 資料庫 - 使用 Azure 備份 彈性伺服器 （預覽）
+    - 適用於 PostgreSQL 的 Azure 資料庫備份
+      - 概觀
+        [980] 關於適用於 PostgreSQL 的 Azure 資料庫備份
+      - 從 Azure 入口網站
+        - Backup
+          [989] 適用於 PostgreSQL 的 Azure 資料庫長期保留備份
+        - 還原
+          [1005] 還原適用於 PostgreSQL 的 Azure 資料庫備份
+        - 管理
+          [1012] 管理適用於 PostgreSQL 伺服器的 Azure資料庫
+      - 透過 PowerShell
+        - Backup
+          [1017] 使用 Azure PowerShell 備份 AzurePostgreSQL 資料庫
+        - 還原
+          [1026] 使用 Azure PowerShell 還原 AzurePostgreSQL 資料庫
+      - 透過 CLI
+        - Backup
+          [1031] 使用 Azure CLI 備份 Azure PostgreSQL資料庫
+        - 還原
+          [1043] 使用 Azure CLI 來還原 Azure PostgreSQL資料庫
+      - 使用 REST API
+        - 原則
+          [1050] 使用 REST API 建立 Azure PostgreSQL 資料庫的 Azure 資料保護備份原則
+        - Backup
+          [1061] 透過 REST API 使用 Azure 資料保護來備份 Azure PostgreSQL 資料庫
+        - 還原
+          [1075] 使用 Azure 資料保護 REST API 來還原Azure PostgreSQL 資料庫
+    - 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器備份
+      - 從 Azure 入口網站
+        - Backup
+          [1090] 使用長期保留備份適用於 PostgreSQL 的Azure 資料庫彈性伺服器 (預覽)
+        - 還原
+          [1097] 還原 Azure Database for PostgreSQLFlexible 備份 (預覽)
+      - 使用 REST API
+        - 建立原則
+          [1101] 使用 REST API 建立適用於 適用於PostgreSQL 的 Azure 資料庫 的 Azure 資料保護備份原則 - 彈性伺服器 （預覽）
+        - Backup
+          [1111] 備份 適用於 PostgreSQL 的 Azure 資料庫- 使用 REST API 的彈性伺服器 （預覽）
+        - 還原
+          [1125] 還原 適用於 PostgreSQL 的 Azure 資料庫- 使用 REST API 的彈性伺服器 （預覽）
+    - Azure Kubernetes Service 備份
+      - 從 Azure 入口網站
+        - Backup
+          [1134] 使用 Azure 備份來備份 AzureKubernetes Service
+        - 還原
+          [1152] 使用 Azure 備份還原 Azure KubernetesService
+        - 管理
+          [1163] 使用 Azure 備份來管理 AzureKubernetes Service 備份
+      - 透過 PowerShell
+        - Backup
+          [1167] 使用 PowerShell 備份 Azure KubernetesService
+        - 還原
+          [1175] 使用 PowerShell 還原 Azure KubernetesService
+      - 透過 CLI
+        - Backup
+          [1179] 使用 Azure CLI 備份 Azure KubernetesService
+        - 還原
+          [1188] 使用 Azure CLI 還原 Azure KubernetesService
+    - 使用 MARS 代理程式的 Windows 備份
+      - 安裝或升級
+        - 安裝 MARS 代理程式
+          [1194] 安裝 Azure 備份 MARS 代理程式
+        - 升級 MARS 代理程式
+          [1210] 升級 Microsoft Azure 復原服務 (MARS)代理程式
+      - Backup
+        - 備份 Windows Server 檔案和資料夾
+          [1217] 將 Windows Server 檔案和資料夾備份至Azure
+        - 備份 Windows Server 系統狀態
+          [1228] 將 Windows 系統狀態備份至 Azure
+      - 還原
+        - 將檔案從 Azure 復原至 Windows Server
+          [1243] 使用 MARS 代理程式將檔案還原至Windows Server
+        - 還原磁碟區中的所有檔案
+          [1256] 使用 MARS 代理程式還原磁碟區中的所有檔案
+        - 還原 Windows Server 系統狀態
+          [1268] 將系統狀態還原到 Windows Server
+      - 管理
+        [1288] 使用 Azure 備份服務來管理 MicrosoftAzure 復原服務 (MARS) 代理程式備份
+    - Azure 磁碟備份
+      - 概觀
+        [1308] Azure 磁碟備份概觀
+      - 從 Azure 入口網站
+        - Backup
+          [1312] 備份 Azure 受控磁碟
+        - 還原
+          [1328] 還原 Azure 受控磁碟
+        - 管理
+          [1336] 管理 Azure 受控磁碟
+      - 透過 PowerShell
+        - Backup
+          [1344] 使用 Azure PowerShell，為 Azure 受控磁碟備份
+        - 還原
+          [1353] 使用 Azure PowerShell 還原 Azure 受控磁碟
+      - 透過 CLI
+        - Backup
+          [1356] 使用 Azure CLI 備份 Azure 受控磁碟
+        - 還原
+          [1369] 使用 Azure CLI 還原 Azure 受控磁碟
+      - 使用 REST API
+        - 原則
+          [1376] 使用 REST API 建立磁碟的 Azure 資料保護備份原則
+        - Backup
+          [1381] 透過 REST API 使用 Azure 資料保護備份Azure 磁碟
+        - 還原
+          [1395] 使用 Azure 資料保護 REST API 還原Azure 磁碟
+    - Azure Blob 備份
+      - 從 Azure 入口網站
+        - 設定和管理
+          [1407] 使用 Azure 備份設定和管理 Azure Blob的備份
+        - 還原
+          [1421] 還原 Azure Blob
+      - 透過 PowerShell
+        - Backup
+          [1427] 使用 Azure PowerShell 備份儲存體帳戶中的所有 Azure Blob
+        - 還原
+          [1432] 使用 Azure PowerShell 將 Azure Blob 還原至時間點
+      - 透過 CLI
+        - Backup
+          [1436] 使用 Azure CLI 備份儲存體帳戶中的Azure Blob
+        - 還原
+          [1443] 使用 Azure CLI 將 Azure Blob 還原至時間點
+      - 使用 REST API
+        - 原則
+          [1451] 使用 REST API 建立 blob 的 Azure 資料保護備份原則
+        - Backup
+          [1455] 使用 Azure 資料保護透過 REST API 來備份儲存體帳戶中的 Blob
+        - 還原
+          [1469] 使用 Azure 資料保護 REST API，將 AzureBlob 還原至時間點
+    - Azure 檔案共用備份
+      - 從 Azure 入口網站
+        - Backup
+          [1481] 備份 Azure 檔案共用
+        - 還原
+          [1493] 還原 Azure 檔案共用
+        - 管理
+          [1499] 管理 Azure 檔案共享備份
+      - 透過 Azure CLI
+        - Backup
+          [1512] 使用 Azure CLI 備份 Azure 檔案共用
+        - 還原
+          [1516] 使用 Azure CLI 來還原 Azure 檔案共用
+        - 管理
+          [1523] 使用 Azure CLI 管理 Azure 檔案共用備份
+      - 透過 PowerShell
+        - Backup
+          [1534] 使用 PowerShell 備份 Azure 檔案共用
+        - 還原
+          [1544] 使用 PowerShell 還原 Azure 檔案
+        - 管理
+          [1549] 使用 PowerShell 管理 Azure 檔案共用備份
+      - 使用 REST API
+        - Backup
+          [1553] 透過 REST API 使用 Azure 備份來備份Azure 檔案共用
+        - 還原
+          [1568] 使用 REST API 來還原 Azure 檔案共用
+        - 管理
+          [1580] 使用 REST API 管理 Azure 檔案共用備份
+    - Azure VM 備份上的 SAP Hana 資料庫
+      - Backup
+        - Database
+          [1586] 將 SAP Hana 資料庫備份到 Azure VM
+        - HANA 系統複寫資料庫
+          [1605] 在 Azure VM 上備份 SAP Hana 系統複寫資料庫
+        - 執行個體快照集
+          [1623] 備份 Azure VM 上的 SAP HANA 資料庫執行個體快照集
+      - 還原
+        - 資料庫和 HANA 系統複寫資料庫
+          [1639] 在 Azure VM 上還原 SAP Hana 資料庫
+        - 執行個體快照集
+          [1660] 還原 Azure VM 上的 SAP HANA 資料庫執行個體快照集
+      - 管理
+        [1673] 管理和監視已備份的 SAP Hana 資料庫
+    - Azure 備份伺服器 (MABS)
+      - 保護矩陣
+        - MABS V4 (和更新版本) 保護矩陣
+          [1694] MABS (Azure 備份伺服器) V4 (和更新版本) 保護矩陣
+        - MABS V3 UR1 (和更新版本)
+          [1702] MABS (Azure 備份伺服器) V3 UR1 (和更新版本) 保護矩陣
+        - MABS V3 RTM 保護矩陣
+          [1711] Azure 備份伺服器 V3 RTM 保護矩陣
+      - 安裝或升級
+        - 安裝 Azure 備份伺服器
+          [1729] 安裝及升級 Azure 備份伺服器
+        - 新增儲存體
+          [1755] 將記憶體新增至 Azure 備份 伺服器
+        - V12 有哪些新功能
+          [1763] Microsoft Azure 備份伺服器 (MABS) 的新功能？
+        - 版本資訊 MABS
+          [1773] Microsoft Azure 備份伺服器版本資訊
+        - 開啟/關閉遙測設定
+          [1779] 管理遙測設定
+        - 自動安裝
+          [1782] 執行 Azure 備份 伺服器的自動安裝
+      - 保護工作負載
+        - 備份 Hyper-V 虛擬機器
+          [1784] 使用 Azure 備份 Server 備份 Hyper-V 虛擬機
+        - 備份 Azure Stack HCI 虛擬機器
+          [1794] 使用 Azure 備份伺服器來備份 AzureStack HCI 虛擬機器
+        - VMware 伺服器
+          [1802] 使用 Azure 備份伺服器來備份 VMwareVM
+        - Exchange
+          [1838] 使用 Azure 備份伺服器將 ExchangeServer 備份至 Azure
+        - SharePoint 伺服器陣列
+          [1844] 使用 Microsoft Azure 備份伺服器在Azure 上備份 SharePoint 伺服器陣列
+        - SQL Server
+          [1864] 使用 Azure 備份 Server 將 SQL Server 備份至 Azure
+        - 保護系統狀態和裸機復原
+          [1879] 使用 Azure 備份 Server 備份系統狀態並還原至裸機
+        - 使用備份前和備份後指令碼
+          [1889] 使用備份前和備份後指令碼
+        - 使用 MABS 備份檔案資料
+          [1891] 使用 MABS 備份檔案資料
+      - 從 Azure 備份伺服器復原資料
+        [1895] 從 Azure 備份伺服器復原資料
+      - 使用 Azure 備份伺服器來還原 VMware VM
+        [1904] 還原 VMware 虛擬機器
+      - 備份 MABS 伺服器
+        [1911] 備份 MABS 伺服器
+    - Azure Stack 上的 Azure 備份伺服器
+      - 安裝 Azure 備份伺服器
+        [1923] 在 Azure Stack Hub 上安裝 Azure 備份伺服器
+      - 保護檔案和應用程式
+        [1952] 備份 Azure Stack 上的檔案和應用程式
+      - 保護 SharePoint 伺服器陣列
+        [1960] 使用 Microsoft Azure 備份 Server 在Azure Stack 上備份 SharePoint 伺服器陣列
+      - 保護 SQL Server 資料庫
+        [1980] 備份 Azure Stack 中的 SQL Server
+    - Data Protection Manager (DPM)
+      - 在 Azure 入口網站中準備 DPM 工作負載
+        [1994] 準備使用 System Center DPM 將工作負載備份至 Azure
+      - 使用 DPM 備份 Exchange Server
+        [2011] 使用 System Center 2012 R2 DPM 將Exchange Server 備份至 Azure 備份
+      - 將資料復原至替代的 DPM 伺服器中
+        [2018] 從 Azure 備份伺服器復原資料
+      - 使用 DPM 備份 SQL Server 工作負載
+        [2027] 將 SQL Server 備份至 Azure 做為 DPM工作負載
+      - 使用 DPM 備份 SharePoint 伺服器陣列
+        [2042] 使用 Data Protection Manager 將SharePoint 伺服器陣列備份至 Azure
+      - 取代磁帶媒體櫃
+        [2047] 將您的長期儲存空間從磁帶移至 Azure 雲端
+    - 離線備份
+      - 概觀
+        [2051] 離線備份概觀
+      - 使用 Azure 資料箱進行離線備份 (MARS)
+        [2055] 使用 Azure 資料箱進行 Azure 備份離線備份
+      - 使用 Azure 資料箱進行離線備份 (DPM/MABS)
+        [2072] 使用適用於 DPM 和 MABS 的 Azure 數據箱進行離線植入
+      - 使用匯入/匯出 (MARS) 進行離線備份
+        [2090] 使用客戶擁有的磁碟搭配 Azure 匯入/匯出進行 MARS 離線植入
+      - 使用匯入/匯出 (DPM/MABS) 進行離線備份
+        [2105] 使用客戶擁有的磁碟搭配 Azure 匯入/匯出進行 DPM/MABS 離線植入
+      - DPM 和 MABS 的離線備份 (舊版)
+        [2119] DPM 和 Azure 備份伺服器 (舊版本) 的離線備份工作流程
+    - 監視和警示
+      - 使用備份中心
+        [2134] 監視 Azure 備份工作負載
+      - 使用 Azure 監視器警示
+        [2150] 切換至 Azure 備份 的 Azure 監視器型警示
+      - 使用 Azure 監視器計量
+        [2164] 
+      - 使用 Azure 監視器記錄
+        [2171] 使用 Azure 監視器進行大規模監視
+      - 使用備份總管
+        [2181] 使用備份總管監視您的備份
+    - 報告
+      - 設定 Azure 備份報告 (機器翻譯)
+        - 設定 Azure 備份報告 (機器翻譯)
+          [2185] 設定 Azure 備份報告 (機器翻譯)
+        - 透過電子郵件傳送 Azure 備份報告
+          [2199] 透過電子郵件傳送 Azure 備份報告
+      - 設定復原服務保存庫的診斷事件
+        - 使用適用於復原服務保存庫的診斷設定
+          [2207] 使用復原服務保存庫和備份保存庫的診斷設定
+        - 使用系統函數
+          [2216] 
+        - 適用於特定資源診斷事件的記錄分析資料模型
+          [2232] Azure 備份診斷事件的資料模型
+        - 適用於 Azure 備份的 Log Analytics 資料模型 (Azure 診斷模式)
+          [2265] 適用於 Azure 備份資料的 Log Analytics資料模型
+    - 自動化
+      - 概觀
+        [2285] Azure 備份中的自動化
+      - Azure 備份的內建 Azure 原則
+        - 使用 Azure 原則自動啟用 VM 建立的備份
+          [2288] 使用 Azure 原則自動啟用 VM 建立的備份
+        - 大規模地設定保存庫診斷設定
+          [2292] 大規模設定保存庫診斷設定
+      - 使用 PowerShell
+        - Azure VM
+          [2297] 使用 Azure PowerShell 來備份和還原Azure VM
+        - Data Protection Manager (DPM)
+          [2331] 使用 PowerShell 部署和管理 DataProtection Manager (DPM) 伺服器的Azure 備份
+        - 使用 MARS 代理程式的 Windows Server
+          [2344] 使用 PowerShell 部署和管理 WindowsServer/Windows 用戶端的 Azure 備份
+        - Azure VM 備份中的 SQL
+          [2365] 使用 PowerShell 在 Azure VM 中備份和還原 SQL Database
+        - Azure PowerShell 範例
+          [2390] Azure 備份 PowerShell 範例
+      - 使用 Azure CLI
+        [2391] 使用 Azure CLI 建立與管理 Azure 備份服務
+      - 使用 Azure 備份 REST API
+        - 建立復原服務保存庫
+          [2392] 使用 REST API 建立 Azure 復原服務保存庫以進行 Azure 備份
+        - 更新復原服務保存庫的設定
+          [2395] 使用 REST API 更新 Azure 復原服務保存庫設定
+        - 建立及更新備份原則
+          [2399] 使用 REST API 建立 Azure 復原服務備份原則
+        - 備份 Azure VM
+          [2407] 透過 REST API 使用 Azure 備份來備份Azure VM
+        - 還原 Azure VM
+          [2423] 使用 REST API 還原 Azure 虛擬機器
+        - 管理 Azure 備份作業
+          [2440] 在 Azure 備份 中使用 REST API 追蹤備份和還原作業
+      - 使用 Azure 資料保護 REST API
+        [2443] 使用 REST API 建立 Azure 備份保存庫
+      - 使用 ARG 查詢備份資訊
+        [2447] 使用 Azure Resource Graph (ARG) 來查詢您的備份
+      - Resource Manager 或 Bicep 範本
+        [2453] 適用於 Azure 備份的 Azure ResourceManager 和 Bicep 範本
+    - 安全性和勒索軟體保護
+      - 概觀
+        [2456] Azure 備份中的安全性功能概觀
+      - 在 Azure Key Vault 中儲存及管理 MARS 代理程式複雜密碼
+        [2461] 在 Azure Key Vault 中安全地儲存及管理MARS 代理程式複雜密碼
+      - Azure 角色型存取控制
+        [2477] 使用 Azure 角色型存取控制來管理 Azure備份復原點
+      - 使用資源防護設定多使用者授權
+        [2489] 在 Azure 備份中使用資源防護設定多使用者授權
+      - 管理不可變的保存庫
+        [2504] 管理 Azure 備份不可變保存庫作業
+      - 虛刪除
+        - 概觀
+          [2512] Azure 備份的虛刪除
+        - 對於虛擬機器
+          [2517] 虛擬機器的虛刪除
+        - 對於 Azure VM 中的 SQL Server 和 SAP Hana
+          [2523] Azure VM 中的 SQL Server 虛刪除，和Azure VM 工作負載中的 SAP Hana 虛刪除
+      - 設定和管理增強式虛刪除
+        [2529] 設定及管理 Azure 備份中的增強型虛刪除
+      - 刪除 Azure 檔案共用的保護
+        [2537] 使用 Azure 備份意外刪除 Azure 檔案共用的保護
+      - 勒索軟體防護
+        - 概觀
+          [2540] 備份和還原計劃以防範勒索軟體
+        - 與 Microsoft Defender 的勒索軟體警示整合
+          [2550] 整合 Microsoft Defender 的勒索軟體警示以保留 Azure 備份復原點的解決方案範例
+        - 常見問題集 - 針對勒索軟體的保護
+          [2556] 設定和保護 Azure 備份，防止安全性和勒索軟體威脅的最佳做法是什麼？
+      - 混合式備份的安全性
+        [2560] 安全性功能，可協助保護使用 Azure 備份的混合式備份
+      - 私人端點
+        - V1 體驗
+          [2569] 建立和使用私人端點 （v1 體驗） 來Azure 備份
+        - V2 體驗
+          [2597] 針對 Azure 備份建立及使用私人端點 (v2體驗)
+      - Azure 備份的加密
+        [2605] Azure 備份的加密
+      - 使用客戶管理的金鑰進行加密
+        - 復原服務保存庫
+          [2607] 使用客戶自控金鑰來加密備份資料
+        - 備份保存庫
+          [2624] 使用客戶管理的金鑰加密備份儲存函式庫中的備份資料 （預覽）
+      - Transport Layer Security (傳輸層安全性)
+        [2639] Azure 備份中的傳輸層安全性
+      - Azure 原則的安全性控制
+        [2642] Azure 備份 的 Azure 原則 法規合規性控制
+      - 安全性基準
+        [2651] 適用于備份的 Azure 安全性基準
+    - 封存層
+      - 概觀
+        [2660] Microsoft Azure 備份的封存層概觀
+      - 使用封存層
+        [2665] 使用封存層支援
+    - 疑難排解
+      - Azure VM
+        [2674] 
+      - Azure VM 檔案復原
+        [2686] 針對 Azure VM 備份的檔案復原問題進行疑難排解
+      - Azure 備份代理程式或 VM 延伸模組已逾時
+        [2694] 針對 Azure 備份失敗進行疑難排解：與代理程式或延伸模組相關的問題
+      - 加密的 Azure VM 備份
+        [2707] 針對已加密 Azure 虛擬機器上的備份失敗進行疑難排解
+      - Azure 備份代理程式
+        [2709] 對 Microsoft Azure 復原服務 (MARS) 代理程式進行疑難排解
+      - Azure Blob 備份
+        [2724] 疑難排解 Azure Blob 備份
+      - 檔案和資料夾備份速度很慢
+        [2729] 疑難排解 Azure 備份的檔案和資料夾備份速度緩慢問題
+      - Azure 備份伺服器
+        [2733] 針對 Azure 備份伺服器進行疑難排解
+      - System Center DPM
+        [2744] 針對 System Center Data ProtectionManager 疑難排解
+      - Azure 檔案共用
+        [2747] 
+      - Azure 磁碟備份
+        [2754] 針對 Azure 磁碟備份中的備份失敗進行疑難排解
+      - SQL Server
+        [2760] 
+      - 適用於 PostgreSQL 的 Azure 資料庫
+        [2771] 使用 Azure 備份針對 PostgreSQL 資料庫備份進行疑難排解
+      - 適用於 PostgreSQL 的 Azure 資料庫 - 彈性伺服器備份
+        [2779] Troubleshoot Azure Database forPostgreSQL - Flexible server backup(preview)
+      - 適用於 MySQL 的 Azure 資料庫 - 彈性伺服器
+        [2781] 針對 適用於 MySQL 的 Azure 資料庫 進行疑難解答 - 彈性伺服器備份 （預覽）
+      - Azure VM 中的 SAP Hana 備份
+        [2783] 
+      - Azure VM 中的 SAP HANA 資料庫執行個體備份
+        [2798] 
+      - 系統狀態
+        [2802] 疑難排解系統狀態備份
+      - 封存層
+        [2808] 
+      - Azure Kubernetes Service
+        [2810] 
+      - 從 Microsoft Azure 備份伺服器復原資料
+        [2817] 對從 Microsoft Azure 備份伺服器復原資料的問題進行疑難排解
+  - 參考
+    - 封存的版本資訊
+      [2819] Azure 備份中封存的發行備註
+    - .NET
+      [2823] Microsoft.Azure.Management.RecoveryServices.Backup Namespace
+    - Azure CLI
+      [2829] az backup
+    - Azure 資料保護 - CLI
+      [2835] az dataprotection
+    - Azure PowerShell
+      [2842] Az.RecoveryServices
+    - Azure 資料保護 - PowerShell
+      [2850] Az.DataProtection
+    - PowerShell – Azure 備份代理程式
+      [2854] MSOnlineBackup
+    - REST - Azure 資料保護
+      [2857] Azure 備份的資料保護平臺
+    - REST - 備份
+      [2858] 備份 REST API
+    - REST - 復原服務保存庫
+      [2859] [復原服務]
+    - Resource Manager 範本
+      [2860] 
+    - Azure 原則內建
+      [2896] 
+  - 資源
+    - 法規遵循
+      [2899] Azure 備份 合規性供應專案
+    - Azure 藍圖
+    - Microsoft 問與答頁面
+    - 定價計算機
+      [2901] Azure 備份定價
+    - 服務更新
+    - 影片

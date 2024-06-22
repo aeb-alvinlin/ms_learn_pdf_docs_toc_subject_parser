@@ -1,0 +1,376 @@
+- ---< azure-automation.pdf >---
+  - Azure 自動化使用者文件
+    [1] Azure 自動化文件
+  - 概觀
+    - 什麼是 Azure 自動化？
+      [3] 什麼是 Azure 自動化？
+    - Azure 中的各種自動化服務為何？
+      [9] 選擇 Azure 中的自動化服務
+    - 常見問題集
+      [18] Azure 自動化常見問題集
+    - 新功能
+      [21] Azure 自動化的新增功能？
+    - 「新增功能」的封存
+      [30] Azure 自動化新增功能的封存檔
+  - 快速入門
+    - 建立自動化帳戶 - Azure 入口網站
+      [40] 快速入門：使用 Azure 入口網站建立自動化帳戶
+    - 將 Runbook 從 PowerShell 5.1 更新為 PowerShell 7.2
+      [47] 將 Runbook 從 PowerShell 5.1 更新為PowerShell 7.2
+    - 在 PowerShell 7.2 Runbook 中執行 Azure CLI 命令
+      [50] 在 PowerShell 7.2 Runbook 中執行Azure CLI 命令
+    - 安裝混合式背景工作角色擴充功能 - Azure 入口網站
+      [53] Quickstart: Install Hybrid Workerextension on Virtual Machines using theAzure portal
+    - 啟用受控識別 - Azure 入口網站
+      [56] 快速入門：使用 Azure 入口網站，為自動化帳戶啟用受控識別
+    - 啟用電腦的 Desired State Configuration
+      [60] 使用 Desired State Configuration 設定VM
+  - 教學課程
+    - 使用受控識別建立 PowerShell Runbook
+      [65] 教學課程：建立自動化 PowerShellRunbook 以使用受控識別
+    - 建立 PowerShell 工作流程 Runbook
+      [71] 教學課程：在自動化中建立 PowerShell工作流程 Runbook
+    - 建立 Python 3 Runbook
+      [84] 教學課程：建立 Python 3.8 Runbook
+    - 案例
+      - 使用 Azure 自動化管理 Azure SQL 資料庫中的資料庫
+        [91] 使用 Azure 自動化管理 Azure SQL 資料庫中的資料庫
+      - 根據 STIG 設定資料
+        [95] 根據安全性技術實作指南來設定資料(STIG)
+      - 大規模設定資料
+        [97] 大規模設定 Azure 自動化狀態設定的資料
+      - 從現有伺服器建立設定
+        [99] 從現有的伺服器建立設定
+      - 將設定轉換成複合資源
+        [101] 將設定轉換成複合資源
+  - 概念
+    - 自動化帳戶驗證總覽
+      [103] Azure 自動化帳戶驗證概觀
+    - Runbook 執行概觀
+      [107] Azure 自動化中的 Runbook 執行
+    - 混合式 Runbook 背景工作概觀
+      [117] 自動化混合式 Runbook 背景工作角色概觀
+    - 自動化 Runbook 類型
+      [126] Azure 自動化 Runbook 類型
+    - 自動化執行階段環境
+      [134] Azure 自動化中的執行階段環境
+    - PowerShell DSC
+      [138] Desired State Configuration 2.0
+    - 自動化網路設定詳細資料
+      [142] Azure 自動化網路設定詳細資料
+    - 適用於 Visual Studio Code 的 Azure 自動化延伸模組
+      [144] 在 Azure 自動化中透過 VS Code 製作Runbook
+    - 安全性
+      - Azure 原則的安全性控制
+        [147] 適用於 Azure 自動化的 Azure 原則法規合規性控制措施
+      - 適用於自動化的 Azure 安全性基準
+        [155] 自動化的 Azure 安全性基準
+      - 在 Azure 自動化中安全性的最佳作法
+        [168] Azure 自動化的安全性最佳做法
+    - 資料安全性
+      - 安全資產的加密
+        [172] Azure 自動化中的安全資產加密
+      - 管理 Azure 自動化資料
+        [181] 管理 Azure 自動化資料
+    - 高可用性
+      - 可用性區域
+        [186] Azure 自動化的可用性區域支援
+      - 自動化帳戶的災害復原
+        [189] Azure 自動化的災害復原
+  - 操作指南
+    - 自動化帳戶
+      - 建立自動化帳戶 - Azure 入口網站
+        [194] 建立獨立的 Azure 自動化帳戶
+      - 建立自動化帳戶 - Resource Manager 範本
+        [202] 使用 Resource Manager 範本建立 Azure自動化帳戶
+      - 停用本機驗證
+        [211] 停用 Azure 自動化中的本機驗證
+      - 受控識別
+        - 正在使用系統指派的受控識別
+          [213] 針對 Azure 自動化帳戶使用系統指派的受控識別
+        - 正在使用使用者指派的受控識別
+          [227] 針對 Azure 自動化帳戶使用使用者指派的受控識別
+        - 停用系統指派的受控識別
+          [240] 針對 Azure 自動化帳戶停用系統指派受控識別
+        - 移除使用者指派的受控識別
+          [244] 移除 Azure 自動化帳戶中使用者指派的受控識別
+        - 針對受控識別進行疑難排解
+          [250] 針對 Azure 自動化的受控識別問題進行疑難排解
+      - 執行身分帳戶
+        - 刪除執行身分帳戶
+          [256] 刪除 Azure 自動化執行身分帳戶
+        - 將執行身分帳戶移轉至受控識別
+          [258] 從現有的執行身分帳戶移轉至受控識別
+      - 使用 Visual Studio Code 的自動化延伸模組
+        [268] 使用適用於 Visual Studio Code 的 Azure自動化延伸模組
+      - 設定使用 Amazon Web Services 進行驗證
+        [275] 使用 Amazon Web Services 驗證Runbook
+      - 使用 Microsoft Entra ID 設定驗證
+        [277] 使用 Microsoft Entra ID 向 Azure 進行驗證
+      - 管理自動化使用的 DNS 資料列
+        [282] Azure 自動化所使用的 Azure 區域 DNS記錄
+      - 私下連線至自動化帳戶
+        [289] 使用 Azure Private Link 將網路安全地連線至 Azure 自動化
+      - 管理角色權限與安全性
+        [299] 在 Azure 自動化中管理角色權限和安全性
+      - 重新定位自動化
+        - 將自動化帳戶移至另一個訂用帳戶
+          [320] 將 Azure 自動化帳戶移至另一個訂用帳戶
+        - 將自動化帳戶移至另一個區域
+          [327] 將 Azure 自動化 重新放置至另一個區域
+      - 管理自動化帳戶
+        [329] 管理您的 Azure 自動化帳戶
+      - 從 Orchestrator 移轉到 Azure 自動化 (Beta)
+        [336] 從 Orchestrator 移轉到 Azure 自動化(Beta)
+    - 共用的資源
+      - 管理憑證
+        [342] 管理 Azure 自動化中的憑證
+      - 管理連線
+        [348] 管理 Azure 自動化中的連線
+      - 管理認證
+        [354] 管理 Azure 自動化中的認證
+      - 管理 PowerShell 模組
+        - 在 Azure 自動化中管理模組
+          [360] 在 Azure 自動化中管理模組
+        - 更新 Azure PowerShell 模組
+          [377] 更新自動化中的 Azure PowerShell 模組
+      - 管理排程
+        [380] 管理 Azure 自動化中的排程
+      - 管理變數
+        [389] 管理 Azure 自動化中的變數
+      - 管理 Python 2 套件
+        [396] 管理 Azure 自動化中的 Python 2 套件
+      - 管理 Python 3 套件
+        [400] 管理 Azure 自動化中的 Python 3 套件
+      - 針對共用資源進行疑難排解
+        [409] 針對共用資源問題進行疑難排解
+    - 程序自動化
+      - 使用現有的 Runbook 和模組
+        [414] 使用現有的 Runbook 和模組
+      - 了解 PowerShell 工作流程
+        [423] 了解適用於 Azure 自動化的 PowerShell工作流程
+      - 執行階段環境案例
+        [432] 管理執行階段環境和關聯的 Runbook
+      - 管理 Runbook
+        [445] 管理 Azure 自動化中的 Runbook
+      - 撰寫和執行 Runbook
+        - 編輯文字 Runbook
+          [461] 在 Azure 自動化中編輯文字式 Runbook
+        - 編輯圖形化 Runbook
+          [464] 在 Azure 自動化中製作圖形化 Runbook
+        - 建立模組化 Runbook
+          [483] 在自動化中建立模組化 Runbook
+        - 設定 Runbook 輸入參數
+          [488] 在自動化中設定 Runbook 輸入參數
+        - 測試 Runbook
+          [505] 管理 Azure 自動化中的 Runbook
+        - 啟動 Runbook
+          [521] 在 Azure 自動化中啟動 Runbook
+        - 從 Webhook 啟動 Runbook
+          [527] 從 Webhook 啟動 Runbook
+        - 使用圖形化 Runbook SDK
+          [541] 使用 Azure 自動化圖形化 Runbook SDK(預覽)
+      - 監視 Runbook
+        - 設定 Runbook 輸出
+          [545] 設定 Runbook 輸出和訊息串流
+        - 處理圖形化 Runbook 中的錯誤
+          [559] 處理圖形化 Runbook 中的錯誤
+        - 將 Azure 自動化診斷記錄轉送至 Azure 監視器
+          [564] 將 Azure 自動化診斷記錄轉送至 Azure 監視器
+      - 針對 Runbook 進行疑難排解
+        - 針對 Runbook 問題進行疑難排解
+          [579] 針對 Runbook 問題進行疑難排解
+        - 開啟 Microsoft Azure 自動化案例時要收集的資料
+          [605] 開啟 Microsoft Azure 自動化案例時要收集的資料
+      - 使用混合式 Runbook 背景工作角色
+        - 部署延伸模組型背景工作角色
+          [608] 
+        - 將現有的代理程式型混合式背景工作角色移轉至延伸模組型背景工作角色
+          [624] 將現有的代理程式型混合式背景工作角色移轉至延伸模組型混合式背景工作角色
+        - 部署代理程式型 Windows 背景工作角色
+          [635] 
+        - 部署代理程式型 Linux 背景工作角色
+          [646] 
+        - 在混合式 Runbook 背景工作上啟動 Runbook
+          [656] 在 Hybrid Runbook Worker 上執行自動化 Runbook
+        - 使用 Azure 原則以強制執行作業
+          [671] 使用 Azure 原則在混合式 Runbook 背景工作角色上強制作業執行
+        - 針對延伸模組型背景工作角色問題進行疑難排解
+          [678] 
+        - 針對延代理程式背景工作角色問題進行疑難排解
+          [689] 對自動化中的代理程式型混合式Runbook 背景工作角色問題進行疑難排解
+      - 使用原始檔控制整合
+        [705] 使用原始檔控制整合
+    - 組態管理
+      - Azure 自動化狀態設定
+        - 概觀
+          [715] Azure Automation State Configuration概觀
+        - 開始使用狀態設定
+          [719] 開始使用 Azure Automation StateConfiguration
+        - 啟用狀態設定
+          [732] 啟用 Azure 自動化狀態設定
+        - 將伺服器設定為預期狀態並管理漂移
+          [743] 將機器設定為預期狀態
+        - 撰寫 DSC 設定
+          [748] 撰寫 DSC 設定
+        - 編譯 DSC 設定
+          [751] 編譯 Azure 自動化狀態設定中的 DSC 組態
+        - 補救不符合規範的狀態設定伺服器
+          [760] 補救不相容的 Azure 自動化狀態設定伺服器
+        - 移除節點和設定
+          [762] 如何從自動化狀態設定中移除設定和節點
+        - 使用 Chocolatey 設定持續部署
+          [766] 使用 Chocolatey 設定持續部署
+        - 與 Azure 監視器記錄整合
+          [774] 整合 Azure 自動化狀態設定與 Azure 監視器記錄
+        - 使用狀態設定延伸模組版本歷程記錄
+          [782] 使用 Azure Desired State Configuration延伸模組版本歷程記錄
+        - 針對狀態設定問題進行疑難排解
+          [792] 針對 Azure 自動化狀態設定的問題進行疑難排解
+    - 變更追蹤和清查
+      - 使用 Azure 監視代理程式 (AMA)
+        - 概觀
+          - 關於變更追蹤和清查
+            [803] 
+          - 變更追蹤擴充功能版本
+            [812] 變更追蹤和清查擴充功能版本詳細數據和已知問題
+        - 支援的區域
+          [814] 變更追蹤和清查 Azure 監視代理程式支援的區域
+        - 啟用變更追蹤和清查
+          [816] 使用 Azure 監視器代理程式啟用變更追蹤和清查
+        - 管理變更追蹤和清查
+          [823] 使用 Azure Monitoring Agent 管理變更追蹤和清查
+        - 設定警示
+          [829] 如何建立變更追蹤和清查的警示
+      - 移轉指引
+        - 從 Log Analytics 移轉至 Azure 監視代理程式版本
+          [832] 從使用記錄分析之變更追蹤和清查移轉至使用 Azure 監視代理程式版本之變更追蹤和清查的指導
+      - 使用 Log Analytics
+        - 概觀
+          [836] 
+        - 已連結 Log Analytics 工作區的支援區域
+          [847] 已連結 Log Analytics 工作區的支援區域
+        - 啟用
+          - 從 Azure 入口網站啟用
+            [851] Azure 入口網站的 [啟用變更追蹤和清查]
+          - 從 Azure VM 啟用
+            [854] 從 Azure VM 啟用變更追蹤和清查
+          - 從自動化帳戶啟用
+            [856] 自動化帳戶的 [啟用變更追蹤和清查]
+          - 從 Runbook 啟用
+            [861] 從 Runbook 啟用變更追蹤和清查
+        - 管理變更追蹤和清查
+          [869] 管理變更追蹤和清查
+        - 從虛擬機器管理清查集合
+          [877] 從虛擬機器管理清查集合
+        - 使用範圍設定
+          [884] 
+        - 設定警示
+          [886] 如何建立變更追蹤和清查的警示
+        - 停用
+          - 移除變更追蹤和清查
+            [889] 從自動化帳戶中移除變更追蹤和清查
+          - 移除機器
+            [891] 從變更追蹤和清查中移除機器
+        - 疑難排解
+          - 針對功能部署問題進行疑難排解
+            [893] 針對功能部署問題進行疑難排解
+          - 針對變更追蹤和清查問題進行疑難排解
+            [901] 針對變更追蹤和清查問題進行疑難排解
+    - 更新管理
+      - 概觀
+        [906] 更新管理概觀
+      - 已連結 Log Analytics 工作區的支援區域
+        [915] 已連結 Log Analytics 工作區的支援區域
+      - 規劃您的部署
+        [919] 規劃更新管理部署
+      - 啟用
+        - 系統必要條件
+          [923] 更新管理支援的作業系統
+        - 啟用使用 Azure Resource Manager 範本
+          [926] 使用 Azure Resource Manager 範本啟用更新管理
+        - 從 Azure 入口網站啟用
+          [935] 從 Azure 入口網站啟用更新管理
+        - 從 Azure VM 啟用
+          [939] 為 Azure VM 啟用更新管理
+        - 從自動化帳戶啟用
+          [942] 從自動化帳戶啟用更新管理
+        - 從 Runbook 啟用
+          [947] 從 Runbook 啟用更新管理
+      - 管理虛擬機器的更新
+        - 開始使用
+          [954] 管理 VM 的更新和修補程式 (機器翻譯)
+        - 評定合規性
+          [957] 在更新管理中檢視更新評估
+        - 部署更新並檢閱狀態
+          [963] 如何部署更新並檢閱結果
+        - 使用前指令碼和後指令碼
+          [974] 
+        - 設定警示
+          [984] 如何建立更新管理的警示
+      - 與 Configuration Manager 整合
+        [988] 搭配 Microsoft Configuration Manager使用更新管理
+      - 設定 Windows Update 用戶端
+        [991] 設定 Windows Update 設定以進行 Azure自動化更新管理
+      - 使用動態群組
+        [993] 搭配更新管理使用動態群組
+      - 查詢更新管理記錄
+        [996] 查詢更新管理記錄
+      - 使用範圍設定
+        [1010] 限制更新管理部署範圍
+      - 停用
+        - 移除更新管理
+          [1012] 從自動化帳戶移除更新管理
+        - 移除機器
+          [1014] 從更新管理中移除 VM
+      - 疑難排解
+        - 針對功能部署問題進行疑難排解
+          [1016] 針對功能部署問題進行疑難排解
+        - 針對更新管理問題進行疑難排解
+          [1024] 針對更新管理問題進行疑難排解
+        - 針對 Windows 更新代理程式問題進行疑難排解
+          [1047] 針對 Windows 更新代理程式問題進行疑難排解
+        - 針對 Linux 更新代理程式問題進行疑難排解
+          [1061] 針對 Linux 更新代理程式問題進行疑難排解
+    - 案例
+      - 從 Runbook 傳送電子郵件
+        [1070] 從自動化 Runbook 傳送電子郵件
+      - 使用計量警示監視 Runbook
+        [1076] 使用計量警示監視 Runbook
+      - 從 Azure 警示啟動 Runbook
+        [1080] 使用警示來觸發 Azure 自動化 Runbook
+      - 追蹤具有監看員工作的更新檔案
+        [1093] 使用監看員工作追蹤更新的檔案
+      - 管理 Office 365 服務
+        [1100] 管理 Office 365 服務
+      - 使用自動化 Runbook 部署 AWS 虛擬機器
+        [1104] 使用 Runbook 來部署 Amazon WebServices VM
+      - 使用 Runbook 部署 Resource Manager 範本
+        [1112] 在自動化 PowerShell Runbook 中部署Azure Resource Manager 範本
+      - 與事件方格和 Microsoft Teams 整合
+        [1119] 教學課程：將 Azure 自動化與事件方格和Microsoft Teams 整合
+      - 自動啟動/停止 Azure-SSIS IR
+        [1139] 
+  - 參考
+    - Azure CLI
+      [1155] az automation
+    - Azure PowerShell Az
+      [1164] Az.Automation
+    - Azure PowerShell AzureRM
+      [1170] AzureRM.Automation
+    - .NET
+      [1236] Microsoft.Azure.Management.Automation Namespace
+    - REST
+      [1239] 自動化 REST API 參考
+    - Azure 原則內建
+      [1240] 
+  - 資源
+    - 自動化簡介影片
+    - Azure 藍圖
+    - Microsoft 問與答頁面
+    - 定價
+    - 定價計算機
+    - 版本資訊
+    - 服務更新
+    - Stack Overflow
+    - 影片

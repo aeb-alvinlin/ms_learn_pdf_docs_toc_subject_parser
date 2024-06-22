@@ -1,0 +1,235 @@
+- ---< azure-databox.pdf >---
+  - Azure 資料箱文件 - 離線傳輸
+    [1] Azure 資料箱文件 - 離線傳輸
+    - 資料箱
+      - 概觀
+        - 什麼是資料箱？
+          [3] 什麼是 Azure 資料箱？
+      - 快速入門
+        - 設定 - Azure 入口網站
+          - 匯入
+            [10] 開始使用 Azure 資料箱將數據匯入 Azure
+          - 匯出
+            [14] 快速入門：開始使用 Azure 資料箱從Azure 匯出資料
+      - 教學課程
+        - 將資料匯入 Azure
+          - 1 - 訂購
+            [18] 教學課程：訂購 Azure 數據箱
+          - 2 - 設定
+            [45] 教學課程：連接 Azure 資料箱的纜線並且連線
+          - 3 - 連線和複製
+            - 透過 SMB
+              [50] 教學課程：透過SMB將資料複製到 Azure資料箱
+            - 透過 NFS
+              [62] 教學課程：透過 NFS 將資料複製到 Azure資料箱
+            - 透過 REST
+              [71] 教學課程：使用 REST API 將數據複製到Azure 資料箱 Blob 記憶體
+            - 透過資料複製服務
+              [87] 教學課程：使用資料複製服務將資料複製到 Azure 資料箱 (預覽)
+            - 至受控磁碟
+              [94] 教學課程：使用資料箱匯入資料以作為Azure 中的受控磁碟
+          - 4 - 準備寄送
+            [101] 教學課程：準備寄送 Azure 資料箱
+          - 5 - 傳回、上傳、驗證
+            [105] 教學課程：傳回 Azure 數據箱並確認數據已上傳至 Azure
+        - 從 Azure 匯出資料
+          - 1 - 訂購
+            [113] 教學課程：建立 Azure 資料箱的匯出訂單
+          - 2 - 設定
+            [141] 教學課程：連接 Azure 資料箱的纜線並且連線
+          - 3 - 連線和複製
+            - 透過 SMB
+              [146] 教學課程：透過 SMB 從 Azure 資料箱複製資料
+            - 透過 NFS
+              [154] 教學課程：透過 NFS 從 Azure 資料箱複製資料
+          - 4 - 退回
+            [162] 教學課程：傳回 Azure 數據箱
+      - 概念
+        - 閱讀安全性方針
+          [168] 保管庫安裝和操作 Azure 資料箱
+        - 檢閱追蹤和記錄
+          - 針對匯入訂單
+            [173] Azure 資料箱和 Azure Data Box Heavy匯入訂單的追蹤和事件記錄
+          - 針對匯出訂單
+            [189] Azure 資料箱和 Azure Data Box Heavy匯出訂單的追蹤和事件記錄
+        - 檢視稽核記錄
+          [199] Azure 資料箱和 Azure Data Box Heavy的稽核記錄
+        - 檢閱需求
+          - 適用於資料箱
+            [203] Azure 資料箱系統需求
+          - 適用於資料箱 Blob 儲存體
+            [208] 
+        - 了解限制
+          [213] Azure 數據箱限制
+        - 安全性
+          - 安全性基準
+            [218] Azure 資料箱的 Azure 安全性基準
+          - Azure 原則的安全性控制
+            [230] 適用於 Azure 數據箱的 Azure 原則 法規合規性控制
+          - 檢閱安全性
+            [235] Azure 資料箱安全性和資料保護
+        - 傳送 ACL 和中繼資料
+          [240] 使用 Azure 資料箱保留檔案 ACL、屬性和時間戳記
+        - 常見問題集
+          [246] 關於服務
+      - 如何
+        - 透過 Azure 入口網站管理
+          [256] 使用Azure 入口網站來管理 Azure 資料箱和 Azure Data Box Heavy
+        - 透過本機 Web UI 管理
+          [272] 使用本機 Web UI 來管理您的資料箱和Data Box Heavy
+        - 使用自我管理寄送
+          [286] 在 Azure 入口網站 中使用 Azure 數據箱的自我管理寄送
+        - 攜帶您自己的憑證
+          [293] 搭配 Data Box 和 Data Box Heavy 裝置使用您自己的憑證
+        - 啟用客戶管理的金鑰
+          [301] 在適用于 Azure 資料箱的 Azure 金鑰保存庫中使用客戶管理的金鑰
+        - 使用客戶加密箱
+          [323] 將客戶加密箱用於 Azure 資料箱 (預覽)
+        - 將資料移至 Blob 層
+          [326] 使用 Azure 資料箱或 Azure Data BoxHeavy 將資料傳送到適當的 Azure 儲存體Blob 層
+        - 接上裝置纜線
+          [330] Azure 資料箱的纜線選項
+        - 請連絡支援人員
+          [335] 開啟 Azure 資料箱的支援票證
+        - 移轉
+          - 至 SharePoint Online
+            [340] 使用 Azure 資料箱將檔案共用內容遷移至Microsoft 365
+          - 至 Azure 檔案同步
+            [344] 使用 Azure 資料箱將資料離線遷移至Azure 檔案同步
+          - 從 HDFS 存放區
+            [359] 從內部部署的 HDFS 存放區遷移至具有Azure 資料箱的 Azure 儲存體
+          - 至 Azure 備份
+            [369] 使用 Azure 資料箱進行 Azure 備份離線備份
+        - 疑難排解
+          - 資料箱共用存取
+            [386] 針對數據複製到 Azure 資料箱期間的共享連線失敗進行疑難解答
+          - 資料箱複製問題
+            [393] 
+          - 資料箱上傳問題
+            [402] 從 Azure 資料箱和 Azure Data BoxHeavy 裝置檢閱上傳項目的複製錯誤
+          - 資料箱 Blob 儲存體問題
+            [410] 針對與 Azure 資料箱 Blob 儲存體相關的問題進行疑難排解
+          - 資料箱時間同步問題
+            [413] 將 Azure 資料箱和 Azure Data BoxHeavy 的裝置時間同步
+    - 資料箱磁碟
+      - 概觀
+        - 什麼是資料箱磁碟？
+          [420] 什麼是 Azure 資料箱磁碟？
+      - 快速入門
+        - 設定 - Azure 入口網站
+          [424] 快速入門：使用 Azure 入口網站 部署Azure 資料箱磁碟
+      - 教學課程
+        - 1 - 訂購
+          [428] 教學課程：訂購 Azure 資料箱磁碟
+        - 2 - 設定
+          [444] 教學課程：解除封裝、連線和解除鎖定Azure 資料箱磁碟
+        - 3 - 複製及驗證
+          [450] 教學課程：將數據複製到 Azure 資料箱磁碟 並驗證
+        - 4 - 退回
+          [465] 教學課程：傳回 Azure 資料箱磁碟
+        - 5 - 確認上傳
+          [468] 教學課程：確認資料已從 Azure 資料箱磁碟上傳
+      - 概念
+        - 檢閱需求
+          [473] Azure 資料箱磁碟 系統需求
+        - 了解限制
+          [477] Azure 資料箱磁碟 限制
+        - 檢閱安全性
+          [482] Azure 資料箱磁碟安全性和資料保護
+        - 傳送 ACL 和中繼資料
+          [485] 使用 Azure 資料箱磁片保留檔案 ACL、屬性和時間戳記
+        - 常見問題集
+          [490] 關於服務
+      - 如何
+        - 透過 Azure 入口網站管理
+          [500] 使用 Azure 入口網站來管理資料箱磁碟
+        - 使用自我管理寄送
+          [510] 在 Azure 入口網站 中使用 Azure 資料箱磁碟 的自我管理寄送
+        - 疑難排解
+          - 解除鎖定問題
+            [518] 對 Azure 資料箱磁碟中的磁碟解除鎖定問題進行疑難排解
+          - 資料複製問題
+            [521] 對 Azure 資料箱磁碟中的問題進行疑難排解
+          - 驗證問題
+            [524] 使用記錄對 Azure 資料箱磁碟中的驗證問題進行疑難排解
+          - 資料上傳問題
+            [528] 檢閱從 Azure 資料箱磁碟 上傳中的複製錯誤
+          - 上傳記錄
+            [533] 使用記錄針對 Azure 資料箱磁碟 中的上傳問題進行疑難排解
+        - 請連絡支援人員
+          [541] 開啟 Azure 資料箱的支援票證
+    - Data Box Heavy
+      - 概觀
+        - 什麼是 Data Box Heavy？
+          [546] 什麼是 Azure Data Box Heavy？
+      - 快速入門
+        - 設定 - Azure 入口網站
+          [550] 快速入門：使用 Azure 入口網站 部署Azure Data Box Heavy
+      - 教學課程
+        - 1 - 訂購
+          [555] 教學課程：訂購 Azure Data Box Heavy
+        - 2 - 設定
+          [583] 教學課程：纜線並連線到 Azure Data BoxHeavy
+        - 3 - 連線和複製
+          - 透過 SMB
+            [592] 教學課程：透過SMB將數據複製到 AzureData Box Heavy
+          - 透過 NFS
+            [603] 教學課程：透過 NFS 將資料複製到 AzureData Box Heavy
+          - 透過 REST
+            [609] 教學課程：透過 REST API 將資料複製到Azure 資料箱 Blob 記憶體
+          - 透過資料複製服務
+            [624] 教學課程：使用資料複製服務將資料複製到 Azure Data Box Heavy (Preview)
+          - 至受控磁碟
+            [631] 教學課程：使用 Data Box Heavy 將資料匯入為 Azure 中的受控磁片
+        - 4 - 傳回、上傳並確認
+          [638] 教學課程：送回 Azure Data Box Heavy，並確認資料已上傳至 Azure
+      - 概念
+        - 閱讀安全性方針
+          [644] 保管庫安裝和操作 Azure Data Box Heavy
+        - 檢閱追蹤和記錄
+          [649] Azure 資料箱和 Azure Data Box Heavy匯入訂單的追蹤和事件記錄
+        - 檢閱需求
+          [665] Azure Data Box Heavy 系統需求
+        - 了解限制
+          [670] Azure Data Box Heavy 限制
+        - 常見問題集
+          [675] 關於服務
+      - 如何
+        - 透過 Azure 入口網站管理
+          [685] 使用Azure 入口網站來管理 Azure 資料箱和 Azure Data Box Heavy
+        - 透過本機 Web UI 管理
+          [701] 使用本機 Web UI 來管理您的資料箱和Data Box Heavy
+        - 啟用客戶管理的金鑰
+          [715] 在適用于 Azure 資料箱的 Azure 金鑰保存庫中使用客戶管理的金鑰
+        - 裝置問題疑難排解
+          [737] 
+        - 將資料移至 Blob 層
+          [746] 使用 Azure 資料箱或 Azure Data BoxHeavy 將資料傳送到適當的 Azure 儲存體Blob 層
+        - 請連絡支援人員
+          [750] 開啟 Azure 資料箱的支援票證
+        - 移轉
+          - 至 SharePoint Online
+            [755] 使用 Azure Data Box Heavy 將檔案共用內容遷移至 SharePoint Online
+          - 至 Azure 檔案同步
+            [758] 使用 Azure 資料箱將資料離線遷移至Azure 檔案同步
+          - 從 HDFS 存放區
+            [773] 從內部部署的 HDFS 存放區遷移至具有Azure 資料箱的 Azure 儲存體
+    - 參考
+      - Azure CLI
+        [783] az databox
+      - Azure PowerShell
+        [784] Az.DataBox
+      - .NET API
+        [786] Azure Data Box SDK for .NET - latest
+      - .NET SDK
+      - Azure 原則內建
+        [787] Azure 原則 適用於 Azure 資料箱的內建定義
+      - 資料箱事件方格架構
+        [788] 作為事件方格來源的 Azure 資料箱
+    - 資源
+      - 資料箱產品
+      - 資料箱定價
+      - 資料箱磁碟定價
+      - 資料箱合作夥伴
+      - 資料箱硬體其他條款
+        [790] Azure 數據箱硬體額外條款

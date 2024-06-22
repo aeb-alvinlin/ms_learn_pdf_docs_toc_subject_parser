@@ -1,0 +1,93 @@
+- ---< azure-advisor.pdf >---
+  - Azure Advisor 檔
+    [1] Azure Advisor 文件
+  - 概觀
+    - 什麼是 Azure Advisor？
+      [2] Azure Advisor 簡介
+    - 新功能
+      [5] Azure Advisor 的新功能？
+  - 快速入門
+    - 開始使用 Advisor
+      [13] 開始使用 Azure Advisor
+    - 設定新建議的警示
+      - Azure 入口網站
+        [18] 使用 ARM 範本，針對新增建議建立Azure Advisor 警示
+      - Bicep
+        [27] 快速入門：使用 Bicep 針對新建議建立Azure Advisor 警示
+      - ARM 範本
+        [31] 快速入門：使用ARM範本在新的建議上建立 Azure Advisor 警示
+  - 概念
+    - 建議
+      - 成本
+        [36] 成本建議
+      - 卓越營運
+        [54] 卓越營運建議
+      - 效能
+        [81] 效能建議
+      - 可靠性
+        [121] 可靠性建議
+      - 安全性
+        [160] 安全性建議
+      - 主權雲端
+        [225] 主權雲端中的 Azure Advisor
+  - 範例
+    - Azure Resource Graph 查詢
+      [228] Azure Advisor 的 Azure Resource Graph範例查詢
+  - 操作指南
+    - 使用 Azure 架構良好的架構評估
+      [230] 使用 Azure WAF 評量
+    - 使用 Azure Advisor 複原檢閱
+      [241] Azure 建議程序復原檢閱
+    - 關閉使用量過低的執行個體，或者重新調整其大小或，從而將虛擬機器的費用最佳化
+      [251] 使用 Azure Advisor 降低服務成本
+    - 使用成本優化活頁簿優化 Azure 成本
+      [256] 使用成本優化活頁簿瞭解和優化您的Azure 成本
+    - 改善安全性
+      [266] 利用 Azure Advisor 讓資源變得更安全
+    - 改善可靠性
+      [267] 使用 Azure Advisor 改善業務關鍵性應用程式的可靠性
+    - 規劃移轉受服務淘汰影響的工作負載
+      [270] 準備移轉受服務淘汰影響的工作負載
+    - 改善高使用 VM 的效能
+      [272] 使用 Azure Advisor 改善高度使用之 VM的效能
+    - 使用標籤來篩選建議和分數
+      [274] 檢閱工作負載、環境或小組的最佳化機會
+    - 組態建議
+      [277] 檢視與您無關的 Azure Advisor 建議
+    - 許可權和封鎖的動作
+      [282] Azure Advisor 中的許可權
+    - 設定建議的警示
+      [284] 使用 ARM 範本，針對新增建議建立Azure Advisor 警示
+    - 設定建議摘要
+      [293] 設定建議的定期摘要
+    - 建議的大量補救
+      [296] Advisor 的快速修正補救
+    - Azure Resource Graph 中的 Advisor 數據
+      [298] 在 Resource Graph Explorer (AzureResource Graph) 中查詢 Advisor 資料
+    - 取用 Advisor 分數
+      [300] 使用 Advisor 分數優化 Azure 工作負載
+    - 計算總成本節省
+      [306] 計算成本節省
+  - 參考
+    - 安全性基準
+      [308] 適用于 Azure Advisor 的 Azure 安全性基準
+    - Defender for Cloud
+    - SQL Database 建議程式
+      [311] 適用於 Azure SQL 資料庫的 DatabaseAdvisor 效能建議
+    - 應用程式服務
+      [317] Azure App Service 的最佳做法
+    - REST API
+      [321] Resource Manager
+    - Azure CLI
+      [322] az advisor
+    - PowerShell
+      [323] Az.Advisor
+  - 資源
+    - Azure 藍圖
+    - 定價
+    - 定價計算機
+    - 服務更新
+    - 區域可用性
+    - 影片
+    - Stack Overflow
+    - 程式碼範例

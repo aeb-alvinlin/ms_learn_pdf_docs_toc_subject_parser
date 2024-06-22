@@ -1,0 +1,587 @@
+- ---< azure-api-management.pdf >---
+  - Azure API 管理文件
+    [1] API 管理文件 \(部分機器翻譯\)
+  - 開始使用
+    - 新功能
+    - 概觀
+      - 關於 API 管理
+        [4] 什麼是 Azure API 管理？
+      - API 管理功能可用性
+        [12] Azure API 管理層的功能式比較
+      - API 管理 閘道
+        [14] Azure API 管理中的 API 閘道
+      - v2 服務層級
+        [21] Azure API 管理 v2 層
+      - 詞彙
+        [28] Azure API 管理術語
+      - 服務限制
+        [34] 
+    - 建立執行個體
+      - 建立執行個體 - CLI
+        [132] 快速入門：使用 Azure CLI 建立新的Azure APIM 執行個體
+      - 建立執行個體 - 入口網站
+        [135] 快速入門：使用 Azure 入口網站建立新的Azure APIM 執行個體
+      - 建立執行個體 - PowerShell
+        [141] 快速入門：使用 PowerShell 建立新的Azure APIM 執行個體
+      - 建立執行個體 - Visual Studio Code
+        [145] 快速入門：使用 Visual Studio Code 建立新的 Azure APIM 執行個體
+      - 建立執行個體 - Bicep
+        [149] 快速入門：使用 Bicep 建立新的 AzureAPIM 服務執行個體
+      - 建立執行個體 - ARM 範本
+        [153] 快速入門：使用 ARM 範本建立新的Azure APIM 服務執行個體
+      - 建立執行個體 - Terraform
+        [159] 快速入門：使用 Terraform 建立 AzureAPIM 執行個體
+    - 教學課程
+      - 1 - 匯入第一個 API
+        [166] 教學課程：匯入和發佈您的第一個 API
+      - 2 - 建立和發佈產品
+        [172] 教學課程：建立和發行產品
+      - 3 - 模擬 API 回應
+        [178] 教學課程：模擬 API 回應
+      - 4 - 保護您的 API
+        [187] 教學課程：轉換及保護 API
+      - 5 - 監視已發佈的 API
+        [199] 教學課程：監視發佈的 API
+      - 6 - 對 API 進行偵錯
+        [209] 教學課程：使用要求追蹤對 API 進行偵錯
+      - 7 - 新增修訂
+        [215] 教學課程：使用修訂安全地進行不間斷的API 變更
+      - 8 - 新增多個版本
+        [219] 教學課程：為您的 API 發佈多個版本
+      - 9 - 自訂開發人員入口網站
+        [225] 教學課程：存取及自訂開發人員入口網站
+      - 10 - 管理 Visual Studio Code 中的 API
+        [234] 教學課程：使用適用於 Visual StudioCode 的 Azure API 管理延伸模組來匯入和管理 API
+  - 部署和作業
+    - 佈建和調整
+      - 使用容量來做出調整決策
+        [241] Azure API 管理執行個體的容量
+      - 升級和調整規模
+        [246] 升級和調整 Azure API 管理執行個體的規模
+      - 設定自動調整
+        [250] 自動調整 Azure API 管理執行個體
+      - 規劃和管理成本
+        [255] 規劃和管理 API 管理的成本
+      - 設定自訂網域
+        [261] 設定 Azure API 管理執行個體的自訂網域名稱
+      - 使用外部快取
+        [267] 在 Azure API 管理中使用與 Redis 相容的外部快取
+      - 計算平台
+        [274] 適用於 Azure API 管理 的計算平臺 - 傳統層
+      - 從 stv1 遷移至 stv2 平臺
+        - 移轉至 stv2 的案例
+          [277] 將裝載在 stv1 平台上的 APIM 執行個體移轉到 stv2
+        - 移轉非 VNet 插入的實例
+          [280] 將非 VNet 插入 API 管理 實例移轉至 stv2計算平臺
+        - 移轉 VNet 插入的實例
+          [287] 將裝載於 stv1 平臺上的 VNet 插入 API 管理 實例遷移至 stv2
+      - 驗證服務更新
+        [297] 驗證服務更新，以避免生產 API 管理執行個體中斷
+      - 在區域間移動執行個體
+        [301] 如何跨區域移動 Azure API 管理
+      - 復原刪除的執行個體
+        [303] API 管理虛刪除 (預覽)
+      - 使用角色型存取控制
+        [308] 如何在 Azure APIM 中使用角色型存取控制
+      - 使用 Azure 資源受控識別
+        [312] 在 Azure APIM 中使用受控識別
+      - 將事件傳送至事件方格
+        [328] 將事件從 APIM 傳送到事件方格
+    - 網路隔離
+      - 網路功能選項
+        [334] 使用虛擬網路來保護 Azure API 管理 的輸入或輸出流量
+      - VNet 插入 - 網路需求
+        [339] API 管理 插入虛擬網路的網路資源需求
+      - 部署至 VNet - 外部
+        [342] 將您的 Azure API 管理執行個體部署到虛擬網路 - 外部模式
+      - 部署至 VNet - 內部
+        [353] 將 Azure APIM 執行個體部署到虛擬網路- 內部模式
+      - 在內部虛擬網路中整合應用程式閘道
+        [366] 在內部虛擬網路中整合 API 管理與應用程式閘道
+      - 使用私人端點私下連線
+        [383] 使用輸入私人端點私下連線到 APIM
+      - 與 VNet 整合以處理輸出要求
+        [392] 整合 Azure API 管理 實例與用於輸出連線的私人 VNet
+      - 擷取 IP 位址
+        [396] Azure API 管理的 IP 位址
+      - 防禦 DDoS 攻擊
+        [401] 防禦您的 Azure API 管理執行個體免於遭受 DDoS 攻擊
+      - 設定 Front Door
+        [404] 在 Azure API 管理前方設定 Front Door標準版/進階版
+    - 工作區
+      - 工作區概觀
+        [412] Azure API 管理中的工作區
+      - 建立工作區
+        [416] 設定工作區
+      - 使用工作區
+        [419] 在 APIM 工作區中管理 API 和其他資源
+    - 設定管理
+      - 登陸區域加速器
+        [422] Azure API 管理登陸區域加速器
+      - 使用自動化管理
+        [424] 使用 Azure 自動化管理 Azure API 管理
+      - 使用 Git 進行設定
+        [425] 如何使用 Git 儲存和設定 API 管理服務組態
+      - DevOps 和 CI/CD
+        [436] 使用 DevOps 和 CI/CD 發佈 API
+    - 復原
+      - 高可用性功能
+        [439] 確保 API 管理可用性與可靠性
+      - 部署至多個 Azure 區域
+        [442] 將 Azure API 管理執行個體部署至多個Azure 區域
+      - 啟用區域備援
+        [449] 將 Azure API 管理移轉至可用性區域支援
+      - 使用備份/還原設定 DR
+        [454] 如何在 Azure API 管理中使用服務備份和還原來實作災害復原
+    - 安全性
+      - Azure 原則的安全性控制
+        [461] 適用於 Azure API 管理 的 Azure 原則 法規合規性控制
+      - 安全性基準
+        [467] 適用於 API 管理的 Azure 安全性基準
+  - 記錄和監視
+    - 可檢視性
+      [483] Azure APIM 的可檢視性
+    - 取得 API 分析
+      [485] 取得 Azure API 管理中的 API 分析
+    - 將事件記錄到 Azure 事件中樞
+      [488] 如何將事件記錄到 Azure API 管理中的Azure 事件中樞
+    - 使用 Azure Application Insights 記錄要求
+      [493] 如何整合 Azure API 管理與 AzureApplication Insights
+    - 使用受控 Grafana 將資料視覺化
+      [503] 使用受控 Grafana 儀表板將 APIM 監視資料視覺化
+  - 定義 API
+    - 新增和匯入 API
+      - 手動新增 API
+        [505] 手動新增 API
+      - 匯入 OpenAPI 規格
+        [512] 匯入 OpenAPI 規格
+      - 匯入 SOAP API
+        [518] 將 SOAP API 匯入 APIM
+      - 匯入 SOAP API 並轉換為 REST
+        [524] 將 SOAP API 匯入 API 管理，並轉換成REST
+      - 匯入 WebSocket API
+        [530] 匯入 WebSocket API
+      - GraphQL
+        - GraphQL API 選項
+          [536] Azure APIM 中的 GraphQL API 概觀
+        - 匯入傳遞 GraphQL API
+          [540] 匯入 GraphQL API
+        - 匯入和解析 GraphQL 結構描述
+          [549] 新增綜合 GraphQL API 並設定欄位解析器
+      - 匯入 App Service Web API
+        [560] 匯入 Azure Web 應用程式作為 API
+      - 匯入容器應用程式 Web API
+        [569] 匯入 Azure 函式應用程式作為 API
+      - 匯入函數應用程式 Web API
+        [578] 在 Azure API 管理中匯入 Azure 函數應用程式作為 API
+      - 匯入邏輯應用程式
+        [590] 匯入 Logic App 作為 API
+      - 設定 Service Fabric 後端
+      - OData
+        - 匯入 OData API
+          [599] 匯入 OData API
+        - 匯入 SAP OData 中繼資料
+          [607] 將 SAP OData 中繼資料匯入為 API
+      - 匯入 gRPC API
+        [613] 匯入 gRPC API (預覽版)
+      - Azure OpenAI
+        - 將 Azure OpenAI API 匯入為 REST API
+          [618] 將 Azure OpenAI API 匯入為 REST API
+        - 對 Azure OpenAI 進行驗證和授權
+          [621] 使用 Azure APIM 對 Azure OpenAI API的存取進行驗證和授權
+        - 保護 Azure OpenAI 金鑰
+          [626] Protect your Azure OpenAI API keyswith Azure API Management
+      - 設定 SSE 的 API
+        [631] 設定伺服器傳送事件的 API
+      - API 匯出限制
+        [633] API 匯入的限制和已知問題
+      - 微服務即 API
+        - 管理在 AKS 中部署的微服務
+          [642] 搭配 Azure Kubernetes Service 中部署的微服務使用 Azure APIM
+        - 與 Service Fabric 整合
+          [648] Service Fabric 搭配 Azure API 管理概觀
+    - 修改 API
+      - 編輯 API
+        [654] 編輯 API
+      - 版本
+        [658] Azure API 管理中的版本
+      - 修訂記錄
+        [662] Azure API 管理中的修訂
+      - 後端
+        [665] API 管理中的後端
+      - 自動化 API 部署
+        [670] 
+    - Cache
+      - 新增快取以改善效能
+        [679] 新增快取以改善 Azure API 管理的效能 \(部分機器翻譯\)
+      - 自訂快取
+        [682] 在 Azure API 管理中自訂快取
+  - 使用原則管理 API
+    - APIM 原則概觀
+      [690] Azure API 管理中的原則 \(部分機器翻譯\)
+    - 設定或編輯原則
+      [696] 如何設定或編輯 Azure API 管理原則 \(部分機器翻譯\)
+    - 使用 Microsoft Copilot for Azure 撰寫原則
+      [706] 使用 Microsoft Copilot for Azure (預覽版) 撰寫 API 管理原則
+    - 在 VS Code 中針對原則進行偵錯
+      [710] 在 Visual Studio Code 中，對 AzureAPIM 原則進行偵錯
+    - 原則運算式
+      [714] 
+    - 重複使用原則設定
+      [727] 在 API 管理原則定義中重複使用原則組態
+    - 錯誤處理
+      [732] API 管理原則中的錯誤處理
+    - 進階監視
+      [738] 利用 Azure API 管理、事件中樞與 Moesif監視您的 API
+    - 進階要求節流
+      [748] 以 Azure API 管理進行進階要求節流
+    - 使用外部服務
+      [752] 使用來自 Azure API 管理服務的外部服務
+    - 使用具名值管理祕密
+      [761] 如何在 Azure API 管理原則中使用具名值
+    - 設定 GraphQL 解析器
+      [770] 設定 GraphQL 解析器
+  - 管理內部部署和其他雲端中的 API
+    - 自我裝載閘道概觀
+      [777] 
+    - 部署閘道
+      - 佈建自我裝載閘道
+        [785] 在 Azure API 管理中佈建自我裝載閘道
+      - 將自我裝載閘道部署至 Azure Kubernetes Service
+        [787] 將 Azure API 管理 自我裝載閘道部署至Azure Kubernetes Service
+      - 將自我裝載閘道部署至 Kubernetes (YAML)
+        [790] 使用 YAML 將自我裝載閘道部署至Kubernetes
+      - 將自我裝載閘道部署至 Kubernetes (Helm)
+        [793] 使用 Helm 將自我裝載閘道部署至Kubernetes
+      - 使用 OpenTelemetry 收集器整合，將自我裝載網路閘道部署至 Kubernetes
+        [797] 使用 OpenTelemetry 整合將自我裝載閘道部署至 Kubernetes
+      - 將自我裝載閘道部署至 Docker
+        [805] 將 Azure API 管理自我裝載閘道部署至Docker
+      - 將自我裝載閘道部署至 Azure Container Apps
+        [808] 將 Azure API 管理 自我裝載閘道部署至Azure Container Apps
+      - 將 Azure API 管理 閘道部署至已啟用 Arc 的 Kubernetes 叢集
+        [816] 在 Azure Arc 上部署 Azure API 管理閘道(預覽)
+    - 為自我裝載閘道設定自訂網域
+      [821] 為自我裝載閘道設定自訂網域名稱
+    - 設定自我裝載閘道的雲端計量和記錄
+      [824] 設定 Azure API 管理自我裝載閘道的雲端計量和記錄
+    - 設定自我裝載閘道的本機計量和記錄
+      [826] 設定 Azure APIM 自我裝載閘道的本機計量和記錄
+    - 在自我裝載閘道上啟用 Dapr 支援
+      [835] 在自我裝載閘道中啟用 Dapr 支援
+    - 在自我裝載閘道上使用 Microsoft Entra 驗證
+      [837] 針對自我裝載網路閘道使用 MicrosoftEntra 驗證
+    - Kubernetes 上的執行指引
+      [844] 在實際執行環境中對於 Kubernetes 執行自我裝載閘道的指導
+    - 移轉至自我裝載的網路閘道第 2 版
+      [852] 自我裝載閘道移轉指南
+    - 支援自我裝載閘道的原則
+      [857] 自我裝載閘道的支援原則
+  - 保護您的 API
+    - 保護 API 存取
+      - API 驗證和授權選項
+        [861] Azure API 管理中 API 的驗證和授權 \(部分機器翻譯\)
+      - 使用 Microsoft Entra ID 保護 API
+        [868] 使用 OAuth 2.0 授權和 Microsoft Entra保護 Azure API 管理中的 API
+      - 以 Azure AD B2C 保護 API
+        [872] 
+      - 使用用戶端憑證驗證保護 API
+        [885] 如何使用 API 管理中的用戶端憑證驗證保護 API
+      - 管理 CA 憑證
+        [895] 如何在 Azure API 管理中新增自訂 CA 憑證
+      - 管理通訊協定和加密
+        [897] 在 Azure API 管理中管理通訊協定和加密
+      - 使用適用於 API 的 Defender 來保護
+        [900] 使用適用於雲端的 Microsoft Defender啟用進階 API 安全性功能
+      - 減輕 OWASP API 威脅
+        [905] 使用 API 管理減輕 OWASP API 安全性前10 大威脅的建議
+    - 管理 API 認證
+      - 認證管理員概觀
+        [915] 關於 API 認證和認證管理員
+      - 受控連線 - 處理流程
+        [921] 認證管理員中的 OAuth 2.0 連線 - 處理詳細資料和流程
+      - 設定一般認證提供者
+        [926] 在認證管理員中設定一般認證提供者
+      - 設定認證管理員 - Microsoft Entra ID
+        [930] 設定認證管理員：Microsoft Graph API
+      - 設定認證管理員 - GitHub
+        [938] 設定認證管理員 - GitHub API
+      - 設定認證管理員 - 使用者委派權限
+        [946] 設定認證管理員：使用者委派的後端 API存取權
+      - 設定多個連線
+        [953] 設定多個連線
+    - 設定後端驗證
+      - 相互憑證驗證
+        [956] 在 Azure API 管理中，執行用戶端憑證驗證，來保護後端服務
+  - 向開發人員發佈 API
+    - 使用訂用帳戶
+      - 訂用帳戶
+        [964] Azure APIM 中的訂用帳戶
+      - 建立訂閱
+        [971] 在 Azure APIM 中建立訂用帳戶
+    - 管理使用者
+      - 管理使用者帳戶
+        [973] 如何在 Azure API 管理中管理使用者帳戶
+      - 管理群組
+        [976] 如何在 Azure API 管理中建立和使用群組來管理開發人員帳戶
+    - 管理及自定義開發人員入口網站
+      - 了解開發人員入口網站
+        [981] 開發人員入口網站概觀
+      - 常見問題集 - 開發人員入口網站
+        [995] API 管理開發人員入口網站 - 常見問題
+      - 自動化入口網站部署
+        [1002] 將開發人員入口網站部署自動化
+      - 使用自訂功能來擴充入口網站
+        [1004] 使用自訂小工具，擴充開發人員入口網站
+      - 啟用互動式主控台的CORS
+        [1015] 在 API 管理 開發人員入口網站中啟用互動式主控台的CORS
+      - 啟用主控台 OAuth 支援
+        [1019] 如何藉由設定 OAuth 2.0 使用者授權來授權開發人員入口網站的測試主控台
+      - 整合 Application Insights
+        [1032] 將 Application Insights 整合到開發人員入口網站
+      - 整合 Google Tag Manager
+        [1035] 將 Google Tag Manager 整合到 API 管理開發人員入口網站
+    - 自我裝載開發人員入口網站
+      - 建立自我裝載入口網站
+        [1037] 自我裝載 API 管理開發人員入口網站
+      - 自我裝載的替代方法
+        [1050] 自我裝載開發人員入口網站的替代方法
+      - 測試自我裝載入口網站
+        [1053] 測試自我裝載開發人員入口網站
+    - 安全存取開發人員入口網站
+      - 保護開發人員入口網站存取權的選項
+        [1059] 保護對 API 管理開發人員入口網站的存取\(部分機器翻譯\)
+      - 使用使用者名稱和密碼進行驗證
+        [1064] 將開發人員入口網站的使用者設定成以使用者名稱和密碼進行驗證
+      - 使用 Microsoft Entra 識別碼驗證
+        [1069] 在 Azure API 管理中使用 Microsoft EntraID 來授權開發人員帳戶
+      - 使用 Azure AD B2C 進行驗證
+        [1079] 如何在 Azure API 管理中使用 AzureActive Directory B2C 來授權開發人員帳戶
+      - 委派驗證
+        [1088] 如何委派使用者註冊和產品訂用帳戶
+      - 電子郵件通知和範本
+        [1095] 如何在 Azure API 管理中設定通知和通知範本
+    - 匯出 API
+      - 在 Postman 中測試及監視 API
+        [1101] 將 API 定義匯出至 Postman 以進行 API測試和監視
+      - API 中心的清查 API
+        [1105] 從 Azure API 管理 將 API 匯入至您的 API中心
+      - 將 API 匯出至 Power Platform
+        - 將 API 匯出為自訂連接器
+          [1112] 將 API 從 Azure API 管理匯出到 PowerPlatform
+        - 為自訂連接器啟用 CORS
+          [1116] 啟用 APIM 自訂連接器的 CORS 原則
+    - 透過 API 來獲利
+      - 獲利概觀
+        [1119] 透過 Azure API 管理來獲利
+      - API 管理如何支援獲利
+        [1126] API 管理如何支援獲利
+  - 疑難排解
+    - 診斷生產環境中的問題
+      [1132] Azure APIM 診斷概觀
+    - 無法疑難排解更新主機名稱的錯誤
+      [1137] 無法更新 API 管理服務主機名稱
+    - 針對回應逾時和錯誤進行疑難排解
+      [1139] 使用 API 管理，為用戶端回應逾時和錯誤疑難排解
+  - 範例
+    - 原則程式碼片段
+    - Azure PowerShell
+  - 參考
+    - Azure CLI
+      [1142] az apim
+    - Azure PowerShell
+      [1169] Az.ApiManagement
+    - REST API
+      [1176] Azure API 管理 REST API 參考
+    - REST API SDK
+      - .NET
+        [1177] Azure API Management SDK for .NET -latest
+      - JavaScript
+        [1178] 適用于 JavaScript 的 Azure API 管理 SDK- 最新版
+      - Java
+        [1179] Azure API Management SDK for Java -legacy
+      - Python
+      - Go
+      - Ruby
+    - Resource Manager 範本
+      [1180] Microsoft.ApiManagement 資源類型
+    - Terraform 提供者
+    - API 管理原則
+      - 原則參考索引
+        [1195] APIM 原則參考
+      - authentication-basic
+        [1202] 使用基本驗證進行驗證
+      - authentication-certificate
+        [1204] 使用用戶端憑證進行驗證
+      - authentication-managed-identity
+        [1207] 使用受控識別進行驗證
+      - cache-lookup
+        [1211] 從快取中取得
+      - cache-lookup-value
+        [1216] 從快取中取得值
+      - cache-store
+        [1219] 儲存至快取
+      - cache-store-value
+        [1222] 儲存快取中的值
+      - cache-remove-value
+        [1225] 移除快取中的值
+      - check-header
+        [1227] 檢查 HTTP 標頭
+      - 選擇
+        [1230] 控制流程
+      - cors
+        [1234] CORS
+      - cosmosdb-data-source
+        [1241] 解析器的 Cosmos DB 資料來源
+      - cross-domain
+        [1256] 允許跨網域呼叫
+      - emit-metric
+        [1258] 發出自訂計量
+      - find-and-replace
+        [1261] 在本文中尋找並取代字串
+      - forward-request
+        [1263] 轉寄要求
+      - get-authorization-context
+        [1268] 取得授權內容
+      - http-data-source
+        [1273] 解析器的 HTTP 資料來源
+      - include-fragment
+        [1281] 包含片段
+      - invoke-dapr-binding
+        [1283] 觸發輸出繫結
+      - ip-filter
+        [1287] 限制呼叫者 IP
+      - jsonp
+        [1289] JSONP
+      - json-to-xml
+        [1291] 將 JSON 轉換成 XML
+      - limit-concurrency
+        [1295] 限制並行
+      - log-to-eventhub
+        [1297] 記錄到事件中樞
+      - mock-response
+        [1300] 模擬回應
+      - proxy
+        [1302] 設定 HTTP Proxy
+      - publish-event
+        [1304] 將事件發佈至 GraphQL 訂用帳戶
+      - publish-to-dapr
+        [1307] 將訊息傳送至 Pub/Sub 主題
+      - quota
+        [1310] 依訂用帳戶設定使用量配額
+      - quota-by-key
+        [1314] 依金鑰設定使用量配額
+      - rate-limit
+        [1317] 依訂用帳戶限制呼叫率
+      - rate-limit-by-key
+        [1321] 依金鑰限制呼叫頻率
+      - redirect-content-urls
+        [1325] 遮罩內容中的 URL
+      - retry
+        [1327] 重試
+      - return-response
+        [1331] 傳回回應
+      - rewrite-uri
+        [1334] 重寫 URL
+      - send-one-way-request
+        [1337] 傳送單向要求
+      - send-request
+        [1340] 傳送要求
+      - set-backend-service
+        [1344] 設定後端服務
+      - set-backend-service (Dapr)
+        [1348] 傳送要求至服務
+      - set-body
+        [1351] 設定本文
+      - set-header
+        [1359] 設定標頭
+      - set-method
+        [1363] 設定要求方法
+      - set-query-parameter
+        [1365] 設定查詢字串參數
+      - set-status
+        [1368] 設定狀態碼
+      - set-variable
+        [1370] 設定變數
+      - sql-data-source
+        [1373] 解析器的 Azure SQL 資料來源
+      - 追蹤
+        [1382] 追蹤
+      - validate-azure-ad-token
+        [1385] 驗證 Microsoft Entra 權杖
+      - validate-client-certificate
+        [1390] 驗證用戶端憑證
+      - validate-content
+        [1394] 
+      - validate-graphql-request
+        [1405] 驗證 GraphQL 要求
+      - validate-headers
+        [1410] 
+      - validate-jwt
+        [1417] 驗證 JWT
+      - validate-odata-request
+        [1426] Validate OData request
+      - validate-parameters
+        [1428] 
+      - validate-status-code
+        [1435] 
+      - wait
+        [1442] 等候
+      - xml-to-json
+        [1445] 將 XML 轉換成 JSON
+      - xsl-transform
+        [1448] 使用 XSLT 轉換 XML
+    - Azure 原則內建
+      [1451] 
+    - 資源記錄結構描述
+      [1455] 參考 - API 管理資源記錄結構描述
+    - 事件方格事件結構描述
+      [1458] 
+    - 虛擬網路設定
+      [1461] 虛擬網路組態參考：API 管理
+    - 自我裝載閘道容器設定
+      [1468] 
+    - 自我裝載閘道 Azure Arc 設定
+      [1474] 
+    - 診斷記錄設定
+      [1481] 診斷記錄設定參考：API 管理
+  - 資源
+    - 常見問題集
+      [1483] 功能預覽中是什麼意思？
+如何了解 API 管理的更新和變更嗎？
+如何保護 API 管理閘道與後端服務之間的連線安全？
+如何將我的 API 管理服務執行個體複製到新的執行個體？
+    - 定價
+    - Azure 更新
+    - API 設計
+      - API 設計電子書
+      - RESTful Web API 設計
+        [1487] RESTful Web API 設計
+      - Web API 實作
+        [1504] Web API 實作
+    - 重大變更
+      - 中斷性變更概觀
+        [1530] 即將推出的重大變更
+      - 虛擬網路變更 (2023 年三月)
+        [1531] 資源提供者來源 IP 位址更新 （2023 年 3月）
+      - 計量淘汰 (2023 年 8 月)
+        [1534] 計量淘汰 (2023 年 8 月)
+      - 虛擬網路變更 (2023 年 9 月)
+        [1536] 資源提供者來源 IP 位址更新 （2023 年 9月）
+      - API 版本淘汰 （2024 年 6 月）
+        [1539] API 版本淘汰 （2024 年 6 月）
+      - 自我裝載閘道 v0/v1 淘汰 (2023 年 10 月)
+        [1542] 支持終止 Azure API 管理 自我裝載閘道第0 版和第 1 版容器映射（2023 年 10 月）
+      - 取代 (舊版) 開發人員入口網站 (2023 年 10 月)
+        [1544] 舊版開發人員入口網站淘汰 （2023 年 10月）
+      - 工作區重大變更 （2024 年 6 月）
+        [1546] 工作區 - 重大變更 （2024 年 6 月）
+      - stv1 計算平台淘汰 (2024 年 8 月)
+        [1548] stv1 平臺淘汰 （2024 年 8 月）
+      - ADAL 型識別提供者淘汰 (2025 年 9 月)
+        [1550] ADAL 型 Microsoft Entra 標識符或 AzureAD B2C 識別提供者淘汰 （2025 年 9月）
+      - CAPTCHA 端點更新 (2025 年 9 月)
+        [1552] CAPTCHA 端點更新 (2025 年 9 月)
+    - 區域可用性
+    - Microsoft 問與答頁面
+    - Stack Overflow

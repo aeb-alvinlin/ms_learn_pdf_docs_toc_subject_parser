@@ -1,0 +1,226 @@
+- ---< azure-azure-video-indexer.pdf >---
+  - Azure AI Video Indexer documentation
+    [1] Learn about Azure AI Video Indexer
+  - Overview
+    - What is Azure AI Video Indexer (VI)?
+      [3] Azure AI Video Indexer overview
+    - Changes related to Azure Media Service (AMS) retirement
+      [10] Changes related to Azure Media Service(AMS) retirement
+    - VI migration and updating guide
+      - VI migration guide
+        [14] Preparing for AMS retirement: VImigration and updating guide
+      - Update your VI account
+        [21] Update your Azure AI Video Indexeraccount and migrate assets
+    - What is Azure AI Video Indexer enabled by Arc?
+      [26] What is Azure AI Video Indexer enabledby Arc? (Preview)
+    - Account types
+      [33] Azure AI Video Indexer account types
+    - Language support
+      [36] 
+  - Responsible use of AI
+    - Limited access features
+      [46] Limited Access features of Azure AIVideo Indexer
+    - Transparency note
+      [49] Transparency note for Azure VideoIndexer
+  - Quickstarts
+    - Sign up and upload your first video
+      [59] Quickstart: How to sign up and uploadyour first video
+    - Develop with API and trial account
+      [63] Quickstart: Use the API
+    - Try VI enabled by Arc
+      [68] Try Azure AI Video Indexer enabled byArc
+    - Create an account
+      [73] Create an Azure AI Video Indexer (VI)account
+    - Deploy using Bicep
+      [77] Quickstart: Deploy Azure AI VideoIndexer (VI) by using Bicep
+    - Deploy using ARM template
+      [82] Quickstart: Deploy Azure AI VideoIndexer by using an ARM template
+  - Samples
+    - Azure AI Video Indexer samples
+    - Azure AI Video Indexer widgets
+  - Concepts
+    - Terminology & concepts overview
+      [85] Azure AI Video Indexer terminology &concepts
+    - Indexing configuration guide
+      [88] The indexing configuration guide
+    - Manage multiple tenants
+      [93] Manage multiple tenants
+    - Using at scale
+      [97] Things to consider when using Azure AIVideo Indexer at scale
+    - VI with LLM prompts
+      [102] Azure AI Video Indexer with LLMprompts
+    - Insights overview
+      [106] Azure AI Video Indexer insights
+      - Audio effects detection
+        [109] Audio effects detection
+      - Faces detection
+        [114] Face detection
+      - OCR
+        [120] Optical character recognition (OCR)
+      - Keywords extraction
+        [125] Keywords extraction
+      - Transcription, translation, language
+        [130] Media transcription, translation andlanguage identification
+      - Labels identification
+        [136] Labels identification
+      - Named entities
+        [141] Named entities extraction
+      - Observed people tracking & matched faces
+        [146] Observed people tracking and matchedfaces
+      - Topics inference
+        [153] Topics inference
+      - Text-based emotion detection
+        [158] Text-based emotion detection
+      - Object detection
+        [164] Azure AI Video Indexer object detection
+      - Slate detection
+        [173] The slate detection insights
+    - Customizing content models
+      - Customize content models overview
+        [176] Customizing content models in Azure AIVideo Indexer
+      - Customize brands model overview
+        [178] Customize a Brands model in Azure AIVideo Indexer
+      - Customize speech model overview
+        [180] Customize a speech model
+      - Customize language model overview
+        [186] Customize a Language model withAzure AI Video Indexer
+      - Customize person model overview
+        [188] Customize a Person model in Azure AIVideo Indexer
+  - How to guides
+    - Manage accounts
+      - Manage access to your account
+        [190] Manage access to an Azure AI VideoIndexer account
+      - Connect an existing account to ARM
+        [194] Update your Azure AI Video Indexeraccount and migrate assets
+      - Import content from the trial account
+        [199] Preparing for AMS retirement: VImigration and updating guide
+    - Upload and index media
+      - Upload and index videos
+        [206] Upload media files using the VideoIndexer website
+      - Index a video from OneDrive
+        [210] Index your videos stored on OneDrive
+      - Use editor to create projects
+        [219] Add video clips to your projects
+    - Use insights
+      - View and edit insights
+        [225] View Azure AI Video Indexer insights
+      - Detect features of videos
+        - Find exact moments within videos
+          [228] Search for exact moments in videos withAzure AI Video Indexer
+        - Detect scenes, shots, keyframes
+          [232] Scenes, shots, and keyframes
+        - Slate detection
+          - Clapper board with metadata extraction
+            [237] Enable and view a clapper board withextracted metadata (preview)
+          - Digital patterns with color bars
+            [244] Enable and view digital patterns withcolor bars
+          - Textless slate with scene matching
+            [249] Enable and view a textless slate withmatching scene
+      - Detect faces and identify people
+        - Face redaction with API
+          [251] Redact faces by using Azure AI VideoIndexer API
+        - Observed people (preview)
+          [264] Track observed people in a video
+        - Matched person (preview)
+          [267] Enable the matched person insight
+        - Detected clothing (preview)
+          [272] Enable detected clothing feature
+        - Featured clothing (preview)
+          [277] Enable featured clothing of an observedperson
+      - Analyze Audio and language
+        - View and update transcriptions
+          [281] View and update transcriptions
+        - Edit speakers
+          [286] Edit speakers with the Azure AI VideoIndexer website
+        - Identify and transcribe multi-language content
+          [291] Automatically identify and transcribemulti-language content
+        - Automatically identify spoken languages
+          [294] Automatically identify the spokenlanguage with language identificationmodel
+        - Audio effects detection (preview)
+          [297] Enable audio effects detection (preview)
+        - View closed captions
+          [303] View closed captions in the Azure AIVideo Indexer website
+      - Detect textual logo
+        [304] How to detect textual logo
+      - Embed widgets into your application
+        [312] Embed Azure AI Video Indexer widgetsin your apps
+      - Customize content models
+        - Person
+          - Customize person model with the website
+            [322] Customize a Person model with theAzure AI Video Indexer website
+          - Customize person model with the API
+            [334] Customize a Person model with theAzure AI Video Indexer API
+          - Use global face grouping
+            [338] How to use global face grouping(preview)
+        - Brands
+          - Customize brands with the website
+            [340] Customize a Brands model with theAzure AI Video Indexer website
+          - Customize brands with the API
+            [345] Customize a Brands model with theAzure AI Video Indexer API
+        - Speech
+          - Customize speech model with the website
+            [351] Customize a speech model in thewebsite
+          - Customize speech model with the API
+            [361] Customize a speech model with the API
+        - Language
+          - Customize language model with the website
+            [369] Customize a Language model with theAzure AI Video Indexer website
+          - Customize language model with the API
+            [377] Customize a Language model with theAzure AI Video Indexer API
+      - Bring your own model
+        [385] Azure AI Video Indexer Bring Your Own(BYO) AI Model (Preview) overview
+      - Logic Apps connector
+        - with ARM-based VI accounts
+          [391] Logic Apps connector with ARM-basedVI accounts
+        - with classic-based VI accounts
+          [407] Use Azure AI Video Indexer with LogicApp and Power Automate
+      - Monitor Video Indexer
+        [415] Monitor Azure AI Video Indexer
+      - Network security
+        [421] NSG service tags for Azure AI VideoIndexer
+      - Storage behind a firewall
+        [425] Configure Video Indexer to work withstorage accounts behind firewall
+      - Disaster recovery
+        [427] Azure AI Video Indexer failover anddisaster recovery
+    - Integrate
+      - Create LLM prompt content
+        [429] Use Azure AI Video Indexer to createprompt content
+  - Troubleshooting
+    - Account connection issues
+      [433] Repair the connection to Azure, examineerrors/warnings
+    - Switch between tenants in portal
+      [437] Switch between multiple tenants
+    - Resource health
+      [444] Diagnose Video Indexer resource issueswith Azure Resource Health
+  - Reference
+    - Azure AI Video Indexer API
+    - Azure AI Video Indexer ARM REST API
+      [447] Accounts
+    - Azure AI Video Indexer output json
+      [448] Examine the Azure AI Video Indexeroutput
+    - Support matrix and limitations
+      [471] Azure AI Video Indexer support matrixand service limits
+    - Monitor Video Indexer data reference
+      [475] Monitor Azure AI Video Indexer datareference
+    - Azure AI Video Indexer enabled by Arc Troubleshooting
+      [480] Azure AI Video Indexer enabled by Arctroubleshooting guide
+  - Resources
+    - Azure Roadmap
+    - Pricing
+    - Regional availability
+    - Regions
+      [481] Azure regions in which Azure AI VideoIndexer exists
+    - Microsoft Q&A
+    - FAQ
+      [484] General questions
+    - AMS deprecation FAQ
+      [497] What is being deprecated?
+Is Azure AI Video Indexer also beingdeprecated?
+Will I be able to use Video Indexer afterMedia Services is deprecated?
+What do I need to do before thedeprecation?
+Will I see a change in features orbehavior of Azure AI Video Indexer?
+    - Release notes
+      [500] Azure AI Video Indexer release notes
+    - Stack Overflow
+    - Azure ideas
+    - Blogs

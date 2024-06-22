@@ -1,0 +1,48 @@
+- ---< azure-avere-vfxt.pdf >---
+  - Avere vFXT 文件
+    [1] Avere vFXT for Azure 文件
+  - 概觀
+    - 什麼是 Avere vFXT for Azure？
+      [3] 什麼是 Avere vFXT for Azure？
+  - 概念
+    - 規劃您的 Avere vFXT 系統
+      [6] 規劃您的 Avere vFXT 系統
+    - Avere vFXT 部署概觀
+      [12] Avere vFXT for Azure - 部署概觀
+  - 操作指南
+    - 準備建立 Avere vFXT
+      [14] 準備建立 Avere vFXT
+    - 部署 vFXT 叢集
+      [18] 部署 vFXT 叢集
+    - 存取叢集組態工具
+      [29] 存取 vFXT 叢集
+    - 啟用支援上傳的功能
+      [31] 啟用支援上傳的功能
+    - 設定儲存體
+      [34] 設定儲存體
+    - 掛接 Avere vFXT 叢集
+      [43] 掛接 Avere vFXT 叢集
+    - 將資料移動至 Avere vFXT 叢集
+      [47] 將資料移至 vFXT 叢集 - 平行資料擷取
+    - 管理 Avere vFXT 叢集
+      [59] 管理 Avere vFXT 叢集
+    - 自訂叢集調整
+      [67] 叢集調整
+  - 資源
+    - 協助您的系統
+      [69] 取得有關系統的協助
+    - 示範專案
+      [73] Avere vFXT 示範專案
+    - Avere vFXT for Azure 常見問題集
+      [74] 一般
+    - 災害復原指引
+      [83] Avere vFXT for Azure 災害復原指導
+    - 其他文件
+      - 補充文件
+        [87] 其他文件
+      - Avere 叢集 DNS 組態
+        [88] Avere 叢集 DNS 組態
+      - 授權非擁有者部署 Avere vFXT
+        [91] 授權非擁有者部署 Avere vFXT
+    - 白皮書
+      [93] Avere vFXT for Azure 白皮書與其他資源

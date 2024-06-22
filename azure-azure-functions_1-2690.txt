@@ -1,0 +1,315 @@
+[   2] - Azure Functions overview
+[   4] - Azure Functions scenarios
+[  12] - Getting started with Azure Functions
+[  14] - What are Durable Functions?
+[  28] - Choose the right integration andautomation services in Azure
+[  34] - Azure Functions hosting options
+[  44] - Quickstart: Create your first C# functionin Azure using Visual Studio
+[  56] - Quickstart: Create a C# function inAzure using Visual Studio Code
+[  65] - Quickstart: Create a C# function inAzure from the command line
+[  73] - Create your first function with Java andEclipse
+[  77] - Use Java and Gradle to create andpublish a function to Azure
+[  82] - Create your first Java function in Azureusing IntelliJ
+[  96] - Quickstart: Create a Java function inAzure from the command line
+[ 107] - Deploy serverless Java apps withQuarkus on Azure Functions
+[ 118] - Spring Cloud Function in Azure
+[ 131] - Quickstart: Create a Java function inAzure using Visual Studio Code
+[ 140] - Quickstart: Create a JavaScript functionin Azure using Visual Studio Code
+[ 149] - Quickstart: Create a JavaScript functionin Azure from the command line
+[ 157] - Quickstart: Create a PowerShell functionin Azure using Visual Studio Code
+[ 166] - Quickstart: Create a PowerShell functionin Azure from the command line
+[ 175] - Quickstart: Create a function in Azurewith Python using Visual Studio Code
+[ 185] - Quickstart: Create a Python function inAzure from the command line
+[ 193] - Quickstart: Create a function in Azurewith TypeScript using Visual StudioCode
+[ 202] - Quickstart: Create a TypeScript functionin Azure from the command line
+[ 210] - Quickstart: Create a Go or Rust functionin Azure using Visual Studio Code
+[ 221] - Quickstart: Create and deploy AzureFunctions resources using Bicep
+[ 227] - Quickstart: Create and deploy AzureFunctions resources from an ARMtemplate
+[ 234] - Create your first function on Azure Arc(preview)
+[ 242] - Create your first containerized AzureFunctions on Azure Arc (preview)
+[ 251] - Create your first containerized functionson Azure Container Apps
+[ 260] - Connect functions to Azure Storageusing Visual Studio
+[ 269] - Connect Azure Functions to AzureStorage using Visual Studio Code
+[ 278] - Connect Azure Functions to AzureStorage using command line tools
+[ 285] - Connect Azure Functions to AzureStorage using Visual Studio Code
+[ 294] - Connect Azure Functions to AzureStorage using command line tools
+[ 301] - Connect Azure Functions to AzureStorage using Visual Studio Code
+[ 310] - Connect Azure Functions to AzureStorage using command line tools
+[ 318] - Connect Azure Functions to AzureStorage using Visual Studio Code
+[ 327] - Connect Azure Functions to AzureStorage using command line tools
+[ 335] - Connect Azure Functions to AzureStorage using Visual Studio Code
+[ 344] - Connect Azure Functions to AzureStorage using command line tools
+[ 351] - Connect Azure Functions to AzureStorage using Visual Studio Code
+[ 360] - Connect Azure Functions to AzureStorage using command line tools
+[ 368] - Connect Azure Functions to AzureCosmos DB using Visual Studio Code
+[ 377] - Connect Azure Functions to Azure SQLDatabase using Visual Studio Code
+[ 387] - Connect Azure Functions to AzureCosmos DB using Visual Studio Code
+[ 396] - Connect Azure Functions to Azure SQLDatabase using Visual Studio Code
+[ 407] - Connect Azure Functions to AzureCosmos DB using Visual Studio Code
+[ 415] - Connect Azure Functions to Azure SQLDatabase using Visual Studio Code
+[ 425] - Tutorial: Create a function to integratewith Azure Logic Apps
+[ 436] - Quickstart: Create a function in Azurewith Python using Visual Studio Code
+[ 446] - Create serverless APIs in Visual Studiousing Azure Functions and APIManagement integration
+[ 461] - Tutorial: Integrate Azure Functions withan Azure virtual network by usingprivate endpoints
+[ 476] - Tutorial: Establish Azure Functionsprivate site access
+[ 490] - Tutorial: Control Azure Functionsoutbound IP with an Azure virtualnetwork NAT gateway
+[ 505] - Tutorial: Create a function app thatconnects to Azure services usingidentities instead of secrets
+[ 523] - Tutorial: Connect a function app toAzure SQL with managed identity andSQL bindings
+[ 528] - Tutorial: Trigger Azure Functions onblob containers using an eventsubscription
+[ 544] - Tutorial Step 2: Automate resizinguploaded images using Event Grid
+[ 552] - Tutorial: Apply machine learning modelsin Azure Functions with Python andTensorFlow
+[ 561] - Tutorial: Deploy a pre-trained imageclassification model to Azure Functionswith PyTorch
+[ 570] - Tutorial: Deploy Azure Functions as IoTEdge modules
+[ 579] - Tutorial: Create a function in Java withan Event Hub trigger and an AzureCosmos DB output binding
+[ 594] - Azure CLI Samples
+[ 596] - Create a function app for serverlesscode execution
+[ 599] - Create a serverless Python function appusing Azure CLI
+[ 602] - Create a function app in a Premium plan- Azure CLI
+[ 606] - Create a Function App in an App Serviceplan
+[ 610] - Create a function app with a namedStorage account connection
+[ 614] - Create an Azure Function that connectsto an Azure Cosmos DB
+[ 618] - Mount a file share to a Python functionapp using Azure CLI
+[ 622] - Create a function app in Azure that isdeployed from GitHub
+[ 626] - Create function app resources in Azureusing PowerShell
+[ 636] - Best practices for reliable AzureFunctions
+[ 644] - Improve the performance and reliabilityof Azure Functions
+[ 651] - Manage connections in Azure Functions
+[ 655] - Storage considerations for AzureFunctions
+[ 665] - Azure Functions error handling andretries
+[ 670] - Securing Azure Functions
+[ 683] - Azure Functions runtime versionsoverview
+[ 692] - Azure Functions Consumption planhosting
+[ 694] - Azure Functions Premium plan
+[ 704] - Dedicated hosting plans for AzureFunctions
+[ 706] - Azure Container Apps hosting of AzureFunctions
+[ 711] - Deployment technologies in AzureFunctions
+[ 721] - Connect to eventing and messagingservices from Azure Functions
+[ 723] - Event-driven scaling in Azure Functions
+[ 727] - Target-based scaling
+[ 737] - Azure Functions reliable eventprocessing
+[ 742] - Concurrency in Azure Functions
+[ 747] - Designing Azure Functions for identicalinput
+[ 749] - Azure Functions triggers and bindingsconcepts
+[ 755] - Register Azure Functions bindingextensions
+[ 758] - Azure Functions binding expressionpatterns
+[ 767] - Using the Azure Function return value
+[ 768] - Azure Functions error handling andretries
+[ 773] - Azure Functions Python developerguide
+[ 803] - Shifting from Express.js to AzureFunctions
+[ 807] - Securing Azure Functions
+[ 820] - Azure security baseline for Functions
+[ 836] - Reliability in Azure Functions
+[ 846] - Migrate your function app to a zone-redundant plan
+[ 848] - Azure Functions diagnostics overview
+[ 852] - Estimating Consumption plan costs
+[ 858] - Serverless REST APIs using AzureFunctions
+[ 862] - Azure Functions networking options
+[ 884] - IP addresses in Azure Functions
+[ 889] - Azure Functions custom handlers
+[ 905] - Supported languages in AzureFunctions
+[ 908] - Guide for running C# Azure Functions inan isolated worker process
+[ 937] - Develop C# class library functions usingAzure Functions
+[ 956] - Azure Functions C# script (.csx)developer reference
+[1053] - Azure Functions Node.js developerguide
+[1078] - Azure Functions Node.js developerguide
+[1104] - Azure Functions Java developer guide
+[1122] - Azure Functions PowerShell developerguide
+[1144] - Azure Functions Python developerguide
+[1171] - Azure Functions Python developerguide
+[1198] - Develop Python worker extensions forAzure Functions
+[1207] - Improve throughput performance ofPython apps in Azure Functions
+[1214] - Troubleshoot Python errors in AzureFunctions
+[1224] - Profile Python apps memory usage inAzure Functions
+[1231] - functions Package
+[1245] - Code and test Azure Functions locally
+[1253] - Develop Azure Functions by using VisualStudio Code
+[1274] - Develop Azure Functions using VisualStudio
+[1292] - Develop Azure Functions locally usingCore Tools
+[1304] - Create your first function in the Azureportal
+[1311] - Create your first Kotlin function in Azureusing IntelliJ
+[1316] - Create your first function in the Azureportal
+[1323] - Create a Function App in an App Serviceplan
+[1327] - Create a function app in a Premium plan- Azure CLI
+[1331] - Create your first containerized AzureFunctions
+[1340] - Create a function triggered by AzureCosmos DB
+[1353] - Create a function in Azure that'striggered by Blob storage
+[1362] - Create a function triggered by AzureQueue storage
+[1370] - Create a function in the Azure portalthat runs on a schedule
+[1377] - Connect functions to Azure servicesusing bindings
+[1380] - Store unstructured data using AzureFunctions and Azure Cosmos DB
+[1392] - Add messages to an Azure Storagequeue using Functions
+[1399] - Connect Azure Functions to AzureStorage using Visual Studio Code
+[1408] - Connect functions to Azure Storageusing Visual Studio
+[1417] - Connect your Java function to AzureStorage
+[1424] - Connect Azure Functions to AzureStorage using command line tools
+[1431] - Debug PowerShell Azure Functionslocally
+[1439] - Tutorial: Trigger Azure Functions onblob containers using an eventsubscription
+[1455] - Use dependency injection in .NET AzureFunctions
+[1465] - Manage connections in Azure Functions
+[1469] - Azure Functions error handling andretries
+[1474] - Manually run a non HTTP-triggeredfunction
+[1481] - Bring dependencies or third partylibrary to Azure Functions
+[1486] - Develop Python worker extensions forAzure Functions
+[1495] - Continuous deployment for AzureFunctions
+[1500] - Azure Functions deployment slots
+[1515] - Working with containers and AzureFunctions
+[1524] - Create a function app in a local Linuxcontainer
+[1529] - Azure Functions on Kubernetes withKEDA
+[1533] - Continuous delivery with AzurePipelines
+[1539] - Continuous delivery by using GitHubActions
+[1545] - Zip deployment for Azure Functions
+[1553] - Run your functions from a package filein Azure
+[1559] - Automate resource deployment for yourfunction app in Azure Functions
+[1574] - Tutorial: Deploy to Azure Functionsusing Jenkins
+[1580] - Manage your function app
+[1596] - Use App Configuration references forApp Service and Azure Functions(preview)
+[1604] - How to target Azure Functions runtimeversions
+[1608] - How to disable functions in AzureFunctions
+[1612] - How to use a secured storage accountwith Azure Functions
+[1616] - Move your function app betweenregions in Azure Functions
+[1619] - Work with legacy proxies
+[1629] - Migrate .NET apps from the in-processmodel to the isolated worker model
+[1645] - Migrate apps from Azure Functionsversion 3.x to version 4.x
+[1667] - Migrate apps from Azure Functionsversion 1.x to version 4.x
+[1690] - Migrate to version 4 of the Node.jsprogramming model for AzureFunctions
+[1698] - Update language stack versions in AzureFunctions
+[1702] - Monitor Azure Functions
+[1713] - Monitor executions in Azure Functions
+[1737] - Analyze Azure Functions telemetry inApplication Insights
+[1747] - Enable streaming execution logs inAzure Functions
+[1751] - Configure your App Service or AzureFunctions app to use Microsoft Entrasign-in
+[1764] - Configure your App Service or AzureFunctions app to use Facebook login
+[1767] - Configure your App Service or AzureFunctions app to use GitHub login
+[1769] - Configure your App Service or AzureFunctions app to use Google login
+[1771] - Configure your App Service or AzureFunctions app to use Twitter login
+[1773] - Configure your App Service or AzureFunctions app to sign in using anOpenID Connect provider
+[1776] - Configure your App Service or AzureFunctions app to sign in using a Sign inwith Apple provider (Preview)
+[1784] - Customize sign-in and sign-out in AzureApp Service authentication
+[1791] - Work with user identities in Azure AppService authentication
+[1796] - Work with OAuth tokens in Azure AppService authentication
+[1800] - Manage the API and runtime versions ofApp Service authentication
+[1808] - File-based configuration in Azure AppService authentication
+[1813] - Add and manage TLS/SSL certificates inAzure App Service
+[1827] - Set up Azure App Service accessrestrictions
+[1844] - How to use managed identities for AppService and Azure Functions
+[1850] - Use Key Vault references as app settingsin Azure App Service and AzureFunctions
+[1859] - Encrypt your application data at restusing customer-managed keys
+[1864] - Store unstructured data using AzureFunctions and Azure Cosmos DB
+[1876] - Tutorial: Get started with AzureFunctions triggers and bindings in AzureCache for Redis
+[1892] - Tutorial: Create a write-behind cache byusing Azure Functions and Azure Cachefor Redis
+[1904] - Add messages to an Azure Storagequeue using Functions
+[1911] - Connect Azure Functions to AzureStorage using Visual Studio Code
+[1920] - Connect functions to Azure Storageusing Visual Studio
+[1929] - Connect Azure Functions to AzureStorage using command line tools
+[1936] - Quickstart: Create an app showingGitHub star count with Azure Functionsand SignalR Service via C#
+[1944] - Quickstart: Use Java to create an Appshowing GitHub star count with AzureFunctions and SignalR Service
+[1953] - Quickstart: Create a serverless app withAzure Functions and SignalR Serviceusing JavaScript
+[1963] - Quickstart: Create a serverless app withAzure Functions and Azure SignalRService in Python
+[1972] - Tutorial: Create a serverless notificationapp with Azure Functions and AzureWeb PubSub service
+[1983] - How to work with Event Grid triggersand bindings in Azure Functions
+[1991] - Start/Stop VMs v2 overview
+[1997] - Deploy Start/Stop VMs v2 to an Azuresubscription
+[2012] - How to manage Start/Stop VMs v2
+[2016] - How to remove Start/Stop VMs v2
+[2017] - Adding pre-actions to schedules inStart/Stop VMs v2
+[2020] - Troubleshoot common issues withStart/Stop VMs
+[2023] - Use Azure Functions to connect to anAzure SQL Database
+[2030] - Tutorial: Integrate Azure Functions withan Azure virtual network by usingprivate endpoints
+[2045] - Expose serverless APIs from HTTPendpoints using Azure API Management
+[2049] - Create serverless APIs in Visual Studiousing Azure Functions and APIManagement integration
+[2064] - How to use managed identities for AppService and Azure Functions
+[2070] - Customize an HTTP endpoint in AzureFunctions
+[2077] - Managing hybrid environments withPowerShell in Azure Functions and AppService Hybrid Connections
+[2096] - Troubleshoot error: "Azure FunctionsRuntime is unreachable"
+[2101] - Diagnose and troubleshoot issues withthe Azure Functions trigger for AzureCosmos DB
+[2109] - Troubleshoot Node.js apps in AzureFunctions
+[2112] - Troubleshoot Python errors in AzureFunctions
+[2122] - Improve throughput performance ofPython apps in Azure Functions
+[2129] - Profile Python apps memory usage inAzure Functions
+[2136] - Microsoft.Web sites/functions 2022-03-01
+[2139] - az functionapp
+[2192] - Azure Functions Core Tools reference
+[2214] - Az.Functions
+[2216] - Runtime
+[2217] - functions Package
+[2242] - Azure Blob storage bindings for AzureFunctions overview
+[2269] - Overview of Azure functions for AzureCache for Redis (preview)
+[2273] - RedisPubSubTrigger for Azure Functions(preview)
+[2279] - RedisListTrigger for Azure Functions(preview)
+[2282] - RedisStreamTrigger for Azure Functions(preview)
+[2285] - Azure Cache for Redis input binding forAzure Functions (preview)
+[2288] - Azure Cache for Redis output bindingfor Azure Functions (preview)
+[2291] - Azure Cosmos DB bindings for AzureFunctions 1.x
+[2310] - Azure Cosmos DB trigger and bindingsfor Azure Functions 2.x and higheroverview
+[2335] - Migrate function apps from AzureCosmos DB extension version 3.x toversion 4.x
+[2341] - Azure Data Explorer bindings for AzureFunctions overview (preview)
+[2349] - Azure SQL bindings for Azure Functionsoverview
+[2352] - Azure SQL trigger for Functions
+[2359] - Azure SQL input binding for AzureFunctions
+[2365] - Azure SQL output binding for AzureFunctions
+[2371] - Dapr Extension for Azure Functions
+[2378] - Dapr Input Bindings trigger for AzureFunctions
+[2380] - Dapr Service Invocation trigger forAzure Functions
+[2382] - Dapr Topic trigger for Azure Functions
+[2384] - Dapr State input binding for AzureFunctions
+[2386] - Dapr Secret input binding for AzureFunctions
+[2388] - Dapr State output binding for AzureFunctions
+[2391] - Dapr Invoke output binding for AzureFunctions
+[2394] - Dapr Publish output binding for AzureFunctions
+[2397] - Dapr Binding output binding for AzureFunctions
+[2400] - Azure Event Grid bindings for AzureFunctions
+[2403] - Azure Event Grid trigger for AzureFunctions
+[2414] - Azure Event Hubs trigger and bindingsfor Azure Functions
+[2430] - Azure IoT Hub bindings for AzureFunctions
+[2436] - Azure IoT Hub trigger for AzureFunctions
+[2441] - Apache Kafka bindings for AzureFunctions overview
+[2445] - Apache Kafka trigger for AzureFunctions
+[2452] - Apache Kafka output binding for AzureFunctions
+[2458] - Azure Functions HTTP triggers andbindings overview
+[2462] - Azure Functions HTTP trigger
+[2474] - Azure Functions HTTP output bindings
+[2476] - Mobile Apps bindings for AzureFunctions
+[2483] - Notification Hubs output binding forAzure Functions
+[2493] - Azure Queue storage trigger andbindings for Azure Functions overview
+[2508] - RabbitMQ bindings for Azure Functionsoverview
+[2510] - RabbitMQ trigger for Azure Functionsoverview
+[2516] - RabbitMQ output binding for AzureFunctions overview
+[2520] - Azure Functions SendGrid bindings
+[2524] - Azure Service Bus bindings for AzureFunctions
+[2542] - Migrate function apps from AzureService Bus extension version 4.x toversion 5.x
+[2544] - SignalR Service bindings for AzureFunctions
+[2546] - SignalR Service trigger binding forAzure Functions
+[2553] - SignalR Service input binding for AzureFunctions
+[2557] - SignalR Service output binding forAzure Functions
+[2561] - Azure Tables bindings for AzureFunctions
+[2576] - Timer trigger for Azure Functions
+[2584] - Twilio binding for Azure Functions
+[2586] - Azure Functions warmup trigger
+[2589] - Azure Web PubSub trigger and bindingsfor Azure Functions
+[2606] - AZFW0001: Invalid binding attributes
+[2607] - AZF0001: Avoid async void
+[2608] - AZF0002: Inefficient HttpClient usage
+[2610] - AZFD0001: AzureWebJobsStorage appsetting is not present.
+[2611] - AZFD0002: Value ofAzureWebJobsStorage app setting isinvalid.
+[2612] - AZFD0003: Encountered aStorageException while trying to fetchthe diagnostic events.
+[2614] - AZFD0004: Host ID collision
+[2616] - AZFD0005: External startup exception
+[2617] - AZFD0006: SAS Token Expiring Warning
+[2619] - AZFD0007: Repository has more than 10nondecryptable secrets backups
+[2621] - AZFD0008: Failed to read from BlobStorage secret repository because itsaccess tier is set to archive
+[2623] - AZFD0009: Unable to parse hostconfiguration file
+[2624] - AZFD0010: Linux Consumption DoesNot Support TZ & WEBSITE_TIME_ZONEError
+[2625] - AZFD0011: TheFUNCTIONS_WORKER_RUNTIME settingis required
+[2627] - AZFD0012: A non highly-identifiablesecret has been loaded by theapplication
+[2629] - host.json reference for Azure Functions2.x and later
+[2647] - host.json reference for Azure Functions1.x
+[2673] - How do I set a static IP in Functions?
+How do I restrict internet access to myfunction?
+[2674] - How do I restrict my function app to avirtual network?
+How can I access resources in a virtualnetwork from a function app?
+How do I access resources protected byservice endpoints?
+How can I trigger a function from aresource in a virtual network?
+How can I deploy my function app in avirtual network?
+[2676] - Serverless functions architecture design
+[2678] - Language runtime support policy
+[2681] - Azure Functions hosting options

@@ -1,0 +1,290 @@
+- ---< azure-azure-cache-for-redis.pdf >---
+  - Azure Cache for Redis 檔
+    [1] Azure Cache for Redis 文件
+  - 開始使用
+    - 關於 Azure Cache for Redis
+      [4] 什麼是 Azure Cache for Redis？
+    - 最新功能
+      [9] Azure Cache for Redis 的新功能
+    - 快速入門
+      - 建立快取
+        - 在基本、標準和 進階版 層中建立快取
+          [18] 快速入門：建立開放原始碼 Redis 快取
+        - 在企業層中建立快取
+          [22] 快速入門：建立 Redis 企業快取
+        - 使用 Azure PowerShell 建立和管理
+          [29] 使用 Azure PowerShell 管理 Azure Cachefor Redis
+        - 使用 Azure CLI 建立和管理
+          [51] 使用 Azure CLI 建立 Azure Cache forRedis
+        - 使用 Azure CLI 建立和管理進階快取
+          [55] 建立具有叢集的進階 Azure Cache forRedis
+        - 建立 Redis 快取 - Bicep
+          [59] 快速入門：使用 Bicep 來建立 AzureCache for Redis
+        - 建立 Redis 快取 - ARM 範本
+          [64] 快速入門：使用 ARM 範本建立 AzureCache for Redis
+      - 使用快取
+        - ASP.NET 應用程式
+          [71] 快速入門：搭配使用 Azure Cache forRedis 與 ASP.NET Web 應用程式
+        - ASP.NET Core 應用程式
+          [86] 快速入門：搭配使用 Azure Cache forRedis 與 ASP.NET Core Web 應用程式
+        - .NET Core 應用程式
+          [97] 快速入門：在 .NET Core 中使用 AzureCache for Redis
+        - .NET 應用程式
+          [107] 快速入門：在 .NET Framework 中使用Azure Cache for Redis
+        - Java 應用程式
+          [118] 快速入門：在 Java 中使用 Azure Cachefor Redis
+        - 使用 JCache 的 Java 應用程式
+          [127] 快速入門：在 Java 中使用 Azure Cachefor Redis 搭配 Reis 用戶端
+        - Node.js 應用程式
+          [138] 快速入門：在 Node.js 中使用 AzureCache for Redis
+        - Python 應用程式
+          [146] 快速入門：在 Python 中使用 AzureCache for Redis
+        - Go 應用程式
+          [154] 快速入門：使用 Azure Cache for Redis搭配 Go
+        - Rust 應用程式
+          [164] 快速入門：搭配使用 Azure Cache forRedis 與 Rust (機器翻譯)
+  - 部署和設定
+    - 選擇快取層
+      [179] 
+    - 升級至新版本
+      [182] 如何將現有的 Redis 4 快取升級至 Redis 6
+    - 使用保留儲存
+      [187] 使用保留預付 Azure Cache for Redis 計算資源
+    - 遷移至 Azure Cache for Redis
+      [191] 遷移至 Azure Cache for Redis
+    - 規劃常見問題
+      [195] Azure Redis 快取效能
+我應該在哪個區域找到快取？
+我的快取資料位於何處？
+    - Redis 模組
+      [197] 搭配 Azure Cache for Redis 使用 Redis模組
+    - 快取架構
+      [202] 
+    - 使用 Azure PowerShell 建立和管理
+      [232] 使用 Azure PowerShell 管理 Azure Cachefor Redis
+    - 連線 AKS 應用程式至快取
+      [254] 教學課程：從裝載于 Azure KubernetesService 上的應用程式連線到Azure Cachefor Redis
+    - 使用 Azure CLI
+      - 概觀
+        [262] 使用 Azure CLI 管理 Azure Cache forRedis (機器翻譯)
+      - 建立和管理快取
+        [263] 使用 Azure CLI 建立 Azure Cache forRedis
+      - 建立和管理進階快取
+        [267] 建立具有叢集的進階 Azure Cache forRedis
+  - 開發和客戶端連結庫
+    - 開發常見問題
+      [271] 如何開始使用 Azure Cache for Redis？
+StackExchange.Redis 組態選項有何用途？
+    - 用戶端連結庫最佳做法
+      [277] 用戶端程式庫
+    - 開發最佳做法
+      [280] 部署
+    - 記憶體管理最佳做法
+      [286] 記憶體管理
+    - 效能測試最佳做法
+      [288] 效能測試
+    - 企業層最佳做法
+      [296] 企業和企業 Flash 層的最佳做法為何
+    - 向量搜尋
+      [303] 什麼是 Azure Cache for Redis 中的向量內嵌和向量搜尋
+    - 連線 復原最佳做法
+      [307] 恢復連線
+    - 使用 Azure Functions 觸發程式和系結
+      - 建立 Redis 觸發程式的簡單函式應用程式
+        [311] 教學課程：開始使用 Azure Cache forRedis 中的 Azure Functions 觸發程式和系結
+  - 記錄和監視
+    - 監視器
+      [326] 監視 Azure Cache for Redis
+    - 監視 Azure Cache for Redis
+      [335] 如何監視 Azure Redis 快取
+    - 使用深入解析來瞭解效能和使用率
+      [342] 適用於 Azure Cache for Redis 的 Azure監視器深入解析
+    - 使用診斷記錄進行監視
+      [351] 
+  - 調整和效能
+    - 變更快取的大小和層級
+      [358] 調整 Azure Cache for Redis 執行個體
+    - 開發最佳做法
+      [374] 部署
+    - 縮放最佳做法
+      [380] 調整大小
+    - 伺服器負載管理最佳做法
+      [382] 管理 Azure Cache for Redis 的伺服器負載
+    - 效能測試
+      [384] 效能測試
+  - 驗證和授權
+    - 用於驗證的 Microsoft Entra 識別碼
+      [392] 使用 Microsoft Entra ID 進行快取驗證
+    - 角色型存取控制
+      [397] 使用數據存取原則設定角色型訪問控制
+    - 儲存體帳戶的受控識別 (機器翻譯)
+      [402] 記憶體的受控識別
+  - 安全性和網路服務
+    - 網路隔離選項
+      [414] Azure Cache for Redis 網路隔離選項
+    - 使用 Private Link 快取 連線
+      [417] 什麼是 Azure Cache for Redis 與 AzurePrivate Link？
+    - 搭配快取使用 TLS
+      [432] TLS 通訊協定的組態設定為何？
+    - 從 VNet 插入移轉至 Private Link
+      [434] 從 VNet 插入式快取移轉至 Private Link快取 (機器翻譯)
+    - 使用虛擬網路保護快取
+      [438] 設定 進階版 Azure Cache for Redis 實例的虛擬網路 （VNet） 支援
+    - Azure 原則的安全性控制
+      [451] 適用於 Azure Cache for Redis 的 Azure原則 法規合規性控制
+    - 移除 TLS 1.0 和 1.1
+      [463] 在與 Azure Cache for Redis 搭配使用時移除 TLS 1.0 和 1.1
+    - 安全性基準
+      [468] 適用於 Azure Cache for Redis的 Azure 安全性基準
+  - 快取管理
+    - 在 Azure 入口網站中設定
+      [481] 如何設定 Azure Cache for Redis
+    - 匯入/匯出資料
+      [512] 在 Azure Cache for Redis 中匯入與匯出資料
+    - 設定磁碟加密
+      [524] 使用客戶管理的金鑰設定 Azure Cachefor Redis 實體的磁碟加密 （預覽）
+    - 重新啟動
+      [530] 如何管理 Azure Cache for Redis
+    - 更新通道和排程更新
+      [541] 
+    - 設定redis-cli.exe存取
+      [544] 使用 Redis 命令列工具搭配 Azure Cachefor Redis
+    - 使用 CLI 建立和管理快取
+      [549] 
+    - 在區域間移動
+      [555] 將 Azure Cache for Redis 實例移至不同的區域
+    - 發佈 Azure Cache for Redis 事件
+      [568] Azure Cache for Redis 事件方格概觀 (機器翻譯)
+    - 管理相關常見問題
+      [571] 何時應該啟用非 TLS/SSL 連接埠來連線至Redis？
+生產環境的最佳作法有哪些？
+    - Azure Functions
+      [577] 適用於 Azure Cache for Redis 的 Azure函式概觀 （預覽）
+  - 復原
+    - 利用 Redis 資料永續性來留存您的快取
+      [581] 設定 Azure Cache for Redis 實例的數據持續性
+    - 新增更多複本
+      [594] 新增複本至 Azure Cache for Redis
+    - 啟用區域備援
+      [598] 啟用 Azure Cache for Redis 的區域備援
+    - 設定被動異地複寫
+      [603] 設定 azure Cache for Redis 實例的被動異地複寫進階版
+    - 設定企業主動式異地複寫
+      [616] 設定 Enterprise Azure Cache for Redis 執行個體的使用中異地複寫 (機器翻譯)
+    - 設定快取以達到高可用性
+      [624] 高可用性和災害復原
+    - 故障轉移和修補
+      [632] Azure Cache for Redis 的容錯移轉和修補
+    - 移轉至可用性區域支援
+      [637] 將 Azure Cache for Redis 執行個體移轉至可用性區域支援
+  - 診斷和疑難解答
+    - 針對連線能力問題進行疑難排解
+      [639] 連線疑難排解
+    - 針對延遲和逾時進行疑難排解
+      [643] 針對 Azure Cache for Redis 的延遲及逾時進行疑難排解 (機器翻譯)
+    - 針對客戶端進行疑難解答
+      [650] 針對 Azure Cache for Redis 用戶端問題進行疑難排解
+    - 針對 Redis 伺服器進行疑難解答
+      [652] 針對 Azure Cache for Redis 伺服器問題進行疑難排解 (機器翻譯)
+    - 針對數據遺失進行疑難解答
+      [655] 針對 Azure Cache for Redis 中的資料遺失問題進行疑難排解
+    - 疑難排解常見問題集
+      [659] 如何監視快取的健全狀況和效能？
+為什麼看到逾時？
+我的用戶端為什麼中斷與快取的連線？
+  - 範例
+    - 使用 Azure Functions 觸發程式和系結
+      - 建立 Redis 觸發程式的簡單函式應用程式
+        [661] 教學課程：開始使用 Azure Cache forRedis 中的 Azure Functions 觸發程式和系結
+      - 使用 Azure Functions 建立寫入後置快取
+        [676] 教學課程：使用 Azure Functions 和Azure Cache for Redis 建立寫入後置快取
+    - 搭配快取使用 Azure Kubernetes Service
+      - 將 AKS 應用程式 連線 至快取
+        [687] 教學課程：從裝載于 Azure KubernetesService 上的應用程式連線到Azure Cachefor Redis
+      - 搭配 AKS 裝載的應用程式使用主動式異地複寫
+        [695] 開始搭配 AKS 裝載的應用程式使用AzureCache for Redis企業主動式複寫
+      - Kubernetes 裝載的用戶端應用程式最佳做法
+        [705] Kubernetes 主控的用戶端應用程式
+    - 人工智慧
+      - 向量搜尋概念
+        [707] 什麼是 Azure Cache for Redis 中的向量內嵌和向量搜尋
+      - 向量相似度搜尋
+        [711] 教學課程：使用 Azure Cache for Redis對 Azure OpenAI 內嵌進行向量相似性搜尋
+      - 語意快取
+        [723] 教學課程：使用 Azure Cache for Redis作為語意快取
+    - ASP.NET
+      - 使用工作階段狀態提供者
+        [733] Azure Cache for Redis 的 ASP.NET 工作
+階段狀態提供者 (機器翻譯)
+      - 使用輸出快取提供者
+        [738] 適用於 Azure Redis 快取的 ASP.NET 輸出
+快取提供者
+    - Java Spring
+      - 使用 Spring Boot Initializer
+        [746] 在 Spring 中使用 Azure Redis 快取
+    - 事件格線
+      - 使用 Azure 入口網站 路由事件
+        [749] 快速入門：使用 Azure 入口網站將 AzureCache for Redis 事件路由傳送至 Web 端點
+      - 使用 Azure CLI 路由傳送事件
+        [759] 快速入門：使用 Azure CLI 將 AzureCache for Redis 事件路由傳送至 Web 端點
+      - 使用 PowerShell 路由事件
+        [764] 快速入門：使用 PowerShell 將 AzureCache for Redis 事件路由傳送至 Web 端點
+    - 建立排行榜
+      [769] 教學課程：在 ASP.NET 上建立暫存排行榜
+    - 部署機器學習模型
+      [796] 使用 Azure Cache for Redis 將機器學習模型部署至 Azure Functions
+    - 使用 Redis 快取建立 Web 應用程式 - Bicep
+      [806] 使用 Bicep 建立 Web 應用程式與 AzureCache for Redis
+    - 使用 Redis 快取建立 Web 應用程式 - ARM 範本
+      [810] 使用範本建立 Web 應用程式加上 AzureCache for Redis
+  - 參考
+    - Azure Cache for Redis 範例
+      [819] Azure Cache for Redis 範例
+    - .NET
+      [822] Microsoft.Azure.Management.RedisNamespace
+    - Java
+      [824] RedisCache Interface
+    - Redis 用戶端
+    - Azure PowerShell
+      [830] Az.RedisCache
+    - Azure CLI
+      [832] az redis
+    - REST
+      [864] Azure Cache for Redis
+    - Resource Manager 範本
+      [865] Microsoft.Cache 資源類型
+    - Azure 原則內建
+      [867] 
+    - Redis 命令
+    - 監視資料參考
+      [869] 
+  - 資源
+    - Azure Cache for Redis 常見問題
+      [893] Redis 授權變更
+已淘汰的服務
+    - 從 Azure Cache for Redis 淘汰
+      [899] Azure Cache for Redis 中淘汰的內容
+    - 影片
+    - Microsoft 問與答頁面
+    - 定價
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - Azure 藍圖
+    - 最佳作法
+      - 用戶端程式庫
+        [903] 用戶端程式庫
+      - 恢復連線
+        [906] 恢復連線
+      - 部署
+        [910] 部署
+      - 企業層
+        [916] 企業和企業 Flash 層的最佳做法為何
+      - Kubernetes 裝載的用戶端應用程式
+        [923] Kubernetes 主控的用戶端應用程式
+      - 記憶體管理
+        [925] 記憶體管理
+      - 效能測試
+        [927] 效能測試
+      - 調整大小
+        [935] 調整大小
+      - 伺服器負載管理
+        [937] 管理 Azure Cache for Redis 的伺服器負載

@@ -1,0 +1,73 @@
+- ---< azure-confidential-ledger.pdf >---
+  - Azure 機密總帳
+    [1] Azure 機密總帳
+  - 概觀
+    - 關於 Azure 機密總帳
+      [3] Microsoft Azure 機密總帳
+  - 快速入門
+    - 入口網站
+      [5] 快速入門：使用 Azure 入口網站 建立機密總帳
+    - CLI
+      [8] 快速入門：使用 Azure CLI 建立機密總帳
+    - PowerShell
+      [11] 快速入門：使用 Azure PowerShell 建立機密總帳
+    - Python
+      [15] 快速入門：適用於 Python 的 MicrosoftAzure 機密總賬客戶端連結庫
+    - .NET
+      [24] 快速入門：適用於 .NET 的 Azure 機密總賬客戶端連結庫
+    - ARM 範本
+      [29] 快速入門：使用ARM範本建立 MicrosoftAzure 機密總帳
+  - 概念
+    - 架構
+      [33] 架構
+    - 使用者驗證和授權
+      - 使用 Microsoft Entra 識別碼進行驗證
+        [35] 使用 Microsoft Entra 識別碼進行 Azure機密總帳驗證
+    - 驗證總賬數據
+      - 驗證總賬節點
+        [39] 驗證 Azure 機密總賬節點
+      - 寫入交易收據
+        [40] Azure 機密總帳寫入交易收據
+  - 操作指南
+    - 管理總賬
+      - 註冊機密總賬資源提供者
+        [49] 註冊 Azure 機密總帳資源提供者
+      - 使用 Microsoft Entra 識別元註冊 ACL 應用程式
+        [50] 如何使用 Microsoft Entra ID 註冊 Azure機密總賬應用程式
+    - 管理使用者
+      - 管理 Microsoft Entra 令牌型使用者
+        [58] 在 Azure 機密總帳中管理 MicrosoftEntra 令牌型使用者
+      - 管理憑證型使用者
+        [61] 在 Azure 機密總帳中管理憑證型使用者
+      - 建立用戶端憑證
+        [70] 建立客戶端憑證
+    - 使用機密總賬驗證您的數據
+      - 確認寫入交易收據
+        [72] 確認 Azure 機密總帳寫入交易收據
+      - 在 Azure 機密總帳上建立信任
+        [85] 在 Azure 機密總帳上建立信任
+      - 使用 Azure 總賬總管上傳、檢視及列出總賬數據
+        [87] 快速入門：使用 Azure 總賬總管上傳、檢視及列出總賬數據
+    - 使用機密總賬的應用程式
+      - 使用總賬安全地將數據儲存在 SQL Server 中
+        [92] 總帳概觀
+      - 建立受控應用程式以儲存 Blob 摘要
+        [98] 建立受控應用程式以儲存 Blob 摘要
+  - 參考資料
+    - 常見問題集
+      [105] 一般
+    - Azure 機密總帳 REST API 參考
+      [108] Azure 機密總帳 REST API 參考
+    - .NET 用戶端程式庫
+      [109] Azure ConfidentialLedger SDK for .NET -latest
+    - JavaScript 用戶端連結庫
+      [110] 適用于 JavaScript 的 Azure Azure 機密總帳 SDK - 最新
+    - Java 用戶端程式庫
+      [111] Azure Confidential Ledger client libraryfor Java - version 1.0.19
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - 定價
+    - 區域可用性
+    - 服務等級協定 (SLA)
+    - 服務狀態
+    - 服務更新

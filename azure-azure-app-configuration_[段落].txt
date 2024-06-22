@@ -1,0 +1,297 @@
+- ---< azure-azure-app-configuration.pdf >---
+  - Azure 應用程式組態文件
+    [1] Azure 應用程式組態文件
+  - 概觀
+    - 關於 Azure 應用程式組態
+      [5] 什麼是 Azure 應用程式組態？
+    - 最佳作法
+      [7] Azure 應用程式組態最佳做法
+    - 常見問題集
+      [13] 應用程式組態與 Azure Key Vault 有何不同？
+我是否應將秘密儲存在應用程式組態中？
+應用程式組態是否會將我的資料加密？用
+  - 快速入門
+    - 建立應用程式組態存放區
+      [22] 快速入門：建立 Azure 應用程式組態存放區
+    - 組態
+      - ASP.NET Core
+        [28] 快速入門：使用 Azure 應用程式組態建立ASP.NET Core 應用程式
+      - .NET
+        [35] 快速入門: 使用應用程式組態建立 .NET 應用程式
+      - .NET Framework
+        [39] 快速入門: 使用 Azure 應用程式組態建立.NET Framework 應用程式
+      - Java Spring
+        [43] 快速入門: 使用 Azure 應用程式組態建立Java Spring 應用程式
+      - Python
+        [48] 快速入門：使用 Azure 應用程式組態建立Python 應用程式
+      - JavaScript/Node.js
+        [53] 快速入門：使用 Azure 應用程式組態建立JavaScript 應用程式
+      - Azure Functions
+        [60] 快速入門：使用 Azure 應用程式組態 建立 Azure Functions 應用程式
+    - 功能管理
+      - 管理功能旗標
+        [67] 快速入門：在 Azure 應用程式組態 中管理功能旗標
+      - ASP.NET Core
+        [74] 快速入門：將功能旗標新增至 ASP.NET
+Core 應用程式
+      - .NET/.NET Framework
+        [82] 快速入門：將功能旗標新增至 .NET/.NETFramework 控制台應用程式
+      - .NET 背景服務
+        [88] 快速入門：將功能旗標新增至 .NET 背景服務
+      - Java Spring
+        [94] 快速入門：將功能旗標新增至 SpringBoot 應用程式
+      - Azure Functions
+        [103] 快速入門：將功能旗標新增至 AzureFunctions 應用程式
+      - Azure Kubernetes Service
+        [112] 快速入門：將功能旗標新增至 AzureKubernetes Service 中的工作負載
+    - 服務整合
+      - Azure Kubernetes Service
+        [119] 快速入門：在 Azure Kubernetes Service中使用 Azure 應用程式組態
+      - App Service 和 Azure Functions
+        [130] 使用 App Service 與 Azure Functions 的應用程式組態參考 (預覽)
+      - Azure 容器應用程式
+        [138] 快速入門：在 Azure 容器應用程式中使用Azure 應用程式組態
+    - 部署
+      - 概觀
+        [144] 部署
+      - Bicep
+        [148] 快速入門：使用 Bicep 建立 Azure 應用程式組態存放區
+      - ARM 範本
+        [152] 快速入門：使用ARM範本建立 Azure 應用程式組態存放區
+    - Visual Studio 中的 .NET 應用程式
+      [158] 使用 Visual Studio 已連線的服務新增Azure 應用程式組態
+  - 教學課程
+    - 使用輪詢模型啟用動態設定
+      - ASP.NET Core
+        [164] 教學課程: 在 ASP.NET Core 應用程式中使
+用動態設定
+      - ASP.NET (.NET Framework)
+        [172] 教學課程：在 ASP.NET Web 應用程式
+(.NET Framework) 中使用動態設定
+      - .NET
+        [179] 教學課程：在 .NET 應用程式中使用動態設定
+      - .NET Framework
+        [187] 教學課程：在 .NET Framework 應用程式中使用動態設定
+      - .NET 背景服務
+        [193] 教學課程：在 .NET 背景服務中使用動態設定
+      - Azure Functions
+        [200] 教學課程：在 Azure Functions 應用程式中使用動態組態
+      - Spring Boot
+        [206] 教學課程：使用 Java Spring 應用程式中的動態組態
+      - Python
+        [212] 教學課程：在 Python 中使用動態設定
+      - Azure Kubernetes Service
+        [217] 教學課程：在 Azure Kubernetes Service中使用動態組態
+    - 使用推送模型啟用動態設定
+      - .NET
+        [221] 教學課程：在 .NET 應用程式中使用推送重新整理使用動態設定
+      - Java Spring
+        [231] 教學課程：利用 JAVA Spring 應用程式中的發送重新整理使用動態組態
+    - 使用 Key Vault 參考
+      - 使用 Key Vault 參考
+        - ASP.NET Core
+          [239] 教學課程：在 ASP.NET Core 應用程式中
+使用金鑰保存庫參考
+        - Spring Boot
+          [247] 教學課程：在 Java Spring 應用程式中使用 Key Vault 參考
+      - 自動重新載入祕密和憑證
+        - .NET
+          [255] 自動從金鑰保存庫重載秘密和憑證
+    - 建置、部署及 CI/CD
+      - 使用 Azure Pipelines 進行推送
+        [258] 使用 Azure Pipelines 將設定推送至應用程式組態
+      - 使用 Azure Pipelines 進行提取
+        [266] 使用 Azure Pipelines 從應用程式組態提取設定
+      - 使用 GitHub Actions 進行推送
+        [275] 將您的 GitHub 存放庫同步至應用程式組態
+      - 使用匯出的設定建置專案
+        [284] 與 CI/CD 管線整合
+      - 使用 Helm 部署至 Kubernetes
+        [287] 使用 Helm 與 Kubernetes 部署整合
+    - 功能管理
+      - 使用功能旗標
+        - ASP.NET Core
+          [295] 教學課程：在 ASP.NET Core 應用程式中
+使用功能旗標
+        - Spring Boot
+          [303] 教學課程：在 Spring Boot 應用程式中使用功能旗標
+      - 使用功能篩選器啟用條件式功能
+        - 概觀
+          [308] 教學課程：使用功能篩選器啟用條件式功能
+        - ASP.NET Core
+          [312] 使用功能篩選來啟用條件式功能旗標
+      - 依排程啟用功能
+        - 概觀
+          [317] 教學課程：依排程啟用功能
+        - ASP.NET Core
+          [320] 教學課程：在 ASP.NET Core 應用程式中
+依排程啟用功能
+      - 向目標物件推出功能
+        - 概觀
+          [322] 教學課程：向目標物件推出功能
+        - ASP.NET Core
+          [327] 針對目標受眾啟用分段推出功能
+    - 啟用 Azure 監視
+      - 監視應用程式組態
+        [336] 監視 應用程式組態
+      - 監視資料的參考
+        [343] 監視 應用程式組態 數據參考
+  - 範例
+    - Azure CLI
+      [347] Azure CLI 範例
+    - Azure PowerShell
+      [348] Azure 應用程式組態的 PowerShell 範例
+    - JavaScript SDK
+      [349] 使用 Azure SDK for JavaScript 建立Node.js 應用程式
+    - Python SDK
+      [358] 使用適用於 Python 的 Azure SDK 建立Python 應用程式
+    - GitHub 上的範例
+    - Terraform
+  - 概念
+    - 索引鍵和值
+      [367] 索引鍵和值
+    - 快照集
+      [371] 快照集
+    - 時間點金鑰值
+      [374] 時間點索引鍵/值
+    - 功能管理
+      [379] 功能管理概觀
+    - 組態檔
+      [382] 
+    - 事件處理
+      [385] 回應 Azure 應用程式組態事件
+    - 虛刪除
+      [390] 虛刪除
+    - 異地複寫
+      [392] 異地複寫概觀
+    - 可靠性
+      - 可用性區域支援
+        [395] 將應用程式組態移轉至具有可用性區域支援的區域
+      - 復原和災害復原
+        [398] 復原和災害復原
+    - 安全性
+      - 使用客戶管理的金鑰加密
+        [400] 使用客戶自控金鑰來加密應用程式組態資料
+      - 使用私人端點保護您的設定存放區
+        [404] 對 Azure 應用程式組態使用私人端點
+      - 使用 Microsoft Entra ID 啟用存取
+        [407] 使用 Microsoft Entra 識別碼授權存取Azure 應用程式組態
+      - 指派 Azure 受控識別
+        [409] 如何為 Azure 應用程式組態使用受控識別
+      - 停用存取金鑰驗證
+        [412] 針對 Azure 應用程式組態執行個體停用存取金鑰驗證
+      - Azure 原則的安全性控制
+        [416] 適用於 Azure 應用程式組態的 Azure 原則法規合規性控制項
+      - 安全性基準
+        [422] 適用于 Azure 應用程式組態 的 Azure 安全性基準
+  - 操作指南
+    - 對個別環境組態使用標籤
+      [433] 使用標籤提供各環境組態值。
+    - 管理和使用快照集
+      [437] 管理和使用快照集
+    - 匯入或匯出設定資料
+      [445] 匯入或匯出設定資料
+    - 針對索引鍵/值使用 JSON 內容類型
+      [458] 使用內容類型以將 JSON 索引鍵值儲存在應用程式組態
+    - 使用事件方格進行資料變更通知
+      [465] 使用事件方格來 應用程式組態 數據變更通知
+    - 使用受控識別來存取應用程式組態
+      [470] 使用受控識別來存取應用程式組態
+    - 更新到新的 Spring Boot 程式庫
+      [477] 轉換為新的應用程式組態 Spring Boot 程式庫
+    - 在不同的 Azure 區域之間移動資源
+      [481] 將應用程式組態存放區移至另一個區域
+    - 復原或清除已刪除的應用程式組態存放區
+      [483] 復原 Azure 應用程式組態存放區
+    - 啟用異地複寫
+      [489] 啟用異地複寫
+    - 停用公用存取
+      [494] 停用 Azure 應用程式組態中的公用存取
+    - 設定私人存取
+      [496] 在 Azure 應用程式組態中設定私人存取
+  - 參考
+    - REST API
+      - 控制平面
+        [503] Azure 應用程式組態
+      - 資料平面
+        - 概觀
+          [504] Azure 應用程式組態資料平面 REST API
+        - 資源
+          - 索引鍵
+            [505] 索引鍵
+          - 索引鍵/值
+            [510] 索引鍵/值
+          - 標籤
+            [520] 標籤
+          - 鎖定
+            [525] 上鎖
+          - 修訂記錄
+            [528] 機碼值修訂
+          - 快照集
+            [534] 快照式
+        - 通訊協定
+          - 驗證
+            [548] 驗證
+            - Microsoft Entra 驗證
+              [549] Microsoft Entra 驗證
+            - HMAC 驗證
+              [552] HMAC 驗證 - REST API 參考
+          - 授權
+            [566] 授權
+            - Microsoft Entra 授權
+              [567] Microsoft Entra 授權 - REST API 參考
+            - HMAC 授權
+              [569] HMAC 授權 - REST API 參考
+          - 一致性模型
+            [570] 即時一致性
+          - 通用標頭
+            [572] 標題
+          - 節流
+            [575] 節流
+          - 版本控制
+            [577] 版本控制
+        - 部署
+          - Fiddler
+            [579] 使用 Fiddler 測試Azure 應用程式組態REST API
+          - Postman
+            [581] 使用 Postman 測試Azure 應用程式組態REST API
+    - 用戶端程式庫
+      - .NET 提供者
+        [582] Microsoft.Extensions.Configuration.AzureAppConfiguration Namespace
+      - .NET Framework 建立器
+      - Java Spring 提供者
+      - Python 提供者
+      - Azure SDK for .NET
+      - Azure SDK for Java
+      - Azure SDK for Python
+      - 適用於 JavaScript 的 Azure SDK
+      - Azure SDK for Go
+    - 功能管理
+      - .NET
+        [584] Feature Management
+      - Java Spring
+    - 部署
+      - ARM 範本
+        [585] 
+      - Bicep
+        [588] 
+      - Terraform
+        [591] 
+    - Azure CLI
+      [593] az appconfig
+    - Azure PowerShell
+      [615] Az.AppConfiguration
+    - Kubernetes 提供者
+      [617] Azure 應用程式組態 Kubernetes 提供者參考
+    - Azure 原則內建
+      [633] 
+  - 資源
+    - 定價
+    - 藍圖
+    - 影片
+      - 開始使用應用程式組態
+      - 簡化集中式組態
+      - 在雲端原生節目 (Cloud Native Show) 上的 Azure 應用程式組態
+      - 推出新功能
+      - 使用組態快照集的三個原因
+    - 提供產品意見反應

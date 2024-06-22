@@ -1,0 +1,545 @@
+- ---< azure-devops-pipelines-azure-devops.pdf >---
+  - Azure Pipelines
+    [1] Azure Pipelines 文件
+  - 什麼是 Azure Pipelines？
+    [6] 什麼是 Azure Pipelines？
+  - 使用 Azure Pipelines
+    [10] 使用 Azure Pipelines
+  - 開始使用
+    - 註冊 Azure Pipelines
+      [14] 註冊 Azure Pipelines
+    - 建立您的第一個管線
+      [25] 建立您的第一個管線
+    - 自訂您的管線
+      [38] 自訂您的管線
+  - 管線基本概念
+    - 重要概念
+      [49] 新 Azure Pipelines 使用者的重要概念
+    - YAML 管線編輯器
+      [54] YAML 管線編輯器
+    - 儲存機制
+      - 支援的存放庫
+        [67] 支援的來源存放庫
+      - Azure Repos Git
+        [68] 建置 Azure Repos Git 或 TFS Git 存放庫
+      - GitHub
+        [93] 建置 GitHub 存放庫
+      - GitHub Enterprise 伺服器
+        [138] 建置 GitHub Enterprise Server 存放庫
+      - Git 存放庫的管線選項
+        [145] Git 存放庫的管線選項
+      - Bitbucket Cloud
+        [156] 建置 Bitbucket 雲端存放庫
+      - Bitbucket 伺服器
+        [170] 建置內部部署 Bitbucket 存放庫
+      - TFVC
+        [175] 建置 TFVC 存放庫
+      - Subversion
+        [180] 建置 Subversion 存放庫
+      - 多個存放庫
+        [183] 查看管線中的多個存放庫
+    - 建置歷程記錄
+      [193] 發行項• 2024/04/06
+    - 觸發程序
+      - 觸發程序類型
+        [195] 指定觸發管線的事件
+      - 已排程的觸發程序
+        [197] 設定管線的排程
+      - 管線完成觸發程序
+        [214] 一個管線執行完成後再觸發另一個
+      - 建置完成觸發程式 （傳統）
+        [220] (傳統) 觸發一個管線
+      - 發行觸發程式 （傳統）
+        [222] 發行觸發程序
+    - 工作和範本
+      - 範本、參數和表達式
+        - 範本
+          [229] 範本使用方式參考
+        - 範本參數
+          [242] 範本參數
+        - 範本表達式
+          [249] 範本表達式
+      - 工作類型與使用方式
+        [257] 工作類型與使用方式
+      - 工作群組 （傳統）
+        [264] 組建與發行的工作群組 （傳統）
+      - 新增自訂工作延伸模組
+        [272] 新增自定義管線工作延伸模組
+      - 將工作上傳至專案集合
+        [294] 將工作上傳至專案集合
+    - 作業與階段
+      - 在您的管線中指定作業
+        [297] 在您的管線中指定作業
+      - 定義容器作業
+        [314] 定義容器作業 (YAML)
+      - 新增階段、相依性和條件
+        [321] 新增階段、相依性和條件
+      - 部署工作
+        [327] 部署工作
+      - 撰寫自定義管線裝飾專案
+        [340] 撰寫管線裝飾專案
+      - 管線裝飾項目內容
+        [348] 管線裝飾項目表達式內容
+      - 指定條件
+        [353] 指定條件
+      - 指定需求
+        [363] pool.demands 定義
+    - 連結庫、變數和安全檔案
+      - 連結庫和共享資源
+        [367] 資產庫
+      - 定義變數
+        [369] 定義變數
+      - 在變數群組中使用變數
+        [396] 在 Azure Pipeline 中使用變數群組的秘密和非Secret 變數
+      - 使用預先定義的變數
+        [402] 使用預先定義的變數
+      - 在指令碼中設定變數
+        [419] 在指令碼中設定變數
+      - 設定秘密變數
+        [427] 設定秘密變數
+      - 使用運行時間參數
+        [434] 執行時間參數
+      - 使用傳統進程參數
+        [442] 進程參數
+      - 使用傳統版本和成品變數
+        [444] 傳統發行和成品變數
+      - 使用來自 Azure 金鑰保存庫 的秘密
+        [458] 在 Azure Pipelines 中使用 Azure KeyVault 秘密
+      - 在 YAML 管線中使用 Azure 金鑰保存庫
+        [469] 在管線中使用 Azure 金鑰保存庫秘密
+    - 核准、檢查和閘道
+      - 發行核准和閘道概觀
+        [480] 發行閘道和核准概觀
+      - 定義核准和檢查
+        [483] 定義核准和檢查
+      - 叫用 Azure 函式/REST API 檢查
+        [502] 叫用 Azure 函式/REST API 檢查
+      - 定義閘道
+        [513] 部署閘道
+      - 使用核准和閘道
+        [518] 使用閘道和核准來控制部署 (機器翻譯)
+      - 使用核准的部署控制
+        [529] 使用核准的部署控制
+    - 管線執行
+      - 管線執行順序 \(部分機器翻譯\)
+        [533] 管線執行順序 \(部分機器翻譯\)
+      - 作業存取令牌
+        [544] 存取存放庫、成品和其他資源
+      - 資訊管線執行
+        [554] 資訊執行
+    - 管線報表
+      - 檢視管線報告
+        [556] 管線報表
+      - 將小工具新增至儀表板
+        [561] 將小工具新增至儀表板
+      - 測試結果趨勢 （進階）
+        [575] 
+    - 使用 Azure CLI 管理管線
+      [577] 使用 Azure CLI 管理管線
+    - 複製或匯入管線
+      [582] 複製或匯入管線
+    - 設定管線以支援工作追蹤
+      [584] 設定管線以支援工作追蹤
+    - 管線預設分支
+      [595] 管線預設分支
+    - DevOps 入門版
+  - 生態系統與整合
+    - 生態系統支援
+      [597] 建立 Azure Pipelines 生態系統
+    - .NET
+      - .NET Core
+        [600] 建立、測試及部署 .NET Core 應用程式
+      - .NET Framework
+        [618] 使用 .NET Framework 建置 ASP.NET 應用
+程式
+    - JavaScript
+      - JavaScript 快速入門
+        [621] 快速入門 - 使用 Azure Pipelines 建置和發佈Node.js套件
+      - 自訂JavaScript
+        [625] 自定義適用於 Azure Pipelines 的JavaScript
+      - Node.js教學課程
+        [641] 教學課程：使用 Azure Pipelines 自動化Node.js部署
+    - Python
+      - Python 快速入門
+        [648] 建置 Python 應用程式
+      - 自定義 Python
+        [653] 自訂適用于 Azure Pipelines 的 Python
+      - Python 至 Web 應用程式
+        [659] 使用 Azure Pipelines 建置和部署 PythonWeb 應用程式以 Azure App 服務
+      - Anaconda
+        [680] 使用 Anaconda 環境執行管線
+    - Java
+      - Java 應用程式
+        [684] 建置 Java 應用程式
+      - Java 至 Web 應用程式
+        [690] 建置及部署至 Java Web 應用程式
+      - 使用 MicroProfile 的 Java 至 Web 應用程式
+        [694] 使用 Azure Pipelines 為 MicroProfile 應用程式設定 CI/CD
+    - Android
+      [705] 建置、測試及部署Android應用程式
+    - Go
+      [715] 建置及測試 Go 專案
+    - PHP
+      [720] 建置及測試 PHP 應用程式
+    - Ruby
+      [726] 建置及測試 Ruby 應用程式
+    - Xcode
+      [730] 建置、測試及部署 Xcode 應用程式
+  - 建置應用程式
+    - 建立多個分支
+      [738] 在 Azure Pipelines 中建置多個分支
+    - 發佈管線成品
+      [742] 發佈管線成品
+    - 使用服務容器
+      [745] 服務容器
+    - 跨平臺腳本
+      [751] 執行跨平臺腳本
+    - 執行 PowerShell 指令碼
+      [755] 使用 PowerShell 腳本自定義管線
+    - 執行 Git 命令
+      [760] 在指令碼中執行 Git 命令
+    - 使用快取減少建置時間
+      [765] 管線快取
+    - 快取 NuGet 套件
+      [780] 快取 NuGet 套件
+    - 設定組建執行編號
+      [784] 設定執行或組建編號
+    - 傳統建置選項
+      [789] 建置選項
+    - 使用工作來增加執行保留期
+      [791] 管線執行保留
+  - 執行管線測試
+    - 關於管線測試
+      [795] 關於管線測試
+    - 設定平行測試 （VSTest）
+      [797] 使用 Visual Studio 測試工作平行執行測試
+    - 設定平行測試 （測試執行器）
+      [806] 針對任何測試執行器平行執行測試
+    - 啟用測試影響分析 （TIA）
+      [809] 使用測試影響分析來加速測試 （TIA）
+    - 啟用浮點測試管理
+      [816] 管理 Flaky 測試
+    - 執行UI測試
+      [823] UI 測試考量
+    - 使用 Selenium 執行 UI 測試
+      [828] 使用 Selenium 進行 UI 測試
+    - 需求可追蹤性
+      [836] 需求可追蹤性
+    - 檢閱測試結果
+      - 檢閱測試結果
+        [846] 檢閱測試結果
+      - 檢閱測試分析
+        [861] 測試分析
+      - 檢閱程式代碼涵蓋範圍
+        [869] 檢閱程式碼涵蓋範圍結果
+      - 檢閱提取要求程式代碼涵蓋範圍
+        [872] 提取要求的程式碼涵蓋範圍
+  - 部署應用程式：
+    - 建立多階段管線
+      [877] 教學課程：使用 Azure DevOps 建立多階段管線
+    - 將應用程式部署至環境
+      - 定義和目標環境
+        [891] 建立環境並將其設為目標
+      - Kubernetes 資源
+        [899] 環境 - Kubernetes 資源
+      - 虛擬機資源
+        [907] 環境 - 虛擬機資源
+    - 使用 VM 部署應用程式
+      - Linux 虛擬機器
+        [915] 部署至 Linux 虛擬機器
+    - 部署行動應用程式
+      - 管理簽署憑證
+        [922] 簽署行動應用程式
+  - 部署應用程式 （傳統）
+    - 發行管線概觀
+      [930] 傳統發行管線
+    - 從多個分支部署
+      [936] 使用 Azure Pipelines 從多個分支部署
+    - 部署提取要求成品
+      [941] 使用傳統發行管線部署提取要求成品
+    - 傳統發行管線
+      [948] 定義傳統管線
+    - Azure Pipelines 中的階段範本
+      [959] 階段範本
+    - 部署至 Windows VM
+      [963] 將應用程式部署至 Windows 虛擬機
+  - 部署至 Azure
+    - 概觀
+      [967] 部署至 Azure
+    - 連接到 Azure
+      - Azure Resource Manager 服務連線
+        [969] 使用 Azure Resource Manager 服務連線連線 至 Azure
+      - 針對工作負載身分識別服務連線進行疑難解答
+        [984] 針對 Azure Resource Manager 工作負載身分識別服務連線進行疑難解答
+      - 手動設定工作負載身分識別服務連線
+        [991] 手動設定 Azure Resource Manager 工作負載識別服務連線
+    - Azure App 服務 （Web Apps）
+      - 應用程式服務
+        [999] 使用 Azure Pipelines 部署至 App Service
+      - Azure 用於容器的 Web App
+        [1009] 使用 Azure Pipelines 將自訂容器部署至Azure App 服務
+    - Azure Functions
+      [1018] 使用 Azure Pipelines 持續傳遞
+    - Azure Resource Manager (ARM) 範本
+      - 使用 Resource Manager 範本來部署
+        [1023] 快速入門：使用 ARM 範本將 Linux Web應用程式部署至 Azure
+    - Azure Databricks
+      - 數據管線概觀
+        [1030] 為什麼資料管線？
+      - 建置數據管線
+        [1032] 使用 Azure Data Factory、DevOps 和機器學習建置數據管線
+    - Azure Machine Learning
+      [1042] 使用 Azure Pipelines 搭配 AzureMachine Learning
+    - Azure 資料庫
+      - Azure SQL Database
+        [1048] Azure SQL 資料庫部署
+      - Azure MySQL 資料庫
+        [1059] 搭配適用於 MySQL 的 Azure 資料庫 - 單一伺服器一起使用的 Azure Pipelines
+    - Azure 虛擬機器擴展集
+      - 部署虛擬機器擴展集
+        [1064] 教學課程：將 Java 應用程式部署至虛擬機擴展集
+    - Azure Stack
+      [1070] 使用 Azure Pipelines 部署至 Azure StackHub App Service
+    - Azure Container Registry
+      - 使用 Docker 範本建置並推送至 Azure Container Registry
+        [1077] 使用 Docker 範本建置 Docker 映像，並將映像推送至 Azure Container Registry
+      - 建置並推送至 Azure Container Registry - 受控服務識別
+        [1083] 建置 Docker 映射並將其發佈至 AzureContainer Registry
+    - Azure Kubernetes Service
+      - 建置並部署至 Azure Kubernetes Service
+        [1093] 使用 Azure Pipelines 建置並部署至 AzureKubernetes Service
+    - Azure 原則 合規性 （傳統）
+      [1099] 使用 Azure DevOps 發行管線實作 Azure原則
+  - 使用容器部署應用程式
+    - 建置映像
+      [1103] 快速入門：建置容器映射以使用 AzurePipelines 部署應用程式
+    - 推送影像
+      [1108] 推送映像
+    - 內容信任
+      [1111] Docker 內容信任
+    - Kubernetes
+      - 部署至 Kubernetes
+        [1114] 部署至 Kubernetes
+      - 使用 Canary 部署策略
+        [1119] 教學課程：針對 Kubernetes 部署使用Canary 部署策略
+  - 取用和發佈成品
+    - Azure Pipelines 中的成品
+      [1130] Azure Pipelines 中的成品 - 概觀
+    - 發佈和下載管線成品
+      [1132] 發佈和下載管線成品
+    - 發佈和下載組建成品
+      [1140] 發佈和下載組建成品
+    - 發行管線
+      [1144] Azure Pipelines 中的版本
+    - 成品來源
+      [1147] 發行管線和成品來源
+    - NuGet (英文)
+      [1157] 使用 Azure Pipelines 發佈 NuGet 套件（YAML/傳統）
+    - npm \(英文\)
+      [1162] 發佈 npm 套件 （YAML/Classic）
+    - Maven
+      [1165] 使用 Azure Pipelines 發佈 Maven 成品
+    - Gradle (英文)
+      [1169] 使用 Gradle 和 Azure Pipelines 建置和發佈成品
+    - Python
+      [1175] 使用 Azure Pipelines 發佈 Python 套件
+    - 貨運
+      [1178] 使用 Azure Pipelines 發佈 Cargo 套件
+    - Universal Packages
+      [1184] 使用 Azure Pipelines 發佈和下載通用套件
+    - 符號
+      [1189] 使用 Azure Pipelines 發佈符號
+    - 還原 NuGet 套件
+      [1196] 使用 Azure Pipelines 還原 NuGet 套件
+    - 將 NuGet 套件發佈至 NuGet.org （傳統/YAML）
+      [1203] 使用 Azure Pipelines 將 NuGet 套件發佈至 NuGet.org
+  - 建立和使用資源
+    - 關於資源
+      [1207] 關於 Azure Pipelines 的資源
+    - 連結庫和共享資源
+      [1211] 資產庫
+    - 將系統管理員角色新增至資源
+      [1213] 將系統管理員角色新增至受保護的資源
+    - 存放庫資源保護
+      [1217] 保護存放庫資源
+    - 管理服務連線
+      [1223] 管理服務連線
+    - 將資源新增至管線
+      [1250] 在 YAML 中定義資源
+    - 新增和使用變數群組
+      [1273] 新增和使用變數群組
+    - 使用安全檔案
+      [1285] 使用安全檔案
+    - 佈建部署群組
+      [1289] 佈建部署群組
+    - 定義和目標環境
+      [1296] 建立環境並將其設為目標
+    - Kubernetes 資源
+      [1304] 環境 - Kubernetes 資源
+    - 虛擬機資源
+      [1312] 環境 - 虛擬機資源
+  - 管理代理程式和代理程式集區
+    - 關於代理程式和代理程式集區
+      [1320] Azure Pipelines 代理程式
+    - 代理程式 3.x 版
+      [1339] 代理程式軟體第 3 版
+    - 建立和管理代理程式集區
+      [1344] 建立和管理代理程式集區 (英文)
+    - 代理程式集區的歷史圖表
+      [1354] (Preview) 代理程式組件區的歷史圖表
+    - Microsoft 裝載的代理程式 \(英文\)
+      [1360] Microsoft 裝載的代理程式 \(英文\)
+    - 自我裝載 Linux 代理程式
+      [1374] 自我裝載 Linux 代理程式
+    - 自我裝載 macOS 代理程式
+      [1396] 自我裝載 macOS 代理程式
+    - 自我裝載 Windows 代理程式
+      [1421] 自我裝載 Windows 代理程式
+    - 代理程式註冊選項
+      - 自我裝載代理程式驗證選項
+        [1442] 自我裝載代理程式驗證選項
+      - 個人存取權杖 (PAT)
+        [1444] 使用個人存取權杖註冊代理程式 （PAT）
+      - 服務主體
+        [1447] 使用服務主體註冊代理程式
+      - 裝置代碼流程
+        [1451] 使用裝置程式碼流程註冊代理程式
+    - 自我載入代理程式 （舊版 2.x）
+      - 自我載入的 Linux 代理程式 （2.x）
+        [1454] 自我載入的 Linux 代理程式 （2.x）
+      - 自我載入 macOS 代理程式 （2.x）
+        [1482] 自我載入 macOS 代理程式 （2.x）
+      - 自我載入的 Windows 代理程式 （2.x）
+        [1511] 自我載入的 Windows 代理程式 （2.x）
+    - 擴展集代理程式
+      [1536] Azure 虛擬機器擴展集代理程式
+    - 在 Web Proxy 後方執行代理程式
+      [1559] 在 Web Proxy 後方執行自我裝載式代理程式
+    - 在 Docker 中執行代理程式
+      [1561] 在 Docker 中執行自我裝載式代理程式
+    - 建立與使用部署群組 （傳統）
+      - 佈建部署群組
+        [1576] 佈建部署群組
+      - 為部署群組佈建代理程式
+        [1583] 為部署群組佈建代理程式
+      - 將部署群組作業新增至發行管線
+        [1590] 部署群組作業
+      - 使用 Azure Pipelines 中的部署群組部署至 Azure VM
+        [1592] 在 Azure Pipelines 中使用部署群組部署至 Azure VM
+  - 設定安全性與設定
+    - 設定保留原則
+      [1603] 設定組建、發行和測試的保留原則
+    - 設定支付平行作業並支付費用
+      [1615] 設定支付平行作業並支付費用
+    - 設定管線權限
+      [1626] 設定管線權限
+    - 新增用戶以參與管線
+      [1642] 在 Azure Pipelines 中新增使用者
+    - 將版本控制許可權授與組建服務
+      [1645] 在指令碼中執行 Git 命令
+    - 管線安全性逐步解說
+      - 概觀
+        [1650] 保護 Azure Pipelines
+      - 保護 YAML 管線的方法
+        [1652] 規劃如何保護您的 YAML 管線
+      - 安全存放庫
+        [1654] 存放庫保護
+      - 從管線保護對 Azure 存放庫的存取
+        [1657] 從管線保護 Azure Repos 的存取
+      - 保護秘密
+        [1665] 保護 Azure Pipelines 中的秘密
+      - 管線資源
+        [1668] 管線資源
+      - 專案結構
+        [1672] 在管線中安全地建構專案的建議
+      - 透過範本實現安全性
+        [1674] 透過範本的安全性
+      - 變數和參數
+        [1681] 如何在管線中安全地使用變數和參數
+      - 共用的基礎結構
+        [1687] 建議 來保護 Azure Pipelines 中的共用基礎結構
+      - 其他安全性考量
+        [1689] 其他安全性考量
+    - 下載發行許可權報告
+      [1691] 發行的下載許可權報告
+  - 架構
+    - 基準 Azure Pipelines 架構
+      [1693] 使用 Azure Pipelines 的 CI/CD 基準架構
+    - Azure Web Apps 架構
+      [1699] 適用於 Azure Web Apps 的 AzurePipelines 結構
+    - DevTest 架構
+      [1702] 使用 DevTest Labs 的 Azure Pipelines 架構
+    - IaaS 架構
+      [1705] IaaS 的 Azure Pipelines 架構
+  - 與第三方軟體整合
+    - Microsoft Teams
+      [1708] 搭配 Microsoft Teams 使用 AzurePipelines
+    - Slack
+      [1720] 搭配 Slack 使用 Azure Pipelines
+    - 與 ServiceNow 整合
+      [1729] 與 ServiceNow 變更管理整合
+  - 移轉
+    - 從傳統管線移轉
+      [1742] 將傳統管線移轉至 YAML
+    - 從 Jenkins 移轉
+      [1749] 從 Jenkins 遷移至 Azure Pipelines
+    - 從 Travis 遷移
+      [1756] 從 Travis 遷移至 Azure Pipelines
+    - 從實驗室管理移轉
+      [1772] 建立建置-部署-測試案例的虛擬網路隔離環境
+  - 管線工作
+    - 工作索引
+      [1795] Azure Pipelines 工作參考
+  - 疑難排解
+    - 針對管線執行進行疑難排解
+      [1813] 針對管線執行進行疑難排解
+    - 針對管線觸發程序進行疑難排解
+      [1825] 針對管線觸發程序進行疑難排解
+    - 管線佇列，但永遠不會啟動
+      [1829] 針對要啟動的管線失敗進行疑難解答
+    - 檢閱記錄檔
+      [1835] 檢閱記錄以診斷管線問題
+    - 偵錯部署問題
+      [1855] 
+    - 針對 ARM 服務連線進行疑難排解
+      [1860] 針對 ARM 服務連線進行疑難排解
+  - 參考
+    - YAML 結構描述
+      [1869] Azure Pipelines 的 YAML 架構參考
+    - 運算式
+      [1876] 運算式
+    - 檔案比對模式
+      [1904] 檔案比對模式參考
+    - 檔案和變數轉換
+      [1911] 
+    - 記錄命令
+      [1921] 記錄命令
+    - 成品原則檢查
+      [1937] 成品原則檢查
+    - Azure CLI
+      [1941] az pipelines
+  - 案例研究和最佳做法
+    - 使用部署通道
+      [1961] 搭配擴充功能版本使用部署通道
+    - 使用功能旗標
+      [1967] 使用功能旗標進行漸進式實驗
+    - 舊版內容
+      - NuGet Packager 0.*
+      - NuGet Publisher 0.*
+      - NuGet 安裝程式 0.*
+      - 使用 Jenkins 部署至 AKS
+  - 開發人員資源
+    - REST API 參考資料
+      [1973] Azure DevOps Services REST API 參考
+    - Azure DevOps CLI
+      [1981] 開始使用 Azure DevOps CLI
+    - 部署至 Azure 的 DevOps 入門版
+    - Azure 實驗室服務
+      [1984] Azure 實驗室服務文件
+    - Microsoft Learn
+      - 建立組建管線
+      - 使用 Git 與 GitHub 在組建管線中實作程式碼工作流程
+      - 在組建管線中執行質量測試
+      - 使用 Azure Artifacts 管理組建相依性
+    - 自動化測試
+      [1986] 使用實驗室環境進行開發

@@ -1,0 +1,312 @@
+- ---< azure-container-registry.pdf >---
+  - Azure Container Registry 文件
+    [1] Azure Container Registry 文件
+  - 容器登錄
+    - 概觀
+      - 關於 Container Registry
+        [5] Azure 中的容器登錄簡介
+    - 快速入門
+      - 建立容器登錄 - CLI
+        [7] 快速入門：使用 Azure CLI 建立私人容器登錄
+      - 建立容器登錄 - 入口網站
+        [13] 快速入門：使用 Azure 入口網站建立Azure Container Registry
+      - 建立容器登錄 - PowerShell
+        [21] 快速入門：使用 Azure PowerShell 建立私人容器登錄
+      - 建立容器登錄 - ARM 範本
+        [26] 快速入門：使用ARM範本建立異地複寫的容器登錄
+      - 建立容器登錄 - Bicep
+        [33] 快速入門：使用 Bicep 檔案建立容器登錄
+      - 將事件傳送至事件格線 - CLI
+        [37] 快速入門：將事件從私人容器登錄傳送到事件方格
+      - 使用用戶端程式庫來管理內容
+        [46] 快速入門：使用 Azure ContainerRegistry 用戶端程式庫
+      - 建立並推送 Java 映像 - CLI
+        [51] 快速入門：建置 Java Spring Boot 應用程式的容器映像並將其推送至 AzureContainer Registry
+    - 教學課程
+      - 異地複寫登錄
+        - 1 - 準備容器登錄
+          [56] 教學課程：準備異地複寫的 Azure 容器登錄
+        - 2 - 部署 Web 應用程式
+          [65] 教學課程: 從異地複寫的 Azure ContainerRegistry 部署 Web 應用程式
+        - 3 - 更新 Web 應用程式
+          [71] 教學課程：將更新的容器映像推送至異地複寫容器登錄，以進行區域 Web 應用程式部署
+      - 使用客戶管理的金鑰加密登錄
+        - 客戶管理的金鑰 - 概觀
+          [77] 客戶自控金鑰概觀
+        - 在您的登錄上啟用客戶管理的金鑰
+          [79] 啟用客戶自控金鑰
+        - 輪替或撤銷客戶管理的金鑰
+          [93] 輪替和撤銷客戶自控金鑰
+        - 疑難排解
+          [97] 針對客戶自控金鑰進行疑難排解
+      - 成品快取
+        - 成品快取 - 概觀
+          [100] 成品快取 - 概觀
+        - 啟用成品快取 - Azure 入口網站
+          [105] 啟用成品快取 - Azure 入口網站
+        - 啟用具有驗證的成品快取 - Azure 入口網站
+          [110] 啟用具有驗證的成品快取 - Azure 入口網站
+        - 啟用成品快取 - Azure CLI
+          [116] 啟用成品快取 - Azure CLI
+        - 啟用具有驗證的成品快取 - Azure CLI
+          [118] 啟用具有驗證的成品快取：Azure CLI
+        - 疑難排解
+          [122] 成品快取的疑難排解指南
+    - 範例
+      - Azure Resource Graph 查詢
+        [125] Azure Container Registry 的 AzureResource Graph 範例查詢
+    - 概念
+      - 安全性
+        - Azure 原則的安全性控制
+          [127] 適用於 Azure Container Registry 的Azure 原則 法規合規性控制
+        - 安全性基準
+          [138] Container Registry 的 Azure 安全性基準
+      - 容器登錄層級和限制
+        [151] Azure Container Registry 服務層級
+      - 登錄、存放庫和映像
+        [157] 關於登錄、存放庫和成品
+      - 映像儲存體
+        [163] Azure Container Registry 中的容器映像儲存體
+      - 內容格式
+        [165] Azure Container Registry 中支援的內容格式
+      - 標記和版本映像
+        [167] 標記和版本設定容器映像的建議
+      - 成品串流
+        [170] Azure Container Registry 中的成品串流(預覽)
+      - 異地複寫
+        [176] Azure Container Registry 中的異地複寫
+      - 區域備援
+        [184] 啟用 Azure Container Registry 中的區域備援，以取得復原能力和高可用性
+      - 登錄最佳做法
+        [192] Azure Container Registry 的最佳做法
+      - 多重架構映像
+        [196] Azure 容器登錄中的多結構映像
+      - 管理公用映像
+        [201] 使用 Azure Container Registry 管理公用內容。
+    - 操作指南
+      - 登錄作業
+        - 發送和提取映像
+          [205] 使用 Docker CLI 推送您的第一個映像至Azure 容器登錄庫
+        - 推送和提取 OCI 成品
+          [210] 使用 Azure Container Registry 推送和提取 OCI 成品
+        - 推送和提取 Helm 圖表
+          [216] 將 Helm 圖表推送並提取至 Azure 容器登錄
+        - 推送和提取供應鏈成品 (預覽)
+          [227] 使用 Azure 登錄，推送或提取供應鏈成品(預覽)
+        - 檢視存放庫
+          [238] 檢視 Azure 入口網站中的容器登錄存放庫
+        - 匯入容器映像
+          [240] 將容器映像匯入容器登錄
+        - 傳送成品 (預覽)
+          - 概觀和必要條件
+            [248] 將成品傳輸到另一個登錄
+          - 使用 Az CLI 進行 ACR 傳輸
+            [253] 使用 Az CLI 進行 ACR 傳輸
+          - 使用 ARM 範本進行 ACR 傳輸
+            [260] 
+          - 疑難排解
+            [266] ACR 傳輸疑難排解
+        - 保護登錄資料
+          - 鎖定容器映像
+            [269] 在 Azure 容器登錄中鎖定容器映像
+          - 停用匯出
+            [274] 停用從 Azure 容器登錄匯出成品
+        - 刪除容器映像
+          - 刪除映像資料 - CLI
+            [279] 刪除 Azure Container Registry 中的容器映像
+          - 虛刪除原則
+            [286] 在 Azure Container Registry (預覽) 使用虛刪除原則復原刪除的成品
+          - 未標記的資訊清單保留原則 (預覽)
+            [295] 針對未標記的資訊清單設定保留原則
+          - 自動清除標記和資訊清單 (預覽)
+            [299] 自動清除 Azure Container Registry 中的映像
+        - 使用 ACR Webhook
+          [305] 使用 Azure Container Registry Webhook
+        - 將登錄移動到不同區域
+          [309] 將容器登錄手動移至另一個區域
+      - 安全性和驗證
+        - 使用私人端點來限制存取
+          [314] 使用 Azure Private Link 對 Azure 容器登錄進行私人連線
+        - 設定公用登錄存取
+          [330] 設定公用 IP 網路規則
+        - 使用專用資料端點減輕資料外洩的風險
+          [336] Azure Container Registry 使用專用資料端點，可減輕資料外流的風險
+        - 使用服務端點限制存取 (預覽)
+          [340] 使用 Azure 虛擬網路中的服務端點來限制對容器登錄的存取
+        - 允許受信任的服務存取
+          [348] 允許信任的服務安全地存取網路受限的容器登錄
+        - 在防火牆外存取
+          [352] 設定可以從防火牆後方存取 Azure 容器登錄的規則
+        - 設定對您的 Azure Container Registry 的條件式存取。
+          [358] Azure Container Registry 的條件式存取原則
+        - 停用驗證作為 ARM 範本
+          [363] 停用驗證作為 ARM 範本
+        - 驗證
+          - 驗證概觀
+            [369] 向 Azure Container Registry 進行驗證 |Microsoft Docs
+          - 使用服務主體進行驗證
+            [375] 使用服務主體進行 Azure ContainerRegistry 驗證
+          - 使用受控識別進行驗證
+            [381] 使用 Azure 受控識別向 Azure 容器登錄進行驗證
+          - 使用權杖進行驗證
+            [389] 建立具有存放庫範圍權限的權杖
+          - 從 Azure 容器執行個體進行驗證
+            [405] 從 Azure 容器執行個體 向 AzureContainer Registry 進行驗證
+          - 從 Kubernetes 進行驗證
+            - Kubernetes 案例
+              [409] 從 Kubernetes 向 Azure 容器登錄進行驗證的案例
+            - 將登錄連結到 Azure Kubernetes Service (AKS)
+              [411] 從 Azure Kubernetes Service (AKS) 對Azure Container Registry (ACR) 進行驗證
+            - 從 AKS 進行跨租用戶驗證
+              [417] 將映像從容器登錄提取至不同 MicrosoftEntra 租用戶中的 AKS 叢集
+            - 使用 Kubernetes 提取祕密進行驗證
+              [421] 使用提取祕密將映像從 Azure 容器登錄提取至 Kubernetes 叢集
+          - 啟用未經驗證的提取存取
+            [425] 讓您的容器登錄內容可供公開使用
+        - Azure 角色型存取控制
+          [428] Azure Container Registry 角色和權限
+        - 內容信任
+          [432] Azure Container Registry 中的內容信任
+        - 使用自我簽署憑證來透過 Notation 和 AKV 簽署容器映像
+          [441] 使用自我簽署憑證來透過 Notation 和Azure Key Vault 簽署容器映像
+        - 使用 CA 簽發的憑證來透過 Notation 和 AKV 簽署容器映像
+          [449] 使用 CA 核發的憑證來透過 Notation 和Azure Key Vault 簽署容器映像
+      - 登錄和其他 Azure 服務
+        - Azure 容器執行個體
+          [459] 教學課程：建立容器影像以部署至 Azure容器執行個體
+        - Azure Kubernetes Service (AKS)
+          [464] 教學課程 – 準備 Azure KubernetesService (AKS) 的應用程式
+        - Service Fabric
+          [470] 教學課程：在 Linux Service Fabric 叢集上建立容器映像
+      - 監視器
+        - 監視 Container Registry
+          [476] 監視 Azure 容器登錄
+        - 使用 Azure 原則來稽核合規性
+          [484] 
+        - 掃描容器映像
+          - 使用適用於雲端的 Microsoft Defender 掃描
+            [491] 使用適用於雲端的 Microsoft Defender來掃描登錄映像
+  - 工作
+    - 概觀
+      - 關於 ACR 工作
+        [493] 使用 ACR 工作來自動建置和維護容器映像
+    - 快速入門
+      - 建置、推送並執行映像 - CLI
+        [499] 快速入門：使用 Azure ContainerRegistry 工作組建和執行容器映像
+    - 教學課程
+      - 自動化容器映像建置
+        - 1 - 從原始內容建置
+          [505] 教學課程：使用 Azure ContainerRegistry 工作在雲端中建置和部署容器映像
+        - 2a - 在程式碼認可時建置
+          [514] 教學課程：於認可原始程式碼時在雲端自動執行容器映像建置
+        - 2b - 在程式碼認可時進行多步驟工作
+          [522] 教學課程：於認可原始程式碼時在雲端執行多步驟容器工作流程
+        - 3a - 在基礎映像更新時建置
+          [536] 教學課程：在 Azure Container Registry中更新基底映像時自動執行容器映像建置
+        - 3b - 在私人基礎映像更新時建置
+          [544] 教學課程：在另一個私人容器登錄中更新基礎映像時自動執行容器映像建置
+        - 4 - 依排程建置
+          [553] 教學課程：在定義的排程上執行 ACR 工作
+    - 範例
+      - YAML 和 Dockerfile
+        [561] ACR 工作範例
+    - 概念
+      - 多步驟工作
+        [562] 執行 ACR 工作中的多步驟建置、測試及修補工作
+      - 基底映像更新
+        [567] 關於 ACR 工作的基底映像更新
+    - 操作指南
+      - 使用受控識別存取受保護的資源
+        - 啟用工作上的受控識別
+          [570] 在 ACR 工作中使用 Azure 受控識別
+        - 跨登錄驗證
+          [574] 在 ACR 工作中使用 Azure 受控識別進行跨登錄驗證
+        - 使用金鑰保存庫進行外部驗證
+          [582] 在 ACR 工作中使用 Azure 受控識別進行外部驗證
+      - 使用 Resource Manager 範本執行快速工作
+        [590] 使用 Resource Manager 範本執行 ACR工作
+      - 在專用代理程式集區上執行工作 (預覽)
+        [598] 在專用代理程式集區執行 ACR 工作
+      - 取用和維護公用內容
+        [603] 如何使用 Azure Container Registry 工作來取用和維護公用內容
+      - 使用 Buildpacks 建置映像 (預覽)
+        [622] 使用 Cloud Native Buildpack 從應用程式組建和推送映像
+      - 檢視工作記錄
+        [625] 檢視和管理工作執行記錄
+  - 已連線的登錄
+    - 概觀
+      - 關於已連線的登錄
+        [628] 什麼是已連線登錄？
+      - 搭配使用 IoT Edge
+        [632] 使用已連線的登錄搭配 Azure IoT Edge
+    - 快速入門
+      - 建立已連線的登錄 - CLI
+        [635] 快速入門：使用 Azure CLI 建立已連線登錄
+      - 建立已連線的登錄 - 入口網站
+        [640] 快速入門：使用 Azure 入口網站建立已連線登錄
+      - 將已連線的登錄部署至 IoT Edge
+        [647] 快速入門：將已連線的登錄部署至 IoTEdge 裝置
+    - 教學課程
+      - 將已連線的登錄部署至巢狀 IoT Edge
+        [655] 教學課程：將連線的登錄部署至巢狀 IoTEdge 階層
+    - 概念
+      - 存取已連線的登錄
+        [670] 了解已連線登錄的存取權
+    - 操作指南
+      - 從已連線的登錄中提取映像
+        [673] 從 IoT Edge 裝置上連線的登錄提取映像
+  - 參考
+    - Azure CLI
+      [676] az acr
+    - REST
+      [726] Azure Container Registry REST API 參考
+    - PowerShell
+      [727] Az.ContainerRegistry
+    - .NET
+      [730] Azure Container Registry SDK for .NET -latest
+    - Python
+      [731] 適用於 Python 的 Azure ContainerRegistry 程式庫
+    - Java
+      [732] Container Registry
+    - Node.js
+      [733] 適用于 JavaScript 的Azure ContainerRegistry模組
+    - Resource Manager 範本
+      [734] 
+    - 工作 YAML
+      [741] ACR 工作參考：YAML
+    - Webhook 結構描述
+      [764] Azure Container Registry Webhook 參考
+    - 事件方格結構描述
+      [772] 作為事件方格來源的 Azure ContainerRegistry
+    - 健康情況檢查錯誤
+      [778] 健康情況檢查錯誤參考
+    - Azure 原則內建
+      [782] 
+    - 監視資料
+      [787] 監視 Azure Container Registry 資料參考
+    - 服務標籤
+      [791] Azure Container Registry 的服務標籤
+  - 疑難排解
+    - 針對登入問題進行疑難排解
+      [793] 針對登錄登入進行疑難排解
+    - 針對網路問題進行疑難排解
+      [798] 針對登錄的網路問題進行疑難排解
+    - 針對效能問題進行疑難排解
+      [803] 針對登錄效能進行疑難排解
+    - 偵測常見問題
+      [807] 檢查 Azure 容器登錄的健康情況
+    - 技術支援原則
+      [810] Azure Container Registry (ACR) 的支援原則
+    - 常見問題集
+      [812] 資源管理
+    - API 取代
+      [828] Azure Container Registry 中的 API 淘汰
+    - 對成品串流進行疑難排解
+      [830] 
+  - 資源
+    - 區域可用性
+    - 定價
+    - 藍圖
+    - 提供產品意見反應
+    - Stack Overflow
+    - 影片

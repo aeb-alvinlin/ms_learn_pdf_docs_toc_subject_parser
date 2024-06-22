@@ -1,0 +1,198 @@
+- ---< azure-ai-services-document-intelligence-doc-intel-4.0.0 (中文).pdf >---
+  - Azure AI 文件智慧服務文件
+    [1] Azure AI 文件智慧服務文件
+  - 概觀
+    - 什麼是 Azure AI 文件智慧服務？
+      [4] 什麼是 Azure AI 文件智慧服務？
+    - 選擇模型嗎？
+      [27] 我應該選擇哪一個模型？
+    - Document Intelligence Studio
+      [31] 什麼是 Document Intelligence Studio？
+    - 文件智慧服務 SDK
+      - Changelog 和移轉指南
+        [36] SDK 變更記錄和發行歷程記錄
+      - SDK 目標：REST API 2024–02–29-preview
+        [40] SDK 目標：REST API 2024-02-29-preview
+    - 語言支援
+      - 文件分析模型
+        [46] 語言支援：檔分析
+      - 預建模型
+        [72] 語言支援：預先建置的模型
+      - 自訂模型
+        [79] 語言支援：自定義模型
+    - 定價
+    - 服務限制
+      [96] 服務配額和限制
+    - 最新功能
+      [101] Azure AI 文件智慧服務有哪些新增功能
+    - 文件智慧服務常見問題集
+      [131] 
+  - 快速入門
+    - Document Intelligence Studio
+      [147] 開始使用：Document IntelligenceStudio
+    - 開始使用檔案智慧 SDK
+      [156] 開始使用文件智慧服務
+  - 操作指南
+    - 使用文件智慧服務模型
+      [167] 使用文件智慧服務模型
+    - 建立文件智慧服務資源
+      [194] 建立文件智慧服務資源
+    - SDK 移轉指南：2023-10-31-preview
+      - .NET/C# SDK
+      - Java SDK
+      - JavaScript SDK
+      - Python SDK
+    - 檢查我的使用量並估計成本
+      [197] 檢查使用量和預估成本
+    - 建立記憶體容器的SAS令牌
+      [201] 建立儲存體容器的 SAS 權杖
+    - 自訂模型
+      - 建置自訂擷取模型
+        [208] 建置和定型自定義擷取模型
+      - 建置自定義分類模型
+        [215] 建置及訓練自訂分類模型
+      - 使用自訂模型共用專案
+        [222] 使用 Document Intelligence Studio 進行項目共用
+      - 撰寫自訂擷取模型
+        [226] 組成自訂模型
+    - 備份和復原模型
+      [233] 災害復原
+    - 設定安全通訊
+      - 設定 虛擬網絡
+        [240] 設定 Azure AI 服務虛擬網路
+      - 建立和使用受控識別
+        [255] 設定文件智慧服務的受控識別
+      - 使用私人端點設定受控識別
+        [261] 使用受控識別和虛擬網路設定安全存取
+      - 使用客戶自控金鑰 (部分機器翻譯)
+        [273] 待用資料的文件智慧加密
+      - 使用 Microsoft Entra 驗證
+        [280] 驗證對 Azure AI 服務的要求
+  - 容器
+    - 安裝及執行容器
+      [289] 安裝和執行容器
+    - 設定容器
+      [290] 設定文件智慧服務容器
+    - 容器映像標籤
+      [291] 檔智慧容器標籤
+    - 已中斷連線的容器
+      [292] 已中斷連線（離線）環境中的容器
+  - 概念
+    - 模型概觀
+      [293] 文件處理模型
+    - Document Intelligence Studio
+      [315] 文件智慧服務工作室
+    - 精確度和信賴分數
+      [322] 自定義模型：精確度和信賴分數
+    - 分析文件 API 回應
+      [328] 分析文件 API 回應
+    - 讀取模型
+      [339] Document Intelligence 讀取模型
+    - 一般檔模型
+    - 版面配置模型
+      [346] 文件智慧服務版面配置模型
+    - 附加元件功能
+      [358] 檔智慧附加元件功能
+    - 查詢欄位擷取
+      [369] 文件智慧查詢欄位擷取
+    - 🆕 擷取增強世代 （RAG）
+      [372] 使用 Azure AI 檔智慧擷取增強世代
+    - 🆕 信用卡模型
+      [379] 檔智慧信用卡模型
+    - 🆕 美國抵押貸款檔
+      [383] 檔智慧抵押貸款檔模型
+    - 🆕 結婚證模式
+      [388] 檔智慧婚姻證明模型
+    - 合約模型
+      [393] Document Intelligence 合約模型
+    - 美國稅務檔模型
+      [397] 
+    - 健康保險卡模型
+      [408] Document Intelligence 健保卡模型
+    - 發票模型
+      [414] 檔智能發票模型
+    - 收據模型
+      [422] Document Intelligence 收據模型
+    - 身分證明文件模型
+      [433] 
+    - 名片模型
+    - 查詢欄位擷取
+      [441] 文件智慧查詢欄位擷取
+    - 自訂模型
+      - 自訂模型概觀
+        [444] 檔智慧自定義模型
+      - 自訂模型生命週期
+        [452] 文件智慧自訂模型生命週期
+      - 自定義範本模型
+        [454] 文件智慧自訂範本模型
+      - 自定義神經模型
+        [458] 文件智慧自訂神經模型
+      - 自訂分類模型
+        [465] 文件智慧自訂分類模型
+      - 🆕 累加分類器
+        [473] 累加分類器訓練
+      - 自訂標籤
+        [477] 最佳做法：產生標記的資料集
+      - 自訂標籤提示
+        [482] 建置已標記數據集的 提示
+      - 組成模型
+        [484] 文件智慧撰寫的自訂模型
+  - 範例
+    - C#/.NET
+      [487] Azure Form Recognizer client library for.NET - version 4.1.0
+    - Java
+      [510] Azure Document Intelligence clientlibrary for Java - version 4.1.7
+    - Python
+      [529] 適用于 Python 的 Azure 表格辨識器 用戶端程式庫 - 3.3.2 版
+    - JavaScript
+      [546] 適用于 JavaScript 的 Azure AI DocumentIntelligence 用戶端程式庫 - 5.0.0 版
+  - 負責 AI
+    - 透明度注意事項
+      [565] Transparency note and use cases forDocument Intelligence
+    - 資料、隱私權和安全性
+      [575] Data, privacy, and security forDocument Intelligence
+  - 教學課程
+    - 使用 Azure Logic Apps 建立工作流程
+      [577] 建立 Document Intelligence Logic Apps工作流程
+    - 使用 AI Builder 建立文件智慧服務工作流程
+      - 自訂
+        [594] 建立文件處理自訂模型
+      - 發票
+        [598] 在 Power Automate 中使用發票處理預建模型
+      - 收據
+        [604] 在 Power Automate 中使用收據處理預建模型
+      - 身分證明文件
+        [609] 在 Power Automate 中使用識別碼讀取器預建模型
+      - 名片
+        [613] 在 Power Automate 中使用名片閱讀器預建模型
+    - 搭配 Azure AI 搜尋使用 Azure AI 檔智慧
+    - 搭配 Azure Functions 使用 Azure AI 文件智慧服務
+      [617] 教學課程：使用 Azure 函式和 Python 處理已儲存的文件
+  - 參考
+    - REST API
+      - 2024-02-29-preview （v4.0）
+        [626] Document Models - Build Model
+      - 2023-10-31-preview （v4.0）
+        [632] 文件智慧
+      - 2023-07-31 （v3.1）
+        [633] Document Models - Analyze Document
+      - 2022-08-31 （v3.0）
+      - 錯誤碼 v4.0、v3.1 和 v3.0
+        [640] 錯誤指南 v4.0、v3.1 和 v3.0
+      - v2.1
+    - SDK （2023-10-31-preview）
+      - C# / .NET
+        [644] Azure Document Intelligence clientlibrary for .NET - version 1.0.0-beta.2
+      - Java
+        [661] Azure DocumentIntelligence clientlibrary for Java - version 1.0.0-beta.2
+      - JavaScript
+        [674] Azure DocumentIntelligence (先前稱為FormRecognizer) 適用於 JavaScript 的REST 用戶端連結庫 - 1.0.0-beta.2 版
+      - Python
+        [682] 適用于 Python 的 Azure AI DocumentIntelligence 用戶端程式庫 - 1.0.0b1 版
+  - 資源
+    - 企業整備
+      - 區域支援
+      - 合規性和認證
+    - 支援和協助選項
+      [696] Azure AI 服務支援和協助選項
+    - 隱私權和 Cookie

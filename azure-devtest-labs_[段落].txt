@@ -1,0 +1,240 @@
+- ---< azure-devtest-labs.pdf >---
+  - Azure DevTest Labs 文件
+    [1] Azure DevTest Labs 文件
+  - 概觀
+    - 何謂研測實驗室？
+      [3] 什麼是 Azure DevTest Labs？
+  - 快速入門
+    - 建立實驗室 - 入口網站
+      [5] 快速入門：在 Azure 入口網站建立實驗室
+    - 建立實驗室 - Bicep
+      [12] 快速入門：使用 Bicep 以在 DevTest Labs中建立實驗室
+    - 建立實驗室 - ARM 範本
+      [16] 快速入門：使用 ARM 範本在 DevTest 實驗室中建立實驗室
+    - 建立實驗室 - Terraform
+      [24] 快速入門：使用 Terraform 在 AzureDevTest Labs 中建立實驗室
+    - 建立實驗室 - 使用 REST API 的 PowerShell
+      [31] 快速入門：使用 Azure REST API 在 AzureDevTest Labs 中建立實驗室
+  - 教學課程
+    - 設定實驗室 (系統管理員)
+      [36] 教學課程：建立 DevTest Labs 實驗室和VM，並在 Azure 入口網站中新增使用者
+    - 存取實驗室 (學生)
+      [45] 教學課程：在 Azure DevTest Labs 中存取實驗室
+  - 範例
+    - ARM 快速入門範本
+    - Azure PowerShell
+      [50] 適用于 Azure 實驗室服務的 AzurePowerShell 範例
+    - Azure PowerShell - Az.DevTestLabs2 模組
+    - Azure CLI
+      [60] 適用于 Azure DevTest Labs 的 Azure CLI範例
+  - 概念
+    - 重要概念
+      [64] 研發/測試實驗室概念
+    - 最佳作法
+      [67] Azure DevTest Labs 資源的分散式和共同作業開發最佳做法
+    - 與 Azure DevOps 整合
+      [71] 整合 DevTest Labs 和 DevOps CI/CD 管線
+    - 常見案例
+      [74] Azure DevTest Labs 案例
+    - 可認領 VM
+      [80] 在 Azure DevTest Labs 中使用認領功能
+    - 安全性基準
+      [82] 適用于 Azure DevTest Labs 的 Azure 安全性基準
+  - 操作指南
+    - 設定實驗室
+      - 建立網路隔離實驗室
+        [98] Azure DevTest Labs 中的網路隔離
+      - 使用 ARM 範本建立和管理實驗室
+        [108] Azure DevTest Labs 中的 Azure ResourceManager (ARM) 範本
+      - 為實驗室虛擬機器指定資源群組
+        [112] 在 Azure DevTest Labs 中指定實驗室虛擬機器的資源群組
+      - 在實驗室中新增支援資訊
+        [116] 將內部支援陳述式新增到 Azure DevTestLabs 中的實驗室
+      - 設定實驗室身分識別 
+        [122] 設定實驗室身分識別
+      - 設定實驗室以使用遠端桌面閘道
+        [126] 在 Azure DevTest Labs 中設定及使用遠端桌面閘道
+      - 在實驗室中張貼公告
+        [135] 將公告張貼到 Azure DevTest Labs 中的實驗室
+      - 使用 Bastion 透過 VM 上的瀏覽器連線
+        [142] 使用 Bastion 啟用與 DevTest Labs VM 的瀏覽器連線
+      - 設定成本管理
+        [149] 追蹤 Azure DevTest Labs 中與實驗室相關聯的成本
+      - 設定實驗室原則和排程
+        [153] 管理實驗室原則，控制 Azure DevTestLabs 的成本
+      - 為實驗室 VM 設定自動關機
+        [161] 在 DevTest Labs 中設定實驗室和 VM 的自動關機
+      - 設定實驗室 VM 的自動開機
+      - 管理實驗室儲存體帳戶
+        [174] 管理 Azure DevTest Labs 儲存體帳戶
+      - 調整您的實驗室
+        [178] 調整 DevTest Labs 中的配額和限制
+      - 管理虛擬機器基底
+        - 設定 Azure Marketplace 映像
+          [182] 在 Azure DevTest Labs 中設定 AzureMarketplace 映像設定
+        - 啟用授權的映像
+          [185] 在 Azure DevTest Labs 中啟用授權映像
+        - 設定共用映像資源庫
+          [189] 在 Azure DevTest Labs 中設定共用映像庫
+      - 設定標籤
+        [194] 在 Azure DevTest Labs 中將標記新增到實驗室
+      - 設定存取控制
+        - 加入實驗室擁有者與使用者
+          [197] 在 Azure DevTest Labs 中新增實驗室擁有者、參與者和使用者
+        - 以自訂角色來自訂權限
+          [202] 將特定實驗室原則的權限授與使用者
+        - 自動新增實驗室使用者
+          [205] 自動將實驗室使用者新增至 AzureDevTest Labs 中的實驗室
+      - 管理虛擬網路
+        - 設定虛擬網路
+          [212] 在 Azure DevTest Labs 中新增虛擬網路
+        - 選取 IP 組態選項
+          [216] 了解 Azure DevTest Labs 中的共用 IP 位址
+      - 在實驗室中刪除實驗或 VM
+        [219] 刪除 Azure DevTest Labs 中的實驗室或實驗室 VM
+      - 匯出或刪除個人資料
+        [224] 從 Azure DevTest Labs 匯出或刪除個人資料
+    - 在實驗室中使用 VM
+      - 建立 VM
+        - Azure 入口網站
+          [233] 在 Azure DevTest Labs 中建立實驗室虛擬機器
+        - Azure PowerShell
+          [238] 使用 Azure PowerShell 建立 DevTestLabs VM
+        - Azure CLI
+          [244] 使用 Azure CLI 在 DevTest Labs 中建立和管理虛擬機器
+        - ARM 範本
+          [249] 使用 ARM 範本建立 DevTest Labs 虛擬機
+        - 使用共用映像資源庫中的映像建立虛擬機器
+          [255] 使用所連結共用映像庫的映像來新增 VM
+      - 連線至 VM
+        - 連線至 Windows VM
+          [258] 在實驗室 (Azure DevTest Labs) 中連線到Windows VM
+        - 連線至 Linux VM (英文)
+          [261] 在實驗室 (Azure DevTest Labs) 中連線到Linux VM
+        - 透過瀏覽器連線至 VM
+          [264] 使用 Azure Bastion 透過瀏覽器連線至DevTest Labs VM
+      - 使用 PowerShell 或 CLI 啟動或停止 VM
+        [266] 使用命令列啟動和停止 DevTest Labs 虛擬機器
+      - 重新啟動 VM
+        [269] 在 Azure DevTest Labs 的對實驗室中重新啟動 VM
+      - 調整 VM 大小
+        [271] 在 Azure DevTest Labs 中調整實驗室 VM的大小
+      - 重新部署 VM
+        [274] 在 Azure DevTest Labs 中重新部署實驗室中的 VM
+      - 建立及管理可認領 VM
+        [276] 在 Azure DevTest Labs 中建立和管理可認領 VM
+      - 設定秘密
+        [283] 在 Azure DevTest Labs 的金鑰保存庫中儲存秘密
+      - 連結和中斷連結資料磁碟
+        [286] 在 Azure DevTest Labs 中連結或中斷連結實驗室虛擬機器的資料磁碟
+      - 定義實驗室 VM 的開始順序
+        [291] 使用 Azure 自動化定義 DevTest Lab VM的啟動順序
+      - 從另一個實驗室匯入虛擬機器
+        [295] 將虛擬機器從一個實驗室匯入到另一個實驗室
+      - 在啟用實驗室 VM 的受控識別
+        [297] 在 Azure DevTest Labs 中的實驗室虛擬機器上啟用使用者指派的受控識別
+    - 在實驗室環境中
+      - 根據 ARM 範本建立環境
+        [300] 從 ARM 範本建立Azure DevTest Labs環境
+      - 使用平台即服務 (PaaS) 服務
+        [311] 在 Azure DevTest Labs 中使用 PaaS 服務
+      - 建立 Service Fabric 叢集環境
+        [314] 在 Azure DevTest Labs 中建立具有獨立Service Fabric 叢集的環境
+      - 將環境連接到您的實驗室虛擬網路
+        [323] 將環境連線至您 Azure DevTest Labs 中的實驗室虛擬網路
+      - 使用巢狀範本設定測試環境
+        [327] 使用巢狀範本部署 DevTest Labs 環境
+      - 使用 Azure 受控識別部署環境
+        [330] 使用 Azure 受控識別在實驗室中部署環境
+      - 環境的安全性警示
+        [333] Azure DevTest Labs 的環境安全性警示
+    - 管理可重複使用的範本
+      - 自訂映像或公式
+        [335] 比較 DevTest Labs 中的自訂映像和公式
+      - 管理自訂映像
+        - 從虛擬機器建立自訂映像
+          [336] 從 VM 建立自訂映像
+        - 從 VHD 建立自訂映像 - Azure 入口網站
+          [339] 從 VHD 檔案建立Azure DevTest Labs虛擬機器的自訂映射
+        - 從 VHD 建立自訂映像 - PowerShell
+          [343] 使用 PowerShell 從 VHD 檔案建立自訂映像
+        - 使用 AzCopy 來上傳 VHD 檔案
+          [346] 使用 AzCopy 將 VHD 檔案上傳至實驗室儲存體帳戶
+        - 使用 PowerShell 來上傳 VHD 檔案
+          [349] 使用 PowerShell 將 VHD 檔案上傳至實驗室儲存體帳戶
+        - 使用儲存體總管來上傳 VHD 檔案
+          [352] 使用 儲存體總管 將 VHD 檔案上傳至實驗室儲存體帳戶
+      - 管理公式
+        [358] 管理 Azure DevTest Labs 公式
+      - 建立映像處理站
+        [367] 在 Azure DevTest Labs 中建立自定義映像處理站
+        - 從 Azure DevOps 執行映像處理站
+          [369] 從 Azure DevOps 執行映射處理站
+        - 儲存自訂映像並散發至多個實驗室
+          [377] 儲存自訂映像並散發至多個實驗室
+        - 設定保留原則並執行清除指令碼
+          [381] 在 Azure DevTest Labs 中設定保留原則
+    - 管理構件
+      - 將成品套用至 VM
+        [385] 將成品新增至 DevTest Labs VM
+      - 建立自訂構件
+        [390] 為 DevTest Labs 建立自訂成品
+      - 將成品存放庫新增至實驗室
+        [395] 將成品存放庫新增至實驗室
+      - 指定必要的成品
+        [406] 指定 DevTest Labs VM 的必要成品
+      - 套用成品相關問題疑難排解
+        [410] 在 Azure DevTest Labs 虛擬機器上套用成品的問題進行疑難排解
+    - 使用客戶自控金鑰將作業系統磁碟加密
+      [416] 在 Azure DevTest Labs 中使用客戶自控金鑰來加密磁碟
+    - 與 CI/CD 整合
+      - 將實驗室與您的 Azure Pipelines CI/CD 管線整合
+        [421] 將 DevTest Labs 整合到 Azure Pipelines
+      - 將環境與您的 Azure Pipelines CI/CD 管線整合
+        [428] 將 DevTest Labs 環境整合到 AzurePipelines
+      - 使用 Azure Pipelines 建置和發行管線中的 DevTest 實驗室
+        [433] 使用 Azure Pipelines 建置和發行管線中的 DevTest 實驗室
+    - 擴充 DevTest Labs
+      - 使用 Azure Functions 擴充 DevTest Labs
+        [441] 使用 Azure Functions 擴充 DevTest Labs
+    - 報告實驗室使用方式
+      [448] 報告跨多個實驗室和訂用帳戶的 AzureDevTest Labs 使用量
+    - 企業中的 DevTest Labs
+      - 參考架構
+        [451] DevTest Labs 企業參考架構
+      - 遞交概念證明
+        [455] 提供 Azure DevTest Labs 企業部署的概念證明
+      - 擴大您的 DevTest Labs 部署
+        [461] 相應增加您的 Azure DevTest Labs 基礎結構
+      - 治理 DevTest Labs
+        [466] Azure DevTest Labs 基礎結構的治理
+    - 發佈要測試的應用程式
+      [475] 發佈應用程式以在Azure DevTest LabsVM 上進行測試
+    - 疑難排解
+      - 針對虛擬機器和環境建立失敗進行疑難排解
+        [481] 針對 Azure DevTest Labs 中的虛擬機（VM） 和環境建立失敗進行疑難解答
+      - 套用成品時的問題疑難排解
+        [488] 在 Azure DevTest Labs 虛擬機器上套用成品的問題進行疑難排解
+      - 針對 VM 部署失敗進行疑難排解
+        [494] 針對Azure DevTest Labs中的虛擬機器(VM) 部署失敗進行疑難排解
+    - 監視器
+      - 檢視活動記錄
+        [496] 在 Azure DevTest Labs 中檢視實驗室的活動記錄
+      - 建立活動記錄警示
+        [500] 在 Azure DevTest Labs 中為實驗室建立活動記錄警示
+    - 移至新區域
+      [507] 將 DevTest Labs 和排程移至另一個區域
+  - 參考
+    - CLI
+      [517] az lab
+    - PowerShell
+      [524] Az.DevTestLabs
+    - PowerShell - 範例 Az.DevTestLabs2 模組
+    - REST API
+      [525] Azure DevTest Labs
+    - ARM 範本
+      [526] Microsoft.DevTestLab 資源類型
+  - 資源
+    - Azure 更新
+    - 定價
+    - DevTest Labs 開發人員社群

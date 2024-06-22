@@ -1,0 +1,608 @@
+---< azure-search (中文).pdf >---
+  - Azure AI 搜尋檔
+    [1] Azure AI 搜尋服務文件
+  - 概觀
+    - 什麼是 Azure AI 搜尋服務？
+      [4] 什麼是 Azure AI 搜尋服務？
+    - 搜尋中的新功能
+      [8] Azure AI 搜尋的新功能
+    - 功能
+      [13] Azure AI 搜尋的功能
+    - 常見問題集
+      [19] 一般
+  - 快速入門
+    - 向量搜尋
+      [25] 快速入門：使用 REST 進行向量搜尋
+    - 全文檢索搜尋
+      [45] 快速入門：使用 Azure SDK 進行全文檢索搜尋
+    - 語意重新排名
+      [59] 快速入門：使用 .NET 或 Python 進行語意排名
+    - 與您的數據聊天 （Azure OpenAI Studio）
+      [67] 快速入門：使用您自己的數據與 AzureOpenAI 模型聊天
+    - 入口網站
+      - 建立索引
+        [73] 快速入門：在 Azure 入口網站中建立搜尋索引
+      - 建立示範應用程式
+        [83] 快速入門：在 Azure 入口網站 中建立示範應用程式
+      - 建立技能集
+        [88] 快速入門：在 Azure 入口網站 中建立技能集
+      - 建立知識存放區
+        [98] 快速入門：在 Azure 入口網站 中建立知識存放區
+      - 使用搜尋總管進行查詢
+        [105] 快速入門：使用搜尋總管在 Azure 入口網站 中執行查詢
+    - REST
+      [116] 快速入門：使用 REST 進行文字搜尋
+    - PowerShell
+      [126] 快速入門：使用 REST API 在 PowerShell中建立搜尋索引
+    - 部署
+      - ARM 範本
+        [137] 快速入門：使用 Azure ResourceManager 範本部署 Azure AI 搜尋
+      - Bicep
+        [142] 快速入門：使用 Bicep 部署 Azure AI 搜尋
+      - Terraform
+        [146] 快速入門：使用 Terraform 部署 Azure AI搜尋服務
+  - 教學課程
+    - 將搜尋新增至靜態 Web 應用程式
+      - C#
+        - 概觀
+          [152] 步驟 1 - 使用 .NET 將搜尋新增至網站的概觀
+        - 建立搜尋索引
+          [156] 步驟 2 - 使用 .NET 建立及載入搜尋索引
+        - 部署靜態 Web 應用程式
+          [162] 步驟 3 - 部署已啟用搜尋功能的 .NET 網站
+        - 探索程式碼
+          [171] 步驟 4 - 探索 .NET 搜尋程序代碼
+      - JavaScript
+        - 概觀
+          [186] 1 - 將搜尋新增至網站的概觀
+        - 建立搜尋索引
+          [190] 2 - 使用 JavaScript 建立及載入搜尋索引
+        - 部署靜態 Web 應用程式
+          [198] 3 - 部署已啟用搜尋的網站
+        - 探索程式碼
+          [207] 4 - 探索 JavaScript 搜尋程式碼
+      - Python
+        - 概觀
+          [223] 1 - 使用 Python 將搜尋新增至網站的概觀
+        - 建立搜尋索引
+          [227] 2 - 使用 Python 建立及載入搜尋索引
+        - 部署靜態 Web 應用程式
+          [236] 3 - 部署已啟用搜尋的 Python 網站
+        - 探索程式碼
+          [245] 4 - 探索 Python 搜尋程序代碼
+    - 將搜尋新增至 ASP.NET Core （MVC）
+      [258] 在 ASP.NET Core 中建立搜尋應用程式
+    - 編製索引教學課程
+      - 為任何資料編制索引
+        [269] 教學課程：使用推送 API 將索引編製最佳化
+      - 大規模索引 （Apache Spark）
+        [281] 教學課程：使用 SynapseML 和 Azure AI搜尋服務為 Apache Spark 大型資料編製索引
+      - 為 Azure SQL 資料庫 編製索引
+        [292] 教學課程：使用 .NET SDK 為 Azure SQL資料編製索引
+      - 編製 Azure JSON Blob 的索引
+        [302] 教學課程：使用 REST 從 Azure 儲存體 編製巢狀 JSON Blob 的索引
+      - 為多個 Azure 數據源編製索引
+        [312] 教學課程：使用 .NET SDK 從多個數據源編製索引
+      - 索引加密的 Blob
+        [326] 教學課程：在 Azure AI 搜尋服務中為加密的 Blob 編製索引並擴充，以進行全文檢索搜尋
+    - 技能教學課程
+      - C#
+        [333] C# 教學課程：使用技能集在 Azure AI 搜尋服務中產生可搜尋的內容
+      - REST
+        [354] REST 教學課程：使用技能集在 Azure AI搜尋服務中產生可搜尋的內容
+      - 偵錯技能集
+        [368] 教學課程：使用偵錯工作階段偵錯技能集
+    - 建立自訂分析器
+      [381] 教學課程：建立電話號碼的自定義分析器
+    - 從 Power Apps 查詢
+      [398] 教學課程：從 Power Apps 查詢 Azure AI搜尋索引
+  - 範例
+    - C# 範例
+      [414] 適用於 Azure AI 搜尋服務的 C# 範例
+    - Java 範例
+      [418] 適用於 Azure AI 搜尋的 Java 範例
+    - JavaScript 範例
+      [420] 適用於 Azure AI 搜尋的 JavaScript 範例
+    - Python 範例
+      [423] 適用於 Azure AI 搜尋的 Python 範例
+    - REST 範例
+      [426] Azure AI 搜尋的 REST 範例
+  - 概念
+    - 資料
+      - 搜尋索引
+        [428] Azure AI 搜尋服務中的搜尋索引
+      - 向量存放區
+        [435] Azure AI 搜尋中的向量記憶體
+      - 知識存放區
+        [443] Azure AI 搜尋中的知識存放區
+      - 數據匯入策略
+        [448] Azure AI 搜尋中的數據匯入
+      - 索引子
+        [452] Azure AI 搜尋服務中的索引子
+    - 已套用的 AI
+      - 索引編製期間的 AI 擴充
+        [459] Azure AI 搜尋中的 AI 擴充
+      - 擴充快取
+        [464] Azure AI 搜尋服務中的累加擴充和快取
+      - 技能集
+        [470] Azure AI 搜尋中的技能集概念
+      - 內建向量化 （預覽）
+        [482] 整合式數據區塊化和內嵌在 Azure AI 搜尋中
+    - 擷取
+      - 全文檢索搜尋
+        [487] Azure AI 搜尋中的全文搜索
+      - 向量搜尋
+        [500] Azure AI 搜尋服務中的向量
+      - 混合式搜尋
+        [506] 在 Azure AI 搜尋中使用向量和全文搜索的混合式搜尋
+      - 擷取擴增生成 (RAG)
+        [510] 在 Azure AI 搜尋中擷取擴增產生 (RAG)
+      - 其他查詢類型
+        [519] 在 Azure AI 搜尋中查詢
+    - 相關性
+      - 語意排名
+        [523] Azure AI 搜尋中的語意排名
+      - 關鍵字查詢 （BM25 排名）
+        [528] 關鍵字搜尋中的相關性 (BM25 評分)
+      - 向量查詢
+        [534] 向量搜尋中的相關性
+      - 混合式查詢 （RRF）
+        [539] 使用倒數排名融合在混合式搜尋中的相關性評分 （RRF）
+    - 安全性
+      - 安全性概觀
+        [544] Azure AI 搜尋的安全性概觀
+      - 保護外部數據的存取
+        [553] 索引子存取受 Azure 網路安全性保護的內容
+      - Azure 原則的安全性控制
+        [559] 適用於 Azure AI 搜尋的 Azure 原則 法規合規性控制
+      - 安全性基準
+        [576] 適用于 Azure 認知搜尋 的 Azure 安全性基準
+  - 操作指南
+    - 服務管理
+      - 建立搜尋服務
+        [589] 在入口網站中建立 Azure AI 搜尋服務
+      - 選擇階層
+        [601] 選擇 Azure AI 搜尋的服務層級
+      - 服務限制
+        [605] Azure AI 搜尋中的服務限制
+      - 規劃和管理容量
+        [616] 估計及管理搜尋服務的容量
+      - 規劃和管理成本
+        [625] 規劃和管理 Azure AI 搜尋服務 的成本
+      - 可用性和復原
+        [629] Azure AI 搜尋中的可靠性
+      - 可用性移轉指引
+        [637] 將 Azure AI 搜尋服務移轉至可用性區域支援
+      - 多組織用戶管理
+        [639] 多租使用者 SaaS 應用程式和 Azure AI 搜尋的設計模式
+      - 在入口網站中管理
+        [644] Azure 入口網站 中的 Azure AI 搜尋服務管理
+      - 以 PowerShell 管理
+        [648] 使用 PowerShell 管理 Azure AI 搜尋服務
+      - 使用 Azure CLI 管理
+        [661] 使用 Azure CLI 管理 Azure AI 搜尋服務
+      - 使用 REST 管理
+        [672] 使用 REST API 管理 Azure AI 搜尋服務
+      - 跨區域行動服務
+        [680] 將 Azure AI 搜尋服務 移至另一個 Azure區域
+    - 索引管理
+      - 建立搜尋索引
+        [682] 在 Azure AI 搜尋服務中建立索引
+      - 建立索引別名
+        [687] 在 Azure AI 搜尋中建立索引別名
+      - 載入索引
+        [690] 將數據載入 Azure AI 搜尋中的搜尋索引
+      - 索引大型資料集
+        [693] 在 Azure AI 搜尋服務中為大型資料集編製索引
+      - 卸除並重建索引
+        [698] 卸除並重建 Azure AI 搜尋服務中的索引
+      - 索引子
+        - 建立索引子
+          [701] 在 Azure AI 搜尋服務中建立索引子
+        - 執行或重設索引子
+          [708] 執行或重設索引子、技能或文件
+        - 排程索引子
+          [716] 在 Azure AI 搜尋服務中排程索引子
+        - 定義欄位對應
+          [719] 使用 Azure AI 搜尋服務索引器進行欄位對應和轉換
+        - 入口網站索引編製
+          - 匯入資料精靈
+            [730] Azure AI 搜尋服務中的匯入資料精靈
+        - 編製整個檔案的索引
+          - 內容中繼資料屬性
+            [736] 
+          - 索引一對多索引
+            [741] 編製 Blob 和檔案的索引，以產生多個搜尋文件
+          - 索引純文字
+            [745] 如何在 Azure AI 搜尋服務中為純文字Blob 和檔案編製索引
+          - 索引 CSV
+            [747] 使用 delimitedText 剖析模式編製 CSVBlob 和檔案的索引
+          - 索引 JSON
+            [750] 在 Azure AI 搜尋服務中編製 JSON Blob和檔案的索引
+        - 疑難排解指引
+          [756] Azure AI 搜尋服務的索引子疑難排解指引
+        - 針對索引器錯誤和警告進行疑難解答
+          [766] 針對 Azure AI 搜尋中的常見索引器錯誤和警告進行疑難解答
+      - 索引器數據源
+        - 資料來源資源庫
+          [785] 數據源資源庫
+        - Azure 儲存體
+          - 搜尋 Blob
+            [825] 搜尋 Azure Blob 儲存體內容
+          - ADLS Gen2
+            [831] 從 Azure Data Lake Storage Gen2 編製資料索引
+          - Blob
+            [841] 從 Azure Blob 儲存體編製資料索引
+          - 檔案
+            [852] 將 Azure 檔案儲存體中的資料編製索引
+          - 資料表
+            [859] 將 Azure 表格儲存體中的資料編製索引
+          - 索引已變更和已刪除的內容
+            [866] 在 Azure AI 搜尋服務中使用 Azure 儲存體的索引子進行變更和刪除偵測
+        - Azure Cosmos DB
+          - 適用於 NoSQL 的 Azure Cosmos DB
+            [871] 在 Azure AI 搜尋中針對查詢編制來自NoSQL 的 Azure Cosmos DB 索引數據
+          - Azure Cosmos DB for MongoDB
+            [881] 針對 Azure AI 搜尋中的查詢編制來自適用於 MongoDB 的 Azure Cosmos DB 數據編制索引
+          - Azure Cosmos DB for Apache Gremlin
+            [889] 針對 Azure AI 搜尋中的查詢編制 AzureCosmos DB for Apache Gremlin 的數據編制索引
+        - 適用於 MySQL 的 Azure DB
+          [899] 從 適用於 MySQL 的 Azure 資料庫 彈性伺服器編製數據索引
+        - Azure SQL
+          - Azure SQL Database
+            [906] 如何在 Azure AI 搜尋中編制來自 AzureSQL 的數據索引
+          - Azure SQL 受控執行個體
+            [918] 透過公用端點連線至 Azure SQL 受控執行個體
+          - Azure SQL Server VM
+            [922] 與 Azure 虛擬機器上 SQL Server 執行個體的索引子連線
+        - Microsoft 365 中的 SharePoint
+          [926] 
+      - 技能集
+        - 建立技能集
+          [938] 建立 Azure AI 搜尋服務中的技能
+        - 連結 Azure AI 資源
+          [946] 將 Azure AI 多服務資源附加至 Azure AI搜尋中的技能集
+        - 建立次要索引的索引投影
+          [952] Azure AI 搜尋服務中的索引投影
+        - 偵錯會話概觀
+          [956] 在 Azure AI 搜尋中偵錯會話
+        - 偵錯技能集
+          [960] 在 Azure 入口網站 中偵錯 Azure AI 搜尋技能集
+        - 參考技能輸出
+          [969] 使用 Azure AI 搜尋服務技能集中的內容和來源屬性參考擴充節點的路徑
+        - 對應至索引欄位
+          [974] 將擴充的輸出對應至 Azure AI 搜尋服務中搜尋索引中的欄位
+        - 處理圖像檔案
+          [981] 從 AI 擴充中的影像擷取文字和資訊
+        - 快取 （累加） 擴充
+          [998] 在 Azure AI 搜尋服務中啟用累加擴充的快取
+        - 設計秘訣
+          [1003] 在 Azure AI 搜尋中用於 AI 擴充的 提示
+        - 自訂技能
+          - 整合自定義技能
+            [1006] 在 Azure AI 搜尋服務擴充管線中新增自訂技能
+          - 相應放大自定義技能
+            [1011] 有效率地相應放大自定義技能
+          - 範例 - Bing 實體搜尋
+            [1014] 範例：使用 Bing 實體搜尋 API 建立自定義技能
+    - 向量搜尋
+      - 建立向量索引
+        [1025] 建立向量存放區
+      - 查詢向量
+        [1034] 在 Azure AI 搜尋服務中建立向量查詢
+      - 篩選向量
+        [1045] 向量查詢中的篩選
+      - 向量配額和保持在限制之下
+        [1049] 向量索引大小並保持在限制之下
+      - 設定量化與記憶體 （預覽）
+        [1055] 在 Azure AI 搜尋中為較小的向量設定向量量化和減少記憶體
+      - 設定查詢的向量化工具 （預覽）
+        [1066] 在搜尋索引中設定向量化工具
+      - 區塊檔
+        [1072] 在 Azure AI 搜尋服務中為向量搜尋解決方案分割大型檔
+      - 產生內嵌
+        [1080] 產生搜尋查詢和文件的內嵌
+      - 區塊和內嵌 Azure 入口網站 （預覽）
+        [1083] 快速入門：整合向量化（預覽）
+    - 關鍵字搜尋
+      - 全文檢索查詢
+        [1091] 在 Azure AI 搜尋服務中建立全文檢索查詢
+      - 語意查詢
+        [1096] 在 Azure AI 搜尋中建立語意查詢
+      - Typeahead 查詢
+        [1100] 在用戶端應用程式中新增自動完成和搜尋建議
+      - 查詢範例（簡單語法）
+        [1107] Azure AI 搜尋服務中的「簡單」搜尋查詢範例
+      - 新增拼字檢查
+        [1120] 在 Azure AI 搜尋中將拼字檢查新增至查詢
+      - 新增同義字
+        [1124] Azure AI 搜尋中的同義字
+      - 新增 typeahead 的建議工具
+        [1129] 在查詢中設定自動完成和建議相符項目的建議工具
+      - 設計多語系索引
+        [1135] 在 Azure AI 搜尋中建立多種語言的索引
+      - 模型的複雜資料類型
+        [1140] 在 Azure 搜尋服務中模型化複雜資料類型
+      - 模型關聯式資料
+        [1145] 如何建立 SQL 關聯式資料的模型，以便在Azure AI 搜尋服務中匯入和編製索引
+      - 分析器
+        - 分析器概觀
+          [1151] Azure AI 搜尋服務中的文字處理分析器
+        - 新增語言分析器
+          [1161] 將語言分析器新增至 Azure AI 搜尋服務引中的字串欄位
+        - 新增自定義分析器
+          [1167] 
+      - 篩選
+        - 文字查詢中的篩選條件
+          [1178] 文字查詢中的篩選條件
+        - 新增多面向導覽
+          [1184] 將多面向導覽新增至搜尋應用程式
+        - 瞭解收集篩選器
+          [1194] 瞭解 OData 集合篩選如何在 Azure AI 搜尋中運作
+        - 針對收集篩選進行疑難解答
+          [1200] 
+        - 將篩選條件的文字正規化
+          [1208] 不區分大小寫的篩選、Facet 和排序的文字正規化
+      - 搜尋結果
+        - 分頁、排序和格式設定
+          [1215] 如何在 Azure AI 搜尋中使用搜尋結果
+        - 傳回語意答案
+          [1226] 在 Azure AI 搜尋中傳回語意答案
+      - 相關性
+        - 啟用或停用語意排名
+          [1231] 啟用或停用語意排名器
+        - 設定語意排名
+          [1233] 在搜尋結果中設定語意排名並傳回 標題
+        - 設定 BM25 排名
+          [1237] 設定 BM25 相關性評分
+        - 新增評分配置檔
+          [1241] 新增評分設定檔以提高搜尋分數
+      - 進階查詢
+        - 使用完整的 Lucene （範例）
+          [1252] 「完整」Lucene 搜尋語法範例（Azure AI搜尋中的進階查詢）
+        - 部分字詞和特殊字元
+          [1261] 具有特殊字元的部分字詞搜尋和模式（連字元、通配符、regex、模式）
+        - 模糊搜尋
+          [1269] 模糊搜尋以更正拼錯和錯字
+    - 混合式搜尋
+      [1274] 在 Azure AI 搜尋中建立混合式查詢
+    - 安全性
+      - 輸入連線
+        - 使用 API 金鑰 連線
+          [1282] 使用金鑰驗證 連線 至 Azure AI 搜尋服務
+        - 使用 Azure 角色 連線
+          [1288] 使用 Azure 角色型訪問控制 連線 至Azure AI 搜尋服務
+        - 設定 Microsoft Entra 識別碼的應用程式
+          [1298] 使用 Microsoft Entra 識別碼授權搜尋應用程式的存取權
+        - 設定 IP 防火牆
+          [1304] 設定 Azure AI 搜尋的 IP 防火牆
+        - 建立私人端點
+          [1307] 建立私人端點以安全連線至 Azure AI 搜尋
+        - 針對私人連線進行疑難解答
+          [1315] 針對 Azure AI 搜尋中共用私人鏈接的問題進行疑難解答
+      - 輸出連線
+        - 連線 為受信任的服務
+          [1322] 以 Azure 儲存體作為受信任服務來建立索引子連線
+        - 使用受控識別 連線
+          - 任何 Azure 資源
+            [1326] 使用受控識別將搜尋服務連線至其他Azure 資源
+          - Azure 儲存體
+            [1335] 使用受控識別設定 Azure 儲存體的索引器連線
+          - Azure Cosmos DB
+            [1339] 透過受控識別設定 Azure Cosmos DB 的索引器連線
+          - SQL Database
+            [1344] 使用受控識別設定 Azure SQL 的索引子連線
+          - SQL 受控執行個體
+            [1351] 使用受控識別來設定 Azure SQL 受控執行個體的索引子連線
+        - 透過防火牆 連線
+          [1358] 設定 IP 防火牆規則以允許來自 Azure AI搜尋服務的索引子連線
+        - 透過共用私人連結連線
+          [1364] 透過共用私人連結進行輸出連線
+        - 連線 至 SQL 受控實例私人端點
+          [1376] 從 Azure AI 搜尋建立 SQL 受控實例的共用私人連結
+      - 資料加密
+        - 客戶管理的金鑰
+          [1382] 在 Azure AI 搜尋服務中設定客戶管理的數據加密金鑰
+        - 尋找加密的物件
+          [1396] 尋找加密的物件和資訊
+      - 檔層級安全性
+        - 安全性篩選
+          [1399] 在 Azure AI 搜尋中修剪結果的安全性篩選
+        - 具有 Microsoft Entra 識別碼的安全性篩選
+          [1404] 使用 Microsoft Entra 租使用者和身分識別來修剪 Azure AI 搜尋結果的安全性篩選
+    - 部署
+      - API 版本
+        [1410] Azure AI 搜尋中的 API 版本
+      - 預覽功能
+        [1413] Azure AI 搜尋中的預覽功能
+      - 處理並行更新
+        [1418] 在 Azure AI 搜尋中管理並行
+      - 以 .NET 開發
+        [1423] 如何在 C# .NET 應用程式中使用Azure.Search.Documents
+      - 升級 .NET 連結庫
+        [1440] 升級至 Azure AI 搜尋 .NET SDK 第 11 版
+      - 使用 Azure SDK 進行管理
+        [1449] Azure 搜尋服務 .NET 管理 SDK 的升級版本
+      - 升級 REST API
+        [1450] 在 Azure AI 搜尋中升級至最新的 RESTAPI
+    - 監視和效能
+      - 監視器
+        [1460] 監視 Azure AI 搜尋
+      - 監視查詢
+        [1468] 在 Azure AI 搜尋中監視查詢要求
+      - 監視以索引子為基礎的索引編製
+        [1475] 在 Azure AI 搜尋服務中監視索引子狀態和結果
+      - 監視客戶端互動
+        [1483] 收集用於搜尋使用分析的遙測數據
+      - 將資源記錄可視化
+        [1489] 使用 Power BI 將 Azure AI 搜尋服務記錄和計量視覺化
+      - 效能分析
+        [1495] 分析 Azure AI 搜尋中的效能
+      - 效能評定
+        [1504] Azure AI 搜尋服務效能效能評定
+      - 提升效能的秘訣
+        [1514] 提示，以提升 Azure AI 搜尋的效能
+    - 知識存放區
+      - 知識存放區概觀
+        [1520] Azure AI 搜尋中的知識存放區
+      - 知識存放區投影概觀
+        [1525] Azure AI 搜尋中的知識存放區「投影」
+      - 使用 REST 建立
+        [1531] 使用 REST 建立知識存放區
+      - 塑形資料
+        [1543] 將數據成形成知識存放區
+      - 定義投影
+        [1550] 定義知識存放區中的投影
+      - 投影範例
+        [1558] 知識存放區中圖形和投影的詳細範例
+      - 使用 Power BI 進行連接
+        [1573] 使用 Power BI 連線 知識存放區
+  - 負責 AI
+    - 透明度注意事項
+      [1579] Transparency note: Azure AI Search
+  - 參考
+    - REST
+      - 搜尋 REST API
+        [1583] Azure AI 搜尋 REST API 參考
+      - 管理 REST API
+        [1587] Azure AI 搜尋) (管理 REST API 參考
+    - .NET
+      - Azure.Search.Documents
+        [1590] Azure AI Search client library for .NET -version 11.5.1
+      - Azure.ResourceManager.Search
+        [1605] 適用于 .NET 的 Microsoft Azure 認知搜尋管理用戶端程式庫
+    - Java
+      - com.azure.search.documents
+        [1608] Azure Cognitive Search client library forJava - version 11.6.4
+      - com.azure.resourcemanager.search
+        [1623] Management
+    - JavaScript
+      - azure/search-documents
+        [1624] 適用於 JavaScript 的 Azure AI 搜尋用戶端連結庫 - 12.0.0 版
+      - azure/arm-search
+        [1637] @azure/arm-search package
+    - Python
+      - azure-search-documents
+        [1646] Azure 認知搜尋適用于 Python 的用戶端程式庫 - 11.4.0 版
+      - azure-mgmt-search
+        [1656] search 套件
+    - 資源管理
+      - Azure CLI
+        [1657] az search
+      - Azure PowerShell
+        [1659] Az.Search
+      - Azure Resource Manager 範本
+        [1661] Microsoft.Search searchServices
+      - Azure 原則內建
+        [1666] Azure 原則 Azure 認知搜尋的內建定義
+      - 監視資料參考
+        [1669] 
+    - 數據類型參考
+      [1676] Azure AI 搜尋) 支援的數據類型 (
+    - 索引器數據源的數據類型
+      [1680] Azure AI 搜尋服務 (索引器的數據類型對應)
+    - 停用字詞參考
+      [1683] 停用字詞參考 （Microsoft 分析器）
+    - OData 語言參考
+      - 概觀
+        [1694] 、 $orderby 和 $select  在 Azure AI 搜尋服務中的 OData 語言概觀$filter
+      - $filter
+        [1701] Azure AI 搜尋中的 OData $filter語法
+      - $orderby
+        [1708] Azure AI 搜尋中的 OData $orderby語法
+      - $select
+        [1711] Azure AI 搜尋中的 OData $select語法
+      - any、all
+        [1714] 
+      - eq、ne、gt、lt、ge、le
+        [1717] Azure AI 搜尋中的 OData 比較運算符 -
+eq 、 ne 、 gt 、 lt 、 ge 和 le
+      - search.ismatch， search.ismatchscoring
+        [1722] Azure AI 搜尋中的 OData 全文檢索搜尋函式 - search.ismatch  和
+      - geo.distance、geo.intersects
+        [1726] Azure AI 搜尋中的 OData 地理空間函式 -
+geo.distance  和 geo.intersects
+      - 和、或，不是
+        [1730] Azure AI 搜尋中的 OData 邏輯運算子 -
+and  、 or not
+      - search.in
+        [1733] Azure AI 搜尋中的 OData search.in  函式
+      - search.score
+        [1736] Azure AI 搜尋中的 OData search.score函式
+      - OData 語言文法
+        [1737] Azure AI 搜尋的 OData 運算式語法參考
+    - 查詢語法參考
+      - 簡單查詢語法
+        [1742] Azure AI 搜尋中的簡單查詢語法
+      - 完整的 Lucene 查詢語法
+        [1748] Azure AI 搜尋中的 Lucene 查詢語法
+      - moreLikeThis （預覽）
+        [1756] Azure AI 搜尋中的 moreLikeThis （預覽）
+    - 技能參考
+      - 概觀
+        [1758] 
+      - 註釋參考語言
+        [1761] 技能內容和輸入註釋語言
+      - Azure AI 資源技能
+        - 自訂實體查閱
+          [1769] 自定義實體查閱認知技能
+        - 實體連結 （v3）
+          [1780] 實體連結認知技能 （v3）
+        - 實體辨識 （v3）
+          [1784] 實體辨識認知技能 （v3）
+        - 影像分析
+          [1789] 影像分析認知技能
+        - 關鍵片語擷取
+          [1806] 關鍵片語擷取認知技能
+        - 語言偵測
+          [1810] 語言偵測認知技能
+        - OCR
+          [1814] OCR 認知技能
+        - PII 偵測
+          [1820] 個人標識資訊 （PII） 偵測認知技能
+        - 情感 （v3）
+          [1825] 情感認知技能 （v3）
+        - 文字翻譯
+          [1830] 文字翻譯認知技能
+      - Azure AI 搜尋公用程式技能 （不可計費）
+        - 條件
+          [1834] 條件式認知技能
+        - 文件擷取
+          [1839] 檔擷取認知技能
+        - 塑形器
+          [1845] 塑形器認知技能
+        - 文字合併
+          [1851] 文字合併認知技能
+        - 文字分割
+          [1855] 文字分割認知技能
+      - Azure OpenAI 技能
+        - Azure OpenAI 內嵌
+          [1861] Azure OpenAI 內嵌技能
+      - 自訂技能
+        - Azure 機器學習 （AML）
+          [1865] Azure AI 搜尋擴充管線中的 AML 技能
+        - 自訂 Web API
+          [1870] 在 Azure AI 搜尋服務擴充管線中自訂Web API 技能
+      - 已被取代的技能
+        [1876] Azure AI 搜尋中已被取代的認知技能
+        - 具名實體辨識 （v2）
+          [1890] 具名實體辨識認知技能 （v2）
+        - 實體辨識 （v2）
+          [1894] 
+        - 情感 （v2）
+          [1900] 情感認知技能 （v2）
+  - 資源
+    - Stack Overflow
+    - 定價
+    - 依區域的產品
+    - 示範網站
+      [1903] 示範 - Azure AI 搜尋
+    - 工具和加速器
+      [1904] 生產力工具 - Azure AI 搜尋
+    - 訓練
+      [1905] 訓練 - Azure AI 搜尋
+    - 合作夥伴解決方案
+      - 合作夥伴焦點
+        [1906] 合作夥伴焦點
+      - 合作夥伴資料來源（使用規定）
+        [1908] 使用規定：合作夥伴資料來源

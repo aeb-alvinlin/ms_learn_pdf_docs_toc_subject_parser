@@ -1,0 +1,197 @@
+- ---< azure-azure-signalr.pdf >---
+  - Azure SignalR Service 文件
+    [1] Azure SignalR Service 文件
+  - 概觀
+    - 關於 Azure SignalR 服務
+      [4] 什麼是 Azure SignalR 服務？
+  - 快速入門
+    - ASP.NET 核心 - C#
+      [7] 快速入門：使用 SignalR 服務建立聊天室
+    - ASP.NET - C#
+      [18] 快速入門：使用 ASP.NET 和 SignalR 服務
+建立聊天室
+    - Azure Functions - JavaScript
+      [24] 快速入門：使用 JavaScript 使用 AzureFunctions 和 SignalR Service 建立無伺服器應用程式
+    - Azure Functions - C#
+      [33] 快速入門：使用 Azure Functions 和SignalR Service 透過 C 建立顯示 GitHub星號計數的應用程式#
+    - Azure Functions - Java
+      [41] 快速入門：使用 Java 建立應用程式，其中顯示 Azure Functions 和 SignalRService 的 GitHub 星號計數
+    - Azure Functions - Python
+      [50] 快速入門：在 Python 中使用 AzureFunctions 和 Azure SignalR Service 建立無伺服器應用程式
+    - Azure SignalR 服務部署 - Bicep
+      [58] 快速入門：使用 Bicep 部署Azure SignalRService
+    - Azure SignalR 服務部署 - ARM 範本
+      [62] 快速入門：使用ARM範本部署 AzureSignalR 服務
+    - REST API
+      [69] 快速入門：從控制台應用程式廣播實時訊息
+  - 教學課程
+    - 使用驗證建置無伺服器即時應用程式
+      [80] 教學課程：使用 Azure Functions 進行Azure SignalR 服務驗證
+    - 建置 Blazor Server 聊天應用程式
+      [92] 教學課程：建置 Blazor Server 聊天應用程式
+  - 範例
+    - 程式碼範例
+    - Azure CLI
+      - 概觀
+        [106] Azure CLI 參考
+      - 建立 SignalR 服務
+        [107] 建立 SignalR 服務
+      - 建立 SignalR 服務和 Web 應用程式
+        [110] 使用 App Service 建立 SignalR 服務
+      - 使用 GitHub OAuth 建立 SignalR 服務和 Web 應用程式
+        [114] 建立使用 SignalR 服務和 GitHub 驗證的Web 應用程式
+  - 概念
+    - Azure SignalR Service 內部
+      [119] Azure SignalR Service 內部
+    - 服務模式
+      [122] Azure SignalR Service 中的服務模式
+    - 連接字串
+      [127] Azure SignalR Service 中的連線字串
+    - 用戶端交涉
+      [136] 用戶端交涉
+    - 調整 ASP.NET Core SignalR
+      [144] 使用 Azure SignalR 服務調整核心SignalR 應用程式 ASP.NET
+    - 無伺服器
+      - 使用 Azure Functions 的即時應用程式
+        [146] 使用 Azure SignalR 服務和 AzureFunctions 的即時應用程式
+      - 開發和設定 SignalR Service 應用程式
+        [149] 使用 Azure SignalR Service 來開發與設定Azure Functions
+      - 適用於 Azure Functions 的 SignalR Service 繫結參考
+        [159] Azure Functions 的 SignalR 服務系結
+      - 設定上游端點
+        [161] 上游端點
+    - 高可用性
+      - 正常關閉您的應用程式伺服器
+        [169] 伺服器正常關機
+      - 復原和災害復原
+        [172] Azure SignalR Service 中的復原和災害復原
+      - 可用性區域
+        [178] Azure SignalR Service 中的可用性區域支援
+    - 訊息和連線
+      [179] Azure SignalR Service 中的訊息和連線
+    - 計量
+      [182] Azure SignalR Service 監視數據參考
+    - 效能考量
+      [192] Azure SignalR Service 的效能指南
+    - 驗證
+      [211] Azure SignalR 服務驗證
+    - 使用 Microsoft Entra 識別碼進行授權
+      - Azure SignalR 服務的 Microsoft Entra 標識符概觀
+        [229] 使用 Azure SignalR 服務的 MicrosoftEntra 識別碼授權存取權
+    - 事件處理
+      [232] 回應 Azure SignalR Service 事件
+    - 安全性
+      - 安全性基準
+        [234] 適用於 Azure SignalR Service的 Azure 安全性基準
+      - Azure 原則的安全性控制
+        [245] 適用於 Azure SignalR 的 Azure 原則 法規合規性控制
+  - 操作指南
+    - 開發
+      - 使用 Azure SignalR SDK
+        [252] 使用 Azure SignalR 服務
+      - 使用管理 SDK
+        [262] Use Azure SignalR Management SDK
+      - 無伺服器開發的本機模擬器
+        [272] Use Azure SignalR Local Emulator forserverless development
+    - 調整和異地復寫
+      - 單一執行個體
+        [276] 如何調整 Azure SignalR Service 實例？
+      - 多個執行個體
+        [280] 使用多個實例調整 SignalR 服務
+      - Autoscale
+        [290] 自動調整 Azure SignalR 服務的單位
+      - 異地複寫
+        [298] Azure SignalR 中的異地複寫
+    - 安全
+      - 存取金鑰輪替
+        [307] 輪替 Azure SignalR 服務的存取金鑰
+      - 使用 Azure 服務標籤
+        [309] 使用 Azure SignalR Service 的服務標籤
+      - 使用 Azure 私人端點
+        [314] 針對 Azure SignalR 服務使用私人端點
+      - 管理網路訪問控制
+        [325] 設定網路存取控制
+      - 透過共用私人端點保護輸出流量
+        [329] 
+      - 透過共用私人端點存取專用網中的 金鑰保存庫
+        [335] 透過共用私人端點存取私人網路中的金鑰保存庫
+      - 使用受控識別
+        [340] Azure SignalR 服務的受控識別
+      - 從 Azure 應用程式授權
+        [347] 使用 Microsoft Entra 應用程式授權對Azure SignalR 服務資源的要求
+      - 從受控識別授權
+        [355] 使用 Microsoft Entra 受控識別授權對Azure SignalR 服務資源的要求
+      - 停用本機驗證。
+        [361] 使用 Azure SignalR Service 停用本機（存取金鑰）驗證
+      - 自訂網域
+        [364] 如何設定 Azure SignalR 服務的自定義網域
+    - 整合
+      - Azure Functions 系結
+        [375] 使用 Azure SignalR 服務和 AzureFunctions 的即時應用程式
+      - 事件方格整合
+        [378] 如何將事件從 Azure SignalR Service 傳送至事件方格
+      - 與反向 Proxy 整合
+        - 概觀
+          [383] 如何整合 Azure SignalR 與反向 Proxy
+        - 搭配使用 SignalR Service 搭配 應用程式閘道
+          [385] 如何使用 Azure SignalR Service 搭配Azure 應用程式閘道
+        - 搭配使用 SignalR Service 搭配 API 管理
+          [402] 如何使用 Azure SignalR Service 搭配Azure API 管理
+    - 監視器
+      - 監視器
+        [407] 監視 Azure SignalR 服務
+      - 使用診斷記錄來監視 SignalR 服務
+        [416] 監視和疑難解答 Azure SignalR 服務記錄
+      - 監視資料參考
+        [429] Azure SignalR Service 監視數據參考
+      - 使用 Azure 原則 稽核合規性
+        [439] 使用 Azure 原則稽核 Azure SignalR 服務資源的合規性
+    - 疑難排解
+      - 疑難排解指南
+        [443] Azure SignalR Service 常見問題的疑難排解指南
+      - 疑難解答方法
+        [458] 如何針對連線與訊息傳遞問題進行疑難排解
+      - 使用即時追蹤工具進行疑難解答
+        [464] 使用 Azure SignalR 服務的即時追蹤工具
+    - 跨區域移動
+      [469] 將 Azure SignalR 資源移至另一個區域
+  - 參考資料
+    - Azure CLI
+      [474] az signalr
+    - REST API
+      - 控制平面
+        [491] Azure SignalR Service REST API
+      - 資料平面
+        [492] Azure SignalR Service 資料平面 RESTAPI 參考
+        - 版本
+          - v20220601
+            [497] Azure SignalR Service REST API
+          - v1
+            [516] Azure SignalR Service 資料平面 RESTAPI - v1
+          - v1-preview
+            [526] Azure SignalR Service 資料平面 RESTAPI - v1-preview
+    - ASP.NET Core SignalR
+      [530] ASP.NET Core SignalR 概觀
+    - Azure SignalR 服務通訊協定
+    - Azure 原則內建
+      [532] 
+  - 資源
+    - 方案
+      [536] 
+    - 客戶案例
+    - SignalR 藍圖
+    - 服務更新
+    - 區域可用性
+    - 常見問題集
+      [541] Azure SignalR Service 是否準備好用於生產環境？
+當有多個應用程式伺服器時，用戶端訊息會傳送到所有伺服器，還是只傳送其中一部伺服器？
+如果我的其中一個應用程式伺服器關閉，如何找到它並收到通知？
+當我從 ASP.NET Core SignalR SDK 切換
+至 Azure SignalR Service SDK 時，為什麼我的自訂 'IUserIdProvider' 會擲回例外狀況？
+    - SignalR 服務訂用帳戶層級限制
+      [575] 
+    - 定價
+    - 影片
+    - StackOverflow
+    - Twitter
+    - ASP.NET 論壇

@@ -1,0 +1,47 @@
+- ---< azure-cloud-shell.pdf >---
+  - 概觀
+    - Azure Cloud Shell 是什麼？
+      [1] Azure Cloud Shell 是什麼？
+    - 功能與工具
+      [3] Azure Cloud Shell 的功能和工具
+  - 開始使用 Cloud Shell
+    - 開始使用 （傳統）
+      [7] 開始使用 Azure Cloud Shell
+    - 開始使用 （新 UI）
+      [11] 開始使用 Azure Cloud Shell 暫時會話
+    - 開始使用新的記憶體帳戶 （新 UI）
+      [14] 使用永續性記憶體開始使用 Azure CloudShell
+    - 開始使用現有的記憶體帳戶 （新增 UI）
+      [17] 開始使用 Azure Cloud Shell 現有的工作階段
+  - 如何使用 Cloud Shell
+    - 使用視窗 （傳統 UI）
+      [20] 使用 Azure Cloud Shell 視窗
+    - 使用視窗 （新增 UI）
+      [25] 如何使用 Azure Cloud Shell 的新使用者介面
+    - 使用 Cloud Shell 編輯器 （傳統 UI）
+      [30] 使用 Azure Cloud Shell 編輯器
+    - 將檔案保存在記憶體中
+      [32] 在 Azure Cloud Shell 中保存檔案
+    - Cloud Shell 中的預測性 IntelliSense
+      [37] Azure Cloud Shell 中的預測性IntelliSense
+    - 常見問題和疑難解答
+      [40] Azure Cloud Shell 常見問題（常見問題）
+  - 在虛擬網路中部署 Cloud Shell
+    - 概觀
+      [44] 在 Azure 虛擬網路中使用 Cloud Shell
+    - 使用快速入門範本進行部署
+      [46] 使用快速入門範本在虛擬網路中部署Cloud Shell
+    - 針對虛擬網路中的 Azure Cloud Shell 進行疑難解答
+      [55] 針對私人虛擬網路中的 Azure Cloud Shell進行疑難解答
+  - 定價
+    - Cloud Shell 定價
+      [61] 定價
+    - 定價計算機
+  - 安全性
+    - 安全性基準
+      [62] 適用于 Cloud Shell 的 Azure 安全性基準
+  - 參考
+    - Azure CLI
+      [67] Azure 命令列介面 (CLI) 文件
+    - Azure PowerShell
+      [70] Azure PowerShell 文件

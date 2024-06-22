@@ -1,0 +1,166 @@
+- ---< azure-devops-artifacts-azure-devops.pdf >---
+  - Azure Artifacts
+    [1] Azure Artifacts 文件
+  - 開始使用
+    - Azure Artifacts 概觀
+      [5] Azure Artifacts 概觀
+    - 監視成品記憶體
+      [11] 成品儲存體耗用量
+    - 最佳作法
+      [16] Azure Artifacts：最佳做法
+    - 搜尋套件
+      [18] 跨摘要搜尋套件
+  - 套件
+    - 關於
+      - 套件徽章
+        [20] 使用套件徽章共用您的成品
+      - 套件大小和計數的限制
+        [23] 套件大小和計數限制
+      - 遵循發佈警示的套件
+        [25] 套件通知
+    - NuGet (英文)
+      - NuGet 快速入門
+        [28] 開始使用 Azure Artifacts 中的 NuGet 套件
+      - 項目設定 （NuGet.exe）
+        [34] 連線 至 Azure Artifacts 摘要（NuGet.exe）
+      - 項目設定 （dotnet）
+        [37] 連線 至 Azure Artifacts 摘要 （dotnet）
+      - 發佈 NuGet 套件 （NuGet.exe）
+        [39] 從命令列發佈和還原 NuGet 套件（NuGet.exe）
+      - 發佈 NuGet 套件 （dotnet）
+        [43] 從命令列發佈和還原 NuGet 套件（dotnet）
+      - 發佈至 NuGet 摘要 （YAML/傳統）
+        [47] 使用 Azure Pipelines 發佈 NuGet 套件（YAML/傳統）
+      - 使用 Visual Studio 安裝 NuGet 套件
+        [52] 使用 Visual Studio 安裝 NuGet 套件
+      - 使用來自 NuGet.org 的套件
+        [55] 從 NuGet 資源庫使用套件
+      - 將套件發佈至 NuGet.org
+        [60] 將套件發佈至 NuGet.org
+      - 從 GitHub Actions 發佈
+        [65] 快速入門：使用GitHub Actions推送至Azure Artifacts
+      - 從 MyGet 遷移至 Azure Artifacts
+        [68] 將套件從 MyGet 遷移至 Azure Artifacts
+    - npm \(英文\)
+      - npm 快速入門
+        [72] 開始使用 Azure Artifacts 中的 npm 套件
+      - 專案設定
+        [77] 設定項目並連線到 Azure Artifacts
+      - 發佈和還原 npm 套件 （CLI）
+        [83] 從命令行發佈和還原 npm 套件
+      - 發佈 npm 套件 （YAML/Classic）
+        [86] 發佈 npm 套件 （YAML/Classic）
+      - 使用來自 npmjs.com 的套件
+        [89] 使用來自 npmjs.com 的套件
+      - Npm 範圍
+        [92] 在 Azure Artifacts 中使用 Npm 範圍
+      - Npm 稽核
+        [98] 使用 npm 稽核來偵測並修正套件弱點
+    - Maven
+      - Maven 快速入門
+        [101] 開始使用 Maven 套件和 Azure Artifacts
+      - 專案設定
+        [105] 設定 Maven 專案並連線到摘要
+      - 安裝 Maven 成品
+        [107] 安裝 Maven 成品
+      - 使用 Gradle 發佈成品
+        [110] 使用 Gradle 發佈 Maven 成品
+      - 使用來自 Maven Central 的套件
+        [115] 使用來自 Maven Central 的套件
+      - 使用Google Maven存放庫的套件
+        [120] 使用Google Maven存放庫的套件
+      - 使用來自 Gradle 外掛程式的套件
+        [125] Gradle 外掛程式上游來源
+      - 從 JitPack 使用套件
+        [128] JitPack 上游來源
+    - Python
+      - Python 快速入門
+        [131] 快速入門：使用命令行發佈及取用Python 套件與 Azure Artifacts （CLI）
+      - 發佈及取用 Python 套件 （CLI）
+        [141] 使用命令列發佈及取用 Python 套件（CLI）
+      - 將 Python 套件發佈至摘要 （傳統/YAML）
+        [154] 使用 Azure Pipelines 發佈 Python 套件
+      - 從 PyPi 使用套件
+        [157] 使用 Python 套件索引中的套件 （PyPI）
+    - Universal Packages
+      - 通用套件快速入門
+        [162] 在 Azure Artifacts 中發佈和下載通用套件
+      - Azure Pipelines 中的通用套件 （YAML/傳統）
+        [169] 使用 Azure Pipelines 發佈和下載通用套件
+      - 通用套件上游來源
+        [174] 通用套件上游來源
+    - 貨運
+      - 貨物快速入門
+        [179] 開始使用 Azure Artifacts 中的 Cargo 套件
+      - 使用來自 Crates.io 的套件
+        [181] 使用來自 Crates.io 的套件
+      - 將貨物套件發佈至摘要（傳統/YAML）
+        [186] 使用 Azure Pipelines 發佈 Cargo 套件
+  - 摘要、檢視和上游來源
+    - 摘要
+      - 什麼是摘要？
+        [192] 什麼是摘要？
+      - 專案範圍與組織範圍的摘要
+        [198] 專案範圍的摘要
+      - 設定權限
+        [202] 管理權限
+      - 刪除和復原套件
+        [210] 刪除和復原套件
+      - 使用 Azure Artifacts 摘要共用 PowerShell 模組
+        [216] 使用 Azure Artifacts 摘要作為私人PowerShell 存放庫
+      - 使用公用摘要公開共用套件
+        [226] 公開共用套件
+      - 從檔案共享移轉
+        [229] 從檔案共享移轉至 Azure Artifacts
+    - 摘要檢視
+      - 什麼是摘要檢視？
+        [234] 什麼是摘要檢視？
+      - 將套件升階至檢視
+        [238] 在 Azure Artifacts 中升級套件和管理摘要檢視
+    - 上游來源
+      - 上游來源概觀
+        [243] Azure Artifacts 上游來源
+      - 設定上游來源
+        [249] 設定上游來源
+      - 使用上游來源管理相依性
+        [255] 教學課程：如何使用上游來源
+      - 使用來自 PowerShell 資源庫的套件
+        [259] PowerShell 資源庫 上游來源
+      - 搭配公用摘要使用上游來源
+        [263] 在公用摘要中使用上游來源
+      - 在上游來源中搜尋套件
+        [269] 在上游來源中搜尋套件
+      - 設定上游行為
+        [273] 設定上游行為
+  - Azure Pipelines 中的成品
+    - Azure Pipelines 中的成品概觀
+      [282] Azure Pipelines 中的成品 - 概觀
+    - 在 Azure Pipeline 中發佈和下載成品
+      [284] 發佈和下載管線成品
+    - 管線快取
+      [292] 管線快取
+    - 設定保留原則
+      [307] 設定組建、發行和測試的保留原則
+  - 符號
+    - 符號概觀
+      [319] 符號概觀
+    - 使用 Visual Studio 偵錯
+      [321] 使用 Visual Studio 偵錯
+    - 使用 WinDbg 進行偵錯
+      [325] 使用 WinDbg 進行偵錯
+    - 發佈符號
+      [327] 使用 Azure Pipelines 發佈符號
+  - 概念和參考
+    - 重要概念
+      [334] Azure Artifacts 的重要概念
+    - 封裝圖形
+      [336] Azure Artifacts 中的套件圖形
+    - 使用 .artifactignore 檔案
+      [341] 使用 .artifactignore
+    - 元件
+      [343] 使用元件化加速共同作業和敏捷式開發
+  - 開發人員資源
+    - Azure DevOps 開發人員資源
+      [346] 開發人員資源檔
+    - REST API 參考資料
+      [348] Azure DevOps Services REST API 參考

@@ -1,0 +1,83 @@
+- ---< azure-azure-portal.pdf >---
+  - Azure 入口網站文件
+    [1] Azure 入口網站文件
+  - 概觀
+    - 什麼是 Azure 入口網站？
+      [3] 什麼是 Azure 入口網站？
+    - 開始使用 Azure Databricks Center
+      [7] 開始使用 Azure Databricks Center
+    - 支援的瀏覽器和裝置
+      [9] 支援的裝置
+  - 快速入門
+    - 在入口網站中建立 VM
+      [10] 快速入門：在 Azure 入口網站中建立Windows 虛擬機器
+    - 建立儀表板
+      - Azure CLI
+        [16] 快速入門：使用 Azure CLI 建立 Azure 入口網站儀表板
+      - Azure PowerShell
+        [21] 快速入門：使用 PowerShell 建立 Azure入口網站 儀錶板
+      - Bicep
+        [27] 快速入門：使用 Bicep 檔案在 Azure 入口網站中建立儀表板
+      - ARM 範本
+        [31] 快速入門：使用ARM範本在 Azure 入口網站 中建立儀錶板
+  - 操作指南
+    - 管理 Azure 入口網站設定和喜好設定
+      [36] 管理 Azure 入口網站設定和喜好設定
+    - 新增、移除及排序我的最愛
+      [48] 管理我的最愛
+    - 檢視和篩選資源資訊
+      [50] 檢視和篩選 Azure 資源資訊
+    - 尋找訂用帳戶和租用戶識別碼
+      [55] 取得 Azure 入口網站中的訂用帳戶和租用戶識別碼
+    - 建立 Azure 儀表板
+      - 建立 Azure 儀表板
+        [57] 在 Azure 入口網站中建立儀表板
+      - 共用 Azure 儀表板
+        [67] 使用 Azure 角色型存取控制來共用 Azure儀表板
+      - 使用自訂的 Markdown 圖格
+        [71] 在 Azure 儀表板上使用 Markdown 磚以顯示自訂內容
+      - 以程式設計方式建立 Azure 儀表板
+        [74] 以程式設計方式建立 Azure 儀表板
+      - 復原已刪除的儀表板
+        [89] 在 Azure 入口網站中復原已刪除的儀表板
+    - Azure 入口網站操作說明影片系列
+      [91] Azure 入口網站操作說明影片系列
+    - 建立及管理支援要求
+      - 建立 Azure 支援要求
+        [92] 建立 Azure 支援要求
+      - 管理 Azure 支援要求
+        [98] 管理 Azure 支援要求
+      - 擷取瀏覽器追蹤以進行疑難排解
+        [103] 擷取瀏覽器追蹤以進行疑難排解
+  - Azure 行動應用程式
+    - 概觀
+      [112] 什麼是 Azure 行動應用程式?
+    - Azure 行動應用程式首頁
+      [115] Azure 行動應用程式首頁
+    - 警示與通知
+      [120] Azure 行動應用程式的警示和通知
+    - Microsoft Entra ID
+      [127] 搭配 Azure 行動應用程式使用 MicrosoftEntra 識別碼
+    - 了解 Azure
+      [130] 瞭解 Azure 行動應用程式中的 Azure
+  - 參考
+    - 鍵盤快速鍵
+      [136] Azure 入口網站的鍵盤快速鍵
+    - Azure 入口網站 URL
+      [138] 在您的防火牆或 Proxy 伺服器上允許Azure 入口網站 URL
+    - Azure 儀表板結構
+      [142] Azure 儀表板結構
+    - Azure CLI
+      [153] az portal
+    - Azure PowerShell
+      [154] Az.Portal
+    - Azure 原則內建
+      [155] 適用於 Azure 入口網站的 Azure 原則內建定義
+  - 資源
+    - Azure 更新
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - 定價計算機
+    - 區域可用性
+    - Stack Overflow
+    - Azure 影片
+    - 產品意見反應

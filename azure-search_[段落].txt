@@ -1,0 +1,607 @@
+- ---< azure-search.pdf >---
+  - Azure AI Search Documentation
+    [1] Azure AI Search documentation
+  - Overview
+    - What's Azure AI Search?
+      [4] What's Azure AI Search?
+    - New in Search
+      [9] What's new in Azure AI Search
+    - Features
+      [14] Features of Azure AI Search
+    - FAQ
+      [21] General
+  - Quickstarts
+    - Vector search
+      [29] Quickstart: Vector search by using REST
+    - Full text search
+      [50] Quickstart: Full text search using theAzure SDKs
+    - Semantic reranking
+      [65] Quickstart: Semantic ranking with .NETor Python
+    - Chat with your data (Azure OpenAI Studio)
+      [73] Quickstart: Chat with Azure OpenAImodels using your own data
+    - Portal
+      - Create an index
+        [80] Quickstart: Create a search index in theAzure portal
+      - Create a demo app
+        [91] Quickstart: Create a demo app in theAzure portal
+      - Create a skillset
+        [97] Quickstart: Create a skillset in the Azureportal
+      - Create a knowledge store
+        [107] Quickstart: Create a knowledge store inthe Azure portal
+      - Query with Search Explorer
+        [115] Quickstart: Use Search explorer to runqueries in the Azure portal
+    - REST
+      [126] Quickstart: Text search using REST
+    - PowerShell
+      [136] Quickstart: Create a search index inPowerShell by using REST APIs
+    - Deployment
+      - ARM template
+        [148] Quickstart: Deploy Azure AI Searchusing an Azure Resource Managertemplate
+      - Bicep
+        [154] Quickstart: Deploy Azure AI Searchusing Bicep
+      - Terraform
+        [158] Quickstart: Deploy Azure AI Searchservice using Terraform
+  - Tutorials
+    - Add search to static web apps
+      - C#
+        - Overview
+          [164] Step 1 - Overview of adding search to awebsite with .NET
+        - Create a search index
+          [168] Step 2 - Create and load Search Indexwith .NET
+        - Deploy static web app
+          [174] Step 3 - Deploy the search-enabled .NETwebsite
+        - Explore the code
+          [184] Step 4 - Explore the .NET search code
+      - JavaScript
+        - Overview
+          [199] 1 - Overview of adding search to awebsite
+        - Create a search index
+          [203] 2 - Create and load Search Index withJavaScript
+        - Deploy static web app
+          [211] 3 - Deploy the search-enabled website
+        - Explore the code
+          [221] 4 - Explore the JavaScript search code
+      - Python
+        - Overview
+          [237] 1 - Overview of adding search to awebsite with Python
+        - Create a search index
+          [241] 2 - Create and load Search Index withPython
+        - Deploy static web app
+          [250] 3 - Deploy the search-enabled Pythonwebsite
+        - Explore the code
+          [260] 4 - Explore the Python search code
+    - Add search to ASP.NET Core (MVC)
+      [273] Create a search app in ASP.NET Core
+    - Indexing tutorials
+      - Index any data
+        [284] Tutorial: Optimize indexing with thepush API
+      - Index at scale (Apache Spark)
+        [297] Tutorial: Index large data from ApacheSpark using SynapseML and Azure AISearch
+      - Index Azure SQL Database
+        [308] Tutorial: Index Azure SQL data using the.NET SDK
+      - Index Azure JSON blobs
+        [319] Tutorial: Index nested JSON blobs fromAzure Storage using REST
+      - Index multiple Azure data sources
+        [329] Tutorial: Index from multiple datasources using the .NET SDK
+      - Index encrypted blobs
+        [344] Tutorial: Index and enrich encryptedblobs for full-text search in Azure AISearch
+    - Skills tutorials
+      - C#
+        [352] C# Tutorial: Use skillsets to generatesearchable content in Azure AI Search
+      - REST
+        [375] REST Tutorial: Use skillsets to generatesearchable content in Azure AI Search
+      - Debug a skillset
+        [391] Tutorial: Debug a skillset using DebugSessions
+    - Create a custom analyzer
+      [405] Tutorial: Create a custom analyzer forphone numbers
+    - Query from Power Apps
+      [423] Tutorial: Query an Azure AI Search indexfrom Power Apps
+  - Samples
+    - C# samples
+      [439] C# samples for Azure AI Search
+    - Java samples
+      [444] Java samples for Azure AI Search
+    - JavaScript samples
+      [446] JavaScript samples for Azure AI Search
+    - Python samples
+      [449] Python samples for Azure AI Search
+    - REST samples
+      [453] REST samples for Azure AI Search
+  - Concepts
+    - Data
+      - Search index
+        [455] Search indexes in Azure AI Search
+      - Vector store
+        [463] Vector storage in Azure AI Search
+      - Knowledge store
+        [473] Knowledge store in Azure AI Search
+      - Data import strategies
+        [479] Data import in Azure AI Search
+      - Indexers
+        [483] Indexers in Azure AI Search
+    - Applied AI
+      - AI enrichment during indexing
+        [491] AI enrichment in Azure AI Search
+      - Enrichment cache
+        [497] Incremental enrichment and caching inAzure AI Search
+      - Skillsets
+        [504] 
+      - Built-in vectorization (preview)
+        [515] Integrated data chunking andembedding in Azure AI Search
+    - Retrieval
+      - Full-text search
+        [521] Full text search in Azure CognitiveSearch
+      - Vector search
+        [536] Vectors in Azure AI Search
+      - Hybrid search
+        [543] Hybrid search using vectors and full textin Azure AI Search
+      - Retrieval Augmented Generation (RAG)
+        [547] Retrieval Augmented Generation (RAG)in Azure AI Search
+      - Other query types
+        [558] Querying in Azure AI Search
+    - Relevance
+      - Semantic ranking
+        [562] Semantic ranking in Azure AI Search
+      - Keyword queries (BM25 ranking)
+        [568] Relevance scoring for full text search(BM25)
+      - Vector queries
+        [575] Relevance in vector search
+      - Hybrid queries (RRF)
+        [581] Relevance scoring in hybrid search usingReciprocal Rank Fusion (RRF)
+    - Security
+      - Security overview
+        [586] Security overview for Azure AI Search
+      - Secure access to external data
+        [597] Indexer access to content protected byAzure network security
+      - Security controls by Azure Policy
+        [605] Azure Policy Regulatory Compliancecontrols for Azure AI Search
+      - Security baseline
+        [621] Azure security baseline for AzureCognitive Search
+  - How-to guides
+    - Service management
+      - Create a search service
+        [634] Create an Azure AI Search service in theportal
+      - Choose a tier
+        [647] Choose a service tier for Azure AI Search
+      - Service limits
+        [652] 
+      - Plan and manage capacity
+        [664] Estimate and manage capacity of asearch service
+      - Plan and manage costs
+        [675] Plan and manage costs of an Azure AISearch service
+      - Availability and recovery
+        [679] Reliability in Azure AI Search
+      - Availability migration guidance
+        [689] Migrate Azure Cognitive Search toavailability zone support
+      - Multi-tenancy
+        [692] Design patterns for multitenant SaaSapplications and Azure AI Search
+      - Manage in the portal
+        [698] Service administration for Azure AISearch in the Azure portal
+      - Manage with PowerShell
+        [703] Manage your Azure AI Search servicewith PowerShell
+      - Manage with Azure CLI
+        [716] Manage your Azure AI Search servicewith the Azure CLI
+      - Manage with REST
+        [728] Manage your Azure AI Search servicewith REST APIs
+      - Move service across regions
+        [737] Move your Azure AI Search service toanother Azure region
+    - Index management
+      - Create a search index
+        [739] Create an index in Azure CognitiveSearch
+      - Create an index alias
+        [745] Create an index alias in Azure AI Search
+      - Load an index
+        [748] Load data into a search index in AzureAI Search
+      - Index large data sets
+        [751] Index large data sets in Azure AI Search
+      - Drop and rebuild an index
+        [757] Drop and rebuild an index in Azure AISearch
+      - Indexers
+        - Create an indexer
+          [761] Create an indexer in Azure AI Search
+        - Run or reset indexers
+          [769] Run or reset indexers, skills, ordocuments
+        - Schedule an indexer
+          [778] Schedule an indexer in Azure AI Search
+        - Define field mappings
+          [782] Field mappings and transformationsusing Azure AI Search indexers
+        - Portal indexing
+          - Import data wizard
+            [794] Import data wizard in Azure AI Search
+        - Indexing whole files
+          - Content metadata properties
+            [801] 
+          - Index one-to-many
+            [806] Indexing blobs and files to producemultiple search documents
+          - Index plain text
+            [811] Index plain text blobs and files in AzureAI Search
+          - Index CSV
+            [814] Index CSV blobs and files usingdelimitedText parsing mode
+          - Index JSON
+            [817] Index JSON blobs and files in Azure AISearch
+        - Troubleshooting guidance
+          [824] Indexer troubleshooting guidance forAzure AI Search
+        - Troubleshoot indexer errors and warnings
+          [835] Troubleshooting common indexer errorsand warnings in Azure AI Search
+      - Indexer data sources
+        - Data sources gallery
+          [856] Data sources gallery
+        - Azure Storage
+          - Search over blobs
+            [899] Search over Azure Blob Storage content
+          - ADLS Gen2
+            [905] Index data from Azure Data LakeStorage Gen2
+          - Blobs
+            [917] Index data from Azure Blob Storage
+          - Files
+            [929] Index data from Azure Files
+          - Tables
+            [936] Index data from Azure Table Storage
+          - Index changed and deleted content
+            [944] Change and delete detection usingindexers for Azure Storage in Azure AISearch
+        - Azure Cosmos DB
+          - Azure Cosmos DB for NoSQL
+            [949] Import data from Azure Cosmos DB forNoSQL for queries in Azure AI Search
+          - Azure Cosmos DB for MongoDB
+            [960] Import data from Azure Cosmos DB forMongoDB for queries in Azure AI Search
+          - Azure Cosmos DB for Apache Gremlin
+            [969] Import data from Azure Cosmos DB forApache Gremlin for queries in Azure AISearch
+        - Azure DB for MySQL
+          [980] Index data from Azure Database forMySQL flexible server
+        - Azure SQL
+          - Azure SQL Databases
+            [988] How to index data from Azure SQL inAzure AI Search
+          - Azure SQL Managed Instances
+            [1001] Indexer connections to Azure SQLManaged Instance through a publicendpoint
+          - Azure SQL Server VMs
+            [1006] Indexer connections to a SQL Serverinstance on an Azure virtual machine
+        - SharePoint in Microsoft 365
+          [1010] 
+      - Skillsets
+        - Create a skillset
+          [1023] Create a skillset in Azure AI Search
+        - Attach an Azure AI resource
+          [1032] Attach an Azure AI multi-serviceresource to a skillset in Azure AI Search
+        - Create an index projection for a secondary index
+          [1038] Index projections in Azure AI Search
+        - Debug sessions overview
+          [1043] Debug Sessions in Azure AI Search
+        - Debug a skillset
+          [1048] Debug an Azure AI Search skillset inAzure portal
+        - Reference a skill output
+          [1058] Reference a path to enriched nodesusing context and source properties anAzure AI Search skillset
+        - Map to index fields
+          [1064] Map enriched output to fields in asearch index in Azure AI Search
+        - Process image files
+          [1072] Extract text and information fromimages in AI enrichment
+        - Cache (incremental) enrichment
+          [1090] Enable caching for incrementalenrichment in Azure AI Search
+        - Design tips
+          [1096] Tips for AI enrichment in Azure AISearch
+        - Custom skills
+          - Integrate custom skills
+            [1099] Add a custom skill to an Azure AI Searchenrichment pipeline
+          - Scale out custom skills
+            [1104] Efficiently scale out a custom skill
+          - Example - Bing Entity Search
+            [1108] Example: Create a custom skill using theBing Entity Search API
+    - Vector search
+      - Create a vector index
+        [1119] Create a vector store
+      - Query vectors
+        [1128] Create a vector query in Azure AI Search
+      - Filter vectors
+        [1140] Filters in vector queries
+      - Vector quotas and staying under limits
+        [1144] Vector index size and staying underlimits
+      - Configure quantization and storage (preview)
+        [1151] Configure vector quantization andreduced storage for smaller vectors inAzure AI Search
+      - Configure a vectorizer for queries (preview)
+        [1163] Configure a vectorizer in a search index
+      - Chunk documents
+        [1170] Chunking large documents for vectorsearch solutions in Azure AI Search
+      - Generate embeddings
+        [1180] Generate embeddings for search queriesand documents
+      - Chunk and embed in Azure portal (preview)
+        [1183] Quickstart: Integrated vectorization(preview)
+    - Keyword search
+      - Full text query
+        [1192] Create a full-text query in Azure AISearch
+      - Semantic query
+        [1198] Create a semantic query in Azure AISearch
+      - Typeahead query
+        [1202] Add autocomplete and searchsuggestions in client apps
+      - Query examples (simple syntax)
+        [1210] Examples of "simple" search queries inAzure AI Search
+      - Add spell check
+        [1224] Add spell check to queries in Azure AISearch
+      - Add synonyms
+        [1228] Synonyms in Azure AI Search
+      - Add a suggester for typeahead
+        [1234] Configure a suggester for autocompleteand suggested matches in a query
+      - Design a multilingual index
+        [1240] Create an index for multiple languagesin Azure AI Search
+      - Model complex data types
+        [1246] Model complex data types in Azure AISearch
+      - Model relational data
+        [1255] How to model relational SQL data forimport and indexing in Azure AI Search
+      - Analyzers
+        - Analyzers overview
+          [1262] Analyzers for text processing in AzureCognitive Search
+        - Add a language analyzer
+          [1273] Add language analyzers to string fieldsin an Azure Cognitive Search index
+        - Add a custom analyzer
+          [1279] Add custom analyzers to string fields inan Azure AI Search index
+      - Filters
+        - Filters in text queries
+          [1309] Filters in text queries
+        - Add faceted navigation
+          [1316] Add faceted navigation to a search app
+        - Understand collection filters
+          [1326] Understand how OData collection filterswork in Azure AI Search
+        - Troubleshoot collection filters
+          [1332] Troubleshooting OData collection filtersin Azure AI Search
+        - Normalize text for filters
+          [1342] Text normalization for case-insensitivefiltering, faceting and sorting
+      - Search results
+        - Paging, sorting, and formatting
+          [1349] How to work with search results inAzure Cognitive Search
+        - Return a semantic answer
+          [1361] Return a semantic answer in Azure AISearch
+      - Relevance
+        - Enable or disable semantic ranking
+          [1366] Enable or disable semantic ranker
+        - Configure semantic ranking
+          [1369] Configure semantic ranking and returncaptions in search results
+        - Configure BM25 ranking
+          [1373] Configure BM25 relevance scoring
+        - Add a scoring profile
+          [1377] Add scoring profiles to boost searchscores
+      - Advanced queries
+        - Use full Lucene (examples)
+          [1389] Examples of "full" Lucene search syntax(advanced queries in Azure AI Search)
+        - Partial terms and special characters
+          [1399] Partial term search and patterns withspecial characters (hyphens, wildcard,regex, patterns)
+        - Fuzzy search
+          [1408] Fuzzy search to correct misspellings andtypos
+    - Hybrid search
+      [1414] Create a hybrid query in Azure AI Search
+    - Security
+      - Inbound connections
+        - Connect using API keys
+          [1422] Connect to Azure AI Search using keyauthentication
+        - Connect using Azure roles
+          [1428] Connect to Azure AI Search using Azurerole-based access control
+        - Configure apps for Microsoft Entra ID
+          [1439] Authorize access to a search app usingMicrosoft Entra ID
+        - Configure an IP firewall
+          [1445] Configure an IP firewall for Azure AISearch
+        - Create a private endpoint
+          [1448] Create a Private Endpoint for a secureconnection to Azure AI Search
+        - Troubleshoot private connections
+          [1457] Troubleshoot issues with Shared PrivateLinks in Azure AI Search
+      - Outbound connections
+        - Connect as a trusted service
+          [1465] Make indexer connections to AzureStorage as a trusted service
+        - Connect using a managed identity
+          - Any Azure resource
+            [1470] Connect a search service to other Azureresources using a managed identity
+          - Azure Storage
+            [1481] Set up an indexer connection to AzureStorage using a managed identity
+          - Azure Cosmos DB
+            [1486] Set up an indexer connection to AzureCosmos DB via a managed identity
+          - SQL Database
+            [1492] Set up an indexer connection to AzureSQL using a managed identity
+          - SQL Managed Instance
+            [1500] Set up an indexer connection to AzureSQL Managed Instance using amanaged identity
+        - Connect through a firewall
+          [1507] Configure IP firewall rules to allowindexer connections from Azure AISearch
+        - Connect through a shared private link
+          [1513] Make outbound connections through ashared private link
+        - Connect to a SQL managed instance private endpoint
+          [1526] Create a shared private link for a SQLmanaged instance from Azure AI Search
+      - Data encryption
+        - Customer-managed keys
+          [1533] Configure customer-managed keys fordata encryption in Azure AI Search
+        - Find encrypted objects
+          [1548] Find encrypted objects and information
+      - Document-level security
+        - Security filters
+          [1551] Security filters for trimming results inAzure AI Search
+        - Security filters with Microsoft Entra ID
+          [1557] Security filters for trimming Azure AISearch results using Microsoft Entratenants and identities
+    - Development
+      - API versions
+        [1563] API versions in Azure AI Search
+      - Preview features
+        [1566] Preview features in Azure AI Search
+      - Handle concurrent updates
+        [1572] Manage concurrency in Azure AI Search
+      - Develop in .NET
+        [1577] How to use Azure.Search.Documents ina C# .NET Application
+      - Upgrade .NET libraries
+        [1595] Upgrade to Azure Cognitive Search .NETSDK version 11
+      - Manage with Azure SDKs
+        [1604] Upgrade versions of the Azure Search.NET Management SDK
+      - Upgrade the REST API
+        [1606] Upgrade to the latest REST API in AzureAI Search
+    - Monitoring and performance
+      - Monitor
+        [1616] Monitor Azure AI Search
+      - Monitor queries
+        [1625] Monitor query requests in Azure AISearch
+      - Monitor indexer-based indexing
+        [1633] Monitor indexer status and results inAzure AI Search
+      - Monitor client-side interactions
+        [1643] Collect telemetry data for search trafficanalytics
+      - Visualize resource logs
+        [1650] Visualize Azure AI Search Logs andMetrics with Power BI
+      - Performance analysis
+        [1656] Analyze performance in Azure CognitiveSearch
+      - Performance benchmarks
+        [1666] Azure AI Search performancebenchmarks
+      - Tips for better performance
+        [1676] Tips for better performance in Azure AISearch
+    - Knowledge store
+      - Knowledge store overview
+        [1683] Knowledge store in Azure AI Search
+      - Knowledge store projections overview
+        [1689] Knowledge store "projections" in AzureAI Search
+      - Create using REST
+        [1696] Create a knowledge store using REST
+      - Shape data
+        [1709] Shaping data for projection into aknowledge store
+      - Define projections
+        [1716] Define projections in a knowledge store
+      - Projection example
+        [1725] Detailed example of shapes andprojections in a knowledge store
+      - Connect with Power BI
+        [1740] Connect a knowledge store with PowerBI
+  - Responsible AI
+    - Transparency note
+      [1746] Transparency note: Azure AI Search
+  - Reference
+    - REST
+      - Search REST API
+        [1750] Azure AI Search REST API reference
+      - Management REST API
+        [1754] Management REST API reference (AzureAI Search)
+    - .NET
+      - Azure.Search.Documents
+        [1757] Azure AI Search client library for .NET -version 11.5.1
+      - Azure.ResourceManager.Search
+        [1772] Microsoft Azure AI Search managementclient library for .NET
+    - Java
+      - com.azure.search.documents
+        [1775] Azure Cognitive Search client library forJava - version 11.6.4
+      - com.azure.resourcemanager.search
+        [1790] Management
+    - JavaScript
+      - azure/search-documents
+        [1791] Azure AI Search client library forJavaScript - version 12.0.0
+      - azure/arm-search
+        [1804] @azure/arm-search package
+    - Python
+      - azure-search-documents
+        [1815] Azure AI Search client library for Python- version 11.4.0
+      - azure-mgmt-search
+        [1826] search Package
+    - Resource management
+      - Azure CLI
+        [1827] az search
+      - Azure PowerShell
+        [1830] Az.Search
+      - Azure Resource Manager template
+        [1832] Microsoft.Search searchServices
+      - Azure Policy built-ins
+        [1838] Azure Policy built-in definitions forAzure Cognitive Search
+      - Monitoring data reference
+        [1841] 
+    - Data type reference
+      [1849] Supported data types (Azure AI Search)
+    - Data types for indexer data sources
+      [1853] Data type map for indexers (Azure AISearch)
+    - Stopwords reference
+      [1856] Stopwords reference (Microsoftanalyzers)
+    - OData language reference
+      - Overview
+        [1867] OData language overview for $filter ,
+$orderby , and $select  in Azure AI
+Search
+      - $filter
+        [1875] OData $filter syntax in Azure AI Search
+      - $orderby
+        [1883] OData $orderby syntax in Azure AISearch
+      - $select
+        [1886] OData $select syntax in Azure AI Search
+      - any, all
+        [1889] OData collection operators in Azure AISearch - any  and all
+      - eq, ne, gt, lt, ge, le
+        [1893] OData comparison operators in Azure AISearch - eq , ne , gt , lt , ge , and le
+      - search.ismatch, search.ismatchscoring
+        [1898] OData full-text search functions inAzure AI Search - search.ismatch  and
+      - geo.distance, geo.intersects
+        [1902] OData geo-spatial functions in Azure AISearch - geo.distance  and
+      - and, or, not
+        [1907] OData logical operators in Azure AISearch - and , or , not
+      - search.in
+        [1911] OData search.in  function in Azure AISearch
+      - search.score
+        [1915] OData search.score  function in AzureAI Search
+      - OData Language Grammar
+        [1917] OData expression syntax reference forAzure AI Search
+    - Query syntax reference
+      - Simple query syntax
+        [1922] Simple query syntax in Azure AI Search
+      - Full Lucene query syntax
+        [1928] Lucene query syntax in Azure AI Search
+      - moreLikeThis (preview)
+        [1938] moreLikeThis (preview) in Azure AISearch
+    - Skills reference
+      - Overview
+        [1941] Skills for extra processing duringindexing (Azure AI Search)
+      - Annotation reference language
+        [1945] Skill context and input annotationlanguage
+      - Azure AI resource skills
+        - Custom Entity Lookup
+          [1955] Custom Entity Lookup cognitive skill
+        - Entity Linking (v3)
+          [1967] Entity Linking cognitive skill (v3)
+        - Entity Recognition (v3)
+          [1971] Entity Recognition cognitive skill (v3)
+        - Image Analysis
+          [1976] Image Analysis cognitive skill
+        - Key Phrase Extraction
+          [1993] Key Phrase Extraction cognitive skill
+        - Language Detection
+          [1997] Language detection cognitive skill
+        - OCR
+          [2001] OCR cognitive skill
+        - PII Detection
+          [2007] Personally Identifiable Information (PII)Detection cognitive skill
+        - Sentiment (v3)
+          [2012] Sentiment cognitive skill (v3)
+        - Text Translation
+          [2018] Text Translation cognitive skill
+      - Azure AI Search utility skills (nonbillable)
+        - Conditional
+          [2023] Conditional cognitive skill
+        - Document Extraction
+          [2029] Document Extraction cognitive skill
+        - Shaper
+          [2035] Shaper cognitive skill
+        - Text Merger
+          [2042] Text Merge cognitive skill
+        - Text Split
+          [2046] Text split cognitive skill
+      - Azure OpenAI skills
+        - Azure OpenAI Embedding
+          [2053] Azure OpenAI Embedding skill
+      - Custom skills
+        - Azure Machine Learning (AML)
+          [2058] AML skill in an Azure Cognitive Searchenrichment pipeline
+        - Custom Web API
+          [2064] Custom Web API skill in an Azure AISearch enrichment pipeline
+      - Deprecated skills
+        [2071] Deprecated Cognitive Skills in Azure AISearch
+        - Named Entity Recognition (v2)
+          [2085] Named Entity Recognition cognitive skill(v2)
+        - Entity Recognition (v2)
+          [2090] Entity Recognition cognitive skill (v2)
+        - Sentiment (v2)
+          [2096] Sentiment cognitive skill (v2)
+  - Resources
+    - Stack Overflow
+    - Pricing
+    - Products by Region
+    - Demo sites
+      [2100] Demos - Azure AI Search
+    - Tools and Accelerators
+      [2101] Productivity tools - Azure AI Search
+    - Training
+      [2102] Training - Azure AI Search
+    - Partner solutions
+      - Partner spotlight
+        [2103] Partner spotlight
+      - Partner data sources (Terms of Use)
+        [2105] Terms of Use: Partner data sources

@@ -1,0 +1,436 @@
+- ---< azure-azure-netapp-files.pdf >---
+  - Azure NetApp Files 檔
+    [1] Azure NetApp Files 檔
+  - 概觀
+    - 什麼是 Azure NetApp Files
+      [3] 什麼是 Azure NetApp Files？
+    - 最新功能
+      [8] Azure NetApp Files 的新功能
+    - 適用於 Azure Government 的 Azure NetApp Files
+      [32] 適用於 Azure Government 的 AzureNetApp Files
+  - 快速入門
+    - 設定 Azure NetApp Files 並建立 NFS 磁碟區
+      [36] 快速入門：設定 Azure NetApp Files 並建立 NFS 磁碟區
+  - 概念
+    - 磁碟區即服務
+      - 瞭解 NAS
+        [46] 瞭解 Azure NetApp Files 中的 NAS 概念
+      - 瞭解 NAS 通訊協定
+        [48] 瞭解 Azure NetApp Files 中的 NAS 通訊協定
+      - 瞭解 NAS 許可權
+        - 瞭解 NAS 共用許可權
+          [55] 瞭解 Azure NetApp Files 中的 NAS 共用許可權
+        - 瞭解 NAS 檔案許可權
+          [64] 瞭解 Azure NetApp Files 中的 NAS 檔案許可權
+        - 瞭解SMB檔案許可權
+          [66] 瞭解 Azure NetApp Files 中的 SMB 檔案許可權
+        - 瞭解 NFS 許可權
+          - 瞭解模式位
+            [67] 瞭解 Azure NetApp Files 中的模式位
+          - 了解輔助/補充群組
+            [75] 瞭解 Azure NetApp Files 中使用 NFS 的輔助/補充群組
+          - 瞭解 NFSv4.x 存取控制清單
+            [78] 瞭解 Azure NetApp Files 中的 NFSv4.x存取控制清單
+      - 瞭解雙重通訊協定安全性樣式和許可權行為
+        [93] 瞭解 Azure NetApp Files 中的雙重通訊協定安全性樣式和許可權行為
+      - 了解數據加密
+        [98] 瞭解 Azure NetApp Files 中的數據加密
+      - 瞭解 Active Directory 網域服務 的指導方針
+        [105] 瞭解 Azure NetApp Files ActiveDirectory 網域服務 網站設計和規劃的指導方針
+      - 瞭解LDAP的使用
+        [117] 瞭解LDAP與 Azure NetApp Files 的使用
+      - 瞭解 NFS 群組成員資格和補充群組
+        [124] 瞭解 NFS 群組成員資格和補充群組
+      - 瞭解檔案鎖定
+        [128] 瞭解 Azure NetApp Files 中的檔案鎖定和鎖定類型
+      - 瞭解磁碟區語言
+        [131] 瞭解 Azure NetApp Files 中的磁碟區語言
+      - 瞭解檔案路徑長度
+        [155] 瞭解 Azure NetApp Files 中的路徑長度
+    - Azure NetApp Files 基本概念
+      - Azure NetApp Files 的儲存體階層
+        [163] Azure NetApp Files 的儲存體階層
+      - Azure NetApp Files 的服務等級
+        [166] Azure NetApp Files 的服務等級
+      - 適用於 Azure NetApp Files 網路方案的指導方針
+        [169] 適用於 Azure NetApp Files 網路方案的指導方針
+      - Azure NetApp Files 的資源限制
+        [176] Azure NetApp Files 的資源限制
+      - 監視 Azure NetApp Files 的方式
+        [183] 監視 Azure NetApp Files 的方式
+      - Azure NetApp Files 的計量
+        [185] Azure NetApp Files 的計量
+      - Azure NetApp Files 的 Azure 原則定義
+        [191] Azure NetApp Files 的 Azure 原則定義
+      - 儲存體 服務附加元件
+        [193] Azure NetApp Files 的服務附加元件 儲存體
+    - 成本最佳化
+      - 適用於Azure NetApp Files 的成本模型
+        [194] 適用於Azure NetApp Files 的成本模型
+      - 具有非經常性存取的標準記憶體
+        [200] Azure NetApp Files 中具有非經常性存取的標準記憶體
+    - 配額
+      - 了解磁碟區配額
+        [213] 了解磁碟區配額
+      - 瞭解磁碟區硬式配額
+        [214] 變更為磁碟區硬配額對 Azure NetAppFiles 服務的意義
+      - 區域容量配額
+        [227] Azure NetApp Files 的區域容量配額
+      - 了解預設和個別的使用者與群組配額
+        [229] 了解預設和個別的使用者與群組配額
+      - 大型磁碟區的需求及考量
+        [237] 大型磁碟區的需求和考慮 （預覽）
+    - 效能
+      - 適用於 Azure NetApp Files 的效能考量
+        [240] 適用於 Azure NetApp Files 的效能考量
+      - Azure NetApp Files 的效能基準檢驗建議
+        [243] Azure NetApp Files 的效能基準檢驗建議
+      - Linux 的效能評定
+        [248] 適用於Linux的 Azure NetApp Files 效能基準檢驗
+      - 適用於Linux的大型磁碟區效能基準檢驗
+        [253] 適用於Linux的 Azure NetApp Files 大型磁碟區效能基準檢驗
+      - Kerberos 對 NFSv4.1 的效能影響
+        [258] Kerberos 對 Azure NetApp Files NFSv4.1磁片區的效能影響
+      - Azure NetApp Files 單一磁碟區上的 Oracle 資料庫效能
+        [260] Azure NetApp Files 單一磁碟區上的Oracle 資料庫效能
+      - Azure NetApp Files 上多個磁碟區的 Oracle 資料庫效能
+        [268] Azure NetApp Files 上多個磁碟區的Oracle 資料庫效能
+      - AVS 的 Azure NetApp Files 資料存放區效能基準檢驗
+        [285] 適用於 Azure VMware 解決方案的 AzureNetApp Files 資料存放區效能基準檢驗
+      - Azure NetApp Files 的 AVS 資料存放區效能考慮
+        [290] Azure VMware 解決方案 Azure NetAppFiles 的數據存放區效能考慮
+      - Azure NetApp Files 的效能參考
+        - Linux 直接 I/O 最佳做法
+          [299] Azure NetApp Files 的 Linux 直接 I/O 最佳做法
+        - Linux 文件系統快取最佳做法
+          [301] Azure NetApp Files 的 Linux 檔案系統快取最佳做法
+        - Linux NFS 掛接選項最佳做法
+          [304] Azure NetApp Files 的 Linux NFS 掛接選項最佳做法
+        - Linux 並行最佳做法
+          [310] Azure NetApp Files 的 Linux 並行最佳做法 - 會話位置與位置數據表專案
+        - Linux NFS 讀取前的最佳作法
+          [319] Azure NetApp Files 的 Linux NFS 讀取前最佳做法
+        - SMB 效能最佳做法
+          [322] Azure NetApp Files 的 SMB 效能最佳做法
+        - Azure 虛擬機 SKU 的最佳做法
+          [330] Azure NetApp Files 的 Azure 虛擬機器SKU 最佳做法
+    - 應用程式磁碟區群組
+      - 瞭解應用程式磁碟區群組
+        [333] 了解 Azure NetApp Files 應用程式磁碟區群組
+      - SAP HANA 的應用程式磁碟區群組
+        - 瞭解 SAP HANA 的應用程式磁碟區群組
+          [338] 了解 SAP HANA 的 Azure NetApp Files應用程式磁碟區群組
+        - SAP HANA 的應用程式磁碟區群組的需求和考量
+          [340] SAP HANA 的應用程式磁碟區群組的需求和考量
+      - Oracle 的應用程式磁碟區群組
+        - 瞭解 Oracle 的應用程式磁碟區群組
+          [344] 瞭解 Oracle 的 Azure NetApp Files 應用程式磁碟區群組
+        - Oracle 應用程式磁碟區群組的需求和考慮
+          [348] Oracle 應用程式磁碟區群組的需求和考慮
+    - 數據保護和復原能力
+      - 了解數據保護和災害復原選項
+        [350] 瞭解 Azure NetApp Files 中的資料保護和災害復原選項
+      - Azure NetApp Files 快照集的工作方式
+        [353] Azure NetApp Files 快照集的工作方式
+      - Azure NetApp Files 備份
+        - 了解 Azure NetApp Files 備份
+          [368] 瞭解 Azure NetApp Files 備份 （預覽）
+        - Azure NetApp Files 備份的需求和考慮
+          [371] Azure NetApp Files 備份的需求和考慮
+      - 使用跨區域復寫進行災害復原
+        - 瞭解跨區域複寫
+          [373] Azure NetApp Files 磁碟區的跨區域複寫
+        - 跨區域復寫的需求和考慮
+          [378] 使用跨區域複寫的需求和考量
+      - 具有可用性區域和跨區域複寫的高可用性和復原能力
+        - 使用可用性區域進行高可用性
+          [380] 使用可用性區域在 Azure NetApp Files 中取得高可用性 （預覽）
+        - 瞭解跨區域複寫
+          [383] 瞭解 Azure NetApp Files 的跨區域複寫（預覽）
+        - 跨區域復寫的需求和考慮
+          [385] 使用跨區域復寫的需求和考慮
+      - Azure 應用程式 一致快照集 （AzAcSnap） 工具
+        - 什麼是 AzAcSnap？
+          [387] 什麼是 Azure 應用程式 一致快照集工具？
+        - AzAcSnap 的版本資訊
+          [392] Azure 應用程式 一致快照集工具的版本資訊
+        - 開始使用 AzAcSnap
+          [400] 開始使用Azure 應用程式一致快照集工具
+        - 安裝 AzAcSnap
+          [405] 安裝Azure 應用程式一致快照集工具
+        - 使用 AzAcSnap 進行災害復原
+          [423] 使用Azure 應用程式一致快照集工具進行災害復原
+        - 使用 AzAcSnap 的 提示 和訣竅
+          [432] 使用 Azure 應用程式一致快照集工具的秘訣與技巧
+        - 針對 AzAcSnap 進行疑難解答
+          [446] 針對 Azure 應用程式 一致快照集進行疑難解答 （AzAcSnap） 工具
+        - AzAcSnap 的預覽版本功能
+          [456] Azure 應用程式一致快照集工具的預覽功能
+    - 解決方案和優點
+      - 使用 Azure NetApp Files 的解決方案架構
+        [466] 使用 Azure NetApp Files 的解決方案架構
+      - 使用 Azure NetApp Files 的優點
+        - 搭配 Oracle 資料庫使用 Azure NetApp Files 的優點
+          [474] 搭配 Oracle 資料庫使用 Azure NetAppFiles 的優點
+        - 使用 Azure NetApp Files 進行電子設計自動化的優點 （EDA）
+          [476] 使用 Azure NetApp Files 進行電子設計自動化的優點 （EDA）
+        - 搭配 Azure 虛擬桌面使用 Azure NetApp Files 的優點
+          [482] 搭配 Azure 虛擬桌面使用 Azure NetAppFiles 的優點
+        - 使用 Azure NetApp Files 部署 SQL Server 的優點
+          [485] 使用 Azure NetApp Files 部署 SQLServer 的優點
+    - 安全性
+      - 安全性基準
+        [490] 適用于 Azure NetApp Files 的 Azure 安全性基準
+  - 操作指南
+    - 註冊並設定
+      - 註冊 NetApp 資源提供者
+        [500] 註冊 NetApp 資源提供者
+      - 建立 NetApp 帳戶
+        [502] 建立 NetApp 帳戶
+      - 將子網路委派至 Azure NetApp Files
+        [505] 將子網路委派至 Azure NetApp Files
+      - 要求區域存取
+        [507] 要求 Azure NetApp Files 的區域存取權
+    - 管理 Azure Active Directory
+      - 建立和管理 Active Directory 連線
+        [510] 建立和管理 Azure NetApp Files 的 ActiveDirectory 連線
+      - 修改 Active Directory 連線
+        [525] 修改 Azure NetApp Files 的 ActiveDirectory 連線
+      - 設定 NFS 磁碟區的 AD DS LDAP 驗證
+        [530] 針對 Azure NetApp Files 設定 AD DSLDAP over TLS
+      - 將 Linux VM 加入 Active Directory 網域
+        [535] 將 Linux VM 加入 Microsoft Entra 網域
+    - 管理容量集區
+      - 設定容量集區
+        [537] 建立 Azure NetApp Files 的容量集區
+      - 管理手動 QoS 容量集區
+        [542] 管理手動 QoS 容量集區
+      - 使用標籤管理帳單
+        [545] 使用容量集區計費標籤來管理計費
+    - 管理磁碟區
+      - 管理 NFS 磁碟區
+        - 建立 NFS 磁碟區
+          [549] 建立適用於 Azure NetApp Files 的 NFS磁碟區
+        - 設定 NFSv4.1 標識符網域
+          [555] 設定 Azure NetApp Files 的 NFSv4.1 標識符網域
+        - 設定 NFSv4.1 Kerberos 加密
+          [561] 設定 Azure NetApp Files 的 NFSv 4.1Kerberos 加密
+        - 使用 NFS 的擴充群組設定 AD DS LDAP
+          [566] 啟用 NFS 磁碟區的 Active Directory 網域服務 （AD DS） LDAP 驗證
+        - 設定 Azure NetApp Files 的 NFS 用戶端
+          [573] 設定 Azure NetApp Files 的 NFS 用戶端
+        - 在 NFSv3 與 NFSv4.1 之間轉換 NFS 磁碟區
+          [581] 在 NFSv3 與 NFSv4.1 之間轉換 NFS 磁碟區
+        - 停用 showmount
+          [586] 停用 Azure NetApp Files 中的showmount （預覽）
+      - 管理SMB磁碟區
+        - 建立SMB磁碟區
+          [588] 建立適用於 Azure NetApp Files 的 SMB磁碟區
+        - 於現有 SMB 磁碟區啟用持續可用性
+          [597] 於現有 SMB 磁碟區啟用持續可用性
+        - 搭配 Azure NetApp Files 使用 DFS-N 和 DFS 根匯總
+          [599] 如何搭配 Azure NetApp Files 使用 DFS命名空間
+      - 管理雙通訊協定磁碟區
+        - 建立雙重通訊協定磁碟區
+          [614] 建立 Azure NetApp Files 的雙重通訊協定磁碟區
+      - 管理磁碟區存取和加密
+        - 設定 NFS 或雙重通訊協議的導出原則
+          [626] 設定 NFS 或雙重通訊協定磁碟區的匯出原則
+        - 設定 Unix 許可權並變更擁有權模式
+          [629] 設定 Unix 權限，以及變更 NFS 和雙重通訊協定磁碟區的所有權模式
+        - 設定 NFSv4.1 的訪問控制清單
+          [632] 在 Azure NetApp Files 的 NFSv4.1 磁碟區上設定訪問控制清單
+        - 在 Azure NetApp Files 中管理 SMB 共用 ACL
+          [634] 在 Azure NetApp Files 中管理 SMB 共用ACL
+        - 設定磁碟區的網路功能
+          [639] 設定 Azure NetApp Files 磁碟區的網路功能
+        - 設定客戶管理的金鑰
+          [652] 
+        - 設定虛擬 WAN
+          [663] 設定 Azure NetApp Files 的虛擬 WAN
+      - 掛接磁碟區
+        - 為 Windows 或 Linux VM 掛接 NFS 磁碟區
+          [669] 掛接 Linux 或 Windows VM 的 NFS 磁碟區
+        - 為 Windows VM 掛接 SMB 磁碟區
+          [673] 掛接 Windows VM 的 SMB 磁碟區
+        - 從已加入 Microsoft Entra 的 Windows VM 存取 SMB 磁碟區
+          [674] 從加入 Microsoft Entra 的 Windows 虛擬機存取 SMB 磁碟區
+      - 管理磁碟區容量和效能
+        - 監視磁碟區的容量
+          [684] 監視磁碟區的容量
+        - 調整容量集區或磁碟區的大小
+          [687] 調整容量集區或磁碟區的大小
+        - 動態變更磁碟區的服務等級
+          [692] 動態變更磁碟區的服務等級
+        - 管理磁碟區的預設和個別使用者和群組配額
+          [694] 管理磁碟區的預設和個別使用者和群組配額
+        - 使用非經常性存取管理標準記憶體
+          [698] 使用非經常性存取管理 Azure NetAppFiles 標準記憶體
+      - 更新 Terraform 管理的磁碟區
+        [705] 在 Terraform 外部更新由 Terraform 管理的 Azure 資源
+    - 管理應用程式磁碟區群組
+      - 管理 SAP HANA 的應用程式磁碟區群組
+        - 部署第一個 SAP HANA 主機
+          [707] 使用 SAP HANA 的應用程式磁碟區群組部署第一個 SAP HANA 主機
+        - 將主機新增至多主機 SAP HANA 系統
+          [715] 使用 SAP HANA 的應用程式磁碟區群組，將主機新增至多主機 SAP HANA 系統
+        - 在 HSR 中將 SAP HANA 系統的磁碟區新增為次要資料庫
+          [719] 將 SAP HANA 系統的磁碟區新增為 HSR的次要資料庫
+        - 將 SAP HANA 系統的磁碟區新增為 DR 系統
+          [725] 使用跨區域復寫，將 SAP HANA 系統的磁碟區新增為DR系統
+        - 管理 SAP HANA 應用程式磁碟區群組中的磁碟區
+          [733] 管理應用程式磁碟區群組中的磁碟區
+        - 使用 REST API 設定 SAP HANA 的應用程式磁碟區群組
+          [736] 使用 REST API 設定 SAP HANA 的應用程式磁碟區群組
+      - 管理 Oracle 的應用程式磁碟區群組
+        - 部署 Oracle 的應用程式磁碟區群組
+          [765] 部署 Oracle 的應用程式磁碟區群組
+        - 管理 Oracle 應用程式磁碟區群組中的磁碟區
+          [775] 管理 Oracle 應用程式磁碟區群組中的磁碟區
+        - 使用 REST API 設定 Oracle 的應用程式磁碟區群組
+          [777] 使用 REST API 設定 Oracle 的應用程式磁碟區群組
+        - 使用 Azure Resource Manager 部署 Oracle 的應用程式磁碟區群組
+          [803] 使用 Azure Resource Manager 部署Oracle 的應用程式磁碟區群組
+      - 刪除應用程式磁碟區群組
+        [811] 刪除應用程式磁碟區群組
+    - 管理數據保護
+      - 管理磁碟區快照集
+        - 建立隨選快照集
+          [812] 建立磁碟區的隨選快照集
+        - 管理快照集原則
+          [814] 使用 Azure NetApp Files 管理快照集原則
+        - 編輯隱藏快照集路徑
+          [823] 編輯 Azure NetApp Files 的 [隱藏快照集路徑] 選項
+        - 將快照集還原至新的磁碟區
+          [824] 使用 Azure NetApp Files 將快照集還原至新的磁碟區
+        - 使用單一檔案快照集還原還原個別檔案
+          [826] 使用單一檔案快照集還原還原個別檔案
+        - 使用用戶端從快照集還原檔案
+          [831] 使用具有 Azure NetApp Files 的用戶端，從快照集中還原檔案
+        - 使用快照集還原還原磁碟區
+          [835] 使用快照集還原與 Azure NetApp Files 還原磁碟區
+        - 刪除快照集
+          [838] 使用 Azure NetApp Files 刪除快照集
+      - 管理磁碟區備份
+        - 設定備份
+          - 設定以原則為基礎的備份
+            [840] 設定 Azure NetApp Files 的原則型備份
+          - 設定手動備份
+            [846] 設定 Azure NetApp Files 的手動備份
+        - 管理備份保存庫
+          [851] 管理 Azure NetApp Files 的備份儲存庫（預覽）
+        - 管理備份原則
+          [854] 管理 Azure NetApp Files 的備份原則
+        - 搜尋備份
+          [858] 搜尋 Azure NetApp Files 磁碟區的備份
+        - 還原備份
+          [860] 將備份還原至新的磁碟區
+        - 刪除備份
+          [863] 刪除磁碟區的備份
+      - 管理複寫
+        - 建立跨區域複寫
+          [865] 建立 Azure NetApp Files 的磁碟區覆寫
+        - 顯示複寫關聯性的健全狀況和監視狀態
+          [870] 顯示複寫關聯性的健全狀況和監視狀態
+        - 管理災害復原
+          [873] 使用 Azure NetApp Files 管理災害復原
+        - 刪除磁碟區複寫或磁碟區
+          [877] 刪除磁碟區複寫或磁碟區
+        - 重新建立磁碟區復寫關聯性
+          [880] 在 Azure NetApp Files 中重新建立已刪除的磁片區複寫關聯性 （預覽）
+        - 使用跨區域複寫測試災害復原
+          [883] 使用 Azure NetApp Files 的跨區域複寫測試災害復原
+      - 管理可用性區域和跨區域複寫
+        - 管理可用性區域磁碟區放置
+          [885] 管理 Azure NetApp Files 的可用性區域磁碟區放置
+        - 建立跨區域複寫
+          [894] 建立 Azure NetApp Files 的跨區域複寫關聯性
+    - 開發
+      - REST API
+        [899] 使用 REST API 為 Azure NetApp Files 進行開發
+      - 使用 PowerShell 的 REST API
+        [905] 使用 PowerShell 使用 REST API 開發Azure NetApp Files
+      - SDK、CLI 工具和 ARM 範本
+        [916] Azure NetApp Files SDK、CLI 工具和ARM 範本
+    - 疑難排解
+      - 使用診斷和解決問題工具進行疑難解答
+        [918] 使用診斷和解決問題工具對 AzureNetApp Files 進行疑難解答
+      - 針對容量集區錯誤進行疑難排解
+        [922] 針對容量集區錯誤進行疑難排解
+      - 針對磁碟區錯誤進行疑難排解
+        [924] 針對 Azure NetApp Files 的磁碟區錯誤進行疑難排解
+      - 針對應用程式磁碟區群組錯誤進行疑難排解
+        [935] 針對應用程式磁碟區群組錯誤進行疑難排解
+      - 針對快照集原則錯誤進行疑難排解
+        [937] 針對快照集原則錯誤進行疑難排解
+      - 針對跨區域復寫錯誤進行疑難解答
+        [938] 針對跨區域複寫錯誤進行疑難排解
+      - 針對資源提供者錯誤進行疑難解答
+        [941] 針對 Azure NetApp Files 資源提供者錯誤進行疑難排解
+      - 針對LDAP磁碟區上的使用者存取進行疑難解答
+        [958] 針對LDAP磁碟區上的使用者存取進行疑難解答
+      - 針對檔案鎖定進行疑難解答
+        [959] 疑難排解 Azure NetApp Files 磁碟區上的檔案鎖定
+  - 常見問題集
+    - 網路常見問題
+      [961] Azure NetApp Files 的網路常見問題
+    - 容量管理常見問題集
+      [963] Azure NetApp Files 的容量管理常見問題
+    - NFS 常見問題
+      [965] Azure NetApp Files 的 NFS 常見問題集
+    - SMB 常見問題集
+      [970] 適用於 Azure NetApp Files 的 SMB 常見問題
+    - 效能常見問題集
+      [976] Azure NetApp Files 的效能常見問題集
+    - 應用程式復原常見問題
+      [979] Azure NetApp Files 的應用程式復原能力常見問題
+    - 數據遷移和保護常見問題
+      [983] Azure NetApp Files 的資料移轉和保護常見問題
+    - 應用程式磁碟區群組常見問題集
+      [986] Azure NetApp Files 應用程式磁碟區群組常見問題
+    - Azure NetApp Files 備份常見問題
+      [995] Azure NetApp Files 備份常見問題
+    - 安全性常見問題集
+      [997] Azure NetApp Files 的安全性常見問題
+    - 整合常見問題
+      [1000] Azure NetApp Files 的整合常見問題
+  - 參考
+    - REST
+      [1002] Azure NetApp Files REST API
+    - Resource Manager 範本
+      [1003] Microsoft.NetApp 資源類型
+    - Azure CLI
+      [1010] az netappfiles
+    - 使用 Terraform Cloud 和 AzAPI 提供者管理預覽功能
+    - 使用自動掛接自動掛接自動 NFS 磁碟區故障轉移
+    - AzAcSnap 命令參考
+      - -c configure
+        [1031] 設定Azure 應用程式一致快照集工具
+      - -c 測試
+        [1036] 測試Azure 應用程式一致快照集工具
+      - -c 備份
+        [1038] 使用Azure 應用程式一致快照集工具進行備份
+      - -c 詳細數據
+        [1044] 使用Azure 應用程式一致快照集工具取得詳細資料
+      - -c delete
+        [1050] 使用Azure 應用程式一致快照集工具刪除
+      - -c restore
+        [1053] 使用Azure 應用程式一致快照集工具來還原
+      - --runbefore 或 --runafter
+        [1058] 使用Azure 應用程式一致快照集工具執行RunBefore 和 RunAfter
+  - 資源
+    - Azure NetApp Files 工具
+      [1064] Azure NetApp Files 工具
+    - 定價
+    - 區域可用性
+    - 功能可用性
+    - SLA
+    - 影片
+      [1066] Azure NetApp Files 影片
+    - 選取適用於您應用程式的 Azure 資料存放區
+      [1067] 選取適用於您應用程式的 Azure 資料存放區
+    - 將 NFS 的存取權與 Azure Blob 儲存體、Azure 檔案儲存體和 Azure NetApp Files 進行比較
+      [1070] 比較使用 NFS 對 Azure 檔案儲存體、Blob 儲存體和 Azure NetApp Files 的存取
+    - Azure 檔案儲存體和 Azure NetApp Files 的比較
+      [1072] Azure 檔案儲存體和 Azure NetApp Files的比較
+    - Microsoft Q&A 上的 Azure NetApp Files

@@ -1,0 +1,356 @@
+- ---< azure-event-hubs.pdf >---
+  - 事件中樞文件
+    [1] Azure 事件中樞文件
+  - 概觀
+    - 何謂事件中樞？
+      [5] Azure 事件中樞 – 具有原生 Apache Kafka支援的即時資料串流平台
+    - Azure 事件中樞上的 Apache Kafka
+      [11] 什麼是適用於 Apache Kafka 的 Azure 事件中樞
+    - 結構描述登錄
+      [18] 從 Apache Kafka 和其他應用程式使用事件中樞中的 Azure 結構描述登錄
+    - 詞彙
+      [20] Azure 事件中樞的功能與術語
+    - 配額
+      [32] Azure 事件中樞配額和限制
+    - 比較訊息服務
+      [36] 選擇 Azure 訊息服務 - 事件方格、事件中樞和服務匯流排
+  - 快速入門
+    - 建立事件中樞或 Kafka 主題
+      - Azure 入口網站
+        [40] 快速入門：使用 Azure 入口網站建立事件中樞
+      - Azure CLI
+        [47] 快速入門：使用 Azure CLI 建立事件中樞
+      - Azure PowerShell
+        [51] 快速入門：使用 Azure PowerShell 建立事件中樞
+      - Bicep
+        [56] 快速入門：使用 Bicep 建立事件中樞
+      - ARM 範本
+        [59] 快速入門：使用ARM範本建立事件中樞
+    - 傳送及接收事件
+      - 事件中樞 SDK (AMQP)
+        - .NET
+          [64] 快速入門：使用 .NET 將事件傳送至Azure 事件中樞並從中接收事件
+        - Java
+          [79] 使用 Java 將事件傳送至 Azure 事件中樞或從中接收事件
+        - Python
+          [91] 使用 Python 將事件傳送至事件中樞或從中接收事件
+        - JavaScript
+          [101] 快速入門：使用 JavaScript 將事件傳送至事件中樞或從事件中樞接收事件
+        - Spring
+          [111] 具有 Azure 事件中樞 的 Spring CloudStream
+        - Go
+          [117] 快速入門：使用 Go 將事件傳送至事件中樞或從事件中樞接收事件
+        - C (僅傳送)
+          [124] 快速入門：使用 C 將事件傳送至 Azure 事件中樞
+        - Apache Storm (僅接受)
+          [128] 快速入門：使用 Apache Storm 從事件中樞接收事件
+      - Apache Kafka
+        - Java
+          [134] 快速入門：使用 Azure 事件中樞和Apache Kafka 串流資料
+      - 使用資料產生器傳送事件
+        [141] 快速入門：使用 Azure 事件中樞資料產生器來傳送和接收事件
+    - 擷取事件
+      - 使用 Azure 入口網站啟用事件中樞擷取
+        [145] 允許透過 Azure 事件中樞擷取事件串流
+      - 使用 Resource Manager 範本啟用事件中樞擷取
+        [154] 使用範本來建立含有事件中樞的命名空間並啟用擷取
+      - 使用 Python 讀取擷取的資料
+        [164] 快速入門：使用 Python 擷取及讀取Azure 儲存體中的事件中樞資料 (azure-eventhub)
+    - 使用結構描述登錄
+      - 建立結構描述 - Azure 入口網站
+        [170] 快速入門：使用 Azure 入口網站建立Azure 事件中樞結構描述登錄
+      - 驗證 Kafka 應用程式的架構
+        [178] 使用 Avro (Java) 驗證 Apache Kafka 應用程式的結構描述
+      - 驗證事件中樞 SDK 型應用程式的架構
+        [184] 使用事件中樞 .NET SDK (AMQP) 串流事件時，使用 Avro 結構描述進行驗證
+    - 建立專用叢集
+      [195] 快速入門：使用 Azure 入口網站建立專用的 Azure 事件中樞叢集
+  - 教學課程
+    - 使用串流分析，分析詐騙來電資料
+      [203] 教學課程：使用串流分析分析來分析詐騙通話數據，並在Power BI儀錶板中將結果可視化
+    - 擷取以 Parquet 格式的事件中樞資料
+      [220] 教學課程：使用 parquet 格式擷取事件中樞資料，並使用 Azure Synapse Analytics進行分析
+    - 使用 Power BI 來建置即時儀表板
+      [229] 使用串流分析無程式碼編輯器建置即時Power BI 儀表板
+    - 使用串流分析處理適用於事件中樞的 Apache Kafka
+      [247] 教學課程：使用串流分析處理適用於事件中樞事件的 Apache Kafka
+    - 使用事件中樞將資料串流至 Azure Databricks
+      [257] Azure 事件中樞
+  - 範例
+    - 程式碼範例
+      [262] 具有 Azure 事件中樞範例的 Git 存放庫
+  - 概念
+    - 事件中樞擷取
+      - 在事件中樞擷取事件資料
+        [265] 透過 Azure 事件中樞在 Azure Blob 儲存體或 Azure Data Lake Storage 中擷取事件
+      - 擷取目的地的驗證模式
+        [270] 驗證將事件擷取至 Azure 事件中樞目的地的模式
+      - 探索擷取的 Avro 檔案
+        [282] 在 Azure 事件中樞探索擷取的 Avro 檔案
+    - 記錄壓縮
+      [285] Azure 事件中樞的記錄壓縮
+    - 應用程式群組
+      [288] 使用應用程式群組的資源控管
+    - 階層
+      - 進階層
+        [292] 事件中樞進階版概觀
+      - 專用層
+        [296] Azure 事件中樞專用層的概觀
+      - 比較對象
+        [303] 比較 Azure 事件中樞層級
+    - 結構描述登錄
+      - 結構描述登錄概念
+        [307] Azure 事件中樞中的結構描述登錄
+      - 用戶端結構描述強制執行
+        [312] 用戶端結構描述強制執行
+    - 事件處理
+      - 事件
+處理器
+        [314] 
+      - 沒有程式碼編輯器的事件處理
+        [318] 串流分析中的無程式碼串流處理
+    - 同盟
+      - 多網站和多區域同盟
+        [349] 多網站和多區域同盟
+      - 事件複寫工作和應用程式
+        [359] 使用 Azure Functions 的事件複寫工作和應用程式
+      - 事件複寫工作模式
+        [364] 事件複寫工作模式
+      - 設定複寫工作
+        [372] 已設定的複寫工作 - Azure 事件中樞
+      - 在事件中樞之間複寫事件
+      - 將事件傳送到 Azure 服務匯流排
+      - 從 Azure 服務匯流排取得事件
+    - 異地災害復原
+      - 異地災害復原和異地複寫
+        [378] Azure 事件中樞 - 異地災害復原
+    - 安全性
+      - 驗證和授權
+        - 驗證和授權事件中樞資源的存取權
+          [390] 授與 Azure 事件中樞的存取權
+        - 使用共用存取簽章 (SAS)
+          - 使用共用存取簽章進行驗證
+            [392] 使用共用存取簽章 (SAS) 驗證對事件中樞資源的存取
+          - 透過共用存取簽章授與存取權
+            [403] 使用共用存取簽章授與事件中樞資源的存取權
+        - 使用 Microsoft Entra ID
+          - 使用受控識別進行驗證
+            [406] 使用 Microsoft Entra ID 驗證受控識別以存取事件中樞資源
+          - 從應用程式進行驗證
+            [411] 使用 Microsoft Entra ID 驗證應用程式以存取事件中樞資源
+          - 使用 Microsoft Entra ID 授權存取權
+            [415] 使用 Microsoft Entra ID 授與事件中樞資源的存取權
+      - 網路安全性
+        [418] Azure 事件中樞的網路安全性
+      - Azure 原則的安全性控制
+        [422] 適用於 Azure 事件中樞的 Azure 原則法規合規性控制項
+      - 安全性基準
+        [432] 事件中樞的 Azure 安全性基準
+      - 強制執行最低必要 TLS 版本
+        [444] 對事件中樞命名空間的要求強制執行最低必要版本的傳輸層安全性 (TLS)
+    - 可用性與一致性
+      [446] 事件中樞的可用性和一致性
+    - 延展性
+      [448] 事件中樞的縮放
+    - AMQP
+      - AMQP 1.0 通訊協定指南
+        [452] Azure 服務匯流排和事件中樞的 AMQP1.0 通訊協定指南
+      - AMQP 錯誤
+        [473] Azure 事件中樞的 AMQP 錯誤
+  - 操作指南
+    - 開發
+      - 取得事件中樞連接字串
+        [475] 取得事件中樞連接字串
+      - 連線到事件中樞 (.NET)
+        [480] 連線到事件中樞 (.NET)
+      - 設定進階命名空間的處理單位
+        [483] 設定進階層 Azure 事件中樞命名空間的處理單位
+      - 將自訂資料新增至事件
+        [486] 在 Azure 事件中樞內將自訂資料新增至事件
+      - 動態新增分割區
+        [488] 以動態方式將分割區新增至事件中樞(Apache Kafka 主題)
+      - 從 Azure Service Manager (傳統) API 遷移至 Resource Manager API
+        [492] 
+      - 使用不同的通訊協定在應用程式間交換事件
+        [496] 在使用不同通訊協定的取用者和產生者之間交換事件：AMQP、Kafka 及 HTTPS
+      - 程式設計語言範例
+        - GitHub 中的 .NET 範例
+        - GitHub 中的 JAVA 範例 (azure-messaging-eventhubs)
+        - GitHub 中的 Python 範例 (azure-eventhub)
+        - GitHub 中的 JavaScript (azure/event-hubs)
+    - 在 Azure 事件中樞上使用 Kafka
+      - 事件中樞的 Kafka 開發人員指南
+        [506] 適用於 Azure 事件中樞的 Apache Kafka開發人員指南
+      - 事件中樞的 Kafka 移轉指南
+        [510] 遷移到 Apache Kafka 生態系統的 Azure事件中樞
+      - 事件中樞的 Kafka 疑難排解指南
+        [513] Apache Kafka 的事件中樞疑難排解指南
+      - 將資料從 Kafka 叢集複寫至事件中樞
+        - 使用 Apache Kafka Mirror Maker 2
+          [516] 使用 Apache Kafka Mirror Maker 2 將資料從 Kafka 叢集複寫至事件中樞
+        - 使用 Apache Kafka Mirror Maker 1
+          [521] 使用 Apache Kafka Mirror Maker 1 將資料從 Kafka 叢集復寫至事件中樞
+      - Kafka Connect 與事件中樞
+        - 整合 Apache Kafka Connect
+          [526] 在 Azure 事件中樞上整合 Apache KafkaConnect 支援
+        - 將 Apache Spark 連線到事件中樞
+          [531] 連線 Apache Spark 應用程式與 Azure 事件中樞
+        - 將 Apache Flink 連線到事件中樞
+          [534] 使用 Apache Flink 搭配適用於 ApacheKafka 的 Azure 事件中樞
+        - 將 Apache Kafka Connect 與 Debezium 進行整合
+          [538] 整合 Debezium 與 Azure 事件中樞上的Apache Kafka Connect 支援功能以供異動資料擷取
+        - 將 Akka 串流連線到事件中樞
+          [547] 使用 Akka Streams 搭配適用於 ApacheKafka 的事件中樞
+      - 常見問題集 - Kafka 的事件中樞
+        [551] Azure 事件中樞在 Apache Kafka 上執行嗎？
+事件中樞取用者群組與Kafka 取用者群組
+    - 使用記錄壓縮
+      [553] 使用記錄壓縮
+    - 使用結構描述登錄
+      - 用戶端結構描述強制執行
+        - 使用 Avro 結構描述
+          - 使用事件中樞 SDK 的 Avro 結構描述 (AMQP)
+            [556] 使用事件中樞 .NET SDK (AMQP) 串流事件時，使用 Avro 結構描述進行驗證
+        - 使用 JSON 結構描述
+          - 搭配 Apache Kafka 應用程式的 JSON 架構
+            [567] 搭配 Apache Kafka 應用程式使用 JSON架構 (預覽)
+    - 處理資料
+      - 使用 Power BI 資料集來建置即時儀表板
+        [573] 使用從串流分析產生的 Power BI 資料集建置即時儀表板，而不需要程式碼編輯器
+      - 擷取 Delta Lake 格式的事件中樞資料
+        [585] 以 Delta Lake 格式從事件中樞擷取數據
+      - 擷取以 Parquet 格式的事件中樞資料
+        [591] 以 Parquet 格式從事件中樞擷取資料
+      - 將資料具體化至 Azure Cosmos DB
+        [599] 使用串流分析無程式碼編輯器在 AzureCosmos DB 中具體化資料
+      - 篩選並內嵌 Synapse SQL 資料
+        [603] 使用串流分析無程式碼編輯器，篩選及擷取至 Azure Synapse SQL
+      - 篩選並內嵌至 Data Lake Storage Gen2
+        [611] 使用串流分析無程式碼編輯器，篩選並內嵌至 Azure Data Lake Storage Gen2
+      - 擴充資料並內嵌至事件中樞
+        [618] 使用串流分析無程式碼編輯器以擴充資料並內嵌至事件中樞
+      - 轉換並內嵌至 SQL 資料庫
+        [627] 使用串流分析無程式碼編輯器，在 AzureSQL 資料庫中轉換和儲存資料
+      - 篩選並內嵌至 Azure Data Explorer
+        [637] 使用串流分析無程式碼編輯器，來篩選及擷取至 Azure Data Explorer
+      - 使用 Azure 串流分析處理資料
+        [646] 使用 Azure 串流分析處理來自事件中樞的資料
+    - 與 Spring 架構整合
+      - 建立 Spring Cloud Stream Binder 應用程式
+        [655] 具有 Azure 事件中樞 的 Spring CloudStream
+      - 使用適用於 Apache Kafka 的 Spring Boot Starter
+        [661] 搭配適用於 Kafka API 的 Azure 事件中樞使用 Spring Kafka
+    - 管理
+      - 管理應用程式群組
+        [667] 使用應用程式群組控管用戶端應用程式的資源
+      - 設定事件中樞的屬性
+        [678] 設定事件中樞的屬性
+      - 自動縮放輸送量單位
+        [681] 自動擴大 Azure 事件中樞輸送量單位 (標準層)
+      - 事件中樞管理程式庫
+        [685] 事件中樞管理程式庫
+    - 監視器
+      - 監視 Azure 事件中樞
+        [689] 監視 Azure 事件中樞
+      - 使用事件中樞串流 Azure 診斷資料
+        [698] 將資料從 Windows Azure 診斷延伸模組傳送至 Azure 事件中樞
+    - 安全
+      - 允許從特定 IP 位址的存取
+        [703] 允許從特定 IP 位址或範圍存取 Azure 事件中樞命名空間
+      - 允許從特定虛擬網路的存取
+        [713] 允許從特定虛擬網路存取 Azure 事件中樞命名空間
+      - 允許透過私人端點的存取
+        [726] 允許透過私人端點來存取 Azure 事件中樞命名空間
+      - 使用客戶管理的金鑰加密資料
+        [739] 設定客戶自控金鑰來加密 Azure 事件中樞待用資料
+      - 設定最低必要 TLS 版本
+        [759] 設定事件中樞命名空間的最低 TLS 版本
+      - 稽核最低必要 TLS 版本
+        [764] 使用 Azure 原則來稽核 Azure 事件中樞命名空間的最低 TLS 版本合規性
+      - 設定用戶端的 TLS 版本
+        [768] 針對事件中樞用戶端應用程式設定傳輸層安全性 (TLS)
+      - 移轉至無密碼連線
+        [770] 移轉應用程式對 Azure 事件中樞使用無密碼連線
+    - 疑難排解
+      - 針對連線能力問題進行疑難排解
+        [779] 針對連線問題進行疑難排解 - Azure 事件中樞
+      - 針對驗證及驗證問題進行疑難排解
+        [786] 驗證和授權問題的疑難排解 - Azure 事件中樞
+      - 針對檢查點存放區問題進行疑難解答
+        [788] 針對檢查點存放區問題進行疑難解答
+      - 事件中樞的 Kafka 疑難排解指南
+        [791] Apache Kafka 的事件中樞疑難排解指南
+      - EventHubsException
+        [794] EventHubsException - .NET
+      - .NET 例外狀況
+        [796] 事件中樞傳訊例外狀況 - .NET (舊版)
+      - 資源管理員例外狀況
+        [804] Azure 事件中樞 - Resource Manager 例外狀況
+    - 移動
+      - 將命名空間移至另一個區域
+        [808] 將 Azure 事件中樞 重新放置到另一個區域
+      - 將專用叢集移至另一個區域
+        [817] 將 Azure 事件中樞 專用叢集重新放置到另一個區域
+  - 參考
+    - 監視資料參考
+      [821] 監視 Azure 事件中樞 數據參考
+    - SDK
+      [845] Azure 事件中樞 - 用戶端 SDK
+    - .NET
+      - 用戶端程式庫
+        - 從 Microsoft.Azure.EventHubs 遷移至 Azure.Messaging.EventHubs
+        - Azure.Messaging.EventHubs (最新版)
+          [848] Azure.Messaging.EventHubs Namespace
+        - Microsoft.Azure.EventHubs (舊版)
+          [850] Microsoft.Azure.EventHubs Namespace
+        - Microsoft.ServiceBus.Messaging (舊版)
+          [854] Microsoft.ServiceBus.MessagingNamespace
+      - 管理程式庫
+        [862] Microsoft.Azure.Management.EventHubNamespace
+    - Java
+      - 用戶端程式庫
+        - 從 azure-eventhubs 遷移至 azure-messaging-eventhubs
+        - azure-messaging-eventhubs (最新版)
+          [864] Azure Event Hubs client library for Java- version 5.18.3
+        - azure-eventhubs (舊版)
+          [876] Client
+      - 管理程式庫
+        [877] com.microsoft.azure.management.eventhub
+    - Spring
+      - Spring 整合
+        [886] Spring Cloud Azure 開發人員指南
+      - Spring Cloud Stream
+        [891] Spring Cloud Azure 開發人員指南
+    - Python
+      - 用戶端程式庫
+        [896] 適用于 Python 的 Azure 事件中樞 用戶端程式庫 - 5.11.5 版
+      - 管理程式庫
+        [908] 適用於 Python 的 Azure 事件中樞程式庫
+    - JavaScript
+      - 用戶端程式庫
+        [909] Azure 事件中樞 JavaScript 的用戶端連結庫 - 5.11.4 版
+      - 管理程式庫
+        [924] @azure/arm-eventhub package
+    - Go
+      - 用戶端程式庫
+      - 管理程式庫
+    - Azure CLI
+      [939] az eventhubs
+    - REST
+      [946] Azure 事件中樞 REST API
+    - Resource Manager 範本
+      [947] Microsoft.EventHub 資源類型
+    - Apache Kafka 設定
+      [950] Apache Kafka 用戶端的建議設定
+    - Azure 原則內建
+      [954] 
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - 常見問題集
+      [957] 一般
+    - Azure 藍圖
+    - 定價
+    - 定價計算機
+    - 服務更新
+    - Stack Overflow
+    - 影片

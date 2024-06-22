@@ -1,0 +1,20 @@
+- ---< azure-developer-github.pdf >---
+  - Azure 和 GitHub 整合
+    [1] Azure 和 GitHub 整合
+    - 適用於 Azure 的 GitHub Actions
+      - 適用於 Azure 的 GitHub Actions 簡介
+        [3] 什麼是適用於 Azure 的 GitHub Actions
+      - 從 GitHub 向 Azure 進行驗證
+        [6] 使用 GitHub Actions 連線到 Azure
+      - 將應用程式部署到 Azure
+        [15] 將應用程式從 GitHub 部署至 Azure
+      - 將資料庫部署至 Azure
+        [17] 將資料庫從 GitHub 部署至 Azure
+      - 管理 Azure 原則
+        [18] 使用 GitHub 管理 Azure 原則
+      - 建置自定義虛擬機映像
+        [19] 使用 GitHub Actions 和 Azure 建置自定義虛擬機映像
+    - Azure DevOps 和 GitHub
+      [28] 使用 Azure DevOps 和 GitHub
+    - Visual Studio 和 Visual Studio Code
+      [29] 使用 Visual Studio 或 Visual Studio Code從 GitHub 部署應用程式

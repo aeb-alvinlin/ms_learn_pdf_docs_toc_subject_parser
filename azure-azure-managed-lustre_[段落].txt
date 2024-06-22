@@ -1,0 +1,44 @@
+- ---< azure-azure-managed-lustre.pdf >---
+  - Azure 受控 Lustre 文件系統
+    [1] Azure 受控 Lustre 文件系統檔
+  - 概觀
+    - Azure 受控 Lustre 簡介
+      [3] 什麼是 Azure 受控 Lustre？
+  - 建立檔案系統
+    - 必要條件
+      [6] Azure 受控 Lustre 文件系統必要條件
+    - Azure 入口網站 中的 Create 檔案系統
+      [12] 建立 Azure 受控 Lustre 文件系統
+    - 使用 Terraform Create 檔案系統
+      [22] 使用 Terraform 建立 Azure 受控 Lustre文件系統
+    - 使用 Azure Resource Manager Create 檔案系統
+      [30] 使用 Azure Resource Manager 樣本建立Azure 受控 Lustre 文件系統
+  - 與資料來源整合
+    - 搭配 Azure 受控 Lustre 使用 Azure Blob 儲存體
+      [40] 搭配 Azure 受控 Lustre 使用 Azure Blob記憶體
+    - 使用匯入作業匯入數據
+      [43] Create將作業從 Blob 記憶體匯入至文件系統
+    - 使用匯出作業匯出數據
+      [46] 使用封存作業從 Azure 受控 Lustre 匯出資料
+  - 存取檔案系統
+    - 安裝 Lustre 用戶端
+      [51] 安裝預先建置的 Lustre 用戶端軟體
+    - 升級 Lustre 用戶端
+      [54] 將 Lustre 用戶端軟體升級至目前版本
+    - 將客戶端連線至檔案系統
+      [56] 將客戶端連線到 Azure 受控 Lustre 檔案系統
+    - 使用 fstab 自動掛接 Lustre 用戶端
+      [60] 使用 fstab 自動將用戶端掛接至 Azure 受控 Lustre 檔案系統
+    - 使用適用於 Kubernetes 的 Azure Lustre CSI 驅動程式
+      [63] 搭配使用 Azure 受控 Lustre CSI 驅動程式搭配 Azure Kubernetes Service
+  - 管理檔案系統
+    - 設定根壓縮設定
+      [71] 設定 Azure 受控 Lustre 文件系統的根squash 設定
+  - 安全性
+    - 設定網路安全性群組
+      [76] 
+    - 使用由客戶管理的加密金鑰
+      [83] 搭配 Azure 受控 Lustre 使用客戶管理的加密金鑰
+  - 可用性和災難復原
+    - 從區域性中斷復原
+      [89] 使用多個叢集進列區域容錯移轉復原

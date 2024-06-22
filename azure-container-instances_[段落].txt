@@ -1,0 +1,197 @@
+- ---< azure-container-instances.pdf >---
+  - 容器執行個體檔
+    [1] Azure 容器執行個體文件
+  - 概觀
+    - 關於 Azure Container Instances
+      [3] 什麼是 Azure 容器執行個體？
+    - 資源和配額限制
+      [7] ACI 的資源可用性和配額限制
+  - 快速入門
+    - 部署容器實例 - CLI
+      [12] 快速入門：使用 Azure CLI 在 Azure 中部署容器執行個體
+    - 部署容器實例 - 入口網站
+      [18] 快速入門：使用 Azure 入口網站部署容器執行個體
+    - 部署容器實例 - PowerShell
+      [27] 快速入門：使用 Azure PowerShell 部署Azure 中的容器執行個體
+    - 部署容器實例 - Bicep
+      [32] 快速入門：使用 Bicep 在 Azure 中部署容器執行個體
+    - 部署容器實例 - ARM 範本
+      [36] 快速入門：使用ARM範本在 Azure 中部署容器實例
+    - 部署容器實例 - Terraform
+      [43] 快速入門：使用 Terraform 建立具有公用IP 位址的 Azure 容器實例
+    - 部署容器實例 - Docker CLI
+      [50] 快速入門：使用 Docker CLI 部署容器執行個體
+  - 教學課程
+    - 建立和部署容器映像
+      - 1 - 建立容器映射
+        [55] 教學課程：建立容器影像以部署至 Azure容器執行個體
+      - 2 - 建立容器登錄
+        [60] 教學課程：建立 Azure ContainerRegistry 並推送容器映像
+      - 3 - 部署應用程式
+        [66] 教學課程：將容器應用程式部署至 Azure容器執行個體
+    - 部署多個容器群組
+      - 部署容器群組 - YAML
+        [70] 教學課程：使用 YAML 檔案部署多容器群組
+      - 部署容器群組 - Resource Manager
+        [75] 教學課程：使用 Resource Manager 範本部署多容器群組
+    - 與 Azure 服務整合
+      - 使用 Azure Functions 觸發程式
+        [81] 教學課程：使用 HTTP 觸發的 Azure 函式來建立容器群組
+    - 部署機密容器群組
+      - 部署機密容器群組 - Resource Manager
+        [87] 教學課程：為 Azure 容器執行個體 上的機密容器準備部署
+      - 部署機密容器群組 - 入口網站
+        [96] 教學課程：透過 Azure 入口網站將機密容器部署至 Azure 容器執行個體
+    - 部署Spot容器群組
+      - 部署Spot容器群組 - Azure CLI
+        [103] 教學課程：使用 Azure CLI 部署具有Azure 容器執行個體的現成容器 (預覽)
+      - 部署 Spot 容器群組 - 入口網站
+        [107] 教學課程：使用 Azure 入口網站部署具有Azure 容器執行個體的 Spot 容器 (預覽)
+  - 範例
+    - 程式碼範例
+    - Resource Manager 範本
+      [110] Azure 容器執行個體的 Azure ResourceManager 範本
+  - 概念
+    - 最佳做法和考量
+      [112] Azure 容器執行個體的最佳做法和考量
+    - 容器群組
+      [115] Azure Container Instances 中的容器群組
+    - 協調器之間的關聯性
+      [119] Azure 容器執行個體和容器 Orchestrator
+    - 安全性
+      - 安全性基準
+        [121] 適用于 容器執行個體 的 Azure 安全性基準
+      - 安全性考量
+        [131] Azure 容器執行個體的安全性考量
+    - 虛擬網路
+      [137] 虛擬網路情節和資源
+    - 機密容器群組
+      [140] Azure Container Instances 上的機密容器
+    - 機密容器中的證明
+      [145] Azure 容器執行個體上機密容器中的證明
+    - 關於 Azure 容器執行個體 Spot 容器
+      [149] Azure Container Instances 現成容器 (預覽)
+  - 操作指南
+    - 部署
+      - 在虛擬網路中部署
+        [151] 將容器執行個體部署至 Azure 虛擬網路
+      - 從 Azure Container Registry 部署
+        - 使用服務主體部署
+          [157] 使用服務主體從 Azure 容器登錄部署到Azure 容器執行個體
+        - 使用受控識別進行部署
+          [164] 使用受控識別從 Azure ContainerRegistry 部署至 Azure 容器執行個體
+      - 使用 GitHub Actions 進行部署
+        [171] 設定 GitHub Actions 以建立容器執行個體
+      - 加密部署數據
+        [179] 加密部署資料
+      - 在專用主機上部署
+        [193] 在專用主機上部署
+      - 可用性區域和災害復原
+        [197] Azure 容器執行個體中的可靠性
+      - 設定 DNS 名稱重複使用
+        [203] 使用 DNS 名稱重複使用原則部署 Azure容器執行個體 (ACI) 容器群組 (預覽)
+      - 使用 Logic Apps 連接器
+        [206] 使用 Azure Logic Apps 部署及管理 Azure容器執行個體
+      - 使用 Azure 入口網站 部署機密容器
+        [209] 教學課程：透過 Azure 入口網站將機密容器部署至 Azure 容器執行個體
+      - 使用ARM部署機密容器
+        [216] 教學課程：為 Azure 容器執行個體 上的機密容器準備部署
+    - 容器案例
+      - 設定執行一次工作的重新啟動原則
+        [225] 使用重新啟動原則執行容器化工作
+      - 設定環境變數 （env）
+        [228] 在容器執行個體中設定環境變數
+      - 設定容器啟動指令 （進入點）
+        [235] 設定容器執行個體中的命令列以覆寫預設命令列作業
+      - 執行指令 （exec）
+        [239] 在執行中的 Azure 容器執行個體內執行命令
+      - 執行安裝容器 （init）
+        [242] 執行 Init 容器，即可在容器群組中設定工作
+      - 建立受控識別
+        [247] 如何搭配 Azure 容器執行個體使用受控識別
+      - 使用 GPU 資源 （預覽）
+        [258] 部署使用 GPU 資源的容器實例
+      - 在 Sidecar 中啟用 SSL 端點
+        [265] 在 sidecar 容器中啟用 TLS 端點
+      - 使用 Caddy 作為反向 Proxy 啟用自動 HTTPS
+        [272] 在側車容器以 Caddy 啟用自動 HTTPS
+      - 使用應用程式閘道公開靜態IP
+        [281] 公開容器群組的靜態 IP 位址
+      - 針對輸入和輸出使用 Azure 防火牆
+        [286] 針對容器群組的輸出和輸入流量設定單一公用 IP 位址
+      - 使用 NAT 閘道設定容器群組輸出
+        [295] 為來自容器群組的輸出流量設定靜態 IP位址的 NAT 閘道
+      - 設定容器群組的自定義 DNS 設定
+        [301] 使用自訂 DNS 設定部署容器群組
+    - 掛接數據磁碟區
+      - Azure 檔案共用
+        [307] 在 Azure 容器執行個體中掛接 Azure 檔案共用
+      - 祕密
+        [314] 在 Azure 容器執行個體中掛接秘密磁碟區
+      - 空白目錄
+        [319] 在 Azure 容器執行個體中掛接 emptyDir磁碟區
+      - 複製的 Git 存放庫
+        [322] 在 Azure 容器執行個體中掛接 gitRepo 磁碟區
+    - 管理執行中的容器
+      - 設定活躍度探查
+        [327] 設定活躍度探查
+      - 設定整備度探查
+        [330] 設定整備度探查
+      - 停止並啟動容器
+        [335] 在 Azure 容器執行個體中手動停止或啟動容器
+      - 更新執行中的容器
+        [337] 在 Azure 容器執行個體中更新容器
+    - 監視和記錄
+      - 監視器
+        [340] 監視 Azure 容器執行個體
+      - 監視 CPU 和記憶體使用量
+        [347] 監視 Azure 容器執行個體中的容器資源
+      - 取得容器記錄和事件
+        [352] 在 Azure 容器執行個體中擷取容器記錄和事件
+      - 使用 Azure 監視器記錄進行記錄
+        [356] 使用 Azure 監視器記錄的容器群組和實例記錄
+      - 檢視實例的狀態
+        [364] Azure 容器執行個體狀態
+    - 疑難排解
+      - 常見問題疑難排解
+        [370] 在 Azure 容器執行個體中針對常見問題進行疑難排解
+      - 針對更多問題進行疑難解答
+        [378] Azure 容器執行個體 疑難解答檔
+  - 參考
+    - Azure CLI
+      [380] az container
+    - Azure CLI confcom 擴充功能
+    - REST
+      [409] Azure 容器執行個體 REST API 參考
+    - PowerShell
+      [410] Az.ContainerInstance
+    - .NET
+      [413] Azure Container Instances libraries for.NET
+    - Python
+      [424] 適用於 Python 的 Azure 容器執行個體程式庫
+    - Java
+      [433] Container Instance
+    - Node.js
+      [434] Azure 容器執行個體 SDK for JavaScript -最新
+    - Resource Manager 範本
+      [435] Microsoft.ContainerInstancecontainerGroups
+    - YAML
+      [454] 
+    - 連接器
+      [462] 
+    - 監視資料參考
+      [482] 
+    - Azure 原則內建
+      [489] 
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - 區域可用性
+    - 定價
+    - 藍圖
+    - 提供產品意見反應
+    - Stack Overflow
+    - 影片
+    - 常見問題集
+      [491] 關於 Azure Container Instances 的常見問題集
+  - 支援和疑難排解
+    [497] Azure 容器執行個體的支援與疑難排解

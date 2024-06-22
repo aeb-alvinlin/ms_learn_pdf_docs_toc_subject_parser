@@ -1,0 +1,105 @@
+- ---< azure-communications-gateway.pdf >---
+  - Azure 通訊閘道檔
+    [1] Azure 通訊閘道檔
+  - 概觀
+    - 什麼是 Azure 通訊閘道？
+      [4] 什麼是 Azure 通訊閘道？
+    - 開始使用
+      [8] 開始使用 Azure 通訊閘道
+    - 新功能
+      [11] Azure 通訊閘道的新功能？
+  - 規劃
+    - 您的網路和通訊閘道
+      [15] 您的網路和 Azure 通訊閘道
+    - 上線和內含權益
+      [20] 使用 Azure 通訊閘道的內含權益上線
+    - 實驗室部署
+      [23] Lab Azure Communications Gatewayoverview
+    - 連線性
+      [25] Azure 通訊閘道的 連線 性
+    - 可靠性
+      [32] Azure 溝通網路閘道的可靠性
+    - 安全性
+      - 安全性概觀
+        [38] Azure 通訊網關的安全性概觀
+      - 安全性基準
+        [41] Azure 通訊網關的 Azure 安全性基準
+    - 布建 API 和入口網站
+      [53] 布建 Azure 通訊閘道
+    - 規劃和管理成本
+      [56] 規劃和管理 Azure 通訊閘道的成本
+    - 限制、配額和限制
+      [60] Azure 通訊閘道限制、配額和限制
+  - 部署
+    - 準備開始部署
+      [62] 準備部署 Azure 通訊閘道
+    - 準備 VNet 插入預覽
+      [70] 準備將 Azure 通訊網關聯機到您自己的虛擬網路 （預覽）
+    - 部署 Azure 通訊閘道
+      [73] 部署 Azure 通訊閘道
+    - 與布建 API 整合
+      [79] 與 Azure 通訊閘道的布建 API 整合 （預覽版）
+  - 與 電信業者連線和 Teams 電話 Mobile 整合
+    - 互操作性概觀
+      [82] Azure Communications Gateway 與 電信業者連線 和 Teams 電話 Mobile 的互操作性概觀
+    - 設定
+      - 連線
+        [87] 將 Azure 通訊閘道 連線 至 電信業者連線或 Teams 電話 Mobile
+      - 準備即時流量
+        [96] 使用 電信業者連線、Teams 電話 Mobile和 Azure Communications Gateway 準備即時流量
+    - 行動控制點
+      [102] 適用于 Teams 電話 Mobile 的 Azure 通訊網關中的行動控制點
+    - 緊急電話
+      [105] 使用 Azure 通訊閘道對 電信業者連線和Teams 電話 Mobile 的緊急電話
+    - 使用數位管理入口網站
+      [107] 使用 Azure 通訊閘道的號碼管理入口網站管理 電信業者連線 或 Teams 電話 行動客戶 （預覽）
+  - 與 Microsoft Teams 直接路由整合
+    - 互操作性概觀
+      [111] Azure 通訊閘道與 Microsoft Teams 直接路由的互操作性概觀
+    - 設定
+      - 連線
+        [117] 連線 Azure 通訊閘道至 Microsoft Teams直接路由
+      - 準備即時流量
+        [122] 使用 Microsoft Teams 直接路由和 Azure通訊閘道準備即時流量
+    - 緊急電話
+      [125] 使用 Azure 通訊閘道進行 MicrosoftTeams 直接路由的緊急通話
+    - 管理直接路由客戶
+      [127] 使用 Azure 通訊閘道管理 MicrosoftTeams 直接路由客戶和號碼
+  - 與 Zoom 電話 雲端對等互連整合
+    - 互操作性概觀
+      [133] 使用 Zoom 電話 雲端對等互連的 Azure通訊閘道互操作性概觀
+    - 設定
+      - 連線
+        [136] 連線 Azure 通訊閘道以縮放 電話 雲端對等互連
+      - 準備即時流量
+        [139] 使用 Zoom 電話 雲端對等互連和 Azure通訊閘道準備即時流量
+    - 緊急電話
+      [143] 使用 Azure 通訊閘道進行縮放 電話 雲端對等互連的緊急通話
+    - 管理縮放 電話 雲端對等互連客戶
+      [144] 使用 Azure 通訊閘道管理縮放 電話 雲端對等互連客戶和數位
+  - 與 Azure 操作員通話保護整合
+    - 操作員通話保護概觀
+      [146] 什麼是 Azure 操作員通話保護預覽版？
+    - 設定操作員通話保護
+      [149] 設定 Azure 操作員通話保護預覽
+  - 維護
+    - 設定使用者角色
+      [153] 設定 Azure 通訊閘道的使用者角色
+    - 監視
+      - 監視概觀
+        [156] 監視 Azure 通訊閘道
+      - 監視資料參考
+        [159] 監視 Azure 通訊閘道資料參考
+    - 維修通知
+      [161] Azure 通訊閘道的維護通知
+    - 取得支援或要求變更
+      [163] 取得 Azure 通訊閘道的支援或要求變更
+  - 參考
+    - 布建 API 參考
+      [166] Azure 通訊閘道布建 API
+    - Azure Communications Gateway 產品頁面
+    - 電信業者連線 概觀
+    - Teams 電話 Mobile 概觀
+    - 多租使用者 Microsoft Teams 直接路由概觀
+      [186] 
+    - 縮放 電話 雲端對等互連概觀

@@ -1,0 +1,40 @@
+- ---< azure-dedicated-hsm.pdf >---
+  - 專用 HSM 文件
+    [1] Azure 專用 HSM 文件
+  - 概觀
+    - 專用 HSM 概觀
+      [2] 什麼是 Azure 專用 HSM？
+  - 教學課程
+    - 使用 CLI 將 HSM 部署至現有的虛擬網路
+      [5] 教學課程：使用 Azure CLI 將 HSM 部署至現有的虛擬網路
+    - 使用 PowerShell 將 HSM 部署至現有的虛擬網路
+      [14] 教學課程 – 使用 PowerShell 將 HSM 部署至現有的虛擬網路
+  - 快速入門
+    - 使用 Azure PowerShell 建立 Azure 專用 HSM
+      [24] 快速入門：使用 Azure PowerShell 建立Azure 專用 HSM
+    - 使用 Azure CLI 建立 Azure 專用 HSM
+      [28] 快速入門：使用 Azure CLI 建立 Azure 專用 HSM
+  - 概念
+    - 高可用性
+      [32] Azure 專用 HSM 高可用性
+    - 監視
+      [34] Azure 專用 HSM 監視功能
+    - 網路功能
+      [36] Azure 專用 HSM 網路
+    - 實體安全性
+      [43] Azure 專用 HSM 實體安全性
+    - 支援能力
+      [45] Azure 專用 HSM 支援能力
+  - 操作指南
+    - 決定部署架構
+      [48] Azure 專用 HSM 部署架構
+    - 疑難排解
+      [50] 針對 Azure 專用 HSM 服務進行疑難排解
+  - 參考
+    - Azure CLI
+      [57] az dedicated-hsm
+    - Azure PowerShell
+      [75] Az.DedicatedHsm
+  - 資源
+    - 常見問題集
+      [76] 基本概念

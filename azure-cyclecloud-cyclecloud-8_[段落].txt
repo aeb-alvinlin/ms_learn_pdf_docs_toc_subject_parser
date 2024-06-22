@@ -1,0 +1,217 @@
+- ---< azure-cyclecloud-cyclecloud-8.pdf >---
+  - Azure CycleCloud
+    [1] Azure CycleCloud 檔
+  - 概觀
+    - 什麼是 Azure CycleCloud？
+      [4] 什麼是 Azure CycleCloud？
+  - 快速入門
+    - 安裝 - 透過 Marketplace
+      [8] 快速入門 - 使用 Marketplace 映像安裝CycleCloud \(英文\)
+  - 教學課程
+    - 建立叢集
+      [15] Azure CycleCloud 教學課程
+  - 概念
+    - 核心
+      [16] CycleCloud：核心概念
+    - 叢集 & 節點
+      [19] CycleCloud 叢集
+    - 排程
+      [23] CycleCloud 排程和自動調整概念 \(英文\)
+    - 叢集作業
+      - 使用者管理
+        [25] 使用者管理
+      - 成本 & 使用量追蹤
+        [30] 成本和使用量
+      - 監視
+        [34] 監視
+    - 安全性
+      - 安全性最佳做法
+        [35] Azure CycleCloud – 安全性最佳做法
+  - 作法
+    - CycleCloud
+      - 規劃生產部署
+        [37] 規劃 CycleCloud 生產部署
+      - 手動安裝應用程式
+        [40] 手動安裝
+      - 安裝 CycleCloud CLI
+        [46] 安裝 CycleCloud CLI
+      - 在容器實例中執行
+        [49] 在容器實例中執行 Azure CycleCloud
+      - 使用 ARM 範本執行 CycleCloud
+        [52] 使用 ARM 範本執行 CycleCloud
+      - 準備您的 Azure 訂用帳戶
+        [57] 設定您的 Azure 訂用帳戶
+      - 搭配 CycleCloud 使用服務主體
+        [60] 使用服務主體
+      - 搭配 CycleCloud 使用受控識別
+        [62] 使用受控識別
+      - 設定使用者驗證
+        [66] 使用者驗證
+      - 升級和移轉
+        [71] 升級 CycleCloud
+      - 規劃 CycleCloud 7 淘汰
+        [74] CycleCloud 7 淘汰指南
+      - 備份與還原
+        [77] CycleCloud 中的備份
+      - 設定 Proxy
+        [79] 將 CycleCloud 設定為使用 HTTP () Proxy
+      - 在鎖定的網路中執行
+        [82] 在鎖定的網路中運作
+      - 設定事件方格
+        [86] 使用事件方格
+      - 自訂 UI 主題
+        [88] 主題 CycleCloud 使用者介面
+      - 設定 SSL
+        [90] SSL 組態
+      - 執行多個 CycleCloud 安裝
+        [94] 在同一部電腦上安裝多個 CycleCloud 實例
+      - 將叢集移至另一個資源群組
+        [95] 將叢集中的資源移至另一個資源群組
+    - 叢集作業
+      - 建立叢集
+        [97] 建立新叢集
+      - 啟動叢集
+        [103] 啟動叢集
+      - 連線到節點
+        [105] 連線到叢集節點
+      - 終止叢集
+        [109] 終止叢集
+      - 防止節點終止
+        [111] 防止節點終止
+      - 授與使用者存取權
+        [114] 叢集使用者管理
+      - 監視叢集
+        [117] 監視 CycleCloud 叢集
+      - 標籤節點
+        [119] 標籤節點
+      - 使用 Flex 擴展集協調流程
+        [122] 使用 Flex ScaleSet
+    - 自訂叢集
+      - 使用叢集範本
+        [123] 叢集範本
+      - 新增節點陣列
+        [131] 將節點陣列新增至叢集
+      - 新增磁片
+        [133] 受控磁碟
+      - 掛接磁片
+        [135] 裝載磁碟區
+      - 建立網路檔案工具
+        [140] 設定 NFS 匯出
+      - 掛接網路檔案工具
+        [143] 設定 NFS 掛接
+      - 啟用傳回 Proxy
+        [149] 啟用傳回 Proxy
+      - 設定網路安全性
+        [151] 節點網路設定
+      - 使用可用性設定組
+        [154] 可用性設定組 (Availability Sets)
+      - 使用環境
+        [157] 環境
+      - 使用專案
+        [159] 專案
+      - 使用 Cloud-Init
+        [170] Cloud-Init
+      - 使用現成實例
+        [172] 在 Azure CycleCloud 中使用現成 VM
+      - 使用排程事件
+        [176] 使用排程事件
+      - 使用儲存體 Blob
+        [178] Blob 和保險箱
+      - 設定 SELinux
+        [180] SELinux 和 Azure CycleCloud
+    - 節點準備
+      - 安裝 Jetpack
+        [182] 如何手動安裝 Jetpack
+      - 建立自訂映射
+        [186] CycleCloud 叢集中的自訂映射
+      - 使用 HB 和 HC VM
+        [190] 使用 HB 和 HC VM 的最佳做法
+      - 使用 HealthCheck
+        [193] 健康情況檢查
+    - 排程
+      - 設定自動調整
+        [197] 自動調整叢集
+      - 使用 REST API
+        [199] 使用 CycleCloud REST API
+    - 疑難排解
+      - 回報問題
+        [203] 回報 CycleCloud 的問題
+  - 參考
+    - 叢集範本參考
+      - 叢集範本概觀
+        [208] CycleCloud 叢集範本檔案
+      - 叢集
+        [211] 叢集區段
+      - Node 和 Nodearray
+        [213] Node 和 Nodearray 物件
+      - 磁碟區
+        [222] 磁碟區
+      - 網路介面
+        [225] 網路介面物件
+      - Cluster-Init
+        [227] Cluster-Init
+      - Input-Endpoint
+        [229] Input-Endpoint
+      - 叢集設定
+        [231] 叢集設定
+      - 環境
+        [237] 環境
+      - Noderef
+        [240] NodeRef
+      - 叢集參數
+        [241] 叢集參數
+      - 叢集參數特殊剖析
+        [244] CycleCloud 叢集範本檔案剖析
+    - REST API 參考
+      [250] Operations
+    - Python API 參考
+      [277] Python API
+    - CycleCloud CLI
+      [280] CycleCloud CLI
+    - Jetpack
+      [304] Jetpack
+    - Common Cookbook 參考
+      [312] 常見操作手冊參考
+    - CycleServer 組態
+      [315] 
+    - 排程器
+      - OpenPBS
+        [317] OpenPBS
+      - 格線引擎
+        [321] CycleCloud GridEngine 叢集
+      - Slurm
+        [331] Slurm
+      - HT 多國
+        [338] HTCondor
+      - IBM Spectrum LSF
+        [343] IBM Spectrum LSF
+      - Microsoft HPC Pack
+        [348] Microsoft HPC Pack
+    - 記錄位置
+      [352] 一般記錄
+    - 事件
+      [353] 事件
+    - 錯誤訊息
+      [359] 錯誤訊息
+  - 資源
+    - 取得 Azure CycleCloud
+    - CycleCloud 套件
+      [361] CycleCloud 發行套件
+    - CycleCloud 叢集範本
+      [362] 叢集範本下載
+    - CycleCloud 社群 GitHub
+    - Azure 社群論壇
+    - Azure CycleCloud 意見反應
+    - 版本資訊
+      - 目前版本 - v8.x
+        [364] Azure CycleCloud 8.x
+      - 舊版 - v7.x
+        [366] Azure CycleCloud 7.9
+      - 舊版
+        [368] 舊版的版本資訊
+    - 服務原則
+      [369] Azure CycleCloud 服務原則
+    - 資料使用原則
+      [371] 資料使用原則
+    - 授權資訊
+      [372] 授權資訊

@@ -1,0 +1,475 @@
+- ---< azure-aks-hybrid.pdf >---
+  - Azure Arc 所啟用的 AKS) Azure Kubernetes Service (
+    [1] Azure Arc 檔案啟用 Azure KubernetesService (AKS)
+  - 概觀
+    - Arc 所啟用的 AKS 為何？
+      [4] 什麼是由 Azure Arc 啟用的 AKS？
+    - 支援的 Kubernetes 版本
+      [6] AKS 中支援的 Kubernetes 版本
+    - 資料集合
+      [12] Azure Arc 資料收集所啟用的 AKS
+  - 由 Azure Arc 啟用的 AKS
+    - Azure Stack HCI 23H2 上的 AKS 新功能
+      [15] Azure Stack HCI 23H2 版 AKS 的新功能
+    - 概念
+      - 網路
+        - 網路概念
+          [19] 由 Azure Arc 網路需求啟用的 AKS
+        - 負載平衡器
+          [27] 適用於 Kubernetes 叢集的 MetalLB 概觀
+      - 基礎結構元件更新
+        [30] Azure Stack HCI 上 AKS 的基礎結構元件更新
+      - 叢集架構
+        [31] AKS Arc 和工作負載叢集架構
+      - 支援的調整需求
+        [34] Azure Stack HCI 上的 AKS 調整需求
+      - Azure Hybrid Benefit
+        [37] Azure Arc 在 Azure Stack HCI 23H2 (AKS上啟用的 AKS) Azure Hybrid Benefit
+      - 計費
+        - 價格概觀
+          [43] 由 Azure Arc 定價詳細數據啟用的 AKS
+        - 價格詳細資料
+    - 快速入門
+      - Jumpstart HCIBox (外部連結) 
+    - 使用方法
+      - Create Kubernetes 叢集
+        - Azure CLI
+          [46] 使用 Azure CLI 建立 Kubernetes 叢集
+        - Azure 入口網站
+          [53] 如何使用 Azure 入口網站 部署Kubernetes 叢集
+        - Azure Resource Manager 範本
+          [57] 快速入門：使用 Azure ResourceManager 範本部署 Kubernetes 叢集
+      - 網路
+        - Create Kubernetes 叢集的邏輯網路
+          [66] 在 Azure Stack HCI 23H2 上建立Kubernetes 叢集的邏輯網路
+        - 使用 MetalLB 負載平衡器
+          - Azure CLI
+            [69] 使用 Azure Arc 和 Azure CLI 建立MetalLB 負載平衡器
+          - Azure 入口網站
+            [72] 使用 Azure Arc 和 Azure 入口網站 建立MetalLB 負載平衡器
+      - 儲存體
+        - CSI 儲存體驅動程式
+          - 使用磁碟 CSI 驅動程式
+            [75] 在 Azure Arc 啟用的 AKS 中使用容器記憶體介面 (CSI) 磁碟驅動器
+          - 使用檔案 CSI 驅動程式
+            [79] 在 Azure Arc 啟用的 AKS 中使用容器記憶體介面 (CSI) 檔案驅動程式
+      - 節點集區
+        - 管理多個節點集區
+          [83] 在 Azure Stack HCI 23H2) 上管理叢集(AKS 的節點集區
+        - 使用 GPU
+          [89] 在 Azure Stack HCI 23H2) 上使用 GPU(AKS 的計算密集型工作負載
+        - 在 Kubernetes 叢集中使用標籤
+          [96] 在由 Azure Arc 啟用的 AKS 中使用叢集標籤
+      - 縮放 Kubernetes 叢集
+        [98] 在 AKS Arc 叢集上使用叢集自動調整程式
+      - 升級 Kubernetes 叢集
+        [103] 升級 Azure Kubernetes Service (AKS) 叢集
+      - Create Windows Server 容器
+        [107] 建立 Windows Server 容器
+      - 使用 Azure Container Registry 部署容器映像
+        [112] 使用 Azure Container Registry和 AKSArc 從私人容器登錄部署至內部部署Kubernetes
+      - 安全性和驗證
+        - 擷取憑證型管理員 kubeconfig
+          [117] 在 AKS Arc 中擷取憑證型管理員kubeconfig
+        - 限制 SSH 存取
+          [119] 限制 AZURE (Arc 在 Azure Stack HCI23H2) 上啟用的 AKS 中對 AKS 的 SSH 存取
+      - 監視和記錄
+        - 監視 Kubernetes 物件事件
+          [121] 監視 Kubernetes 物件事件
+        - 監視 Kubernetes 稽核事件
+          [123] 監視 Kubernetes 稽核事件
+        - 啟用 Container Insights
+          [127] 啟用 Kubernetes 叢集的監視
+        - 使用內部部署監視
+          [145] 監視和記錄數據
+        - 取得 kubelet 記錄
+          [147] 從叢集節點取得 kubelet 記錄
+        - 取得隨選記錄以進行疑難解答
+          [149] 取得隨選記錄以進行疑難解答
+    - 疑難排解
+      - 已知問題
+        [151] Azure Arc 所啟用 AKS 中的已知問題
+      - 疑難排解
+        [154] 針對 Azure Arc 所啟用的 AKS 常見問題進行疑難解答
+    - 參考
+      - Azure CLI
+        [155] az aksarc
+      - REST API 參考資料
+        [180] Resource Manager
+      - Azure Stack HCI
+        [181] Azure Stack HCI 文件
+      - Windows Admin Center (WAC) 
+        [184] Windows Admin Center
+      - Azure 混合式雲端
+        [188] 
+      - Windows Server
+        [193] 
+      - 版本資訊
+      - AKS Arc PowerShell
+        [196] AKS 混合式部署選項 PowerShell 參考
+      - 附加元件、延伸模組和整合
+        [200] 附加元件、延伸模組和其他與 Arc 啟用的AKS 整合
+    - 資源
+      - Azure Arc 快速入門
+      - Azure 藍圖
+      - AKS 藍圖
+      - 已啟用 AKS 的 Arc 藍圖
+  - AKS Edge Essentials
+    - 概觀
+      [202] AKS Edge Essentials
+    - 系統需求和支援矩陣
+      [206] AKS Edge Essentials 需求和支援矩陣
+    - 快速入門
+      [209] AKS Edge Essentials 快速入門指南
+    - 概念
+      - 叢集和節點
+        [215] AKS Edge Essentials 叢集和節點的重要概念
+      - 網路
+        [218] AKS Edge Essentials 網路功能
+      - 部署 JSON 組態參數
+        [224] 
+    - 使用方法
+      - 設定電腦
+        [234] 準備適用於 AKS Edge Essentials 的電腦
+      - Create 單一計算機部署
+        [239] 單一電腦部署
+      - Create 完整部署
+        [244] AKS Edge 中的完整 Kubernetes 部署Essentials
+      - 相應放大部署
+        [250] 在多部電腦上相應放大
+      - 部署應用程式
+        [255] 部署應用程式
+      - 線上至 Arc
+        [262] 將 AKS Edge Essentials 叢集連線到 Arc
+      - 啟用計量伺服器
+        [269] AKS Edge Essentials 叢集上的計量伺服器
+      - 設定巢狀虛擬化
+        [271] 準備 AKS Edge Essentials 的巢狀虛擬化環境
+      - 搭配 AKS Edge Essentials 使用 GitOps
+        [280] 使用 GitOps 和 Flux 進行遠端部署和 CI
+      - 離線安裝
+        [287] AKS Edge Essentials 離線安裝的必要條件
+      - 存取 TPM 秘密
+        [290] AKS Edge Essentials 的 TPM 存取
+      - 其他設定
+        [295] AKS Edge Essentials 的其他設定和腳本
+      - 更新 AKS Edge Essentials
+        - 在線更新
+          [302] (在線更新 AKS Edge Essentials 叢集)
+        - 更新離線 (無線) 
+          [305] (離線) 更新 AKS Edge Essentials 叢集
+      - 卸載 AKS Edge Essentials
+        [307] 卸載 AKS Edge Essentials 叢集
+      - 網路
+        - 公開 Kubernetes 服務
+          [311] 將 Kubernetes 服務公開給外部裝置
+        - 設定多個 NIC
+          [315] AKS Edge Essentials 多個 NIC 組態
+      - 儲存體
+        - 新增本機記憶體系結
+          [323] AKS Edge Essentials 上的本機路徑布建工具
+        - 新增 NFS 記憶體系結
+          [327] AKS Edge Essentials 上的外部 NFS 儲存體
+      - Akri
+        - 使用 Akri 探索 OPC UA 伺服器
+          [332] 使用 Akri 探索 OPC UA 伺服器
+        - 使用 Akri 探索 ONVIF 相機
+          [343] 使用 Akri 探索 ONVIF 相機
+    - 資源
+      - AKS Edge Essentials PowerShell
+        [351] AKS Edge Essentials PowerShell 模組
+      - 疑難排解
+        [355] 針對 AKS Edge Essentials 中的常見問題進行疑難解答
+      - 記錄
+        [358] AKS Edge Essentials 記錄
+      - 版本資訊與已知問題
+      - 檔案 bug
+      - AKS Edge Essentials 定價
+        [363] AKS Edge Essentials 定價
+      - AKS Edge Essentials 授權
+        [365] AKS Edge Essentials 授權選項
+      - Microsoft 軟體授權條款
+        [367] AKS Edge Essentials 的 Microsoft 軟體授權條款
+  - VMware 上的 Azure Arc 所啟用的 AKS
+    - 概觀
+      [372] 在 VMware (預覽) 上，Azure Arc 已啟用哪些 AKS？
+    - 系統需求
+      [375] 系統需求和支援矩陣 (預覽)
+    - 網路需求
+      [379] Azure Arc 在 VMware 網路需求上啟用的AKS (預覽)
+    - 支援的調整需求
+      [383] 在 VMware (預覽版上，Arc 啟用的 AKS調整需求)
+    - 快速入門
+      - 部署 AKS 叢集
+        [386] 快速入門：使用 Azure CLI 部署 AKS 叢集(預覽)
+    - 概念
+      - 叢集架構
+        [390] VMware 上的 AKS Arc (預覽) 和工作負載叢集架構
+    - 使用方法
+      - 安裝操作員的 Kubernetes 擴充功能
+        [393] 啟用 AKS Arc 運算符的 Kubernetes 擴充功能 (預覽)
+      - 擷取憑證型管理員 kubeconfig
+        [398] 在 VMware 上的 AKS Arc 中擷取憑證型系統管理員 kubeconfig
+      - 監視和記錄
+        [400] 在 VMware (預覽) 上由 Azure Arc 啟用的AKS 中監視和記錄數據
+    - 疑難排解
+      - 疑難排解和支援
+        [401] 疑難解答和支持原則
+      - 已知問題
+        [403] VMware 上 Azure Arc 所啟用的 AKS 已知問題
+      - 疑難排解指南
+        [405] VMware 上 Azure Arc 所啟用之 AKS 問題的疑難解答指南
+  - Windows Server 上的 AKS
+    - 概觀
+      [409] Windows Server 和 Azure Stack HCI 版本 22H2 上的 AKS 概觀
+    - 系統需求
+      [415] Azure Arc on Azure Stack HCI 22H2 所啟用 AKS 的系統需求
+    - 快速入門
+      - 部署 AKS 叢集
+        - 使用 PowerShell
+          [427] 在 Azure Stack HCI 和 Windows Server上設定Azure Kubernetes Service主機，並使用 PowerShell 部署工作負載叢集
+        - 使用 Windows Admin Center
+          - 設定 AKS
+            [436] 快速入門：使用 Windows Admin Center設定由 Azure Arc 啟用的 AKS
+          - 建立 Kubernetes 叢集
+            [442] 快速入門：使用 Windows Admin Center在 Azure Arc 啟用的 AKS 上建立本機Kubernetes 叢集
+    - 教學課程
+      - 1 - 準備應用程式
+        [446] 教學課程：準備 AKS 的應用程式
+      - 2 - 建立容器登錄
+        [451] 教學課程：為Arc啟用的 AKS 建立 AzureContainer Registry
+      - 3 - 部署工作負載叢集
+        [456] 教學課程：在Arc啟用的 AKS 上部署工作負載叢集
+      - 4 - 執行應用程式
+        [461] 教學課程：在由 Azure Arc 啟用的 AKS 中部署應用程式
+      - 5 - 調整應用程式
+        [466] 教學課程：在 Azure Arc 所啟用的 AKS 中調整應用程式
+      - 6 - 更新應用程式
+        [469] 教學課程：在 Azure Arc 啟用的 AKS 中更新應用程式
+      - 7 - 升級 Kubernetes 叢集
+        [475] 教學課程：在 Azure Arc 所啟用的 AKS 中升級 Kubernetes
+    - 概念
+      - 配額和資源限制
+        [480] Azure Arc 所啟用 AKS 的資源限制、VM大小和區域
+      - 叢集與工作負載
+        - Kubernetes 叢集架構和工作負載
+          [486] Azure Arc 所啟用 AKS 的 Kubernetes 叢集架構和工作負載
+        - 從 Azure Container Registry 部署容器映像
+          [491] 使用 Azure Container Registry 從私人容器登錄部署至內部部署 Kubernetes
+        - 管理工作負載
+          - 建立和刪除 Pod
+            [497] 建立和刪除 Pod
+          - 建立部署
+            [500] 建立部署
+          - 建立 DaemonSet
+            [503] 建立 Kubernetes DaemonSets
+          - 建立 ReplicaSet
+            [506] 建立 ReplicaSet
+          - 建立 StatefulSet
+            [509] 建立 StatefulSet
+      - 2 節點 HCI 叢集的可用性
+        [511] Azure Arc 在雙節點 HCI 上啟用 AzureKubernetes Service (AKS) 的可用性案例
+      - 安全性
+        - 安全性概觀
+          [519] Azure Arc 所啟用 AKS 中的安全性概念
+        - 容器安全性
+          [523] Azure Arc 所啟用 AKS 中的容器安全性
+        - 憑證管理概觀
+          [525] Azure Arc 所啟用 AKS 中的憑證管理概觀
+        - Azure 原則指引
+          [529] Azure Arc 所啟用 AKS 中的 Azure 原則
+      - 網路
+        - Kubernetes 節點網路
+          [531] 部署 AKS 節點的網路概念
+        - Kubernetes 容器網路
+          [538] 容器網路概念
+      - 儲存體
+        [543] Azure Arc 所啟用 AKS 中應用程式的記憶體選項
+      - 應用程式可用性
+        [547] Azure Arc 所啟用 AKS 中的應用程式可用性
+      - 調整
+        - 叢集自動調整程式
+          [551] Azure Arc 啟用的 AKS 中的叢集自動調整
+        - 垂直節點自動調整
+          [553] 垂直節點調整
+      - 節點自動修復
+        [556] 節點自動修復
+      - 計費
+        - Azure Hybrid Benefit
+          [558] Azure Arc (Azure Stack HCI 22H2) 上由Azure Arc (AKS 啟用的 AKS AzureHybrid Benefit
+    - 操作指南
+      - 安裝具有預先設置叢集服務物件和 DNS 記錄的 AKS Arc 主機
+        [564] 使用 PowerShell 部署具有預先暫存叢集服務物件和 DNS 記錄的 AzureKubernetes Service 主機
+      - 使用手動 (離線下載) 
+        [567] 在 Azure Stack HCI 和 Windows Server上的 AKS 中使用離線下載
+      - 使用 GPU
+        [573] 在 Azure Stack HCI 22H2) 上使用 GPU 進行計算密集型工作負載 (AKS
+      - 管理多個節點集區
+        [580] 在 Azure Stack HCI 22H2) 上管理叢集(AKS 的節點集區
+      - 升級
+        - 升級 AKS Arc 主機
+          - 使用 PowerShell
+            [587] 使用 PowerShell 在 Arc 啟用的 AKS 中升級 AKS 主機
+          - 使用 Windows Admin Center
+            [590] 使用 Windows Admin Center 在 AzureArc 啟用的 AKS 中升級 AzureKubernetes Service 主機
+          - 升級 Kubernetes 版本
+            - 使用 PowerShell
+              [593] 使用 PowerShell 在 Arc 啟用的 AKS 中升級 AKS 叢集的 Kubernetes 版本
+            - 使用 Windows Admin Center
+              [596] 使用 Windows Admin Center 升級 AKS工作負載叢集的 Kubernetes 版本
+        - 開發應用程式
+          - 使用 Helm 部署應用程式
+            [599] 使用 Helm 部署應用程式
+          - 部署已啟用 Azure Arc 的資料服務
+            [605] 部署已啟用 Azure Arc 的資料服務
+          - 使用 GitOps 部署設定
+            [607] 教學課程：使用 GitOps 搭配 Flux v2 部署應用程式
+          - 使用 GitOps 實作 CI/CD
+            [625] 教學課程：使用 GitOps (Flux v2) 實作CI/CD
+        - 規模調整
+          - 調整 AKS 叢集
+            [643] 調整 Azure Kubernetes Service 叢集中的節點計數
+          - 使用自動調整程式
+            - 使用 PowerShell
+              [644] 在 Azure Arc 所啟用的 AKS 中使用PowerShell 進行叢集自動調整
+            - 使用自動調整程式設定檔
+              [653] 使用自動調整程式配置檔，在 Azure Arc所啟用的 AKS 中設定叢集自動調整
+        - 重新啟動、停止、還原
+          - 重新啟動、移除或重新安裝 AKS
+            [657] 重新啟動、移除或重新安裝 AzureKubernetes Service
+          - 停止並啟動 AKS 叢集
+            [659] 停止並啟動 Azure Kubernetes Service 叢集
+          - 從災害還原 AKS 叢集
+            [663] 在災害之後還原 Kubernetes 叢集的狀態
+          - 使用 Velero 備份或還原工作負載叢集
+            [667] 使用 Velero 備份、還原工作負載叢集
+        - 使用 Azure Arc Kubernetes
+          - 連接到 Azure Arc for Kubernetes
+            [680] 將 Azure Kubernetes Service 叢集連線至Azure Arc
+          - Az 模組 CLI 命令
+            [685] az connectedk8s
+        - 網路
+          - 使用 Proxy 設定
+            [716] Azure Arc 所啟用 AKS 中的 Proxy 伺服器設定
+          - 更新 Proxy 設定和憑證
+            [721] 更新 Proxy 伺服器設定和憑證
+          - 設定負載平衡器
+            [725] 在 Azure Arc 啟用的 AKS 中建立和使用負載平衡器與 Azure Kubernetes Service
+          - 使用多個負載平衡器
+            [726] 使用多個負載平衡器
+          - 設定自訂負載平衡器
+            [728] 在 Azure Stack HCI 和 Windows Server上的 Azure Kubernetes Service 中建立和使用自訂負載平衡器
+          - 使用輸入控制器
+            [730] 部署輸入控制器
+          - 使用 Microsoft 軟體定義網路 (SDN) 
+            - 部署 SDN
+              [734] 部署 Microsoft 軟體定義網路 (SDN)
+            - 在不同的 SDN 虛擬網路上部署應用程式叢集
+              [740] 在不同的 SDN 虛擬網路上部署 AKS 目標叢集
+        - 儲存體
+          - 使用永續性磁碟區
+            [743] 搭配 Azure Arc 啟用的 AKS 使用永續性磁碟區
+        - 安全性和驗證
+          - 限制 SSH 存取
+            [747] 限制 Azure Arc 在 Azure Stack HCI22H2) 上啟用的 AKS 中對 AKS 的 SSH 存取 (
+          - 使用 Active Directory 單一登入
+            [750] 使用 Active Directory 單一登錄，在Azure Arc 所啟用的 AKS 中安全地連線到Kubernetes API 伺服器
+          - 搭配使用 Kubernetes RBAC 與 Microsoft Entra ID
+            [760] 在 Azure Arc 所啟用的 AKS 中使用Microsoft Entra ID 和 Kubernetes RBAC來控制存取
+          - 搭配 AKS 叢集使用 Azure RBAC
+            [768] 使用適用於 AKS 叢集的 Azure RBAC (預覽)
+          - 更新容器主機上的憑證套件組合
+            [776] 更新容器主機上的憑證套件組合
+          - 更新憑證
+            [778] 更新 Azure Arc 所啟用 AKS 中的憑證
+          - 密碼存放區 CSI 驅動程式設定
+            [780] 使用適用於 Kubernetes 秘密存放區 CSI驅動程式的 Azure 金鑰保存庫 提供者
+          - 加密 etcd 祕密
+            [787] 加密 Azure Kubernetes Service 叢集的etcd秘密
+          - 使用網路原則保護 Pod 之間的流量
+            [789] 使用 Calico 網路原則來保護 Pod 流量
+          - 設定已啟用 Azure Arc 的 Defender Kubernetes 叢集
+            [798] 設定適用於容器的 Microsoft Defender元件
+        - 監視和記錄
+          - 使用內部部署監視
+            [811] 監視和記錄數據
+        - 使用 Windows Server 容器
+          - 部署 .NET 應用程式
+            [815] 部署 Windows 應用程式
+          - 設定群組受控的服務帳戶支援
+            [820] 設定群組受管理的服務帳戶 (gMSA) 適用於具有 Azure Stack HCI 和 WindowsServer 上 Azure Kubernetes Service 的Windows 容器
+          - 調整混合 OS Kubernetes 叢集的應用程式
+            [828] 調整應用程式以在混合 OS Kubernetes 叢集中使用
+        - 開發及執行應用程式
+          - 使用 Helm 安裝現有的應用程式
+            [832] 使用 Helm 安裝現有的應用程式
+          - 使用 OpenFaaS
+            [837] 使用 OpenFaaS 搭配 Azure Arc 所啟用的AKS
+          - 將橋接至 Kubernetes 與 Visual Studio Code 搭配使用
+          - 將橋接至 Kubernetes 與 Visual Studio 搭配使用
+            [843] 教學課程：在本機使用 Bridge toKubernetes 在 Visual Studio 上執行和偵錯
+          - 使用 Open Liberty 或 WebSphere Liberty 部署 Java 應用程式
+            [850] 在 Azure Kubernetes Service 叢集上使用Open Azure Kubernetes Service 或WebSphere 一起部署 Java 應用程式
+          - 部署 Linux 應用程式
+            [858] 教學課程：部署Linux應用程式
+        - 協助程式指令碼
+          - 設定多位系統管理員
+            [864] 設定多位系統管理員
+          - 移除舊的 PowerShell 模組
+    - 疑難排解
+      - 從 Azure 預覽版卸載 AKS 叢集布建
+        [865] 開始之前：卸載 AKS 叢集布建預覽
+      - 疑難排解概觀
+        [867] 疑難排解概觀
+      - 已啟用 Azure Arc 的 Kubernetes
+        [869] 錯誤：「找不到名稱為 『my-aks-cluster』 的工作負載叢集」
+錯誤：「System.Management.Automation.RemoteException 開始上線程式叢集“azure-arc-onboarding” set...
+      - 安裝前驗證測試
+        [874] Arc 預安裝驗證測試啟用的 AKS
+      - 安裝
+        [877] 錯誤「無法等候附加元件弧線」
+錯誤：「Install-AksHci 失敗，服務傳回錯誤。 Status=403Code=“RequestDisallowedByPolicy”' 安裝 AKS-HCI 時發生錯誤
+      - 升級
+        [894] 成功升級之後，不會移除舊版的PowerShell
+憑證更新 Pod 處於重複當機狀態
+      - 工作負載和叢集
+        - Kubernetes 叢集
+          [910] 執行 Remove-ClusterNode 命令收回容錯移轉叢集中的節點，但該節點仍存在
+使用大型叢集時，Get-AksHciLogs 命令會失敗，但發生例外狀況
+憑證更新 pod 處於損毀迴圈狀態
+        - 使用 SSH 連線到節點
+          [922] 使用 SSH 連線至 Windows 或 Linux 背景工作節點以進行維護和疑難排解
+      - 網路
+        [924] 錯誤：「無法啟動故障轉移叢集中的雲端代理程式一般叢集服務。 叢集資源群組處於「失敗」狀態。
+與 Arc 連線的叢集具有空的 JSON「散發」屬性
+      - 安全性
+        [935] Get-AksHciCredential 失敗，並出現「找不到指定的路徑」錯誤
+      - 儲存體
+        [944] 設定持續性磁碟區宣告會導致錯誤：「無法初始化代理程式。 錯誤： mkdir/var/log/agent： 許可權遭拒」
+容器記憶體介面 Pod 停滯在「ContainerCreating」狀態
+      - Windows Admin Center
+        [948] 向 Azure 註冊 Windows Admin Center網路閘道時發生問題
+只有設定 AKS 主機的使用者可以建立叢集
+從 Azure Stack HCI 上的 AKS 部署的失敗中復原
+安裝或叢集建立精靈會顯示錯誤設定的相關錯誤
+      - 解除安裝
+        [960] Uninstall-AksHCI 不會清除叢集資源(『ownergroup ca-<GUID>』)
+Uninstall-AksHciAdAuth 失敗並出現錯誤'[來自伺服器 (NotFound 的錯誤) ：找不到秘密 “keytab-akshci-scale-reliability”
+執行 Remove-ClusterNode 命令收回容錯移轉叢集中的節點，但該節點仍存在
+      - 其他
+        [963] 執行 AksHci PowerShell Cmdlet 時，會出現「無法載入 DLL」錯誤
+      - Azure Stack HCI 問題
+        - Azure Stack HCI 中的叢集驗證報告
+          [967] 針對叢集驗證報告進行疑難排解
+        - Azure Stack HCI 中的 CredSSP
+          [971] 針對 CredSSP 進行疑難排解
+      - 支援原則
+        [976] Azure Arc 所啟用 AKS 的支持原則
+      - 取得支援
+        [983] 取得 Arc 和 AKS Edge 啟用的 AKS 支援Essentials
+      - 檔案 bug
+    - 架構
+      - AKS 的基準架構
+        [989] 
+      - AKS 的網路架構
+        [998] 

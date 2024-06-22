@@ -1,0 +1,159 @@
+- ---< azure-azure-resource-manager-managed-applications.pdf >---
+  - Azure 受控應用程式文件
+    [1] Azure 受控應用程式文件
+  - 概觀
+    - Azure 受控應用程式
+      [3] Azure 受控應用程式概觀
+  - 快速入門
+    - 發佈受控應用程式定義
+      [8] 快速入門：建立和發佈 Azure 受控應用程式定義
+    - 使用自備儲存體發佈定義
+      [18] 
+    - 發佈受控應用程式定義 - Bicep
+      [30] 
+    - 部署服務類別目錄受控應用程式
+      [43] 快速入門：部署服務類別目錄受控應用程式
+    - 部署服務類別目錄受控應用程式 - Bicep
+      [49] 快速入門：使用 Bicep 來部署 Azure 受控應用程式定義
+    - 部署Azure Marketplace受控應用程式
+      [57] 快速入門：部署 Azure Marketplace 受控應用程式
+  - 教學課程
+    - 使用自訂提供者建立受控應用程式
+      [67] 教學課程：使用自訂動作和資源建立受控應用程式
+  - 範例
+    - 受控應用程式解決方案
+      [76] 適用於 Azure 受控應用程式之範例專案
+  - 概念
+    - 檢視定義成品
+      [77] 檢視 Azure 受控應用程式中的定義成品
+    - 適用於關聯的 Azure 原則
+      [87] 使用 Azure 原則為受控應用程式部署關聯
+    - 安全性
+      - 安全性基準
+        [90] Azure 受控應用程式的 Azure 安全性基準
+  - 作法指南
+    - 發行者
+      - 建立入口網站介面
+        [108] 適用於 Azure 受控應用程式建立體驗的CreateUiDefinition
+      - 測試入口網站介面
+        [114] 測試您的 Azure 受控應用程式入口網站介面
+      - 建立 Azure 應用程式供應項目
+        [117] 建立 Azure 應用程式供應項目
+      - 要求 Just-In-Time 存取
+        [121] 啟用並要求 Azure 受控應用程式的 Just-In-Time 存取
+      - 使用現有虛擬網路
+        [126] 使用現有的虛擬網路搭配 Azure 受控應用程式
+      - 更新受控資源
+        [138] 針對 Azure 受控應用程式使用受控資源群組中的資源
+      - 使用 Key Vault 中的祕密
+        [142] 在部署 Azure 受控應用程式時存取 KeyVault 秘密
+      - 使用受控識別進行部署
+        [147] 具有受控識別的 Azure 受控應用程式
+      - 使用客戶管理的金鑰建立儲存體
+        [158] 建立會部署使用客戶自控金鑰進行加密之儲存體帳戶的 Azure 受控應用程式
+      - 使用通知進行部署
+        [171] 具有通知的 Azure 受控應用程式
+    - 取用者
+      - 監視受控應用程式
+        [178] 監視受控應用程式的已部署執行個體
+      - 核准 Just-In-Time 存取
+        [182] 設定和核准 Azure 受控應用程式的 Just-In-Time 存取
+  - 參考
+    - 應用程式成品
+      - 使用者介面元素
+        [187] 參考：使用者介面元素成品
+      - 部署範本
+        [189] 參考：部署範本成品
+      - 檢視定義
+        [193] 參考：檢視定義成品
+    - Azure CLI
+      [195] az managedapp
+    - Azure PowerShell
+      [204] 
+    - REST
+      [211] 受控應用程式
+    - 使用者介面功能
+      - 所有函式
+        [212] CreateUiDefinition 函式
+      - 集合函式
+        [215] CreateUiDefinition 集合函數
+      - 轉換函數
+        [223] CreateUiDefinition 轉換函式
+      - 日期函式
+        [228] CreateUiDefinition 日期函數
+      - 邏輯函式
+        [230] CreateUiDefinition 邏輯函式
+      - 數學函數
+        [235] CreateUiDefinition 數學函式
+      - 參考函式
+        [239] CreateUiDefinition 參考函數
+      - 字串函數
+        [242] CreateUiDefinition 字串函式
+    - 使用者介面元素
+      [245] CreateUiDefinition 元素
+      - 通用
+        - CheckBox
+          [247] Microsoft.Common.CheckBox UI 元素
+        - DropDown
+          [249] Microsoft.Common.DropDown UI 元素
+        - EditableGrid
+          [254] Microsoft.Common.EditableGrid UI 元素
+        - FileUpload
+          [258] Microsoft.Common.FileUpload UI 元素
+        - InfoBox
+          [261] Microsoft.Common.InfoBox UI 元素
+        - OptionsGroup (選項按鈕)
+          [263] Microsoft.Common.OptionsGroup UI 元素
+        - PasswordBox
+          [265] Microsoft.Common.PasswordBox UI 元素
+        - 區段
+          [267] Microsoft.Common.Section UI 元素
+        - ServicePrincipalSelector
+          [269] Microsoft.Common.ServicePrincipalSelector 使用者介面元素
+        - 滑桿
+          [274] Microsoft.Common.Slider UI 元素
+        - TagsByResource
+          [276] Microsoft.Common.TagsByResource UI元素
+        - TextBlock
+          [278] Microsoft.Common.TextBlock UI 元素
+        - TextBox
+          [279] Microsoft.Common.TextBox UI 元素
+      - 計算
+        - CredentialsCombo
+          [284] Microsoft.Compute.CredentialsComboUI 元素
+        - SizeSelector
+          [289] Microsoft.Compute.SizeSelector UI 元素
+        - UserNameTextBox
+          [292] Microsoft.Compute.UserNameTextBoxUI 元素
+      - Key Vault
+        - KeyVaultCertificateSelector
+          [294] Microsoft.KeyVault.KeyVaultCertificateSelector UI 元素
+      - 受控識別
+        - IdentitySelector
+          [296] Microsoft.ManagedIdentity.IdentitySelector UI 元素
+      - 網路
+        - PublicIPAddressCombo
+          [300] Microsoft.Network.PublicIpAddressCombo UI 元素
+        - VirtualNetworkCombo
+          [303] Microsoft.Network.VirtualNetworkCombo UI 元素
+      - 方案
+        - ArmApiControl
+          [307] Microsoft.Solutions.ArmApiControl UI元素
+        - ResourceSelector
+          [310] Microsoft.Solutions.ResourceSelector UI元素
+      - 儲存體
+        - MultiStorageAccountCombo
+          [313] Microsoft.Storage.MultiStorageAccountCombo UI 元素
+        - StorageAccountSelector
+          [315] Microsoft.Storage.StorageAccountSelector UI 元素
+        - StorageBlobSelector
+          [320] Microsoft.Storage.StorageBlobSelectorUI 元素
+    - Azure 原則內建
+      [323] Azure 原則 Azure 受控應用程式的內建定義
+  - 資源
+    - Azure 藍圖
+    - 定價
+    - 定價計算機
+    - Resource Manager 範本最佳做法
+    - Microsoft Q&A
+    - Stack Overflow

@@ -1,0 +1,296 @@
+- ---< azure-expressroute.pdf >---
+  - ExpressRoute 文件
+    [1] ExpressRoute 文件
+  - 概觀
+    - 什麼是 ExpressRoute？
+      [5] 什麼是 Azure ExpressRoute？
+    - 適用於 ExpressRoute 的架構良好
+      [11] Azure Well-Architected Framework 檢閱- Azure ExpressRoute
+  - 快速入門
+    - 建立 ExpressRoute 線路 - 入口網站
+      [18] 快速入門：建立和修改 ExpressRoute 線路
+    - 建立 ExpressRoute 線路 - PowerShell
+      [29] 快速入門：使用 Azure PowerShell 建立和修改 ExpressRoute 線路
+    - 建立 ExpressRoute 線路 - CLI
+      [41] 快速入門：使用 Azure CLI 建立和修改ExpressRoute 線路
+    - 建立 ExpressRoute 線路 - Bicep
+      [51] 快速入門：使用 Bicep 建立具有私人對等互連的 ExpressRoute 線路
+    - 建立 ExpressRoute 線路 - ARM 範本
+      [58] 快速入門：使用ARM範本建立具有私人對等互連的ExpressRoute線路
+  - 教學課程
+    - 建立虛擬網路的私人連線
+      [69] 教學課程：使用 ExpressRoute 建立從內部部署到 Azure 虛擬網路的私人連線
+  - 概念
+    - 遠端工作
+      - 遠端工作的支援
+        [73] 使用 Azure 網路服務啟用遠端工作
+      - 遠端使用者的混合式連線能力
+        [77] 使用 Azure ExpressRoute 建立混合式連線，以支援遠端使用者
+    - 開始使用 ExpressRoute 之前
+      - 必要條件
+        [79] ExpressRoute 必要條件和檢查清單
+      - 連線能力模型
+        [81] ExpressRoute 連線模型
+      - 工作流程
+        [83] 電路佈建與電路狀態的 ExpressRoute 工作流程
+      - 路由需求
+        [88] ExpressRoute 路由需求 \(部分機器翻譯\)
+    - 位置與合作夥伴
+      - 依位置的提供者
+        [99] ExpressRoute 對等互連位置和連線合作夥伴
+      - 依提供者的位置
+        [127] ExpressRoute 連線能力合作夥伴和對等互連位置
+    - ExpressRoute 常見問題集
+      [157] ExpressRoute 常見問題集
+    - 線路和對等互連
+      - 關於線路和對等互連
+        [186] ExpressRoute 線路和對等互連
+      - 關於升級線路頻寬
+        [191] 關於升級 ExpressRoute 線路頻寬
+      - 從傳統移往 Resource Manager 的移動線路
+        [193] 將 ExpressRoute 線路從傳統部署模型移至 Resource Manager 部署模型
+    - 關於 ExpressRoute 閘道
+      [197] 關於 ExpressRoute 虛擬網路閘道
+    - 關於可用性區域的區域備援閘道
+      [207] 關於在 Azure 可用性區域中的區域備援虛擬網路閘道
+    - 關於移轉至 AZ 閘道
+      [211] 關於移轉至已啟用可用性區域功能的ExpressRoute 虛擬網路閘道
+    - 關於 ExpressRoute FastPath
+      [214] 關於 ExpressRoute FastPath
+    - 關於 ExpressRoute Direct \(部分機器翻譯\)
+      [217] 關於 ExpressRoute Direct \(部分機器翻譯\)
+    - 關於 ExpressRoute Global Reach
+      [222] 關於 ExpressRoute Global Reach
+    - 關於 ExpressRoute Metro
+      [225] 關於 ExpressRoute Metro （預覽）
+    - 關於 ExpressRoute 加密
+      [230] ExpressRoute 加密
+    - 關於 ExpressRoute 限制
+      [311] 
+    - ExpressRoute 復原的設計架構
+      [336] 設計和架構 Azure ExpressRoute 以恢復復原
+    - ExpressRoute 流量收集器
+      [343] Azure ExpressRoute 流量收集器
+    - 將 Azure 連線到公用雲端
+      [348] 連接 Azure 與公用雲端
+    - 虛擬網路之間的連線
+      [352] 透過 ExpressRoute 在虛擬網路之間的連線
+    - 計劃性維護指引
+      [354] ExpressRoute 的計劃性維護指引
+    - 跨網路連線能力
+      [360] 跨網路連線能力
+    - BGP 社群
+      [370] 使用 BGP 社群管理複雜的網路架構
+    - 安全性
+      - 安全性基準
+        [373] ExpressRoute 的 Azure 安全性基準
+    - 透過 ExpressRoute 的 BFD
+      [382] 透過 ExpressRoute 設定 BFD
+    - QoS 需求
+      [385] ExpressRoute QoS 需求
+    - 服務提供者連接埠的速率限制
+      [387] 關於透過服務提供者連接埠的ExpressRoute 線路速率限制
+    - 透過 ExpressRoute 路由傳送 Microsoft 365 流量
+      [390] 使用 ExpressRoute 來路由傳送 Microsoft365 流量
+    - 透過 ExpressRoute 路由傳送 Microsoft PSTN 流量
+      [393] 使用 ExpressRoute 將流量路由傳送至Microsoft PSTN 服務
+    - 高可用性 - 設計
+      [396] 使用 ExpressRoute 專為高可用性而設計
+    - 災害復原 - 設計
+      - 私人對等互連
+        [401] 使用 ExpressRoute 私人對等互連規劃災害復原
+      - 使用 VPN 做為備份
+        [413] 使用 S2S VPN 作為 ExpressRoute 私人對等互連的備份
+  - 操作指南
+    - 設定 ExpressRoute
+      - 建立和修改對等互連組態
+        - Azure 入口網站
+          [423] 使用 Azure 入口網站建立和修改ExpressRoute 線路的對等互連
+        - Azure PowerShell
+          [438] 使用 PowerShell 建立和修改ExpressRoute 線路的對等互連
+        - Azure CLI
+          [449] 使用 CLI 建立和修改 ExpressRoute 線路的對等互連
+      - 為 ExpressRoute 設定虛擬網路閘道
+        - Azure 入口網站
+          [459] 使用 Azure 入口網站為 ExpressRoute 設定虛擬網路閘道
+        - Azure PowerShell
+          [466] 使用 PowerShell 為 ExpressRoute 設定虛擬網路閘道
+      - 將虛擬網路連結到 ExpressRoute 線路
+        - Azure 入口網站
+          [471] 使用 Azure 入口網站將虛擬網路連線至ExpressRoute 線路
+        - Azure PowerShell
+          [485] 使用 Azure PowerShell 將虛擬網路連線到 ExpressRoute 線路
+        - Azure CLI
+          [494] 使用 Azure CLI 將虛擬網路連線到ExpressRoute 線路
+    - 針對 Microsoft 對等互連設定路由篩選
+      - Azure 入口網站
+        [501] 使用 Azure 入口網站設定 Microsoft 對等互連的路由篩選
+      - Azure PowerShell
+        [512] 使用 PowerShell 設定 Microsoft 對等互連的路由篩選
+      - Azure CLI
+        [518] 針對 Microsoft 對等互連設定路由篩選：Azure CLI
+    - 設定 ExpressRoute Direct
+      - 設定 ExpressRoute Direct
+        - Azure 入口網站
+          [524] 使用 Azure 入口網站 建立 ExpressRouteDirect
+        - Azure PowerShell
+          [534] 如何設定 ExpressRoute Direct
+        - Azure CLI
+          [545] 使用 Azure CLI 設定 ExpressRoute Direct
+      - 設定適用於 ExpressRoute Direct 連接埠的 MACsec
+        [554] 在 ExpressRoute Direct 連接埠上設定MACsec
+    - 設定 ExpressRoute Global Reach
+      - Azure 入口網站
+        [561] 使用 Azure 入口網站設定 ExpressRouteGlobal Reach
+      - Azure PowerShell
+        [571] 設定 ExpressRoute Global Reach
+      - Azure CLI
+        [577] 使用 Azure CLI 設定 ExpressRoute GlobalReach
+    - 新增私人對等互連的 IPv6 支援
+      - Azure 入口網站
+        [581] 使用 Azure 入口網站新增 IPv6 支援來建立私人對等互連
+      - Azure PowerShell
+        [586] 使用 Azure PowerShell 為私人對等互連新增 IPv6 支援
+      - Azure CLI
+        [592] 使用 Azure CLI 新增私人對等互連的 IPv6支援
+    - 監視
+      - 監視 ExpressRoute
+        [596] 監視 Azure ExpressRoute
+      - 網路深入解析
+        [604] 使用 Network Insights 獲得 AzureExpressRoute 深入解析
+      - 設定 ExpressRoute 的連線監視
+        [611] 設定 ExpressRoute 的連線監視器
+      - 設定 ExpressRoute 流量收集器
+        [624] 設定 ExpressRoute Direct 的流量收集器
+      - ExpressRoute 監視、計量和警示
+        [630] ExpressRoute 監視、計量和警示
+      - 檢視及設定維護警示
+        [657] 如何檢視 Azure ExpressRoute 線路維護並為其設定警示
+      - 設定自訂警示以監視已公告路由
+        [662] 設定自訂警示以監視已公告路由
+    - 評估 ExpressRoute 線路復原能力
+      [691] 評估多月台備援 ExpressRoute 線路的復原能力
+    - 設定客戶控制閘道維護
+      [695] 為 ExpressRoute 設定客戶控制的閘道維護作業 (預覽)
+    - 管理對等互連
+      - 啟用和停用對等互連
+        - Azure 入口網站
+          [700] 使用 Azure 入口網站重設 ExpressRoute線路對等互連
+        - Azure PowerShell
+          [703] 使用 Azure PowerShell 重設ExpressRoute 線路對等互連
+      - 設定 VNet 的 BGP 社群值
+        - Azure 入口網站
+          [708] 使用 Azure 入口網站設定 AzureExpressRoute 私人對等互連的自訂 BGP社群
+        - Azure PowerShell
+          [710] 設定 Azure ExpressRoute 私人對等互連的自訂 BGP 社群
+      - 從公用對等互連移至 Microsoft 對等互連
+        [714] 將公用互連移至 Microsoft 對等互連
+    - 透過線路加密流量
+      - 透過 Microsoft 對等設定站對站 VPN
+        [720] 透過 ExpressRoute Microsoft 對等互連，設定站對站 VPN
+      - 透過私人對等互連的 IPsec VPN
+        [740] 透過 ExpressRoute 私人對等互連設定站對站 VPN 連線
+      - 設定適用於 Windows 主機的 IPsec 傳輸模式
+        [745] 設定 ExpressRoute 私人對等互連的 IPsec傳輸模式
+    - 備援
+      - 設定 ExpressRoute 和站對站並存連線
+        - Azure 入口網站
+          [772] 使用 Azure 入口網站設定 ExpressRoute和站對站並存連線
+        - Azure PowerShell
+          [779] 使用 PowerShell 設定 ExpressRoute 和站對站並存連線
+      - 在 Azure 可用性區域中建立區域備援的 VNet 閘道
+        [788] 在可用性區域中建立區域備援虛擬網路閘道
+    - 規劃和管理成本
+      [793] 規劃和管理 Azure ExpressRoute 的成本
+    - ExpressRoute Direct 線路的速率限制
+      [799] ExpressRoute Direct 線路的速率限制（預覽）
+    - 遷移至新的線路
+      [804] 移轉至新的 ExpressRoute 線路
+    - 遷移至 AZ 閘道
+      - Azure 入口網站
+        [810] 在 Azure 入口網站 中移轉至已啟用可用性區域功能的 ExpressRoute 虛擬網路閘道
+      - Azure PowerShell
+        [815] 使用 PowerShell 遷移至已啟用可用性區域功能的 ExpressRoute 虛擬網路閘道
+    - 從傳統移到 Resource Manager
+      - 將線路從傳統移到 Resource Manager
+        [819] 使用 PowerShell 將 ExpressRoute 線路從傳統部署模型移至 Resource Manager 部署模型
+      - 將關聯的虛擬網路從傳統移至 Resource Manager
+        [824] 將 ExpressRoute 相關虛擬網路從傳統移轉至 Resource Manager
+    - 最佳做法
+      - 網路安全性與雲端服務的最佳作法
+        [827] 虛擬資料中心：網路觀點
+      - 將路由最佳化
+        [852] 最佳化 ExpressRoute 路由
+      - 非對稱路由
+        [860] 具有多個網路路徑的非對稱式路由
+      - 適用於 ExpressRoute 的 NAT
+        [865] ExpressRoute NAT 需求
+    - 疑難排解
+      - 取得相互關聯識別碼
+        [869] 從活動記錄取得作業相互關聯識別碼
+      - 確認 ExpressRoute 連線
+        [872] 驗證 ExpressRoute 連線
+      - 解析網路效能問題
+        [890] 網路效能疑難排解
+      - 重設失敗的電路
+        [899] 重設失敗的 ExpressRoute 電路
+      - 取得 ARP 表格
+        [901] 在 Resource Manager 部署模型中取得ARP 表格
+      - 取得 ARP 表格 (傳統)
+        [907] 在傳統部署模型中取得 ARP 表格
+  - 參考
+    - 監視資料參考
+      [912] 監視 ExpressRoute 資料參考
+    - Azure PowerShell
+      [923] 
+    - Azure CLI
+      [947] az network express-route
+    - REST
+      [978] ExpressRoute REST API
+    - REST (傳統)
+    - Resource Manager 範本
+      [979] 
+  - 資源
+    - 設定 ExpressRoute 的路由器
+      - 設定路由器
+        [988] 設定和管理路由的路由器組態範例
+      - NAT 的路由設定範例
+        [995] 設定和管理 NAT 的路由器組態範例
+    - 後端連線能力互通性
+      - 控制項平面分析
+        [1003] Azure 中的互通性 - 控制平面分析
+    - Azure 藍圖
+    - 網路部落格
+    - 定價
+    - 定價計算機
+    - 服務更新
+    - SLA
+    - 訂用帳戶與服務限制
+      [1008] 
+    - 適用於雲端解決方案提供者 (CSP) 的 ExpressRoute
+      [1111] 適用於雲端解決方案提供者 (CSP) 的ExpressRoute
+    - 影片
+      - 將虛擬網路閘道連接到線路
+      - 為 ExpressRoute 建立虛擬網路
+      - 為 ExpressRoute 建立虛擬網路閘道
+      - 建立 ExpressRoute 線路
+      - 開發用於連線的網路基礎結構
+      - 如何為您的電路設定私用對等
+      - 混合式合作關係：啟用內部部署案例
+      - 為您的電路設定 Microsoft 對等
+      - 為您的電路設定公用對等
+    - 傳統和舊版文章
+      - 修改線路
+        [1119] 使用 PowerShell 修改 ExpressRoute 線路(傳統)
+      - 建立和修改對等互連組態
+        [1125] 建立和修改 ExpressRoute 線路的對等互連 (傳統)
+      - 將虛擬網路連結到 ExpressRoute 線路
+        [1133] 使用 PowerShell 將虛擬網路連接到ExpressRoute 線路 (傳統)
+      - 設定 ExpressRoute 和 S2S 並存連線
+        [1140] 設定 ExpressRoute 和站對站並存連線 (傳統)
+      - 將閘道加入 VNet 中
+        [1149] 使用 PowerShell 設定 ExpressRoute 的虛擬網路閘道閘道 (傳統)
+      - 建立及修改公用對等互連
+        [1154] 建立和管理 ExpressRoute 公用對等互連
+      - 設定 ExpressRoute 的網路效能監控 (已被取代)
+        [1164] 設定 ExpressRoute 的網路效能監控 (已被取代)

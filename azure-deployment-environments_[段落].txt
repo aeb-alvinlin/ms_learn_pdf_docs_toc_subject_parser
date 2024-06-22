@@ -1,0 +1,89 @@
+- ---< azure-deployment-environments.pdf >---
+  - Azure 部署環境文件
+    [1] Azure 部署環境檔
+  - 概觀
+    - 什麼是 Azure 部署環境？
+      [3] 什麼是 Azure 部署環境？
+  - 快速入門
+    - 設定 Azure 部署環境
+      [6] 快速入門：建立及設定適用於 Azure 部署環境的開發人員中心
+    - 建立開發人員中心和專案 （Azure Resource Manager）
+      [15] Quickstart: Create dev center andproject for Azure DeploymentEnvironments by using an ARMtemplate
+    - 建立和存取環境
+      [19] 快速入門：在 Azure 部署環境中建立和存取環境
+  - 概念
+    - 重要概念
+      [23] Azure 部署環境的重要概念
+    - 使用方式情節
+      [27] 使用 Azure 部署環境的案例
+    - environment.yaml 中的參數和資料類型
+      [29] environment.yaml 中的參數和數據類型
+    - 設計目錄的最佳做法
+      [33] Azure 部署環境目錄的最佳做法
+    - 搭配 ADE 使用 Azure 開發人員 CLI
+      [36] 搭配 Azure 部署環境使用 Azure 開發人員CLI
+    - Azure 部署環境的可靠性
+      [40] Azure 部署環境的可靠性
+  - 設定資源
+    - 新增及設定目錄
+      [42] 從 GitHub 或 Azure Repos 新增和設定目錄
+    - 新增及建立環境定義
+      [50] 新增和設定環境定義
+    - 設定受控識別
+      [56] 設定開發人員中心的受控識別
+    - 設定開發人員中心環境類型
+      [61] 設定開發人員中心的環境類型
+    - 新增及刪除專案環境類型
+      [64] 設定專案環境類型
+    - 從 CLI 建立和設定開發人員中心
+      [69] 使用 Azure CLI 建立及設定 Azure 部署環境的開發人員中心
+    - 從 CLI 建立和設定專案
+      [75] 使用 Azure CLI 建立和設定專案
+    - 設定 AZD 相容的範本
+      [80] 使用 Azure 部署環境設定 Azure 開發人員CLI
+  - 設定 ADE 擴充性模型
+    - 設定容器映像以執行部署
+      [87] 設定容器映像以執行部署
+    - 設定 ARM/Bicep 容器映射以執行部署
+      [94] 設定容器映像以使用ARM和 Bicep 執行部署
+    - 設定 Terraform 容器映射以執行部署
+      [103] 設定容器映像以使用 Terraform 執行部署
+  - 建立與管理環境
+    - 使用 Azure Developer CLI (AZD) 建立環境
+      [111] 使用 Azure 開發人員 CLI 建立環境
+    - 在開發人員入口網站中管理環境
+      [119] 在 Azure 部署環境中管理環境
+    - 使用 Azure CLI 建立環境
+      [126] 使用 Azure CLI 建立及存取環境
+  - 管理成本
+    - 自動刪除環境
+      [130] 排程部署環境的刪除日期
+    - 要求增加配額限制
+      [135] 要求 Azure 部署環境資源的配額限制增加
+  - 安全性
+    - 為開發人員管理員提供存取權
+      [140] 提供開發小組潛在客戶專案的存取權
+    - 為開發人員提供存取權
+      [143] 為開發人員提供專案的存取權
+    - 向 REST API 進行驗證
+      [146] 向 Azure 部署環境 REST API 進行驗證
+  - 使用 CI/CD 自動化
+    - 使用 GitHub Actions (CI/CD) 進行自動化
+      [148] 教學課程：使用 GitHub 和 Azure 部署環境在 CI/CD 中部署環境
+    - 使用 Azure Pipelines 自動化 （CI/CD）
+      [172] 教學課程：使用 Azure Pipelines 在CI/CD 中部署環境
+  - 參考
+    - ADE CLI 參考
+      [178] Azure 部署環境 CLI 參考
+    - ADE CLI 變數
+      [189] Azure 部署環境 CLI 變數參考
+    - 安裝 Azure CLI 擴充功能
+      [193] 安裝適用於 Azure 部署環境的 Azure CLI擴充功能
+    - Azure CLI - 開發人員中心
+    - REST API
+      [195] 開發人員中心 REST API 參考
+  - 資源
+    - Azure 藍圖
+    - 區域可用性
+    - 回報問題
+    - 建議功能

@@ -1,0 +1,59 @@
+- ---< azure-azure-fluid-relay.pdf >---
+  - Azure Fluid Relay 檔
+    [1] Azure 流體轉送文件
+  - 概觀
+    - Azure Fluid Relay 概觀
+      [3] Azure 流體轉送概觀
+  - 快速入門
+    - 快速入門：骰子滾筒
+      [5] 快速入門：骰子
+  - 概念
+    - 架構
+      [8] Azure 流體轉送結構概觀
+    - 容器管理
+      [10] 管理流體容器
+    - 分散式資料結構
+      [14] 分散式資料結構
+    - Azure 流體轉送中的資料儲存體
+      [17] Azure Fluid Relay 中的資料儲存體
+    - Azure 流體轉送中的資料加密
+      [19] Azure Fluid Relay 中的資料加密
+    - Azure 流體轉送加密適用的客戶自控金鑰
+      [21] 
+    - 應用程式中的驗證與授權
+      [24] 應用程式中的驗證與授權
+    - 版本相容性
+      [28] Fluid Framework 版本的版本相容性
+  - 操作指南
+    - 如何：佈建 Azure 流體轉送服務
+      [30] 如何：佈建 Azure 流體轉送服務
+    - 操作說明：連線到 Azure 流體轉送服務
+      [36] 操作說明：連線到 Azure 流體轉送服務
+    - 如何：使用 AzureClient 進行本機測試
+      [42] 如何：使用 AzureClient 進行本機測試
+    - 操作說明：使用 Azure 函式撰寫 TokenProvider
+      [44] 操作說明：使用 Azure 函式撰寫TokenProvider
+    - 操作說明：使用 Azure Static Web Apps 部署流體應用程式
+      [49] 操作說明：使用 Azure Static Web Apps部署流體應用程式
+    - 如何：使用 JWT 權杖
+      [56] Azure Fluid Relay 權杖合約
+    - 操作說明：搭配 Azure 流體轉送使用測試自動化
+      [59] 操作說明：搭配 Azure 流體轉送使用測試自動化
+    - 如何：刪除流暢容器
+      [62] 刪除 Azure Fluid Relay 中的流暢容器
+    - 操作說明：驗證建立文件的使用者
+      [64] 如何：驗證建立容器的使用者
+    - 如何：復原容器資料
+      [68] 復原容器資料
+    - 操作說明：在流體架構中使用受眾功能
+      [71] 如何：在 流體架構 中使用物件功能
+  - 參考
+    - 服務限制
+      [83] Azure Fluid Relay 限制
+    - API 文件
+  - 資源
+    - Fluid Framework 首頁
+    - 常見問題集
+      [84] Azure Fluid Relay 常見問題
+    - 支援
+      [86] Azure Fluid Relay 的說明和支持選項

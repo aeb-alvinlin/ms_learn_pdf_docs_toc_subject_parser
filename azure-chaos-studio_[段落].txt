@@ -1,0 +1,107 @@
+- ---< azure-chaos-studio.pdf >---
+  - Azure Chaos Studio 檔
+    [1] Azure Chaos Studio 檔
+  - 概觀
+    - 什麼是 Azure Chaos Studio？
+      [4] 什麼是 Azure Chaos Studio？
+    - 混亂實驗
+      [7] 混亂實驗
+    - 錯誤和動作
+      [9] Azure Chaos Studio 中的錯誤和動作
+    - 目標和功能
+      [11] Azure Chaos Studio 中的目標和功能
+    - 目標選取範圍
+      [15] Azure Chaos Studio 中的目標選取專案
+  - 快速入門
+    - 建立和執行混亂實驗
+      [18] 快速入門：使用 Azure Chaos Studio 建立和執行混亂實驗
+  - 教學課程
+    - 執行和管理實驗
+      [28] 在 Azure Chaos Studio 中執行和管理實驗
+    - 排程實驗
+      [34] 教學課程：使用 Azure Chaos Studio 排程週期性實驗
+  - 範例
+    - Azure REST API
+      [44] 
+    - ARM 範本
+      - 目標和功能
+        [50] Azure Chaos Studio 中目標和功能的Azure Resource Manager 範例
+      - 實驗
+        [56] Azure Chaos Studio 中實驗的 ARM 範例
+    - Bicep
+      [59] 使用 Bicep 在 Azure Chaos Studio 中建立實驗
+    - Azure 原則定義
+      [63] 將資源新增至 Azure Chaos Studio 的Azure 原則 範例
+  - 安全性和可靠性
+    - 權限與安全性
+      [78] Azure Chaos Studio 中的許可權和安全性
+    - 專用網
+      [83] Azure Chaos Studio 中的虛擬網路插入
+    - 可靠性
+      [87] Azure Chaos Studio 的可靠性
+  - 建立和執行實驗
+    - 服務直接錯誤
+      - 入口網站
+        [89] 建立使用服務導向錯誤故障轉移 AzureCosmos DB 實例的混亂實驗
+      - CLI
+        [97] 建立混亂實驗，以搭配 Azure CLI 使用服務導向錯誤
+    - 代理程式型錯誤
+      - 入口網站
+        [102] 建立混亂實驗，以使用代理程式型錯誤搭配 Azure 入口網站
+      - CLI
+        [112] 使用代理程式型錯誤搭配 Azure CLI 建立混亂實驗
+    - AKS 上的混亂網格錯誤
+      - 入口網站
+        [121] 建立混亂實驗，使用 Chaos Mesh 錯誤來終止具有 Azure 入口網站 的 AKS Pod
+      - CLI
+        [132] 使用 Chaos Mesh 錯誤搭配 Azure CLI 建立混亂實驗
+    - 動態目標
+      - 入口網站
+        [140] 建立混亂實驗以關閉區域中的所有目標
+      - CLI
+        [149] 建立使用動態目標來選取主機的混亂實驗
+  - 使用 Chaos 實驗範本
+    - 使用混亂實驗範本在 Azure Active Directory 實例上引發中斷
+      [154] 使用混亂實驗範本在 Azure ActiveDirectory 實例上引發中斷
+    - 使用混亂實驗範本來關閉已停用自動調整的虛擬機擴展集可用性區域
+      [160] 使用混亂實驗範本來關閉已停用自動調整的虛擬機擴展集可用性區域
+  - 管理和監視實驗
+    - 發出 Chaos 實驗遙測
+      - 設定您的 Chaos 實驗以將遙測發出至 Azure 監視器
+        [168] 操作說明：設定實驗以將實驗錯誤事件發出至 Azure 監視器
+      - 設定代理程式型混亂實驗，以將遙測發出至 App Insights
+        [171] 操作說明：設定實驗以將實驗錯誤事件發出至 App Insights
+    - 使用客戶管理的金鑰設定實驗 （CMK）
+      [174] 使用 Azure Blob 儲存體 為 Azure ChaosStudio 設定客戶管理的金鑰 （預覽）
+    - 使用私人連結設定代理程式型混亂實驗
+      [178] 操作說明：設定代理程序型實驗的私人連結 [預覽]
+    - 常見問題疑難排解
+      [184] 針對 Azure Chaos Studio 的問題進行疑難解答
+  - 參考
+    - 錯誤連結庫
+      [190] Azure Chaos Studio 錯誤和動作連結庫
+    - 實驗範例
+      [251] 範例實驗
+    - 錯誤提供者
+      [256] Chaos Studio 支援的資源類型和角色指派
+    - 版本相容性
+      [258] Azure Chaos Studio 版本相容性
+    - 區域可用性
+      [260] Azure Chaos Studio 的區域可用性
+    - 限制和已知問題
+      [262] Azure Chaos Studio 限制和已知問題
+    - 服務限制
+      [264] Azure Chaos Studio 服務限制
+    - REST API 文件 (英文)
+      [267] Azure Chaos Studio REST API 參考
+    - SDK
+      - Python SDK
+        [268] chaos 套件
+      - .NET SDK
+        [269] Microsoft Azure Chaos managementclient library for .NET
+      - JavaScript SDK
+  - 資源
+    - 服務更新
+    - 定價
+    - 定價計算機
+    - 意見反應

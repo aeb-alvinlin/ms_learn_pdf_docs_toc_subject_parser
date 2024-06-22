@@ -1,0 +1,359 @@
+- ---< azure-ai-services-computer-vision.pdf >---
+  - Azure AI 視覺文件
+    [1] 
+  - 概觀
+    - 什麼是 Azure AI 視覺？
+      [3] 什麼是 Azure AI 視覺？
+    - Vision Studio
+      [5] 什麼是 Vision Studio?
+    - 語言支援
+      [8] Azure AI Vision 的語言支援
+    - 定價
+    - 最新功能
+      [19] Azure AI 視覺的新功能
+    - Azure AI 視覺常見問題集
+      [37] 如何增加服務所允許的每秒交易數（TPS？
+服務擲回錯誤，因為我的圖像檔太大。 如何解決這個問題？
+我可以在 Azure AI 視覺服務的單一 API呼叫中傳送多個影像嗎？
+Azure AI 視覺服務支援多少種語言？
+我可以在內部部署部署 OCR （讀取） 功能嗎？
+  - 案例深入探討
+    - 產生影像的替代文字
+      [39] 概觀：使用影像分析產生影像替代文字
+    - 確認使用者
+      [42] 概觀：使用臉部進行驗證
+    - 監視客戶停留時間
+      [44] 使用空間分析監視顯示器前的停留時間
+    - 測量佇列等候時間
+      [46] 使用空間分析測量佇列等候時間
+  - 光學字元辨識 (OCR)
+    - OCR 概觀
+      [48] OCR - 光學字元辨識
+    - OCR 快速入門
+      [51] 快速入門：Azure AI 視覺 v3.2 GA 讀取
+    - 範例
+    - 使用負責任 AI
+      - 透明度注意事項
+        - OCR 使用案例
+          [57] Transparency note and use cases forOCR
+        - 特性和限制
+          [60] Capabilities and limitations
+      - 整合和負責任的使用
+        [63] Guidance for integration andresponsible use with OCR technology
+      - 資料、隱私權和安全性
+        [65] Data, privacy, and security for OCR
+    - 操作指南
+      - 呼叫讀取 API
+        [67] 呼叫 Azure AI 視覺 3.2 GA 讀取 API
+      - 從 Read 2.x 升級至 Read 3.x
+        [75] 從 Read v2.x 升級至 Read v3.x
+      - 使用讀取容器
+        - 安裝和執行容器
+          [83] 安裝 Azure AI Vision 3.2 GA 讀取 OCR 容器
+        - 設定容器
+          [98] 設定讀取 OCR Docker 容器
+        - 遷移至讀取 OCR 容器的 v3
+          [107] 遷移至 Read v3. x OCR 容器
+        - 搭配 Kubernetes 和 Helm 使用
+          [110] 搭配 Kubernetes 和 Helm 使用 Azure AI視覺容器
+        - 使用容器實例
+          [122] 在 Azure 容器執行個體上部署及執行容器
+        - 在中斷聯機的環境中使用容器
+          [126] 在中斷聯機的環境中使用 Docker 容器
+        - 所有 Azure AI 容器
+          [132] 什麼是 Azure AI 容器？
+    - 參考
+      - OCR REST API v4.0 (預覽)
+      - OCR REST API v3.2
+      - OCR REST API v3.1
+      - OCR REST API v2.1
+      - .NET
+        [138] Azure Computer Vision SDK for .NET -latest
+      - Node.js
+        [139] 
+      - Python
+        [143] 適用於 Python 的 Azure 認知服務電腦視覺 SDK
+      - Go
+      - Java
+        [151] Computer Vision
+      - Azure CLI
+        [152] az cognitiveservices
+      - Azure PowerShell
+        [157] AzureRM.CognitiveServices
+  - 影像分析
+    - 影像分析概觀
+      [162] 什麼是影像分析？
+    - 影像分析 SDK
+      - 概觀
+        [168] 影像分析 SDK 概觀
+      - 安裝  SDK
+        [170] 安裝影像分析 SDK
+    - 快速入門
+      - 4.0 版快速入門
+        [171] 快速入門：影像分析 4.0
+      - 3.2 版快速入門
+        [178] 快速入門：影像分析
+    - 範例
+      - 4.0 版
+        - Azure 影像分析 Java SDK 範例
+        - Azure 影像分析 Python SDK 範例
+        - Azure 映射分析 .NET SDK 範例
+        - Azure 影像分析 JavaScript SDK 範例
+      - 3.2 版
+        - Azure AI 服務 .NET SDK 範例
+        - Azure AI 服務 JAVA SDK 範例
+        - Azure AI 服務 Node.js SDK 範例
+        - JavaScript 靜態 Web 應用程式
+        - Azure AI 服務 Python SDK 範例
+    - 使用負責任 AI
+      - 透明度注意事項
+        [184] Transparency note: Image Analysis
+      - 資料、隱私權和安全性
+        [202] Data and privacy for Image Analysis
+      - 有限存取功能
+        [205] Limited Access features of Azure AIVision
+    - 操作指南
+      - 4.0 版
+        - 呼叫分析 API
+          [206] 呼叫影像分析 4.0 分析 API
+        - 模型自訂
+          - 建立自訂模型 （預覽）
+            [212] 建立自訂影像分析模型 (預覽)
+          - 將 自訂視覺 項目移至影像分析 （預覽）
+            [225] 將 自訂視覺 專案移轉至影像分析 4.0 預覽
+          - 確認自訂模型 COCO 檔案 （預覽）
+            [228] 檢查 COCO 註釋檔案的格式
+        - 產品辨識（預覽）
+          - 準備用於產品辨識的影像
+            [229] 貨架影像組合 （預覽）
+          - 使用預建模型的產品辨識
+            [235] 貨架產品辨識（預覽）：使用預先定型的模型分析貨架影像
+          - 使用自訂模型的產品辨識
+            [240] 貨架產品辨識 - 自定義模型 （預覽）
+          - 檢查計畫圖合規性
+            [242] 貨架計劃投影合規性 （預覽）
+        - 呼叫多模式內嵌 API
+          [251] 使用多模式內嵌進行影像擷取 （4.0 版）
+        - 呼叫背景移除 API （預覽）
+          [255] 拿掉影像中的背景
+        - 設定儲存體帳戶
+          [261] 在 Vision Studio 中設定 Blob 記憶體以擷取影像
+      - 3.2 版
+        - 呼叫分析 API
+          [265] 呼叫影像分析 3.2 API
+        - 即時分析影片
+          [269] 近乎即時地分析影片
+        - 產生智慧裁剪的縮圖
+          [276] 產生智慧裁剪的縮圖
+    - 概念
+      - 4.0 版
+        - 影像標記
+          [278] 映射標記 （4.0 版）
+        - 影像標題
+          [281] 映射 標題 （4.0 版）
+        - 物件偵測
+          [283] 物件偵測 （4.0 版）
+        - 光學字元辨識
+          [286] 適用于映射的 OCR （4.0 版）
+        - 智慧裁剪的縮圖
+          [291] 智慧型裁切縮圖 (版本 4.0 預覽)
+        - 人員 偵測
+          [295] 人員 偵測 （4.0 版）
+        - 模型自訂
+          [297] 模型自訂 （4.0 版預覽版）
+        - 產品辨識（預覽）
+          [307] 產品辨識 (4.0 版預覽版)
+        - 多模式內嵌
+          [313] 多模式內嵌 （4.0 版）
+        - 背景移除 （預覽）
+          [316] 背景移除 (4.0 版預覽)
+      - 3.2 版
+        - 影像標記
+          [318] 影像標記
+        - 影像分類
+          [321] 影像分類
+        - 類別分類法
+          [325] Azure AI Vision 86 類別分類法
+        - 影像描述
+          [329] 映像說明
+        - 物件偵測
+          [331] 物件偵測
+        - 品牌偵測
+          [334] 品牌偵測
+        - 臉部偵測
+          [336] 使用影像分析 3.2 進行臉部偵測
+        - 影像類型偵測
+          [339] 影像類型偵測
+        - 網域特定內容
+          [343] 網域特定內容偵測
+        - 色彩配置偵測
+          [348] 色彩配置偵測
+        - 成人內容偵測
+          [352] 成人內容偵測
+        - 智慧裁剪的縮圖
+          [353] 智慧裁剪的縮圖
+    - 教學課程
+      - 產生影像的元數據
+        [355] 教學課程：使用 Azure AI 視覺在 Azure儲存體中產生影像中繼資料
+    - 參考
+      - 4.0 版
+        - 影像分析 REST API v4.0 （分析與多模式內嵌，GA）
+        - 影像分析 REST API v4.0 （其他功能，預覽版）
+        - .NET
+        - Python
+        - Java
+        - JavaScript
+      - 3.2 版
+        - 影像分析 REST API v3.2
+        - .NET
+          [382] Azure Computer Vision SDK for .NET -latest
+        - Node.js
+          [383] 
+        - Python
+          [387] 適用於 Python 的 Azure 認知服務電腦視覺 SDK
+        - Go
+        - Java
+          [395] Computer Vision
+      - 舊版本
+        - 影像分析 REST API v3.1
+        - 影像分析 REST API v2.1
+      - Azure CLI
+        [396] az cognitiveservices
+      - Azure PowerShell
+        [401] AzureRM.CognitiveServices
+  - 臉部
+    - 臉部概觀
+      [406] 什麼是 Azure AI 臉部服務？
+    - 配額和限制
+      [412] Azure 臉部服務配額和限制
+    - 定價
+    - 臉部快速入門
+      [416] 快速入門：使用臉部服務
+    - 概念
+      - 臉部偵測、屬性和輸入數據
+        [426] 臉部偵測、屬性和輸入數據
+      - 臉部辨識
+        [431] 臉部辨識
+      - 臉部辨識數據結構
+        [433] 臉部辨識資料結構
+      - 臉部活潑虐待監視
+        [436] 臉部活躍偵測中的濫用監視
+    - 操作指南
+      - 臉部偵測、地標和屬性
+        - 偵測及分析臉部
+          [438] 呼叫偵測 API
+        - 指定臉部偵測模型版本
+          [442] 指定臉部偵測模式
+        - 使用 HeadPose 屬性
+          [446] 使用 HeadPose 屬性
+      - 臉部辨識 (有限存取權)
+        - 指定臉部辨識模型版本
+          [449] 指定臉部辨識模式
+        - 將臉部新增至 PersonGroup
+          [454] 將臉部新增至 PersonGroup
+        - 使用 PersonDirectory 結構 （預覽）
+          [457] 使用 PersonDirectory 資料結構 (預覽版)
+        - 調整以處理更多已註冊的使用者
+          [467] 調整以處理更多已註冊的使用者
+        - 尋找類似的臉部
+          [475] 尋找類似的臉部
+      - 服務管理
+        - 降低延遲並改善效能
+          [479] 降低延遲並改善效能
+        - 使用有限存取權杖
+          [483] 針對臉部使用有限的存取令牌
+        - 使用客戶管理的金鑰
+          [487] 待用資料的臉部服務加密
+    - 教學課程
+      - 偵測臉部活躍度
+        [493] 教學課程：偵測臉部中的活躍度
+      - 將使用者新增至臉部識別應用程式
+        [501] 建置 React Native 應用程式以將使用者新增至臉部服務
+    - 範例
+    - 使用負責任 AI
+      - 透明度注意事項
+        - 臉部使用案例
+          [507] Use cases for Azure AI Face service
+        - 特性和限制
+          [517] Characteristics, limitations, and bestpractices for improving accuracy
+      - 整合和負責任的使用
+        [530] Guidance for integration andresponsible use of Face
+      - 註冊使用者的最佳做法
+        [534] 將使用者新增至臉部服務的最佳做法
+      - 管理辦法
+        [537] Code of conduct for Azure AI VisionFace API
+      - 資料隱私權和安全性
+        [541] 
+      - 有限存取功能
+        [547] Limited Access to Face API
+    - 參考
+      - 伺服器端
+        - 臉部 REST API
+          [548] 臉部 API 參考清單
+        - .NET
+          [549] Face
+        - Java
+          [550] Face API
+        - Node.js
+          [551] Azure 臉部 API
+        - Python
+          [553] Microsoft Azure SDK for Python
+3.6、3.7 和 3.8 的測試。 如需更完整的 Azure 程式庫檢視，請參閱 Github 存放庫使用方式
+如需程式碼範例，請參閱 docs.microsoft.com 上的認知服務臉部 。提供意見反應
+      - 用戶端
+        - Kotlin （Android）
+        - Swift （iOS）
+  - 影片分析
+    - 影片分析概觀
+      [554] 什麼是影片分析？
+    - 使用負責任 AI
+      - 透明度注意事項
+        [558] Transparency note for Spatial Analysis
+      - 整合和負責任的使用
+        - 負責任地在 AI 部署中使用
+          [574] Responsible use in AI deployment forAzure AI Vision spatial analysis
+        - 披露設計指導方針
+          [580] Disclosure Design Guidelines for AzureAI Vision spatial analysis
+        - 研究見解
+          [586] Research Insights for Azure AI Visionspatial analysis
+      - 資料、隱私權和安全性
+        [591] Data, privacy, and security for SpatialAnalysis
+    - 操作指南
+      - 呼叫影片擷取 API
+        [595] 使用向量化進行影片擷取 （4.0 版預覽）
+      - 使用空間分析容器
+        - 設定主計算機並執行容器
+          [604] 安裝並執行空間分析容器 （預覽）
+        - 設定作業
+          [614] 
+        - 設定車輛分析
+          [639] 安裝與執行車輛分析 （預覽）
+        - 使用本機影片檔案
+          [656] 在本機影片檔案上執行空間分析
+        - 部署計算 Web 應用程式的人員
+          [658] 部署空間分析 Web 應用程式
+        - 記錄和疑難排解
+          [666] 遙測和疑難排解
+        - 區域和線條放置
+          [681] 區域和線條放置指南
+        - 相機 位置
+          [687] 空間分析相機位置
+        - 所有 Azure AI 容器
+          [697] 什麼是 Azure AI 容器？
+    - 參考
+      - 影片擷取 REST API
+        [703] 
+  - 操作指南
+    - 企業整備
+      - 設定 虛擬網絡
+        [716] 設定 Azure AI 服務虛擬網路
+      - 使用 Microsoft Entra 驗證
+        [731] 驗證對 Azure AI 服務的要求
+  - 資源
+    - 企業整備
+      - 區域支援
+      - 合規性和認證
+    - 支援與說明選項
+      [740] Azure AI 服務支援和協助選項
+    - 訓練課程模組
+    - Azure 更新

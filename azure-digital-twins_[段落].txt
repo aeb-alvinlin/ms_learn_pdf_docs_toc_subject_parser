@@ -1,0 +1,252 @@
+- ---< azure-digital-twins.pdf >---
+  - Azure Digital Twins 文件
+    [1] Azure Digital Twins 文件
+  - 概觀
+    - 關於 Azure Digital Twins
+      [4] 什麼是 Azure Digital Twins？
+  - 快速入門
+    - 開始使用 Azure Digital Twins Explorer
+      [9] 快速入門 - 開始使用 Azure Digital TwinsExplorer 中的範例案例
+    - 開始使用 3D Scenes Studio
+      [28] 快速入門 - 開始使用適用于 Azure DigitalTwins 的 3D Scenes Studio（預覽版）
+  - 教學課程
+    - 撰寫用戶端應用程式程式碼
+      [63] 教學課程：使用 Azure Digital Twins SDK撰寫程式碼
+    - 建立圖形
+      - 使用範例用戶端應用程式
+        [78] 教學課程：使用範例用戶端應用程式建立Azure Digital Twins 圖形
+      - 使用 Azure CLI 命令
+        [94] 教學課程：使用 Azure CLI 建立 AzureDigital Twins 圖表
+    - 連線端對端解決方案
+      [111] 教學課程：建置端對端解決方案
+  - 概念
+    - DTDL 模型
+      [132] 了解對應項模型以及如何在 Azure DigitalTwins 中定義它們
+    - 產業待辦專案
+      - 什麼是本體？
+        [150] 什麼是本體學？
+      - 採用以 DTDL 為基礎的產業本體
+        [153] 採用 DTDL 產業內部學
+      - 轉換本體
+        [155] 將業界標準的待辦專案轉換為適用于Azure Digital Twins 的 DTDL
+      - 延伸本體
+        [159] 擴充待辦專案
+    - 數位分身和對應項圖形
+      [166] 數位對應項及其對應項圖形
+    - 查詢語言
+      [173] Azure Digital Twins 查詢語言
+    - 查詢單位
+      [175] Azure Digital Twins 中的查詢單位
+    - 資料歷程記錄 (使用 Azure 資料總管)
+      [177] 
+    - 使用 Azure 資料總管外掛程式進行查詢
+      [183] 
+    - 開發人員介面
+      - Azure Digital Twins Explorer
+        [186] Azure Digital Twins Explorer （預覽）
+      - API 和 SDK
+        [191] Azure Digital Twins API 和 SDK
+      - CLI 命令集
+        [200] Azure Digital Twins CLI 命令集
+    - 資料輸入和輸出
+      [204] Azure Digital Twins 的資料輸入和輸出
+    - 事件通知
+      [207] 事件通知
+    - 端點與事件路由
+      [215] 路由傳送 Azure Digital Twins 事件
+    - 3D Scenes Studio
+      [219] 適用於 Azure Digital Twins 的 3D ScenesStudio (預覽)
+    - Azure Digital Twins 解決方案的安全性
+      [225] 保護 Azure Digital Twins
+    - 高可用性和災害復原
+      [232] Azure Digital Twins 高可用性和災害復原
+  - 操作指南
+    - 部署
+      - 設定執行個體和驗證
+        - 入口網站
+          [236] 設定 Azure Digital Twins 實例和驗證（入口網站）
+        - CLI
+          [247] 設定 Azure Digital Twins 實例和驗證（CLI）
+      - 使用 Private Link 啟用私人存取
+        [256] 使用 Private Link 啟用 Azure DigitalTwins 的私人存取
+      - 將執行個體移至不同的區域
+        [266] 將 Azure Digital Twins 實例移至不同的Azure 區域
+    - 設計模型
+      - 管理 DTDL 模型
+        [272] 管理 Azure Digital Twins 模型
+      - 剖析和驗證模型
+        [287] 使用 DTDL 剖析器連結庫剖析和驗證模型
+      - 新增標記
+        [292] 將標籤新增至數位對應項
+    - 使用即時執行環境
+      - 使用 Azure Digital Twins Explorer
+        [297] 使用 Azure Digital Twins Explorer （預覽）
+      - 管理 Digital Twins
+        [337] 管理數位對應項
+      - 管理對應項圖形和關聯性
+        [357] 使用關聯性管理數字對應項的圖表
+      - 設定對應項到對應項事件處理
+        [380] 設定對應項對對應項事件處理
+      - 查詢對應項圖形
+        [386] 查詢 Azure Digital Twins 對應項圖表
+    - 開發用戶端應用程式
+      - 使用 Postman 呼叫 Azure Digital Twins API
+        [397] 如何使用 Postman 將要求傳送至 AzureDigital Twins API
+      - 使用 3D Scenes Studio
+        [411] 使用適用於 Azure Digital Twins 的 3DScenes Studio 建置 3D 場景（預覽版）
+      - 撰寫應用程式驗證碼
+        [445] 撰寫用戶端應用程式驗證碼
+      - 使用 Azure Digital Twins 存取權建立應用程式註冊
+        [456] 建立應用程式註冊以搭配 Azure DigitalTwins 使用
+      - 與 Azure SignalR Service 整合
+        [469] 整合 Azure Digital Twins 與 AzureSignalR 服務
+    - 連線輸入
+      - 從 IoT 中樞內嵌遙測
+        [482] 將IoT 中樞遙測內嵌至 Azure DigitalTwins
+      - 使用 DPS 自動管理裝置
+        [491] 使用裝置布建服務在 Azure Digital Twins中的自動管理裝置 （DPS）
+      - 與 Power Platform 和 Logic Apps 整合
+        [514] 使用 Azure Digital Twins 連接器與 PowerPlatform 和 Logic Apps 整合
+    - 連線輸出
+      - 建立端點
+        [520] 在 Azure Digital Twins 中建立端點
+      - 建立路由和篩選
+        [532] 在 Azure Digital Twins 中建立事件路由和篩選
+      - 建立資料歷程記錄連線
+        [542] 建立 Azure Digital Twins 的數據歷程記錄連線
+      - 與 Azure 時間序列深入解析整合
+        [556] 整合 Azure Digital Twins 與 Azure TimeSeries Insights
+      - 與 Azure 地圖服務整合
+        [572] 將 Azure Digital Twins 資料整合到室內地圖Azure 地圖服務
+    - 監視及疑難排解
+      - 監視執行個體
+        [579] 使用計量、警示和診斷來監視 AzureDigital Twins
+      - 針對資源健康狀態進行疑難排解
+        [593] 針對 Azure Digital Twins 資源健康狀態進行疑難排解
+      - 針對效能進行疑難排解
+        [595] 針對 Azure Digital Twins 效能進行疑難排解
+      - 已知問題
+        [597] Azure Digital Twins 已知問題
+      - Azure Digital Twins 中的問題解決方式
+        - 錯誤 403 (禁止)
+          [600] 針對 Azure Digital Twins 失敗的服務要求進行疑難排解：錯誤 403（禁止）
+        - 錯誤 404 (找不到子網域)
+          [605] 針對 Azure Digital Twins 失敗的服務要求進行疑難排解：錯誤 404（找不到子網域）
+        - Azure Digital Twins Explorer 驗證錯誤
+          [608] 針對 Azure Digital Twins Explorer：驗證錯誤進行疑難排解
+        - CLI 剖析失敗
+          [611] 針對 Azure Digital Twins CLI 命令的剖析失敗進行疑難排解
+  - 參考
+    - REST API 參考資料
+      [613] Azure Digital Twins REST API 參考
+    - SDK
+      - 控制平面
+        - .NET (C#) SDK
+          [614] Azure DigitalTwins SDK for .NET - latest
+        - Java SDK
+          [615] com.azure.resourcemanager.digitaltwins
+      - 資料平面
+        - .NET (C#) SDK
+          [616] Azure IoT Digital Twins client library for.NET - version 1.4.0
+        - Java SDK
+          [620] Azure Digital Twins SDK for Java - latest
+        - JavaScript SDK
+          [621] @azure/digital-twins-core package
+        - Python SDK
+          [624] core Package
+    - Digital Twins CLI
+      [625] az dt
+    - DTDL v3 語言描述
+    - DTDL v2 語言描述
+    - 查詢語言參考
+      - 子句
+        - SELECT
+          [647] Azure Digital Twins 查詢語言參考：SELECT 子句
+        - FROM
+          [655] Azure Digital Twins 查詢語言參考：FROM 子句
+        - MATCH
+          [659] Azure Digital Twins 查詢語言參考：MATCH 子句
+        - JOIN
+          [673] Azure Digital Twins 查詢語言參考：JOIN子句
+        - WHERE
+          [677] Azure Digital Twins 查詢語言參考：WHERE 子句
+      - 函式
+        [679] Azure Digital Twins 查詢語言參考：Functions
+      - 運算子
+        [690] Azure Digital Twins 查詢語言參考：運算子
+      - 保留關鍵字
+        [693] Azure Digital Twins 查詢語言參考：保留關鍵字
+    - Azure Digital Twins Power Platform 和 Logic Apps 連接器
+      [695] Azure Digital Twins (Preview)
+  - 資源
+    - Digital Twins 服務限制
+      [714] Azure Digital Twins 服務限制
+    - 價格與可用性
+      - 定價
+      - SLA
+      - 區域和可用性
+    - 客戶資料要求
+      [718] Azure Digital Twins 中的客戶個人資料要求
+    - API 和 SDK
+      - 控制平面
+        - 控制平面 Swagger
+        - .NET (C#) SDK - NuGet
+        - .NET (C#) SDK - 原始程式碼
+        - Java SDK - Maven
+        - Java SDK - 原始程式碼
+        - JavaScript SDK - NPM
+        - JavaScript SDK - 原始程式碼
+        - Python SDK - PyPi
+        - Python SDK - 原始程式碼
+        - Go SDK - GoDoc
+        - Go - 原始程式碼
+      - 資料平面
+        - 資料平面 Swagger
+        - .NET (C#) SDK - NuGet
+        - .NET (C#) SDK - 原始程式碼
+        - Java SDK - Maven
+        - Java SDK - 原始程式碼
+        - JavaScript SDK - NPM
+        - JavaScript SDK - 原始程式碼
+        - Python SDK - PyPi
+        - Python SDK - 原始程式碼
+    - 從預覽控制平面 API 移轉
+      [720] 從 Azure Digital Twins 預覽控制平面 API遷移至穩定 GA 版本
+    - Digital Twins CLI 套件
+    - Terraform 模組
+      - Digital Twins 執行個體資源
+      - Digital Twins 執行個體資料來源
+      - 事件中樞端點資源
+      - 事件方格端點資源
+      - 服務匯流排端點資源
+    - 工具和範例專案
+      - Azure Digital Twins Explorer
+      - 3D Scenes Studio
+      - Azure Digital Twins Postman 集合
+      - 將 OPC UA 資料內嵌至 Azure Digital Twins 的範例
+      - DTDL 剖析器範例
+      - 模型上傳者 (範例)
+      - 模型刪除程式 (範例) 
+      - OWL2DTDL 轉換器
+      - SignalR 整合範例
+      - 多重變數異常偵測工具組
+    - 本體
+      - 智慧建築
+      - 智慧城市
+      - 能源網格
+      - 製造業
+    - DTDL
+      - 適用於 VS Code 的 DTDL 擴充功能
+      - NuGet 上的 DTDLParser
+      - DTDL 剖析器範例
+    - 學習路徑
+      - 使用 Azure Digital Twins 擴充 IoT 解決方案
+      - 在 Unity 中為 Azure Digital Twins 設定一個混合實境專案
+    - 客戶案例
+    - Azure 工具
+      - Azure Cloud Shell
+      - Azure 入口網站
+    - 支援和協助選項
+      [722] Azure IoT 支援和協助選項有哪些？
+    - IoT 詞彙
+      [724] IoT 詞彙詞彙

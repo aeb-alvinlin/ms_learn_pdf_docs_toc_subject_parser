@@ -1,0 +1,273 @@
+- ---< azure-data-studio.pdf >---
+  - Azure Data Studio 檔
+    [1] Azure Data Studio
+  - 下載和版本資訊
+    - 下載 Azure Data Studio
+      [4] 下載並安裝 Azure Data Studio
+    - 版本資訊
+      [8] Azure Data Studio 的版本資訊
+  - 概觀
+    - Azure Data Studio
+      [72] 什麼是 Azure Data Studio？
+    - Azure 連線
+      [78] Azure Data Studio - Azure 連線能力
+    - Azure Data Studio 授權
+      [90] Microsoft 軟體授權條款
+  - 快速入門
+    - 連線和查詢 SQL Server
+      [93] 快速入門：使用 Azure Data Studio 連線及查詢 SQL Server
+    - 連線和查詢 Azure SQL 資料庫
+      [99] 快速入門：使用 Azure Data Studio 連線並查詢 Azure SQL Database
+    - 連線和查詢 Azure Synapse Analytics
+      [106] 快速入門：使用 Azure Data Studio 以透過 Azure Synapse Analytics 中的專用SQL 集區來連線及查詢資料
+    - 連線和查詢適用于 MongoDB 的 Azure Cosmos DB API
+      [112] 快速入門：使用 Azure Data Studio 連線及查詢適用於 MongoDB 的 AzureCosmos DB API (預覽)
+    - 連線和查詢 MySQL
+      [121] 快速入門：使用 Azure Data Studio 連線並查詢 MySQL
+    - 連線和查詢 PostgreSQL
+      [127] 快速入門：使用 Azure Data Studio 連線及查詢 PostgreSQL
+    - 連線和查詢 TimescaleDB 的受控服務
+      [133] 快速入門：使用 Azure Data Studio 連線及查詢 Azure 上 TimescaleDB 的受控服務
+  - 教學課程
+    - T-SQL 編輯器
+      [138] 教學課程：使用 Transact-SQL 編輯器建立資料庫物件 - Azure Data Studio
+    - 範例深入解析：慢速查詢
+      [147] 教學課程：將「五個最慢速查詢」範例小工具新增至資料庫儀表板
+    - 範例深入解析：資料表空間使用量
+      [157] 教學課程：使用 Azure Data Studio 啟用資料表空間使用量範例見解小工具
+    - 建置自訂深入解析
+      [161] 教學課程：建置自訂深入解析小工具
+    - 備份與還原
+      [167] 教學課程：使用 Azure Data Studio 備份及還原資料庫
+    - Azure Data Studio 中的資料表設計工具概觀
+      - 使用資料表設計工具建立和管理資料表
+        [171] Azure Data Studio 中的資料表設計工具
+      - 在 Azure Data Studio 中建立圖表資料表
+        [182] 使用資料表設計工具在 Azure DataStudio 中建立圖形資料表
+      - 在 Azure Data Studio 中建立記憶體優化資料表
+        [186] 建立記憶體最佳化的資料表
+      - 在 Azure Data Studio 中建立系統版本資料表
+        [189] 教學課程：系統版本設定的數據表
+      - 使用 SQL 資料庫 Projects 建置和部署資料表的變更
+        [191] 使用 SQL 資料庫 Projects 擴充功能建置和部署資料表的變更
+  - 概念
+    - 命令列介面
+      [195] Azure Data Studio 命令列介面
+    - 整合式終端機（PowerShell、Bash）
+      [200] 整合式終端
+    - 預覽功能
+      [206] Azure Data Studio 中的預覽功能
+    - 伺服器群組
+      [209] Azure Data Studio 中的伺服器群組
+    - 原始檔控制
+      [211] Azure Data Studio 中的原始檔控制
+    - 查詢計劃檢視器
+      [213] Azure Data Studio 中的查詢計劃檢視器
+  - 操作指南
+    - 部署
+      - 部署 Azure SQL Database
+        [217] 使用 Azure Data Studio 建立 Azure SQLDatabase
+      - 部署 Azure SQL Edge
+        [219] 使用 Azure Data Studio 部署 Azure SQLEdge (預覽)
+      - 在 Azure 虛擬機器 上部署 SQL Server
+        [222] 使用 Azure Data Studio 在 Azure 虛擬機器上建立 SQL Server
+      - 在容器中部署 SQL Server
+        [224] 使用 Azure Data Studio 在容器中部署SQL Server
+    - 連線
+      [225] 使用 Azure Data Studio 連線
+    - 儀表板和深入解析小工具
+      [229] 在 Azure Data Studio 中使用見解小工具來管理伺服器和資料庫
+    - 程式碼片段
+      [231] 建立和使用程式碼片段，以在 Azure DataStudio 中快速建立 Transact-SQL (T-SQL)指令碼
+    - 探索 Azure SQL 資源
+      [236] 從 Azure 檢視探索和管理 Azure SQL 資源
+    - 鍵盤快速鍵
+      [243] Azure Data Studio 的鍵盤快速鍵
+    - 使用量資料收集
+      [246] 啟用或停用 Azure Data Studio 的使用狀況資料收集
+    - Windows 驗證 （Kerberos）
+      [249] 使用 Kerberos 將 Azure Data Studio 連線到 SQL Server
+    - 使用者和工作區設定
+      - 修改使用者和工作區設定
+        [253] 修改使用者和工作區設定
+      - 使用者和工作區設定
+        [258] 使用者和工作區設定
+  - 擴充
+    - 概觀
+      [263] 擴充 Azure Data Studio 的功能
+    - 編寫
+      - 延伸模組撰寫
+        [270] 藉由建立 Azure Data Studio 延伸模組來擴充功能
+      - 擴充性概觀
+        [273] Azure Data Studio 擴充性
+      - 擴充性 API
+        [281] Azure Data Studio 擴充性 API
+      - 按鍵對應
+        [286] 建立 Azure Data Studio 鍵盤對應延伸模組
+      - 儀表板
+        [293] 建立 Azure Data Studio 儀表板延伸模組
+      - Jupyter Book
+        [299] 建立 Jupyter Book 延伸模組
+      - 精靈
+        [307] 建立 Azure Data Studio 精靈延伸模組
+    - Azure Arc
+      [313] 適用於 Azure Data Studio 的 Azure Arc延伸模組
+    - Azure PostgreSQL 移轉
+      - Azure PostgreSQL 移轉
+        [315] Azure PostgreSQL 移轉 (評估) 延伸模組預覽
+      - 疑難排解
+        [328] 針對 Azure PostgreSQL 移轉延伸模組錯誤進行疑難排解
+    - Azure SQL 移轉
+      [337] 適用於 Azure Data Studio 的 Azure SQL移轉延伸模組
+    - Azure Cosmos DB for MongoDB
+      - 適用于 MongoDB RU 擴充功能的 API
+        [344] 適用於 Azure Data Studio 的適用於MongoDB 的 Azure Cosmos DB RU 擴充功能 （預覽）
+      - 適用于 MongoDB 的 API 虛擬核心移轉延伸模組
+        [346] 適用於 MongoDB 的 Azure Cosmos DB虛擬核心移轉延伸模組適用於 Azure DataStudio （預覽）
+      - 適用于 MongoDB 的 API 虛擬核心移轉延伸模組常見問題
+        [361] 如果「執行驗證」步驟失敗，如何? 執行我的評定？
+如何查看「功能相容性」類別中評定的集合名稱和資料庫名稱？
+如何收集記錄訊息？
+    - Azure 監視器記錄
+      [367] 適用於 Azure Data Studio 的 Azure 監視器記錄延伸模組 (預覽)
+    - 適用于 Oracle 的資料移轉服務套件
+      - 概觀
+        [371] 適用于 Oracle 的資料移轉服務套件
+      - 適用於 Oracle 的 Database Migration Assessment
+        - 概觀
+          [373] 適用於 Oracle 的資料庫移轉評定延伸模組
+        - 疑難排解
+          [391] 針對適用於 Oracle 的 DatabaseMigration Assessment 延伸模組錯誤進行疑難排解
+      - 資料庫結構描述轉換工具組
+        - 資料庫結構描述轉換工具組
+          [407] 資料庫結構描述轉換工具組 (DSCT)
+        - 從 Oracle 至 Microsoft SQL
+          - 概觀
+            [408] 資料庫結構描述轉換工具組 （預覽）
+          - 安裝和移除擴充功能
+            [410] 安裝及移除資料庫結構描述轉換工具組(Oracle 至 Microsoft SQL)
+          - 將 Oracle 資料庫物件轉換為 Microsoft SQL
+            [412] 將 Oracle 資料庫物件轉換為 MicrosoftSQL
+          - 設定轉換
+            [421] 設定轉換
+        - 轉換訊息
+          - DSCT00000
+            [428] DSCT00000：無法剖析 SQL 片段 (錯誤)
+          - DSCT00001
+            [429] DSCT00001: 不支援轉換陳述式 (錯誤)
+          - DSCT00002
+            [431] DSCT00002: 轉換語法元素不受支援 (錯誤)
+          - DSCT00003
+            [433] DSCT00003：識別碼未解析 (錯誤)
+          - DSCT00004
+            [434] DSCT00004：不支援轉換資料類型 (錯誤)
+          - DSCT00005
+            [435] DSCT00005：不支援轉換系統識別碼 (錯誤)
+          - DSCT01000
+            [436] DSCT01000：識別碼區分大小寫，如果目標資料庫未使用 CS 定序，可能會造成問題 (警告)
+          - DSCT01001
+            [437] DSCT01001：索引會在目標資料表的結構描述中定義 (資訊)
+          - DSCT01002
+            [438] DSCT01002：資料行允許插入 Null 值 (警告)
+          - DSCT01100
+            [439] DSCT01100：十進位浮點資料類型已變更為二進位浮點，以保留縮放 (警告)
+          - DSCT01101
+            [440] DSCT01101：序列將不會保證值的順序 (資訊)
+          - DSCT01102
+            [441] DSCT01102：工作階段範圍的序列已轉換為全域序列 (資訊)
+          - DSCT01103
+            [442] DSCT01103：同義字的定義位於預設結構描述中 (警告)
+      - 適用於 Oracle 的延伸模組
+        [443] 適用於 Oracle 的延伸模組 (預覽)
+    - 資料虛擬化
+      [444] 適用於 Azure Data Studio 的資料虛擬化延伸模組
+    - GitHub Copilot
+      - 概觀
+        [449] GitHub Copilot 擴充功能：概觀
+      - 使用 GitHub Copilot
+        [451] 使用 GitHub Copilot
+    - Kusto
+      [454] 適用於 Azure Data Studio 的 Kusto (KQL)延伸模組 (預覽)
+    - Machine Learning
+      - 機器學習擴充功能概觀
+        [460] 適用於 Azure Data Studio 的機器學習延伸模組 (預覽)
+      - 管理資料庫中的套件
+        [464] 使用適用於 Azure Data Studio 的機器學習延伸模組 (預覽) 來管理資料庫中的套件
+      - 進行預測
+        [467] 使用適用於 Azure Data Studio 的機器學習延伸模組 (預覽) 進行預測
+      - 匯入和檢視模型
+        [469] 使用適用於 Azure Data Studio 的機器學習延伸模組 (預覽) 匯入或檢視模型
+    - 受控執行個體
+      [471] 適用於 Azure Data Studio 的 Azure SQL受控執行個體儀表板 (預覽)
+    - MySQL
+      [476] MySQL 延伸模組
+    - PostgreSQL
+      [479] PostgreSQL 延伸模組 (預覽)
+    - PowerShell
+      [481] Azure Data Studio 的 PowerShell 編輯器支援
+    - SandDance
+      [489] 適用於 Azure Data Studio 的 SandDance(預覽)
+    - 結構描述比較
+      [491] 結構描述比較延伸模組
+    - SQL Database 專案
+      - SQL 資料庫專案概觀
+        [496] SQL Database Projects 延伸模組
+      - 開始使用SQL 資料庫專案
+        [501] 開始使用 SQL Database Projects 延伸模組
+      - 建置和發佈專案
+        [506] 建置和發佈專案
+      - 從命令列開始建立專案
+        [509] 從命令列建置資料庫專案
+      - 使用 SDK 樣式專案
+        [512] 使用 SDK 樣式 SQL 專案搭配 SQLDatabase Projects 延伸模組 (預覽)
+    - SQL Server Agent
+      [517] SQL Server Agent 延伸模組 (預覽)
+    - SQL Server 中央管理伺服器
+      [519] SQL Server 中央管理伺服器延伸模組 (預覽)
+    - SQL Server dacpac
+      [521] SQL Server dacpac 延伸模組
+    - SQL Server 匯入
+      [524] SQL Server 匯入延伸模組
+    - SQL Server Profiler
+      [529] SQL Server Profiler 延伸模組 (預覽)
+  - Notebooks
+    - 概觀
+      [532] 在 Azure Data Studio 中使用 JupyterNotebook
+    - 核心
+      - Log Analytics 核心
+        [539] 建立和執行具有 Azure 監視器記錄的筆記本 (預覽)
+      - Python 核心
+        - 建立及執行 Python 筆記本
+          [545] 建立及執行 Python 筆記本
+        - 在離線 Windows 環境中安裝 Python
+          [548] 在離線 Windows 環境中安裝 Python
+        - 使用 Kqlmagic 建立和執行筆記本
+          [550] 使用 Kqlmagic 建立和執行筆記本
+      - SQL 核心
+        [564] 建立並執行 SQL Server 筆記本
+    - 參數化
+      - Papermill 參數化
+        [568] 使用 Papermill 建立參數化的筆記本
+      - URI 參數化
+        [575] 使用筆記本 URI 建立參數化的筆記本
+      - 搭配參數執行
+        [579] 使用 [執行 (設有參數)] 動作以建立參數化筆記本
+    - 檢視
+      [584] 筆記本檢視 (預覽)
+  - 參考資料
+    - SQL 工具
+      [587] SQL 工具概觀
+    - Azure 開發人員工具
+      [590] 
+  - 資源
+    - 常見問題集
+      [593] 什麼是 Azure Data Studio？
+Azure Data Studio 的成本是多少？
+誰應該使用 Azure Data Studio
+我能用 Azure Data Studio 來做什麼？
+    - 疑難排解
+      [598] Azure Data Studio 疑難排解
+    - Azure Data Studio GitHub 存放庫>
+    - 報告問題與建議>
+    - SQL Server 檔>
+      [601] 

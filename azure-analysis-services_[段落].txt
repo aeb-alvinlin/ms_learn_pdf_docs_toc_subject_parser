@@ -1,0 +1,128 @@
+- ---< azure-analysis-services.pdf >---
+  - Azure Analysis Services 文件
+    [1] Azure Analysis Services 文件
+  - 概觀
+    - 什麼是 Azure Analysis Services？
+      [3] 什麼是 Azure Analysis Services？
+  - 快速入門
+    - 建立伺服器 - 入口網站
+      [14] 快速入門：建立伺服器 - 入口網站
+    - 建立伺服器 - PowerShell
+      [17] 快速入門：建立伺服器 - PowerShell
+    - 建立伺服器 - Bicep
+      [20] 快速入門：建立伺服器 - Bicep
+    - 建立伺服器 - ARM 範本
+      [23] 快速入門：建立伺服器 - ARM 範本
+    - 建立伺服器 - Terraform
+      [28] 快速入門：使用 Terraform 建立 AzureAnalysis Services 伺服器
+    - 設定伺服器防火牆 - 入口網站
+      [34] 快速入門：設定伺服器防火牆 - 入口網站
+  - 教學課程
+    - 1 - 從入口網站新增範例模型
+      [36] 教學課程：從入口網站新增範例模型
+    - 2 - 設定伺服器管理員和使用者角色
+      [40] 教學課程：設定伺服器管理員和使用者角色
+    - 3 - 使用 Power BI Desktop 進行連線
+      [47] 教學課程 - 使用 Power BI Desktop 進行連線
+  - 概念
+    - 驗證和使用者權限
+      [52] 驗證和使用者權限
+    - 使用服務主體進行自動化
+      [56] 使用服務主體進行自動化 (機器翻譯)
+    - 用戶端程式庫
+      [59] Analysis Services 用戶端連結庫
+    - 相容性層級
+      [69] 表格式模型的相容性層級
+    - 連線至內部部署資料來源
+      [72] 使用內部部署資料閘道連線至內部部署資料來源
+    - 連線至伺服器
+      [75] 連線至伺服器
+    - 高可用性
+      [78] Analysis Services 的高可用性
+    - 長時間執行的作業
+      [79] 長時間執行作業的最佳做法
+    - 支援的資料來源
+      [81] Azure Analysis Services 中支援的資料來源
+    - 網路連線常見問題集
+      [89] 備份和還原
+資料來源連線
+    - 安全性
+      - 安全性基準
+        [92] 適用于Azure Analysis Services的 Azure安全性基準
+  - 使用方法
+    - 伺服器
+      - 備份與還原
+        [103] Analysis Services 資料庫備份和還原
+      - 設定伺服器名稱別名
+        [107] 伺服器名稱別名
+      - 設定擴充
+        [109] Azure Analysis Services 擴充
+      - 安裝及設定內部部署資料閘道
+        [118] 安裝及設定內部部署資料閘道
+      - 使用 Azure 虛擬網路上的資料來源閘道
+        [127] 使用 Azure 虛擬網路 (VNet) 上的資料來源閘道
+      - 管理伺服器
+        [129] Azure Analysis Services
+      - 監視伺服器計量
+        [133] 監視 Azure Analysis Services
+      - 設定診斷記錄
+        [142] 設定診斷記錄
+      - 建立服務主體 - Azure 入口網站
+        [153] 建立可存取資源的 Microsoft Entra 應用程式和服務主體
+      - 建立服務主體 - PowerShell
+        [160] 使用 Azure PowerShell 建立具有憑證的服務主體
+      - 將服務主體新增至伺服器管理員角色
+        [166] 將服務主體新增至伺服器管理員角色
+      - 在區域間移動
+        [171] 將 Analysis Services 移至不同的區域
+    - 模型
+      - 表格式模型
+        [178] 表格式模型概觀
+      - 從 Visual Studio 部署
+        [179] 從 Visual Studio 部署模型
+      - 使用 REST API 重新整理
+        [183] 使用 REST API 進行非同步重新整理
+      - 使用 Logic Apps 重新整理
+        [190] 使用 Logic Apps 重新整理
+      - 使用 Azure 自動化重新整理
+        [198] 
+    - 安全性
+      - 管理資料庫使用者
+        [213] 管理資料庫角色和使用者
+      - 管理伺服器管理員
+        [218] 管理伺服器管理員
+    - 連線
+      - 使用 Excel 進行連接
+        [221] 連接 Excel
+      - 使用 Power BI 進行連接
+        [223] 使用 Power BI 進行連接
+      - 建立 .odc 檔案
+        [226] 建立 Office 資料連線檔案
+  - 參考
+    - PowerShell
+      [229] 使用 PowerShell 管理 Azure AnalysisServices
+    - REST
+      [231] Azure Analysis Services REST API
+    - Resource Manager 範本
+      [232] Microsoft.AnalysisServices 伺服器
+    - DAX
+      [236] 資料分析運算式 (DAX) 參考
+    - Power Query M
+      [238] Power Query M 公式語言
+    - 表格式模型指令碼語言 (TMSL)
+      [240] 表格式模型指令碼語言 (TMSL) 參考
+    - 表格式物件模型 (TOM)
+      [243] 表格式物件模型 (TOM)
+    - 資源和物件限制
+      [247] Analysis Services 資源和物件限制
+  - 資源
+    - 範例
+      [248] Azure Analysis Services 範例
+    - Analysis Services 小組部落格
+    - Azure 更新
+    - Azure 狀態
+    - 意見反應
+    - 定價
+    - 定價計算機
+    - Stack Overflow
+    - 影片

@@ -1,0 +1,575 @@
+- ---< azure-databox-online.pdf >---
+  - Azure Stack Edge 檔
+    [1] Azure Stack Edge 文件
+  - Azure Stack Edge Pro 2
+    - 概觀
+      - 什麼是 Azure Stack Edge Pro 2？
+        [4] 什麼是 Azure Stack Edge Pro 2？
+    - 教學課程
+      - 0 - 取得檢查清單
+        [9] Azure Stack Edge Pro 2 裝置的部署檢查清單
+      - 1 - 訂單，準備
+        [12] 教學課程：準備部署 Azure Stack EdgePro 2
+      - 2 - 安裝
+        [32] 教學課程：安裝 Azure Stack Edge Pro 2
+      - 3 - 連線
+        [43] 教學課程：連線至 Azure Stack Edge Pro2
+      - 4 - 設定網路
+        [46] 教學課程：設定 Azure Stack Edge Pro 2的網路
+      - 5 - 設定裝置
+        [62] 教學課程：設定 Azure Stack Edge Pro 2的裝置設定
+      - 6 - 設定憑證
+        [67] 教學課程：設定 Azure Stack Edge Pro 2的憑證
+      - 7 - 啟動
+        [80] 教學課程：啟用 Azure Stack Edge Pro 2
+      - 8 - 設定計算
+        [85] 教學課程：在 Azure Stack Edge Pro 2 上設定計算
+    - 概念
+      - 檢視安全性
+        - 英文 （en-us）
+          [91] Azure Stack Edge Pro 2 的 保管庫ty 指示
+        - 其他語言
+          [103] 保管庫其他語言的 Azure Stack Edge Pro2 指示
+      - 檢閱需求
+        [107] Azure Stack Edge Pro 2 的系統需求
+      - 了解限制
+        [118] Azure Stack Edge Pro 2 限制
+      - 檢閱規格
+        [121] Azure Stack Edge Pro 2 的技術規格和合規性
+      - 叢集 （預覽）
+        - 何謂叢集？
+          [125] 在 Azure Stack Edge Pro GPU 裝置上叢集
+        - 叢集見證
+          [131] Azure Stack Edge Pro GPU 裝置上的叢集見證
+        - 叢集裝置上的 Kubernetes 故障轉移
+          [134] 叢集 Azure Stack Edge 裝置上的Kubernetes 容錯移轉情節
+      - 如何
+        - 掛接您的裝置
+          - 使用 2 柱式機架掛接
+            [137] 教學課程：使用雙後掛接來機架 AzureStack Edge Pro 2
+          - 使用牆掛接
+            [142] Azure Stack Edge Pro 2 的 保管庫ty 指示
+  - Azure Stack Edge Pro - GPU
+    - 概觀
+      - 什麼是具有 GPU 的 Azure Stack Edge Pro？ (部分機器翻譯)
+        [154] Azure Stack Edge Pro with GPU 是什麼？
+    - 快速入門
+      - 開始使用
+        [159] 快速入門：開始使用搭配 GPU 的 AzureStack Edge Pro
+    - 教學課程
+      - 0 - 取得檢查清單
+        [162] Azure Stack Edge Pro GPU 裝置的部署檢查清單
+      - 1 - 訂單，準備
+        [165] 教學課程：準備部署 Azure Stack EdgePro GPU
+      - 2 - 安裝
+        [186] 教學課程：使用 GPU 安裝 Azure StackEdge Pro
+      - 3 - 連線
+        [198] 教學課程：連線至搭配 GPU 的 AzureStack Edge Pro
+      - 4 - 設定網路
+        [201] 教學課程：使用 GPU 設定 Azure StackEdge Pro 的網路
+      - 5 - 設定裝置
+        [218] 教學課程：設定 Azure Stack Edge ProGPU 的裝置設定
+      - 6 - 設定憑證
+        [223] 教學課程：使用 GPU 設定 Azure StackEdge Pro 的憑證
+      - 7 - 啟動
+        [233] 教學課程：啟動搭配 GPU 的 Azure StackEdge Pro
+      - 8 - 設定計算
+        [238] 教學課程：在 Azure Stack Edge Pro GPU裝置上設定計算
+    - 概念
+      - 檢閱需求
+        - 針對 Azure Stack Edge
+          [244] Azure Stack Edge Pro 搭配 GPU 的系統需求
+        - 針對 Azure Stack Edge Blob 記憶體
+          [255] 
+      - 了解限制
+        [260] Azure Stack Edge 限制
+      - 安全性概觀
+        [263] Azure Stack Edge 安全性和資料保護
+      - 檢閱規格
+        - 裝置規格
+          [268] 搭配 GPU 使用 Azure Stack Edge Pro 的技術規格和合規性
+        - 電源線規格
+          [273] Azure Stack Edge 電源線規格
+      - 常見問題 - 計費模型
+        [281] 多久收到一次 Azure Stack Edge Pro GPU裝置的帳單？
+Azure Stack Edge 裝置是否還有其他相關費用？
+Azure Stack Edge 裝置何時開始和停止計費？
+為什麼發票上的價格不符合 Azure StackEdge 定價頁面上的價格？
+      - 叢集 （預覽）
+        - 何謂叢集？
+          [283] 在 Azure Stack Edge Pro GPU 裝置上叢集
+        - 叢集見證
+          [289] Azure Stack Edge Pro GPU 裝置上的叢集見證
+        - 叢集故障轉移案例
+          [292] Azure Stack Edge Pro GPU 裝置上的叢集容錯移轉案例
+        - 叢集管理
+          [295] 管理 Azure Stack Edge 叢集
+        - 叢集裝置上的 Kubernetes 故障轉移
+          [308] 叢集 Azure Stack Edge 裝置上的Kubernetes 容錯移轉情節
+  - Azure Stack Edge Pro R
+    - 概觀
+      - 什麼是 Azure Stack Edge Pro R？
+        [311] Azure Stack Edge Pro R 是什麼？
+    - 概念
+      - 就緒安全性
+        [316] Azure Stack Edge Pro R 安全性指示
+      - 檢閱需求
+        [323] Azure Stack Edge Pro R 系統需求
+      - 了解限制
+        [332] Azure Stack Edge Pro R 限制
+      - 檢閱規格
+        [335] Azure Stack Edge Pro R 技術規格
+    - 教學課程
+      - 0 - 取得檢查清單
+        [339] Azure Stack Edge Pro R 裝置的部署檢查清單
+      - 1 - 訂單，準備
+        [342] 教學課程：準備部署 Azure Stack EdgePro R
+      - 2 - 安裝
+        [362] 教學課程：安裝 Azure Stack Edge Pro R
+      - 3 - 連線
+        [366] 教學課程：連線至 Azure Stack Edge ProR
+      - 4 - 設定網路
+        [369] 教學課程：設定 Azure Stack Edge Pro R的網路
+      - 5 - 設定裝置
+        [380] 教學課程：設定 Azure Stack Edge Pro R的裝置設定
+      - 6 - 設定安全性
+        [385] 教學課程：設定 Azure Stack Edge Pro R的憑證
+      - 7 - 啟動
+        [398] 教學課程：啟動 Azure Stack Edge Pro R裝置
+      - 8 - 設定計算
+        [403] 教學課程：在 Azure Stack Edge Pro GPU裝置上設定計算
+    - 如何
+      - 設定 VPN （預覽）
+        - 透過 Azure PowerShell 進行設定
+          [409] 
+        - 設定BCDR
+          [423] 設定 Azure Stack Edge VPN 的商務持續性和災害復原
+  - Azure Stack Edge Mini R
+    - 概觀
+      - 什麼是 Azure Stack Edge Mini R？
+        [425] Azure Stack Edge Mini R 是什麼？
+    - 概念
+      - 就緒安全性
+        [430] Azure Stack Edge Mini R 安全指示
+      - 檢閱需求
+        [439] Azure Stack Edge Mini R 系統需求
+      - 了解限制
+        [449] Azure Stack Edge Mini R 限制
+      - 檢閱規格
+        [452] Azure Stack Edge Mini R 技術規格
+    - 教學課程
+      - 0 - 取得檢查清單
+        [457] Azure Stack Edge Mini R 裝置的部署檢查清單
+      - 1 - 訂單，準備
+        [460] 教學課程：準備部署 Azure Stack EdgeMini R
+      - 2 - 安裝
+        [480] 教學課程：安裝 Azure Stack Edge Mini R
+      - 3 - 連線
+        [486] 教學課程：連線至 Azure Stack EdgeMini R
+      - 4 - 設定網路
+        [489] 教學課程：設定 Azure Stack Edge Mini R的網路
+      - 5 - 設定裝置
+        [502] 教學課程：設定 Azure Stack Edge Mini R的裝置設定
+      - 6 - 設定安全性
+        [507] 教學課程：為您的 Azure Stack EdgeMini R 設定憑證、VPN 和加密
+      - 7 - 啟動
+        [521] 教學課程：啟動 Azure Stack Edge Mini R
+      - 8 - 設定計算
+        [526] 教學課程：在 Azure Stack Edge Pro GPU裝置上設定計算
+    - 如何
+      - 設定 VPN （預覽）
+        - 透過 Azure PowerShell 進行設定
+          [532] 
+        - 設定BCDR
+          [546] 設定 Azure Stack Edge VPN 的商務持續性和災害復原
+      - 管理Wi-Fi
+        [548] 使用本機 Web UI 來管理 Azure StackEdge Mini R 上的無線連線
+      - 使用Wi-Fi設定檔
+        [557] 搭配 Azure Stack Edge Mini R 裝置使用Wi-Fi 配置檔
+  - 共用功能 - Pro 2、Pro GPU、Pro R、Mini R
+    - 本機 Azure Resource Manager
+      - 什麼是本機 Azure Resource Manager？
+        [561] 什麼是 Azure Stack Edge 上的本機 AzureResource Manager？
+      - 透過 Azure PowerShell 連線
+        [564] 連線 至 Azure Stack Edge 裝置上的Azure Resource Manager
+      - 設定 Azure Resource Manager 密碼
+        [581] 在 Azure Stack Edge Pro GPU 裝置上設定 Azure Resource Manager 密碼
+      - 設定用戶端 TLS 設定
+      - 針對 Azure Resource Manager 問題進行疑難解答
+        [583] 針對 Azure Stack Edge 裝置上的 AzureResource Manager 問題進行疑難排解
+    - 憑證
+      - 什麼是憑證？
+        [586] 什麼是 Azure Stack Edge Pro GPU 上的憑證？
+      - 檢視需求
+        [593] 
+      - 建立憑證
+        - 透過 Azure PowerShell
+          [596] 搭配 Azure Stack Edge Pro GPU 裝置使用憑證
+        - 透過 Azure Stack 整備檢查工具
+          [600] 使用 Azure Stack Hub 整備檢查工具建立Azure Stack Edge Pro GPU 的憑證
+      - 準備憑證以在裝置上上傳
+        [604] 準備憑證以在 Azure Stack Edge Pro GPU上上傳
+      - 上傳、匯入、檢視到期
+        [613] 在 Azure Stack Edge Pro GPU 上上傳、匯入、匯出和刪除憑證
+      - 針對憑證錯誤進行疑難解答
+        [623] 針對憑證錯誤進行疑難排解
+    - 虛擬機器
+      - 什麼是 VM？
+        [627] Azure Stack Edge Pro GPU 裝置上的虛擬機器
+      - 檢視支援的 VM
+        [632] 
+      - 建立具有自定義 VM 大小的 VM
+        [638] 更新自訂 VM 大小
+      - 檢視支援的 API 設定檔
+        [641] Azure Stack Edge 的資源提供者 API 設定檔版本
+      - 什麼是 GPU VM？
+        [644] 適用于 Azure Stack Edge Pro GPU 裝置的 GPU 虛擬機器
+      - 建立 VM 映像
+        - 來自 Azure VM 的自定義映像
+          [647] 為您的 Azure Stack Edge Pro GPU 裝置建立自定義 VM 映像
+        - 來自 VHD 的 Windows 一般化映像
+          [654] 從 Windows VHD 準備一般化映射，以在Azure Stack Edge Pro GPU 上部署 VM
+        - 來自 ISO 的一般化映像
+          [663] 從 ISO 準備一般化映射，以在 AzureStack Edge Pro GPU 上部署 VM
+        - 使用特製化映像
+          [677] 透過 Azure PowerShell 從 Azure StackEdge Pro GPU 裝置上的特製化映射部署VM
+        - 透過入口網站使用 Azure Marketplace 映像
+          [685] 從 Azure Marketplace 或 Azure 儲存體帳戶建立 VM 映射
+        - 透過 Azure CLI 使用 Azure Marketplace 映射
+          [692] 使用 Azure Marketplace 映射為您的Azure Stack Edge Pro GPU 建立 VM 映射
+      - 部署
+        - VM - Azure 入口網站 （預覽）
+          [701] 透過 Azure 入口網站 在 Azure StackEdge Pro GPU 裝置上部署 VM
+        - VM - 範本
+          [718] 透過範本在 Azure Stack Edge Pro GPU裝置上部署 VM
+        - VM - GPU
+          [741] 在 Azure Stack Edge Pro GPU 裝置上部署 GPU VM
+        - VM - HPN
+          [746] 在 Azure Stack Edge Pro GPU 裝置上部署高效能網路 VM
+        - VM - Azure PowerShell Cmdlet
+          [754] 透過 Azure PowerShell 在 Azure StackEdge 裝置上部署 VM
+        - VM - Azure PowerShell 腳本
+          [778] 透過 Azure PowerShell 腳本在 AzureStack Edge Pro GPU 裝置上部署 VM
+        - VM - Azure CLI/Python
+          [789] 使用 Azure CLI 和 Python 在 Azure StackEdge Pro GPU 裝置上部署 VM
+      - 安裝擴充功能
+        - 自定義腳本擴充功能
+          [802] 在 Azure Stack Edge Pro 裝置上執行的VM 上部署自訂腳本擴充功能
+        - GPU 擴充功能
+          [812] 在適用於 Azure Stack Edge Pro GPU 裝置的 VM 上安裝 GPU 擴充功能
+        - 密碼重設擴充功能
+          [821] 在 Azure Stack Edge Pro GPU 裝置的 VM上安裝密碼重設擴充功能
+      - 管理
+        - 網路介面
+          [827] 使用Azure 入口網站來管理 Azure StackEdge Pro GPU 上 VM 上的網路介面
+        - 磁碟
+          [834] 使用Azure 入口網站來管理 Azure StackEdge Pro GPU 上 VM 上的磁片
+        - Edge 資源群組
+          [844] 管理 Azure Stack Edge Pro GPU 裝置上的 Edge 資源群組
+        - VM 大小
+          [846] 使用Azure 入口網站調整 Azure StackEdge Pro GPU 上的 VM 大小
+        - VM 標籤
+          [850] 透過 Azure PowerShell 標記 Azure StackEdge 上的 VM
+      - 重設 VM 密碼
+        [857] 透過Azure 入口網站重設 Azure StackEdge Pro GPU 裝置的 VM 密碼
+      - 備份 VM 磁碟
+        [863] 透過 Azure PowerShell 在 Azure StackEdge Pro GPU 上備份 VM 磁片
+      - 監視器
+        - VM 計量
+          [874] 監視 AZURE Stack Edge Pro GPU 上CPU、記憶體的 VM 計量
+        - VM 活動
+          [877] 監視 Azure Stack Edge Pro GPU 裝置上的 VM 活動
+      - 疑難排解
+        - 連線至 VM 主控台 (部分機器翻譯)
+          [879] 連線 Azure Stack Edge Pro GPU 裝置上的虛擬機器主控台
+        - 收集 VM 客體記錄
+          [883] 收集 Azure Stack Edge Pro GPU 裝置上的 VM 客體記錄
+        - VM 映射上傳
+          [885] 針對 Azure Stack Edge Pro GPU 中的虛擬機器映射上傳進行疑難排解
+        - VM 部署
+          [887] 針對 Azure Stack Edge Pro GPU 中的 VM部署進行疑難排解
+        - GPU 擴充功能問題
+          [894] 針對 Azure Stack Edge Pro GPU 上 GPUVM 的 GPU 擴充功能問題進行疑難排解
+    - Azure Kubernetes Service
+      - 在 Azure Stack Edge 上部署 AKS
+        [899] 在 Azure Stack Edge 上部署 AzureKubernetes 服務
+    - Kubernetes
+      - 什麼是 Kubernetes？
+        [917] Azure Stack Edge Pro GPU 裝置上的Kubernetes
+      - Kubernetes 儲存體
+        [921] Azure Stack Edge Pro GPU 裝置上的Kubernetes 儲存體管理
+      - Kubernetes 網路
+        [927] Azure Stack Edge Pro GPU 裝置上的Kubernetes 網路功能
+      - Kubernetes RBAC
+        [934] Azure Stack Edge Pro GPU 裝置上的Kubernetes 角色型存取控制
+      - Kubernetes 工作負載
+        [938] Azure Stack Edge Pro 裝置上的Kubernetes 工作負載管理
+      - 設定 Kubernetes
+        [941] 教學課程：在 Azure Stack Edge Pro GPU裝置上設定計算
+      - 部署 Kubernetes 工作負載
+        - 透過 kubectl
+          - Kubernetes 叢集存取
+            [947] 連線 Azure Stack Edge Pro GPU 裝置上透過 kubectl 管理 Kubernetes 叢集
+          - 計算加速
+            [957] 在適用于 Kubernetes 部署的 Azure StackEdge Pro GPU 上使用計算加速
+          - 無狀態應用程式
+            [959] 透過 Azure Stack Edge Pro GPU 裝置上的 kubectl 部署 Kubernetes 無狀態應用程式
+          - 靜態布建的具狀態應用程式
+            [968] 使用 kubectl 在 Azure Stack Edge Pro 裝置上使用 PersistentVolume 執行Kubernetes 具狀態應用程式
+          - 動態布建的具狀態應用程式
+            [979] 使用 kubectl 在 Azure Stack Edge ProGPU 裝置上搭配 儲存體Class 執行Kubernetes 具狀態應用程式
+          - GPU 共用工作負載
+            [987] 在 Azure Stack Edge Pro 上使用 GPU 共用部署 Kubernetes 工作負載
+        - 透過IoT Edge
+          - 無狀態應用程式
+            [1002] 使用 IoT Edge 模組在 Azure Stack EdgePro GPU 裝置上執行 Kubernetes 無狀態應用程式
+          - GPU 共用工作負載
+            [1007] 在您的 Azure Stack Edge Pro 上部署使用GPU 共用的 IoT Edge 工作負載
+          - 開發 C# 模組
+            [1032] 開發 C# IoT Edge 模組以行動 AzureStack Edge Pro 上的檔案
+        - 透過 Azure Arc
+          - 在 Kubernetes 叢集上啟用 Arc
+            [1043] 在 Azure Stack Edge Pro GPU 裝置上啟用 Kubernetes 叢集上的 Azure Arc
+          - 透過 GitOps 部署無狀態應用程式
+            [1051] 在已啟用 Azure Stack Edge Pro GPU 的Azure Arc 上部署已啟用 Redis 的 PHP
+Guestbook  無狀態應用程式
+      - 如何
+        - 設定 MetalLB
+          [1058] 在 Azure Stack Edge 上使用 MetalLB 設定負載平衡
+    - IoT Edge
+      - 部署 IoT Edge 範例 （自助）
+        - VM 上的 IoT Edge
+          [1062] 在 Azure Stack Edge 上的 Ubuntu VM 上部署 IoT Edge
+        - Nvidia DeepStream 模組
+          [1071] 使用 GPU 在 Azure Stack Edge Pro 上的Ubuntu VM 上部署 Nvidia DeepStream模組
+      - 針對 IoT Edge 問題進行疑難解答
+        [1075] 針對 Azure Stack Edge Pro GPU 裝置上的 IoT Edge 問題進行疑難排解
+    - 雲端記憶體閘道
+      - 新增、連線至共用
+        [1079] 教學課程：透過與 Azure Stack Edge ProGPU 共用傳輸數據
+      - 新增、連線至記憶體帳戶
+        [1088] 教學課程：以 Azure Stack Edge Pro GPU透過儲存體帳戶傳輸資料
+      - 分享次數
+        [1103] 使用Azure 入口網站來管理 Azure StackEdge Pro 上的共用
+      - 使用者
+        [1120] 使用Azure 入口網站來管理 Azure StackEdge Pro 上的使用者
+      - 儲存體帳戶
+        [1124] 使用Azure 入口網站來管理 Azure StackEdge Pro GPU 上的 Edge 儲存體帳戶
+      - 帶寬排程
+        [1132] 使用Azure 入口網站來管理 Azure StackEdge Pro GPU 上的頻寬排程
+      - 針對 Blob 記憶體問題進行疑難解答
+        [1136] 針對 Azure Stack Edge 裝置的 Blob 儲存體問題進行疑難排解
+  - 共用裝置 - Pro 2、Pro GPU、Pro R、Mini R
+    - 共用概念
+      - 瞭解區域選取專案
+        [1139] 選擇 Azure Stack Edge 的區域
+      - 什麼是 GPU 共用？
+        [1141] Azure Stack Edge Pro GPU 裝置上的GPU 共用
+      - 了解數據落地
+        [1143] Azure Stack Edge 的資料落地和復原能力
+      - 了解數據復原能力
+        [1146] Azure Stack Edge 的資料復原能力
+      - 檢視金鑰保存庫整合
+        [1150] 使用 Azure 金鑰保存庫 管理 Azure StackEdge 秘密
+      - 了解中斷聯機的使用
+        [1163] Azure Stack Edge 的已中斷連線案例
+      - 常見問題 - 操作指導方針
+        [1166] 神秘負責將裝置初始傳遞至客戶位置？
+神秘負責裝置的持續作業？
+如果裝置在內部部署時遺失、損壞或遭竊，該怎麼辦？
+神秘管理定期更新，以增強和改善 AzureStack Edge 平臺？
+神秘修正我在 Azure Stack Edge 上執行的應用程式上的軟體問題？
+    - 共用安全性
+      - 安全性概觀
+        [1168] Azure Stack Edge Pro 2、Azure StackEdge Pro R 和 Azure Stack Edge Mini R的安全性與資料保護
+      - 安全性基準
+        [1175] Azure Stack Edge 的 Azure 安全性基準
+    - 共用操作說明
+      - 檢查網路整備程度
+        [1187] 檢查 Azure Stack Edge 裝置的網路整備程度
+      - 透過PowerShell建立虛擬交換器和虛擬網路
+        [1194] 透過 PowerShell 在 Azure Stack EdgePro GPU 中建立新的虛擬交換器
+      - 透過組態檔部署
+        [1200] 使用組態檔來部署 Azure Stack Edge 裝置
+      - 管理 Edge 計算
+        [1229] 管理 Azure Stack Edge Pro GPU 上的計算
+      - 管理 Edge 容器登錄
+        [1236] 在 Azure Stack Edge Pro GPU 裝置上啟用 Edge 容器登錄
+      - 管理裝置
+        - 電源、存取、連線
+          [1246] 管理 Azure Stack Edge Pro GPU 的存取、電源和連線模式
+        - 透過 PowerShell
+          [1257] 透過 Windows PowerShell 管理 AzureStack Edge Pro GPU 裝置
+        - 套用更新
+          [1280] 更新 Azure Stack Edge Pro GPU
+        - 重設、重新啟用裝置
+        - 傳回裝置
+          [1293] 傳回您的 Azure Stack Edge 裝置
+        - 取代裝置
+          [1301] 取代您的 Azure Stack Edge 裝置
+        - 準備裝置失敗
+          [1303] 準備 Azure Stack Edge Pro GPU 裝置失敗
+        - 從裝置失敗復原
+          [1306] 從失敗的 Azure Stack Edge Pro GPU 裝置復原
+        - 清除裝置數據
+          [1309] 從 Azure Stack Edge 清除數據
+      - 監視器
+        - 檢閱警示
+          [1313] 檢閱 Azure Stack Edge 上的警示
+        - 使用警示通知的規則
+          [1329] 使用警示處理規則來管理 Azure StackEdge 裝置上的警示通知
+        - 使用計量圖表
+          [1338] 監視您的 Azure Stack Edge 裝置
+        - 使用 Kubernetes 儀錶板
+          [1345] 使用 Kubernetes 儀表板來監視 AzureStack Edge Pro GPU 裝置
+        - 使用 Azure 監視器
+          [1353] 在 Azure Stack Edge Pro GPU 裝置上啟用 Azure 監視器
+      - 疑難排解
+        - 訂購問題
+          [1362] 針對 Azure Stack Edge 訂購問題進行疑難排解
+        - 啟用問題
+          [1365] 針對 Azure Stack Edge Pro GPU 裝置的Azure 金鑰保存庫啟用或秘密刪除問題進行疑難排解
+        - 裝置記錄和診斷
+          [1368] 執行診斷、收集記錄以針對 Azure StackEdge 裝置問題進行疑難排解
+        - 啟用主動式記錄
+          [1376] Azure Stack Edge 裝置上的主動式記錄收集
+        - 啟用遠端支援
+          [1380] Azure Stack Edge 的遠端支援和診斷
+        - 連絡 Microsoft 支援服務
+          [1398] 開啟 Azure Stack Edge 和 Azure 資料箱閘道的支援票證
+    - 共用版本資訊
+      - 2403 - 目前
+        [1405] Azure Stack Edge 2403 版本資訊
+      - 2312
+        [1413] Azure Stack Edge 2312 release notes
+      - 2309
+        [1421] Azure Stack Edge 2309 版本資訊
+      - 2304
+        [1429] Azure Stack Edge 2304 版本資訊
+      - 2303
+        [1435] Azure Stack Edge 2303 版本資訊
+      - 2301
+        [1441] Azure Stack Edge 2301 版本資訊
+      - 2210
+        [1447] Azure Stack Edge 2210 版本資訊
+      - 2209
+        [1453] Azure Stack Edge 2209 版本資訊
+      - 2207
+        [1458] Azure Stack Edge 2207 版本資訊
+      - 2205
+        [1463] Azure Stack Edge 2205 版本資訊
+      - 2203
+        [1469] Azure Stack Edge 2203 版本資訊
+      - 2202
+        [1475] Azure Stack Edge 2202 版本資訊
+      - 2111
+        [1482] Azure Stack Edge 2111 版本資訊
+      - 2110
+        [1488] Azure Stack Edge 2110 版本資訊
+      - 2106
+        [1496] Azure Stack Edge 2106 版本資訊
+      - 2105
+        [1503] Azure Stack Edge 2105 版本資訊
+      - 2103
+        [1511] Azure Stack Edge 2103 版本資訊
+      - 2101
+        [1518] Azure Stack Edge 2101 版本資訊
+      - 2010
+        [1524] 具有 GPU 正式運作的 Azure Stack EdgePro 版本資訊
+      - 2008
+        [1529] 具有 GPU 預覽版本的 Azure Stack EdgePro 版本資訊
+    - 共享參考
+      - Azure PowerShell
+      - REST API
+        [1533] Azure Data Box Edge 和 Azure 資料箱閘道 REST API
+      - .NET SDK
+        [1534] Azure DataBoxEdge SDK for .NET -latest
+      - Azure CLI
+        [1535] az databoxedge
+      - Azure 原則內建
+        [1545] Azure 原則 Azure Stack Edge 的內建定義
+  - Azure Stack Edge Pro - FPGA
+    - 概觀
+      - 什麼是具有 FPGA 的 Azure Stack Edge Pro？ (部分機器翻譯)
+        [1546] Azure Stack Edge Pro FPGA 是什麼？
+    - 教學課程
+      - 1 - 準備
+        [1549] 教學課程：準備部署 Azure Stack EdgePro FPGA
+      - 2 - 安裝
+        [1557] 教學課程：安裝 Azure Stack Edge ProFPGA
+      - 3 - 連線、設定、啟用
+        [1568] 教學課程：連線、設定及啟用 AzureStack Edge Pro FPGA
+      - 4 - 新增、連線至共用
+        [1576] 教學課程：使用 Azure Stack Edge ProFPGA 傳輸資料
+      - 5A - 設定計算 （簡單）
+        [1583] 教學課程：使用 Azure Stack Edge ProFPGA 轉換資料
+      - 5B - 設定計算 （進階）
+        [1594] 教學課程：使用 Azure Stack Edge ProFPGA 轉換資料以進行進階部署流程
+    - 概念
+      - 檢閱需求
+        [1613] Azure Stack Edge Pro FPGA 系統需求
+      - 了解限制
+        [1621] Azure Stack Edge 限制
+      - 安全性概觀
+        [1624] Azure Stack Edge 安全性和資料保護
+      - 檢閱規格
+        - 裝置規格
+          [1629] Azure Stack Edge Pro FPGA 技術規格
+        - 電源線規格
+          [1634] Azure Stack Edge 電源線規格
+    - 如何
+      - 開發 C# 模組
+        [1642] 開發 C# IoT Edge 模組，以使用 AzureStack Edge Pro FPGA 移動檔案
+      - 管理
+        - Edge 計算
+          [1653] 管理 Azure Stack Edge Pro FPGA 上的計算
+        - Edge 計算網路
+          [1660] 在您的 Azure Stack Edge Pro 上啟用計算網路
+        - 分享次數
+          [1665] 使用 Azure 入口網站 來管理 Azure StackEdge Pro FPGA 上的共用
+        - 使用者
+          [1679] 使用 Azure 入口網站來管理 Azure StackEdge Pro FPGA 上的使用者
+        - 帶寬排程
+          [1683] 使用 Azure 入口網站來管理 Azure StackEdge Pro FPGA 上的頻寬排程
+        - 電源、存取、連線
+          [1687] 管理 Azure Stack Edge Pro FPGA 的存取、電源和連線模式
+        - 透過 PowerShell
+          [1692] 透過 Windows PowerShell 管理 AzureStack Edge Pro FPGA 裝置
+        - 疑難排解
+          - 透過記錄
+            [1705] 針對 Azure Stack Edge Pro FPGA 的問題進行疑難排解
+          - 訂購問題
+            [1711] 針對 Azure Stack Edge 訂購問題進行疑難排解
+          - IoT Edge
+            [1714] 針對 Azure Stack Edge FPGA 裝置上的IoT Edge 問題進行疑難排解
+          - 連絡 Microsoft 支援服務
+            [1715] 開啟 Azure Stack Edge 和 Azure 資料箱閘道的支援票證
+      - 監視器
+        [1722] 監視您的 Azure Stack Edge 裝置
+      - 傳回裝置
+        [1729] 傳回您的 Azure Stack Edge 裝置
+      - 取代裝置
+        [1737] 取代您的 Azure Stack Edge 裝置
+      - 遷移至 GPU 裝置
+        [1739] 將工作負載從 Azure Stack Edge ProFPGA 遷移至 Azure Stack Edge Pro 2 或Azure Stack Edge GPU 裝置
+    - 版本資訊
+      - 2301 - 目前
+        [1746] Azure Stack Edge Pro 與 FPGA 2301 版本資訊
+      - 2101
+        [1748] Azure Stack Edge Pro with FPGA 2101 版本資訊
+      - 2007
+        [1750] Azure Stack Edge 和 Azure Data BoxGateway 2007 版本資訊
+      - 1911
+        [1752] Azure Stack Edge 和 Azure Data BoxGateway 1911 版本資訊
+      - 1906
+        [1753] Azure Data Box Edge 和 Azure Data BoxGateway 1906 版本資訊
+      - 1905
+        [1755] Azure Data Box Edge 和 Azure Data BoxGateway 1905 版本資訊
+      - 公開上市 (GA)
+        [1756] Azure 資料箱邊緣/Azure 資料箱閘道正式發行版本資訊
+  - 資源
+    - Azure Stack Edge Pro C# 模組範例 （.NET）
+    - Azure Stack Edge 產品
+    - 定價
+    - Azure Stack Edge 硬體其他條款
+      [1758] Azure Stack Edge 硬體其他條款

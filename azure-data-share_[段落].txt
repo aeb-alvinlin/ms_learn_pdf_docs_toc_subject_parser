@@ -1,0 +1,82 @@
+- ---< azure-data-share.pdf >---
+  - Azure Data Share 檔
+    [1] Azure Data Share 文件
+  - 概觀
+    - 什麼是 Azure Data Share?
+      [3] 什麼是 Azure Data Share?
+    - 支援的數據存放區
+      [7] Azure Data Share 中支援的資料存放區
+  - 快速入門
+    - 共用數據 - Azure 入口網站
+      [11] 快速入門：在 Azure 入口網站中使用Azure Data Share 來共用資料
+    - 共享數據 - Bicep
+      [17] 快速入門：使用 Azure Data Share 和Bicep 共用資料
+    - 共享數據 - ARM 範本
+      [22] 快速入門：使用 Azure Data Share 和ARM 範本共享數據
+  - 教學課程
+    - 分享資料
+      [29] 教學課程：使用 Azure Data Share 共享數據
+    - 接受和接收資料
+      [37] 教學課程：使用 Azure Data Share 接受和接收數據
+  - 概念
+    - 安全性
+      - 安全性概觀
+        [46] Azure Data Share 的安全性概觀
+      - 安全性基準
+        [47] 適用于 Azure Data Share 的 Azure 安全性基準
+    - Azure Data Share 術語
+      [52] Azure Data Share 概念
+    - 角色和需求
+      [54] Azure Data Share 的角色和需求
+    - 了解定價
+      [67] 瞭解 Azure Data Share 定價
+  - 範例
+    - Azure PowerShell
+      [70] 適用於 Azure Data Share 的 AzurePowerShell 樣本
+  - 操作指南
+    - 依來源共用和接收數據
+      - 從 Azure 儲存體 共用
+        [71] 從 Azure Blob 儲存體和 Azure Data LakeStorage 共用和接收資料
+      - 從 Azure SQL 資料庫 或 Azure Synapse Analytics 共用
+        [83] 共用和接收來自 Azure SQL Database 和Azure Synapse Analytics 的資料
+      - 從 Azure 數據總管共用
+        [103] 使用 Azure Data Share 來與 Azure 資料總管共用資料
+    - 新增資料集
+      [111] 如何將資料集新增至 Azure Data Share 中的現有共用
+    - 設定數據集對應
+      [113] 如何在 Azure Data Share 中設定已接收共用的資料集對應
+    - 新增收件者
+      [116] 如何將收件者新增至您的共用
+    - 刪除邀請
+      [118] 如何在 Azure Data Share 中刪除邀請給收件者
+    - 撤銷共用訂閱
+      [119] 如何在 Azure Data Share 中撤銷取用者的共用訂用帳戶
+    - 監視器
+      [120] 監視 Azure Data Share
+    - 監視共享狀態和歷程記錄
+      [127] 監視 Azure Data Share 狀態和歷程記錄
+    - 災害復原
+      [130] Azure Data Share 的災害復原
+    - 疑難排解
+      [131] 針對 Azure Data Share 中的常見問題進行疑難排解
+    - 將 Data Share 帳戶移至新區域
+      [135] 使用Azure 入口網站將 Azure Data Share帳戶移至另一個區域
+  - 參考
+    - .NET
+      [140] Azure Data Share SDK for .NET - latest
+    - Azure PowerShell
+      [141] Az.DataShare
+    - REST API
+      [144] Azure Data Share
+    - Azure CLI
+      [145] Data Share
+    - 監視資料參考
+      [146] Azure Data Share 監視數據參考
+  - 資源
+    - Microsoft 問與答頁面
+    - Stack Overflow
+    - 部落格
+    - Microsoft 技術社群
+    - 產品意見反應
+    - 定價
+    - 服務更新

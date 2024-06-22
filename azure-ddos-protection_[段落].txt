@@ -1,0 +1,115 @@
+- ---< azure-ddos-protection.pdf >---
+  - Azure DDoS 保護文件
+    [1] Azure DDoS 保護文件
+  - 概觀
+    - Azure DDoS 保護是什麼？
+      [4] Azure DDoS 保護是什麼？
+    - 階層比較
+      [8] 關於 Azure DDoS 保護層比較
+  - 快速入門
+    - DDoS 網路保護
+      - 入口網站
+        [11] 快速入門：使用 Azure 入口網站 建立及設定 Azure DDoS 網路保護
+      - PowerShell
+        [19] 快速入門：使用 Azure PowerShell 建立及設定 Azure DDoS 網路保護
+      - CLI
+        [23] 快速入門：使用 Azure CLI 建立及設定Azure DDoS 網路保護
+      - Bicep
+        [28] 快速入門：使用 Bicep 建立和設定 AzureDDoS 網路保護
+      - ARM 範本
+        [31] 快速入門：使用ARM範本建立及設定Azure DDoS 網路保護
+      - Terraform
+        [37] 快速入門：使用 Terraform 建立及設定Azure DDoS 網路保護
+    - DDoS IP 保護
+      - 入口網站
+        [43] 快速入門：使用 Azure 入口網站建立和設定 Azure DDoS IP 保護
+      - PowerShell
+        [49] 快速入門：使用 Azure PowerShell 建立及設定 Azure DDoS IP 保護
+      - CLI
+        [53] 快速入門：使用 Azure CLI 建立及設定Azure DDoS IP 保護
+      - ARM 範本
+        [57] 快速入門：使用ARM範本建立及設定Azure DDoS IP 保護
+  - 教學課程
+    - 檢視及設定 DDoS 遙測
+      [63] 教學課程：檢視與設定 Azure DDoS 保護遙測
+    - 設定監視和記錄
+      - 設定 Log Analytics 工作區
+        [67] 設定 Azure DDoS 保護 Log Analytics 工作區
+      - 透過入口網站設定計量警示
+        [71] 透過入口網站來設定 Azure DDoS 保護計量警示
+      - 設定診斷記錄
+        [78] 透過入口網站來設定 Azure DDoS 保護診斷記錄
+      - 設定診斷記錄警示
+        [82] 設定 Azure DDoS 保護診斷記錄警示
+    - 使用模擬合作夥伴進行測試
+      [87] 教學課程：Azure DDoS 保護模擬測試
+    - 檢視監視和記錄
+      - 在 適用於雲端的 Microsoft Defender 中檢視警示
+        [98] 在適用於雲端的 Microsoft Defender 中檢視 Azure DDoS 保護警示
+      - 在Log Analytics工作區中檢視診斷記錄
+        [100] 檢視記錄分析工作區中的 Azure DDoS 保護記錄
+    - 使用 DDoS 保護部署路由伺服器
+      [106] 教學課程：使用 Azure DDoS 保護保護您的 Azure 路由伺服器
+    - 使用 DDoS 保護部署防火牆
+      [112] 教學課程：部署具有 Azure DDoS 保護的防火牆
+    - 使用 DDoS 保護部署 應用程式閘道
+      [122] 教學課程：使用 Azure DDoS 網路保護保護您的應用程式閘道
+    - 使用 DDoS 保護部署 Load Balancer
+      [137] 教學課程：使用 Azure DDoS 保護來保護公用負載平衡器
+  - 概念
+    - Azure DDoS 保護功能 (部分機器翻譯)
+      [150] Azure DDoS 保護功能 (部分機器翻譯)
+    - 價格比較
+      [154] 比較 Azure DDoS 保護層之間的定價
+    - 參考架構
+      [156] Azure DDoS 保護參考架構
+    - 監視 Azure DDoS 保護
+      [164] 監視 Azure DDoS 保護
+    - 可靠性
+      [167] Azure DDoS 網路保護中的可靠性
+    - 基本最佳做法
+      [169] Azure DDoS 保護基本最佳做法 (部分機器翻譯)
+    - DDoS 回應策略的元件
+      [171] DDoS 回應策略的元件
+    - 安全性基準
+      [173] 適用于 Azure DDoS 保護的 Azure 安全性基準
+    - 攻擊類型
+      [176] Azure DDoS 保護可降低風險的攻擊類型
+    - 內嵌 L7 DDoS 保護與閘道負載平衡器和合作夥伴 NVA
+      [177] 使用網路閘道負載平衡器和合作夥伴 NVA的內嵌 L7 DDoS 保護
+    - 將合作夥伴上線
+      [179] 與 Azure DDoS 保護合作
+    - 管理許可權和限制
+      [184] 管理 DDoS 保護計劃：權限和限制
+    - Front Door 上的 DDoS 保護
+      [186] Front Door 上的 DDoS 保護
+  - 操作指南
+    - 切換層
+      [188] 如何使用 Azure 入口網站切換 AzureDDoS 保護層
+    - 參與 DDoS 快速回應 （DRR）
+      [191] Azure DDoS 快速回應
+    - 防禦 API 管理 DDoS 攻擊
+      [194] 防禦您的 Azure API 管理執行個體免於遭受 DDoS 攻擊
+  - 參考
+    - Azure 原則內建
+      [197] 適用於 Azure DDoS 保護的 Azure 原則內建定義
+    - Azure CLI
+      [198] az network ddos-protection
+    - Azure PowerShell
+      [211] New-AzDdosProtectionPlan
+    - .NET
+    - Java
+    - Node.js
+    - Python
+    - REST
+      [218] Ddos Protection Plans
+    - Azure Resource Manager
+      [219] 什麼是 Azure Resource Manager？
+  - 資源
+    - 常見問題集
+      [225] 什麼是分散式阻斷服務 (DDoS) 攻擊？
+什麼是 Azure DDoS 保護服務？
+價格如何運作？
+我應該選擇哪一個 Azure DDoS 保護層？
+    - 定價
+    - 區域可用性

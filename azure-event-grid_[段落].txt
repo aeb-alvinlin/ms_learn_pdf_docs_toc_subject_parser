@@ -1,0 +1,603 @@
+- ---< azure-event-grid.pdf >---
+  - Azure 事件格線文件
+    [1] Azure 事件方格文件
+  - 概觀
+    - 何謂 Event Grid？
+      [4] 什麼是 Azure 事件方格？
+    - 新功能
+      [13] Azure 事件方格的新功能
+    - 選擇適合的層級
+      [14] 選擇適合您解決方案的事件方格層
+  - 事件方格命名空間
+    - MQTT 代理
+      - 概觀
+        [17] Azure 事件方格中 MQTT 代理功能概觀
+      - 快速入門
+        - 在 MQTT 主題上發佈和訂閱
+          - Azure CLI
+            [22] 快速入門：使用 Azure CLI 在事件方格命名空間上發佈和訂閱 MQTT 訊息
+          - Azure 入口網站
+            [27] 快速入門：使用 Azure 入口網站 在事件方格命名空間上發佈和訂閱 MQTT 訊息
+      - 教學課程
+        - 將 MQTT 訊息路由至事件中樞
+          - Azure CLI
+            [43] 教學課程：使用命名空間主題將 MQTT 訊息路由傳送至 Azure 事件中樞 （AzureCLI）
+          - Azure 入口網站
+            [49] 教學課程：使用命名空間主題將 MQTT 訊息路由傳送至 Azure 事件中樞 （Azure 入口網站）
+        - 使用自定義主題將 MQTT 訊息路由至 Azure Functions
+          - Azure 入口網站
+            [68] 教學課程：使用自定義主題將 Azure 事件方格 中的 MQTT 訊息路由至 AzureFunctions - Azure 入口網站
+          - Azure CLI
+            [78] 教學課程：使用自定義主題將 Azure 事件方格 中的 MQTT 訊息路由至 AzureFunctions - Azure CLI
+      - 範例
+      - 概念
+        - 詞彙
+          [83] 詞彙
+        - MQTT 用戶端的存取控制
+          [86] MQTT 用戶端的存取控制
+        - MQTT 用戶端
+          [91] MQTT 用戶端
+        - 用戶端群組
+          [97] 用戶端群組
+        - 主題空間
+          [101] Azure 事件方格 MQTT 訊息代理程式功能中的主題空間
+        - 路由傳送 MQTT 訊息
+          [105] 在 Azure 事件方格 中路由 MQTT 訊息
+          - 路由傳送事件結構描述
+            [111] MQTT 路由訊息的事件架構
+          - 篩選路由的 MQTT 訊息
+            [113] 篩選 MQTT 路由訊息
+          - 路由傳送擴充
+            [116] MQTT 路由訊息的擴充
+        - MQTT 功能支援
+          [122] Azure 事件方格 MQTT 訊息代理程式功能支援的 MQTT 功能
+        - MQTT 用戶端生命週期事件
+          [130] MQTT 用戶端生命週期事件
+        - MQTT 用戶端驗證
+          [136] 用戶端驗證
+          - 使用憑證進行 MQTT 用戶端驗證
+            [137] 使用憑證進行 MQTT 用戶端驗證
+          - 具有 Microsoft Entra 身分識別的用戶端 JWT 驗證和 RBAC 授權
+            [142] Microsoft Entra JWT 驗證和 Azure RBAC授權以發佈或訂閱 MQTT 訊息
+          - 使用 MQTT 訊息代理程式進行傳輸層安全性連線
+            [145] 與 MQTT 訊息代理程式建立傳輸層安全性（TLS） 連線
+        - 高可用性和災害復原
+          [146] Azure 事件方格 - 命名空間的高可用性和災害復原
+        - 安全性
+          - 安全性基準
+            [148] 事件方格的 Azure 安全性基準
+          - Azure 原則的安全性控制
+            [161] 適用於 Azure 事件方格的 Azure 原則法規合規性控制項
+          - Azure 原則內建
+            [168] 
+          - 網路安全性 (MQTT)
+            [174] 
+        - 使用案例
+          - 汽車傳訊
+            [178] 汽車傳訊、數據分析參考架構
+      - 操作方式
+        - 建立及管理命名空間
+          [190] 建立、檢視和管理命名空間
+        - 客戶啟用災害復原
+          [197] Azure 事件方格 中的用戶端故障轉移實作
+        - 如何為 MQTT 用戶端設定多個工作階段
+          [201] 如何為單一用戶端建立多個工作階段
+        - 透過 Azure 事件中樞將事件傳送到 Microsoft Fabric
+          [204] 如何使用 Azure 事件方格 透過事件中樞將 MQTT 事件傳送至 Microsoft Fabric
+        - MQTT 要求回應傳訊
+          [206] 如何使用 Azure 事件方格 的 MQTT 訊息代理程式功能來實作要求-回應傳訊模式
+        - 監視器
+          - 監視事件方格命名空間
+            [212] 監視 Azure 事件方格 命名空間
+          - 監視資料參考 (MQTT 傳遞)
+            [220] 
+        - 疑難排解
+          - 針對 MQTT 執行階段問題進行疑難排解
+            [228] 指南：針對 Azure 事件方格 MQTT 訊息代理程式功能的問題進行疑難解答
+        - 安全
+          - 允許從特定 IP 位址的存取
+            [231] 設定 Azure 事件方格命名空間 (MQTT) 的IP 防火牆
+          - 允許透過私人端點的存取
+            [234] 為已啟用 MQTT 的 Azure 事件方格命名空間設定私人端點
+          - 為命名空間啟用受控識別
+            [241] 啟用事件方格命名空間的受控識別
+          - 使用憑證鏈結進行 MQTT 用戶端驗證
+            [244] 用戶端驗證使用憑證鏈結
+    - 命名空間主題
+      - 提取傳遞概觀
+        [248] 使用 HTTP 提取傳遞
+      - 推送傳遞概觀
+        [254] Azure 事件方格 命名空間 - 推送傳遞（預覽）
+      - 快速入門
+        - 使用命名空間主題發佈事件 (Java)
+          [257] 使用 Java 將事件發佈至命名空間主題
+        - 提取傳遞
+          - 從命名空間主題接收事件 (Java)
+            [261] 搭配使用提取傳遞與 JAVA 來接收事件
+          - 使用命名空間主題發佈和訂閱事件
+            - Azure CLI
+              [267] 發佈至 Azure 事件方格中的命名空間主題，以及取用其中的事件
+            - Azure 入口網站
+              [274] 發佈至 Azure 事件方格中的命名空間主題，以及取用其中的事件 - Azure 入口網站
+          - 傳送和提取訊息
+            - .NET
+              [283] 快速入門：從 Azure 事件方格命名空間主題傳送及接收訊息 (.NET)
+        - 推送傳遞
+          - 使用命名空間主題將事件傳遞至 Azure 事件中樞
+            - Azure CLI
+              [300] 使用命名空間主題將事件傳遞至 Azure 事件中樞 - Azure CLI （預覽）
+            - Azure 入口網站
+              [308] 使用命名空間主題將事件傳遞至 Azure 事件中樞 （預覽） - Azure 入口網站
+      - 概念
+        - 詞彙
+          [327] Azure 事件方格 命名空間概念
+        - 事件處理程式 (推送傳遞)
+          - 事件中樞
+            [338] Azure 事件中樞作為訂閱 Azure 事件方格命名空間主題中的處理常式目的地 (預覽)
+        - 傳遞屬性
+          [344] 命名空間主題訂閱的傳遞屬性
+        - 發行者作業
+          [346] Azure 事件方格 - 發佈者作業
+        - 訂閱者作業
+          [348] Azure 事件方格 - 訂閱者作業
+        - 事件訂閱的無效信件處理
+          [353] Azure 事件方格中命名空間主題事件訂閱的無效信件處理
+        - 事件保留
+          [361] Azure 事件方格 命名空間主題和事件訂用帳戶的事件保留期
+        - 傳遞和重試
+          [366] 使用 Azure 事件方格命名空間傳遞和重試
+        - 事件篩選器
+          [368] 訂閱 Azure 事件方格命名空間主題時的事件篩選
+        - 安全性
+          - 安全性基準
+            [386] 事件方格的 Azure 安全性基準
+          - Azure 原則的安全性控制
+            [399] 適用於 Azure 事件方格的 Azure 原則法規合規性控制項
+          - Azure 原則內建
+            [406] 
+          - 網路安全性
+            [412] 
+      - 操作方式
+        - 建立、檢視和管理命名空間
+          [416] 建立、檢視和管理命名空間
+        - 建立、檢視和管理命名空間主題
+          [423] 建立、檢視和管理命名空間主題
+        - 建立、檢視和管理事件訂閱
+          [429] 在命名空間主題中建立、檢視及管理事件訂閱
+        - 監視器
+          - 監視事件方格命名空間
+            [438] 監視 Azure 事件方格 命名空間
+          - 提取傳遞資料參考
+            [446] 監視 Azure 事件方格提取傳遞的資料參考
+          - 推送傳遞資料參考
+            [448] 使用命名空間的 Azure 事件方格推送傳遞的監視資料參考
+        - 安全
+          - 允許從特定 IP 位址的存取
+            [449] 設定 Azure 事件方格命名空間的 IP 防火牆
+          - 允許透過私人端點的存取
+            [452] 設定 Azure 事件方格命名空間的私人端點
+          - 為命名空間啟用受控識別
+            [460] 啟用事件方格命名空間的受控識別
+          - 使用 Microsoft Entra ID 驗證發佈用戶端
+            [463] 使用事件方格命名空間時，透過Microsoft Entra ID 進行驗證和授權
+  - 事件方格基本
+    - 概觀
+      [472] 透過 HTTP 進行的推送傳遞
+    - 快速入門
+      - 使用自訂主題發佈和訂閱
+        - 事件方格檢視器應用程式的自訂事件
+          - 入口網站
+            [476] 使用 Azure 入口網站 和 Azure 事件方格將自定義事件路由傳送至 Web 端點
+          - Azure CLI
+            [493] 快速入門：使用 Azure CLI 和事件方格將自訂事件路由傳送至 Web 端點
+          - PowerShell
+            [500] 快速入門：使用 PowerShell 和事件方格將自訂事件路由傳送至 Web 端點
+        - Azure 函式的自訂事件
+          [506] 快速入門：使用事件方格將自訂事件路由至 Azure 函式
+        - Azure 佇列記憶體的自訂事件
+          [523] 快速入門：使用 Azure CLI 透過事件方格將自訂事件路由至 Azure 佇列儲存體
+        - Azure 事件中樞的自訂事件
+          [528] 快速入門：使用 Azure CLI 和 Event Grid將自訂事件路由至 Azure 事件中樞
+      - 訂閱記憶體事件
+        - 入口網站
+          [533] 使用 Azure 事件方格 將 Blob 記憶體事件路由傳送至 Web 端點 （Azure 入口網站）
+        - Azure CLI
+          [550] 快速入門：使用 Azure CLI 將儲存體事件路由至 Web 端點
+        - Azure PowerShell
+          [556] 快速入門：使用 PowerShell 將儲存體事件路由至 Web 端點
+        - Bicep
+          [562] 快速入門：使用 Bicep 將 Blob 儲存體事件路由至 Web 端點
+        - ARM 範本
+          [567] 快速入門：使用ARM範本將 Blob 記憶體事件路由至 Web 端點
+      - 訂閱 Container Registry 事件
+        [573] 快速入門：將事件從私人容器登錄傳送到事件方格
+      - 訂閱 Azure 通訊服務事件
+        [582] 快速入門: 處理 SMS 和傳遞報告事件
+      - 訂閱 Azure Cache for Redis 事件
+        [588] 快速入門：使用 Azure 入口網站將 AzureCache for Redis 事件路由傳送至 Web 端點
+    - 教學課程
+      - 當虛擬機器變更時傳送電子郵件
+        [598] 教學課程：使用 Azure 事件方格和 AzureLogic Apps 監視虛擬機器的變更
+      - 調整上傳映像的大小
+        - 使用 Azure 儲存體在雲端中上傳影像資料
+          [616] 步驟 1：使用 Azure 儲存體 在雲端上傳影像數據
+        - 使用 Event Grid 自動調整已上傳映像的大小
+          [625] 教學課程j步驟 2：使用事件方格自動調整已上傳映像的大小
+      - 觸發自動化 Runbook
+        [633] 教學課程：將 Azure 自動化與事件方格和Microsoft Teams 整合
+      - IoT 中樞裝置中斷連線時傳送電子郵件
+        [639] 教學課程：使用事件方格和 Logic Apps來傳送 Azure IoT 中樞事件的相關電子郵件通知
+      - 透過事件方格處理服務匯流排事件
+        - Azure Logic 應用程式
+          [654] 教學課程：使用 Azure Logic Apps，回應透過 Azure 事件方格接收到的 Azure 服務匯流排事件
+        - Azure Functions
+          [672] 教學課程：使用 Azure Functions 來回應透過 Azure 事件方格所收到的 Azure 服務匯流排事件
+      - 來自事件中樞的串流資料
+        [684] 教學課程：使用 Azure 事件方格 和 AzureFunctions 將事件中樞擷取的數據從Azure 儲存體 遷移至 Azure SynapseAnalytics
+      - 路由媒體服務事件
+        [701] 在 Azure 入口網站中使用事件方格建立和監視媒體服務事件
+      - 路由傳送至混合式連線
+        [704] 教學課程：使用 Azure CLI 和事件方格將自訂事件路由至 Azure 轉送混合式連線
+    - 範例
+      - Azure CLI
+        [708] 建立自訂主題並使用 Azure CLI 訂閱Azure 訂閱的事件
+      - Azure PowerShell
+        [712] Event Grid 的 Azure PowerShell 範例
+        - 建立自訂主題
+          [713] 使用 PowerShell 建立 Event Grid 自訂主題
+        - 訂閱 Azure 訂用帳戶
+          [715] 使用 PowerShell 訂閱 Azure 訂用帳戶的事件
+        - 訂閱 Blob 儲存體
+          [718] 使用 PowerShell 訂閱 Blob 儲存體帳戶的事件
+        - 訂閱自訂主題
+          [720] 使用 PowerShell 訂閱自訂主題的事件
+        - 訂閱資源群組
+          [723] 使用 PowerShell 訂閱資源群組的事件
+        - 訂閱和篩選資源群組的事件
+          [726] 使用 PowerShell 訂閱資源群組的事件和篩選資源
+        - 在 Azure 事件方格中使用 Microsoft Entra App 保護 Webhook 傳遞
+          [729] 在 Azure 事件方格中使用 MicrosoftEntra 應用程式保護 Webhook 傳遞
+        - 在 Azure 事件方格中使用 Microsoft Entra 使用者保護 Webhook 傳遞
+          [733] 在 Azure 事件方格中使用 MicrosoftEntra 使用者保護 Webhook 傳遞
+      - Resource Manager 範本
+        [737] Event Grid 的 Azure Resource Manager範本
+      - 程式碼範例
+    - 概念
+      - 詞彙
+        [738] Azure 事件方格的推送傳遞 - 概念
+      - Kubernetes 上的事件方格文件
+        [743] 具有 Azure Arc 之 Kubernetes (預覽) 上的事件方格文件
+      - 自訂主題
+        [744] Azure 事件方格中的自訂主題
+      - 系統主題
+        - 系統主題概觀
+          [748] Azure 事件方格 中的系統主題
+        - 事件來源 (發行者)
+          - Azure API 中心
+            [751] Azure API 中心作為事件方格來源 （預覽）
+          - Azure API 管理
+            [755] 
+          - Azure 應用程式組態
+            [758] Azure 應用程式組態作為事件方格來源
+          - Azure App Service
+            [763] Azure App Service 做事件方格來源
+          - Azure Blob 儲存體
+            [773] 作為 Event Grid 來源的 Azure Blob 儲存體
+          - Azure Cache for Redis
+            [794] 將 Azure Cache for Redis 作為事件方格來源 (機器翻譯)
+          - Azure 通訊服務
+            - 概觀
+              [798] Azure 通訊服務中的事件處理
+            - 聊天事件
+              [800] 
+            - 電話語音和 SMS 事件
+              [815] Azure 通訊服務 - 電話語音和 SMS 事件
+            - 語音和視訊通話事件
+              [817] Azure 通訊服務 - 語音和視訊通話事件
+            - 目前狀態事件
+              [825] Azure 通訊服務 - 存在事件
+            - 電子郵件事件
+              [827] 
+            - 工作路由器事件
+              [830] 
+            - 進階傳訊事件
+              [858] 
+          - Azure Container Registry
+            [861] 作為事件方格來源的 Azure ContainerRegistry
+          - Azure 資料箱
+            [867] 作為事件方格來源的 Azure 資料箱
+          - Azure Data Manager for Agriculture
+            [869] 適用於農業的 Azure 資料管理員 (預覽) 作為事件方格來源
+          - Azure 事件網格
+            [876] Azure 事件方格命名空間 (預覽) 作為事件方格來源
+          - Azure 事件中樞
+            [881] Azure 事件中樞做為事件方格來源
+          - Azure 健康資料服務
+            [884] 做為事件方格來源的 Azure 健康資料服務
+          - Azure IoT 中樞
+            [889] Azure IoT 中樞作為事件方格來源
+          - Azure Key Vault
+            [895] 以 Azure Key Vault 作為事件方格來源
+          - Azure Kubernetes Service
+            [899] 以 Azure Kubernetes Service (AKS) 做為Event Grid 來源
+          - Azure Machine Learning
+            [902] 以 Azure Machine Learning 做為 EventGrid 來源
+          - Azure 維護設定
+            [910] Azure 維修設定作為事件方格來源
+          - Azure 地圖服務
+            [914] Azure 地圖服務即事件方格來源
+          - Azure 媒體服務
+            [919] Azure 媒體服務作為事件方格來源
+          - Azure 原則
+            [939] 
+          - Azure 資源群組
+            [942] Azure 資源群組作為事件方格來源
+          - Azure 資源通知
+            - 概觀
+              [950] Azure 資源通知概觀
+            - 健康情況資源
+              [953] Azure 資源通知 - Azure 事件方格 中的健康情況資源事件 （預覽）
+            - Azure 資源管理
+              [961] Azure 資源通知 - Azure 事件方格 中的Azure Resource Manager 事件 （預覽）
+          - Azure 服務匯流排
+            [970] Azure 服務匯流排作為事件方格來源之一
+          - Azure SignalR
+            [976] SignalR Service 的 Azure 事件方格事件結構描述
+          - Azure 儲存體動作
+            [979] 以事件方格來源 Azure 儲存體 動作
+          - Azure 訂用帳戶
+            [982] 作為事件方格來源的 Azure 訂用帳戶
+      - 合作夥伴事件
+        - 合作夥伴事件概觀 (客戶)
+          [990] 客戶的合作夥伴事件概觀 - Azure EventGrid
+        - 合作夥伴事件概觀 (合作夥伴)
+          [995] 合作夥伴的合作夥伴事件概觀 - Azure 事件方格
+        - 事件來源 (發行者)
+          - Auth0
+            [1001] Auth0 合作夥伴主題
+          - Microsoft Graph API
+            - 圖形 API 事件來源
+              [1003] Microsoft Graph API 事件
+            - Microsoft Entra ID
+              [1004] Microsoft Entra 事件
+            - Microsoft Outlook
+              [1009] Microsoft Outlook 事件
+            - Microsoft Teams
+              [1016] Azure 事件格線中的 Microsoft Teams 事件
+            - One Drive
+              [1017] Microsoft OneDrive 事件
+            - SharePoint
+              [1020] Microsoft Sharepoint 事件
+            - 待辦事項
+              [1023] Microsoft ToDo 事件
+            - 安全性警訊
+              [1027] Microsoft 安全性警示事件
+            - 雲端列印
+              [1030] Microsoft Cloud 列印事件
+            - 交談
+              [1033] Microsoft 365 群組交談事件
+      - 事件網域
+        [1034] 了解用於管理事件方格主題的事件網域
+      - 事件結構描述格式
+        - Event Grid 事件結構描述
+          [1038] Azure 事件方格事件結構描述
+        - 雲端事件結構描述
+          [1042] 搭配使用 CloudEvents v1.0 結構描述與Azure 事件方格
+      - 事件處理常式
+        [1044] Azure 事件方格中的事件處理常式
+        - Webhooks
+          [1045] 以 Webhook、自動化 Runbook、LogicApps 作為 Azure 事件方格事件的事件處理常式
+        - Azure Functions
+          [1048] 使用函式作為事件方格事件的事件處理常式
+        - 事件中樞
+          [1053] 以事件中樞作為 Azure 事件方格事件的事件處理常式
+        - 服務匯流排
+          [1056] 作為 Azure 事件方格事件之事件處理常式的服務匯流排佇列和主題
+        - 轉送混合式連線
+          [1064] 以轉送混合式連線作為 Azure 事件方格事件的事件處理常式
+        - 儲存體佇列
+          [1066] 以儲存體佇列作為 Azure 事件方格事件的事件處理常式
+        - Azure 監視器警示
+          [1070] 如何將事件傳送至 Azure 監視器警示 (預覽)
+        - 事件方格命名空間主題
+          [1073] 如何將事件從事件方格基本傳送至事件方格命名空間主題 （預覽）
+      - 事件傳遞
+        - 事件篩選器
+          [1076] 了解適用於事件格線訂用帳戶的事件篩選
+        - 傳遞和重試
+          [1096] Event Grid 訊息傳遞與重試
+        - WebHook 事件傳遞
+          [1108] WebHook 事件傳遞
+        - 自訂傳遞屬性
+          [1112] 自訂傳遞屬性
+      - 可用性區域和災害復原
+        [1117] 跨區域使用可用性區域和異地災害復原的區域內復原 (Azure 事件方格)
+      - 安全性
+        - 安全性基準
+          [1120] 事件方格的 Azure 安全性基準
+        - Azure 原則的安全性控制
+          [1133] 適用於 Azure 事件方格的 Azure 原則法規合規性控制項
+        - Azure 原則內建
+          [1140] 
+        - 驗證對事件處理常式的事件傳遞
+          [1146] 向事件處理常式驗證事件傳遞 (Azure 事件方格)
+        - 驗證發佈用戶端
+          - 概觀
+            [1149] 將事件發佈至事件方格時的用戶端驗證
+          - 使用 Microsoft Entra 驗證發佈事件
+            [1150] 使用 Microsoft Entra ID 進行驗證和授權
+          - 使用存取金鑰或共用存取簽章發佈事件
+            [1159] 使用存取金鑰或共用存取簽章驗證 Azure事件方格發佈用戶端
+        - 授權對事件格線資源的存取權
+          [1162] 授與事件方格資源的存取權
+        - 網路安全性
+          [1166] 
+        - 強制執行最低必要 TLS 版本
+          [1170] 對事件方格主題、網域或訂用帳戶的要求強制執行最低必要版本的傳輸層安全性(TLS)
+      - 使用案例
+        - 網域的使用案例
+          [1172] Azure 事件方格中的「事件網域」
+    - 操作方式
+      - 建立、檢視及管理系統主題
+        - Azure 入口網站
+          [1174] 在 Azure 入口網站中建立、檢視及管理事件方格系統主題
+        - Azure CLI
+          [1182] 使用 Azure CLI 來建立、檢視和管理事件方格系統主題
+        - Azure Resource Manager 範本
+          [1185] 使用 Resource Manager 範本在 Azure 事件方格中建立系統主題
+      - 使用 CloudEvents 結構描述
+        [1190] 搭配使用 CloudEvents v1.0 結構描述與事件方格
+      - 建立和管理自訂主題
+        - 建立自訂主題或網域
+          [1196] 在 Azure 事件方格中建立自訂主題或網域
+        - 設定自訂主題或網域
+          [1208] 在 Azure 事件方格中設定自訂主題或網域
+      - 合作夥伴事件
+        - 以合作夥伴身分上線
+          [1213] 使用 Azure 入口網站，以 Azure 事件方格合作夥伴身分上線
+        - 訂閱合作夥伴事件
+          [1231] 使用 Azure 事件方格訂閱合作夥伴發佈的事件
+        - 訂閱 SAP 事件
+          [1244] 訂閱 SAP 發佈的事件
+        - 訂閱 Tribal Group 事件
+          [1255] 訂閱 Tribal Group 發佈的事件
+        - Auth0
+          - 訂閱 Auth0 事件
+            [1266] 整合 Azure 事件方格與 Auth0
+          - 將 Auth0 事件傳送至 Azure Blob 儲存體
+            [1278] 將 Auth0 事件傳送至 Azure Blob 儲存體
+          - 將 Auth0 事件傳送至 Azure Application Insights
+            [1283] 將 Auth0 事件傳送至 Azure 監視器Application Insights
+        - 訂閱 Microsoft Entra ID 事件
+          [1287] 訂閱由 Microsoft Entra ID 發佈的事件
+        - 訂閱 Microsoft 圖形 API 事件
+          [1298] 透過 Azure 事件方格接收 MicrosoftGraph API 變更事件 (預覽)
+        - 啟用合作夥伴主題的受控識別
+          [1306] 將受控識別指派給 Azure 事件方格合作夥伴主題
+      - 取得主題或網域的存取金鑰
+        [1308] 取得事件方格資源 (主題或網域) 的存取金鑰
+      - 取得主題支援的結構描述
+        [1310] 取得 Azure 事件方格主題支援的結構描述類型
+      - 使用存取金鑰發佈事件自訂主題
+        [1313] 使用存取金鑰將事件發佈至 Azure 事件方格自訂主題
+      - 接收 HTTP 端點的事件
+        [1317] 接收 HTTP 端點的事件
+      - 設定無效信件的位置和重試原則
+        [1330] 設定無效信件的位置和重試原則
+      - 篩選事件
+        [1338] 針對事件格線篩選事件
+      - 查詢事件訂用帳戶
+        [1353] 查詢 Event Grid 訂用帳戶
+      - 透過入口網站訂閱
+        [1358] 透過入口網站訂閱事件
+      - 將自訂欄位對應至結構描述
+        [1365] 將自訂欄位對應到事件格線結構描述
+      - 管理與事件網域相關的主題
+        [1370] 使用事件網域管理主題和發佈事件
+      - 建置您自己的用戶端災害復原
+        [1375] Azure 事件方格 中的用戶端故障轉移實作
+      - 訂閱 Azure 資源通知 - 健康情況資源事件
+        [1379] 訂閱 Azure 資源通知 - 健康情況資源所引發的事件系統主題 (預覽)
+      - 訂閱 Azure 資源通知 - 資源管理事件
+        [1384] 訂閱事件方格中的 Azure 資源管理事件(預覽)
+      - 追蹤非同步 REST 作業
+        [1389] 追蹤非同步 Azure 作業
+      - 移動
+        - 在區域之間移動系統主題
+          [1396] 將 Azure 事件方格系統主題移至另一個區域
+        - 在區域之間移動自訂主題
+          [1402] 將 Azure 事件方格自訂主題移至另一個區域
+        - 在區域之間移動網域
+          [1408] 將 Azure 事件方格網域移至另一個區域
+      - 安全
+        - 透過私人連結安全地發佈事件
+          [1413] 設定自訂主題或網域Azure 事件方格的私人端點
+        - 使用受控識別
+          - 啟用自訂主題或網域的受控識別
+            [1429] 將受控識別指派給事件方格自訂主題或網域
+          - 啟用系統主題的受控識別
+            [1433] 將系統受控識別指派給事件方格系統主題
+          - 將 Event Grid 目的地的存取權授與受控識別
+            [1439] 將 Event Grid 目的地的存取權授與受控識別
+          - 建立使用受控識別的事件訂用帳戶
+            [1446] 使用受控識別進行事件傳遞
+        - 使用自訂 Azure 原則來強制執行安全性控制項
+          [1455] 使用自訂 Azure 原則來強制執行安全性控制
+        - 透過私人連結安全地發佈事件
+          [1458] 使用私人連結服務傳遞事件
+        - 設定 IP 防火牆
+          [1460] 設定 Azure 事件方格主題或網域的 IP 防火牆
+        - 將事件傳遞至 Microsoft Entra 受保護端點
+          [1469] 將事件傳遞至 Microsoft Entra 受保護端點
+        - 設定最低必要 TLS 版本
+          [1478] 設定事件方格主題或網域的最低 TLS 版本
+      - 監視器
+        - 啟用診斷記錄
+          [1483] 啟用事件方格資源的診斷記錄
+        - 檢視計量
+          [1496] 監視事件格線訊息傳遞
+        - 監視資料參考 (推送傳遞)
+          [1502] 監視 Azure 事件方格推送事件傳遞的資料參考
+        - 建立警示
+          [1517] 在 Azure 事件格線計量和活動記錄設定警示
+      - 疑難排解
+        - Event Grid 問題疑難排解
+          [1528] 針對 Azure 事件方格問題疑難排解
+        - 針對錯誤進行疑難排解
+          [1531] 針對 Azure 事件方格錯誤進行疑難排解
+        - 針對網路連線問題進行疑難排解
+          [1534] 對連線問題進行疑難排解 - Azure 事件方格
+        - 針對訂用帳戶驗證進行疑難排解
+          [1538] 針對 Azure 事件方格的訂閱驗證進行疑難排解
+    - 參考
+      - 訂用帳戶結構描述
+        [1541] 事件格線訂用帳戶的結構描述
+      - 範本資源
+        - 事件訂閱
+          [1544] 
+        - 主題
+          [1561] 
+      - 從 IoT Edge 上的事件方格轉換至 Azure IoT Edge
+        [1567] 從 IoT Edge 上的事件方格轉換至 AzureIoT Edge 原生功能
+  - 參考
+    - SDK
+      [1569] 用於管理和發佈的事件方格 SDK
+    - Azure CLI
+      [1571] az eventgrid
+    - PowerShell
+      [1591] Az.EventGrid
+    - REST
+      - 預覽​​
+        [1596] 控制平面
+      - GA
+        [1598] 控制平面
+    - .NET
+      - 預覽​​
+        [1600] Azure Event Grid SDK for .NET - preview
+      - GA
+        [1601] Azure Event Grid SDK for .NET - latest
+    - Java
+      - 預覽​​
+        [1602] Azure Event Grid client library for Java -version 4.21.0-beta.1
+      - GA
+        [1617] Azure Event Grid libraries for Java
+    - Python
+      - 預覽​​
+        [1620] 適用于 Python 的 Azure 事件方格 用戶端程式庫 - 4.17.0b1 版
+      - GA
+        [1632] 適用於 Python 的 Event Grid 程式庫
+    - Node.js
+      - 預覽​​
+        [1634] Azure 事件方格適用于 JavaScript 的用戶端程式庫 - 5.1.0-Beta.1 版
+      - GA
+        [1643] 適用于 JavaScript 的 Azure 事件方格 程式庫
+    - 配額和限制
+      [1645] Azure 事件方格配額和限制
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - 常見問題集
+      [1650] 可用性和災難復原
+    - Azure 藍圖
+    - 定價
+    - 定價計算機
+    - Stack Overflow

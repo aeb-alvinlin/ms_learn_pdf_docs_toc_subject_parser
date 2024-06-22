@@ -1,0 +1,218 @@
+- ---< azure-dns.pdf >---
+  - DNS 文件
+    [1] Azure DNS 文件
+  - 概觀
+    - 什麼是 Azure DNS？
+      [3] 什麼是 Azure DNS？
+    - 什麼是 Azure 私人 DNS？
+      [5] 什麼是 Azure Private DNS？
+    - 什麼是 Azure DNS 私人解析器？
+      [8] 什麼是 Azure DNS 私人解析器？
+  - 快速入門
+    - 公用 DNS
+      - 建立公用區域 - 入口網站
+        [13] 快速入門：使用 Azure 入口網站建立Azure DNS 區域和記錄
+      - 建立公用區域 - PowerShell
+        [18] 快速入門：使用 Azure PowerShell 建立Azure DNS 區域和記錄
+      - 建立公用區域 - CLI
+        [23] 快速入門：使用 Azure CLI 建立 AzureDNS 區域和第一筆記錄
+      - 建立公用區域 - Bicep
+        [27] 快速入門：使用 Bicep 建立 Azure DNS區域和記錄
+      - 建立公用區域 - ARM 範本
+        [30] 快速入門：使用ARM範本建立 AzureDNS 區域和記錄
+      - 建立公用區域 - Terraform
+        [36] 快速入門：使用 Terraform 建立 AzureDNS 區域和記錄
+    - 私人 DNS
+      - 建立私人區域 - 入口網站
+        [42] 快速入門：使用 Azure 入口網站建立Azure 私人 DNS 區域
+      - 建立私人區域 - CLI
+        [51] 快速入門：使用 Azure CLI 建立 Azure 私人 DNS 區域
+      - 建立私人區域 - PowerShell
+        [57] 快速入門：使用 Azure PowerShell 建立Azure 私人 DNS 區域
+    - 私人解析器
+      - 建立私人解析器 - 入口網站
+        [63] 快速入門：使用 Azure 入口網站建立Azure DNS 私人解析器
+      - 建立私人解析器 - PowerShell
+        [77] 快速入門：使用 Azure PowerShell 建立Azure DNS 私人解析器
+      - 建立私人解析器 - Bicep
+        [88] 快速入門：使用 Bicep 建立 Azure DNS私人解析器
+      - 建立私人解析器 - ARM 範本
+        [95] 快速入門：使用 ARM 範本建立 AzureDNS 私人解析器
+  - 教學課程
+    - 公用 DNS
+      - 在 Azure DNS 上裝載您的網域
+        [105] 教學課程：在 Azure DNS 中裝載您的網域
+      - 建立子 DNS 區域
+        [111] 教學課程：建立子 DNS 區域
+      - 建立 Web 應用程式的自訂 DNS 記錄
+        [118] 教學課程：在 Web 應用程式的自定義網域中建立 DNS 記錄
+      - 建立區域記錄的別名記錄
+        [125] 教學課程：建立別名記錄以參考區域資源記錄
+      - 建立公用 IP 位址的別名記錄
+        [130] 教學課程：建立別名記錄以參照 Azure 公用 IP 位址
+      - 建立流量管理員的別名記錄
+        [138] 教學課程：建立別名記錄以支援具有 流量管理員 頂點域名
+    - 私人解析器
+      - 使用私人解析器設定 DNS 容錯移轉
+        [149] 教學課程：使用私人解析器設定 DNS 容錯移轉
+  - 概念
+    - 安全性
+      - 安全性基準
+        [156] Azure DNS 的 Azure 安全性基準
+    - 公用 DNS
+      - 區域和記錄
+        [161] DNS 區域和記錄的概觀 (機器翻譯)
+      - 別名記錄
+        [168] Azure DNS 別名記錄概觀
+      - 使用 Azure DNS 委派
+        [172] 使用 Azure DNS 的 DNS 區域委派
+      - 常見問題集
+        [175] 關於 Azure DNS
+      - DNS 計量與警示
+        [185] Azure DNS 計量與警示
+      - 反向 DNS
+        [192] 
+      - 使用 Azure DNS 和流量管理員進行災害復原
+        [196] Azure 流量管理員中的可靠性
+    - 私人 DNS
+      - 什麼是私人 Azure DNS 區域？
+        [204] 什麼是私人 Azure DNS 區域？
+      - 私人 DNS 記錄
+        [206] 私人 DNS 記錄概觀
+      - 虛擬網路連結
+        [211] 什麼是虛擬網路連結？
+      - 自動註冊
+        [213] 什麼是 Azure DNS 私人區域中的自動註冊功能？
+      - 私人 DNS 案例
+        [215] Azure 私人 DNS 區域案例
+      - 虛擬網路中的 DNS 解析
+        [218] Azure 虛擬網路中的資源名稱解析
+      - 私人 DNS 復原
+        [230] Azure 私人 DNS 區域復原
+      - 常見問題集
+        [232] Azure DNS 是否支援私人網域？
+Azure DNS 私人區域會跨 Azure 區域運作嗎？
+針對私人區域，虛擬網路是否需要能夠連線至網際網路？
+相同的私人區域是否可以用於數個虛擬網路以進行解析？
+屬於不同訂用帳戶的虛擬網路可以連結到私人區域嗎？
+    - 私人解析器
+      - 端點和規則集
+        [237] Azure DNS 私人解析器端點和規則集
+      - 私人解析器結構
+        [245] 私人解析器結構
+      - Azure DNS 私人解析器的復原能力
+        [249] Azure DNS 私人解析器的復原能力
+  - 操作指南
+    - 公用 DNS
+      - 負載平衡的 Web 應用程式別名記錄
+        [251] 在區域頂點裝載負載平衡的 Azure Web應用程式
+      - 管理 DNS 區域
+        - Azure 入口網站
+          [256] 如何在 Azure 入口網站中管理 DNS 區域
+        - Azure PowerShell
+          [259] 如何管理使用 PowerShell 的 DNS 區域
+        - Azure CLI
+          [265] 如何使用 Azure CLI 管理 Azure DNS 中的DNS 區域
+      - 管理 DNS 記錄
+        - Azure 入口網站
+          [271] 使用 Azure 入口網站管理 DNS 記錄和記錄集
+        - Azure PowerShell
+          [277] 使用 Azure PowerShell 管理 Azure DNS中的 DNS 記錄和記錄集
+        - Azure CLI
+          [290] 使用 Azure CLI 管理 Azure DNS 中的DNS 記錄和記錄集
+      - 管理反向 DNS
+        - Azure DNS 中的主機反向對應區域
+          [300] 在 Azure DNS 中託管反向 DNS 對應區域
+        - 管理 Azure 服務的反向 DNS 記錄
+          [313] 設定 Azure 託管服務的反向 DNS
+      - 匯入及匯出 DNS 區域檔案
+        - Azure 入口網站
+          [321] 使用 Azure 入口網站匯入和匯出 DNS 區域檔案
+        - Azure CLI
+          [329] 使用 Azure CLI 匯入及匯出 DNS 區域檔案
+      - 委派子網域
+        - Azure 入口網站
+          [335] 委派 Azure DNS 子網域
+        - Azure PowerShell
+          [339] 使用 Azure PowerShell 委派 Azure DNS子網域
+      - 與其他 Azure 服務整合
+        [342] Azure DNS 如何與其他 Azure 服務搭配運作
+      - 保護 DNS 區域和記錄
+        [344] 如何保護 DNS 區域和記錄
+      - 使用 .NET SDK 自動執行 DNS 作業
+        [353] 使用 .NET SDK 建立 DNS 區域和記錄集
+      - Azure 資源自訂網域
+        [358] 使用 Azure DNS 為 Azure 服務提供自訂網域設定
+    - 私人 DNS
+      - 保護私人 DNS 區域和記錄
+        [375] 如何保護私人 DNS 區域和記錄
+      - 匯入及匯出 DNS 區域檔案
+        [386] 匯入和匯出 Azure 私人 DNS 的私人 DNS區域檔案
+      - 建立和管理反向 DNS 區域
+        [390] 在 Azure 私用 DNS 中建立和管理反向DNS 區域
+      - 使用 Azure Resource Graph 總管
+        [396] Azure Resource Graph 中的 私用 DNS 資訊
+    - 私人解析器
+      - 解決 Azure 和內部部署網域
+        [403] 解決 Azure 和內部部署網域
+    - 疑難排解
+      - 疑難排解指南
+        [411] Azure DNS 疑難排解指南
+  - 參考
+    - 公用 DNS
+      - 程式碼範例
+      - CLI 範例
+        [417] 適用於 Azure DNS 的 Azure CLI 範例
+      - Azure PowerShell
+        [418] Az.Dns
+      - Azure CLI
+        [420] az network dns
+      - .NET
+        [429] Microsoft.Azure.Management.Dns.Models Namespace
+      - Java
+        [431] com.microsoft.azure.management.dns
+      - Ruby
+      - Python
+      - REST
+        [440] Azure DNS
+      - Resource Manager 範本
+        [441] Microsoft.Network (DNS) 資源類型
+    - 私人 DNS
+      - Azure CLI
+        [444] az network private-dns
+      - Azure PowerShell
+        [450] Az.PrivateDns
+      - .NET
+        [452] Microsoft Azure Private Dnsmanagement client library for .NET
+      - REST
+        [455] Private Zones
+    - 私人解析器
+      - Azure PowerShell
+        [456] Az.DnsResolver
+      - Azure CLI
+        [458] az dns-resolver
+      - .NET
+        [476] Azure.ResourceManager.DnsResolverNamespace
+      - Java
+        [479] com.azure.resourcemanager.dnsresolver
+      - Python
+      - REST
+        [480] Dns Resolvers
+      - Typescript/Javascript
+      - Go
+      - Resource Manager 範本
+      - Terraform
+        - 管理私人 DNS 解析器
+        - 管理私人 DNS 解析器輸入端點
+        - 管理私人 DNS 解析器輸出端點
+        - 管理私人 DNS 解析器 DNS 轉接規則集
+  - 資源
+    - Azure 藍圖
+    - 功能要求
+    - Microsoft 問與答頁面
+    - 網路部落格
+    - 定價
+    - 定價計算機
+    - 服務更新
+    - 私人 DNS 區域移轉指南
+      [481] 將舊版 Azure DNS 私人區域移轉至新的資源模型

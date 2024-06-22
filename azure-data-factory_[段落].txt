@@ -1,0 +1,1168 @@
+- ---< azure-data-factory.pdf >---
+  - Data Factory 文件
+    [1] Azure Data Factory 文件
+  - 切換至 Microsoft Fabric 檔中的 Data Factory 檔
+    [5] Microsoft Fabric 中的 Data Factory 檔
+  - 概觀
+    - Data Factory 服務簡介
+      [7] 什麼是 Azure Data Factory？
+    - 新功能（最近幾個月）
+      [14] Azure Data Factory 的新功能
+    - 新功能 （封存月份）
+      [18] Azure Data Factory 的新功能封存
+  - 快速入門
+    - 開始使用 Azure Data Factory
+      [39] 快速入門：開始使用 Azure Data Factory
+    - 建立資料處理站
+      [45] 快速入門：使用 Azure 入口網站建立資料處理站
+    - Hello World - 如何複製數據
+      [49] 快速入門：使用 Azure Data FactoryStudio 的複製資料工具來複製資料
+    - 建立資料流程
+      [58] 建立 Azure Data Factory 資料流程
+    - 訓練課程模組
+      [61] Azure Data Factory 的簡介訓練課程模組
+    - Azure Data Factory Studio Learning 中心
+  - 教學課程
+    - 教學課程清單
+      [64] Azure Data Factory 教學課程
+    - 複製和內嵌資料
+      - 將數據複製到 Fabric Lakehouse 或從中複製數據
+        [67] 如何使用 Azure Data Factory 複製活動將數據內嵌至網狀架構
+      - 從 Azure Blob 儲存體 到 Azure SQL 資料庫
+        - 資料複製工具
+          [77] 使用複製資料工具將資料從 Azure Blob儲存體複製到 SQL Database
+        - 使用者介面 (UI)
+          [89] 使用 Azure Data Factory 將資料從 AzureBlob 儲存體複製到 Azure SQL Database中的資料庫
+        - .NET
+          [101] 使用 Azure Data Factory 將資料從 AzureBlob 複製到 Azure SQL Database
+      - 從 SQL Server 資料庫到 Azure Blob 儲存體
+        - 資料複製工具
+          [115] 使用「複製資料」工具將資料從 SQLServer 資料庫複製到 Azure Blob 儲存體
+        - 使用者介面 (UI)
+          [128] 將資料從 SQL Server 資料庫複製到Azure Blob 儲存體
+        - Azure PowerShell
+          [143] 教學課程：將數據從 SQL Server 資料庫複製到 Azure Blob 記憶體
+      - 從 Amazon Web Services S3 到 Azure Data Lake 儲存體
+        - Azure Data Lake Storage Gen2
+          [166] 使用 Azure Data Factory 將資料載入Azure Data Lake Storage Gen2 中
+        - Azure Data Lake Storage Gen1
+          [179] 使用 Azure Data Factory 將資料載入Azure Data Lake Storage Gen1
+      - 從 Azure Data Lake 儲存體 Gen1 到 Azure Data Lake 儲存體 Gen2
+        [191] 使用 Azure Data Factory 將資料從 AzureData Lake Storage Gen1 複製到 Gen2
+      - 從 Azure SQL 資料庫 到 Azure Synapse Analytics
+        [204] 使用 Azure Data Factory 或 Synapse 管線將資料載入 Azure Synapse Analytics
+      - 從 SAP BW 到 Azure Data Lake 儲存體 Gen2
+        [219] 使用 Azure Data Factory 或 SynapseAnalytics 從 SAP Business Warehouse 複製資料
+      - 從 Microsoft 365 到 Azure Blob 記憶體
+        [238] 使用 Azure Data Factory 從 Microsoft365 (Office 365) 載入資料
+      - 大量有多個數據表
+        - 使用者介面 (UI)
+          [248] 在 Azure 入口網站中使用 Azure DataFactory 大量複製多份資料表
+        - Azure PowerShell
+          [266] 使用 PowerShell 以 Azure Data Factory大量複製多份資料表
+      - 以累加方式載入數據
+        [282] 以累加方式將資料從來源資料存放區載入到目的地資料存放區
+        - 從一個 Azure SQL 資料庫 數據表
+          - 使用者介面 (UI)
+            [285] 
+          - Azure PowerShell
+            [299] 使用 PowerShell 以累加方式將資料從Azure SQL Database 載入到 Azure Blob儲存體
+        - 從多個 SQL Server 資料庫數據表
+          - 使用者介面 (UI)
+            [318] 
+          - Azure PowerShell
+            [343] 使用 PowerShell 以累加方式將 SQLServer 中多個資料表的資料載入到 AzureSQL Database
+        - 在 SQL Server 中使用變更追蹤資訊
+          - 使用者介面 (UI)
+            [373] 
+          - Azure PowerShell
+            [393] 使用 PowerShell 使用變更追蹤資訊，以累加方式將資料從 Azure SQL Database載入到 Azure Blob 儲存體
+        - 在 Azure SQL MI 中使用 CDC
+          - 使用者介面 (UI)
+            [414] 使用異動資料擷取 (CDC)，以累加方式從Azure SQL 受控執行個體將資料載入Azure 儲存體
+        - 依上次修改的數據新增檔案
+          [449] 使用複製資料工具，根據LastModifiedDate 以累加方式複製全新和變更的檔案
+        - 依時間分割的檔名新增檔案
+          [462] 使用資料複製工具，根據時間分割的檔案名稱以累加方式複製新檔案
+      - 使用受控 VNet 和私人端點建置複製管線
+        [475] 使用私人端點將資料從 Azure Blob 儲存體安全地複製到 SQL 資料庫
+    - 轉換資料
+      - 使用對應數據流轉換數據
+        - Synapse 管線的 Adventure Works 零售範例
+          [490] AdventureWorks 範本文件
+        - 使用ADLS Gen2在湖中登陸數據的最佳做法
+          [492] 使用資料流程將檔案寫入資料湖的最佳做法
+        - 動態設定資料行名稱
+          [497] 在資料流程中動態設定資料行名稱
+        - 使用 Delta Lake 轉換湖中的數據
+          [503] 使用對應資料流程轉換 Delta Lake 中的資料
+        - 使用對應數據流轉換數據
+          [509] 使用對應資料流程來轉換資料
+        - 對應資料流影片教學課程
+          [527] 對應資料流影片教學課程
+      - 使用整頓準備數據
+        [532] 以資料整頓準備資料
+      - 使用外部服務
+        - HDInsight Spark
+          - 使用者介面 (UI)
+            [537] 使用 Azure Data Factory 中的 Spark 活動來轉換雲端中的資料
+          - Azure PowerShell
+            [552] 使用 Azure Data Factory 中的 Spark 活動來轉換雲端中的資料
+        - Databricks Notebook
+          - 使用者介面 (UI)
+            [562] 在 Azure Data Factory 中使用 DatabricksNotebook 活動執行 DatabricksNotebook
+        - 虛擬網路中的Hive轉換
+          - 使用者介面 (UI)
+            [580] 使用 Azure 入口網站，在 Azure 虛擬網路中使用 Azure Data Factory 的 Hive 活動轉換資料
+          - Azure PowerShell
+            [604] 在 Azure 虛擬網路中使用 Azure DataFactory 中的 Hive 活動轉換資料
+      - 使用受控 VNet 和私人端點建置對應數據流管線
+        [618] 使用對應資料流程安全地轉換資料
+    - 控制流程
+      - 使用者介面 (UI)
+        [635] 複製資料，並在成功或失敗時傳送電子郵件通知
+      - .NET
+        [660] 在 Data Factory 管道中將活動分支和鏈結
+    - 在 Azure 中執行 SSIS 套件
+      - 使用者介面 (UI)
+        [681] 在 Azure Data Factory 中佈建 Azure-SSIS整合執行階段
+      - Azure PowerShell
+        [697] 使用 PowerShell 在 Azure Data Factory中設定 Azure SSIS IR
+      - 加入虛擬網路
+        [714] 將 Azure-SSIS 整合執行階段設定為加入虛擬網路
+    - 歷程
+      - 將 Data Factory 譜系數據推送至 Microsoft Purview
+        [719] 將 Data Factory 譜系資料推送至Microsoft Purview
+    - 端對端實驗室
+      - 使用 Data Factory 和數據共享的數據整合
+        [724] 使用 Azure Data Factory 和 Azure DataShare 進行資料整合
+    - 受控虛擬網路
+      - 存取內部部署 SQL Server
+        [770] 教學課程：如何使用私人端點從 DataFactory 受控 VNet 存取內部部署 SQLServer
+      - Access SQL 受管理執行個體
+        [785] 教學課程：如何使用私人端點從 DataFactory 管理的 VNet 存取 SQL 受控執行個體
+      - 將現有的 Azure 整合運行時間移至受控虛擬網路
+        [798] 教學課程：如何將將現有的 Azure 整合執行階段移至受控虛擬網路中的 Azure 整合執行階段
+    - 自我裝載整合執行階段
+      - 使用 TLS/SSL 憑證從內部網路啟用遠端存取 （進階）
+        [801] 使用 TLS/SSL 憑證從內部網路啟用遠端存取 (進階)
+  - 範例
+    - 程式碼範例
+    - Azure PowerShell
+      [812] 適用於 Azure Data Factory 的 AzurePowerShell 範例
+  - 概念
+    - 管線和活動
+      [813] Azure Data Factory 和 Azure SynapseAnalytics 中的管線及活動
+    - 管線參數和變數
+      [831] Azure Data Factory 與 Azure SynapseAnalytics 中的管道參數和變數
+    - 註釋和用戶屬性
+      [834] 使用註釋和使用者屬性監視 Azure DataFactory 和 Azure Synapse Analytics 管線
+    - 巢狀活動
+      [838] Azure Data Factory 和 Azure SynapseAnalytics 中的巢狀活動
+    - 連結服務
+      [845] Azure Data Factory 和 Azure SynapseAnalytics 中的連結服務
+    - 資料集
+      [850] Azure Data Factory 和 Azure SynapseAnalytics 中的資料集
+    - 管線執行和觸發程序
+      [857] Azure Data Factory或 Azure SynapseAnalytics 中的管線執行和觸發程序
+    - 整合執行階段
+      - 整合運行時間概觀
+        [873] Azure Data Factory 中的整合執行階段
+      - 為您的情節選擇正確的整合執行階段設定
+        [882] 為您的情節選擇正確的整合執行階段設定
+    - 資料流程
+      - 使用對應數據流轉換數據
+        - 對應數據流概觀
+          [889] Azure Data Factory 中的對應資料流
+        - 偵錯模式
+          [895] 對應數據流偵錯模式
+        - 架構漂移
+          [902] 對應資料流中的結構描述漂移
+        - 數據行模式
+          [906] 在對應資料流程中使用資料行模式
+        - 數據流監視
+          [911] 監視資料流
+        - 數據流效能
+          - 概觀
+            [917] 對應資料流的效能和調整指南
+          - 將來源最佳化
+            [922] 將來源最佳化
+          - 將接收最佳化
+            [925] 將接收最佳化
+          - 將轉換最佳化
+            [929] 將轉換最佳化
+          - 在管線中使用資料流程
+            [933] 在管線中使用資料流程
+        - Integration Runtime 效能
+          [935] 優化 Azure Integration Runtime 的效能
+        - 管理數據流畫布
+          [938] 管理對應資料流圖表
+        - Flowlet
+          [944] 對應資料流中的 Flowlet
+        - 運算式產生器
+          [949] 在對應資料流中組建運算式
+        - 表達式語言
+          [959] 對應資料流程中的資料轉換運算式
+          - 彙總函數
+            [960] 在對應資料流中的彙總函式
+          - 陣列函式
+            [963] 對應資料流中的陣列函式
+          - 快取查閱函式
+            [966] 對應資料流中的快取查閱函式
+          - 轉換函數
+            [968] 對應資料流中的轉換函式
+          - 日期和時間函數
+            [971] 對應資料流中的日期和時間函數
+          - 運算式函式
+            [975] 對應資料流中的運算式函數
+          - 對應函式
+            [982] 在對應資料流中的對應函式
+          - Metafunction
+            [984] 對應資料流中的 Metafunction
+          - 視窗函式
+            [986] 對應資料流中的視窗函式
+          - 所有函式的字母使用方式詳細數據
+            [988] 對應資料流中的資料轉換運算式
+        - 使用者定義函式
+          [1058] 對應資料流中的使用者定義函數
+      - 使用 Power Query 數據整頓準備數據
+        - 數據整頓概觀
+          [1063] 什麼是資料整頓？
+        - 支援的函數
+          [1066] Power Query 中針對資料整頓的轉換函式
+    - 變更資料擷取
+      - 變更資料擷取
+        [1073] Azure Data Factory 和 Azure SynapseAnalytics 中的異動資料擷取
+      - 異動數據擷取資源
+        [1077] 異動資料擷取資源概觀
+    - 角色和權限
+      [1080] Azure Data Factory 的角色和權限
+    - 命名規則
+      [1083] Azure Data Factory - 命名規則
+    - 資料備援
+      [1085] Azure Data Factory 資料備援
+  - 操作指南
+    - 在 UI 中建立數據處理站
+      [1087] 快速入門：使用 Azure 入口網站建立資料處理站
+    - 以程序設計方式建立Data Factory
+      - 建立數據處理站 - Azure CLI
+        [1091] 快速入門：使用 Azure CLI 建立 Azure 資料處理站
+      - 建立數據處理站 - Azure PowerShell
+        [1098] 快速入門：使用 PowerShell 建立 AzureData Factory
+      - 建立數據處理站 - .NET
+        [1114] 快速入門：使用 .NET SDK 建立資料處理站和管線
+      - 建立數據處理站 - Python
+        [1130] 快速入門：使用 Python 建立資料處理站和管線
+      - 建立數據處理站 - REST
+        [1142] 快速入門：使用 REST API 建立 AzureData Factory 和管線
+      - 建立數據處理站 - Bicep
+        [1164] 快速入門：使用 Bicep 建立 Azure DataFactory
+    - 作者
+      - 以可視化方式撰寫數據處理站
+        [1173] Azure Data Factory 中的視覺化撰寫
+      - 反覆式開發法與偵錯
+        [1179] 使用 Azure Data Factory 和 SynapseAnalytics 管線的反覆式開發法和偵錯
+      - 停用並重新啟用
+        [1186] 停用活動
+      - 管理中樞
+        [1191] Azure Data Factory 中的管理中樞
+      - 原始檔控制
+        [1195] Azure Data Factory 中的原始檔控制
+      - 撰寫異動數據擷取資源
+        [1224] 使用異動資料擷取資源，將已變更的資料從 Azure Data Lake Storage Gen2 擷取至Azure SQL Database
+      - 使用架構演進撰寫異動數據擷取資源
+        [1247] 使用異動資料擷取資源，從 Azure SQL 資料擷取具有結構描述演進的已變更資料到Delta 接收器
+      - 在另一個租用戶中 連線 至 Azure DevOps
+        [1267] 跨租用戶連線至 Azure DevOps
+      - 使用 DataOps 管理您的環境
+        [1274] 將 DataOps 套用到 Azure Data Factory
+      - 持續整合和傳遞
+        - 概觀
+          [1289] Azure Data Factory 中的持續整合和傳遞
+        - 使用 Azure Pipelines 版本自動化
+          [1295] 使用 Azure Pipelines 發行版本將持續整合自動化
+        - 使用 GitHub Actions 自動化
+          [1303] 使用 GitHub Actions 將持續整合與傳遞自動化
+        - 手動升級每個環境的 Resource Manager 範本
+          [1311] 將 Resource Manager 範本手動升階至每個環境
+        - 搭配 Resource Manager 範本使用自訂參數
+          [1314] 搭配使用自訂參數與 Resource Manager範本
+        - 連結的 Resource Manager 範本
+          [1326] 具有 CI/CD 的連結 Resource Manager 範本
+        - 使用 Hotfix 實際執行環境
+          [1328] 使用 Hotfix 實際執行環境
+        - 樣本部署前後指令碼
+          [1330] 範例部署前和部署後指令碼
+      - CI/CD 的自動發佈
+        [1333] 持續整合和傳遞的自動化發佈 （CI/CD）
+      - 使用 VSTS 部署連結的 ARM 範本
+        [1341] 使用 VSTS 部署連結的 ARM 範本
+    - 連接器
+      - 連接器概觀
+        [1345] Azure Data Factory 和 Azure SynapseAnalytics 連接器概觀
+      - Amazon Marketplace Web Service
+        [1352] 使用 Azure Data Factory 或 SynapseAnalytics 複製 Amazon MarketplaceWeb Service 中的資料
+      - 適用於 Oracle 的 Amazon RDS
+        [1360] 使用 Azure Data Factory 或 AzureSynapse Analytics 從 Amazon RDS forOracle 複製資料
+      - 適用於 SQL Server 的 Amazon RDS
+        [1373] 使用 Azure Data Factory 或 AzureSynapse Analytics，從 Amazon RDS forSQL Server 中複製資料
+      - Amazon Redshift
+        [1390] 使用 Azure Data Factory 或 SynapseAnalytics 從 Amazon Redshift 複製資料
+      - Amazon S3
+        [1400] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Amazon SimpleStorage Service 中複製和轉換資料
+      - Amazon S3 相容儲存體
+        [1421] 使用 Azure Data Factory 或 SynapseAnalytics 從 Amazon S3 相容儲存體複製資料
+      - AppFigures
+        [1433] 使用 Azure Data Factory 或 SynapseAnalytics 來轉換 AppFigures (預覽版) 中的資料
+      - Asana
+        [1439] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Asana (預覽版) 中的資料
+      - Avro 格式
+        [1445] Azure Data Factory 和 Synapse Analytics中的 Avro 格式
+      - Azure Blob 儲存體
+        [1450] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Azure Blob 儲存體中複製和轉換資料
+      - Azure AI 搜尋服務
+        [1487] 使用 Azure Data Factory 或 SynapseAnalytics 將資料複製到 Azure AI 搜尋服務索引
+      - Azure Cosmos DB 分析存放區
+        [1496] 使用 Azure Data Factory 複製和轉換Azure Cosmos DB 分析存放區中的資料
+      - 適用於 NoSQL 的 Azure Cosmos DB
+        [1500] 使用 Azure Data Factory 複製和轉換Azure Cosmos DB for NoSQL 中的資料
+      - Azure Cosmos DB for MongoDB
+        [1519] 
+      - Azure 資料總管
+        [1528] 使用 Azure Data Factory 或 SynapseAnalytics 將資料複製到 Azure 資料總管或從該處複製資料
+      - Azure Data Lake Storage Gen1
+        [1543] 使用 Azure Data Factory 或 AzureSynapse Analytics，將資料複製到 AzureData Lake Storage Gen1 以及從中複製資料
+      - Azure Data Lake Storage Gen2
+        [1571] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Azure Data LakeStorage Gen2 中複製和轉換資料
+      - 適用於 MariaDB 的 Azure 資料庫
+        [1607] 使用 Azure Data Factory 或 SynapseAnalytics 從適用於 MariaDB 的 Azure 資料庫複製資料
+      - 適用於 MySQL 的 Azure 資料庫
+        [1615] 使用 Azure Data Factory 或 SynapseAnalytics 在適用於 MySQL 的 Azure 資料庫中複製和轉換資料
+      - 適用於 PostgreSQL 的 Azure 資料庫
+        [1630] 使用 Azure Data Factory 或 SynapseAnalytics 在適用於 PostgreSQL 的 Azure資料庫中複製和轉換資料
+      - Azure Databricks Delta Lake
+        [1646] 使用 Azure Data Factory 或 AzureSynapse Analytics，將資料複製到 AzureDatabricks Delta Lake 以及從中複製資料
+      - Azure 檔案儲存體
+        [1663] 使用 Azure Data Factory 從 Azure 檔案儲存體複製資料或將資料複製到其中
+      - Azure SQL Database
+        [1686] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Azure SQLDatabase 中複製和轉換資料
+      - Azure SQL 受控執行個體
+        [1723] 使用 Azure Data Factory 或 SynapseAnalytics 在 Azure SQL 受控執行個體中複製和轉換資料
+      - Azure Synapse Analytics
+        [1757] 使用 Azure Data Factory 或 Synapse 管線在 Azure Synapse Analytics 中複製和轉換數據
+      - Azure 表格儲存體
+        [1797] 使用 Azure Data Factory 或 SynapseAnalytics 將資料複製到 Azure 資料表儲存體或從該處複製資料
+      - 二進位格式
+        [1810] Azure Data Factory 和 Synapse Analytics中的二進位格式
+      - Cassandra
+        [1815] 使用 Azure Data Factory 或 SynapseAnalytics 複製 Cassandra 的資料
+      - Common Data Model 格式
+        [1826] Azure Data Factory 和 Synapse Analytics中的 Common Data Model 格式
+      - Concur
+        [1833] 使用 Azure Data Factory 或 SynapseAnalytics，從 Concur 複製資料 (預覽)
+      - Couchbase
+        [1842] 使用 Azure Data Factory 從 Couchbase複製資料 (預覽)
+      - data.world
+        [1850] 使用 Azure Data Factory 或 SynapseAnalytics 轉換 data.world (預覽) 中的資料
+      - DB2
+        [1856] 使用 Azure Data Factory 或 SynapseAnalytics 從 DB2 複製資料
+      - Dataverse
+        [1867] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Dynamics 365(Microsoft Dataverse) 或 Dynamics CRM中複製和轉換資料
+      - 分隔符號文字格式
+        [1890] 
+      - 差異格式
+        [1896] Azure Data Factory 的差異格式
+      - 深入探詢
+        [1903] 使用 Azure Data Factory 或 SynapseAnalytics 從 Drill 複製資料
+      - Dynamics 365
+        [1911] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Dynamics 365(Microsoft Dataverse) 或 Dynamics CRM中複製和轉換資料
+      - Dynamics AX
+        [1934] 使用 Azure Data Factory 或 SynapseAnalytics 從 Dynamics AX 複製資料
+      - Dynamics CRM
+        [1942] 使用 Azure Data Factory 或 AzureSynapse Analytics，在 Dynamics 365(Microsoft Dataverse) 或 Dynamics CRM中複製和轉換資料
+      - Excel 格式
+        [1965] Azure Data Factory 和 Azure SynapseAnalytics 中的 Excel 檔案格式
+      - 檔案系統
+        [1972] 使用 Azure Data Factory 或 AzureSynapse Analytics 針對檔案系統來回複製資料
+      - FTP
+        [1992] 使用 Azure Data Factory 或 SynapseAnalytics 從 FTP 伺服器複製資料
+      - GitHub
+        [2007] 使用 GitHub 讀取 Common Data Model實體參考
+      - Google Ads
+        [2010] 
+      - Google BigQuery
+        - Google BigQuery
+          [2019] 使用 Azure Data Factory 或 SynapseAnalytics 從 Google BigQuery 複製數據
+        - Google BigQuery （舊版）
+          [2029] 使用 Azure Data Factory 或 SynapseAnalytics 從 Google BigQuery 複製數據（舊版）
+      - Google Cloud Storage
+        [2038] 使用 Azure Data Factory 或 SynapseAnalytics，從 Google Cloud Storage 複製資料
+      - Google Sheets
+        [2054] 使用 Azure Data Factory 或 SynapseAnalytics 來轉換 Google 試算表 (預覽)中的資料
+      - Greenplum
+        [2060] 使用 Azure Data Factory 或 SynapseAnalytics 從 Greenplum 複製資料
+      - hbase
+        [2068] 使用 Azure Data Factory 或 SynapseAnalytics 從 HBase 複製資料
+      - HDFS
+        [2077] 使用 Azure Data Factory 或 SynapseAnalytics 從 HDFS 伺服器複製資料
+      - Hive
+        [2099] 使用 Azure Data Factory 從 Hive 複製和轉換資料
+      - HTTP
+        [2110] 使用 Azure Data Factory 或 AzureSynapse Analytics 從 HTTP 端點複製資料
+      - HubSpot
+        [2124] 使用 Azure Data Factory 或 SynapseAnalytics 從 HubSpot 複製資料
+      - Impala
+        [2132] 使用 Azure Data Factory 或 SynapseAnalytics 複製 Impala 的資料
+      - Informix
+        [2140] 使用 Azure Data Factory 或 SynapseAnalytics，從 IBM Informix 複製資料或將資料複製到該處
+      - Jira
+        [2149] 使用 Azure Data Factory 或 SynapseAnalytics 從 Jira 複製資料
+      - JSON 格式
+        [2156] 
+      - Magento
+        [2165] 使用 Azure Data Factory 或 SynapseAnalytics，從 Magento 複製資料 (預覽)
+      - MariaDB
+        [2172] 使用 Azure Data Factory 或 SynapseAnalytics 從 MariaDB 複製數據
+      - Marketo
+        [2183] 使用 Azure Data Factory 或 SynapseAnalytics，從 Marketo 複製資料 (預覽版)
+      - Microsoft 365
+        [2190] 利用 Azure Data Factory 或 SynapseAnalytics，從 Microsoft 365 (Office 365)複製資料並轉換至 Azure
+      - Microsoft Access
+        [2205] 使用 Azure Data Factory 或 SynapseAnalytics 將數據從 Microsoft Access 複製至 Microsoft Access
+      - Microsoft Fabric Lakehouse
+        [2214] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Microsoft FabricLakehouse 中複製和轉換數據
+      - Microsoft Fabric 倉儲
+        [2237] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Microsoft Fabric 倉儲中複製和轉換數據
+      - MongoDB
+        [2258] 使用 Azure Data Factory 或 SynapseAnalytics 從 MongoDB 複製資料或將資料複製到 MongoDB
+        - MongoDB （舊版）
+          [2268] 使用 Azure Data Factory 或 SynapseAnalytics 從 MongoDB 複製數據（舊版）
+      - MongoDB Atlas
+        [2278] 使用 Azure Data Factory 或 SynapseAnalytics 從 MongoDB Atlas 複製資料或將資料複製到 MongoDB
+      - MySQL
+        [2288] 使用 Azure Data Factory 或 SynapseAnalytics 從 MySQL 複製數據
+      - Netezza
+        [2301] 使用 Azure Data Factory 或 SynapseAnalytics 從 Netezza 複製資料
+      - OData
+        [2312] 使用 Azure Data Factory 或 SynapseAnalytics 複製 OData 來源中的資料
+      - ODBC
+        [2327] 使用 Azure Data Factory 或 SynapseAnalytics 從 ODBC 資料存放區複製資料或將資料複製到該處
+      - Oracle
+        [2337] 使用 Azure Data Factory 或 AzureSynapse Analytics 將資料從 Oracle 複製至 Oracle
+      - Oracle 雲端儲存空間
+        [2354] 使用 Azure Data Factory 或 SynapseAnalytics 從 Oracle Cloud 儲存體複製資料
+      - Oracle Eloqua
+        [2366] 使用 Azure Data Factory 或 SynapseAnalytics 從 Oracle Eloqua 複製資料（預覽）
+      - Oracle Responsys
+        [2373] 使用 Azure Data Factory 或 SynapseAnalytics 從 Oracle Responsys 複製資料（預覽）
+      - Oracle Service Cloud
+        [2380] 使用 Azure Data Factory 或 SynapseAnalytics 從 Oracle 服務雲端複製資料（預覽）
+      - ORC 格式
+        [2387] Azure Data Factory 和 Synapse Analytics中的 ORC 格式
+      - Parquet 格式
+        [2394] Azure Data Factory 和 Azure SynapseAnalytics 中的 Parquet 格式
+      - PayPal
+        [2402] 使用 Azure Data Factory 或 SynapseAnalytics，從 PayPal 複製資料 (預覽版)
+      - Phoenix
+        [2409] 使用 Azure Data Factory 或 SynapseAnalytics 從 Phoenix 複製資料
+      - PostgreSQL
+        - PostgreSQL
+          [2417] 使用 Azure Data Factory 或 SynapseAnalytics 從 PostgreSQL 複製數據
+        - PostgreSQL （旧版）
+          [2430] 使用 Azure Data Factory 或 SynapseAnalytics 從 PostgreSQL 複製數據（舊版）
+      - Presto
+        [2439] 使用 Azure Data Factory 或 SynapseAnalytics 從 Presto 複製資料
+      - Quickbase
+        [2447] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Quickbase (預覽版) 中的資料
+      - QuickBooks Online
+        [2453] 使用 Azure Data Factory 或 SynapseAnalytics，複製 QuickBooks Online 的資料 (預覽版)
+      - REST
+        [2461] 使用 Azure Data Factory 從 REST 端點複製資料並轉換資料到 REST 端點
+      - Salesforce
+        - Salesforce
+          [2492] 使用 Azure Data Factory 或 AzureSynapse Analytics 將數據從 Salesforce複製至 Salesforce
+        - Salesforce （舊版）
+          [2507] 使用 Azure Data Factory 或 AzureSynapse Analytics 將數據從 Salesforce複製到 Salesforce（舊版）
+      - Salesforce 服務雲端
+        [2523] 使用 Azure Data Factory 或 AzureSynapse Analytics 將數據從 SalesforceService Cloud 複製至
+        - Salesforce Service Cloud （舊版）
+          [2537] 使用 Azure Data Factory 或 SynapseAnalytics 將數據複製到 SalesforceService Cloud（舊版）
+      - Salesforce 行銷雲端
+        [2552] 使用 Azure Data Factory 或 SynapseAnalytics 從 Salesforce 行銷雲端複製資料
+      - SAP Business Warehouse Open Hub
+        [2561] 使用 Azure Data Factory 或 SynapseAnalytics，透過 Open Hub 從 SAPBusiness Warehouse 複製資料
+        - 載入 SAP BW 數據
+          [2571] 使用 Azure Data Factory 或 SynapseAnalytics 從 SAP Business Warehouse 複製資料
+      - SAP Business Warehouse MDX
+        [2590] 使用 Azure Data Factory 或 SynapseAnalytics 從 SAP Business Warehouse 複製資料
+      - SAP CDC
+        [2599] 使用 Azure Data Factory 或 AzureSynapse Analytics 中的 SAP CDC 連接器，從 SAP ODP 來源轉換資料
+      - SAP Cloud for Customer
+        [2608] 使用 Azure Data Factory 或 SynapseAnalytics，從 SAP Cloud for Customer(C4C) 來回複製資料
+      - SAP ECC
+        [2617] 使用 Azure Data Factory 或 SynapseAnalytics 從 SAP ECC 複製資料
+      - SAP HANA
+        [2627] 使用 Azure Data Factory 或 SynapseAnalytics 從 SAP HANA 複製資料
+      - SAP Table
+        [2641] 使用 Azure Data Factory 或 AzureSynapse Analytics 從 SAP 資料表複製資料
+      - ServiceNow
+        [2658] 使用 Azure Data Factory 或 SynapseAnalytics 從 ServiceNow 複製資料
+      - SFTP
+        [2666] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 SFTP 伺服器中複製和轉換資料
+      - SharePoint Online 清單
+        [2689] 使用 Azure Data Factory 或 AzureSynapse Analytics 從 SharePoint Online清單複製資料
+      - Shopify
+        [2701] 使用 Azure Data Factory 或 SynapseAnalytics，從 Shopify 複製資料 (預覽版)
+      - Smartsheet
+        [2708] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Smartsheet (預覽版) 中的資料
+      - Snowflake
+        - Snowflake
+          [2714] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 Snowflake 中複製和轉換資料
+        - 雪花 （遺產）
+          [2736] 使用 Azure Data Factory 或 AzureSynapse Analytics 複製和轉換 Snowflake中的數據（舊版）
+      - Spark
+        [2756] 使用 Azure Data Factory 或 SynapseAnalytics 從 Spark 複製資料
+      - SQL Server
+        [2764] 使用 Azure Data Factory 或 AzureSynapse Analytics 在 SQL Server 複製/貼上和轉換資料
+      - Square
+        [2797] 使用 Azure Data Factory 或 SynapseAnalytics，從 Square 複製資料 (預覽版)
+      - Sybase
+        [2805] 使用 Azure Data Factory 或 SynapseAnalytics 從 Sybase 複製資料
+      - TeamDesk
+        [2813] 使用 Azure Data Factory 或 SynapseAnalytics 轉換 TeamDesk (預覽版) 中的資料
+      - Teradata
+        [2820] 使用 Azure Data Factory 和 SynapseAnalytics 從 Teradata Vantage 複製資料
+      - Twilio
+        [2835] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Twilio (預覽版) 中的資料
+      - Vertica
+        [2841] 使用 Azure Data Factory 或 SynapseAnalytics 複製 Vertica 的資料
+      - Web 資料表
+        [2849] 使用 Azure Data Factory 或 SynapseAnalytics 從 Web 資料表複製資料
+      - Xero
+        [2859] 使用 Azure Data Factory 或 SynapseAnalytics 從 Xero 複製資料
+      - XML 格式
+        [2870] 
+      - Zendesk
+        [2874] 使用 Azure Data Factory 或 SynapseAnalytics 以轉換 Zendesk (預覽版) 中的資料
+      - Zoho
+        [2881] 使用 Azure Data Factory 或 SynapseAnalytics 從 Zoho 複製資料 (預覽)
+    - 移動資料
+      - 使用複製活動複製數據
+        [2890] Azure Data Factory 和 Azure SynapseAnalytics 中的複製活動
+      - 監視複製活動
+        [2905] 監視複製活動
+      - 使用 Delete 活動刪除檔案
+        [2912] Azure Data Factory 和 Azure SynapseAnalytics 中的 Delete 活動
+      - 資料複製工具
+        [2931] 在 Azure Data Factory 和 SynapseAnalytics 中複製資料工具
+      - 元數據驅動複製數據
+        [2939] 在複製資料工具中使用中繼資料驅動方法組建大規模的資料複製管線
+      - 格式和壓縮支援
+        [2953] Azure Data Factory 和 Azure Synapse 管線中複製活動支援的檔案格式和壓縮轉碼器
+      - 複製活動效能
+        - 效能和延展性指南
+          [2955] 複製活動效能和可擴縮性指南
+        - 針對效能進行疑難解答
+          [2961] 對複製活動效能進行疑難排解
+        - 效能功能
+          [2971] 複製活動效能最佳化功能
+      - 保留元數據和 ACL
+        [2980] 在 Azure Data Factory 或 SynapseAnalytics 中使用複製活動來保留中繼資料和 ACL
+      - 架構和類型對應
+        [2985] 複製活動中的架構和數據類型對應
+      - 容錯
+        [3000] Azure Data Factory 和 Synapse Analytics管線中複製活動的容錯
+      - 資料一致性驗證
+        [3012] 複製活動中的資料一致性驗證
+      - 複製活動 記錄
+        [3017] 複製活動中的工作階段記錄
+      - 格式與壓縮支援 （舊版）
+        [3025] 
+    - 轉換資料
+      [3040] 在 Azure Data Factory 和 Azure SynapseAnalytics 中轉換資料
+      - 執行數據流活動
+        [3045] Azure Data Factory 和 Azure SynapseAnalytics 中的資料流程活動
+      - 執行 Power Query 活動
+        [3055] Azure Data Factory 中的 Power Query 活動
+      - Azure 函式活動
+        [3061] Azure Data Factory 中的 Azure 函式活動
+      - 自訂活動
+        [3066] 在 Azure Data Factory 或 Azure SynapseAnalytics 管線中使用自訂活動
+      - Databricks Jar 活動
+        [3078] 在 Azure Databricks 中執行 Jar 活動來轉換資料
+      - Databricks Notebook 活動
+        [3083] 執行 Databricks Notebook 來轉換資料
+      - Databricks Python 活動
+        [3088] 在 Azure Databricks 中執行 Python 活動來轉換資料
+      - 數據總管命令活動
+        [3093] 使用 Azure Data Factory 命令活動來執行Azure Data Explorer 管理命令
+      - Data Lake U-SQL 活動
+        [3107] 使用 Azure Data Factory 和 SynapseAnalytics 在 Azure Data Lake Analytics上執行 U-SQL 指令碼來處理資料
+      - HDInsight Hive 活動
+        [3114] 使用 Azure Data Factory 或 SynapseAnalytics 中的 Hadoop Hive 活動轉換資料
+      - HDInsight MapReduce 活動
+        [3118] 使用 Azure Data Factory 或 SynapseAnalytics 中的 Hadoop MapReduce 活動轉換資料
+      - HDInsight Pig 活動
+        [3123] 使用 Azure Data Factory 或 SynapseAnalytics 中的 Hadoop Pig 活動轉換資料
+      - HdInsight Spark 活動
+        [3126] 使用 Azure Data Factory 與 SynapseAnalytics 中的 Spark 活動轉換資料
+      - HDInsight 串流活動
+        [3131] 使用 Azure Data Factory 或 SynapseAnalytics 中的 Hadoop 資料流活動轉換資料
+      - 機器學習 執行管線活動
+        [3135] 在 Azure Data Factory 和 SynapseAnalytics 中執行 Azure MachineLearning 管線
+      - 機器學習 Studio （傳統） 批次執行活動
+        [3139] 使用 Machine Learning 工作室 (傳統) 搭配 Data Factory 或 Synapse Analytics 建立預測管線
+      - 機器學習 Studio （傳統） 更新資源活動
+        [3147] 使用更新資源活動更新 Machine Learning工作室 (傳統) 模型
+      - 對應數據流
+        [3156] 使用對應資料流程來轉換資料
+      - 預存程序活動
+        [3174] 使用 Azure Data Factory 或 SynapseAnalytics 中的 SQL Server 預存程序活動轉換資料
+      - 指令碼活動
+        [3178] 使用 Azure Data Factory 或 SynapseAnalytics 中的指令碼活動來轉換資料
+      - 計算已連結的服務
+        [3185] Azure Data Factory 和 Synapse Analytics管線支援的計算環境
+      - Synapse Notebook 活動
+        [3208] 藉由執行 Synapse 筆記本來轉換資料
+      - Synapse Spark 作業定義活動
+        [3215] 執行 Synapse Spark 工作定義，以轉換資料
+    - 控制流程
+      - 附加變數活動
+        [3223] Azure Data Factory 和 Synapse Analytics中的附加變數活動
+      - 執行管線活動
+        [3225] 在 Azure Data Factory 和 SynapseAnalytics 中執行管線活動
+      - 失敗活動
+        [3232] 執行 Azure Data Factory 和 SynapseAnalytics 中的 Fail 活動
+      - 篩選活動
+        [3235] 篩選 Azure Data Factory 和 SynapseAnalytics 管線中的活動
+      - ForEach 活動
+        [3240] Azure Data Factory 和 Azure SynapseAnalytics 中的 ForEach 活動
+      - GetMetadata 活動
+        [3255] 
+      - If 條件活動
+        [3263] 在 Azure Data Factory 和 SynapseAnalytics 管線中的 If 條件活動
+      - 查閱活動
+        [3271] Azure Data Factory 和 Azure SynapseAnalytics 中的查閱活動
+      - 設定變數活動
+        [3286] Azure Data Factory 和 Azure SynapseAnalytics 中的設定變數活動
+      - 設定管線傳回值
+        [3291] 設定 Azure Data Factory 和 AzureSynapse Analytics 中的管線傳回值
+      - 切換活動
+        [3296] Azure Data Factory 中的 Switch 活動
+      - Until 活動
+        [3305] Azure Data Factory 和 Synapse Analytics中的 Until 活動
+      - 驗證活動
+        [3314] Azure Data Factory 和 Synapse Analytics管線中的驗證活動
+      - Wait 活動
+        [3317] 在 Azure Data Factory 和 SynapseAnalytics 中執行 Wait 活動
+      - Web 活動
+        [3321] Azure Data Factory 和 Azure SynapseAnalytics 中的 Web 活動
+      - Webhook 活動
+        [3330] Azure Data Factory 中的 Webhook 活動
+    - 資料流程轉換
+      - 轉換概觀
+        [3336] 對應資料流轉換概觀
+      - 彙總
+        [3338] 對應資料流程中的彙總轉換
+      - 更改資料列
+        [3343] 在對應資料流程中更改資料列轉換
+      - Assert
+        [3348] 對應資料流程中的判斷提示轉換
+      - 條件式分割
+        [3353] 對應資料流中的條件式分割轉換
+      - Cast
+        [3356] 對應資料流程中的強制型轉轉換
+      - 衍生資料行
+        [3358] 對應資料流程中的衍生資料行轉換
+      - Exists
+        [3363] 對應資料流中的存在項目轉換
+      - 外部呼叫
+        [3368] 對應資料流程中的外部呼叫轉換
+      - 篩選器
+        [3372] 對應資料流中的篩選轉換
+      - 扁平化
+        [3374] 對應資料流程中的壓平合併轉換
+      - Flowlet
+        [3381] 對應資料流內的 Flowlet 轉換
+      - 聯結
+        [3383] 對應資料流程中的聯結轉換
+      - 查詢
+        [3391] 對應資料流程中的查閱轉換
+      - 新增分支
+        [3396] 在對應資料流程中建立新的分支
+      - 剖析
+        [3398] 剖析對應資料流程中的轉換
+      - 樞紐
+        [3403] 對應資料流中的樞紐轉換
+      - 順位
+        [3408] 對應資料流中的順位轉換
+      - 選取
+        [3411] 對應資料流中的選取轉換
+      - 接收
+        [3417] 對應資料流中的接收轉換
+      - Sort
+        [3428] 對應資料流中的排序轉換
+      - 來源
+        [3431] 對應數據流中的來源轉換
+      - Stringify
+        [3439] 在對應資料流中字串化轉換
+      - Surrogate 金鑰
+        [3442] 對應資料流中的代理鍵轉換
+      - Union
+        [3446] 對應資料流中的聯集轉換
+      - 取消樞紐
+        [3450] 對應資料流中的取消樞紐轉換
+      - Window
+        [3454] 對應資料流中的視窗轉換
+    - Parameterize
+      - 參數化連結服務
+        [3458] 在 Azure Data Factory 和 Azure SynapseAnalytics 中將連結服務參數化
+      - 全域參數
+        [3462] Azure Data Factory 中的全域參數
+      - 運算式語言
+        [3467] Azure Data Factory 和 Azure SynapseAnalytics 中的運算式和函式
+      - 系統變數
+        [3556] Azure Data Factory 和 Azure SynapseAnalytics 支援的系統變數
+      - 參數化對應數據流
+        [3560] 將已對應的資料流參數化
+      - 如何參數化
+        [3567] 如何在 Azure Data Factory 中使用參數、運算式和函式
+    - 安全性
+      - 數據移動安全性考慮
+        [3577] 在 Azure Data Factory 中資料移動的安全性考量
+      - 資料存取策略
+        [3588] 資料存取策略
+      - Azure 整合運行時間 IP 位址
+        [3592] Azure 整合執行階段 IP 位址
+      - 在 Azure Key Vault 中儲存認證
+        [3594] 在 Azure Key Vault 中儲存認證
+      - 在管線活動中使用 Azure 金鑰保存庫 秘密
+        [3600] 在管線活動中使用 Azure Key Vault 祕密
+      - 加密自我裝載整合運行時間的認證
+        [3606] 在 Azure Data Factory 中加密內部部署資料存放區的認證
+      - 設定輸出允許清單 （預覽）
+        [3609] 使用 Azure 原則的輸出網路規則 (預覽)
+      - Data Factory 中的認證
+        [3614] Azure Data Factory 和 Azure Synapse 中的認證
+      - Data Factory 的受控識別
+        [3619] Azure Data Factory 的受控識別
+      - 使用客戶管理的金鑰加密數據處理站
+        [3628] 使用客戶管理的金鑰來加密 Azure DataFactory
+      - 受控虛擬網路
+        [3637] Azure Data Factory 受控虛擬網路
+      - Data Factory 的 Azure 私人連結
+        [3650] 適用於 Azure Data Factory 的 AzurePrivate Link
+      - Azure 安全性基準
+        [3661] Data Factory 的 Azure 安全性基準
+    - 設定
+      - 管理 Azure Data Factory 設定和喜好設定
+        [3674] 管理 Azure Data Factory 設定和喜好設定
+      - 管理 Azure Data Factory Studio 預覽體驗
+        [3683] 管理 Azure Data Factory 工作室預覽體驗
+    - 監視與管理
+      - 以可視化方式監視
+        [3702] 以視覺化方式監視 Azure Data Factory
+      - 使用 Azure 監視器進行監視
+        - 監視器
+          [3720] 監視 Azure Data Factory
+        - 設定診斷設定和工作區
+          [3729] 設定診斷設定和工作區
+        - 透過 Azure 監視器 REST API 設定診斷記錄
+          [3732] 透過 Azure 監視器 REST API 設定診斷記錄
+        - 使用 Azure 監視器監視 SSIS 作業
+          [3738] 
+      - 使用 SDK 進行監視
+        [3745] 以程式設計方式監視 Azure Data Factory
+      - 管線失敗和錯誤處理
+        [3750] 錯誤和條件式執行
+      - 使用電子郵件通知監視管線
+        [3761] 使用 Azure Data Factory 或 AzureSynapse 管線傳送電子郵件
+      - 使用 Microsoft Teams 通知監視管線
+        [3768] 從 Azure Data Factory 或 SynapseAnalytics 管線將通知傳送至 MicrosoftTeams 通道
+      - 監視整合執行階段
+        [3791] 在 Azure Data Factory 中監視整合執行階段
+      - 監視受控虛擬網路整合運行時間
+        [3805] 監視受控虛擬網路內的整合執行階段
+      - 監視 Azure-SSIS 整合運行時間
+        [3818] 
+      - 使用服務等級協定執行數據管線
+        [3827] 提供資料管線的服務等級協定
+      - 重新設定 Azure-SSIS 整合運行時間
+        [3829] 重新設定 Azure-SSIS 整合執行階段
+      - 複製或複製數據處理站
+        [3833] 如何複製或重製 Azure Data Factory 中的資料處理站
+    - 建立整合運行時間
+      - Azure 整合執行階段
+        [3835] 如何建立和設定 Azure 整合執行階段
+      - 自我裝載整合執行階段
+        - 建立和設定自我裝載整合執行階段
+          [3841] 
+        - 自我裝載整合運行時間自動更新並到期通知
+          [3868] 自我裝載整合運行時間自動更新並到期通知
+        - 共用自我裝載整合運行時間
+          [3873] 在 Azure Data Factory 中建立共用的自我裝載整合執行階段
+        - 自我裝載整合運行時間的自動化腳本
+          [3883] 使用本機 PowerShell 指令碼自動進行自我裝載整合執行階段安裝
+        - 在 Windows 容器中執行自我裝載整合運行時間
+          [3886] 如何在 Windows 容器中執行自我裝載整合執行階段
+        - 自我裝載整合執行階段的診斷工具
+          [3889] 自我裝載整合執行階段的診斷工具
+        - 在 Azure 中監視自我裝載整合運行時間
+          [3892] 在 Azure 中監視自我裝載整合執行階段(SHIR) 虛擬機器
+        - 設定記錄分析集合的自我裝載整合運行時間
+          [3894] 設定記錄分析收集的自我裝載整合執行階段 (SHIR)
+      - Azure-SSIS 整合執行階段
+        - 概觀和必要條件
+          [3900] 建立 Azure-SSIS 整合執行階段
+        - 使用 Azure 入口網站 建立
+          [3905] 透過 Azure 入口網站建立 Azure-SSISIntegration Runtime
+        - 使用 PowerShell 建立
+          [3924] 透過 Azure PowerShell 建立 Azure-SSISIntegration Runtime
+        - 使用 Resource Manager 樣本建立
+          [3942] 使用 Azure Resource Manager 範本建立整合執行階段
+        - 部署和執行 SSIS 套件
+          [3945] 部署 SSIS 套件
+    - 在 Azure 中執行 SSIS 套件
+      - 從 SSDT 在 Azure 中執行 SSIS 套件
+        [3947] 從 SSDT 執行 Azure 中的 SSIS 套件
+      - 使用 Azure SQL 受控執行個體 Agent 執行 SSIS 套件
+        [3965] 使用 Azure SQL 受控執行個體代理程式執行 SSIS 封裝
+      - 使用已啟用 Azure 的 dtexec 執行 SSIS 套件
+        [3979] 使用已啟用 Azure 的 dtexec 公用程式來執行 SQL Server Integration Services 套件
+      - 使用執行 SSIS 封裝活動執行 SSIS 套件
+        - 使用 Azure Data Factory Studio 入口網站 UI
+          [3985] 在 Azure 入口網站中使用執行 SSIS 套件活動執行 SSIS 套件
+        - 使用 PowerShell
+          [4008] 以 PowerShell 在 Azure Data Factory 中使用執行 SSIS 套件活動執行 SSIS 套件
+      - 使用預存程式活動執行 SSIS 套件
+        [4018] 使用預存程序活動執行 SSIS 套件
+      - 排程 Azure-SSIS 整合運行時間
+        [4034] 按照排程來啟動和停止 Azure-SSISIntegration Runtime
+      - 將 Azure-SSIS IR 加入虛擬網路
+        - 概觀
+          [4064] 將 Azure-SSIS 整合執行階段加入虛擬網路
+        - 虛擬網路設定
+          [4068] 設定虛擬網路以插入 Azure-SSIS 整合執行階段
+        - 快速虛擬網路插入
+          [4073] 快速虛擬網路插入方法
+        - 標準虛擬網路插入
+          [4080] 標準虛擬網路插入方法
+        - 使用 Azure Data Factory UI
+          [4095] 透過 Azure 入口網站將 Azure-SSIS 整合執行階段加入虛擬網路
+        - 使用 Azure PowerShell
+          [4104] 透過 Azure PowerShell 將 Azure-SSIS 整合執行階段加入虛擬網路
+      - 將自我裝載 IR 設定為 Azure-SSIS IR 的 Proxy
+        [4108] 將自我裝載 IR 設定為 Azure-SSIS IR 的Proxy
+      - 啟用 Azure-SSIS IR 的 Microsoft Entra 驗證
+        [4120] 啟用 Azure-SSIS 整合執行階段的Microsoft Entra 驗證
+      - 使用 Windows 驗證 連線 數據
+        [4127] 
+      - 儲存盤案並連線到檔案共用
+        [4132] 在 SSIS 套件部署於 Azure 的情況下，於內部部署與 Azure 中開啟和儲存檔案
+      - 布建適用於 Azure-SSIS IR 的 Enterprise Edition
+        [4134] 佈建 Azure-SSIS 整合執行階段的企業版
+      - Azure-SSIS IR 上的內建和預安裝元件
+        [4137] Azure-SSIS Integration Runtime 上內建和預先安裝的元件
+      - 自定義 Azure-SSIS IR 的設定
+        [4146] 自定義 Azure-SSIS Integration Runtime的設定
+      - 安裝 Azure-SSIS IR 的授權元件
+        [4164] 安裝 Azure-SSIS 整合執行階段的付費或授權自訂元件
+      - 設定 Azure-SSIS IR 的高效能
+        [4168] 設定 Azure-SSIS Integration Runtime 以獲得高效能
+      - 設定 Azure-SSIS IR 的災害復原
+        [4175] 設定 Azure-SSIS Integration Runtime 以達到商務持續性和災害復原 (BCDR)
+      - 自動清除 SSISDB 記錄
+        [4181] 如何自動清除 SSISDB 記錄
+      - 搭配 Azure-SSIS IR 使用 Azure SQL 受控執行個體
+        [4195] 在 Azure Data Factory 或 Azure SynapseAnalytics 中搭配 SQL Server IntegrationServices (SSIS) 使用 Azure SQL 受控執行個體
+      - 使用 SSMS 移轉 SSIS 作業
+        [4206] 使用 SSMS 將 SQL Server Agent 作業移轉至 ADF
+      - 使用 Azure-SSIS IR 套件存放區管理套件
+        [4212] 使用 Azure-SSIS Integration Runtime 套件存放區管理套件
+    - 建立觸發程序
+      - 建立排程觸發程式
+        [4226] 建立依排程執行管線的觸發程序
+      - 建立輪轉視窗觸發程式
+        [4252] 
+      - 建立輪轉視窗觸發相依性
+        [4260] 建立輪轉視窗觸發程序相依性
+      - 建立記憶體事件觸發程式
+        [4267] 
+      - 建立自定義事件觸發程式
+        [4275] 建立自訂事件觸發程序以在 Azure DataFactory 中執行管線
+      - 管線中的參考觸發程式元數據
+        [4283] 管線執行中的參考觸發程序中繼資料
+    - 資料目錄和治理
+      - 連線 Data Factory 至 Microsoft Purview
+        [4288] 將 Data Factory 連線至 MicrosoftPurview
+      - 存取受保護的 Microsoft Purview 帳戶
+        [4293] 從 Azure Data Factory 存取安全的Microsoft Purview 帳戶
+      - 使用 Microsoft Purview 探索和探索 ADF 中的數據
+        [4299] 使用 Microsoft Purview 探索 ADF 中的資料
+    - 案例
+      - 從管線傳送電子郵件
+        [4301] 使用 Azure Data Factory 或 AzureSynapse 管線傳送電子郵件
+      - 從管線傳送 Microsoft Teams 通知
+        [4308] 從 Azure Data Factory 或 SynapseAnalytics 管線將通知傳送至 MicrosoftTeams 通道
+      - Data Lake 和 EDW 的數據遷移
+        - 為什麼 Azure Data Factory
+          [4331] 使用 Azure Data Factory 將資料從資料湖或資料倉儲移轉至 Azure
+        - 將數據從 AWS S3 遷移至 Azure
+          [4334] 使用 Azure Data Factory 將資料從Amazon S3 遷移到 Azure 儲存體
+        - 將數據從內部部署Hadoop叢集遷移至 Azure
+          [4341] 使用 Azure Data Factory 將資料從內部部署 Hadoop 叢集移轉至 Azure 儲存體
+        - 將數據從內部部署Netezza 伺服器遷移至 Azure
+          [4348] 使用 Azure Data Factory 將資料從內部部署 Netezza 伺服器移轉至 Azure
+      - Azure Machine Learning
+        - 資料擷取
+          [4357] 使用 Azure Data Factory 進行資料擷取
+      - 使用對應數據流進行轉換
+        - 處理固定寬度文本檔
+          [4363] 使用 Data Factory 對應資料流處理固定長度文字檔
+        - 錯誤數據列處理
+          [4368] 處理 Data Factory 對應資料流中的 SQL截斷錯誤資料列
+        - Azure SQL DB 至 Azure Cosmos DB
+          [4371] 將正規化資料庫結構描述從 Azure SQLDatabase 移轉至 Azure Cosmos DB 的反正規化容器 (機器翻譯)
+        - 使用代碼段進行 Dedupe 和 Null 檢查
+          [4377] 使用資料流程程式碼片段來刪除重複的資料列並尋找 Null
+        - 使用數據流處理來自 aml 模型的數據
+          [4381] 使用資料流程來處理自動化機器學習模型中的資料
+      - 從內部部署移轉 SSIS
+        - SSIS 移轉概觀
+          [4387] 將內部部署 SSIS 工作負載移轉至 ADF 或Synapse 管線中的 SSIS
+        - SSIS 移轉評量規則
+          [4391] SSIS 移轉評估規則
+    - 範本
+      - 範本概觀
+        [4396] 範本
+      - 從多個容器複製檔案
+        [4401] 使用 Azure Data Factory 複製多個資料夾
+      - 依 LastModifiedDate 複製新檔案
+        [4406] 使用 Azure Data Factory 依LastModifiedDate 複製新檔案和已變更檔案
+      - 從資料庫大量複製
+        [4416] 使用控制資料表從資料庫進行大量複製
+      - 從檔案大量複製到資料庫
+        [4422] 從檔案大量複製到資料庫
+      - 從資料庫複製差異
+        [4426] 使用控制資料表從資料庫進行差異複製
+      - 從 SAP CDC 複寫數據
+        [4434] 透過 SAP CDC 從 SAP 複寫多個物件
+      - 偵測和遮罩 PII 數據
+        [4438] PII 偵測和遮罩
+      - 從 PDF 來源擷取數據
+        [4446] 從 PDF 擷取資料
+      - 將數據從 Amazon S3 遷移至 Azure 儲存體
+        [4452] 將資料從 Amazon S3 移轉至 Azure DataLake Storage Gen2
+      - 移動檔案
+        [4464] 使用 Azure Data Factory 移動檔案
+      - 使用 Azure Databricks 進行轉換
+        [4469] 使用 Azure Databricks 進行轉換
+      - 使用筆記本活動呼叫 Synapse 管線
+        [4483] 呼叫具有筆記本活動的 Synapse 管線
+    - 了解定價
+      - 數據流保留容量概觀
+        [4488] 使用保留容量節省資源的成本 - AzureData Factory 數據流
+      - 數據流瞭解保留費用
+        [4490] 保留折扣如何套用至 Azure Data Factory資料流程
+      - 深入瞭解不同的整合運行時間費用
+        [4492] 用於進一步了解不同整合執行階段類型下的價格模型的範例
+      - 規劃和管理成本
+        [4496] 規劃管理 Azure Data Factory 的成本
+      - Azure Data Factory 中的 FinOps
+        [4507] 將 FinOps 套用至 Azure Data Factory
+      - 定價範例
+        - 定價概觀
+          [4518] 透過範例了解 Azure Data Factory 定價
+        - 將數據從 AWS S3 複製到 Azure Blob 記憶體
+          [4520] 定價範例：每小時將資料從 AWS S3 複製到 Azure Blob 儲存體
+        - 使用 Azure Databricks 複製數據和轉換
+          [4523] 定價範例：每小時複製資料，並使用Azure Databricks 進行轉換
+        - 使用動態參數複製/轉換數據
+          [4526] 每小時複製資料並使用動態參數進行轉換
+        - 在 Azure-SSIS 整合運行時間上執行 SSIS 套件
+          [4529] 定價範例：在 Azure-SSIS 整合執行階段上執行 SSIS 套件
+        - 使用工作日的對應數據流偵錯
+          [4532] 定價範例：使用一般工作日的對應資料流偵錯
+        - 使用對應數據流轉換 Blob 數據
+          [4533] 價格範例：使用對應資料流轉換 Blob 存放區中的資料
+        - 數據與受控 VNET 整合
+          [4535] 定價範例：Azure Data Factory 受控VNET 中的資料整合
+        - 透過 SAP CDC 從 SAP ECC 取得差異數據，以對應數據流
+          [4538] 價格範例：在對應資料流中，透過 SAPCDC 從 SAP ECC 取得差異資料
+    - 疑難排解指南
+      - Azure Data Factory Studio
+        [4541] 為 Azure Data Factory Studio 問題疑難排解
+      - 活動
+        [4547] 針對 Azure Data Factory 和 Synapse 管線進行疑難排解
+      - 變更資料擷取
+        - 異動數據擷取疑難解答
+          [4584] 疑難排解 Azure Data Factory 中的異動資料擷取資源
+      - 連接器
+        - 概觀和一般複製活動錯誤
+          [4587] 
+        - Azure Blob 儲存體
+          [4594] 針對 Azure Data Factory 和 AzureSynapse 中的 Azure Blob 儲存體連接器進行疑難排解
+        - Azure Cosmos DB （包括適用於 NoSQL 的 Azure Cosmos DB）
+          [4597] 在 Azure Data Factory 和 Azure SynapseAnalytics 中針對 Azure Cosmos DB 連接器進行疑難排解
+        - Azure 資料總管
+          [4601] 針對 Azure Data Factory 和 AzureSynapse 中的 Azure Data Explorer 連接器進行疑難排解
+        - Azure Data Lake （Gen1 和 Gen2）
+          [4603] 針對 Azure Data Factory 與 AzureSynapse 中的 Azure Data Lake Storage連接器進行疑難排解
+        - 適用於 PostgreSQL 的 Azure 資料庫
+          [4609] 
+        - Azure 檔案
+          [4611] 針對 Azure Data Factory 和 AzureSynapse 中的 Azure 檔案儲存體連接器進行疑難排解
+        - Azure Synapse Analytics、Azure SQL 資料庫、SQL Server、Azure SQL 受控執行個體 和 Amazon RDS for SQL Server
+          [4612] 疑難排解 Azure Data Factory 和 AzureSynapse 中 SQL Server 連接器的 AzureSynapse Analytics、Azure SQLDatabase、SQL Server、Azure SQL 受控執行個體和 Amazon RDS 的問題
+        - Azure 資料表儲存體
+          [4624] 針對 Azure Data Factory 和 AzureSynapse 中的 Azure 資料表儲存體連接器進行疑難排解
+        - DB2
+          [4626] 為 Azure Data Factory 和 Azure Synapse中的 DB2 連接器疑難排解
+        - 分隔符號文字格式
+          [4627] 針對 Azure Data Factory 和 AzureSynapse 中的分隔符號文字格式連接器問題進行疑難排解
+        - Dynamics 365、Dataverse （Common Data Service） 和 Dynamics CRM
+          [4629] 針對 Dynamics 365、Dataverse(Common Data Service) 和 DynamicsCRM 連接器在 Azure Data Factory 和Azure Synapse 中的問題進行疑難排解
+        - 檔案系統
+          [4636] 針對 Azure Data Factory 和 AzureSynapse 中的檔案系統儲存體連接器進行疑難排解
+        - FTP、SFTP 和 HTTP
+          [4637] 針對 Azure Data Factory 和 AzureSynapse 中的 FTP、SFTP 和 HTTP 連接器進行疑難排解
+        - Google Ads
+          [4644] 針對 Azure Data Factory 和 AzureSynapse Analytics 中的 Google Ads 連接器進行疑難排解
+        - Hive
+          [4646] 針對 Azure Data Factory 和 AzureSynapse 中的 Hive 連接器進行疑難排解
+        - MongoDB
+          [4648] 針對 Azure Data Factory 和 AzureSynapse 中的 MongoDB 連接器進行疑難排解
+        - Oracle
+          [4650] 針對 Azure Data Factory 和 AzureSynapse 中的 Oracle 連接器進行疑難解答
+        - ORC 格式
+          [4652] 排解 Azure Data Factory 和 AzureSynapse Analytics 中 ORC 格式連接器的疑難問題
+        - Parquet 格式
+          [4655] 對 Azure Data Factory 與 Azure SynapseAnalytics 中的 Parquet 格式連接器進行疑難排解
+        - REST
+          [4661] 針對 Azure Data Factory 和 AzureSynapse 中的 REST 連接器進行疑難排解
+        - Salesforce 和 Salesforce Service Cloud
+          [4664] 針對 Azure Data Factory 和 AzureSynapse 中的 Salesforce 和 SalesforceService Cloud 連接器進行疑難解答
+        - SAP 數據表、SAP Business Warehouse Open Hub 和 SAP ODP
+          [4668] 針對 Azure Data Factory 和 AzureSynapse 中的 SAP Table、SAP BusinessWarehouse Open Hub 及 SAP ODP 連接器進行疑難排解
+        - SharePoint Online 清單
+          [4670] 針對 Azure Data Factory 和 AzureSynapse 中的 SharePoint Online 清單連接器進行疑難排解
+        - Snowflake
+          [4673] 為 Azure Data Factory 和 Azure Synapse中的 Snowflake 連接器疑難排解
+        - XML 格式
+          [4675] 疑難排解 Azure Data Factory 和 AzureSynapse 中 XML 格式連接器的問題
+      - 管線觸發程序
+        [4677] 
+      - 資料流程
+        - 數據流疑難解答指南
+          [4684] 針對 Azure Data Factory (ADF) 中的對應資料流進行疑難排解
+        - 連線 或格式
+          [4723] 
+      - 持續整合與部署
+        [4758] 針對 Azure Data Factory 和 SynapseAnalytics 的 CI-CD、Azure DevOps 和GitHub 問題進行疑難排解
+      - 安全性和存取控制
+        [4771] 針對 Azure Data Factory 和 SynapseAnalytics 的安全性與存取控制問題進行疑難排解
+      - 自我裝載整合運行時間
+        [4782] 針對自我裝載整合執行階段進行疑難排解
+      - Azure-SSIS Integration Runtime
+        [4827] 針對 SSIS Integration Runtime 管理進行疑難排解
+      - Azure-SSIS IR 中的套件執行
+        [4835] 
+      - 診斷 Azure-SSIS IR 中的連線能力
+        [4842] 使用 SSIS Integration Runtime 中的診斷連線功能
+  - SAP 知識中心
+    - 概觀
+      [4846] SAP 知識中心概觀
+    - SAP 連接器
+      [4848] SAP 連接器概觀
+    - SAP 範本
+      [4850] SAP 範本概觀
+    - SAP 異動資料擷取 (CDC) 功能
+      - 概觀和架構
+        [4851] SAP CDC 功能的概觀和架構
+      - 先決條件和安裝程式
+        [4855] SAP CDC 連接器的必要條件和設定
+      - 設定自我裝載整合運行時間
+        [4859] 設定 SAP CDC 連接器的自我裝載整合執行階段
+      - 設定連結服務和來源數據集
+        [4863] 設定 SAP CDC 連接器的連結服務和來源資料集
+      - 對 SAP CDC 連接器的問題進行偵錯
+        [4871] 透過傳送自我裝載整合執行階段記錄來對SAP CDC 連接器的問題進行偵錯
+      - 管理 SAP CDC 程式
+        [4873] 管理 SAP CDC 程序
+      - 進階主題
+        [4880] SAP CDC 進階主題
+  - 工作流程協調流程管理員
+    - 教學課程
+      - 使用 Airflow 來執行現有管線
+        [4886] 使用工作流程協調流程管理員執行現有的管線
+    - 概念
+      [4890] 什麼是工作流程協調流程管理員？
+    - 開始使用
+      [4894] Azure 工作流程協調流程管理員如何運作？
+    - 操作方式
+      - 建立 Airflow 環境
+        [4897] 在工作流程協調流程管理員中建立Airflow 環境
+      - 使用 Azure Blob 儲存體 匯入 Dag
+        [4900] 使用 Azure Blob 儲存體 匯入 DAG
+      - 刪除 Dags
+        [4905] 刪除工作流程協調流程管理員中的檔案
+      - 如何變更 Airflow 密碼
+        [4907] 變更工作流程協調流程管理員環境的密碼
+      - 安裝私人套件
+        [4909] 安裝私人套件
+      - 啟用 Airflow 的 Azure 金鑰保存庫
+        [4913] 啟用工作流程協調流程管理員的 Azure 金鑰保存庫
+      - 用來存取私人容器登錄的 Kubernetes 秘密
+        [4920] 新增 Kubernetes 秘密以存取私人容器登錄
+      - Airflow 整合運行時間的 Rest API
+        [4924] 工作流程協調流程管理員整合運行時間的REST API
+      - 擷取 Airflow 叢集的 IP 位址
+        [4931] 擷取工作流程協調流程管理員叢集的IP位址
+      - 同步處理 GitHub 存放庫
+        [4935] 在工作流程協調流程管理員中同步處理GitHub 存放庫
+      - 診斷記錄和計量
+        [4947] 
+      - CI/CD 模式
+        [4955] 使用工作流程協調流程管理員的 CI/CD 模式
+      - Airflow 組態
+        [4964] 
+    - 定價
+      [4966] 工作流程協調流程管理員定價
+  - 參考
+    - 資料流程指令碼
+      [4967] 資料流程指令碼 (DFS)
+    - .NET
+      [4976] Microsoft.Azure.Management.DataFactory Namespace
+    - PowerShell
+      [4979] Az.DataFactory
+    - REST API
+      [4988] Azure Data Factory 概觀
+    - Resource Manager 範本
+      [4989] 發行項• 2024/03/13
+    - Python
+      [4991] 適用於 Python 的 Azure Data Factory 程式庫
+    - Azure 原則內建
+      [4993] 
+    - Azure CLI
+      [4996] az datafactory
+    - 計算優化數據流已淘汰
+      [5022] 資料流程運算最佳化選項的淘汰
+    - 監視資料參考
+      [5024] 
+  - 資源
+    - 白皮書
+      [5045] Azure Data Factory 白皮書
+    - 常見問題集
+      [5046] 
+    - 服務更新
+    - 部落格
+    - 詢問問題 - Microsoft Q&A 問題頁面
+    - 詢問問題 - Stack Overflow
+    - 要求功能
+    - 定價
+    - 可用性依區域劃分
+    - 支援選項
+    - 要求增加支援配額
+      [5057] 要求增加配額及取得 Azure Data Factory的支援
+    - 限制
+      [5104] 

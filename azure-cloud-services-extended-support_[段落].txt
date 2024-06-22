@@ -1,0 +1,122 @@
+- ---< azure-cloud-services-extended-support.pdf >---
+  - Azure 雲端服務 (延伸支援) 文件
+    [1] Azure 雲端服務 (延伸支援) 文件
+  - 概觀
+    - 關於雲端服務 (延伸支援)
+      [3] 關於 Azure 雲端服務 (延伸支援)
+    - 部署的先決條件
+      [6] 部署 Azure 雲端服務 (延伸支援) 的必要條件
+    - 組態檔和封裝
+      [10] 什麼是 Azure 雲端服務模型？如何封裝？
+    - 常見問題集
+      [18] 一般
+  - 教學課程
+    - 部署雲端服務 - 入口網站
+      [25] 使用 Azure 入口網站部署 Azure 雲端服務(延伸支援)
+    - 部署雲端服務 - PowerShell
+      [31] 使用 Azure PowerShell 部署雲端服務 (延伸支援)
+    - 部署雲端服務 - 範本
+      [38] 使用 ARM 範本來部署雲端服務 (延伸支援)
+    - 部署雲端服務 - SDK
+      [49] 使用 Azure SDK 來部署雲端服務 (延伸支援)
+    - 部署雲端服務 - Visual Studio
+      [58] 在 Visual Studio 中建立並部署至雲端服務 (延伸支援)
+  - 概念
+    - 擴充
+      [66] 延伸模組雲端服務 (延伸支援)
+    - 可用的 VM 大小
+      [68] Azure 雲端服務 (延伸支援) 的可用大小
+    - 電源和佈建狀態
+      [70] Azure 雲端服務 (延伸支援) 的可用佈建和電源狀態
+    - 客體 OS 修補程式
+      [72] Azure 客體作業系統
+    - 客體 OS 淘汰
+      [213] Azure 客體作業系統可支援性和淘汰原則
+    - 客體 OS 發佈新聞
+      [216] Azure 客體 OS 版次與 SDK 相容性矩陣
+    - XML 結構描述
+      - Csdef XML 結構描述
+        [242] Azure 雲端服務 (延伸支援) 定義結構描述(csdef 檔案)
+      - LoadBalancerProbe 結構描述
+        [245] Azure 雲端服務 (延伸支援) 定義LoadBalancerProbe 結構描述
+      - WebRole 結構描述
+        [248] Azure 雲端服務 (擴充支援) 定義WebRole 結構描述
+      - WorkerRole 結構描述
+        [265] Azure 雲端服務 (擴充支援) 定義WorkerRole 結構描述
+      - NetworkTrafficRules 結構描述
+        [280] Azure 雲端服務 (延伸支援) 定義NetworkTrafficRules 結構描述
+      - Cscfg XML 結構描述
+        [283] Azure 雲端服務 (延伸支援) 設定結構描述(cscfg 檔案)
+      - 角色結構描述
+        [286] Azure 雲端服務 (延伸支援) 設定角色結構描述
+      - NetworkConfiguration 結構描述
+        [288] Azure 雲端服務 (延伸支援) confignetworkConfiguration 結構描述
+  - 遷移
+    - 遷移至 Azure 雲端服務 (延伸支援)
+      - 移轉概觀
+        [291] 將 Azure 雲端服務 (傳統) 移轉至 Azure雲端服務 (延伸支援)
+      - 移轉技術詳細資料
+        [297] 遷移至 Azure 雲端服務 (延伸支援) 的技術詳細資料
+      - 使用 Azure 入口網站移轉
+        [304] 使用 Azure 入口網站 遷移至雲端服務 (延伸支援)
+      - 使用 Powershell 進行移轉
+        [309] 使用 PowerShell 遷移至 Azure 雲端服務(延伸支援)
+      - 將非 vnet 安裝移轉至虛擬網路
+        [315] 將不在虛擬網路中的雲端服務移轉至虛擬網路
+      - 移轉後的變更
+        [318] 移轉後的變更
+      - 常見錯誤和已知問題
+        [320] 移轉至 Azure 雲端服務 (延伸支援) 時的常見錯誤和已知問題
+    - CSES 的功能支援
+      [324] 
+  - 作法
+    - 套用擴充功能
+      - 套用遠端桌面擴充功能
+        [328] 將遠端桌面延伸模組套用至 Azure 雲端服務 (延伸支援)
+      - 套用 WAD 擴充功能
+        [332] 在雲端服務 (延伸支援) 中套用 WindowsAzure 診斷延伸模組
+      - 套用 Key Vault 擴充功能
+        [335] 將 Key Vault VM 延伸模組套用至 Azure雲端服務 (延伸支援)
+    - 啟用警示
+      [339] 使用 Azure 入口網站啟用適用於雲端服務(延伸支援) 的監視
+    - 設定縮放
+      [342] 設定 Azure 雲端服務 (延伸支援) 的縮放選項
+    - 憑證
+      [347] 在 Azure 雲端服務 (延伸支援) 中使用憑證
+    - 使用入口網站產生 ARM 範本
+      [350] 使用 Azure 入口網站產生適用於雲端服務(延伸支援) 的 ARM 範本
+    - 交換雲端服務部署
+      [353] 在 Azure 雲端服務 (延伸支援) 中交換或切換部署
+    - 覆寫 SKU 詳細資料
+      [358] 覆寫雲端服務 (延伸支援) 在 .cscfg 和.csdef 檔案中的 SKU 設定
+  - 範例
+    - 範例範本
+    - 建立新的雲端服務
+      [361] 建立新的 Azure 雲端服務 (延伸支援)
+    - 取得雲端服務詳細資料
+      [366] 擷取 Azure 雲端服務 (延伸支援) 部署相關資訊
+    - 重設雲端服務
+      [369] 重設 Azure 雲端服務 (延伸支援)
+  - 參考
+    - 範例部署檔案
+    - Az.CloudService 模組
+    - PowerShell Cmdlet
+      [372] Az.CloudService
+    - ARM 範本參考
+      [375] Microsoft.Compute cloudServices
+    - REST
+      [386] Cloud Services
+    - .NET
+      [387] Azure Compute SDK for .NET - latest
+    - SDK
+    - CLI
+      [388] az cloud-service
+  - 資源
+    - Azure 藍圖
+    - 學習路徑
+    - Microsoft 問 & 答
+    - 定價
+    - 定價計算機
+    - 服務更新
+  - 支援和疑難排解
+    [420] Azure 雲端服務 (延伸支援) 的支援和疑難排解

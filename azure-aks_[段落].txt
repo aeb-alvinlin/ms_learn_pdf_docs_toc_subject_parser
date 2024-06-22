@@ -1,0 +1,800 @@
+- ---< azure-aks.pdf >---
+  - Azure Kubernetes Service (AKS)
+    [1] Azure Kubernetes Service (AKS)
+  - 概觀
+    - 什麼是 AKS？
+      [5] 什麼是 Azure Kubernetes Service（AKS）？
+    - 配額和區域限制
+      [9] Azure Kubernetes Service 中的配額、虛擬機器大小限制和區域可用性 (AKS)
+    - 追蹤發行版本和區域可用性
+      [14] AKS 發行版本追蹤器
+    - 支援的 Kubernetes 版本
+      [16] Azure Kubernetes Service (AKS) 中支援的 Kubernetes 版本
+    - 長期支援
+      [31] 長期支援
+    - 附加元件、擴充功能和其他整合
+      [36] Azure Kubernetes Service (AKS) 的附加元件、延伸模組和其他整合
+  - 開始使用
+    - 架構良好的考量
+      [40] Azure Well-Architected Framework 檢閱- Azure Kubernetes Service (AKS)
+    - 計劃您的實作
+      [53] Azure Kubernetes Service （AKS） - 規劃您的設計和作業
+    - Windows 容器考量
+      [57] Azure Kubernetes Service 的 Windows容器考量
+    - 最佳化成本
+      [59] 在 Azure Kubernetes Service (AKS) 中最佳化成本
+  - 快速入門
+    - 建立以 Linux 為基礎的 AKS 叢集
+      - 使用 Azure CLI
+        [65] 快速入門：使用 Azure CLI 部署 AzureKubernetes Service (AKS) 叢集
+      - 使用 Azure Developer CLI
+        [76] 快速入門：使用 Azure 開發人員 CLI 部署Azure Kubernetes Service （AKS） 叢集
+      - 使用 Azure PowerShell
+        [84] 快速入門：使用 Azure PowerShell 部署Azure Kubernetes Service (AKS) 叢集
+      - 使用 Azure 入口網站
+        [94] 快速入門：使用 Azure 入口網站部署Azure Kubernetes Service (AKS) 叢集
+      - 使用 Bicep Kubernetes 提供者
+        [106] 快速入門：使用 Bicep 擴充性Kubernetes 提供者部署 AzureKubernetes Service (AKS) 叢集 (預覽)
+      - 使用 Bicep
+        [118] 快速入門：使用 Bicep 部署 AzureKubernetes Service (AKS) 叢集
+      - 使用 ARM 範本
+        [131] 快速入門：使用ARM範本部署 AzureKubernetes Service （AKS） 叢集
+      - 使用 Terraform
+        [145] 快速入門：使用 Terraform 部署 AzureKubernetes Service (AKS) 叢集
+    - 建立以 Windows 為基礎的 AKS 叢集
+      - 使用 Azure CLI
+        [166] 使用 Azure CLI 在 Azure KubernetesService (AKS) 叢集上部署 WindowsServer 容器
+      - 使用 Azure PowerShell
+        [175] 使用 PowerShell 在 Azure KubernetesService (AKS) 叢集上部署 WindowsServer 容器
+      - 使用 Azure 入口網站
+        [183] 使用 Azure 入口網站在 AzureKubernetes Service (AKS) 叢集上部署Windows Server 容器
+    - 使用套件管理員
+      - 使用 Helm 開發
+        [192] 快速入門：使用 Helm 開發 AzureKubernetes Service (AKS)
+      - 透過 Dapr 進行開發
+        [199] 快速入門：使用 Azure KubernetesService (AKS) 或已啟用 Arc 的Kubernetes 的 Dapr 叢集擴充功能部署應用程式
+      - 使用 Draft 和適用於 Visual Studio Code 的 DevX 延伸模組
+        [205] 搭配 Azure Kubernetes Service (AKS) 使用 Visual Studio Code 的 Draft 和 DevX延伸模組
+    - 使用事件方格訂閱 AKS 事件
+      [208] 快速入門：使用 Azure 事件方格訂閱Azure Kubernetes Service (AKS) 事件
+  - 教學課程
+    - 1 - 準備應用程式供 AKS 使用
+      [212] 教學課程 – 準備 Azure KubernetesService (AKS) 的應用程式
+    - 2 - 建立容器登錄
+      [218] 教學課程 - 建立 Azure ContainerRegistry (ACR) 以及建置映像
+    - 3 - 建立 Kubernetes 叢集
+      [221] 教學課程 - 建立 Azure KubernetesService （AKS） 叢集
+    - 4 - 部署容器化應用程式
+      [225] 教學課程 - 將應用程式部署至 AzureKubernetes Service （AKS）
+    - 5 - 使用 PaaS 服務
+      [230] 教學課程：透過 Azure KubernetesService (AKS) 叢集使用 PaaS 服務
+    - 6 - 縮放應用程式
+      [236] 教學課程：在 Azure Kubernetes Service(AKS) 中縮放應用程式
+    - 7 - 升級叢集
+      [241] 教學課程 - 升級 Azure KubernetesService (AKS) 叢集
+    - 安全性
+      - 設定應用程式以便利用工作負載身分識別
+        [247] 教學課程：在 Azure Kubernetes Service(AKS) 上將應用程式設為使用工作負載身分識別
+  - 概念
+    - 核心概念
+      [255] 適用於 Azure Kubernetes Service 的核心Kubernetes 概念 （AKS）
+    - AKS 的定價層
+      [270] 適用於 Azure Kubernetes Service (AKS)叢集管理的免費、標準和進階定價層
+    - 維護及升級 AKS 叢集
+      [274] 升級 Azure Kubernetes Service 叢集和節點集區
+    - 備份和復原叢集
+      [276] 什麼是 Azure Kubernetes Service 備份？
+    - 可檢視性
+      - 監視 AKS
+        [283] 監視 Azure Kubernetes Service (AKS)
+      - 網路可檢視性
+        [296] 什麼是 Azure Kubernetes Service (AKS)網路可檢視性？ (預覽)
+    - 安全性
+      - 安全性概念
+        [300] Azure Kubernetes Service (AKS) 中應用程式和叢集的安全性概念
+      - 存取與身分識別
+        [305] Azure Kubernetes Service (AKS) 的存取與身分識別選項
+      - 安全性弱點管理
+        [318] 適用於 Azure Kubernetes Service (AKS)的弱點管理
+      - 安全性基準
+        [323] 適用於 Azure Kubernetes Service (AKS)的 Azure 安全性基準
+      - 機密容器安全性原則
+        [340] 適用於 Azure Kubernetes Service 上機密容器的安全性原則
+      - Azure 原則的安全性控制
+        [344] 適用於 Azure Kubernetes Service (AKS)的 Azure 原則法規合規性控制措施
+      - 法規遵循
+        - CIS 基準概觀
+          [371] 網際網路安全性 (CIS) 中心基準
+        - CIS Kubernetes 基準測試
+          [375] 網際網路安全中心 (CIS) Kubernetes 基準
+        - CIS Azure Linux 基準測試
+          [384] Center for Internet Security (CIS) AzureLinux 基準
+        - CIS Windows Server 基準測試
+          [391] 符合 Center for Internet Security (CIS) 基準的 Azure Kubernetes Service (AKS)Windows 映像
+    - 網路
+      - 概念
+        [407] Azure Kubernetes Service (AKS) 中應用程式的網路概念
+      - CNI 網路
+        [416] Azure Kubernetes Service (AKS) 中的Azure CNI 網路概觀
+      - 服務
+        [423] AKS 中的 Kubernetes Services
+    - 儲存體
+      [425] Azure Kubernetes Service (AKS) 中應用程式的儲存體選項 (部分機器翻譯)
+    - 調整大小
+      [435] 在 Azure Kubernetes Service (AKS) 中調整應用程式的選項
+    - 節點健康情況
+      - 節點自動修復
+        [440] Azure Kubernetes Service (AKS) 節點自動修復
+      - 節點問題偵測器 (NPD)
+        [443] Azure Kubernetes Service (AKS) 節點中的節點問題偵測器 (NPD)
+    - 服務網格
+      [448] 關於服務網格
+    - 持續性軟體工程
+      [450] Azure Kubernetes Service (AKS) 中的永續性軟體工程做法
+    - Dapr
+      [458] Dapr
+    - GitOps
+      [467] 使用適用於 AKS 和已啟用 Azure Arc 的Kubernetes 的 GitOps （Flux v2） 進行應用程式部署
+  - 最佳作法
+    - 概觀
+      [477] 叢集操作員和開發人員在 AzureKubernetes Service (AKS) 上建置和管理應用程式的最佳做法
+    - AKS 叢集的基準架構
+      [480] 
+    - 高可用性與災害復原
+      - 概觀
+        [514] Azure Kubernetes Service 的高可用性和災害復原概觀 （AKS）
+      - 方案
+        - 主動-主動
+          [522] Azure Kubernetes Service (AKS) 建議的主動/主動高可用性解決方案概觀
+        - 主動-被動
+          [526] Azure Kubernetes Service (AKS) 的主動-被動災害復原解決方案概觀
+        - 被動冷
+          [529] Azure Kubernetes Service (AKS) 的被動冷解決方案概觀
+    - 部署和叢集可靠性
+      [532] Azure Kubernetes Service 的部署和叢集可靠性最佳做法 （AKS）
+    - 安全性
+      - 驗證和授權
+        [548] Azure Kubernetes Service (AKS) 中驗證和授權的最佳做法
+      - 叢集安全性
+        [555] Azure Kubernetes Service (AKS) 中叢集安全性與升級的最佳做法
+      - 容器映像管理
+        [565] Azure Kubernetes Services (AKS) 中的容器映像管理與安全性最佳做法
+    - 叢集作業
+      - 多租用戶和叢集隔離
+        [567] Azure Kubernetes Service (AKS) 中叢集隔離的最佳做法
+      - 基本排程器功能
+        [571] Azure Kubernetes Services (AKS) 中基本排程器功能的最佳做法
+      - 進階排程器功能
+        [575] Azure Kubernetes Services (AKS) 中進階排程器功能的最佳做法 \(部分機器翻譯\)
+      - 網路
+        [581] Azure Kubernetes Service (AKS) 中的網路連線和安全性最佳做法
+      - 儲存體
+        [589] Azure Kubernetes Service 中記憶體和備份的最佳做法 （AKS）
+    - 效能及延展性
+      - 適用於小型到中型工作負載
+        [594] Azure Kubernetes Service (AKS) 中小型工作負載效能和調整的最佳做法
+      - 適用於大型工作負載
+        [604] Azure Kubernetes Service (AKS) 大型工作負載效能和調整的最佳做法
+    - XBOX Video Application Development
+      - 資源管理
+        [610] 應用程式開發人員在 Azure KubernetesServices (AKS) 中管理資源的最佳做法
+      - Pod 安全性
+        [614] Azure Kubernetes Services (AKS) 中的Pod 安全性最佳做法
+    - 備份和復原叢集
+      [618] 什麼是 Azure Kubernetes Service 備份？
+    - Windows 容器
+      [625] 在 Azure Kubernetes Service (AKS) 執行Windows 容器的最佳做法
+    - 使用部署保護來強制執行最佳做法
+      [629] 部署保護措施 （預覽）
+  - 操作指南
+    - 遷移
+      - 規劃和執行移轉
+        [635] 移轉至 Azure Kubernetes Service (AKS)
+      - Tomcat
+        [641] 將 Tomcat 應用程式遷移至 AzureKubernetes Service 上的容器
+      - Wildfly
+        [650] 將WildFly應用程式遷移至 AzureKubernetes Service 上的WildFly
+      - WebLogic
+        [666] 將 WebLogic Server 應用程式遷移至Azure Kubernetes Service 上的 WildFly
+      - WebSphere
+        [684] 將 WebSphere 應用程式遷移至 AzureKubernetes Service 上的 WildFly
+      - JBoss EAP
+        [700] 將 JBoss EAP 應用程式遷移至 AzureKubernetes Service 上的 WildFly
+      - JAVA Web 應用程式容器化與遷移
+        [716] JAVA Web 應用程式容器化和移轉至Azure Kubernetes Service
+      - ASP.NET 應用程式容器化與遷移
+        [730] ASP.NET 應用程式容器化和移轉至 Azure
+Kubernetes Service
+    - 叢集
+      - 在 Edge 區域中部署叢集
+        [744] Azure Kubernetes Service for Edge (預覽)
+      - 部署具有完全受控資源群組的叢集
+        [752] 在 Azure Kubernetes Service 中使用節點資源群組鎖定部署完全受控資源群組 （預覽版）
+      - 調整 AKS 叢集
+        [755] 在 Azure Kubernetes Service (AKS) 叢集中手動調整節點計數
+      - 停止及啟動 AKS 叢集
+        [758] 停止和啟動 Azure Kubernetes Service(AKS) 叢集
+      - 刪除 AKS 叢集
+        [762] 刪除 Azure Kubernetes Service （AKS）叢集
+      - 設定私人叢集
+        - 建立私人叢集
+          [764] 建立私人 Azure Kubernetes Service(AKS) 叢集
+        - 從遠端存取私人叢集
+          [776] 存取私人 Azure Kubernetes Service(AKS) 叢集
+      - 整合
+        - 整合具有 AKS 叢集的 ACR
+          [779] 從 Azure Kubernetes Service (AKS) 對Azure Container Registry (ACR) 進行驗證
+        - 使用叢集擴充功能
+          - 關於叢集延伸模組
+            [785] 部署和管理 Azure Kubernetes Service(AKS) 的叢集擴充功能
+          - 使用 Azure CLI
+            [787] 使用 Azure CLI 部署和管理叢集延伸模組
+        - 使用 AKS Visual Studio Code 擴充功能
+          [794] 使用適用於 Visual Studio Code 的 AzureKubernetes Service （AKS） 擴充功能
+    - 節點
+      - 叢集節點
+        - 自訂節點設定
+          [795] 自訂 Azure Kubernetes Service (AKS) 節點集區的節點設定
+        - 中止長時間執行的作業
+          [805] 在 Azure Kubernetes Service (AKS) 叢集上終止長時間執行的作業
+        - 使用縮小模式停止/解除配置節點
+          [807] 在 Azure Kubernetes Service (AKS) 中使用縮小模式以刪除/解除配置節點
+        - 安全地連線到叢集節點
+          [810] 連線到 Azure Kubernetes Service (AKS)叢集節點以進行維護或疑難排解
+        - 管理 SSH 金鑰
+          [817] 管理 SSH 以便安全存取 AzureKubernetes Service (AKS) 節點
+        - 在 AKS 上部署受信任的啟動
+          [826] 適用於 Azure Kubernetes Service 的信任啟動 （預覽版）
+      - 節點集區
+        - 建立節點集區
+          [833] 在 Azure Kubernetes Service (AKS) 中建立叢集的節點集區
+        - 管理節點集區
+          [841] 在 Azure Kubernetes Service (AKS) 中管理叢集的節點集區
+        - 使用 AKS 上的成品串流減少映像提取時間
+          [855] 使用 Azure Kubernetes Service 上的成品串流來減少映像提取時間 (AKS) (預覽)
+        - 使用第 2 代 VM
+          [859] 在 Azure Kubernetes Service 中使用第 2代虛擬機 （AKS）
+        - 新增 Azure Spot 節點集區
+          [861] 將 Azure 現成節點集區新增至 AzureKubernetes Service (AKS) 叢集
+        - 節點集區快照集
+          [866] Azure Kubernetes Service (AKS) 節點集區快照集
+        - 使用系統節點集區
+          [869] 在 Azure Kubernetes Service (AKS) 中管理系統節點集區 (部分機器翻譯)
+        - 調整節點集區的大小
+          [875] 在 Azure Kubernetes Service (AKS) 中調整節點集區
+        - 刪除節點集區
+          [883] 刪除 Azure Kubernetes Service （AKS）節點集區
+      - 虛擬節點
+        - 使用虛擬節點
+          [886] 建立和設定 Azure Kubernetes Service(AKS) 叢集以使用虛擬節點
+        - 使用 Azure CLI
+          [888] 使用 Azure CLI 來建立和設定 AzureKubernetes Service (AKS) 叢集以使用虛擬節點
+        - 使用 Azure 入口網站
+          [896] 在 Azure 入口網站中建立和設定 AzureKubernetes Service (AKS) 叢集以使用虛擬節點
+    - 工作負載
+      - GPU 工作負載
+        - 使用 GPU
+          [902] 在 Azure Kubernetes Service (AKS) 上使用 GPU 處理計算密集型工作負載
+        - 使用 Windows GPU
+          [916] 在 Azure Kubernetes Service 上針對計算密集型工作負載使用 Windows GPU（AKS） （預覽）
+        - 多執行個體 GPU 節點集區
+          [925] 在 Azure Kubernetes Service (AKS) 中建立多重執行個體 GPU 節點集區
+      - 垂直 Pod 自動調整程式
+        - 關於垂直 Pod 自動調整程式
+          [932] Azure Kubernetes Service (AKS) 中的垂直 Pod 自動調整
+        - 垂直 Pod 自動調整程式 API 參考
+          [948] 垂直 Pod 自動調整程式 API 參考
+      - 設定計量伺服器 VPA
+        [953] 在 Azure Kubernetes Service (AKS) 中設定計量伺服器 VPA
+      - 鄰近放置群組
+        [959] 使用鄰近放置群組來減少 AzureKubernetes Service (AKS) 叢集的延遲
+      - 叢集自動調整程式
+        - 叢集自動調整程式概觀
+          [963] Azure Kubernetes Service 中的叢集自動調整概觀
+        - 在 AKS 上使用叢集自動調整程式
+          [968] 在 Azure Kubernetes Service 中使用叢集自動調整程式 （AKS）
+      - 節點自動佈建
+        [978] 節點自動佈建 (預覽版)
+      - 可用性區域
+        - 可用性區域概觀
+          [986] Azure Kubernetes Service 中的可用性區域概觀
+        - 建立具有可用性區域的叢集
+          [989] 建立使用可用性區域的 Azure KubernetesService (AKS) 叢集
+      - 跨多個叢集傳播 Kubernetes 資源
+        [994] Kubernetes 資源從中樞叢集傳播到成員叢集 （預覽）
+    - 叢集管理
+      - Azure 入口網站 Kubernetes 資源檢視
+        [1004] 從 Azure 入口網站存取 Kubernetes 資源
+      - 標籤
+        [1008] 在 Azure Kubernetes Service (AKS) 使用Azure 標籤
+      - 標籤
+        [1015] 在 Azure Kubernetes Service (AKS) 叢集中使用標籤
+      - 節點污點
+        [1021] 在 Azure Kubernetes Service （AKS） 叢集中使用節點污點
+    - 安全性
+      - 容器安全性
+        - 適用於容器的 Defender 概觀
+          [1030] 適用於容器的 Microsoft Defender 中的容器安全性概觀
+        - 啟用適用於容器的 Defender
+          [1035] 設定適用於容器的 Microsoft Defender元件
+        - 機密容器概觀
+          [1047] 具有 Azure Kubernetes Service 的機密容器 （預覽版）
+        - 使用預設原則部署機密容器
+          [1050] 使用機密容器和預設原則部署 AKS 叢集
+      - 映像安全性
+        - 使用映像完整性驗證已簽署的映像
+          [1063] 在將已簽署映像部署到 Azure KubernetesService (AKS) 叢集之前，先使用映像完整性來驗證已簽署的映像 (預覽)
+        - 使用 ImageCleaner 移除易受攻擊的映像
+          [1070] 使用 ImageCleaner 清除 AzureKubernetes Service (AKS) 叢集上易受攻擊的過時映像
+        - 掃描 CI/CD 工作流程中的映像
+          [1079] 適用於雲端的 Microsoft DefenderDevOps 安全性概觀
+        - 掃描 ACR 登錄中的映像
+          [1083] 適用於容器的 Microsoft Defender 中的容器安全性概觀
+      - 叢集安全性
+        - Azure kubelogin
+          [1088] 在 Azure Kubernetes Service 中使用kubelogin 驗證使用者
+        - 建立服務主體
+          [1098] 使用服務主體搭配 Azure KubernetesService (AKS)
+        - 使用受控識別
+          [1104] 在 Azure Kubernetes Service 中使用受控識別 （AKS）
+        - 使用信任存取啟用 AKS 叢集的存取
+          [1119] 使用信任存取，在 Azure KubernetesService 中取得 Azure 資源的安全存取
+        - 叢集組態檔的限制存取
+          [1123] 使用 Azure 角色型存取控制來定義 AzureKubernetes Service (AKS) 中的Kubernetes 組態檔存取權
+        - 定義 API 伺服器授權的 IP 範圍
+          [1128] 使用 Azure Kubernetes Service (AKS) 中已授權 IP 位址範圍，安全存取 API 伺服器
+        - 管理叢集憑證和輪替
+          [1134] Azure Kubernetes Service (AKS) 中的憑證輪替
+        - 使用自訂憑證授權單位
+          [1139] Azure Kubernetes Service (AKS) 中的自訂憑證授權單位 (CA) (預覽)
+        - 使用 Azure 原則
+          [1146] 使用 Azure 原則來保護 AzureKubernetes Service (AKS) 叢集
+        - 透過 Azure 原則控制部署
+          [1151] 了解適用於 Kubernetes 叢集的 Azure 原則 \(部分機器翻譯\)
+        - 為您的叢集建立 OIDC 簽發者
+          [1171] 在 Azure Kubernetes Service (AKS) 上建立 OpenID Connect 提供者
+        - 使用 KMS etcd 加密
+          [1175] 將金鑰管理服務 etcd 加密新增至 AzureKubernetes Service 叢集
+      - 節點安全性
+        - 適用於 Azure 受控磁碟的 BYOK
+          [1188] 攜帶您自己的金鑰 (BYOK) 搭配 AzureKubernetes Service (AKS) 中的 Azure 受控磁碟
+        - 啟用主機型加密
+          [1193] Azure Kubernetes Service (AKS) 上的主機型加密
+        - 啟用 FIPS
+          [1195] 為 Azure Kubernetes Service (AKS) 節點集區啟用聯邦資訊處理標準 (FIPS)
+        - 使用保密虛擬機器
+          [1200] 在 Azure Kubernetes Service (AKS) 叢集中使用機密虛擬機器 (CVM)
+        - 搭配 AKS 使用專用主機
+          [1202] 將 Azure 專用主機新增至 AzureKubernetes Service (AKS) 叢集
+      - 驗證和授權
+        - 使用受控識別
+          [1206] 在 Azure Kubernetes Service 中使用受控識別 （AKS）
+        - 建立服務主體
+          [1221] 使用服務主體搭配 Azure KubernetesService (AKS)
+        - 啟用 Microsoft Entra 整合
+          - AKS 受控的 Microsoft Entra ID
+            - 啟用 AKS 受控的 Microsoft Entra 整合
+              [1227] 使用 kubelogin 為 Kubernetes 叢集啟用Azure 受控識別驗證
+            - 管理本機帳戶
+              [1233] 使用 AKS 受控 Microsoft Entra 整合來管理本機帳戶
+            - 叢集存取控制
+              [1237] 使用 AKS 管理的 Microsoft Entra 整合進行叢集存取控制
+          - Microsoft Entra 整合 (舊版)
+            [1250] 使用 Azure CLI 整合 Microsoft Entra ID與 Azure Kubernetes Service (AKS) (舊版)
+          - 啟用 GMSA 整合
+            [1259] 為 Azure Kubernetes Service (AKS) 叢集上的 Windows 伺服器節點，啟用群組受管理的服務帳戶 (GMSA)
+        - 使用適用於 Kubernetes 的 Azure RBAC 授權
+          [1270] 適用於 Kubernetes 的 Azure 角色型存取控制授權
+        - 使用 Microsoft Entra 整合搭配 Kubernetes RBAC
+          [1277] 在 Azure Kubernetes Service 中搭配Microsoft Entra ID 使用 Kubernetes 角色型存取控制
+        - 更新叢集認證
+          [1290] 更新或輪替 Azure Kubernetes Service(AKS) 叢集的認證
+        - 叢集組態檔的限制存取
+          [1294] 使用 Azure 角色型存取控制來定義 AzureKubernetes Service (AKS) 中的Kubernetes 組態檔存取權
+        - 透過 Azure 原則控制部署
+          [1299] 了解適用於 Kubernetes 叢集的 Azure 原則 \(部分機器翻譯\)
+      - 應用程式安全性
+        - 為您的叢集建立 OIDC 簽發者
+          [1319] 在 Azure Kubernetes Service (AKS) 上建立 OpenID Connect 提供者
+        - 工作負載身分識別
+          - 工作負載身分識別概觀
+            [1323] 搭配 Azure Kubernetes Service (AKS) 使用 Microsoft Entra 工作負載識別碼
+          - 部署及設定叢集
+            [1331] 在 Azure Kubernetes Service (AKS) 叢集上部署和設定工作負載身分識別
+          - 從 Pod 身分識別移轉應用程式至工作負載身分識別
+            [1339] 從 Pod 受控識別移轉至工作負載身分識別
+        - Microsoft Entra Pod 身分識別
+          [1346] 在 Azure Kubernetes Service (AKS) 中使用 Microsoft Entra Pod 受控識別 (預覽)
+        - Pod 沙箱
+          [1357] Pod 沙箱功能 (預覽版) 與 AzureKubernetes Service (AKS)
+        - 透過網路原則保護 Pod 流量
+          [1365] 在 AKS 中使用網路原則保護 Pod 之間的流量
+        - Pod 安全性原則
+          [1378] 在 Azure Kubernetes Service (AKS) 中使用 Pod 安全性原則來保護叢集 (預覽)
+        - Pod 安全性許可
+          [1392] 在 Azure Kubernetes Service (AKS) 中使用 Pod 安全性許可
+        - 祕密存放區 CSI 驅動程式
+          - 為 NGINX 輸入控制器設定 TLS
+            [1396] 設定祕密存放區 CSI 驅動程式以使用 TLS啟用 NGINX 輸入控制器
+          - 祕密存放區 CSI 驅動程式的 Azure Key Vault 提供者
+            - 1 - 設定祕密存放區 CSI 驅動程式
+              [1408] 在 Azure Kubernetes Service (AKS) 叢集中使用適用於祕密存放區 CSI 驅動程式的Azure Key Vault 提供者
+            - 2 - 提供 Azure Key Vault 存取權
+              [1413] 在 Azure Kubernetes Service (AKS) 中將您的 Azure 識別提供者連線到 Azure KeyVault 祕密存放區 CSI 驅動程式
+            - 3 - 套用額外的設定或執行疑難排解
+              [1424] 針對 Azure Kubernetes Service (AKS) 上適用於祕密存放區 CSI 驅動程式的 AzureKey Vault 提供者進行設定與疑難排解的選項
+    - 設定網路
+      - CNI
+        - 使用 Azure CNI 重疊
+          [1431] 在 Azure Kubernetes Service (AKS) 中設定 Azure CNI 重疊網路
+        - 使用 Azure CNI 進行動態 IP 配置
+          [1442] 在 Azure Kubernetes Service (AKS) 中設定 Azure CNI 網路功能，以動態配置 IP並增強子網路支援
+        - 使用 Azure CNI VNet - 靜態區塊設定 （預覽）
+          [1448] 在 Azure Kubernetes Service 中設定Azure CNI 網路以靜態配置 CIDR 區塊和增強的子網支援 - （預覽）
+        - 使用 Cilium 提供的 Azure CNI
+          [1455] 在 Azure Kubernetes Service 中設定由Cilium 提供的 Azure CNI （AKS）
+        - 使用 kubenet
+          [1461] 在 Azure Kubernetes Service (AKS) 中使用 kubenet 網路與您自己的 IP 位址範圍
+        - 搭配使用 Kubenet 與雙堆疊網路
+          [1471] 在 Azure Kubernetes Service (AKS) 中使用雙重堆疊 kubenet 網路
+        - Use Azure CNI
+          [1478] 在 Azure Kubernetes Service (AKS) 中設定 Azure CNI 網路
+        - 自備 CNI
+          [1481] 自備容器網路介面 (CNI) 外掛程式搭配Azure Kubernetes Service (AKS)
+      - DNS
+        - 使用靜態 IP 位址和 DNS 標籤
+          [1484] 搭配使用靜態公用 IP 位址和 DNS 標籤與Azure Kubernetes Service (AKS) 負載平衡器
+        - 自訂 CoreDNS
+          [1490] 使用 Azure Kubernetes Service 自訂CoreDNS
+      - 輸出
+        - 設定 AKS 輸出類型
+          [1498] 
+        - 使用使用者定義的路由進行輸出
+          [1503] 在 Azure Kubernetes Service (AKS) 中以使用者定義的路由表自訂叢集輸出
+        - 使用 HTTP Proxy
+          [1505] Azure Kubernetes Service 中的 HTTPProxy 支援 （AKS）
+        - 使用 NAT 閘道
+          [1510] 為您的 Azure Kubernetes Service (AKS)叢集建立受控或使用者指派的 NAT 閘道
+        - AKS 叢集的輸出網路和 FQDN 規則
+          [1515] Azure Kubernetes Services (AKS) 叢集的輸出網路和 FQDN 規則
+        - 使用執行個體層級公用 IP 位址
+          [1528] 在 Azure Kubernetes Service 中使用執行個體層級公用 IP (AKS)
+        - 限制和控制叢集輸出流量
+          [1536] 使用 Azure Kubernetes Service 中的Azure 防火牆限制網路流量 (AKS)
+      - 輸入
+        - 使用應用程式路由附加元件
+          - 應用程式路由附加元件概觀
+            [1549] 具有應用程式路由附加元件的受控NGINX 輸入
+          - 進階應用程式路由附加元件元件設定 (NGINX)
+            [1555] 應用程式路由附加元件的進階 NGINX 輸入控制器和輸入設定
+          - 自訂網域名稱和 SSL 憑證設定
+            [1569] 使用應用程式路由附加元件設定自訂網域名稱和 SSL 憑證
+          - 內部 NGINX 控制器和私人 DNS 區域
+            [1576] 使用應用程式路由附加元件設定 NGINX輸入控制器以支援 Azure 私人 DNS 區域
+          - 使用 Prometheus 和 Grafana 監視
+            [1584] 在 Grafana 中使用 Prometheus 監視應用程式路由附加元件中的 ingress-nginx 控制器計量 (預覽)
+          - 從 HTTP 應用程式路由移轉至應用程式路由附加元件
+            [1591] 從 HTTP 應用程式路由移轉至應用程式路由附加元件
+        - 使用應用程式閘道輸入控制器附加元件
+          [1595] 教學課程：使用現有的應用程式閘道，啟用現有 AKS 叢集的應用程式閘道輸入控制器附加元件
+        - 搭配 Istio 服務網格附加元件使用 Istio 閘道
+          [1601] 適用於 Istio 服務網格附加元件的 AzureKubernetes Service （AKS） 外部或內部輸入
+        - 部署安全的 Istio 輸入閘道
+          [1607] 適用於 Azure Kubernetes Service 的 Istio服務網格附加元件的安全輸入閘道
+      - 負載平衡
+        - 建立內部負載平衡器
+          [1618] 
+        - 使用 Standard Load Balancer
+          [1625] 
+        - 使用 kube-proxy 設定 (IPVS)
+          [1639] 在 Azure Kubernetes Service (AKS) 中設定 kube-proxy  (預覽)
+      - 安全性
+        - 使用 API 伺服器 VNet 整合
+          [1643] 使用 API Server VNet 整合建立 AzureKubernetes Service (AKS) 叢集 (預覽)
+        - 私人端點
+          [1659] 
+      - 診斷和解決 UDP 封包捨棄問題
+        [1663] 診斷和解決 Azure Kubernetes Service 中的 UDP 封包捨棄問題 （AKS）
+    - 儲存體
+      - CSI 儲存體驅動程式
+        - CSI 儲存體驅動程式概觀
+          [1668] Azure Kubernetes Service (AKS) 上的容器儲存體介面 (CSI) 驅動程式 (部分機器翻譯)
+        - 從樹狀結構內移轉至 CSI 驅動程式
+          [1672] 從樹狀內儲存體類別移轉至 AzureKubernetes Service 上的 CSI 驅動程式(AKS)
+      - 區塊存放裝置
+        - Azure 磁碟
+          - 布建 Azure 磁碟記憶體
+            [1686] 
+          - Azure 磁碟 CSI 驅動程式
+            [1694] 在 Azure Kubernetes Service (AKS) 中使用 Azure 資料箱磁碟的容器儲存體介面(CSI) 驅動程式
+          - 使用 Azure 進階 SSD v2 磁碟
+            [1707] 在 Azure Kubernetes Service 上使用Azure 進階 SSD v2 磁碟
+          - 使用 Azure Ultra 磁碟
+            [1712] 在 Azure Kubernetes Service 上使用Azure Ultra 磁碟
+          - 適用於磁碟的自備金鑰
+            [1717] 攜帶您自己的金鑰 (BYOK) 搭配 AzureKubernetes Service (AKS) 中的 Azure 受控磁碟
+          - 在叢集之間移動永續性磁碟區
+            [1722] 將 Azure 磁碟永續性磁碟區移至相同或不同訂用帳戶中的另一個 AKS 叢集
+          - 使用 Azure 磁碟的 Azure 容器儲存體
+            [1728] 使用 Azure 容器儲存體預覽，搭配 Azure受控磁碟
+        - Azure 彈性 SAN
+          - 搭配彈性 SAN 使用 Azure Container 儲存體
+            [1739] 使用 Azure 容器儲存體預覽搭配 Azure 彈性 SAN
+          - 使用 Kubernetes iSCSI CSI 驅動程式
+            [1747] 連線 Azure Elastic SAN 磁碟區至 AzureKubernetes Service 叢集
+        - 暫時性磁碟
+          - 使用暫時性磁碟的 Azure 容器儲存體
+            [1752] 將 Azure 容器儲存體預覽版與暫時性磁碟搭配使用
+      - 共用檔案儲存體
+        - Azure 檔案儲存體
+          - Azure 檔案儲存體 CSI 驅動程式
+            [1763] 在 Azure Kubernetes Service (AKS) 中，使用 Azure 檔案容器儲存體介面 (CSI) 驅動程式
+          - 佈建 Azure 檔案儲存體
+            [1776] 
+        - 適用於 AKS 的 Azure NetApp Files
+          - 設定適用於 AKS 的 Azure NetApp Files
+            [1785] 為 Azure Kubernetes Service 設定 AzureNetApp Files
+          - 佈建適用於 AKS 的 Azure NetApp Files NFS 磁碟區
+            [1789] 佈建適用於 Azure Kubernetes Service 的Azure NetApp Files NFS 磁碟區
+          - 佈建適用於 AKS 的 Azure NetApp Files SMB 磁碟區
+            [1803] 佈建適用於 Azure Kubernetes Service 的Azure NetApp Files SMB 磁碟區
+          - 佈建適用於 AKS 的 Azure NetApp Files 雙重通訊協定磁碟區
+            [1821] 佈建適用於 Azure Kubernetes Service 的Azure NetApp Files 雙重通訊協定磁碟區
+          - Azure 檔案儲存體和 Azure NetApp Files 的比較
+            [1826] Azure 檔案儲存體和 Azure NetApp Files的比較
+        - Azure Blob 儲存體
+          - Azure Blob CSI 驅動程式
+            [1832] 使用 Azure Blob 儲存體容器儲存體介面(CSI) 驅動程式
+          - 佈建 Azure Blob 儲存體
+            [1837] 
+      - 其他儲存選項
+        - Azure HPC Cache
+          [1847] 整合 Azure HPC Cache 與 AzureKubernetes Service (AKS)
+        - NFS 伺服器 - 靜態
+          [1857] 手動建立並使用 NFS (網路檔案系統) 伺服器搭配 Azure Kubernetes Service (AKS)
+    - 設定備份
+      - 必要條件
+        [1861] 使用 Azure 備份進行 Azure KubernetesService 備份的必要條件
+      - Backup
+        [1866] 使用 Azure 備份來備份 AzureKubernetes Service
+      - 還原
+        [1884] 使用 Azure 備份還原 Azure KubernetesService
+      - 管理
+        [1895] 使用 Azure 備份來管理 AzureKubernetes Service 備份
+    - 可檢視性
+      - 設定 AKS 診斷
+        [1899] Azure Kubernetes Service 診斷和解決問題概觀
+      - 針對 AKS 叢集啟用監視
+        [1903] 啟用 Kubernetes 叢集的監視
+      - 監視 Kubernetes 物件事件
+        [1920] 用於疑難排解的 Kubernetes 事件
+      - 監視 kube-audit 事件
+        [1923] 監視 Azure Kubernetes Service (AKS)
+      - 監視控制平面計量
+        [1936] 監視 Azure Kubernetes Service (AKS) 控制平面計量 (預覽)
+      - 監視參考
+        [1944] 
+      - 控制平面計量參考
+        [1948] Managed Prometheus 中控制平面計量的最低擷取設定檔
+      - 檢視 Kubelet 記錄
+        [1951] 從 Azure Kubernetes Service (AKS) 叢集節點取得 kubelet 記錄
+      - 即時檢視容器資料
+        [1954] 即時檢視 Kubernetes 記錄、事件和 pod計量
+      - 成本分析
+        - 在您的叢集上啟用成本分析
+          [1963] Azure Kubernetes Service 成本分析
+      - 網路可檢視性
+        - BYO Prometheus 和 Grafana
+          [1967] 設定 Azure Kubernetes Service 的網路可觀察性 (AKS) - BYO Prometheus 和Grafana
+        - Azure 受控的 Prometheus 和 Grafana
+          [1973] 設定 Azure Kubernetes Service 的網路可觀察性 (AKS) - Azure 受控 Prometheus和 Grafana
+    - 服務網格
+      - Istio 服務網格 AKS 附加元件
+        - 關於 Istio
+          [1980] 適用於 Azure Kubernetes Service 的 Istio型服務網格附加元件 (預覽)
+        - 部署 Istio 服務網格附加元件
+          [1982] 部署適用於 Azure Kubernetes Service 的Istio 型服務網格附加元件
+        - 設定 Istio 服務網格附加元件
+          [1989] 設定 Azure Kubernetes Service 的 Istio型服務網格附加元件
+        - 部署外部或內部 Istio 輸入
+          [1995] 適用於 Istio 服務網格附加元件的 AzureKubernetes Service （AKS） 外部或內部輸入
+        - 部署安全的 Istio 輸入閘道
+          [2001] 適用於 Azure Kubernetes Service 的 Istio服務網格附加元件的安全輸入閘道
+        - 適用於 Istio 的外掛程式 CA 憑證
+          [2012] 在 Azure Kubernetes Service 上插入 Istio型服務網格附加元件 CA 憑證
+        - 升級 Istio 服務網格附加元件
+          [2021] 升級 Azure Kubernetes Service 的 Istio型服務網格附加元件
+        - Istio 服務網格附加元件效能
+          [2027] Istio 服務網格附加元件效能
+      - Open Service Mesh AKS 附加元件
+        - 關於 Open Service Mesh
+          [2031] Azure Kubernetes Service (AKS) 中的Open Service Mesh (OSM) 附加元件
+        - Istio AKS 附加元件移轉指引
+          [2034] Open Service Mesh (OSM) 設定至 Istio的移轉指引
+        - 使用 Azure CLI
+          [2054] 使用 Azure CLI 安裝 Open Service Mesh(OSM) 附加元件
+        - 使用 Bicep 範本
+          [2059] 使用 Bicep 在 Azure Kubernetes Service（AKS）中部署 Open Service Mesh 附加元件
+        - 安裝 OSM CLI
+          [2066] 下載並設定 Open Service Mesh (OSM)用戶端程式庫
+        - Open Service Mesh 整合
+          [2069] 在 Azure Kubernetes Service (AKS) 上整合 Open Service Mesh
+        - 對 Open Service Mesh 進行疑難排解
+          [2075] 
+        - 解除安裝 Open Service Mesh AKS 附加元件
+          [2081] 從 Azure Kubernetes Service (AKS) 叢集解除安裝 Open Service Mesh (OSM) 附加元件
+    - 調整大小
+      - 垂直 Pod 自動調整程式
+        - 關於垂直 Pod 自動調整程式
+          [2083] Azure Kubernetes Service (AKS) 中的垂直 Pod 自動調整
+        - 垂直 Pod 自動調整程式 API 參考
+          [2099] 垂直 Pod 自動調整程式 API 參考
+      - 設定計量伺服器 VPA
+        [2104] 在 Azure Kubernetes Service (AKS) 中設定計量伺服器 VPA
+      - 鄰近放置群組
+        [2110] 使用鄰近放置群組來減少 AzureKubernetes Service (AKS) 叢集的延遲
+      - 叢集自動調整程式
+        - 叢集自動調整程式概觀
+          [2114] Azure Kubernetes Service 中的叢集自動調整概觀
+        - 在 AKS 上使用叢集自動調整程式
+          [2119] 在 Azure Kubernetes Service 中使用叢集自動調整程式 （AKS）
+      - Kubernetes 事件驅動自動調整程式 (KEDA) 附加程式
+        - Kubernetes 事件驅動自動調整程式 (KEDA)
+          [2129] 使用 Kubernetes Event-drivenAutoscaling (KEDA) 附加元件簡化應用程式自動調整
+        - 使用 ARM 範本
+          [2133] 使用 ARM 範本來安裝 Kubernetes 事件驅動自動調整 (KEDA) 附加元件
+        - 使用 Azure CLI
+          [2138] 使用 Azure CLI 安裝 Kubernetes 事件驅動自動調整 (KEDA) 附加元件
+        - Kubernetes 事件驅動自動調整程式 (KEDA) 整合
+          [2143] 整合 Azure Kubernetes Service (AKS) 上的 Kubernetes Event-driven Autoscaling(KEDA)
+        - 針對 Kubernetes 事件驅動自動調整程式 (KEDA) 進行疑難排解
+          [2145] 針對 Kubernetes 事件驅動自動調整附加元件進行疑難解答
+    - 升級
+      - 升級選項
+        [2149] Azure Kubernetes Service (AKS) 叢集的升級選項
+      - 執行手動升級
+        - 升級 AKS 叢集
+          [2152] 升級 Azure Kubernetes Service (AKS) 叢集
+        - 協調跨多個叢集的升級
+          [2159] 使用 Azure Kubernetes Fleet Manager 跨多個叢集協調更新
+        - 升級節點作業系統映像
+          [2166] 升級 Azure Kubernetes Service (AKS) 節點映像
+        - 自訂節點激增升級
+          [2175] 
+        - 流程節點 OS 更新
+          [2178] 將安全性和核心更新套用於 AzureKubernetes Service (AKS) 中的節點
+      - 設定自動升級
+        - 自動升級 AKS 叢集
+          [2182] 自動升級 Azure Kubernetes Service(AKS) 叢集
+        - 使用計劃性維護以排程和控制升級
+          [2186] 使用計劃性維護來排程和控制 AzureKubernetes Service 叢集的升級
+        - 自動升級 AKS 叢集節點作業系統映像
+          [2194] 節點 OS 映像自動升級
+        - 使用 GitHub Actions 自動升級節點作業系統映像
+          [2201] 使用 GitHub Actions，將自動安全性升級套用至 Azure Kubernetes Service (AKS)節點
+        - 在 API 中斷性變更時自動停止叢集升級
+          [2208] 在 API 重大變更上自動停止 AzureKubernetes Service (AKS) 叢集升級
+    - 適用於 AKS 的 Azure Linux 容器主機
+      - 使用適用於 AKS 的 Azure Linux
+        [2211] 使用適用於 Azure Kubernetes Service(AKS) 的 Azure Linux 容器主機
+      - Azure Linux AKS 合作夥伴解決方案
+        [2213] Azure Linux AKS 容器主機合作夥伴解決方案
+    - Windows Server 容器
+      - Windows Server 容器常見問題集
+        [2227] AKS 中的 Windows Server 節點集區常見問題集
+      - 遠端連線
+        [2234] 使用 RDP 連線到 Azure KubernetesService (AKS) 叢集 Windows 伺服器節點，以進行維護或疑難排解
+      - 使用 HostProcess 容器
+        [2242] 使用 Windows HostProcess 容器
+      - 從 Windows Server 2019 升級到 2022
+        [2245] 升級 Azure Kubernetes Service （AKS）Windows 工作負載的 OS 版本
+      - 建立適用於 Windows Server 容器的 Dockerfiles
+        [2250] Windows 上的 Dockerfile
+      - 最佳化適用於 Windows Server 容器的 Dockerfiles
+        [2263] 將 Windows Dockerfiles 最佳化
+      - Windows AKS 合作夥伴解決方案
+        [2271] Windows AKS 合作夥伴解決方案
+      - Windows AKS 客戶案例
+        [2279] Windows AKS 客戶案例
+      - 適用於 AKS 上的 Windows 容器的移轉和現代化解決方案
+        [2282] 適用於 Windows AKS 的移轉和現代化解決方案
+      - 使用 Azure Hybrid Benefit
+        [2283] 什麼是適用於 Azure Kubernetes Service的 Azure Hybrid Benefit？
+    - 開發及執行應用程式
+      - 使用 Helm 安裝現有的應用程式
+        [2286] 在 Azure Kubernetes Service (AKS) 中使用 Helm 安裝現有的應用程式
+      - 將橋接至 Kubernetes 與 Visual Studio Code 搭配使用
+        [2292] 使用 Bridge to Kubernetes (VS Code)
+      - 將 Bridge to Kubernetes 與 Visual Studio 搭配使用
+        [2301] 教學課程：在本機使用 Bridge toKubernetes 在 Visual Studio 上執行和偵錯
+      - 使用 OpenFaaS
+        [2308] 在 Azure Kubernetes Service 上使用OpenFaaS (AKS)
+      - 使用 Draft 建立容器化應用程式
+        [2315] Azure Kubernetes Service (AKS) 的 Draft(預覽)
+      - 使用 PostgreSQL 建置 Django 應用程式
+        [2319] 教學課程：使用 適用於 PostgreSQL 的Azure 資料庫 在 AKS 上部署 Django 應用程式 - 彈性伺服器
+      - 使用 WebSphere Liberty 或 Open Liberty 建置 JAVA 應用程式
+        [2330] 在 Azure Kubernetes Service 叢集上使用Open Liberty 或 WebSphere Liberty 部署Java 應用程式
+      - 使用 WebLogic Server 建置 Java 應用程式
+        [2342] 
+      - 使用 Quarkus 建置 Java 應用程式
+        [2361] 在 Azure Kubernetes Service 叢集上使用Quarkus 部署 Java 應用程式
+      - 使用 MySQL 建置 WordPress 應用程式
+        [2380] 教學課程：使用 適用於 MySQL 的 Azure資料庫 在 AKS 上部署 WordPress 應用程式 - 彈性伺服器
+      - Azure API 管理
+        [2395] 搭配 Azure Kubernetes Service 中部署的微服務使用 Azure APIM
+      - 部署 Kubernetes 應用程式
+        - 從 Azure Marketplace 部署 Kubernetes 應用程式
+          [2401] 從 Azure Marketplace 部署和管理Kubernetes 應用程式
+        - 使用 ARM 範本部署 Kubernetes 應用程式
+          [2413] 使用 ARM 範本部署 Azure Kubernetes 應用程式
+        - 使用 ARM CLI 部署 Kubernetes 應用程式
+          [2418] 使用 Azure CLI 以程式設計方式部署Azure Kubernetes 應用程式
+      - Dapr
+        - 建立 Dapr 延伸模組
+          [2421] 適用於 Azure Kubernetes Service (AKS)和已啟用 Arc 的 Kubernetes 的 Dapr 延伸模組
+        - 設定 Dapr 延伸模組
+          [2427] 設定適用於 Azure Kubernetes Service(AKS) 和已啟用 Arc 的 Kubernetes 專案的 Dapr 延伸模組
+        - 從 Dapr OSS 移轉至 Dapr 延伸模組
+          [2434] 從 Dapr OSS 移轉至適用於 AzureKubernetes Service (AKS) 的 Dapr 擴充功能
+        - 使用 Dapr 延伸模組部署和執行工作流程
+          [2437] 使用適用於 Azure Kubernetes Service(AKS) 的 Dapr 延伸模組部署和執行工作流程
+        - 疑難排解 Dapr 延伸項目
+          [2442] 針對 Dapr 延伸模組安裝錯誤進行疑難解答
+      - GitOps
+        [2447] 教學課程：使用 GitOps 搭配 Flux v2 部署應用程式
+    - 在 AKS 上部署智慧型應用程式
+      - 在 Azure Kubernetes Service (AKS) 上部署使用 OpenAI 的應用程式
+        [2465] 在 Azure Kubernetes Service (AKS) 上部署使用 OpenAI 的應用程式
+      - 從 Azure Kubernetes Service (AKS) 保護對 Azure OpenAI 的存取
+        [2476] 從 Azure Kubernetes Service （AKS） 保護對 Azure OpenAI 的存取
+      - 使用 AI 工具鏈操作員部署 AI 模型
+        [2483] Deploy an AI model on AzureKubernetes Service (AKS) with the AItoolchain operator (preview)
+    - DevOps
+      - Azure DevOps 專案
+      - 配有 Azure Pipelines 的 CI/CD
+        [2491] 使用 Azure Pipelines 建置並部署至 AzureKubernetes Service
+      - 適用於 Kubernetes 的 GitHub 動作
+        [2497] 使用 GitHub Actions 建置及測試容器並部署至 Azure Kubernetes Service (AKS)
+      - 設定自動化部署
+        [2503] Azure Kubernetes Service (Preview) 的自動化部署
+      - Jenkins 持續部署
+        [2509] 教學課程：使用 Jenkins 從 GitHub 部署至 Azure Kubernetes Service
+      - 使用 Ansible 建立 AKS 叢集
+        [2522] 教學課程：使用 Ansible 在 Azure 中設定Azure Kubernetes Service （AKS） 叢集
+  - 參考
+    - Azure CLI
+      [2527] az aks
+    - REST
+      [2735] Azure Kubernetes Service (AKS) RESTAPI 參考
+    - PowerShell
+      [2736] Az.Aks
+    - .NET
+      [2740] Azure Container Service SDK for .NET -latest
+    - Python
+      [2741] 適用于 Python 的 Azure ContainerService SDK - 最新版
+    - Java
+      [2742] Container Service
+    - Node.js
+      [2743] Microsoft Azure SDK for JavaScript -ContainerServiceClient
+    - Resource Manager 範本
+      [2744] 
+    - Azure 原則內建
+      [2779] 
+  - 資源
+    - 透過 Microsoft Learn 訓練增進您的技巧
+    - 區域可用性
+    - 定價
+    - 支援原則
+      [2789] Azure Kubernetes Service 支援原則
+    - Azure 藍圖
+    - AKS 藍圖
+    - Stack Overflow
+    - 影片
+    - 常見問題集
+      [2796] Azure Kubernetes Service (AKS) 的常見問題集
+  - 支援和疑難排解
+    - 適用於 AKS 的支援選項
+      [2811] Azure Kubernetes Service (AKS) 的支援和疑難排解
+    - AKS 的疑難排解文件
+      [2814] Azure Kubernetes Services 疑難解答檔
